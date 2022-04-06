@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: a91c82a3e7378e7abde7bccae0d7a953c7d94cb8
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: deec2846b8f8490bf7005be46b19ad282c2cbae6
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671598"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588929"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -138,7 +138,7 @@ Os limites de serviço do Outlook são avaliados para cada combinação de ID de
 | -------------- | ------------ |
 | [Chamadas](/graph/api/resources/call) | 10.000 chamadas/mês e 100 chamadas simultâneas   |
 | [Informações sobre a reunião ](/graph/api/resources/meetinginfo)   | 2000 reuniões/usuário a cada mês |
-| [Presença](/graph/api/resources/presence) (pré-visualização)   | 1.500 solicitações em um período de 30 segundos, por aplicativo por locatário |
+| [Presença](/graph/api/resources/presence)   | 1.500 solicitações em um período de 30 segundos, por aplicativo por locatário |
 
 ### <a name="onenote-service-limits"></a>Limites do serviço OneNote
 
@@ -174,20 +174,25 @@ Os limites são expressos como solicitações por segundo (rps).
 
 | Tipo de solicitação do Teams                                   | Limitar por aplicativo por locatário        | Limitar por aplicativo em todos os locatários      |
 |------------------------------------------------------|---------------------------------|------------|
-| Todas as chamadas de API do Graph para o Microsoft Teams              | 15000 solicitações a cada 10 segundos | n/d |
-| OBTER equipe, canal, guia, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| OBTER equipe, canal, guia, installedApps, appCatalogs   | 30 rps                          | 600 rps |
 | Canal POST/PUT, guia, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
 | PATCH da equipe, canal, guia, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | EXCLUIR canal, Tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | OBTER /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POSTAR /teams/```{team-id}```, COLOCAR /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
-| OBTER mensagem do canal  | 5 rps | 100 rps |
-| OBTER 1:1/mensagem de chat do grupo  | 3 rps | 30 rps |
-| POSTAR mensagem do canal | 2 rps | 20 rps |
-| POSTAR 1:1/mensagem de chat do grupo | 2 rps | 20 rps |
-| OBTENHA /equipes/```{team-id}```/programação e todas as APIs neste caminho | 60 rps | 600 rps |
+| POST /equipes | 10 rps | 100 rps  |
+| PUT /grupos/```{team-id}```/equipe, clonar | 6 rps | 150 rps  |
+| OBTER mensagem do canal  | 20 rps | 200 rps |
+| OBTER 1:1/mensagem de chat do grupo  | 20 rps | 200 rps |
+| POSTAR mensagem do canal | 50 rps | 500 rps |
+| POSTAR 1:1/mensagem de chat do grupo | 20 rps | 200 rps |
+| OBTENHA /equipes/```{team-id}```/programação e todas as APIs neste caminho | 30 rps | 600 rps |
 | PUBLIQUE, CORRIJA, COLOQUE /equipes/```{team-id}```/ programação e todas as APIs neste caminho | 30 rps | 300 rps |
 | APAGAR /equipe/```{team-id}```/programação e todas as APIs neste caminho | 15 rps | 150 rps |
+| POST /equipes/```{team-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /chats/```{chat-id}```/sendActivityNotification | 5 rps | 50 rps |
+| POST /usuários/```{user-id}```/teamwork/sendActivityNotification | 5 rps | 50 rps |
+| Outras chamadas à API GET para o Microsoft Teams              | 30 rps | 1500 rps |
+| Outras chamadas à API para o Microsoft Teams              | 30 rps | 300 rps |
 
 É possível emitir, no máximo, 4 solicitações por segundo por aplicativo em uma determinada equipe ou canal.
 Um máximo 3.000 mensagens por aplicativo por dia podem ser enviadas para um determinado canal.

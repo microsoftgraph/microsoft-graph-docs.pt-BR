@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a48bf65d77087f1d15fe000e778eb77d2119634e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ad3008fa6a26fcb7eef4b2c1aac19c23d0243d35
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123286"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509774"
 ---
 # <a name="delete-permissiongrantconditionset-from-includes-collection-of-permissiongrantpolicy"></a>Excluir permissionGrantConditionSet de inclui coleção de permissionGrantPolicy
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui uma [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) da coleção **includes** de [uma permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Exclui um [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) da coleção **includes** de [uma permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante) | PermissionGrantPolicy.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante) | Policy.ReadWrite.PermissionGrant |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-| Aplicativo | PermissionGrantPolicy.ReadWrite.All |
+| Aplicativo | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

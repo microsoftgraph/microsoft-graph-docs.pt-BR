@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 9edd626ae9914941a18801791e942c1dfd69e391
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: cba73bf9f8d3281fe43400e90db9303bba69f36a
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336911"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587662"
 ---
 # <a name="cloudpc-resource-type"></a>Tipo de recurso cloudPC
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma área de trabalho virtual gerenciada pela nuvem. Esse computador cloud também está inscrito no Intune e gerenciado por meio do portal Microsoft Endpoint Manager, portanto, o Cloud PC também tem uma ID de dispositivo gerenciado correspondente do Intune.
+Representa uma área de trabalho virtual gerenciada pela nuvem. Esse computador cloud também está inscrito no Intune e gerenciado por meio do portal Microsoft Endpoint Manager, portanto, o Cloud PC também tem uma ID de dispositivo gerenciado Intune de usuário correspondente.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -32,31 +32,31 @@ Representa uma área de trabalho virtual gerenciada pela nuvem. Esse computador 
 |[Reiniciar](../api/cloudpc-reboot.md)|Nenhum|Reiniciar um objeto [cloudPC](../resources/cloudpc.md) específico.|
 |[Rename](../api/cloudpc-rename.md)|Nenhum|Renomeie um objeto [cloudPC](../resources/cloudpc.md) específico. Use essa API para atualizar **o displayName** para a entidade cloud pc.|
 |[Reprovision](../api/cloudpc-reprovision.md)|Nenhum|Reprovisionar um [objeto cloudPC](../resources/cloudpc.md) .|
-|[Ação remota de reprovisionamento](../api/manageddevice-reprovisioncloudpc.md)|Nenhum|Reprovisionar um computador cloud com uma ID de dispositivo  [gerenciado do](../resources/cloudpc.md) Intune.|
-|[Ação remota de reprovisionamento em massa](../api/manageddevice-bulkreprovisioncloudpc.md)|Nenhum(a)|Reprovisionar em massa um conjunto de dispositivos cloud pc com IDs de dispositivo gerenciado do Intune.|
-|[Resize a ação remota](../api/manageddevice-resizecloudpc.md)|Nenhum(a)|Atualize ou downgrade um computador cloud existente para outra configuração com novo vCPU e tamanho de armazenamento por meio da ID do dispositivo gerenciado do Intune.|
+|[Ação remota de reprovisionamento](../api/manageddevice-reprovisioncloudpc.md)|Nenhum|Reprovisione um Computador na Nuvem com uma Intune [ID de dispositivos](../resources/cloudpc.md) de gestão.  |
+|[Ação remota de reprovisionamento em massa](../api/manageddevice-bulkreprovisioncloudpc.md)|Nenhum|Reprovisione em massa um conjunto de dispositivos cloud pc com Intune IDs de dispositivo gerenciado.|
+|[Resize a ação remota](../api/manageddevice-resizecloudpc.md)|Nenhum|Atualize ou downgrade um computador cloud existente para outra configuração com novo vCPU e tamanho de armazenamento por meio Intune ID de dispositivo gerenciado.|
 |[Solução de problemas](../api/cloudpc-troubleshoot.md)|Nenhum|Solucionar problemas de um [objeto cloudPC](../resources/cloudpc.md) específico. Use essa API para verificar o status de saúde do computador na nuvem e do host da sessão.|
 |[Restaurar a ação remota](../api/manageddevice-restorecloudpc.md)|Nenhum|Restaure um dispositivo cloud pc para um estado anterior de um instantâneo.|
-|[Ação remota de restauração em massa](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restaure vários dispositivos cloud pc com uma única solicitação que inclui as IDs de dispositivos gerenciados do Intune e uma data e hora de ponto de restauração.|
+|[Ação remota de restauração em massa](../api/manageddevice-bulkrestorecloudpc.md)|[cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md)|Restaure vários dispositivos cloud pc com uma única solicitação que inclui as IDs de Intune de dispositivos gerenciados e uma data e hora de ponto de restauração.|
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |aadDeviceId|Cadeia de caracteres|A Azure Active Directory (Azure AD) do computador cloud.|
-|displayName|String|O nome de exibição do Cloud PC.|
+|displayName|Cadeia de caracteres|O nome de exibição do Cloud PC.|
 |gracePeriodEndDateTime|DateTimeOffset|A data e a hora em que o período de carência termina e o reprovisionamento/desprovisionamento acontece. Obrigatório somente se o status for `inGracePeriod`. O timestamp é mostrado no formato ISO 8601 e tempo universal coordenado (UTC). Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |id|String|O identificador exclusivo para o Cloud PC. Somente leitura.|
 |imageDisplayName|Cadeia de caracteres|Nome da imagem do sistema operacional que está no cloud pc.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|O último resultado de logon do Cloud PC. Por exemplo, `{ "time": "2014-01-01T00:00:00Z"}`.|
 |lastModifiedDateTime|DateTimeOffset|A última data e hora modificadas do Cloud PC. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|O último resultado de ação remota dos PCs de nuvem corporativos. As ações remotas com suporte são: `Reboot`, `Rename`, `Reprovision`, `Restore`e `Troubleshoot`.|
-|managedDeviceId|Cadeia de caracteres|A ID do dispositivo Intune do computador cloud.|
-|managedDeviceName|String|O nome do dispositivo Intune do Computador na Nuvem.|
-|onPremisesConnectionName|String|A conexão local que é aplicada durante o provisionamento de PCs na Nuvem.|
+|managedDeviceId|Cadeia de caracteres|A Intune ID do dispositivo do Cloud PC.|
+|managedDeviceName|String|O Intune do dispositivo do Cloud PC.|
+|onPremisesConnectionName|Cadeia de caracteres|A conexão de rede do Azure que é aplicada durante o provisionamento de PCs na Nuvem.|
 |osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|A versão do sistema operacional (OS) a ser provisionada em PCs na Nuvem. Os valores possíveis são: `windows10`, `windows11`e `unknownFutureValue`.|
-|provisioningPolicyId|String|A ID da política de provisionamento do Cloud PC.|
-|provisioningPolicyName|String|A política de provisionamento que é aplicada durante o provisionamento de PCs de Nuvem.|
+|provisioningPolicyId|Cadeia de caracteres|A ID da política de provisionamento do Cloud PC.|
+|provisioningPolicyName|Cadeia de caracteres|A política de provisionamento que é aplicada durante o provisionamento de PCs de Nuvem.|
 |servicePlanId|String|A ID do plano de serviço do Cloud PC.|
 |servicePlanName|Cadeia de caracteres|O nome do plano de serviço do Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|O tipo de plano de serviço do Cloud PC.|

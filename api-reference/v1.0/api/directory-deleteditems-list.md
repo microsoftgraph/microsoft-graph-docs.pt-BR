@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f0e35eab9cc3c0ca87250fc6da0e425aa07f5c86
-ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
+ms.openlocfilehash: 73100502687101eaf9a9aa056ab12f91af4361ee
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62201628"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672557"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de itens recentemente excluídos em [itens excluídos](../resources/directory.md).
 
-Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos [de](../resources/application.md)aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário.
+Atualmente, a funcionalidade de itens excluídos só tem suporte para os recursos de [aplicativo,](../resources/application.md) [grupo](../resources/group.md) [e](../resources/user.md) usuário.
 
 >**Observação:** Os grupos de segurança excluídos são excluídos permanentemente e não podem ser recuperados por meio dessa API.
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -48,7 +48,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
@@ -61,22 +61,22 @@ GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-Atualmente, essa API dá suporte à recuperação de tipos de objeto de aplicativos ( `microsoft.graph.application` ), grupos ( ) ou usuários ( ) de itens `microsoft.graph.group` `microsoft.graph.user` excluídos. O tipo de cast OData é uma parte necessária do URI e não há suporte para chamada sem `GET /directory/deleteditems` um tipo. 
+Atualmente, essa API dá suporte à recuperação de tipos de objeto de aplicativos (`microsoft.graph.application`), grupos (`microsoft.graph.group`) ou usuários (`microsoft.graph.user`) de itens excluídos. O tipo de cast OData é uma parte necessária do URI e `GET /directory/deleteditems` não há suporte para chamada **sem um tipo** .
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos parâmetros de consulta compatíveis com o recurso especificado pelo cast OData. Ou seja, `$count` , , , , , e `$expand` `$filter` `$orderBy` `$search` `$select` `$top` parâmetros de consulta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Por exemplo:
+Este método dá suporte aos parâmetros de consulta compatíveis com o recurso especificado pelo cast OData. Ou seja, `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, e `$select`parâmetros `$top` de consulta. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Por exemplo:
 
 ```msgraph-interactive
 https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
-Este exemplo requer o header **ConsistencyLevel** porque os parâmetros e de consulta `$orderBy` são usados na `$count` consulta.
+Este exemplo requer o header **ConsistencyLevel** porque os `$orderBy` `$count` parâmetros e de consulta são usados na consulta.
 
 ### <a name="examples-using-the-orderby-odata-query-parameter"></a>Exemplos usando o parâmetro $orderBy consulta OData
 
-O parâmetro de consulta OData é suportado nas propriedades `$orderBy` **deletedDateTime**, **displayName** e **userPrincipalName** dos tipos de objeto excluídos. Na propriedade **deletedDateTime,** a consulta requer a adição dos parâmetros de consulta avançados ( Header **ConsistencyLevel** definido como e cadeia de [caracteres](/graph/aad-advanced-queries) `true` de `$count=true` consulta).
+O `$orderBy` parâmetro de consulta OData é suportado nas propriedades **deletedDateTime**, **displayName** e **userPrincipalName** dos tipos de objeto excluídos. Na propriedade **deletedDateTime** , a consulta requer a adição dos [parâmetros](/graph/aad-advanced-queries) de consulta avançados (**header ConsistencyLevel** definido como `true` e `$count=true` cadeia de caracteres de consulta).
 
 | OData cast | Propriedades que suportam $orderBy | Exemplo |
 | :--- | :--- | :--- |

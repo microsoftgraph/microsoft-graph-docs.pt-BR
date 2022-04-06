@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2145f371cf0f90ef7db6738d94f89667eacb16b8
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ad6c17f1019c363c320d31f3eaf5962fa1398f79
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671703"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588341"
 ---
 # <a name="list-onpremisesconnections"></a>Listar onPremisesConnections
 
@@ -20,7 +20,9 @@ Namespace: microsoft.graph
 
 Listar propriedades e relações dos objetos [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
-## <a name="permissions"></a>Permissões
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: bef523345bfcb3636a66606b87764599dd606554
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
-ms.translationtype: HT
+ms.openlocfilehash: e7c8091f3f3e29932520e93a7be3cdd2d830c5e0
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766821"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684589"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -24,7 +24,9 @@ Namespace: microsoft.graph
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[List channels](../api/channel-list.md) | [channel](channel.md) collection | Obtenha a lista de canais nessa equipe.|
+|[List channels](../api/channel-list.md) | [channel](channel.md) collection | Obtenha a lista de canais em uma equipe.|
+|[Listar canais de entrada](../api/team-list-incomingchannels.md)|Coleção [channel](../resources/channel.md)|Obtenha a lista de [canais compartilhados](../resources/channel.md) com uma **equipe**.|
+|[Listar todos os canais](../api/team-list-allchannels.md)|Coleção [channel](../resources/channel.md)|Obtenha a lista de [canais em](../resources/channel.md) uma equipe **ou** compartilhados com uma **equipe** (canais de entrada).|
 |[Create channel](../api/channel-post.md) | [channel](channel.md) | Crie um novo canal ao incluir o nome de exibição e a descrição.|
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Leia as propriedades e as relações do canal.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Atualize as propriedades do canal.|
@@ -37,10 +39,10 @@ Namespace: microsoft.graph
 |[Obter pasta de arquivos](../api/channel-get-filesfolder.md).| [driveItem](driveitem.md) | Recupera os detalhes da pasta do SharePoint em que os arquivos do canal estão armazenados. |
 |[Listar guias](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
 |[Listar membros do canal](../api/channel-list-members.md) | coleção [conversationMember](conversationmember.md) | Obtenha uma lista de todas as mensagens raiz em um canal.|
-|[Adicionar membro do canal](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Adicionar um membro a um canal. Somente suportado para `channel` com o membershipType de `private`.|
+|[Adicionar membro do canal](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Adicionar um membro a um canal. Com suporte apenas para canais com **um membershipType** de `private` ou `shared`.|
 |[Obter canal do membro](../api/channel-get-members.md) | coleção [conversationMember](conversationmember.md) | Obtenha um membro em um canal.|
-|[Atualizar a função do membro do canal](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Atualize as propriedades de um membro do canal. Suportado só para o canal com MembershipType de`private`.|
-|[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Suportado só com o `channelType` de `private`.|
+|[Atualizar a função do membro do canal](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Atualize as propriedades de um membro do canal. Com suporte apenas para canais com **um membershipType** de `private` ou `shared`.|
+|[Remover membro do canal](../api/channel-delete-members.md) | Nenhum | Exclua um membro de um canal. Com suporte apenas para canais com **um membershipType** de `private` ou `shared`.|
 |[Migração completa](../api/channel-completemigration.md)|[channel](channel.md)| Remove o modo de migração do canal e torna o canal disponível para os usuários postarem e lerem mensagens.|
 |[Listar guias no canal](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas a um canal.|
 |[Adicionar uma guia ao canal](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Adicionar (fixar) uma guia a um canal.|
@@ -49,6 +51,12 @@ Namespace: microsoft.graph
 |[Remover guia do canal](../api/channel-delete-tabs.md) | Nenhum | Remover (Desafixar) uma Tabulação de um canal.|
 |[Endereço de email do canal de provisão](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provisione um endereço de e-mail para o canal.|
 |[Remover o endereço de email do canal](../api/channel-removeemail.md) | Nenhum | Remova o endereço de e-mail do canal.|
+|[Remover canal de entrada](../api/team-delete-incomingchannel.md) | Nenhuma| Remover um canal de entrada.|
+|[Listar equipes compartilhadas com o canal](../api/sharedwithchannelteaminfo-list.md)|[Coleção sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Obtenha a lista de equipes compartilhadas com o canal.|
+|[Obter a equipe compartilhada com o canal](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Obtenha uma equipe que seja compartilhada com o canal.|
+|[Descompartilhar canal com a equipe](../api/sharedwithchannelteaminfo-delete.md)|Nenhuma|Descompartilhar um canal com uma equipe.|
+|[Listar membros permitidos](../api/sharedwithchannelteaminfo-list-allowedmembers.md)|coleção [conversationMember](../resources/conversationmember.md)|Obtenha a lista de membros da equipe que têm acesso ao canal compartilhado.|
+|[Verificar o acesso do usuário](../api/channel-doesuserhaveaccess.md)|Booliano|Verifique se um usuário tem acesso a um canal compartilhado ou não.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -63,6 +71,7 @@ Namespace: microsoft.graph
 |membershipType|channelMembershipType|O tipo do canal. Pode ser definido durante a criação e não pode ser alterado. Os valores possíveis são: `standard`, `private`, `unknownFutureValue`, `shared`. O valor padrão é `standard`. Observe que você deve usar o cabeçalho de `Prefer: include-unknown-enum-members` solicitação para obter o seguinte valor nessa [enumeração evolutiva](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora da criação do canal.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Configurações para configurar a moderação do canal para controlar quem pode iniciar novas postagens e responder a postagens no canal.|
+|tenantId |cadeia de caracteres | A ID do locatário Azure Active Directory usuário. |
 
 ### <a name="instance-attributes"></a>Atributos de instância
 
@@ -70,7 +79,7 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 
 | Nome da propriedade| Tipo   | Descrição
 |:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.channelCreationMode|string|Indica que o canal está no estado de migração e está sendo usado no momento para fins de migração. Aceita um valor: `migration`.|
+|@microsoft.graph.channelCreationMode|string|Indica que o canal está em estado de migração e está sendo usado atualmente para fins de migração. Aceita um valor: `migration`.|
 
 > **Observação**: `channelCreationMode`  é um enum que usa o valor `migration`.
 
@@ -85,6 +94,7 @@ Para obter um exemplo de uma solicitação POST, confira [Solicitação (criar c
 |members|coleção [conversationMember](conversationmember.md)|Uma coleção de registros de associação ligados ao canal.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadados para o local em que os arquivos do canal estão armazenados.|
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. |
+|sharedWithTeams|[Coleção sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Uma coleção de equipes compartilhadas com o canal.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -3,15 +3,15 @@ author: daspek
 description: O recurso contentTypeOrder especifica a ordem na qual o Content Type será exibido na seleção da interface do usuário.
 ms.date: 09/13/2017
 title: ContentTypeOrder
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e7adde2a0452e9fe13a8f547eeec6fed957460da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 615655ecf400c814e08ef75dfbabd9a5f97cf167
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998898"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63720819"
 ---
 # <a name="contenttypeorder-resource-type"></a>Tipo de recurso ContentTypeOrder
 
@@ -24,6 +24,7 @@ O recurso **contentTypeOrder** especifica a ordem na qual o Content Type será e
 ## <a name="json-representation"></a>Representação JSON
 
 Aqui está uma representação JSON de um recurso **contentTypeOrder**.
+
 <!-- { "blockType": "resource", "@type": "microsoft.graph.contentTypeOrder", "@type.aka": "oneDrive.contentTypeOrderFacet" } -->
 
 ```json
@@ -35,10 +36,10 @@ Aqui está uma representação JSON de um recurso **contentTypeOrder**.
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade | Tipo    | Descrição
-|:--------------|:--------|:----------------------------------------------------
-| **default**   | booliano | Se esse é o Content Type padrão
-| **position**  | Int32   | Especifica a posição em que o tipo de conteúdo aparece na seleção da interface do usuário.
+| Propriedade     | Tipo    | Descrição                                                                   |
+| :----------- | :------ | :---------------------------------------------------------------------------- |
+| **default**  | booliano | Se esse é o Content Type padrão                                      |
+| **position** | Int32   | Especifica a posição em que o tipo de conteúdo aparece na seleção da interface do usuário. |
 
 <!--
 {
@@ -50,5 +51,3 @@ Aqui está uma representação JSON de um recurso **contentTypeOrder**.
   "suppressions": []
 }
 -->
-
-

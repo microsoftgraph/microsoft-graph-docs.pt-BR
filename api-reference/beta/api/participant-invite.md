@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 090bce11ea6fea4dc0ed4fe88f2e7b05f0bc3389
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: e498f718185ecf0497063c5cdf6f1bfa35e86c3d
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878873"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607467"
 ---
 # <a name="participant-invite"></a>participante: invite
 
@@ -24,14 +24,14 @@ Para obter mais informações sobre como lidar com operações, consulte [commso
 
 >**Observação:** Convidar vários participantes em uma solicitação só é suportado para chamadas de grupo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
 | Delegada (conta corporativa ou de estudante)     | Sem suporte                       |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                       |
-| Aplicativo     | Calls.InitiateGroupCalls.All                               |
+| Aplicativo     | Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um header location com um URI para [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. O corpo da resposta contém [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado.

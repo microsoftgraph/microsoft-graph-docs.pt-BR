@@ -1,16 +1,16 @@
 ---
 title: Criar grupo de roteamento de áudio
-description: Crie um novo **audioRoutingGroup**.
-author: ananmishr
+description: Crie um **novo audioRoutingGroup**.
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 330142c280a0560ebf76e3afbce5abecba0726c2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bf4248182603da7502b48520a0fe0b4f478fc645
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097250"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607649"
 ---
 # <a name="create-audio-routing-group"></a>Criar grupo de roteamento de áudio
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo **audioRoutingGroup**.
+Crie um **novo audioRoutingGroup**.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -43,10 +43,10 @@ POST /communications/calls/{id}/audioRoutingGroups
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup.](../resources/audioroutinggroup.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e [o objeto audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -104,7 +104,7 @@ Content-Length: 233
 ---
 
 
-No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup.](../resources/audioroutinggroup.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ##### <a name="response"></a>Resposta
 
@@ -162,7 +162,7 @@ Content-Length: 233
 }
 ```
 
-No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup.](../resources/audioroutinggroup.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ##### <a name="response"></a>Resposta
 

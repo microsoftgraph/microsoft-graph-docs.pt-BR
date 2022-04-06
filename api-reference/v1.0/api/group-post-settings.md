@@ -2,15 +2,15 @@
 title: Criar configurações
 description: Crie uma nova configuração, com base nos modelos disponíveis em groupSettingTemplates.
 ms.localizationpriority: medium
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 07d2a88c32539c9146faac4681cc2021fa68533a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d2f512c760d0c9d50e8089420ed6c4676bb34ab8
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671983"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589454"
 ---
 # <a name="create-settings"></a>Criar configurações
 
@@ -20,47 +20,51 @@ Crie uma nova configuração com base nos modelos disponíveis em [groupSettingT
 
 As configurações de grupo se aplicam apenas Microsoft 365 grupos. O modelo nomeado `Group.Unified` pode ser usado para configurar configurações de grupo em todo o Microsoft 365 de locatários, `Group.Unified.Guest` enquanto o modelo nomeado pode ser usado para configurar configurações específicas do grupo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All                     |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | Directory.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 Crie uma configuração em todo o locatário.
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groupSettings
 ```
 
 Crie uma configuração específica do grupo.
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/settings
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome | Descrição |
-|:---------------|:----------|
+| Nome          | Descrição               |
+| :------------ | :------------------------ |
 | Autorização | {token} de portador. Obrigatório. |
-| Content-Type | application/json |
+| Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md). O nome de exibição, templateId e descrição são herdados do objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) referenciado. Somente a propriedade value pode ser alterada do valor padrão.
 
 As propriedades a seguir são necessárias ao criar o [objeto groupSetting](../resources/groupsetting.md) .
 
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|templateId|String| Identificador exclusivo para o objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) no nível de locatário usado para criar esse objeto de configurações de nível de grupo. Somente leitura. |
-|values|[coleção settingValue](../resources/settingvalue.md)| Coleção de pares de valores de nome correspondentes ao **nome** e propriedades **defaultValue** no objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) referenciado.|
+| Parâmetro  | Tipo                                                    | Descrição                                                                                                                                                                          |
+| :--------- | :------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| templateId | Cadeia de caracteres                                                  | Identificador exclusivo para o objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) no nível de locatário usado para criar esse objeto de configurações de nível de grupo. Somente leitura.              |
+| values     | [coleção settingValue](../resources/settingvalue.md) | Coleção de pares de valores de nome correspondentes ao **nome** e propriedades **defaultValue** no objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) referenciado. |
 
 ## <a name="response"></a>Resposta
 
@@ -73,10 +77,12 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e um o
 Somente o [objeto groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified` nomeado pode ser aplicado a todos os grupos Microsoft 365 no nível de locatário.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groupSettings
 Content-type: application/json
@@ -103,23 +109,29 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -127,13 +139,14 @@ Content-type: application/json
 
 ### <a name="response"></a>Resposta
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.groupSetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -173,10 +186,12 @@ A **propriedade displayName** e outros pares de valores de nome serão preenchid
 Somente o [objeto groupSettingTemplates](../resources/groupsettingtemplate.md) nomeado `Group.Unified.Guest` pode ser aplicado a grupos Microsoft 365 específicos.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings_for_guests"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/055a5d18-a3a9-4338-b9c5-de92559b7ebf/settings
 Content-type: application/json
@@ -191,39 +206,46 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md).
 
 ### <a name="response"></a>Resposta
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.groupSetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -253,4 +275,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

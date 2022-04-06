@@ -5,29 +5,26 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9b2383084396bfe95f5f23c4ba871856e30d01d1
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: f225dd42748cf54e79cc3694dfa04aa2a28b7b33
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225459"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722409"
 ---
 # <a name="list-contactedreviewers"></a>Listar contactedReviewers
 Namespace: microsoft.graph
 
-Obter os revisadores que receberam notificações para uma instância [de revisão de acesso.](../resources/accessreviewinstance.md) Os revisores são representados por um [objeto accessReviewReviewer.](../resources/accessreviewreviewer.md) Uma lista de zero ou mais objetos são retornados, incluindo todas as propriedades aninhadas.
+Obter os revisadores que receberam notificações para uma [instância de revisão de acesso](../resources/accessreviewinstance.md). Os revisores são representados por um [objeto accessReviewReviewer](../resources/accessreviewreviewer.md) . Uma lista de zero ou mais objetos são retornados, incluindo todas as propriedades aninhadas.
 
->[!NOTE]
->O tamanho padrão da página para essa API é de 100 **objetos accessReviewReviewer.** Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
-
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +37,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a parâmetros de consulta `$select` , , , e `$filter` `$orderBy` `$skip` `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte `$select`a parâmetros de consulta , `$filter``$orderBy`, , `$skip`e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+O tamanho padrão da página para essa API é de 100 **objetos accessReviewReviewer** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos accessReviewReviewer](../resources/accessreviewreviewer.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessReviewReviewer](../resources/accessreviewreviewer.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

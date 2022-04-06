@@ -2,13 +2,13 @@
 title: Componente person no microsoft Graph Toolkit
 description: O componente de pessoa é usado para exibir uma pessoa ou contato usando sua foto, nome e/ou endereço de email.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: 59f2c6f286aa176ea2ebdad0044388bcfb25f896
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+author: sebastienlevert
+ms.openlocfilehash: 3d69bddd473bf43de4d713207ab8f54291cbcd7f
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336106"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589034"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Componente person no microsoft Graph Toolkit
 

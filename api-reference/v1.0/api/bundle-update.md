@@ -1,26 +1,26 @@
 ---
 author: JeremyKelley
-title: Pacote de atualização
+title: Atualizar um pacote
 description: Atualizar um pacote de driveItems
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 07f69618fae4fe2424abee3a1ac274d6ed42e88d
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: b4925016b63569bba1915ce83100f59e647acc1e
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684848"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63561577"
 ---
-# <a name="update-bundle"></a>Pacote de atualização
+# <a name="update-bundle"></a>Pacote de atualizações
 
 Namespace: microsoft.graph
 
-Atualize os metadados [de um pacote][] [de driveItemsdriveItem][] por ID.
+Atualize os metadados [para][] um [pacote de driveItemsdriveItem][] por ID.
 Você só pode atualizar os seguintes metadados:
 
 * Nome do pacote
-* Álbum `coverImageItemId` (se aplicável)
+* Album `coverImageItemId` (se aplicável)
 
 Quaisquer outras solicitações de alteração serão ignoradas.
 
@@ -47,7 +47,7 @@ PATCH /drive/items/{bundle-id}
 | Nome          | Descrição  |
 |:------------- |:------------ |
 | Autorização | \{token\} de portador. Obrigatório. |
-| if-match      | Etag. Opcional. Se esse cabeçalho de solicitação for incluído e a eTag fornecida não corresponder à eTag atual no buncle, uma `412 Precondition Failed` resposta será retornada.
+| if-match      | eTag. Opcional. Se esse header de solicitação estiver incluído e a eTag fornecida não corresponder à eTag atual no buncle, uma `412 Precondition Failed` resposta será retornada.
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -65,40 +65,16 @@ Este exemplo renomeia um pacote.
 
 ### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
+PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
 Content-Type: application/json
 
 {
   "name": "Shared legal agreements"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/rename-bundle-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/rename-bundle-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/rename-bundle-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/rename-bundle-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/rename-bundle-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Resposta
 
@@ -120,7 +96,7 @@ Content-Type: application/json
 O objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 
 
-[Agrupar]: ../resources/bundle.md
+[bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
 

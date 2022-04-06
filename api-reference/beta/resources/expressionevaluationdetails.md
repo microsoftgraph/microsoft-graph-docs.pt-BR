@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso expressionEvaluationDetails
 description: Representa os detalhes, o resultado e a propriedade de expressão.
-localization_priority: Normal
-author: Jordanndahl
+ms.localizationpriority: medium
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a2e2b2620f30234c23753ef743f14e55e29f6f91
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: d588719e8d6bcf32ff337beec8815b6fe329ee0b
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679894"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587032"
 ---
 # <a name="expressionevaluationdetails-resource-type"></a>Tipo de recurso expressionEvaluationDetails
 
@@ -22,12 +22,12 @@ Representa os detalhes, o resultado e a propriedade de expressão.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade     | Tipo        | Descrição |
-|:-------------|:------------|:------------|
-| expressão | String | Representa a expressão que foi avaliada. |
-| expressionEvaluationDetails | Coleção expressionEvaluationDetails | Representa os detalhes da avaliação da expressão. |
-| expressionResult | Boolean | Representa o valor do resultado da expressão atual. |
-| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Define o nome da propriedade e o valor dessa propriedade. |
+| Propriedade                    | Tipo                                        | Descrição                                                      |
+| :-------------------------- | :------------------------------------------ | :--------------------------------------------------------------- |
+| expressão                  | Cadeia de caracteres                                      | Representa a expressão que foi avaliada.                  |
+| expressionEvaluationDetails | Coleção expressionEvaluationDetails      | Representa os detalhes da avaliação da expressão.      |
+| expressionResult            | Boolean                                     | Representa o valor do resultado da expressão atual.    |
+| propertyToEvaluate          | [propertyToEvaluate](propertytoevaluate.md) | Define o nome da propriedade e o valor dessa propriedade. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -45,9 +45,11 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "expression": "String",
-  "expressionEvaluationDetails": [{"@odata.type": "microsoft.graph.expressionEvaluationDetails"}],
+  "expressionEvaluationDetails": [
+    { "@odata.type": "microsoft.graph.expressionEvaluationDetails" }
+  ],
   "expressionResult": true,
-  "propertyToEvaluate": {"@odata.type": "microsoft.graph.propertyToEvaluate"}
+  "propertyToEvaluate": { "@odata.type": "microsoft.graph.propertyToEvaluate" }
 }
 ```
 
@@ -60,5 +62,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -1,16 +1,16 @@
 ---
-title: Excluir grupo - API Graph Microsoft
+title: Excluir grupo - Microsoft API do Graph
 description: Excluir um recurso de grupo.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3aa8727d0a3d60141673877a25316707a080783d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 65c1432489120b4ab2ff34db8a57228928369912
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113486"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588887"
 ---
 # <a name="delete-group"></a>Excluir grupo
 
@@ -18,32 +18,33 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um grupo.  
+Exclui um grupo.
 
-Quando excluídos, Microsoft 365 grupos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias.  Após esse período, elas serão permanentemente excluídos. Isso não se aplica aos grupos de Segurança e Distribuição que são excluídos permanentemente imediatamente. Para saber mais, confira [deletedItems](../resources/directory.md).
+Quando excluídos, Microsoft 365 grupos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias. Após esse período, elas serão permanentemente excluídos. Isso não se aplica aos grupos de Segurança e Distribuição que são excluídos permanentemente imediatamente. Para saber mais, confira [deletedItems](../resources/directory.md).
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.AccessAsUser.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | Group.ReadWrite.All                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Descrição|
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Nome          | Descrição               |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -60,47 +61,57 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_group"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/delete-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/delete-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -118,5 +129,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

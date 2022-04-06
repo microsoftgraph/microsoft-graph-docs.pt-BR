@@ -1,25 +1,25 @@
 ---
 title: Criar unifiedRoleEligibilityScheduleRequest
 description: Crie um novo objeto unifiedRoleEligibilityScheduleRequest.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6696c94977a9b6afde15fcb101cc56ee06b2f7ca
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b3b4c741c445de9a53bccd366c28abb0c98a5a8d
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119851"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510517"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>Criar unifiedRoleEligibilityScheduleRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto unifiedRoleEligibilityScheduleRequest.](../resources/unifiedroleeligibilityschedulerequest.md) Essa operação permite que administradores e usuários qualificados adicionem, revogam ou estendam atribuições qualificadas.
+Crie um novo [objeto unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) . Essa operação permite que administradores e usuários qualificados adicionem, revogam ou estendam atribuições qualificadas.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -45,33 +45,33 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleEligibilityScheduleRequest.](../resources/unifiedroleeligibilityschedulerequest.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) .
 
-A tabela a seguir mostra as propriedades opcionais e necessárias ao criar [a unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md).
+A tabela a seguir mostra as propriedades opcionais e necessárias ao criar [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ação|Cadeia de caracteres|Representa o tipo da operação na atribuição de qualificação de função. Os valores possíveis são: <ul><li>`AdminAssign`: Para que os administradores atribuam qualificação de função a usuários ou grupos a funções.</li><li>`AdminExtend`: Para que os administradores estendam atribuições expiradas.</li><li>`AdminUpdate`: Para que os administradores alterem as atribuições de função existentes.</li><li>`AdminRenew`: Para que os administradores renovem atribuições expiradas.</li><li>`AdminRemove`: Para que os administradores removam usuários ou grupos de funções qualificadas.</li><li>`UserAdd`: Para que os usuários ativem suas atribuições qualificadas.</li><li>`UserExtend`: Para que os usuários solicitem estender suas atribuições qualificadas expiradas.</li><li>`UserRemove`: Para que os usuários desativem suas atribuições elegíveis ativas.</li><li>`UserRenew`: Para que os usuários solicitem a renovação de suas atribuições qualificadas expiradas.</li></ul>|
-|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas ou todos os usuários.|
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
-|isValidationOnly|Booliano|Um booleano que determina se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
-|justification|Cadeia de caracteres|Uma mensagem fornecida por usuários e administradores ao criar a solicitação sobre por que ela é necessária. Opcional quando **a ação** é `AdminRemove` .|
-|principalId|Cadeia de caracteres|Identificador da entidade à qual a atribuição está sendo concedida. Por exemplo, um usuário ou um grupo. Para grupos, eles devem ser atribuídos a funções, ou seja, **o isAssignableToRole** da propriedade group definida como `true` .|
+|appScopeId|String|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas ou todos os usuários.|
+|directoryScopeId|String|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
+|isValidationOnly|Boolean|Um booleano que determina se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
+|justification|Cadeia de caracteres|Uma mensagem fornecida por usuários e administradores ao criar a solicitação sobre por que ela é necessária. Opcional quando **a ação** é `AdminRemove`.|
+|principalId|String|Identificador da entidade à qual a atribuição está sendo concedida. Por exemplo, um usuário ou um grupo. Para grupos, eles devem ser atribuídos a funções, ou seja, **o isAssignableToRole** da propriedade group definida como `true`.|
 |roleDefinitionId|Cadeia de caracteres|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Obrigatório. Somente leitura.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O objeto schedule da solicitação de atribuição de função. Essa propriedade não é necessária quando a **ação** é `AdminRemove` .|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O objeto schedule da solicitação de atribuição de função. Essa propriedade não é necessária quando a **ação** é `AdminRemove`.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|O objeto ticketInfo anexado à solicitação de atribuição de função que inclui detalhes do número do tíquete e do sistema de tíquetes. Opcional.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>Exemplo 1: Administrador para atribuir uma solicitação de agendamento de qualificação de função
 
-Na solicitação a seguir, o administrador cria uma solicitação para atribuir a qualificação de uma função identificada por uma `fdd7a751-b60b-444a-984c-02652fe8fa1c` entidade identificada **por id** `07706ff1-46c7-4847-ae33-3003830675a1` . O escopo da qualificação é todos os objetos de diretório no locatário até 30 de junho de 2022 à meia-noite horário UTC.
+Na solicitação a seguir, o administrador cria uma solicitação para atribuir a `fdd7a751-b60b-444a-984c-02652fe8fa1c` qualificação de uma função identificada por uma entidade identificada **por id** `07706ff1-46c7-4847-ae33-3003830675a1`. O escopo da qualificação é todos os objetos de diretório no locatário até 30 de junho de 2022 à meia-noite horário UTC.
 
 #### <a name="request"></a>Solicitação
 
@@ -184,7 +184,7 @@ Content-Type: application/json
 
 ### <a name="example-2-admin-to-remove-an-existing-role-eligibility-schedule-request"></a>Exemplo 2: Administrador para remover uma solicitação de agendamento de qualificação de função existente
 
-Na solicitação a seguir, o administrador cria uma solicitação para revogar a qualificação de uma função identificada por uma `fdd7a751-b60b-444a-984c-02652fe8fa1c` entidade identificada **por id** `07706ff1-46c7-4847-ae33-3003830675a1` .
+Na solicitação a seguir, o administrador cria uma solicitação para revogar a `fdd7a751-b60b-444a-984c-02652fe8fa1c` qualificação de uma função identificada por uma entidade identificada **por id** `07706ff1-46c7-4847-ae33-3003830675a1`.
 
 #### <a name="request"></a>Solicitação
 
@@ -245,7 +245,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. A solicitação retorna um objeto de resposta que mostra o status das alterações de atribuição qualificadas anteriormente como `Revoked` . A entidade não verá mais sua função anteriormente qualificada.
+Este é um exemplo de resposta. A solicitação retorna um objeto de resposta que mostra o status das alterações de atribuição qualificadas anteriormente como `Revoked`. A entidade não verá mais sua função anteriormente qualificada.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

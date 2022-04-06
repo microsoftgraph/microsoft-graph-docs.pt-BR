@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: d78005e99e4eb585eb326a4dc225c8ab3b83cfb1
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: d1224bc1eebf1d90bfcb46fead37dae4ad01e4bf
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367934"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672235"
 ---
 # <a name="get-serviceprincipal"></a>Obter um servicePrincipal
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
 
 > [!NOTE]
@@ -47,6 +47,9 @@ O uso de `$select` para obter **keyCredentials** para diretores de serviços tem
 | Nome           | Descrição                |
 |:---------------|:---------------------------|
 | Autorização  | {token} de portador. Obrigatório.  |
+| Accept-Language| Código de idioma. Opcional.   |
+
+Fornecer o cabeçalho **Accept-Language** com um código de idioma suportado, como `es-ES` ou `de-DE`, retornará valores localizados quando disponíveis. Observe que o cabeçalho não suporta [operações de lista](serviceprincipal-list.md).
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

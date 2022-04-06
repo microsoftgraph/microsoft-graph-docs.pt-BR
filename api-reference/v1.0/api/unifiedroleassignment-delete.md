@@ -5,35 +5,55 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 27188663d277d6efd70ebb3e1f96b3e88fadb078
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: eed79b67204666ae0d29cd2cff975b4deeb50676
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091495"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629789"
 ---
 # <a name="delete-unifiedroleassignment"></a>Excluir unifiedRoleAssignment
 
 Namespace: microsoft.graph
 
-[Exclua um objeto unifiedRoleAssignment.](../resources/unifiedRoleAssignment.md)
+[Exclua um objeto unifiedRoleAssignment](../resources/unifiedRoleAssignment.md).
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="for-the-directory-azure-ad-provider"></a>Para o provedor de diretório (Azure AD)
+
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
+### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
+
 ## <a name="http-request"></a>Solicitação HTTP
+
+Remover uma atribuição de função do provedor de diretórios:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
+```
+
+Remova uma atribuição de função do provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

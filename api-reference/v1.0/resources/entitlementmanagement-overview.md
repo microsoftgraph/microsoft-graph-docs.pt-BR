@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 3bbc14695f0b18b9228c39cc3b2f1ed2b839b7ee
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: bf02636b95e505d0001d91dcdbf2b5915f201e88
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629313"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722986"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhando com a API de gerenciamento de direitos do Azure AD
 
@@ -23,7 +23,7 @@ Ao criar pacotes de acesso com as funções que os usuários precisam ter nesses
 Os tipos de recursos de gerenciamento de direitos incluem:
 
 - [accessPackage](accesspackage.md): define as coleções de funções de recurso e as políticas de como um ou mais usuários podem obter acesso a esses recursos.
-- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): Especifica a política pela qual os titulares podem solicitar ou ter um pacote de acesso atribuído por meio de uma atribuição de pacote de acesso.
+- accessPackageAssignmentPolicy: Especifica a política pela qual os titulares podem solicitar ou ter um pacote de acesso atribuído por meio de uma atribuição de pacote de acesso.
 - [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): Criado por um usuário que deseja obter uma atribuição de pacote de acesso.
 - [accessPackageAssignment](accesspackageassignment.md): uma atribuição de um pacote de acesso a um assunto específico, por um período de tempo.
 - [accessPackageCatalog](accesspackagecatalog.md): um contêiner para pacotes de acesso.
@@ -31,18 +31,16 @@ Os tipos de recursos de gerenciamento de direitos incluem:
 - [entitlementManagementSettings](entitlementmanagementsettings.md): configurações de todo o locatário para o gerenciamento de direitos do Azure AD.
 - [aprovação](approval.md): representa as decisões associadas a uma solicitação de pacote de acesso.
 
-Além disso, você pode gerenciar atribuições de função para funções específicas de gerenciamento de direitos por meio de definições de função de gerenciamento [de](unifiedroledefinition.md) direitos.
-
 Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura de compra ou avaliação válida Azure AD Premium P2 ou EMS E5. Para obter mais informações sobre os requisitos de licença para o recurso de gerenciamento de direitos, consulte [Requisitos de licença de gerenciamento de direitos](/azure/active-directory/governance/entitlement-management-overview#license-requirements).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
 | Método   | Tipo de retorno |Descrição|
 |:---------------|:--------|:----------|
 | [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Leia as propriedades de **um objeto entitlementManagementSettings** . |
-| [Atualizar](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings** . |
+| [Atualização](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings** . |
 | [Listar accessPackages](../api/entitlementmanagement-list-accesspackages.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage** . |
 | [Criar accessPackage](../api/entitlementmanagement-post-accesspackages.md) | [accessPackage](accesspackage.md) | Crie um novo **objeto accessPackage** . |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um **objeto accessPackage** . |
@@ -62,11 +60,6 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | [Obter accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Ler propriedades e relações de um **objeto accessPackageCatalog** . |
 | [Atualizar accessPackageCatalog](../api/accesspackagecatalog-update.md)|Nenhum | Atualize as propriedades de um **objeto accessPackageCatalog** . |
 | [Excluir accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | **Exclua um accessPackageCatalog**. |
-|[Listar accessPackageAssignmentPolicies](../api/entitlementmanagement-list-assignmentpolicies.md)|[coleção accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Obter uma lista dos [objetos accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) e suas propriedades.|
-|[Criar accessPackageAssignmentPolicy](../api/entitlementmanagement-post-assignmentpolicies.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Crie um novo [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
-|[Obter accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Leia as propriedades e as relações de um [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
-|[Atualizar accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)|Atualize as propriedades de [um objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
-|[Excluir accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md)|Nenhum|Exclui um [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) .|
 | [Listar connectedOrganizations](../api/entitlementmanagement-list-connectedorganizations.md) | [Coleção connectedOrganization](connectedorganization.md) | Recupere uma lista de **objetos connectedOrganization** . |
 | [Criar connectedOrganization](../api/entitlementmanagement-post-connectedorganizations.md) | [connectedOrganization](connectedorganization.md) | Crie um novo **objeto connectedOrganization** . |
 | [Obter connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Leia propriedades e relações de um **objeto connectedOrganization** . |

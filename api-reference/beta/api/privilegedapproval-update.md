@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 59b6ab279d100bc32384469e5245dc4477f1073b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 522cf6dfab49dd282208ac56bf327d44de838e17
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135397"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671437"
 ---
 # <a name="update-privilegedapproval"></a>Atualizar privilegedapproval
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Atualize as propriedades do objeto privilegedapproval.
 ## <a name="permissions"></a>Permissões
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -46,19 +46,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|approvalDuration|Duração||
+|approvalDuration|Duration||
 |approvalState|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|Cadeia de caracteres||
-|approverReason|Cadeia de caracteres||
+|approvalType|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset||
-|requestorReason|Cadeia de caracteres||
-|roleId|Cadeia de caracteres||
+|requestorReason|String||
+|roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|Cadeia de caracteres||
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `204 No Content` código de resposta
+Se tiver êxito, este método retornará um código `204 No Content` de resposta
 
 Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
 

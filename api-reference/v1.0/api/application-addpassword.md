@@ -5,27 +5,27 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4806463a93de968f1989777e9a28243e10ddaf7e
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: b942bbf567fdc701e83944517f068fd2c020d943
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477682"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671962"
 ---
 # <a name="application-addpassword"></a>application: addPassword
 
 Namespace: microsoft.graph
 
-Adiciona uma senha forte ou segredo a um [aplicativo](../resources/application.md).
+Adiciona uma senha forte a um [aplicativo](../resources/application.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Application.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
 | Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,13 +49,13 @@ No corpo da solicitação, forneça um objeto opcional `passwordCredential` com 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | Cadeia de caracteres | Nome amigável para a senha. Opcional. |
+| displayName | String | Nome amigável para a senha. Opcional. |
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. O valor padrão é "startDateTime + 2 anos". |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional.  O valor padrão é "now". |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto de resposta contém as senhas/segredos fortes gerados por Azure Active Directory que têm de 16 a 64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um novo [objeto passwordCredential](../resources/passwordcredential.md) no corpo da resposta. A **propriedade secretText** no objeto de resposta contém as senhas fortes geradas por Azure Active Directory que têm de 16 a 64 caracteres de comprimento. Não há como recuperar essa senha no futuro.
 
 ## <a name="examples"></a>Exemplos
 

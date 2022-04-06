@@ -5,12 +5,12 @@ description: Obter uma lista dos logins do usuário em um locatário Azure Activ
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 6aaf95669860d39ca7d26e1bae2301560e2041c8
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: 873c2d6be67c50b29fdeb52ba77d68cddaa548e7
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63757764"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629957"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -22,7 +22,7 @@ Obter uma lista de [objetos signIn](../resources/signin.md) . A lista contém as
 
 O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período de retenção padrão Azure Active Directory (Azure AD[) estão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) disponíveis.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ Os aplicativos devem [estar registrados](/azure/active-directory/active-director
 
 Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte [Funções in-loco do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor Global
++ Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
@@ -250,7 +250,7 @@ Neste exemplo, o objeto de resposta mostra o usuário se inscreveu usando apenas
   "name": "get_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&top=10
+GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDisplayName,'Azure')&$top=10
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-2-csharp-snippets.md)]

@@ -5,35 +5,60 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1c8b7063877f4a53986ac9683025db84e843fb11
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1044c0195eade2a56d5d98f1834f59fa451f85e3
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672067"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629663"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) . Atualmente, **o diretório** é o único provedor de controle de acesso baseado em função (RBAC) suportado.
+Leia as propriedades e as relações de um [objeto unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) .
+
+No momento, há suporte para os seguintes provedores de controle de acesso baseado em função (RBAC:
+
+- directory (funções de diretório do Azure AD)
+- gerenciamento de direitos (gerenciamento de direitos do Azure AD)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="for-the-directory-azure-ad-provider"></a>Para o provedor de diretório (Azure AD)
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
+### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
+
 ## <a name="http-request"></a>Solicitação HTTP
+
+Obter uma definição de função para o provedor de diretórios:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleDefinitions/{id}
+```
+
+Obter uma definição de função para o provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

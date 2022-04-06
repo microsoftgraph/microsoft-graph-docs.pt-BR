@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a73b872ce303a16f5363e5ef77c54773907399a4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f8f7728847b303f90658f9cb67bc193e3d0707ab
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346204"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607915"
 ---
 # <a name="participant-startholdmusic"></a>participante: startHoldMusic
 
@@ -20,16 +20,14 @@ Coloque um [participante em](../resources/participant.md) espera e toque música
  
 > **Observação:** Somente um participante pode ser colocado em espera a qualquer momento.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Nenhum. |
-
-> **Observação:** A verificação de permissão acontece quando o aplicativo entra ou tenta iniciar a chamada. Nenhuma verificação de permissão adicional é executada quando `startHoldMusic` é chamada.
+| Aplicativo                            | Calls.JoinGroupCallsasGuest.All ou Calls.JoinGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

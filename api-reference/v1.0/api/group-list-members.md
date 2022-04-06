@@ -2,15 +2,15 @@
 title: Listar membros
 description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos organizacionais e outros grupos como membros.
 ms.localizationpriority: high
-author: psaffaie
+author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 82be047602cbb023195d32081b5aa60821b71694
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 775bae191e6ee408a1bf55331da24f9e38b9143b
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587872"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509935"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -21,21 +21,18 @@ Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, con
 Quando um grupo contém mais de 100 membros, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém um URL para a próxima página de resultados. Se essa propriedade estiver presente, continue fazendo solicitações adicionais com o `@odata.nextLink` URL em cada resposta, até que todos os resultados sejam retornados, conforme descrito em [paginação de dados do Microsoft Graph no aplicativo](/graph/paging).
 
 ## <a name="permissions"></a>Permissions
-
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                              |
-| :------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | GroupMember.Read.All, Group.Read.All, Group.Member.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                           |
-| Aplicativo                            | GroupMember.Read.All, Group.Read.All, Group.Member.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | GroupMember.Read.All, Group.Read.All, Group.Member.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | GroupMember.Read.All, Group.Read.All, Group.Member.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
-
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /groups/{id}/members
 ```
@@ -46,17 +43,15 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Cabeçalho           | Valor                                                                                                                                                                                                             |
-| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Autorização    | {token} de portador. Obrigatório.                                                                                                                                                                                         |
+| Cabeçalho       | Valor |
+|:-----------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
 | ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, `$filter`, `$orderby` ou os parâmetros de consulta de conversão OData. Ele usa um índice que pode não estar atualizado com as alterações recentes no objeto. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
@@ -68,43 +63,34 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_group_members"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-group-members-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -114,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -122,7 +108,6 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -148,7 +133,6 @@ Este é um exemplo de solicitação.
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members/$count
 ConsistencyLevel: eventual
@@ -161,13 +145,13 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
 
 893
 ```
+
 
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-user-membership"></a>Exemplo 3: Utilize a conversão OData para obter apenas uma contagem da associação do usuário
 
@@ -179,7 +163,6 @@ Este é um exemplo de solicitação.
   "blockType": "ignored",
   "name": "get_count_user_only"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members/microsoft.graph.user/$count
 ConsistencyLevel: eventual
@@ -192,7 +175,6 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -200,27 +182,29 @@ Content-type: text/plain
 893
 ```
 
+
 ### <a name="example-4-use-searchand-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Exemplo 4: Utilize $ searchand conversão OData para obter a participação do usuário em grupos com nomes de exibição que contenham as letras 'Pr', incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
+
 <!-- {
   "blockType": "request",
   "name": "get_pr_count"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members/microsoft.graph.user?$count=true&$orderby=displayName&$search="displayName:Pr"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
 
+
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -228,7 +212,6 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.user",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -255,55 +238,48 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
-# <a name="http"></a>[HTTP](#tab/http)
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_groups_members_startswith"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members?$count=true&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
 [!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-a-count-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
-> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -311,7 +287,6 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ac62c78b947354e2a9321f693fb7521ebb16be6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 07f5c350d80c0db470ff614576967f0d120fb335
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131532"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684568"
 ---
 # <a name="update-member-in-channel"></a>Atualizar membro no canal
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a função de [um conversationMember](../resources/conversationmember.md) em um [canal](../resources/channel.md). Essa operação só é permitida para canais com **um valor membershipType** de `private` .
+Atualize a função de [um conversationMember](../resources/conversationmember.md) em um [canal](../resources/channel.md). Esta operação só é permitida para canais com um **valor membershipType** de `private` ou `shared`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,7 +45,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece os valores para que os campos relevantes atualizem. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
@@ -53,7 +53,7 @@ No corpo da solicitação, fornece os valores para que os campos relevantes atua
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto conversationMember](../resources/conversationmember.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [conversationMember](../resources/conversationmember.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -123,7 +123,8 @@ Content-type: application/json
   "roles": ["owner"],
   "displayName": "John Doe",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-  "email": null
+  "email": null,
+  "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512"
 }
 ```
 
