@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0e9cf299518a7d1427e8f4acbb713815ae6553cd
+ms.openlocfilehash: 41554d5f9f053efbd15328cb50a980382e3e8bdb
 ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758622"
+ms.locfileid: "63757881"
 ---
 ```javascript
 
@@ -15,10 +15,9 @@ const options = {
 
 const client = Client.init(options);
 
-let messages = await client.api('/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages')
+let bundles = await client.api('/drive/bundles?filter=bundle/album%20ne%20null')
     .version('beta')
-    .orderby('createdDateTime desc')
-    .top(2)
+    .filter('bundle/album ne null')
     .get();
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 311a80dcfac762c067fd13b94f6273d6aba28e8d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: b7c78f1a792930d701cc07666c3c95d4d77803bf
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672438"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477493"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar servicePrincipal
 
@@ -19,9 +19,9 @@ Namespace: microsoft.graph
 Atualizar as propriedades do objeto [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os métodos [addPassword](./serviceprincipal-addpassword.md) e [removePassword](./serviceprincipal-removepassword.md) para atualizá-la para uma entidade de segurança.
+> Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os métodos [addPassword](./serviceprincipal-addpassword.md) e [removePassword](./serviceprincipal-removepassword.md) para atualizar a senha ou segredo de um servicePrincipal.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |appRoleAssignmentRequired|Booliano|Especifica se um **appRoleAssignment** para um usuário ou grupo é necessário antes que o Azure Active Directory emita um usuário ou token de acesso ao aplicativo. Não anulável. |
 |appRoles|[appRole](../resources/approle.md) collection|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, confira a definição da propriedade **appRoles** no recurso [aplicativo](../resources/application.md). Não anulável. |
 |displayName|String|O nome de exibição da entidade de serviço.|
-|homepage|String|Página inicial ou página de aterrissagem do aplicativo.|
+|homepage|Cadeia de caracteres|Página inicial ou página de aterrissagem do aplicativo.|
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|A coleta de principais credenciais associadas ao diretor de serviços. Não pode ser anulado.            |
 |logoutUrl|String| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML.|
 |oauth2PermissionScopes|coleção [permissionScope](../resources/permissionScope.md)|As permissões do escopo OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, confira a definição da propriedade **oauth2PermissionScopes** no recurso [aplicativo](../resources/application.md). Não anulável.|

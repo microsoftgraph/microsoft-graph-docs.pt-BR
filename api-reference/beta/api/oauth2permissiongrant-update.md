@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 565cb1449eae3617587d586daf231a5aefc16627
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 44108f07d916f6d37332cf145bced1eb89461b93
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129671"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670828"
 ---
 # <a name="update-oauth2permissiongrant-a-delegated-permission-grant"></a>Atualizar oAuth2PermissionGrant (uma concessão de permissão delegada)
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do [objeto oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) representando uma concessão de permissão delegada.
+Atualize as propriedades do [objeto oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , representando uma concessão de permissão delegada.
 
-Um **oAuth2PermissionGrant** pode ser atualizado para alterar quais permissões delegadas são **concedidas,** adicionando ou removendo itens da lista em escopos .
+Um **oAuth2PermissionGrant** pode ser atualizado para alterar quais permissões delegadas são **concedidas**, adicionando ou removendo itens da lista em escopos.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
@@ -68,12 +68,11 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
+PATCH https://graph.microsoft.com/beta/oauth2PermissionGrants/l5eW7x0ga0-WDOntXzHateQDNpSH5-lPk9HjD3Sarjk
 Content-Type: application/json
-Content-Length: 30
 
 {
-  "scope": "scope-value"
+    "scope": "User.ReadBasic.All Group.ReadWrite.All"
 }
 ```
 

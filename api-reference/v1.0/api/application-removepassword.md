@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 44c69ffaf2e7b7be8b751852604ee5a49981ea8c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: aeab25fbae0eafaf7309f170d33830703d67444c
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337184"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63672165"
 ---
 # <a name="application-removepassword"></a>application: removePassword
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     | Application.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
 | Aplicativo                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 31c7f85a53fa0ce99d2462ba55e616a8139d0b24
-ms.sourcegitcommit: 2d61a35735aeb060cc9f7374dd6b50900566293b
+ms.openlocfilehash: 387ddd2181fa8e9abc370249ce518b3276461940
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62468269"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724051"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhando com a API de gerenciamento de direitos do Azure AD
 
@@ -39,18 +39,18 @@ Os tipos de recursos de gerenciamento de direitos incluem:
 
 Além disso, as atribuições de função para funções específicas de gerenciamento de direitos podem ser gerenciadas por meio de definições de função de gerenciamento de [direitos.](unifiedroledefinition.md)
 
-For a tutorial that shows you how to use entitlement management to create a package of resources that internal users can self-service request, see [Create an access package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
+Para um tutorial que mostra como usar o gerenciamento de direitos para criar um pacote de recursos que os usuários internos podem solicitar por conta própria, consulte [Create an access package using Microsoft Graph APIs](/graph/tutorial-access-package-api).
 
-Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura de compra ou avaliação válida Azure AD Premium P2 ou EMS E5.
+Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura de compra ou avaliação válida Azure AD Premium P2 ou EMS E5. Para obter mais informações sobre os requisitos de licença para o recurso de gerenciamento de direitos, consulte [Requisitos de licença de gerenciamento de direitos](/azure/active-directory/governance/entitlement-management-overview#license-requirements).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 | [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Leia as propriedades de **um objeto entitlementManagementSettings** . |
-| [Atualizar](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings** . |
+| [Atualização](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings** . |
 | [Listar accessPackages](../api/entitlementmanagement-list-accesspackages.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage** . |
 | [Criar accessPackage](../api/entitlementmanagement-post-accesspackages.md) | [accessPackage](accesspackage.md) | Crie um novo **objeto accessPackage** . |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um **objeto accessPackage** . |

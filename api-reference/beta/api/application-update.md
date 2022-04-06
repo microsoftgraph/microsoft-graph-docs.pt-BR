@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8cac1fcb4b35076b6349406630cd6a1460df5977
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1b07c92beffa6d5b0eed5b34ae7d2978c6738e14
+ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669267"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477598"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Atualize as propriedades de um [objeto application](../resources/application.md) .
 
 > [!IMPORTANT]
-> Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os [métodos addPassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha de um aplicativo.
+> Não há suporte para o uso do PATCH para definir [**passwordCredential**](../resources/passwordcredential.md). Use os [métodos addPassword](./application-addpassword.md) e [removePassword](./application-removepassword.md) para atualizar a senha ou o segredo de um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

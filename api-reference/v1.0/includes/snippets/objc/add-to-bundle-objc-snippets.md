@@ -1,26 +1,27 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3a83dc350d83468fa8fa3164051eb653c5672f1c
+ms.openlocfilehash: 0a0bb001511cfcf0fb28bde279403e76aa00b6f6
 ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/23/2022
-ms.locfileid: "63759038"
+ms.locfileid: "63758238"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/10f17b99-784c-4526-8747-aec8a3159d6a/manager/$ref"]]];
-[urlRequest setHTTPMethod:@"PUT"];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/drive/bundles/{bundle-id}/children"]]];
+[urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphDirectoryObject *directoryObject = [[MSGraphDirectoryObject alloc] init];
+MSGraphDriveItem *driveItem = [[MSGraphDriveItem alloc] init];
+[driveItem setId:@"123456!87"];
 
 NSError *error;
-NSData *directoryObjectData = [directoryObject getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:directoryObjectData];
+NSData *driveItemData = [driveItem getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:driveItemData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

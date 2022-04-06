@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: b16d4a95bf791b387958605b64e7a370e1c3971f
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: d17c16005c812152bc8d009508782db37faf7e89
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014282"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721820"
 ---
 # <a name="cloudpcprovisioningpolicy-resource-type"></a>Tipo de recurso cloudPcProvisioningPolicy
 
@@ -24,11 +24,11 @@ Representa uma política de provisionamento de computador na nuvem.
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar provisioningPolicies](../api/virtualendpoint-list-provisioningpolicies.md)|[Coleção cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Listar propriedades e relações dos objetos [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
-|[Obter cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-get.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Leia as propriedades e as relações de um [objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
-|[Criar cloudPcProvisioningPolicy](../api/virtualendpoint-post-provisioningpolicies.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Crie um novo [objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
-|[Atualizar cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-update.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Atualize as propriedades de [um objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
-|[Excluir cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-delete.md)|Nenhum(a)|[Exclua um objeto cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)|
+|[Listar provisioningPolicies](../api/virtualendpoint-list-provisioningpolicies.md)|[Coleção cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Listar propriedades e relações dos objetos [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .|
+|[Obter cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-get.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Leia as propriedades e as relações de um [objeto cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .|
+|[Criar cloudPcProvisioningPolicy](../api/virtualendpoint-post-provisioningpolicies.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Crie um novo [objeto cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .|
+|[Atualizar cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-update.md)|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Atualize as propriedades de [um objeto cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .|
+|[Excluir cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-delete.md)|Nenhum|[Exclua um objeto cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).|
 |[Atribuir cloudPcProvisioningPolicy](../api/cloudpcprovisioningpolicy-assign.md)|Nenhum |Atribua [um cloudPcProvisioningPolicy a](../resources/cloudpcprovisioningpolicy.md) grupos de usuários.|
 
 ## <a name="properties"></a>Propriedades
@@ -44,6 +44,7 @@ Representa uma política de provisionamento de computador na nuvem.
 |imageType|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizada ou galeria) que você deseja provisionar em PCs na Nuvem. Os valores possíveis são: `gallery` e `custom`.|
 |microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftManagedDesktop.md)|As configurações específicas para a Área de Trabalho Gerenciada da Microsoft, que permitem que os clientes recebam uma experiência de dispositivo gerenciado para o cloud pc. Antes de habilitar a Área de Trabalho Gerenciada da Microsoft, um administrador deve configurá-la.|
 |onPremisesConnectionId|String|A ID do cloudPcOnPremisesConnection. Para garantir que os computadores na nuvem tenham conectividade de rede e que eles participem do domínio, escolha uma conexão com uma rede virtual validada pelo serviço de Computador na Nuvem.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Configurações Windows específicas a ser configuradas durante a criação de PCs na Nuvem para essa política de provisionamento.|
 
 ## <a name="relationships"></a>Relações
 
@@ -79,6 +80,12 @@ Veja a seguir uma representação JSON do recurso.
     "type": "String",
     "profile": "String"
   },
-  "onPremisesConnectionId": "String"
+  "domainJoinConfiguration": {
+    "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
+  },
+  "onPremisesConnectionId": "String",
+  "windowsSettings": {
+    "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
+  }
 }
 ```

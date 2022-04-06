@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 421bc21d5a5fa4b25981cc0a4a0d1ec8aa33b51d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ad3b07875b2a1fd1e1e65bf9755d3fcdf0fc82c5
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094220"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63668588"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
@@ -106,7 +106,7 @@ HTTP/1.1 204 No content
 
 ### <a name="example-2-assign-a-built-in-role-to-a-group"></a>Exemplo 2: Atribuir uma função embutida a um grupo
 #### <a name="request"></a>Solicitação
-Você pode usar um conjunto de recursos específico como usuários ou grupos no corpo da solicitação ou pode usar **directoryObjects genéricos.** Este exemplo mostra como você pode usar **directoryObjects**.
+Você pode usar um conjunto de recursos específico como usuários ou grupos no corpo da solicitação ou pode usar **directoryObjects genéricos**. Este exemplo mostra como você pode usar **directoryObjects**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -160,7 +160,7 @@ HTTP/1.1 204 No content
 
 ### <a name="example-3-add-a-new-member-to-a-directory-role-using-roletemplateid"></a>Exemplo 3: Adicionar um novo membro a uma função de diretório usando roleTemplateId
 #### <a name="request"></a>Solicitação
-Nesta solicitação, substitua pelo valor da `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` **funçãoTemplateId** para a função de diretório que você deseja atribuir ao usuário ou objeto de diretório. Substitua `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor de **id** do seu objeto de diretório ou usuário. 
+Nesta solicitação, substitua `88d8e3e3-8f55-4a1e-953a-9b9898b8876b` pelo valor da **funçãoTemplateId** para a função de diretório que você deseja atribuir ao usuário ou objeto de diretório. Substitua `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor **de id** do seu objeto de diretório ou usuário. 
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

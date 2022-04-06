@@ -5,25 +5,25 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c0fdfd3e1537e73c974f1db8cdd0a35b8a93857c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c49b0a9414aa2109346d9ae3526521756517754b
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098188"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671234"
 ---
 # <a name="delete-application"></a>Excluir aplicativo
 
 Namespace: microsoft.graph
 
-Excluir um [objeto application.](../resources/application.md) Quando excluídos, os aplicativos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias. Após esse período, elas serão permanentemente excluídos.
+Excluir um [objeto application](../resources/application.md) . Quando excluídos, os aplicativos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias. Após esse período, elas serão permanentemente excluídos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
