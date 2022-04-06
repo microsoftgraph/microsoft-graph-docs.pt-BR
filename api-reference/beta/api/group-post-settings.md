@@ -1,16 +1,16 @@
 ---
 title: Criar configurações
 description: Use essa API para criar uma nova configuração de diretório para o grupo.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d3c398828d061dcbd0693d69d99b68b9752bc03d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 47d808cbee3f8585853304cdd2d9ba6429bc5c1e
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395745"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586990"
 ---
 # <a name="create-settings"></a>Criar configurações
 
@@ -22,35 +22,42 @@ Crie uma nova configuração com base nos modelos disponíveis em [directorySett
 
 As configurações de grupo se aplicam apenas Microsoft 365 grupos. O modelo nomeado `Group.Unified` pode ser usado para configurar configurações de grupo em todo o Microsoft 365 de locatários, `Group.Unified.Guest` enquanto o modelo nomeado pode ser usado para configurar configurações específicas do grupo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All                     |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | Directory.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 Crie uma configuração em todo o locatário.
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /settings
 ```
 
 Crie uma configuração específica do grupo.
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{id}/settings
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Descrição|
-|:---------------|:----------|
-| Autorização  | Portador {token}. Obrigatório|
+
+| Nome          | Descrição              |
+| :------------ | :----------------------- |
+| Autorização | Portador {token}. Obrigatório |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, fornece uma representação JSON do [objeto directorySetting](../resources/directorysetting.md) .
 
 ## <a name="response"></a>Resposta
@@ -62,14 +69,16 @@ Se tiver êxito, este método retornará `201 Created` o código de resposta e [
 ### <a name="example-1-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Exemplo 1: Criar uma configuração para bloquear convidados para um grupo Microsoft 365 específico
 
 #### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_groupsetting_from_groupsettings_for_guests"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd/settings
 Content-type: application/json
@@ -84,42 +93,51 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-groupsetting-from-groupsettings-for-guests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-
 #### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directorySetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -143,10 +161,12 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_directorysettings"
 }-->
+
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/settings
 Content-type: application/json
@@ -173,32 +193,38 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-directorysettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-directorysettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/create-directorysettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-directorysettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>Resposta
 
@@ -207,6 +233,7 @@ Content-type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.directorySetting"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -250,5 +277,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 267fdb98835576120505a14027a6f48be4504f2e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b22b6da05c6b65075f00d2b4af9bc7ef93ec0563
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395283"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63528015"
 ---
 ```go
 
@@ -21,7 +21,7 @@ options := &msgraphsdk.AuthenticationMethodConfigurationRequestBuilderPatchOptio
     Body: requestBody,
 }
 authenticationMethodConfigurationId := "authenticationMethodConfiguration-id"
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(options)
+graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById(&authenticationMethodConfigurationId).Patch(options)
 
 
 ```

@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1954b72873c3a9c57d5c2309ab6a121f52d73cb2
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 7edfeca72ccef3d8e914c8c00498fc2b5fb0a70f
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336381"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630300"
 ---
 # <a name="getmyrequestbyid-function"></a>função getMyRequestById
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma [operaçãoApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma [operaçãoApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -72,7 +72,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1566
+Content-Length: 1637
 
 {
   "value": {
@@ -119,7 +119,8 @@ Content-Length: 1566
     },
     "status": "needsApproval",
     "requestJustification": "Request Justification value",
-    "approvalJustification": "Approval Justification value"
+    "approvalJustification": "Approval Justification value",
+    "operationApprovalPolicies": "Operation Approval Policies value"
   }
 }
 ```

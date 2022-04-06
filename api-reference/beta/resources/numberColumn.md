@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso numberColumn em um recurso columnDefinition indica que os valores da coluna são números.
 ms.date: 09/11/2017
 title: NumberColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 49c3dce15297187bcda20e20ae339dba86d154db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d361d204471e01bb65e33a7c4177600fc2dcd6f0
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988950"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723295"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 
@@ -24,6 +24,7 @@ O recurso **numberColumn** em um recurso [columnDefinition](columndefinition.md)
 ## <a name="json-representation"></a>Representação JSON
 
 Aqui está uma representação JSON de um recurso **numberColumn**.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.numberColumn" } -->
 
 ```json
@@ -37,24 +38,24 @@ Aqui está uma representação JSON de um recurso **numberColumn**.
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade      | Tipo   | Descrição
-|:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | string | Quantas casas decimais exibir. Consulte abaixo para saber mais sobre os valores possíveis.
-| **displayAs**      | string | Como o valor deve ser apresentado na experiência do usuário. Deve ser `number` ou `percentage`. Se não for especificado, é tratado como `number`.
-| **maximum**        | double | O valor máximo permitido.
-| **minimum**        | double | O valor mínimo permitido.
+| Propriedade          | Tipo   | Descrição                                                                                                                |
+| :---------------- | :----- | :------------------------------------------------------------------------------------------------------------------------- |
+| **decimalPlaces** | string | Quantas casas decimais exibir. Consulte abaixo para saber mais sobre os valores possíveis.                                   |
+| **displayAs**     | string | Como o valor deve ser apresentado na experiência do usuário. Deve ser `number` ou `percentage`. Se não for especificado, é tratado como `number`. |
+| **maximum**       | double | O valor máximo permitido.                                                                                               |
+| **minimum**       | double | O valor mínimo permitido.                                                                                               |
 
 ## <a name="decimalplaces-values"></a>Valores de DecimalPlaces
 
-| Valor          | Descrição
-|:---------------|:--------------------------------------------------------------
-| **automatic**  | Padrão. Exibir casas decimais automaticamente conforme necessário.
-| **none**       | Não exibir casas decimais.
-| **one**        | Exibir sempre uma casa decimal.
-| **two**        | Exibir sempre duas casas decimais.
-| **three**      | Exibir sempre três casas decimais.
-| **four**       | Exibir sempre quatro casas decimais.
-| **five**       | Exibir sempre cinco casas decimais.
+| Valor         | Descrição                                              |
+| :------------ | :------------------------------------------------------- |
+| **automatic** | Padrão. Exibir casas decimais automaticamente conforme necessário. |
+| **none**      | Não exibir casas decimais.                       |
+| **one**       | Exibir sempre uma casa decimal.                        |
+| **two**       | Exibir sempre duas casas decimais.                       |
+| **three**     | Exibir sempre três casas decimais.                     |
+| **four**      | Exibir sempre quatro casas decimais.                      |
+| **five**      | Exibir sempre cinco casas decimais.                      |
 
 Observação: **decimalPlaces** e **displayAs** aplicam-se a como os números são processados, não armazenados.
 Essas propriedades podem ser atualizadas.
@@ -69,5 +70,3 @@ Essas propriedades podem ser atualizadas.
   "suppressions": []
 }
 -->
-
-

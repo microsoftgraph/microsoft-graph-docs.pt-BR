@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 2dc4e219a10b6c2aebba0e4292cad9180d68c711
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5da57fe2bca541786addf0e4472497965ff9b038
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139300"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559790"
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -26,7 +26,7 @@ A lista de controle de acesso é usada para especificar se as funções determin
 
 ![Um exemplo de lista de controle de acesso](./images/connectors-images/connecting-external-content-manage-items-acl.png)
 
-O valor **accessType** `deny` tem precedência sobre `grant`. Por exemplo, no item mostrado acima, enquanto `Everyone` recebe o acesso e um usuário específico tem negado o acesso, a permissão efetiva desse usuário é `deny`.
+O valor **accessType** `deny` tem precedência sobre `grant`. Por exemplo, no item mostrado anteriormente, enquanto `Everyone` é concedido acesso e um usuário específico é negado, a permissão efetiva para esse usuário é `deny`.
 
 Se sua fonte de dados tiver grupos não pertencentes ao Azure Active Directory como equipes no sistema de assistência técnica, usado para definir permissões para o item, você poderá criar grupos externos no Microsoft Graph usando as APIs de sincronização do grupo para duplicar as permissões de `allow` ou `deny`. Evite expandir a afiliação dos seus grupos externos diretamente nas listas de controle de acesso de itens individuais, uma vez que cada afiliação ao grupo pode levar a um tumulto de atualizações de itens.
 
@@ -42,7 +42,7 @@ O componente propriedades é usado para adicionar metadados de itens que são ú
 
 O componente de conteúdo é usado para adicionar a maior parte do item que deve ser indexado em texto completo. Alguns exemplos incluem a descrição do tíquete, texto analisado de um corpo de arquivo ou um corpo de página wiki.
 
-O conteúdo é um dos principais campos que influenciam na [relevância](./connecting-external-content-manage-schema.md#relevance) nas experiências da Microsoft. Os tipos de conteúdo `text` e `HTML` são suportados. Se sua fonte de dados tiver arquivos binários, você poderá analisá-los como texto antes de adicioná-los ao Microsoft Graph.
+O conteúdo é um dos principais campos que influenciam na [relevância](./connecting-external-content-manage-schema.md#relevance) nas experiências da Microsoft. Os tipos de conteúdo `text` e `html` são suportados. Se sua fonte de dados tiver outros tipos de conteúdo, como arquivos binários, vídeos ou imagens, você poderá analisá-los em texto antes de adicioná-los ao Microsoft Graph. Por exemplo, você pode usar o reconhecimento óptico de caracteres para extrair texto pesquisável de imagens.
 
 ![Um exemplo de componente de conteúdo](./images/connectors-images/connecting-external-content-manage-items-2.png)
 

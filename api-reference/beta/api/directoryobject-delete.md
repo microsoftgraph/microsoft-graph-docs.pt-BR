@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f5a4b864a3841825d3a3839eb2fd3c85d6f1f570
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e8475066282631b035f26c4ec210a0a133a70ce4
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121012"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588698"
 ---
 # <a name="delete-directoryobject"></a>Excluir directoryObject
 
@@ -18,18 +18,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir directoryObject.
-## <a name="permissions"></a>Permissões
+Exclua um objeto de diretório, por exemplo, um grupo, usuário, aplicativo ou entidade de serviço.
+
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="delete-a-user"></a>Excluir um usuário
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | User.ReadWrite.All |
 
-**OBSERVAÇÃO:** usuários, grupos e contatos são tipos de objeto de diretório. Como resultado, se você precisar excluir usuários, a seguinte permissão pode e deve ser usada: User.ReadWrite.All
+### <a name="delete-a-group"></a>Excluir um grupo
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
+| Aplicativo                            | Group.ReadWrite.All                             |
+
+### <a name="delete-an-application-or-service-principal"></a>Excluir um aplicativo ou entidade de serviço
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: cc969d7e31e376f158a7c8cd6504a803656bf1b7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d3ba0e26b746022230675100a4fbb003c58f69f3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097116"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671101"
 ---
 # <a name="create-connectorgroup"></a>Criar connectorGroup
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um [objeto connectorGroup.](../resources/connectorgroup.md)
+Crie um [objeto connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
@@ -42,7 +42,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto connectorGroup.](../resources/connectorgroup.md)
+No corpo da solicitação, fornece uma representação JSON de um [objeto connectorGroup](../resources/connectorgroup.md) .
 A tabela a seguir lista as propriedades disponíveis para um **connectorGroup**. A **propriedade** name é uma propriedade necessária.
 
 | Propriedade     | Tipo   |Descrição|
@@ -55,7 +55,7 @@ A tabela a seguir lista as propriedades disponíveis para um **connectorGroup**.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

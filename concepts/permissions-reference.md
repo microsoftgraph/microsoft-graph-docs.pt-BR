@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 856dbe141f03ed88de587ae3fa6142b7ddc6751b
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: e82902116d9e6abde93dffb9b8c090e8b26a782a
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510061"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588530"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -593,14 +593,14 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_CloudPC.Read.All_ | Leia PCs na Internet | Permite que o aplicativo leia objetos do PC na Internet, como políticas de provisionamento, em nome do usuário conectado. | Não | Não |
-|_CloudPC.ReadWrite.All_ | Ler e escrever PCs na Internet | Permite que o aplicativo crie, leia, atualize e exclua objetos do PC na Internet, como conexões locais, políticas de provisionamento e imagens do dispositivo, em nome do usuário. | Sim | Não |
+|_CloudPC.ReadWrite.All_ | Ler e escrever PCs na Internet | Permite que o aplicativo crie, leia, atualize e exclua objetos do PC na Nuvem, tais como conexões de rede do Azure, políticas de provisionamento e imagens de dispositivos, em nome do usuário. | Sim | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_CloudPC.Read.All_ | Leia PCs na Internet | Permite que o aplicativo leia objetos do PC na Internet, como políticas de provisionamento, sem um usuário conectado. | Não | Não |
-|_CloudPC.ReadWrite.All_ | Ler e escrever PCs na Internet | Permite que o aplicativo crie, leia, atualize e exclua objetos do PC na Internet, como conexões locais, políticas de provisionamento e imagens de dispositivo, sem um usuário conectado. | Sim | Não |
+|_CloudPC.ReadWrite.All_ | Ler e escrever PCs na Internet | Permite que o aplicativo crie, leia, atualize e exclua objetos do PC na Nuvem, como conexões de rede Azure, políticas de provisionamento e imagens de dispositivos, sem um usuário conectado. | Sim | Não |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -688,6 +688,24 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _CustomSecAttributeAssignment.ReadWrite.All_ | Ler e escrever atribuições de atributos de segurança personalizados | Permite que o aplicativo leia e grave atribuições de atributos de segurança personalizados para todos os principais no locatário sem um usuário conectado. | Sim |
 | _CustomSecAttributeDefinition.Read.All_ | Ler definições de atributo de segurança personalizadas | Permite que o aplicativo leia e grave definições de atributos de segurança personalizados para o locatário sem um usuário conectado. | Sim |
 | _CustomSecAttributeDefinition.ReadWrite.All_ | Ler e escrever definições de atributos de segurança personalizados | Permite que o aplicativo leia e grave definições de atributos de segurança personalizados para o locatário sem um usuário conectado. | Sim |
+
+---
+
+## <a name="delegated-admin-relationship-permissions"></a>Permissões de relação de administrador delegado
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DelegatedAdminRelationship.Read.All_ | Leia sobre as relações do Administrador Delegado com os clientes | Permite que o aplicativo leia os detalhes das relações do administrador delegado com clientes, tais como os detalhes de acesso (que incluem funções) e a duração, bem como as atribuições de funções específicas para grupos de segurança em nome do usuário conectado. | Sim | Não |
+| _DelegatedAdminRelationship.ReadWrite.All_ | Gerenciar as relações do Administrador Delegado com os clientes | Permite que o aplicativo gerencie (criar-atualizar-encerrar) as relações do Administrador Delegado com clientes e atribuições de função a grupos de segurança para relações ativas do Administrador Delegado em seu nome. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _DelegatedAdminRelationship.Read.All_ | Leia sobre as relações do Administrador Delegado com os clientes | Permite que o aplicativo leia os detalhes das relações do administrador delegado com clientes, tais como os detalhes de acesso (que incluem funções) e a duração, bem como as atribuições de funções específicas para grupos de segurança sem um usuário conectado. | Sim | Não |
+| _DelegatedAdminRelationship.ReadWrite.All_ | Gerenciar as relações do Administrador Delegado com os clientes | Permite que o aplicativo gerencie (criar-atualizar-encerrar) as relações do Administrador Delegado com clientes e atribuições de função a grupos de segurança para relações ativas do Administrador Delegado sem um usuário conectado. | Sim | Não |
 
 ---
 
@@ -1354,7 +1372,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -2540,7 +2558,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação c
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

@@ -5,16 +5,40 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: ed4b66b4fbaf281ed8be07d3d8cab7432402819b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a85865ca6eba3aad8899cd48cdb65ca56e28e1c9
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394513"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608048"
 ---
 # <a name="enum-values"></a>Valores denum
 
 Namespace: microsoft.graph
+
+### <a name="accessreviewexpirationbehavior-values"></a>valores accessReviewExpirationBehavior
+
+|Member|
+|:---|
+|keepAccess|
+|removeAccess|
+|acceptAccessRecommendation|
+|unknownFutureValue|
+
+### <a name="allowedtargetscope-values"></a>Valores allowedTargetScope
+
+|Member|
+|:---|
+|notSpecified|
+|specificDirectoryUsers|
+|specificConnectedOrganizationUsers|
+|specificDirectoryServicePrincipals|
+|allMemberUsers|
+|allDirectoryUsers|
+|allDirectoryServicePrincipals|
+|allConfiguredConnectedOrganizationUsers|
+|allExternalUsers|
+|unknownFutureValue|
 
 ### <a name="approvalfilterbycurrentuseroptions-values"></a>valores approvalFilterByCurrentUserOptions 
 
@@ -123,7 +147,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |notSpecified|
-|usuário|
+|user|
 |servicePrincipal|
 |unknownFutureValue|
 
@@ -221,7 +245,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState values
@@ -510,7 +534,7 @@ Namespace: microsoft.graph
 |:---|
 |Nenhum|
 |SecurityGroup|
-|Todos|
+|Tudo|
 
 ### <a name="recipientscopetype-values"></a>valores recipientScopeType
 
@@ -527,7 +551,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |signin|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>valores riskDetectionTimingType
@@ -796,7 +820,7 @@ Namespace: microsoft.graph
 | Member
 |:-------------
 | desconhecido
-| authentication
+| autenticação
 | autorização
 | accountValidation
 | userValidation
@@ -1332,7 +1356,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1364,7 +1388,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | 0     | Ainda não sabemos.            |
-| usuário          | 1     | Envio do usuário.         |
+| user          | 1     | Envio do usuário.         |
 | administrator | 2     | Envio de administrador de locatário. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores threatAssessmentResultType
@@ -1400,7 +1424,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Valor |
 |:-----------------|
-| mensagem |
+| message |
 | chatEvent |
 | digitação |
 | unknownFutureValue |
@@ -1469,10 +1493,10 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |dateTime | Coluna DateTime. |
 |lookup | Coluna de lookup. |
 |booliano | Coluna Sim/Não. |
-|usuário | Coluna pessoa ou grupo. |
+|user | Coluna pessoa ou grupo. |
 |url | Hiperlink ou coluna de imagem. |
 |calculado | Coluna calculada. |
-|localização | Coluna local. |
+|location | Coluna local. |
 |geolocalização | Coluna de localização geográfica. |
 |term | Coluna de metadados gerenciados. |
 |multiterm | Coluna de metadados gerenciados aceitando vários valores. |
@@ -1689,7 +1713,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|usuário|
+|user|
 |aplicação|
 |sistema|
 |unknownFutureValue|

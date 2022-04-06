@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dc942a03b7cbc479c2312c41e7086a526756e807
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 82f8de570b1a7596cb558ee79456dc00e68b4ae1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118604"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671584"
 ---
 # <a name="get-phoneauthenticationmethod"></a>Obter phoneAuthenticationMethod
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um único [objeto phoneAuthenticationMethod.](../resources/phoneauthenticationmethod.md) Esse método está disponível apenas para usuários padrão do Azure AD e B2B, mas não para usuários B2C.
+Recupere um único [objeto phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) . Esse método está disponível apenas para usuários padrão do Azure AD e B2B, mas não para usuários B2C.
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está atuando em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Administrador global
 * Leitor global
 * Administrador de autenticação privilegiada
@@ -51,13 +51,13 @@ Para cenários delegados em que um administrador está agindo em outro usuário,
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/authentication/phoneMethods/{id}
-GET /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
+GET /me/authentication/phoneMethods/{phoneMethodId}
+GET /users/{userId | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
-O valor correspondente ao phoneType a ser `id` recuperado é um dos seguintes:
-+ `b6332ec1-7057-4abe-9331-3d72feddfe41` para recuperar `alternateMobile` **o phoneType**.
-+ `e37fc753-ff3b-4958-9484-eaa9425c82bc` para recuperar `office` **o phoneType**.
-+ `3179e48a-750b-4051-897c-87b9720928f7` para recuperar `mobile` **o phoneType**.
+O valor de `phoneMethodId` correspondente ao phoneType é um dos seguintes:
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` para recuperar o `alternateMobile` **phoneType**.
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` para recuperar o `office` **phoneType**.
++ `3179e48a-750b-4051-897c-87b9720928f7` para recuperar o `mobile` **phoneType**.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -75,7 +75,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

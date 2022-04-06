@@ -2,26 +2,26 @@
 title: Provedor personalizado
 description: Crie um provedor personalizado para habilitar a autenticação e o acesso gráfico para os componentes do Microsoft Graph Toolkit, se você tiver código de autenticação existente em seu aplicativo.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: db939fbad5eb8d488514eac9c2dfa275f4984c66
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+author: sebastienlevert
+ms.openlocfilehash: 2373c30a37e761d1cd14b203aa07edfc80eecfad
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60355243"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589300"
 ---
 # <a name="custom-provider"></a>Provedor personalizado
 
-Se você tiver código de autenticação existente em seu aplicativo, poderá criar um provedor personalizado para habilitar a autenticação e o acesso ao Microsoft Graph para componentes Graph Toolkit Microsoft. Há duas maneiras de criar provedores personalizados:
+Se você tiver código de autenticação existente em seu aplicativo, poderá criar um provedor personalizado para habilitar a autenticação e o acesso ao Microsoft Graph para componentes do Microsoft Graph Toolkit. Há duas maneiras de criar provedores personalizados:
 
 - Criar um novo `SimpleProvider` passando uma função para obter um token de acesso
-- Estender a `IProvider` classe abstrata
+- Estender a classe `IProvider` abstrata
 
 Este artigo descreve cada abordagem com mais detalhes.
 
 ## <a name="simpleprovider"></a>SimpleProvider
 
-Insinue a classe passando uma função que retornará um `SimpleProvider` token de acesso para escopos passados. 
+Insinue `SimpleProvider` a classe passando uma função que retornará um token de acesso para escopos passados. 
 
 ```ts
 let provider = new SimpleProvider((scopes: string[]) => {
@@ -29,10 +29,10 @@ let provider = new SimpleProvider((scopes: string[]) => {
 });
 ```
 
-Além disso, você também pode fornecer um opcional e funções que podem manipular a entrar e fazer chamadas `login` `logout` do componente De [logon.](../components/login.md)
+Além disso, você também pode fornecer um opcional `login` `logout` e funções que podem manipular a entrar e fazer chamadas do [componente De logon](../components/login.md) .
 
 > [!IMPORTANT] 
-> Para indicar aos componentes que eles podem começar a chamar as APIs do Microsoft Graph depois que um usuário entrar com êxito, você precisa chamar `Providers.setState(ProviderState.SignedIn)` . Um exemplo disso é mostrado na `login` função abaixo.
+> Para indicar aos componentes que eles podem começar a chamar as APIs do Microsoft Graph depois que um usuário entrar com êxito, você precisa chamar `Providers.setState(ProviderState.SignedIn)`. Um exemplo disso é mostrado na função `login` abaixo.
 
 ```ts
 function getAccessToken(scopes: string[]) {
@@ -53,7 +53,7 @@ let provider = new SimpleProvider(getAccessToken, login, logout);
 
 ### <a name="manage-state"></a>Gerenciar estado
 
-Para que os componentes sejam cientes do estado do provedor, você precisará chamar o método sempre `provider.setState(state: ProviderState)` que o estado mudar. Por exemplo, quando o usuário tiver se assinado, chame `provider.setState(ProviderState.SignedIn)` . O `ProviderState` número define três estados, conforme mostrado.
+Para que os componentes sejam cientes do estado do provedor, você precisará chamar o `provider.setState(state: ProviderState)` método sempre que o estado mudar. Por exemplo, quando o usuário tiver se assinado, chame `provider.setState(ProviderState.SignedIn)`. O `ProviderState` número define três estados, conforme mostrado.
 
 ```ts
 export enum ProviderState {
@@ -65,15 +65,15 @@ export enum ProviderState {
 
 ## <a name="iprovider"></a>IProvider
 
-Você pode estender a `IProvider` classe abstrata para criar seu próprio provedor.
+Você pode estender a classe `IProvider` abstrata para criar seu próprio provedor.
 
 ### <a name="state"></a>Estado
 
-Um provedor deve acompanhar o estado de autenticação e atualizar os componentes quando o estado mudar. A `IProvider` classe já implementa o manipulador e a `onStateChanged(eventHandler)` `state: ProviderState` propriedade. Você só precisa usar o `setState(state:ProviderState)` método em sua implementação para atualizar o estado quando ele mudar. A atualização do estado disparará o `stateChanged` evento e atualizará todos os componentes automaticamente.
+Um provedor deve acompanhar o estado de autenticação e atualizar os componentes quando o estado mudar. A `IProvider` classe já implementa o manipulador `onStateChanged(eventHandler)` e a `state: ProviderState` propriedade. Você só precisa usar o método `setState(state:ProviderState)` em sua implementação para atualizar o estado quando ele mudar. A atualização do estado disparará o evento `stateChanged` e atualizará todos os componentes automaticamente.
 
 ### <a name="loginlogout"></a>Logout/Logout
 
-Se o provedor fornece funcionalidade de logon ou logout, implemente `login(): Promise<void>` os `logout(): Promise<void>` métodos e. Esses métodos são opcionais.
+Se o provedor fornece funcionalidade de logon ou logout, implemente os `login(): Promise<void>` métodos e `logout(): Promise<void>` . Esses métodos são opcionais.
 
 ### <a name="access-token"></a>Token de acesso
 
@@ -87,11 +87,11 @@ Os componentes usam o Microsoft Graph Javascript SDK para todas as chamadas para
 this.graph = new Graph(this);
 ```
 
-A `Graph` classe é um invólucro claro sobre o Microsoft Graph SDK.
+A `Graph` classe é um invólucro claro na parte superior do Microsoft Graph SDK.
 
 ### <a name="example"></a>Exemplo
 
-Todos os provedores estendem a `IProvider` classe abstrata. Por exemplo, dê uma olhada no código-fonte de qualquer um dos [provedores existentes.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/providers)
+Todos os provedores estendem a classe `IProvider` abstrata. Por exemplo, dê uma olhada no código-fonte de qualquer um dos [provedores existentes](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/providers).
 
 ## <a name="set-the-global-provider"></a>Definir o provedor global
 

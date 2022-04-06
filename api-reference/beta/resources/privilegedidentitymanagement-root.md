@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 09d416ebe637a82f174b9668d4b9396626e0d5a3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 212de5ba66227a090fd6c43e1aff883faf5438ee
+ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695472"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "64477843"
 ---
 # <a name="privileged-identity-management-deprecated"></a>Privileged Identity Management (preterido)
 
@@ -19,17 +19,24 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!CAUTION]
->A API Privileged Identity Management (PIM) para **funções do Azure AD** foi preterida e parou de retornar dados em 31 de maio de 2021. Use a API [de gerenciamento de função](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true).
+>A API Privileged Identity Management (PIM) para **funções do Azure AD** foi preterida e parou de retornar dados em 31 de maio de 2021. Use a API de [gerenciamento de funções](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) e consulte as [diretrizes de migração abaixo](#migrate-from-pim-v2-to-pim-v3-apis).
 >
->A API Privileged Identity Management (PIM) para **funções de recurso do Azure** será preterida em breve. Use a nova API DE PIM REST do Azure para [funções de recurso do Azure.](/rest/api/authorization/role-eligibility-schedule-requests)
+>A API do Privileged Identity Management (PIM) para **recursos do Azure** será preterida em breve. Use a nova [API de REST PIM do Azure para recursos do Azure](/rest/api/authorization/role-eligibility-schedule-requests). Para migrar, consulte as diretrizes de migração abaixo.
 
-[O PIM (Privileged Identity Management) do Active Directory do Azure (Azure AD)](/azure/active-directory/privileged-identity-management/pim-configure) é um serviço que permite gerenciar, controlar e monitorar o acesso a recursos importantes em sua organização. Isso inclui o acesso a recursos no Azure AD, recursos do Azure e outros Microsoft Online Services, como o Microsoft 365 ou o Microsoft Intune.
+O [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) é um serviço que permite gerenciar, controlar e monitorar o acesso a recursos importantes em sua organização. Esse escopo inclui acesso a recursos no Azure AD, recursos do Azure e outros serviços da Microsoft como Microsoft 365 ou Microsoft Intune.
 
-O Microsoft Graph fornece as seguintes APIs para gerenciar funções do Azure AD e funções de recurso do Azure:
+Houve várias iterações da API do PIM nos últimos anos. Essa iteração é a segunda iteração (aqui chamada de PIM v2) e foi sucedida pelo PIM v3. Para obter mais informações sobre o histórico da API do PIM, consulte o [histórico da API PIM](/azure/active-directory/privileged-identity-management/pim-apis#pim-api-history).
 
-- [APIs para funções do Azure AD](privilegedidentitymanagement-directory.md)
-- [APIs para funções de recursos do Azure](privilegedidentitymanagement-resources.md)
+O Microsoft Graph fornece as seguintes APIs do PIM v2 para gerenciar funções do Azure AD e funções de recurso do Azure. Recomendamos que você migre do PIM v2 para o PIM v3.
 
+- [APIs para funções do Azure AD](privilegedidentitymanagement-directory.md) (preterido)
+- [APIs para recursos do Azure](privilegedidentitymanagement-resources.md)
+
+## <a name="migrate-from-pim-v2-to-pim-v3-apis"></a>Migrar de PIM v2 para APIs de PIM v3
+
+[!INCLUDE [pimv2AADRoles-migration](../../includes/pimv2AADRoles-migration.md)]
+
+[!INCLUDE [pimv2AzureResources-migration](../../includes/pimv2AzureResources-migration.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

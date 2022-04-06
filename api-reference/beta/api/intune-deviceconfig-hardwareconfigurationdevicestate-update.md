@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a13b1d7d8a418d5332f098043bb3d3bd1428e4a
-ms.sourcegitcommit: 15956da1b4a7d523363ffa8afb5e2059fbf680ce
+ms.openlocfilehash: 06f56ede9e8c98471992dac96a5d7de0797bd18a
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62291419"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630699"
 ---
 # <a name="update-hardwareconfigurationdevicestate"></a>Atualizar hardwareConfigurationDeviceState
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,14 +53,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o hardw
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de estado do dispositivo de script de configuração de hardware. Essa propriedade é somente leitura.|
+|id|String|Chave da entidade de estado do dispositivo de script de configuração de hardware. Essa propriedade é somente leitura.|
 |deviceName|String|O nome do dispositivo|
 |osVersion|String|Versão do sistema operacional do dispositivo (por exemplo, 10.0.19042.1165, 10.0.19042.1288 etc.)|
 |upn|Cadeia de caracteres|Nome principal do usuário (UPN).|
 |internalVersion|Int32|A versão interna da Política|
 |lastStateUpdateDateTime|DateTimeOffset|O último período de data/hora de quando a configuração de hardware foi executada|
-|configurationState|[runState](../resources/intune-shared-runstate.md)|Estado de configuração da última execução de configuração de hardware. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|configurationOutput|Cadeia de caracteres|Saída da execução da configuração de hardware|
+|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|Estado de configuração da última execução de configuração de hardware. Os possíveis valores são: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|configurationOutput|String|Saída da execução da configuração de hardware|
 |configurationError|String|Erro da execução da configuração de hardware|
 
 

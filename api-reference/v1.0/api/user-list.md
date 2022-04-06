@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 109db1591dd2c7e572dd26468d7207dd93a44c1d
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 439d32b29a202207b7ecd83cec99f51dee3bff48
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878712"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630258"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -26,11 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-Os usuários convidados não podem chamar esta API. Para obter mais informações sobre as permissões para usuários membros e convidados, consulte [Quais são as permissões de usuário padrão no Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)
+Os usuários convidados não podem chamar essa API. Para obter mais informações sobre as permissões para usuários membros e convidados, confira [Quais são as permissões de usuário padrão no Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users)?
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -126,16 +126,37 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName":"contoso1",
-      "mail":"'contoso1@gmail.com",
-      "mailNickname":"contoso1_gmail.com#EXT#",
-      "otherMails":["contoso1@gmail.com"],
-      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
-      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+        {
+            "businessPhones": [],
+            "displayName": "Conf Room Adams",
+            "givenName": null,
+            "jobTitle": null,
+            "mail": "Adams@contoso.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": "Adams@contoso.com",
+            "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
+        },
+        {
+            "businessPhones": [
+                "425-555-0100"
+            ],
+            "displayName": "MOD Administrator",
+            "givenName": "MOD",
+            "jobTitle": null,
+            "mail": null,
+            "mobilePhone": "425-555-0101",
+            "officeLocation": null,
+            "preferredLanguage": "en-US",
+            "surname": "Administrator",
+            "userPrincipalName": "admin@contoso.com",
+            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+        }
+    ]
 }
 ```
 
@@ -248,7 +269,7 @@ Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **Con
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_a_count"
+  "name": "list_users_startswith"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
@@ -279,8 +300,6 @@ Content-type: application/json
       "displayName":"a",
       "mail":"a@contoso.com",
       "mailNickname":"a_contoso.com#EXT#",
-      "otherMails":["a@contoso.com"],
-      "proxyAddresses":["SMTP:a@contoso.com"],
       "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
@@ -431,7 +450,6 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
-      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     }
   ]
@@ -491,15 +509,13 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
-      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     },
     {
       "displayName":"contosoAdmin1",
-      "mail":"'contosoadmin1@gmail.com",
-      "mailNickname":"contosoadmin1_gmail.com#EXT#",
-      "proxyAddresses":["SMTP:contosoadmin1@gmail.com"], 
-      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+      "givenName":"Contoso Administrator",
+      "mail":"'contosoadmin1@fabrikam.com",
+      "userPrincipalName":"contosoadmin1_fabrikam.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }
@@ -559,6 +575,52 @@ Content-type: application/json
   ]
 }
 ```
+
+
+### <a name="example-9-get-the-value-of-a-schema-extension-for-all-users"></a>Exemplo 9: obter o valor de uma extensão de esquema para todos os usuários
+
+Neste exemplo, a ID da extensão do esquema é `ext55gb1l09_msLearnCourses`.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "list_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=ext55gb1l09_msLearnCourses
+```
+
+#### <a name="response"></a>Resposta
+
+Na resposta a seguir, a propriedade de extensão de esquema `ext55gb1l09_msLearnCourses` não está designada em dois dos objetos de usuário.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)",
+    "value": [
+        {},
+        {
+            "ext55gb1l09_msLearnCourses": {
+                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+                "courseType": "Developer",
+                "courseName": "Introduction to Microsoft Graph",
+                "courseId": 1
+            }
+        },
+        {}
+    ]
+}
+```
+
+>**Observação**: você também pode aplicar `$filter` na propriedade de extensão do esquema para recuperar objetos em que uma propriedade na coleção corresponde a um valor especificado. A sintaxe é `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. Por exemplo, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. Os `eq` e `not` operadores são compatíveis.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

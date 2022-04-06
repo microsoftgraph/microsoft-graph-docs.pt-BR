@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 title: Excluir pacote
-description: Excluir um pacote de driveItems
+description: Exclua um pacote de driveItems.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b574c73db2f4e0dd71d0e2e5c6685b58f8ad8143
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: 08396fdaa1dc8903255d1e8dc4914c9761f0ed5a
+ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63561578"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63758085"
 ---
 # <a name="delete-bundle"></a>Excluir pacote
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 No entanto, ele não remove os itens que foram referenciados pelo pacote.
 Eles permanecerão em suas pastas pai.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,30 +42,56 @@ DELETE /drive/items/{bundle-id}
 
 | Nome          | Descrição  |
 |:------------- |:------------ |
-| Autorização | \{token\} de portador. Obrigatório. |
-| if-match      | eTag. Opcional. Se esse header de solicitação estiver incluído e a eTag (ou cTag) fornecida não corresponder à marca atual no pacote, `412 Precondition Failed` uma resposta será retornada e o pacote não será excluído.
+| Autorização | {token} de portador. Obrigatório. |
+| if-match      | eTag. Opcional. Se esse header de solicitação estiver incluído e a eTag (ou cTag) fornecida não corresponder à marca atual no pacote, `412 Precondition Failed` uma resposta será retornada e o pacote não será excluído.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não forneça um corpo de solicitação com esse método.
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedida, esta chamada retorna uma resposta `204 No Content` para indicar que o recurso foi excluído e que não havia nada a retornar.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-Para obter informações sobre respostas de erro, consulte [Respostas de erro][error-response].
+Para obter informações sobre respostas a erros, consulte [Microsoft Graph respostas de erro e tipos de recursos][error-response].
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "delete-bundle" } -->
+Veja a seguir um exemplo de uma solicitação.
 
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "delete-bundle" } -->
 ```http
-DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
+DELETE https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-bundle-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-bundle-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-bundle-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
 
 <!-- { "blockType": "response" } -->
 
@@ -74,7 +100,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-[bundle]: ../resources/bundle.md
+[Agrupar]: ../resources/bundle.md
 [error-response]: /graph/errors
 
 <!-- {

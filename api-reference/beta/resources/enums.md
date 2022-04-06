@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 5085bd3db401b09c24e93a556fd9e938e69f8d73
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: aedf9e901c570fc53e65a519c4363d6f00d633c9
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758211"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588509"
 ---
 # <a name="enum-values"></a>Valores denum
 
@@ -80,7 +80,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>valores accessPackageFilterByCurrentUserOptions
@@ -95,7 +95,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |locatário|
-|aplicação|
+|aplicativo|
 
 ### <a name="incomingtokentype-values"></a>valores incomingTokenType 
 
@@ -302,7 +302,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binária|
@@ -352,7 +352,7 @@ Namespace: microsoft.graph
 |:---|
 |applicationProxy|
 |exchangeOnline|
-|authentication|
+|autenticação|
 |provisionamento|
 |intunePfx|
 |oflineDomainJoin|
@@ -576,7 +576,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |none|
-|aplicação|
+|aplicativo|
 |usuários|
 |devicePlatform|
 |location|
@@ -624,7 +624,7 @@ Namespace: microsoft.graph
 |all|
 |privilegedAdmin|
 |admin|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>valores includedUserTypes
@@ -640,7 +640,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |aplicativo|
 |sistema|
 |unknownFutureValue|
@@ -746,7 +746,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |request|
 |servicePrincipal|
 |v1ConditionalAccess|
@@ -938,7 +938,7 @@ Namespace: microsoft.graph
 |family|
 |contacts|
 |groupMembers|
-|organização|
+|organization|
 |federatedOrganizations|
 |everyone|
 |unknownFutureValue|
@@ -987,7 +987,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>authenticationMethodState values
@@ -1106,7 +1106,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalItem|
 |site|
@@ -1246,7 +1246,7 @@ Namespace: microsoft.graph
 | Member
 |:-----------------
 | none|
-| usuário|
+| user|
 | manager|
 | unknownFutureValue|
 
@@ -1449,7 +1449,7 @@ Namespace: microsoft.graph
 | Member
 |:-------------
 | desconhecido
-| authentication
+| autenticação
 | autorização
 | accountValidation
 | userValidation
@@ -1572,7 +1572,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | checklist
-| descrição
+| description
 | referência
 
 
@@ -1977,7 +1977,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 |Member|
 |:---|
-|mensagem|
+|message|
 |chatEvent |
 |digitação |
 |unknownFutureValue|
@@ -2037,7 +2037,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |signin|
-|usuário|
+|user|
 |unknownFutureValue|
 |servicePrincipal|
 
@@ -2063,7 +2063,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Member       |
 |:--------------|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2284,7 +2284,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | indefinido     | 0     | Ainda não sabemos.            |
-| usuário          | 1     | Envio do usuário.         |
+| user          | 1     | Envio do usuário.         |
 | administrator | 2     | Envio de administrador de locatário. |
 
 ### <a name="threatassessmentresulttype-values"></a>valores threatAssessmentResultType
@@ -2375,7 +2375,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |dateTime | coluna dateTime. |
 |lookup | coluna de lookup. |
 |booliano | Coluna Sim/Não. |
-|usuário | coluna de pessoa ou grupo. |
+|user | coluna de pessoa ou grupo. |
 |url | hyperlink ou coluna de imagem. |
 |calculado | coluna calculada. |
 |location | coluna de local. |
@@ -2424,7 +2424,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 
 | Member
 |:-------------------------
-| aplicação
+| aplicativo
 | delegado
 | delegatedUserConsentable
 
@@ -2584,7 +2584,7 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |Member|
 |:---|
 |itPro|
-|aplicação|
+|aplicativo|
 |partner|
 |desconhecido|
 
@@ -2933,4 +2933,73 @@ Valores possíveis para tipos de conta de usuário (associação ao grupo), por 
 |running|
 |bem-sucedido|
 |failed|
+|unknownFutureValue|
+
+### <a name="delegatedadminaccessassignmentstatus-values"></a>valores delegatedAdminAccessAssignmentStatus 
+
+|Member|
+|:---|
+|pendente|
+|active|
+|exclusão|
+|deleted|
+|erro|
+|unknownFutureValue|
+
+### <a name="delegatedadminaccesscontainertype-values"></a>valores delegatedAdminAccessContainerType 
+
+|Member|
+|:---|
+|securityGroup|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshipoperationstatus-values"></a>valores delegatedAdminRelationshipOperationStatus 
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|complete|
+|failed|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshipoperationtype-values"></a>valores delegatedAdminRelationshipOperationType 
+
+|Member|
+|:---|
+|delegatedAdminAccessAssignmentUpdate|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshiprequestaction-values"></a>valores delegatedAdminRelationshipRequestAction 
+
+|Member|
+|:---|
+|lockForApproval|
+|terminate|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshiprequeststatus-values"></a>valores delegatedAdminRelationshipRequestStatus 
+
+|Member|
+|:---|
+|criadas|
+|pendente|
+|complete|
+|failed|
+|unknownFutureValue|
+
+### <a name="delegatedadminrelationshipstatus-values"></a>valores delegatedAdminRelationshipStatus 
+
+|Member|
+|:---|
+|ativando|
+|active|
+|approvalPending|
+|aprovado|
+|criadas|
+|expirado|
+|expirando|
+|encerrado|
+|terminando|
+|terminationRequested|
 |unknownFutureValue|

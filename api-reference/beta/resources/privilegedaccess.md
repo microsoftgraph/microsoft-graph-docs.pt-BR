@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso privilegedAccess
-description: " por exemplo, `privilegedAccess/azureResources` representa o PIM gerenciando o acesso privilegiado aos recursos do Azure."
+description: " por exemplo, representa `privilegedAccess/azureResources` o PIM gerenciando o acesso privilegiado aos recursos do Azure."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 9f7bf8f06ae75bd082664b5efad3e5ca9c46b70e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: f90b76ca24a4bded8c2206a4a5f45ebcfde4d825
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696949"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64509550"
 ---
 # <a name="privilegedaccess-resource-type"></a>Tipo de recurso privilegedAccess
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um grupo de funcionalidades fornecidas pelo serviço Privileged Identity Management (PIM). Diferentes instâncias de representam diferentes provedores gerenciados pelo PIM; por exemplo, representa o PIM gerenciando o acesso privilegiado aos recursos `privilegedAccess` `privilegedAccess/azureResources` do Azure.
+Representa um grupo de funcionalidades fornecidas pelo serviço Privileged Identity Management (PIM). Diferentes instâncias de representam `privilegedAccess` diferentes provedores gerenciados pelo PIM; por exemplo, `privilegedAccess/azureResources` representa o PIM gerenciando o acesso privilegiado aos recursos do Azure.
 
 
-`privilegedAccess` é somente leitura por enquanto. Não `POST` , , ou as operações são `PUT` `PATCH` `DELETE` suportadas no conjunto de `privilegedAccess` entidades.
+`privilegedAccess` é somente leitura por enquanto. Não `POST`, `PUT`, `PATCH`ou `DELETE` as operações são suportadas no conjunto `privilegedAccess` de entidades.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
 |id         |String     |A id do provedor gerenciado pelo PIM.|
-|displayName|String     |O nome de exibição do provedor gerenciado pelo PIM.|
+|displayName|Cadeia de caracteres     |O nome de exibição do provedor gerenciado pelo PIM.|
 
 
 ## <a name="relationships"></a>Relações

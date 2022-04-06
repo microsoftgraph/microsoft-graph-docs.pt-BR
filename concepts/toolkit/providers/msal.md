@@ -2,13 +2,13 @@
 title: Provedor MSAL
 description: O provedor MSAL usa MSAL.js para entrar em usuários e adquirir tokens para usar com o microsoft Graph.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: 5c9c3d8fc416f08b0386335aa518076e256fe0ad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 08c12c4ba7b105573e7a19a705a804c5c9f92114
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143549"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587036"
 ---
 # <a name="msal-provider"></a>Provedor MSAL
 
@@ -17,8 +17,8 @@ O Provedor MSAL usa [msal.js](https://github.com/AzureAD/microsoft-authenticatio
 Para saber mais, confira [provedores](./providers.md).
 
 ## <a name="difference-between-msal2-provider-and-msal-provider"></a>Diferença entre Provedor MSAL2 e Provedor MSAL
-Embora o uso seja semelhante, o Provedor MSAL e o Provedor MSAL2 são construídos em fluxos OAuth diferentes. O Provedor MSAL é criado msal.js, que implementa o Flow [.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) O Provedor MSAL2 é criado com [o msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), que implementa o código de autorização [OAuth](/azure/active-directory/develop/v2-oauth2-auth-code-flow) 2.0 Flow com PKCE.
-Como o código de Flow de autorização é considerado mais seguro do que a concessão implícita Flow aplicativos Web, recomendamos o uso do Provedor MSAL2 em relação ao Provedor MSAL. Para obter detalhes sobre problemas de segurança relacionados ao fluxo de concessão implícito, consulte [Desvantagens do fluxo implícito](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
+Embora o uso seja semelhante, o Provedor MSAL e o Provedor MSAL2 são construídos em fluxos OAuth diferentes. O Provedor MSAL é criado msal.js, que implementa o [Flow.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) O Provedor MSAL2 é criado no [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), que implementa o Código de Autorização [OAuth](/azure/active-directory/develop/v2-oauth2-auth-code-flow) 2.0 Flow com PKCE.
+Como o Código de Autorização Flow é considerado mais seguro do que a concessão implícita Flow aplicativos Web, recomendamos usar o Provedor MSAL2 em relação ao Provedor MSAL. Para obter detalhes sobre problemas de segurança relacionados ao fluxo de concessão implícito, consulte [Desvantagens do fluxo implícito](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
 
 Todos os novos aplicativos devem usar o Provedor MSAL2 sempre que possível. Para obter informações de migração, consulte [Provedor MSAL2](./msal2.md).
 
@@ -28,7 +28,7 @@ Você pode inicializar o provedor MSAL em HTML ou JavaScript.
 
 ### <a name="initialize-in-your-html-page"></a>Inicializar em sua página HTML
 
-Inicializar o provedor MSAL em HTML é a maneira mais simples de criar um novo provedor. Use o `mgt-msal-provider` componente para definir a **id do** cliente e outras propriedades. Isso criará uma nova instância que será usada para todos os tokens de autenticação `UserAgentApplication` e aquisição.
+Inicializar o provedor MSAL em HTML é a maneira mais simples de criar um novo provedor. Use o `mgt-msal-provider` componente para definir a **id do** cliente e outras propriedades. Isso criará uma nova `UserAgentApplication` instância que será usada para todos os tokens de autenticação e aquisição.
 
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
@@ -43,9 +43,9 @@ Inicializar o provedor MSAL em HTML é a maneira mais simples de criar um novo p
 | Atributo    | Descrição                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | client-id    | ID do cliente de cadeia de caracteres (consulte Criando uma ID de aplicativo/cliente). Obrigatório.                                                                                                                                                                                                           |
-| tipo de logon   | Enumeração entre `redirect` e - o valor padrão é `popup` `redirect` . Opcional.                                                                                                                                                                                   |
+| tipo de logon   | Enumeração entre `redirect` e `popup` - o valor padrão é `redirect`. Opcional.                                                                                                                                                                                   |
 | escopos       | Cadeias de caracteres separadas por vírgulas para escopos que o usuário deve consentir ao entrar. Opcional.                                                                                                                                                                                     |
-| authority    | Cadeia de caracteres de autoridade - padrão é a autoridade comum. Para aplicativos de locatário único, use sua ID de locatário ou nome de locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]` . Opcional. |
+| authority    | Cadeia de caracteres de autoridade - padrão é a autoridade comum. Para aplicativos de locatário único, use sua ID de locatário ou nome de locatário. Por exemplo: `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]`. Opcional. |
 | redirect-uri | Cadeia de caracteres de URI de redirecionamento - por padrão, o URI da janela atual é usado. Opcional.                                                                                                                                                                                            |
 | depends-on   | Cadeia de caracteres do seletor de elemento de outro componente de provedor de prioridade mais alta. Opcional. 
 | domain-hint  | Cadeia de caracteres de consulta do local do domínio para encaminhamento da experiência de login. Opcional.              
@@ -85,9 +85,9 @@ interface MsalConfig {
 
 #### <a name="pass-an-existing-useragentapplication-in-the-useragentapplication-property"></a>Passe um existente `UserAgentApplication` na `userAgentApplication` propriedade.
 
-Use isso quando seu aplicativo usa a funcionalidade MSAL além do que é exposto pelos recursos `MsalProvider` do Microsoft Graph Toolkit. Isso é particularmente apropriado se uma estrutura instancie e exponha automaticamente um para você; por exemplo, ao `UserAgentApplication` usar [msal-angular](/azure/active-directory/develop/tutorial-v2-angular).
+Use isso quando seu aplicativo usa a funcionalidade MSAL `MsalProvider` além do que é exposto pelo microsoft Graph Toolkit recursos. Isso é particularmente apropriado se uma estrutura instancie `UserAgentApplication` e exponha automaticamente um para você; por exemplo, ao usar [msal-angular](/azure/active-directory/develop/tutorial-v2-angular).
 
-Certifique-se de entender as oportunidades de colisões ao usar essa opção. Por sua própria natureza, há o risco de que o estado de uma sessão possa mudar, por exemplo, fazendo com que o usuário entre ou consenta com `MsalProvider` escopos adicionais. Certifique-se de que seu aplicativo e outras estruturas respondam normalmente a essas alterações no estado ou considere usar um [provedor personalizado](./custom.md) em vez disso.
+Certifique-se de entender as oportunidades de colisões ao usar essa opção. Por sua própria natureza, `MsalProvider` há o risco de que o estado de uma sessão possa mudar, por exemplo, fazendo com que o usuário entre ou consenta com escopos adicionais. Certifique-se de que seu aplicativo e outras estruturas respondam normalmente a essas alterações no estado ou considere usar um [provedor personalizado](./custom.md) em vez disso.
 
 ```ts
 interface MsalConfig {
@@ -98,7 +98,7 @@ interface MsalConfig {
 }
 ```
 
-Para saber mais sobre MSAL.js opções adicionais que você pode usar ao inicializar a biblioteca MSAL, consulte a [documentação MSAL](/azure/active-directory/develop/msal-js-initializing-client-applications).
+Para saber mais sobre MSAL.js opções adicionais que você pode usar ao inicializar a biblioteca MSAL, consulte a [documentação do MSAL](/azure/active-directory/develop/msal-js-initializing-client-applications).
 
 ## <a name="creating-an-appclient-id"></a>Criando uma ID de aplicativo/cliente
 

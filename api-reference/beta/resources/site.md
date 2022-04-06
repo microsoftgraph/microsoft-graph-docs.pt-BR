@@ -5,12 +5,12 @@ title: tipo de recurso do site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 496796c5d7d2667b41ca97f31f81c3c79fc5de96
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 06649de710e2145dfcd624b15b3fe6a45357f687
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62162066"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63721673"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -22,30 +22,30 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 
 ## <a name="methods"></a>Métodos
 
-| Método                         | Caminho REST
-|:-------------------------------|:--------------------------------------------
-| [Obter site raiz][]              | GET /sites/root
-| [Obter site][]                   | GET /sites/{site-id}
-| [Obter site por caminho][]           | GET /sites/{hostname}:/{site-path}
-| [Obter o site para um grupo][]       | GET /groups/{group-id}/sites/root
-| [Obter análises][]              | GET /sites/{site-id}/analytics
-| [Obter atividades por intervalo][] | GET /sites/{site-id}/getActivitiesByInterval
-| [Listar páginas][]                 | GET /sites/{site-id}/pages
-| [Lista sites raiz][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
-| [Procurar sites][]           | GET /sites?search={query}
-| [Seguir site][]                | POST /users/{user-id}/followedSites/add
-| [Deixar de seguir site][]              | POST /users/{user-id}/followedSites/remove
-| [Listar sites seguidos][]        | GET /me/followedSites
-| [Obter permissão][]             | GET /sites/{site-id}/permissions/{permission-id}
-| [Listar permissões][]           | GET /sites/{site-id}/permissions
-| [Criar permissões][]         | POST /sites/{site-id}/permissions
-| [Excluir permissão][]         | DELETE /sites/{site-id}/permissions/{permission-id}
-| [Atualizar permissão][]         | PATCH /sites/{site-id}/permissions/{permission-id}
-|[Tipos de conteúdo de lista][]          | Obter /sites/{site-id}/contentTypes
-|[Criar contentType][]        | POSTAR /sites/{site-id}/contentTypes
-|[Colunas de lista][]               | OBTER /sites/{site-id}/columns
-|[Criar coluna][]              | POSTAR /sites/{site-id}/columns
-|[Listar operações](../api/site-list-operations.md)|OBTER /sites/{site-id}/operações
+| Método                                            | Caminho REST                                                   |
+| :------------------------------------------------ | :---------------------------------------------------------- |
+| [Obter site raiz][]                                 | GET /sites/root                                             |
+| [Obter site][]                                      | GET /sites/{site-id}                                        |
+| [Obter site por caminho][]                              | GET /sites/{hostname}:/{site-path}                          |
+| [Obter o site para um grupo][]                          | GET /groups/{group-id}/sites/root                           |
+| [Obter análises][]                                 | GET /sites/{site-id}/analytics                              |
+| [Obter atividades por intervalo][]                    | GET /sites/{site-id}/getActivitiesByInterval                |
+| [Listar páginas][]                                    | GET /sites/{site-id}/pages                                  |
+| [Lista sites raiz][]                               | GET /sites?filter=root ne null&select=siteCollection,webUrl |
+| [Procurar sites][]                              | GET /sites?search={query}                                   |
+| [Seguir site][]                                   | POST /users/{user-id}/followedSites/add                     |
+| [Deixar de seguir site][]                                 | POST /users/{user-id}/followedSites/remove                  |
+| [Listar sites seguidos][]                           | GET /me/followedSites                                       |
+| [Obter permissão][]                                | GET /sites/{site-id}/permissions/{permission-id}            |
+| [Listar permissões][]                              | GET /sites/{site-id}/permissions                            |
+| [Criar permissões][]                            | POST /sites/{site-id}/permissions                           |
+| [Excluir permissão][]                             | DELETE /sites/{site-id}/permissions/{permission-id}         |
+| [Atualizar permissão][]                             | PATCH /sites/{site-id}/permissions/{permission-id}          |
+| [Tipos de conteúdo de lista][]                            | Obter /sites/{site-id}/contentTypes                           |
+| [Criar contentType][]                            | POSTAR /sites/{site-id}/contentTypes                          |
+| [Colunas de lista][]                                  | OBTER /sites/{site-id}/columns                                |
+| [Criar coluna][]                                 | POSTAR /sites/{site-id}/columns                               |
+| [Listar operações](../api/site-list-operations.md) | OBTER /sites/{site-id}/operações                             |
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -69,24 +69,24 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [Colunas de lista]: ../api/site-list-columns.md
 [Criar coluna]: ../api/site-post-columns.md
 
-
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade            | Tipo               | Descrição
-|:-------------------------|:-------------------|:-----------------------------
-| **id**                   | cadeia de caracteres             | O [identificador exclusivo](#id-property) do item. Somente leitura.
-| **createdDateTime**      | DateTimeOffset     | A data e a hora da criação do item. Somente leitura.
-| **description**          | string             | O texto descritivo do site.
+| Propriedade                 | Tipo               | Descrição                                                                                    |
+| :----------------------- | :----------------- | :--------------------------------------------------------------------------------------------- |
+| **id**                   | cadeia de caracteres             | O [identificador exclusivo](#id-property) do item. Somente leitura.                                  |
+| **createdDateTime**      | DateTimeOffset     | A data e a hora da criação do item. Somente leitura.                                             |
+| **description**          | string             | O texto descritivo do site.                                                             |
 | **eTag**                 | string             | ETag do item. Somente leitura.                                                                  |
-| **displayName**          | cadeia de caracteres             | O texto completo do site. Somente leitura.
-| **lastModifiedDateTime** | DateTimeOffset     | A data e a hora que o item foi modificado pela última vez. Somente leitura.
-| **name**                 | string             | O nome/título do item.
-| **root**                 | [root][]           | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.
-| **sharepointIds**        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
-| **siteCollection**       | [siteCollection][] | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura.
-| **webUrl**               | string (url)       | A URL que exibe o item no navegador. Somente leitura.
+| **displayName**          | cadeia de caracteres             | O texto completo do site. Somente leitura.                                                        |
+| **lastModifiedDateTime** | DateTimeOffset     | A data e a hora que o item foi modificado pela última vez. Somente leitura.                                       |
+| **name**                 | string             | O nome/título do item.                                                                  |
+| **root**                 | [root][]           | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.            |
+| **sharepointIds**        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                       |
+| **siteCollection**       | [siteCollection][] | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura. |
+| **webUrl**               | string (url)       | A URL que exibe o item no navegador. Somente leitura.                                          |
 
 ### <a name="id-property"></a>propriedade do id
+
 Um **site** é identificado por um ID exclusivo que é composto pelos seguintes valores:
 * Hostname do conjunto de sites (contoso.sharepoint.com)
 * ID exclusiva do conjunto de sites (GUID)
@@ -99,21 +99,21 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 
 ## <a name="relationships"></a>Relações
 
-| Nome da relação | Tipo                             | Descrição
-|:------------------|:---------------------------------|:----------------------
-| **analytics**     | [itemAnalytics][] resource       | Análise sobre as atividades de modo de exibição que ocorreram no site.
-| **columns**       | Collection([columnDefinition][]) | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
-| **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
-| **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
-| **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
-| **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
-| **lists**         | Collection([list][])             | O conjunto de listas neste site.
-|**operations**|Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md)| A coleção de operações de execução prolongada para o site.
-| **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
-| **permissões**   | Coleção ([permissão][])         | As permissões associadas ao site. Nulas.
-| **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
-| **LojaDeTermos**     | [microsoft.graph.termStore.store]  | A LojaDeTermos sob este site.
-| **externalColumns**     | Collection([columnDefinition][])  | A coleção de definições de coluna disponíveis no site que são referenciadas nos sites na hierarquia pai do site atual.
+| Relação        | Tipo                                                                            | Descrição                                                                                                                                |
+| :------------------ | :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| **analytics**       | [itemAnalytics][] resource                                                      | Análise sobre as atividades de modo de exibição que ocorreram no site.                                                                          |
+| **columns**         | Collection([columnDefinition][])                                                | O conjunto de definições de coluna reutilizáveis entre listas nesse site.                                                                |
+| **contentTypes**    | Collection([contentType][])                                                     | O conjunto de tipos de conteúdo definido para esse site.                                                                                     |
+| **drive**           | [drive][]                                                                       | A unidade padrão (biblioteca de documentos) desse site.                                                                                        |
+| **drives**          | Collection([drive][])                                                           | O conjunto de unidades (bibliotecas de documentos) nesse site.                                                                             |
+| **items**           | Collection([baseItem][])                                                        | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.                                                     |
+| **lists**           | Collection([list][])                                                            | O conjunto de listas neste site.                                                                                                   |
+| **operations**      | Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md) | A coleção de operações de execução prolongada para o site.                                                                                    |
+| **pages**           | Collection([sitePage][])                                                        | O conjunto de páginas na lista SitePages no site.                                                                                |
+| **permissões**     | Coleção ([permissão][])                                                      | As permissões associadas ao site. Nulas.                                                                                        |
+| **sites**           | Collection([site][])                                                            | O conjunto dos subsites neste site.                                                                                           |
+| **LojaDeTermos**       | [microsoft.graph.termStore.store]                                               | A LojaDeTermos sob este site.                                                                                                             |
+| **externalColumns** | Collection([columnDefinition][])                                                | A coleção de definições de coluna disponíveis no site que são referenciadas nos sites na hierarquia pai do site atual. |
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md

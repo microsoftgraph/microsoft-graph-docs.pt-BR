@@ -1,25 +1,25 @@
 ---
 title: Criar unifiedRoleAssignmentScheduleRequest
 description: Crie um novo objeto unifiedRoleAssignmentScheduleRequest.
-author: carolinetempleton
+author: japere
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3caaa5a39542555f6cc89d2385fd56721bb55beb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b21347c0ff5c4d8d4175968556fca0f1d5167ff1
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098406"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510482"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>Criar unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto unifiedRoleAssignmentScheduleRequest.](../resources/unifiedroleassignmentschedulerequest.md) Essa operação permite que administradores e usuários adicionem, removam, estendam ou renovem atribuições. Para executar essa solicitação, o usuário de chamada deve ter a autenticação multifafatória (MFA) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA. Consulte [Habilitar a Autenticação Multifabilitar do Azure AD](/azure/active-directory/authentication/howto-mfa-userstates)por usuário para proteger eventos de login.
+Crie um novo [objeto unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) . Essa operação permite que administradores e usuários adicionem, removam, estendam ou renovem atribuições. Para executar essa solicitação, o usuário de chamada deve ter a autenticação multifafatória (MFA) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA. Consulte [Habilitar a Autenticação Multifabilitar do Azure AD](/azure/active-directory/authentication/howto-mfa-userstates) por usuário para proteger eventos de login.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -45,29 +45,29 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignmentScheduleRequest.](../resources/unifiedroleassignmentschedulerequest.md)
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo para unifiedRoleAssignmentScheduleRequest. Chave, não anulada, somente leitura.|
-|ação|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. Os valores possíveis são: <ul><li>`AdminAssign`: Para que os administradores atribuam funções a usuários ou grupos.</li><li>`AdminRemove`: Para que os administradores removam usuários ou grupos de funções.</li><li> `AdminUpdate`: Para que os administradores alterem as atribuições de função existentes.</li><li>`AdminExtend`: Para que os administradores estendam atribuições expiradas.</li><li>`AdminRenew`: Para que os administradores renovem atribuições expiradas.</li><li>`SelfActivate`: Para que os usuários ativem suas atribuições.</li><li>`SelfDeactivate`: Para que os usuários desativem suas atribuições ativas.</li><li>`SelfExtend`: Para que os usuários solicitem estender suas atribuições de expiração.</li><li>`SelfRenew`: Para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>
+|ação|String|Representa o tipo da operação na atribuição de função. Os valores possíveis são: <ul><li>`AdminAssign`: Para que os administradores atribuam funções a usuários ou grupos.</li><li>`AdminRemove`: Para que os administradores removam usuários ou grupos de funções.</li><li> `AdminUpdate`: Para que os administradores alterem as atribuições de função existentes.</li><li>`AdminExtend`: Para que os administradores estendam atribuições expiradas.</li><li>`AdminRenew`: Para que os administradores renovem atribuições expiradas.</li><li>`SelfActivate`: Para que os usuários ativem suas atribuições.</li><li>`SelfDeactivate`: Para que os usuários desativem suas atribuições ativas.</li><li>`SelfExtend`: Para que os usuários solicitem estender suas atribuições de expiração.</li><li>`SelfRenew`: Para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>
 |principalId|Cadeia de caracteres|Identificador da entidade à qual a atribuição está sendo concedida.|
-|roleDefinitionId|Cadeia de caracteres|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
-|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
-|isValidationOnly|Booliano|Especifica se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
-|targetScheduleId|Cadeia de caracteres|ID do objeto schedule anexado à atribuição.|
+|roleDefinitionId|String|Identificador do unifiedRoleDefinition para o que a atribuição se destina. Somente leitura.|
+|directoryScopeId|String|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
+|appScopeId|String|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
+|isValidationOnly|Boolean|Especifica se a chamada é uma validação ou uma chamada real. De definir essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação.|
+|targetScheduleId|String|ID do objeto schedule anexado à atribuição.|
 |justification|Cadeia de caracteres|Uma mensagem fornecida por usuários e administradores ao criar a solicitação sobre por que ela é necessária.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O objeto schedule da solicitação de atribuição de função.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|O objeto ticketInfo anexado à solicitação de atribuição de função que inclui detalhes do número do tíquete e do sistema de tíquetes.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um [objeto unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) no corpo da resposta.
 
-Quando o usuário de chamada não foi desafiado para autenticação multifato durante a sessão de login, uma solicitação com a ação SelfActivate falha e retorna `400 Bad request` um código de resposta.
+Quando o usuário de chamada não foi desafiado para autenticação multifato durante a sessão de login, uma solicitação com a ação SelfActivate falha e retorna um `400 Bad request` código de resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -75,7 +75,7 @@ Quando o usuário de chamada não foi desafiado para autenticação multifato du
 
 #### <a name="request"></a>Solicitação
 
-Na solicitação a seguir, o administrador cria uma solicitação para atribuir uma função identificada por `fdd7a751-b60b-444a-984c-02652fe8fa1c` uma entidade identificada por **id** `07706ff1-46c7-4847-ae33-3003830675a1` . O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é permanente, ou seja, ela não expira.
+Na solicitação a seguir, o administrador cria uma solicitação para atribuir uma função identificada por `fdd7a751-b60b-444a-984c-02652fe8fa1c` uma entidade identificada por **id** `07706ff1-46c7-4847-ae33-3003830675a1`. O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é permanente, ou seja, ela não expira.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -187,7 +187,7 @@ Content-Type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Na solicitação a seguir, um usuário identificado por **principalId** ativa sua própria função `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` qualificada identificada por `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3` . O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é de cinco horas. Para executar essa solicitação, o usuário de chamada deve ter a autenticação multifafatória (MFA) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA.
+Na solicitação a seguir, um usuário identificado por **principalId** `c6ad1942-4afa-47f8-8d48-afb5d8d69d2f` ativa sua própria função qualificada identificada por `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3`. O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é de cinco horas. Para executar essa solicitação, o usuário de chamada deve ter a autenticação multifafatória (MFA) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

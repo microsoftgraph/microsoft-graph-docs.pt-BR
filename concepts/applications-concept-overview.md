@@ -5,12 +5,12 @@ author: FaithOmbongi
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c0e264cb0b0b9b638741aeb0db774efd121c83e9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: c824f8b70f273d31b37d2458e384dbb49ffcb0c7
+ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526167"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63780524"
 ---
 # <a name="applications-api-overview"></a>Visão geral da API de aplicativos
 
@@ -26,7 +26,7 @@ As APIs do Microsoft Graph permitem gerenciar esses recursos e ações relaciona
 
 ## <a name="application-management"></a>Gerenciamento de aplicativo
 
-O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Você pode usar os [APIs de aplicativo](/graph/api/resources/application?view=graph-rest-1.0) no Microsoft Graph para gerenciar aplicativos programaticamente.
+O registro de aplicativo envolve informar ao Azure Active Directory sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, a URI para identificar seu aplicativo e muito mais. Você pode usar as [APIs de aplicativo](/graph/api/resources/application?view=graph-rest-1.0) no Microsoft Graph gerenciar aplicativos programaticamente.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
@@ -74,7 +74,7 @@ Para obter mais informações sobre a sincronização, consulte os seguintes art
 - [Como funciona o provisionamento](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 Para saber mais sobre como usar as APIs de sincronização, confira os seguintes tutoriais e suas APIs associadas:
-- [Configurar o provisionamento usando as APIs do Microsoft Graph](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [Configurar o provisionamento usando as APIs do Microsoft Graph](/azure/active-directory/app-provisioning/application-provisioning-configuration-api)
     - [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
     - [synchronizationtemplate](/graph/api/resources/synchronization-synchronizationtemplate)
     - [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob)

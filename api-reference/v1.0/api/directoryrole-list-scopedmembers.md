@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9dbd4fa6395f3cd37e6e982f0dd9915ec85350ab
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 94fa828c7ca4faeef04175024823f5f1571b85f1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101183"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671675"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>Listar scopedMembers para uma função de diretório
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
@@ -45,14 +45,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-get-the-members-of-a-directory-role-using-role-id"></a>Exemplo 1: Obter os membros de uma função de diretório usando a id de função
 
 #### <a name="request"></a>Solicitação
-A seguir está um exemplo de uma solicitação para uma **id** de função de `41d12a2f-caa8-4e3e-ba14-05e5102ce085` diretório.
+A seguir está um exemplo de uma solicitação para uma **id de função de diretório**`41d12a2f-caa8-4e3e-ba14-05e5102ce085`.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -124,7 +124,7 @@ Content-type: application/json
 ### <a name="example-2--get-the-scoped-members-of-a-directory-role-using-roletemplateid"></a>Exemplo 2: Obter os membros com escopo de uma função de diretório usando roleTemplateId
 
 #### <a name="request"></a>Solicitação
-A seguir está um exemplo de uma solicitação para uma função de diretório com **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c` .
+A seguir está um exemplo de uma solicitação para uma função de diretório com **roleTemplateId** `fdd7a751-b60b-444a-984c-02652fe8fa1c`.
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

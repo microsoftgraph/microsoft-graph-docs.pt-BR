@@ -2,13 +2,13 @@
 title: Componente agenda no microsoft Graph Toolkit
 description: O componente web mgt-agenda é usado para representar eventos em um calendário de usuário ou grupo.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: c69c4adf43a16c3a8c8e6af643e89091c28dc4a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 6787f7d5ce8804b4f24306b0b17ad47024d227b5
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035350"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589046"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Componente agenda no microsoft Graph Toolkit
 
@@ -24,7 +24,7 @@ O exemplo a seguir mostra os eventos de calendário do usuário assinado exibido
 
 ## <a name="properties"></a>Propriedades
 
-Por padrão, o componente busca eventos do ponto de extremidade e `mgt-agenda` exibe eventos para o dia `/me/calendarview` atual. Há várias propriedades que você pode usar para alterar esse comportamento.
+Por padrão, o `mgt-agenda` componente busca eventos do `/me/calendarview` ponto de extremidade e exibe eventos para o dia atual. Há várias propriedades que você pode usar para alterar esse comportamento.
 
 | Atributo | Propriedade | Descrição |
 | --- | --- | --- |
@@ -32,10 +32,10 @@ Por padrão, o componente busca eventos do ponto de extremidade e `mgt-agenda` e
 | days | days | Um número de dias para buscar do Microsoft Graph - o padrão é 3 - o valor não terá efeito se `event-query` o atributo for definido. |
 | show-max | showMax | Um número para indicar o número máximo de eventos a mostrar. O valor padrão não está definido (nenhum máximo). |
 | group-id | groupId | Uma ID de cadeia de caracteres para um calendário de grupo a ser usado em vez do calendário atual do usuário. |
-| event-query | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos da Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres delimitando-o com `|` ( `/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all` ). |
-| events | events | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente - use essa propriedade para acessar os eventos carregados pelo componente. De definir esse valor para carregar seus próprios eventos - se o valor for definido pelo desenvolvedor, `date` os atributos , ou não terão `days` `event-query` efeito. |
+| event-query | eventQuery | Uma cadeia de caracteres que representa uma consulta alternativa a ser usada ao buscar eventos da Microsoft Graph. Opcionalmente, adicione o escopo delegado no final da cadeia de caracteres delimitando-o com `|` (`/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all`). |
+| events | events | Uma matriz de eventos para obter ou definir a lista de eventos renderizados pelo componente - use essa propriedade para acessar os eventos carregados pelo componente. De definir esse valor para carregar seus próprios eventos - se o valor for definido pelo desenvolvedor, `date`os atributos , ou não `days``event-query` terão efeito. |
 | group-by-day | groupByDay | Um valor Boolean para agrupar eventos por dia - por padrão, os eventos não são agrupados. |
-| preferred-timezone | preferredTimezone | Nome do fuso horário preferencial a ser usado ao recuperar eventos do Microsoft Graph; por exemplo, `Pacific Standard Time` . Por padrão, esse atributo usa o fuso horário UTC. O fuso horário preferencial para o usuário atual pode ser recuperado chamando o ponto de extremidade e lendo o `me/mailboxSettings` valor da **propriedade timeZone.** |
+| preferred-timezone | preferredTimezone | Nome do fuso horário preferencial a ser usado ao recuperar eventos do Microsoft Graph; por exemplo, `Pacific Standard Time`. Por padrão, esse atributo usa o fuso horário UTC. O fuso horário preferencial para o usuário atual `me/mailboxSettings` pode ser recuperado chamando o ponto de extremidade e lendo o valor da **propriedade timeZone** . |
 
 O exemplo a seguir altera o comportamento do componente para buscar dados para uma data específica e até três dias.
 
@@ -91,7 +91,7 @@ Para saber mais, confira [componentes de estilo](../customize-components/style.m
 
 ## <a name="templates"></a>Modelos
 
-O `mgt-agenda` componente dá suporte a vários [modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um elemento dentro de um componente e de definir o `<template>` valor como um dos `data-type` seguintes:
+O `mgt-agenda` componente dá suporte a [vários modelos](../customize-components/templates.md) que permitem substituir determinadas partes do componente. Para especificar um modelo, inclua um `<template>` elemento dentro de um componente e de `data-type` definir o valor como um dos seguintes:
 
 | Tipo de dados | Contexto de dados | Descrição |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ Os exemplos a seguir ilustram como usar o `event` modelo:
 
 Para saber mais, confira [modelos](../customize-components/templates.md).
 
-## <a name="events"></a>Events
+## <a name="events"></a>Eventos
 
 Os eventos a seguir são disparados do controle.
 
@@ -143,9 +143,9 @@ Este componente usa as seguintes APIs Graph Microsoft e permissões:
 | - | - | - |
 | Padrão. | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 
-O componente permite que você especifique uma consulta Graph microsoft diferente para chamar (como `/groups/{id}/calendar/calendarView` ). Nesse caso, anexar a permissão ao final da cadeia de caracteres, delimitada por `|` .
+O componente permite que você especifique uma consulta Graph Microsoft para chamar (como `/groups/{id}/calendar/calendarView`). Nesse caso, anexar a permissão ao final da cadeia de caracteres, delimitada por `|`.
 
-Ao usar o modelo padrão e o modelo padrão, APIs e permissões adicionais `renderAttendees` são necessárias. O modelo padrão para esse componente usa um [componente mgt-people](people.md) para eventos que têm participantes e herda todas as permissões.
+Ao usar o modelo padrão e o modelo `renderAttendees` padrão, APIs e permissões adicionais são necessárias. O modelo padrão para esse componente usa um [componente mgt-people](people.md) para eventos que têm participantes e herda todas as permissões.
 
 ## <a name="authentication"></a>Autenticação
 
@@ -157,7 +157,7 @@ O `mgt-agenda` componente não armazena dados em cache.
 
 ## <a name="extend-for-more-control"></a>Estender para obter mais controle
 
-Para cenários mais complexos ou um UX realmente personalizado, esse componente expõe vários métodos render* para substituição `protected` em extensões de componentes.
+Para cenários mais complexos ou um UX realmente personalizado, `protected` esse componente expõe vários métodos render* para substituição em extensões de componentes.
 
 | Método | Descrição |
 | - | - |

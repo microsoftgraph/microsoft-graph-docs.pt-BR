@@ -4,22 +4,22 @@ description: Você pode usar a API Pesquisa da Microsoft para importar dados ext
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 18269238f77c1c9405242326a5015cdc620c4092
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 01a78191440f017aaa43600d9d15170bf96662b3
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214822"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671892"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Use a API Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores Graph Microsoft (visualização) 
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Use a API Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores Graph Microsoft
 
-Use a API Pesquisa da Microsoft para pesquisar o conteúdo ingerido e indexado pelos conectores [Graph Microsoft.](/microsoftsearch/connectors-overview) O conteúdo é importado por meio de conectores [integrados fornecidos](/microsoftsearch/connectors-gallery) pela Microsoft ou por meio de conectores personalizados implementados usando a API de ingestão de conectores do [Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
+Use a API Pesquisa da Microsoft para pesquisar o conteúdo ingerido e indexado pelos conectores [Graph Microsoft](/microsoftsearch/connectors-overview). O conteúdo é importado por meio de conectores [integrados fornecidos](https://www.microsoft.com/microsoft-search/connectors) pela Microsoft ou por meio de conectores personalizados implementados usando [a API](/graph/api/resources/indexing-api-overview) de ingestão de conectores Graph Microsoft.
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
 Depois que o conteúdo tiver sido importado e indexado, você poderá usar a API de pesquisa para consultar o conteúdo.
 
-Para pesquisar tipos personalizados, especifique as seguintes propriedades no corpo da solicitação do [método de](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) consulta:
+Para pesquisar tipos personalizados, especifique as seguintes propriedades no corpo da solicitação do [método de](/graph/api/search-query) consulta:
 
 - A **propriedade contentSources** para incluir a ID de conexão atribuída durante a instalação do conector. Você pode passar várias IDs de conexão para pesquisar em várias conexões. Os resultados são retornados em uma única lista, classificada entre as várias conexões.
 
@@ -27,11 +27,11 @@ Para pesquisar tipos personalizados, especifique as seguintes propriedades no co
 TODOSEARCHAPI - Bug 1653398 
 -->
 
-- A **propriedade entityTypes** como `externalItem` .
+- A **propriedade entityTypes** como `externalItem`.
 
-- A **propriedade fields** para incluir os campos no item externo a ser recuperado. Observe que, se você  não incluir nenhum campo na solicitação, a resposta conterá todos os campos marcados como *recuperáveis* no esquema de dados especificado para as conexões especificadas na propriedade **contentSources.**
+- A **propriedade fields** para incluir os campos no item externo a ser recuperado. Observe que, se você não incluir nenhum  campo na solicitação, a resposta conterá todos os campos marcados como *recuperáveis* no esquema de dados especificado para as conexões **especificadas na propriedade contentSources**.
 
-Além disso, você pode agregar resultados de pesquisa com base em propriedades em [um externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) que são numéricos ou tipo de cadeia de caracteres e que são definidos como refináveis no [esquema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). Para obter mais informações, [consulte Refinar resultados de pesquisa usando agregação .](search-concept-aggregation.md)
+Além disso, você pode agregar resultados de pesquisa com base em propriedades em [um externalItem](/graph/api/resources/externalitem) que são do tipo numérico ou de cadeia de caracteres e que são definidos como refináveis no [esquema](/graph/api/resources/schema). Para obter mais informações, [consulte Refinar resultados de pesquisa usando agregação](search-concept-aggregation.md).
 
 ## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>Exemplo 1: Recuperar itens usando o Azure SQL conector integrado
 
@@ -40,7 +40,7 @@ Neste exemplo, o conteúdo do banco de dados [AdventureWorks](/sql/samples/adven
 ### <a name="request"></a>Solicitação
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -75,7 +75,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
       "searchTerms": ["yang"],
@@ -126,7 +126,7 @@ Content-type: application/json
 ### <a name="request"></a>Solicitação
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -163,7 +163,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)",
 "value": [
       {
         "searchTerms": [
@@ -236,8 +236,8 @@ Content-type: application/json
 }
 ```
 
-Para obter mais detalhes, consulte [Atribuir rótulos de propriedade](/microsoftsearch/configure-connector#step-5-assign-property-labels).
+Para obter mais detalhes, consulte [Atribuir rótulos de propriedade](/microsoftsearch/configure-connector#step-6-assign-property-labels).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview)

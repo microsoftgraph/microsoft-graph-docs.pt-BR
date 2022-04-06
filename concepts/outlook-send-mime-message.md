@@ -4,12 +4,12 @@ description: Os clientes de email têm a capacidade de enviar emails pelo Exchan
 author: isvargasmsft
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 80b669bfb757010d1842c8ba16513d2789e1e059
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: c1aec55ea0d8fa405047bc9c7e3a31dbd3d06deb
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477710"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510510"
 ---
 # <a name="send-messages-with-mime-content"></a>Enviar mensagens com conteúdo MIME
 
@@ -43,7 +43,7 @@ Para saber mais sobre o formato MIME, consulte [como obter conteúdo MIME de uma
 
 
 ## <a name="specify-request-header-and-mime-message-body"></a>Especificar o corpo da mensagem MIME e o cabeçalho de solicitação
-Você pode criar uma [mensagem](/graph/api-reference/v1.0/resources/message) no formato JSON ou MIME. Especifique o formato pretendido no cabeçalho da solicitação:
+Você pode criar uma [mensagem](/graph/api/resources/user) no formato JSON ou MIME. Especifique o formato pretendido no cabeçalho da solicitação:
 
 - `Content-Type: application/json` para usar o formato JSON no corpo da solicitação.
 - `Content-Type: text/plain` para usar o formato MIME no corpo da solicitação.

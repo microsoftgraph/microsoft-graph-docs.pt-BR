@@ -1,16 +1,16 @@
 ---
 title: 'call: playPrompt'
 description: Reproduza um prompt na chamada.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6fafa06afef81cc71d307b8ee768641920cb2857
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5cbe73f831eebfa2960f5d93df534667eaed1f41
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62346190"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64607516"
 ---
 # <a name="call-playprompt"></a>call: playPrompt
 
@@ -25,14 +25,16 @@ Para obter mais informações sobre como lidar com operações, consulte [commsO
 > [!Note]
 > A **ação playPrompt** só tem suporte para [chamadas](../resources/call.md) iniciadas com [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Nenhum.                                        |
+| Aplicativo                            | Calls.Initiate.All, Calls.AccessMedia.All |
+
+> **Observação:** As permissões são verificadas quando a chamada é criada; nenhuma verificação de permissão adicional é feita ao chamar essa API. Calls.AccessMedia.All só é necessário para chamadas que usam mídia hospedada pelo aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -54,8 +56,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |prompts|[Coleção MediaPrompt](../resources/mediaprompt.md)| Os prompts a serem tocados. O tamanho máximo da coleção mediaPrompt suportado é 20.|
-|loop|Boolean| O valor do loop. True indica fazer loop infinitamente. O valor padrão é falso. |
-|clientContext|String|Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
+|loop|Booliano| O valor do loop. True indica fazer loop infinitamente. O valor padrão é falso. |
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. Pode ter no máximo 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto playPromptOperation](../resources/playpromptoperation.md) no corpo da resposta.

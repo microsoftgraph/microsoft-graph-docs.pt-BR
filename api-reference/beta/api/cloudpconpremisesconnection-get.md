@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 02f65bfde17598e36b9e8966e630f00dcf79b451
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 4a00389960259eea94efbad77f1305dc434da37e
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262054"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587592"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>Obter cloudPcOnPremisesConnection
 
@@ -20,7 +20,8 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações do [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
-## <a name="permissions"></a>Permissões
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -61,7 +62,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um [o
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>Exemplo 1: Obter as propriedades padrão de uma conexão local
+### <a name="example-1-get-the-default-properties-of-an-azure-network-connection"></a>Exemplo 1: Obter as propriedades padrão de uma conexão de rede do Azure
 
 #### <a name="request"></a>Solicitação
 
@@ -120,6 +121,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
     "type": "hybridAzureADJoin",
     "displayName": "Display Name value",
     "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
@@ -134,7 +136,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>Exemplo 2: Obter as propriedades selecionadas de uma conexão local, incluindo healthCheckStatusDetails
+### <a name="example-2-get-the-selected-properties-of-an-azure-network-connection-including-healthcheckstatusdetails"></a>Exemplo 2: Obter as propriedades selecionadas de uma conexão de rede do Azure, incluindo healthCheckStatusDetails
 
 #### <a name="request"></a>Solicitação
 
@@ -193,6 +195,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {

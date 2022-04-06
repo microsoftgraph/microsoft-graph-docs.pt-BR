@@ -2,13 +2,13 @@
 title: Componentes de estilo no microsoft Graph Toolkit
 description: Use propriedades personalizadas CSS para modificar os estilos de componente Graph Toolkit Microsoft.
 ms.localizationpriority: medium
-author: beth-panx
-ms.openlocfilehash: 8447517a10bf61c78c1a7c668b6430c616f40fa8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 6d3c565ff2455643d0435936a34add1dda0c6578
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129562"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589202"
 ---
 # <a name="styling-components-in-the-microsoft-graph-toolkit"></a>Componentes de estilo no microsoft Graph Toolkit
 
@@ -20,9 +20,9 @@ mgt-person {
 }
 ```
 
-Não é possível estilização de elementos internos de um componente, a menos que você forneça uma propriedade personalizada CSS. Os elementos filho do componente são hospedados em um [dom de sombra.](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
+Não é possível estilização de elementos internos de um componente, a menos que você forneça uma propriedade personalizada CSS. Os elementos filho do componente são hospedados em um [dom de sombra](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
 
-Para obter mais flexibilidade, considere o uso [de modelos personalizados.](./templates.md)
+Para obter mais flexibilidade, considere o uso [de modelos personalizados](./templates.md).
 
 ## <a name="apply-themes"></a>Aplicar temas
 

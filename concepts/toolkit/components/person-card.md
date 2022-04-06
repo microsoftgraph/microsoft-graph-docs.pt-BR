@@ -2,13 +2,13 @@
 title: Person-Card componente no microsoft Graph Toolkit
 description: Um Person-Card é um componente para exibir mais informações relacionadas a uma pessoa.
 ms.localizationpriority: medium
-author: vogtn
-ms.openlocfilehash: a9ebf62b31756702b925ca9b696bf62624205ee6
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: sebastienlevert
+ms.openlocfilehash: 8548430e5a34250c89f9e2e9c0c8e43f909b7bbe
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672039"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587935"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Person-Card componente no microsoft Graph Toolkit
 
@@ -58,7 +58,7 @@ As seções são carregadas por padrão, mas podem ser desabilitadas globalmente
 
 | Propriedade | Descrição |
 | ------------ | ------------- |
-| organização | `boolean` - Indica se a seção organização do cartão de pessoa é mostrada. O valor padrão é `true`.  |
+| organization | `boolean` - Indica se a seção organização do cartão de pessoa é mostrada. O valor padrão é `true`.  |
 | mailMessages | `boolean` - Indica se a seção mensagens de cartão de pessoa é mostrada. O valor padrão é `true`.  |
 | arquivos | `boolean` - Indica se a seção arquivos de cartão de pessoa é mostrada. O valor padrão é `true`.  |
 | perfil | `boolean` - Indica se a seção perfil de cartão de pessoa é mostrada. O valor padrão é `true`.  |
@@ -176,7 +176,7 @@ O Person-Card usa as seguintes APIs e permissões Graph Microsoft.
 | `sections.organization.showWorksWith` set (padrão) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Organização |
 | `sections.mailMessages` habilitado (padrão) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Mensagens |
 | `sections.files` habilitado (padrão) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) e [/me/insights/used](/graph/api/insights-list-used) | Arquivos |
-| `sections.profile` habilitado (padrão) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta) | Perfil |
+| `sections.profile` habilitado (padrão) | User.Read.All | [/users/{id}/profile](/graph/api/profile-get?view=graph-rest-beta&preserve-view=true) | Perfil |
 
 A `MgtPersonCard` classe também expõe um método `getScopes` estático que retorna uma matriz de escopos necessários para que o cartão de pessoa funcione com base na configuração global do cartão de pessoa.
 

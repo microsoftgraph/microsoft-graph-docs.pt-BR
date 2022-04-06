@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 64406625dfcb8b4472a79a0fba694f4bb7d916d6
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: cc3b041d0cac4e65ba7ef563a9fd57d3df7c57ef
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262138"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586892"
 ---
 # <a name="list-cloudpcs"></a>Listar cloudPCs
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Listar propriedades e relações dos objetos [cloudPC](../resources/cloudpc.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -127,7 +127,7 @@ Content-Type: application/json
       "managedDeviceName": "A00002GI001",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
       "provisioningPolicyName": "HR provisioning policy",
-      "onPremisesConnectionName": "on-Premises connection for HR",
+      "onPremisesConnectionName": "Azure network connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "servicePlanType": "enterprise",

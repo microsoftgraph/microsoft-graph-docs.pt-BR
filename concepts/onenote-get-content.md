@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Microsoft 365"
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 61fe8e4f202a5b921818eca1dd4be7e753d7f8fa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 13a017ac30de19f978c21b1da549efefac985ae7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129709"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64586867"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 
@@ -19,10 +19,16 @@ Para obter a estrutura e o conteúdo do OneNote, você envia uma solicitação G
 
 `GET ../onenote/pages/{id}`
 
-Se a solicitação for bem-sucedida, o Microsoft Graph retornará um código de status de HTTP 200 e as entidades ou o conteúdo que você solicitou. As entidades do OneNote são retornadas como objetos JSON que estão em conformidade com a especificação OData versão 4.0.
+Se a solicitação for bem-sucedida, o Microsoft Graph retornará um código de status HTTP `200 OK` e as entidades ou o conteúdo que você solicitou. As entidades do OneNote são retornadas como objetos JSON que estão em conformidade com a especificação OData versão 4.0.
 
 Usando as opções de cadeia de caracteres de consulta, você pode filtrar as consultas e melhorar o desempenho.
 
+> [!NOTE]
+> Se você estiver criando uma solução que dê suporte a um dos cenários a seguir, atingirá as limitações da API do OneNote:
+> - Seções do OneNote de Backup/restauração
+> - Fazer backup/restaurar blocos de anotações do OneNote
+> 
+> Para operações de backup e restauração, consulte [Práticas recomendadas para descobrir arquivos e detectar alterações em escala](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
 
 <a name="request-uri"></a>
 
@@ -143,7 +149,7 @@ A resposta JSON contém conteúdo de visualização que você pode usar para aju
 
 A propriedade **previewText** contém um trecho de texto proveniente da página. O Microsoft Graph retorna frases completas, no máximo de 300 caracteres. 
 
-Se a página tem uma imagem que pode ser usada para criar uma IU de visualização, a propriedade **href** no objeto **previewImageUrl** contém um link para um [recurso de imagem](#image-or-other-file-resource) público. Você pode usar esse link em HTML. Caso contrário, **href** retorna nulo.
+Se a página tiver uma imagem que possa ser usada para criar uma interface do usuário de visualização, a propriedade **href** no objeto **previewImageUrl** conterá um link para um recurso de [imagem pública](#image-or-other-file-resource). Você pode usar este link em HTML. Caso contrário, **href** retorna nulo.
 
 #### <a name="example"></a>Exemplo 
 
@@ -463,7 +469,7 @@ Obtenha o nome e o link **pagesUrl** para todas as seções do bloco de anotaç�
 
 ### <a name="filter--select--orderby"></a>filter, select e orderby   
 
-Obtenha o nome e o link **pagesUrl** para todas as seções que contêm o termo *spring* no nome da seção. Ordenar seções de pedidos por última data modificada.
+Obtenha o link name e **pagesUrl** para todas as seções que contêm o termo *spring* no nome da seção. Ordene as seções pela data da última modificação.
 
 ```
 [GET] ../sections?filter=contains(tolower(name),'spring')&select=name,pagesUrl&orderby=lastModifiedTime desc
@@ -471,7 +477,7 @@ Obtenha o nome e o link **pagesUrl** para todas as seções que contêm o termo 
  
 ### <a name="orderby"></a>orderby
 
-Obtenha as primeiras 20 páginas pela propriedade **createdByAppId** e, depois, pela hora de criação mais recente. A API retorna 20 entradas por padrão.
+Obtenha a ordem das primeiras 20 páginas pela **createdByAppId** e, em seguida, pela hora de criação mais recente. A API retorna 20 entradas por padrão.
 
 ```
 [GET] ../pages?orderby=createdByAppId,createdTime desc
@@ -599,7 +605,7 @@ Microsoft Graph é compatível com os seguintes operadores e funções do OData 
 | not | `not contains(tolower(title),'school')` |  
 
 <br/>
-  
+
 | Função da cadeia de caracteres | Exemplo |  
 |------|------|   
 | contains | `contains(tolower(title),'spring')` |  
@@ -650,7 +656,7 @@ A opção de cadeia de caracteres de consulta **expand** pode ser usada com as s
 | Dados da solicitação | Descrição |  
 |------|------|  
 | Protocolo | Todas as solicitações usam o protocolo HTTPS de SSL/TLS. |  
-| Cabeçalho de autorização | <p>`Bearer {token}`, onde `{token}` é um token de acesso do OAuth 2.0 válido para o aplicativo registrado.</p><p>Se ele estiver ausente ou for inválido, a solicitação falhará com um código de status 401. Confira [Autenticação e permissões](permissions-reference.md).</p> |  
+| Cabeçalho de autorização | <p>`Bearer {token}`, onde `{token}` é um token de acesso do OAuth 2.0 válido para o aplicativo registrado.</p><p>Se ausente ou inválido, a solicitação falha com um código de status 401. Consulte [Autenticação e permissões](permissions-reference.md).</p> |  
 | Cabeçalho Accept | <p> `application/json` para entidades e conjuntos de entidades do OneNote</p><p> `text/html` para conteúdo de página</p> | 
 
 <br/>

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 531052ac29718493bad6d2ab82d7c1b1eaaeb510
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: e17d665da56a9625d6b83f384904af18284d2bcd
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368207"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629404"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso windowsAutopilotDeviceIdentity
 
@@ -22,18 +22,18 @@ Namespace: microsoft.graph
 
 O recurso windowsAutopilotDeviceIdentity representa um Windows Autopilot.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[Coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Listar propriedades e relações dos [objetos windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .|
 |[Obter windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Ler propriedades e relações do [objeto windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .|
 |[Criar windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-create.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Crie um novo [objeto windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .|
 |[Excluir windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|Nenhum|Exclui um [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md).|
-|[ação assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Nenhuma|Atribui o usuário a dispositivos autopilot.|
+|[ação assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Nenhum|Atribui o usuário a dispositivos autopilot.|
 |[ação unassignUserFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Nenhum|Desaigna o usuário de um dispositivo autopilot.|
-|[Ação updateDeviceProperties](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|Nenhuma|Atualiza as propriedades em dispositivos do Autopilot.|
+|[Ação updateDeviceProperties](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|Nenhum|Atualiza as propriedades em dispositivos do Autopilot.|
 |[Ação assignResourceAccountToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|Nenhum|Atribui conta de recurso a dispositivos autopilot.|
-|[Ação unassignResourceAccountFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|Nenhuma|Desaigna a conta de recurso de um dispositivo Autopilot.|
+|[Ação unassignResourceAccountFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|Nenhum|Desaigna a conta de recurso de um dispositivo Autopilot.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -48,22 +48,20 @@ O recurso windowsAutopilotDeviceIdentity representa um Windows Autopilot.
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |fabricante|String|Fabricante Oem do dispositivo Windows piloto automático.|
 |modelo|String|Nome do modelo do dispositivo Windows piloto automático.|
-|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Estado de registro do intune do dispositivo Windows piloto automático. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
+|enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune estado de registro do dispositivo Windows piloto automático. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|lastContactedDateTime|DateTimeOffset|Intune Última Data Contada do dispositivo Windows piloto automático.|
 |addressableUserName|String|Nome de usuário acessível.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
+|userPrincipalName|String|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
 |skuNumber|String|Número SKU|
 |systemFamily|String|Família do Sistema|
 |azureActiveDirectoryDeviceId|String|AAD ID do dispositivo - a ser preterido|
 |azureAdDeviceId|String|AAD ID do dispositivo|
-|managedDeviceId|Cadeia de caracteres|ID de dispositivo gerenciado|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|managedDeviceId|String|ID de dispositivo gerenciado|
+|displayName|String|Nome de exibição|
 |deviceAccountUpn|String|Surface Hub upn da conta de dispositivo|
 |deviceAccountPassword|String|Surface Hub senha da conta de dispositivo|
 |deviceFriendlyName|String|Surface Hub nome amigável do dispositivo|
-|remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Estado de correção do dispositivo. Os valores possíveis são: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `unknownFutureValue`.|
-|remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState set time of Autopilot device.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -105,9 +103,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "deviceAccountUpn": "String",
   "deviceAccountPassword": "String",
-  "deviceFriendlyName": "String",
-  "remediationState": "String",
-  "remediationStateLastModifiedDateTime": "String (timestamp)"
+  "deviceFriendlyName": "String"
 }
 ```
 

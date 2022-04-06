@@ -2,13 +2,13 @@
 title: Provedor de Electron
 description: O provedor MSAL para o Eletrônica usa o nó msal para entrar em usuários e adquirir tokens para usar com o microsoft Graph.
 ms.localizationpriority: medium
-author: amrutha95
-ms.openlocfilehash: 183afb0393915c8411b802a4e87614f5a2ecde5c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 34bc60842c9bd22ca79d9a36ce0aa31ef1168f7f
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127896"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589286"
 ---
 # <a name="electron-provider"></a>Provedor de Electron
 
@@ -56,13 +56,13 @@ let config: MsalElectronConfig = {
 ElectronAuthenticator.initialize(config);
 ```
  
-| Atributo    | Descrição                                                                                                                                                                                                                                                           |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientId    | ID do cliente de cadeia de caracteres (consulte Criando uma ID de aplicativo/cliente). Obrigatório.                                                                                                                                                                                                           |                                                                                                                                                                               |
-| escopos       | Cadeias de caracteres separadas por vírgulas para escopos que o usuário deve consentir ao entrar. Recomendado.                                                                                                                                                                                     |
-| authority    | Cadeia de caracteres de autoridade - padrão é a autoridade comum. Para aplicativos de locatário único, use sua ID de locatário ou nome de locatário. Por exemplo, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]` . Opcional. |                                                                                                                                                                                          |
-| mainWindow  | Instância do BrowserWindow principal que requer autenticação.|
-| cachePlugin | Plug-in de cache que você gostaria de usar para armazenamento persistente de tokens. Consulte [Extensões de Autenticação da Microsoft para Nó](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Opcional. | 
+| Atributo   | Descrição                                                                                                                                                                                                                                                           |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| clientId    | ID do cliente de cadeia de caracteres (consulte Criando uma ID de aplicativo/cliente). Obrigatório.                                                                                                                                                                                                           |
+| escopos      | Cadeias de caracteres separadas por vírgulas para escopos que o usuário deve consentir ao entrar. Recomendado.                                                                                                                                                                                  |
+| authority   | Cadeia de caracteres de autoridade - padrão é a autoridade comum. Para aplicativos de locatário único, use sua ID de locatário ou nome de locatário. Por exemplo: `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` ou `https://login.microsoftonline.com/[your-tenant-id]`. Opcional. |
+| mainWindow  | Instância do BrowserWindow principal que requer autenticação.                                                                                                                                                                                                      |
+| cachePlugin | Plug-in de cache que você gostaria de usar para armazenamento persistente de tokens. Consulte [Extensões de Autenticação da Microsoft para Nó](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Opcional.                       |
 
 >**Observação:** Atualmente, o provedor não dá suporte a suporte incremental. Como prática prática, certifique-se de concordar com todos os escopos necessários aos componentes.
     
@@ -70,20 +70,20 @@ ElectronAuthenticator.initialize(config);
 
 ### <a name="add-new-application-registration-in-azure-active-directory-to-get-a-client-id"></a>Adicionar novo registro de aplicativo Azure Active Directory para obter uma ID do cliente
 
-Para criar um aplicativo no Azure Active Directory, adicione um novo registro de aplicativo e configure um nome de aplicativo e URI de redirecionamento.
+Para criar um aplicativo no Azure Active Directory, adicione um novo registro de aplicativo e configure um nome de aplicativo e redirecione o URI.
 
 Para criar o aplicativo em Azure Active Directory:
 
 1. Acesse o [Portal do Azure](https://portal.azure.com).
 1. No menu, selecione **Azure Active Directory**.
-1. No menu Azure Active Directory, selecione **Registros de aplicativos**.
-1. No menu superior, selecione o **botão Novo registro.**
-1. Insira o nome do seu aplicativo; por exemplo, `My Electron-App` .
-1. Para o tipo de tipos de conta com [suporte,](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)selecione Contas em qualquer diretório organizacional (Qualquer diretório **do Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
-1. No campo **Redirecionar URI,** no menu suspenso, selecione **Cliente público/nativo (área** de trabalho móvel &) e, no campo URL, digite `msal://redirect` .
-1. Confirme as alterações selecionando o **botão Registrar.**
+1. No menu Azure Active Directory, selecione **Registros de aplicativo**.
+1. No menu superior, selecione o **botão Novo registro** .
+1. Insira o nome do seu aplicativo; por exemplo, `My Electron-App`.
+1. Para o tipo de tipos de conta com [suporte, selecione](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app) Contas em qualquer diretório organizacional (Qualquer diretório **do Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
+1. No campo **Redirecionar URI** , no menu suspenso, selecione **Cliente público/nativo (** área de trabalho móvel &) e, no campo URL, insira `msal://redirect`.
+1. Confirme as alterações selecionando o **botão Registrar** .
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Confira o tutorial passo a passo para [criar um aplicativo de eletrônica.](../get-started/build-an-electron-app.md)
+* Confira o tutorial passo a passo para [criar um aplicativo de eletrônica](../get-started/build-an-electron-app.md).
 * Dê uma olhada em um [aplicativo Detron de](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/electron-app) exemplo que mostra como usar o provedor Demão.

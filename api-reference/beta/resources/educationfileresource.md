@@ -1,29 +1,34 @@
 ---
-title: tipo de recurso educationFileResource
-description: Uma subclasse de educationResource que representa um objeto File associado à atribuição ou ao envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem tratamento especial no sistema. O recurso de arquivo deve ser armazenado no **resourceFolder** que está associado à atribuição ou ao envio ao qual este recurso está anexado.
-localization_priority: Normal
+title: Tipo de recurso educationFileResource
+description: Uma subclasse de educationResource que representa um objeto de arquivo associado à atribuição ou ao envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem tratamento especial dentro do sistema. O recurso de arquivo deve ser armazenado no **resourceFolder** associado à atribuição ou ao envio ao qual esse recurso está anexado.
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: cafef836f1e6f6fb4c2e379f9b9ad618f2519f72
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 325fc7beec6eeb482cb19cd1c56eebf144b41cf7
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095435"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684687"
 ---
-# <a name="educationfileresource-resource-type"></a>tipo de recurso educationFileResource
+# <a name="educationfileresource-resource-type"></a>Tipo de recurso educationFileResource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma subclasse de [educationResource](educationresource.md) que representa um objeto File associado à atribuição ou ao envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem tratamento especial no sistema. O recurso de arquivo deve ser armazenado no **resourceFolder** que está associado à atribuição ou ao envio ao qual este recurso está anexado.
+Uma subclasse [de educationResource](educationresource.md) que representa um objeto de arquivo associado à atribuição ou ao envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem tratamento especial dentro do sistema. O recurso de arquivo deve ser armazenado no **resourceFolder** associado à atribuição ou ao envio ao qual esse recurso está anexado.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fileUrl|Cadeia de caracteres|Local no disco do recurso de arquivo.|
+|fileUrl|String|Local no disco do recurso de arquivo.|
+|createdBy|Cadeia de caracteres|O nome de exibição do usuário que criou esse objeto.|
+|createdDateTime|DateTimeOffset|Data em que a reordenação foi adicionada.|
+|displayName|string|O nome de exibição do recurso.|
+|lastModifiedBy|[identitySet](identityset.md)|O último usuário a modificar o recurso.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o recurso foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,7 +44,12 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "fileUrl": "String"
+  "fileUrl": "String",
+  "createdBy": "String (User)",
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "lastModifiedBy": "String (User)",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 ```

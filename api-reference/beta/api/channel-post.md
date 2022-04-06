@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d753d89f4dae91e5f052b636c10c86fc760b8561
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 585cda8ea0f44f11a57d08173373ba6440172d45
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804721"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684890"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -19,6 +19,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.
+
+> [!IMPORTANT]
+> Os canais compartilhados estão atualmente no status de visualização pública. Durante esse tempo, o Microsoft API do Graph criar um canal compartilhado está disponível para um público limitado. É recomendável criar canais compartilhados no cliente Teams e usar apIs do Microsoft Graph para gerenciá-los. Para obter detalhes sobre como habilitar canais compartilhados Teams cliente, consulte Canais compartilhados [no Microsoft Teams (versão prévia)](/microsoftteams/shared-channels).
+
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 > **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
 
-> **Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados usando APIs de trabalho em equipe.Migrate.All e/ou [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+> **Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados usando Teamwork.Migrate.All e/ou [APIs de migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,16 +55,16 @@ POST /teams/{team-id}/channels
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto channel](../resources/channel.md) .
+No corpo da solicitação, forneça uma representação JSON de um [objeto de](../resources/channel.md) canal.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [canal](../resources/channel.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de [](../resources/channel.md) resposta e um objeto de canal no corpo da resposta para o canal com um **valor membershipType** de `standard` ou .`private` Para o canal com **um valor membershipType** de `shared`, este método retorna `202 Accepted` uma resposta que contém um link para [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 Se a solicitação não for bem-sucedida, este método retorna um código de resposta `400 Bad Request`. Os seguintes são motivos comuns para esta resposta:
 
 * **createdDateTime** é definido no futuro.
-* **createdDateTime** é especificado corretamente, mas o **atributo de instância channelCreationMode** está ausente ou definido como um valor inválido.
+* **createdDateTime** está especificado corretamente, mas o atributo **de instância channelCreationMode** está ausente ou definido como um valor inválido.
 
 ## <a name="examples"></a>Exemplos
 
@@ -117,7 +121,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-O exemplo a seguir mostra a resposta.
+Este é um exemplo de resposta.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
@@ -138,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Exemplo 2: Criar canal privado em nome do usuário
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Exemplo 2: Criar um canal privado em nome do usuário
 
 #### <a name="request"></a>Solicitação
 
@@ -201,7 +205,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-O exemplo a seguir mostra a resposta.
+Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
@@ -253,7 +257,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
-O exemplo a seguir mostra a resposta. O header Content-Location na resposta especifica o caminho para o canal que está sendo provisionado.
+Este é um exemplo de resposta. O `Content-Location` cabeçalho na resposta especifica o caminho para o canal que está sendo provisionado.
 Depois de provisionado, esse canal pode ser usado para [importar mensagens](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
@@ -340,7 +344,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Resposta
 
-O exemplo a seguir mostra a resposta.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -359,11 +363,11 @@ Content-type: application/json
     "isFavoriteByDefault": null,
     "email": "",
     "webUrl": "https://teams.microsoft.com/l/channel/19:12b76eea88574bd1969dca37e2b7a819@thread.skype/My%20First%20Private%20Channel?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0fddfdc5-f319-491f-a514-be1bc1bf9ddc",
-    "membershipType": "private"
+    "membershipType": "standard"
 }
 ```
 
-### <a name="example-5-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>Exemplo 5: Criar canal privado em nome do usuário usando o nome principal do usuário
+### <a name="example-5-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>Exemplo 5: Criar um canal privado em nome do usuário usando o nome UPN
 
 #### <a name="request"></a>Solicitação
 
@@ -423,12 +427,9 @@ Content-type: application/json
 
 
 
----
-
 #### <a name="response"></a>Resposta
 
-O exemplo a seguir mostra a resposta.
-
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -438,7 +439,8 @@ O exemplo a seguir mostra a resposta.
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
+Content-Length: 0
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
@@ -452,9 +454,56 @@ Content-type: application/json
 }
 ```
 
+
+### <a name="example-6-create-a-shared-channel-on-behalf-of-a-user"></a>Exemplo 6: Criar um canal compartilhado em nome de um usuário
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir mostra como criar um canal compartilhado.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_shared_channel"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "My First Shared Channel",
+  "description": "This is my first shared channel",
+  "membershipType": "shared",
+  "members": [
+    {
+      "@odata.type": "#microsoft.graph.aadUserConversationMember",
+      "user@odata.bind": "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+      "roles": [
+        "owner"
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f6-2bb8-4785-ab2d-377bf3d573fa
+Content-Length: 0
+```
+
 ## <a name="see-also"></a>Confira também
 
-* [Concluir a migração para um canal](channel-completemigration.md)
+* [Migração completa para um canal](channel-completemigration.md)
 * [Importar mensagens de plataforma de terceiros para o Teams usando o Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 * [Criar equipe](team-post.md)
 
@@ -471,3 +520,7 @@ Content-type: application/json
   ]
 }
 -->
+
+
+
+

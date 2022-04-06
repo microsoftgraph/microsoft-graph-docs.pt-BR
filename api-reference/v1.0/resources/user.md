@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 26e456a4d17d0b8484083b67301ae64204ff7d1e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
-ms.translationtype: HT
+ms.openlocfilehash: a21cfb34d99142f88eb8651e6df241677844765c
+ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337135"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64646533"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -189,7 +189,7 @@ Esse recurso permite:
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório no local; por exemplo: `2013-02-16T03:04:54Z`. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é: `2014-01-01T00:00:00Z`. Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 |onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
 |onPremisesSamAccountName|String| Contém o `samAccountName` local sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`) somente em valores `null`. |
+|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.<br><br>Retornado apenas em `$select`.  Suporta `$filter` (`eq` incluindo valores `null` ). |
 |onPremisesSyncEnabled|Booliano| `true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sincronizado de um diretório local (padrão). Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `in` e `eq` em `null` valores).|
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |otherMails|Coleção String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. <br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`).|
@@ -272,6 +272,7 @@ Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino
 |agreementAcceptances|Coleção [agreementAcceptance](agreementacceptance.md)| Status de aceitação dos termos de uso do usuário. Somente leitura. Anulável.|
 |activities|Coleção [userActivity](projectrome-activity.md)|As atividades do usuário em todos os dispositivos. Somente leitura. Anulável.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Representa as funções de aplicativo que um usuário recebeu para um aplicativo. Dá suporte a `$expand`. |
+|autenticação|[autenticação](../resources/authentication.md)| Os métodos de autenticação com suporte para o usuário.|
 |calendar|[calendar](calendar.md)|O calendário principal do usuário. Somente leitura.|
 |calendarGroups|Coleção [CalendarGroup](calendargroup.md)|Os grupos de calendários do usuário. Somente leitura. Anulável.|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura. Anulável.|
@@ -282,7 +283,7 @@ Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade de gerenciamento está definida para esse usuário.) Somente leitura. Anulável. Dá suporte a `$expand`. |
 |Unidade|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
-|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|

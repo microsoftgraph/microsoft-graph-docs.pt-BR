@@ -1,16 +1,16 @@
 ---
-title: Modelos no Microsoft Graph Toolkit
+title: Modelos no microsoft Graph Toolkit
 description: Use modelos personalizados para modificar o conteúdo de um componente.
 ms.localizationpriority: medium
-author: nmetulev
-ms.openlocfilehash: 93b595e3e8111d0a51c9c049cbf153bd287472f7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 2632b726c1f2260afe31dacb8c487d5976224be7
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044220"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587774"
 ---
-# <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no Microsoft Graph Toolkit
+# <a name="templates-in-the-microsoft-graph-toolkit"></a>Modelos no microsoft Graph Toolkit
 
 A maioria Graph Toolkit da Microsoft suporta o uso de modelos personalizados para modificar o conteúdo de um componente.
 
@@ -40,7 +40,7 @@ Se você estiver usando os componentes do Microsoft Graph Toolkit React, poderá
 
 ## <a name="data-type"></a>Tipo de dados
 
-Cada componente pode ter várias partes que podem ser modelos. Por exemplo, no componente, você pode modelo eventos individuais, headers de seção `mgt-agenda` individuais, exibição de carregamento, sem exibição de dados e muito mais. Para indicar o modelo, use o `data-type` atributo em um modelo. Por exemplo, para modelo de cada evento no `mgt-agenda` , use o tipo de `event` dados, conforme mostrado.
+Cada componente pode ter várias partes que podem ser modelos. Por exemplo, no componente `mgt-agenda` , você pode modelo eventos individuais, headers de seção individuais, exibição de carregamento, sem exibição de dados e muito mais. Para indicar o modelo, use o `data-type` atributo em um modelo. Por exemplo, para modelo de cada evento no `mgt-agenda`, use `event` o tipo de dados, conforme mostrado.
 
 ```html
 <mgt-agenda>
@@ -48,11 +48,11 @@ Cada componente pode ter várias partes que podem ser modelos. Por exemplo, no c
 </mgt-agenda>
 ```
 
-Se não `data-type` for especificado, todo o componente será substituído pelo modelo. Você também pode `data-type="default"` usar para a mesma finalidade.
+Se não `data-type` for especificado, todo o componente será substituído pelo modelo. Você também pode usar `data-type="default"` para a mesma finalidade.
 
 ## <a name="binding-data"></a>Dados de associação
 
-Muitos modelos permitem a associação de dados que são passados para o modelo como contexto de dados. Por exemplo, o `event` modelo no componente passa um objeto que pode ser usado diretamente no `mgt-agenda` `{event}` modelo. Para expandir uma expressão, como `event.subject` , use os colchetes curvados duplos.
+Muitos modelos permitem a associação de dados que são passados para o modelo como contexto de dados. Por exemplo, o `event` modelo no componente `mgt-agenda` passa um `{event}` objeto que pode ser usado diretamente no modelo. Para expandir uma expressão, como `event.subject`, use os colchetes curvados duplos.
 
 ```html
 <template data-type="event">
@@ -86,7 +86,7 @@ As propriedades a seguir também podem ser usadas com o objeto de contexto de da
 
 | Propriedade | Descrição                                                                                                    |
 |----------|----------------------------------------------------------------------------------------------------------------|
-| $index   | Índice numérico do item que está sendo renderizado durante o loop com `data-for` .                                     |
+| $index   | Índice numérico do item que está sendo renderizado durante o loop com `data-for`.                                     |
 | $parent  | Se um modelo for renderizado dentro de outro modelo, essa propriedade permitirá que você acesse o contexto de dados pai. |
 
 O exemplo a seguir mostra como usar `$index` a propriedade em um loop data-for.
@@ -115,7 +115,7 @@ Para ajudar a depurar o contexto de dados, você pode usar `this` em suas expres
 </template>
 ```
 
-Como você pode usar JavaScript em suas expressões de associação, você também tem acesso ao objeto que permite que você use (ou qualquer outra [`console`](https://developer.mozilla.org/docs/Web/API/Console) `console.log(this)` `console` API) em seus modelos.
+Como você pode usar JavaScript em suas expressões de associação, [`console`](https://developer.mozilla.org/docs/Web/API/Console) você também tem acesso ao objeto que permite que você use `console.log(this)` (ou `console` qualquer outra API) em seus modelos.
 
 ```html
 <template data-type="event">
@@ -127,7 +127,7 @@ Como você pode usar JavaScript em suas expressões de associação, você tamb�
 
 ## <a name="conditional-rendering"></a>Renderização condicional
 
-Você só pode querer renderizar elementos quando uma condição for verdadeira ou false com base no contexto de dados. Os `data-if` atributos e podem avaliar uma expressão e `data-else` renderizar somente se for verdadeiro ou falso.
+Você só pode querer renderizar elementos quando uma condição for verdadeira ou false com base no contexto de dados. Os `data-if` atributos e `data-else` podem avaliar uma expressão e renderizar somente se for verdadeiro ou falso.
 
 ```html
 <mgt-person person-query="john doe">
@@ -162,7 +162,7 @@ Em cenários em que você precisa converter dados em suas vinculações, vincula
 
 1. Diretamente no componente.
 
-    Cada componente define a `templateContext` propriedade, que você pode usar para passar dados adicionais para qualquer modelo no componente.
+    Cada componente define a propriedade `templateContext` , que você pode usar para passar dados adicionais para qualquer modelo no componente.
 
     ```ts
     document.querySelector('mgt-agenda').templateContext = {
@@ -174,11 +174,11 @@ Em cenários em que você precisa converter dados em suas vinculações, vincula
     }
     ```
 
-    As propriedades no objeto agora estarão disponíveis para serem `templateContext` usadas nas expressões de associação no modelo.
+    As propriedades no objeto `templateContext` agora estarão disponíveis para serem usadas nas expressões de associação no modelo.
 
 2. Globalmente para todos os componentes.
 
-    A classe expõe o objeto para adicionar dados ou funções que `TemplateHelper` `globalContext` devem estar disponíveis globalmente para todos os componentes.
+    A `TemplateHelper` classe expõe o objeto `globalContext` para adicionar dados ou funções que devem estar disponíveis globalmente para todos os componentes.
 
     ```ts
     import { TemplateHelper } from '@microsoft/mgt';
@@ -219,7 +219,7 @@ Para usar o conversor em seu modelo, use-o como se você usaria uma função em 
 
 ### <a name="event-or-property-binding"></a>Associação de eventos ou propriedades
 
-O atributo permite adicionar um ouvinte de eventos ou definir um valor `data-props` de propriedade diretamente em seus modelos.
+O `data-props` atributo permite adicionar um ouvinte de eventos ou definir um valor de propriedade diretamente em seus modelos.
 
 ```html
 <template>
@@ -229,7 +229,7 @@ O atributo permite adicionar um ouvinte de eventos ou definir um valor `data-pro
 
 Os data-props aceitam uma cadeia de caracteres delimitada por vírgula para cada propriedade ou manipulador de eventos que você talvez queira definir.
 
-Para adicionar um manipulador de eventos, prefixe o nome do evento com `@` . O manipulador de eventos precisará estar disponível no `templateContext` elemento.
+Para adicionar um manipulador de eventos, prefixe o nome do evento com `@`. O manipulador de eventos precisará estar disponível no `templateContext` elemento.
 
 ```ts
 document.querySelector('mgt-agenda').templateContext = {
@@ -252,7 +252,7 @@ Os args de evento, o contexto de dados e o elemento raiz do modelo são passados
 
 Em determinados casos, talvez você queira obter uma referência ao elemento renderizado. Isso pode ser útil se você quiser manipular a renderização do conteúdo por conta própria ou se quiser modificar o elemento renderizado.
 
-Nesse cenário, você pode usar o `templateRendered` evento, que é a disparar depois que o modelo é renderizado.
+Nesse cenário, você pode usar o evento `templateRendered` , que é a disparar depois que o modelo é renderizado.
 
 ```ts
 let agenda = document.querySelector('mgt-agenda');

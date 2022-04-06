@@ -4,13 +4,13 @@ description: O resumo de estatísticas para uma função específica.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: e65179dcbccd6651bbfe51a314ea15a12a57da58
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 10963bbd913b1c11651a4de3899056f3edc5be88
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694147"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510538"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>Tipo de recurso privilegedRoleSummary
 
@@ -31,7 +31,7 @@ O resumo de estatísticas para uma função específica.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|O número de usuários que têm a função atribuída e a função é ativada.|
-|id|cadeia de caracteres| O identificador exclusivo da função. Somente leitura.|
+|id|string| O identificador exclusivo da função. Somente leitura.|
 |managedCount|int32|O número de usuários que têm a função atribuída, mas a função é desativada.|
 |mfaEnabled|booliano|`true` se a ativação de função exigir MFA. `false` se a ativação de função não exigir MFA.|
 |status|roleSummaryStatus| Os valores possíveis são: `ok` e `bad`. O valor depende da taxa de (managedCount /usersCount). Se a taxa for menor que um limite predefinido, `ok` será retornado. Caso contrário, `bad` será retornado.|

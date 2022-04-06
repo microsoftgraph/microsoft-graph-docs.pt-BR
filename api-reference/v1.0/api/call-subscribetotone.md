@@ -1,16 +1,16 @@
 ---
 title: 'call: subscribeToTone'
 description: Inscreva-se em DTMF (sinalização multifrequência de tom duplo). Isso permite que você seja notificado quando o usuário pressionar teclas em um "Dialpad".
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 33a8d72f9beb72707d25790e9026d4525895d59a
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f0daef9d21f35e0135b7d53b2dc578abf85cb4c2
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344303"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608069"
 ---
 # <a name="call-subscribetotone"></a>call: subscribeToTone
 
@@ -22,7 +22,7 @@ Inscreva-se em DTMF (sinalização multifrequência de tom duplo). Isso permite 
 > [!Note]
 > A **ação subscribeToTone** só tem suporte para [chamadas](../resources/call.md) iniciadas com [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |

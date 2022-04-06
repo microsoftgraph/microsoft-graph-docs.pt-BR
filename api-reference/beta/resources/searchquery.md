@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso searchQuery
+title: Tipo de recurso searchQuery
 description: searchQuery
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 1d2d643fed135f97f1ccf2c6346d8fdd6e22f8b5
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 0c437bcb8fd7462d8c4bc85514c40d47311155de
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193362"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589314"
 ---
-# <a name="searchquery-resource-type"></a>tipo de recurso searchQuery
+# <a name="searchquery-resource-type"></a>Tipo de recurso searchQuery
 
 Namespace: microsoft.graph
 
@@ -26,9 +26,9 @@ Representa uma consulta de pesquisa que contém termos de pesquisa e filtros opc
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|queryString|String|A consulta de pesquisa que contém os termos da pesquisa. Obrigatório.|
-|query_string (preterido)|[searchQueryString](searchquerystring.md)|Agora, ele é substituído pela propriedade **QueryString** . A consulta de pesquisa que contém os termos da pesquisa.|
-
+|queryString|Cadeia de caracteres|A consulta de pesquisa que contém os termos de pesquisa. Obrigatório.|
+|queryTemplate|String|Fornece uma maneira de enfeitar a cadeia de caracteres de consulta. Oferece suporte a KQL e variáveis de consulta. Opcional.|
+|query_string (preterido)|[searchQueryString](searchquerystring.md)|Isso agora é substituído pela **propriedade queryString** . A consulta de pesquisa que contém os termos de pesquisa.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "queryString": "String",
+  "queryTemplate": "String",
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```

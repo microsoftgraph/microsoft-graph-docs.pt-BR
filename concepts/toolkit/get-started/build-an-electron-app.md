@@ -1,21 +1,21 @@
 ---
 title: Usar o Microsoft Graph Toolkit com oTron
-description: Começar a usar o microsoft Graph Toolkit em um aplicativo Desotron.
+description: Introdução usando o microsoft Graph Toolkit em um aplicativo Detron.
 ms.localizationpriority: medium
-author: amrutha95
-ms.openlocfilehash: d7bb3f9d31dbe399b52e33ab3eed086c1f161324
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: sebastienlevert
+ms.openlocfilehash: 935aa729865161f8e95d2f43f2eaeccad31a6aa5
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089253"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64588796"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-electron"></a>Usar o Microsoft Graph Toolkit com oTron
 
 Este artigo descreve o processo passo a passo de usar o microsoft Graph Toolkit para criar um aplicativo Detron e conectá-lo ao Microsoft 365. Depois de concluir as etapas, você terá um aplicativo Detron que mostra os próximos compromissos do usuário atualmente Microsoft 365.
 
 ## <a name="create-an-electron-app"></a>Criar um aplicativo Detron 
-Crie um novo aplicativo Detron clonando [o repositório do tiposcript](https://github.com/electron/electron-quick-start-typescript) de início rápido do sistema. Isso criará um novo aplicativo Detron usando TypeScript, o que ajudará você a escrever um código mais robusto e a evitar erros de tempo de execução.
+Crie um novo aplicativo Detron clonando [o repositório do tiposcript de início rápido do](https://github.com/electron/electron-quick-start-typescript) sistema. Isso criará um novo aplicativo Detron usando TypeScript, o que ajudará você a escrever um código mais robusto e a evitar erros de tempo de execução.
 
 ```cmd
 git clone https://github.com/electron/electron-quick-start-typescript
@@ -34,7 +34,7 @@ Instale o pacote "@microsoft/mgt-components" que contém todos os componentes we
 npm i @microsoft/mgt-components
 ```
 
-Instale os `@microsoft/mgt-electron-provider` `@microsoft/mgt-element` pacotes e npm também. Isso permitirá que você forneça autenticação para seu aplicativo usando o MSAL e use os componentes do Microsoft Graph Toolkit.
+Instale os `@microsoft/mgt-electron-provider` pacotes e `@microsoft/mgt-element` npm também. Isso permitirá que você forneça autenticação para seu aplicativo usando o MSAL e use os componentes do Microsoft Graph Toolkit.
 
 ```cmd
 npm i @microsoft/mgt-element @microsoft/mgt-electron-provider
@@ -56,23 +56,23 @@ Para criar o aplicativo no Azure AD:
 
 1. Acesse o [Portal do Azure](https://portal.azure.com).
 1. No menu, selecione **Azure Active Directory**.
-1. No menu Azure Active Directory, selecione **Registros de aplicativos**.
-1. No menu superior, selecione o **botão Novo registro.**
-1. Insira o nome do seu aplicativo; por exemplo, `My Electron-App` .
-1. Para o tipo de tipos de conta com [suporte,](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app)selecione Contas em qualquer diretório organizacional (Qualquer diretório **do Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
-1. No campo **Redirecionar URI,** no menu suspenso, selecione **Cliente público/nativo (área** de trabalho móvel &) e, no campo URL, digite `msal://redirect` .
-1. Confirme as alterações selecionando o **botão Registrar.**
+1. No menu Azure Active Directory, selecione **Registros de aplicativo**.
+1. No menu superior, selecione o **botão Novo registro** .
+1. Insira o nome do seu aplicativo; por exemplo, `My Electron-App`.
+1. Para o tipo de tipos de conta com [suporte, selecione](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app) Contas em qualquer diretório organizacional (Qualquer diretório **do Azure AD - Multitenant) e contas pessoais da Microsoft (por exemplo, Skype, Xbox)**.
+1. No campo **Redirecionar URI** , no menu suspenso, selecione **Cliente público/nativo (** área de trabalho móvel &) e, no campo URL, insira `msal://redirect`.
+1. Confirme as alterações selecionando o **botão Registrar** .
 1. Vá para o registro do aplicativo.
 1. Verifique se você está na página **Visão** Geral.
-1. Na seção **Essentials,** copie o valor da propriedade **Application (client).**
+1. Na seção **Essentials**, copie o valor da propriedade **Application (client).**
 
-## <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>Configurar o provedor de autenticação Graph Toolkit Microsoft
+## <a name="configure-the-microsoft-graph-toolkit-authentication-provider"></a>Configurar o provedor de autenticação Graph Toolkit microsoft
 
 ### <a name="initializing-electronprovider-in-your-renderer-process"></a>Inicializando oTronProvider no processo de renderização
 
-O responsável por se comunicar com (no processo principal) para solicitar tokens de acesso e receber informações sobre o estado assinado que é necessário para que os `ElectronProvider` `ElectronAuthenticator` componentes mgt funcionem. 
+O `ElectronProvider` responsável por se `ElectronAuthenticator` comunicar com (no processo principal) para solicitar tokens de acesso e receber informações sobre o estado assinado que é necessário para que os componentes mgt funcionem. 
 
-Para inicializar o arquivo , adicione o código a `ElectronProvider` seguir ao *arquivo src/renderer.ts.*
+Para inicializar o `ElectronProvider`arquivo , adicione o código a seguir ao *arquivo src/renderer.ts* .
 ```ts
 import {Providers} from '@microsoft/mgt-element';
 import {ElectronProvider} from '@microsoft/mgt-electron-provider/dist/Provider';
@@ -85,14 +85,14 @@ Providers.globalProvider = new ElectronProvider();
 
 ### <a name="initializing-electronauthenticator-in-your-main-process"></a>Inicializando o EletrônicaAuthenticator em seu processo principal
 
-O é responsável por configurar as variáveis de configuração para autenticação `ElectronAuthenticator` MSAL, adquirir tokens de acesso e se comunicar com `ElectronProvider` o . Inicializar o no processo principal e configurar as variáveis de configuração, como iD do cliente `ElectronAuthenticator` e escopos necessários. 
+O `ElectronAuthenticator` é responsável por configurar as variáveis de configuração para autenticação MSAL, adquirir tokens de acesso e se comunicar com o `ElectronProvider`. Inicializar o `ElectronAuthenticator` no processo principal e configurar as variáveis de configuração, como iD do cliente e escopos necessários. 
 
-Primeiro, abra *src/main.ts* e importe e a partir `ElectronAuthenticator` da parte superior da  `MsalElectronConfig` `@microsoft/mgt-electron-provider` página.
+Primeiro, abra *src/main.ts* e importe `ElectronAuthenticator` e  `MsalElectronConfig` a `@microsoft/mgt-electron-provider` partir da parte superior da página.
 
 ```ts
 import { ElectronAuthenticator, MsalElectronConfig } from '@microsoft/mgt-electron-provider/dist/Authenticator'; 
 ```
-Em seguida, adicione essas linhas de código na função `createWindow()` para inicializar o EletrônicaAuthenticator, logo após onde `mainWindow` é declarado. Substitua `<your_client_id>` pela ID do cliente do registro do aplicativo.
+Em seguida, adicione essas linhas de código `createWindow()` na função para inicializar o EletrônicaAuthenticator, logo após onde `mainWindow` é declarado. Substitua `<your_client_id>` pela ID do cliente do registro do aplicativo.
 
 ```ts
 const config: MsalElectronConfig = {
@@ -115,7 +115,7 @@ ElectronAuthenticator.initialize(config);
 
 ### <a name="set-nodeintegration-to-true"></a>Definir nodeIntegration como true
  
-Em main.ts, onde a nova instância de BrowserWindow é criada, certifique-se de definir `nodeIntegration` como `true` em webPreferences. Se você ignorar essa etapa, poderá ter um ```Uncaught ReferenceError: require is not defined``` erro. Para manter isso simples, remova os scripts de pré-carregamento.
+Em main.ts, onde a nova instância de BrowserWindow é criada, `nodeIntegration` certifique-se de definir como `true` em webPreferences. Se você ignorar essa etapa, poderá ter um ```Uncaught ReferenceError: require is not defined``` erro. Para manter isso simples, remova os scripts de pré-carregamento.
 
 ```ts
 const mainWindow = new BrowserWindow({
@@ -129,7 +129,7 @@ const mainWindow = new BrowserWindow({
  
 ### <a name="add-components-to-your-html-page"></a>Adicionar componentes à sua página HTML
  
-Adicione algum conteúdo ao seu aplicativo. Agora você pode usar os componentes Graph kit de ferramentas da Microsoft em sua *páginaindex.html e* mostrar a agenda do usuário. Substitua o conteúdo da página *index.html* pelo seguinte.
+Adicione algum conteúdo ao seu aplicativo. Agora você pode usar os componentes Graph kit de ferramentas da Microsoft em sua página *index.html* e mostrar a agenda do usuário. Substitua o conteúdo da página *index.html* pelo seguinte.
  
  ```html
 <!DOCTYPE html>
@@ -145,7 +145,7 @@ Adicione algum conteúdo ao seu aplicativo. Agora você pode usar os componentes
   </body>
 </html>
  ```
- >**Observação:** Remova qualquer headers ou marcas de resposta de Política de Segurança de Conteúdo se você estiver copiando isso `meta` para um arquivo existente.
+ >**Observação:** Remova qualquer headers `meta` ou marcas de resposta de Política de Segurança de Conteúdo se você estiver copiando isso para um arquivo existente.
  
  ### <a name="bundle-your-app-using-webpack"></a>Agrupar seu aplicativo usando webpack
  
@@ -159,7 +159,7 @@ Antes de executar o aplicativo, você precisa agrupar seu código para garantir 
  
  #### <a name="webpackconfigjs"></a>webpack.config.js
  
-Crie um novo *arquivowebpack.config.js* na pasta raiz do seu projeto e colar a configuração a seguir.
+Crie um novo *webpack.config.js* na pasta raiz do projeto e colar a configuração a seguir.
  
  ```js
  const path = require('path');
@@ -216,7 +216,7 @@ Crie um novo *arquivowebpack.config.js* na pasta raiz do seu projeto e colar a c
  
  #### <a name="add-the-webpacking-script-in-packagejson"></a>Adicionar o script de webpacking em ```package.json```
  
- Adicione o seguinte em ```scripts``` em seu ```package.json``` .
+ Adicione o seguinte em ```scripts``` em seu ```package.json```.
  
  ```json
 "scripts": {
@@ -233,7 +233,7 @@ Crie um novo *arquivowebpack.config.js* na pasta raiz do seu projeto e colar a c
 
 ### <a name="add-token-caching-capabilities-to-your-app-and-enable-silent-sign-ins-advanced"></a>Adicionar recursos de cache de token ao seu aplicativo e habilitar logins silenciosos (avançados)
 
-O Nó MSAL dá suporte a um cache na memória por padrão e fornece a interface ICachePlugin para executar a serialização de cache, mas não fornece uma maneira padrão de armazenar o cache de token em disco. Se você precisar de armazenamento de cache persistente para habilitar logins silenciosos ou cache entre plataformas, recomendamos usar a implementação padrão fornecida pelo Nó MSAL como [uma extensão](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Você pode importar esse plug-in e passar a instância do plug-in de cache ao inicializar `ElectronAuthenticator` .
+O Nó MSAL dá suporte a um cache na memória por padrão e fornece a interface ICachePlugin para executar a serialização de cache, mas não fornece uma maneira padrão de armazenar o cache de token em disco. Se você precisar de armazenamento de cache persistente para habilitar logins silenciosos ou cache entre plataformas, recomendamos usar a implementação padrão fornecida pelo Nó MSAL como [uma extensão](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/extensions/msal-node-extensions). Você pode importar esse plug-in e passar a instância do plug-in de cache ao inicializar `ElectronAuthenticator`.
 
 ```ts
 let config: MsalElectronConfig = {
@@ -241,7 +241,7 @@ let config: MsalElectronConfig = {
   cachePlugin: new PersistenceCachePlugin(filePersistence) //filePersistence is the instance of type IPersistence that you will need to create
 };
 ```
-Para obter mais detalhes sobre como implementar isso, consulte o [exemplo microsoft-authentication-library-for-js.](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js)
+Para obter mais detalhes sobre como implementar isso, consulte o [exemplo microsoft-authentication-library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) .
 
 ## <a name="next-steps"></a>Próximas etapas
 - Experimente os componentes do [playground](https://mgt.dev).

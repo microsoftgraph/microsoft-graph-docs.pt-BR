@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 83c99695e82e4dde776eaadc4506668e4277d423
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: f1e25a40b970656ad9f47c68abad0cb7fc5addc1
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780510"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684918"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -293,7 +293,7 @@ A propriedade **allowExternalSenders** somente pode ser acessada em grupos unifi
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>Remover um proprietário de grupo também remove o usuário como um membro do grupo
 
-Quando [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) é chamado para um grupo que está associado a uma [equipe](/graph/api/resources/team.md), o usuário também é removido da lista /groups/{id}/members. Para contornar isso, remova o usuário tanto dos proprietários quanto dos membros, espere 10 segundos e o adicione de volta aos membros.
+Quando [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) é chamado para um grupo que está associado a uma [equipe](/graph/api/resources/team.md), o usuário também é removido da lista /groups/{id}/members. Para contornar isso, remova o usuário tanto dos proprietários quanto dos membros, espere 10 segundos e o adicione de volta aos membros.
 
 ## <a name="identity-and-access"></a>Identidade e acesso
 
@@ -403,8 +403,26 @@ A chamada à API para [me/joinedTeams](/graph/api/user-list-joinedteams) retorna
 As chamadas de API a seguir não suportam a instalação de aplicativos que exigem permissões de [consentimento específicas do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 - [Adicionar aplicativo à equipe](/graph/api/team-post-installedapps)
 - [Atualizar o aplicativo instalado para a equipe](/graph/api/team-teamsappinstallation-upgrade.md)
-- [Adicionar o aplicativo ao chat](/graph/api/chat-post-installedapps.md)
+- [Adicionar o aplicativo ao chat](/graph/api/chat-post-installedapps)
 - [Atualizar aplicativo instalado no chat](/graph/api/chat-teamsappinstallation-upgrade.md)
+
+### <a name="unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id"></a>Não é possível acessar um canal compartilhado entre locatários quando a URL de solicitação contém locatários/{cross-tenant-id}
+As chamadas à API [para teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) e [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) retornam **a propriedade @odata.id** que você pode usar para acessar o canal e executar outras operações no objeto de [](/graph/api/resources/channel.md) canal. Se você chamar a URL retornada da propriedade **@odata.id, a** solicitação falhará com o seguinte erro ao tentar acessar o canal compartilhado entre [locatários](/graph/api/resources/channel.md):
+```
+GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
+        "innerError": {
+            "date": "2022-03-08T07:33:50",
+            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
+            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
+        }
+    }
+}
+```
+Para resolver esse problema, remova `/tenants/{tenant-id}` a parte da URL antes de chamar a API para acessar o canal compartilhado entre [locatários](/graph/api/resources/channel.md).
 
 ## <a name="users"></a>Usuários
 

@@ -5,36 +5,58 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d964aa9dda53533a82384af60369db3b8fe120c5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 27d61f6e10d851272721da13a2cfebdd769fa933
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134402"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64629012"
 ---
 # <a name="create-unifiedroleassignment"></a>Criar unifiedRoleAssignment
 
 Namespace: microsoft.graph
 
-Crie um novo [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+Crie um novo [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 ## <a name="permissions"></a>Permissões
 
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+### <a name="for-the-directory-azure-ad-provider"></a>Para o provedor de diretório (Azure AD)
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
+### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
+
 ## <a name="http-request"></a>Solicitação HTTP
+
+Crie uma atribuição de função para o provedor de diretórios:
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /roleManagement/directory/roleAssignments
 ```
+
+Crie uma atribuição de função para o provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /roleManagement/entitlementManagement/roleAssignments
+```
+
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -44,20 +66,20 @@ POST /roleManagement/directory/roleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md) A solicitação deve ter um escopo definido no Azure Active Directory (Azure AD) especificado por **directoryScopeId** ou um escopo específico do aplicativo especificado pelo **appScopeId**. Exemplos de escopos do Azure AD são locatários ( `/` ), unidades administrativas ou aplicativos. Para obter mais informações sobre appScope, consulte [appScope](../resources/appscope.md).
+No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) . A solicitação deve ter um escopo definido no Azure Active Directory (Azure AD) especificado por **directoryScopeId** ou um escopo específico do aplicativo especificado pelo **appScopeId**. Exemplos de escopos do Azure AD são locatários (`/`), unidades administrativas ou aplicativos. Para obter mais informações sobre appScope, consulte [appScope](../resources/appscope.md).
 
-A tabela a seguir mostra as propriedades necessárias ao criar um [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+A tabela a seguir mostra as propriedades necessárias ao criar um [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|roleDefinitionId|Cadeia de caracteres| Identificador da definição de função para a atribuição.|
-|principalId|Cadeia de caracteres| O identificador da entidade à qual a atribuição é concedida. |
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. Essa propriedade ou **appScopeId** é necessária. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
-|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. Essa propriedade ou **directoryScopeId** é obrigatório. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
+|roleDefinitionId|String| Identificador da definição de função para a atribuição.|
+|principalId|String| O identificador da entidade à qual a atribuição é concedida. |
+|directoryScopeId|String|Identificador do objeto directory que representa o escopo da atribuição. Essa propriedade ou **appScopeId** é necessária. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
+|appScopeId|String|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. Essa propriedade ou **directoryScopeId** é obrigatório. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -295,6 +317,53 @@ Content-type: application/json
     "resourceScope": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
     "directoryScopeId": "/661e1310-bd76-4795-89a7-8f3c8f855bfc",
     "roleDefinitionId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+}
+```
+
+### <a name="example-4-create-a-role-assignment-with-access-package-catalog-scope"></a>Exemplo 4: Criar uma atribuição de função com escopo de catálogo de pacotes de acesso
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment3_from_rbacapplication_4"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments
+Content-type: application/json
+
+{
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/entitlementManagement/roleAssignments/$entity",
+    "id": "f3092518-7874-462e-93e9-0cd6c11ffc52",
+    "principalId": "679a9213-c497-48a4-830a-8d3d25d94ddc",
+    "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+    "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 }
 ```
 

@@ -4,13 +4,13 @@ description: Representa as definições de função. Para recursos do Azure, ele
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: de3fcec9b3adf2573b3128f5f741f538c98e8e01
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: japere
+ms.openlocfilehash: 631640b8187b2fae87b28fcd6cd1b1b9b57a9bb5
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696410"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64510552"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Tipo de recurso governanceRoleDefinition
 
@@ -18,34 +18,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+[!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 
 Representa as definições de função. Para recursos do Azure, ele pode representar funções do Azure RBAC, como Proprietário, Leitor, Colaborador, etc.
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:--------|
 |[List](../api/governanceroledefinition-list.md) | [Coleção governanceRoleDefinition](../resources/governanceroledefinition.md) |Listar uma coleção de definições de função em um recurso.|
-|[Obter](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Ler propriedades e relações de uma entidade de definição de função especificada pela id.|
+|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Ler propriedades e relações de uma entidade de definição de função especificada pela id.|
 
-Não `POST` , , é suportado no conjunto de `PUT` `PATCH` `DELETE` `roleDefinitions` entidades por enquanto.
+Não `POST`, `PUT`, `PATCH`é `DELETE` suportado no conjunto `roleDefinitions` de entidades por enquanto.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo   | Descrição                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
-| id          | String | A id da definição de função.                                        |
-| resourceId  | String | Obrigatório. A id do recurso associado à definição de função. |
+| id          | Cadeia de caracteres | A id da definição de função.                                        |
+| resourceId  | Cadeia de caracteres | Obrigatório. A id do recurso associado à definição de função. |
 | externalId  | Cadeia de caracteres | A id externa da definição de função.                               |
 | displayName | String | O nome de exibição da definição de função.                              |
-| templateId  | String |                                                                       |
+| templateId  | Cadeia de caracteres |                                                                       |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|recurso|[governanceResource](../resources/governanceresource.md)|Apenas leitura. O recurso associado para a definição de função.|
+|recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado para a definição de função.|
 |roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|A configuração de função associada para a definição de função.|
 
 ## <a name="json-representation"></a>Representação JSON

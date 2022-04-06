@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9bce61b2232d01737f35219ae45b9796a2795742
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: f2d897f4abb0e5ffb9becb3d82e93f5d44efcf30
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335679"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670814"
 ---
 # <a name="list-manager"></a>Listar gerente
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -55,14 +55,14 @@ Este método oferece suporte aos parâmetros de consulta `$select` e `$expand`[O
 >**Observação:** 
 > + O valor `n` de `$levels` pode ser `max` (para retornar todos os gerentes) ou um número entre 1 e 1000.  
 > + Quando o `$levels` parâmetro não for especificado, apenas o gerente imediato será retornado.
-> + Você pode especificar `$select` dentro de `$expand` para selecionar as propriedades do gerente individual. O parâmetro `$levels` é necessário: `$expand=manager($levels=max;$select=id,displayName)`.
+> + Você pode especificar `$select` dentro `$expand` para selecionar as propriedades dos gerentes individuais. O parâmetro `$levels` é necessário: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| ConsistencyLevel | eventualmente. Obrigatório quando a solicitação inclui a cadeia de caracteres de consulta `$count=true`. |
+| ConsistencyLevel | eventual. Obrigatório quando a solicitação inclui a cadeia de caracteres de consulta `$count=true`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

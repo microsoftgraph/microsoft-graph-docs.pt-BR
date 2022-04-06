@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationPointsOutcome
 description: Um educationOutcome que fornece uma nota numérica
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ebf9a0bf12b7c4a78f28c9d75c93469afec2c34c
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 86e2b5bd8113b929252e78e4cf362ac1e966373f
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153617"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64685177"
 ---
 # <a name="educationpointsoutcome-resource-type"></a>Tipo de recurso educationPointsOutcome
 
@@ -30,7 +30,8 @@ Um [educationOutcome](educationoutcome.md) que fornece uma nota numérica.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A nota numérica que o professor deu ao aluno para essa atribuição.|
+|id|Cadeia de caracteres|Identificador exclusivo para educationPointsOutcome.|
+|points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A nota numérica que o professor deu ao aluno para essa tarefa.|
 |publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Uma cópia da propriedade points que é feita quando a nota é liberada para o aluno.|
 
 ## <a name="relationships"></a>Relações
@@ -52,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "id": "String (identifier)",
   "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
   "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
 }

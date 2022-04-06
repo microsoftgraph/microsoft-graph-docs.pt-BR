@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso propertyToEvaluate
 description: Define o nome e o valor da propriedade.
-localization_priority: Normal
-author: Jordanndahl
+ms.localizationpriority: medium
+author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0855d4f06ed7f1be59c57c2989313268638e9859
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 84481eeff8ed1367e85d4000ffe1b60fb5116ad2
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682611"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587060"
 ---
 # <a name="propertytoevaluate-resource-type"></a>tipo de recurso propertyToEvaluate
 
@@ -22,10 +22,10 @@ Define o nome e o valor da propriedade.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade | Tipo | Descrição |
-|:-------- |:---- |:----------- |
-| propertyName | String | Fornece o nome da propriedade. |
-| propertyValue | String | Fornece o valor da propriedade. |
+| Propriedade      | Tipo   | Descrição                  |
+| :------------ | :----- | :--------------------------- |
+| propertyName  | Cadeia de caracteres | Fornece o nome da propriedade.  |
+| propertyValue | Cadeia de caracteres | Fornece o valor da propriedade. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,4 +56,3 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": ""
 }-->
-

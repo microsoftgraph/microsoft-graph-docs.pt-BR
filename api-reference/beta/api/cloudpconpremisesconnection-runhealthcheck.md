@@ -1,16 +1,16 @@
 ---
 title: 'CloudPcOnPremisesConnection: runHealthChecks'
-description: Execute verificações de saúde na conexão local do Cloud PC.
+description: Execute verificações de saúde na conexão de rede do Cloud PC Azure.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9ce1b540034632c63adc19c23d6255283701021c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 273480475bc4d110cea3ae5e038feba24bdb64ba
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345728"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587942"
 ---
 # <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection: runHealthChecks
 
@@ -20,10 +20,12 @@ Namespace: microsoft.graph
 
 Execute verificações de saúde no [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
+[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
 Isso disparará uma nova verificação de saúde para este objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) e alterará as propriedades healthCheckStatus e [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) quando a verificação for concluída.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

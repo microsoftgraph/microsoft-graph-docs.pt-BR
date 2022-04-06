@@ -1,14 +1,14 @@
 ---
 title: Crie uma Microsoft Teams com o microsoft Graph Toolkit
-description: Começar a criar uma guia Microsoft Teams usando o microsoft Graph Toolkit.
+description: Introdução criar uma guia Microsoft Teams usando o microsoft Graph Toolkit.
 ms.localizationpriority: medium
-author: simonagren
-ms.openlocfilehash: 76e8957ae515c784dcbbebbeb72bc04e5ab5c588
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+author: sebastienlevert
+ms.openlocfilehash: 6b33fda93f3383fede93d79362762ea234e7a8be
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224871"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589013"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Crie uma Microsoft Teams com o microsoft Graph Toolkit
 
@@ -25,7 +25,7 @@ A criação de uma guia envolve as seguintes etapas:
 
 ## <a name="add-the-microsoft-graph-toolkit"></a>Adicionar o microsoft Graph Toolkit
 
-Você pode usar o microsoft Graph Toolkit em seu aplicativo fazendo referência ao carregador diretamente (via unpkg) ou instalando os pacotes npm. Para usar o Toolkit, você também precisará do [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
+Você pode usar o microsoft Graph Toolkit em seu aplicativo fazendo referência direta ao carregador (via unpkg) ou instalando os pacotes npm. Para usar o Toolkit, você também precisará da Microsoft Teams [SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
 
 # <a name="unpkg"></a>[unpkg](#tab/unpkg)
 Para usar o Toolkit e Teams SDK por meio dos carregadores, adicione a referência em um script ao seu código:
@@ -47,7 +47,7 @@ npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal
 
 ## <a name="create-the-auth-popup-page"></a>Criar a página pop-up de auth
 
-Para permitir que os usuários entre, você precisará de uma página em seu aplicativo que Teams abrirá em um pop-up para seguir o fluxo de autenticação. O caminho para a página pode ser qualquer coisa desde que ele seja no mesmo domínio que seu aplicativo (por exemplo, https://yourdomain.com/tabauth) . O único requisito para esta página é chamar o método, mas você `TeamsMsal2Provider.handleAuth()` pode adicionar qualquer conteúdo ou carregar o progresso que quiser.
+Para permitir que os usuários entre, você precisará de uma página em seu aplicativo que Teams abrirá em um pop-up para seguir o fluxo de autenticação. O caminho para a página pode ser qualquer coisa desde que ele seja no mesmo domínio que seu aplicativo (por exemplo, https://yourdomain.com/tabauth). O único requisito para esta página é chamar o `TeamsMsal2Provider.handleAuth()` método, mas você pode adicionar qualquer conteúdo ou carregar o progresso que quiser.
 
 A seguir, um exemplo de página básica que lida com o fluxo de auth no pop-up.
 
@@ -77,11 +77,11 @@ TeamsMsal2Provider.handleAuth();
 ---
 
 ## <a name="creating-an-appclient-id"></a>Criando uma ID de aplicativo/cliente
-Para obter uma ID do cliente, você precisa registrar um aplicativo Azure Active Directory cliente. Siga as etapas no [artigo Criar um Azure Active Directory app.](./add-aad-app-registration.md)
+Para obter uma ID do cliente, você precisa registrar um aplicativo Azure Active Directory cliente. Siga as etapas no [artigo Criar um Azure Active Directory](./add-aad-app-registration.md) app.
 
-Certifique-se de definir o registro no aplicativo para apontar para `redirect URI` a página de auth que você criou na etapa anterior. Por exemplo, https://localhost:3000/tabauth.
+Certifique-se de definir o `redirect URI` registro no aplicativo para apontar para a página de auth que você criou na etapa anterior. Por exemplo, https://localhost:3000/tabauth.
 
-> **Observação:** Certifique-se de definir `redirect URI` o como `Single Page Application (SPA)` um . Teams provedor MSAL2 usa o Provedor MSAL2 nos bastidores.
+> **Observação:** Certifique-se de definir `redirect URI` o como um `Single Page Application (SPA)`. Teams Provedor MSAL2 faz uso do Provedor MSAL2 nos bastidores.
 
 ## <a name="initialize-the-teams-msal2-provider"></a>Inicializar o provedor Teams MSAL2
 
@@ -102,7 +102,7 @@ Adicione o `mgt-teams-msal2-provider` componente à sua página HTML conforme mo
   ></mgt-teams-msal2-provider>
 ```
 
-Substitua pela ID do cliente para seu aplicativo e substitua o pelo caminho completo ou `<YOUR_CLIENT_ID>` relativo para sua página de `auth-popup-url` auth. 
+Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu `auth-popup-url` aplicativo e substitua o pelo caminho completo ou relativo para sua página de auth. 
 
 # <a name="js"></a>[js](#tab/js)
 
@@ -122,7 +122,7 @@ Providers.globalProvider = new TeamsMsal2Provider({
   scopes: ['User.Read','Mail.ReadBasic'],
 });
 ```
-Substitua pela ID do cliente para seu aplicativo e substitua o pelo caminho completo ou `<YOUR_CLIENT_ID>` relativo para sua página de `authPopupUrl` auth.
+Substitua `<YOUR_CLIENT_ID>` pela ID do cliente para seu `authPopupUrl` aplicativo e substitua o pelo caminho completo ou relativo para sua página de auth.
 
 ---
 ## <a name="add-components"></a>Adicionar os componentes
@@ -133,7 +133,7 @@ Agora, você está pronto para adicionar qualquer um dos componentes Graph Toolk
 <mgt-login></mgt-login>
 ```
 
-O componente Logon renderiza um botão "Entrar" que orienta o usuário pelo processo de logon e se integra a qualquer um dos provedores para lidar com a autenticação. Depois que o usuário entrar, todos os outros componentes do kit de ferramentas poderão chamar a Microsoft Graph automaticamente. Os provedores também expõem um cliente microsoft Graph autenticado para fazer chamadas de API ou obter tokens de acesso. Para obter detalhes, consulte [Using the providers](../providers/providers.md).
+O componente Logon renderiza um botão "Entrar" que orienta o usuário pelo processo de logon e se integra a qualquer um dos provedores para lidar com a autenticação. Depois que o usuário entrar, todos os outros componentes do kit de ferramentas poderão chamar a Microsoft Graph automaticamente. Os provedores também expõem um cliente microsoft Graph autenticado para fazer chamadas de API ou obter tokens de acesso. Para obter detalhes, consulte [Usando os provedores](../providers/providers.md).
 
 Se você estiver usando React, recomendamos usar os componentes React em vez da `mgt-react` biblioteca. Para saber mais, consulte [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
 
@@ -141,4 +141,4 @@ Se você estiver usando React, recomendamos usar os componentes React em vez da 
 - Experimente os componentes do [playground](https://mgt.dev).
 - Faça uma pergunta sobre [o Microsoft Q&A](/answers/topics/microsoft-graph-toolkit.html).
 - Relate bugs ou deixe uma solicitação de recurso no [GitHub](https://aka.ms/mgt).
-- Confira as [amostras Microsoft Teams .](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-graph-toolkit)
+- Confira os Microsoft Teams [exemplos](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-graph-toolkit).

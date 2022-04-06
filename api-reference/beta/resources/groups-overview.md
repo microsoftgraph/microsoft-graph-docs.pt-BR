@@ -1,16 +1,16 @@
 ---
 title: Trabalhando com grupos no Microsoft Graph
 description: Os grupos são conjuntos de usuários e de outras entidades de segurança que compartilham o acesso a recursos nos serviços Microsoft ou em seu aplicativo. O Microsoft Graph fornece APIs que você pode usar para criar e gerenciar os diferentes tipos e funcionalidades de grupo de acordo com seu cenário. Todas as operações relacionadas a grupos no Microsoft Graph exigem autorização do administrador.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: c0305e84cb5694fbb7f0ee34be0458434af67483
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 10f64d951a7fed740a3f947bf4aa1e3ed6153624
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604340"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587235"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -23,21 +23,21 @@ Os grupos são coleções de [usuários](user.md) e de outras entidades de segur
 
 O Azure AD suporta os seguintes tipos de grupos.
 
-+ Grupos do Microsoft 365
-+ Grupos de segurança
-+ Grupos de segurança habilitados para email
-+ Grupos de distribuição
+- Grupos do Microsoft 365
+- Grupos de segurança
+- Grupos de segurança habilitados para email
+- Grupos de distribuição
 
 Para obter mais informações sobre grupos do Azure AD, confira [comparar grupos no Azure AD](/microsoft-365/admin/create-groups/compare-groups).
 
 No Microsoft Graph, o tipo de grupo pode ser identificado pelas configurações de suas propriedades **groupType**, **mailEnabled** e **securityEnabled** conforme indicado na tabela abaixo.
 
-| Tipo              | Caso de uso | groupType | mailEnabled | securityEnabled | Criado e gerenciado via API |
-|-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Grupos do Microsoft 365](#microsoft-365-groups) | Facilitar a colaboração entre usuários com os recursos compartilhados online da Microsoft. | `["Unified"]` | `true` | `true` ou `false` | Sim |
-| [Grupos de segurança](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo. | `[]` | `false` | `true` | Sim |
-| [Grupos de segurança habilitados para email](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo, com uma caixa de correio de grupo compartilhada. | `[]` | `true` | `true` | Não |
-| Grupos de distribuição | Distribuir emails aos membros do grupo. É recomendável usar os grupos do Microsoft 365 devido a grande quantidade de recursos que ele fornece. | `[]` | `true` | `false` | Não |
+| Tipo                                                                              | Caso de uso                                                                                                                                     | groupType     | mailEnabled | securityEnabled   | Criado e gerenciado via API |
+| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ----------- | ----------------- | --------------------------- |
+| [Grupos do Microsoft 365](#microsoft-365-groups)                                     | Facilitar a colaboração entre usuários com os recursos compartilhados online da Microsoft.                                                                      | `["Unified"]` | `true`      | `true` ou `false` | Sim                         |
+| [Grupos de segurança](#security-groups-and-mail-enabled-security-groups)              | Controlar o acesso do usuário aos recursos do aplicativo.                                                                                                 | `[]`          | `false`     | `true`            | Sim                         |
+| [Grupos de segurança habilitados para email](#security-groups-and-mail-enabled-security-groups) | Controlar o acesso do usuário aos recursos do aplicativo, com uma caixa de correio de grupo compartilhada.                                                                    | `[]`          | `true`      | `true`            | Não                          |
+| Grupos de distribuição                                                               | Distribuir emails aos membros do grupo. É recomendável usar os grupos do Microsoft 365 devido a grande quantidade de recursos que ele fornece. | `[]`          | `true`      | `false`           | Não                          |
 
 ## <a name="microsoft-365-groups"></a>Grupos do Microsoft 365
 
@@ -81,6 +81,7 @@ Veja a seguir uma representação JSON dos grupos no Outlook.
     "visibility": "Public"
 }
 ```
+
 Para saber mais sobre os grupos do Microsoft 365 e as experiências de administrador, confira [Saiba mais sobre grupos do Microsoft 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>Grupos de segurança e grupos de segurança habilitados para email.
@@ -111,6 +112,7 @@ Veja a seguir uma representação JSON de um grupo de segurança.
     "securityEnabled": true
 }
 ```
+
 ## <a name="dynamic-membership"></a>Associação dinâmica
 
 Todos os tipos de grupo podem ter regras de associação dinâmica que adicionam ou removem automaticamente membros do grupo com base nas propriedades do usuário. Por exemplo, um grupo de "funcionários do Marketing" pode incluir todo usuário que tiver a propriedade departament definida como "Marketing". Dessa forma, os novos funcionários de marketing são adicionados automaticamente ao grupo, enquanto os que saem do departamento são automaticamente removidos dele. Essa regra pode ser especificada em um campo "membershipRule" durante a criação de grupo como `"membershipRule": 'user.department -eq "Marketing"'`. O GroupType também deve incluir a `"DynamicMembership"`. A solicitação a seguir cria um novo grupo do Microsoft 365 para os funcionários de marketing:
@@ -148,14 +150,15 @@ O recurso de licenciamento baseado em grupo pode ser usado para atribuir uma ou 
 
 Ao usar o Microsoft Graph, você pode executar as seguintes operações comuns.
 
-| **Casos de uso**  | **Recursos REST** | **Confira também** |
-|:---------------|:--------|:----------|
-| **Métodos e objetos de grupo** | | |
-| Criar novos grupos, obter os grupos existentes, atualizar as propriedades nos grupos e excluir grupos. Atualmente, somente os grupos de segurança e grupos no Outlook podem ser criados por meio da API. | [grupo](group.md) | [Criar novos grupos](../api/group-post-groups.md) <br/> [Listar grupos](../api/group-list.md) <br/> [Atualizar grupos](../api/group-update.md) <br/> [Excluir grupos](../api/group-delete.md) |
-| **Métodos de associação a grupos** | | |
-| Listar os membros de um grupo e adicionar ou remover membros. | [usuário](user.md) <br/> [grupo](group.md)| [Listar membros](../api/group-list-members.md) <br/> [Adicionar membro](../api/group-post-members.md) <br/> [Remover membro](../api/group-delete-members.md)|
-| Determinar se um usuário faz parte de um grupo, acessar todos os grupos do qual o usuário faz parte. | [usuário](user.md) <br/> [group](group.md) <br/> [servicePrincipal](serviceprincipal.md) <br/> [orgContact](orgcontact.md)| [Verificar grupos de membros](../api/directoryobject-checkmembergroups.md) <br/> [Obter grupos de membros](../api/directoryobject-getmembergroups.md)|
-| Listar os proprietários de um grupo e adicionar ou remover proprietários. | [usuário](user.md) <br/> [grupo](group.md)| [Listar proprietários](../api/group-list-members.md) <br/> [Adicionar membro](../api/group-post-members.md) <br/> [Remover membro](../api/group-delete-members.md)|
+| **Casos de uso**                                                                                                                                                                     | **Recursos REST**                                                                                                      | **Confira também**                                                                                                                                                                           |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Métodos e objetos de grupo**                                                                                                                                                      |                                                                                                                         |                                                                                                                                                                                        |
+| Criar novos grupos, obter os grupos existentes, atualizar as propriedades nos grupos e excluir grupos. Atualmente, somente os grupos de segurança e grupos no Outlook podem ser criados por meio da API. | [grupo](group.md)                                                                                                       | [Criar novos grupos](../api/group-post-groups.md) <br/> [Listar grupos](../api/group-list.md) <br/> [Atualizar grupos](../api/group-update.md) <br/> [Excluir grupos](../api/group-delete.md) |
+| **Métodos de associação a grupos**                                                                                                                                                      |                                                                                                                         |                                                                                                                                                                                        |
+| Listar os membros de um grupo e adicionar ou remover membros.                                                                                                                           | [usuário](user.md) <br/> [grupo](group.md)                                                                                 | [Listar membros](../api/group-list-members.md) <br/> [Adicionar membro](../api/group-post-members.md) <br/> [Remover membro](../api/group-delete-members.md)                                    |
+| Determinar se um usuário faz parte de um grupo, acessar todos os grupos do qual o usuário faz parte.                                                                                      | [usuário](user.md) <br/> [group](group.md) <br/> [servicePrincipal](serviceprincipal.md) <br/> [orgContact](orgcontact.md) | [Verificar grupos de membros](../api/directoryobject-checkmembergroups.md) <br/> [Obter grupos de membros](../api/directoryobject-getmembergroups.md)                                                |
+| Listar os proprietários de um grupo e adicionar ou remover proprietários.                                                                                                                             | [usuário](user.md) <br/> [grupo](group.md)                                                                                 | [Listar proprietários](../api/group-list-members.md) <br/> [Adicionar membro](../api/group-post-members.md) <br/> [Remover membro](../api/group-delete-members.md)                                     |
 
 ## <a name="whats-new"></a>Novidades
+
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

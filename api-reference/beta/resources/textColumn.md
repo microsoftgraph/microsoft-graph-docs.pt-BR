@@ -3,15 +3,15 @@ author: JeremyKelley
 description: textColumn em um recurso columnDefinition indica que os valores da coluna são texto.
 ms.date: 09/11/2017
 title: TextColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: ecfd6d72e0946519b570962577b03a9ffcbcdf10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8a6e8d3a06c3d34a321ec2fb5ff5d83586accb56
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973544"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63724284"
 ---
 # <a name="textcolumn-resource-type"></a>Tipo de recurso TextColumn
 
@@ -24,6 +24,7 @@ Namespace: microsoft.graph
 ## <a name="json-representation"></a>Representação JSON
 
 Aqui está uma representação JSON de um recurso **textColumn**.
+
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.textColumn" } -->
 
 ```json
@@ -38,13 +39,13 @@ Aqui está uma representação JSON de um recurso **textColumn**.
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade                   | Tipo   | Descrição
-|:--------------------------------|:-------|:-----------------------------------------------
-| **allowMultipleLines**          | string | Se deseja permitir várias linhas de texto.
-| **appendChangesToExistingText** | string | Se as atualizações nesta coluna devem substituir o texto existente ou acrescentar a ele.
-| **linesForEditing**             | int    | O tamanho da caixa de texto.
-| **maxLength**                   | int    | O número máximo de caracteres para o valor.
-| **textType**                    | string | O tipo de texto sendo armazenado. Deve ser `plain` ou `richText`
+| Propriedade                        | Tipo   | Descrição                                                                   |
+| :------------------------------ | :----- | :---------------------------------------------------------------------------- |
+| **allowMultipleLines**          | string | Se deseja permitir várias linhas de texto.                                      |
+| **appendChangesToExistingText** | string | Se as atualizações nesta coluna devem substituir o texto existente ou acrescentar a ele. |
+| **linesForEditing**             | int    | O tamanho da caixa de texto.                                                     |
+| **maxLength**                   | int    | O número máximo de caracteres para o valor.                               |
+| **textType**                    | string | O tipo de texto sendo armazenado. Deve ser `plain` ou `richText`           |
 
 <!--
 {
@@ -56,5 +57,3 @@ Aqui está uma representação JSON de um recurso **textColumn**.
   "suppressions": []
 }
 -->
-
-

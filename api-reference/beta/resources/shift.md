@@ -5,12 +5,12 @@ author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52b170fef5a283cfaa31199d78bd943212539434
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5d17e9610ce4e2f5de82585a8281aab9fdfbf538
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334440"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63720800"
 ---
 # <a name="shift-resource-type"></a>tipo de recurso shift
 
@@ -22,25 +22,26 @@ Uma unidade de trabalho agendada em um [cronograma](schedule.md).
 
 ## <a name="methods"></a>Methods
 
-| Método       | Tipo de retorno  |Descrição|
-|:---------------|:--------|:----------|
-|[Criar turno](../api/schedule-post-shifts.md) | [shift](shift.md) | Criar uma página `shift`.|
-|[Listar turnos](../api/schedule-list-shifts.md) | [coleção shift](shift.md) | Obter a lista de `shifts` nesta agenda.|
-|[Obter turno](../api/shift-get.md) | [shift](shift.md) | Obter um `shift` por ID.|
-|[Substituir turno](../api/shift-put.md) | [shift](shift.md) | Substituir um `shift`.|
-|[Excluir turno](../api/shift-delete.md) | Nenhum(a) | Exclua um `shift` da agenda.|
+| Método                                         | Tipo de retorno                  | Descrição                                |
+| :--------------------------------------------- | :--------------------------- | :----------------------------------------- |
+| [Criar turno](../api/schedule-post-shifts.md) | [shift](shift.md)            | Criar uma página `shift`.                      |
+| [Listar turnos](../api/schedule-list-shifts.md)  | [coleção shift](shift.md) | Obter a lista de `shifts` nesta agenda. |
+| [Obter turno](../api/shift-get.md)               | [shift](shift.md)            | Obter um `shift` por ID.                       |
+| [Substituir turno](../api/shift-put.md)           | [shift](shift.md)            | Substituir um `shift`.                         |
+| [Excluir turno](../api/shift-delete.md)         | Nenhum                         | Exclua um `shift` da agenda.        |
 
 ## <a name="properties"></a>Propriedades
-|Nome          |Tipo           |Descrição                                                                                                                                      |
-|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id            |`string`      |A ID da tarefa `shift`.|
-| userId            |`string`      |ID do usuário atribuído ao `shift`. Obrigatório. |
-| schedulingGroupId         |`string`      |ID do grupo de agendamento `shift` do que faz parte. Obrigatório. |
-| sharedShift   |[shiftItem](shiftitem.md)  |A versão compartilhada disso que `shift` pode ser visualizada por funcionários e gerentes. Obrigatório. |
-| draftShift        |[shiftItem](shiftitem.md)        |A versão de rascunho disso que `shift` pode ser visualizada pelos gerentes. Obrigatório. |
-| createdDateTime       |`DateTimeOffset`        |O timestamp no qual isso `shift` foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
-| lastModifiedDateTime      |`DateTimeOffset`        |O data/hora no qual isso foi `shift` atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
-| lastModifiedBy        | [identitySet](identityset.md)        |A identidade da última atualização `shift`.|
+
+| Propriedade             | Tipo                          | Descrição                                                                                                                                                                                                                         |
+| -------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | `string`                      | A ID da tarefa `shift`.                                                                                                                                                                                                                  |
+| userId               | `string`                      | ID do usuário atribuído ao `shift`. Obrigatório.                                                                                                                                                                                   |
+| schedulingGroupId    | `string`                      | ID do grupo de agendamento `shift` do que faz parte. Obrigatório.                                                                                                                                                                        |
+| sharedShift          | [shiftItem](shiftitem.md)     | A versão compartilhada disso que `shift` pode ser visualizada por funcionários e gerentes. Obrigatório.                                                                                                                                       |
+| draftShift           | [shiftItem](shiftitem.md)     | A versão de rascunho disso que `shift` pode ser visualizada pelos gerentes. Obrigatório.                                                                                                                                                           |
+| createdDateTime      | `DateTimeOffset`              | O timestamp no qual isso `shift` foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime | `DateTimeOffset`              | O data/hora no qual isso foi `shift` atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.  |
+| lastModifiedBy       | [identitySet](identityset.md) | A identidade da última atualização `shift`.                                                                                                                                                                                        |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -65,9 +66,9 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
+
 <!--
 {
   "type": "#page.annotation",
@@ -78,5 +79,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-

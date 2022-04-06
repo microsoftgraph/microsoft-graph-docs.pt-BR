@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d477e0333c94114818a0bd4fa8ec7723c1a06150
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: 83a5a8e1ca6f43aa56454a7a3acb4a2c653880bc
+ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878642"
+ms.lasthandoff: 04/03/2022
+ms.locfileid: "64630860"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -27,16 +27,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-Chamar o ponto de extremidade `/me` exige um usuário conectado e, portanto, uma permissão delegada. Não há suporte para permissões do aplicativo ao usar o ponto de extremidade `/me`.
+> [!TIP]
+> 1. Chamar o ponto de extremidade `/me` exige um usuário conectado e, portanto, uma permissão delegada. Não há suporte para permissões do aplicativo ao usar o ponto de extremidade `/me`.
+>2. A permissão `User.Read` permite que o aplicativo leia o perfil e descubra relacionamentos como associação ao grupo, relatórios e gerente apenas do usuário conectado.
 
 ## <a name="http-request"></a>Solicitação HTTP
 Para um usuário específico:
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me
 GET /users/{id | userPrincipalName}
 ```
 
@@ -249,6 +252,42 @@ Content-type: application/json
             "issuerAssignedId": "AdeleV@contoso.com"
         }
     ]
+}
+```
+
+### <a name="example-4-get-the-value-of-a-schema-extension-for-a-user"></a>Exemplo 4: obter o valor de uma extensão de esquema para um usuário
+
+Neste exemplo, o ID da extensão do esquema é `ext55gb1l09_msLearnCourses`.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_schemaextension"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?$select=ext55gb1l09_msLearnCourses
+```
+
+#### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)/$entity",
+    "ext55gb1l09_msLearnCourses": {
+        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
+        "courseType": "Developer",
+        "courseName": "Introduction to Microsoft Graph",
+        "courseId": 1
+    }
 }
 ```
 

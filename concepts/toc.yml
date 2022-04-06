@@ -527,7 +527,7 @@ items:
   - name: Desenvolver
     expanded: true
     items:
-      - name: Autenticação e autorização
+      - name: Obter tokens de autenticação
         items:
           - name: Visão geral
             href: auth/index.yml

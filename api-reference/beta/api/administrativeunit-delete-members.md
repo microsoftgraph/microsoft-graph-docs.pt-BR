@@ -1,16 +1,16 @@
 ---
 title: Remover um membro
-description: Use essa API para remover um membro (usuário ou grupo) de uma unidade administrativa.
+description: Use essa API para remover um membro (usuário, grupo ou dispositivo) de uma unidade administrativa.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2d79d9de1f2cf93cec62678150f564381411e0d6
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 2d4cd0dce50476f50711f437790be52e166b8f75
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992062"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669162"
 ---
 # <a name="remove-a-member"></a>Remover um membro
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para remover um membro (usuário ou grupo) de uma unidade administrativa.
+Use essa API para remover um membro (usuário, grupo ou dispositivo) de uma unidade administrativa.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
@@ -48,15 +48,15 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação. No exemplo abaixo, id1 representa o identificador da unidade administrativa de destino e o id2 representa o identificador exclusivo para o usuário membro ou grupo a ser removido da unidade administrativa de destino. 
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação. No exemplo abaixo, `{id1}` representa o identificador `{id2}` da unidade administrativa de destino e representa o identificador exclusivo para o usuário membro, grupo ou dispositivo a ser removido da unidade administrativa de destino. 
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
  
 ```http
 HTTP/1.1 204 No Content

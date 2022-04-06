@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 518769d7156d529f912f2b6f74d6e64cd68f0154
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3a016999b2b51b3cc0ec80cdc9681a14de15348c
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133275"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64587298"
 ---
 # <a name="get-organizationsettings"></a>Obter organizationSettings
 
@@ -18,11 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações de um [objeto organizationSettings,](../resources/organizationsettings.md) incluindo **profileCardProperties**.
+Recupere as propriedades e as relações de um [objeto organizationSettings](../resources/organizationsettings.md) , incluindo **profileCardProperties**.
 
 Esta operação não retorna [insightsSettings](../resources/insightssettings.md). Dependendo do tipo de insights, você pode obter suas configurações usando [item de listaInsights](organizationsettings-list-iteminsights.md) ou [listar peopleInsights](organizationsettings-list-peopleinsights.md).
 
-## <a name="permissions"></a>Permissões
+Essa operação não retorna [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md). Para obter [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md), use [lista microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md).
+
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -59,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de `200 OK` resposta e o objeto [organizationSettings](../resources/organizationsettings.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [organizationSettings](../resources/organizationsettings.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -134,7 +136,7 @@ Content-type: application/json
               {
                 "languageTag": "ru-RU",
                 "displayName": "центр затрат"
-              }
+  }
             ]
           }
         ]
@@ -152,5 +154,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

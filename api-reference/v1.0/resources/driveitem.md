@@ -5,12 +5,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3be0a329d891bbaccac012b8753a5c374b49a8a7
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 86589350f5808667067a26d4f89ee0693928c418
+ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61847223"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63559766"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -73,7 +73,8 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura. Somente no OneDrive Personal.
+| audio                | [audio][]          | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura. Somente leitura. Somente no OneDrive Personal.
+| pacote               | [Agrupar][]         | Agrupar os metadados, se o item for um pacote. Somente leitura.
 | conteúdo              | Fluxo             | O fluxo de conteúdo, se o item representar um arquivo.
 | createdBy            | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
@@ -150,7 +151,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video", "bundle",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
@@ -159,6 +160,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -218,6 +220,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
 [audio]: audio.md
 [baseItem]: baseitem.md
+[Agrupar]: bundle.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemVersion]: driveitemversion.md

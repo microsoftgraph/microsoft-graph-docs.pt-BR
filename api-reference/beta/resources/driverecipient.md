@@ -6,12 +6,12 @@ title: DriveRecipient
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 536e68f619f3f37e71d036eaebffad8a11aaf0a2
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: 1b7b666e520af98fd6fae193b770357a7813504e
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115176"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63722574"
 ---
 # <a name="driverecipient-resource"></a>recurso driveRecipient
 
@@ -25,13 +25,14 @@ Ao usar [o convite](../api/driveitem-invite.md) para adicionar permissões, o **
 Somente um desses valores é necessário; vários valores não são aceitos.
 
 ## <a name="properties"></a>Propriedades
+
 O recurso de destinatários possui essas propriedades.
 
-| Nome da propriedade | Tipo   | Descrição                                                                                             |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | Cadeia de caracteres | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
-| alias         | Cadeia de caracteres | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
-| objectId      | Cadeia de caracteres | O identificador exclusivo para o destinatário no diretório.                                               |
+| Propriedade | Tipo   | Descrição                                                                                             |
+| :------- | :----- | :------------------------------------------------------------------------------------------------------ |
+| email    | Cadeia de caracteres | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
+| alias    | Cadeia de caracteres | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
+| objectId | Cadeia de caracteres | O identificador exclusivo para o destinatário no diretório.                                               |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,6 +40,7 @@ O recurso de destinatários possui essas propriedades.
   "blockType": "resource", 
   "@odata.type": "microsoft.graph.driveRecipient", 
   "optionalProperties": ["alias", "objectId", "email"] } -->
+
 ```json
 {
   "email": "string",
@@ -57,5 +59,3 @@ O recurso de destinatários possui essas propriedades.
   "suppressions": []
 }
 -->
-
-

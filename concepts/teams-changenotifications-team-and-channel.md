@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 08a6b996d3ddbe721775a888b161e14788a485a9
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
-ms.translationtype: HT
+ms.openlocfilehash: b6bbfac2cbdb8fcafccbd385c4aa43c994f3c04d
+ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507763"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64684694"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Obter notificações de alteração para equipes e canais usando o Microsoft Graph
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a>Inscrever-se para alterações em qualquer canal em particular
 
 
-Para obter notificações de alteração para todas as alterações relacionadas a qualquer canal em particular, inscreva-se em `/teams/{team-id}/channels`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação. Notificações de alteração para canais privados não são suportadas no contexto de delegação. Neste caso, um assinante deste recurso em contexto delegado receberá notificações somente para canais padrão sob uma equipe específica, não para canais privados.
+Para obter notificações de alteração para todas as alterações relacionadas a qualquer canal em particular, inscreva-se em `/teams/{team-id}/channels`. Este recurso oferece suporte a [ incluindo dados de recursos ](webhooks-with-resource-data.md) na notificação. Notificações de alteração para canais privados não são suportadas no contexto de delegação. Neste caso, um assinante deste recurso em contexto delegado receberá notificações somente para canais padrão sob uma equipe específica, não para canais privados. Não há suporte para notificações de alteração para canais compartilhados.
 
 
 ### <a name="permissions"></a>Permissões

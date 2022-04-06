@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5dd7c4a3a6db809a9501d377b43fcbfaad255105
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a3a6f10b532d07e1a90f692305bab342ef26d5e7
+ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335497"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63527965"
 ---
 ```objc
 
@@ -20,7 +20,7 @@ MSGraphCloudPcUserSetting *cloudPcUserSetting = [[MSGraphCloudPcUserSetting allo
 [cloudPcUserSetting setDisplayName:@"Example"];
 [cloudPcUserSetting setSelfServiceEnabled: true];
 MSGraphCloudPcRestorePointSetting *restorePointSetting = [[MSGraphCloudPcRestorePointSetting alloc] init];
-[restorePointSetting setFrequencyInHours:@"16"];
+[restorePointSetting setFrequencyInHours: 16];
 [restorePointSetting setUserRestoreEnabled: true];
 [cloudPcUserSetting setRestorePointSetting:restorePointSetting];
 [cloudPcUserSetting setLocalAdminEnabled: false];

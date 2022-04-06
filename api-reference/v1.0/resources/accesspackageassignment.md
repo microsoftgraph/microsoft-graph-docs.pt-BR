@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bd2493b96043286c4585bec60b5af6f47130cf77
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: a0b88e6a367cb2889c0e59953995498b338f41da
+ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651320"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64608111"
 ---
 # <a name="accesspackageassignment-resource-type"></a>Tipo de recurso accessPackageAssignment
 
@@ -22,11 +22,11 @@ No [Azure AD Entitlement Management](entitlementmanagement-overview.md), uma atr
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar accessPackageAssignments](../api/entitlementmanagement-list-assignments.md)|[Coleção accessPackageAssignment](accesspackageassignment.md)|Recupere uma lista de **objetos accessPackageAssignment.** |
+|[Listar accessPackageAssignments](../api/entitlementmanagement-list-assignments.md)|[Coleção accessPackageAssignment](accesspackageassignment.md)|Recupere uma lista de **objetos accessPackageAssignment** . |
 |[filterByCurrentUser](../api/accesspackageassignment-filterbycurrentuser.md)|[Coleção accessPackageAssignment](../resources/accesspackageassignment.md)|Recupere a lista de **objetos accessPackageAssignment** filtrados no usuário de entrada.|
 
 > [!NOTE]
-> Para criar ou remover uma atribuição de pacote de acesso para um usuário, use o método [create a accessPackageAssignmentRequest.](../api/entitlementmanagement-post-assignmentrequests.md)
+> Para criar ou remover uma atribuição de pacote de acesso para um usuário, use o método [create a accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) .
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -35,13 +35,14 @@ No [Azure AD Entitlement Management](entitlementmanagement-overview.md), uma atr
 |id|String|Somente leitura.|
 |Cronograma|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|Quando a atribuição de acesso estiver no local. Somente leitura.|
 |state|accessPackageAssignmentState|O estado da atribuição do pacote de acesso. Os valores possíveis são: `delivering`, `partiallyDelivered`, `delivered`, `expired`, `deliveryFailed`, `unknownFutureValue`. Somente leitura. Suporta `$filter` (`eq`).|
-|status|String|Mais informações sobre o ciclo de vida da atribuição.  Os valores possíveis `Delivering` `Delivered` incluem , `NearExpiry1DayNotificationTriggered` , ou `ExpiredNotificationTriggered` .  Somente leitura.|
+|status|Cadeia de caracteres|Mais informações sobre o ciclo de vida da atribuição.  Os valores possíveis incluem `Delivering``Delivered`, `NearExpiry1DayNotificationTriggered`, ou `ExpiredNotificationTriggered`.  Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|accessPackage|[accessPackage](accesspackage.md)|Somente leitura. Anulável. Suporta `$filter` ( ) na propriedade `eq` **id** `$expand` e parâmetros de consulta.|
-|destino|[accessPackageSubject](accesspackagesubject.md)|O assunto da atribuição do pacote de acesso. Somente leitura. Anulável. Suporta o `$expand`. Suporta `$filter` ( ) em `eq` **objectId**.|
+|accessPackage|[accessPackage](accesspackage.md)|Somente leitura. Anulável. Dá `$filter` suporte a (`eq`) na **propriedade id** e nos `$expand` parâmetros de consulta.|
+|destino|[accessPackageSubject](accesspackagesubject.md)|O assunto da atribuição do pacote de acesso. Somente leitura. Anulável. Suporta o `$expand`. Dá `$filter` suporte a (`eq`) em **objectId**.|
+|assignmentPolicy|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)|Somente leitura. Dá `$filter` suporte a (`eq`) na **propriedade id** e nos `$expand` parâmetros de consulta.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

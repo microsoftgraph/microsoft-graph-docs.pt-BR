@@ -1,16 +1,16 @@
 ---
 title: Atualizar groupSetting
 description: Atualize as propriedades de um objeto de configuração de grupo específico.
-author: Jordanndahl
+author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b98af1bdb83874ed681581394749a75b18cef2be
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 722b708879e7a5ece7e2dfd16933688fd5178581
+ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394646"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64589447"
 ---
 # <a name="update-groupsetting"></a>Atualizar groupSetting
 
@@ -18,43 +18,48 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto groupSetting](../resources/groupsetting.md) para configurações [](../resources/group.md) de grupo em todo o locatário ou uma configuração de grupo específica.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All                     |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | Directory.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 Atualize uma configuração de todo o locatário.
+
 ```http
 PATCH /groupSettings/{groupSettingId}
 ```
 
 <!-- { "blockType": "ignored" } -->
+
 Atualize uma configuração específica do grupo.
+
 ```http
 PATCH /groups/{groupId}/settings/{groupSettingId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome | Descrição |
-|:-----------|:-----------|
-| Autorização  | {token}. Obrigatório. |
-| Content-Type  | application/json  |
+
+| Nome          | Descrição        |
+| :------------ | :----------------- |
+| Autorização | {token}. Obrigatório. |
+| Content-Type  | application/json   |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. 
 
-| Propriedade | Tipo | Descrição |
-|:---------------|:--------|:----------|
-| values | [coleção settingValue](../resources/settingvalue.md) | O conjunto atualizado de valores. Você deve incluir todo o conjunto de coleções. Não é possível atualizar um único conjunto de valores. |
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.
+
+| Propriedade | Tipo                                                    | Descrição                                                                                                      |
+| :------- | :------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------- |
+| values   | [coleção settingValue](../resources/settingvalue.md) | O conjunto atualizado de valores. Você deve incluir todo o conjunto de coleções. Não é possível atualizar um único conjunto de valores. |
 
 ## <a name="response"></a>Resposta
 
@@ -68,12 +73,13 @@ Neste exemplo, é `84af2ca5-c274-41bf-86e4-6e374ec4def6` o identificador do obje
 
 #### <a name="request"></a>Solicitação
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_tenant_groupsetting"
 }-->
+
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
 Content-type: application/json
@@ -87,28 +93,33 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tenant-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-tenant-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tenant-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenant-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenant-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>Resposta
 
@@ -116,6 +127,7 @@ Content-type: application/json
   "blockType": "response",
   "truncated": false
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -127,10 +139,12 @@ Neste exemplo, é `0167b5af-f3d1-4910-82d2-398747fa381c` o identificador do grup
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
+
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
@@ -144,28 +158,33 @@ Content-type: application/json
   ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/update-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>Resposta
 
@@ -173,6 +192,7 @@ Content-type: application/json
   "blockType": "response",
   "truncated": false
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -188,4 +208,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-
