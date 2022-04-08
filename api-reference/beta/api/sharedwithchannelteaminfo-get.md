@@ -1,23 +1,23 @@
 ---
 title: Obter sharedWithChannelTeamInfo
-description: Obter uma equipe compartilhada com um canal.
+description: Obtenha uma equipe compartilhada com um canal.
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: d2c82aa499e33a51f2b738328e23850f100833bf
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 091dba268028c36ab5622b0ca800dc78330056d3
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685289"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704321"
 ---
 # <a name="get-sharedwithchannelteaminfo"></a>Obter sharedWithChannelTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma [equipe](../resources/sharedwithchannelteaminfo.md) compartilhada com um [canal](../resources/channel.md). Esta operação é permitida somente para canais com um **valor membershipType** de `shared`.
+Obtenha uma [equipe](../resources/sharedwithchannelteaminfo.md) compartilhada com um [canal](../resources/channel.md). Esta operação é permitida somente para canais com valor **membershipType** de `shared`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-channel-team-info-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) no corpo da resposta.
+Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

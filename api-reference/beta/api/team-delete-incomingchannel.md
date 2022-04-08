@@ -1,23 +1,23 @@
 ---
 title: Remover incomingChannels
-description: Remover um canal de entrada.
+description: Remova um canal de entrada.
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2d5b71c2b39da4094792f95d2ccf1084d21e5742
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: f7f79688b0fd722136ab6f5f2539ecfdc7685fc2
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685366"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704223"
 ---
 # <a name="remove-incomingchannels"></a>Remover incomingChannels
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova um canal [de entrada](../resources/channel.md) ( **um canal** compartilhado com uma **equipe**) de uma [equipe](../resources/team.md).
+Remova um [canal](../resources/channel.md) de entrada (um **canal** compartilhado com uma **equipe**) de uma [equipe](../resources/team.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) | Channel.Delete.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Channel.Delete.All |
+|Application | Channel.Delete.All |
 
 
 > **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+DELETE /teams/{team-id}/channels/{channel-id}/incomingChannels/{incoming-channel-id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
