@@ -3,14 +3,14 @@ title: Excluir delegatedAdminAccessAssignment
 description: Exclua um objeto delegatedAdminAccessAssignment.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 1169e1d17011b8521bc5b79cd12681647476258b
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 2f9342324f44e2abf63062f0252d50c27aa293ec
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589581"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704248"
 ---
 # <a name="delete-delegatedadminaccessassignment"></a>Excluir delegatedAdminAccessAssignment
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [Exclua um objeto delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -42,7 +42,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|If-Match|If-match: {etag}. Último valor conhecido de ETag para **o delegadoAdminAccessAssignment** a ser excluído. Obrigatório. Recupere o valor ETag de uma operação LIST ou GET.|
+|If-Match|If-match: {etag}. Último valor de ETag conhecido **para o delegatedAdminAccessAssignment** a ser excluído. Obrigatório. Recupere o valor de ETag de uma operação LIST ou GET.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

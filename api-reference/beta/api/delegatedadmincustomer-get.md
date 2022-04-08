@@ -3,14 +3,14 @@ title: Obter delegatedAdminCustomer
 description: Leia as propriedades de um objeto delegatedAdminCustomer.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: d2e2d3735b7913267fa2dd4ecd3311d457e09566
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: be5c928bf8e6942d134c18dded465e1660df36c3
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589584"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704157"
 ---
 # <a name="get-delegatedadmincustomer"></a>Obter delegatedAdminCustomer
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Leia as propriedades de um [objeto delegatedAdminCustomer](../resources/delegatedadmincustomer.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminCustomers/{delegatedAdminCustomerId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` de consulta OData para recuperar propriedades de usuário específicas, incluindo aquelas que não são retornadas por padrão.
+Esse método dá suporte ao `$select` parâmetro de consulta OData para recuperar propriedades de usuário específicas, incluindo aquelas que não são retornadas por padrão.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto delegatedAdminCustomer](../resources/delegatedadmincustomer.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

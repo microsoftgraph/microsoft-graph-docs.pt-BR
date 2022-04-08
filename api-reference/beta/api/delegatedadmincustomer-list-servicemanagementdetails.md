@@ -1,25 +1,25 @@
 ---
 title: Listar serviceManagementDetails
-description: Obter uma lista dos objetos delegatedAdminServiceManagementDetail e suas propriedades.
+description: Obtenha uma lista dos objetos delegatedAdminServiceManagementDetail e suas propriedades.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 72b9293e6dab7cc9f4d85fe1444304b5848beeef
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: c61167f61ff0caf04dee02d43e82d855665c9679
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589571"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704237"
 ---
 # <a name="list-servicemanagementdetails"></a>Listar serviceManagementDetails
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista dos [objetos delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) e suas propriedades.
+Obtenha uma lista dos [objetos delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de objetos [delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

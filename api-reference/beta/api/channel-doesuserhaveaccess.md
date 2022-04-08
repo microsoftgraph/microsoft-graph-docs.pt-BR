@@ -5,12 +5,12 @@ author: devjha-ms
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91973ab0c32943e186f1167296fd32e56c08617d
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 757677d0f3e75ff1b571a3991117c21a6361dff4
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685394"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704364"
 ---
 # <a name="channel-doesuserhaveaccess"></a>channel: doesUserHaveAccess
 Namespace: microsoft.graph
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /teams/{teamsId}/channels/{channelId}/doesUserHaveAccess
+GET /teams/{team-id}/channels/{channel-id}/doesUserHaveAccess
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função

@@ -1,28 +1,28 @@
 ---
 title: Tipo de recurso unifiedRole
-description: As funções de diretório que podem ser atribuídas a um parceiro da Microsoft por meio de uma relação de administrador delegada.
+description: As funções de diretório que podem ser atribuídas a um parceiro da Microsoft por meio de uma relação de administrador delegado.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 8a5c1cc9d450275642e767f7653eea09bcb103f6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 2355770dfdae2209d61903e7160527a57d4e5203
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589579"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704414"
 ---
 # <a name="unifiedrole-resource-type"></a>Tipo de recurso unifiedRole
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As funções de diretório que podem ser atribuídas a um parceiro da Microsoft por meio de uma relação de administrador delegada.
+As funções de diretório que podem ser atribuídas a um parceiro da Microsoft por meio de uma relação de administrador delegado.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleDefinitionId|Cadeia de caracteres|A ID de definição de função unificada da função de diretório. Consulte [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) resource.|
+|roleDefinitionId|Cadeia de caracteres|A ID de definição de função unificada da função de diretório. Consulte [o recurso unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) .|
 
 ## <a name="relationships"></a>Relações
 Nenhum

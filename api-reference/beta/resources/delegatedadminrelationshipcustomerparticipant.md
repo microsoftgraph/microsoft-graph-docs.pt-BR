@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso delegatedAdminRelationshipCustomerParticipant
-description: Representa os detalhes de identificação de um cliente em uma relação de administrador delegada.
+title: Tipo de recurso delegatedAdminRelationshipCustomerParticipant
+description: Representa detalhes de identificação de um cliente em uma relação de administrador delegado.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 738ae13f0a999cecc7d1b24bb5ef2fec81302441
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 228681c0ade8f7b0db7ad3901e402049288cefd7
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589530"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704421"
 ---
-# <a name="delegatedadminrelationshipcustomerparticipant-resource-type"></a>tipo de recurso delegatedAdminRelationshipCustomerParticipant
+# <a name="delegatedadminrelationshipcustomerparticipant-resource-type"></a>Tipo de recurso delegatedAdminRelationshipCustomerParticipant
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os detalhes de identificação de um cliente em uma relação de administrador delegada.
+Representa detalhes de identificação de um cliente em uma relação de administrador delegado.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição do locatário do cliente conforme definido pelo Azure AD. Somente leitura|
+|displayName|String|O nome de exibição do locatário do cliente conforme definido pelo Azure AD. Somente leitura|
 |tenantId|String|A ID de locatário atribuída ao Azure AD do locatário do cliente.|
 
 ## <a name="relationships"></a>Relações

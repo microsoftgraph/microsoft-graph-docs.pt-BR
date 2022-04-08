@@ -3,14 +3,14 @@ title: Obter delegatedAdminRelationship
 description: Leia as propriedades de um objeto delegatedAdminRelationship.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 961223dffd108cbb0da063bde20286c2606fe3a9
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 9a3fbb94ea1656f3911e4be89121455e3a4ed5e2
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589569"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704407"
 ---
 # <a name="get-delegatedadminrelationship"></a>Obter delegatedAdminRelationship
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Leia as propriedades de um [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -39,7 +39,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` de consulta OData para recuperar propriedades de usuário específicas, incluindo aquelas que não são retornadas por padrão.
+Esse método dá suporte ao `$select` parâmetro de consulta OData para recuperar propriedades de usuário específicas, incluindo aquelas que não são retornadas por padrão.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,9 +51,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) no corpo da resposta.
 
-O **objeto delegatedAdminRelationship** também contém uma **propriedade @odata.etag** conforme RFC2616.
+O **objeto delegatedAdminRelationship** também contém uma **propriedade @odata.etag** de acordo com RFC2616.
  
 ## <a name="examples"></a>Exemplos
 

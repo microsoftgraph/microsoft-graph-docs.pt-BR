@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: e5a0d99a1f17c9a61a221b4df0c06a0b4e5f2dac
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 192a2476c6e7f34d202ada3ec46dff334d63b6b6
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239054"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704300"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -37,8 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getTeamsUserActivityUserDetail(period='D7')
-GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
+GET /reports/getTeamsUserActivityUserDetail(period='{period_value}')
+GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
@@ -52,13 +52,19 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 > **Observação:** você precisa definir o período ou data na URL.
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData $format definido como text/csv ou application/json.
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é `text/csv`. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData `$format` definido como `text/csv` ou `application/json`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome          | Descrição               |
 | :------------ | :------------------------ |
 | Autorização | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
@@ -71,6 +77,8 @@ As URLs de download previamente autenticadas são válidas apenas por um curto p
 O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 - Data de atualização do relatório
+- Nome de Exibição do Locatário
+- Nomes de exibição de locatário de canal compartilhado
 - User Id
 - Nome UPN
 - Data da última atividade
@@ -81,15 +89,18 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Contagem de mensagens de chat privadas
 - Contagem de chamadas
 - Contagem de reuniões
-- Contagem Organizada de Reuniões
+- Postar Mensagens
+- Mensagens de Resposta
+- Mensagens urgentes
+- Contagem organizada de reuniões
 - Contagem de Reuniões Atendidas
 - Contagem Organizada de Reuniões Ad Hoc
-- Contagem de Presença de Reuniões Ad Hoc
-- Contagem Organizada de Reuniões Agendadas Única
-- Contagem de Reuniões Agendadas Única
+- Contagem de Reuniões Ad Hoc atendidas
+- Contagem Organizada de Reuniões Única Agendadas
+- Contagem de Reuniões Atendidas Agendadas
 - Contagem Organizada de Reuniões Recorrentes Agendadas
-- Contagem de reuniões recorrentes agendadas
-- Duração do Áudio
+- Contagem de Reuniões Recorrentes Agendadas
+- Duração do áudio
 - Duração do vídeo
 - Duração do Compartilhamento de Tela
 - Duração do áudio em segundos
@@ -101,15 +112,15 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto JSON no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto JSON no corpo da resposta.
 
-O tamanho padrão da página para essa solicitação é de 2000 itens.
+O tamanho de página padrão para essa solicitação é de 2.000 itens.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
 
-### <a name="csv"></a>CSV
+### <a name="example-1-csv-output"></a>Exemplo 1: saída CSV
 
-A seguir, um exemplo que dá saída ao CSV.
+A seguir está um exemplo que gera CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -150,12 +161,12 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
-### <a name="json"></a>JSON
+### <a name="example-2-json-output"></a>Exemplo 2: saída JSON
 
-A seguir, um exemplo que retorna JSON.
+A seguir está um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -193,6 +204,8 @@ Content-Length: 452
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
+      "tenantDisplayName": "Microsoft",
+      "sharedChannelTenantDisplayNames": "SampleTenant",
       "userId": "userId-value", 
       "userPrincipalName": "userPrincipalName-value", 
       "isLicensed": true, 
@@ -205,7 +218,10 @@ Content-Length: 452
       "teamChatMessageCount": 0, 
       "privateChatMessageCount": 49, 
       "callCount": 2, 
-      "meetingCount": 0, 
+      "meetingCount": 0,
+      "postMessages": 10,
+      "replyMessages": 1,
+      "urgentMessages": 1, 
       "meetingsOrganizedCount": 0, 
       "meetingsAttendedCount": 0, 
       "adHocMeetingsOrganizedCount": 0, 

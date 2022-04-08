@@ -1,25 +1,25 @@
 ---
 title: Listar operações
-description: Obter uma lista dos objetos delegatedAdminRelationshipOperation e suas propriedades.
+description: Obtenha uma lista dos objetos delegatedAdminRelationshipOperation e suas propriedades.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 8493c222acea2fe481da3fc43c613301a87f9dfb
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 782d4cec7ebf4268330c5b23ca1e2b30f1c66a42
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589566"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704379"
 ---
 # <a name="list-operations"></a>Listar operações
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista dos [objetos delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) e suas propriedades.
+Obtenha uma lista dos [objetos delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -39,9 +39,9 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `$expand`[parâmetros](/graph/query-parameters) de consulta , `$select`, `$filter`, `$top`, `$count`e `$skipToken` OData para ajudar a personalizar a resposta.  
+Esse método dá suporte aos `$expand`[parâmetros](/graph/query-parameters) `$filter`de consulta , `$select`, `$top`, e `$count``$skipToken` OData para ajudar a personalizar a resposta.  
 
-`$top` suporta até 300 objetos.
+`$top` dá suporte a até 300 objetos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de [objetos delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -3,14 +3,14 @@ title: Criar accessAssignments
 description: Crie um novo objeto delegatedAdminAccessAssignment.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: d59f24dbe8a149110183a1f4d70223e39697aca1
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: f3faa2293b47f7837f016537563dfb8b6be77455
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589562"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704356"
 ---
 # <a name="create-accessassignments"></a>Criar accessAssignments
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -45,19 +45,19 @@ POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshi
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
 
-Você pode especificar as seguintes propriedades ao criar um **delegatedAdminAccessAssignment**.
+Você pode especificar as propriedades a seguir ao criar **um delegatedAdminAccessAssignment**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|O contêiner de acesso pelo qual os membros são atribuídos acesso. Por exemplo, um grupo de segurança.|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas atribuídas ao parceiro no locatário do cliente.|
+|accessContainer|[delegatedAdminAccessContainer](../resources/delegatedadminaccesscontainer.md)|O contêiner de acesso por meio do qual os membros recebem acesso. Por exemplo, um grupo de segurança.|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas atribuídas pelo parceiro no locatário do cliente.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) no corpo da resposta. Um **header** location nos pontos de resposta para o objeto **delegatedAdminAccessAssignment** criado.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) no corpo da resposta. Um **cabeçalho** Location na resposta aponta para o objeto **delegatedAdminAccessAssignment** criado.
 
 ## <a name="examples"></a>Exemplos
 

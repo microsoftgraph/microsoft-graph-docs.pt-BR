@@ -3,14 +3,14 @@ title: Criar solicitações
 description: Crie um novo objeto delegatedAdminRelationshipRequest.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 96760913dc8dc5e4745cd1231f1b69a18a313b6f
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: df8e80f55e51c5b720e791243668fa468c1bcea6
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589561"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704393"
 ---
 # <a name="create-requests"></a>Criar solicitações
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -45,17 +45,17 @@ POST /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationshi
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) .
 
-Você pode especificar as seguintes propriedades ao criar **um delegatedAdminRelationshipRequest**.
+Você pode especificar as propriedades a seguir ao criar **um delegatedAdminRelationshipRequest**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ação|delegatedAdminRelationshipRequestAction|A ação a ser executada na relação de administrador delegada. Obrigatório. Os valores possíveis são: `lockForApproval`, `terminate`.|
+|ação|delegatedAdminRelationshipRequestAction|A ação a ser executada na relação de administrador delegado. Obrigatório. Os valores possíveis são: `lockForApproval`, `terminate`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) no corpo da resposta. A resposta contém um header **Location** que contém uma URL para a solicitação de relação de administrador delegada criada.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) no corpo da resposta. A resposta contém um **cabeçalho Location** que contém uma URL para a solicitação de relação de administrador delegado criada.
 
 ## <a name="examples"></a>Exemplos
 

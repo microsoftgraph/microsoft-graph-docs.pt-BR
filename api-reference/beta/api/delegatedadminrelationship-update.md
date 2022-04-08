@@ -3,14 +3,14 @@ title: Atualizar delegatedAdminRelationship
 description: Atualize as propriedades de um objeto delegatedAdminRelationship.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: bf73a4950f499fcc09a67d85d281c1072eb70647
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: a248385d5ff066bf03306bf49eaca40203b15969
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589546"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704268"
 ---
 # <a name="update-delegatedadminrelationship"></a>Atualizar delegatedAdminRelationship
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) . Uma relação só poderá ser atualizada se estiver no `created` **status**.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -42,7 +42,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|If-Match|If-match: {etag}. Último valor de ETag conhecido para o **delegadoAdminRelationship** a ser atualizado. Recupere o valor ETag de uma operação LIST ou GET. Obrigatório.|
+|If-Match|If-match: {etag}. Último valor de ETag conhecido para **o delegatedAdminRelationship** a ser atualizado. Recupere o valor de ETag de uma operação LIST ou GET. Obrigatório.|
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -51,15 +51,15 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas às quais o parceiro solicita ou tem acesso no locatário do cliente.|
-|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|O nome de exibição e o identificador exclusivo do cliente da relação.|
-|displayName|Cadeia de caracteres|O nome de exibição da relação usada para facilitar a identificação. Deve ser exclusivo em *todas as* relações de administração delegadas do parceiro.|
-|duração|Duration|A duração da relação no formato ISO 8601. Deve ser um valor entre e `P1D` `P2Y` inclusivo.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas que o parceiro solicita ou tem acesso no locatário do cliente.|
+|Cliente|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|O nome de exibição e o identificador exclusivo do cliente da relação.|
+|displayName|Cadeia de caracteres|O nome de exibição da relação usada para facilitar a identificação. Deve ser exclusivo em *todas as* relações de administrador delegado do parceiro.|
+|duração|Duração|A duração da relação no formato ISO 8601. Deve ser um valor entre e `P1D` `P2Y` inclusivo.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [delegatedAdminRelationship atualizado](../resources/delegatedadminrelationship.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

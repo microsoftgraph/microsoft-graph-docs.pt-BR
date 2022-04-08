@@ -1,16 +1,16 @@
 ---
 title: Listar meetingAttendanceReports
-description: Obter uma lista de relatórios de participação para uma reunião online.
+description: Obtenha uma lista de relatórios de participação para uma reunião online.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b2b342fd902a5126ae2165a7c5653851d60ba14b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9e80e4fa2fa8cec47938ccc7e106f41c73d25662
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099482"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704442"
 ---
 # <a name="list-meetingattendancereports"></a>Listar meetingAttendanceReports
 
@@ -18,7 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos meetingAttendanceReport](../resources/meetingAttendanceReport.md) para um [onlineMeeting](../resources/onlinemeeting.md). Sempre que uma reunião online termina, um relatório de participação é gerado para essa sessão.
+Obtenha uma lista de [objetos meetingAttendanceReport](../resources/meetingAttendanceReport.md) para um [onlineMeeting](../resources/onlinemeeting.md). Sempre que uma reunião online termina, um relatório de participação é gerado para essa sessão.
+
+> [!WARNING]
+> Esse método não dá suporte a reuniões de canal.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,13 +31,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:----------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante) | OnlineMeetingArtifact.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | OnlineMeetingArtifact.Read.All |
+| Application | OnlineMeetingArtifact.Read.All |
 
-Para usar a permissão do aplicativo para essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário. Isso autoriza o aplicativo configurado na política a buscar reuniões online e/ou artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
+Para usar a permissão de aplicativo para essa API, os administradores de locatários devem criar uma política de acesso de aplicativo e concedi-la a um usuário. Isso autoriza o aplicativo configurado na política a buscar reuniões online e/ou artefatos de reunião online em nome desse usuário (com a ID de usuário especificada no caminho da solicitação). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter todos os relatórios de participação para uma reunião online com permissão delegada ( `/me` ) e aplicativo ( `/users/{userId}` )
+Para obter todos os relatórios de participação para uma reunião online com permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports
@@ -44,7 +47,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 > [!TIP]
 >
 >- `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
->- `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
+>- `meetingId` é a **ID de** um [objeto onlineMeeting](../resources/onlinemeeting.md) .
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -62,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma lista de `200 OK` [objetos meetingAttendanceReport](../resources/meetingAttendanceReport.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma lista de [objetos meetingAttendanceReport](../resources/meetingAttendanceReport.md) no corpo da resposta.
 
 > [!TIP]
 > A **propriedade attendanceRecords** está vazia na resposta.

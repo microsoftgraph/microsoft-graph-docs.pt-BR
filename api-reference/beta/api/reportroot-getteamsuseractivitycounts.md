@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityCounts'
-description: Obtém o número de atividades do Microsoft Teams por tipo de atividade. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões. As atividades são executadas por Microsoft Teams usuários licenciados.
+description: Obtém o número de atividades do Microsoft Teams por tipo de atividade. As atividades são executadas por Microsoft Teams licenciados.
 ms.localizationpriority: medium
 ms.prod: reports
-author: sarahwxy
+author: zhiliqiao
 doc_type: apiPageType
-ms.openlocfilehash: d54bd9da2e36dc7f297f041dea19f0e9eccb5fa7
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: fa04a85e992c649c39587d386ae8e422b6a2d2b5
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044670"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704307"
 ---
 # <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtém o número de atividades do Microsoft Teams por tipo de atividade. Os tipos de atividade são o número de mensagens de chat das equipes, mensagens de chat privadas, chamadas e reuniões. As atividades são executadas por Microsoft Teams usuários licenciados.
+Obtém o número de atividades do Microsoft Teams por tipo de atividade. As atividades são executadas por Microsoft Teams licenciados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -69,20 +69,27 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Data de atualização do relatório
 - Data do relatório
 - Mensagens de chat de equipes
+- Postar Mensagens
+- Mensagens de Resposta
 - Mensagens de chat privadas
 - Chamadas
 - Reuniões
+- Duração do áudio
+- Duração do vídeo
+- Duração do Compartilhamento de Tela
+- Reuniões Organizadas
+- Reuniões atendidas
 - Período de Relatório
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto JSON no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto JSON no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir, um exemplo que dá saída ao CSV.
+A seguir está um exemplo que gera CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -122,12 +129,12 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
 ```
 
 ### <a name="json"></a>JSON
 
-A seguir, um exemplo que retorna JSON.
+A seguir está um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -159,7 +166,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 277
+Content-Length: 475
 
 {
   "value": [
@@ -167,9 +174,16 @@ Content-Length: 277
       "reportRefreshDate": "2017-09-01", 
       "reportDate": "2017-09-01", 
       "teamChatMessages": 26, 
+      "postMessages": 3,
+      "replyMessages": 1,
       "privateChatMessages": 17, 
       "calls": 4, 
       "meetings": 0, 
+      "audioDuration": 00:00:00,
+      "videoDuration": 00:00:00,
+      "screenShareDuration": 00:00:00,
+      "meetingsOrganized": 0,
+      "meetingsAttended": 0,
       "reportPeriod": "7"
     }
   ]

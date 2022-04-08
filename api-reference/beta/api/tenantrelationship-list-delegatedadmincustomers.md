@@ -1,25 +1,25 @@
 ---
 title: Listar delegatedAdminCustomers
-description: Obter uma lista dos objetos delegatedAdminCustomer e suas propriedades.
+description: Obtenha uma lista dos objetos delegatedAdminCustomer e suas propriedades.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 384133bac2deb24e2e9147cb8ffa3d9db482ec6d
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8d3e20b6f46ddf548f706c93680ac7d6b5b3b6ed
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589527"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704452"
 ---
 # <a name="list-delegatedadmincustomers"></a>Listar delegatedAdminCustomers
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista dos [objetos delegatedAdminCustomer](../resources/delegatedadmincustomer.md) e suas propriedades.
+Obtenha uma lista dos [objetos delegatedAdminCustomer](../resources/delegatedadmincustomer.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -39,9 +39,9 @@ GET /tenantRelationships/delegatedAdminCustomers
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `$select`[parâmetros](/graph/query-parameters) de consulta , `$filter`, `$top`, `$orderBy`, `$count`e `$skipToken` OData para ajudar a personalizar a resposta.  
+Esse método dá suporte aos `$select`[parâmetros](/graph/query-parameters) `$top`de consulta , `$filter`, `$orderBy`, e `$count``$skipToken` OData para ajudar a personalizar a resposta.  
 
-`$top` suporta até 300 objetos.
+`$top` dá suporte a até 300 objetos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -53,9 +53,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de objetos [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) no corpo da resposta.
 
-Cada **objeto delegatedAdminCustomer** contém uma **propriedade @odata.etag** conforme RFC2616.
+Cada **objeto delegatedAdminCustomer** contém uma **propriedade @odata.etag** de acordo com RFC2616.
 
 ## <a name="examples"></a>Exemplos
 

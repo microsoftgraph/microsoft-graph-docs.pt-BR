@@ -5,19 +5,19 @@ author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b5e72ed6b43c94f04a55568023bd44d5fb035b4
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 6efc3817b107eb3a30d26b3648de0ec5f4594e16
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685373"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704253"
 ---
 # <a name="delete-sharedwithchannelteaminfo"></a>Excluir sharedWithChannelTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua [uma equipe](../resources/sharedwithchannelteaminfo.md) de um canal [compartilhado](../resources/channel.md). Esta operação é permitida somente para canais com um **valor membershipType** de `shared`.
+Exclua uma [equipe](../resources/sharedwithchannelteaminfo.md) de um [canal](../resources/channel.md) compartilhado. Esta operação é permitida somente para canais com valor **membershipType** de `shared`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) | ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | ChannelMember.ReadWrite.All |
+|Application | ChannelMember.ReadWrite.All |
 
 
 > **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/channels/{channelId}/sharedWithTeams/{sharedWithChannelTeamInfoId}
+DELETE /teams/{team-id}/channels/{channel-id}/sharedWithTeams/{shared-with-channel-team-info-id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

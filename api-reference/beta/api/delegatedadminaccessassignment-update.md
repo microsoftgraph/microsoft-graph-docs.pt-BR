@@ -3,23 +3,23 @@ title: Atualizar delegatedAdminAccessAssignment
 description: Atualize as propriedades de um objeto delegatedAdminAccessAssignment.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 52bee21df148af0bd02bb6a72d52d7c24db3c75f
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 7c0a6e045d64aba40c2db8a323afab273ee7f517
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589560"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704286"
 ---
 # <a name="update-delegatedadminaccessassignment"></a>Atualizar delegatedAdminAccessAssignment
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
+Atualize as propriedades de [um objeto delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -42,7 +42,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|If-Match|If-match: etag}. Último valor conhecido de ETag para a **atualização delegadaAdminAccessAssignment** . Obrigatório.|
+|If-Match|If-match: etag}. Último valor de ETag conhecido **para o delegatedAdminAccessAssignment** a ser atualizado. Obrigatório.|
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -50,7 +50,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas atribuídas ao parceiro no locatário do cliente|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas atribuídas pelo parceiro no locatário do cliente|
 
 
 ## <a name="response"></a>Resposta
@@ -61,10 +61,10 @@ Se tiver êxito, este método retornará um `200 OK` ou um código `202 Accepted
 |Nome|Descrição|
 |:---|:---|
 |Content-Type|application/json.|
-|Local|O local da operação de longa duração.|
-|Retry-After|O tempo após o qual uma chamada de API subsequente pode ser feita para a URL de Local para verificar o status da operação de longa execução.|
+|Local|O local da operação de execução longa.|
+|Retry-After|O tempo após o qual uma chamada à API subsequente pode ser feita para a URL de Localização para verificar o status da operação de execução longa.|
 
-Esse método normalmente retorna `202 Accepted` um código de resposta com uma URL para uma operação de longa duração no header de resposta **Local** que pode ser monitorado para conclusão. Se os valores especificados na chamada são idênticos aos valores no objeto existente, a `200 OK` API retornará um código de resposta com o objeto original [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) no corpo da resposta.
+Esse método normalmente retorna um código `202 Accepted` de resposta com uma URL para uma operação de execução longa no cabeçalho de resposta **Local** que pode ser monitorado para conclusão. Se os valores especificados na chamada forem idênticos aos valores no objeto existente, a `200 OK` API retornará um código de resposta com o objeto [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) original no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 ```
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo de resposta que retorna um `202 Accepted` código de resposta  juntamente com os **headers Location e Retry-After**.
+A seguir está um exemplo de resposta que retorna um `202 Accepted` código de resposta junto com cabeçalhos **Location** e **Retry-After** .
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

@@ -3,14 +3,14 @@ title: Criar delegatedAdminRelationship
 description: Crie um novo objeto delegatedAdminRelationship.
 author: adtangir
 ms.localizationpriority: medium
-ms.prod: directory-management
+ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 052790ed1b5356d86316364017dab395e2ecc661
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 3db8f5c4073d3ba709e06137c8f5ea02ec78f157
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589648"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704314"
 ---
 # <a name="create-delegatedadminrelationship"></a>Criar delegatedAdminRelationship
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -45,22 +45,22 @@ POST /tenantRelationships/delegatedAdminRelationships
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) .
 
-Você pode especificar as seguintes propriedades ao criar **um delegatedAdminRelationship**.
+Você pode especificar as propriedades a seguir ao criar **um delegatedAdminRelationship**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas às quais o parceiro solicita ou tem acesso no locatário do cliente. Obrigatório.|
-|customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|O nome de exibição e o identificador exclusivo do cliente da relação. Opcional.|
-|displayName|Cadeia de caracteres|O nome de exibição da relação usada para facilitar a identificação. Deve ser exclusivo em *todas as* relações de administração delegadas do parceiro. Obrigatório.|
-|duração|Duration|A duração da relação no formato ISO 8601. Deve ser um valor entre e `P1D` `P2Y` inclusivo. Obrigatório.|
+|accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas que o parceiro solicita ou tem acesso no locatário do cliente. Obrigatório.|
+|Cliente|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|O nome de exibição e o identificador exclusivo do cliente da relação. Opcional.|
+|displayName|String|O nome de exibição da relação usada para facilitar a identificação. Deve ser exclusivo em *todas as* relações de administrador delegado do parceiro. Obrigatório.|
+|duração|Duração|A duração da relação no formato ISO 8601. Deve ser um valor entre e `P1D` `P2Y` inclusivo. Obrigatório.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `201 Created` código de resposta e um [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) no corpo da resposta.
 
-A resposta contém um header **Location** que contém uma URL para a relação de administrador delegada criada. Cada **objeto delegatedAdminRelationship** contém uma **propriedade @odata.etag** conforme RFC2616.
+A resposta contém um **cabeçalho Location** que contém uma URL para a relação de administrador delegado criada. Cada **objeto delegatedAdminRelationship** contém uma **propriedade @odata.etag** de acordo com RFC2616.
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação

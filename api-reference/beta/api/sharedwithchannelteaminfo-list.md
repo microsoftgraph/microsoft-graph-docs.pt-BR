@@ -5,19 +5,19 @@ author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec31b0ec95a0d3ed4ce200801d8924667aeb34f7
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 4d00cc33949c5047c9a565464df984e4f6356e84
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685254"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704342"
 ---
 # <a name="list-sharedwithchannelteaminfo"></a>Listar sharedWithChannelTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de [equipes](../resources/sharedwithchannelteaminfo.md) compartilhadas com um [canal](../resources/channel.md). Esta operação é permitida somente para canais com um **valor membershipType** de `shared`.
+Obtenha a lista de [equipes](../resources/sharedwithchannelteaminfo.md) compartilhadas com um [canal](../resources/channel.md). Esta operação é permitida somente para canais com valor **membershipType** de `shared`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /teams/{teamsId}/channels/{channelId}/sharedWithTeams
+GET /teams/{team-id}/channels/{channel-id}/sharedWithTeams
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de objetos [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) no corpo da resposta.
+Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

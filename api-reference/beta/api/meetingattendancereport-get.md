@@ -1,16 +1,16 @@
 ---
 title: Obter meetingAttendanceReport
-description: Obter o relatório de participação de uma reunião online.
+description: Obtenha o relatório de participação de uma reunião online.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d99e8c832db9bab9abd21fc380f4d8a1daf22e4b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 684e4cdd80c74c11d4118aa769bf15882d94ed4d
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130993"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704470"
 ---
 # <a name="get-meetingattendancereport"></a>Obter meetingAttendanceReport
 
@@ -18,7 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter [o meetingAttendanceReport](../resources/meetingAttendanceReport.md) para um [onlineMeeting](../resources/onlinemeeting.md). Sempre que uma reunião online termina, um relatório de participação será gerado para essa sessão.
+Obtenha [o meetingAttendanceReport](../resources/meetingAttendanceReport.md) para um [onlineMeeting](../resources/onlinemeeting.md). Sempre que uma reunião online terminar, um relatório de participação será gerado para essa sessão.
+
+> [!WARNING]
+> Esse método não dá suporte a reuniões de canal.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,20 +31,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:----------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante) | OnlineMeetingArtifact.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | OnlineMeetingArtifact.Read.All |
+| Application | OnlineMeetingArtifact.Read.All |
 
-Para usar a permissão do aplicativo para essa API, os administradores de locatários devem criar uma política de acesso a aplicativos e concedi-la a um usuário. Isso autoriza o aplicativo configurado na política a buscar reuniões online e/ou artefatos de reunião online em nome desse usuário (com a ID do usuário especificada no caminho da solicitação). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
+Para usar a permissão de aplicativo para essa API, os administradores de locatários devem criar uma política de acesso de aplicativo e concedi-la a um usuário. Isso autoriza o aplicativo configurado na política a buscar reuniões online e/ou artefatos de reunião online em nome desse usuário (com a ID de usuário especificada no caminho da solicitação). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter um relatório de participação por ID com permissão delegada ( `/me` ) e app ( ) `/users/{userId}` :
+Para obter um relatório de presença por ID com permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 ```
 
-Para obter o relatório de participação da sessão mais recente de uma reunião online com permissão delegada ( `/me` ) e app ( ) `/users/{userId}` :
+Para obter o relatório de participação da sessão mais recente de uma reunião online com permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
 <!-- { "blockType": "ignored" }-->
 ```http
 GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
@@ -51,20 +54,20 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 > [!TIP]
 >
 >- `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
->- `meetingId`é a **id** de um [objeto onlineMeeting.](../resources/onlinemeeting.md)
->- `reportId`é a **id** de um [objeto meetingAttendanceReport.](../resources/meetingAttendanceReport.md)
+>- `meetingId` é a **ID de** um [objeto onlineMeeting](../resources/onlinemeeting.md) .
+>- `reportId` é a **ID de** um [objeto meetingAttendanceReport](../resources/meetingAttendanceReport.md) .
 
 > [!CAUTION]
 >
->- O caminho `/meetingAttendanceReport` foi preterido. Em frente, use o `/attendanceReports` caminho para recuperar relatórios de participação para uma reunião online.
->- O `/meetingAttendanceReport` caminho permanecerá em beta para compatibilidade com versões. No entanto, para obter a mesma resposta, você precisa adicionar a `expand` opção de consulta. Para obter detalhes, consulte [a seção Parâmetros de consulta](#optional-query-parameters) opcional.
+>- O caminho `/meetingAttendanceReport` foi preterido. No futuro, use o caminho `/attendanceReports` para recuperar relatórios de participação para uma reunião online.
+>- O `/meetingAttendanceReport` caminho permanecerá em beta para compatibilidade com versões anteriores. No entanto, para obter a mesma resposta, você precisa adicionar a opção `expand` de consulta. Para obter detalhes, consulte [a seção Parâmetros de consulta](#optional-query-parameters) opcional.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 > [!TIP]
-> A **propriedade attendanceRecords** é uma propriedade de navegação que não é retornada por padrão. Para recuperar **attendanceRecords** na linha, use a opção de consulta, conforme `$expand=attendanceRecords` mostrado no exemplo [2](#example-2-get-the-latest-attendance-report-for-an-online-meeting).
+> A **propriedade attendanceRecords** é uma propriedade de navegação que não é retornada por padrão. Para recuperar **attendanceRecords** na linha, use `$expand=attendanceRecords` a opção de consulta, conforme mostrado no [exemplo 2](#example-2-get-the-latest-attendance-report-for-an-online-meeting).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -78,11 +81,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto meetingAttendanceReport](../resources/meetingAttendanceReport.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto meetingAttendanceReport](../resources/meetingAttendanceReport.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-get-the-attendance-report-for-an-online-meeting-by-id"></a>Exemplo 1: Obter o relatório de participação de uma reunião online por ID
+### <a name="example-1-get-the-attendance-report-for-an-online-meeting-by-id"></a>Exemplo 1: Obter o relatório de presença de uma reunião online por ID
 
 #### <a name="request"></a>Solicitação
 
@@ -150,11 +153,11 @@ Content-Type: application/json
 
 ### <a name="example-2-get-the-latest-attendance-report-for-an-online-meeting"></a>Exemplo 2: Obter o relatório de participação mais recente de uma reunião online
 
-O exemplo a seguir mostra uma solicitação para obter um relatório de participação de reunião para a sessão mais recente de uma reunião online.
+O exemplo a seguir mostra uma solicitação para obter um relatório de presença de reunião para a sessão mais recente de uma reunião online.
 
 #### <a name="request"></a>Solicitação
 
-A solicitação a seguir usa permissão delegada.
+A solicitação a seguir usa a permissão delegada.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
