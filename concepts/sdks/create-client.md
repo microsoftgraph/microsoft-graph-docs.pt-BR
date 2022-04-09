@@ -1,20 +1,20 @@
 ---
-title: Criar um cliente microsoft Graph
+title: Criar um cliente Graph Microsoft
 description: Descreve como criar um cliente a ser usado para fazer chamadas para o Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 0daa9a27ff1a7c92fc39c1eb46c76f38fb34336a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3f1cc7167f0cff4266707fb1d66f6b82c8c01475
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020022"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733168"
 ---
-# <a name="create-a-microsoft-graph-client"></a>Criar um cliente microsoft Graph
+# <a name="create-a-microsoft-graph-client"></a>Criar um cliente Graph Microsoft
 
-O cliente Graph Microsoft foi projetado para facilitar as chamadas para o Microsoft Graph. Você pode usar uma única instância do cliente durante o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote de cliente microsoft Graph em seu projeto, consulte [Install the SDK](sdk-installation.md).
+O cliente microsoft Graph foi projetado para tornar mais simples fazer chamadas para o Microsoft Graph. Você pode usar uma única instância de cliente durante o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote de Graph microsoft em seu projeto, consulte [Instalar o SDK](sdk-installation.md).
 
-Os exemplos de código a seguir mostram como criar uma instância de um cliente microsoft Graph com um provedor de autenticação nos idiomas suportados. O provedor de autenticação tratará da aquisição de tokens de acesso para o aplicativo. Muitos provedores de autenticação diferentes estão disponíveis para cada idioma e plataforma. Os diferentes provedores de autenticação suportam diferentes cenários de cliente. Para obter detalhes sobre quais provedores e opções são apropriados para seu cenário, consulte [Choose an Authentication Provider](choose-authentication-providers.md).
+Os exemplos de código a seguir mostram como criar uma instância de um cliente microsoft Graph com um provedor de autenticação nos idiomas com suporte. O provedor de autenticação lidará com a aquisição de tokens de acesso para o aplicativo. Muitos provedores de autenticação diferentes estão disponíveis para cada linguagem e plataforma. Os diferentes provedores de autenticação dão suporte a diferentes cenários de cliente. Para obter detalhes sobre qual provedor e opções são apropriados para seu cenário, consulte [Escolher um Provedor de Autenticação](choose-authentication-providers.md).
 
 <!-- markdownlint-disable MD025 -->
 # <a name="c"></a>[C#](#tab/CS)
@@ -164,7 +164,7 @@ $user = $graph->createRequest("GET", "/me")
               ->execute();
 ```
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -174,7 +174,7 @@ import (
     "fmt"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 

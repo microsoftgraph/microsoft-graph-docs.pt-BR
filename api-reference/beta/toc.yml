@@ -608,7 +608,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -11221,8 +11221,10 @@ items:
           - name: Gerenciamento de relacionamento com o cliente
             items:
               - name: Relações de administrador delegado
-                displayName: 'Partner Center, CSP, VAR'
+                displayName: 'GDAP, Partner Center, CSP, VAR'
                 items:
+                  - name: Visão Geral
+                    href: resources/delegatedadminrelationships-api-overview.md
                   - name: Relações de administrador delegado
                     href: resources/delegatedadminrelationship.md
                     items:

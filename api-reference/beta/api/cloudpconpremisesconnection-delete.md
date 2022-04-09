@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a68f11b4d4db4a139f9a82abd71ea8445464fbf6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 765bdf68d0aa5f12af24cf148d6da0045b9ba617
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587543"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733217"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Excluir cloudPcOnPremisesConnection
 
@@ -22,19 +22,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-Quando você exclui uma conexão, as permissões para o serviço são removidas dos recursos especificados do Azure.
+Quando você exclui uma conexão de rede do Azure, as permissões para o serviço são removidas dos recursos do Azure especificados.
 
-Não é possível excluir uma conexão de rede do Azure depois que ela passar na verificação de saúde, que é indicada pela `healthCheckStatus` propriedade.
+Você não pode excluir uma conexão de rede do Azure quando ela está em uso, conforme indicado pela `inUse` propriedade.
 
-Você não pode excluir uma conexão quando ela estiver em uso, conforme indicado pela `inUse` propriedade.
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

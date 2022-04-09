@@ -1,50 +1,50 @@
 ---
-title: Escolha um provedor de autenticação Graph microsoft
-description: Saiba como escolher provedores de autenticação específicos de cenário para seu aplicativo.
+title: Escolher um provedor de autenticação Graph Microsoft
+description: Saiba como escolher provedores de autenticação específicos do cenário para seu aplicativo.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: e5375225aa8d9ab01b82f99fee1930e952767718
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 040a42ae20ee48d5af92dd4460b2e26b059ffea7
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020029"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733241"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Escolher um provedor de autenticação do Microsoft Graph com base no cenário
 
-Os provedores de autenticação implementam o código necessário para adquirir um token usando a Biblioteca de Autenticação da Microsoft (MSAL); lidar com vários erros potenciais para casos como consentimento incremental, senhas expiradas e acesso condicional; e, em seguida, de definir o cabeçalho de autorização de solicitação HTTP. A tabela a seguir lista o conjunto de provedores que combinam com os cenários de diferentes tipos [de aplicativo.](/azure/active-directory/develop/v2-app-types)
+Os provedores de autenticação implementam o código necessário para adquirir um token usando a MSAL (Biblioteca de Autenticação da Microsoft); tratar vários erros potenciais para casos como consentimento incremental, senhas expiradas e acesso condicional; e, em seguida, defina o cabeçalho de autorização de solicitação HTTP. A tabela a seguir lista o conjunto de provedores que correspondem aos cenários de diferentes tipos [de aplicativo](/azure/active-directory/develop/v2-app-types).
 
-| Cenário                                                                                               | Flow/Grant         | Espectadores               | Provedor |
+| Cenário                                                                                               | Flow/Conceder         | Espectadores               | Provedor |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
-| [Aplicativo de Página Única](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Código de Autorização com PKCE | Consumidor Delegado/Org | [Provedor de código de autorização](#authorization-code-provider) |
-| [Aplicativo Web que chama APIs da Web](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
-|                                                                                                        | Código de Autorização | Consumidor Delegado/Org | [Provedor de código de autorização](#authorization-code-provider) |
+| [Aplicativo de Página Única](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Código de autorização com PKCE | Consumidor delegado/organização | [Provedor de código de autorização](#authorization-code-provider) |
+| [Aplicativo Web que chama APIs Web](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
+|                                                                                                        | Código de Autorização | Consumidor delegado/organização | [Provedor de código de autorização](#authorization-code-provider) |
 |                                                                                                        | Credenciais do cliente | Somente aplicativo               | [Provedor de credenciais do cliente](#client-credentials-provider) |
-| [API Web que chama APIs da Web](/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) |                    |                        |     |
-|                                                                                                        | Em nome de       | Consumidor Delegado/Org | [Provedor on-behalf-of](#on-behalf-of-provider) |
+| [API Web que chama APIs Web](/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) |                    |                        |     |
+|                                                                                                        | Em nome de       | Consumidor delegado/organização | [Provedor em nome de](#on-behalf-of-provider) |
 |                                                                                                        | Credenciais do cliente | Somente aplicativo               | [Provedor de credenciais do cliente](#client-credentials-provider) |
-| [Aplicativo de área de trabalho que chama APIs da Web](/azure/active-directory/develop/scenario-desktop-acquire-token)      |                    |                        |     |
-|                                                                                                        | Interativo        | Consumidor Delegado/Org | [Provedor interativo](#interactive-provider) |
+| [Aplicativo da área de trabalho que chama APIs Web](/azure/active-directory/develop/scenario-desktop-acquire-token)      |                    |                        |     |
+|                                                                                                        | Interativo        | Consumidor delegado/organização | [Provedor interativo](#interactive-provider) |
 |                                                                                                        | Integração Windows | Organização Delegada          | [Provedor Windows integrado](#integrated-windows-provider) |
 |                                                                                                        | Proprietário do Recurso     | Organização Delegada          | [Provedor de nome de usuário/senha](#usernamepassword-provider) |
-|                                                                                                        | Código do dispositivo        | Organização Delegada          | [Provedor de código de dispositivo](#device-code-provider) |
+|                                                                                                        | Código do dispositivo        | Organização Delegada          | [Provedor de código do dispositivo](#device-code-provider) |
 | [Aplicativo Daemon](/azure/active-directory/develop/scenario-daemon-acquire-token)                            |                    |                        |     |
 |                                                                                                        | Credenciais do cliente | Somente aplicativo               | [Provedor de credenciais do cliente](#client-credentials-provider) |
-| [Aplicativo móvel que chama APIs da Web](/azure/active-directory/develop/scenario-mobile-acquire-token)        |                    |                        |     |
-|                                                                                                        | Interativo        | Consumidor Delegado/Org | [Provedor interativo](#interactive-provider) |
+| [Aplicativo móvel que chama APIs Web](/azure/active-directory/develop/scenario-mobile-acquire-token)        |                    |                        |     |
+|                                                                                                        | Interativo        | Consumidor delegado/organização | [Provedor interativo](#interactive-provider) |
 
 > [!NOTE]
-> Os trechos de código a seguir foram escritos com as versões mais recentes de seus respectivos SDKs. Se você encontrar erros de compilador com esses trechos, certifique-se de ter as versões mais recentes. Os provedores de autenticação usados são fornecidos pelas seguintes bibliotecas de Identidade do Azure:
+> Os snippets de código a seguir foram escritos com as versões mais recentes de seus respectivos SDKs. Se você encontrar erros do compilador com esses snippets, verifique se você tem as versões mais recentes. Os provedores de autenticação usados são fornecidos pelas seguintes bibliotecas de Identidade do Azure:
 >
-> - Os desenvolvedores do .NET precisam adicionar o [pacote do Azure.Identity.](/dotnet/api/azure.identity)
-> - Os desenvolvedores javaScript precisam adicionar a [biblioteca @azure/identidade.](/javascript/api/@azure/identity)
-> - Java e os desenvolvedores do Android precisam adicionar [a biblioteca do azure-identity.](/java/api/overview/azure/identity-readme)
+> - Os desenvolvedores do .NET precisam adicionar o [pacote Azure.Identity](/dotnet/api/azure.identity) .
+> - Os desenvolvedores de JavaScript precisam adicionar a [biblioteca @azure/identidade](/javascript/api/@azure/identity) .
+> - Os desenvolvedores de Java e Android precisam adicionar [a biblioteca de identidade do azure](/java/api/overview/azure/identity-readme) .
 
 ## <a name="authorization-code-provider"></a>Provedor de código de autorização
 
-O fluxo de código de autorização permite que aplicativos nativos e web obtenham tokens com segurança no nome do usuário. Para saber mais, confira plataforma de identidade da Microsoft fluxo de código de autorização [do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+O fluxo de código de autorização permite que aplicativos Nativos e Web obtenham tokens com segurança no nome do usuário. Para saber mais, confira plataforma de identidade da Microsoft fluxo de código de autorização [do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -160,13 +160,13 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -175,7 +175,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -202,7 +202,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="client-credentials-provider"></a>Provedor de credenciais do cliente
 
-O fluxo de credenciais do cliente permite que aplicativos de serviço executem sem interação do usuário. O Access baseia-se na identidade do aplicativo. Para obter mais informações, consulte plataforma de identidade da Microsoft e o fluxo de credenciais do cliente [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
+O fluxo de credenciais do cliente permite que os aplicativos de serviço executem sem interação do usuário. O acesso é baseado na identidade do aplicativo. Para obter mais informações, [plataforma de identidade da Microsoft fluxo de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -317,13 +317,13 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Dê suporte ou abra uma solicitação [de recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -332,7 +332,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -354,13 +354,13 @@ result, err := client.Me().Get(nil)
 
 ---
 
-## <a name="on-behalf-of-provider"></a>Provedor on-behalf-of
+## <a name="on-behalf-of-provider"></a>Provedor em nome de
 
-O fluxo em nome do fluxo é aplicável quando seu aplicativo chama uma API de serviço/web que, por sua vez, chama a API Graph Microsoft. Saiba mais lendo [o plataforma de identidade da Microsoft e o fluxo OAuth 2.0 On-Behalf-Of](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+O fluxo em nome de é aplicável quando seu aplicativo chama um serviço/API Web que, por sua vez, chama o Microsoft API do Graph. Saiba mais lendo [plataforma de identidade da Microsoft e o fluxo On-Behalf-Of do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
-O pacote não dá suporte ao fluxo em nome `Azure.Identity` da versão 1.4.0. Em vez disso, crie um provedor de autenticação personalizado usando o MSAL.
+O `Azure.Identity` pacote não dá suporte ao fluxo em nome da versão 1.4.0. Em vez disso, crie um provedor de autenticação personalizado usando a MSAL.
 
 ```csharp
 var scopes = new[] { "User.Read" };
@@ -406,7 +406,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Fluxos OAuth em nome do OAuth exigem que você implemente um provedor de autenticação personalizado no momento. Leia [Usando o Provedor de Autenticação Personalizado](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) para obter mais informações.
+Fluxos OAuth em nome de exigem que você implemente um provedor de autenticação personalizado no momento. Leia [Usando o Provedor de Autenticação Personalizado](https://github.com/microsoftgraph/msgraph-sdk-javascript/blob/dev/docs/CustomAuthenticationProvider.md) para obter mais informações.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -439,27 +439,27 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
 ---
 
 ## <a name="implicit-provider"></a>Provedor implícito
 
-O fluxo de autenticação implícito não é recomendado devido às [suas desvantagens.](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6) Clientes públicos, como aplicativos nativos e aplicativos JavaScript, agora devem usar o fluxo de código de autorização com a extensão PKCE. [Referência](https://oauth.net/2/grant-types/implicit/).
+O fluxo de Autenticação Implícita não é recomendado devido às [suas desvantagens](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Clientes públicos, como aplicativos nativos e aplicativos JavaScript, agora devem usar o fluxo de código de autorização com a extensão PKCE. [Referência.](https://oauth.net/2/grant-types/implicit/)
 
-## <a name="device-code-provider"></a>Provedor de código de dispositivo
+## <a name="device-code-provider"></a>Provedor de código do dispositivo
 
-O fluxo de código do dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, consulte plataforma de identidade da Microsoft e o fluxo de código do dispositivo [OAuth 2.0.](/azure/active-directory/develop/v2-oauth2-device-code)
+O fluxo de código do dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, [consulte plataforma de identidade da Microsoft fluxo de código do dispositivo OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -550,13 +550,13 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -565,7 +565,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -590,11 +590,11 @@ result, err := client.Me().Get(nil)
 
 ## <a name="integrated-windows-provider"></a>Provedor Windows integrado
 
-O fluxo Windows integrado fornece uma maneira de Windows computadores adquirirem silenciosamente um token de acesso quando eles estão ingressados no domínio. Para obter detalhes, consulte [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+O fluxo Windows integrado fornece uma maneira para que Windows computadores adquiram silenciosamente um token de acesso quando eles são ingressados no domínio. Para obter detalhes, consulte [Autenticação do Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
 # <a name="c"></a>[C#](#tab/CS)
 
-No `Azure.Identity` momento, o pacote não dá suporte Windows autenticação integrada. Em vez disso, crie um provedor de autenticação personalizado usando o MSAL.
+No `Azure.Identity` momento, o pacote não dá suporte Windows autenticação integrada. Em vez disso, crie um provedor de autenticação personalizado usando a MSAL.
 
 ```csharp
 var scopes = new[] { "User.Read" };
@@ -650,7 +650,7 @@ Não aplicável.
 
 Não aplicável.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/Go)
 
 Não aplicável.
 
@@ -658,7 +658,7 @@ Não aplicável.
 
 ## <a name="interactive-provider"></a>Provedor interativo
 
-O fluxo interativo é usado por aplicativos móveis (Xamarin e UWP) e aplicativos de área de trabalho para chamar a Microsoft Graph em nome de um usuário. Para obter detalhes, consulte [Adquirindo tokens interativamente](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
+O fluxo interativo é usado por aplicativos móveis (Xamarin e UWP) e aplicativos de área de trabalho para chamar o Microsoft Graph em nome de um usuário. Para obter detalhes, [consulte Adquirir tokens interativamente](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -691,7 +691,7 @@ var graphClient = new GraphServiceClient(interactiveCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -750,7 +750,7 @@ Não aplicável.
 
 Não aplicável.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -759,7 +759,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -782,7 +782,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="usernamepassword-provider"></a>Provedor de nome de usuário/senha
 
-O provedor de nome de usuário/senha permite que um aplicativo entre em um usuário usando seu nome de usuário e senha. Use esse fluxo somente quando você não puder usar nenhum dos outros fluxos OAuth. Para obter mais informações, consulte plataforma de identidade da Microsoft e a credencial de senha do proprietário do recurso [OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
+O provedor de nome de usuário/senha permite que um aplicativo conecte um usuário usando seu nome de usuário e senha. Use esse fluxo somente quando não for possível usar nenhum dos outros fluxos OAuth. Para obter mais informações, [plataforma de identidade da Microsoft a credencial de senha do proprietário do recurso OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -814,7 +814,7 @@ var graphClient = new GraphServiceClient(userNamePasswordCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -846,13 +846,13 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação de [recurso Graph microsoft](https://aka.ms/graphrequests) se isso for importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -861,7 +861,7 @@ import (
     "context"
 
     azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    a "github.com/microsoft/kiota/authentication/go/azure"
+    a "github.com/microsoft/kiota-authentication-azure-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
 )
 
@@ -886,6 +886,6 @@ result, err := client.Me().Get(nil)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Para obter exemplos de código que mostram como usar o plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativos, consulte plataforma de identidade da Microsoft exemplos de código (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
-- Os provedores de autenticação exigem uma ID do cliente. Você vai querer registrar [seu aplicativo depois](https://portal.azure.com/) de configurar seu provedor de autenticação.
-- Deixe-nos saber se um fluxo OAuth necessário não tem suporte no momento votando ou abrindo uma solicitação de recurso do [Microsoft Graph](https://aka.ms/graphrequests).
+- Para obter exemplos de código que mostram como usar o plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativo, consulte plataforma de identidade da Microsoft de código (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
+- Os provedores de autenticação exigem uma ID de cliente. Você desejará registrar seu [aplicativo depois](https://portal.azure.com/) de configurar seu provedor de autenticação.
+- Informe-nos se no momento não há suporte para um fluxo OAuth necessário votando ou abrindo uma solicitação de recurso do [Microsoft Graph.](https://aka.ms/graphrequests)

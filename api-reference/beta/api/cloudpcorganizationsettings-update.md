@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6eac121c8bc16460e76c6f0909eb154eb0e225ef
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 711c386c8df0ddcbb7a3c6dd6bd2964eff0bacbc
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62803873"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733208"
 ---
 # <a name="update-cloudpcorganizationsettings"></a>Atualizar cloudPcOrganizationSettings
 Namespace: microsoft.graph
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
@@ -50,8 +50,9 @@ PATCH /deviceManagement/virtualEndpoint/organizationSettings
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|osVersion|cloudPcOperatingSystem|A versão do sistema operacional (OS) a ser provisionada em PCs na Nuvem. Os valores possíveis são: `windows10`, `windows11`, `unknownFutureValue`. Opcional.|
-|userAccountType|cloudPcUserAccountType|O tipo de conta do usuário em PCs de Nuvem provisionados. Os valores possíveis são: `standardUser`, `administrator`, `unknownFutureValue`. Opcional.|
+|osVersion|cloudPcOperatingSystem|A versão do sistema operacional (SO) a ser provisionada em PCs na nuvem. Os valores possíveis são: `windows10`, `windows11`, `unknownFutureValue`. Opcional.|
+|userAccountType|cloudPcUserAccountType|O tipo de conta do usuário em PCs na nuvem provisionados. Os valores possíveis são: `standardUser`, `administrator`, `unknownFutureValue`. Opcional.|
+|windowsSettings|cloudPcWindowsSettings|As configurações a serem aplicadas Windows ao criar PCs na nuvem para essa organização. O valor de idioma padrão é `en-US`.|
 
 
 ## <a name="response"></a>Resposta
@@ -76,7 +77,10 @@ Content-length: 127
 {
   "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
   "userAccountType": "standardUser",
-  "osVersion": "windows11"
+  "osVersion": "windows11",
+  "windowsSettings": {
+    "language": "en-US"
+  }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

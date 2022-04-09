@@ -1,32 +1,32 @@
 ---
 title: 'cloudPcOnPremisesConnection: updateAdDomainPassword'
-description: Atualize a senha de domínio do Active Directory para uma conexão de rede bem-sucedida do Azure. Essa API é suportada quando o tipo onPremisesConnection é híbridoAzureADJoin.
+description: Atualize a senha de domínio do Active Directory para uma conexão de rede do Azure bem-sucedida. Essa API tem suporte quando o tipo do onPremisesConnection é hybridAzureADJoin.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: b10b3d2cdac6ce00119a374987c71ee19f0f94a0
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 0328358f712f952fa4a264405298ea7fd22858c5
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587725"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733201"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize a senha de domínio do Active Directory para [um onPremisesConnection](../resources/cloudpconpremisesconnection.md). Essa API é suportada quando o tipo do **onPremisesConnection** é `hybridAzureADJoin`.
+Atualize a senha de domínio do Active Directory para um objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) . Essa API tem suporte quando o tipo do objeto **cloudPcOnPremisesConnection** é `hybridAzureADJoin`.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.ReadWrite.All|
 

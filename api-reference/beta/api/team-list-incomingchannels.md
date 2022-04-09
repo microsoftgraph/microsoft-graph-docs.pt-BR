@@ -5,19 +5,19 @@ author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 50ef42f8aaefed6aa297bddf396f577b8ab89be1
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 4e664f4460b46c76cb1aeb6ccded0812feadfa66
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685296"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704240"
 ---
 # <a name="list-incomingchannels"></a>Listar incomingChannels
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de canais [de entrada](../resources/channel.md) (canais compartilhados com uma [equipe](../resources/team.md)).
+Obtenha a lista de [canais](../resources/channel.md) de entrada (canais compartilhados com uma [equipe](../resources/team.md)).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /teams/{teamsId}/incomingChannels
+GET /teams/{team-id}/incomingChannels
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -53,10 +53,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de objetos [de](../resources/channel.md) canal no corpo da resposta. A resposta também inclui a **propriedade @odata.id** que pode ser usada para acessar o canal e executar outras operações no objeto [de](../resources/channel.md) canal.
+Se for bem-sucedido, esse método retornará um código de réplica `200 OK` e uma coleção de objetos de [canal](../resources/channel.md) no corpo da réplica. A réplica também inclui a propriedade **@odata.id** que pode ser usada para acessar o canal e executar outras operações no objeto de [canal](../resources/channel.md).
 
 > [!Note]
-> Atualmente, a invocação da URL retornada da propriedade **@odata.id** falha para canais compartilhados entre locatários. Você poderá resolver esse problema se remover a `/tenants/{tenant-id}` parte da URL antes de chamar essa API. Para obter mais detalhes, consulte [Problemas conhecidos com o Microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id).
+> Atualmente, a invocação do URL retornado da propriedade **@odata.id** falha para canais compartilhados entre locatários. Você pode resolver esse problema se remover a parte `/tenants/{tenant-id}` do URL antes de chamar essa API. Para obter mais detalhes, consulte [Problemas conhecidos com o Microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id).
 
 ## <a name="examples"></a>Exemplos
 

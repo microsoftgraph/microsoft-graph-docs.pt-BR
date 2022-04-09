@@ -1,23 +1,23 @@
 ---
 title: Listar allChannels
-description: Obtenha a lista de canais nesta equipe ou compartilhados com essa equipe (canais de entrada).
+description: Obtenha a lista de canais nesta equipe ou compartilhados com esta equipe (canais de entrada).
 author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f5f025062089d3550fe8f2212b353757059bd12
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: 77332d239310ab4552d724362c19d770d6f1d471
+ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685317"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704159"
 ---
 # <a name="list-allchannels"></a>Listar allChannels
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de [canais nesta](../resources/channel.md) equipe [ou](../resources/team.md) compartilhados com essa [equipe](../resources/team.md) (canais de entrada).
+Obtenha a lista de [canais](../resources/channel.md) desta [equipe](../resources/team.md) ou compartilhados com esta [equipe](../resources/team.md) (canais de entrada).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /teams/{teamsId}/allChannels
+GET /teams/{team-id}/allChannels
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -57,10 +57,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de objetos [de](../resources/channel.md) canal no corpo da resposta. A resposta também inclui a **propriedade @odata.id** que pode ser usada para acessar o canal e executar outras operações no objeto [de](../resources/channel.md) canal.
+Se for bem-sucedido, esse método retornará um código de réplica `200 OK` e uma coleção de objetos de [canal](../resources/channel.md) no corpo da réplica. A réplica também inclui a propriedade **@odata.id** que pode ser usada para acessar o canal e executar outras operações no objeto de [canal](../resources/channel.md).
 
 > [!Note]
-> Atualmente, a invocação da URL retornada da propriedade **@odata.id** falha para canais compartilhados entre locatários. Você poderá resolver esse problema se remover a `/tenants/{tenant-id}` parte da URL antes de chamar essa API. Para obter mais detalhes, consulte [Problemas conhecidos com o Microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id).
+> Atualmente, a invocação do URL retornado da propriedade **@odata.id** falha para canais compartilhados entre locatários. Você pode resolver esse problema se remover a parte `/tenants/{tenant-id}` do URL antes de chamar essa API. Para obter mais detalhes, consulte [Problemas conhecidos com o Microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id).
 
 ## <a name="examples"></a>Exemplos
 
@@ -107,7 +107,7 @@ Content-Type: application/json
        "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
       "id": "19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "Shared channel from Contosso",
+      "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }
@@ -116,7 +116,7 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-list-all-shared-channels"></a>Exemplo 2: Listar todos os canais compartilhados
+### <a name="example-2-list-all-shared-channels"></a>Exemplo 2: listar todos os canais compartilhados
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -150,7 +150,7 @@ Content-Type: application/json
        "@odata.id": "https://graph.microsoft.com/beta/tenants/b3246f44-b4gb-5678-96c6-25b18fa2c910/teams/893075dd-5678-5634-925f-022c42e20265/channels/19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv",
       "id": "19:561fbdbbfca848a484gabdf00ce9dbbd@thread.tacv2",
       "createdDateTime": "2020-05-27T19:22:25.692Z",
-      "displayName": "Shared channel from Contosso",
+      "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }

@@ -1,18 +1,18 @@
 ---
-title: Personalizar o cliente de serviço do Microsoft Graph SDK
-description: Fornece instruções sobre como alterar o comportamento padrão do cliente de serviço do Microsoft Graph SDK.
+title: Personalizar o cliente de serviço do SDK do Microsoft Graph
+description: Fornece instruções sobre como alterar o comportamento padrão do cliente do serviço microsoft Graph SDK.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: e5bf4dc288d401fd86b8fed578a108433c833678
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 292548544abba7cd56bd2154cec576e0bb3fba0a
+ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862880"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64733161"
 ---
-# <a name="customize-the-microsoft-graph-sdk-service-client"></a>Personalizar o cliente de serviço do Microsoft Graph SDK
+# <a name="customize-the-microsoft-graph-sdk-service-client"></a>Personalizar o cliente de serviço do SDK do Microsoft Graph
 
-O cliente Graph SDK da Microsoft configura um conjunto padrão de middleware que permite que o SDK se comunique com os pontos de extremidade Graph Microsoft. Esse conjunto padrão é personalizável, permitindo que você altere o comportamento do cliente. Por exemplo, você pode inserir o registro em log personalizado ou adicionar um manipulador de teste para simular cenários específicos. Você pode adicionar e remover componentes de middleware. É importante observar que a ordem na qual os componentes de middleware são executados é significativa.
+O cliente do SDK do Microsoft Graph configura um conjunto padrão de middleware que permite que o SDK se comunique com os pontos de extremidade Graph Microsoft. Esse conjunto padrão é personalizável, permitindo que você altere o comportamento do cliente. Por exemplo, você pode inserir o registro em log personalizado ou adicionar um manipulador de teste para simular cenários específicos. Você pode adicionar e remover componentes de middleware. É importante observar que a ordem na qual os componentes de middleware são executados é significativa.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -150,8 +150,8 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
 
 ```go
 import (
-    a "github.com/microsoft/kiota/authentication/go/azure"
-    khttp "github.com/microsoft/kiota/http/go/nethttp"
+    a "github.com/microsoft/kiota-authentication-azure-go"
+    khttp "github.com/microsoft/kiota-http-go"
     msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
     core "github.com/microsoftgraph/msgraph-sdk-go-core"
 )
@@ -164,7 +164,7 @@ defaultMiddleware := core.GetDefaultMiddlewaresWithOptions(msgraphsdk.GetDefault
 
 // Get instance of custom middleware
 // Implement a custom middleware by implementing the Middleware interface
-// https://github.com/microsoft/kiota/blob/main/http/go/nethttp/middleware.go
+// https://github.com/microsoft/kiota-http-go/blob/main/middleware.go
 allMiddleware := append(defaultMiddleware, mycustom.NewCustomHandler())
 
 // Create an HTTP client with the middleware
@@ -183,7 +183,7 @@ client := msgraphsdk.NewGraphServiceClient(adapter)
 
 ## <a name="configuring-the-http-proxy-for-the-client"></a>Configurando o proxy HTTP para o cliente
 
-Alguns ambientes exigem que os aplicativos cliente usem um proxy HTTP antes que eles possam acessar a Internet pública. Esta seção mostra como configurar o proxy para os SDKs Graph Microsoft.
+Alguns ambientes exigem que os aplicativos cliente usem um proxy HTTP antes que possam acessar a Internet pública. Esta seção mostra como configurar o proxy para os SDKs do Microsoft Graph.
 
 <!-- markdownlint-disable MD024 -->
 ## <a name="c"></a>[C#](#tab/csharp)
