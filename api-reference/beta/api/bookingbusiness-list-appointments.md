@@ -1,16 +1,16 @@
 ---
 title: Listar compromissos
-description: Obter uma lista de objetos bookingAppointment para o bookingbusiness especificado.
+description: Obtenha uma lista de objetos bookingAppointment para o bookingbusiness especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 37f61fe2b0a4b562c0c8603db17f10eed42ce487
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43723d7e05328ab64b382df8c415b0d7fb6544b7
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109743"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755604"
 ---
 # <a name="list-appointments"></a>Listar compromissos
 
@@ -18,27 +18,29 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos bookingAppointment](../resources/bookingappointment.md) para [o bookingBusiness especificado.](../resources/bookingbusiness.md)
+Obtenha uma lista de [objetos bookingAppointment](../resources/bookingappointment.md) para [o bookingBusiness especificado](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/appointments
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Para obter o conjunto de compromissos de uma empresa do Bookings dentro de um intervalo de datas, em vez `$filter` de , obter o [calendarView](bookingbusiness-list-calendarview.md) para esse intervalo de datas.
+Para obter o conjunto de compromissos de uma Bookings dentro de um intervalo de datas, `$filter`em vez de , obtenha o [calendarView](bookingbusiness-list-calendarview.md) para esse intervalo de datas.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {code} do portador. Obrigatório.|
@@ -46,9 +48,11 @@ Para obter o conjunto de compromissos de uma empresa do Bookings dentro de um in
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -1,16 +1,16 @@
 ---
 title: Criar bookingAppointment
-description: Crie um novo bookingAppointment para o bookingbusiness especificado.
+description: Crie um novo bookingAppointment para o bookingBusiness especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 7b1fd5d57bd5c92e74d18b3a8f87fdac284fd703
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 34ab4476c00db82e365b4657ad38acac8ddf6ac7
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367787"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755639"
 ---
 # <a name="create-bookingappointment"></a>Criar bookingAppointment
 
@@ -19,16 +19,22 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um [novo bookingAppointment](../resources/bookingappointment.md) para o [bookingBusiness especificado](../resources/bookingbusiness.md).
-## <a name="permissions"></a>Permissions
+
+## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+
+> [!NOTE]
+> Se você criar um aplicativo personalizado usando permissões de aplicativo, deverá seguir a validação [de regras de negócios](/graph/bookingsbusiness-business-rules).
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/appointments
@@ -43,20 +49,21 @@ POST /bookingBusinesses/{id}/appointments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto bookingAppointment](../resources/bookingappointment.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto bookingAppointment](../resources/bookingappointment.md) .
 
 Se o número máximo de clientes (**maximumAttedeesCount**) permitido no [serviço](../resources/bookingservice.md) for maior que 1:
 
-- Certifique-se de que os clientes existam no Calendário da Reserva. Se não o fazem, crie usando a [operação Criar bookingCustomer](bookingbusiness-post-customers.md) .
-- Passe as IDs de cliente válidas ao criar ou atualizar o compromisso. Se a ID do cliente não for válida, esse cliente não será incluído no objeto appointment.
+- Verifique se os clientes existem no Calendário de Reserva. Caso contrário, crie usando a [operação Criar bookingCustomer](bookingbusiness-post-customers.md) .
+- Passe as IDs de cliente válidas ao criar ou atualizar o compromisso. Se a ID do cliente não for válida, esse cliente não será incluído no objeto de compromisso.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação. Esse compromisso não envolve a reserva de membros específicos da equipe.
 
 # <a name="http"></a>[HTTP](#tab/http)

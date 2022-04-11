@@ -1,16 +1,16 @@
 ---
 title: Listar o calendarView do Bookings
-description: Obter a coleção de objetos bookingAppointment para um bookingBusiness, que ocorre no intervalo de datas especificado.
+description: Obtenha a coleção de objetos bookingAppointment para um bookingBusiness, que ocorre no intervalo de datas especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 64d5ddd168064445c26c7e23d8b26e33e97af864
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3362edeb6d9382dca937e4484ea0ccc4d4f85b84
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114099"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755485"
 ---
 # <a name="list-bookings-calendarview"></a>Listar o calendarView do Bookings
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a coleção [de objetos bookingAppointment](../resources/bookingappointment.md) para [um bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.
+Obtenha a coleção de [objetos bookingAppointment](../resources/bookingappointment.md) para [um bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -41,14 +41,15 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representados no formato ISO 8601, como UTC ou um deslocamento do UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T00:00:00Z', e o mesmo horário no PST teria esta aparência: '2017-12-31T16:00:00-08:00'.|
-|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representado no formato ISO 8601, como UTC ou um deslocamento do UTC. Por exemplo, 3am UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T03:00:00Z', e o mesmo horário no PST teria esta aparência: '2017-12-31T19:00:00-08:00'.|
+|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representados no formato ISO 8601, como UTC ou um deslocamento de UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T00:00:00Z' e a mesma hora no PST teria esta aparência: '2017-12-31T16:00:00-08:00'.|
+|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representados no formato ISO 8601, como UTC ou um deslocamento de UTC. Por exemplo, 3:00 UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T03:00:00Z' e a mesma hora no PST teria esta aparência: '2017-12-31T19:00:00-08:00'.|
 
-Os valores de e são interpretados usando o deslocamento de zona de tempo especificado em seus valores correspondentes e não são afetados pelo valor do `start` `end` `Prefer: outlook.timezone` header, se presente.
+Os valores de `start` e são `end` interpretados `Prefer: outlook.timezone` usando o deslocamento de fuso horário especificado em seus valores correspondentes e não são afetados pelo valor do cabeçalho, se presente.
 
-Esse método também oferece suporte a alguns dos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método também dá suporte a alguns dos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Authorization  | Portador {código}|
@@ -57,7 +58,8 @@ Esse método também oferece suporte a alguns dos [parâmetros de consulta OData
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará o código de resposta e o objeto da coleção `200, OK` [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Veja a seguir um exemplo de como chamar essa API.

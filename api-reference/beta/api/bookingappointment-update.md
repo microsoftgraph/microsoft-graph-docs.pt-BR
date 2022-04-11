@@ -1,18 +1,18 @@
 ---
-title: Atualizar bookingappointment
-description: Atualize as propriedades de um objeto bookingAppointment no bookingbusiness especificado.
+title: Atualizar bookingAppointment
+description: Atualize as propriedades de um objeto bookingAppointment no bookingBusiness especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1abfb8dcdb10249ba92d8ef5f2670c8367c4ab17
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: fcbbb774d3981a1174493e2305c78e2042988985
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367948"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755548"
 ---
-# <a name="update-bookingappointment"></a>Atualizar bookingappointment
+# <a name="update-bookingappointment"></a>Atualizar bookingAppointment
 
 Namespace: microsoft.graph
 
@@ -20,17 +20,21 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de [um objeto bookingAppointment](../resources/bookingappointment.md) no [bookingBusiness especificado](../resources/bookingbusiness.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+
+> [!NOTE]
+> Se você criar um aplicativo personalizado usando permissões de aplicativo, deverá seguir a validação [de regras de negócios](/graph/bookingsbusiness-business-rules).
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /bookingBusinesses/{id}/appointments/{id}
@@ -48,47 +52,47 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|customerEmailAddress|String|O endereço SMTP do [bookingCustomer](../resources/bookingcustomer.md) que está reservando o compromisso.|
-|customerId|String|A ID do [bookingCustomer](../resources/bookingcustomer.md) para esse compromisso. Se nenhuma ID for especificada quando um compromisso for criado, um novo **objeto bookingCustomer** será criado. Depois de definido, você deve considerar **o customerId** imutável.|
-|customerLocation|[location](../resources/location.md)|Representa informações de local para [o bookingCustomer](../resources/bookingcustomer.md) que está reservando o compromisso.|
-|customerName|Cadeia de caracteres|O nome do cliente.|
-|customerNotes|String|Observações do cliente associado a esse compromisso. Você só pode obter o valor ao ler **esse bookingAppointment** por sua ID. <br> Você só pode definir essa propriedade ao criar um compromisso com um novo cliente inicialmente. Após esse ponto, o valor é calculado a partir do cliente representado por **customerId**.|
+|customerEmailAddress|Cadeia de caracteres|O endereço SMTP do [bookingCustomer](../resources/bookingcustomer.md) que está reservando o compromisso.|
+|customerId|String|A ID do [bookingCustomer](../resources/bookingcustomer.md) para este compromisso. Se nenhuma ID for especificada quando um compromisso for criado, um novo objeto **bookingCustomer** será criado. Depois de definido, você deve considerar **a customerId** imutável.|
+|customerLocation|[location](../resources/location.md)|Representa informações de localização para [o bookingCustomer](../resources/bookingcustomer.md) que está reservando o compromisso.|
+|Customername|Cadeia de caracteres|O nome do cliente.|
+|customerNotes|String|Observações do cliente associadas a este compromisso. Você só pode obter o valor ao ler este **bookingAppointment** por sua ID. <br> Você só pode definir essa propriedade ao criar inicialmente um compromisso com um novo cliente. Depois desse ponto, o valor é calculado do cliente representado por **customerId**.|
 |customerPhone|String|O número de telefone do cliente.|
-|customers|[coleção bookingCustomerInformation](../resources/bookingcustomerinformation.md)|Lista as propriedades do cliente para um compromisso. Um compromisso conterá uma lista de informações do cliente e cada unidade indicará as propriedades de um cliente que faz parte desse compromisso. Opcional.|
-|customerTimeZone|String|O fuso horário do cliente. Para ver uma lista de valores possíveis, consulte [dateTimeTimeZone](../resources/datetimetimezone.md).|
-|duração|Duration|O comprimento do compromisso, denotado no [formato ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
-|end|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, hora e fuso horário que o compromisso termina.|
+|Clientes|[coleção bookingCustomerInformation](../resources/bookingcustomerinformation.md)|Ele lista as propriedades do cliente para um compromisso. Um compromisso conterá uma lista de informações do cliente e cada unidade indicará as propriedades de um cliente que faz parte desse compromisso. Opcional.|
+|customerTimeZone|String|O fuso horário do cliente. Para obter uma lista de valores possíveis, consulte [dateTimeTimeZone](../resources/datetimetimezone.md).|
+|duração|Duração|O comprimento do compromisso, indicado no [formato ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
+|end|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o compromisso termina.|
 |invoiceAmount|Duplo|O valor cobrado na fatura.|
-|invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário da fatura para esse compromisso.|
-|invoiceId|String|A ID da fatura.|
+|invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário da fatura para este compromisso.|
+|invoiceId|Cadeia de caracteres|A ID da fatura.|
 |invoiceStatus|string| O status da fatura. Os possíveis valores são: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
-|invoiceUrl|String|A URL da fatura no Microsoft Bookings.|
+|invoiceUrl|String|A URL da fatura em Microsoft Bookings.|
 |filledAttendeesCount|Int32|O número atual de clientes no compromisso. Obrigatório.|
-|isLocationOnline|Booliano|True indica que o compromisso será mantido online. O valor padrão é falso.|
+|isLocationOnline|Boolean|True indica que o compromisso será mantido online. O valor padrão é falso.|
 |maximumAttendeesCount|Int32|O número máximo de clientes permitidos no compromisso. Obrigatório. |
-|optOutOfCustomerEmail|Booliano|True indica que [o bookingCustomer](../resources/bookingcustomer.md) para esse compromisso não deseja receber uma confirmação para esse compromisso.|
-|postBuffer|Duration|O tempo de reserva após o fim do compromisso, para limpeza, como exemplo. O valor é expresso no [formato ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
-|preBuffer|Duration|O tempo de reserva antes do início do compromisso, para preparação, como exemplo. O valor é expresso no [formato ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|price|Duplo|O preço normal de um compromisso para o [bookingService especificado](../resources/bookingservice.md).|
-|priceType|bookingPriceType| Uma configuração para oferecer flexibilidade para a estrutura de preços dos serviços. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
-|lembretes|[Coleção bookingReminder](../resources/bookingreminder.md)|A coleção de lembretes de clientes enviados para esse compromisso. O valor dessa propriedade está disponível somente ao ler esse **bookingAppointment** por sua ID.|
+|optOutOfCustomerEmail|Boolean|True indica que o [bookingCustomer](../resources/bookingcustomer.md) para este compromisso não deseja receber uma confirmação para este compromisso.|
+|Postbuffer|Duração|A quantidade de tempo a ser reservado após o término do compromisso, para limpeza, como exemplo. O valor é expresso no [formato ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) . |
+|Prebuffer|Duração|A quantidade de tempo a ser reservado antes do início do compromisso, para preparação, como exemplo. O valor é expresso no [formato ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|Preço|Duplo|O preço normal de um compromisso para o [bookingService especificado](../resources/bookingservice.md).|
+|priceType|bookingPriceType| Uma configuração para fornecer flexibilidade para a estrutura de preços dos serviços. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
+|Lembretes|[coleção bookingReminder](../resources/bookingreminder.md)|A coleção de lembretes de clientes enviados para este compromisso. O valor dessa propriedade está disponível somente ao ler este **bookingAppointment** por sua ID.|
 |selfServiceAppointmentId|String|Uma ID de acompanhamento adicional para o compromisso, se o compromisso tiver sido criado diretamente pelo cliente na página de agendamento, em vez de um membro da equipe em nome do cliente.|
-|serviceId|Cadeia de caracteres|A ID do [bookingService](../resources/bookingservice.md) associado a esse compromisso.|
+|serviceId|Cadeia de caracteres|A ID do [bookingService](../resources/bookingservice.md) associado a este compromisso.|
 |serviceLocation|[location](../resources/location.md)|O local onde o serviço é entregue.|
-|serviceName|Cadeia de caracteres|O nome do **bookingService** associado a esse compromisso.<br>Essa propriedade é opcional ao criar um novo compromisso. Se não for especificado, ele será calculado a partir do serviço associado ao compromisso pela **propriedade serviceId** .|
-|serviceNotes|String|Observações de [um bookingStaffMember](../resources/bookingstaffmember.md). O valor dessa propriedade está disponível somente ao ler esse **bookingAppointment** por sua ID.|
-|smsNotificationsEnabled|Booliano|True indica que as notificações de SMS serão enviadas aos clientes para o compromisso. O valor padrão é falso.|
-|staffMemberIds|Coleção String|A ID de [cada bookingStaffMember](../resources/bookingstaffmember.md) agendado neste compromisso.|
-|iniciar|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário que o compromisso começa.|
+|serviceName|Cadeia de caracteres|O nome do **bookingService** associado a este compromisso.<br>Essa propriedade é opcional ao criar um novo compromisso. Se não for especificado, ele será calculado do serviço associado ao compromisso pela **propriedade serviceId** .|
+|serviceNotes|String|Anotações de [um bookingStaffMember](../resources/bookingstaffmember.md). O valor dessa propriedade está disponível somente ao ler este **bookingAppointment** por sua ID.|
+|smsNotificationsEnabled|Booliano|True indica que as notificações por SMS serão enviadas aos clientes para o compromisso. O valor padrão é falso.|
+|staffMemberIds|String collection|A ID de cada [bookingStaffMember](../resources/bookingstaffmember.md) agendado neste compromisso.|
+|iniciar|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o compromisso começa.|
 
 > [!NOTE]
 > Se o número máximo de clientes (**maximumAttedeesCount**) permitido no [serviço](../resources/bookingservice.md) for maior que 1:
-> - Certifique-se de que os clientes existam no Calendário da Reserva. Se não o fazem, crie usando a [operação Criar bookingCustomer](bookingbusiness-post-customers.md) .
-> - Passe as IDs de cliente válidas ao criar ou atualizar o compromisso. Se a ID do cliente não for válida, esse cliente não será incluído no objeto appointment.
+> - Verifique se os clientes existem no Calendário de Reserva. Caso contrário, crie usando a [operação Criar bookingCustomer](bookingbusiness-post-customers.md) .
+> - Passe as IDs de cliente válidas ao criar ou atualizar o compromisso. Se a ID do cliente não for válida, esse cliente não será incluído no objeto de compromisso.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`. Ele não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,6 +101,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 O exemplo a seguir altera a data do serviço por dia e atualiza a data da fatura.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_bookingappointment"

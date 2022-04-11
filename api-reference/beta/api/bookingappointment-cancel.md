@@ -1,33 +1,34 @@
 ---
-title: 'bookingAppointment: cancel'
-description: Cancele o bookingAppointment especificado no bookingbusiness especificado e envie uma mensagem aos clientes envolvidos e aos membros da equipe.
+title: 'bookingAppointment: cancelar'
+description: Cancele o bookingAppointment especificado no bookingBusiness especificado e envie uma mensagem para o cliente envolvido e os membros da equipe.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5ae148f44e5234f2101b656eb3d4155d9de8512b
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 8b9d64f2ffae95af61e2b6eb524887a02c659208
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343492"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755541"
 ---
-# <a name="bookingappointment-cancel"></a>bookingAppointment: cancel
+# <a name="bookingappointment-cancel"></a>bookingAppointment: cancelar
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancele o [bookingAppointment](../resources/bookingappointment.md) especificado no [bookingbusiness](../resources/bookingbusiness.md) especificado e envie uma mensagem aos clientes envolvidos e aos membros da equipe.
+Cancele o [bookingAppointment especificado](../resources/bookingappointment.md) no [bookingBusiness](../resources/bookingbusiness.md) especificado e envie uma mensagem para o cliente envolvido e os membros da equipe.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -35,12 +36,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
@@ -48,13 +52,17 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |cancellationMessage|Cadeia de caracteres|Uma mensagem para confirmar com o cliente que o compromisso foi cancelado.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
 
-Se você tentar cancelar um compromisso que não exisit, este método retornará `HTTP 404 Not found`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+
+Se você tentar cancelar um compromisso que não existe, este método retornará `HTTP 404 Not found`.
 
 ## <a name="example"></a>Exemplo
+
 Veja a seguir um exemplo de como chamar essa API.
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,7 +105,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response"

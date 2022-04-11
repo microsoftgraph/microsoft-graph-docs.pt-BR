@@ -208,6 +208,9 @@ items:
       - name: Reserva de clientes (visualização)
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
+        items:
+          - name: Regras de Negócios
+            href: bookingsbusiness-business-rules.md
       - name: Gerenciamento de aplicativo e dispositivo
         expanded: true
         items:
@@ -527,7 +530,7 @@ items:
   - name: Desenvolver
     expanded: true
     items:
-      - name: Obter tokens de autenticação
+      - name: Autenticação e autorização
         items:
           - name: Visão geral
             href: auth/index.yml

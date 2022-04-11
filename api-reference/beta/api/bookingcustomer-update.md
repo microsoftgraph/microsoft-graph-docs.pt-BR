@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4d84becf75c11f97370540e089017e4cc429bea3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e2bd3e0b3a1f844523a77b5212fa7105ae606d99
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094578"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64755527"
 ---
 # <a name="update-bookingcustomer"></a>Atualizar bookingcustomer
 
@@ -18,22 +18,27 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto bookingCustomer.](../resources/bookingcustomer.md)
+Atualize as propriedades de um [objeto bookingCustomer](../resources/bookingcustomer.md) .
+
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) | BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /bookingBusinesses/{id}/customers/{id}
 ```
+
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
+
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Authorization  | Portador {código}|
@@ -43,13 +48,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome do cliente.|
+|displayName|String|O nome do cliente.|
 |emailAddress|String|O endereço SMTP do cliente.|
-|addresses|[Coleção physicalAddress](../resources/physicaladdress.md)|Endereços associados ao cliente, incluindo home, business e outros endereços.|
-|telefones|Coleção [phone](../resources/phone.md)|Telefone números associados ao cliente, incluindo números fixos, comerciais e móveis.|
+|Endereços|[coleção physicalAddress](../resources/physicaladdress.md)|Endereços associados ao cliente, incluindo endereços domésticos, comerciais e outros.|
+|telefones|Coleção [phone](../resources/phone.md)|Telefone números associados ao cliente, incluindo números domésticos, comerciais e móveis.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e o objeto `200 OK` [bookingCustomer](../resources/bookingcustomer.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [bookingCustomer](../resources/bookingcustomer.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
