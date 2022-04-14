@@ -1,18 +1,18 @@
 ---
-title: Configurar notificações para alterações nos dados de usuário
+title: Configurar notificações para alterações nos dados de recursos
 description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações de alteração para atualizar seu estado após alterações.
-author: FaithOmbongi
+author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: ee62ed00b557155bc31f587412806ff00521ec04
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: d9a16eff7edee32a45709bf614bf401ea15af408
+ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367983"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64842297"
 ---
-# <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
+# <a name="set-up-notifications-for-changes-in-resource-data"></a>Configurar notificações para alterações nos dados de recursos
 
 A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações de alteração para atualizar seu estado após alterações.
 
@@ -54,20 +54,20 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - [todoTask][] (pré-visualização)
 - [usuário][]
 
-Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
+### <a name="sample-scenarios"></a>Exemplo de cenários
 
-Ou para um recurso de nível superior: `/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
+Você pode criar uma assinatura para os seguintes cenários:
 
-Ou para uma instância de recurso específica: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`, `/communications/onlinemeeting/{meeting-id}`
 
-Ou para alguma pasta no OneDrive pessoal de um usuário: `/drives/{id}/root`
-`/drives/{id}/root/subfolder`
-
-Ou para a pasta raiz de uma unidade do SharePoint/OneDrive for Business: `/drive/root`
-
-Ou para um novo alerta da [API de Segurança](security-concept-overview.md): `/security/alerts?$filter=status eq 'newAlert'`, `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
-
-Ou para as tarefas na Lista de Tarefas Pendentes de um usuário: `/me/todo/lists/{todoTaskListId}/tasks`
+|Cenário  |Consulta  |
+|---------|---------|
+|Para uma pasta específica do Outlook, como a caixa de entrada     |   `me/mailFolders('inbox')/messages`      |
+|Para um recurso de nível superior     | `/me/messages` <br/> `/me/contacts` <br/> `/me/events` <br/> `/users` <br/> `/groups` <br/> `/communications/callRecords`        |
+|Para uma instância de recurso específica     |  `/users/{id}` <br/> `/groups/{id}` <br/> `/groups/{id}/conversations` <br/> `/sites/{site-id}/lists/{list-id}` <br/> `/communications/presences/{id}` <br/> `/communications/onlinemeeting/{meeting-id}`       |
+|Para qualquer pasta no OneDrive pessoal de um usuário     |  `/drives/{id}/root` <br/> `/drives/{id}/root/subfolder`      |
+|Para a pasta raiz de uma unidade do Microsoft Office SharePoint Online/OneDrive for Business     |   `/drive/root`      |
+| Ou para um novo alerta de [API de segurança](security-concept-overview.md) |`/security/alerts?$filter=status eq 'newAlert'` <br/> `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`|
+|Para as tarefas na lista de Tarefas Pendentes de um usuário|`/me/todo/lists/{todoTaskListId}/tasks`|
 
 ### <a name="azure-ad-resource-limitations"></a>Limitações de recursos do Microsoft Azure AD
 
@@ -91,7 +91,7 @@ Quando os limites são excedidos, a tentativa de criar uma assinatura resultará
 
 ### <a name="outlook-resource-limitations"></a>Limitações de recursos do Outlook
 
-Ao se inscrever em recursos do Outlook, tais como **mensagens**, **eventos** ou **contatos**, se você decidir usar o *nome UPN* em um caminho de recurso, a solicitação de assinatura pode falhar caso o UPN contenha um apóstrofo. Considere usar IDs de usuário de GUID em vez de UPNs para evitar esse problema. Por exemplo, em vez de usar o caminho de recursos:
+Ao assinar recursos do Outlook, como **mensagens**, **eventos** ou **contatos**, se você optar por usar o **userPrincipalName** (UPN) no caminho do recurso, a solicitação de assinatura poderá falhar se o UPN contiver um apóstrofo. Considere usar IDs de usuário em vez de UPNs para evitar encontrar esse problema. Por exemplo, em vez de usar o caminho de recursos:
 
 `/users/sh.o'neal@contoso.com/messages`
 
