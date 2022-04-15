@@ -1,16 +1,16 @@
 ---
 title: Obter entrada
 doc_type: apiPageType
-description: Obter um objeto signIn que contém todas as assinaturas de um Azure Active Directory locatário.
+description: Obtenha um objeto signIn que contém todas as entradas para um Azure Active Directory locatário.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: ce2fa2046e563e2d294d9022e08354af37038436
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e3e2259e130bbc091d078cd86551fb62afb038bc
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125366"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848752"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um [objeto signIn](../resources/signin.md) que contém um evento de login de usuário específico para seu locatário. Isso inclui as ingressações em que um usuário é solicitado a inserir um nome de usuário ou senha e tokens de sessão.
+Obtenha um [objeto signIn](../resources/signin.md) que contém um evento de entrada de usuário específico para seu locatário. Isso inclui entradas em que um usuário é solicitado a inserir um nome de usuário ou senha e tokens de sessão.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,17 +31,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
 > [!IMPORTANT]
-> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
+> Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [estar registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
+Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
-Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte Funções do [Azure AD integrados](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, confira [as funções internas do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor global
++ Leitor Global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
-+ Leitor de segurança
++ Leitor de Segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -66,7 +66,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto signIn](../resources/signin.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e [um objeto signIn](../resources/signin.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -143,6 +143,7 @@ Content-type: application/json
   "incomingTokenType": "Primary Refresh Token",
   "ipAddress":"131.107.159.37",
   "clientAppUsed":"Browser",
+  "clientCredentialType": "certificate",
   "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
   "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
   "conditionalAccessStatus":"notApplied",

@@ -5,16 +5,41 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: af7a53c81bc1adf8a4e5571c69b1e63e457254b6
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: bc9694ff5e7946656cac8246cf9682e0b71663ab
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755422"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848724"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
+
+
+#### <a name="authenticationprotocol-values"></a>Valores authenticationProtocol
+
+|Member|
+|:---|
+|wsFed|
+|Saml|
+|unknownFutureValue|
+
+#### <a name="federatedidpmfabehavior-values"></a>Valores federatedIdpMfaBehavior
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### <a name="promptloginbehavior-values"></a>Valores de promptLoginBehavior
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|desabilitadas|
+|unknownFutureValue|
 
 ### <a name="bookingsavailabilitystatus-values"></a>valores bookingsAvailabilityStatus
 
@@ -116,6 +141,7 @@ Namespace: microsoft.graph
 |saml11|
 |saml20|
 |unknownFutureValue|
+|remoteDesktopToken|
 
 ### <a name="protocoltype-values"></a>valores protocolType 
 
@@ -312,11 +338,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|Cadeia de Caracteres|
 |Inteiro|
-|Referência|
+|Referências|
 |Binária|
-|Booliano|
+|Booleano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -569,6 +595,22 @@ Namespace: microsoft.graph
 |alternateMobilePhone|
 |mobilePhoneAndSMS|
 |unknownFutureValue|
+
+
+### <a name="clientcredentialtype-values"></a>Valores clientCredentialType 
+
+
+
+|Member|
+|:---|
+|none|
+|clientSecret|
+|clientAssertion|
+|federatedIdentityCredential|
+|managedIdentity|
+|certificado|
+|unknownFutureValue|
+
 
 ### <a name="azureadlicensetype-values"></a>valores azureADLicenseType
 
@@ -2262,7 +2304,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -2520,7 +2562,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|equipe      |0        |Indica que o Teams aplicativo pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o Teams aplicativo pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |Groupchat |1        |Indica que o aplicativo Teams pode ser instalado em um chat em grupo e está autorizado a acessar os dados desse chat em grupo.|
 |pessoal  |2        |Indica que o Teams aplicativo pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
@@ -2693,8 +2735,8 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Member|
 |:---|
-|equipe|
-|Canal|
+|team|
+|canal|
 |chat|
 |unknownFutureValue|
 

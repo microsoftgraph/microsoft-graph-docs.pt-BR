@@ -1,29 +1,29 @@
 ---
-title: Page through a collection using the Microsoft Graph SDKs
-description: Fornece instruções para criar solicitações Graph API da Microsoft usando os SDKs do Microsoft Graph.
+title: Percorrer uma coleção usando os SDKs do Microsoft Graph
+description: Fornece instruções para criar solicitações API do Graph Microsoft usando os SDKs do Microsoft Graph.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: a6ccc53fd58685948c486ff047733ba88949e553
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: e8ce14ad1836b454b96c303bb887757d26a73212
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63560040"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848535"
 ---
-# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Page through a collection using the Microsoft Graph SDKs
+# <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Percorrer uma coleção usando os SDKs do Microsoft Graph
 
-Por motivos de desempenho, as coleções de entidades geralmente são divididas em páginas e cada página é retornada com uma URL para a próxima página. A **classe PageIterator** simplifica o consumo de coleções pagedas. **PageIterator** lida com a enumeração da página atual e solicita páginas subsequentes automaticamente.
+Por motivos de desempenho, as coleções de entidades geralmente são divididas em páginas e cada página é retornada com uma URL para a próxima página. A **classe PageIterator** simplifica o consumo de coleções pagedas. **PageIterator manipula** a enumeração da página atual e solicita páginas subsequentes automaticamente.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-Se você enviar quaisquer headers de solicitação adicionais em sua solicitação inicial, esses headers não serão incluídos por padrão nas solicitações de página subsequentes. Se esses cabeçalhos precisam ser enviados em solicitações subsequentes, você deve defini-los explicitamente.
+Se você enviar quaisquer cabeçalhos de solicitação adicionais em sua solicitação inicial, esses cabeçalhos não serão incluídos por padrão em solicitações de página subsequentes. Se esses cabeçalhos precisam ser enviados em solicitações subsequentes, você deve defini-los explicitamente.
 
-## <a name="iterate-over-all-the-messages"></a>Iterar sobre todas as mensagens
+## <a name="iterate-over-all-the-messages"></a>Iterar em todas as mensagens
 
-O exemplo a seguir mostra iteração sobre todas as mensagens na caixa de correio de um usuário.
+O exemplo a seguir mostra a iteração em todas as mensagens na caixa de correio de um usuário.
 
 > [!TIP]
-> Este exemplo define um pequeno tamanho de página usando o `top` parâmetro para fins de demonstração. Você pode definir o tamanho da página até 999 para minimizar o número de solicitações necessárias.
+> Este exemplo define um tamanho de página pequeno usando o parâmetro `top` para fins de demonstração. Você pode definir o tamanho da página até 999 para minimizar o número de solicitações necessárias.
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -137,10 +137,10 @@ query := messages.MessagesRequestBuilderGetQueryParameters{
 }
 
 options := messages.MessagesRequestBuilderGetOptions{
-    H: map[string]string{
+    Headers: map[string]string{
         "Prefer": "outlook.body-content-type=\"text\"",
     },
-    Q: &query,
+    QueryParameters: &query,
 }
 
 result, err := client.Me().Messages().Get(&options)
@@ -150,7 +150,7 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMe
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.H)
+pageIterator.SetHeaders(options.Headers)
 
 // Iterate over all pages
 iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
@@ -163,9 +163,9 @@ iterateErr := pageIterator.Iterate(func(pageItem interface{}) bool {
 
 ---
 
-## <a name="stopping-and-resuming-the-iteration"></a>Parar e retomar a iteração
+## <a name="stopping-and-resuming-the-iteration"></a>Parando e retomando a iteração
 
-Alguns cenários exigem parar o processo de iteração para executar outras ações. É possível pausar a iteração retornando `false` do retorno de chamada de iteração. A iteração pode ser retomada chamando o método `resume` no **PageIterator**.
+Alguns cenários exigem a interrupção do processo de iteração para executar outras ações. É possível pausar a iteração retornando do `false` retorno de chamada de iteração. A iteração pode ser retomada chamando o `resume` método no **PageIterator**.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -264,10 +264,10 @@ query := messages.MessagesRequestBuilderGetQueryParameters{
 }
 
 options := messages.MessagesRequestBuilderGetOptions{
-    H: map[string]string{
+    Headers: map[string]string{
         "Prefer": "outlook.body-content-type=\"text\"",
     },
-    Q: &query,
+    QueryParameters: &query,
 }
 
 result, err := client.Me().Messages().Get(&options)
@@ -277,7 +277,7 @@ pageIterator, err := msgraphcore.NewPageIterator(result, adapter, graph.CreateMe
 
 // Any custom headers sent in original request should also be added
 // to the iterator
-pageIterator.SetHeaders(options.H)
+pageIterator.SetHeaders(options.Headers)
 
 // Pause iterating after 25
 var count, pauseAfter = 0, 25

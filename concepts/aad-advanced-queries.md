@@ -4,12 +4,12 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c2dd37ce2323af5d46e88da8f8594f809857da73
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: b5eff1cba4f2f8db4e09c5224aaf4b43ff86d513
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894723"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848641"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
@@ -254,11 +254,11 @@ As tabelas a seguir resumem o suporte para `$filter` operadores por propriedades
 
 ### <a name="legend"></a>Legenda
 
-+ ![Funciona por padrão. Não requer parâmetros de consulta avançados.](../concepts/images/advanced-query-parameters/default.svg) O operador `$filter` funciona por padrão para essa propriedade.
-+ ![Requer parâmetros de consulta avançados.](../concepts/images/advanced-query-parameters/advanced.svg) O `$filter` operador **exige** *parâmetros de consulta avançados*, que são:
++ ![Funciona por padrão. Não requer parâmetros de consulta avançados.](../concepts/images/yesandnosymbols/greencheck.svg) O operador `$filter` funciona por padrão para essa propriedade.
++ ![Requer parâmetros de consulta avançados.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) O `$filter` operador **exige** *parâmetros de consulta avançados*, que são:
   + `ConsistencyLevel=eventual` cabeçalho
   + `$count=true` cadeia de caracteres
-+ ![Não suportado.](../concepts/images/advanced-query-parameters/notSupported.svg) O operador `$filter` não é suportado nessa propriedade. [Envie-nos comentários](https://aka.ms/MsGraphAADSurveyDocs) para solicitar que esta propriedade suporte `$filter` para seus cenários.
++ ![Não suportado.](../concepts/images/yesandnosymbols/no.svg) O operador `$filter` não é suportado nessa propriedade. [Envie-nos comentários](https://aka.ms/MsGraphAADSurveyDocs) para solicitar que esta propriedade suporte `$filter` para seus cenários.
 + As células em branco indicam que a consulta não é válida para aquela propriedade.
 + A coluna de **valor nulo** indica que a propriedade pode ser anulada e filtrada usando `null`.
 + As propriedades que não estão listadas aqui não suportam `$filter` de forma alguma.
@@ -267,7 +267,7 @@ As tabelas a seguir resumem o suporte para `$filter` operadores por propriedades
 
 ## <a name="error-handling-for-advanced-queries-on-directory-objects"></a>Tratamento de erros para consultas avançadas sobre objetos de diretório
 
-A contagem de objetos de diretório só é suportada usando os parâmetros de consultas avançados. Se o cabeçalho `ConsistencyLevel=eventual` não for especificado, o pedido retorna um erro quando o segmento `$count` URL é usado ou ignora silenciosamente o parâmetro `$count` consulta (`?$count=true`) se for usado.
+A contagem de objetos de diretório só é suportada usando os parâmetros de consultas avançadas. Se o `ConsistencyLevel=eventual` cabeçalho não for especificado, a solicitação retornará um erro quando o `$count` segmento de URL for usado ou ignorará silenciosamente o `$count` parâmetro de consulta (`?$count=true`) se for usado.
 
 <!-- {
   "blockType": "request",

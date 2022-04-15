@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 430c44adc75bf18d44d3e3bc6d3c0fc7dc724b45
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 7ce17257ac6d300b9006472261a913663d654d3f
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780930"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848633"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Personalizando a privacidade das informações do item no Microsoft Graph (visualização)
 
@@ -46,7 +46,7 @@ Um administrador com o _papel de administrador global_ pode afinar as configura�
 
 
 ### <a name="how-to-configure-item-insights-settings-via-powershell"></a>Como configurar as configurações de item de insights via PowerShell?
-Confirme os pré-requisitos adicionais a seguir. Em seguida, você pode usar o [Microsoft Graph PowerShell SDK](./powershell/installation.md) para definir informações do item para toda a organização ou para grupos específicos.
+Confirme os seguintes pré-requisitos adicionais. Em seguida, você pode usar o [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation.md) para definir insights de item para toda a organização ou para grupos específicos.
 
 #### <a name="additional-prerequisites"></a>Pré-requisitos adicionais
 * **Módulo do PowerShell** - Instale a [versão do módulo 0.9.1 ou superior](https://www.powershellgallery.com/packages/Microsoft.Graph).
@@ -65,7 +65,7 @@ Para obter a configuração de insights do item para uma organização, use o m�
 
 Por padrão, as informações do item estão habilitadas para toda a organização. É possível usar o módulo Microsoft Graph Windows PowerShell para alterar isso e desabilitar as percepções do item para todos na organização. 
 > [!NOTE]
-> O método de atualização requer permissões `User.ReadWrite.All` adicionais. Para criar uma sessão do Microsoft Graph com um escopo específico necessário, use o seguinte comando e concorde com as permissões solicitadas.
+> O método de atualização requer permissões `User.ReadWrite.All` adicionais. Para criar uma sessão do Microsoft Graph com um escopo necessário específico, use o comando a seguir e o consentimento para as permissões solicitadas.
 > ```powershell
 >    Connect-MgGraph -Scopes "User.Read.All","User.ReadWrite.All"
 > ```
@@ -83,7 +83,7 @@ Como alternativa, você pode alterar o padrão e desabilitar as informações do
 Conforme declarado anteriormente, por padrão, as configurações de privacidade das informações do item são habilitadas para toda a organização. Essas configurações são expostas por meio de uma propriedade de navegação chamada **itemInsights** em [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). Você pode alterar o padrão de duas maneiras:
 
 - Desative os insights de itens para todos os usuários da organização, definindo a propriedade **isEnabledInOrganization** do recurso [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) como `false`. 
-- Desabilite as informações do item para um _subconjunto_ de usuários, atribuindo esses usuários em um grupo do Microsoft Azure AD e definindo a propriedade **disabledForGroup** como a ID do grupo. Saiba mais sobre o [criar um grupo e adicionar usuários como membros](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+- Desabilite os insights de item para um _subconjunto_ de usuários, atribuindo esses usuários em um grupo do Microsoft Azure Active Directory e definindo a propriedade **disabledForGroup** para a ID desse grupo. Saiba mais sobre como [criar um grupo e adicionar usuários como membros](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 Use a operação de [atualização](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) para definir as propriedades **isEnabledInOrganization** e **disabledForGroup** de acordo.
 

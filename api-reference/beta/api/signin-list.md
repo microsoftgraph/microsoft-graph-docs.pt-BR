@@ -1,16 +1,16 @@
 ---
 title: Listar logons
 doc_type: apiPageType
-description: Obter uma lista dos logins do usuário em um locatário Azure Active Directory usuário.
+description: Obtenha uma lista das entradas do usuário em um locatário Azure Active Directory usuário.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 873c2d6be67c50b29fdeb52ba77d68cddaa548e7
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 547b13bbd97b459eec60b88270e13c6063107704
+ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629957"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64848773"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos signIn](../resources/signin.md) . A lista contém as assinaturas do usuário para seu Azure Active Directory locatário. As inserções em que um nome de usuário e senha são passados como parte do token de autorização e as inserções federadas bem-sucedidas estão incluídas nos logs de login.
+Obtenha uma lista de [objetos signIn](../resources/signin.md) . A lista contém as entradas do usuário para seu Azure Active Directory locatário. As entradas em que um nome de usuário e senha são passados como parte do token de autorização e entradas federadas bem-sucedidas estão incluídas atualmente nos logs de entrada.
 
-O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período de retenção padrão Azure Active Directory (Azure AD[) estão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) disponíveis.
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as entradas mais recentes são retornadas primeiro. Somente os eventos de entrada que ocorreram dentro do período de retenção Azure Active Directory (Azure AD[) padrão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) estão disponíveis.
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,13 +33,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
 > [!IMPORTANT]
-> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
+> Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [estar registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) corretamente no Azure AD.
+Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
-Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte [Funções in-loco do Azure AD](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, confira [as funções internas do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor global
++ Leitor Global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
@@ -53,7 +53,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos `$top`parâmetros , `$skiptoken`e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
+Esse método dá suporte aos `$top`parâmetros de consulta , `$skiptoken`e `$filter` OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -71,8 +71,8 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma c
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-sign-ins"></a>Exemplo 1: Listar todas as assinaturas
-Neste exemplo, o objeto de resposta mostra o usuário que se inscreveu usando o MFA que foi disparado por uma política de acesso condicional, e o método de autenticação principal é por meio do FIDO.
+### <a name="example-1-list-all-sign-ins"></a>Exemplo 1: Listar todas as entradas
+Neste exemplo, o objeto de resposta mostra o usuário conectado usando a MFA que foi disparada por uma política de acesso condicional e o método de autenticação principal é por meio do FIDO.
 
 #### <a name="request"></a>Solicitação
 
@@ -144,6 +144,7 @@ Content-type: application/json
       ],
       "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
+      "clientCredentialType": "certificate",
       "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
       "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
       "conditionalAccessStatus":"notApplied",
@@ -238,9 +239,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>Exemplo 2: Recuperar os primeiros 10 logins em aplicativos com o appDisplayName que começa com 'Azure'
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-azure"></a>Exemplo 2: recuperar as 10 primeiras entradas em aplicativos com o appDisplayName que começa com 'Azure'
 
-Neste exemplo, o objeto de resposta mostra o usuário se inscreveu usando apenas o método de autenticação principal, uma senha de nuvem. A resposta inclui uma propriedade `@odata.nextLink` que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.
+Neste exemplo, o objeto de resposta mostra o usuário conectado usando apenas seu método de autenticação principal: uma senha de nuvem. A resposta inclui uma propriedade `@odata.nextLink` que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.
 
 #### <a name="request"></a>Solicitação
 
@@ -392,7 +393,7 @@ Content-type: application/json
 
 
 
-### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>Exemplo 3: Recuperar os primeiros 10 sign-ins em que o signInEventType não é interativoUsuário começando com a última login
+### <a name="example-3-retrieve-the-first-10-sign-ins-where-the-signineventtype-is-not-interactiveuser-starting-with-the-latest-sign-in"></a>Exemplo 3: recuperar as 10 primeiras entradas em que o signInEventType não é interactiveUser começando com a entrada mais recente
 
 Neste exemplo, a resposta inclui uma `@odata.nextLink` propriedade que contém uma URL que pode ser usada para recuperar os próximos 10 resultados.
 
