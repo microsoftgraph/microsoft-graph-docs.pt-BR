@@ -1,22 +1,22 @@
 ---
 title: Introdução ao SDK Microsoft Graph PowerShell
-description: Começar a usar o Microsoft Graph PowerShell SDK usando-o para executar algumas tarefas básicas.
+description: Introdução com o SDK do PowerShell do Microsoft Graph usando-o, execute algumas tarefas básicas.
 ms.localizationpriority: medium
 author: jasonjoh
 ms.openlocfilehash: d92a6057b9c7df7df4f9a7014df20e7a21bfe923
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894765"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64883392"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Introdução ao SDK Microsoft Graph PowerShell
 
-Neste guia, você usará o Microsoft Graph PowerShell SDK para executar algumas tarefas básicas. Se você ainda não [instalou o SDK](installation.md), faça isso antes de seguir este guia.
+Neste guia, você usará o Microsoft Graph SDK do PowerShell para executar algumas tarefas básicas. Se você ainda não [instalou o SDK](installation.md), faça isso antes de seguir este guia.
 
 ## <a name="api-version"></a>Versão da API
 
-Por padrão, o SDK usa o [Microsoft Graph API REST v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). Você pode alterar isso usando o `Select-MgProfile` comando.
+Por padrão, o SDK usa a [API REST Graph Microsoft v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). Você pode alterar isso usando o `Select-MgProfile` comando.
 
 ```powershell
 Select-MgProfile -Name "beta"
@@ -24,20 +24,20 @@ Select-MgProfile -Name "beta"
 
 ## <a name="authentication"></a>Autenticação
 
-O SDK do PowerShell dá suporte a dois tipos de autenticação: acesso delegado e acesso somente a aplicativos. Neste guia, você usará o acesso delegado para fazer logon como usuário, concederá consentimento ao SDK para agir em seu nome e chamará o Microsoft Graph.
+O SDK do PowerShell dá suporte a dois tipos de autenticação: acesso delegado e acesso somente de aplicativo. Neste guia, você usará o acesso delegado para fazer logon como um usuário, concederá consentimento ao SDK para agir em seu nome e chamará o Microsoft Graph.
 
-Para obter detalhes sobre como usar o acesso somente a aplicativos para cenários autônomos, consulte [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+Para obter detalhes sobre como usar o acesso somente de aplicativo para cenários autônomos, consulte Usar autenticação somente de aplicativo com o [SDK do Microsoft Graph PowerShell](app-only.md).
 
-### <a name="determine-required-permission-scopes"></a>Determinar escopos de permissão necessários
+### <a name="determine-required-permission-scopes"></a>Determinar os escopos de permissão necessários
 
-Cada API no microsoft Graph é protegida por um ou mais escopos de permissão. O logon do usuário deve consentir com um dos escopos necessários para as APIs que você planeja usar. Neste exemplo, vamos usar as SEGUINTES APIs.
+Cada API no Microsoft Graph é protegida por um ou mais escopos de permissão. O usuário que faz logon deve consentir com um dos escopos necessários para as APIs que você planeja usar. Neste exemplo, usaremos as APIs a seguir.
 
-- [Listar usuários](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) para encontrar a ID do usuário conectado
+- [Listar](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) usuários para localizar a ID de usuário do usuário conectado
 - [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) to get the Teams the user is a member of.
 - [Listar canais](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) para obter os canais em uma equipe.
-- [Enviar mensagem](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) para enviar uma mensagem para um canal de equipe.
+- [Envie uma mensagem](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) para enviar uma mensagem para um canal da equipe.
 
-O `User.Read.All` escopo de permissão habilita as duas primeiras chamadas e o `Group.ReadWrite.All` escopo habilita o restante. Essas permissões exigem uma conta de administrador.
+O `User.Read.All` escopo de permissão habilitará as duas primeiras chamadas e o `Group.ReadWrite.All` escopo habilitará o restante. Essas permissões exigem uma conta de administrador.
 
 ### <a name="sign-in"></a>Entrar
 
@@ -47,26 +47,26 @@ Use o `Connect-MgGraph` comando para entrar com os escopos necessários. Você p
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
-O comando solicita que você acesse uma página da Web para entrar usando um código de dispositivo. Depois de fazer isso, o comando indica sucesso com uma `Welcome To Microsoft Graph!` mensagem. Você só precisa fazer isso uma vez por sessão.
+O comando solicita que você acesse uma página da Web para entrar usando um código do dispositivo. Depois de fazer isso, o comando indica êxito com uma `Welcome To Microsoft Graph!` mensagem. Você só precisa fazer isso uma vez por sessão.
 
 > [!TIP]
-> Você pode adicionar permissões adicionais repetindo o `Connect-MgGraph` comando com os novos escopos de permissão.
+> Você pode adicionar permissões adicionais repetindo o comando `Connect-MgGraph` com os novos escopos de permissão.
 
 ## <a name="call-microsoft-graph"></a>Chamar o Microsoft Graph
 
-Agora que você está assinado, você pode começar a fazer chamadas para o Microsoft Graph.
+Agora que você está conectado, pode começar a fazer chamadas para o Microsoft Graph.
 
 [!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
-### <a name="get-the-signed-in-user"></a>Obter o usuário com assinatura
+### <a name="get-the-signed-in-user"></a>Obter o usuário conectado
 
-Nesta seção, você localizará o usuário que está assinado e obterá sua ID de usuário. Você precisará disso para usar como parâmetro para os outros comandos que você usará mais tarde. Comece executando o seguinte comando.
+Nesta seção, você localizará o usuário conectado e obterá sua ID de usuário. Você precisará disso para usar como um parâmetro para os outros comandos que você usará posteriormente. Comece executando o comando a seguir.
 
 ```powershell
 Get-MgUser
 ```
 
-Isso causa uma listagem de usuários em sua Microsoft 365 organização.
+Isso gera uma listagem de usuários em sua Microsoft 365 organização.
 
 ```powershell
 Id                                   DisplayName              Mail                                  UserPrincipalName
@@ -82,31 +82,31 @@ ce73bdb5-bf12-405e-ab85-40122fdd6eb7 Brian Johnson (TAILSPIN) BrianJ@contoso.onm
 df1347a3-7ce7-4b4d-8aab-7c65b5c907b9 Cameron White                                                  CameronW@contoso…
 ```
 
-Você pode usar um [filtro OData para](../query-parameters.md#filter-parameter) ajudar a localizar o usuário específico que deseja. Execute o seguinte comando, substituindo `Megan Bowen` pelo nome de exibição do usuário com o que você se inscreveu.
+Você pode usar um [filtro OData para](../query-parameters.md#filter-parameter) ajudar a localizar o usuário específico desejado. Execute o comando a seguir, substituindo `Megan Bowen` pelo nome de exibição do usuário com o qual você entrou.
 
 ```powershell
 $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
 ```
 
-Verifique se funcionou inserindo o seguinte.
+Verifique se isso funcionou inserindo o seguinte.
 
 ```powershell
 $user.DisplayName
 ```
 
-### <a name="list-the-users-joined-teams"></a>Listar as equipes ingressáveis do usuário
+### <a name="list-the-users-joined-teams"></a>Listar as equipes ingressadas do usuário
 
-Agora use a ID do usuário como um parâmetro para o `Get-MgUserJoinedTeam` comando.
+Agora, use a ID do usuário como um parâmetro para o `Get-MgUserJoinedTeam` comando.
 
 ```powershell
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Assim como o `Get-MgUser` comando, isso fornece uma lista de equipes. Selecione uma das equipes ingressada pelo usuário e copie seu `Id`.
+Assim como o comando `Get-MgUser` , isso fornece uma lista de equipes. Selecione uma das equipes ingressadas do usuário e copie sua `Id`.
 
 ### <a name="list-team-channels"></a>Listar canais de equipe
 
-Agora use a ID da equipe como um parâmetro para o comando, seguindo um padrão semelhante de listagem de todos os canais e filtrando a `Get-MgTeamChannel` lista para obter o canal específico que você deseja.
+Agora, use a ID da equipe como um parâmetro para o comando, seguindo um padrão semelhante de listar todos os canais e filtrar a `Get-MgTeamChannel` lista para obter o canal específico desejado.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
@@ -115,13 +115,13 @@ $channel = Get-MgTeamChannel -TeamId ID_FROM_PREVIOUS_STEP -Filter "displayName 
 
 ### <a name="send-a-message"></a>Enviar uma mensagem
 
-Agora que você tem a ID da Equipe e a ID do canal, você pode postar uma mensagem no canal. Use o seguinte comando para enviar a mensagem.
+Agora que você tem a ID da Equipe e a ID do canal, pode postar uma mensagem no canal. Use o comando a seguir para enviar a mensagem.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-Esse comando difere dos comandos anteriores que você usou. Em vez de apenas consultar dados, ele está realmente criando algo. No Microsoft Graph, isso se converte em HTTP `POST`e requer um objeto no corpo dessa postagem. Nesse caso, o objeto é [um chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). Observe que o `-Body` parâmetro para o comando mapeia para a `body` propriedade em `chatMessage`. Outras propriedades são mapeadas de maneira semelhante, para que você possa alterar a mensagem enviada. Por exemplo, para enviar uma mensagem urgente, use o seguinte comando.
+Esse comando difere dos comandos anteriores que você usou. Em vez de apenas consultar dados, ele está realmente criando algo. No Microsoft Graph, isso se traduz em UM HTTP `POST`e requer um objeto no corpo dessa postagem. Nesse caso, o objeto é um [chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). Observe que o `-Body` parâmetro para o comando é mapeado para a `body` propriedade em `chatMessage`. Outras propriedades são mapeadas de maneira semelhante, para que você possa alterar a mensagem enviada. Por exemplo, para enviar uma mensagem urgente, use o comando a seguir.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
@@ -138,4 +138,4 @@ Disconnect-MgGraph
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Saiba como navegar no SDK](navigating.md)
-- [Usar autenticação somente aplicativo com o Microsoft Graph PowerShell SDK](app-only.md)
+- [Usar a autenticação somente de aplicativo com o SDK do PowerShell do Microsoft Graph](app-only.md)
