@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: da35d9cb395e1aab22817e4304326848e9970791
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: f0bf0d668aacd62cf452f7fa8a469d7e6b9663f7
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63559989"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917728"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -43,44 +43,45 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                   | Caminho REST
-|:---------------------------------------------------------|:------------------
-| [Obter item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [Listar atividades](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
-| [Obter análises][]                                        | `GET /drive/items/{item-id}/analytics`
-| [Obter atividades por intervalo][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
-| [Listar filhos](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [Listar versões](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Criar item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [Atualizar item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [Carregar conteúdo](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [Baixar conteúdo](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [Baixar o formato de arquivo específico][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [Excluir item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [Restaurar item](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
-| [Mover item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [Copiar item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Pesquisar itens](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [Listar alterações em uma unidade](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Seguir item](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [Item Unfollow](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
-| [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Criar link de compartilhamento](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Adicionar permissões](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [Listar permissões](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Excluir permissão](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Obter canal WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
-| [Fazer ceck-in](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Fazer check-out](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [Revogar concessões](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
+| Método                                                                       | Caminho REST                                                              |
+|:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------|
+| [Obter item](../api/driveitem-get.md)                                          | `GET /drive/items/{item-id}`                                           |
+| [Listar atividades](../api/activities-list.md)                                 | `GET /drive/items/{item-id}/activities`                                |
+| [Obter análises][]                                                            | `GET /drive/items/{item-id}/analytics`                                 |
+| [Obter atividades por intervalo][]                                               | `GET /drive/items/{item-id}/getActivitiesByInterval`                   |
+| [Listar filhos](../api/driveitem-list-children.md)                           | `GET /drive/items/{item-id}/children`                                  |
+| [Listar versões](../api/driveitem-list-versions.md)                           | `GET /drive/items/{item-id}/versions`                                  |
+| [Criar item](../api/driveitem-post-children.md)                             | `POST /drive/items/{item-id}/children`                                 |
+| [Atualizar item](../api/driveitem-update.md)                                    | `PATCH /drive/items/{item-id}`                                         |
+| [Carregar conteúdo](../api/driveitem-put-content.md)                            | `PUT /drive/items/{item-id}/content`                                   |
+| [Baixar conteúdo](../api/driveitem-get-content.md)                          | `GET /drive/items/{item-id}/content`                                   |
+| [Baixar o formato de arquivo específico][download-format]                             | `GET /drive/items/{item-id}/content?format={format}`                   |
+| [Excluir item](../api/driveitem-delete.md)                                    | `DELETE /drive/items/{item-id}`                                        |
+| [Restaurar item](../api/driveitem-restore.md)                                  | `POST /drive/items/{item-id}/restore`                                  |
+| [Mover item](../api/driveitem-move.md)                                        | `PATCH /drive/items/{item-id}`                                         |
+| [Copiar item](../api/driveitem-copy.md)                                        | `POST /drive/items/{item-id}/copy`                                     |
+| [Pesquisar itens](../api/driveitem-search.md)                                   | `GET /drive/items/{item-id}/search(q='text')`                          |
+| [Listar alterações em uma unidade](../api/driveitem-delta.md)                         | `GET /drive/root/delta`                                                |
+| [Seguir item](../api/driveitem-follow.md)                                    | `POST /drives/{drive-id}/items/{item-id}/follow`                       |
+| [Não seguir o item](../api/driveitem-unfollow.md)                                | `POST /drives/{drive-id}/items/{item-id}/unfollow`                     |
+| [Listar miniaturas](../api/driveitem-list-thumbnails.md)                       | `GET /drive/items/{item-id}/thumbnails`                                |
+| [Criar link de compartilhamento](../api/driveitem-createlink.md)                        | `POST /drive/items/{item-id}/createLink`                               |
+| [Adicionar permissões](../api/driveitem-invite.md)                                | `POST /drive/items/{item-id}/invite`                                   |
+| [Listar permissões](../api/driveitem-list-permissions.md)                     | `GET /drive/items/{item-id}/permissions`                               |
+| [Excluir permissão](../api/permission-delete.md)                             | `DELETE /drive/items/{item-id}/permissions/{perm-id}`                  |
+| [Obter canal WebSocket][getWebSocket]                                        | `GET /drive/root/subscriptions/socketIo`                               |
+| [Item de visualização][item-preview]                                                 | `POST /drive/items/{item-id}/preview`                                  |
+| [Fazer ceck-in](../api/driveitem-checkin.md)                                      | `POST /drives/{driveId}/items/{itemId}/checkin`                        |
+| [Fazer check-out](../api/driveitem-checkout.md)                                    | `POST /drives/{driveId}/items/{itemId}/checkout`                       |
+| [Revogar concessões](../api/permission-revokegrants.md)                           | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`      |
+| [Extrair rótulos de confidencialidade](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels`                 |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura. Somente no OneDrive Personal.
-| pacote               | [bundle][]         | Agrupar metadados, se o item for um pacote. Somente leitura.
+| pacote               | [Agrupar][]         | Agrupar os metadados, se o item for um pacote. Somente leitura.
 | conteúdo              | Fluxo             | O fluxo de conteúdo, se o item representar um arquivo.
 | createdBy            | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
@@ -97,7 +98,7 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.
 | malware              | [malware][]        | Metadados de malware, se o item for detectado como contendo malware. Somente leitura.
-| media                | [mídia][]          | Informações sobre o item mídia (áudio ou vídeo). Leitura e gravação. Somente em OneDrive for Business e SharePoint.
+| Mídia                | [mídia][]          | Informações sobre o item de mídia (áudio ou vídeo). Leitura e gravação. Somente em OneDrive for Business e SharePoint.
 | nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
@@ -111,7 +112,7 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 | sharepointIds        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
 | size                 | Int64              | O tamanho do item em bytes. Somente leitura.
 | specialFolder        | [specialFolder][]  | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.
-| source               | [driveItemSource][]| Informações sobre a fonte do item da unidade. Somente leitura. Somente em OneDrive for Business e SharePoint.
+| source               | [driveItemSource][]| Informações sobre a origem do item de unidade. Somente leitura. Somente em OneDrive for Business e SharePoint.
 | video                | [video][]          | Metadados de vídeo, se o item for um vídeo. Somente leitura.
 | webDavUrl            | String             | URL compatível com WebDAV para o item.
 | webUrl               | String             | URL que exibe o recurso no navegador. Somente leitura.
@@ -228,7 +229,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
 [audio]: audio.md
 [baseItem]: baseitem.md
-[bundle]: bundle.md
+[Agrupar]: bundle.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemSource]: driveItemSource.md

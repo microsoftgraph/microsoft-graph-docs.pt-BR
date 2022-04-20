@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannerbucket
-description: Atualize as propriedades do **objeto plannerbucket.**
+description: Atualize as propriedades do **objeto plannerbucket** .
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 495c5b4d13c49ff782f853672e41546eacbe2237
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 03bc25bdda2e5e47609a5d6b7f7d4f49b6260aaf
+ms.sourcegitcommit: 813bed8cbb61a5f892e8a227afc17c66687ab1fb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133150"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974479"
 ---
 # <a name="update-plannerbucket"></a>Atualizar plannerbucket
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do **objeto plannerbucket.**
+Atualize as propriedades do **objeto plannerbucket** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -37,7 +37,7 @@ PATCH /planner/buckets/{id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor conhecido de ETag para o **plannerBucket** ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o **plannerBucket** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
@@ -45,12 +45,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |nome|Cadeia de caracteres|Nome do bucket.|
-|orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
-|planId|String|Plan id to which the bucket belongs.|
+|orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usar dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e o objeto `Prefer` `return=representation` `200 OK` [plannerBucket](../resources/plannerbucket.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará a `204 No Content` resposta e o conteúdo vazio. Se a solicitação especificar o `Prefer` cabeçalho com `return=representation` preferência, `200 OK` esse método retornará um código de resposta e o objeto [plannerBucket](../resources/plannerbucket.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 

@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: bc9694ff5e7946656cac8246cf9682e0b71663ab
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: d524a6d1015943b269f95535aa7cf3a390aa57b7
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848724"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917630"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -340,9 +340,9 @@ Namespace: microsoft.graph
 |:---|
 |Cadeia de Caracteres|
 |Inteiro|
-|Referências|
+|Referência|
 |Binária|
-|Booleano|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -2752,6 +2752,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |skypeUser|
 |phoneUser|
 |unknownFutureValue|
+|emailUser|
 
 ### <a name="callrecordingstatus-values"></a>valores callRecordingStatus
 

@@ -5,18 +5,18 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0768fdfe759fc99e39057a978a947b8045bed5c2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c6ea35bfef3de2d51f0c374e3b4a2f1f67cef3ea
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124941"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917756"
 ---
 # <a name="add-member-to-channel"></a>Adicionar membro ao canal
 
 Namespace: microsoft.graph
 
-Adicionar uma [conversaMember](../resources/conversationmember.md) a um [canal](../resources/channel.md). Essa operação só é permitida para canais com **um valor membershipType** de `private` .
+Adicione um [conversationMember](../resources/conversationmember.md) a um [canal](../resources/channel.md). Esta operação é permitida somente para canais com valor **membershipType** de `private`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMember.ReadWrite.All |
+|Application| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -48,7 +48,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio.|
-|usuário|[user](../resources/user.md)|O usuário a ser acrescentado ao canal.|
+|usuário|[usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
 
 ## <a name="response"></a>Resposta
 
@@ -185,7 +185,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>Exemplo 3: Adicionar um membro a um canal usando o nome principal do usuário
+### <a name="example-3-add-an-owner-to-a-channel-using-user-principal-name"></a>Exemplo 3: Adicionar um proprietário a um canal usando o nome principal do usuário
 
 #### <a name="request"></a>Solicitação
 

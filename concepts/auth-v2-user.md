@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: f4e4e9033c7a43ccf61358733a252ab635148223
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 72e2522a8208c9296ff7e39469a9085c9889b862
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335021"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917525"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 
@@ -126,7 +126,7 @@ client_id=11111111-1111-1111-1111-111111111111
 
 | Parâmetro     | Obrigatório              | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| locatário        | Obrigatório              | O valor de `{tenant}` no caminho da solicitação pode ser usado para controlar quem pode entrar no aplicativo. Os valores permitidos são: <br><li>`common` tanto para contas Microsoft como para contas corporativas e de estudante. <li>`organizations` para contas corporativas ou de estudante <li>`consumers` somente para contas Microsoft <li>identificadores de locatário, como a ID do locatário ou o nome de domínio. <br/>Para obter mais detalhes, confira [Noções básicas de protocolo](/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
+| locatário        | Obrigatório              | O valor `{tenant}` no caminho da solicitação pode ser usado para controlar quem pode entrar no aplicativo. Os valores permitidos são:<br><li>`common` tanto para contas Microsoft como para contas corporativas e de estudante. <li>`organizations` para contas corporativas ou de estudante <li>`consumers` somente para contas Microsoft <li>identificadores de locatário, como a ID do locatário ou o nome de domínio. <br/>Para obter mais detalhes, confira [Noções básicas de protocolo](/azure/active-directory/develop/active-directory-v2-protocols#endpoints). |
 | client_id     | Obrigatório              | A ID do aplicativo que o [portal de registro](https://go.microsoft.com/fwlink/?linkid=2083908)) atribuiu ao seu aplicativo.                                                                                                                                                                                                                                                                                                                                                                               |
 | grant_type    | Obrigatório              | Deve ser `authorization_code` para o fluxo de código de autorização.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | escopo         | Obrigatório              | Uma lista de escopos separada por espaços. Os escopos solicitados pelo aplicativo nesta etapa devem ser equivalentes ou ser um subconjunto dos escopos solicitados na primeira etapa (autorização). Se os escopos especificados nesta solicitação abrangerem vários servidores de recursos, o ponto de extremidade v2.0 retornará um token para o recurso especificado no primeiro escopo.                                                                                                                                                                   |
@@ -286,3 +286,4 @@ Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome
 
 - [Saiba como criar um aplicativo Web que chama a Microsoft Graph em nome de um usuário](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user).
 - Para exemplos de uso da plataforma de identidade da Microsoft para garantir diferentes tipos de aplicativos, confira [Exemplos de código da plataforma de identidade da Microsoft (ponto de extremidade v2.0)](/azure/active-directory/develop/sample-v2-code).
+- [Comportamento de prompt em solicitações interativas MSAL.js](/azure/active-directory/develop/msal-js-prompt-behavior)

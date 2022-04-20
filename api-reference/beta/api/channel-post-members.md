@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 003bb04755c4106661d6e315f601341c9294d8ce
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: a1f5f669b54d900e58982242273d5e76bccbab04
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684596"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917686"
 ---
 # <a name="add-member-to-channel"></a>Adicionar membro ao canal
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |---------|-------------|
 |Delegado (conta corporativa ou de estudante)| ChannelMember.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| ChannelMember.ReadWrite.All |
+|Application| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored"} -->
@@ -50,7 +50,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio.|
-|user|[Usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|usuário|[usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
 
 ## <a name="response"></a>Resposta
 
@@ -207,7 +207,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>Exemplo 3: Adicionar um membro a um canal usando o nome principal do usuário
+### <a name="example-3-add-an-owner-to-a-channel-using-user-principal-name"></a>Exemplo 3: Adicionar um proprietário a um canal usando o nome principal do usuário
 
 #### <a name="request"></a>Solicitação
 

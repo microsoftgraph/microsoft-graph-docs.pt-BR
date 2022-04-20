@@ -1,16 +1,16 @@
 ---
 title: 'bookingsBusiness: getStaffAvailability'
-description: Saiba como obter as informações de disponibilidade dos membros da equipe de um Microsoft Bookings calendário.
+description: Obtenha as informações de disponibilidade dos membros da equipe de um Microsoft Bookings calendário.
 ms.localizationpriority: medium
 author: kwekua
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 71954be1123f5b36532380b61159934228edfc9e
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: f3c63a90dd58b0765d641c7be7cf5dd0727571f4
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755725"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917700"
 ---
 # <a name="bookingsbusiness-getstaffavailability"></a>bookingsBusiness: getStaffAvailability
 
@@ -35,7 +35,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 Get /solutions/bookingBusinesses/{id}/getStaffAvailability
-
 ```
 
 ## <a name="request-header"></a>Cabeçalho da solicitação
@@ -51,7 +50,7 @@ No corpo da solicitação, passe a lista de IDs de equipe junto com dois outros 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma [coleção staffAvailabilityItem](../resources/staffavailabilityitem.md) na resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma [coleção staffAvailabilityItem](../resources/staffavailabilityitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

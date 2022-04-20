@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso teamworkUserIdentity
+title: Tipo de recurso teamworkUserIdentity
 description: Representa um usuário no Microsoft Teams.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b0c50856a2b7051a631cd14ab3985cd8724bfe4c
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 7c705ecfb250fe06ead32ad97ec7a476e862d0a4
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211243"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917670"
 ---
-# <a name="teamworkuseridentity-resource-type"></a>tipo de recurso teamworkUserIdentity
+# <a name="teamworkuseridentity-resource-type"></a>Tipo de recurso teamworkUserIdentity
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um **usuário** em Microsoft Teams.
+Representa um **usuário** no Microsoft Teams.
 
 
 Herda da [identidade](../resources/identity.md).
@@ -27,8 +27,8 @@ Herda da [identidade](../resources/identity.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Herdado da [identidade](../resources/identity.md). Nome de exibição do usuário. Opcional.|
-|id|String|Herdado da [identidade](../resources/identity.md). ID do usuário. |
-|userIdentityType|teamworkUserIdentityType| Tipo de usuário. Os valores possíveis são: `aadUser` , , , , , e `onPremiseAadUser` `anonymousGuest` `federatedUser` `personalMicrosoftAccountUser` `skypeUser` `phoneUser` .|
+|id|Cadeia de caracteres|Herdado da [identidade](../resources/identity.md). ID do usuário. |
+|userIdentityType|teamworkUserIdentityType| Tipo de usuário. Os valores possíveis são: `aadUser`, `onPremiseAadUser`, `anonymousGuest`, `federatedUser`, `personalMicrosoftAccountUser`, `skypeUser`, `phoneUser`e `emailUser`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

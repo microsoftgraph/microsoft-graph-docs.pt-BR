@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c98483bd92db368b997692b1856ce6a475c15d37
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: b12d80ae786abc93d9b3e00358f7b18d42b89140
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695123"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917770"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -76,8 +76,9 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | activeModalities    | coleção modality                                                                                      | A lista de modalidades ativas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Somente leitura.                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | O participante que atendeu a chamada. Somente leitura.                                                                                                                                |
 | callRoutes          | [callRoute](callroute.md) collection                                                                   | As informações de roteamento sobre como a chamada foi redirecionada. Somente leitura.                                                                                                                |
-| callbackUri         | String                                                                                                 | A URL de retorno de chamada à qual os retornos serão entregues. Deve ser `https`.                                                                                                                               |
-| callChainId         | Cadeia de caracteres                                                                                                 | Um identificador único para todas as chamadas de participantes em uma conferência ou um identificador exclusivo para chamadas com dois participantes em uma chamada P2P.  Isso precisa ser copiado de `Microsoft.Graph.Call.CallChainId`. |
+| callbackUri         | String                                                                                                 | O URL de retorno de chamada no qual os retornos de chamada serão entregues. Devemos ser `https`.                                                                                                                               |
+| callChainId         | Cadeia de caracteres                                                                                                 | Um identificador exclusivo para todas as chamadas de participantes em conferência ou um identificador exclusivo para duas chamadas de participantes em uma chamada P2P. Isso precisa ser copiado de `Microsoft.Graph.Call.CallChainId`. |
+| callOptions            | [outgoingCallOptions](outgoingcalloptions.md)                                                         | Contém os recursos opcionais para a chamada.   |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | As informações de chat. Informações necessárias para cenários de reunião.                                                                                                                                |
 | direction           | callDirection                                                                                                 | A direção da chamada. Os valores possíveis são `incoming` ou `outgoing`. Somente leitura.                                                                                            |
 | id                  | String                                                                                                 | A ID de chamada. Somente leitura.                                                                                                                                                                        |
@@ -91,7 +92,7 @@ myParticipantId     | String                                                    
 | requestedModalities | coleção modality                                                                                      | A lista de modalidades solicitadas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | As informações de resultado. Por exemplo pode incluir o motivo de término. Somente leitura.                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | Tempo limite do toque em segundos para chamadas realizadas de ponto a ponto. O valor máximo para esse atributo é de 115 segundos.                                                                                        |
-| routingPolicies     | routingPolicy collection collection                                                                                      | Essa propriedade é aplicável somente às chamadas ponto a ponto. Os possíveis valores são: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`, `preferSkypeForBusiness`, `unknownFutureValue`.                                                                                                   |
+| routingPolicies     | routingPolicy collection collection                                                                                      | Esta propriedade é aplicável apenas para chamadas ponto a ponto. Os valores possíveis são: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`, `preferSkypeForBusiness`, `unknownFutureValue`.                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | O remetente da chamada.                                                                                                                                                                         |
 | state               | callState                                                                                                 | O estado da chamada. Os valores possíveis são: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Somente leitura.                          |
 | assunto             | String                                                                                                 | O assunto da conversa.                                                                                                                                                                    |
@@ -107,6 +108,7 @@ myParticipantId     | String                                                    
 | audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) collection | Somente leitura. Anulável.                                                |
 | operations          | [commsOperation](commsoperation.md) collection       | Somente leitura. Anulável.                                                |
 | participants        | [participant](participant.md) collection             | Somente leitura. Anulável.                                                |
+| contentSharingSessions        | coleção [contentSharingSession](contentsharingsession.md)             | Somente leitura. Anulável.                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -119,7 +121,9 @@ Veja a seguir uma representação JSON do recurso.
     "answeredBy",
     "callRoutes",
     "callChainId",
+    "callOptions",
     "chatInfo",
+    "contentSharingSessions",
     "direction",
     "id",
     "incomingContext",
@@ -150,7 +154,9 @@ Veja a seguir uma representação JSON do recurso.
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
   "callChainId": "String",
+  "callOptions": {"@odata.type": "#microsoft.graph.outgoingCallOptions"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "contentSharingSessions": [{ "@odata.type": "microsoft.graph.contentSharingSession" }],
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
   "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},

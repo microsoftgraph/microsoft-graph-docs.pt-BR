@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b272eb839dd1bf2bb9384db9be58610bc5c7ce4e
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: ddd3d8ca490183a20763eec07a7c651107fd47de
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607768"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917665"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar [chamada](../resources/call.md) permite que seu bot crie uma nova chamada ponto a ponto ou grupo de saída ou participe de uma reunião existente. Você precisará registrar [o bot de chamada](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e passar pela lista de permissões necessárias.
+Criar [chamada](../resources/call.md) permite que o bot crie uma nova chamada ponto a ponto ou grupo de saída ou ingresse em uma reunião existente. Você precisará registrar [o bot de chamada](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) e percorrer a lista de permissões necessárias.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Não suportado                                                                           |
 | Aplicativo                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
-> **Observações:** Para uma chamada com mídia hospedada por aplicativo, você precisa da permissão Calls.AccessMedia.All ou calls.AccessMedia.Chat* além de uma das permissões listadas.
+> **Notas:** Para uma chamada com mídia hospedada pelo aplicativo, você precisa da permissão Calls.AccessMedia.All ou Calls.AccessMedia.Chat*, além de uma das permissões listadas.
 >
 > Permissões marcadas com * usem [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -54,21 +54,21 @@ POST /communications/calls
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto de](../resources/call.md) chamada.
+No corpo da solicitação, forneça uma representação JSON de um [objeto de](../resources/call.md) chamada.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto de](../resources/call.md) chamada no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto de](../resources/call.md) chamada no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Exemplo 1: Criar chamada VoIP ponto a ponto com mídia hospedada pelo serviço
 
-> **Observação:** Essa chamada precisa da permissão Calls.Initiate.All.
+> **Nota:** Essa chamada precisa da permissão Calls.Initiate.All.
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
+O exemplo a seguir mostra uma solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -101,6 +101,10 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
+  "callOptions": {
+    "@odata.type": "#microsoft.graph.outgoingCallOptions",
+    "isContentSharingNotificationEnabled": true
+  },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
@@ -133,7 +137,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -223,7 +227,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>Notificação - estabelecimento
+#### <a name="notification---establishing"></a>Notificação – estabelecimento
 
 ```http
 POST https://bot.contoso.com/callback
@@ -254,7 +258,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Notificação - estabelecida
+#### <a name="notification---established"></a>Notificação – estabelecida
 
 ```http
 POST https://bot.contoso.com/callback
@@ -287,12 +291,102 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Exemplo 2: Criar chamada VoIP ponto a ponto com mídia hospedada por aplicativo
+#### <a name="notification---content-sharing-started"></a>Notificação – compartilhamento de conteúdo iniciado
 
-> **Observação**: este exemplo precisa de permissões Calls.Initiate.All e Calls.AccessMedia.All.
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
 
-##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="notification---content-sharing-updated"></a>Notificação – compartilhamento de conteúdo atualizado
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### <a name="notification---content-sharing-ended"></a>Notificação – compartilhamento de conteúdo encerrado
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/421f4c00-4436-4c3a-9d9a-c4924cf98e67/contentsharingsessions",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.contentSharingSession",
+          "id": "F7D9EF30FF0A9BD3F64B274387FB8FF8E96B6CFBA8F87F8305A74DE99AF007BC"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Exemplo 2: Criar chamada VoIP ponto a ponto com mídia hospedada pelo aplicativo
+
+> **Observação**: este exemplo precisa das permissões Calls.Initiate.All e Calls.AccessMedia.All.
+
+#### <a name="request"></a>Solicitação
+O exemplo a seguir mostra uma solicitação que faz uma chamada ponto a ponto entre o bot e o usuário especificado. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos por valores reais para que o exemplo funcione.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -370,17 +464,17 @@ Content-Type: application/json
 
 ---
 
-`<Media Session Configuration>` é a configuração de sessão de mídia serializada que contém as informações de sessão da pilha de mídia. Informações específicas sobre áudio, vídeo, informações de ssession VBSS devem ser passadas aqui.
+`<Media Session Configuration>` é a configuração de sessão de mídia serializada que contém as informações de sessão da pilha de mídia. Informações específicas sobre áudio, vídeo, informações de ssession do VBSS devem ser passadas aqui.
 
-A seguir, um exemplo de blob de sessão de mídia de áudio.
+A seguir está um exemplo de um blob de sessão de mídia de áudio.
 
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
 
->**Observação:** Para chamadas ponto a ponto, as notificações esperadas são apenas para alterações de estado de chamada.
+>**Nota:** Para chamadas ponto a ponto, as notificações esperadas são apenas para alterações de estado de chamada.
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -458,9 +552,9 @@ Content-Type: application/json
 ### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Exemplo 3: Criar uma chamada de grupo com mídia hospedada pelo serviço
 
 Isso dá suporte a até 5 usuários VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários VoIP.
-> **Observação:** Esta chamada de exemplo precisa da `Calls.InitiateGroupCalls.All` permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
+> **Nota:** Esta chamada de exemplo precisa da `Calls.InitiateGroupCalls.All` permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -524,12 +618,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Exemplo 4: Criar uma chamada de grupo com mídia hospedada por aplicativo
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Exemplo 4: Criar uma chamada de grupo com a mídia hospedada pelo aplicativo
 
 Isso dá suporte a até 5 usuários VoIP. O exemplo mostra como criar uma chamada de grupo com dois usuários VoIP.
-> **Observação:** Esta chamada de exemplo precisa da `Calls.InitiateGroupCalls.All` permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
+> **Nota:** Esta chamada de exemplo precisa da `Calls.InitiateGroupCalls.All` permissão. A chamada de grupo criada não dá suporte a chat ou gravação.
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -594,16 +688,16 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Exemplo 5: Participar de reunião agendada com mídia hospedada pelo serviço
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Exemplo 5: Ingressar em uma reunião agendada com mídia hospedada pelo serviço
 
-Para participar da reunião agendada, precisamos obter a ID do thread, a ID da mensagem, a ID do organizador e a id do locatário na qual a reunião está agendada.
-Essas informações podem ser obtidas da [API Obter Reuniões Online](../api/onlinemeeting-get.md).
+Para ingressar na reunião agendada, precisamos obter a ID do thread, a ID da mensagem, a ID do organizador e a ID do locatário na qual a reunião está agendada.
+Essas informações podem ser obtidas na [API Obter Reuniões Online](../api/onlinemeeting-get.md).
 
-Os valores de token de autorização, url de retorno de chamada, id de aplicativo, nome do aplicativo, id de usuário, nome de usuário e id de locatário devem ser substituídos juntamente com os detalhes obtidos da  [API De](../api/onlinemeeting-get.md) Reuniões Get Online com valores reais para fazer o exemplo funcionar.
+Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos junto com os detalhes obtidos da  [API Obter Reuniões Online](../api/onlinemeeting-get.md) com valores reais para fazer com que o exemplo funcione.
 
-> **Observação:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão ou da `Calls.JoinGroupCalls.Chat` [permissão específica do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Nota:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão ou da permissão `Calls.JoinGroupCalls.Chat` [específica do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -680,7 +774,7 @@ Content-Type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",
@@ -767,7 +861,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>Notificação - estabelecimento
+#### <a name="notification---establishing"></a>Notificação – estabelecimento
 
 ```http
 POST https://bot.contoso.com/callback
@@ -817,7 +911,7 @@ Content-Type: application/json
 
 ```
 
-##### <a name="notification---established"></a>Notificação - estabelecida
+#### <a name="notification---established"></a>Notificação – estabelecida
 
 ```http
 POST https://bot.contoso.com/callback
@@ -866,7 +960,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster"></a>Notificação - lista
+#### <a name="notification---roster"></a>Notificação – lista de participantes
 
 ```http
 POST https://bot.contoso.com/callback
@@ -962,12 +1056,12 @@ Content-Type: application/json
 }
 ```
 
->**Observação:** Para participar de cenários de reunião, além das notificações de estado de chamada, recebemos notificações de lista.
+>**Nota:** Para ingressar em cenários de reunião além das notificações de estado de chamada, recebemos notificações de lista de participação.
 
-### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Exemplo 6: Participar de uma reunião agendada com a mídia hospedada pelo aplicativo
+### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Exemplo 6: Ingressar em uma reunião agendada com a mídia hospedada pelo aplicativo
 Para ingressar na reunião com a mídia hospedada pelo aplicativo, atualize a configuração de mídia com [o appHostedMediaConfig](../resources/apphostedmediaconfig.md) , conforme mostrado no exemplo a seguir.
 
->**Observação:** Este exemplo precisa da `Calls.AccessMedia.All` permissão ou da `Calls.AccessMedia.Chat` [permissão específica do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+>**Nota:** Este exemplo precisa da `Calls.AccessMedia.All` permissão ou da permissão `Calls.AccessMedia.Chat` [específica do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 <!-- {
   "blockType": "example",
@@ -1012,14 +1106,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>Exemplo 7: Participar de reunião de canal com mídia hospedada pelo serviço
-A reunião dentro de um canal requer detalhes específicos, como id de thread, messageid e detalhes do organizador que podem ser obtidos usando a [API de Reuniões Get Online](../api/onlinemeeting-get.md).
+### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>Exemplo 7: Ingressar em uma reunião de canal com a mídia hospedada pelo serviço
+A reunião dentro de um canal requer detalhes específicos, como id do thread, messageid e detalhes do organizador que podem ser obtidos usando a [API Obter Reuniões Online](../api/onlinemeeting-get.md).
 
-Os valores de token de autorização, url de retorno de chamada, id de aplicativo, nome do aplicativo, id de usuário, nome de usuário e id de locatário devem ser substituídos juntamente com os detalhes obtidos da  [API De](../api/onlinemeeting-get.md) Reuniões Get Online com valores reais para fazer o exemplo funcionar.
+Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos junto com os detalhes obtidos da  [API Obter Reuniões Online](../api/onlinemeeting-get.md) com valores reais para fazer com que o exemplo funcione.
 
-> **Observação:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão.
+> **Nota:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão.
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "example",
@@ -1071,13 +1165,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Exemplo 8: participar da reunião do canal como convidado com mídia hospedada pelo serviço
-Para ingressar em uma reunião de canal como convidado, você precisará criar uma identidade de [](../resources/identityset.md) convidado e adicioná-la como fonte de chamada na solicitação de reunião de participação.
-O nome para exibição é o nome que você deseja exibir na reunião para sua identidade de convidado. A id pode ser uma id exclusiva que identifica a identidade do convidado.
+### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Exemplo 8: Ingressar em uma reunião de canal como convidado com mídia hospedada pelo serviço
+Para ingressar em uma reunião de canal como convidado, você precisará criar uma identidade de [](../resources/identityset.md) convidado e adicioná-la como a fonte de chamada na solicitação de reunião de ingresso.
+O nome de exibição é o nome que você deseja exibir na reunião para sua identidade de convidado. A ID pode ser uma ID exclusiva que identifica a identidade do convidado.
 
-> **Observação:** Este exemplo precisa da `Calls.JoinGroupCallsAsGuest.All` permissão.
+> **Nota:** Este exemplo precisa da `Calls.JoinGroupCallsAsGuest.All` permissão.
 
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "example",
@@ -1140,9 +1234,9 @@ Content-Type: application/json
 }
 ```
 
-> **Observação:** A participação do convidado depende das configurações de locatário para reunião. O aplicativo pode ser colocado no lobby esperando para ser admitido por um usuário. Isso é definido pela `isInLobby` propriedade
+> **Nota:** O ingresso de convidado depende das configurações de locatário para a reunião. O aplicativo pode ser colocado no lobby aguardando para ser admitido por um usuário. Isso é definido pela `isInLobby` propriedade
 
-##### <a name="notification---roster"></a>Notificação - lista
+#### <a name="notification---roster"></a>Notificação – lista de participantes
 
 ```http
 POST https://bot.contoso.com/callback
@@ -1197,17 +1291,17 @@ Content-Type: application/json
 }
 ```
 
-> **Observação:** O aplicativo não receberá a lista de participantes da reunião até sua entrada no lobby
+> **Nota:** O aplicativo não receberá a lista de participantes da reunião até que seja admitido no lobby
 
 ### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Exemplo 9: Criar chamada PSTN ponto a ponto com mídia hospedada pelo serviço
 
-> **Observação:** Essa chamada requer a permissão Calls.Initiate.All.
+> **Nota:** Essa chamada requer a permissão Calls.Initiate.All.
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra a solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
-> **Observação:** A ID da instância do aplicativo é a ID do objeto da instância do aplicativo. A ID do aplicativo à qual a instância do aplicativo se vincula deve corresponder à do token de autorização. Telefone ID é o número de telefone no formato E.164.
+O exemplo a seguir mostra a solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada pelo serviço. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer com que o exemplo funcione.
+> **Nota:** A ID da instância do aplicativo é a ID de objeto da instância do aplicativo. A ID do aplicativo à qual a instância do aplicativo se vincula deve corresponder à do token de autorização. Telefone ID é o número de telefone no formato E.164.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -1367,15 +1461,15 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Exemplo 10: Criar chamada PSTN ponto a ponto com mídia hospedada por aplicativo
+### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Exemplo 10: Criar chamada PSTN ponto a ponto com mídia hospedada pelo aplicativo
 
 > **Observação**: este exemplo requer permissões Calls.Initiate.All e Calls.AccessMedia.All.
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer o exemplo funcionar.
-> **Observação:** A ID da instância do aplicativo é a ID do objeto da instância do aplicativo. A ID do aplicativo à qual a instância do aplicativo se vincula deve corresponder à do token de autorização. Telefone ID é o número de telefone no formato E.164.
+O exemplo a seguir mostra uma solicitação para fazer uma chamada ponto a ponto entre o bot e um número PSTN. Neste exemplo, a mídia é hospedada localmente pelo aplicativo. Os valores de token de autorização, URL de retorno de chamada, ID da instância do aplicativo, nome de exibição da instância do aplicativo, ID de telefone e ID de locatário devem ser substituídos por valores reais para fazer com que o exemplo funcione.
+> **Nota:** A ID da instância do aplicativo é a ID de objeto da instância do aplicativo. A ID do aplicativo à qual a instância do aplicativo se vincula deve corresponder à do token de autorização. Telefone ID é o número de telefone no formato E.164.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

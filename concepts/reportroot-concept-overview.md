@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ec4077dfb44b4135463412d56ecbb38ec0fd2be4
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: 8c0ea574670cd5d52d33a0ef6f8479335206cef4
+ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115141"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64917791"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Visão geral da API de relatórios do Microsoft Graph
 
@@ -51,7 +51,7 @@ Você pode utilizar as APIs de relatórios para acessar os conjuntos de dados li
 | Aplicativos AD FS | [Resumo detalhado da parte de confiança (Visualização)](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) |
 | Registro de aplicativo | [Contagem da credencial de registro de usuário (Visualização)](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta)<br/>[Detalhes da credencial de registro de usuário (Visualização)](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) <br/>[Detalhes de utilização da credencial do usuário (Visualização)](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) <br/>[Resumo de utilização da credencial (Visualização)](/graph/api/resources/credentialusagesummary?view=graph-rest-beta)|
 | Entrar no aplicativo | [Resumo da entrada (Visualização)](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) <br/>[Detalhes da entrada (Visualização)](/graph/api/resources/applicationsignindetailedsummary?view=graph-rest-beta)|
-| Microsoft Teams | [Uso do dispositivo](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>[Atividades do usuário](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0) |
+| Microsoft Teams | [Uso do dispositivo](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>[Uso da equipe](/graph/api/resources/microsoft-teams-team-usage-reports?view=graph-rest-beta)<br/>[Atividades do usuário](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0)|
 | Microsoft 365 (geral) | [Ativações](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0)<br/>[Usuários ativos](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0)<br/>[Atividades de grupos](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0) |
 | OneDrive | [Atividades](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0)<br/>[Uso](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0) |
 | Outlook | [Atividades](/graph/api/resources/email-activity-reports?view=graph-rest-1.0)<br/>[Uso do aplicativo](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0)<br/>[Uso de caixa de correio](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0) |
