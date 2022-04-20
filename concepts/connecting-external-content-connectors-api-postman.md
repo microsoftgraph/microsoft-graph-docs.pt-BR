@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 3737a7203deb844a7fb45cb34e823dba02bb5b15
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 39dabdbc0823099d53ea63dcfbe86b8626ecdae6
+ms.sourcegitcommit: 813bed8cbb61a5f892e8a227afc17c66687ab1fb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477563"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974458"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
@@ -19,7 +19,7 @@ Este tópico descreve como você pode usar as APIs do conector do Microsoft Grap
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * Uma conta Microsoft ou uma conta corporativa ou de estudante.
-* Acesso a um locatário de desenvolvedor do Microsoft 365. Se você não tiver um, poderá se inscrever no [Programa para Desenvolvedores do Microsoft 365] para obter uma assinatura de desenvolvedor gratuita.
+* Acesso a um locatário de desenvolvedor do Microsoft 365. Se você não tiver um, poderá se inscrever no [Programa para Desenvolvedores do Microsoft 365](https://developer.microsoft.com/en-us/microsoft-365/dev-program) para obter uma assinatura de desenvolvedor gratuita.
 
 ## <a name="step-1---fork-the-microsoft-graph-postman-collection"></a>Etapa 1 – Bifurcar a coleção Microsoft Graph Postman
 
