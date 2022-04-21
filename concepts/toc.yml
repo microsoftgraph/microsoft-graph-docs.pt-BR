@@ -171,6 +171,8 @@ items:
             href: cloud-communications-phone-number.md
           - name: Permissões e artefatos de reunião online
             href: cloud-communications-online-meeting-artifacts.md
+          - name: Identificar participantes do modo de exibição de galeria grande
+            href: cloud-communications-identifylargegalleryview.md
       - name: Conformidade
         href: compliance-concept-overview.md
       - name: Conectando conteúdo externo
@@ -706,7 +708,7 @@ items:
             href: sdks/use-beta.md
           - name: Usar o Windows PowerShell!
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
               - name: Instalação
                 href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
