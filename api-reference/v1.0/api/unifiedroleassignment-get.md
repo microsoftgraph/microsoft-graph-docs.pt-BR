@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bc137caa9eb23f65a8d79515dc5484c48eb4629
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3e090cb660e7f2dc22a1bb229cf96bbdd8033c7d
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672333"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016964"
 ---
 # <a name="get-unifiedroleassignment"></a>Obter unifiedRoleAssignment
 
@@ -22,13 +22,25 @@ Recupere as propriedades e as relações de um [objeto unifiedRoleAssignment](..
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="for-the-directory-azure-ad-provider"></a>Para o provedor de diretório (Azure AD)
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Obtenha uma atribuição de função para o provedor de diretório:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,9 +48,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /roleManagement/directory/roleAssignments/{id}
 ```
 
+Obtenha uma atribuição de função para o provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments/{id}
+```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,7 +76,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e o obj
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1--get-the-details-of-a-role-assignment"></a>Exemplo 1 : Obter os detalhes de uma atribuição de função
+### <a name="example-1--get-the-details-of-a-role-assignment"></a>Exemplo 1: Obter os detalhes de uma atribuição de função
 
 #### <a name="request"></a>Solicitação
 
@@ -126,11 +146,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-details-of-a-role-assignment-and-expand-the-relationships"></a>Exemplo 2: Obter os detalhes de uma atribuição de função e expandir os relacionamentos
+### <a name="example-2-get-the-details-of-a-role-assignment-and-expand-the-relationships"></a>Exemplo 2: Obter os detalhes de uma atribuição de função e expandir as relações
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação com o parâmetro `$expand` de consulta.
+A seguir está um exemplo da solicitação com o parâmetro `$expand` de consulta.
 
 
 

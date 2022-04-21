@@ -1570,6 +1570,14 @@ items:
                     href: api/contentsharingsession-get.md
               - name: Registrar dados de qualidade do dispositivo de teleconferência
                 href: api/call-logteleconferencedevicequality.md
+              - name: Adicionar exibição de galeria grande
+                href: api/call-addlargegalleryview.md
+              - name: Operação de exibição de galeria grande
+                items:
+                  - name: Adicionar operação de exibição de galeria grande
+                    href: resources/addlargegalleryviewoperation.md
+                  - name: Obter o status da operação de exibição de galeria grande
+                    href: api/addlargegalleryviewoperation-get.md
           - name: Registros de chamadas
             items:
               - name: Visão Geral
@@ -9609,7 +9617,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Atualizar
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identity
+                  - name: Identidade
                     href: resources/intune-rbac-identity.md
                   - name: Conjunto de identidade
                     href: resources/intune-rbac-identityset.md
@@ -12622,7 +12630,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Atribuição de atributo de fluxo de usuário
                     items:
-                      - name: User
+                      - name: Usuário
                         href: resources/identityuserflowattributeassignment.md
                       - name: Obter
                         href: api/identityuserflowattributeassignment-get.md
@@ -12666,7 +12674,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
-          - name: Governança
+          - name: Gestão
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviewsv2-overview.md
@@ -13821,9 +13829,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md
@@ -14309,7 +14317,7 @@ items:
             items:
               - name: Visão Geral
                 href: resources/search-api-answers-overview.md
-              - name: Acrônimo
+              - name: Acronym
                 href: resources/search-acronym.md
                 items:
                   - name: Listar acrônimos
@@ -14731,7 +14739,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Criar

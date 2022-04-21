@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1044c0195eade2a56d5d98f1834f59fa451f85e3
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 97374d9d32db603a42074711dbff99792544b581
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629663"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016985"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações de um [objeto unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) .
 
-No momento, há suporte para os seguintes provedores de controle de acesso baseado em função (RBAC:
+No momento, há suporte para os seguintes provedores de RBAC (controle de acesso baseado em função):
 
 - directory (funções de diretório do Azure AD)
 - gerenciamento de direitos (gerenciamento de direitos do Azure AD)
@@ -32,20 +32,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Obter uma definição de função para o provedor de diretórios:
+Obtenha uma definição de função para o provedor de diretório:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -53,7 +53,7 @@ Obter uma definição de função para o provedor de diretórios:
 GET /roleManagement/directory/roleDefinitions/{id}
 ```
 
-Obter uma definição de função para o provedor de gerenciamento de direitos:
+Obtenha uma definição de função para o provedor de gerenciamento de direitos:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -63,7 +63,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -165,7 +165,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-built-in-role"></a>Exemplo 2: Obter a definição de uma função integrado
+### <a name="example-2-get-the-definition-of-a-built-in-role"></a>Exemplo 2: Obter a definição de uma função interna
 
 #### <a name="request"></a>Solicitação
 
@@ -272,7 +272,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Exemplo 3: Obter a definição de uma função do Azure AD e $expand na função herdada
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Exemplo 3: obter a definição de uma função interna do Azure AD e $expand na função da qual ele herda
 
 #### <a name="request"></a>Solicitação
 

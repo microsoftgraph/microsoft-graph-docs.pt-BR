@@ -1,34 +1,50 @@
 ---
 title: Listar unifiedRoleAssignments
-description: Obter uma lista de objetos unifiedRoleAssignment.
+description: Obtenha uma lista de objetos unifiedRoleAssignment.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bcba974b749092103730cbe492caa23d3c994360
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: e5d4bb44d6aacad34ee248aeb731ff24b6235cd3
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672634"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016978"
 ---
 # <a name="list-unifiedroleassignments"></a>Listar unifiedRoleAssignments
 
 Namespace: microsoft.graph
 
-Obter uma lista de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) para o provedor de diretórios.
+Obtenha uma lista de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) para o provedor RBAC.
+
+No momento, há suporte para os seguintes provedores RBAC:
+- directory (Azure AD)
+- gerenciamento de direitos (Azure AD)
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="for-the-directory-azure-ad-provider"></a>Para o provedor de diretório (Azure AD)
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+Para listar atribuições de função para o provedor de diretório:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,9 +54,27 @@ GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal
 GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
+Para listar atribuições de função para o provedor de gerenciamento de direitos:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+
+GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
+```
+
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Essa operação requer o parâmetro `$filter` de consulta para consultar instâncias específicas de atribuições de função. Você pode filtrar as propriedades `roleDefinitionId` ou `principalId` . A `roleDefinitionId` propriedade pode ser uma ID de objeto de função ou **um templateId**. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Essa operação requer que o `$filter` parâmetro de consulta consulte atribuições de função para os provedores de RBAC com suporte.
+
+Para o provedor de diretório, você deve filtrar as **propriedades roleDefinitionId** ou **principalId** . A **propriedade roleDefinitionId** pode ser uma ID de objeto de função ou um valor para a **propriedade templateId** .
+
+Para o provedor de gerenciamento de direitos, você deve filtrar as propriedades **roleDefinitionId**, **principalId** ou **appScopeId** .
+
+Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +88,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -257,6 +291,55 @@ Content-type: application/json
             "resourceScope": "/",
             "directoryScopeId": "/",
             "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+        }
+    ]
+}
+```
+
+### <a name="example-3-request-using-filter-for-role-assignments-on-an-access-package-catalog-and-expand-the-principal-object"></a>Exemplo 3: Solicitação usando $filter para atribuições de função em um catálogo de pacotes de acesso e expanda o objeto principal
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_3"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc'&$expand=principal
+```
+
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "900633fe-2508-4b13-a561-a15e320ad35f",
+            "principalId": "39228473-522e-4533-88cc-a9553180cb99",
+            "roleDefinitionId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "appScopeId": "/AccessPackageCatalog/4cee616b-fdf9-4890-9d10-955e0ccb12bc",
+            "principal": {
+                "@odata.type": "#microsoft.graph.user",
+                "id": "39228473-522e-4533-88cc-a9553180cb99"
+            }
         }
     ]
 }

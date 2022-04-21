@@ -1,22 +1,22 @@
 ---
 title: Excluir extensionProperty
-description: Excluir uma extensãoProperty.
+description: Exclua uma extensionProperty.
 ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e69fe6453961ca7a5e7b931ea5938f97d9cdc1b5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0982b53a52d60f9bfe1c63877121d868afdd40f2
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671955"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016943"
 ---
 # <a name="delete-extensionproperty"></a>Excluir extensionProperty
 
 Namespace: microsoft.graph
 
-Excluir uma [extensãoProperty](../resources/extensionproperty.md).
+[Exclua uma extensionProperty](../resources/extensionproperty.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/extensionProperties/{id}
+DELETE /applications/{application ObjectId}/extensionProperties/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

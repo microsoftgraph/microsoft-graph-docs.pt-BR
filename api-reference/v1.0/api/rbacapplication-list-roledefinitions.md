@@ -1,22 +1,22 @@
 ---
 title: Listar unifiedRoleDefinitions
-description: Obter uma lista de objetos unifiedRoleDefinition.
+description: Obtenha uma lista de objetos unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3bebc76aac2d674cca95653c08ef12907f8e0a24
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: bfee6100df1de5bf524d067ed65c19032b3ae8fa
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629187"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016815"
 ---
 # <a name="list-unifiedroledefinitions"></a>Listar unifiedRoleDefinitions
 
 Namespace: microsoft.graph
 
-Obter uma lista de [objetos unifiedRoleDefinition](../resources/unifiedroledefinition.md) para o provedor.
+Obtenha uma lista de [objetos unifiedRoleDefinition](../resources/unifiedroledefinition.md) para o provedor.
 
 No momento, há suporte para os seguintes provedores RBAC:
 - directory (Azure AD)
@@ -31,8 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 
 ### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
@@ -40,12 +40,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para listar definições de função para o provedor de diretórios:
+Para listar definições de função para o provedor de diretório:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -60,7 +60,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao `$filter` parâmetro de consulta OData `id`(`eq` e `in` operadores) em , `displayName`e propriedades`isBuiltIn`. Ele também dá `$expand` suporte aos relacionamentos. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$filter` parâmetro de consulta OData `id`(`eq` e `in` operadores) em , `displayName`e `isBuiltIn` propriedades. Ele também dá `$expand` suporte às relações. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -74,7 +74,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

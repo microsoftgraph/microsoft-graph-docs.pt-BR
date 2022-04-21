@@ -1,16 +1,16 @@
 ---
 title: Excluir extensionProperty
-description: Excluir uma extensãoProperty.
+description: Exclua uma extensionProperty.
 ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b30de9c7078d879fedec5840ad83550588375ad0
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 21c5990ede8784afc6bc4b4be1fb0b46409cd6c9
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516279"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016950"
 ---
 # <a name="delete-extensionproperty"></a>Excluir extensionProperty
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir uma [extensãoProperty](../resources/extensionproperty.md).
+[Exclua uma extensionProperty](../resources/extensionproperty.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Application.ReadWrite.All    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/extensionProperties/{id}
+DELETE /applications/{application ObjectId}/extensionProperties/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
