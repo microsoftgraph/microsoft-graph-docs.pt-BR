@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: groups
 author: psignoret
-ms.openlocfilehash: 11902dde2f697ffc3d1e3022043dab9e2436817d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0138fee6bd43e6d15a7f75d4d24baee90e53986c
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672669"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016936"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Conceder um appRoleAssignment a um grupo
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Use esta API para atribuir uma função de aplicativo a um grupo. Todos os membros diretos do grupo serão considerados atribuídos. Para conceder uma atribuição de função de aplicativo a um grupo, você precisa de três identificadores:
 
-- `principalId`: A `id` do grupo ao qual você está atribuindo a função de aplicativo.
-- `resourceId`: A `id` do recurso `servicePrincipal` que definiu a função do aplicativo.
-- `appRoleId`: A `id` do `appRole` (definido na entidade de serviço do recurso) para atribuir ao grupo.
+- **principalId**: o ID do **grupo** ao qual você está atribuindo a função do aplicativo.
+- **resourceId**: a ID do recurso **servicePrincipal** que definiu a função do aplicativo.
+- **appRoleId**: o ID do **appRole** (definido na entidade de serviço de recurso) a ser atribuído ao grupo.
 
 Licenças adicionais podem ser necessárias para [usar um grupo para gerenciar o acesso aos aplicativos](/azure/active-directory/users-groups-roles/groups-saasapps).
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{id}/appRoleAssignments
+POST /groups/{groupId}/appRoleAssignments
 ```
 
 > [!NOTE]
@@ -55,6 +55,15 @@ POST /groups/{id}/appRoleAssignments
 
 No corpo da solicitação, forneça uma representação JSON de um objeto [appRoleAssignment](../resources/approleassignment.md).
 
+A tabela a seguir mostra as propriedades necessárias ao criar o [appRoleAssignment](../resources/approleassignment.md). Especifique outras propriedades graváveis conforme necessário para seu **appRoleAssignment**.
+
+| Propriedade | Tipo | Descrição |
+|--|--|--|
+| appRoleId | Guid | O identificador (**id**) da [função do aplicativo](../resources/approle.md) que está atribuída à entidade de segurança. Essa função de aplicativo deve ser exposta na propriedade **appRoles** na entidade de serviço do aplicativo de recurso (**ResourceId**). Se o aplicativo de recurso não tiver declarado todas as funções do aplicativo, uma ID de função de aplicativo padrão de `00000000-0000-0000-0000-000000000000` poderá ser especificada para sinalizar que a entidade de segurança está atribuída ao aplicativo de recursos sem nenhuma função específica do aplicativo. |
+| principalId | Guid | O identificador exclusivo (**id**) do [grupo](../resources/group.md)que recebeu a função de aplicativo. |
+| resourceId | Guid | Identificador exclusivo (**id**) para o recurso [(entidade de serviço)](../resources/serviceprincipal.md) para o qual a atribuição foi feita. |
+
+
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
@@ -63,7 +72,7 @@ Se tiver êxito, este método retornará um código de resposta `201 Created` e 
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Este é um exemplo da solicitação. Neste exemplo, o ID na URL e o valor de **principalId** seriam o ID do grupo atribuído.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -108,9 +117,6 @@ Content-Type: application/json
 
 ---
 
-
-Neste exemplo, `{id}` e `{principalId-value}` seriam os `id` do grupo atribuído.
-
 ### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. 
@@ -124,7 +130,7 @@ Veja a seguir um exemplo da resposta.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -140,8 +146,6 @@ Content-type: application/json
   "resourceId": "076e8b57-bac8-49d7-9396-e3449b685055"
 }
 ```
-
-Neste exemplo, observe que o valor usado como a **id** do usuário na URL de solicitação (`cde330e5-2150-4c11-9c5b-14bfdc948c79`) é o mesmo que a propriedade **principalId** no corpo.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

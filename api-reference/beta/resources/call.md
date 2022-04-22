@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b12d80ae786abc93d9b3e00358f7b18d42b89140
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: b1b2dc2890686d61845223a517698096ef1d9a0a
+ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917770"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016810"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -53,8 +53,9 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Ativar mudo para todos os participantes](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Ative o mudo para todos os participantes em uma chamada.                                              |
 | [Ativar mudo para participante](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Ative o mudo para participante na chamada de grupo.                                           |
 | [Configurar o mixer de áudio](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | Configure áudio na conversa com vários participantes.                                     |
-| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Crie um novo audioRoutingGroup postando-o na coleção audioRoutingGroups. |
-| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Obtenha uma coleção do objeto audioRoutingGroup.                                      |
+| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Crie um novo **audioRoutingGroup** postando na coleção audioRoutingGroups. |
+| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Obtenha uma coleção de objetos **audioRoutingGroup**.                                      |
+| [Adicionar exibição de galeria grande](../api/call-addlargegalleryview.md)            | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md)  | Adicione o modo de exibição de galeria grande a uma chamada.                                      |
 | **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
 | [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Reproduza uma solicitação na chamada.                                                        |
 | [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | Registra uma resposta de áudio curta do chamador.                                        |
