@@ -1,57 +1,67 @@
 ---
-title: Configure o escopo da revisão de acesso usando o microsoft API do Graph
-description: Saiba como usar a API de críticas de acesso no Microsoft Graph para revisar o acesso aos recursos do Azure AD.
+title: Configurar o escopo da revisão de acesso usando o Microsoft API do Graph
+description: Saiba como usar a API de revisões de acesso no Microsoft Graph para examinar o acesso aos recursos do Azure AD.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 4d1439e2086934ad01fcc83978b70c6dc68b083c
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 48947751fa6ed8330fe2d4ecda5161ec8d708315
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509914"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061150"
 ---
-# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configure o escopo da revisão de acesso usando o microsoft API do Graph
+# <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configurar o escopo da revisão de acesso usando o Microsoft API do Graph
 
-A [API](/graph/api/resources/accessreviewsv2-overview) de revisões de acesso do Azure AD permite que você revise programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos recursos do Azure AD.
+A [API](/graph/api/resources/accessreviewsv2-overview) de revisões de acesso do Azure AD permite que você examine programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos seus recursos do Azure AD. A API pode ajudá-lo a automatizar a revisão proativa e manter o controle sobre o acesso aos recursos em sua organização.  
 
-Os recursos a revisar são configurados na propriedade **scope** do recurso [access Reviews accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) . Essa propriedade é do tipo [accessReviewScope](/graph/api/resources/accessreviewscope), um tipo abstrato herdado pelos seguintes recursos que podem ser usados para configurar recursos ou grupos de recursos em que o acesso será revisado.
+Os recursos a serem examinados são configurados na propriedade **de** escopo do [recurso accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) . Essa propriedade é do tipo [accessReviewScope](/graph/api/resources/accessreviewscope), um tipo abstrato do qual os seguintes recursos de API que podem ser usados para configurar o escopo de revisão de acesso herdam.
 
 |Recurso|Descrição|Exemplos de cenários|
 |:---    |:---       |:---             |
-|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Melhor aplicável ao analisar o conjunto completo ou o subconjunto de entidades que têm acesso a um recurso ou grupo de recursos relacionados.|<ul><li>Associação de usuários atribuídos a um grupo.</li><li>Acesso de usuário convidado a um grupo.</li><li>Acesso de usuário convidado a todos Microsoft 365 grupos em um locatário.</li><li>Entidades de serviço atribuídas a funções privilegiadas.</li><li>Acesso da entidade de serviço e usuário aos pacotes de acesso gerenciamento de direitos.</li></ul>|
-|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Herdado de accessReviewQueryScope. Usado quando apenas usuários inativos são revisados. Seu status inativo é especificado pela **propriedade inactiveDuration** . |<ul><li>Associação de grupo apenas de usuários inativos.</li><ul>|
-|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Melhor aplicável para analisar o acesso das entidades aos recursos em que você configura pools exclusivos de entidades e recursos.|<ul><li>Revisão do acesso de 3 entidades principais específicas em 1 *Microsoft 365 grupo e* 1 função privilegiada do Azure AD.</li><ul>|
+|[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Herda de **accessReviewScope**. Melhor aplicável ao examinar o conjunto completo ou o subconjunto de entidades de segurança que têm acesso a um recurso ou grupo de recursos relacionados.|<ul><li>Associação de usuários atribuídos a um grupo, membros diretos ou membros diretos e transitivos.</li><li>Acesso de usuário convidado a um grupo.</li><li>Acesso de usuário convidado a todos os Microsoft 365 em um locatário.</li><li>Entidades de serviço atribuídas a funções privilegiadas.</li><li>Acesso de usuário e entidade de serviço aos pacotes de acesso do Gerenciamento de Direitos.</li></ul>|
+|[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Herda de **accessReviewQueryScope**. Usado quando somente usuários inativos são revisados. Seu status inativo é especificado pela **propriedade inactiveDuration** . |<ul><li>Associação de grupo somente de usuários inativos.</li><ul>|
+|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Herda de **accessReviewScope**. Melhor aplicável para examinar o acesso das entidades de segurança aos recursos em que você configura pools exclusivos de entidades de segurança e recursos.|<ul><li>Revisando o acesso de três entidades de segurança específicas em um Microsoft 365 e *uma* função privilegiada do Azure AD.</li><ul>|
 
-Neste artigo, você usará esses tipos de accessReviewScope para configurar uma ampla variedade de recursos do Azure AD como o escopo de sua revisão de acesso. Isso pode ajudá-lo a automatizar a revisão proativa e manter o controle sobre o acesso aos recursos em sua organização.  
+Neste artigo, você aprenderá a definir o escopo da revisão de acesso usando esses três tipos de recursos derivados.
 
-## <a name="use-accessreviewqueryscope-to-configure-scope"></a>Usar accessReviewQueryScope para configurar o escopo
+## <a name="use-accessreviewqueryscope-and-accessreviewinactiveusersqueryscope-to-configure-scope"></a>Usar accessReviewQueryScope e accessReviewInactiveUsersQueryScope para configurar o escopo
 
-Para configurar o escopo usando o **tipo accessReviewQueryScope** , de definir os valores de suas propriedades **de** consulta, **consultaRoot** e **queryType** . Para descrições dessas propriedades, consulte [tipo de recurso accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) .
+Para configurar o escopo usando o tipo **accessReviewQueryScope** , defina os valores de suas propriedades **query**, **queryRoot** e **queryType** . Para obter descrições dessas propriedades, consulte [o tipo de recurso accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope) .
 
-### <a name="example-1-review-all-users-assigned-to-a-group"></a>Exemplo 1: Revisar todos os usuários atribuídos a um grupo
+**accessReviewInactiveUsersQueryScope** requer todas as propriedades de **accessReviewQueryScope** e inclui uma **propriedade inactiveDuration** .
+
+### <a name="example-1-review-all-users-assigned-to-a-group"></a>Exemplo 1: Examinar todos os usuários atribuídos a um grupo
+
+O exemplo a seguir define o escopo da revisão para membros diretos e transitivos do grupo que são usuários. Os membros transitivos são membros dos grupos aninhados.
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers",
+    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
 
-Para revisar *somente usuários inativos* atribuídos ao grupo:
+**Cenário de exemplo:** Suponha que o grupo A tenha três membros diretos : usuários AU1 e AU2 e grupo G1. O grupo G1, por outro lado, tem dois membros : usuários GU1 e GU2. Os usuários GU1 e GU2 são, portanto, membros transitivos do grupo aninhado G1. Quatro objetos serão incluídos na revisão: usuários AU1, AU2, GU1 e GU2.
+
+Para examinar *somente usuários inativos* atribuídos ao grupo:
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
     "inactiveDuration": "P30D",
-    "query": "/groups/{group id}/transitiveMembers",
+    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
 
-### <a name="example-2-review-all-guest-users-assigned-to-a-group"></a>Exemplo 2: Revisar todos os usuários convidados atribuídos a um grupo
+Este exemplo também define o escopo da revisão para membros diretos e transitivos do grupo que são usuários inativos.
+
+### <a name="example-2-review-all-guest-users-assigned-to-a-group"></a>Exemplo 2: Examinar todos os usuários convidados atribuídos a um grupo
+
+O exemplo a seguir define o escopo da revisão para membros diretos e transitivos do grupo que são usuários convidados. Os membros transitivos são membros dos grupos aninhados.
 
 ```http
 "scope": {
@@ -61,7 +71,25 @@ Para revisar *somente usuários inativos* atribuídos ao grupo:
 }
 ```
 
-### <a name="example-3-review-all-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 3: Revise todos os usuários atribuídos a todos os grupos Microsoft 365
+### <a name="example-3-review-all-users-and-groups-assigned-to-a-group"></a>Exemplo 3: Examinar todos os usuários e grupos atribuídos a um grupo
+
+O exemplo a seguir tem como escopo a revisão apenas para membros diretos do grupo que são usuários ou outros grupos. Neste escopo:
++ Os usuários diretos são incluídos na revisão.
++ Os grupos diretos estão incluídos na revisão.
++ Os membros transitivos dos grupos, ou seja, membros de grupos aninhados, não estão incluídos na revisão.
+
+```http
+"scope": {
+        "query": "/groups/{group id}/members",
+        "queryType": "MicrosoftGraph"
+}
+```
+
+**Cenário de exemplo:** Suponha que o grupo A tenha três membros diretos : usuários AU1 e AU2 e grupo G1. O grupo G1, por outro lado, tem dois membros : usuários GU1 e GU2. Os usuários GU1 e GU2 são, portanto, membros transitivos do grupo aninhado G1. Somente três objetos são direcionados na revisão acima, usuários AU1 e AU2 e grupo G1.
+
+### <a name="example-4-review-all-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 4: Examinar todos os usuários atribuídos a todos os Microsoft 365 grupos
+
+O exemplo a seguir cria uma revisão de cada grupo Microsoft 365 que contém usuários convidados. Para a instância de revisão em cada grupo, a revisão tem como escopo apenas membros diretos do grupo que são usuários convidados.
 
 ```http
 "instanceEnumerationScope": {
@@ -74,9 +102,12 @@ Para revisar *somente usuários inativos* atribuídos ao grupo:
     "queryType": "MicrosoftGraph"
 }
 ```
-Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar. Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
 
-### <a name="example-4-review-all-guest-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 4: Revise todos os usuários convidados atribuídos a todos os Microsoft 365 grupos
+Além disso, como essa revisão é aplicada em todos os grupos Microsoft 365, configure **o instanceEnumerationScope** para especificar os grupos Microsoft 365 a serem examinados. Grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
+
+### <a name="example-5-review-all-guest-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 5: Examinar todos os usuários convidados atribuídos a todos os Microsoft 365 grupos
+
+O exemplo a seguir tem como escopo a revisão para membros diretos Microsoft 365 grupos que são usuários convidados.
 
 ```http
 "instanceEnumerationScope": {
@@ -90,9 +121,30 @@ Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a i
 }
 ```
 
-Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a instânciaEnumerationScope** para especificar os grupos Microsoft 365 a revisar. Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
+Além disso, como essa revisão é aplicada em todos os grupos Microsoft 365, configure **o instanceEnumerationScope** para especificar os grupos Microsoft 365 a serem examinados. Grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
 
-### <a name="example-5-review-all-guest-users-assigned-to-all-teams"></a>Exemplo 5: revise todos os usuários convidados atribuídos a todos os Teams
+#### <a name="review-all-inactive-guest-users-assigned-to-all-microsoft-365-groups"></a>Examinar todos os usuários convidados inativos atribuídos a todos os Microsoft 365 grupos
+
+O exemplo a seguir tem como escopo a revisão para membros diretos de Microsoft 365 que são usuários convidados inativos.
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph",
+    "inactiveDuration": "P30D"
+}
+```
+
+Além disso, como essa revisão é aplicada a usuários inativos, use o recurso **accessReviewInactiveUsersQueryScope** e especifique **a propriedade @odata.type com** `#microsoft.graph.accessReviewInactiveUsersQueryScope`o valor . Grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
+
+### <a name="example-6-review-all-guest-users-assigned-to-all-teams"></a>Exemplo 6: Examinar todos os usuários convidados atribuídos a todas as equipes
+
+O exemplo a seguir tem como escopo a revisão para membros diretos de todas as equipes que são usuários convidados.
 
 ```http
 "instanceEnumerationScope": {
@@ -106,28 +158,13 @@ Como essa revisão é aplicada em todos os grupos Microsoft 365, configure **a i
 }
 ```
     
-Como essa revisão é aplicada Teams todos os grupos Microsoft 365 habilitados para Microsoft 365, configure a **instânciaEnumerationScope** para especificar os grupos Microsoft 365 habilitados para Teams para revisão.  Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
+Além disso, como essa revisão é aplicada a todos os grupos de Teams habilitados para Microsoft 365, configure **o instanceEnumeration Teams Scope** para especificar os grupos de Microsoft 365 habilitados para Microsoft 365 para revisão. Grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
 
-Esta revisão não incluirá usuários de conexão direta B2B em equipes com canais compartilhados. Para incluir usuários de conexão direta B2B em equipes com canais compartilhados, consulte o Exemplo 14: Revise todos os usuários atribuídos a uma equipe, incluindo usuários de conexão direta [B2B](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) em uma equipe com canais compartilhados.
+Essa revisão não incluirá usuários de conexão direta B2B em equipes com canais compartilhados. Para incluir usuários de conexão direta B2B em equipes com canais compartilhados, consulte o Exemplo 11: Examinar todos os usuários atribuídos a uma equipe, incluindo usuários do [B2B Direct Connect](#example-13-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) em uma equipe com canais compartilhados.
 
-### <a name="example-6-review-all-inactive-guest-users-assigned-to-all-microsoft-365-groups"></a>Exemplo 6: Revise todos os usuários convidados inativos atribuídos a todos os Microsoft 365 grupos
+#### <a name="review-all-inactive-guest-users-assigned-to-all-teams"></a>Examinar todos os usuários convidados inativos atribuídos a todos os Teams
 
-```http
-"instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
-    "queryType": "MicrosoftGraph"
-},
-"scope": {
-    "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
-    "queryType": "MicrosoftGraph",
-    "inactiveDuration": "P30D"
-}
-```
-
-Como essa revisão é aplicada a usuários inativos, use o **recurso accessReviewInactiveUsersQueryScope** e especifique **a propriedade @odata.type** com o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope`. Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
-
-### <a name="example-7-review-all-inactive-guest-users-assigned-to-all-teams"></a>Exemplo 7: revise todos os usuários convidados inativos atribuídos a todos os Teams
+O exemplo a seguir tem como escopo a revisão para membros diretos de todas as equipes que são usuários convidados inativos.
 
 ```http
 "instanceEnumerationScope": {
@@ -142,11 +179,14 @@ Como essa revisão é aplicada a usuários inativos, use o **recurso accessRevie
 }
 ```
 
-Como essa revisão é aplicada a todas as equipes, configure a **propriedade instanceEnumerationScope** para especificar todas as equipes. Observe que grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
+Além disso, como essa revisão é aplicada em todas as equipes, configure a **propriedade instanceEnumerationScope** para especificar todas as equipes. Grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
 
-Esta revisão não incluirá usuários de conexão direta B2B em equipes com canais compartilhados. Para incluir usuários de conexão direta B2B em equipes com canais compartilhados, consulte o Exemplo 14: Revise todos os usuários atribuídos a uma equipe, incluindo usuários de conexão direta [B2B](#example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) em uma equipe com canais compartilhados.
+Essa revisão não incluirá usuários de conexão direta B2B em equipes com canais compartilhados. Para incluir usuários de conexão direta B2B em equipes com canais compartilhados, consulte o Exemplo 11: Examinar todos os usuários atribuídos a uma equipe, incluindo usuários do [B2B Direct Connect](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) em uma equipe com canais compartilhados.
 
-### <a name="example-8-review-all-assignment-to-entitlement-management-access-packages"></a>Exemplo 8: Revisar todos os pacotes de acesso do Gerenciamento de Direitos
+
+---
+
+### <a name="example-7-review-all-assignment-to-entitlement-management-access-packages"></a>Exemplo 7: Examinar todas as atribuições para pacotes de acesso do Gerenciamento de Direitos
 
 ```http
 "scope": {
@@ -156,7 +196,9 @@ Esta revisão não incluirá usuários de conexão direta B2B em equipes com can
 }
 ```
 
-### <a name="example-9-review-all-service-principals-assigned-to-a-privileged-role"></a>Exemplo 9: Revisar todas as entidades de serviço atribuídas a uma função privilegiada
+---
+
+### <a name="example-8-review-all-service-principals-assigned-to-a-privileged-role"></a>Exemplo 8: Examinar todas as entidades de serviço atribuídas a uma função com privilégios
 
 ```http
 "scope": {
@@ -166,7 +208,9 @@ Esta revisão não incluirá usuários de conexão direta B2B em equipes com can
 }
 ```
     
-### <a name="example-10-review-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Exemplo 10: Revise todos os usuários atribuídos a uma função privilegiada (todas as atribuições ativas e qualificadas incluídas)
+### <a name="example-9-review-all-users-assigned-to-a-privileged-role"></a>Exemplo 9: Examinar todos os usuários atribuídos a uma função privilegiada 
+
+#### <a name="review-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Examinar todos os usuários atribuídos a uma função privilegiada (todas as atribuições ativas e qualificadas incluídas)
 
 ```http
 "scope": {
@@ -176,7 +220,7 @@ Esta revisão não incluirá usuários de conexão direta B2B em equipes com can
 }
 ```
     
-### <a name="example-11-review-all-users-with-eligible-assignment-to-a-privileged-role"></a>Exemplo 11: Revisar todos os usuários com atribuição qualificada para uma função privilegiada
+#### <a name="review-all-users-with-eligible-assignment-to-a-privileged-role"></a>Examinar todos os usuários com atribuição qualificada para uma função privilegiada
 
 ```http
 "scope": {
@@ -186,7 +230,7 @@ Esta revisão não incluirá usuários de conexão direta B2B em equipes com can
 }
 ```
     
-### <a name="example-12-review-all-users-with-active-assignment-to-a-privileged-role"></a>Exemplo 12: Revisar todos os usuários com atribuição ativa para uma função privilegiada
+#### <a name="review-all-users-with-active-assignment-to-a-privileged-role"></a>Examinar todos os usuários com atribuição ativa a uma função privilegiada
 
 ```http
 "scope": {
@@ -196,11 +240,15 @@ Esta revisão não incluirá usuários de conexão direta B2B em equipes com can
 }
 ```
 
-## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a>Usar o principalResourceMembershipsScope para configurar o escopo
+---
 
-O **principalResourceMembershipsScope** expõe as propriedades **principalScopes** e **resourceScopes** para dar suporte a opções de configuração mais personalizadas para o escopo **do accessReviewScheduleDefinition**. Isso inclui a revisão do acesso a várias entidades ou grupos de entidades para vários recursos.
+## <a name="use-principalresourcemembershipsscope-to-configure-scope"></a>Usar principalResourceMembershipsScope para configurar o escopo
 
-### <a name="example-13-review-all-inactive-guest-users-assigned-to-all-groups"></a>Exemplo 13: Revise todos os usuários convidados inativos atribuídos a todos os grupos
+O **principalResourceMembershipsScope** expõe as propriedades **principalScopes** e **resourceScopes** para dar suporte a opções de configuração mais personalizadas para o escopo do objeto **accessReviewScheduleDefinition** . Os recursos incluem examinar o acesso de várias entidades de segurança ou grupos de entidades de segurança a vários recursos.
+
+### <a name="example-10-review-all-inactive-guest-users-assigned-to-all-groups"></a>Exemplo 10: Examinar todos os usuários convidados inativos atribuídos a todos os grupos
+
+O exemplo a seguir tem como escopo a revisão para membros diretos de todos os grupos que são usuários convidados inativos. Os usuários convidados são considerados usuários inativos quando o período de inatividade é de 30 dias a partir da data de início da instância de revisão de acesso.
 
 ```http
 "scope": {
@@ -223,9 +271,9 @@ O **principalResourceMembershipsScope** expõe as propriedades **principalScopes
 }
 ```
 
-Neste exemplo, as entidades principais são todos usuários convidados inativos com o período de sua inatividade calculado como 30 dias a partir da data de início da instância de revisão de acesso.
+### <a name="example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels"></a>Exemplo 11: Examinar todos os usuários atribuídos a uma equipe, incluindo usuários do B2B Direct Connect em uma equipe com canais compartilhados
 
-### <a name="example-14-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels"></a>Exemplo 14: Revise todos os usuários atribuídos a uma equipe, incluindo usuários de conexão direta B2B em uma equipe com canais compartilhados
+Neste exemplo, o escopo de revisão de acesso é todos os usuários que são membros de uma equipe ou atribuídos a um canal compartilhado dentro da equipe. Esses membros incluem usuários internos, usuários diretos e transitivos, usuários de colaboração B2B e usuários do Direct Connect B2B.
 
 ```http
 "scope": {
@@ -241,7 +289,7 @@ Neste exemplo, as entidades principais são todos usuários convidados inativos 
     "resourceScopes": [
         {
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-            "query": "/groups/{groupId}/transitiveMembers",
+            "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
             "queryType": "MicrosoftGraph",
             "queryRoot": null
         },
@@ -255,14 +303,12 @@ Neste exemplo, as entidades principais são todos usuários convidados inativos 
 }
 ```
 
-Neste exemplo, a revisão de acesso é escopo para todos os usuários que são membros de uma equipe ou atribuídos a um canal compartilhado dentro da equipe, incluindo usuários internos, usuários de colaboração B2B e usuários de conexão direta B2B.
-
-Para analisar usuários e equipes de conexão direta B2B em canais compartilhados, `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` você deve especificar o padrão de consulta no **objeto resourceScopes**. Uma *revisão de todas as* equipes, como [o Exemplo 7](#example-5-review-all-guest-users-assigned-to-all-teams), não incluirá usuários de conexão direta B2B e equipes em canais compartilhados.
+Para examinar usuários e equipes do B2B Direct Connect em canais compartilhados, `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` você deve especificar o padrão de consulta no **objeto resourceScopes**. Uma *revisão de todas* as equipes, como o [Exemplo 7](#example-7-review-all-inactive-guest-users-assigned-to-all-teams-direct-members-only), não incluirá usuários do B2B Direct Connect e equipes em canais compartilhados.
 
 > [!NOTE]
-> A revisão de acesso de usuários e equipes de conexão direta B2B só tem suporte em análises de acesso em estágio único e não em avaliações de acesso em vários estágios.
+> A revisão de acesso de usuários e equipes do B2B Direct Connect só tem suporte em revisões de acesso de estágio único e não em revisões de acesso de vários estágios.
 
-### <a name="example-15-review-all-guest-users-assigned-to-a-directory-role"></a>Exemplo 15: Revisar todos os usuários convidados atribuídos a uma função de diretório
+### <a name="example-12-review-all-guest-users-assigned-to-a-directory-role"></a>Exemplo 12: Examinar todos os usuários convidados atribuídos a uma função de diretório
 
 ```http
 "scope": {
@@ -286,6 +332,6 @@ Para analisar usuários e equipes de conexão direta B2B em canais compartilhado
 
 ## <a name="next-steps"></a>Próximas etapas
 
-+ [Atribuir revisadores à sua definição de revisão de acesso](/graph/accessreviews-reviewers-concept)
-+ [Experimente tutoriais para](/graph/accessreviews-overview) saber como usar a API de avaliações de acesso para revisar o acesso aos recursos do Azure AD
++ [Atribuir revisores à sua definição de revisão de acesso](/graph/accessreviews-reviewers-concept)
++ [Experimente tutoriais para](/graph/accessreviews-overview) saber como usar a API de revisões de acesso para examinar o acesso aos recursos do Azure AD
 + [Criar uma revisão de acesso](/azure/active-directory/governance/create-access-review)

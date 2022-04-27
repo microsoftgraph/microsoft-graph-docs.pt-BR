@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bfee6100df1de5bf524d067ed65c19032b3ae8fa
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 1444614dd449b620d31d66c81f3b531ef78ffae8
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016815"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060990"
 ---
 # <a name="list-unifiedroledefinitions"></a>Listar unifiedRoleDefinitions
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 
 ### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+|Aplicativo | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -78,11 +78,9 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 
 ## <a name="example"></a>Exemplo
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-retrieve-role-definitions-for-the-directory-provider"></a>Exemplo 1: Recuperar definições de função para o provedor de diretório
 
-Este é um exemplo de solicitação.
-
-
+#### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -121,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 
@@ -231,6 +229,132 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-retrieve-role-definitions-for-the-entitlement-management-provider"></a>Exemplo 2: Recuperar definições de função para o provedor de gerenciamento de direitos
+
+#### <a name="request"></a>Solicitação
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_entitlementmanagement_provider"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDefinitions
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/entitlementManagement/roleDefinitions",
+    "value": [
+        {
+            "id": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "displayName": "Catalog owner",
+            "description": "Catalog owner",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "ae79f266-94d4-4dab-b730-feca7e132178",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/allTasks"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "displayName": "Catalog reader",
+            "description": "Catalog reader",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "44272f93-9762-48e8-af59-1b5351b1d6b3",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/allEntities/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "7f480852-ebdc-47d4-87de-0d8498384a83",
+            "displayName": "AccessPackages manager",
+            "description": "AccessPackages manager",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "7f480852-ebdc-47d4-87de-0d8498384a83",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/AccessPackageCatalog/AccessPackage/allTasks",
+                        "microsoft.entitlementManagement/AccessPackageCatalog/allEntities/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+            "displayName": "Catalog creator",
+            "description": "Catalog creator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "ba92d953-d8e0-4e39-a797-0cbedb0a89e8",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/AccessPackageCatalog/Create"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "e2182095-804a-4656-ae11-64734e9b7ae5",
+            "displayName": "AccessPackage assignment manager",
+            "description": "AccessPackage assignment manager",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "templateId": "e2182095-804a-4656-ae11-64734e9b7ae5",
+            "version": "1.0",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.entitlementManagement/AccessPackageCatalog/AccessPackage/GrantRequests/allTasks",
+                        "microsoft.entitlementManagement/AccessPackageCatalog/AccessPackage/Grants/allTasks",
+                        "microsoft.entitlementManagement/AccessPackageCatalog/allEntities/Read"
+                    ],
+                    "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

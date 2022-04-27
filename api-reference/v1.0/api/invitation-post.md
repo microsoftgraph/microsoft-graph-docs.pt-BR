@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ec65e8b9725875887a1bf4157ca4693bb07a8369
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 86fd55796abd0605f307a3d7388839a971f943f2
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130322"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060728"
 ---
 # <a name="create-invitation"></a>Criar convite
 
@@ -115,7 +115,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

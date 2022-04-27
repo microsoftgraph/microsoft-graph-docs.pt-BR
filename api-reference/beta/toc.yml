@@ -608,7 +608,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -7283,7 +7283,7 @@ items:
                     href: resources/intune-deviceconfig-wirednetworkauthenticationtype.md
                   - name: Interface de rede com fio
                     href: resources/intune-deviceconfig-wirednetworkinterface.md
-              - name: Gerenciamento de dispositivo
+              - name: Gerenciamento de dispositivos
                 href: resources/intune-device-mgt-conceptual.md
                 items:
                   - name: Ativar o resultado da ação esim do dispositivo
@@ -10209,7 +10209,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: Ação de restauração remota em massa
                     href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: Solução de problemas
+                  - name: Solucionar problema
                     href: api/cloudpc-troubleshoot.md
               - name: Imagem do dispositivo de PC na nuvem
                 href: resources/cloudpcdeviceimage.md
@@ -11501,6 +11501,12 @@ items:
                 items:
                   - name: Listar domínios
                     href: api/domain-list.md
+                  - name: Listar referências de nome de domínio
+                    href: api/domain-list-domainnamereferences.md
+                  - name: Listar registros de configuração de serviço
+                    href: api/domain-list-serviceconfigurationrecords.md
+                  - name: Listar registros DNS de verificação
+                    href: api/domain-list-verificationdnsrecords.md
                   - name: Criar domínio
                     href: api/domain-post-domains.md
                   - name: Excluir domínio
@@ -12674,7 +12680,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
-          - name: Gestão
+          - name: Governança
             items:
               - name: Avaliações do acesso
                 href: resources/accessreviewsv2-overview.md
@@ -14705,6 +14711,20 @@ items:
                 href: api/itemanalytics-get.md
               - name: Listar versões
                 href: api/listitem-list-versions.md
+          - name: Versão do conjunto de documentos
+            items:
+              - name: Versão do conjunto de documentos
+                href: resources/documentsetversion.md
+              - name: Listar
+                href: api/listitem-list-documentsetversions.md
+              - name: Criar
+                href: api/listitem-post-documentsetversions.md
+              - name: Obter
+                href: api/documentsetversion-get.md
+              - name: Excluir
+                href: api/documentsetversion-delete.md
+              - name: Restaurar
+                href: api/documentsetversion-restore.md
           - name: Páginas
             items:
               - name: Página do site
@@ -15060,9 +15080,9 @@ items:
                 href: api/chatmessage-update.md
               - name: Verificar o acesso do usuário
                 href: api/channel-doesuserhaveaccess.md
-              - name: Listar equipes compartilhadas com o canal
+              - name: Listar equipes que compartilham um canal
                 href: api/sharedwithchannelteaminfo-list.md
-              - name: Obter a equipe compartilhada com o canal
+              - name: Obter equipe compartilhando um canal
                 href: api/sharedwithchannelteaminfo-get.md
               - name: Descompartilhar canal com a equipe
                 href: api/sharedwithchannelteaminfo-delete.md

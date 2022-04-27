@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-description: Este recurso representa um item em uma list do SharePoint.
-ms.date: 09/11/2017
-title: ListItem
+description: Esse recurso representa um item em uma SharePoint lista.
+title: recurso listItem
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e1a1c17a7feabb66be08c7a036191d82ec18ff45
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: bfda041c473da6d5d98c7c6b076ba9be276cd486
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722682"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060672"
 ---
-# <a name="listitem-resource"></a>Recurso ListItem
+# <a name="listitem-resource"></a>recurso listItem
 
 Namespace: microsoft.graph
 
@@ -41,6 +40,9 @@ Todos os exemplos a seguir referem-se a uma **[list][]**, por exemplo: `https://
 | [Update][]                     | PATCH /items/{item-id}                       |
 | [Atualizar valores de coluna][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
+|[Listar documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+|[Criar documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+|[Restaurar documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
 
 [Obter]: ../api/listitem-get.md
 [Obter análises]: ../api/itemanalytics-get.md
@@ -70,6 +72,7 @@ Veja a seguir uma representação JSON de um recurso **listItem**.
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "documentSetVersions": [{"@odata.type": "microsoft.graph.documentSetVersion"}],
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
@@ -118,7 +121,8 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 | Relação | Tipo                           | Descrição                                                                                        |
 | :----------- | :----------------------------- | :------------------------------------------------------------------------------------------------- |
 | activities   | Conjunto [itemActivity][]    | A lista de atividades recentes que ocorreram neste item.                                        |
-| análise    | recurso [itemAnalytics][]     | Análise sobre as atividades de visualização que ocorreram neste item.                                  |
+| análise    | recurso [itemAnalytics][]     | Análise sobre as atividades de visualização que ocorreram neste item.|
+|documentSetVersions|[coleção documentSetVersion](../resources/documentsetversion.md)| Informações de versão para uma versão do conjunto de documentos criada por um usuário.|
 | driveItem    | [driveItem][]                  | Para bibliotecas de documentos, a relação **driveItem** expõe listItem como um **[driveItem][]** |
 | campos       | [fieldValueSet][]              | Os valores das colunas definidos neste item de lista.                                                   |
 | versões     | coleção [listItemVersion][]  | A lista de versões anteriores do item de lista.                                                    |

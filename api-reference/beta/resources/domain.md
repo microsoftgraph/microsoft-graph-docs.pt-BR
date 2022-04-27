@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 0909c6b1e414fe38b438e2b491e4110b7b6e6825
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 981b64bf5becec9bc51072700580781f855815bf
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848676"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060560"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
 
@@ -34,12 +34,13 @@ Para associar um domínio a um locatário:
 
 5. [Configure](../api/domain-list-serviceconfigurationrecords.md) os serviços com suporte recuperando uma lista de registros necessários para habilitar os serviços para o domínio. Adicione os detalhes do registro de configuração ao arquivo de zona do domínio usando o registrador de domínios ou a configuração do servidor DNS.
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 
 | Método   | Tipo de retorno |Descrição|
 |:---------------|:--------|:----------|
 |[Obter domínio](../api/domain-get.md) | [domain](domain.md) | Ler propriedades e relações de um objeto de domínio.|
 |[Criar domínio](../api/domain-post-domains.md) | [domain](domain.md) | Adiciona um domínio ao inquilino. |
+|[Listar domínio](../api/domain-list.md) | [domain](domain.md) | Recupere todos os domínios vinculados ao locatário. |
 |[Listar domainNameReference](../api/domain-list-domainnamereferences.md) |Coleção [directoryObject](directoryobject.md)| Recupere uma lista de objetos de diretório com uma referência ao domínio.|
 |[Listar serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[coleção domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista de registros DNS de domínio para configuração de domínio.|
 |[Listar verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[coleção domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista de registros DNS de domínio para verificação de domínio.|
@@ -53,16 +54,16 @@ Para associar um domínio a um locatário:
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |Authenticationtype|Cadeia de caracteres| Indica o tipo de autenticação configurado para o domínio. O valor é ou `Managed` `Federated`. `Managed` indica um domínio gerenciado na nuvem em que o Azure AD executa a autenticação do usuário. `Federated`indica que a autenticação é federada com um provedor de identidade, como o locatário Active Directory local via Serviços de Federação do Active Directory (AD FS). Essa propriedade é somente leitura e não permite valor nulo. |
-|availabilityStatus|Cadeia de Caracteres| Essa propriedade é sempre exceto `null` quando a [ação de verificação](../api/domain-verify.md) é usada. Quando a [ação de](../api/domain-verify.md) verificação é usada, uma **entidade de** domínio é retornada na resposta. A **propriedade availabilityStatus** da entidade **de** domínio na resposta é ou `AvailableImmediately` `EmailVerifiedDomainTakeoverScheduled`.|
-|id|Cadeia de caracteres| O nome totalmente qualificado do domínio. Chave, imutável, não anulável, exclusiva. |
-|isAdminManaged|Booleano| O valor da propriedade será se `false` o gerenciamento de registros DNS do domínio tiver sido delegado a Microsoft 365. Caso contrário, o valor será `true`. Não anulável |
+|availabilityStatus|String| Essa propriedade é sempre exceto `null` quando a [ação de verificação](../api/domain-verify.md) é usada. Quando a [ação de](../api/domain-verify.md) verificação é usada, uma **entidade de** domínio é retornada na resposta. A **propriedade availabilityStatus** da entidade **de** domínio na resposta é ou `AvailableImmediately` `EmailVerifiedDomainTakeoverScheduled`.|
+|id|String| O nome totalmente qualificado do domínio. Chave, imutável, não anulável, exclusiva. |
+|isAdminManaged|Boolean| O valor da propriedade será se `false` o gerenciamento de registros DNS do domínio tiver sido delegado a Microsoft 365. Caso contrário, o valor será `true`. Não anulável |
 |isDefault|Booliano| `true` se esse for o domínio padrão usado para a criação do usuário. Há apenas um domínio padrão por empresa. Não anulável |
 |isInitial|Booliano| `true` se esse for o domínio inicial criado pelo Microsoft Online Services (companyname.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
-|isRoot|Booleano| `true` se o domínio for um domínio raiz verificado. Caso contrário, `false` se o domínio for um subdomínio ou não verificado. Não anulável |
-|isVerified|Booleano| `true` se o domínio tiver concluído a verificação de propriedade do domínio. Não anulável |
+|isRoot|Boolean| `true` se o domínio for um domínio raiz verificado. Caso contrário, `false` se o domínio for um subdomínio ou não verificado. Não anulável |
+|isVerified|Boolean| `true` se o domínio tiver concluído a verificação de propriedade do domínio. Não anulável |
 |passwordNotificationWindowInDays|Int32|Especifica o número de dias antes que um usuário receba uma notificação de que sua senha expirará. Se a propriedade não estiver definida, um valor padrão de 14 dias será usado.|
 |passwordValidityPeriodInDays|Int32| Especifica o período de tempo em que uma senha é válida antes de ser alterada. Se a propriedade não estiver definida, um valor padrão de 90 dias será usado. |
-|supportedServices|String collection| Os recursos atribuídos ao domínio. Pode incluir `0`ou `1` mais dos seguintes valores: `Email`, `Sharepoint`, , `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`,`SharePointDefaultDomain` , `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, , `Yammer`, . `Intune` Os valores que você pode adicionar/remover usando API do Graph incluem: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Não anulável|
+|supportedServices|Conjunto de cadeias de caracteres| Os recursos atribuídos ao domínio. Pode incluir `0`ou `1` mais dos seguintes valores: `Email`, `Sharepoint`, , `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`,`SharePointDefaultDomain` , `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, , `Yammer`, . `Intune` Os valores que você pode adicionar/remover usando API do Graph incluem: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Não anulável|
 |state|[domainState](domainstate.md)| Status de operações assíncronas agendadas para o domínio. |
 
 ## <a name="relationships"></a>Relações

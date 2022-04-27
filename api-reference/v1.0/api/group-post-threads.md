@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6f91c935b5a6813a371fe6c2971612f008460760
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 2c40b4537764a7cd2a2418ab220c76cce1956fe8
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589398"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060525"
 ---
 # <a name="create-conversation-thread"></a>Criar thread de conversas
 
@@ -22,7 +22,7 @@ Uma nova conversa, thread de conversas e posts são criados no grupo. Use [reply
 
 Observação: também é possível [iniciar um novo thread em uma conversa existente](conversation-post-threads.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -134,7 +134,7 @@ Este é um exemplo de resposta.
 } -->
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

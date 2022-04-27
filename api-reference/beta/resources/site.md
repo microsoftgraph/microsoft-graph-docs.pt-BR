@@ -5,12 +5,12 @@ title: tipo de recurso do site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 52d5a66533304d2b7df479e2393a7a4a7cf41974
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 423986ac43de3558836660a1684978784db724eb
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586864"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65059966"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -83,7 +83,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | **lastModifiedDateTime** | DateTimeOffset     | A data e a hora que o item foi modificado pela última vez. Somente leitura.                                       |
 | **name**                 | string             | O nome/título do item.                                                                  |
 | **root**                 | [root][]           | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.            |
-| **configurações**             | [siteSettings]     | As configurações neste site. Retornado apenas em $select. Somente leitura.                                |
+| **configurações**             | [siteSettings]     | As configurações neste site. Somente leitura.                                |
 | **sharepointIds**        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                       |
 | **siteCollection**       | [siteCollection][] | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura. |
 | **webUrl**               | string (url)       | A URL que exibe o item no navegador. Somente leitura.                                          |

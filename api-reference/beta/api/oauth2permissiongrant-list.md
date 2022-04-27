@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: d1d27b6c27944529b128785c765cb7ff856380bf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 2f8027d0ee84819c665a3c60efaa94ff9c2552ab
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671528"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060762"
 ---
 # <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>Listar oauth2PermissionGrants (concessões de permissão delegadas)
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , representando permissões delegadas que foram concedidas aos aplicativos cliente para acessar APIs em nome de usuários assinados.
+Recupere uma lista de [objetos oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , representando permissões delegadas que foram concedidas aos aplicativos cliente para acessar APIs em nome de usuários conectados.
 
 > [!NOTE]
-> Esse pedido pode ter atrasos de replicação das concessões de permissão delegadas que foram criadas, atualizadas ou excluídas recentemente. Esse atraso será minimizado se um filtro for `clientId` especificado.
+> Esse pedido pode ter atrasos de replicação das concessões de permissão delegadas que foram criadas, atualizadas ou excluídas recentemente. Esse atraso será minimizado se um filtro `clientId` for especificado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

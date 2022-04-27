@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ebeea0cdf0922dde8dff004f21832df206cfaad0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 582d0c3619779c3291a0cf2bfaa06bab62a4fee1
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134388"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060721"
 ---
 # <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
 
@@ -45,14 +45,14 @@ POST /roleManagement/directory/roleDefinitions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleDefinition.](../resources/unifiedroledefinition.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar uma roleDefinition.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |string |O nome de exibição da definição de função.|
-|isEnabled |Booliano |Sinalizador indicando se a função está habilitada para atribuição. Se `false` , a função não está disponível para atribuição.|
+|displayName |string |O nome de exibição para a definição de função.|
+|isEnabled |Booliano |Sinalizador que indica se a função está habilitada para atribuição. If `false`, a função não está disponível para atribuição.|
 |rolePermissions |[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md) |Lista de permissões incluídas na função.|
 
 ## <a name="response"></a>Resposta
@@ -63,7 +63,7 @@ Se tiver êxito, este método retornará `201 Created` o código de resposta e u
 
 ### <a name="request"></a>Solicitação
 
-A seguir, um exemplo de criação de uma função personalizada.
+A seguir está um exemplo de criação de uma função personalizada.
 
 
 
@@ -142,7 +142,7 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
+    "templateId": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
     "version": null,
     "rolePermissions": [
         {
@@ -153,7 +153,7 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom"
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom"
 }
 ```
 

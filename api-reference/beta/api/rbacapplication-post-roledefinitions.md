@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49a6b986055207205f1af3778dfed7a5ccf01e74
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 7ed0b30e2e2f1a2c7c0b995cc8062a4bf0e68fde
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669869"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061080"
 ---
 # <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
 
@@ -21,15 +21,15 @@ Namespace: microsoft.graph
 Crie um novo [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.
 
 No momento, há suporte para os seguintes provedores RBAC:
-- Cloud PC
-- gerenciamento de dispositivos (Intune)
+- PC na nuvem
+- gerenciamento de dispositivo (Intune)
 - directory (Azure AD)
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissões](/graph/permissions-reference). 
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, consulte [Permissões](/graph/permissions-reference). 
 
-### <a name="for-a-cloud-pc-provider"></a>Para um provedor de computadores na nuvem
+### <a name="for-a-cloud-pc-provider"></a>Para um provedor de PC na nuvem
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -61,13 +61,13 @@ Para criar uma definição de função para um provedor de gerenciamento de disp
 POST /roleManagement/deviceManagement/roleDefinitions
 ```
 
-Para criar uma definição de função para um provedor de diretórios:
+Para criar uma definição de função para um provedor de diretório:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/directory/roleDefinitions
 ```
 
-Para criar uma definição de função para um provedor de computadores na nuvem:
+Para criar uma definição de função para um provedor de PC na nuvem:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/cloudPc/roleDefinitions
@@ -81,21 +81,21 @@ POST /roleManagement/cloudPc/roleDefinitions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar uma roleDefinition.
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|displayName |string |O nome de exibição da definição de função.|
-|isEnabled |Booliano |Sinalizador indicando se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição.|
+|displayName |string |O nome de exibição para a definição de função.|
+|isEnabled |Booliano |Sinalizador que indica se a função está habilitada para atribuição. Se for false, a função não estará disponível para atribuição.|
 |rolePermissions |[Coleção unifiedRolePermission](../resources/unifiedrolepermission.md) |Lista de permissões incluídas na função.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
 
-## <a name="example-1create-a-custom-role-for-a-directory-provider"></a>Exemplo 1:Criar uma função personalizada para um provedor de diretórios
+## <a name="example-1create-a-custom-role-for-a-directory-provider"></a>Exemplo 1: Criar uma função personalizada para um provedor de diretório
 
 ### <a name="request"></a>Solicitação
 
@@ -173,7 +173,7 @@ Content-type: application/json
     "displayName": "Application Registration Support Administrator",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "c2cb59a3-2d01-4176-a458-95b0e674966f",
+    "templateId": "d5eec5e0-6992-4c6b-b430-0f833f1a815a",
     "version": null,
     "rolePermissions": [
         {
@@ -184,7 +184,7 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('c2cb59a3-2d01-4176-a458-95b0e674966f')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('d5eec5e0-6992-4c6b-b430-0f833f1a815a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```
@@ -199,7 +199,7 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-### <a name="example-2-create-a-custom-role-for-a-cloud-pc-provider"></a>Exemplo 2: Criar uma função personalizada para um provedor de computadores na nuvem
+### <a name="example-2-create-a-custom-role-for-a-cloud-pc-provider"></a>Exemplo 2: Criar uma função personalizada para um provedor de PC na nuvem
 
 #### <a name="request"></a>Solicitação
 

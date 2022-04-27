@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 44108f07d916f6d37332cf145bced1eb89461b93
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 18bcb52f421cb6e646f29cb5cf5b8bdf7e23fe5d
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670828"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060679"
 ---
 # <a name="update-oauth2permissiongrant-a-delegated-permission-grant"></a>Atualizar oAuth2PermissionGrant (uma concessão de permissão delegada)
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades do [objeto oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) , representando uma concessão de permissão delegada.
 
-Um **oAuth2PermissionGrant** pode ser atualizado para alterar quais permissões delegadas são **concedidas**, adicionando ou removendo itens da lista em escopos.
+Um **oAuth2PermissionGrant** pode ser atualizado para alterar quais permissões delegadas são concedidas, adicionando ou removendo itens da lista nos **escopos**.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.ReadWrite.All |
+|Aplicativo | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -1,24 +1,24 @@
 ---
-title: 'applicationTemplate: instaurá-lo'
-description: Use essa API para criar um novo applicationTemplate
+title: 'applicationTemplate: criar uma instância'
+description: Usar essa API para criar um novo applicationTemplate
 ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c55b93249535bc12b26c299a3d4a916f739d0fe4
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: f0374ec223daba8f5df49ebb89d764eec24cee0c
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339290"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060553"
 ---
-# <a name="applicationtemplate-instantiate"></a>applicationTemplate: instaurá-lo
+# <a name="applicationtemplate-instantiate"></a>applicationTemplate: criar uma instância
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione uma instância de um aplicativo da galeria de aplicativos do Azure AD ao diretório.
+Adicione uma instância de um aplicativo da galeria de aplicativos do Azure AD ao seu diretório. Você também pode usar essa API para criar uma instância de [aplicativos que não são da galeria](/azure/active-directory/manage-apps/add-non-gallery-app). Use a seguinte ID para o **objeto applicationTemplate** : `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,6 +38,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /applicationTemplates/{id}/instantiate
 ```
 
+Para criar uma instância de aplicativos que não são da galeria, use o `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` para `{applicationTemplate-id}`.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome          | Descrição   |
@@ -54,7 +56,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 OK` código de resposta e um novo [objeto applicationServicePrincipal](../resources/applicationserviceprincipal.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo [objeto applicationServicePrincipal](../resources/applicationserviceprincipal.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -62,9 +64,7 @@ O exemplo a seguir mostra como chamar essa API.
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
- 
-> Você pode usar essa API para insinuar [aplicativos que não são da galeria](/azure/active-directory/manage-apps/add-non-gallery-app). Use a ID a seguir para **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+Este é um exemplo de solicitação. A URL de solicitação especifica `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` como a ID do modelo de aplicativo. Isso significa que a solicitação está instanciando um aplicativo que não é da galeria.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -73,11 +73,11 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applicationTemplates/{id}/instantiate
+POST https://graph.microsoft.com/beta/applicationTemplates/8adf8e6e-67b2-4cf2-a259-e3dc5476c621/instantiate
 Content-type: application/json
 
 {
-  "displayName": "My custom name"
+    "displayName": "testProperties"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -120,56 +120,59 @@ Este é um exemplo de resposta.
 } -->
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-   "servicePrincipal":{
-      "accountEnabled":true,
-      "addIns":[
-         {
-            "id":"id-value",
-            "type":"type-value",
-            "properties":[
-               {
-                  "key":"key-value",
-                  "value":"value-value"
-               }
-            ]
-         }
-      ],
-      "appDisplayName":"appDisplayName-value",
-      "appId":"appId-value",
-      "appOwnerOrganizationId":"appOwnerOrganizationId-value",
-      "appRoleAssignmentRequired":true
-   },
-   "application":{
-      "api":{
-         "acceptedAccessTokenVersion":1,
-         "publishedPermissionScopes":[
-            {
-               "adminConsentDescription":"adminConsentDescription-value",
-               "adminConsentDisplayName":"adminConsentDisplayName-value",
-               "id":"id-value",
-               "isEnabled":true,
-               "type":"type-value",
-               "userConsentDescription":"userConsentDescription-value",
-               "userConsentDisplayName":"userConsentDisplayName-value",
-               "value":"value-value"
-            }
-         ]
-      },
-      "allowPublicClient":true,
-      "applicationAliases":[
-         "applicationAliases-value"
-      ],
-      "createdDateTime":"datetime-value",
-      "installedClients":{
-         "redirectUrls":[
-            "redirectUrls-value"
-         ]
-      }
-   }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
+    "application": {
+        "objectId": "428fbcb1-35bc-471d-95f2-6cc339357cb5",
+        "appId": "23a223ba-bb90-4949-8232-1bf479189e9b",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "displayName": "testProperties",
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+        "identifierUris": [],
+        "publicClient": null,
+        "replyUrls": [],
+        "logoutUrl": null,
+        "samlMetadataUrl": null,
+        "errorUrl": null,
+        "groupMembershipClaims": null,
+        "availableToOtherTenants": false
+    },
+    "servicePrincipal": {
+        "objectId": "7b358fa1-7d10-4a57-bd96-b7e63c2f9be5",
+        "deletionTimestamp": null,
+        "accountEnabled": true,
+        "appId": "23a223ba-bb90-4949-8232-1bf479189e9b",
+        "appDisplayName": "testProperties",
+        "applicationTemplateId": "8adf8e6e-67b2-4cf2-a259-e3dc5476c621",
+        "appOwnerTenantId": "29a4f813-9274-4e1b-858d-0afa98ae66d4",
+        "appRoleAssignmentRequired": true,
+        "displayName": "testProperties",
+        "errorUrl": null,
+        "loginUrl": null,
+        "logoutUrl": null,
+        "homepage": "https://account.activedirectory.windowsazure.com:444/applications/default.aspx?metadata=customappsso|ISV9.1|primary|z",
+        "samlMetadataUrl": null,
+        "microsoftFirstParty": null,
+        "publisherName": "Contoso",
+        "preferredSingleSignOnMode": null,
+        "preferredTokenSigningKeyThumbprint": null,
+        "preferredTokenSigningKeyEndDateTime": null,
+        "replyUrls": [],
+        "servicePrincipalNames": [
+            "23a223ba-bb90-4949-8232-1bf479189e9b"
+        ],
+        "tags": [
+            "WindowsAzureActiveDirectoryIntegratedApp",
+            "WindowsAzureActiveDirectoryCustomSingleSignOnApplication"
+        ],
+        "notificationEmailAddresses": [],
+        "samlSingleSignOnSettings": null,
+        "keyCredentials": [],
+        "passwordCredentials": []
+    }
 }
 ```
 

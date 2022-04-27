@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f24ed48d9167d3f8bfa6c8c74fe1c9f74a868a7d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 8b7db1af8d1ba0fb6f3fa130c89732a1ce9fb87e
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670856"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060804"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
@@ -18,19 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as propriedades e as relações de [um objeto unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) de um provedor RBAC. 
+Obtenha as propriedades e as relações de um [objeto unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) de um provedor RBAC. 
 
 No momento, há suporte para os seguintes provedores RBAC:
-- Cloud PC 
-- gerenciamento de dispositivos (Intune)
+- PC na nuvem 
+- gerenciamento de dispositivo (Intune)
 - directory (funções de diretório do Azure AD)
 - gerenciamento de direitos (gerenciamento de direitos do Azure AD)
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissões](/graph/permissions-reference). 
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, consulte [Permissões](/graph/permissions-reference). 
 
-### <a name="for-a-cloud-pc-provider"></a>Para um provedor de computadores na nuvem
+### <a name="for-a-cloud-pc-provider"></a>Para um provedor de PC na nuvem
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -64,26 +64,26 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Obter uma definição de função para um provedor de computadores na nuvem:
+Obtenha uma definição de função para um provedor de PC na nuvem:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions/{id}
 ```
 
-Obter uma definição de função para um provedor de gerenciamento de dispositivo:
+Obtenha uma definição de função para um provedor de gerenciamento de dispositivo:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleDefinitions/{id}
 ```
 
-Obter uma definição de função para um provedor de diretórios:
+Obtenha uma definição de função para um provedor de diretório:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /roleManagement/directory/roleDefinitions/{id}
 ```
 
-Obter uma definição de função para o provedor de gerenciamento de direitos:
+Obtenha uma definição de função para o provedor de gerenciamento de direitos:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -110,7 +110,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e o obj
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-definition-of-a-custom-role-for-a-directory-provider"></a>Exemplo 1: Obter a definição de uma função personalizada para um provedor de diretórios
+### <a name="example-1-get-the-definition-of-a-custom-role-for-a-directory-provider"></a>Exemplo 1: Obter a definição de uma função personalizada para um provedor de diretório
 
 #### <a name="request"></a>Solicitação
 
@@ -172,7 +172,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
-    "id": "429c3819-053d-4250-9926-4c7dcb18ae17",
+    "id": "f189965f-f560-4c59-9101-933d4c87a91a",
     "description": "Allows reading Application Registrations",
     "displayName": "Application Registration Reader",
     "isBuiltIn": false,
@@ -192,7 +192,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-definition-of-a-built-in-role-for-a-directory-provider"></a>Exemplo 2: Obter a definição de uma função embutida para um provedor de diretórios
+### <a name="example-2-get-the-definition-of-a-built-in-role-for-a-directory-provider"></a>Exemplo 2: Obter a definição de uma função interna para um provedor de diretório
 
 #### <a name="request"></a>Solicitação
 
@@ -300,7 +300,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Exemplo 3: Obter a definição de uma função do Azure AD e $expand na função herdada
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Exemplo 3: obter a definição de uma função interna do Azure AD e $expand na função da qual ele herda
 
 #### <a name="request"></a>Solicitação
 
@@ -474,7 +474,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-definition-of-a-built-in-role-for-a-cloud-pc-provider"></a>Exemplo 4: Obter a definição de uma função embutida para um provedor de computadores na nuvem
+### <a name="example-4-get-the-definition-of-a-built-in-role-for-a-cloud-pc-provider"></a>Exemplo 4: Obter a definição de uma função interna para um provedor de PC na nuvem
 
 #### <a name="request"></a>Solicitação
 
@@ -557,7 +557,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>Exemplo 5: Obter a definição de uma função integrado para o provedor de gerenciamento de direitos
+## <a name="example-5-get-the-definition-of-a-built-in-role-for-the-entitlement-management-provider"></a>Exemplo 5: Obter a definição de uma função interna para o provedor de gerenciamento de direitos
 
 #### <a name="request"></a>Solicitação
 

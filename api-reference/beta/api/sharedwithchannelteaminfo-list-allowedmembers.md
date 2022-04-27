@@ -5,12 +5,12 @@ author: devjha-ms
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 170181e59e2f427d87ce9a55c1c5165121d77262
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: eae5653a68d72d8ec68ad3eb81d96bc192c3f90a
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704256"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060854"
 ---
 # <a name="list-allowedmembers"></a>Listar allowedMembers
 Namespace: microsoft.graph
@@ -18,6 +18,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha a lista de [conversationMembers](../resources/conversationmember.md) que podem acessar um [canal](../resources/channel.md) compartilhado.
+
 Esse método não retorna os seguintes [conversationMembers](../resources/conversationmember.md) da [equipe](../resources/team.md):
 - Usuários com função `Guest`
 - Usuários autenticados externamente no locatário

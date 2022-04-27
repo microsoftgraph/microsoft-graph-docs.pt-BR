@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso chatMessageAttachment
 description: Representa um anexo a uma entidade de mensagem de chat.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: RamjotSingh
-ms.openlocfilehash: b4660e92643d868fbd09c693187a486fc3937584
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: caf7d1693395d9272a8999910dcaa29a9bef11da
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582568"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060755"
 ---
 # <a name="chatmessageattachment-resource-type"></a>Tipo de recurso chatMessageAttachment
 
@@ -20,17 +20,19 @@ Namespace: microsoft.graph
 
 Representa um anexo a uma entidade de mensagem de chat.
 
-Uma entidade de tipo é retornada como parte da API Obter mensagens `chatMessageAttachment` [de](../api/channel-list-messages.md) canal, como parte da [entidade chatMessage.](chatmessage.md)
+Uma entidade de tipo `chatMessageAttachment` é retornada como parte da API Obter mensagens [de](../api/channel-list-messages.md) canal, como parte da [entidade chatMessage](chatmessage.md) .
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|cadeia de caracteres| Somente leitura. ID exclusiva do anexo.|
-|contentType| string | O tipo de mídia do anexo de conteúdo. Ele pode ter os seguintes valores: <br><ul><li>`reference`: Attachment é um link para outro arquivo. Preencha o contentURL com o link para o objeto.</li><li>Quaisquer contentTypes suportados pelo objeto Attachment da Estrutura de [Bot](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: Um trecho de código. </li><li>`application/vnd.microsoft.card.announcement`: Um header de comunicado. </li>|
-|contentUrl|string|URL do conteúdo do anexo. Protocolos com suporte: http, https, arquivo e dados.|
-|conteúdo|string|O conteúdo do anexo. Se o anexo for um [cartão rich ,](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference)de definir a propriedade como o objeto rich card. Essa propriedade e contentUrl são mutuamente exclusivos.|
+|contentType| string | O tipo de mídia do anexo de conteúdo. Ele pode ter os seguintes valores: <br><ul><li>`reference`: o anexo é um link para outro arquivo. Preencha a contentURL com o link para o objeto.</li><li>Qualquer contentTypes compatível com o objeto [Attachment](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object) do Bot Framework</li><li>`application/vnd.microsoft.card.codesnippet`: um snippet de código. </li><li>`application/vnd.microsoft.card.announcement`: um cabeçalho de comunicado. </li>|
+|contentUrl|string|URL para o conteúdo do anexo. Protocolos com suporte: http, https, arquivo e dados.|
+|conteúdo|string|O conteúdo do anexo. Se o anexo for um [cartão avançado](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference), defina a propriedade como o objeto rich card. Essa propriedade e contentUrl são mutuamente exclusivos.|
 |nome|string|Nome do anexo.|
-|thumbnailUrl| string |URL para uma imagem em miniatura que o canal pode usar se for compatível com o uso de uma forma alternativa, menor de conteúdo ou contentUrl. Por exemplo, se você definir contentType como aplicativo/word e definir contentUrl como o local do documento do Word, poderá incluir uma imagem em miniatura que representa o documento. O canal poderia exibir a imagem em miniatura em vez do documento. Quando o usuário clica na imagem, o canal abriria o documento.|
+|teamsAppId| string |A ID do Teams que está associado ao anexo. A propriedade é usada especificamente para atribuir um Teams de mensagem ao aplicativo especificado.|
+|thumbnailUrl| string |URL para uma imagem em miniatura que o canal pode usar se der suporte ao uso de uma forma alternativa e menor de conteúdo ou contentUrl. Por exemplo, se você definir contentType como application/word e definir contentUrl como o local do documento do Word, poderá incluir uma imagem em miniatura que representa o documento. O canal pode exibir a imagem em miniatura em vez do documento. Quando o usuário clica na imagem, o canal abre o documento.|
+
 
 ## <a name="json-representation"></a>Representação JSON
  Veja a seguir uma representação JSON do recurso
@@ -40,7 +42,8 @@ Uma entidade de tipo é retornada como parte da API Obter mensagens `chatMessage
   "optionalProperties": [
     "thumbnailUrl",
     "content",
-    "contentUrl"
+    "contentUrl",
+    "teamsAppId"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.chatMessageAttachment"
@@ -53,6 +56,7 @@ Uma entidade de tipo é retornada como parte da API Obter mensagens `chatMessage
   "contentUrl": "string",
   "content": "string",
   "name": "string",
+  "teamsAppId": "string",
   "thumbnailUrl": "string"
 }
 
