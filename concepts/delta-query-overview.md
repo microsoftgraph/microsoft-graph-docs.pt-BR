@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: be2f0aa1df6edc791f2e34b34ad0c7ab4b8c9555
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 45232a25e17aedbd47c208ee31c7f21b51ca4986
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477969"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102987"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -201,7 +201,12 @@ A consulta delta pode retornar um código de resposta de `410 (gone)` e um cabe�
 
 ### <a name="token-duration"></a>Duração do token
 
-Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente. Para objetos de diretório (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), o limite é de 7 dias. Para objetos de formação educacional (**educationSchool**, **educationUser** e **educationClass**), o limite é de 7 dias. Para entidades do Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), o limite superior não é corrigido; depende do tamanho do cache de tokens do delta interno. Enquanto os novos tokens delta são adicionados ao cache, após a capacidade do cache ser excedida, os tokens delta mais antigos são excluídos.
+Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente.
++ Para [objetos de diretório](/graph/api/resources/directoryobject), o limite é de sete dias. 
++ Para objetos educacionais (**educationSchool**, **educationUser** e **educationClass**), o limite é de sete dias.
++ Para entidades do Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), o limite superior não é corrigido; depende do tamanho do cache de tokens do delta interno. Enquanto os novos tokens delta são adicionados ao cache, após a capacidade do cache ser excedida, os tokens delta mais antigos são excluídos.
+
+No caso de um token expirado, o serviço deve responder com um erro da série 40X com códigos de erro como `syncStateNotFound`. Para obter mais informações, consulte (Códigos de erro no Microsoft Graph](/graph/errors#code-property).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

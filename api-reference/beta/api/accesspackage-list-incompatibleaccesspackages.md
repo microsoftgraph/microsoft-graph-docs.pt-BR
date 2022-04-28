@@ -1,19 +1,24 @@
 ---
-title: Listar incompatívelAccessPackages
+title: Listar incompatibleAccessPackages
 description: Recupere uma lista de pacotes de acesso cujos direitos de acesso são incompatíveis com um pacote de acesso específico.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
+ms.openlocfilehash: c78226a7f131e6e8d5259edb6972ff506c2a8b81
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102931"
 ---
-
-# <a name="list-incompatibleaccesspackages"></a>Listar incompatívelAccessPackages
+# <a name="list-incompatibleaccesspackages"></a>Listar incompatibleAccessPackages
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista dos [objetos accessPackage](../resources/accesspackage.md) que foram marcados como incompatíveis em [um accessPackage](../resources/accesspackage.md).  
+Recupere uma lista dos [objetos accessPackage](../resources/accesspackage.md) que foram marcados como incompatíveis em um [accessPackage](../resources/accesspackage.md).  
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -35,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAc
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos parâmetros de consulta OData para pajamento no lado do servidor por meio de uma resposta grande. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos parâmetros de consulta OData para paginação no lado do servidor por meio de uma resposta grande. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -49,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessPackage](../resources/accesspackage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos accessPackage](../resources/accesspackage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -64,11 +69,13 @@ Este é um exemplo de solicitação.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleAccessPackages
-### Response
+```
 
-The following is an example of the response.
+### <a name="response"></a>Resposta
 
-> **Note:** The response object shown here might be shortened for readability.
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",

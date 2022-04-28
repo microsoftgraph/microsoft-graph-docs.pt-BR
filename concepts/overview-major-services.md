@@ -1,19 +1,19 @@
 ---
 title: Principais serviços e recursos do Microsoft Graph
-description: 'O Microsoft Graph permite a integração com os melhores serviços do Microsoft 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365, usando a APIs REST e as bibliotecas de clientes. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
+description: 'O Microsoft Graph permite a integração com os melhores serviços do Microsoft 365, Windows e Enterprise Mobility + Security no Microsoft 365, usando a APIs REST e as bibliotecas de clientes. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c6c8ecf7ecc7e53a71b84ba77417e08adfd46561
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: e4e48c8317afcc67e0096beb6bf71f44ceb0a424
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61609001"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103001"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
-O Microsoft Graph permite a integração com os melhores serviços do Microsoft 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365, usando a APIs REST e as bibliotecas de clientes. Além disso, oferece segurança e inteligência que podem aumentar a produtividade do usuário, bem como a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
+O Microsoft Graph permite a integração com os melhores serviços do Microsoft 365, Windows e Enterprise Mobility + Security no Microsoft 365, usando a APIs REST e as bibliotecas de clientes. Além disso, oferece segurança e inteligência que podem aumentar a produtividade do usuário, bem como a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
 
 ## <a name="users-and-groups"></a>Usuários e grupos
 
@@ -56,7 +56,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Observações | OneNote | Permite aos usuários planejar e organizar informações e ideias. | [Visão geral das anotações do OneNote](integrate-with-onenote.md) |
 | Contatos pessoais | Outlook | Entra em contato com o gerente na Web e em dispositivos móveis e de desktop. Faz parte do hub de comunicação de mensagens do Outlook no Microsoft 365, que também permite que os usuários gerenciem emails e agendem reuniões.  | [Visão geral de contatos pessoais do Outlook](outlook-contacts-concept-overview.md) |
 | Pastas de trabalho e gráficos | Excel | Permite que os usuários usem planilhas do Excel para fazer cálculos complexos, rastrear, analisar e visualizar dados e gerar relatórios profissionais. | [Visão geral de gráficos e pastas de trabalho do Excel](excel-concept-overview.md) |
-| Tarefas pendentes | To Do | Permite aos usuários gerenciar suas tarefas pessoais em todo seu trabalho e na sua vida pessoal. Ele também está integrado ao Outlook, Equipes, Planner e Cortana, o que o torna o único destino para as tarefas pessoais do usuário no Microsoft 365 | [Visão geral sobre tarefas To Do](todo-concept-overview.md) |
+| Tarefas pendentes | To Do | Permite aos usuários gerenciar suas tarefas pessoais em todo seu trabalho e na sua vida pessoal. Ele também está integrado ao Outlook, Equipes, Planner e Cortana, o que o torna o único destino para as tarefas pessoais do usuário no Microsoft 365. | [Visão geral sobre tarefas To Do](todo-concept-overview.md) |
 
 ## <a name="collaboration"></a>Colaboração
 
@@ -110,7 +110,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 ## <a name="user-notifications-deprecated"></a>Notificações do usuário (preteridas)
 
 > [!IMPORTANT]
-> A API Microsoft Graph notificações de falha foi preterida e deixará de retornar dados até o final de janeiro de 2022. Para uma experiência de notificação alternativa, consulte [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs), and [veja esta postagem do blog](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) Para maiores informações.
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte [essa postagem no blog](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
@@ -146,4 +146,4 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 
 - No índice, confira **Saiba mais** para ler sobre os serviços e recursos que _você_ pode usar em seus cenários.
 - Experimente um exemplo de solicitação no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Use os [inícios rápidos](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de amostra pronto para funcionar.
+- Use esse [início rápido](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de exemplo pronto para funcionar.

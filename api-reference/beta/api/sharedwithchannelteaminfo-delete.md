@@ -5,19 +5,19 @@ author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6efc3817b107eb3a30d26b3648de0ec5f4594e16
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 899bc9a9b60f1d7bb8bba8fec89e2bd311be7bae
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704253"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060567"
 ---
 # <a name="delete-sharedwithchannelteaminfo"></a>Excluir sharedWithChannelTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua uma [equipe](../resources/sharedwithchannelteaminfo.md) de um [canal](../resources/channel.md) compartilhado. Esta operação é permitida somente para canais com valor **membershipType** de `shared`.
+Descompartilhar um [canal](../resources/channel.md) com uma [equipe](../resources/team.md) excluindo o recurso [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md) correspondente. Esta operação é permitida somente para canais com valor **membershipType** de `shared`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

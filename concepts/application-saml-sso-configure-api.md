@@ -5,12 +5,12 @@ author: kenwith
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 4f930e98ed76a56f8a7e94873389e09810b67dab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc9e8bbdc3dc2451e41da9c90874276d4b1a0bdf
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117687"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060497"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Configure o logon único baseado em SAML para seu aplicativo usando a API do Microsoft Graph
 
@@ -107,7 +107,7 @@ Content-type: application/json
 #### <a name="response"></a>Resposta
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -434,7 +434,7 @@ Content-type: application/json
 #### <a name="response"></a>Resposta
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

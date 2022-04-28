@@ -5,8 +5,13 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
+ms.openlocfilehash: ed825ae07c1a707be2847b9bdc40f7fe71add334
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103008"
 ---
-
 # <a name="crosstenantaccesspolicy-resource-type"></a>Tipo de recurso crossTenantAccessPolicy
 
 Namespace: microsoft.graph
@@ -28,16 +33,15 @@ Herda de [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipacc
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| displayName | String | O nome de exibição da política de acesso entre locatários. Herdado do [policyBase](../resources/policybase.md).|
-| lastModifiedDateTime | DateTimeOffset | A hora em que a política de acesso entre locatários foi modificada pela última vez, representada usando o formato ISO 8601 e sempre em tempo UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-| definição (preterida) | String | A definição JSON bruta da política de acesso entre locatários. **Preterido. Não use.**|
+| displayName | Cadeia de caracteres | O nome de exibição da política de acesso entre locatários. Herdado do [policyBase](../resources/policybase.md).|
+| definição (preterido) | Cadeia de caracteres | A definição JSON bruta da política de acesso entre locatários. **Preterido. Não use.**|
 
 ## <a name="relationships"></a>Relações
 
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |Padrão.|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Define a configuração padrão de como sua organização interage com organizações Azure Active Directory externas.|
-|partners|[Coleção crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Define configurações específicas do parceiro para organizações Azure Active Directory externas.|
+|Parceiros|[coleção crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Define configurações específicas do parceiro para organizações de Azure Active Directory externas.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -55,7 +59,6 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
   "definition": "String"
 }
 ```

@@ -3,14 +3,116 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 4d98eb85983a341a61bc97f0ee2001f789a2f08c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: bcfced8791bddae5bac1d32f0a900f40db286511
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333124"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65060693"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="february-2022-new-and-generally-available"></a>Janeiro de 2022: Novo e disponível ao público em geral
+
+### <a name="teamwork"></a>Trabalho em equipe
+Obtenha [detalhes sobre uma reunião online](/graph/api/resources/teamworkOnlineMeetingInfo) associada a um [chat](/graph/api/resources/chat) através da propriedade **onlineMeetingInfo**.
+
+## <a name="february-2022-new-in-preview-only"></a>Fevereiro de 2022: novo somente para visualização
+
+### <a name="applications"></a>Aplicativos
+- Use uma nova opção de política de [autenticação de aplicativo](/graph/api/resources/applicationauthenticationmethodpolicy?view=graph-rest-beta&preserve-view=true) para restringir um segredo de senha personalizado em um aplicativo ou entidade de serviço.
+- Especifique as [configurações](/graph/api/resources/windowsApplication?view=graph-rest-beta&preserve-view=true) para aplicativos que executam o Windows e publicados na Microsoft Store ou na loja de jogos do Xbox.
+
+### <a name="change-notifications"></a>Notificações de alteração
+Assine para alterações de contatos, eventos ou mensagens do Outlook e receba notificações que incluem dados de recursos na carga. Para obter mais informações, confira [Alterar notificações para recursos do Outlook no Microsoft Graph](outlook-change-notifications-overview.md).
+
+### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem 
+- Defina as [configurações de ponto de restauração](/graph/api/resources/cloudpcrestorepointsetting?view=graph-rest-beta&preserve-view=true), que incluem a frequência para criar um ponto de restauração e se os usuários podem restaurar seu próprio PC na nuvem com base em um backup de ponto de restauração.
+- [Restaurar](/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta&preserve-view=true) um PC na nuvem com base em um instantâneo anterior.
+- [Restaurar vários PCs na nuvem](/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta&preserve-view=true) em uma única solicitação especificando suas IDs de dispositivo gerenciado e um intervalo de data/hora (por exemplo, antes, depois) de um ponto de restauração.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+Use as permissões de aplicativo `CustomSecAttributeAssignment.Read.All` para ler [definições de atributo de segurança personalizadas](/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta&preserve-view=true) para uma organização sem um usuário conectado.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Defina as [configurações](/graph/api/resources/accessreviewstagesettings?view=graph-rest-beta&preserve-view=true) para cada [estágio](/graph/api/resources/accessreviewstage?view=graph-rest-beta&preserve-view=true) em uma revisão de acesso em vários estágios. Além de [obter](/graph/api/accessreviewstage-get?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/accessreviewstage-update?view=graph-rest-beta&preserve-view=true) um estágio de revisão de acesso, você pode fazer o seguinte: 
+  - [Interrompa](/graph/api/accessreviewstage-stop?view=graph-rest-beta&preserve-view=true) os revisores de dar mais entrada a um estágio e prossiga para o próximo estágio, se aplicável. 
+  - [Filtre](/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) e obtenha todos os estágios em uma [instância de revisão de acesso](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) para a qual o usuário da chamada é um revisor
+  - [Liste decisões](/graph/api/accessreviewstage-list-decisions?view=graph-rest-beta&preserve-view=true) de uma revisão de acesso em vários estágios.
+- Os aplicativos podem usar a permissão de aplicativo `EntitlementManagement.ReadWrite.All` para [criar uma solicitação de recurso do pacote de acesso](/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta&preserve-view=true) para adicionar ou remover um recurso de um [catálogo de pacotes de acesso](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+- Use uma série de novas propriedades para configurar a [identidade visual de uma organização](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). Por exemplo, uma versão de banner do logotipo da empresa para a página de entrada, um favicon personalizado com URL baseado em CDN e algumas outras propriedades personalizadas para que os usuários gerenciem contas.
+- Inclua ou exclua o Linux como uma das [condições da plataforma](/graph/api/resources/conditionalaccessplatforms?view=graph-rest-beta&preserve-view=true) em uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
+- Identifique [entidades de serviço em risco](/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta&preserve-view=true) de uma organização com o Azure AD, que continuamente [detecta e avalia os riscos](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta&preserve-view=true) com base em vários sinais e aprendizado de máquina. Você pode [confirmar](/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta&preserve-view=true) se uma entidade de serviço em risco está realmente comprometida, na qual a Microsoft desabilitará esse objeto de entidade do serviço. Você pode [descartar](/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta&preserve-view=true) o risco de uma entidade de serviço em risco. E você pode [listar o histórico de risco](/graph/api/riskyserviceprincipal-list-history?view=graph-rest-beta&preserve-view=true) de uma entidade de serviço.
+- Use [configurações de acesso entre locatários](/graph/api/resources/crosstenantaccesspolicy-overview?view=graph-rest-beta&preserve-view=true) para controlar e gerenciar a colaboração entre usuários de sua organização e de outras organizações. Eles são granulares para permitir que você determine os usuários, grupos e aplicativos, tanto da sua organização quanto de organizações externas, que podem participar da colaboração do Azure AD B2B e da conexão direta do Azure AD B2B. 
+- Habilite ou desabilite usuários e grupos em uma organização para usar o [CBA (autenticação baseada em certificado) nativo do Azure AD](/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true).
+
+### <a name="search"></a>Pesquisar
+Configure [acrônimo](/graph/api/resources/search-acronym?view=graph-rest-beta&preserve-view=true), [indicador](/graph/api/resources/search-bookmark?view=graph-rest-beta&preserve-view=true) e recursos [QnA](/graph/api/resources/search-qna?view=graph-rest-beta&preserve-view=true) como [respostas de pesquisa administrativa para usuários em uma organização](search-concept-answers.md).
+
+
+## <a name="january-2022-new-and-generally-available"></a>Janeiro de 2022: Novo e disponível ao público em geral
+
+### <a name="devices-and-apps--service-health-and-communications"></a>Dispositivos e aplicativos | Integridade do serviço e comunicações
+Obtenha um [anexo de anúncio de serviço](/graph/api/resources/serviceAnnouncementAttachment) a uma [mensagem de atualização de serviço](/graph/api/resources/serviceupdatemessage).
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Obtenha uma coleção de recursos de [revisão de acesso](/graph/api/resources/accessreviewreviewer) que é usada para definir revisores contatados para uma [instância de revisores de acesso](/graph/api/resources/accessReviewInstance).
+- Diferencie 3 tipos de recursos cujo acesso é representado por meio de uma [decisão de revisão de acesso](/graph/api/resources/accessreviewinstancedecisionitem):
+  - Uma [política de atribuição de pacote de acesso](/graph/api/resources/accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource) para a qual o acesso é determinado por uma decisão de revisão de acesso.
+  - Uma [função de recurso do Azure](/graph/api/resources/accessReviewInstanceDecisionItemAzureRoleResource) para a qual o acesso é determinado por uma decisão de revisão de acesso.
+  - Uma [entidade de serviço](/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource) cujo acesso a um recurso é determinado por uma decisão de revisão de acesso.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e login
+Imponha um [controle de sessão](/graph/api/resources/conditionalAccessSessionControls) (definindo a propriedade **disableResilienceDefaults**) para determinar se o Microsoft Azure AD deve estender as sessões existentes com base nas informações coletadas antes de uma interrupção.
+
+### <a name="teamwork"></a>Trabalho em equipe
+[Criar um chat](/graph/api/chat-post) usando as permissões do aplicativo.
+
+## <a name="january-2022-new-in-preview-only"></a>Janeiro de 2022: Novo somente na pré-visualização
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
+Obtenha a URL do site OneDrive for Business de um custodiante (propriedade **siteWebUrl** de [userSource](/graph/api/resources/ediscovery-userSource?view=graph-rest-beta&preserve-view=true).
+
+### <a name="devices-and-apps--cloud-pc"></a>Dispositivos e aplicativos | Computador na nuvem
+- Obtenha ou atualize as [configurações de uma organização](/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta&preserve-view=true), que incluem a versão do sistema operacional Windows para provisionar em PCs na nuvem e o tipo de conta de usuário nos PCs na nuvem provisionados.
+- [Altere o tipo de conta de usuário](/graph/api/cloudPC-changeUserAccountType?view=graph-rest-beta&preserve-view=true) em um PC na nuvem especificado.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- Os revisores de uma revisão de acesso podem [registrar](/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta&preserve-view=true) as decisões para as quais o usuário atual é o revisor.
+- Configure [a data e hora do último login de um usuário como um insight](/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta&preserve-view=true) para ajudar os revisores na tomada de decisões para uma [definição de cronograma de revisão de acesso](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+- Configure [a data e hora da última entrada de um usuário como um insight](/graph/api/resources/userSignInInsight?view=graph-rest-beta&preserve-view=true) para uma [decisão sobre o acesso de um usuário ou entidade de segurança em uma instância de uma revisão de acesso](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true).
+- O solicitante de um pacote de acesso pode fornecer informações personalizadas como parte de um [recurso de pacote de acesso](/graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true) que pode ser usado para tomar decisões de aprovação do pacote de acesso.
+- Um solicitante pode editar a resposta para a uma [pergunta](/graph/api/resources/accessPackageQuestion?view=graph-rest-beta&preserve-view=true) em uma [política de atribuição de pacote de acesso](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true).
+
+### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
+- Obtenha detalhes dos [métodos de autenticação registrados para um usuário](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true), como autenticação multifator, redefinição de senha de autoatendimento e autenticação sem senha.
+- Obtenha as seguintes propriedades para um evento de [entrada](/graph/api/resources/signIn?view=graph-rest-beta&preserve-view=true) de um usuário ou aplicativo em uma organização: 
+  - Qualquer contexto de autenticação de [acesso condicional](/graph/api/resources/authenticationContext?view=graph-rest-beta&preserve-view=true).
+  - Qualquer [política de duração da sessão](/graph/api/resources/sessionLifetimePolicy?view=graph-rest-beta&preserve-view=true) de acesso condicional.
+  - A ID de um recurso do Azure acessada durante a entrada.
+  - O identificador da credencial de identidade federada de um aplicativo, caso tenha sido usado para entrar.
+  - O identificador da entidade de serviço que representa o recurso de destino no evento de entrada.
+
+### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
+Obtenha relatórios de uso do Outlook, OneDrive e SharePoint para o Microsoft Cloud for US Government. Confira o resumo sobre [implantações na nuvem](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
+
+### <a name="sites-and-lists"></a>Sites e listas
+- Adicione ou sincronize um tipo de conteúdo do hub de tipo de conteúdo para um [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) ou [lista](/graph/api/resources/list?view=graph-rest-beta&preserve-view=true), usando a ação [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta&preserve-view=true). Isso torna um tipo de conteúdo ou sua atualização disponível para um site ou lista específica onde é necessário. Essa é uma melhoria da infraestrutura de sincronização herdada que envia o tipo de conteúdo para todos os sites de uma organização, reduzindo os tempos de espera para a propagação da publicação. 
+- Obtenha uma ou mais [operações avançadas e de longa duração](/graph/api/resources/richlongrunningoperation?view=graph-rest-beta&preserve-view=true) ocorrendo em um site ou lista, o que pode acontecer ao adicionar um tipo de conteúdo de forma síncrona.
+- Obtenha uma coleção de recursos de [tipo de conteúdo](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) do hub de tipo de conteúdo que são compatíveis usando a ação [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta&preserve-view=true). 
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Permita que os usuários escolham **LastModifiedDateTime** ou **CreatedDateTime** como a ordem de classificação ao [listar mensagens em um chat](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
+- Especifique a atribuição do usuário (na propriedade **onBehalfOf**) quando um bot envia uma [mensagem de chat](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em nome de um usuário.
+- Adicione os seguintes tipos de membros a um [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true):
+  - [Convidado anônimo](/graph/api/resources/anonymousGuestConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Usuário da conta Microsoft](/graph/api/resources/microsoftAccountUserConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Usuário do Skype for Business](/graph/api/resources/skypeForBusinessUserConversationMember?view=graph-rest-beta&preserve-view=true)
+  - [Skype usuário](/graph/api/resources/skypeUserConversationMember?view=graph-rest-beta&preserve-view=true)
+- Use a permissão delegada `TeamworkTag.Read` para ler [marcas](/graph/api/resources/teamworktag?view=graph-rest-beta&preserve-view=true) e [membros de marcas](/graph/api/resources/teamworktagmember?view=graph-rest-beta&preserve-view=true) no Teams, em nome do usuário conectado.
+
 
 ## <a name="december-2021-new-and-generally-available"></a>Dezembro de 2021: novo e disponível ao público geral
 
@@ -234,7 +336,7 @@ Atualizações mensais do Intune para a versão v1.0. No [changelog](https://dev
 Os provedores de controle de acesso baseado em função (RBAC) podem [gerenciar funções](/graph/api/resources/rolemanagement) do Azure Active Directory, [definindo ações de funções](/graph/api/resources/unifiedroledefinition)que podem ser realizadas em recursos específicos e [atribuindo funções](/graph/api/resources/unifiedroleassignment) aos usuários com base em tais definições de função, fornecendo o acesso correspondente a esses recursos.
 
 ### <a name="search--query"></a>Pesquisa | Consulta
-- Agregar resultados de pesquisa do tipo numérico ou cadeia de caracteres que são importados pelos [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) e que estão configurados no [esquema](/graph/api/resources/schema) para serem refináveis. Veja mais informações sobre [como refinar resultados de pesquisa usando agregações](search-concept-aggregation.md).
+- Agregue os resultados de pesquisa do tipo numéricos ou cadeia de caracteres que são importados pelos [Conectores do Microsoft Graph](/microsoftsearch/connectors-overview) e que estão definidos para serem refináveis no [esquema](/graph/api/resources/schema). Veja mais informações sobre o [refinamento dos resultados de pesquisa usando agregações](search-concept-aggregation.md).
 - [Classifique](/graph/api/resources/search-api-overview#sort-search-results) os resultados de pesquisa do OneDrive e do SharePoint em qualquer propriedade classificável. Para obter mais informações, consulte [Uso da API de Pesquisa da Microsoft para classificar resultados da pesquisa](search-concept-sort.md).
 
 ### <a name="teamwork"></a>Trabalho em equipe

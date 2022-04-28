@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getCredentialUsageSummary'
-description: Relatar o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendado.
-localization_priority: Normal
+description: Relate o estado atual de quantos usuários em sua organização estão usando recursos de redefinição de senha de autoatendimento.
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 56015afd7bc5589d518277df555ac511b7f91657
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5a059ed68c90a071d0027c059eb2470791be8cca
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131352"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65102945"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>reportRoot: getCredentialUsageSummary
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Relatar o estado atual de quantos usuários em sua organização usaram os recursos de redefinição de senha de autoatendado.
+Relate o estado atual de quantos usuários em sua organização usaram os recursos de redefinição de senha de autoatendimento.
 
 ## <a name="permissions"></a>Permissões
 
@@ -35,24 +35,24 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getCredentialUsageSummary
+GET /reports/getCredentialUsageSummary(period='{periodValue}')
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-Você pode usar o parâmetro de função a seguir para ajustar a resposta.
+Você deve usar o parâmetro de função a seguir para solicitar um período de tempo para a resposta.
 
 | Parâmetro | Tipo | Descrição |
 |:--------- |:---- |:----------- |
-| ponto | String | Especifica o período de tempo para o qual você precisa dos dados de uso. Por exemplo: `/reports/getCredentialUsageSummary(period='D30')`. Períodos com suporte: `D1` `D7` , e `D30` . O ponto não faz falta de maiúsculas e minúsculas. |
+| ponto | Cadeia de caracteres | Obrigatório. Especifica o período de tempo em dias para o qual você precisa dos dados de uso. Por exemplo: `/reports/getCredentialUsageSummary(period='D30')`. Períodos com suporte: `D1`, `D7`e `D30`. O período não diferencia maiúsculas de minúsculas. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esta função dá suporte ao parâmetro opcional de consulta OData **$filter**. Você pode aplicar **$filter** em uma ou mais das seguintes propriedades do [recurso credentialUsageSummary.](../resources/credentialusagesummary.md)
+Essa função dá suporte ao parâmetro de consulta OData **opcional $filter**. Você pode aplicar **$filter** em uma ou mais das propriedades a seguir do [recurso credentialUsageSummary](../resources/credentialusagesummary.md) .
 
 | Propriedades | Descrição e exemplo |
 |:---- |:----------- |
-| recurso | Especifica o tipo de dados de uso que você deseja (registro versus redefinição). Por exemplo: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Operadores de filtro com suporte: `eq` . |
+| Recurso | Especifica o tipo de dados de uso desejado (registro versus redefinição). Por exemplo: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Operadores de filtro com suporte: `eq`. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -67,7 +67,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta e um novo objeto da coleção `200 OK` [credentialUsageSummary](../resources/credentialusagesummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um novo objeto [da coleção credentialUsageSummary](../resources/credentialusagesummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso directoryObject
-description: Representa um objeto do Azure Active Directory. O tipo directoryObject é o tipo base para muitos outros tipos de entidade de diretório.
+description: Representa um objeto do Azure Active Directory. O tipo directoryObject é o tipo base para muitos outros tipos de entidade de diretório normalmente referido como objetos do diretório.
 ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4db8a25eac6d627b82d38e6d060d3098fc25baa6
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 196d95935171ab7b38559024b5d1ac46b84b7ae3
+ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335434"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65103010"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -18,7 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é o tipo básico de muitos outros tipos de entidade de diretório.
+Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é o tipo base para os seguintes tipos de entidade de diretório geralmente chamados de objetos de diretório:
+
++ [application](application.md)
++ [administrativeUnit](administrativeunit.md)
++ [directoryObject](directoryobject.md)
++ [directoryRole](directoryrole.md)
++ [device](device.md)
++ [group](group.md)
++ [orgContact](orgcontact.md)
++ [oAuth2PermissionGrant](oauth2permissiongrant.md)
++ [servicePrincipal](serviceprincipal.md)
++ [user](user.md)
 
 Esse recurso permite:
 
@@ -33,7 +44,7 @@ Esse recurso permite:
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há associação em uma lista especificada de grupos e retorne dessa lista os grupos dos quais o usuário, grupo, entidade de serviço especificado, contato organizacional, dispositivo ou objeto de diretório é membro. A verificação é transitória.|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Coleção de cadeias de caracteres|Retorna todos os grupos dos qual o usuário, grupo, entidade de serviço, contato organizacional, dispositivo ou objeto de diretório é membro. A verificação é transitória.|
 |[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Coleção de cadeias de caracteres|Verifica se há associação em uma lista de funções de grupo, unidades administrativas ou diretórios para o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório especificado. Esse método é transitório.|
-|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção String| Retorna todos os grupos, unidades administrativas e funções de diretório das quais o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório é membro. A verificação é transitória. |
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorna todos os grupos, unidades administrativas e funções de diretório das quais o usuário, grupo, dispositivo, contato organizacional ou objeto de diretório é membro. A verificação é transitória. |
 |[getByIds](../api/directoryobject-getbyids.md) | Coleção [directoryObject](directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
 |[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validar se o nome de exibição de um grupo do Microsoft 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
 |delta|Coleção [directoryObject](directoryObject.md)| Obtenha alterações incrementais para objetos de diretório, por exemplo, [usuários](../api/user-delta.md), [grupos](../api/group-delta.md), [aplicativos](../api/application-delta.md) e [entidades de serviço](../api/serviceprincipal-delta.md). Cada tipo derivado oferece suporte à filtragem pelo **id**. Para obter mais informações sobre consultas delta, consulte [Usar consulta delta para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview).|

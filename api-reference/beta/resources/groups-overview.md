@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 39855db405aeac9d6f8896e04fdd4fa25067cc0d
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 799fd82f5754d07a58fd570205f10fbe6d306f8a
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848528"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061129"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -59,11 +59,11 @@ O diferencial dos grupos da Microsoft 365 está na natureza cooperativa, perfeit
 O objeto JSON a seguir mostra um exemplo de representação de um grupo quando você chama a API de grupos do Microsoft Graph.
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "4c5ee71b-e6a5-4343-9e2c-4244bc7e0938",
     "deletedDateTime": null,
     "classification": "MBI",
@@ -98,7 +98,7 @@ Os **grupos de segurança habilitados para email** são usados da mesma forma qu
 O objeto JSON a seguir mostra um exemplo de representação de um grupo quando você chama a API de grupos do Microsoft Graph.
 
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -153,6 +153,16 @@ Para saber mais sobre a formulação de regras de associação, consulte [Regras
 ## <a name="other-types-of-groups"></a>Outros tipos de grupos
 
 Os grupos do Microsoft 365 no Yammer são usados para facilitar a colaboração de usuários por meio de postagens no Yammer. Esse tipo de grupo pode ser retornado por meio de uma solicitação de leitura, mas as postagens nele não podem ser acessadas por meio da API. Quando as postagens e os feeds de conversas do Yammer são habilitados em um grupo, as conversas padrão em grupo do Microsoft 365 são desabilitadas. Saiba mais em [Documentos de API do desenvolvedor do Yammer](https://developer.yammer.com/docs).
+
+## <a name="group-search-limitations-for-guest-users-in-organizations"></a>Limitações de pesquisas em grupo para usuários convidados em organizações
+
+As funcionalidades de pesquisa em grupo permitem que o aplicativo pesquise por quaisquer grupos no diretório de uma organização, realizando consultas contra o `/groups` recurso (por exemplo, `https://graph.microsoft.com/beta/groups`). Tanto os administradores quanto os usuários que são membros têm essa funcionalidade; no entanto, os usuários convidados não têm.
+
+Se o usuário conectado for um usuário convidado, dependendo das permissões concedidas a um aplicativo, ele poderá ler o perfil de um grupo específico (por exemplo, `https://graph.microsoft.com/beta/group/fc06287e-d082-4aab-9d5e-d6fd0ed7c8bc`); no entanto, ele não poderá realizar consultas em relação ao recurso `/groups` que potencialmente retorna mais de um único recurso.
+
+Com as permissões apropriadas, o aplicativo pode ler os perfis dos grupos obtidos seguindo os links nas propriedades de navegação; por exemplo, `/groups/{id}/members`.
+
+Para obter mais informações sobre o que os usuários convidados podem fazer com os grupos, consulte [Comparar permissões padrão de membros e convidados](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
 
 ## <a name="group-based-licensing"></a>Licenciamento com base em grupo
 

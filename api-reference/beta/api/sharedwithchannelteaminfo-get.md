@@ -5,19 +5,19 @@ author: devjha-ms
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 091dba268028c36ab5622b0ca800dc78330056d3
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 35d6fb0aa5323df0494d3ec3ccd2a4ae11ee9ae4
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704321"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65061136"
 ---
 # <a name="get-sharedwithchannelteaminfo"></a>Obter sharedWithChannelTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma [equipe](../resources/sharedwithchannelteaminfo.md) compartilhada com um [canal](../resources/channel.md). Esta operação é permitida somente para canais com valor **membershipType** de `shared`.
+Obtenha uma [equipe](../resources/sharedwithchannelteaminfo.md) que foi compartilhada em um [canal](../resources/channel.md) especificado. Esta operação é permitida somente para canais com valor **membershipType** de `shared`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

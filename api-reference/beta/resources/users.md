@@ -5,23 +5,25 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: conceptualPageType
-ms.openlocfilehash: fcf43ab888318ce0769db04d5b83994cb6762c58
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 2f36771ccc92bfec6fd4aeb723891a3a712c6269
+ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695578"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65059967"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode usar o Microsoft Graph para criar experiências envolventes do aplicativo com base nos usuários, em suas relações com outros usuários e em grupos e seus emails, calendário e arquivos.
+Você pode usar o Microsoft Graph para criar experiências de aplicativo atraentes com base em usuários, suas relações com outros usuários e grupos e os recursos que eles acessam como, por exemplo, seus emails, calendários, arquivos, funções administrativas e associações de grupo.
 
 Você pode acessar usuários pelo Microsoft Graph de duas maneiras:
 
 - Por sua ID, `/users/{id}`
 - Usando o alias `/me` para o usuário conectado, que é igual a `/users/{signed-in user's id}`
+
+Há dois tipos de usuários no Azure AD: membros e usuários convidados. Os usuários convidados ingressam na organização por meio do resgate de seu convite. Os usuários convidados podem ser convertidos em membros para aproveitar todos os privilégios dos membros.
 
 ## <a name="authorization"></a>Autorização
 
@@ -36,6 +38,16 @@ Uma das seguintes [permissões](/graph/permissions-reference) é necessária par
 - Directory.Read.All
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
+
+## <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>Limitações de pesquisa de usuário e grupo para usuários convidados em organizações
+
+Os recursos de pesquisa de usuário e grupo permitem que o aplicativo pesquise qualquer usuário ou grupo no diretório de uma organização, executando consultas no conjunto de recursos `/users` ou `/groups` (por exemplo, `https://graph.microsoft.com/v1.0/users`). Tanto administradores quanto usuários têm esse recurso. No entanto, os usuários convidados não.
+
+Se o usuário conectado for um convidado, dependendo das permissões que recebeu um aplicativo, ele pode ler o perfil de um usuário específico ou grupo (por exemplo, `https://graph.microsoft.com/v1.0/users/241f22af-f634-44c0-9a15-c8cd2cea5531`). No entanto, o usuário não pode executar consultas no conjunto de recursos `/users` ou `/groups` que, potencialmente, retornam mais de um recurso.
+
+Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou grupos que ele obtém seguindo os links nas propriedades de navegação. Por exemplo, `/users/{id}/directReports` ou `/groups/{id}/members`.
+
+Para obter mais informações sobre limitações de pesquisa para usuários convidados, consulte [Comparar permissões padrão de membro e convidado](/azure/active-directory/fundamentals/users-default-permissions#compare-member-and-guest-default-permissions).
 
 ## <a name="common-properties"></a>Propriedades comuns
 
