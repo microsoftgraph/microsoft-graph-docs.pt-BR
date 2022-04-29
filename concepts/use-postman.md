@@ -3,12 +3,12 @@ title: Use o Postman com a API do Microsoft Graph
 description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: ef4b7a6c990ce831b9f2a7ac10b9d828eded9c13
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 4071db82be82d52f6ec5ebd924fe6ed23b87643e
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368256"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133640"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 
@@ -47,11 +47,9 @@ Para usar essa coleção no próprio locatário de desenvolvedor, crie um aplica
 1. No menu à esquerda, selecione **Registros de aplicativo**.
 1. No menu horizontal, selecione **Novo registro**.
 1. Defina o **Nome do aplicativo** como `Postman`.
-1. No menu suspenso, selecione **Web**. 
-1. Defina a **URI de redirecionamento** como`https://oauth.pstmn.io/v1/callback`.
+1. No menu suspenso, selecione **Web**.
+1. Defina a **URI de redirecionamento** como`https://oauth.pstmn.io/v1/browser-callback`.
 1. Selecione **Registrar**.
-1. No menu esquerdo, selecione **Autenticação**.
-1. Em **Redirecionar URIs**, selecione **Adicionar URI**. Defina o valor para `https://app.getpostman.com/oauth2/callback` e selecione **Salvar**.
 1. No menu à esquerda, selecione **Permissões da API**.
 1. No menu horizontal, selecione **Adicionar uma permissão**, selecione **Microsoft Graph** e, em seguida, selecione **Permissões Delegadas**.
 1. Digite `Mail.`, expanda as opções de **Email** e marque **Mail.Read**.

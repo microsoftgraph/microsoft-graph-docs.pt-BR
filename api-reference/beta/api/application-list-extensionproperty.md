@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: ebcd0088a85fb1c272f44e0b335b1aa9f6f05477
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 83daf8f19974f1cda08efaf2bf6e51d82e745656
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016852"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133241"
 ---
 # <a name="list-extensionproperties"></a>Listar extensionProperties
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [objetos extensionProperty](../resources/extensionproperty.md) em um aplicativo.
+Recupere a lista de [objetos extensionProperty](../resources/extensionproperty.md) em um [aplicativo](../resources/application.md).
 
 ## <a name="permissions"></a>Permissões
 

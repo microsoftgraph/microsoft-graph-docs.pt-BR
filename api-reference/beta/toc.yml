@@ -12930,6 +12930,8 @@ items:
                     items:
                       - name: List
                         href: api/entitlementmanagement-list-accesspackageassignments.md
+                      - name: Acesso adicional
+                        href: api/accesspackageassignment-additionalaccess.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
                       - name: Reprocessar
@@ -13852,9 +13854,9 @@ items:
           - name: Análise (visualização)
             href: resources/useranalytics.md
             items:
-              - name: Settings
+              - name: Configurações
                 items:
-                  - name: Settings
+                  - name: Configurações
                     href: resources/settings.md
                   - name: Obter configurações
                     href: api/useranalytics-get-settings.md

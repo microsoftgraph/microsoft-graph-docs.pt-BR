@@ -5,26 +5,26 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d473b69481916a07afce30c7d401fc12ab826096
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e77ddef905bb429a69587e530f8daa29567004c6
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394009"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133710"
 ---
 # <a name="get-schema"></a>Obter esquema
 Namespace: microsoft.graph.externalConnectors
 
-Leia as propriedades e as relações de um [objeto de esquema](../resources/externalconnectors-schema.md) .
+Leia as propriedades e as relações de um [objeto de](../resources/externalconnectors-schema.md) esquema.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
-|Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
+|Delegado (conta corporativa ou de estudante)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Aplicativo| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -38,7 +38,7 @@ GET /external/connections/{connectionsId}/schema
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
+Esse método não dá suporte a [parâmetros de consulta OData](/graph/query-parameters) para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [de esquema](../resources/externalconnectors-schema.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e [um objeto de esquema](../resources/externalconnectors-schema.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

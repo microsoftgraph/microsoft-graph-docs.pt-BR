@@ -5,19 +5,19 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 508189bc61dcc7eec8f35da1b8733d72e957b0e0
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 66bf2b1f9b179fcef6f1b4754cf3316be0a067c1
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394940"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133731"
 ---
 # <a name="create-identity"></a>Criar identidade
 Namespace: microsoft.graph.externalConnectors
 
 
 
-Crie um [recurso](../resources/externalconnectors-identity.md) de identidade para um novo membro em [um externalGroup](../resources/externalconnectors-externalgroup.md).
+Crie um [recurso](../resources/externalconnectors-identity.md) de identidade para um novo membro em um [externalGroup](../resources/externalconnectors-externalgroup.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte                               |
+| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
-| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,23 +48,23 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do **objeto identity** .
+No corpo da solicitação, forneça uma representação JSON do **objeto de** identidade.
 
-Você pode especificar as seguintes propriedades ao criar um recurso **de** identidade para um membro em **um externalGroup**.
+Você pode especificar as propriedades a seguir ao criar um **recurso de** identidade para um membro em um **externalGroup**.
 
 | Propriedade       | Tipo                    | Descrição                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria o **objectId no** caso de Azure Active Directory ou grupos e **externalGroupId** no caso de grupos externos. Obrigatório.                                    |
+| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria a **objectId no** caso de Azure Active Directory ou grupos e **externalGroupId** no caso de grupos externos. Obrigatório.                                    |
 | type           | microsoft.graph.externalConnectors.identityType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user`,`group`, `externalGroup`. Obrigatório. |
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e **um objeto identity** no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um **objeto de** identidade no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um usuário Azure Active Directory como membro
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um Azure Active Directory usuário como membro
 
 #### <a name="request"></a>Solicitação
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um grupo Azure Active Directory como membro
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um Azure Active Directory como um membro
 
 #### <a name="request"></a>Solicitação
 
@@ -191,7 +191,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-add-another-external-group-as-a-member"></a>Exemplo 3: Adicionar outro grupo externo como membro
+### <a name="example-3-add-another-external-group-as-a-member"></a>Exemplo 3: Adicionar outro grupo externo como um membro
 
 #### <a name="request"></a>Solicitação
 

@@ -1,63 +1,63 @@
 ---
-title: 'Tutorial: use a API de críticas de acesso para revisar o acesso a funções privilegiadas'
-description: Usar a API de críticas de acesso para revisar o acesso a funções privilegiadas
+title: 'Tutorial: Usar a API de revisões de acesso para examinar o acesso a funções privilegiadas'
+description: Usar a API de revisões de acesso para examinar o acesso a funções privilegiadas
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: adc20b128a56094a0281589d38f9e99b1767b432
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 6f9dbee5b394c20ef6fd4a3b068b9dda59838902
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337890"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133087"
 ---
-# <a name="tutorial-use-the-access-reviews-api-to-review-access-to-privileged-roles"></a>Tutorial: use a API de críticas de acesso para revisar o acesso a funções privilegiadas
+# <a name="tutorial-use-the-access-reviews-api-to-review-access-to-privileged-roles"></a>Tutorial: Usar a API de revisões de acesso para examinar o acesso a funções privilegiadas
 
-A API de revisões de acesso no Microsoft Graph permite que as organizações auditem e atestem o acesso que as identidades (também chamadas de *entidades) são atribuídas* aos recursos na organização. Um dos recursos mais confidenciais de uma organização são funções privilegiadas. Com uma função privilegiada, uma entidade pode executar operações administrativas. Dependendo da função privilegiada, algumas operações podem ter um efeito maior na postura de segurança da organização. Usando a API de revisões de acesso, as organizações podem atestar periodicamente as entidades que têm acesso a funções privilegiadas de acordo com a política da organização.
+A API de revisões de acesso no Microsoft Graph permite que as organizações auditem e atestem o acesso que as identidades (também chamadas de entidades de segurança) são *atribuídas* aos recursos na organização. Um dos recursos mais confidenciais em uma organização são funções privilegiadas. Com uma função privilegiada, uma entidade de segurança pode executar operações administrativas. Dependendo da função privilegiada, algumas operações podem ter um efeito maior na postura de segurança da organização. Usando a API de revisões de acesso, as organizações podem atestar periodicamente as entidades de segurança que têm acesso a funções privilegiadas de acordo com a política da organização.
 
-A Contoso Limited é um provedor de serviços em crescimento que delegou vários privilégios de administrador do Azure AD a usuários, grupos e entidades de serviço na organização. A empresa precisa garantir que apenas os atribuídos certos tenham acesso a funções privilegiadas. Os auditores do sistema também devem auditar o histórico de revisão de acesso para relatar a eficácia dos controles internos da Contoso.
+A Contoso Limited é um provedor de serviços crescente que delegaram vários Azure AD de administrador a usuários, grupos e entidades de serviço na organização. A empresa precisa garantir que apenas os destinatários certos tenham acesso a funções privilegiadas. Os auditores do sistema também devem auditar o histórico de revisão de acesso para relatar a eficácia dos controles internos da Contoso.
 
-Neste tutorial, você usará a API de críticas de acesso para revisar periodicamente usuários e grupos com acesso a funções privilegiadas na Contoso. Esse acesso inclui funções ativas e qualificadas.
+Neste tutorial, você usará a API de revisões de acesso para examinar periodicamente usuários e grupos com acesso a funções privilegiadas na Contoso. Esse acesso inclui funções ativas e qualificadas.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
-+ Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
-+ Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de Administrador de Função Privilegiada.
-+ Entidades com atribuições ativas ou qualificadas para uma função privilegiada. Essas atribuições serão o escopo da revisão de acesso. Para atribuir funções privilegiadas, consulte [Tutorial: Use a API Privileged Identity Management (PIM) para atribuir funções do Azure AD](/graph/tutorial-assign-azureadroles).
-    + Neste tutorial, a função Administrador do Usuário é o recurso em revisão. Um grupo de segurança e um usuário individual foram atribuídos à função.
++ Um locatário Azure AD trabalho com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
++ Entre no [Graph Explorer como](https://developer.microsoft.com/graph/graph-explorer) um usuário em uma função de Administrador de Função Com Privilégios.
++ Entidades de segurança com atribuições ativas ou qualificadas para uma função privilegiada. Essas atribuições serão o escopo da revisão de acesso. Para atribuir funções privilegiadas, consulte [Tutorial: Usar a API Privileged Identity Management (PIM) para atribuir Azure AD funções](/graph/tutorial-assign-azureadroles).
+    + Neste tutorial, a função Administrador de Usuários é o recurso em revisão. Um grupo de segurança e um usuário individual foram atribuídos à função.
 + As seguintes permissões delegadas: `AccessReview.ReadWrite.All`.
 
 Para consentir com as permissões necessárias no Graph Explorer:
-1. Selecione o ícone de releições horizontais à direita dos detalhes da conta do usuário e escolha **Selecionar permissões**.
+1. Selecione o ícone de reticências horizontais à direita dos detalhes da conta de usuário e escolha **Selecionar permissões**.
 
-      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Selecione Permissões Graph Microsoft." border="true":::
+      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Selecione permissões Graph Microsoft." border="true":::
 
-2. Role a lista de permissões para **AccessReview (3)**, expanda e selecione `AccessReview.ReadWrite.All`. Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões.
+2. Percorra a lista de permissões para **AccessReview (3)**, expanda e selecione `AccessReview.ReadWrite.All`. Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões.
 
-      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consentimento para permissões Graph Microsoft." border="true":::
+      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consentir com permissões Graph Microsoft." border="true":::
 
 >[!NOTE]
->Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura.
+>Os objetos de resposta mostrados neste tutorial podem ser reduzidos para legibilidade.
 
-## <a name="step-1-create-an-access-review-of-privileged-role-assignments"></a>Etapa 1: Criar uma revisão de acesso de atribuições de função privilegiadas
+## <a name="step-1-create-an-access-review-of-privileged-role-assignments"></a>Etapa 1: Criar uma revisão de acesso de atribuições de função com privilégios
 
-Neste tutorial, criamos uma revisão de acesso recorrente de atribuições  ativas  e qualificadas para a função administrador do usuário. Um **accessReviewScheduleDefinition** pode ser usado para definir a revisão de acesso de vários tipos principais (usuários e grupos ou entidades de serviço) para apenas uma função privilegiada. Para revisar o acesso a várias funções privilegiadas, crie objetos **accessReviewScheduleDefinition** separados.
+Neste tutorial, criamos uma revisão de acesso recorrente de atribuições *ativas* e qualificadas para a função de Administrador do Usuário. Um **accessReviewScheduleDefinition** pode ser usado para definir a revisão de acesso de vários tipos de entidade de segurança (usuários e grupos ou entidades de serviço) para apenas uma função privilegiada. Para examinar o acesso a várias funções privilegiadas, crie objetos **accessReviewScheduleDefinition** separados.
 
-A definição de agenda de revisão de acesso a seguir tem as seguintes configurações:
+A seguinte definição de agendamento de revisão de acesso tem as seguintes configurações:
 
-+ O escopo da revisão é principal (**propriedade principalScopes** ) com acesso ao recurso especificado na **propriedade resourceScopes** . Nesse caso, as entidades principais são grupos e usuários, enquanto o recurso é a função Administrador do Usuário.
++ O escopo da revisão são entidades de segurança (**propriedade principalScopes** ) com acesso ao recurso especificado na **propriedade resourceScopes** . Nesse caso, as entidades de segurança são grupos e usuários, enquanto o recurso é a função de Administrador do Usuário.
 + As atribuições ativas e qualificadas para o recurso de função administrador do usuário estão em revisão.
 + Um usuário individual é selecionado como revistor. Neste exemplo, você será o revistor.
-+ O aprovador deve fornecer justificativa antes de aprovar o acesso à função privilegiada.
-+ A decisão padrão é `None` quando os revisadores não respondem à solicitação de revisão de acesso antes que a instância expire.
++ O aprovador deve fornecer uma justificativa antes de aprovar o acesso à função privilegiada.
++ A decisão padrão é `None` quando os revisores não respondem à solicitação de revisão de acesso antes que a instância expire.
 + **autoApplyDecisionsEnabled** não está definido e o padrão é `false`. Nesse caso, após a conclusão da revisão, as decisões não são aplicadas automaticamente, portanto, você deve aplicá-las manualmente.
-+ A revisão é recorrência a cada três meses em um período de três dias e não termina.
++ A revisão se repetirá a cada três meses em um período de três dias e não terminará.
 
 ### <a name="request"></a>Solicitação
 
-Na solicitação a seguir, substitua o `f674a1c9-4a40-439c-bfa3-4b61a9f29d85` pelo valor da ID do usuário. A funçãoDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` é o identificador de modelo global para a função administrador do usuário no Azure AD.
+Na solicitação a seguir, substitua o `f674a1c9-4a40-439c-bfa3-4b61a9f29d85` valor da ID de usuário. O roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` é o identificador de modelo global para a função de Administrador de Usuários no Azure AD.
 
 <!-- {
   "blockType": "request",
@@ -87,7 +87,7 @@ Content-type: application/json
         "resourceScopes": [
             {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/roleManagement/directory/roleDefinitions/beta/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1",
+                "query": "/roleManagement/directory/roleDefinitions/fe930be7-5e62-47db-91af-98c3a49a38b1",
                 "queryType": "MicrosoftGraph"
             }
         ]
@@ -215,7 +215,7 @@ Content-type: application/json
 
 ## <a name="step-2-retrieve-instances-of-the-access-review"></a>Etapa 2: Recuperar instâncias da revisão de acesso
 
-Cada instância de revisão de acesso *representa cada recorrência com cada recurso exclusivo* que está sob revisão. Na Etapa 1, apenas o recurso de função administrador do usuário foi definido no escopo. Como você definiu uma revisão de acesso recorrente, a ID da instância é diferente da ID da definição de agendamento na Etapa 1.
+Cada instância de revisão de *acesso representa cada recorrência com cada recurso exclusivo* que está em revisão. Na Etapa 1, somente o recurso de função administrador do usuário foi definido no escopo. Como você definiu uma revisão de acesso recorrente, a ID da instância é diferente da ID da definição de agenda na Etapa 1.
 
 ### <a name="request"></a>Solicitação
 
@@ -231,7 +231,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### <a name="response"></a>Resposta
 
-Nesta resposta, o objeto instance mostra a data de término como três dias após a data de início; esse período foi definido na Etapa 1 na **propriedade instanceDurationInDays** do **objeto accessReviewScheduleDefinition** . *Somente uma instância é retornada representando a primeira recorrência de apenas um recurso sob revisão.*
+Nessa resposta, o objeto de instância mostra a data de término como três dias após a data de início; esse período foi definido na Etapa 1 na propriedade **instanceDurationInDays** do **objeto accessReviewScheduleDefinition** . *Apenas uma instância é retornada representando a primeira recorrência de apenas um recurso em revisão.*
 
 <!-- {
   "blockType": "response",
@@ -289,18 +289,18 @@ Content-type: application/json
 }
 ```
 
-O status dessa instância de revisão de acesso é `InProgress`. Um `InProgress` status significa que a instância de revisão está aberta para os revisadores enviarem decisões, e o período para essa instância de revisão de acesso não expirou. Você também recebeu uma notificação de email Microsoft Azure solicitando que você execute a revisão de acesso.
+O status dessa instância de revisão de acesso é `InProgress`. Um `InProgress` status significa que a instância de revisão está aberta para que os revisores enviem decisões e o período para essa instância de revisão de acesso não expirou. Você também recebeu uma notificação por email Microsoft Azure solicitando que você execute a revisão de acesso.
 
-## <a name="step-3-retrieve-access-review-decisions-before-recording-any-decisions"></a>Etapa 3: recuperar decisões de revisão de acesso antes de registrar qualquer decisão
+## <a name="step-3-retrieve-access-review-decisions-before-recording-any-decisions"></a>Etapa 3: Recuperar decisões de revisão de acesso antes de registrar qualquer decisão
 
-Antes de poder postar decisões, vamos primeiro inspecionar os itens aguardando sua decisão.
+Antes que você possa postar decisões, primeiro vamos inspecionar os itens aguardando sua decisão.
 
 ### <a name="request"></a>Solicitação
 
 Na solicitação a seguir, substitua os seguintes valores:
 
 + `57457d7c-af59-470c-ae71-aa72c657fe0f` com o valor da revisão de acesso que você criou na Etapa 1.
-+ `ad0dd148-5d16-4cfd-86e9-ab502f819aaf` com o valor da instância de revisão de acesso para a que você gostaria de recuperar decisões.
++ `ad0dd148-5d16-4cfd-86e9-ab502f819aaf` com o valor da instância de revisão de acesso para a qual você gostaria de recuperar decisões.
 
 <!-- {
   "blockType": "request",
@@ -312,10 +312,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### <a name="response"></a>Resposta
 
-A resposta a seguir mostra dois itens de decisão cada correspondentes a uma decisão por acesso de uma entidade ao recurso.
+A resposta a seguir mostra dois itens de decisão, cada um correspondente a uma decisão por acesso de uma entidade de segurança ao recurso.
 
-+ A propriedade principal mostra que duas entidades têm acesso à função administrador do usuário, um grupo chamado Ajuda **de IT (Usuário)** e um usuário chamado **Aline Dupuy**.
-+ O `NotReviewed` valor da **propriedade decision** indica que os revisadores não revisaram e postaram suas decisões.
++ A propriedade principal mostra que duas entidades de segurança têm acesso à função de Administrador de Usuários : um grupo chamado Assistência Técnica de TI **(Usuário)** e um usuário chamado **Aline Dupuy**.
++ O `NotReviewed` valor da **propriedade de** decisão indica que os revisores não revisaram e publicaram suas decisões.
 + Nenhuma recomendação está disponível porque as recomendações não foram habilitadas no **accessReviewScheduleDefinition** na Etapa 1.
 
 <!-- {
@@ -406,26 +406,26 @@ Content-type: application/json
 }
 ```
 
-Como revistor, agora você pode enviar suas decisões para a instância de revisão de acesso.
+Como revisador, agora você pode enviar suas decisões para a instância de revisão de acesso.
 
-## <a name="step-4-record-decisions"></a>Etapa 4: Decisões de registro
+## <a name="step-4-record-decisions"></a>Etapa 4: Registrar decisões
 
 Agora você registrará decisões para a revisão de acesso.
 
-A política da empresa exige que o acesso a funções privilegiadas seja concedido apenas a grupos e não a usuários individuais. Em conformidade com a política da empresa, você negará o acesso de Aline Dupuy ao aprovar o acesso ao grupo.
+A política da empresa exige que o acesso a funções privilegiadas seja concedido somente a grupos e não a usuários individuais. Em conformidade com a política da empresa, você negará o acesso de Aline Dupuy ao aprovar o acesso ao grupo.
 
 Nas solicitações a seguir, substitua os seguintes valores:
 
 + `57457d7c-af59-470c-ae71-aa72c657fe0f` com o valor da revisão de acesso que você criou na Etapa 1
 + `ad0dd148-5d16-4cfd-86e9-ab502f819aaf` com o valor da instância de revisão de acesso que você gostaria de recuperar decisões para
-+ `4d79fbf6-36e6-430b-ba0a-2a727a480303` com o valor da instância de revisão de acesso com escopo para o acesso de Aline
-+ `62fd1c5b-04b8-4703-9fd7-dce6232c3775` com o valor da instância de revisão de acesso com escopo para o acesso do grupo do Helpdesk de IT
++ `4d79fbf6-36e6-430b-ba0a-2a727a480303` com o valor da instância de revisão de acesso com escopo para acesso de Aline
++ `62fd1c5b-04b8-4703-9fd7-dce6232c3775` com o valor da instância de revisão de acesso com escopo para o acesso do grupo de assistência técnica de TI
 
 ### <a name="approve-the-security-groups-role-assignment"></a>Aprovar a atribuição de função do grupo de segurança
 
 #### <a name="request"></a>Solicitação
 
-Na solicitação a seguir, você aprova o acesso para o grupo de Ajuda de TI.
+Na solicitação a seguir, você aprova o acesso para o grupo de Assistência Técnica de TI.
 
 <!-- {
   "blockType": "request",
@@ -450,11 +450,11 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="deny-the-individual-user-their-role-assignment"></a>Negar ao usuário individual sua atribuição de função
+### <a name="deny-the-individual-user-their-role-assignment"></a>Negar a atribuição de função ao usuário individual
 
 #### <a name="request"></a>Solicitação
 
-Na solicitação a seguir, você nega acesso a Aline Dupuy.
+Na solicitação a seguir, você nega o acesso para Aline Dupuy.
 
 <!-- {
   "blockType": "request",
@@ -481,22 +481,22 @@ HTTP/1.1 204 No Content
 ```
 
 Quando você recupera as decisões de revisão de acesso (repita a Etapa 3), elas têm as seguintes configurações:
-+ A decisão de revisão de acesso para o grupo do Helpdesk de IT é `Approve` enquanto para Aline é `Deny`.
++ A decisão de revisão de acesso para o grupo de Assistência Técnica de TI é `Approve` , enquanto para Aline é `Deny`.
 + O objeto reviewedBy contém seus detalhes como revisores.
 + ApplyResult significa `New` que as decisões não foram aplicadas.
 
-Embora você tenha gravado todas as decisões pendentes para esta instância, as decisões não foram aplicadas aos objetos de recurso e principais. Por exemplo, Aline ainda tem acesso à função privilegiada. Você pode verificar essa atribuição executando a seguinte consulta `https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'`. Esse comportamento é porque **o autoApplyDecisionsEnabled** `false`foi definido como , você não interrompeu a revisão e o período de instância não terminou.
+Embora você tenha registrado todas as decisões pendentes para essa instância, as decisões não foram aplicadas aos objetos de recurso e de entidade de segurança. Por exemplo, a Aline ainda tem acesso à função privilegiada. Você pode verificar essa atribuição executando a consulta a seguir `https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'`. Esse comportamento ocorre porque **o autoApplyDecisionsEnabled** `false`foi definido como , você não interrompeu a revisão e o período de instância não foi encerrado.
 
-Neste tutorial, você não interromperá a instância manualmente, mas a deixará terminar automaticamente e aplicará as decisões.
+Neste tutorial, você não interromperá a instância manualmente, mas permitirá que ela termine automaticamente e aplique as decisões.
 
 > [!TIP]
 >
-> 1. Até que **o status** da instância de revisão de acesso seja marcado como `Completed`, você ainda pode alterar as decisões. Reprise a etapa 4 para aplicar decisões diferentes para as entidades de entidades.
-> 2. Você também pode interromper manualmente a instância de revisão de acesso para que possa acelerar seu progresso para a Etapa 5.
+> 1. Até que **o status** da instância de revisão de acesso seja marcado como `Completed`, você ainda poderá alterar as decisões. Execute novamente a etapa 4 para aplicar decisões diferentes para as entidades de segurança.
+> 2. Você também pode interromper manualmente a instância de revisão de acesso para que possa agilizar seu progresso para a Etapa 5.
 
-## <a name="step-5-apply-access-review-decisions"></a>Etapa 5: aplicar decisões de revisão de acesso
+## <a name="step-5-apply-access-review-decisions"></a>Etapa 5: Aplicar decisões de revisão de acesso
 
-Como administrador, depois **que o status** da instância de revisão de acesso for definido como `Completed`, você pode aplicar as decisões.
+Como administrador, depois que **o status da** instância de revisão de acesso for definido `Completed`como, você poderá aplicar as decisões.
 
 ### <a name="request"></a>Solicitação
 <!-- {
@@ -516,13 +516,13 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 HTTP/1.1 204 No Content
 ```
 
-Aline agora perdeu o acesso à função de Administrador do Usuário enquanto o grupo de Ajuda de IT mantém seu acesso. Você pode verificar esse estado de atribuição de função executando a seguinte consulta `https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'`.
+O Aline agora perdeu o acesso à função de Administrador de Usuários enquanto o grupo de Assistência Técnica de TI manteve seu acesso. Você pode verificar esse estado de atribuição de função executando a consulta a seguir `https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq 'fe930be7-5e62-47db-91af-98c3a49a38b1'`.
 
-Depois que as decisões foram aplicadas, **o status** da instância de revisão de acesso será `Applied`. Além disso, como criamos uma revisão de acesso recorrente na Etapa 1, uma nova instância será iniciada. Sua data de início será de três meses a partir do momento em que o período de revisão atual for marcado como tendo terminado.
+Depois que as decisões tiverem sido aplicadas, **o status** da instância de revisão de acesso será `Applied`. Além disso, como criamos uma revisão de acesso recorrente na Etapa 1, uma nova instância será iniciada. Sua data de início será de três meses a partir do momento em que o período de revisão atual estiver marcado como tendo terminado.
 
 ## <a name="step-6-retrieve-access-review-decisions"></a>Etapa 6: Recuperar decisões de revisão de acesso
 
-Os auditores da Contoso estão revendo todas as decisões para conceder ou negar acesso a funções privilegiadas na organização. Você recuperará logs de decisão de revisão de acesso para todas as avaliações de acesso com escopo para funções privilegiadas. Neste exemplo, você recuperará logs de decisão para **o accessReviewScheduleDefinition** criado na Etapa 1.
+Os auditores da Contoso estão revisando todas as decisões para conceder ou negar acesso a funções privilegiadas na organização. Você recuperará os logs de decisão de revisão de acesso para todas as revisões de acesso com escopo para funções privilegiadas. Neste exemplo, você recuperará os logs de decisão para **o accessReviewScheduleDefinition** criado na Etapa 1.
 
 ### <a name="request"></a>Solicitação
 <!-- {
@@ -536,7 +536,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 ### <a name="response"></a>Resposta
 
 O seguinte objeto de resposta é diferente do objeto de resposta recebido na Etapa 3 com as seguintes configurações:
-+ A decisão de revisão **de** acesso para o Helpdesk de IT é `Approve` enquanto para Aline é `Deny`.
++ A decisão de revisão **de** acesso para a Assistência Técnica de TI é `Approve` enquanto para Aline é `Deny`.
 + O **objeto reviewedBy** contém seus detalhes básicos como revisores.
 
 <!-- {
@@ -642,7 +642,7 @@ In the following request, an empty **decisions** object means all decisions rela
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDefinitions
 
 {
     "displayName": "Last quarter's access reviews for privileged roles - User Administrator",
@@ -666,7 +666,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/historyDefinitions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/historyDefinitions/$entity",
     "id": "983db508-b77b-427d-ab90-a4041efa658d",
     "displayName": "Last quarter's access reviews for privileged roles - User Administrator",
     "reviewHistoryPeriodStartDateTime": "2022-03-01T00:00:00Z",
@@ -704,7 +704,7 @@ Content-type: application/json
 #### Request
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/983db508-b77b-427d-ab90-a4041efa658d/instances
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDefinitions/983db508-b77b-427d-ab90-a4041efa658d/instances
 ```
 
 #### Response
@@ -714,7 +714,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/historyDefinitions('983db508-b77b-427d-ab90-a4041efa658d')/instances",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/historyDefinitions('983db508-b77b-427d-ab90-a4041efa658d')/instances",
     "value": [
         {
             "id": "983db508-b77b-427d-ab90-a4041efa658d",
@@ -734,7 +734,7 @@ Content-type: application/json
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/983db508-b77b-427d-ab90-a4041efa658d/instances/983db508-b77b-427d-ab90-a4041efa658d/generateDownloadUri()
+POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDefinitions/57457d7c-af59-470c-ae71-aa72c657fe0f/instances/983db508-b77b-427d-ab90-a4041efa658d/generateDownloadUri()
 ```
 
 #### Response
@@ -744,7 +744,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessReviewHistoryInstance",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#accessReviewHistoryInstance",
     "@odata.type": "#microsoft.graph.accessReviewHistoryInstance",
     "id": "a222f18d-5cf5-4210-874c-14d0a7d930b3",
     "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
@@ -761,7 +761,7 @@ The downloadUri property contains a link to download the history report in an Ex
 -->
 ## <a name="step-7-clean-up-resources"></a>Etapa 7: Limpar recursos
 
-**Exclua o objeto accessReviewScheduleDefinition** criado para este tutorial. Como a definição de agenda de revisão de acesso é o plano para a revisão de acesso, excluir a definição removerá as configurações, instâncias, decisões.
+**Exclua o objeto accessReviewScheduleDefinition** criado para este tutorial. Como a definição do agendamento de revisão de acesso é o blueprint para a revisão de acesso, a exclusão da definição removerá as configurações, instâncias e decisões.
 
 ### <a name="request"></a>Solicitação
 <!-- {
@@ -769,7 +769,7 @@ The downloadUri property contains a link to download the history report in an Ex
   "name": "tutorial-accessreviews-priviegedroles-deleteaccessreview"
 }-->
 ```msgraph-interactive
-DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
+DELETE https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/57457d7c-af59-470c-ae71-aa72c657fe0f
 ```
 
 ### <a name="response"></a>Resposta
@@ -783,10 +783,10 @@ HTTP/1.1 204 No Content
 
 ## <a name="conclusion"></a>Conclusão
 
-Você aprendeu a revisar o acesso a funções privilegiadas no Azure AD. Sua organização pode usar a API de críticas de acesso para reger continuamente o acesso privilegiado a seus recursos, incluindo funções do Azure AD e funções de recurso do Azure. Além de usuários e grupos, você também pode revisar o acesso de aplicativos e entidades de serviço a funções privilegiadas.
+Você aprendeu a examinar o acesso a funções privilegiadas no Azure AD. Sua organização pode usar a API de revisões de acesso para controlar continuamente o acesso privilegiado a seus recursos, incluindo funções Azure AD funções de recurso do Azure. Além de usuários e grupos, você também pode examinar o acesso de aplicativos e entidades de serviço a funções privilegiadas.
 
 ## <a name="see-also"></a>Confira também
 
-+ [Referência da API de avaliações do Access](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Configurar o escopo da definição de revisão de acesso usando a API do Microsoft Graph](/graph/accessreviews-scope-concept)
++ [Referência da API de revisões de acesso](/graph/api/resources/accessreviewsv2-root)
++ [Configurar o escopo da definição de revisão de acesso usando o Microsoft API do Graph](/graph/accessreviews-scope-concept)
 + [Saiba mais sobre o gerenciamento de acesso privilegiado](/microsoft-365/compliance/privileged-access-management-overviewe)

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2d23fcfb568951e9797d76c2fc0080782ee5435b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: efa2c3c3390f9414d9352a18a8e79855e3a69a0a
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395038"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133171"
 ---
 # <a name="create-schema"></a>Criar esquema
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie o esquema para uma conexão Pesquisa da Microsoft[.](../resources/externalconnectors-externalconnection.md)
+Crie o esquema para uma conexão Pesquisa da Microsoft [configuração](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalConnection.ReadWrite.OwnedBy |
+| Aplicativo                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,17 +44,17 @@ POST /external/connections/{id}/schema
 |:----------------------|:-------------------------------------------------------------------|
 | Autorização         | {token} de portador. Obrigatório.                                          |
 | Content-Type          | application/json. Obrigatório.                                        |
-| Prefer: respond-async | Use isso para fazer com que a solicitação seja executada de forma assíncrona. Opcional. |
+| Preferir: respond-async | Use isso para fazer com que a solicitação seja executada de forma assíncrona. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto de esquema](../resources/externalconnectors-schema.md) .
+No corpo da solicitação, forneça uma representação JSON de um [objeto de](../resources/externalconnectors-schema.md) esquema.
 
-Quando você registra um esquema de item personalizado, o objeto **de esquema** deve ter a **propriedade baseType** definida como `microsoft.graph.externalItem` e **deve** conter a **propriedade properties**. O **objeto properties** **deve** conter pelo menos uma propriedade, até um máximo de 128.
+Quando você registra um esquema de item personalizado, o objeto **de** esquema  deve ter a **propriedade baseType** definida como `microsoft.graph.externalItem` e **deve conter a** **propriedade properties**. O **objeto** de **propriedades** deve conter pelo menos uma propriedade, até um máximo de 128.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `202 Accepted` um código de resposta e uma URL `Location` no header de resposta que podem ser usados para [obter o status da operação](../api/externalconnectors-connectionoperation-get.md).
+Se bem-sucedido, este método retorna `202 Accepted` um código de resposta e uma URL `Location` no cabeçalho de resposta que pode ser usado para [obter o status da operação](../api/externalconnectors-connectionoperation-get.md).
 
 ## <a name="examples"></a>Exemplos
 

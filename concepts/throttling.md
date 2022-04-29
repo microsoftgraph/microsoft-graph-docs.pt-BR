@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: deec2846b8f8490bf7005be46b19ad282c2cbae6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 6f37fdf90f510a650f2b1d13c42e83636c22697a
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588929"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133346"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -164,9 +164,8 @@ Você pode encontrar informações adicionais sobre as práticas recomendadas no
 
 Os limites anteriores se aplicam aos seguintes recursos:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
+- [activityHistoryItem](/graph/api/resources/activityhistoryitem)
+- [userActivity](/graph/api/resources/useractivity)
 
 ### <a name="microsoft-teams-service-limits"></a>Limites do serviço do Microsoft Teams
 
@@ -342,9 +341,10 @@ Os seguintes limites se aplicam a qualquer pedido em `me/insights` ou `users/{id
 
 Os limites anteriores se aplicam aos seguintes recursos:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [Pessoas](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [tendências](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+- [Pessoas](/graph/api/resources/people)
+- [sharedInsight](/graph/api/resources/sharedinsight)
+- [tendências](/graph/api/resources/trending)
+- [usedInsight](/graph/api/resources/usedinsight)
 
 
 ### <a name="microsoft-graph-reports-service-limits"></a>Limites do serviço de relatórios do Microsoft Graph
@@ -412,9 +412,7 @@ As informações anteriores se aplicam aos seguintes recursos:[!INCLUDE [Tasks a
 
 Os limites anteriores se aplicam aos seguintes recursos:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
+- [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
 > **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` nas respostas `429 Too Many Requests`.
 
@@ -491,9 +489,10 @@ Os limites a seguir se aplicam às solicitações no serviço de atribuição AP
 
 Os limites anteriores se aplicam aos seguintes recursos:
 
-| <!-- fake header--> |
-|--|
-| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [tendências](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|
+- [educationAssignment](/graph/api/resources/educationassignment)
+- [educationSubmission](/graph/api/resources/educationsubmission)
+- [tendências](/graph/api/resources/trending)
+- [educationResource](/graph/api/resources/educationresource)
 
 ### <a name="service-communications-service-limits"></a>Limites do Serviço de Comunicações
 Os limites a seguir se aplicam a qualquer tipo de solicitação de comunicações de serviço em `/admin/serviceAnnouncement/`.

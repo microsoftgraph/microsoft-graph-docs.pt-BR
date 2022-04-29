@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f2f5cea589544f86a7743b126b7fcea81cc0fec4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b050a2f979e3bdc55461dd76d35a8b5b9d761ebf
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396354"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133521"
 ---
 # <a name="get-connectionoperation"></a>Obter connectionOperation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de [uma connectionOperation](../resources/externalconnectors-connectionoperation.md).
+Recupere as propriedades de uma [connectionOperation](../resources/externalconnectors-connectionoperation.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalConnection.ReadWrite.OwnedBy |
+| Aplicativo                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [connectionOperation](../resources/externalconnectors-connectionoperation.md) solicitado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e o objeto [connectionOperation solicitado](../resources/externalconnectors-connectionoperation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

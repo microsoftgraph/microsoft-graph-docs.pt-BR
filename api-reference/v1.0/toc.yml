@@ -508,7 +508,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para o usuário
                 href: api/chat-list.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -532,7 +532,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Grupo
+          - name: Group
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -829,7 +829,7 @@ items:
               - name: Modelo de aplicativo
                 href: resources/applicationtemplate.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/applicationtemplate-list.md
                   - name: Obter
                     href: api/applicationtemplate-get.md
@@ -1310,7 +1310,7 @@ items:
               - name: Participante
                 href: resources/participant.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/call-list-participants.md
                   - name: Obter
                     href: api/participant-get.md
@@ -1380,7 +1380,7 @@ items:
               - name: Relatório de participação
                 href: resources/meetingAttendanceReport.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/meetingattendancereport-list.md
                   - name: Obter
                     href: api/meetingattendancereport-get.md
@@ -1563,7 +1563,7 @@ items:
               - name: Conector de impressão
                 href: resources/printconnector.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/print-list-connectors.md
                   - name: Obter
                     href: api/printconnector-get.md
@@ -1708,7 +1708,7 @@ items:
               - name: Serviço de impressão
                 href: resources/printservice.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/print-list-services.md
                   - name: Obter
                     href: api/printservice-get.md
@@ -3889,7 +3889,7 @@ items:
                   - name: Parceiro de gerenciamento de conformidade
                     href: resources/intune-onboarding-compliancemanagementpartner.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-onboarding-compliancemanagementpartner-list.md
                       - name: Obter
                         href: api/intune-onboarding-compliancemanagementpartner-get.md
@@ -4243,7 +4243,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: Atualizar
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
-          - name: Comunicações e integridade do serviço
+          - name: Comunicações e Integridade do serviço
             items:
               - name: Visão Geral
                 href: resources/service-communications-api-overview.md
@@ -4668,7 +4668,7 @@ items:
               - name: Chave de recuperação do BitLocker
                 href: resources/bitlockerrecoverykey.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/bitlocker-list-recoverykeys.md
                   - name: Obter
                     href: api/bitlockerrecoverykey-get.md
@@ -4807,7 +4807,7 @@ items:
               - name: Contatos organizacionais
                 href: resources/orgcontact.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/orgcontact-list.md
                   - name: Obter
                     href: api/orgcontact-get.md
@@ -4866,6 +4866,101 @@ items:
                         href: api/unifiedroleassignment-get.md
                       - name: Excluir
                         href: api/unifiedroleassignment-delete.md
+                  - name: Privileged Identity Management
+                    items:
+                      - name: Visão Geral
+                        displayName: 'Privileged identity management, PIM'
+                        href: resources/privilegedidentitymanagementv3-overview.md
+                      - name: Atribuições de função
+                        items:
+                          - name: Agendar solicitações
+                            href: resources/unifiedroleassignmentschedulerequest.md
+                            items:
+                              - name: Listar
+                                href: api/rbacapplication-list-roleassignmentschedulerequests.md
+                              - name: Criar
+                                href: api/rbacapplication-post-roleassignmentschedulerequests.md
+                              - name: Obter
+                                href: api/unifiedroleassignmentschedulerequest-get.md
+                              - name: Cancelar
+                                href: api/unifiedroleassignmentschedulerequest-cancel.md
+                              - name: Filtrar pelo usuário atual
+                                href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+                          - name: Agendamento
+                            href: resources/unifiedroleassignmentschedule.md
+                            items:
+                              - name: Lista
+                                href: api/rbacapplication-list-roleassignmentschedules.md
+                              - name: Obter
+                                href: api/unifiedroleassignmentschedule-get.md
+                              - name: Filtrar pelo usuário atual
+                                href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+                          - name: Agendar instâncias
+                            href: resources/unifiedroleassignmentscheduleinstance.md
+                            items:
+                              - name: Lista
+                                href: api/rbacapplication-list-roleassignmentscheduleinstances.md
+                              - name: Obter
+                                href: api/unifiedroleassignmentscheduleinstance-get.md
+                              - name: Filtrar pelo usuário atual
+                                href: api/unifiedroleassignmentscheduleinstance-filterbycurrentuser.md
+                      - name: Qualificação de função
+                        items:
+                          - name: Agendar solicitações
+                            href: resources/unifiedroleeligibilityschedulerequest.md
+                            items:
+                              - name: Listar
+                                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
+                              - name: Criar
+                                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
+                              - name: Obter
+                                href: api/unifiedroleeligibilityschedulerequest-get.md
+                              - name: Cancelar
+                                href: api/unifiedroleeligibilityschedulerequest-cancel.md
+                              - name: Filtrar pelo usuário atual
+                                href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+                          - name: Agendamento
+                            href: resources/unifiedroleeligibilityschedule.md
+                            items:
+                              - name: Lista
+                                href: api/rbacapplication-list-roleeligibilityschedules.md
+                              - name: Obter
+                                href: api/unifiedroleeligibilityschedule-get.md
+                              - name: Filtrar pelo usuário atual
+                                href: api/unifiedroleeligibilityschedule-filterbycurrentuser.md
+                          - name: Agendar instâncias
+                            href: resources/unifiedroleeligibilityscheduleinstance.md
+                            items:
+                              - name: Lista
+                                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
+                              - name: Obter
+                                href: api/unifiedroleeligibilityscheduleinstance-get.md
+                              - name: Filtrar pelo usuário atual
+                                href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: Políticas de gerenciamento de funções
+                        items:
+                          - name: Políticas e regras
+                            displayName: 'role management policies, Azure AD role settings'
+                            href: resources/unifiedrolemanagementpolicy.md
+                            items:
+                              - name: Lista
+                                href: api/policyroot-list-rolemanagementpolicies.md
+                              - name: Obter
+                                href: api/unifiedrolemanagementpolicy-get.md
+                              - name: Listar regras
+                                href: api/unifiedrolemanagementpolicy-list-rules.md
+                              - name: Obter regra
+                                href: api/unifiedrolemanagementpolicyrule-get.md
+                              - name: Atualizar regra
+                                href: api/unifiedrolemanagementpolicyrule-update.md
+                          - name: Atribuições de política
+                            displayName: role managemement policy assignments
+                            href: resources/unifiedrolemanagementpolicyassignment.md
+                            items:
+                              - name: Lista
+                                href: api/policyroot-list-rolemanagementpolicyassignments.md
+                              - name: Obter
+                                href: api/unifiedrolemanagementpolicyassignment-get.md
           - name: Identidade e entrada
             items:
               - name: Métodos de autenticação
@@ -4880,7 +4975,7 @@ items:
                   - name: Chaves de segurança FIDO2
                     href: resources/fido2authenticationmethod.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/fido2authenticationmethod-list.md
                       - name: Obter
                         href: api/fido2authenticationmethod-get.md
@@ -4889,7 +4984,7 @@ items:
                   - name: Microsoft Authenticator
                     href: resources/microsoftauthenticatorauthenticationmethod.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/microsoftauthenticatorauthenticationmethod-list.md
                       - name: Obter
                         href: api/microsoftauthenticatorauthenticationmethod-get.md
@@ -4898,7 +4993,7 @@ items:
                   - name: Windows Hello para Empresas
                     href: resources/windowshelloforbusinessauthenticationmethod.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/windowshelloforbusinessauthenticationmethod-list.md
                       - name: Obter
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
@@ -4937,7 +5032,7 @@ items:
                         items:
                           - name: Local nomeado
                             href: resources/namedlocation.md
-                          - name: Listar
+                          - name: Lista
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: Obter
                             href: api/namedlocation-get.md
@@ -4997,7 +5092,7 @@ items:
                   - name: Detecção de risco
                     href: resources/riskdetection.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/riskdetection-list.md
                       - name: Obter
                         href: api/riskdetection-get.md
@@ -5329,7 +5424,7 @@ items:
                   - name: Definição de agendamento de revisão de acesso
                     href: resources/accessreviewscheduledefinition.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/accessreviewset-list-definitions.md
                       - name: Obter
                         href: api/accessreviewscheduledefinition-get.md
@@ -5344,7 +5439,7 @@ items:
                   - name: Instância de revisão de acesso
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/accessreviewscheduledefinition-list-instances.md
                       - name: Obter
                         href: api/accessreviewinstance-get.md
@@ -5408,7 +5503,7 @@ items:
                   - name: Solicitações de consentimento do aplicativo
                     href: resources/appconsentrequest.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/appconsentapprovalroute-list-appconsentrequests.md
                       - name: Obter
                         href: api/appconsentrequest-get.md
@@ -5417,7 +5512,7 @@ items:
                   - name: Solicitações de consentimento do usuário
                     href: resources/userconsentrequest.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/appconsentrequest-list-userconsentrequests.md
                       - name: Obter
                         href: api/userconsentrequest-get.md
@@ -5462,7 +5557,7 @@ items:
                         items:
                           - name: Estágio de aprovação
                             href: resources/approvalstage.md
-                          - name: Listar
+                          - name: Lista
                             href: api/approval-list-stages.md
                           - name: Obter
                             href: api/approvalstage-get.md
@@ -5574,7 +5669,7 @@ items:
                         href: api/agreement-post-files.md
                       - name: Listar arquivos localizados
                         href: api/agreement-list-files.md
-      - name: Correio
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -6170,7 +6265,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Busca
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -6429,7 +6524,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Grupo
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Listar
@@ -6750,7 +6845,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -7032,7 +7127,7 @@ items:
             items:
               - name: Lista de grupos
                 href: api/group-list-permissiongrants.md
-      - name: Tarefas pendentes
+      - name: Tarefas To do
         displayName: Microsoft To Do
         items:
           - name: Visão Geral
@@ -7120,7 +7215,7 @@ items:
           - name: Comentários da pasta de trabalho
             href: resources/workbookcomment.md
             items:
-              - name: Listar
+              - name: Lista
                 href: api/workbook-list-comments.md
               - name: Obter
                 href: api/workbookcomment-get.md

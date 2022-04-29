@@ -5,27 +5,27 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7d93dfffa3b28a5ab9877046b6e38a7ad3dd6a8f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bd1e91f40237e79a98f648888f6253808ca8bbd7
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088687"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133486"
 ---
 # <a name="update-externalconnection"></a>Atualizar externalConnection
 
 Namespace: microsoft.graph.externalConnectors
 
-Atualize as propriedades de [um objeto externalConnection.](../resources/externalconnectors-externalconnection.md)
+Atualize as propriedades de um [objeto externalConnection](../resources/externalconnectors-externalconnection.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalConnection.ReadWrite.OwnedBy |
+|Delegado (conta corporativa ou de estudante)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Aplicativo| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade      | Tipo                                           | Descrição |
 |:--------------|:-----------------------------------------------|:------------|
-| configuração | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar conteúdo na conexão. |
+| configuração | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Especifica IDs de aplicativo adicionais que têm permissão para gerenciar a conexão e indexar o conteúdo na conexão. |
 | description   | Cadeia de caracteres                                         | Descrição da conexão exibida no Centro de administração do Microsoft 365. |
 | nome          | Cadeia de caracteres                                         | O nome de exibição da conexão a ser exibida no Centro de administração do Microsoft 365. Comprimento máximo de 128 caracteres. |
 

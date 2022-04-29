@@ -1,32 +1,32 @@
 ---
 title: Listar externalConnections
-description: Obter uma lista dos objetos externalConnection e suas propriedades.
+description: Obtenha uma lista dos objetos externalConnection e suas propriedades.
 author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 519825c476b352aaeb153e3954cb2a689ab80af3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dedb0c41c3ac26211995e4baa736d8a026e05b1d
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114921"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133829"
 ---
 # <a name="list-externalconnections"></a>Listar externalConnections
 Namespace: microsoft.graph.externalConnectors
 
 
 
-Obter uma lista dos [objetos externalConnection](../resources/externalconnectors-externalconnection.md) e suas propriedades.
+Obtenha uma lista dos [objetos externalConnection](../resources/externalconnectors-externalconnection.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Não aplicável|
-|Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
+|Aplicativo| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos externalConnection](../resources/externalconnectors-externalconnection.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos externalConnection](../resources/externalconnectors-externalconnection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

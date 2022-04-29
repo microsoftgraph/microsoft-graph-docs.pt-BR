@@ -5,28 +5,28 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a1c4b0ae21f761d9765daebd048838317d967022
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ac3188186a718ac836bde8727c6647d690a0a574
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136124"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133724"
 ---
 # <a name="get-externalconnection"></a>Obter externalConnection
 Namespace: microsoft.graph.externalConnectors
 
 
 
-Leia as propriedades e as relações de um [objeto externalConnection.](../resources/externalconnectors-externalconnection.md)
+Leia as propriedades e as relações de um [objeto externalConnection](../resources/externalconnectors-externalconnection.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Não aplicável|
-|Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
+|Aplicativo| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto externalConnection](../resources/externalconnectors-externalconnection.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto externalConnection](../resources/externalconnectors-externalconnection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

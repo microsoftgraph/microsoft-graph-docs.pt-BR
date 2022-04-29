@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 15e8d1de626d0cb64806c3398c880a9b15a4b6b6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 6c670eb174b410519de41d78f8c2fdab694566a2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393589"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133026"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
-|Aplicativo| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte                               |
+| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,18 +44,18 @@ PUT /external/connections/{connection-id}/items/{item-id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto externalItem](../resources/externalconnectors-externalitem.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto externalItem](../resources/externalconnectors-externalitem.md) .
 
-Você pode especificar as seguintes propriedades ao criar [um externalItem](../resources/externalconnectors-externalitem.md).
+Você pode especificar as propriedades a seguir ao criar [um externalItem](../resources/externalconnectors-externalitem.md).
 
 |Propriedade|Tipo| Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A ID do item. Obrigatório.|
 |properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|As propriedades do item. O `properties` objeto deve conter pelo menos uma propriedade. Todas `DateTime` as propriedades de tipo devem estar no formato ISO 8601. Obrigatório.|
 |conteúdo|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|O conteúdo do item externo. Opcional.|
-|acl|[Coleção microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|A lista de controles de acesso. Obrigatório.|
+|Acl|[Coleção microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|A lista de controle de acesso. Obrigatório.|
 
-As propriedades em um `externalItem` devem usar especificadores de tipo na carga nos seguintes cenários:
+As propriedades em um `externalItem` devem usar especificadores de tipo no conteúdo nos seguintes cenários:
 
 - Para `String` propriedades de tipo, se o valor contiver caracteres não ASCII.
 

@@ -5,28 +5,28 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4ea1c76e038f6a1612bdd42a3072f1e5e3632157
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 89ba0cb06e9d84b6a6f83fab3f433be4dcaadfe2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136110"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133738"
 ---
 # <a name="delete-externalconnection"></a>Excluir externalConnection
 Namespace: microsoft.graph.externalConnectors
 
 
 
-Exclui um [objeto externalConnection.](../resources/externalconnectors-externalconnection.md)
+Exclui um [objeto externalConnection](../resources/externalconnectors-externalconnection.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Não aplicável|
-|Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
+|Aplicativo| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: acb978a137e8505c22fc5364b613f7a6e79203e4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 514926936aab8d4c2273dd131ed3fdf8c23b4c3b
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397768"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133623"
 ---
 # <a name="get-connectionoperation"></a>Obter connectionOperation
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Não aplicável|
-|Delegada (conta pessoal da Microsoft)|Não aplicável|
-|Aplicativo| ExternalConnection.ReadWrite.OwnedBy |
+|Delegado (conta corporativa ou de estudante)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Não aplicável|
+|Aplicativo| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.Read.All, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto connectionOperation](../resources/externalconnectors-connectionoperation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto connectionOperation](../resources/externalconnectors-connectionoperation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

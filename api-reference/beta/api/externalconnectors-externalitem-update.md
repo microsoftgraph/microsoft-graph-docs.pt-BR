@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c338aac56111598eaffd8eb10d7419d5730f505b
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a37cb11ac809955d80b59b2134b099815608b313
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396025"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133661"
 ---
 # <a name="update-externalitem"></a>Atualizar externalItem
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
@@ -42,7 +42,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
+| id da conexão | string | A `id` propriedade do [externalConnection que o contém](../resources/externalconnectors-externalconnection.md) |
 | item-id       | string | A propriedade fornecida pelo `id` desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,25 +54,25 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. As propriedades existentes (excluindo `properties` propriedades dentro do objeto) que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base em alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades a seguir podem ser atualizadas.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. As propriedades existentes ( `properties` excluindo propriedades dentro do objeto) que não estão incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base em alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades a seguir podem ser atualizadas.
 
 | Propriedade   | Tipo                                  | Descrição               |
 |:-----------|:--------------------------------------|:--------------------------|
-| acl        | [Coleção microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
-| conteúdo    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | Uma representação em texto sem texto do conteúdo do item. O texto nesta propriedade é indexado em texto completo. |
-| properties | Objeto                                | Um pacote de propriedades com as propriedades do item. As propriedades DEVEM estar em conformidade [com o esquema](../resources/externalconnectors-schema.md) definido para [o externalConnection](../resources/externalconnectors-externalconnection.md). |
+| Acl        | [Coleção microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md) | Uma matriz de entradas de controle de acesso. Cada entrada especifica o acesso concedido a um usuário ou grupo. |
+| conteúdo    | [microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md) | Uma representação de texto sem formatação do conteúdo do item. O texto nessa propriedade é indexado em texto completo. |
+| properties | Objeto                                | Um recipiente de propriedades com as propriedades do item. As propriedades DEVEM estar em conformidade [com o esquema](../resources/externalconnectors-schema.md) definido para [externalConnection](../resources/externalconnectors-externalconnection.md). |
 
 ### <a name="updating-the-acl-collection"></a>Atualizando a coleção acl
 
-Se a `acl` propriedade for incluída em uma solicitação de atualização, a coleção ACL existente será substituída com a coleção incluída na solicitação.
+Se a `acl` propriedade estiver incluída em uma solicitação de atualização, a coleção ACL existente será substituída pela coleção incluída na solicitação.
 
 ### <a name="updating-the-properties-object"></a>Atualizando o objeto properties
 
-Se a `properties` propriedade for incluída em uma solicitação de atualização, o pacote de propriedades existente será substituído com o valor incluído na solicitação.
+Se a `properties` propriedade estiver incluída em uma solicitação de atualização, o recipiente de propriedades existente será substituído pelo valor incluído na solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto externalItem](../resources/externalconnectors-externalitem.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [externalItem](../resources/externalconnectors-externalitem.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

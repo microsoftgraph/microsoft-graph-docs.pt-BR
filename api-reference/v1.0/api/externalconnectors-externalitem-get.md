@@ -5,28 +5,28 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c983947208ea02f4af0f395c3e294acedc894b89
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 1c36751b9463454f1251cc7ca269054791ca9ed5
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558543"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133458"
 ---
 # <a name="get-externalitem"></a>Obter externalItem
 Namespace: microsoft.graph.externalConnectors
 
 
 
-Leia as propriedades e as relações de um [objeto externalItem.](../resources/externalconnectors-externalitem.md)
+Leia as propriedades e as relações de um [objeto externalItem](../resources/externalconnectors-externalitem.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
-|Delegado (conta pessoal da Microsoft)|Não aplicável|
-|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte                               |
+| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ GET /external/connections/{connectionsId}/items/{externalItemId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Esse método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [externalItem](../resources/externalconnectors-externalitem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto externalItem](../resources/externalconnectors-externalitem.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

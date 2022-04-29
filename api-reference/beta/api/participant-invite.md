@@ -1,18 +1,18 @@
 ---
-title: 'participante: invite'
+title: 'participante: convidar'
 description: Convide participantes para a chamada ativa.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e498f718185ecf0497063c5cdf6f1bfa35e86c3d
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: 640cd67114ec43ae6981b10a645d0fe8d90a0268
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607467"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133822"
 ---
-# <a name="participant-invite"></a>participante: invite
+# <a name="participant-invite"></a>participante: convidar
 
 Namespace: microsoft.graph
 
@@ -22,9 +22,9 @@ Convide participantes para a chamada ativa.
 
 Para obter mais informações sobre como lidar com operações, consulte [commsoperation](../resources/commsoperation.md).
 
->**Observação:** Convidar vários participantes em uma solicitação só é suportado para chamadas de grupo.
+>**Nota:** Convidar vários participantes em uma solicitação só tem suporte para chamadas em grupo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
@@ -53,18 +53,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é 256 caracteres.|
+|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um header location com um URI para [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado para essa solicitação. O corpo da resposta contém [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado.
+Se bem-sucedido, este método `200 OK` retorna um código de resposta e um cabeçalho Location com um URI para [inviteParticipantsOperation criado](../resources/inviteparticipantsoperation.md) para essa solicitação. O corpo da resposta contém [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado.
 
->**Observação:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização de lista.
+>**Nota:** Quando essa API retornar uma resposta bem-sucedida, todos os participantes receberão uma atualização da lista de participantes.
 
 
 ## <a name="examples"></a>Exemplos
 Os exemplos a seguir mostram como chamar essa API.
 
-> **Observação:** Os objetos de resposta podem ser reduzidos para a capacidade de leitura. Todas as propriedades serão retornadas de uma chamada real.
+> **Nota:** Os objetos de resposta podem ser reduzidos para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ### <a name="example-1-invite-one-participant-to-an-existing-call"></a>Exemplo 1: convidar um participante para uma chamada existente
 
@@ -205,7 +205,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com participante adicionado
+#### <a name="notification---roster-updated-with-participant-added"></a>Notificação – lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -436,7 +436,7 @@ Content-Type: application/json
 }
 
 ```
-#### <a name="notification---roster-updated-with-participants-added"></a>Notificação - lista atualizada com participantes adicionados
+#### <a name="notification---roster-updated-with-participants-added"></a>Notificação – lista atualizada com participantes adicionados
 ```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
@@ -520,14 +520,14 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Exemplo 3: convidar participantes para uma chamada de grupo existente, substituindo uma chamada ponto a ponto existente
+### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Exemplo 3: Convidar participantes para uma chamada de grupo existente, substituindo uma chamada ponto a ponto existente
 
 
-A API de convite dá suporte a apenas um participante ao substituir uma chamada ponto a ponto existente. Quando vários participantes são fornecidos no corpo da solicitação, apenas o primeiro participante será lido e o restante dos participantes será ignorado.
+A API de convite dá suporte a apenas um participante ao substituir uma chamada ponto a ponto existente. Quando vários participantes são fornecidos no corpo da solicitação, somente o primeiro participante será lido e o restante dos participantes será ignorado.
 
 
-> **Observação:** A API de convite dá suporte a apenas um participante quando `replacesCallId` é fornecida. 
-> Para obter detalhes sobre como usar `replacesCallId` para substituir uma chamada ponto a ponto existente, consulte [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
+> **Nota:** A API de convite dá suporte a apenas um participante quando `replacesCallId` é fornecida. 
+> Para obter detalhes sobre como `replacesCallId` usar para substituir uma chamada ponto a ponto existente, consulte [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
 #### <a name="request"></a>Solicitação
 
@@ -667,7 +667,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com participante adicionado
+#### <a name="notification---roster-updated-with-participant-added"></a>Notificação – lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -723,9 +723,9 @@ Content-Type: application/json
 }
 ```
 
->**Observação:** Com um status "concluído", você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi encerrada e excluída.
+>**Nota:** Com um status "concluído", você pode esperar receber notificações sobre como sua chamada ponto a ponto original foi encerrada e excluída.
 
-### <a name="example-4-invite-one-pstn-participant-to-an-existing-group-call"></a>Exemplo 4: convidar um participante PSTN para uma chamada de grupo existente
+### <a name="example-4-invite-one-pstn-participant-to-an-existing-call"></a>Exemplo 4: convidar um participante PSTN para uma chamada existente
 
 Essa chamada requer uma instância de aplicativo com um número PSTN atribuído. Para obter detalhes, [consulte Atribuir um número de telefone ao bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
 > **Observação:** Telefone ID é o número de telefone no formato E.164.
@@ -863,7 +863,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista atualizada com participante adicionado
+#### <a name="notification---roster-updated-with-participant-added"></a>Notificação – lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -917,7 +917,7 @@ Content-Type: application/json
 
 ```
 
->**Observação:** Com um status, você pode esperar receber notificações sobre como sua chamada ponto a `completed` ponto original foi encerrada e excluída.
+>**Nota:** Com um status, você pode esperar receber notificações sobre como sua chamada ponto a `completed` ponto original foi encerrada e excluída.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

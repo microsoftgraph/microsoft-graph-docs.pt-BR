@@ -1,16 +1,16 @@
 ---
 title: Criar conexão
-description: Use essa API para criar um novo externalConnection.
+description: Use essa API para criar uma nova externalConnection.
 ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4074d979440390a1c52488af937a1a5295f94ef0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43a59da2460efc09f5f8b58c7d57e2795485482a
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135529"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133203"
 ---
 # <a name="create-connection"></a>Criar conexão
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [externalConnection](../resources/externalconnectors-externalconnection.md).
+Crie uma nova [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalConnection.ReadWrite.OwnedBy |
+| Aplicativo                            | ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,11 +47,11 @@ POST /external/connections
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto externalConnection.](../resources/externalconnectors-externalconnection.md)
+No corpo da solicitação, forneça uma representação JSON de um [objeto externalConnection](../resources/externalconnectors-externalconnection.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta e um novo objeto [externalConnection](../resources/externalconnectors-externalconnection.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e um novo [objeto externalConnection](../resources/externalconnectors-externalconnection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 437359ac65a0fe53ea0dafc6704935b3337c6ffd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 459ec5b7c867e7b85aa353aa10294a52a431d5e2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107456"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133773"
 ---
 # <a name="create-externalconnection"></a>Criar externalConnection
 Namespace: microsoft.graph.externalConnectors
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Não aplicável|
+|Delegado (conta corporativa ou de estudante)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Não aplicável|
-|Aplicativo| ExternalConnection.ReadWrite.OwnedBy|
+|Aplicativo| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,9 +45,9 @@ POST /external/connections
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto externalConnection.](../resources/externalconnectors-externalconnection.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto externalConnection](../resources/externalconnectors-externalconnection.md) .
 
-Você pode especificar as seguintes propriedades ao criar [um externalConnection](../resources/externalconnectors-externalconnection.md).
+Você pode especificar as propriedades a seguir ao criar um [externalConnection](../resources/externalconnectors-externalconnection.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -60,7 +60,7 @@ Você pode especificar as seguintes propriedades ao criar [um externalConnection
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto externalConnection](../resources/externalconnectors-externalconnection.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto externalConnection](../resources/externalconnectors-externalconnection.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

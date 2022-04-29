@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 9df3496e49fe7017641b98d2d867e67b420ceede
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 49cf69b49edda6c8a7ea7a97d2ef826ce1bd5bce
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396781"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133437"
 ---
 # <a name="create-externalitem"></a>Criar externalItem
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph.externalConnectors
 
 Crie um [novo externalItem](../resources/externalconnectors-externalitem.md).
 
-Essa API pode ser usada para criar um item personalizado. O [externalConnection que contém](../resources/externalconnectors-externalconnection.md) deve ter um [esquema](../resources/externalconnectors-schema.md) registrado do tipo correspondente.
+Essa API pode ser usada para criar um item personalizado. O [externalConnection que o contém](../resources/externalconnectors-externalconnection.md) deve ter [um esquema](../resources/externalconnectors-schema.md) registrado do tipo correspondente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
@@ -44,7 +44,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
+| id da conexão | string | A `id` propriedade do [externalConnection que o contém](../resources/externalconnectors-externalconnection.md) |
 | item-id       | string | A propriedade fornecida pelo `id` desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). Se nenhum item já existir com isso `id`, um novo item será criado. Se um item já existir com isso `id`, ele será substituído pelo objeto enviado no corpo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -56,7 +56,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto externalItem](../resources/externalconnectors-externalitem.md) . A carga é limitada a 4 MB.
+No corpo da solicitação, forneça uma representação JSON de um [objeto externalItem](../resources/externalconnectors-externalitem.md) . A carga é limitada a 4 MB.
 
 ### <a name="creating-an-externalitem"></a>Criando um externalItem
 
@@ -64,7 +64,7 @@ Ao criar um `externalItem`, os campos a seguir são necessários: `acl`e `proper
 
 Todas `DateTime` as propriedades de tipo devem estar no formato ISO 8601.
 
-As propriedades em um `externalItem` devem usar especificadores de tipo na carga nos seguintes cenários:
+As propriedades em um `externalItem` devem usar especificadores de tipo no conteúdo nos seguintes cenários:
 
 - Para `String` propriedades de tipo, se o valor contiver caracteres não ASCII.
 

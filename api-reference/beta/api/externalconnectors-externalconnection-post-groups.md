@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c558a0452984ee67a5adb92269af6e40c80d39e5
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 901d9a3eb85441f3828315e628ee01a536cf35d2
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394828"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133619"
 ---
 # <a name="create-externalgroup"></a>Criar externalGroup
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte                               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte                               |
-| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,9 +50,9 @@ POST /external/connections/{connectionId}/groups
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do **objeto externalGroup** .
+No corpo da solicitação, forneça uma representação JSON do **objeto externalGroup** .
 
-Você pode especificar as seguintes propriedades ao criar um **externalGroup**.
+Você pode especificar as propriedades a seguir ao criar um **externalGroup**.
 
 | Propriedade    | Tipo   | Descrição                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
@@ -62,7 +62,7 @@ Você pode especificar as seguintes propriedades ao criar um **externalGroup**.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um **objeto externalGroup** no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um **objeto externalGroup** no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

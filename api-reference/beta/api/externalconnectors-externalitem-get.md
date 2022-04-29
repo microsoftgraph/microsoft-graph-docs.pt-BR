@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 8704e18f3c6abf16cff4ba6168c324236fa3083d
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 09eac8a949db61342c386bef6a90290346d4a371
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934615"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133248"
 ---
 # <a name="get-externalitem"></a>Obter externalItem
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as propriedades e as relações de um [objeto externalitem.](../resources/externalconnectors-externalitem.md)
+Obter as propriedades e as relações de um [objeto externalitem](../resources/externalconnectors-externalitem.md) .
 
-Essa API é fornecida apenas para fins de diagnóstico. Ele não se destina a ser usado para qualquer outra finalidade. Solicitações repetidas para essa API podem resultar em `429` erros HTTP.
+Essa API é fornecida apenas para fins de diagnóstico. Ele não se destina a ser usado para nenhuma outra finalidade. Solicitações repetidas para essa API podem resultar em `429` erros HTTP.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.Read.All, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,12 +44,12 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| connection-id | string | A `id` propriedade do [externalConnection que](../resources/externalconnectors-externalconnection.md) contém |
-| item-id       | string | A propriedade fornecida `id` pelo desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
+| id da conexão | string | A `id` propriedade do [externalConnection que o contém](../resources/externalconnectors-externalconnection.md) |
+| item-id       | string | A propriedade fornecida pelo `id` desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
+Esse método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -63,7 +63,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [externalItem](../resources/externalconnectors-externalitem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto externalItem](../resources/externalconnectors-externalitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

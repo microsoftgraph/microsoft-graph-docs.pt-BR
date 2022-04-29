@@ -5,16 +5,120 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 3391b332900b05fccf3cce873cc5e9ffa6aeec66
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 30a478f5a3021bf7efbadd0e924bd8c8e343ad40
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917742"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133136"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
+
+### <a name="expirationpatterntype-values"></a>Valores expirationPatternType 
+
+|Member|
+|:---|
+|Notspecified|
+|noExpiration|
+|afterDateTime|
+|afterDuration|
+
+### <a name="recurrencepatterntype-values"></a>Valores recurrencePatternType 
+
+|Member|
+|:---|
+|Diária|
+|Semanal|
+|absoluteMonthly|
+|relativeMonthly|
+|absoluteYearly|
+|relativeYearly|
+
+### <a name="roleassignmentschedulefilterbycurrentuseroptions-values"></a>Valores roleAssignmentScheduleFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleassignmentscheduleinstancefilterbycurrentuseroptions-values"></a>Valores roleAssignmentScheduleInstanceFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>Valores roleAssignmentScheduleRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|Aprovador|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulefilterbycurrentuseroptions-values"></a>Valores roleEligibilityScheduleFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleeligibilityscheduleinstancefilterbycurrentuseroptions-values"></a>Valores roleEligibilityScheduleInstanceFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### <a name="roleeligibilityschedulerequestfilterbycurrentuseroptions-values"></a>Valores roleEligibilityScheduleRequestFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|Aprovador|
+|unknownFutureValue|
+
+### <a name="unifiedrolemanagementpolicyruletargetoperations-values"></a>Valores unifiedRoleManagementPolicyRuleTargetOperations 
+
+|Member|
+|:---|
+|tudo|
+|Ativar|
+|Desativar|
+|Atribuir|
+|Atualização|
+|Remover|
+|Estender|
+|renovar|
+|unknownFutureValue|
+
+### <a name="unifiedroleschedulerequestactions-values"></a>Valores unifiedRoleScheduleRequestActions 
+
+|Member|
+|:---|
+|adminAssign|
+|adminUpdate|
+|adminRemove|
+|selfActivate|
+|selfDeactivate|
+|adminExtend|
+|adminRenew|
+|selfExtend|
+|selfRenew|
+|unknownFutureValue|
+
+### <a name="approvalfilterbycurrentuseroptions-values"></a>Valores de approvalFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|destino|
+|createdBy|
+|Aprovador|
+|unknownFutureValue|
 
 ### <a name="accessreviewexpirationbehavior-values"></a>valores accessReviewExpirationBehavior
 
@@ -308,7 +412,7 @@ Namespace: microsoft.graph
 |windows|
 |windowsPhone|
 |macOS|
-|Todos|
+|tudo|
 |unknownFutureValue|
 
 ### <a name="signinfrequencytype-values"></a>Valores signinFrequencyType
@@ -351,7 +455,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Todos|
+|tudo|
 |Navegador|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -694,7 +798,7 @@ Namespace: microsoft.graph
 |:-------------------------
 | none
 | contactsOnly
-| Todos
+| tudo
 
 
 ### <a name="automaticrepliesstatus-values"></a>Valores automaticRepliesStatus
@@ -943,7 +1047,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | Lista
-| descrição
+| description
 | referência
 
 
@@ -1059,7 +1163,7 @@ Namespace: microsoft.graph
 | preset7  | 7 
 | preset8  | 8 
 | preset9  | 9 
-| preset10 | 10 
+| preset10 | 10
 | preset11 | 11
 | preset12 | 12 
 | preset13 | 13
@@ -1131,7 +1235,7 @@ Possíveis valores de nível de integridade do processo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Desconhecido.|
-|Untrusted|10 |O nível de integridade não é confiável.|
+|Untrusted|10|O nível de integridade não é confiável.|
 |low|20| O nível de integridade é Baixo.|
 |medium|30| O nível de integridade é Médio.|
 |high|40| O nível de integridade é Alto.|
@@ -1174,11 +1278,11 @@ Enumeração para tipos de valor do Registro, conforme definido por [/windows/de
 |dwordWordScriptEndian|3| REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro.|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN tipo de valor do Registro.|
 |expandSz|5| REG_EXPAND_SZ tipo de valor do Registro.|
-|vínculo|6 | REG_LINK tipo de valor do Registro.|
+|link|6 | REG_LINK tipo de valor do Registro.|
 |multiSz|7 | REG_MULTI_SZ tipo de valor do Registro.|
 |none|8 | REG_NONE tipo de valor do Registro.|
 |Qword|9 | REG_QWORD tipo de valor do Registro.|
-|qwordwordEndian|10 | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro.|
+|qwordwordEndian|10| REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro.|
 |Sz|11| REG_SZ tipo de valor do Registro.|
 
 ### <a name="alertseverity-values"></a>Valores alertSeverity
@@ -1200,7 +1304,7 @@ Valores possíveis de um status de ciclo de vida de alerta (estágio).
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Status desconhecido.|
-|newAlert|10 | O alerta é novo.|
+|newAlert|10| O alerta é novo.|
 |Inprogress|20|O alerta está em andamento.|
 |resolvido|30|O alerta é resolvido.|
 
@@ -1413,7 +1517,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | notInAddressBook      | 7      | Exclua o remetente que não está no catálogo de endereços. |
 | firstTimeSender       | 8      | Bloqueado devido ao remetente da primeira vez.   |
 | autoPurgeToInbox      | 9      | TimeTravel move a mensagem para a caixa de entrada.   |
-| autoPurgeToJunk       | 10     | TimeTravel move mensagem para lixo eletrônico.    |
+| autoPurgeToJunk       | 10    | TimeTravel move mensagem para lixo eletrônico.    |
 | autoPurgeToDeleted    | 11    | Mensagem de movimentação timeTravel a ser excluída. |
 | Saída              | 12     | Email de saída.                      |
 | notJunk               | 13    | Permita devido a não lixo eletrônico.              |
@@ -1497,7 +1601,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |url | Hiperlink ou coluna de imagem. |
 |Calculado | Coluna calculada. |
 |localização | Coluna de localização. |
-|Geolocalização | Coluna de localização geográfica. |
+|Localização geográfica | Coluna de localização geográfica. |
 |term | Coluna de metadados gerenciados. |
 |Multiterm | Coluna de metadados gerenciados aceitando vários valores. |
 |Miniatura | Coluna de imagem. |
@@ -1630,7 +1734,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member                |
 |:----------------------|
-| cadeia de caracteres                |
+| string                |
 | booliano               |
 | int64                 |
 | Stringcollection      |
@@ -1734,7 +1838,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |Member|
 |:---|
 |team|
-|canal|
+|Canal|
 |chat|
 |unknownFutureValue|
 

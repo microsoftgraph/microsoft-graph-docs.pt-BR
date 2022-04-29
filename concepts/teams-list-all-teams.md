@@ -4,27 +4,27 @@ description: 'Listar todas as equipes '
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 010c22046df95b684bad73632cf658c074723366
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1045c71fadcd70f9888f6357366d7097178dbec4
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936079"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133570"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Listar todas as equipes do Microsoft Teams para uma organização
 
-Para listar todas as [equipes](/graph/api/resources/team?view=graph-rest-beta) em uma organização (locatário), você deve localizar todos os grupos que possuem equipes e, em seguida, obter informações de cada equipe.
+Para listar todas as [equipes](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) em uma organização (locatário), você deve localizar todos os grupos que possuem equipes e, em seguida, obter informações de cada equipe.
 
 ## <a name="get-a-list-of-groups"></a>Obter uma lista de grupos
 
-Para obter uma lista de todos os [grupos](/graph/api/resources/group?view=graph-rest-beta) da organização que possuem equipes, obtenha uma [lista de todos os grupos](/graph/api/group-list?view=graph-rest-beta) e depois, em código, localize os que têm a propriedade **resourceProvisioningOptions** que contém “Equipe”.
+Para obter uma lista de todos os [grupos](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) da organização que possuem equipes, obtenha uma [lista de todos os grupos](/graph/api/group-list?view=graph-rest-beta&preserve-view=true) e depois, em código, localize os que têm a propriedade **resourceProvisioningOptions** que contém “Equipe”.
 Como os grupos são objetos grandes, use $select para obter as propriedades apenas do grupo que importa para você.
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Observação**: certas equipes antigas não utilizadas não terão a configuração resourceProvisioningOptions. Para saber mais, confira [problemas conhecidos](known-issues.md#missing-teams-in-list-all-teams).
+> **Observação**: certas equipes antigas não utilizadas não terão a configuração resourceProvisioningOptions. Para saber mais, confira [problemas conhecidos](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 Este é um exemplo de resposta. 
 
@@ -59,7 +59,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 > **Observação**: a filtragem de grupos por resourceProvisioningOptions só está disponível por meio do ponto de extremidade beta. resourceProvisioningOptions está disponível na versão 1.0 e beta.
 
-> **Observação**: certas equipes antigas não utilizadas não serão listadas. Para saber mais, confira [problemas conhecidos](known-issues.md#missing-teams-in-list-all-teams).
+> **Observação**: certas equipes antigas não utilizadas não serão listadas. Para saber mais, confira [problemas conhecidos](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
 Este é um exemplo de resposta. 
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 ## <a name="get-team-information-for-a-group"></a>Obter informações de equipe para um grupo
 
-Para obter informações de equipe para a equipe de um grupo específico, chame a API [get team](/graph/api/team-get?view=graph-rest-beta) e incluam a ID do grupo.
+Para obter informações de equipe para a equipe de um grupo específico, chame a API [get team](/graph/api/team-get?view=graph-rest-beta&preserve-view=true) e incluam a ID do grupo.
 
 ```http
 GET /teams/{group-id}
@@ -159,5 +159,5 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Listar joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta)
-- [Listar grupos](/graph/api/group-list?view=graph-rest-beta)
+- [Listar joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-beta&preserve-view=true)
+- [Listar grupos](/graph/api/group-list?view=graph-rest-beta&preserve-view=true)

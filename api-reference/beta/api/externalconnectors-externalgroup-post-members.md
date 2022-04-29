@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4d3b6a7dd81e283362ac9e013966f8c0bf22841c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 975b08d9850ca7512813b222491c608e18fdd065
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394415"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133451"
 ---
 # <a name="create-externalgroupmember"></a>Criar externalGroupMember
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Sem suporte                               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte                               |
-| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All                  |
+| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,23 +50,23 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do **objeto externalGroupMember** .
+No corpo da solicitação, forneça uma representação JSON do **objeto externalGroupMember** .
 
-Você pode especificar as seguintes propriedades ao criar **um externalGroupMember**.
+Você pode especificar as propriedades a seguir ao criar **um externalGroupMember**.
 
 | Propriedade       | Tipo                    | Descrição                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria objectId no caso de Azure Active Directory ou grupos e externalGroupId no caso de grupos externos. Obrigatório.                                   |
+| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria a objectId no caso de Azure Active Directory ou grupos e externalGroupId no caso de grupos externos. Obrigatório.                                   |
 | type           | microsoft.graph.externalConnectors.externalGroupMemberType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user` ou quando identitySource é `azureActiveDirectory` e apenas `group` quando identitySource é `external``group` . Obrigatório. |
-| identitySource | microsoft.graph.externalConnectors.identitySourceType      | A fonte de identidade à que o membro pertence. Os valores possíveis são: `azureActiveDirectory` e `external`. Obrigatório.                                                                                       |
+| identitySource | microsoft.graph.externalConnectors.identitySourceType      | A fonte de identidade à qual o membro pertence. Os valores possíveis são: `azureActiveDirectory` e `external`. Obrigatório.                                                                                       |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um **objeto externalGroupMember** no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um **objeto externalGroupMember** no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um usuário Azure Active Directory como membro
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um Azure Active Directory usuário como membro
 
 ### <a name="request"></a>Solicitação
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um grupo Azure Active Directory como membro
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um Azure Active Directory como um membro
 
 ### <a name="request"></a>Solicitação
 
@@ -195,7 +195,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-add-another-external-group-as-a-member"></a>Exemplo 3: Adicionar outro grupo externo como membro
+### <a name="example-3-add-another-external-group-as-a-member"></a>Exemplo 3: Adicionar outro grupo externo como um membro
 
 ### <a name="request"></a>Solicitação
 
