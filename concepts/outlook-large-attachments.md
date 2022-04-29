@@ -4,25 +4,25 @@ description: Dependendo do tamanho do arquivo, você pode escolher uma das duas 
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: af7c1445cedee69306bb23fc627d2020c698600a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 582501205c106b3deaf0312f3db9c81488feb3de
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071879"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133045"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Anexar arquivos grandes a mensagens ou eventos do Outlook
 
 Usando a API do Microsoft Graph, é possível anexar arquivos de até 150 MB a uma [mensagem](/graph/api/resources/message) ou item de [evento](/graph/api/resources/event) do Outlook. Dependendo do tamanho do arquivo, escolha uma das duas maneiras de anexar o arquivo:
-- Se o tamanho do arquivo for menor que 3 MB, faça uma única POSTAGEM na propriedade de navegação dos **anexos** do item do Outlook; veja como fazer isso para uma [mensagem](/graph/api/message-post-attachments) ou [evento](/graph/api/event-post-attachments). A resposta `POST` bem-sucedida inclui a ID de anexo do arquivo.
-- Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de carregamento e use o `PUT` iteradamente para carregar intervalos de bytes do arquivo até que você carregue todo o arquivo. Um cabeçalho na resposta `PUT` finalizada com êxito inclui uma URL com a ID do anexo.
+- Se o tamanho do arquivo for inferior a 3 MB, faça um único POST na propriedade de navegação **attachments** do item do Outlook; veja como fazer isso [para uma mensagem](/graph/api/message-post-attachments) ou [para um evento](/graph/api/event-post-attachments). A resposta `POST` bem-sucedida inclui o ID do anexo do arquivo.
+- Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de upload e use iterativamente `PUT` para carregar intervalos de bytes do arquivo até que você tenha carregado o arquivo inteiro. Um cabeçalho na resposta final `PUT` bem-sucedida inclui um URL com o ID do anexo.
 
 Para anexar vários arquivos a uma mensagem, escolha a abordagem de cada arquivo com base em seu tamanho e anexe-os individualmente.
 
 Este artigo ilustra a segunda abordagem passo a passo, criando e usando uma sessão de carregamento para adicionar um anexo de arquivo grande (de tamanho superior a 3MB) a um item do Outlook. Cada etapa mostra o código correspondente de uma mensagem e de um evento. Ao carregar o arquivo inteiro com êxito, o artigo exibe a obtenção de um cabeçalho de resposta contendo uma ID para o anexo do arquivo e, em seguida, o uso dessa ID de anexo para obter o conteúdo bruto do anexo ou metadados do anexo. 
 
 > [!IMPORTANT] 
-> Esteja atento a um [problema conhecido](known-issues.md#attaching-large-files-to-messages)se você estiver anexando arquivos de grande tamanho a uma mensagem ou evento em uma caixa de correio delegada ou compartilhada.
+> Esteja atento a um [problema conhecido](known-issues.md#attaching-large-files-to-messages-with-delegated-permissions-can-fail)se você estiver anexando arquivos de grande tamanho a uma mensagem ou evento em uma caixa de correio delegada ou compartilhada.
 
 ## <a name="step-1-create-an-upload-session"></a>Etapa 1: criar uma sessão de carregamento
 
@@ -180,10 +180,10 @@ Especifique os cabeçalhos e corpo da solicitação conforme é descrito abaixo.
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Content-Length | Int32 | O número de bytes sendo carregados nesta operação. Para melhorar o desempenho, mantenha o limite superior do número de bytes para cada operação `PUT` em 4 MB. Obrigatório. |
-| Intervalo de conteúdo | Cadeia de Caracteres | O intervalo de bytes baseado em 0 do arquivo que está sendo carregado nesta operação, expresso no formato `bytes {start}-{end}/{total}`. Obrigatório. |
+| Intervalo de conteúdo | Cadeia de Caracteres | O intervalo de bytes baseado em 0 do arquivo que está sendo carregado nesta operação, expresso no formato `bytes {start}-{end}/{total}`. Requerido. |
 | Content-Type | Cadeia de Caracteres  | O tipo MIME. Especifique`application/octet-stream`. Obrigatório. |
 
-Não especifique um cabeçalho da solicitação`Authorization`. A consulta `PUT` usa uma URL pré-existente da propriedade **uploadUrl**, que permite o acesso ao domínio `https://outlook.office.com`.
+Não especifique um cabeçalho de solicitação `Authorization`. A consulta `PUT` usa um URL pré-autenticado da propriedade **uploadUrl**, que permite acesso ao domínio `https://outlook.office.com`.
 
 ### <a name="request-body"></a>Corpo da solicitação
 
@@ -347,7 +347,7 @@ No entanto, obter um anexo de arquivo grande no formato base64-encoded afeta o d
 Seguindo o exemplo de evento e utilizando a ID do anexo retornada no cabeçalho de `Location` da etapa anterior, a solicitação de exemplo nesta seção mostra o uso de um parâmetro `$value` para obter os dados de conteúdo bruto do anexo.
 
 #### <a name="permissions"></a>Permissões
-Use a permissão delegada ou de aplicativo com menos privilégios, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
+Use a permissão delegada ou de aplicativo menos privilegiada, `Calendars.Read`, conforme apropriado, para esta operação. Para obter mais informações, consulte [permissões do calendário](permissions-reference.md#calendars-permissions).
 
 #### <a name="request"></a>Solicitação
 
@@ -380,7 +380,7 @@ Content-type: image/jpeg
 Seguindo o exemplo da mensagem, a solicitação de exemplo de solicitação nesta seção mostra o uso de um parâmetro `$select` para obter alguns dos metadados de um anexo de arquivo em uma mensagem, excluindo o **contentBytes**.
 
 #### <a name="permissions"></a>Permissões
-Use a permissão delegada ou de aplicativo com menos privilégios, `Mail.Read`, conforme apropriado, para esta operação. Saiba mais em [permissões de correio](permissions-reference.md#mail-permissions).
+Use a permissão delegada ou de aplicativo menos privilegiada, `Mail.Read`, conforme apropriado, para esta operação. Para obter mais informações, consulte [permissões de email](permissions-reference.md#mail-permissions).
 
 #### <a name="request"></a>Solicitação
 
@@ -421,7 +421,7 @@ Content-type: application/json
 
 ## <a name="alternative-cancel-the-upload-session"></a>Alternativa: cancelar a sessão de carregamento
 
-Em qualquer momento antes da sessão de carregamento expirar, se for preciso cancelar o carregamento, você poderá usar a mesma URL opaca inicial para excluir a sessão de carregamento. Uma operação bem-sucedida retorna `HTTP 204 No Content`.
+A qualquer momento antes que a sessão de upload expire, se você precisar cancelar o upload, poderá usar o mesmo URL opaco inicial para excluir a sessão de upload. Uma operação bem-sucedida retorna `HTTP 204 No Content`.
 
 ### <a name="permissions"></a>Permissões
 Como a URL opaca inicial é pré-autenticada e contém o token de autorização apropriado para consultas subsequentes para essa sessão de carregamento, não especifique um cabeçalho de solicitação de autorização para essa operação.
