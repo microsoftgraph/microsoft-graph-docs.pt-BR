@@ -3,15 +3,18 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
+ms.openlocfilehash: 6e5f62d52969dcc1b332b2cd6e5f02f318c8b6a9
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65135142"
 ---
-
 <!-- markdownlint-disable MD041-->
 
 ### <a name="chatmessage"></a>chatMessage
 
-**chatMessage** assinaturas com permissões delegadas não oferecem suporte a dados de recursos (**includeResourceData** deve ser `false`) e não requerem [criptografia](/graph/webhooks-with-resource-data). A única exceção é o recurso `/users/{id}/chats/getAllMessages` (disponível somente na versão beta) que oferece suporte a dados de recursos independentemente do tipo de permissão.
-
-Assinaturas **chatMessage** com permissões de aplicativo incluem dados de recurso e exigem [criptografia](/graph/webhooks-with-resource-data). A criação de assinatura falhará se um [encryptionCertificate](/graph/api/resources/subscription) não for especificado. Antes de criar uma assinatura **chatMessage**, você deve solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
+**chatMessage** assinaturas podem ser especificadas para incluir dados de recurso. Se especificado para incluir dados de recurso (**includeResourceData** definido como `true`), [encryption](/graph/webhooks-with-resource-data) é necessária. A criação de assinatura falhará se um [encryptionCertificate](/graph/api/resources/subscription) não for especificado para tais assinaturas. Antes de criar uma assinatura **chatMessage** com permissões de aplicativo, talvez seja necessário solicitar acesso. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
 
 Você deve usar o cabeçalho da solicitação `Prefer: include-unknown-enum-members` para obter os seguintes valores nos recursos **chatMessage** **messageType** [enumeração evoluível](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage` para `/teams/{id}/channels/{id}/messages` e `/chats/{id}/messages`.
 

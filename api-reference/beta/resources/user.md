@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: fa5d9a09174011a1c07f9c05bad833ea933b5b1a
-ms.sourcegitcommit: dab085b74666e190974a35e6a124d3ff1645fa25
-ms.translationtype: MT
+ms.openlocfilehash: 2701ff53871efa34719fb7cdf9b8542f39746641
+ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64646603"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125891"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -162,6 +162,9 @@ Esse recurso permite:
 | **Tarefas do Outlook** (obsoleto)|||
 | [Criar outlookTask](../api/outlookuser-post-tasks.md)(obsoleto) | [outlookTask](outlooktask.md) | Criar uma tarefa do Outlook no grupo de tarefas padrão (Minhas Tarefas) e pasta de tarefas padrão (Tarefas) na caixa de correio do usuário. |
 | [Listar de tarefas](../api/outlookuser-list-tasks.md) (obsoleto) | coleção [outlookTask](outlooktask.md) | Obtenha todas as tarefas do Outlook na caixa de correio do usuário. |
+| **PC na nuvem**.|||
+|[Listar cloudPCs](../api/user-list-cloudpcs.md)|coleção [cloudPC](../resources/cloudpc.md)|Liste os dispositivos [cloudPC](../resources/cloudpc.md) atribuídos ao usuário conectado.|
+|[Obter informações de inicialização](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Obtenha [o cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) para o usuário conectado.|
 
 
 ## <a name="properties"></a>Propriedades
@@ -220,7 +223,7 @@ Esse recurso permite:
 | onPremisesLastSyncDateTime | DateTimeOffset | Indica a última vez em que o objeto foi sincronizado com o diretório local. Por exemplo: "2013-02-16T03:04:54Z". O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md) | Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br> Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
 | onPremisesSamAccountName | String | Contém o `sAMAccountName` local sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br> Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-| onPremisesSecurityIdentifier | String | Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura. Suporta `$filter` (`eq` incluindo valores `null` ).  |
+| onPremisesSecurityIdentifier | String | Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura. Suporte `$filter` (`eq`incluindo os `null` valores).  |
 | onPremisesSyncEnabled | Booliano | `true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sincronizado de um diretório local (padrão). Somente leitura. <br><br>Suporte `$filter` (`eq`, `ne`, `not`, `in`, e `eq` no `null` valores). |
 | onPremisesUserPrincipalName | String | Contém o `userPrincipalName` local sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | Coleção String | Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>NOTA: Esta propriedade não pode conter caracteres de destaque.<br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`). |
