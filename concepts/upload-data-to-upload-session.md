@@ -1,16 +1,15 @@
 ---
 title: Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
-description: A Impressão Universal é uma solução de impressão moderna que as organizações podem utilizar para gerenciar sua infraestrutura de impressão por meio de serviços em nuvem da Microsoft.
+description: Saiba mais sobre a Impressão Universal, uma solução de impressão moderna que as organizações podem usar para gerenciar sua infraestrutura de impressão por meio de serviços na nuvem da Microsoft.
 author: nilakhan
 ms.localizationpriority: high
-ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 13d97001f95efabb31b2aaa5e0d8e02c19d35fc5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 36dd113e02e15822f9a64b04da390d5a87cae867
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946850"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133101"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
 

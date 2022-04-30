@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3e62386b6d51c8e6fe97b0ede9f6a21f97f72a8b
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: c9bd130ce01738ae03cb0521b85774e974240055
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083983"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133325"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 ## <a name="subscribe-to-messages-in-a-channel"></a>Assine em mensagens em um canal
 
-Para acompanhar mensagens e respostas em um canal, você pode criar uma assinatura de notificação de alteraração no nível do canal. Para fazer isso, assine em `/teams/{team-id}/channels/{channel-id}/messages`. Este recurso oferece suporte à [inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação no *modo somente de aplicativo*.
+Para acompanhar mensagens e respostas em um canal, você pode criar uma assinatura de notificação de alteraração no nível do canal. Para fazer isso, assine em `/teams/{team-id}/channels/{channel-id}/messages`. Esse recurso oferece suporte à [inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação no modo *delegado* e *somente no aplicativo*.
 
 As assinaturas no nível do canal também oferecem suporte à pesquisa baseada em palavras-chave por meio do parâmetro de consulta `$search`.
 
@@ -174,7 +174,7 @@ Content-Type: application/json
 
 ## <a name="subscribe-to-messages-in-a-chat"></a>Assinar para receber mensagens em um chat
 
-Para acompanhar mensagens em um chat, você pode criar uma assinatura de notificação de alteração em um nível de chat. Para fazer isso, assine em `/chats/{chat-id}/messages`. Este recurso oferece suporte à [inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação no *modo somente de aplicativo*.
+Para acompanhar mensagens em um chat, você pode criar uma assinatura de notificação de alteração em um nível de chat. Para fazer isso, assine em `/chats/{chat-id}/messages`. Esse recurso oferece suporte à [inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação no modo *delegado* e *somente no aplicativo*.
 
 As assinaturas no nível do chat também oferecem suporte à pesquisa baseada em palavras-chave por meio do parâmetro de consulta `$search`.
 

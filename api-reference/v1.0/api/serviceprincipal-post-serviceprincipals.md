@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 428a108a1ccf2f27b13691b8f81cecd0fb3f727a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 34d5c8ca00ffc2f8a817aad3b025b783919bbbef
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671227"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133073"
 ---
 # <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 Criar um novo objeto do [servicePrincipal](../resources/serviceprincipal.md).
 
 > [!IMPORTANT]
-> Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) durante a criação de servicePrincipals. Use o método [addpassword](serviceprincipal-addpassword.md) para adicionar senhas a um servicePrincipal.
+> Não há suporte para a adição de [**passwordCredential**](../resources/passwordcredential.md) durante a criação de servicePrincipals. Use o método [addPassword](serviceprincipal-addpassword.md) para adicionar senhas ou segredos para um servicePrincipal.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,6 +30,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+
+> [!IMPORTANT]
+> Os seguintes requisitos adicionais devem ser atendidos para que um aplicativo crie uma entidade de serviço:
+> + Se o aplicativo de suporte estiver registrado no locatário inicial do aplicativo de chamada, o aplicativo de chamada deverá ser o proprietário do aplicativo de suporte.
+> + Se o aplicativo de apoio estiver registrado em outro locatário do Azure AD, o aplicativo de chamada deverá receber a função `Cloud Application Administrator` ou `Application Administrator`.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +49,7 @@ POST /servicePrincipals
 | Content-Type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter  **appId**.
+No corpo da solicitação, forneça uma representação JSON de um objeto [servicePrincipal](../resources/serviceprincipal.md). O corpo da solicitação deve conter **appId**.
 
 ## <a name="response"></a>Resposta
 

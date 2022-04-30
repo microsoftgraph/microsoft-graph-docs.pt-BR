@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: d1d3e616582d6e5e5370aa9fc4ff31dcb707e53f
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 83ed328690b6cf46f7fdec22c9eba2e77f020d17
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477906"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133808"
 ---
 # <a name="create-serviceprincipal"></a>Criar servicePrincipal
 
@@ -32,6 +32,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Os seguintes requisitos adicionais devem ser atendidos para que um aplicativo crie uma entidade de serviço:
+> + Se o aplicativo de suporte estiver registrado no locatário inicial do aplicativo de chamada, o aplicativo de chamada deverá ser o proprietário do aplicativo de suporte.
+> + Se o aplicativo de apoio estiver registrado em outro locatário do Azure AD, o aplicativo de chamada deverá receber a função `Cloud Application Administrator` ou `Application Administrator`.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

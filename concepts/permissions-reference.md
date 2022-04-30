@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 72a104326a577e2d66f484f720666fbc07653528
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: b439eba70c583004a98f45bc78908b040842d11c
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755611"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133272"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1377,7 +1377,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1831,15 +1831,23 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 #### <a name="application-permissions"></a>Permissões de aplicativos
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ExternalConnection.Read.All_ | Ler todas as conexões externas | Permite que o aplicativo leia e grave conexões externas sem um usuário conectado. | Sim | Não |
+| _ExternalConnection.ReadWrite.All_ | Ler e gravar todas as conexões externas | Permite que o aplicativo leia e grave todas as conexões externas sem um usuário conectado. | Sim | Não |
 | _ExternalConnection.ReadWrite.OwnedBy_ | Leitura e gravação de conexões externas e configurações de conexão | Permite que o aplicativo faça leitura e gravação de conexões externas e suas configurações sem um usuário conectado. O aplicativo somente pode ler e gravar conexões externas às qual está autorizado ou pode criar novas conexões externas. | Sim | Não |
-| _ExternalItem.ReadWrite.OwnedBy_ | Ler e gravar itens externos | Permite que o aplicativo leia e grave itens externos sem um usuário conectado. O aplicativo somente pode ler itens externos da conexão à qual está autorizado. | Sim | Não |
+| _ExternalItem.Read.All_ | Ler todos os itens externos | Permite que o aplicativo faça leitura e gravação de todos os itens externos sem um usuário conectado. | Sim | Não |
 | _ExternalItem.ReadWrite.All_ | Leitura e gravação de todos os itens externos | Permite que o aplicativo faça leitura e gravação de todos os itens externos sem um usuário conectado. | Sim | Não |
+| _ExternalItem.ReadWrite.OwnedBy_ | Ler e gravar itens externos | Permite que o aplicativo leia e grave itens externos sem um usuário conectado. O aplicativo somente pode ler itens externos da conexão à qual está autorizado. | Sim | Não |
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.Read.All_ | Ler os dados externos | Permite que um aplicativo consulte dados ingeridos com conectores Microsoft Graph| Sim | Não |
+| _ExternalConnection.Read.All_ | Ler todas as conexões externas | Permite que o aplicativo leia todas as conexões externas em nome de um usuário conectado. | Sim | Não |
+| _ExternalConnection.ReadWrite.All_ | Ler e gravar todas as conexões externas | Permite que o aplicativo leia e grave todas as conexões externas em nome de um usuário conectado. | Sim | Não |
+| _ExternalConnection.ReadWrite.OwnedBy_ | Ler e gravar conexões externas | Permite que o aplicativo leia e escreva programas em nome do usuário conectado. O aplicativo somente pode ler e gravar conexões externas às qual está autorizado ou pode criar novas conexões externas. | Sim | Não |
+| _ExternalItem.Read.All_ | Ler os dados externos | Permitir que o aplicativo leia conjuntos de dados externos e conteúdo em nome do usuário conectado. | Sim | Não |
+| _ExternalItem.ReadWrite.All_ | Leitura e gravação de todos os itens externos | Permite que o aplicativo leia e grave todos os itens externos em nome de um usuário conectado. | Sim | Não |
+| _ExternalItem.ReadWrite.OwnedBy_ | Ler e gravar itens externos | Permite que o aplicativo leia e grave itens externos em nome de um usuário conectado. O aplicativo somente pode ler itens externos da conexão à qual está autorizado. | Sim | Não |
 
 ### <a name="remarks"></a>Comentários
 As permissões de pesquisa só são válidas para contas corporativas ou de estudante.
@@ -2563,7 +2571,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação c
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegado
+#### <a name="delegated"></a>Delegated
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

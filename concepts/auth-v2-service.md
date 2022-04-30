@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4310bbc6c2dc64b9e59cb6f0dfe1010a043452c4
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 1fd849f0176468c76353f9f2c478dfca0b753027
+ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333635"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65133423"
 ---
 # <a name="get-access-without-a-user"></a>Obter acesso sem um usuário
 
@@ -143,7 +143,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 |:--------------|:----------|:------------
 | locatário        | Obrigatório  | O locatário de diretório do qual você deseja solicitar permissão. O valor pode estar no GUID ou em um formato de nome amigável.
 | client_id     | Obrigatório  | A ID do aplicativo que o [portal de registro de aplicativo do Azure](https://go.microsoft.com/fwlink/?linkid=2083908) atribuído quando você registrou seu aplicativo.
-| scope         | Obrigatório  | O valor passado para o `scope` parâmetro nesta solicitação deve ser o identificador do recurso (URI da ID do aplicativo) do recurso desejado, afixado com o sufixo `.default`. Para o Microsoft Graph, o valor é `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade da plataforma de identidade da Microsoft para incluir no token de acesso todas as permissões no nível do aplicativo que o administrador consentiu.
+| scope         | Obrigatório  | O valor passado para o parâmetro **scope** nesta solicitação deve ser o identificador (URI do ID do aplicativo) do recurso desejado, afixado com o sufixo `.default`. Por exemplo, o URI da ID do aplicativo de recursos do Microsoft Graph é `https://graph.microsoft.com/`. Para o Microsoft Graph, o valor de **scope** é, portanto, `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade da plataforma de identidade da Microsoft para incluir no token de acesso todas as permissões no nível do aplicativo que o administrador consentiu.
 | client_secret | Obrigatório  | O segredo do cliente que você gerou para seu aplicativo no portal de registro do aplicativo. Verifique se a URL está codificada.
 | grant_type    | Obrigatório  | Deve ser `client_credentials`.
 
