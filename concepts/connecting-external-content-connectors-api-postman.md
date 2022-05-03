@@ -5,53 +5,54 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 39dabdbc0823099d53ea63dcfbe86b8626ecdae6
-ms.sourcegitcommit: 813bed8cbb61a5f892e8a227afc17c66687ab1fb
+ms.openlocfilehash: dcd8af90915c9e8e6440d238f239eb3335bbad1c
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974458"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176637"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
-Este tópico descreve como você pode usar as APIs do conector do Microsoft Graph com o Postman.
+Este artigo descreve como você pode usar as APIs do conector do Microsoft Graph com o Postman.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * Uma conta Microsoft ou uma conta corporativa ou de estudante.
 * Acesso a um locatário de desenvolvedor do Microsoft 365. Se você não tiver um, poderá se inscrever no [Programa para Desenvolvedores do Microsoft 365](https://developer.microsoft.com/en-us/microsoft-365/dev-program) para obter uma assinatura de desenvolvedor gratuita.
 
-## <a name="step-1---fork-the-microsoft-graph-postman-collection"></a>Etapa 1 – Bifurcar a coleção Microsoft Graph Postman
+## <a name="step-1-fork-the-microsoft-graph-postman-collection"></a>Etapa 1: bifurcar a coleção Microsoft Graph Postman
 
 Para usar a coleção Postman, você precisa bifurcá-la para seu espaço de trabalho Postman. Faça isso a partir de um navegador da web.
 
 1. Acesse [Postman](https://identity.getpostman.com/signup) e inscreva-se. Se você já tiver uma conta do Postman, poderá [Entrar](https://identity.getpostman.com/login).
 
-2. Depois de entrar, vá para a seguinte URL: , e selecione a `https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148` coleção Microsoft Graph.
+2. Depois de entrar, acesse a seguinte URL: `https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148` e selecione a coleção do Microsoft Graph.
 
-3. Selecione os três pontos à direita e selecione a opção **Criar uma bifurcação**.
+3. Selecione os três pontos à direita e, em seguida, selecione **Criar uma bifurcação**.
 
-![Captura de tela mostrando a coleção Microsoft Graph Postman e a opção de criar uma bifurcação](./images/connectors-images/16-postman.png)
+   ![Captura de tela mostrando a coleção Microsoft Graph Postman e a opção de criar uma bifurcação](./images/connectors-images/16-postman.png)
 
-4. Na caixa de diálogo aberta, insira um rótulo para identificar sua bifurcação. No menu suspenso **Espaço de Trabalho,** selecione **Meu espaço de trabalho** e selecione **Coleção de bifurcação**.
+4. Na caixa de diálogo aberta, insira um rótulo para identificar sua bifurcação. No menu suspenso **Workspace**, selecione **My Workspace** e, em seguida, selecione **Coleção de Bifurcação**.
 
-![Captura de tela mostrando a caixa de diálogo da coleção de bifurcação no Postman e as opções para inserir um rótulo e selecionar Meu Espaço de Trabalho](./images/connectors-images/17-postman.png)
+   ![Captura de tela mostrando a caixa de diálogo da coleção de bifurcação no Postman e as opções para inserir um rótulo e selecionar Meu Espaço de Trabalho](./images/connectors-images/17-postman.png)
 
-3. Agora você pode ir para **Espaços de trabalho** > **Meu Espaço de trabalho** e ver a bifurcação que você criou. Você encontrará a pasta Conectores do Microsoft Graph em **Aplicação**.
+3. Acesse **Workspaces** > **My Workspace** para ver a bifurcação que você criou. Você pode encontrar a pasta de conectores do Microsoft Graph em **Application**.
 
-![Captura de tela da seção Meu Espaço de Trabalho no Postman, mostrando a coleção Microsoft Graph bifurcada ](./images/connectors-images/18-postman.png)
+   ![Captura de tela da seção Meu Espaço de Trabalho no Postman, mostrando a coleção Microsoft Graph bifurcada ](./images/connectors-images/18-postman.png)
 
-## <a name="step-2---download-the-postman-agent-optional---postman-web-browser-only"></a>Etapa 2 - Baixar o agente Postman (Opcional - somente navegador da Web do Postman)
+## <a name="step-2-download-the-postman-agent-optional---postman-web-browser-only"></a>Etapa 2: baixe o Agente Postman (opcional - Somente navegador da Web Postman)
 
-Para usar esta coleção Postman em seu navegador, baixe o [Agente de área de trabalho do Postman](https://www.postman.com/downloads). Não é possível usar o Postman para a Web sem isso devido às restrições de CORS do navegador.
-"O número máximo de recursos de [conexão](/graph/api/resources/externalconnectors-externalconnection) por locatário do Microsoft 365."
+Para usar esta coleção Postman em seu navegador, baixe o [Agente de área de trabalho do Postman](https://www.postman.com/downloads). 
+
+Você não pode usar o Postman para a Web sem isso devido a restrições CORS no navegador da Web: "O número máximo de recursos de [conexão](/graph/api/resources/externalconnectors-externalconnection) por locatário do Microsoft 365".
 
 > [!NOTE]
 > Você não precisará do agente se estiver usando o aplicativo Postman para Windows. Se você abrir o Postman para Windows, verá essa coleção em seu espaço de trabalho.
 
-## <a name="step-3---create-an-azure-ad-application"></a>Etapa 3 - Criar um aplicativo do Azure AD
+## <a name="step-3-create-an-azure-ad-application"></a>Etapa 3: criar um aplicativo do Azure Active Directory
 
-Para usar essa coleção no próprio locatário de desenvolvedor, crie um aplicativo do Azure AD e conceda a ele as permissões apropriadas para as solicitações que deseja chamar.
+Para usar essa coleção em seu próprio locatário de desenvolvedor, crie um aplicativo do Azure Active Directory (Azure AD) e dê a ele as permissões apropriadas para as solicitações que você deseja chamar.
 
 1. Acesse o [portal.azure.com](https://portal.azure.com/) e **Entre** com sua conta de administrador de locatários de desenvolvedor.
 2. Em Serviços do Azure, selecione o **Azure Active Directory**.
@@ -62,38 +63,38 @@ Para usar essa coleção no próprio locatário de desenvolvedor, crie um aplica
 7. Selecione **Registrar**.
 8. No menu à esquerda, selecione **Permissões da API**.
 9. No menu horizontal, selecione **Adicionar uma permissão** > **Microsoft Graph** > **Permissões delegadas**.
-10. Comece a digitar `ExternalItem.ReadWrite.All` e marque `ExternalItem.ReadWrite.All`.
-11. Selecione **Permissões de aplicativo**, digite "Usuário" e verifique as **Permissões de aplicativo**.
-12. Expanda as **Opções de usuário** e marque **`ExternalItem.ReadWrite.All`**.
+10. Comece a digitar `ExternalItem.ReadWrite.All` e selecione `ExternalItem.ReadWrite.All`.
+11. Selecione **Permissões do aplicativo**, digite "Usuário" e selecione **Permissões do aplicativo**.
+12. Expanda as **Opções de usuário** e selecione **`ExternalItem.ReadWrite.All`**.
 13. Selecione **Adicionar permissões**.
-14. No menu horizontal, selecione **Conceder consentimento de administrador** e, em seguida, selecione **Sim**.
-15. No menu à esquerda, selecione **Visão geral**. A partir daqui, você poderá obter a ID de aplicativo (cliente) e a ID de diretório (locatário). Você precisará delas na etapa 4.
+14. No menu horizontal, selecione **Conceder consentimento de administrador** para e, em seguida, selecione **Sim**.
+15. No menu à esquerda, selecione **Visão geral**. A partir daqui, você pode obter o ID do aplicativo (cliente) e o ID do diretório (locatário). Você precisará deles na etapa 4.
 16. No menu à esquerda, selecione **Certificados e segredos**.
-17. Selecione **Novo segredo do cliente**, insira uma descrição e selecione **Adicionar**. Copie o valor do novo segredo do cliente. Você precisará dele na etapa 4.
+17. Selecione **Novo** segredo do cliente, insira uma descrição e selecione **Adicionar**. Copie o novo valor do segredo do cliente; você precisará disso na etapa 4.
 
 O aplicativo do Azure AD agora tem permissões para fazer solicitações em nome de um usuário para chamar `ExternalItem.ReadWrite.All` e como aplicativo do `ExternalItem.ReadWrite.All`.
 
-## <a name="step-4--configure-authentication"></a>Etapa 4 - Configurar autenticação
+## <a name="step-4-configure-authentication"></a>Etapa 4: Configurar autenticação
 
 Configure as variáveis no Postman. Essa informação é usada pra gerar o token de acesso.
 
 1. Selecione a **Microsoft Graph** e vá para a seção **Variáveis**.
 
-![Captura de tela da guia API de conectores do Microsoft Graph e da seção Variáveis](./images/connectors-images/07-postman.png)
+   ![Captura de tela da guia API de conectores do Microsoft Graph e da seção Variáveis](./images/connectors-images/07-postman.png)
 
-2. Na seção Variáveis, forneça as informações necessárias usando as informações da etapa 3.
+2. Na seção Variáveis, forneça as informações necessárias usando as informações da etapa 3:
 
-- Defina o **Valor atual** da **ID\_do cliente** para o valor da ID do aplicativo (cliente) da etapa 3.15.
-- Defina o **Valor atual** do **segredo\_do cliente** para o valor do Segredo do cliente da etapa 3.17.
-- Defina o **Valor atual** do **locatário** como o valor da ID de diretório (locatário) da etapa 3.15.
-- Defina o **Valor atual** do **nome de usuário** como `admin@xxxxxxx.onmicrosoft.com`
-- Defina o **Valor atual** da **senha** como a senha do administrador do locatário.
+   - Defina o valor atual do **locatário** para o valor de ID do diretório (locatário) da etapa 3.15.
+   - Defina o valor atual de **client\_id** para o valor de ID do aplicativo (cliente) da etapa 3.15.
+   - Defina o valor atual **cliente\_segredo** o valor do segredo do cliente da etapa 3.17.
+   - Defina o valor atual de **userName** como `admin@xxxxxxx.onmicrosoft.com`.
+   - Defina o valor atual de **senha** senha de administrador do locatário.
 
-![Captura de tela mostrando as Variáveis selecionadas](./images/connectors-images/08-postman.png)
+   ![Captura de tela mostrando as Variáveis selecionadas](./images/connectors-images/08-postman.png)
 
 3. Selecione **Salvar** / **Atualizar**.
 
-## <a name="step-5---get-an-authentication-token"></a>Etapa 5 - Obter um token de autenticação
+## <a name="step-5-get-an-authentication-token"></a>Etapa 5: obter um token de autenticação
 
 Como esta é a primeira vez que você está executando uma solicitação como um fluxo de autenticação de aplicativo, é necessário obter um token de acesso. Obtenha o token de acesso do aplicativo fazendo a seguinte solicitação POST:
 
@@ -111,6 +112,7 @@ client_id={{client_id}}
 &client_secret={{client_secret}} 
 &grant_type=client_credentials 
 ```
+
 O exemplo a seguir mostra uma resposta bem-sucedida:
 ```html
 { 
@@ -121,11 +123,12 @@ O exemplo a seguir mostra uma resposta bem-sucedida:
 } 
 ```
 
-Observe que você está usando o [fluxo de credencial do cliente](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) aqui. Certifique-se de obter um token de acesso do aplicativo e não um token de acesso do usuário.
+> [!NOTE]
+> Você está usando o fluxo [de credenciais do cliente](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) aqui. Certifique-se de obter um token de acesso do aplicativo e não um token de acesso do usuário.
 
-## <a name="step-6--create-a-new-connection"></a>Etapa 6 - Criar uma nova conexão
+## <a name="step-6-create-a-new-connection"></a>Etapa 6: criar uma nova conexão
 
-Uma [conexão](/graph/connecting-external-content-manage-connections) é um contêiner lógico de dados externos que você pode gerenciar como uma única unidade. Escolha um nome, id e descrição da conexão. Obtenha os detalhes necessários do administrador para se conectar à fonte de dados e forneça um mecanismo para autorizar a fonte de conteúdo ao configurar a conexão. Você pode usar as APIs e o [SDK do Microsoft Graph](/graph/sdks/sdks-overview) para programar a configuração do conector. Se deseja armazenar credenciais, você pode usar o Azure Key Vault.
+Uma [conexão](/graph/connecting-external-content-manage-connections) é um contêiner lógico de dados externos que você pode gerenciar como uma única unidade. Escolha um nome de conexão, uma descrição e uma ID. Obtenha os detalhes necessários do administrador para se conectar à fonte de dados e forneça um mecanismo para autorizar a fonte de conteúdo ao configurar a conexão. Você pode usar as APIs e o [SDK do Microsoft Graph](/graph/sdks/sdks-overview) para programar a configuração do conector. Se deseja armazenar credenciais, você pode usar o Azure Key Vault.
 
 ```http
 POST /external/connections
@@ -168,9 +171,9 @@ Veja a seguir uma captura de tela da seção **Criar conexão**.
 
  ![Captura de tela da seção Criar conexão](./images/connectors-images/10-postman.png)
 
-## <a name="step-7---register-connection-schema"></a>Etapa 7 - Registrar esquema de conexão
+## <a name="step-7-register-connection-schema"></a>Etapa 7: registrar esquema de conexão
 
-O esquema de conexão determina como o seu conteúdo será usado em várias experiências do Microsoft Graph. O esquema é uma lista simples de todas as propriedades que você planeja adicionar à conexão, juntamente com seus atributos, rótulos e aliases. Você deve registrá-lo antes de adicionar itens na conexão.
+O esquema de conexão determina como seu conteúdo é usado em várias experiências do Microsoft Graph. O esquema é uma lista simples de todas as propriedades que você planeja adicionar à conexão junto com seus atributos, rótulos e aliases. Você deve registrá-lo antes de adicionar itens na conexão.
 
 ```http
 POST /external/connections/{id}/schema 
@@ -237,13 +240,13 @@ Location: https://graph.microsoft.com/beta/external/connections/contosotasks/ope
 > GET /external/connections/contosotasks/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 > ```
 
-Este é outro exemplo de solicitação.
+A seguir está outro exemplo da solicitação.
 ```http
 Request 
 GET https://graph.microsoft.com/beta/external/connections/operations/616bfeed-666f-4ce0-8cd9-058939010bfc 
 ```
 
-E, em seguida, o respectivo exemplo de resposta.
+A seguir está outro exemplo da resposta.
 
 ```http
 HTTP/1.1 200 OK 
@@ -266,11 +269,11 @@ Depois que o status da operação do esquema de conexão muda de **InProgress** 
 
 Depois que o estado da conexão mudar de **rascunho** para **pronto**, você poderá inserir itens na conexão atual.
 
-## <a name="step-8---add-external-group-member-optional"></a>Etapa 8 - Adicionar membro de grupo externo (opcional)
+## <a name="step-8-add-external-group-member-optional"></a>Etapa 8: adicionar membro do grupo externo (opcional)
 
 Se o serviço externo usa ACLs que não sejam do Azure AD, sincronize essas permissões.  
 
-Grupos externos (junto com usuários e grupos do Azure Active Directory) são usados ​​para definir permissões em `externalItems` adicionado a uma conexão do Microsoft Graph. Para obter detalhes, consulte [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true).
+Grupos externos (junto com usuários e grupos do Azure Active Directory) são usados para definir permissões em `externalItems` adicionados a uma conexão do Microsoft Graph. Para obter detalhes, consulte [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true).
 
 Este é um exemplo de uma solicitação.
 
@@ -286,7 +289,7 @@ Content-Type: application/json
 } 
 ```
 
-A seguir veremos um exemplo da resposta.
+Este é um exemplo da resposta.
 
 ```http
 HTTP/1.1 201 Created 
@@ -300,15 +303,15 @@ Content-Type: application/json
 } 
 ```
 
-## <a name="step-9---ingest-items"></a>Etapa 9 - Ingerir itens
+## <a name="step-9-ingest-items"></a>Etapa 9: Ingerir Itens
 
-Depois de criar uma conexão, você poderá adicionar seu conteúdo. Cada item da fonte de dados deve ser representado como um `externalItem` no Microsoft Graph com uma ID de item exclusiva. Essa ID é usada para criar, atualizar ou excluir o item do Microsoft Graph. Você pode usar a chave primária da fonte de dados como a `itemId` ou derivá-la de um ou mais campos. Um `externalItem` possui três componentes principais: lista de controle de acesso, propriedades e conteúdo.
+Depois de criar uma conexão, você pode adicionar seu conteúdo. Cada item da fonte de dados deve ser representado como um `externalItem` no Microsoft Graph com uma ID de item exclusiva. Essa ID é usada para criar, atualizar ou excluir o item do Microsoft Graph. Você pode usar a chave primária da fonte de dados como a `itemId` ou derivá-la de um ou mais campos. Um `externalItem` possui três componentes principais: lista de controle de acesso, propriedades e conteúdo.
 
 Se você tiver arquivos binários, deverá analisá-los para obter os metadados e uma versão em texto do conteúdo. Se você tiver conteúdo não textual, como um arquivo PDF ou BMP, deverá usar o reconhecimento de caracteres do objeto para converter o conteúdo em texto.  
 
 Você é responsável por converter suas permissões de fonte para conceder ou negar. Negar tem maior precedência sobre a concessão.
 
-A seguir está um exemplo de solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 ```http
 PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938 
@@ -350,4 +353,4 @@ HTTP/1.1 200 OK
 
 ## <a name="error-handling"></a>Tratamento de erro
 
-Para obter detalhes sobre como resolver erros, confira [Erros de autorização do Microsoft Graph](/graph/resolve-auth-errors).
+Para obter detalhes sobre como resolver erros, consulte [Resolver erros de autorização do Microsoft Graph](/graph/resolve-auth-errors).
