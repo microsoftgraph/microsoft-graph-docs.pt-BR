@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: ItemActivityTimeSet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: eb0477255783b3aba7aaa61a0e9ece868c1882d1
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: 3d25a4bd3961b2f01759ba3f414b873c9c6daac9
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724322"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176790"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Tipo de recurso ItemActivityTimeSet
 

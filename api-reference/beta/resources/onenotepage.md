@@ -1,38 +1,38 @@
 ---
-title: Tipo de recurso do onenotePage
-description: Uma página em um bloco de anotações do OneNote.
-localization_priority: Normal
+title: Tipo de recurso onenotePage
+description: Uma página em um bloco OneNote bloco de anotações.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: 2f8a93080b3eaa58be95e8721307cdde31b359ea
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 4f4b556b048d535236d40259bc9736de4e3e5ee4
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50719448"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176725"
 ---
-# <a name="onenotepage-resource-type"></a>Tipo de recurso do onenotePage
+# <a name="onenotepage-resource-type"></a>Tipo de recurso onenotePage
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma página em um bloco de anotações do OneNote.
+Uma página em um bloco OneNote bloco de anotações.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|conteúdo|Fluxo|Conteúdo HTML da página.|
-|contentUrl|Cadeia de caracteres|A URL do conteúdo HTML da página.  Somente leitura.|
+|conteúdo|Fluxo|O conteúdo HTML da página.|
+|contentUrl|Cadeia de Caracteres|A URL do conteúdo HTML da página.  Somente leitura.|
 |createdByAppId|Cadeia de caracteres|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a página foi criada. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
 |id|Cadeia de caracteres|O identificador exclusivo da página.  Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a página foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|level|Int32|O nível de recuo da página. Somente leitura.|
-|links|[pageLinks](pagelinks.md)|Links para abrir a página. O `oneNoteClientURL` link abre a página no cliente nativo do OneNote se estiver instalado. O `oneNoteWebUrl` link abre a página no OneNote na Web. Somente leitura.|
-|order|Int32|A ordem da página em sua seção pai. Somente leitura.|
-|self|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.|
+|Nível|Int32|O nível de recuo da página. Somente leitura.|
+|links|[pageLinks](pagelinks.md)|Links para abrir a página. O `oneNoteClientURL` link abre a página no OneNote nativo se ele estiver instalado. O `oneNoteWebUrl` link abre a página no OneNote na Web. Somente leitura.|
+|Ordem|Int32|A ordem da página dentro de sua seção pai. Somente leitura.|
+|Auto|Cadeia de Caracteres|O ponto de extremidade em que você pode obter detalhes sobre a página. Somente leitura.|
 |title|Cadeia de caracteres|O título da página. |
 
 ## <a name="relationships"></a>Relações
@@ -46,9 +46,9 @@ Uma página em um bloco de anotações do OneNote.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter página](../api/page-get.md) | [onenotePage](onenotepage.md) |Leia as propriedades e as relações da página.|
-|[Atualizar conteúdo da página](../api/page-update.md) | Nenhum(a) |Atualize o conteúdo HTML da página. |
-|[Excluir página](../api/page-delete.md) | Nenhum(a) |Exclua a página. |
-|[copyToSection](../api/page-copytosection.md)| Nenhum(a) |Copia a página para uma seção específica.|
+|[Atualizar conteúdo da página](../api/page-update.md) | Nenhum |Atualize o conteúdo HTML da página. |
+|[Excluir página](../api/page-delete.md) | Nenhum |Exclua a página. |
+|[copyToSection](../api/page-copytosection.md)| Nenhum |Copia a página para uma seção específica.|
 
 ## <a name="json-representation"></a>Representação JSON
 

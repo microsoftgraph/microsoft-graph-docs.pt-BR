@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso de fileserviceendpoint
-description: Representa as informações de identificação e URI de uma instância de serviço de impressão.
+title: Tipo de recurso printServiceEndpoint
+description: Representa o URI e as informações de identificação de uma instância de serviço de impressão.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8b9289807778c1a44940d8e8eb0d9163ed12f006
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c5d9085614b4c4ad99aa43cb8281a3123eb3741
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985857"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176752"
 ---
-# <a name="printserviceendpoint-resource-type"></a>tipo de recurso de fileserviceendpoint
+# <a name="printserviceendpoint-resource-type"></a>Tipo de recurso printServiceEndpoint
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as informações de identificação e URI de uma instância de serviço de impressão.
+Representa o URI e as informações de identificação de uma instância de serviço de impressão.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Obter o ponto de extremidade](../api/printserviceendpoint-get.md) | [fileserviceendpoint](printserviceendpoint.md) | Leia as propriedades e os relacionamentos do objeto de ponto de extremidade. |
+| [Obter o ponto de extremidade](../api/printserviceendpoint-get.md) | [printServiceEndpoint](printserviceendpoint.md) | Leia as propriedades e as relações do objeto de ponto de extremidade. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Um nome de exibição legível para o ponto de extremidade.|
-|nome|String|Um nome exclusivo que identifica o serviço que o ponto de extremidade fornece. Os valores possíveis são: `discovery` (serviço de descoberta), `notification` (serviço de notificação), `ipp` (serviço IPP) e `registration` (serviço de registro). Somente leitura.|
-|URI|String|O URI que pode ser usado para acessar o serviço.|
+|displayName|Cadeia de caracteres|Um nome de exibição legível por humanos para o ponto de extremidade.|
+|nome|Cadeia de caracteres|Um nome exclusivo que identifica o serviço que o ponto de extremidade fornece. Os valores possíveis são: `discovery` (Serviço de Descoberta), `notification` (Serviço de Notificação), `ipp` (Serviço IPP) e `registration` (Serviço de Registro). Somente leitura.|
+|Uri|Cadeia de Caracteres|O URI que pode ser usado para acessar o serviço.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso printUserIdentity
-description: Representa uma identidade do usuário no serviço de impressão universal. Mapeia para um usuário do Azure AD.
+title: Tipo de recurso printUserIdentity
+description: Representa uma identidade de usuário dentro do serviço de Impressão Universal. Mapas a um Azure AD usuário.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8a695bed829d6c7e8825898da366737427195e1d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 50a73a6f08448d50ac616e82d15c046d52d63b83
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070650"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176309"
 ---
-# <a name="printuseridentity-resource-type"></a>tipo de recurso printUserIdentity
+# <a name="printuseridentity-resource-type"></a>Tipo de recurso printUserIdentity
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma identidade do usuário no serviço de impressão universal. Mapeia para um [usuário do Azure Active Directory (Azure AD)](user.md).
+Representa uma identidade de usuário dentro do serviço de Impressão Universal. Mapas a [um usuário Azure Active Directory (Azure AD).](user.md)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|O identificador do printUserIdentity. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição do printUserIdentity.|
-|ipAddress|Cadeia de caracteres|O endereço IP do printUserIdentity. Não preenchido.|
-|userPrincipalName|Cadeia de caracteres|O nome principal do usuário (UPN) do printUserIdentity.|
+|id|Cadeia de caracteres|O identificador printUserIdentity. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome de exibição de printUserIdentity.|
+|ipAddress|Cadeia de caracteres|O endereço IP printUserIdentity. Não populado.|
+|userPrincipalName|Cadeia de caracteres|O NOME UPN (nome UPN) do usuário printUserIdentity.|
 
 ## <a name="json-representation"></a>Representação JSON
 

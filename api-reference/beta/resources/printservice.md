@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso printService
-description: Representa uma descrição específica do locatário do Azure AD de uma instância de serviço de impressão. Os serviços existem para cada componente da infraestrutura de impressão (por exemplo, descoberta, notificações, registro e IPP) e têm um ou mais pontos de extremidade.
+description: Representa uma descrição Azure AD específica do locatário de uma instância de serviço de impressão. Os serviços existem para cada componente da infraestrutura de impressão (por exemplo, descoberta, notificações, registro e IPP) e têm um ou mais pontos de extremidade.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 08b5a0857a62e91f545c6678398f54c4585436be
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: df904704f6efb9d069832a6b9767ab1314e261ee
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60355236"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176760"
 ---
 # <a name="printservice-resource-type"></a>Tipo de recurso printService
 
@@ -18,25 +18,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma descrição específica do locatário do Azure AD de uma instância de serviço de impressão. Os serviços existem para cada componente da infraestrutura de impressão (descoberta, notificações, registro e IPP) e têm um ou mais pontos de extremidade.
+Representa uma descrição Azure AD específica do locatário de uma instância de serviço de impressão. Os serviços existem para cada componente da infraestrutura de impressão (descoberta, notificações, registro e IPP) e têm um ou mais pontos de extremidade.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar serviços](../api/print-list-services.md) | [Coleção printService](printservice.md) | Obter uma lista de serviços de Impressão Universal. |
-| [Obter serviço](../api/printservice-get.md) | [printService](printservice.md) | Leia as propriedades e as relações do objeto service. |
-| [Listar pontos de extremidade](../api/printservice-list-endpoints.md) | [Coleção printServiceEndpoint](printserviceendpoint.md) | Obter uma lista de pontos de extremidade que um serviço fornece. |
+| [Listar serviços](../api/print-list-services.md) | [coleção printService](printservice.md) | Obter uma lista de serviços de Impressão Universal. |
+| [Obter serviço](../api/printservice-get.md) | [printService](printservice.md) | Leia as propriedades e as relações do objeto de serviço. |
+| [Listar pontos de extremidade](../api/printservice-list-endpoints.md) | [coleção printServiceEndpoint](printserviceendpoint.md) | Obtenha uma lista de pontos de extremidade que um serviço fornece. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String|O identificador do serviço. Somente leitura.|
+|id|Cadeia de caracteres|O identificador do serviço. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|pontos de extremidade|[Coleção printServiceEndpoint](printserviceendpoint.md)| Pontos de extremidade que podem ser usados para acessar o serviço. Somente leitura. Anulável.|
+|pontos de extremidade|[coleção printServiceEndpoint](printserviceendpoint.md)| Pontos de extremidade que podem ser usados para acessar o serviço. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

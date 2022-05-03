@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso Photo
+title: tipo de recurso de foto
 description: O recurso photo fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um driveItem.
 ms.date: 09/10/2017
-localization_priority: Normal
+ms.localizationpriority: medium
 author: JeremyKelley
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 920d6e69367517b1324b6cb66b755b6b58192219
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc253cd90a75438f627cf00c55551cfb8bc12d01
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997820"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176355"
 ---
-# <a name="photo-resource-type"></a>tipo de recurso Photo
+# <a name="photo-resource-type"></a>tipo de recurso de foto
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph
 O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um [driveItem](driveitem.md).
 
 > [!NOTE]
-> Atualmente, apenas o **takenDateTime** está disponível no onedrive for Business e no SharePoint.
+> Atualmente, somente **takenDateTime** está disponível OneDrive for Business e SharePoint.
 
 ## <a name="properties"></a>Propriedades
 
@@ -35,7 +35,7 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 |fNumber            |Double         | O valor de f-stop da câmera. Somente leitura.                               |
 |focalLength        |Double         | A distância focal da câmera. Somente leitura.                               |
 |iso                |Int32          | O valor de ISO da câmera. Somente leitura.                                  |
-|orientation        |Int16          | O valor da orientação da câmera. Gravável no OneDrive Personal.      |
+|orientation        |Int16          | O valor de orientação da câmera. Gravável no OneDrive Personal.      |
 |takenDateTime      |DateTimeOffset | A data e a hora em que a foto foi tirada no horário UTC. Somente leitura.              |
 
 ## <a name="json-representation"></a>Representação JSON

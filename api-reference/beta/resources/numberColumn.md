@@ -5,13 +5,13 @@ ms.date: 09/11/2017
 title: NumberColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: d361d204471e01bb65e33a7c4177600fc2dcd6f0
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: cloud-pc
+ms.openlocfilehash: 8970c7a2526a4a29a3efe8e27759e81338013ed8
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723295"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176920"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 

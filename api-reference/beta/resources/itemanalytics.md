@@ -1,29 +1,29 @@
 ---
 author: daspek
-description: O recurso do Microsoft Analytics oferece análise sobre as atividades que ocorreram em um item. No momento, esse recurso só está disponível no SharePoint e no OneDrive for Business.
+description: O recurso itemAnalytics fornece análise sobre atividades que ocorreram em um item. No momento, esse recurso só está disponível SharePoint e OneDrive for Business.
 ms.date: 09/14/2017
-title: O naanalytics
-localization_priority: Normal
+title: ItemAnalytics
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 0ef1fd6778b9ed31c0cd6dcd5ac14316675d697f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 15bd59f04384f2b18329f581f568ee465a86c040
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075627"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176929"
 ---
-# <a name="itemanalytics-resource-type"></a>tipo de recurso do multianalytics
+# <a name="itemanalytics-resource-type"></a>Tipo de recurso itemAnalytics
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso do Microsoft **Analytics** oferece análise sobre as atividades que ocorreram em um item. No momento, esse recurso só está disponível no SharePoint e no OneDrive for Business.
+O **recurso itemAnalytics** fornece análise sobre atividades que ocorreram em um item. No momento, esse recurso só está disponível SharePoint e OneDrive for Business.
 
-Você também pode usar a API [funçãogetactivitiesbyinterval][] para recuperar a análise por um intervalo ou intervalo de tempo personalizado.
+Você também pode usar a API [getActivitiesByInterval][] para recuperar a análise em um intervalo ou intervalo de tempo personalizado.
 
->**Observação:** O recurso do **naanalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
+>**Nota:** O **recurso itemAnalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -45,13 +45,13 @@ Você também pode usar a API [funçãogetactivitiesbyinterval][] para recuperar
 
 | Propriedade      | Tipo                 | Descrição
 |:--------------|:---------------------|:--------------------------------------
-| Época       | [itemActivityStat][] | Análise sobre o ciclo de vida do item.
+| allTime       | [itemActivityStat][] | Análise sobre o tempo de vida do item.
 | lastSevenDays | [itemActivityStat][] | Análise dos últimos sete dias.
 
 [itemActivityStat]: itemactivitystat.md
 
 
-[Funçãogetactivitiesbyinterval]: ../api/itemactivity-getbyinterval.md
+[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
 <!--
 {

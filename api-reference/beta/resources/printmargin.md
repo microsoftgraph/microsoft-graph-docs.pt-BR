@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de multimargem
-description: Especifica as larguras de margem a serem usadas ao imprimir.
+title: Tipo de recurso printMargin
+description: Especifica as larguras de margem a serem usadas durante a impressão.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8f89d2d4daa45d1043e3412852cdaa480223129b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d6d2e0d1f83cb0da747fb0bb901ba21547612c4
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048726"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176669"
 ---
-# <a name="printmargin-complex-type"></a>tipo complexo de transmargem
+# <a name="printmargin-complex-type"></a>Tipo complexo printMargin
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Especifica as larguras de margem a serem usadas ao imprimir.
+Especifica as larguras de margem a serem usadas durante a impressão.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |top|Int32|A margem em mícrons da borda superior.|
-|bottom|Int32|A margem em mícrons da borda inferior.|
+|Fundo|Int32|A margem em mícrons da borda inferior.|
 |Certo|Int32|A margem em mícrons da borda direita.|
 |left|Int32|A margem em mícrons da borda esquerda.|
 

@@ -1,16 +1,16 @@
 ---
 title: Gerenciar a Caixa de Entrada Prioritária
-description: 'A Caixa de Entrada Focada permite que você veja mensagens importantes na guia da Caixa de Entrada e o restante das mensagens da Caixa `Focused` de Entrada na `Other` guia. O sistema de classificação '
-localization_priority: Normal
+description: 'A Caixa de Entrada Destaques `Focused` permite exibir mensagens importantes na guia da Caixa de Entrada e o restante das mensagens da Caixa de Entrada na `Other` guia. O sistema de classificação '
+ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: 8f69c23e62ef5face5932a4fc392952a7a62ab1a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 5380d5725292b098ed745075a5e84be3eb2f63d9
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129377"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176841"
 ---
 # <a name="manage-focused-inbox"></a>Gerenciar a Caixa de Entrada Prioritária
 
@@ -35,8 +35,8 @@ Observe que o sistema de classificação aprende e aplica a classificação apen
 
 **Usar substituições para classificar consistentemente por remetente**
 
-[Criar uma substituição para um remetente](../api/inferenceclassification-post-overrides.md)  |  [Listar todas as substituições de usuário](../api/inferenceclassification-list-overrides.md) |
+[Criar uma substituição para um remetente](../api/inferenceclassification-post-overrides.md) |  [Listar todas as substituições de usuário](../api/inferenceclassification-list-overrides.md) |
 
-[Atualizar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md)  |  [Excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md)
+[Atualizar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md) |  [Excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md)
 
 

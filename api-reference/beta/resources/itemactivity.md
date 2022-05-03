@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: ItemActivity
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: dd1ff94bc03a06b69427a76339284ca783b17b39
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: d07ec18e3e9ccd70cd4028f577d927f0b12323c2
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722699"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176572"
 ---
 # <a name="itemactivity-resource-type"></a>Tipo de recurso ItemActivity
 
@@ -49,11 +49,11 @@ Disponível atualmente só no SharePoint e no OneDrive for Business.
 
 | Propriedade | Tipo                    | Descrição                                                  |
 | :------- | :---------------------- | :----------------------------------------------------------- |
-| id       | string                  | O identificador exclusivo da atividade. Somente leitura.            |
-| access   | [accessAction][]        | Um item foi acessado.                                        |
+| id       | cadeia de caracteres                  | O identificador exclusivo da atividade. Somente leitura.            |
+| Acesso   | [accessAction][]        | Um item foi acessado.                                        |
 | action   | [itemActionSet][]       | Detalhes sobre a ação que ocorreu. Somente leitura.         |
 | actor    | [identitySet][]         | Identidade de quem executou a ação. Somente leitura.             |
-| location | [location][]            | Local físico onde a ação foi executada. Somente leitura. |
+| location | [location][]            | Local físico em que a ação foi executada. Somente leitura. |
 | times    | [itemActivityTimeSet][] | Detalhes sobre quando ocorreu a atividade. Somente leitura.       |
 
 [identitySet]: identityset.md

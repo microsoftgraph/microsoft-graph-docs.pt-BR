@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso rankedEmailAddress
+title: Tipo de recurso rankedEmailAddress
 description: Representa um endereço de email classificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: AAmatino
-ms.openlocfilehash: 36215d545bb6d24fae4ef8cbca35a1c5210976bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2723009cc44680e98b9c8b5a685c06846bb9abd7
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026401"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176311"
 ---
-# <a name="rankedemailaddress-resource-type"></a>tipo de recurso rankedEmailAddress
+# <a name="rankedemailaddress-resource-type"></a>Tipo de recurso rankedEmailAddress
 
 Namespace: microsoft.graph
 
@@ -25,7 +25,7 @@ Representa um endereço de email classificado.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|cadeia de caracteres|O endereço de email.|
-|classificação|double|A classificação do endereço de email. Uma classificação é usada como uma chave de classificação, em relação aos outros resultados retornados. Um valor de classificação mais alto corresponde a um resultado mais relevante. A relevância é determinada por sinais de comunicação, colaboração e relacionamento comercial.|
+|classificação|double|A classificação do endereço de email. Uma classificação é usada como uma chave de classificação em relação aos outros resultados retornados. Um valor de classificação mais alto corresponde a um resultado mais relevante. A relevância é determinada por sinais de comunicação, colaboração e relacionamento comercial.|
 
 ## <a name="json-representation"></a>Representação JSON
 

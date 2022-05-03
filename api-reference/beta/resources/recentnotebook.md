@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso recentNotebook
 description: Um bloco de notas do OneNote recentemente acessado. Um **recentNotebook** é similar a um notebook, mas tem menos propriedades.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: a35553ddb182597f1d5427418283216f962f207c
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 0581ca9a4cf3cab56e54786243239ee0b256a505
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721731"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176946"
 ---
 # <a name="recentnotebook-resource-type"></a>tipo de recurso recentNotebook
 
@@ -25,7 +25,7 @@ Um bloco de notas do OneNote recentemente acessado. Um **recentNotebook** é sim
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres|O nome do bloco de anotações.|
 |lastAccessedTime|DateTimeOffset|A data e hora da última modificação do bloco de anotações. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|links|[recentNotebookLinks](recentnotebooklinks.md)|Links para abrir o bloco de anotações. O link `oneNoteClientURL` abre o bloco de anotações no cliente do OneNote quando ele está instalado. O `oneNoteWebURL` link abre o bloco de anotações no OneNote na Web.|
+|links|[recentNotebookLinks](recentnotebooklinks.md)|Links para abrir o bloco de anotações. O link `oneNoteClientURL` abre o bloco de anotações no cliente do OneNote quando ele está instalado. O `oneNoteWebURL` link abre o bloco de anotações OneNote na Web.|
 |sourceService|String|A loja de back-end onde o bloco de anotações (notebook) reside, tanto em `OneDriveForBusiness` ou em `OneDrive`.|
 
 ## <a name="json-representation"></a>Representação JSON

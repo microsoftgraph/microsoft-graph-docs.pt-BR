@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de multiidentity
-description: Representa uma identidade no serviço de impressão universal. Mapeia para um grupo do Azure AD.
+title: Tipo de recurso printIdentity
+description: Representa uma identidade dentro do serviço de Impressão Universal. Mapas a um Azure AD grupo.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 45a69cbad25d2f9c3c99c9e01aa47982fe5c62b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6132cabcb0aa7dfff94207a38b963aefe568fe29
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048761"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176335"
 ---
-# <a name="printidentity-resource-type"></a>tipo de recurso de multiidentity
+# <a name="printidentity-resource-type"></a>Tipo de recurso printIdentity
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma identidade no serviço de impressão universal. Mapeia para um [grupo do Azure Active Directory (Azure AD)](group.md).
+Representa uma identidade dentro do serviço de Impressão Universal. Mapas a um [grupo Azure Active Directory (Azure AD).](group.md)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|O identificador da multiidentity. Somente leitura.|
-|displayName|Cadeia de caracteres|O nome de exibição do multiidentity.|
+|id|Cadeia de caracteres|O identificador de printIdentity. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome de exibição da printIdentity.|
 
 ## <a name="json-representation"></a>Representação JSON
 

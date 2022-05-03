@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de multioperação
-description: Representa uma operação de impressão universal de execução longa. Classe base para tipos de operação, como printerCreateOperation.
+title: Tipo de recurso printOperation
+description: Representa uma operação de Impressão Universal de execução longa. Classe base para tipos de operação, como printerCreateOperation.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 970ac3dd06e5af1478600166ffdd4c84815aa5b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e3d53d9fbdc5fbb4dd1bda2aa477581df5c838e
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048719"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176665"
 ---
-# <a name="printoperation-resource-type"></a>tipo de recurso de multioperação
+# <a name="printoperation-resource-type"></a>Tipo de recurso printOperation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma operação de impressão universal de execução longa. Classe base para tipos de operação, como [printerCreateOperation](printercreateoperation.md).
+Representa uma operação de Impressão Universal de execução longa. Classe base para tipos de operação, como [printerCreateOperation](printercreateoperation.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Operação get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Recupere uma operação de execução longa dentro do usuário atual ou do locatário do aplicativo. |
+| [Obter operação](../api/printoperation-get.md) | [printOperation](printoperation.md) | Recupere uma operação de execução longa dentro do locatário do usuário ou do aplicativo atual. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |

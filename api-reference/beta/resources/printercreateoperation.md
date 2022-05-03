@@ -1,39 +1,39 @@
 ---
-title: tipo de recurso printerCreateOperation
-description: Representa uma operação de registro de impressora de longa execução. Derivado de reoperation.
+title: Tipo de recurso printerCreateOperation
+description: Representa uma operação de registro de impressora de execução longa. Derivado de printOperation.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 3ae18e201f5b768de9cc1456de186fdd6b9336b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 716c23603dd811ddad61dd604c9961d1df3f5297
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048852"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176530"
 ---
-# <a name="printercreateoperation-resource-type"></a>tipo de recurso printerCreateOperation
+# <a name="printercreateoperation-resource-type"></a>Tipo de recurso printerCreateOperation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma operação de registro de impressora de longa execução. Derivado de [Reoperation](printoperation.md).
+Representa uma operação de registro de impressora de execução longa. Derivado de [printOperation](printoperation.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Operação get](../api/printoperation-get.md) | [printOperation](printoperation.md) | Recupere uma operação de execução longa dentro do usuário atual ou do locatário do aplicativo. |
+| [Obter operação](../api/printoperation-get.md) | [printOperation](printoperation.md) | Recupere uma operação de execução longa dentro do locatário do usuário ou do aplicativo atual. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|Cadeia de caracteres|O identificador da operação. Somente leitura.|
-|status|[printOperationStatus](printoperationstatus.md)|O status da operação de registro. Contém o andamento da operação e se ela foi concluída com êxito. Somente leitura.|
+|status|[printOperationStatus](printoperationstatus.md)|O status da operação de registro. Contém o progresso da operação e se ela foi concluída com êxito. Somente leitura.|
 |createdDateTime|DateTimeOffset|O DateTimeOffset quando a operação foi criada. Somente leitura.|
 |certificado|Cadeia de caracteres|O certificado assinado criado durante o processo de registro. Somente leitura.|
-|impressora|[impressora](printer.md)|A entidade de impressora criada. Somente leitura.|
+|Impressora|[impressora](printer.md)|A entidade de impressora criada. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

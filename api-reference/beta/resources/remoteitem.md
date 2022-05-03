@@ -5,13 +5,13 @@ ms.date: 09/10/2017
 title: RemoteItem
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 196f0105a2fb9f436d50728af1ab5865de47d397
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 13016aa906c70ed0b3023b9cdd71843243371246
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724222"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176521"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
@@ -64,11 +64,11 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
 | file                 | [File](file.md)                     | Indica que o item remoto é um arquivo. Somente leitura.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informações sobre o item remoto do sistema de arquivos local. Somente leitura.                                                                                          |
 | folder               | [Folder](folder.md)                 | Indica que o item remoto é uma pasta. Somente leitura.                                                                                                            |
-| id                   | String                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
+| id                   | Cadeia de caracteres                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
 | image                | [Imagem](image.md)                   | Metadados de imagem, se o item for uma imagem. Somente leitura.                                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                              |
-| nome                 | String                              | Opcional. Nome de arquivo do item remoto. Somente leitura.                                                                                                                 |
+| nome                 | Cadeia de caracteres                              | Opcional. Nome de arquivo do item remoto. Somente leitura.                                                                                                                 |
 | pacote              | [Pacote](package.md)               | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura. |
 | parentReference      | [ItemReference](itemreference.md)   | Propriedades do pai do item remoto. Somente leitura.                                                                                                           |
 | compartilhado               | [compartilhado](shared.md)                 | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.                                       |

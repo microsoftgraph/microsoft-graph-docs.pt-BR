@@ -1,37 +1,37 @@
 ---
 title: Tipo de recurso registryKeyState
-description: Contém informações sobre as alterações de chave do Registro relacionadas ao alerta e o processo que alterou as chaves do Registro.
+description: Contém informações sobre alterações de chave do Registro relacionadas ao alerta e o processo que alterou as chaves do Registro.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 6bf8c232548a70603fc6c38d3228b3a08b11e47c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 095d962ffcf09535042eda9f6ccf532351c091e9
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074602"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176717"
 ---
 # <a name="registrykeystate-resource-type"></a>Tipo de recurso registryKeyState
 
 Namespace: microsoft.graph
 
-Contém informações sobre as alterações de chave do Registro relacionadas ao alerta e o processo que alterou as chaves do Registro.
+Contém informações sobre alterações de chave do Registro relacionadas ao alerta e o processo que alterou as chaves do Registro.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|hive|registryHive|Um [Windows de registro](/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS \\ . Padrão.</li></ul> Os valores possíveis são: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
-|chave|Cadeia de caracteres|Chave atual (ou seja, alterada) do Registro (exclui HIVE).|
-|oldKey|Cadeia de Caracteres|Chave do Registro anterior (ou seja, antes de alterada) (exclui HIVE).|
-|oldValueData|String|Dados anteriores (ou seja, antes alterados) do valor da chave do Registro (conteúdo).|
-|oldValueName|String|Nome do valor da chave do Registro anterior (ou seja, antes de alterado).|
-|operation|registryOperation|Operação que alterou o nome e/ou o valor da chave do Registro. Os valores possíveis são: `unknown`, `create`, `modify`, `delete`.|
-|processId|Int32|ID do processo (PID) do processo que modificou a chave do Registro (os detalhes do processo aparecerão na coleção de alertas 'processos').|
-|valueData|String|Dados atuais (ou seja, alterados) do valor da chave do Registro (conteúdo).|
-|valueName|Cadeia de caracteres|Nome do valor da chave do Registro atual (ou seja, alterado)|
-|valueType|registryValueType|[Tipo de valor da chave do Registro](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Os valores possíveis são: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
+|Colméia|registryHive|Um [Windows de registro](/windows/desktop/sysinfo/registry-hives): <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>\\HKEY_USERS. Padrão.</li></ul> Os valores possíveis são: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
+|chave|Cadeia de Caracteres|Chave do Registro atual (ou seja, alterada) (exclui o HIVE).|
+|oldKey|Cadeia de Caracteres|Chave do Registro anterior (ou seja, antes da alteração) (exclui o HIVE).|
+|oldValueData|Cadeia de Caracteres|Dados de valor da chave do Registro (conteúdo) anteriores (ou seja, antes da alteração).|
+|oldValueName|Cadeia de Caracteres|Anterior (ou seja, antes da alteração) do nome do valor da chave do Registro.|
+|Operação|registryOperation|Operação que alterou o nome e/ou o valor da chave do Registro. Os valores possíveis são: `unknown`, `create`, `modify`, `delete`.|
+|Processid|Int32|ID do processo (PID) do processo que modificou a chave do Registro (os detalhes do processo aparecerão na coleção de alertas 'processos').|
+|Valuedata|Cadeia de Caracteres|Dados de valor da chave do Registro (conteúdo) atuais (ou seja, alterados).|
+|Valuename|Cadeia de Caracteres|Nome do valor da chave do Registro atual (ou seja, alterado)|
+|Valuetype|registryValueType|[Tipo de valor da chave do Registro](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Os valores possíveis são: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

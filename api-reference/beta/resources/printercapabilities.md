@@ -2,15 +2,15 @@
 title: Tipo complexo printerCapabilities
 description: Representa os recursos relatados por uma impressora.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 37e011eedfe00d905f4bf862327e948787207270
-ms.sourcegitcommit: 6e7d9987a255f1bee04f196a4a7e37f56621bfb8
+ms.openlocfilehash: 045fd0b29b1cf6c1baa0d70659556d2f49a3391c
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51944137"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176360"
 ---
 # <a name="printercapabilities-complex-type"></a>Tipo complexo printerCapabilities
 
@@ -23,74 +23,74 @@ Representa os recursos relatados por uma impressora.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|contentTypes|Coleção de cadeias de caracteres|Uma lista de tipos de conteúdo com suporte (MIME) compatíveis com a impressora. Não é garantido que o serviço Impressão Universal dá suporte à impressão de todos esses tipos mime.|
-|isColorPrintingSupported|Booliano|True se a impressão de cores for suportada pela impressora; false caso contrário. Somente leitura.|
-|feedOrientations|Coleção printerFeedOrientation|A lista de orientações de feed que são suportadas pela impressora.|
-|isPageRangeSupported|Booliano|True se a impressora dá suporte à impressão por intervalos de página; false caso contrário.|
-|qualidades|Coleção printQuality|As qualidades de impressão suportadas pela impressora.|
-|dpis|Coleção Int32|A lista de resoluções de impressão em DPI que são suportadas pela impressora.|
-|duplexModes|Coleção printDuplexMode|A lista de modos duplex com suporte da impressora. Os valores válidos são descritos na tabela a seguir.|
-|queueBufferSizeInBytes|Int32|O tamanho máximo da fila de trabalho de impressão que pode ser armazenado pela impressora.|
-|copiesPerJob|[integerRange](integerrange.md)|O intervalo de cópias por trabalho suportado pela impressora.|
-|finishings|Coleção printFinishing|Processos de término que a impressora dá suporte a um documento impresso.|
-|mediaColors|Coleção de cadeias de caracteres|As cores de mídia (ou seja, papel) suportadas pela impressora.|
-|mediaTypes|Coleção de cadeias de caracteres|Os tipos de mídia suportados pela impressora.|
-|mediaSizes|Coleção de cadeias de caracteres|Os tamanhos de mídia suportados pela impressora. Oferece suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Os valores válidos estão na tabela [a seguir](#mediasizes-values).|
-|pagesPerSheet|Coleção Int32|Número suportado de Páginas de Entrada para impor uma única Impressão.|
-|orientações|Coleção printOrientation|As orientações de impressão suportadas pela impressora. Os valores válidos são descritos na tabela a seguir.|
-|inputBins|Coleção de cadeias de caracteres|Caixas de entrada com suporte para a impressora.|
-|outputBins|Coleção de cadeias de caracteres|As caixas de saída com suporte da impressora (bandejas).|
-|supportsFitPdfToPage|Booliano|True se a impressora oferece suporte ao dimensionamento de páginas PDF para corresponder ao tamanho da mídia de impressão; false caso contrário.|
-|multipageLayouts|Coleção printMultipageLayout|As instruções de apresentação suportadas pela impressora. Os valores com suporte são descritos na tabela a seguir.|
-|colorModes|Coleção printColorMode|Os modos de cor suportados pela impressora. Os valores válidos são descritos na tabela a seguir.|
+|contentTypes|Coleção de cadeias de caracteres|Uma lista de tipos de conteúdo com suporte (MIME) compatíveis com a impressora. Não há garantia de que o serviço de Impressão Universal dê suporte à impressão de todos esses tipos MIME.|
+|isColorPrintingSupported|Booliano|True se a impressão de cores é compatível com a impressora; caso contrário, false. Somente leitura.|
+|feedOrientations|Coleção printerFeedOrientation|A lista de orientações de feed compatíveis com a impressora.|
+|isPageRangeSupported|Booliano|True se a impressora dá suporte à impressão por intervalos de páginas; caso contrário, false.|
+|Qualidades|coleção printQuality|As qualidades de impressão compatíveis com a impressora.|
+|dpis|Coleção Int32|A lista de resoluções de impressão em DPI compatíveis com a impressora.|
+|duplexModes|Coleção printDuplexMode|A lista de modos duplex compatíveis com a impressora. Os valores válidos são descritos na tabela a seguir.|
+|queueBufferSizeInBytes|Int32|O tamanho máximo da fila de trabalhos de impressão que pode ser armazenado pela impressora.|
+|copiesPerJob|[integerRange](integerrange.md)|O intervalo de cópias por trabalho compatível com a impressora.|
+|finishings|coleção printFinishing|Processos de conclusão aos quais a impressora dá suporte para um documento impresso.|
+|mediaColors|Conjunto de cadeias de caracteres|As cores de mídia (ou seja, papel) compatíveis com a impressora.|
+|mediaTypes|Coleção de cadeias de caracteres|Os tipos de mídia compatíveis com a impressora.|
+|mediaSizes|Conjunto de cadeias de caracteres|Os tamanhos de mídia compatíveis com a impressora. Dá suporte a nomes de tamanho padrão para tamanhos de mídia ISO e ANSI. Os valores válidos estão na tabela a [seguir](#mediasizes-values).|
+|pagesPerSheet|Coleção Int32|Número com suporte de Páginas de Entrada para impor uma única Impressão.|
+|Orientações|Coleção printOrientation|As orientações de impressão compatíveis com a impressora. Os valores válidos são descritos na tabela a seguir.|
+|inputBins|Coleção de cadeias de caracteres|Compartimentos de entrada com suporte para a impressora.|
+|outputBins|Conjunto de cadeias de caracteres|Os compartimentos de saída com suporte da impressora (bandejas).|
+|supportsFitPdfToPage|Booliano|True se a impressora dá suporte ao dimensionamento de páginas PDF para corresponder ao tamanho da mídia de impressão; caso contrário, false.|
+|multipageLayouts|Coleção printMultipageLayout|As instruções de apresentação compatíveis com a impressora. Os valores com suporte são descritos na tabela a seguir.|
+|colorModes|coleção printColorMode|Os modos de cor compatíveis com a impressora. Os valores válidos são descritos na tabela a seguir.|
 |topMargins|Coleção Int32|Uma lista de margens principais com suporte (em mícrons) para a impressora.|
-|bottomMargins|Coleção Int32|Uma lista de margens inferior suportadas (em mícrons) para a impressora.|
+|bottomMargins|Coleção Int32|Uma lista de margens  inferior com suporte (em mícrons) para a impressora.|
 |rightMargins|Coleção Int32|Uma lista de margens direitas com suporte (em mícrons) para a impressora.|
-|leftMargins|Coleção Int32|Uma lista de margens esquerdas suportadas (em mícrons) para a impressora.|
-|collation|Booliano|True se a impressora dá suporte à colagem ao imprimir cópias muliplas de um documento de várias páginas; false caso contrário.|
+|leftMargins|Coleção Int32|Uma lista de margens esquerdas com suporte (em mícrons) para a impressora.|
+|ordenação|Boolean|True se a impressora dá suporte à colagem ao imprimir cópias muliplas de um documento de várias páginas; caso contrário, false.|
 |scalings|Coleção printScaling|Dimensionamentos de impressão com suporte.|
 
-## <a name="printerfeedorientation-values"></a>PrinterFeedOrientation values
+## <a name="printerfeedorientation-values"></a>Valores printerFeedOrientation
 
 |Membro|Valor|Descrição|
 |:---|:---|
-|longEdgeFirst|0|A impressora consumirá folhas da bandeja ativa na orientação "paisagem", com a borda longa da planilha primeiro.|
-|shortEdgeFirst|1|A impressora consumirá folhas da bandeja ativa na orientação "retrato", com a borda curta da planilha primeiro.|
-|unknownFutureValue|2|Valor de sentinela de enumeração evolvável. Não usar.|
+|longEdgeFirst|0|A impressora consumirá planilhas da bandeja ativa na orientação "paisagem", com a borda longa da planilha primeiro.|
+|shortEdgeFirst|1|A impressora consumirá planilhas da bandeja ativa na orientação "retrato", com a borda curta da planilha primeiro.|
+|unknownFutureValue|2|Valor de sentinel de enumeração evolvável. Não usar.|
 
 ### <a name="printquality-values"></a>valores printQuality
 
 |Membro|Valor|Descrição|
 |:---|:---|
-|low|0|A impressora imprimirá o trabalho usando qualidade baixa (comumente conhecida como "rascunho").|
-|medium|1|A impressora imprimirá o trabalho usando a qualidade medim (comumente conhecida como "normal").|
-|high|2|A impressora imprimirá o trabalho usando qualidade alta (comumente conhecida como "melhor" ou "bem").|
-|unknownFutureValue|3|Valor de sentinela de enumeração evolvável. Não usar.|
+|low|0|A impressora imprimirá o trabalho usando baixa qualidade (normalmente conhecida como "rascunho").|
+|medium|1|A impressora imprimirá o trabalho usando a qualidade medim (normalmente conhecida como "normal").|
+|high|2|A impressora imprimirá o trabalho usando a qualidade alta (normalmente conhecida como "melhor" ou "fina").|
+|unknownFutureValue|3|Valor de sentinel de enumeração evolvável. Não usar.|
 
 ### <a name="printduplexmode-values"></a>Valores printDuplexMode
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|flipOnLongEdge|0|A impressora imprimirá de lado duplo e inverterá documentos ao longo da borda longa.|
-|flipOnShortEdge|1|A impressora imprimirá de lado duplo e inverterá documentos ao longo da borda curta.|
-|oneSided|2|A impressora imprimirá de lado único.|
+|flipOnLongEdge|0|A impressora imprimirá em dois lados e inverterá os documentos ao longo da borda longa.|
+|flipOnShortEdge|1|A impressora imprimirá em dois lados e inverterá os documentos ao longo da borda curta.|
+|oneSided|2|A impressora imprimirá em um único lado.|
 
-### <a name="printfinishing-values"></a>printFinishing values
+### <a name="printfinishing-values"></a>valores printFinishing
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|3|Sem acabamentos. Incluir esse valor equivale a fornecer uma coleção vazia de acabamentos.|
-|staple|4 |Grampeia o documento usando a configuração de estaplagem padrão da impressora.|
-|punch|5 |Fure o documento usando a configuração de buraco padrão da impressora.|
-|cover|6 |Aplique uma capa ao documento.|
-|bind|7 |Vinque o documento usando a configuração de associação padrão da impressora.|
-|saddleStitch|8 |Estique o documento usando a configuração de ponto padrão da impressora.|
-|stitchEdge|9 |Costure o documento usando a configuração de ponto padrão da impressora.|
+|none|3|Sem acabamentos. Incluir esse valor é equivalente a fornecer uma coleção vazia de acabamentos.|
+|Grampo|4|Grampeia o documento usando a configuração de grampeamento padrão da impressora.|
+|Soco|5|O furo esburaça o documento usando a configuração de furo padrão da impressora.|
+|Cobrir|6 |Aplique uma capa ao documento.|
+|Ligar|7 |Associe o documento usando a configuração de associação padrão da impressora.|
+|saddleStitch|8 |Sele o documento usando a configuração de costura padrão da impressora.|
+|stitchEdge|9 |Costure o documento usando a configuração de costura padrão da impressora.|
 |stapleTopLeft|20|Grampeia o documento no canto superior esquerdo.|
 |stapleBottomLeft| 21 |Grampeia o documento no canto inferior esquerdo.|
 |stapleTopRight|22|Grampeia o documento no canto superior direito.|
 |stapleBottomRight|23|Grampeia o documento no canto inferior direito.|
-|stitchLeftEdge|24|Costure o documento ao longo da borda esquerda.|
+|stitchLeftEdge|24|Costure o documento na borda esquerda.|
 |stitchTopEdge|25|Costure o documento na borda superior.|
 |stitchRightEdge|26|Costure o documento na borda direita.|
 |stitchBottomEdge|27|Costure o documento na borda inferior.|
@@ -98,49 +98,49 @@ Representa os recursos relatados por uma impressora.
 |stapleDualTop|29|Grampeia o documento duas vezes ao longo da borda superior.|
 |stapleDualRight|30|Grampeia o documento duas vezes ao longo da borda direita.|
 |stapleDualBottom|31|Grampeia o documento duas vezes ao longo da borda inferior.|
-|unknownFutureValue|32|Valor de sentinela de enumeração evolvável. Não usar.|
+|unknownFutureValue|32|Valor de sentinel de enumeração evolvável. Não usar.|
 
-## <a name="printorientation-values"></a>valores printOrientation
+## <a name="printorientation-values"></a>Valores printOrientation
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|portrait|3|A impressora imprimirá impressões na orientação "retrato".|
-|landscape|4 |A impressora imprimirá impressões na orientação "paisagem".|
-|reverseLandscape|5 |A impressora imprimirá impressões na orientação "paisagem inversa".|
+|Retrato|3|A impressora imprimirá impressões na orientação "retrato".|
+|Paisagem|4|A impressora imprimirá impressões na orientação "paisagem".|
+|reverseLandscape|5|A impressora imprimirá impressões na orientação "paisagem inversa".|
 |reversePortrait|6 |A impressora imprimirá impressões na orientação "retrato reverso".|
 
-### <a name="printmultipagelayout-values"></a>valores printMultipageLayout
+### <a name="printmultipagelayout-values"></a>Valores printMultipageLayout
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|clockwiseFromTopLeft|0|Organize as páginas em uma grade no sentido horário começando na parte superior esquerda.|
-|counterclockwiseFromTopLeft|1|Organize as páginas em uma grade no sentido anti-horário começando na parte superior esquerda.|
-|counterclockwiseFromTopRight|2|Organize as páginas em uma grade no sentido anti-horário começando na parte superior direita.|
-|clockwiseFromTopRight|3|Organize as páginas em uma grade no sentido horário começando na parte superior direita.|
-|counterclockwiseFromBottomLeft|4 |Organize as páginas em uma grade no sentido anti-horário começando na parte inferior esquerda.|
-|clockwiseFromBottomLeft|5 |Organize as páginas em uma grade no sentido horário começando na parte inferior esquerda.|
-|counterclockwiseFromBottomRight|6 |Organize as páginas em uma grade no sentido anti-horário começando na parte inferior direita.|
-|clockwiseFromBottomRight|7 |Organize as páginas em uma grade no sentido horário começando na parte inferior direita.|
+|clockwiseFromTopLeft|0|Organize as páginas em uma grade no sentido horário começando no canto superior esquerdo.|
+|counterclockwiseFromTopLeft|1|Organize as páginas em uma grade no sentido anti-horário começando no canto superior esquerdo.|
+|counterclockwiseFromTopRight|2|Organize as páginas em uma grade no sentido anti-horário começando no canto superior direito.|
+|clockwiseFromTopRight|3|Organize as páginas em uma grade no sentido horário começando no canto superior direito.|
+|counterclockwiseFromBottomLeft|4|Organize as páginas em uma grade no sentido anti-horário começando na parte inferior esquerda.|
+|clockwiseFromBottomLeft|5|Organize as páginas em uma grade no sentido horário começando na parte inferior esquerda.|
+|counterclockwiseFromBottomRight|6 |Organize as páginas em uma grade no sentido anti-horário começando no canto inferior direito.|
+|clockwiseFromBottomRight|7 |Organize as páginas em uma grade no sentido horário começando no canto inferior direito.|
 
-### <a name="printcolormode-values"></a>valores printColorMode
+### <a name="printcolormode-values"></a>Valores printColorMode
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |blackAndWhite|0|Preto e branco (use somente material de marcador preto.)|
-|grayscale|1|Escala de cinza (pode usar algum material de marcador de cor.)|
+|Cinza|1|Escala de cinza (pode usar algum material de marcador de cor.)|
 |color|2|Cor (use qualquer combinação de materiais de marcador para criar uma impressão de cor).|
 |Automático|3|Deixe a impressora decidir qual modo de cor usar.|
 
-### <a name="printscaling-values"></a>valores printScaling
+### <a name="printscaling-values"></a>Valores printScaling
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Automático|0|Se o documento for maior que a mídia solicitada e as margens não são zero, a impressora dimensiona o documento como o **ajuste** printScaling. Caso contrário, a impressora dimensiona o documento usando **o fill** printScaling. Se o documento for menor que a mídia solicitada, o printScaling 'none' será usado.|
-|shrinkToFit|1|Se o documento for maior do que a mídia solicitada, a impressora dimensiona o documento como o **ajuste** printScaling. Caso contrário, a impressora dimensiona o documento como **nenhum** printScaling.|
-|fill|2|A impressora dimensiona o documento para preencher o tamanho de mídia solicitado, preservando sua taxa de proporção, mas potencialmente recorte partes do documento.|
-|fit|3|A impressora dimensiona o documento para se ajustar à área imprimível do tamanho de mídia solicitado, preservando a proporção dos dados do documento sem o recorte do documento.|
-|nenhuma|4 |A impressora não dimensiona o documento para se ajustar ao tamanho de mídia solicitado. Se o documento for maior que a mídia solicitada, a impressora centraliza e clipes a saída resultante. Se o documento for menor que a mídia solicitada, a impressora centraliza a saída resultante.|
-|unknownFutureValue|5 |Valor de sentinela de enumeração evolvável. Não usar.|
+|Automático|0|Se o documento for maior que a mídia solicitada e as margens forem diferentes de zero, a impressora dimensiona o documento como o **ajuste** printScaling. Caso contrário, a impressora dimensiona o documento usando **o fill** printScaling. Se o documento for menor do que a mídia solicitada, 'none' printScaling será usado.|
+|Shrinktofit|1|Se o documento for maior que a mídia solicitada, a impressora dimensiona o documento como o **ajuste** printScaling. Caso contrário, a impressora dimensiona o documento como **nenhum** printScaling.|
+|fill|2|A impressora dimensiona o documento para preencher o tamanho de mídia solicitado, preservando sua taxa de proporção, mas potencialmente cortando partes do documento.|
+|Caber|3|A impressora dimensiona o documento para se ajustar à área imprimível do tamanho de mídia solicitado, preservando a taxa de proporção dos dados do documento sem cortar o documento.|
+|none|4|A impressora não dimensiona o documento para se ajustar ao tamanho de mídia solicitado. Se o documento for maior que a mídia solicitada, a impressora centraliza e clipes a saída resultante. Se o documento for menor que a mídia solicitada, a impressora centraliza a saída resultante.|
+|unknownFutureValue|5|Valor de sentinel de enumeração evolvável. Não usar.|
 
 ### <a name="mediasizes-values"></a>mediaSizes values
 
@@ -154,17 +154,17 @@ Representa os recursos relatados por uma impressora.
 |JIS B5|
 |JPN Hagaki|
 |América do Norte 5x7in|
-|Executivo da América do Norte|
-|Carta de Goverment da América do Norte|
-|Índice da América do Norte 3x5in|
-|Índice da América do Norte 4x8in|
-|Índice da América do Norte 5x8in|
-|Fatura da América do Norte|
-|Ledger da América do Norte|
+|América do Norte Executivo|
+|América do Norte Carta de Confirmação|
+|América do Norte índice 3x5in|
+|América do Norte índice 4x8in|
+|América do Norte índice 5x8in|
+|América do Norte fatura|
+|América do Norte Razão|
 |América do Norte Legal|
-|Carta da América do Norte|
+|América do Norte carta|
 |Foto l 3.5x5in|
-|Cartão de Visita|
+|Cartão de visita|
 |Photo|
 
 ## <a name="json-representation"></a>Representação JSON

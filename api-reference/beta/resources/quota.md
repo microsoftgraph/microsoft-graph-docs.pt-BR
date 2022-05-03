@@ -5,13 +5,13 @@ ms.date: 09/10/2017
 title: Cota
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 28006748084878d5c7ce3f327f6c4237e12bf83c
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: fb27c29c70c0775ad59bf23c33348aaf490ebaed
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722430"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176731"
 ---
 # <a name="quota-resource-type"></a>tipo de recurso de cota
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O **recurso de** cota fornece detalhes sobre restrições de espaço em um [recurso de](drive.md) unidade.
+O **recurso** de cota fornece detalhes sobre restrições de espaço em um recurso [de](drive.md) unidade.
 
 ## <a name="json-representation"></a>Representação JSON
 

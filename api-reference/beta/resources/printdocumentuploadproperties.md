@@ -1,18 +1,18 @@
 ---
 author: nilakhan
-description: Representa informações para upload de documentos de impressão
-title: tipo de recurso printDocumentUploadProperties
-localization_priority: Normal
+description: Representa informações para upload de documento de impressão
+title: Tipo de recurso printDocumentUploadProperties
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: universal-print
-ms.openlocfilehash: 1249eaae4d62cffe14935587c655ba402237b0ed
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.prod: cloud-printing
+ms.openlocfilehash: 219834eb64863d67dcc6e3ed75f33bc08eead768
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727966"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176891"
 ---
-# <a name="printdocumentuploadproperties-resource-type"></a>tipo de recurso printDocumentUploadProperties
+# <a name="printdocumentuploadproperties-resource-type"></a>Tipo de recurso printDocumentUploadProperties
 
 Namespace: microsoft.graph
 
@@ -45,7 +45,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade       | Tipo              |Descrição
 |:-------------------|:------------------|:------------------------------------
 | contentType | String    | O tipo de conteúdo do documento (MIME).
-| documentName | String | O nome do documento.
+| Documentname | Cadeia de Caracteres | O nome do documento.
 | size          | Int64            | O tamanho do documento em bytes.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

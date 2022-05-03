@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso printOperationStatus
-description: Representa o status atual de uma operação de impressão universal de execução longa.
+title: Tipo de recurso printOperationStatus
+description: Representa o status atual de uma operação de Impressão Universal de execução longa.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 14c66cf59dc1715a16bd786657202a554d7c1753
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 79cc94a38335bede616ef57bc33db12db63a5664
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052548"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176659"
 ---
-# <a name="printoperationstatus-complex-type"></a>tipo complexo printOperationStatus
+# <a name="printoperationstatus-complex-type"></a>Tipo complexo printOperationStatus
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o status atual de uma operação de impressão universal de execução longa.
+Representa o status atual de uma operação de Impressão Universal de execução longa.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|state|printOperationProcessingState|O estado de processamento atual da operação. Os valores válidos são descritos na tabela a seguir. Somente leitura.|
-|description|String|Uma descrição legível do estado de processamento atual da operação. Somente leitura.|
+|state|printOperationProcessingState|O estado de processamento atual da printOperation. Os valores válidos são descritos na tabela a seguir. Somente leitura.|
+|description|Cadeia de caracteres|Uma descrição legível por humanos do estado de processamento atual da printOperation. Somente leitura.|
 
-### <a name="printoperationprocessingstate-values"></a>valores de printOperationProcessingState
+### <a name="printoperationprocessingstate-values"></a>Valores printOperationProcessingState
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notStarted|,0|A operação ainda não foi iniciada.|
-|com|1 |A operação está sendo executada.|
-|adicionada|2 |A operação foi concluída com êxito.|
-|falhou|3 |Falha na operação.|
-|unknownFutureValue|4 |Valor de sentinela de enumeração evolvable. Não usar.|
+|Notstarted|0|A operação ainda não foi iniciada.|
+|Executando|1|A operação está em execução.|
+|Conseguiu|2|A operação foi concluída com êxito.|
+|Falhou|3|Falha na operação.|
+|unknownFutureValue|4|Valor de sentinel de enumeração evolvável. Não usar.|
 
 ## <a name="json-representation"></a>Representação JSON
 

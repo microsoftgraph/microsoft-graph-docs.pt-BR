@@ -1,31 +1,32 @@
 ---
 title: Tipo de recurso networkInterface
-description: Representa uma NIC (Placa de Interface de Rede) associada a esse host.
+description: Representa uma placa de interface de rede (NIC) associada a esse host.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: preetikr
-ms.openlocfilehash: 914d7f3484762a9b2994fe1eef06d47f4ac09f75
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9c2d2b8558730a832d6658ce6ef137d609a13d04
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105787"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176812"
 ---
 # <a name="networkinterface-resource-type"></a>Tipo de recurso networkInterface
 
 Namespace: microsoft.graph
 
-Representa uma NIC (Placa de Interface de Rede) associada a esse host.
+Representa uma placa de interface de rede (NIC) associada a esse host.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres|Descrição do NIC (por exemplo, adaptador Ethernet, conexão de área local de LAN sem fio *<#>, etc.).|
+|description|Cadeia de caracteres|Descrição da NIC (por exemplo, adaptador Ethernet, conexão de área local do adaptador de LAN sem fio *<#> etc.).|
 |ipV4Address|Cadeia de Caracteres|Último endereço IPv4 associado a essa NIC.|
-|ipV6Address|Cadeia de Caracteres|Último endereço IPv6 público (também conhecido como global) associado a essa NIC.|
-|localIpV6Address|Cadeia de Caracteres|Último endereço IPv6 local (link local ou local) associado a esse NIC.|
+|Endereço_ipv6|Cadeia de Caracteres|Último endereço IPv6 público (também conhecido como global) associado a essa NIC.|
+|localIpV6Address|Cadeia de Caracteres|Último endereço IPv6 local (link local ou local) associado a essa NIC.|
 |macAddress|Cadeia de Caracteres|Endereço MAC da NIC neste host.|
 
 ## <a name="json-representation"></a>Representação JSON

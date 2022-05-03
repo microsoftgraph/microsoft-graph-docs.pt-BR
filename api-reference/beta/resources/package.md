@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: " ou uma coleção de itens que deve ser tratada como uma coleção em vez de itens individuais."
+description: " ou uma coleção de itens que devem ser tratados como uma coleção em vez de itens individuais."
 ms.date: 09/10/2017
 title: Pacote
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 851e2bbe5bbacea6fe988dac1fa72fe32886cec0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 985b8bb918b0a54ef65253f2db13f0ca2345b64c
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998331"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176954"
 ---
 # <a name="package-resource-type"></a>Tipo de recurso Package
 

@@ -5,24 +5,25 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 0fc8837911d46f56ae577b599a860d6a0722872a
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 788895c9f09103b5b87198db6f7c974cf40ef8f8
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014100"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176851"
 ---
 # <a name="delete-bookingservice"></a>Excluir bookingService
 
 Namespace: microsoft.graph
 
-[Exclua um objeto bookingService](../resources/bookingservice.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
+[Exclua um objeto bookingService](../resources/bookingservice.md) no [bookingBusiness especificado](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings. ReadWrite.All, Bookings. Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -30,7 +31,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /solutions/bookingBusinesses/{id}/services/{id}
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -56,7 +56,7 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 ```
 
 ### <a name="response"></a>Resposta
-Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: ItemActivityStat
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 27089dcb5e9223710edb60bbdafe88fa0b3f8099
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: c5dbf0235abda09ec56abb8ac450d15b8836f4ba
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723902"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176861"
 ---
 # <a name="itemactivitystat-resource-type"></a>Tipo de recurso itemActivityStat
 
@@ -49,15 +49,15 @@ O **recurso itemActivityStat** fornece informações sobre atividades que ocorre
 
 | Propriedade       | Tipo               | Descrição                                                                             |
 | :------------- | :----------------- | :-------------------------------------------------------------------------------------- |
-| incompleteData | [incompleteData][] | Indica que as estatísticas nesse intervalo se baseiam em dados incompletos. Somente leitura. |
-| isTrending     | Booliano            | Indica se o item está "em tendência". Somente leitura.                                    |
+| incompleteData | [incompleteData][] | Indica que as estatísticas nesse intervalo são baseadas em dados incompletos. Somente leitura. |
+| isTrending     | Booliano            | Indica se o item é "mais populares". Somente leitura.                                    |
 | startDateTime  | DateTimeOffset     | Quando o intervalo é iniciado. Somente leitura.                                                    |
-| endDateTime    | DateTimeOffset     | Quando o intervalo terminar. Somente leitura.                                                      |
-| create         | [itemActionStat][] | Estatísticas sobre as ações **de** criação nesse intervalo. Somente leitura.                    |
-| edit           | [itemActionStat][] | Estatísticas sobre as ações **de edição** neste intervalo. Somente leitura.                      |
+| endDateTime    | DateTimeOffset     | Quando o intervalo termina. Somente leitura.                                                      |
+| create         | [itemActionStat][] | Estatísticas sobre as **ações de** criação nesse intervalo. Somente leitura.                    |
+| edit           | [itemActionStat][] | Estatísticas sobre as ações **de** edição neste intervalo. Somente leitura.                      |
 | delete         | [itemActionStat][] | Estatísticas sobre as ações **de exclusão** nesse intervalo. Somente leitura.                    |
 | move           | [itemActionStat][] | Estatísticas sobre as ações **de movimentação** nesse intervalo. Somente leitura.                      |
-| access         | [itemActionStat][] | Estatísticas sobre as ações **de acesso** nesse intervalo. Somente leitura.                    |
+| Acesso         | [itemActionStat][] | Estatísticas sobre as **ações de** acesso nesse intervalo. Somente leitura.                    |
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -66,7 +66,7 @@ O **recurso itemActivityStat** fornece informações sobre atividades que ocorre
 
 | Relação | Tipo                        | Descrição                                                                       |
 | :----------- | :-------------------------- | :-------------------------------------------------------------------------------- |
-| activities   | Conjunto [itemActivity][] | Expõe o **itemActivities** representado neste **recurso itemActivityStat** . |
+| activities   | Conjunto [itemActivity][] | Expõe os **itemActivities** representados neste **recurso itemActivityStat** . |
 
 [itemActivity]: itemactivity.md
 

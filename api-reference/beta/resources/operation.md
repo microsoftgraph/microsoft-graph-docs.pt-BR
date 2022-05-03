@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso operation
-description: O status de uma operação de longa duração.
+title: tipo de recurso de operação
+description: O status de uma operação de execução longa.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: teamwork
 author: billbliss
-ms.openlocfilehash: 781dcf64cae103cd65f460edead13ca6995d2a51
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: c1f07f81754b1cf0373917bbb59953fd1342d627
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792257"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176516"
 ---
-# <a name="operation-resource-type"></a>tipo de recurso operation
+# <a name="operation-resource-type"></a>tipo de recurso de operação
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O status de uma operação de longa duração.
+O status de uma operação de execução longa.
 
 ## <a name="methods"></a>Métodos
 
@@ -29,7 +29,7 @@ Nenhum.
 | Propriedade           | Tipo            | Descrição                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | A hora de início da operação.                                                |
-| id                 | String          | A ID da operação. Somente leitura. Servidor gerado.                                  |
+| id                 | Cadeia de caracteres          | A ID da operação. Somente leitura. Servidor gerado.                                  |
 | lastActionDateTime | DateTimeOffset  | A hora da última ação da operação.                                   |
 | status             | String          | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 

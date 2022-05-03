@@ -1,31 +1,31 @@
 ---
 title: pendingOperations
-description: O recurso pendingOperations indica que uma ou mais operações que podem afetar o estado do driveItem estão aguardando a conclusão.
-localization_priority: Normal
+description: O recurso pendingOperations indica que uma ou mais operações que podem afetar o estado do driveItem estão pendentes de conclusão.
+ms.localizationpriority: medium
 author: JeremyKelley
 ms.date: 08/06/2019
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: b7b5d162bfcc9cccdfc7a2ea769e4ea39272e2d0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cf3903a99405dbcbdf83f26da053030e46dbb9e
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998079"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176534"
 ---
-# <a name="pendingoperations-resource-type"></a>tipo de recurso pendingOperations
+# <a name="pendingoperations-resource-type"></a>Tipo de recurso pendingOperations
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indica que uma ou mais operações que podem afetar o estado de **driveItem** estão aguardando a conclusão.
+Indica que uma ou mais operações que podem afetar o estado do **driveItem** estão pendentes de conclusão.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|pendingContentUpdate|[pendingContentUpdate](pendingcontentupdate.md)|Uma propriedade que indica que uma operação que pode atualizar o conteúdo binário de um arquivo está aguardando a conclusão.|
+|pendingContentUpdate|[pendingContentUpdate](pendingcontentupdate.md)|Uma propriedade que indica que uma operação que pode atualizar o conteúdo binário de um arquivo está com a conclusão pendente.|
 
 ## <a name="json-representation"></a>Representação JSON
 

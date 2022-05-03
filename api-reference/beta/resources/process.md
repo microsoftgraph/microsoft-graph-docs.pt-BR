@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso de processo
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+description: Contém informações com estado sobre o processo relacionado ao alerta.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: db832c64fb62e6c5f72f49b1e147d8d7f282834f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 262ad1946bed87c47693b034ca8590bfad754c1f
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722260"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176319"
 ---
 # <a name="process-resource-type"></a>tipo de recurso de processo
 
@@ -18,24 +18,24 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém informações de estado sobre o processo relacionado ao alerta.
+Contém informações com estado sobre o processo relacionado ao alerta.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|accountName|Cadeia de caracteres|Identificador de conta de usuário (contexto de conta de usuário no qual o processo foi submetido) por exemplo, AccountName, SID e assim por diante.|
-|commandLine|String|A linha de comando de invocação de processo completo, incluindo todos os parâmetros.|
+|Accountname|Cadeia de Caracteres|Identificador de conta de usuário (contexto de conta de usuário no qual o processo foi executado), por exemplo, AccountName, SID e assim por diante.|
+|commandLine|String|A linha de comando de invocação de processo completa, incluindo todos os parâmetros.|
 |createdDateTime|DateTimeOffset|Hora em que o processo foi iniciado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|fileHash|[fileHash](filehash.md)|Tipo complexo que contém hashes de arquivo (criptográficos e sensíveis ao local).|
+|fileHash|[fileHash](filehash.md)|Tipo complexo que contém hashes de arquivo (criptográficos e sensíveis à localização).|
 |integrityLevel|processIntegrityLevel|O nível de integridade do processo. Os possíveis valores são: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|isElevated|Booliano|True se o processo estiver elevado.|
+|isElevated|Booliano|True se o processo for elevado.|
 |nome|Cadeia de caracteres|O nome do arquivo de imagem do processo.|
 |parentProcessCreatedDateTime|DateTimeOffset|DateTime no qual o processo pai foi iniciado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 |parentProcessId|Int32|A ID do Processo (PID) do processo pai.|
-|parentProcessName|Cadeia de caracteres|O nome do arquivo de imagem do processo pai.|
-|caminho|String|Caminho completo, incluindo nome do arquivo.|
-|processId|Int32|A ID do Processo (PID) do processo.|
+|parentProcessName|Cadeia de Caracteres|O nome do arquivo de imagem do processo pai.|
+|caminho|String|Caminho completo, incluindo o nome do arquivo.|
+|Processid|Int32|A ID do Processo (PID) do processo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

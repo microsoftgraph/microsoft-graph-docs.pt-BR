@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: MoveAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: d5da0b6502752f25ad59b9d19a8a4a366d473ec8
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: f3622067f273a587174494d2ce3a68ed56540883
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722654"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176549"
 ---
 # <a name="moveaction-resource-type"></a>Tipo de recurso MoveAction
 

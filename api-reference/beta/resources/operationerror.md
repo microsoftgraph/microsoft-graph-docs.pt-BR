@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso operationError
-description: Descreve erros no teamsAsyncOperation.
-localization_priority: Normal
+title: Tipo de recurso operationError
+description: Descreve erros em teamsAsyncOperation.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: teamwork
 author: billbliss
-ms.openlocfilehash: d3511979cc03df496a8c12f948ddd728e3cd0c19
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3634e55dca6328b40a9d21577183e8a5616c53f8
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998507"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176510"
 ---
-# <a name="operationerror-resource-type"></a>tipo de recurso operationError
+# <a name="operationerror-resource-type"></a>Tipo de recurso operationError
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve erros no [teamsAsyncOperation](teamsasyncoperation.md).
+Descreve erros em [teamsAsyncOperation](teamsasyncoperation.md).
 
 ## <a name="operationerror-properties"></a>Propriedades operationError
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|código|cadeia de caracteres (somente leitura)|Código de erro de operação.|
+|código|cadeia de caracteres (somente leitura)|Código de erro da operação.|
 |message|cadeia de caracteres (somente leitura)|Mensagem de erro de operação.|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -1,25 +1,25 @@
 ---
 author: daspek
-description: O recurso itemActionStat fornece detalhes agregados sobre uma ação em um período de tempo.
+description: O recurso itemActionStat fornece detalhes agregados sobre uma ação durante um período de tempo.
 ms.date: 09/14/2017
 title: ItemActionStat
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 8316239a7e00cdc74921c42b70431eba60cdc2d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: b1fb726904c3b97ead34162410025a82f410231d
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075669"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176298"
 ---
-# <a name="itemactionstat-resource-type"></a>tipo de recurso itemActionStat
+# <a name="itemactionstat-resource-type"></a>Tipo de recurso itemActionStat
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **itemActionStat** fornece detalhes agregados sobre uma ação em um período de tempo.
+O **recurso itemActionStat** fornece detalhes agregados sobre uma ação durante um período de tempo.
 
 ## <a name="json-representation"></a>Representação JSON
 

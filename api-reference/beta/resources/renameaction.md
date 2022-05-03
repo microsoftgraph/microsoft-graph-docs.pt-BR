@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: RenameAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 3f7d9e7dad20ff8c03e0135cfe90928561fede51
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 01ffdffff58b6e7d3592cfa6493d17c3d8649efc
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723760"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176865"
 ---
 # <a name="renameaction-resource-type"></a>Tipo de recurso RenameAction
 
@@ -43,7 +43,7 @@ A presença do recurso **RenameAction** em uma [**itemActivity**][activity] indi
 | Propriedade | Tipo   | Descrição                    |
 | :------- | :----- | :----------------------------- |
 | oldName  | string | O nome anterior do item. |
-| newName  | string | O novo nome do item.      |
+| Newname  | cadeia de caracteres | O novo nome do item.      |
 
 ## <a name="remarks"></a>Comentários
 

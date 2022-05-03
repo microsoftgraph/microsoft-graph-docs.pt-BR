@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso do onenoteResource
+title: Tipo de recurso onenoteResource
 description: 'Uma imagem ou outro recurso de arquivo em uma OneNote página. '
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: f7a479ec529cae209fef085da2978c3e412a844f
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 21d0be436241b518e87b0eb36956886808211a0d
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804917"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176712"
 ---
-# <a name="onenoteresource-resource-type"></a>Tipo de recurso do onenoteResource
+# <a name="onenoteresource-resource-type"></a>Tipo de recurso onenoteResource
 
 Namespace: microsoft.graph
 
@@ -37,19 +37,19 @@ Você pode obter os dados binários de um recurso, mas não há suporte para obt
 }
 ```
 
-Obter os dados binários de um recurso específico enviando uma solicitação GET para o ponto de extremidade do `content` recurso:
+Obtenha os dados binários de um recurso específico enviando uma solicitação GET para o ponto de extremidade do `content` recurso:
 
 ```http
 GET ../onenote/resources/{id}/content
 ```
 
-O URI de recurso do arquivo é retornado quando você obter o conteúdo HTML de uma página usando a seguinte solicitação:
+O URI do recurso do arquivo é retornado quando você obtém o conteúdo HTML de uma página usando a seguinte solicitação:
 
 ```http
 GET ../onenote/pages/{id}/content
 ```
 
-Na página HTML, uma `img` marca inclui pontos de extremidade para o recurso de imagem original `data-fullres-src` no atributo e a imagem otimizada no `src` atributo:
+No HTML da página, uma `img` marca inclui pontos de extremidade para o recurso de imagem original `data-fullres-src` no atributo e a imagem otimizada no `src` atributo:
 
 ```html
 <img
@@ -59,7 +59,7 @@ Na página HTML, uma `img` marca inclui pontos de extremidade para o recurso de 
     data-fullres-src-type="media-type" ... />
 ```
 
-Uma `object` marca (que representa arquivos como PDF, DOCX e PNG) inclui o ponto de extremidade do recurso de arquivo no `data` atributo:
+Uma `object` marca (que representa arquivos como PDF, DOCX e PNG) inclui o ponto de extremidade para o recurso de arquivo no `data` atributo:
 
 ```html
 <object
@@ -71,13 +71,13 @@ Uma `object` marca (que representa arquivos como PDF, DOCX e PNG) inclui o ponto
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter dados binários de recursos](../api/resource-get.md) | Stream |Recupere os dados binários de um recurso de arquivo ou imagem.|
+|[Obter dados binários do recurso](../api/resource-get.md) | Stream |Recupere os dados binários de um recurso de arquivo ou imagem.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | content | Edm.Stream||
-| contentUrl | Cadeia de caracteres ||
+| contentUrl | Cadeia de Caracteres ||
 
 ## <a name="relationships"></a>Relações
 Nenhum

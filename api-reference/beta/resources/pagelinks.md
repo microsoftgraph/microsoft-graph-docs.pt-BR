@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso pageLinks
-description: Links para abrir uma página do OneNote.
-localization_priority: Normal
+title: Tipo de recurso pageLinks
+description: Links para abrir uma OneNote página.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: 0a475e7315b08111c97a762f19caeff16d94874d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 055730829df1ac3523b9a7160e7332cec5d6368a
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998310"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176963"
 ---
-# <a name="pagelinks-resource-type"></a>tipo de recurso pageLinks
+# <a name="pagelinks-resource-type"></a>Tipo de recurso pageLinks
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Links para abrir uma página do OneNote.
+Links para abrir uma OneNote página.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -42,7 +42,7 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|Abre a página no cliente nativo do OneNote se ele estiver instalado.|
+|oneNoteClientUrl|[externalLink](externallink.md)|Abre a página no OneNote cliente nativo se ele estiver instalado.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Abre a página no OneNote na Web.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

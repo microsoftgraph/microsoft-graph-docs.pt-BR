@@ -3,14 +3,14 @@ title: Tipo de recurso printConnector
 description: Representa um conector de impressão que foi registrado usando uma assinatura de Impressão Universal. O recurso printConnector pode ser usado para exibir o status do conector e atualizar as propriedades.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ad4a8f733f39490bbf126d60fe193a664b06888a
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: c482d17cd702751f5f2cd2b8cff5e34166fb2075
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561770"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176907"
 ---
 # <a name="printconnector-resource-type"></a>Tipo de recurso printConnector
 
@@ -24,22 +24,22 @@ Representa um conector de impressão que foi registrado usando uma assinatura de
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Listar conectores](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Recupere uma lista de conectores de impressão. |
-| [Obter conector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Leia as propriedades e as relações do objeto conector. |
-| [Conector de atualização](../api/printconnector-update.md) | [printConnector](printconnector.md) | Atualize o objeto connector. |
-| [Excluir conector](../api/printconnector-delete.md) | Nenhum | Desaconselhe o conector do serviço de Impressão Universal. |
+| [Listar conectores](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Recuperar uma lista de conectores de impressão. |
+| [Obter conector](../api/printconnector-get.md) | [printConnector](printconnector.md) | Leia as propriedades e as relações do objeto do conector. |
+| [Atualizar conector](../api/printconnector-update.md) | [printConnector](printconnector.md) | Atualize o objeto do conector. |
+| [Excluir conector](../api/printconnector-delete.md) | Nenhum | Cancele o registro do conector do serviço de Impressão Universal. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|String| Somente leitura.|
 |displayName|Cadeia de caracteres|O nome do conector.|
-|fullyQualifiedDomainName|Cadeia de Caracteres|O nome de host do computador do conector.|
-|operatingSystem|String|A versão do sistema operacional do conector.|
+|fullyQualifiedDomainName|Cadeia de Caracteres|O nome do host do computador do conector.|
+|operatingSystem|String|A versão do sistema operacional do computador conector.|
 |appVersion|Cadeia de Caracteres|A versão do conector.|
-|deviceHealth|[deviceHealth](devicehealth.md)|A saúde do dispositivo do conector.|
+|deviceHealth|[deviceHealth](devicehealth.md)|A integridade do dispositivo do conector.|
 |localização|[printerLocation](printerlocation.md)|O local físico e/ou organizacional do conector.|
-|registeredDateTime|DateTimeOffset|DateTimeOffset quando o conector foi registrado.|
+|registeredDateTime|DateTimeOffset|O DateTimeOffset quando o conector foi registrado.|
 |registeredBy|[userIdentity](useridentity.md)|O usuário que registrou o conector.|
 
 ## <a name="json-representation"></a>Representação JSON

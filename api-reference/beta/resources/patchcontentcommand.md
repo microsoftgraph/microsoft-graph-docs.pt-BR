@@ -1,28 +1,29 @@
 ---
-title: tipo de recurso patchContentCommand
-description: As alterações a serem feitas em uma página do OneNote em uma solicitação de PATCH.
-localization_priority: Normal
+title: Tipo de recurso patchContentCommand
+description: As alterações a serem feitas em uma OneNote em uma solicitação PATCH.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: cloud-pc
+ms.technology: microsoft-graph
 author: jewan-microsoft
-ms.openlocfilehash: 798eb15955ddbbed3ced2f85d091d06c5ee1d84d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 11155779f5765e098a566589b522f9e987d6a68d
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998121"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176775"
 ---
-# <a name="patchcontentcommand-resource-type"></a>tipo de recurso patchContentCommand
+# <a name="patchcontentcommand-resource-type"></a>Tipo de recurso patchContentCommand
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As alterações a serem feitas em uma página do OneNote em uma solicitação de PATCH.
+As alterações a serem feitas em uma OneNote em uma solicitação PATCH.
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso, que é enviado no corpo da solicitação [patch Pages/{ID}](../api/page-update.md) .
+Aqui está uma representação JSON do recurso, que é enviada no corpo da solicitação [de páginas PATCH/{id}](../api/page-update.md) '.
 
 <!-- {
   "blockType": "resource",
@@ -45,10 +46,10 @@ Veja a seguir uma representação JSON do recurso, que é enviado no corpo da so
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|ação|String|A ação a ser executada no elemento de destino. Os valores possíveis são: `replace`, `append`, `delete`, `insert` ou `prepend`.|
-|content|Cadeia de caracteres|Uma cadeia de caracteres em HTML bem formado para adicionar à página e dados binários de imagem ou arquivo. Se o conteúdo contiver dados binários, a solicitação deverá ser enviada usando o `multipart/form-data` tipo de conteúdo com uma parte "Commands". |
-|position|String|O local para adicionar o conteúdo fornecido em relação ao elemento de destino. Os valores possíveis são: `after` (padrão) ou `before` .|
-|destino|String|O elemento a ser atualizado. Deve ser o `#<data-id>` ou o gerado `{id}` do elemento, ou a `body` `title` palavra-chave ou.|
+|ação|Cadeia de Caracteres|A ação a ser executada no elemento de destino. Os valores possíveis são: `replace`, `append`, `delete`, `insert` ou `prepend`.|
+|content|Cadeia de caracteres|Uma cadeia de caracteres em HTML bem formado para adicionar à página e dados binários de imagem ou arquivo. Se o conteúdo contiver dados binários, a solicitação deverá ser enviada `multipart/form-data` usando o tipo de conteúdo com uma parte "Comandos". |
+|position|Cadeia de Caracteres|O local para adicionar o conteúdo fornecido em relação ao elemento de destino. Os valores possíveis são: `after` (padrão) ou `before`.|
+|destino|Cadeia de Caracteres|O elemento a ser atualizado. Deve ser o `#<data-id>` ou o gerado `{id}` do elemento, ou a palavra-chave `body` ou `title` .|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

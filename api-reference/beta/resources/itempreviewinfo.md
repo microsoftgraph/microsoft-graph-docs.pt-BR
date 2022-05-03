@@ -2,16 +2,16 @@
 author: kevinlam
 description: O recurso ItemPreviewInfo contém informações sobre como inserir uma visualização de um DriveItem.
 ms.date: 3/16/2018
-title: ItemPreviewInfo - OneDrive API
+title: ItemPreviewInfo – API de OneDrive
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 9e4f3b390fe21284791b6c40d19d4de71ec3548b
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 49c792845205b8b42b70961185da4ca46bee2fb7
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723343"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176972"
 ---
 # <a name="itempreviewinfo-resource-type"></a>Tipo de recurso ItemPreviewInfo
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O **recurso ItemPreviewInfo** contém informações sobre como inserir uma visualização de [um DriveItem](driveitem.md).
+O **recurso ItemPreviewInfo** contém informações sobre como inserir uma visualização de um [DriveItem](driveitem.md).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,13 +35,13 @@ O **recurso ItemPreviewInfo** contém informações sobre como inserir uma visua
 
 | Propriedade       | Tipo   | Descrição                                                      |
 | :------------- | :----- | :--------------------------------------------------------------- |
-| getUrl         | string | URL adequada para a incorporação usando HTTP GET (iframes, etc.)        |
-| postUrl        | string | URL adequada para a incorporação usando HTTP POST (postagem de formulário, JS, etc.) |
-| postParameters | string | Parâmetros POST a incluir se estiver usando postUrl                      |
+| Geturl         | cadeia de caracteres | URL adequada para inserção usando HTTP GET (iframes etc.)        |
+| postUrl        | cadeia de caracteres | URL adequada para inserção usando HTTP POST (postagem de formulário, JS etc.) |
+| postParameters | cadeia de caracteres | Parâmetros POST a serem incluídos se estiver usando postUrl                      |
 
 GetUrl, postUrl ou ambos podem ser retornados dependendo do estado atual de suporte para as opções especificadas.
 
-postParameters é uma cadeia de caracteres formatada `application/x-www-form-urlencoded`como , e se executar um POST para o postUrl o tipo de conteúdo deve ser definido de acordo. Por exemplo:
+postParameters é uma cadeia `application/x-www-form-urlencoded`de caracteres formatada como e, se estiver executando um POST para postUrl, o tipo de conteúdo deverá ser definido adequadamente. Por exemplo:
 
 ```
 POST https://www.onedrive.com/embed_by_post
@@ -50,4 +50,4 @@ Content-Type: application/x-www-form-urlencoded
 param1=value&param2=another%20value
 ```
 
-Os formatos de URLs e parâmetros devem ser considerados opacos.
+Os formatos de URLs e parâmetros devem ser considerados opacas.

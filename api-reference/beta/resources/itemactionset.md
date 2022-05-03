@@ -1,17 +1,17 @@
 ---
 author: daspek
-description: O recurso ItemActionSet fornece informações sobre as ações que com fizeram parte de um [activity][itemActivity] em um item.
+description: O recurso ItemActionSet fornece informações sobre as ações que compõem uma [atividade][itemActivity] em um item.
 ms.date: 09/14/2017
 title: ItemActionSet
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: d02467f8c4e780121ce8035b6aa09742a47c6f79
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: eb6b1cab13af393f4cc4e68060e85118a6f2318e
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724346"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176979"
 ---
 # <a name="itemactionset-resource-type"></a>Tipo de recurso ItemActionSet
 
