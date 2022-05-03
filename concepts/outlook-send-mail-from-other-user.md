@@ -4,13 +4,12 @@ description: Use as permissões enviar como e enviar em nome de para enviar mens
 author: jasonjoh
 ms.localizationpriority: high
 ms.prod: outlook
-ms.date: 01/16/2019
-ms.openlocfilehash: 0071c85db2d4637c96cc6d6e12047b617f5dfbc0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a6ef4de6e015ed485fe23a142c2a0c44b803d654
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071760"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176805"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Enviar mensagens do Outlook de outro usuário
 
@@ -30,6 +29,9 @@ Para enviar mensagens de outro usuário, aplicativos que usam tokens de usuário
 ### <a name="mailbox-permissions"></a>Permissões de caixa de correio
 
 Duas permissões afetam o resultado final de enviar uma mensagem de outro usuário: **enviar em nome** e **enviar como**. O usuário que entra no aplicativo com a permissão **Mail.Send.Shared** DEVE ter pelo menos uma destas permissões que foram concedidas para a caixa de correio, grupo ou lista de distribuição de onde o email é.
+
+> [!NOTE]
+> No momento, não é possível usar o Microsoft Graph para consultar para quais caixas de correio o usuário autenticado tem permissões.
 
 #### <a name="send-on-behalf"></a>Enviar em Nome de
 
@@ -58,19 +60,19 @@ Isso é exibido no Microsoft Graph, como o `sender` (usuário realmente a enviou
 }
 ```
 
-Um usuário pode conceder permissão para suas caixas de correio a outro usuário, [usando o Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926). Os administradores podem conceder permissão para qualquer lista de distribuição, grupo ou caixa de correio no [Centro de administração do Microsoft 365](/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide).
+Um usuário pode conceder permissão para suas caixas de correio a outro usuário, [usando o Outlook](https://support.office.com/article/Allow-someone-else-to-manage-your-mail-and-calendar-41C40C04-3BD1-4D22-963A-28EAFEC25926). Os administradores podem conceder permissão para qualquer lista de distribuição, grupo ou caixa de correio no [Centro de administração do Microsoft 365](/office365/admin/add-users/give-mailbox-permissions-to-another-user).
 
 #### <a name="send-as"></a>Enviar como
 
-Com essa permissão, não há nenhuma indicação de que a mensagem foi enviada como um usuário diferente. As propriedades `sender` e `from` têm o mesmo valor.
+Com essa permissão, não há indicação de que a mensagem foi enviada como um usuário diferente. As propriedades `sender` e `from` têm o mesmo valor.
 
 Os usuários não podem conceder essa permissão para suas caixas de correio. Os administradores podem conceder essa permissão no Centro de administração do Microsoft 365.
 
 ## <a name="sending-with-microsoft-graph"></a>Enviar com o Microsoft Graph
 
-Você pode enviar mensagens de outro usuário seja [enviar diretamente](/graph/api/user-sendmail?view=graph-rest-1.0) ou [criar um rascunho](/graph/api/user-post-messages?view=graph-rest-1.0) e, em seguida, [enviá-lo](/graph/api/message-send?view=graph-rest-1.0).
+Você pode enviar mensagens de outro usuário seja [enviar diretamente](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true) ou [criar um rascunho](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true) e, em seguida, [enviá-lo](/graph/api/message-send?view=graph-rest-1.0&preserve-view=true).
 
-Para enviar de outro usuário, defina a `from` propriedade em [mensagem](/graph/api/resources/message?view=graph-rest-1.0) enviada ao endereço de email do usuário para enviar de. Não é necessário configurar a propriedade `sender` - Microsoft Graph irá defini-la adequadamente, com base nas permissões de caixa de correio concedidas para usuários conectados.
+Para enviar de outro usuário, defina a `from` propriedade em [mensagem](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) enviada ao endereço de email do usuário para enviar de. Não é necessário configurar a propriedade `sender` - Microsoft Graph irá defini-la adequadamente, com base nas permissões de caixa de correio concedidas para usuários conectados.
 
 Por exemplo, para enviar emails do grupo `sales@contoso.com`, configure a mensagem da seguinte maneira.
 
@@ -107,7 +109,7 @@ Depois que a mensagem é enviada, pode ser salva em pastas de itens enviados do 
 O comportamento padrão pode ser alterado por outros fatores externos:
 
 - Os administradores podem atualizar na caixa de correio do usuário para [sempre salvar uma cópia das mensagens enviadas de um representante](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) para seus itens enviados.
-- Configurando a `saveToSentItems` propriedade para `false` em um solicitação [enviar email](/graph/api/user-sendmail?view=graph-rest-1.0), você pode impedir o item de ser salvo na pasta Itens enviados. No entanto, se o administrador definiu a configuração "sempre salvar uma cópia", a mensagem será ainda salva a partir dos itens enviados do usuário.
+- Configurando a `saveToSentItems` propriedade para `false` em um solicitação [enviar email](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true), você pode impedir o item de ser salvo na pasta Itens enviados. No entanto, se o administrador definiu a configuração "sempre salvar uma cópia", a mensagem será ainda salva a partir dos itens enviados do usuário.
 
 ## <a name="examples"></a>Exemplos
 
@@ -152,7 +154,7 @@ HTTP/1.1 202 Accepted
 
 ### <a name="example-2-unsuccessful-attempt-to-send-without-permissions"></a>Exemplo 2: Falha na tentativa de enviar sem permissões
 
-Neste exemplo, Adele Vance tenta enviar um email de Patti Fernandez, mas não recebeu uma permissão **enviar em nome** ou **enviar como**. A resposta contém um `ErrorSendAsDenied` erro.
+Neste exemplo, Adele Vance tenta enviar um email de Patti Fernandez, mas não recebeu a permissão **Enviar em Nome** ou **Enviar como**. A resposta contém um erro `ErrorSendAsDenied`.
 
 <!-- markdownlint-disable MD024 -->
 
@@ -208,7 +210,7 @@ Content-Type: application/json
 Saiba mais sobre:
 
 - [Por que integrar-se com o email do Outlook](outlook-mail-concept-overview.md)
-- [Como usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e email API [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) do Microsoft Graph versão 1.0.
+- [Como usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true) e email API [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true#common-use-cases) do Microsoft Graph versão 1.0.
 
 <!--
 {
