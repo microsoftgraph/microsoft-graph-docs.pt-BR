@@ -1,20 +1,20 @@
 ---
 title: Criar, atualizar e excluir conexões no Microsoft Graph
-description: Aprenda a usar o Microsoft Graph para criar e gerenciar conexões
+description: Saiba como usar o Microsoft Graph para criar e gerenciar conexões.
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 50248f9a1edbd3fa1ea054a05e7e6b3410180362
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 264f9611b9bd71524f60718e066d064b844acec0
+ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335875"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65176623"
 ---
 <!---<author of this doc: rsamai>--->
 
-# <a name="create-update-and-delete-connections-in-the-microsoft-graph"></a>Criar, atualizar e excluir conexões no Microsoft Graph
+# <a name="create-update-and-delete-connections-in-microsoft-graph"></a>Criar, atualizar e excluir conexões no Microsoft Graph
 
 As conexões de serviços externos com o serviço da Pesquisa da Microsoft são representadas pelo recurso [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) no Microsoft Graph.
 
