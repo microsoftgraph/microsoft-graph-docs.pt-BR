@@ -1,23 +1,23 @@
 ---
 title: Criar authoredNote
-description: Crie um novo objeto AuthoredNote.
+description: Crie um novo objeto authoredNote.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c3278f0779607ca799a47c0b6bf359c44f8dfc4d
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: f1fba8eb55848d1ca884a97d4cfe4c06061291ad
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403086"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191496"
 ---
 # <a name="create-authorednote"></a>Criar authoredNote
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto AuthoredNote.](../resources/authorednote.md)
+Crie um novo [objeto authoredNote](../resources/authorednote.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,22 +45,24 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto authoredNote.](../resources/authorednote.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto authoredNote](../resources/authorednote.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [a authoredNote](../resources/authorednote.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o AuthoredNote](../resources/authorednote.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|content|[microsoft.graph.itemBody](../resources/itembody.md)|O conteúdo da nota para a solicitação|
+|content|[microsoft.graph.itemBody](../resources/itembody.md)|O conteúdo da anotação para a solicitação.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto authoredNote](../resources/authorednote.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e [um objeto authoredNote](../resources/authorednote.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,7 +98,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-authorednote-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-authorednote-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -105,6 +107,9 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

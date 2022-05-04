@@ -3,20 +3,20 @@ title: Listar secureScores
 description: Recupere uma lista de objetos secureScore.
 author: preetikr
 ms.localizationpriority: medium
-ms.prod: ''
+ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3ee7298d55fbbb57d07d416aa7f1f88f014a5ce3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 65218ac1ec9d2f31f2129dace93bad645ab84fff
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134311"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191743"
 ---
 # <a name="list-securescores"></a>Listar secureScores
 
 Namespace: microsoft.graph
 
-Recupere uma lista de [objetos secureScore.](../resources/securescore.md)
+Recupere uma lista de [objetos secureScore](../resources/securescore.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método. O corpo da solicitaç
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos **secureScores** no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de **objetos secureScores** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

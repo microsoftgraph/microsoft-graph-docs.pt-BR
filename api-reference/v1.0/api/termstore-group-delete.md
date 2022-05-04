@@ -1,21 +1,21 @@
 ---
 title: Excluir grupo
-description: Exclua um objeto group em um armazenamento de termos.
+description: Exclua um objeto de grupo em um repositório de termos.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 327f4b8756afc68c4436e30137d3b42fc15a5b1a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b9b50c2b90848c13c284fbc8fe5d004caed702b1
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110594"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191672"
 ---
 # <a name="delete-group"></a>Excluir grupo
 Namespace: microsoft.graph.termStore
 
-Excluir um [objeto group](../resources/termstore-group.md) em um armazenamento de [termos.]
+[Exclua um](../resources/termstore-group.md) objeto de grupo em um repositório de [termos].
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -103,7 +103,7 @@ HTTP/1.1 204 No Content
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
 [microsoft.graph.termStore.store]: ../resources/termstore-store.md
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
-[store]: ../resources/termstore-store.md
+[Loja]: ../resources/termstore-store.md
 
 <!--
 {

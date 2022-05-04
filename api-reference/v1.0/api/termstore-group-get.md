@@ -1,21 +1,21 @@
 ---
 title: Obter grupo
-description: Leia as propriedades e as relações de um objeto de grupo de armazenamento de termos.
+description: Leia as propriedades e as relações de um objeto de grupo de repositório de termos.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 79f336e1a2921ed8785771b9e37570a80e78564c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 9729f67e69e71e8ff12df7c403a28474394c7c22
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336694"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191398"
 ---
 # <a name="get-group"></a>Obter grupo
 Namespace: microsoft.graph.termStore
 
-Leia as propriedades e as relações de um objeto de grupo de armazenamento [de](../resources/termstore-group.md) termos.
+Leia as propriedades e as relações de um objeto de grupo de repositório [de](../resources/termstore-group.md) termos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -116,7 +116,7 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-### <a name="example-2-get-a-site-collection-termstore-group-and-its-parent-site-id"></a>Exemplo 2: Obter um grupo de sites termStore e sua ID de site pai
+### <a name="example-2-get-a-site-collection-termstore-group-and-its-parent-site-id"></a>Exemplo 2: obter um grupo termStore de conjunto de sites e sua ID de site pai
 
 #### <a name="request"></a>Solicitação
 

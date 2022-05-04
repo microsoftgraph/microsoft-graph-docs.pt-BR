@@ -5,12 +5,12 @@ title: Tipo de recurso contentType
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 951af75fa214d8b0728c60c2e7c0bf9f7f1fde69
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: 6c7c45b74088902f4f1565b52c96577cfcd6e3ca
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63560054"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191342"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso contentType
 
@@ -18,55 +18,57 @@ Namespace: microsoft.graph
 
 
 Representa um tipo de conteúdo SharePoint.
-Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar presentes em cada [**listItem**][listItem] em uma [**lista**][list].
+Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar presentes em [**cada listItem**][listItem] em uma [**lista**][list].
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar contentTypes em um site](../api/site-list-contenttypes.md)|[coleção contentType](../resources/contenttype.md)|Obter uma lista dos [objetos contentType](../resources/contenttype.md) e suas propriedades em um [site](../resources/site.md).|
-|[Listar contentTypes em uma lista](../api/list-list-contenttypes.md)|[coleção contentType](../resources/contenttype.md)|Obter uma lista dos [objetos contentType](../resources/contenttype.md) e suas propriedades em uma [lista](../resources/list.md).|
+|[Listar contentTypes em um site](../api/site-list-contenttypes.md)|[Coleção contentType](../resources/contenttype.md)|Obtenha uma lista dos objetos [contentType](../resources/contenttype.md) e suas propriedades em um [site](../resources/site.md).|
+|[Listar contentTypes em uma lista](../api/list-list-contenttypes.md)|[Coleção contentType](../resources/contenttype.md)|Obtenha uma lista dos [objetos contentType](../resources/contenttype.md) e suas propriedades em uma [lista](../resources/list.md).|
 |[Criar contentType para um site](../api/site-post-contenttypes.md)|[contentType](../resources/contenttype.md)|Crie um novo [objeto contentType](../resources/contenttype.md) em um [site](../resources/site.md).|
 |[Obter contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Leia as propriedades e as relações de um [objeto contentType](../resources/contenttype.md) .|
 |[Atualizar contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Atualize as propriedades de um [objeto contentType](../resources/contenttype.md) .|
-|[Excluir contentType](../api/contenttype-delete.md)|Nenhum|Exclui um [objeto contentType](../resources/contenttype.md) .|
+|[Excluir contentType](../api/contenttype-delete.md)|Nenhuma|Exclui um [objeto contentType](../resources/contenttype.md) .|
 |[isPublished](../api/contenttype-ispublished.md)|Booliano| Verifica se [o contentType](../resources/contenttype.md) foi publicado.|
 |[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Publicar um [contentType](../resources/contenttype.md).|
-|[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Não publice um [contentType](../resources/contenttype.md).|
+|[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Cancele a publicação de [um contentType](../resources/contenttype.md).|
 |[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Adicione uma cópia de [um contentType](../resources/contenttype.md) de um [site](../resources/site.md) a uma [lista](../resources/list.md).|
 |[associateWithHubSites](../api/contenttype-associatewithhubsites.md)|[contentType](../resources/contenttype.md)|Associa um [contentType](../resources/contenttype.md) a uma lista de sites de hub.|
-|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copie um arquivo para o local de conteúdo padrão em [um contentType](../resources/contenttype.md).|
-|[Colunas de lista](../api/contenttype-list-columns.md)|[coleção columnDefinition](../resources/columnDefinition.md)|Obter uma coleção de colunas, representadas como [recursos columnDefinition](../resources/columnDefinition.md) , em um **contentType**.|
-|[Criar coluna](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Adicione uma coluna a **um tipo de conteúdo** em um site ou lista.|
+|[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Copie um arquivo para o local de conteúdo padrão em um [contentType](../resources/contenttype.md).|
+|[Colunas de lista](../api/contenttype-list-columns.md)|[coleção columnDefinition](../resources/columnDefinition.md)|Obtenha uma coleção de colunas, representadas como [recursos columnDefinition](../resources/columnDefinition.md) , em um **contentType**.|
+|[Criar coluna](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Adicione uma coluna a um **tipo de conteúdo** em um site ou lista.|
+|[getCompatibleHubContentTypes](../api/contenttype-getcompatiblehubcontenttypes.md)|[Coleção contentType](../resources/contenttype.md)|Obtenha uma lista de tipos de conteúdo compatíveis do hub de tipo de conteúdo que pode ser adicionado a um [site de destino](../resources/site.md) ou a uma [lista](../resources/list.md).|
+|[addCopyFromContentTypeHub](../api/contenttype-addcopyfromcontenttypehub.md)|[contentType](../resources/contenttype.md)|Adicione ou sincronize uma cópia de um tipo de conteúdo publicado do hub de tipo de conteúdo para um [site de destino](../resources/site.md) ou uma [lista](../resources/list.md).|
 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo                 | Descrição|
 |:------------------|:---------------------|:----------------------------------|
-| associatedHubsUrls         | Collection(string) | Lista de URLs canônicas para sites de hub aos quais esse tipo de conteúdo está associado. Isso conterá todos os sites de hub em que esse tipo de conteúdo está na fila para ser imposto ou já está imposto. Impor um tipo de conteúdo significa que o tipo de conteúdo será aplicado às listas nos sites imposto.|
+| associatedHubsUrls         | Collection(string) | Lista de URLs canônicas para sites de hub aos quais esse tipo de conteúdo está associado. Isso conterá todos os sites de hub em que esse tipo de conteúdo está na fila para ser imposto ou já está imposto. Impor um tipo de conteúdo significa que o tipo de conteúdo será aplicado às listas nos sites impostos.|
 | description       | string               | O texto descritivo do item.|
 | documentSet         | [documentSet][]      | [Metadados do Conjunto](/sharepoint/governance/document-set-planning#about-document-sets) de Documentos.|
-| documentTemplate    | [documentSetContent][] | Metadados do modelo de documento. Para garantir que os documentos tenham conteúdo consistente em um site e seus subsites, você pode associar um modelo do Word, Excel ou PowerPoint a um tipo de conteúdo de site.|
+| documentTemplate    | [documentSetContent][] | Metadados do modelo de documento. Para garantir que os documentos tenham conteúdo consistente em um site e em seus subsites, você pode associar um word, Excel ou PowerPoint a um tipo de conteúdo de site.|
 | group             | string               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.|
 | hidden            | Booliano              | Indica se o tipo de conteúdo está oculto no menu “Novo” da lista.|
 | id                | cadeia de caracteres               | O identificador exclusivo do tipo de conteúdo.|
 | inheritedFrom   | [itemReference][]    | Se esse tipo de conteúdo for herdado de outro escopo (como um site), fornece uma referência para o item no qual o tipo de conteúdo foi definido.|
-| isBuiltIn            | Booliano| Especifica se um tipo de conteúdo é um tipo de conteúdo integrado. |
+| isBuiltIn            | Booliano| Especifica se um tipo de conteúdo é um tipo de conteúdo interno. |
 | nome              | string               | O nome do tipo de conteúdo.|
-| order             | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.|
-| parentId          | string               | O identificador exclusivo do tipo de conteúdo.|
-| propagateChanges     | Booliano              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.|
-| readOnly          | Booliano              | Se `true`, o tipo de conteúdo não pode ser modificado, a menos que esse valor seja definido pela primeira vez como `false`.|
-| sealed            | Booliano              | Se `true`, o tipo de conteúdo não pode ser modificado por usuários ou por meio de operações de push-down. Somente administradores de conjunto de sites podem lacrar ou retirar o lacre dos tipos de conteúdo.|
+| Ordem             | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.|
+| Parentid          | string               | O identificador exclusivo do tipo de conteúdo.|
+| propagateChanges     | Booliano              | Se `true`, quaisquer alterações feitas no tipo de conteúdo serão enviadas por push para tipos de conteúdo herdados e listas que implementam o tipo de conteúdo.|
+| Readonly          | Booliano              | Se `true`, o tipo de conteúdo não pode ser modificado, a menos que esse valor seja definido pela primeira vez como `false`.|
+| sealed            | Booliano              | Se `true`, o tipo de conteúdo não pode ser modificado por usuários ou por meio de operações de push down. Somente administradores de conjunto de sites podem lacrar ou retirar o lacre dos tipos de conteúdo.|
 
 
 ## <a name="relationships"></a>Relações
 
 | Relação    | Tipo                      | Descrição|
 |:----------------|:--------------------------|:-------------------------------|
-| base     | [contentType][]  | ContentType pai do qual esse tipo de conteúdo é derivado. |
-| columnLinks   | Conjunto [columnLink][] | A coleção de colunas que são necessárias por esse tipo de conteúdo.|
-| baseTypes     | Collection([contentType][])     | A coleção de tipos de conteúdo que são ancestrais desse tipo de conteúdo.|
+| Base     | [contentType][]  | ContentType pai do qual esse tipo de conteúdo é derivado. |
+| columnLinks   | Conjunto [columnLink][] | A coleção de colunas que são exigidas por esse tipo de conteúdo.|
+| Basetypes     | Collection([contentType][])     | A coleção de tipos de conteúdo que são ancestrais desse tipo de conteúdo.|
 | columnPositions         | Collection([columnDefinition][]) | Informações de ordem de coluna em um tipo de conteúdo.|
 | columns       | Collection([columnDefinition][])  | A coleção de definições de coluna para este contentType.|
 

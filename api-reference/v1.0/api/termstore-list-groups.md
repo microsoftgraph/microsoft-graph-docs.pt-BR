@@ -1,21 +1,21 @@
 ---
-title: Listar grupos
-description: Obter uma lista de objetos de grupo em um armazenamento de termos.
+title: Listar grupos termStore
+description: Obtenha uma lista de objetos de grupo em um repositório de termos.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: cc0e21fddef8fdc4251009e07e1413e213d4af1c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6e750ecc3de80821e9e3fee8c0f978bd676c4e3f
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104397"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191440"
 ---
 # <a name="list-termstore-groups"></a>Listar grupos termStore
 Namespace: microsoft.graph.termStore
 
-Obter uma lista de [objetos de](../resources/termstore-group.md) grupo em um armazenamento de [termos](../resources/termstore-store.md).
+Obtenha uma lista de [objetos de](../resources/termstore-group.md) grupo em um repositório de [termos](../resources/termstore-store.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

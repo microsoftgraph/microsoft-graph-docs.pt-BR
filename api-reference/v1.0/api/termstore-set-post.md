@@ -3,19 +3,19 @@ title: Criar conjunto
 description: Crie um novo objeto set.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 781cca8fce8b83b00be65cc1063cd290318bbd55
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3dd711a657f536ca3d48db6bed989b0a0a99bbe3
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940255"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191630"
 ---
 # <a name="create-set"></a>Criar conjunto
 Namespace: microsoft.graph.termStore
 
-Crie um novo [objeto set.](../resources/termstore-set.md)
+Crie um novo [objeto set](../resources/termstore-set.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 
@@ -44,9 +44,9 @@ POST sites/{site-id}/termStore/sets
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto set.](../resources/termstore-set.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto set](../resources/termstore-set.md) .
 
-A tabela a seguir mostra as propriedades necessárias ao criar o [objeto set.](../resources/termstore-set.md)
+A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto set](../resources/termstore-set.md) .
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar o [objeto set.](.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [microsoft.graph.termStore.set](../resources/termstore-set.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto microsoft.graph.termStore.set](../resources/termstore-set.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

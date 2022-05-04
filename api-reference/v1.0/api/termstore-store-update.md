@@ -1,21 +1,21 @@
 ---
-title: Armazenamento de atualizações
-description: Atualize as propriedades de um objeto store.
+title: Atualizar repositório
+description: Atualize as propriedades de um objeto de repositório.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 54329bad1cce7ba6eade01a58907640d049f3487
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9b27b2a102707025f5f10ba431480f2157519a6c
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104362"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191764"
 ---
-# <a name="update-store"></a>Armazenamento de atualizações
+# <a name="update-store"></a>Atualizar repositório
 Namespace: microsoft.graph.termStore
 
-Atualize as propriedades de um [objeto store.](../resources/termstore-store.md)
+Atualize as propriedades de um [objeto de](../resources/termstore-store.md) repositório.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,20 +43,20 @@ PATCH sites/{site-id}/termStore
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto store.](../resources/termstore-store.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto de](../resources/termstore-store.md) repositório.
 
-A tabela a seguir mostra as propriedades que podem ser editadas para o [objeto store.](../resources/termstore-store.md)
+A tabela a seguir mostra as propriedades que podem ser editadas para o [objeto de](../resources/termstore-store.md) repositório.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |defaultLanguageTag|Cadeia de caracteres|Idioma padrão do [microsoft.graph.termstore.store](../resources/termstore-store.md).|
-|languageTags|Coleção String|Idiomas disponíveis no [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|languageTags|Coleção de cadeias de caracteres|Idiomas disponíveis no [microsoft.graph.termstore.store](../resources/termstore-store.md).|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [microsoft.graph.termStorestore](../resources/termstore-store.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [microsoft.graph.termStorestore](../resources/termstore-store.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

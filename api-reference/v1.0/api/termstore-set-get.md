@@ -3,19 +3,19 @@ title: Obter conjunto
 description: Leia as propriedades e as relações de um objeto set.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 018138dca5d031ec2f19a1b8b43800c4c957b226
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 51a7cf724021925a1d4273b8f523d744f02c2c53
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128333"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191729"
 ---
 # <a name="get-set"></a>Obter conjunto
 Namespace: microsoft.graph.termStore
 
-Leia as propriedades e as relações de um [objeto set.](../resources/termstore-set.md)
+Leia as propriedades e as relações de um [objeto set](../resources/termstore-set.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [microsoft.graph.termStore.set](../resources/termstore-set.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto microsoft.graph.termStore.set](../resources/termstore-set.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

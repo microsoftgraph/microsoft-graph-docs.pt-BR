@@ -3,14 +3,14 @@ title: Obter singleValueLegacyExtendedProperty
 description: Você pode obter uma única instância de recurso expandida com uma propriedade estendida específica ou uma coleção de instâncias de recurso
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: non-product-specific
 doc_type: apiPageType
-ms.openlocfilehash: 3f382e08e9268914e481f09e2b9d65de8df8a356
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 089f906c332d79c63c58985834848538bb1d5e81
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131974"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191736"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obter singleValueLegacyExtendedProperty
 
@@ -44,16 +44,16 @@ Também há suporte para os seguintes recursos de grupo:
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
 ## <a name="permissions"></a>Permissões
-Dependendo do recurso do qual você está recebendo a propriedade estendida e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso do qual você está obtendo a propriedade estendida e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [evento](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Incompatível |
-| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Incompatível |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Sem suporte |
+| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Sem suporte |
 | grupo [post](../resources/post.md) | Group.Read.All | Sem suporte | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |

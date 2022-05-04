@@ -6430,6 +6430,8 @@ items:
                 href: api/site-list-subsites.md
               - name: Procurar sites
                 href: api/site-search.md
+              - name: Listar operações
+                href: api/site-list-operations.md
               - name: Permissões
                 href: resources/permission.md
                 items:
@@ -6463,6 +6465,8 @@ items:
                 href: api/list-list-contenttypes.md
               - name: Adicionar cópia do tipo de conteúdo
                 href: api/contenttype-addcopy.md
+              - name: Listar operações
+                href: api/list-list-operations.md
           - name: Colunas
             items:
               - name: Definição de coluna
@@ -6491,6 +6495,8 @@ items:
                 href: api/contenttype-unpublish.md
               - name: Adicionar cópia à lista
                 href: api/contenttype-addcopy.md
+              - name: Adicionar ou sincronizar do hub
+                href: api/contenttype-addcopyfromcontenttypehub.md
               - name: Associar a sites de hub
                 href: api/contenttype-associatewithhubsites.md
               - name: Copiar para o local de conteúdo padrão
@@ -6499,6 +6505,8 @@ items:
                 href: api/contenttype-list-columns.md
               - name: Criar coluna
                 href: api/contenttype-post-columns.md
+              - name: Obter compatibilidade do hub
+                href: api/contenttype-getcompatiblehubcontenttypes.md
           - name: Listar itens
             href: resources/listitem.md
             items:
@@ -6514,6 +6522,12 @@ items:
                 href: api/listitem-list-versions.md
               - name: Obter análise do item
                 href: api/itemanalytics-get.md
+          - name: Operação de execução longa avançada
+            items:
+              - name: Operação de execução longa avançada
+                href: resources/richLongRunningOperation.md
+              - name: Obter
+                href: api/richlongrunningoperation-get.md
           - name: Taxonomia
             displayname: Taxonomy API
             items:
@@ -7151,7 +7165,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefas
+          - name: Tarefa
             href: resources/todotask.md
             items:
               - name: Listar tarefas

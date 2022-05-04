@@ -3,20 +3,20 @@ author: learafa
 description: Liste os sites que foram seguidos pelo usuário conectado.
 title: Listar sites seguidos
 ms.localizationpriority: medium
-ms.prod: SharePoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 32ff7dab3ad5a2b64a93606502fff80de30ca134
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5c787ed7f8b5c17a26f84d89a7271c9f82a0ddc5
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121782"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191785"
 ---
 # <a name="list-followed-sites"></a>Listar sites seguidos
 
 Namespace: microsoft.graph
 
-Listar [os sites](../resources/site.md) que foram seguidos pelo usuário assinado.
+Liste [os sites](../resources/site.md) que foram seguidos pelo usuário conectado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,19 +30,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Esse método só pode ser acessado OneDrive for Business.
+Esse método só pode ser acessado por meio OneDrive for Business.
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/followedSites
 ```
-Obter uma lista dos sites seguidos por um usuário de destino, com base em sua ID.
+Obtenha uma lista dos sites seguidos por um usuário de destino, com base em sua ID.
 
 ```http
 GET /users/{user-id}/followedSites
 ```
-**Observação:** Para acessar a lista de sites seguidos de outro usuário direcionado, você precisa de permissões de aplicativo.
+**Nota:** Para acessar a lista de sites seguidos de outro usuário de destino, você precisa de permissões de aplicativo.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Este método retorna um conjunto de [recursos de site](../resources/site.md) que o usuário está seguindo.
+Esse método retorna um conjunto de [recursos de site](../resources/site.md) que o usuário está seguindo.
 Se nenhum site for encontrado, uma coleção vazia será retornada.
 
 ## <a name="example"></a>Exemplo

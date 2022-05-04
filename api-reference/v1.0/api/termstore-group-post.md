@@ -1,21 +1,21 @@
 ---
-title: Criar grupo
-description: Crie um novo objeto group em um armazenamento de termos.
+title: Criar grupo termStore
+description: Crie um novo objeto de grupo em um repositório de termos.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: ff08b50016ff40065ec09c462f6f14bd6d8face4
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b8bd550ea4d310099385a6cb9b522250db273612
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947448"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191778"
 ---
 # <a name="create-termstore-group"></a>Criar grupo termStore
 Namespace: microsoft.graph.termStore
 
-Crie um novo [objeto group](../resources/termstore-group.md) em um armazenamento de termos.
+Crie um novo [objeto de](../resources/termstore-group.md) grupo em um repositório de termos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,7 +46,7 @@ POST sites/{site-id}/termStore/groups
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto de [grupo](../resources/termstore-group.md).
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto group.](../resources/termstore-group.md)
+A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto de](../resources/termstore-group.md) grupo.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [objet
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de `201 Created` resposta e um objeto [microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

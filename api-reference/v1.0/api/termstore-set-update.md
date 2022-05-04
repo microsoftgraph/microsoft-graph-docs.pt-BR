@@ -3,19 +3,19 @@ title: Conjunto de atualizações
 description: Atualize as propriedades de um objeto set.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 4866a3efb88f005ade8020bb3155b197d2ccedd7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2aa24cf98f787b382c3df96e2295225804464aa0
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110538"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191722"
 ---
 # <a name="update-set"></a>Conjunto de atualizações
 Namespace: microsoft.graph.termStore
 
-Atualize as propriedades de um [objeto set.](../resources/termstore-set.md)
+Atualize as propriedades de um [objeto set](../resources/termstore-set.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,21 +45,21 @@ PATCH sites/{site-id}/termStore/sets/{set-id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto set.](../resources/termstore-set.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto set](../resources/termstore-set.md) .
 
-A tabela a seguir mostra as propriedades que podem ser editadas para o [objeto set.](../resources/termstore-set.md)
+A tabela a seguir mostra as propriedades que podem ser editadas para o [objeto set](../resources/termstore-set.md) .
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |localizedNames|[coleção microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Nome do conjunto.|
-|description|Cadeia de caracteres|Descrição do conjunto.|
+|descrição|Cadeia de caracteres|Descrição do conjunto.|
 |properties|[coleção microsoft.graph.keyValue](../resources/keyvalue.md)|Propriedades de um conjunto.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [microsoft.graph.termStore.set](../resources/termstore-set.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [microsoft.graph.termStore.set](../resources/termstore-set.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

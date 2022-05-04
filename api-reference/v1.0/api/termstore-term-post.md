@@ -1,21 +1,21 @@
 ---
 title: Criar termo
-description: Crie um novo objeto term.
+description: Crie um novo objeto de termo.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: d62641abd9287560b01cee651785b349aa58be0f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1b8dc16cdc36e50b777c64189fd5ffd2e8f85acc
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62131854"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191412"
 ---
 # <a name="create-term"></a>Criar termo
 Namespace: microsoft.graph.termStore
 
-Crie um novo [objeto term.](../resources/termstore-term.md)
+Crie um novo [objeto de](../resources/termstore-term.md) termo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,19 +45,19 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto term.](../resources/termstore-term.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto de](../resources/termstore-term.md) termo.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto term.](../resources/termstore-term.md)
+A tabela a seguir mostra as propriedades que são necessárias ao criar o [objeto de](../resources/termstore-term.md) termo.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|labels|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulo para o termo a ser criado.|
+|Rótulos|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulo para o termo a ser criado.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [microsoft.graph.termStore.term](../resources/termstore-term.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto microsoft.graph.termStore.term](../resources/termstore-term.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

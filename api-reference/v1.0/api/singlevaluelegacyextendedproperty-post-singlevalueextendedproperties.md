@@ -3,14 +3,14 @@ title: Criar uma propriedade estendida de valor único
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: non-product-specific
 doc_type: apiPageType
-ms.openlocfilehash: ba741a172d8c93616626c4848cb6f8e2793155b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 42b688ccb6e83d12ebf1b487791fd2941f02986e
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085081"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191686"
 ---
 # <a name="create-single-value-extended-property"></a>Criar uma propriedade estendida de valor único
 
@@ -36,13 +36,13 @@ Também há suporte para os seguintes recursos de grupo:
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
 ## <a name="permissions"></a>Permissões
-Dependendo do recurso em que você está criando a propriedade estendida e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso no qual você está criando a propriedade estendida e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contato](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [pastadeContatos](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
 | grupo [calendar](../resources/calendar.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
 | grupo [event](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 30a478f5a3021bf7efbadd0e924bd8c8e343ad40
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 85536cc55604de7f88f561a3b1e232cd333c7ec8
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133136"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191349"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -636,7 +636,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhuma|
 |SecurityGroup|
 |Tudo|
 
@@ -1047,7 +1047,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | Lista
-| description
+| descrição
 | referência
 
 
@@ -1167,8 +1167,8 @@ Namespace: microsoft.graph
 | preset11 | 11
 | preset12 | 12 
 | preset13 | 13
-| preset14 | 14 
-| preset15 | 15 
+| preset14 | 14
+| preset15 | 15
 | preset16 | 16
 | preset17 | 17 
 | preset18 | 18 
@@ -1337,7 +1337,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |Member|Member|Descrição|
 |:---|:---|:---|
 |desconhecido|-1|Desconhecido.|
-|Padrão|0|Membro do grupo Usuários Padrão.|
+|padrão|0|Membro do grupo Usuários Padrão.|
 |Poder|1| Membro do grupo Usuários Avançados.|
 |Administrador|2| Membro do grupo Administradores.|
 
@@ -1460,7 +1460,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1521,8 +1521,8 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | autoPurgeToDeleted    | 11    | Mensagem de movimentação timeTravel a ser excluída. |
 | Saída              | 12     | Email de saída.                      |
 | notJunk               | 13    | Permita devido a não lixo eletrônico.              |
-| Lixo                  | 14     | Bloqueado devido a lixo eletrônico.                |
-| unknownFutureValue    | 15     | Um membro do Sentinel.                  |
+| Lixo                  | 14    | Bloqueado devido a lixo eletrônico.                |
+| unknownFutureValue    | 15    | Um membro do Sentinel.                  |
 
 ### <a name="chatmessagetype-values"></a>Valores chatMessageType
 
@@ -1564,7 +1564,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Membro             | Valor |Descrição|
 | :----------------- | :---- |:-----------|
-| Padrão           | 0     |O canal herda a lista de membros da equipe pai.|
+| padrão           | 0     |O canal herda a lista de membros da equipe pai.|
 | Privada            | 1     |O canal pode ter membros que são um subconjunto de todos os membros da equipe pai.|
 | unknownFutureValue | 2     |      |
 ### <a name="wellknownlistname-values"></a>Valores wellknownListName
@@ -1734,7 +1734,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member                |
 |:----------------------|
-| string                |
+| cadeia de caracteres                |
 | booliano               |
 | int64                 |
 | Stringcollection      |
@@ -2071,4 +2071,14 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |notReviewed|
 |dontKnow|
 |notNotified|
+|unknownFutureValue|
+
+### <a name="longrunningoperationstatus-values"></a>Valores longRunningOperationStatus
+
+| Member|
+|:-----------------|
+|Notstarted|
+|Executando|
+|Conseguiu|
+|Falhou|
 |unknownFutureValue|

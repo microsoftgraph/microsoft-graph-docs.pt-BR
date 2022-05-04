@@ -1,21 +1,21 @@
 ---
-title: Obter loja
-description: Leia as propriedades e as relações de um objeto store.
+title: Obter repositório
+description: Leia as propriedades e as relações de um objeto de repositório.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: df211027b5485244566635a29d16d2a1deb9741c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e471c529e7b18d8bd9c144755cbe742b56913171
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104348"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191708"
 ---
-# <a name="get-store"></a>Obter loja
+# <a name="get-store"></a>Obter repositório
 Namespace: microsoft.graph.termStore
 
-Leia as propriedades e as relações de um [objeto](../resources/termstore-store.md) store.
+Leia as propriedades e as relações de um [objeto de](../resources/termstore-store.md) repositório.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,7 +44,7 @@ GET sites/{site-id}/termStore
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de `200 OK` resposta e um objeto [microsoft.graph.termStore.store](../resources/termstore-store.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta [e microsoft.graph.termStore.store](../resources/termstore-store.md) objeto no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

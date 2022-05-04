@@ -1,21 +1,21 @@
 ---
 title: Obter termo
-description: Leia as propriedades e as relações de um objeto term.
+description: Leia as propriedades e as relações de um objeto de termo.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 8e44d984a64506461ee42699adb73542e2be38fd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 524dac81c9b416a2cd338ee0d98222e92bfa248b
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62087609"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191405"
 ---
 # <a name="get-term"></a>Obter termo
 Namespace: microsoft.graph.termStore
 
-Leia as propriedades e as relações de um [objeto term.](../resources/termstore-term.md)
+Leia as propriedades e as relações de um [objeto de](../resources/termstore-term.md) termo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [microsoft.graph.termStore.term](../resources/termstore-term.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto microsoft.graph.termStore.term](../resources/termstore-term.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

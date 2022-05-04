@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso invitationParticipantInfo
+title: Tipo de recurso invitationParticipantInfo
 description: Representa uma entidade que está sendo convidada para uma chamada de grupo.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9193ec70a3884ba9bf25e4f1c8c33eb7c77d838f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 16885239d0af9be8e9e8e66eade8f75c2d120a8e
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989035"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191637"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
+# <a name="invitationparticipantinfo-resource-type"></a>Tipo de recurso invitationParticipantInfo
 
 Namespace: microsoft.graph
 
@@ -24,9 +24,10 @@ Representa uma entidade que está sendo convidada para uma chamada de grupo.
 
 | Propriedade                           | Tipo                          | Descrição                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| EndpointType                       | String                        | O tipo de ponto de extremidade. Os valores possíveis são: `default` e `voicemail`. |
-| ladrões                           | [identitySet](identityset.md) | O [identityset](identityset.md) associado a este convite.                   |
-| replacesCallId                     | String                        | Opcional. A chamada na qual o idenity de destino faz parte no momento. Essa chamada será cancelada quando o participante for adicionado. |
+| Endpointtype                       | Cadeia de Caracteres                        | O tipo do ponto de extremidade. Os valores possíveis são: `default` e `voicemail`. |
+| identity                           | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a este convite.                   |
+| participantId                      | String                        | Opcional. A ID do participante de destino.                                          |
+| replacesCallId                     | String                        | Opcional. A chamada da qual a identidade de destino faz parte no momento. Para casos ponto a ponto, a chamada será descartada depois que o participante for adicionado com êxito. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -42,8 +43,9 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 ```json
 {
-  "endpointType": "default | voicemail",
+  "endpointType": "String",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
+  "participantId": "String",  
   "replacesCallId": "String"
 }
 ```

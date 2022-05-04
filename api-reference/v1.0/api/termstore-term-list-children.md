@@ -1,21 +1,21 @@
 ---
 title: Listar filhos
-description: Obter os termos da propriedade de navegação para filhos.
+description: Obtenha os termos da propriedade de navegação filho.
 author: vishriv
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: fbaede0e9c9233ed536805b3101976054b722470
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ab871eef76bfce88435c6a3539d39477b445c2b8
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091614"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191771"
 ---
 # <a name="list-children"></a>Listar filhos
 Namespace: microsoft.graph.termStore
 
-Obter os filhos de primeiro nível de um [recurso de conjunto] ou [termo] usando a propriedade de navegação filho.
+Obtenha os filhos de primeiro nível de um [recurso de conjunto] [ou termo] usando a propriedade de navegação filho.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos microsoft.graph.termStore.term](../resources/termstore-term.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos microsoft.graph.termStore.term](../resources/termstore-term.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-[term]: ../resources/termstore-term.md
+[Termo]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
 <!--

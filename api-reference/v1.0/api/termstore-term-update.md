@@ -1,21 +1,21 @@
 ---
-title: Termo de atualização
-description: Atualize as propriedades de um objeto term.
+title: Atualizar termo
+description: Atualize as propriedades de um objeto de termo.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: f14ca04df3b90553d9fec9ae737a0f896a122134
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 10b4371906456ddc24c9dbf3f19afab844d7979e
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121697"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191701"
 ---
-# <a name="update-term"></a>Termo de atualização
+# <a name="update-term"></a>Atualizar termo
 Namespace: microsoft.graph.termStore
 
-Atualize as propriedades de um [objeto term.](../resources/termstore-term.md)
+Atualize as propriedades de um [objeto de](../resources/termstore-term.md) termo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,21 +44,21 @@ PATCH sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto term.](../resources/termstore-term.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto de](../resources/termstore-term.md) termo.
 
-A tabela a seguir mostra as propriedades que podem ser atualizadas para um [objeto term.](../resources/termstore-term.md)
+A tabela a seguir mostra as propriedades que podem ser atualizadas para um [objeto de](../resources/termstore-term.md) termo.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|labels|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulos de um termo.|
-|descriptions|[coleção microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|Descrição sobre o termo.|
+|Rótulos|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulos de um termo.|
+|Descrições|[coleção microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|Descrição sobre o termo.|
 |properties|[coleção microsoft.graph.keyValue](../resources/keyvalue.md)|Propriedades associadas ao termo.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto [microsoft.graph.termStore.term](../resources/termstore-term.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [microsoft.graph.termStore.term](../resources/termstore-term.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

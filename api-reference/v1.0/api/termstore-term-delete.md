@@ -1,21 +1,21 @@
 ---
 title: Excluir termo
-description: Excluir um objeto term.
+description: Exclua um objeto de termo.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 21e4d28705627987effe09363259e36062f1a8e7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f5e70745b85958e83ceaf47b4a3a695bbb96ec05
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121711"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191806"
 ---
 # <a name="delete-term"></a>Excluir termo
 Namespace: microsoft.graph.termStore
 
-Excluir um [objeto term.](../resources/termstore-term.md)
+Exclua um [objeto de](../resources/termstore-term.md) termo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

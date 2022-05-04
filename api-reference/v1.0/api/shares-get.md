@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Acessar itens compartilhados
 ms.localizationpriority: medium
 description: Acesse um DriveItem compartilhado ou uma coleção de itens compartilhados usando um shareId ou uma URL de compartilhamento.
-ms.prod: ''
+ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: b7b0c60fdb77e462498dad03f70afbbc047d7d20
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c3f895d58edce036d0c015fa91eaaf4d1a7be5e1
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62121924"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191693"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessar DriveItems compartilhados
 
@@ -65,16 +65,16 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | Nome       | Tipo   | Descrição                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Opcional. De acordo com um dos `prefer` valores documentados abaixo.  |
+| **Prefer** | cadeia de caracteres | Opcional. Defina como um dos valores `prefer` documentados abaixo.  |
 
-### <a name="prefer-header-values"></a>Preferir valores de header
+### <a name="prefer-header-values"></a>Preferir valores de cabeçalho
 
 | Nome                          | Descrição                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
 | redeemSharingLink             | Se **o shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda ao chamador acesso durável ao item    |
-| redeemSharingLinkIfNecessary  | O mesmo que redeemSharingLink, mas o acesso só é garantido durante a duração dessa solicitação |
+| redeemSharingLinkIfNecessary  | O mesmo que redeemSharingLink, mas o acesso só tem a garantia de ser concedido durante esta solicitação |
 
-redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto redeemSharingLinkIfNecessary destina-se a cenários em que a intenção é simplesmente espiar os metadados do link.
+redeemSharingLink deve ser considerado equivalente ao chamador navegando até o link de compartilhamento do navegador (aceitando o gesto de compartilhamento), enquanto redeemSharingLinkIfNecessary destina-se a cenários em que a intenção é simplesmente espiar os metadados do link.
 
 ## <a name="response"></a>Resposta
 

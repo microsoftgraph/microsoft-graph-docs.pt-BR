@@ -1,21 +1,21 @@
 ---
 title: Listar relações
-description: Obter as relações da propriedade de navegação de relações.
+description: Obtenha as relações da propriedade de navegação de relações.
 author: vishriv
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: b4634f82d813d6a8add04f818f02c4ca5c5cf8e4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ec4e7e0caa4c765b67445883cacb6eac6ecb722
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128277"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191384"
 ---
 # <a name="list-relations"></a>Listar relações
 Namespace: microsoft.graph.termStore
 
-Obter a relação diferente de um [termo ou] [definir] a partir da propriedade de navegação de relações.
+Obtenha a relação diferente de um [termo ou] [conjunto da] propriedade de navegação de relações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos microsoft.graph.termStore.relation](../resources/termstore-relation.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos microsoft.graph.termStore.relation](../resources/termstore-relation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -119,7 +119,7 @@ Content-Type: application/json
 
 
 [set]: ../resources/termstore-set.md
-[term]: ../resources/termstore-term.md
+[Termo]: ../resources/termstore-term.md
 [microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
 
 

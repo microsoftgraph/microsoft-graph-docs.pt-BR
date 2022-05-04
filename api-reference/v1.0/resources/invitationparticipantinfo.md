@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso invitationParticipantInfo
-description: '**InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.'
+description: '**O InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.'
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f048fae8d5d63aac8a64dc0e8d3193de5cc5aef5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c09e15063524fbba0f9a53b69786545399c8e35a
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084423"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191679"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Tipo de recurso invitationParticipantInfo
 
@@ -22,8 +22,9 @@ Esse recurso é usado para representar a entidade que está sendo convidada para
 
 | Propriedade                           | Tipo                          | Descrição                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| identity                           | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a esse convite.                   |
-| replacesCallId                     | String                        | Opcional. A chamada da qual a identidade de destino faz parte no momento. Essa chamada será retirada depois que o participante for adicionado. |
+| Identidade                           | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a este convite.                   |
+| participantId                      | String                        | Opcional. A ID do participante de destino.                                          |
+| replacesCallId                     | String                        | Opcional. A chamada da qual a identidade de destino faz parte no momento. Para casos ponto a ponto, a chamada será descartada depois que o participante for adicionado com êxito. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,6 +40,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
+  "participantId": "String",  
   "replacesCallId": "String"
 }
 ```

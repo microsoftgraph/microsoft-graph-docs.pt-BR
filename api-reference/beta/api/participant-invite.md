@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 640cd67114ec43ae6981b10a645d0fe8d90a0268
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: ff2fcc644112b2f3594c476d796779b7402c58ed
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133822"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191658"
 ---
 # <a name="participant-invite"></a>participante: convidar
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Convide participantes para a chamada ativa.
 
-Para obter mais informações sobre como lidar com operações, consulte [commsoperation](../resources/commsoperation.md).
+Para obter mais informações sobre como lidar com operações, consulte [commsOperation](../resources/commsoperation.md).
 
 >**Nota:** Convidar vários participantes em uma solicitação só tem suporte para chamadas em grupo.
 
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participants|conjunto [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
-|clientContext|Cadeia de caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
+|clientContext|Cadeia de Caracteres|Cadeia de caracteres de contexto de cliente exclusiva. O limite máximo é de 256 caracteres.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método `200 OK` retorna um código de resposta e um cabeçalho Location com um URI para [inviteParticipantsOperation criado](../resources/inviteparticipantsoperation.md) para essa solicitação. O corpo da resposta contém [o inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) criado.
@@ -520,7 +520,7 @@ Content-Type: application/json
 
 ```
 
-### <a name="example-3-invite-participants-to-a-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Exemplo 3: Convidar participantes para uma chamada de grupo existente, substituindo uma chamada ponto a ponto existente
+### <a name="example-3-invite-participants-to-an-existing-group-call-replacing-an-existing-peer-to-peer-call"></a>Exemplo 3: Convidar participantes para uma chamada de grupo existente, substituindo uma chamada ponto a ponto existente
 
 
 A API de convite dá suporte a apenas um participante ao substituir uma chamada ponto a ponto existente. Quando vários participantes são fornecidos no corpo da solicitação, somente o primeiro participante será lido e o restante dos participantes será ignorado.
@@ -918,6 +918,191 @@ Content-Type: application/json
 ```
 
 >**Nota:** Com um status, você pode esperar receber notificações sobre como sua chamada ponto a `completed` ponto original foi encerrada e excluída.
+
+### <a name="example-5-move-one-participant-from-one-meeting-to-another"></a>Exemplo 5: Mover um participante de uma reunião para outra
+
+Você pode mover um participante de uma reunião para outra se essas duas reuniões tiverem sido criadas pelo mesmo aplicativo.
+Para obter mais informações sobre como criar uma reunião online, consulte [Criar onlineMeeting](/graph/api/application-post-onlinemeetings).
+
+> **Nota:** A API de convite pode mover apenas um participante por solicitação. Se você fornecer mais de um participante no corpo da solicitação, a API de convite moverá apenas o primeiro.
+
+#### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite-move"
+}-->
+
+```http
+POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+Content-Type: application/json
+
+{
+  "participants": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "682b6c37-0729-4fab-ace6-d730d5d9137e",
+          "identityProvider": "AAD"
+        }
+      }
+    }
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation",
+  "name": "participant-invite-move"
+}-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+  "id": "278405a3-f568-4b3e-b684-009193463064",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "7d501bf1-5ee4-4605-ba92-0ae4513c611c",
+      "identity": {
+        "user": {
+          "id": "682b6c37-0729-4fab-ace6-d730d5d9137e",
+          "displayName": "Participant",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---operation-completed"></a>Notificação - operação concluída
+
+``` http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
+            "participants":[ 
+               { 
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{ 
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"682b6c37-0729-4fab-ace6-d730d5d9137e",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  }
+               }
+            ],
+            "status":"completed",
+            "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+            "id":"278405a3-f568-4b3e-b684-009193463064"
+         }
+      }
+   ]
+}
+```
+
+#### <a name="notification---roster-updated-with-participant-added"></a>Notificação – lista atualizada com o participante adicionado
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+{
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"updated",
+         "resource":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceData":[
+            {
+               "@odata.type":"#microsoft.graph.participant",
+               "info":{
+                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"682b6c37-0729-4fab-ace6-d730d5d9137e",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  },
+                  "endpointType":"default"
+               },
+               "mediaStreams":[
+                  {
+                     "@odata.type":"#microsoft.graph.mediaStream",
+                     "mediaType":"audio",
+                     "sourceId":"1",
+                     "direction":"sendReceive",
+                     "serverMuted":false
+                  }
+               ],
+               "isMuted":false,
+               "isInLobby":false,
+               "id":null
+            }
+         ]
+      }
+   ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
