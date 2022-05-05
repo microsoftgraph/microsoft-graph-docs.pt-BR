@@ -5,19 +5,19 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a2a6c8f8458e396423fce589c42c196cb766997f
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 9790194d3f0bd370a97917181dce53e3268fa6f4
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133892"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65207305"
 ---
 # <a name="list-roleassignmentscheduleinstances"></a>Listar roleAssignmentScheduleInstances
 Namespace: microsoft.graph
 
 Obtenha as instâncias de atribuições de função ativas em seu locatário. As atribuições ativas incluem aquelas feitas por meio de [atribuições e solicitações](rbacapplication-post-roleassignmentschedulerequests.md) de ativação e diretamente por meio da [API de atribuições de função](../resources/unifiedroleassignment.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -55,6 +55,8 @@ Se bem-sucedido, este método `200 OK` retorna um código de resposta e uma cole
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_unifiedroleassignmentscheduleinstance"
@@ -63,6 +65,28 @@ Se bem-sucedido, este método `200 OK` retorna um código de resposta e uma cole
 ``` http
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentScheduleInstances
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedroleassignmentscheduleinstance-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-unifiedroleassignmentscheduleinstance-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-unifiedroleassignmentscheduleinstance-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-unifiedroleassignmentscheduleinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-unifiedroleassignmentscheduleinstance-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e02843f0d4305388b40d6c5d3bf1e73980b72c89
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 778ed1164d41d05193dae32f90187ab6f3d4604a
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588901"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65208733"
 ---
 # <a name="group-evaluatedynamicmembership"></a>group: evaluateDynamicMembership
 
@@ -21,21 +21,21 @@ Namespace: microsoft.graph
 Avaliar se um usuário ou dispositivo é ou seria membro de um grupo dinâmico. A regra de associação é retornada juntamente com outros detalhes que foram usados na avaliação. Você pode concluir essa operação das seguintes maneiras:
 
 - Avalie se um usuário ou dispositivo é membro de um grupo dinâmico especificado.
-- Avalie se um usuário ou dispositivo seria membro de um grupo dinâmico com base na ID do usuário ou dispositivo e uma regra de associação.
+- Avalie se um usuário ou dispositivo seria membro de um grupo dinâmico com base na ID do usuário ou dispositivo e em uma regra de associação.
 
 ## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a>Avaliar a associação dinâmica com a ID do membro e a ID do grupo
+### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a>Avaliar a associação dinâmica com a ID de membro e a ID do grupo
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                                          |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Para usuário: Group.Read.All e User.Read.All, Directory.Read.All<br>Para dispositivo: Group.Read.All e Device.Read.All, Directory.Read.All |
+| Delegado (conta corporativa ou de estudante)     | Para o usuário: Group.Read.All e User.Read.All, Directory.Read.All<br>Para dispositivo: Group.Read.All e Device.Read.All, Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                                       |
 | Aplicativo                            | Sem suporte.                                                                                                                       |
 
-### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>Avaliar a associação dinâmica com a ID do membro e a regra de associação
+### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>Avaliar a associação dinâmica com a ID de membro e a regra de associação
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                    |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------- |
@@ -61,18 +61,18 @@ POST /groups/evaluateDynamicMembership
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece as propriedades necessárias.
+No corpo da solicitação, forneça as propriedades necessárias.
 
-A tabela a seguir lista as propriedades necessárias ao avaliar a associação ao grupo.
+A tabela a seguir lista as propriedades que são necessárias ao avaliar a associação de grupo.
 
 | Parâmetro      | Tipo              | Descrição                                                                                                                                                                                                                                                                                                                                                                                                            |
 | :------------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| memberId       | Coleção String | memberId é a ID do objeto do usuário ou dispositivo a ser avaliado.                                                                                                                                                                                                                                                                                                                                                       |
-| membershipRule | Coleção String | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra do grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado para possível associação em um grupo com a mesma regra. Para obter mais informações, [regras de associação dinâmica para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
+| Memberid       | Conjunto de cadeias de caracteres | memberId é a ID de objeto do usuário ou dispositivo a ser avaliado.                                                                                                                                                                                                                                                                                                                                                       |
+| membershipRule | Conjunto de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra para o grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado quanto à possível associação em um grupo com a mesma regra. Para obter mais informações, [regras de associação dinâmica para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) .
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) .
 
 ## <a name="examples"></a>Exemplos
 
@@ -99,32 +99,32 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-1-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-1-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-1-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-1-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-1-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-1-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -160,7 +160,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-2-evaluate-if-a-user-or-device-would-be-a-member-of-a-group-based-on-a-membership-rule"></a>Exemplo 2: Avaliar se um usuário ou dispositivo seria um membro de um grupo com base em uma regra de associação
+### <a name="example-2-evaluate-if-a-user-or-device-would-be-a-member-of-a-group-based-on-a-membership-rule"></a>Exemplo 2: Avaliar se um usuário ou dispositivo seria membro de um grupo com base em uma regra de associação
 
 #### <a name="request"></a>Solicitação
 
@@ -184,27 +184,27 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-2-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-2-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-2-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-2-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

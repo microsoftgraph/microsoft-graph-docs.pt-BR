@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cd43de0f920ff0a7c1a723c2a8501413405ce3a3
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: b2951cdc15006ddd67037a77655e6d0c0ddd5abb
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588005"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211645"
 ---
 # <a name="update-conversation-thread"></a>Atualizar thread de conversas
 
@@ -83,17 +83,17 @@ Content-type: application/json
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-thread-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-thread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-thread-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-group-thread-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

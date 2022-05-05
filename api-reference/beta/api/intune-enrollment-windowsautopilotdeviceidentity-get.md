@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0012f004b0b4434a9f2468dc9e827376ed200e78
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: e2481ca54ede1ed0c3d05a7c9f2c6cf36ab8b648
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629390"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205414"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>Obter windowsAutopilotDeviceIdentity
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ler propriedades e relações do [objeto windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
+Ler propriedades e relações do objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -69,7 +69,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1362
+Content-Length: 1493
 
 {
   "value": {
@@ -97,7 +97,9 @@ Content-Length: 1362
     "displayName": "Display Name value",
     "deviceAccountUpn": "Device Account Upn value",
     "deviceAccountPassword": "Device Account Password value",
-    "deviceFriendlyName": "Device Friendly Name value"
+    "deviceFriendlyName": "Device Friendly Name value",
+    "remediationState": "noRemediationRequired",
+    "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
   }
 }
 ```

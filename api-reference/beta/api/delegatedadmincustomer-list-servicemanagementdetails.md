@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: c61167f61ff0caf04dee02d43e82d855665c9679
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 42fbe45443ffbdbe19a80ee457c69e0eabf49328
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704237"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202333"
 ---
 # <a name="list-servicemanagementdetails"></a>Listar serviceManagementDetails
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Obtenha uma lista dos [objetos delegatedAdminServiceManagementDetail](../resources/delegatedAdminServiceManagementDetail.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -56,6 +56,8 @@ Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma cole
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_delegatedAdminServiceManagementDetails"
@@ -64,6 +66,28 @@ Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma cole
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers/4fdbff88-9d6b-42e0-9713-45c922ba8001/serviceManagementDetails
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-delegatedadminservicemanagementdetails-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-delegatedadminservicemanagementdetails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-delegatedadminservicemanagementdetails-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-delegatedadminservicemanagementdetails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-delegatedadminservicemanagementdetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

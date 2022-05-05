@@ -5,18 +5,18 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a2b2484ef3d15de4f162dc1481614bbd6fa06877
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 885408ec1e6cfad786d7c07f422f8e975955c3dc
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586839"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209377"
 ---
 # <a name="get-groupsetting"></a>Obter groupSetting
 
 Namespace: microsoft.graph
 
-Recupere as propriedades de um objeto de configuração de grupo específico. A configuração pode ser uma configuração específica de nível de locatário ou grupo.
+Recupere as propriedades de um objeto de configuração de grupo específico. A configuração pode ser uma configuração específica de grupo ou nível de locatário.
 
 ## <a name="permissions"></a>Permissions
 
@@ -42,7 +42,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 
-Obter uma configuração em todo o locatário.
+Obtenha uma configuração de todo o locatário.
 
 ```http
 GET /groupSettings/{groupSettingId}
@@ -58,7 +58,7 @@ GET /groups/{groupId}/settings/{groupSettingId}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -92,27 +92,27 @@ GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -160,27 +160,27 @@ GET https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-tenantwide-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-tenantwide-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-tenantwide-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-tenantwide-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-tenantwide-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-tenantwide-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-tenantwide-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-tenantwide-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-tenantwide-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-tenantwide-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

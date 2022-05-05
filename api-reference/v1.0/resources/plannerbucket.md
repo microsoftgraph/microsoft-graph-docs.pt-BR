@@ -1,34 +1,33 @@
 ---
 title: Tipo de recurso plannerBucket
-description: ) para tarefas em um plano em Microsoft 365. Ele está contido em um plannerPlan e pode ter uma coleção de plannerTasks.
+description: Representa um bucket para tarefas em um plano em Microsoft 365. Ele está contido em um plannerPlan e pode ter uma coleção de plannerTasks.
 author: TarkanSevilmis
 ms.localizationpriority: medium
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 46360d413f676e6420f28b94b5ba91ec9237e681
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b7687c4005d939307f871836f470d918a26cc4d
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129842"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65208873"
 ---
 # <a name="plannerbucket-resource-type"></a>Tipo de recurso plannerBucket
 
 Namespace: microsoft.graph
 
-O **recurso plannerBucket** representa um bucket (ou "coluna personalizada") para tarefas em um plano em Microsoft 365. Ele está contido em um [plannerPlan](plannerplan.md) e pode ter uma coleção de [plannerTasks](plannertask.md).
-
+Representa um bucket (ou "coluna personalizada") para tarefas em um plano em Microsoft 365. Ele está contido em um [plannerPlan](plannerplan.md) e pode ter uma coleção de [plannerTasks](plannertask.md).
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Ler propriedades e relações do **objeto plannerBucket.**|
+|[Obter plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Ler propriedades e relações do objeto **plannerBucket** .|
 |[Listar plannerTasks](../api/plannerbucket-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
-|[Criar](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Crie um novo **objeto plannerBucket.** |
-|[Atualizar](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Atualizar **o objeto plannerBucket.** |
-|[Delete](../api/plannerbucket-delete.md) | Nenhum(a) |Excluir **objeto plannerBucket.** |
+|[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Crie um novo **objeto plannerBucket** . |
+|[Atualizar](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |**Atualize o objeto plannerBucket**. |
+|[Excluir](../api/plannerbucket-delete.md) | Nenhuma |**Exclua o objeto plannerBucket**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -36,7 +35,7 @@ O **recurso plannerBucket** representa um bucket (ou "coluna personalizada") par
 |id|String| Somente leitura. ID do bucket. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
 |nome|String|Nome do bucket.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
-|planId|String|Planejar a ID à qual o bucket pertence.|
+|planId|String|ID do plano à qual o bucket pertence.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -62,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "orderHint": "String",
   "planId": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -2,15 +2,15 @@
 title: Listar grupos
 description: Liste todos os grupos disponíveis em uma organização, incluindo, entre outros, os grupos do Microsoft 365.
 ms.localizationpriority: high
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e4bf6f7d8383b52dbb1b7731289971c1e06dd30
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3f35a799bee68920857e5cc5c383b09549ddce24
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671409"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65208971"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -26,15 +26,16 @@ Esta operação retorna, por padrão, apenas um subconjunto das propriedades mai
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
-|:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
+| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
+| Aplicativo                            | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups
 ```
@@ -44,7 +45,9 @@ GET /groups
 Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. Os tamanhos de página padrão e máximo são 100 e 999 objetos de grupo, respectivamente. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
 Para listar apenas grupos do Microsoft 365 (também conhecidos como grupos unificados), aplique um filtro em **groupTypes**:
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
@@ -55,9 +58,9 @@ Para obter mais informações sobre as opções de consulta OData, veja [Parâme
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome | Descrição |
-|:---- |:----------- |
-| Autorização  | {token} de portador. Obrigatório. |
+| Nome             | Descrição                                                                                                                                                                                                                                                                     |
+| :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Autorização    | {token} de portador. Obrigatório.                                                                                                                                                                                                                                                       |
 | ConsistencyLevel | eventualmente. Este cabeçalho e `$count` são necessários quando se utiliza `$search`, ou em uso específico de `$filter`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -77,34 +80,43 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_groups"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-groups-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-groups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-groups-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -113,7 +125,8 @@ GET https://graph.microsoft.com/beta/groups
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura. Todas as propriedades padrão são retornadas para cada grupo em uma chamada real.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura. Todas as propriedades padrão são retornadas para cada grupo em uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -121,6 +134,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -211,12 +225,13 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$count` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
->**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+> **Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 <!-- {
   "blockType": "request",
   "name": "get_groups_withlicenseerrors_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$count=true&$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ConsistencyLevel: eventual
@@ -232,6 +247,7 @@ Veja a seguir o exemplo de uma resposta que inclui apenas as propriedades solici
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -258,12 +274,13 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$count` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
->**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+> **Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/$count
 ConsistencyLevel: eventual
@@ -279,6 +296,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
@@ -286,19 +304,19 @@ Content-type: text/plain
 893
 ```
 
-
 ### <a name="example-4-use-filter-and-top-to-get-one-group-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 4: Utilize $filter e $top para obter um grupo com um nome de exibição que comece com 'a', incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` e a cadeia de caracteres de consulta `$count=true` porque a solicitação tem os parâmetros de consulta `$orderBy` e `$filter`. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
->**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+> **Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 <!-- {
   "blockType": "request",
-  "name": "get_a_count"
+  "name": "get_groups_startswith"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
 ConsistencyLevel: eventual
@@ -307,7 +325,8 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -315,6 +334,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -337,12 +357,13 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$search` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
->**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+> **Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 <!-- {
   "blockType": "request",
   "name": "get_video_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$search="displayName:Video"&$count=true
 ConsistencyLevel: eventual
@@ -351,7 +372,8 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -359,6 +381,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -382,12 +405,13 @@ Content-type: application/json
 
 Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **ConsistencyLevel** definido como `eventual` porque `$search` está na solicitação. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
->**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+> **Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 <!-- {
   "blockType": "request",
   "name": "get_video_count"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$search="displayName:Video" OR "description:prod"&$orderby=displayName&$count=true
 ConsistencyLevel: eventual
@@ -396,7 +420,8 @@ ConsistencyLevel: eventual
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 <!-- {
   "blockType": "response",
@@ -404,6 +429,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -433,42 +459,50 @@ Content-type: application/json
 
 A seguir se encontra um exemplo da solicitação filtrada por **membershipRuleProcessingState** para recuperar grupos dinâmicos. Você também pode filtrar pelas propriedades **groupTypes** (ou seja, `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). Essa solicitação requer o cabeçalho **ConsistencyLevel** definido como `eventual` e a `$count=true` cadeia de caracteres de consulta pois a solicitação usa o `not` operador do `$filter` parâmetro de consulta. Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
->**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
+> **Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_enabled_dynamic_groups"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$filter=mailEnabled eq false and securityEnabled eq true and NOT(groupTypes/any(s:s eq 'Unified')) and membershipRuleProcessingState eq 'On'&$count=true&$select=id,membershipRule,membershipRuleProcessingState
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-enabled-dynamic-groups-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-enabled-dynamic-groups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-enabled-dynamic-groups-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-enabled-dynamic-groups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-enabled-dynamic-groups-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-enabled-dynamic-groups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-enabled-dynamic-groups-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-enabled-dynamic-groups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-enabled-dynamic-groups-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-enabled-dynamic-groups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-enabled-dynamic-groups-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-enabled-dynamic-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>Resposta
 
@@ -480,6 +514,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -498,46 +533,52 @@ Content-type: application/json
 }
 ```
 
-
 ### <a name="example-8-list-any-groups-with-any-licenses"></a>Exemplo 8: listar todos os grupos com licenças
 
 #### <a name="request"></a>Solicitação
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_groups_with_licenses"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups?$select=id,assignedLicenses&$filter=assignedLicenses/any()
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-with-licenses-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groups-with-licenses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-with-licenses-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groups-with-licenses-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groups-with-licenses-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groups-with-licenses-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-groups-with-licenses-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-groups-with-licenses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-groups-with-licenses-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-groups-with-licenses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-groups-with-licenses-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-groups-with-licenses-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### <a name="response"></a>Resposta
 
@@ -549,6 +590,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -591,7 +633,6 @@ Content-type: application/json
 }
 ```
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -605,5 +646,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

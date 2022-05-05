@@ -2,34 +2,34 @@
 title: Criar complianceManagementPartner
 description: Crie um novo objeto complianceManagementPartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8d0c1dbadc05648902647495d3680f984ed4f3e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0151586601f4da93aa19357311d91eff459bd239
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009760"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209104"
 ---
 # <a name="create-compliancemanagementpartner"></a>Criar complianceManagementPartner
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
+Crie um novo [objeto complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,29 +47,29 @@ POST /deviceManagement/complianceManagementPartners
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto complianceManagementPartner.
+No corpo da solicitação, forneça uma representação JSON do objeto complianceManagementPartner.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar complianceManagementPartner.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|ID da entidade|
-|lastHeartbeatDateTime|DateTimeOffset|Timestamp de última pulsação depois que o administrador entrou no parceiro de gerenciamento de conformidade|
+|lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação depois que o administrador foi integrado ao parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Cadeia de caracteres|Nome de exibição de parceiro|
-|macOsOnboarded|Boolean|Parceiro a bordo para dispositivos Mac.|
+|macOsOnboarded|Booliano|Parceiro integrado para dispositivos Mac.|
 |windowsOnboarded|Booliano|Parceiro integrado para Windows dispositivos.|
-|androidOnboarded|Booliano|Parceiro a bordo para dispositivos Android.|
-|iosOnboarded|Booliano|Parceiro internado para dispositivos ios.|
-|macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio de parceiros.|
-|windowsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram Windows por meio de parceiros.|
-|androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio de parceiros.|
-|iosEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos ios por meio de parceiros.|
+|androidOnboarded|Booliano|Parceiro integrado para dispositivos Android.|
+|iosOnboarded|Booliano|Parceiro integrado para dispositivos ios.|
+|macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio do parceiro.|
+|windowsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram Windows por meio do parceiro.|
+|androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio do parceiro.|
+|iosEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos iOS por meio do parceiro.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -199,6 +199,7 @@ Content-Length: 2265
   ]
 }
 ```
+
 
 
 

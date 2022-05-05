@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2d74bd1969cf5166c7e04424e1dfb72e9178a00d
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 90be1fb768538d07b5adc3f14a4beaf83fc4a885
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587564"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210630"
 ---
 # <a name="remove-group-owner"></a>Remover proprietário do grupo
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para remover um proprietário de um grupo Microsoft 365 ou um grupo de segurança por meio da **propriedade de navegação dos** proprietários. Quando os proprietários são atribuídos a um grupo, o último proprietário (um objeto de usuário) do grupo não pode ser removido.
+Use essa API para remover um proprietário de um grupo Microsoft 365 ou um grupo de segurança por meio da propriedade **de navegação dos** proprietários. Quando os proprietários são atribuídos a um grupo, o último proprietário (um objeto de usuário) do grupo não pode ser removido.
 
-> **Observação:** Para problemas encontrados ao remover o proprietário de um grupo associado a uma [equipe](/graph/api/resources/team.md), consulte [Problemas Conhecidos](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
+> **Nota:** Para problemas encontrados ao remover o proprietário de um grupo associado a uma [equipe](/graph/api/resources/team.md), consulte [Problemas Conhecidos](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
 ## <a name="permissions"></a>Permissions
 
@@ -72,22 +72,22 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-owner-from-group-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-owner-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-owner-from-group-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-owner-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-owner-from-group-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-owner-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/delete-owner-from-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/delete-owner-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

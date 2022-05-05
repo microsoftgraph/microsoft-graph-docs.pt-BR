@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 935bd61a5f255613413baf347acbff9f244ec573
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 78754e7c48663c0a550cbcd423a0182dc677405b
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588971"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210603"
 ---
 # <a name="delete-conversation-thread"></a>Excluir thread de conversas
 
@@ -70,32 +70,32 @@ DELETE https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-thread-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-thread-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-thread-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-group-thread-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-thread-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/delete-group-thread-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/delete-group-thread-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/delete-group-thread-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/delete-group-thread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-group-thread-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-group-thread-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

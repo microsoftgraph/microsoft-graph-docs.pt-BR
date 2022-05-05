@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 787a503f75d5b9b41dc0c0730468a280bc639e5d
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: c5e50f704d4fcefe50498269cd2d785915bb1638
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510040"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211234"
 ---
 # <a name="list-serviceprincipals"></a>Listar servicePrincipals
 
@@ -183,27 +183,27 @@ GET https://graph.microsoft.com/beta/servicePrincipals?$filter=startswith(displa
 ConsistencyLevel: eventual
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipals-startswith-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-serviceprincipals-startswith-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-serviceprincipals-startswith-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-serviceprincipals-startswith-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-serviceprincipals-startswith-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-a-count-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceprincipals-startswith-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

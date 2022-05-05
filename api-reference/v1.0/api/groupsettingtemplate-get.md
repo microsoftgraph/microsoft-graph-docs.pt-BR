@@ -1,16 +1,16 @@
 ---
 title: Obter um modelo de configuração de grupo
-description: Obter um modelo de configuração de grupo que representa um modelo de configurações a partir dos quais as configurações podem ser criadas em um locatário.
+description: Obtenha um modelo de configuração de grupo que representa um modelo de configurações a partir do qual as configurações podem ser criadas em um locatário.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 321dd78a9b1856b458274e0189cf89d0058036bf
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 0e4ecf8d564b17a819011e03d726f3a11febcb88
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587571"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212115"
 ---
 # <a name="get-a-group-setting-template"></a>Obter um modelo de configuração de grupo
 
@@ -70,27 +70,27 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/08d542b9-071f-4e16-94
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettingtemplate-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettingtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettingtemplate-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettingtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettingtemplate-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettingtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettingtemplate-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettingtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-groupsettingtemplate-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettingtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

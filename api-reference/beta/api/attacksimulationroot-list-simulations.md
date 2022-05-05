@@ -1,23 +1,23 @@
 ---
 title: Listar simulações
-description: Obter uma lista de campanhas de simulação de ataque para um locatário.
+description: Obtenha uma lista de campanhas de simulação de ataque para um locatário.
 author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 24c73af15cdffa97007caa367a37a780f3cdbb4f
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: d1ee63b72436f74e44d9e416c20b2c1c40b36b57
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758029"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203586"
 ---
 # <a name="list-simulations"></a>Listar simulações
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de campanhas de simulação de ataque para um locatário.
+Obtenha uma lista de campanhas de simulação de ataque para um locatário.
 
 ## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,13 +39,13 @@ GET /security/attackSimulation/simulations
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta: `$count`, , `$filter`, `$orderby`, `$skiptoken`, `$top`, `$select`.
+Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta: `$count`, `$filter`, `$orderby`, `$skiptoken`, , `$top`. `$select`
 
-As propriedades a seguir suportam `$filter` `$orderby`e : **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
+As propriedades a seguir dão `$filter` suporte e `$orderby`: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **status**.
 
 Use `@odata.nextLink` para paginação.
 
-Veja a seguir exemplos de seu uso:
+A seguir estão exemplos de seu uso:
 
 <!-- {
   "blockType": "ignored"
@@ -72,11 +72,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [de](../resources/simulation.md) simulação no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [de simulação](../resources/simulation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_simulation"
@@ -85,6 +87,32 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-simulation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-simulation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-simulation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-simulation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

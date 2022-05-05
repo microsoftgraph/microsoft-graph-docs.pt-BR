@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 1ec46503a4171dfdf4320134ed69a9066e909d04
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 8c82410725dc6495bf69295a7133605881bac3a9
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061173"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212205"
 ---
 # <a name="list-documentsetversions"></a>Listar documentSetVersions
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Obtenha uma lista das [versões de um item de conjunto de](../resources/documentsetversion.md) documentos em uma [lista](../resources/list.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -59,6 +59,8 @@ Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma cole
 
 Veja a seguir um exemplo de uma solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_documentsetversion"
@@ -67,6 +69,28 @@ Veja a seguir um exemplo de uma solicitação.
 ``` http
 GET https://graph.microsoft.com/beta/sites/root/lists/Documents/items/1/documentSetVersions
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-documentsetversion-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-documentsetversion-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-documentsetversion-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-documentsetversion-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-documentsetversion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

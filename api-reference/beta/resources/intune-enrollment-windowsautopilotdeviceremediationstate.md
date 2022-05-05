@@ -1,26 +1,26 @@
 ---
-title: Tipo de número windowsAutopilotDeviceRemediationState
-description: Ainda não documentado
+title: Tipo de enumeração windowsAutopilotDeviceRemediationState
+description: Status de correção do dispositivo, indicando se o hardware foi alterado ou não para um dispositivo registrado no Autopilot.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e5033aa501702d08efe8f7a3ab500b47c18311b2
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: a6220236194bdb2bfbe655359cfc1d7291d90436
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368277"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210931"
 ---
-# <a name="windowsautopilotdeviceremediationstate-enum-type"></a>Tipo de número windowsAutopilotDeviceRemediationState
+# <a name="windowsautopilotdeviceremediationstate-enum-type"></a>Tipo de enumeração windowsAutopilotDeviceRemediationState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Status de correção do dispositivo, indicando se o hardware foi alterado ou não para um dispositivo registrado no Autopilot.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
@@ -28,7 +28,8 @@ Ainda não documentado
 |desconhecido|0|Status desconhecido.|
 |noRemediationRequired|1|Nenhuma alteração de hardware foi detectada.|
 |automaticRemediationRequired|2|Alteração de hardware detectada no cliente. A correção adicional é necessária.|
-|unknownFutureValue|4|Marca o final dos valores de números conhecidos e permite valores adicionais no futuro.|
+|manualRemediationRequired|3|Alteração de hardware detectada no cliente que não pôde ser resolvida automaticamente. A correção adicional é necessária.|
+|unknownFutureValue|4|Marca o final dos valores de enumeração conhecidos e permite valores adicionais no futuro.|
 
 
 

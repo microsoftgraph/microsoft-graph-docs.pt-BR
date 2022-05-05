@@ -1,16 +1,16 @@
 ---
 title: Atualizar grupo
-description: Atualize as propriedades de um [objeto group](../resources/group.md) .
+description: Atualize as propriedades de um [objeto de](../resources/group.md) grupo.
 author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a4a73f3b3bc0092c0dce31bdbe8ceceb8f4358c8
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: a71b33bb98196380cb0fd036f8d20f47be6502ab
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588278"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210490"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto group](../resources/group.md) .
+Atualize as propriedades de um [objeto de](../resources/group.md) grupo.
 
 ## <a name="permissions"></a>Permissions
 
@@ -57,17 +57,17 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 | descrição             | String  | Uma descrição opcional para o grupo.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | displayName             | Cadeia de caracteres  | O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações.                                                                                                                                                                                                                                                                                                                                                                   |
 | mailNickname            | String  | O alias de email do grupo, exclusivo para grupos do Microsoft 365 na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`.                                                                                                                                                             |
-| preferredDataLocation   | String  | O local de dados preferencial para o grupo Microsoft 365. Para atualizar essa propriedade, o usuário de chamada deve receber uma das seguintes funções do Azure Active Directory: <br><ul><li> Administrador Global <li> Administrador de Conta de Usuário <li> Suporte para Parceiro Nível1 ou Nível2 <li>Gravador de Diretório <li> Administrador do Exchange <li> Administrador do SharePoint </ul> <br/>Para obter mais informações sobre essa propriedade, [consulte OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| preferredDataLocation   | String  | O local de dados preferencial para o grupo Microsoft 365. Para atualizar essa propriedade, o usuário de chamada deve receber uma das seguintes funções do Azure Active Directory: <br><ul><li> Administrador Global <li> Administrador de Conta de Usuário <li> Suporte para Parceiro Nível1 ou Nível2 <li>Gravador de Diretório <li> Administrador do Exchange <li> Administrador do SharePoint </ul> <br/>Para obter mais informações sobre essa propriedade, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | securityEnabled         | Boolean | Especifica se o grupo é um grupo de segurança, incluindo Microsoft 365 grupos.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | Cadeia de caracteres  | Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).                                                                                                                                                                                                                                                                                                                                              |
 
-Como o **recurso de** grupo dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview) de uma extensão em uma instância de **grupo existente.**
+Como o **recurso** de grupo dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados [específicos](/graph/extensibility-overview) do aplicativo em propriedades personalizadas de uma extensão em uma instância de **grupo existente.**
 
 > [!IMPORTANT]
 >
 > - Para atualizar as seguintes propriedades, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 >
-> - Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API de grupo, incluindo a atualização **de autoSubscribeNewMembers**, suportam apenas permissões delegadas. Confira exemplos nos [problemas conhecidos](/graph/known-issues#groups).
+> - Somente um subconjunto da API do grupo relacionado à administração do grupo principal e ao aplicativo de suporte ao gerenciamento e às permissões delegadas. Todos os outros membros da API do grupo, incluindo a atualização de **autoSubscribeNewMembers**, suportam apenas permissões delegadas. Consulte os [problemas conhecidos](/graph/known-issues#groups) para exemplos.
 >
 > - As regras para atualizar os grupos de segurança habilitados para email no Microsoft Exchange Server podem ser complexas; Para saber mais, confira [Gerenciar grupos de segurança habilitados para email no Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
 
@@ -101,32 +101,32 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-1-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-1-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/update-group-1-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/update-group-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-1-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-1-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-1-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-group-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -144,7 +144,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>Exemplo 2: Aplicar o rótulo de sensibilidade a um Microsoft 365 grupo
+### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>Exemplo 2: Aplicar rótulo de confidencialidade a um Microsoft 365 grupo
 
 #### <a name="request"></a>Solicitação
 
@@ -172,32 +172,32 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-2-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-2-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/update-group-2-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/update-group-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-2-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/update-group-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/update-group-2-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/update-group-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-group-2-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-group-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

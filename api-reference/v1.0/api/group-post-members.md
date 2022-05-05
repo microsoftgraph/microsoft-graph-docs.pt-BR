@@ -2,15 +2,15 @@
 title: Adicionar membros
 description: Adicione um membro a um Microsoft 365 ou grupo de segurança por meio da propriedade de navegação de membros.
 ms.localizationpriority: high
-author: Jordanndahl
+author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 95be30a6148a31b32123d0761de283320388f937
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: c2ecae03202adb66cc0aa49148679a5b9807fe41
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672144"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205973"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -18,39 +18,42 @@ Namespace: microsoft.graph
 
 Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da propriedade de navegação de **membros**.
 
-É possível adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos. 
+É possível adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos.
 
 > [!IMPORTANT]
-> + Você pode adicionar membros somente a grupos de segurança e do Microsoft 365. Para obter mais informações, consulte [Tipos de grupo no Microsoft Azure AD e Microsoft Graph apenas](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
-> + Não é possível adicionar grupos de segurança a grupos do Microsoft 365.
-> + Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou a outros grupos do Microsoft 365.
-> + Um grupo de segurança pode ter usuários, dispositivos, grupos ou entidades de serviço como seus membros, enquanto um grupo do Microsoft 365 pode ter somente usuários como membros.
+>
+> - Você pode adicionar membros somente a grupos de segurança e do Microsoft 365. Para obter mais informações, consulte [Tipos de grupo no Microsoft Azure AD e Microsoft Graph apenas](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
+> - Não é possível adicionar grupos de segurança a grupos do Microsoft 365.
+> - Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou a outros grupos do Microsoft 365.
+> - Um grupo de segurança pode ter usuários, dispositivos, grupos ou entidades de serviço como seus membros, enquanto um grupo do Microsoft 365 pode ter somente usuários como membros.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | GroupMember.ReadWrite.All, Group.ReadWrite.All and Directory.ReadWrite.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                |
+| :------------------------------------- | :------------------------------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All    |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                             |
+| Aplicativo                            | GroupMember.ReadWrite.All, Group.ReadWrite.All and Directory.ReadWrite.All |
 
 > [!IMPORTANT]
-> Para adicionar membros a um grupo atribuível a função, o usuário ou aplicativo de chamada também deve ser atribuído à permissão *RoleManagement.ReadWrite.Directory*.
+> Para adicionar membros a um grupo atribuível a função, o usuário ou aplicativo de chamada também deve ser atribuído à permissão _RoleManagement.ReadWrite.Directory_.
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /groups/{group-id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Cabeçalho       | Valor |
-|:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-| Content-type   | application/json. Obrigatório. |
+| Cabeçalho        | Valor                       |
+| :------------ | :-------------------------- |
+| Autorização | {token} de portador. Obrigatório.   |
+| Content-type  | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -68,12 +71,13 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 Este é um exemplo de solicitação.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "add_member_to_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{group-id}/members/$ref
 Content-type: application/json
@@ -82,32 +86,38 @@ Content-type: application/json
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-member-to-group-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-member-to-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-member-to-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-member-to-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-member-to-group-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/add-member-to-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-member-to-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/add-member-to-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-member-to-group-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/add-member-to-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-member-to-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 No corpo da solicitação, forneça uma representação JSON da ID do objeto directoryObject, usuário ou grupo que deseja adicionar.
 
@@ -118,6 +128,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -130,12 +141,13 @@ Esse exemplo mostra como adicionar vários membros a um grupo com suporte vincul
 
 Este é um exemplo de solicitação.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "add_multiple_members_to_group"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{group-id}
 Content-type: application/json
@@ -148,46 +160,55 @@ Content-type: application/json
     ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-multiple-members-to-group-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-multiple-members-to-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/add-multiple-members-to-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-multiple-members-to-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/add-multiple-members-to-group-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/add-multiple-members-to-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-multiple-members-to-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/add-multiple-members-to-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-multiple-members-to-group-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/add-multiple-members-to-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-multiple-members-to-group-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-multiple-members-to-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 No corpo da solicitação, forneça uma representação JSON da ID do objeto directoryObject, usuário ou grupo que deseja adicionar.
 
 #### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
 
 ## <a name="see-also"></a>Confira também
+
 - [Adicionar membro à equipe](team-post-members.md)
 - [Atualizar a função do membro na equipe](team-update-members.md)
 - [Remover membro da equipe](team-delete-members.md)
@@ -203,4 +224,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

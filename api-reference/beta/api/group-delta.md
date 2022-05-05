@@ -1,16 +1,16 @@
 ---
 title: 'group: delta'
-description: Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação ao grupo, sem precisar executar uma leitura completa de todo o conjunto de grupos. Consulte Using Delta Query para obter detalhes.
+description: Obtenha grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação de grupo, sem precisar executar uma leitura completa de toda a coleção de grupos. Consulte Usando a Consulta Delta para obter detalhes.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86c9d0f7b8c9dce69b84a087f5a440a9895de0c9
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 93fcc9136f176b89a6009b3740366b8629087b16
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588327"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203649"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação ao grupo, sem precisar executar uma leitura completa de todo o conjunto de grupos. Consulte [Using Delta Query](/graph/delta-query-overview) para obter detalhes.
+Obtenha grupos recém-criados, atualizados ou excluídos, incluindo alterações de associação de grupo, sem precisar executar uma leitura completa de toda a coleção de grupos. Consulte [Usando a Consulta Delta para](/graph/delta-query-overview) obter detalhes.
 
 ## <a name="permissions"></a>Permissions
 
@@ -55,10 +55,10 @@ Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` 
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 
-Este método dá suporte a parâmetros opcionais de consulta OData para ajudar a personalizar a resposta.
+Esse método dá suporte a parâmetros de consulta OData opcionais para ajudar a personalizar a resposta.
 
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada.
-- Você pode usar para `$select=members` obter alterações de associação. Além disso, você pode rastrear outras alterações, como a propriedade e muito mais, selecionando qualquer relação de [grupo do tipo](../resources/group.md#relationships) **coleção directoryObject**.
+- Você pode usar para `$select=members` obter alterações de associação. Além disso, você pode acompanhar outras alterações, como propriedade e muito mais, selecionando qualquer relação [de](../resources/group.md#relationships) grupo do tipo **coleção directoryObject**.
 - Há suporte limitado para `$filter`:
   - A única expressão `$filter` suportada é para controlar alterações em um objeto específico: `$filter=id+eq+{value}`. É possível filtrar vários objetos. Por exemplo, `https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Há um limite de 50 objetos filtrados.
 
@@ -95,7 +95,7 @@ Por padrão, as solicitações usando `deltaLink` ou `nextLink` retornam as mesm
 - Se a propriedade não foi alterada, o valor antigo será incluído na resposta.
 - Se a propriedade nunca foi definida anteriormente, de nenhuma forma será incluída na resposta.
 
-> **Observação:** com esse comportamento, ao verificar a resposta, não será possível dizer se uma propriedade foi alterada ou não. Além disso, as respostas delta tendem a ser grandes porque contêm todos os valores de propriedade - conforme mostrado no [segundo exemplo abaixo](#request-2) .
+> **Observação:** com esse comportamento, ao verificar a resposta, não será possível dizer se uma propriedade foi alterada ou não. Além disso, as respostas delta tendem a ser grandes porque contêm todos os valores de propriedade , conforme mostrado no [segundo exemplo abaixo](#request-2) .
 
 #### <a name="alternative-return-only-the-changed-properties"></a>Alternativa: retornar somente as propriedades alteradas
 
@@ -124,32 +124,32 @@ GET https://graph.microsoft.com/beta/groups/delta
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-delta-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -161,7 +161,7 @@ A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização d
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 >
-> Observe a presença da propriedade _members@delta_ que inclui as ids de objetos membros no grupo.
+> Observe a presença da propriedade _members@delta_ que inclui as IDs de objetos membro no grupo.
 
 <!-- {
   "blockType": "response",
@@ -217,32 +217,32 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-selelct-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-selelct-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-selelct-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-selelct-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-delta-with-selelct-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-with-selelct-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-selelct-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-with-selelct-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-delta-with-selelct-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-with-selelct-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-with-selelct-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-with-selelct-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -293,32 +293,32 @@ Prefer: return=minimal
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-delta-minimal-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-minimal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-minimal-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-minimal-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

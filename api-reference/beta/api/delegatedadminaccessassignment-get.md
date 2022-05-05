@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 41f41940a9802270e02d20aff462e1152a1792f2
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 181fd888674021de2b8e33e09f438a4c9e1da359
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704154"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202401"
 ---
 # <a name="get-delegatedadminaccessassignment"></a>Obter delegatedAdminAccessAssignment
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Leia as propriedades de um [objeto delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -56,6 +56,8 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_delegatedadminaccessassignment"
@@ -64,6 +66,28 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 ``` http
 GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelationships/72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409/accessAssignments/da9d6cf90-083a-47dc-ace2-1da98be3f344
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-delegatedadminaccessassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delegatedadminaccessassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-delegatedadminaccessassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delegatedadminaccessassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-delegatedadminaccessassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 <!-- {

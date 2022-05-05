@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f74f0774a6f90fb1d6d0bae49dec9df28edf86f2
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 06f2af313ad10686f22f44ea237418cc820872d4
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589153"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211669"
 ---
 # <a name="list-group-members"></a>Listar membros de grupo
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                           |
 | Aplicativo                            | GroupMember.Read.All, Group.Read.All, Group.Member.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All |
 
-> **Observação:** Para listar os membros de um grupo de associação oculto, a permissão Member.Read.Hidden é necessária.
+> **Nota:** Para listar os membros de um grupo de associação oculto, a permissão Member.Read.Hidden é necessária.
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -83,32 +83,32 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-members-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-members-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-members-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-members-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-group-members-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -208,7 +208,7 @@ Content-type: text/plain
 893
 ```
 
-### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Exemplo 4: use $search e OData cast para obter a associação do usuário em grupos com nomes de exibição que contêm as letras "Pr" incluindo uma contagem de objetos retornados
+### <a name="example-4-use-search-and-odata-cast-to-get-user-membership-in-groups-with-display-names-that-contain-the-letters-pr-including-a-count-of-returned-objects"></a>Exemplo 4: use a conversão $search e OData para obter associação de usuário em grupos com nomes de exibição que contêm as letras "Pr", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -276,32 +276,32 @@ ConsistencyLevel: eventual
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-groups-members-startswith-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-groups-members-startswith-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/list-groups-members-startswith-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/list-groups-members-startswith-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/list-groups-members-startswith-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-a-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-groups-members-startswith-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-a-count-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -353,7 +353,7 @@ Content-type: application/json
 }
 -->
 
-### <a name="example-6-use-odata-cast-to-retrieve-service-principals-added-as-group-members"></a>Exemplo 6: usar o OData cast para recuperar entidades de serviço adicionadas como membros do grupo
+### <a name="example-6-use-odata-cast-to-retrieve-service-principals-added-as-group-members"></a>Exemplo 6: Usar conversão OData para recuperar entidades de serviço adicionadas como membros do grupo
 
 #### <a name="request"></a>Solicitação
 
@@ -371,27 +371,27 @@ GET https://graph.microsoft.com/beta/groups/3802e9bb-0951-4e18-b9eb-f934b4241194
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-members-serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-members-serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-members-serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-members-serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-members-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-members-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-members-serviceprincipals-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-members-serviceprincipals-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

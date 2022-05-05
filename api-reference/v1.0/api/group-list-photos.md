@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0458b245c548dd7e4c10e845ee226259764b171a
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 33e6f39a47a69be4dde791b9be7e68c0771de94d
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586878"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209482"
 ---
 # <a name="list-photos"></a>Listar fotos
 
@@ -73,32 +73,32 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-photos-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photos-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-photos-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photos-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-photos-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photos-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-photos-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-photos-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-photos-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-photos-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-photos-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-photos-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

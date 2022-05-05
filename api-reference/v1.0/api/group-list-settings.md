@@ -1,22 +1,22 @@
 ---
 title: Listar configurações
-description: Recupere uma lista de objetos de configuração de grupo.
+description: Recuperar uma lista de objetos de configuração de grupo.
 author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2a0ddfe1c1dd0d85e64deaf37560b912a5ea9589
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8d192f869f10b7c0f7e26d2734d1febf919a668e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587165"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211288"
 ---
 # <a name="list-settings"></a>Listar configurações
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos de configurações de grupo específicos do nível de locatário ou grupo.
+Recupere uma lista de objetos de configurações de grupo específicos do grupo ou no nível do locatário.
 
 ## <a name="permissions"></a>Permissions
 
@@ -58,7 +58,7 @@ GET /groups/{groupId}/settings
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -72,11 +72,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos groupSetting](../resources/groupsetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos groupSetting](../resources/groupsetting.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-retrieve-the-tenant-level-group-settings"></a>Exemplo: Recuperar as configurações de grupo no nível de locatário
+### <a name="example-retrieve-the-tenant-level-group-settings"></a>Exemplo: recuperar as configurações de grupo no nível do locatário
 
 #### <a name="request"></a>Solicitação
 
@@ -92,27 +92,27 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -219,27 +219,27 @@ GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-for-a-group-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettings-for-a-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-for-a-group-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettings-for-a-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-for-a-group-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-groupsettings-for-a-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-for-a-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-groupsettings-for-a-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-for-a-group-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-groupsettings-for-a-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

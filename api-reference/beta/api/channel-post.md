@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 585cda8ea0f44f11a57d08173373ba6440172d45
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: 9440a84f25f92836f56fb740f460af546ed1aece
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684890"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202776"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -24,7 +24,7 @@ Crie um novo [canal](../resources/channel.md) em uma equipe, conforme especifica
 > Os canais compartilhados estão atualmente no status de visualização pública. Durante esse tempo, o Microsoft API do Graph criar um canal compartilhado está disponível para um público limitado. É recomendável criar canais compartilhados no cliente Teams e usar apIs do Microsoft Graph para gerenciá-los. Para obter detalhes sobre como habilitar canais compartilhados Teams cliente, consulte Canais compartilhados [no Microsoft Teams (versão prévia)](/microsoftteams/shared-channels).
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -462,6 +462,8 @@ Content-Length: 0
 O exemplo a seguir mostra como criar um canal compartilhado.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_shared_channel"
@@ -486,6 +488,32 @@ Content-type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-shared-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-shared-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-shared-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-shared-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-shared-channel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-shared-channel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

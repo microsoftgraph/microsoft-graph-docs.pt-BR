@@ -1,15 +1,15 @@
 ---
-title: Registrar dispositivos corporativos usando o Intune - API Graph Microsoft
-description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que registram dispositivos para uma organização de locatários.
+title: Registrar dispositivos corporativos usando Intune – Microsoft API do Graph
+description: Lista o Microsoft API do Graph para Intune de extremidade (REST) que registram dispositivos para uma organização de locatários.
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 5e0e299a5275e55ddf70d604916f163b02da990b
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 68bf3e2f220be640434be73a6dcb87a953870198
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368018"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210742"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
@@ -26,8 +26,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Perfil de implantação do Windows Autopilot do Active Directory](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
 - [Atribuição de perfil de registro da Apple](intune-enrollment-appleenrollmentprofileassignment.md)
 - [Tipo de registro de tipo de proprietário da Apple](intune-enrollment-appleownertypeenrollmenttype.md)
-- [Perfil de registro iniciado pelo usuário apple](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
-- [Tipo de registro iniciado pelo usuário apple](intune-enrollment-appleuserinitiatedenrollmenttype.md)
+- [Perfil de registro iniciado pelo usuário da Apple](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
+- [Tipo de registro iniciado pelo usuário da Apple](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Perfil de implantação do Windows Autopilot do Azure AD](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
 - [Perfil básico de registro do DEP](intune-enrollment-depenrollmentbaseprofile.md)
 - [Perfil de registro do DEP](intune-enrollment-depenrollmentprofile.md)
@@ -51,10 +51,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Certificado de gerenciamento com impressão digital](intune-enrollment-managementcertificatewiththumbprint.md)
 - [Configurações de experiência iniciais](intune-enrollment-outofboxexperiencesettings.md)
 - [Plataforma](intune-enrollment-platform.md)
-- [Limite de inscrição sugerido](intune-enrollment-suggestedenrollmentlimit.md)
+- [Limite de registro sugerido](intune-enrollment-suggestedenrollmentlimit.md)
 - [Atribuição do perfil de implantação do Windows Autopilot](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Identidade do dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
-- [Windows estado de correção do dispositivo de piloto automático](intune-enrollment-windowsautopilotdeviceremediationstate.md)
+- [Windows estado de correção do dispositivo autopilot](intune-enrollment-windowsautopilotdeviceremediationstate.md)
 - [Tipo de dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Status detalhado de atribuição do perfil do Windows Autopilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Status de atribuição do perfil do Windows Autopilot](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
@@ -63,4 +63,3 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Tipo de uso do dispositivo Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Configurações de tela de status de registro do Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Tipo de usuário do Windows](intune-enrollment-windowsusertype.md)
-

@@ -5,12 +5,12 @@ author: akjo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: a1f5f669b54d900e58982242273d5e76bccbab04
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: b6349c2eea961cbe665c998cc209d021e0e24c9b
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917686"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206850"
 ---
 # <a name="add-member-to-channel"></a>Adicionar membro ao canal
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Adicione um [conversationMember](../resources/conversationmember.md) a um [canal](../resources/channel.md). Esta operação só é permitida para canais com um **valor membershipType** de `private` ou `shared`.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -50,7 +50,7 @@ Inclua as propriedades a seguir no corpo da solicitação.
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |funções|coleção de cadeias de caracteres|A função do usuário. Deve estar `owner` ou vazio.|
-|usuário|[usuário](../resources/user.md)|O usuário a ser adicionado ao canal.|
+|usuário|[user](../resources/user.md)|O usuário a ser adicionado ao canal.|
 
 ## <a name="response"></a>Resposta
 
@@ -286,6 +286,8 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo de uma solicitação.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shared_channel_add_intra_tenant_member"
@@ -301,6 +303,32 @@ Content-type: application/json
     "user@odata.bind": "https://graph.microsoft.com/beta/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shared-channel-add-intra-tenant-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shared-channel-add-intra-tenant-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shared-channel-add-intra-tenant-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shared-channel-add-intra-tenant-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/shared-channel-add-intra-tenant-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/shared-channel-add-intra-tenant-member-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -337,6 +365,8 @@ Content-length: 468
 
 Veja a seguir um exemplo de uma solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shared_channel_add_x_tenant_member"
@@ -353,6 +383,32 @@ Content-type: application/json
     "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/shared-channel-add-x-tenant-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/shared-channel-add-x-tenant-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/shared-channel-add-x-tenant-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/shared-channel-add-x-tenant-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/shared-channel-add-x-tenant-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/shared-channel-add-x-tenant-member-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

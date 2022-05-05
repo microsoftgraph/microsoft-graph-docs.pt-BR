@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f67c517e1fc8a50a5cb4cec093bb376e7f430ab0
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: dea0680c1c1dac260fc195fbf23449e2283eb0ec
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629397"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210900"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Listar androidDeviceOwnerGeneralDeviceConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos objetos [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) .
+Listar propriedades e relações dos [objetos androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método `200 OK` retornará um código de resposta e uma coleção de [objetos androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) no corpo da resposta.
+Se bem-sucedido, este `200 OK` método retorna um código de resposta e uma coleção de [objetos androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10081
+Content-Length: 10859
 
 {
   "value": [
@@ -137,6 +137,17 @@ Content-Length: 10081
       "enrollmentProfile": "dedicatedDevice",
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
+      "detailedHelpText": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
       "factoryResetDeviceAdministratorEmails": [
         "Factory Reset Device Administrator Emails value"
       ],
@@ -241,11 +252,23 @@ Content-Length: 10081
       "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
       "passwordPreviousPasswordCountToBlock": 4,
       "passwordRequiredType": "required",
+      "passwordRequireUnlock": "daily",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "playStoreMode": "allowList",
       "screenCaptureBlocked": true,
       "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
+      "shortHelpText": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
       "statusBarBlocked": true,
       "stayOnModes": [
         "ac"
