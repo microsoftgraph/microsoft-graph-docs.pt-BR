@@ -1,28 +1,28 @@
 ---
 title: Listar associatedTeamInfo
-description: Obtenha a lista de equipes Microsoft Teams a que um usuário está associado.
+description: Obtenha a lista de equipes no Microsoft Teams as quais um usuário está associado.
 author: devjha-ms
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 16842866ca4c2b03268e80eb838bbf953844c605
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: c94e2edd52bd647d2884051d0e9c53422d39c7b8
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685261"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65203684"
 ---
 # <a name="list-associatedteaminfo"></a>Listar associatedTeamInfo
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de [equipes](../resources/associatedteaminfo.md) Microsoft Teams a [que um](../resources/user.md) usuário está associado.
-Atualmente, um [usuário pode](../resources/user.md) ser associado a uma [equipe](../resources/team.md) de duas maneiras diferentes:
+Obtenha a lista de [equipes](../resources/associatedteaminfo.md) no Microsoft Teams as quais um [usuário](../resources/user.md) está associado.
+Atualmente, um [usuário](../resources/user.md) pode ser associado a uma [equipe](../resources/team.md) de duas maneiras diferentes:
 * Um [usuário](../resources/user.md) pode ser um membro direto de uma [equipe](../resources/team.md).
-* Um [usuário](../resources/user.md) pode ser membro de um canal [compartilhado](../resources/channel.md) hospedado dentro de uma [equipe](../resources/team.md).
+* Um [usuário](../resources/user.md) pode ser membro de um [canal](../resources/channel.md) compartilhado hospedado dentro de uma [equipe](../resources/team.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de [objetos AssociatedTeamInfo](../resources/associatedteaminfo.md) no corpo da resposta.
+Se tiver êxito, este método retorna um código de resposta `200 OK` e uma coleção de objetos [associatedTeamInfo](../resources/associatedteaminfo.md) no corpo da resposta.
 
 > **Observação**: essa API também retorna a equipe de host do canal compartilhado do qual o usuário é membro direto.
 
@@ -66,6 +66,8 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma cole
 
 Veja a seguir um exemplo de uma solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_associatedteaminfo"
@@ -74,6 +76,32 @@ Veja a seguir um exemplo de uma solicitação.
 ``` http
 GET https://graph.microsoft.com/beta/me/teamwork/associatedTeams
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-associatedteaminfo-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-associatedteaminfo-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-associatedteaminfo-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-associatedteaminfo-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-associatedteaminfo-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-associatedteaminfo-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta
