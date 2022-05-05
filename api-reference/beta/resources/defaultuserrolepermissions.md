@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso defaultUserRolePermissions
 description: Contém determinadas permissões personalizáveis da função de usuário padrão.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b6ee2e8deccf73929b68079379efb0f6d93a3369
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 71edaa99eedc7a37abe5694ace6e5c3c05e29884
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135664"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65202326"
 ---
 # <a name="defaultuserrolepermissions-resource-type"></a>Tipo de recurso defaultUserRolePermissions
 
@@ -22,9 +22,10 @@ Contém determinadas permissões personalizáveis da função de usuário padrã
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| allowedToCreateApps | Boolean | Indica se a função de usuário padrão pode criar aplicativos. |  
-| allowedToCreateSecurityGroups | Boolean | Indica se a função de usuário padrão pode criar grupos de segurança. |  
-| allowedToReadOtherUsers | Boolean | Indica se a função de usuário padrão pode ler outros usuários. |  
+| allowedToCreateApps | Booliano | Indica se a função de usuário padrão pode criar aplicativos. |  
+| allowedToCreateSecurityGroups | Booliano | Indica se a função de usuário padrão pode criar grupos de segurança. |  
+| allowedToReadBitlockerKeysForOwnedDevice | Booliano | Indica se os proprietários registrados de um dispositivo podem ler suas próprias chaves de recuperação do BitLocker com a função de usuário padrão. |
+| allowedToReadOtherUsers | Booliano | Indica se a função de usuário padrão pode ler outros usuários. |  
 
 ## <a name="relationships"></a>Relações
 
@@ -44,6 +45,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "allowedToCreateApps": true,
   "allowedToCreateSecurityGroups": true,
+  "allowedToReadBitlockerKeysForOwnedDevice": true,
   "allowedToReadOtherUsers": true
 }
 ```

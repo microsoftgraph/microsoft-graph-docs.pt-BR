@@ -1,37 +1,38 @@
 ---
-title: tipo de número resultantAppState
-description: Ainda não documentado
+title: Tipo de enumeração resultantAppState
+description: Uma lista de possíveis estados para o status do aplicativo em um dispositivo individual. Quando os dispositivos contatarem o serviço Intune e localizarem a intenção de imposição de aplicativo direcionada, o status da imposição será registrado e ficará acessível no API do Graph. Como o status do aplicativo é identificado durante a interação do dispositivo com o serviço Intune, os registros de status não aparecem imediatamente após a atribuição do grupo de aplicativos; ele é criado somente depois que a atribuição é avaliada no serviço e os dispositivos começam a receber a política durante os check-ins.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c3bfc5cdc2fdfe8514b75b1d6cff1ca0a93914b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d05a7ac37c525e5a598e158a386dd1d14c35a23
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047244"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211923"
 ---
-# <a name="resultantappstate-enum-type"></a>tipo de número resultantAppState
+# <a name="resultantappstate-enum-type"></a>Tipo de enumeração resultantAppState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Uma lista de possíveis estados para o status do aplicativo em um dispositivo individual. Quando os dispositivos contatarem o serviço Intune e localizarem a intenção de imposição de aplicativo direcionada, o status da imposição será registrado e ficará acessível no API do Graph. Como o status do aplicativo é identificado durante a interação do dispositivo com o serviço Intune, os registros de status não aparecem imediatamente após a atribuição do grupo de aplicativos; ele é criado somente depois que a atribuição é avaliada no serviço e os dispositivos começam a receber a política durante os check-ins.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|instalado|1|O aplicativo é instalado sem erros|
-|failed|2|O aplicativo falhou na instalação.|
+|Instalado|1|O aplicativo é instalado sem erros.|
+|Falhou|2|Falha na instalação do aplicativo.|
 |notInstalled|3|O aplicativo não está instalado.|
-|uninstallFailed|4 |O aplicativo falhou ao desinstalar.|
-|pendingInstall|5 |A instalação do aplicativo está em andamento.|
+|uninstallFailed|4|Falha ao desinstalar o aplicativo.|
+|pendingInstall|5|A instalação do aplicativo está em andamento.|
 |desconhecido|99|O status do aplicativo é desconhecido.|
 |notApplicable|-1|O aplicativo não é aplicável.|
+
 
 
 

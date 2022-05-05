@@ -1,16 +1,16 @@
 ---
 title: Listar usuário transitivo memberOf
-description: Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
+description: Obter grupos, funções de diretório e unidades administrativas das qual o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos dos qual o usuário é membro aninhado.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: beb1a92520f9e55b753f41fd10cb9b519b0b1351
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 40bc10527f78d1b4437222782e10d0e354482c3d
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589321"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206598"
 ---
 # <a name="list-user-transitive-memberof"></a>Listar usuário transitivo memberOf
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o usuário é membro aninhado.
+Obter grupos, funções de diretório e unidades administrativas das qual o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos dos qual o usuário é membro aninhado.
 
 ## <a name="permissions"></a>Permissions
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. O OData cast também está habilitado, por exemplo, você pode lançar para obter apenas a associação transitiva em grupos. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$search`, `$count`, e `$filter`. A conversão de OData também está habilitada, por exemplo, você pode converter para obter apenas a associação transitiva em grupos. Você pode usar `$search`na propriedade **displayName**. Quando itens são adicionados ou atualizados para este recurso, eles são indexados especialmente para uso com os `$count` e `$search` parâmetros de consulta. Pode haver um pequeno atraso entre quando um item é adicionado ou atualizado e quando está disponível no índice.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-groups-directory-roles-and-administrative-units-that-the-user-is-a-member-of"></a>Exemplo 1: Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro
+### <a name="example-1-get-groups-directory-roles-and-administrative-units-that-the-user-is-a-member-of"></a>Exemplo 1: Obter grupos, funções de diretório e unidades administrativas das qual o usuário é membro
 
 #### <a name="request"></a>Solicitação
 
@@ -77,32 +77,32 @@ GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivememberof-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivememberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-transitivememberof-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/get-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/get-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-transitivememberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -146,7 +146,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-transitive-membership-in-groups-directory-roles-and-administrative-units"></a>Exemplo 2: Obter apenas uma contagem de associação transitiva em grupos, funções de diretório e unidades administrativas
+### <a name="example-2-get-only-a-count-of-transitive-membership-in-groups-directory-roles-and-administrative-units"></a>Exemplo 2: obter apenas uma contagem de associação transitiva em grupos, funções de diretório e unidades administrativas
 
 #### <a name="request"></a>Solicitação
 
@@ -212,7 +212,7 @@ Content-type: text/plain
 588
 ```
 
-### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 4: use $search e OData cast para obter associação transitiva em grupos com nomes de exibição que contêm as letras 'camada' incluindo uma contagem de objetos retornados
+### <a name="example-4-use-search-and-odata-cast-to-get-transitive-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Exemplo 4: use a conversão $search e OData para obter associação transitiva em grupos com nomes de exibição que contêm as letras 'tier', incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -257,7 +257,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 5: use $filter e OData cast para obter associação transitiva em grupos com um nome de exibição que começa com "a" incluindo uma contagem de objetos retornados
+### <a name="example-5-use-filter-and-odata-cast-to-get-transitive-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 5: use a conversão $filter e OData para obter associação transitiva em grupos com um nome de exibição que começa com "a", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 

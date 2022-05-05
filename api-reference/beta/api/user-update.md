@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bf1a8b16076575272c215c28a81bd0b3246a32c9
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 36d96649c4b527caf1772e9fab9045718e405d12
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629453"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212059"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -56,19 +56,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Define a faixa etária do usuário. Valores permitidos: `null`, `Minor`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
 |assignedLicenses|Coleção [assignedLicense](../resources/assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|businessPhones| String collection | Números de telefone para o usuário. **OBSERVAÇÃO:** Embora seja uma coleção de cadeias de caracteres, apenas um número pode ser definido para essa propriedade.|
+|businessPhones| Coleção de cadeias de caracteres | Números de telefone para o usuário. **NOTA:** Embora esta seja uma coleção de cadeias de caracteres, apenas um número pode ser definido para essa propriedade.|
 |city|String|A cidade em que o usuário está localizado.|
 | CompanyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo é de 64 caracteres. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `Granted`, `Denied` e `NotRequired`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
 |country|Cadeia de caracteres|O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`.|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Um tipo complexo aberto que contém o valor de um atributo de segurança personalizado atribuído a um objeto de diretório.<br/><br/>Para atualizar este imóvel, o responsável pela chamada deve ser designado como Administrador de Atribuição de Atributos e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.|
-|department|String|O nome do departamento no qual o usuário trabalha.|
+|departamento|String|O nome do departamento no qual o usuário trabalha.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. O comprimento máximo é de 16 caracteres.|
 | employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`.|
 |givenName|String|O nome fornecido (nome) do usuário.|
 |employeeHireDate|DateTimeOffset|A data de contratação do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` |
-|Identidades|Coleção [objectIdentity](../resources/objectidentity.md)| Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft, por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Qualquer atualização para **identidades** substituirá toda a coleção e você deve fornecer a identidade userPrincipalName **signInType** na coleção.|
+|Identidades|Coleção [objectIdentity](../resources/objectidentity.md)| Representa as identidades que podem ser usadas para entrar nesta conta de usuário. Uma identidade pode ser fornecida pela Microsoft, por organizações ou por provedores de identidade social, como o Facebook, Google e Microsoft, e está vinculada a uma conta de usuário. Qualquer atualização de **identidades** substituirá toda a coleção e você deverá fornecer a identidade userPrincipalName **signInType** na coleção.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |jobTitle|String|O cargo do usuário.|
 |email|String|O endereço SMTP do usuário, por exemplo, `jeff@contoso.onmicrosoft.com`. Para contas do Azure AD B2C, esta propriedade só pode ser atualizada até dez vezes com endereços SMTP exclusivos. As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP.|
@@ -94,7 +94,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |userPrincipalName|Cadeia de caracteres|O nome UPN do usuário. O UPN é uma ID de logon do usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Os domínios verificados do locatário podem ser acessados pela propriedade **verifiedDomains** da [organização](../resources/organization.md).<br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. Somente os seguintes caracteres são permitidos `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Para obter a lista completa de caracteres permitidos, consulte as [políticas de nome de usuário](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
 |userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`.          |
 
-Como o **recurso do** usuário dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview) de uma extensão em uma **instância do usuário** existente.
+Como o **recurso** de usuário dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados [específicos](/graph/extensibility-overview) do aplicativo em propriedades personalizadas de uma extensão em uma instância de **usuário existente.**
 
 > [!NOTE] 
 > - As seguintes propriedades não podem ser atualizadas por um aplicativo com apenas permissões de aplicativo: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
@@ -294,7 +294,7 @@ O exemplo a seguir mostra como atribuir um atributo de segurança personalizado 
 
 Para atribuir atributos de segurança personalizados, o principal de chamada deve ser atribuído à função de Administrador de Atribuição de Atributo e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.
 
-Para obter mais exemplos para usuários, consulte [Assign, update ou remove custom security attributes using the Microsoft API do Graph](/graph/custom-security-attributes-examples).
+Para obter mais exemplos para usuários, consulte [Atribuir, atualizar ou remover atributos de segurança personalizados usando o Microsoft API do Graph](/graph/custom-security-attributes-examples).
 
 #### <a name="request"></a>Solicitação
 
@@ -352,6 +352,8 @@ Você pode atualizar ou atribuir um valor a uma única propriedade ou a todas as
 
 #### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_schemaextension"
@@ -366,6 +368,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-schemaextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-schemaextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-schemaextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-schemaextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 
@@ -376,7 +396,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
->**Observação:** Para remover o valor da extensão de esquema do objeto do usuário, de definir a propriedade como `null`. Por exemplo:
+>**Observação:** para remover o valor da extensão de esquema do objeto de usuário, defina a propriedade como `null`. Por exemplo:
 >
 >```http
 >PATCH https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e

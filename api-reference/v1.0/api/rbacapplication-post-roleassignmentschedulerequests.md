@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e8295babb10821b9949231bb27ebb20b8570662d
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: bb94ee6d549209d64289f67d1b830c787afe4e04
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133854"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206759"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>Criar unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
@@ -21,7 +21,7 @@ No PIM, execute as seguintes operações por meio do [objeto unifiedRoleAssignme
 
 Para chamar essa API para atualizar, renovar e estender as atribuições por conta própria, você deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual elas foram desafiadas para MFA. Consulte [Habilitar a autenticação Azure AD multifator para proteger eventos de entrada](/azure/active-directory/authentication/howto-mfa-userstates).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -54,12 +54,12 @@ Você pode especificar as propriedades a seguir ao criar **um unifiedRoleAssignm
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ação|unifiedRoleScheduleRequestActions|Representa o tipo da operação na solicitação de atribuição de função. Os valores possíveis são `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. <br/><ul><li>`adminAssign`: para administradores atribuirem funções a usuários ou grupos.</li><li>`adminRemove`: para administradores removerem usuários ou grupos de funções.</li><li> `adminUpdate`: para que os administradores alterem as atribuições de função existentes.</li><li>`adminExtend`: para que os administradores estendam as atribuições de expiração.</li><li>`adminRenew`: para que os administradores renovem atribuições expiradas.</li><li>`selfActivate`: para que os usuários ativem suas atribuições.</li><li>`selfDeactivate`: para que os usuários desativem suas atribuições ativas.</li><li>`selfExtend`: para que os usuários solicitem a extensão de suas atribuições de expiração.</li><li>`selfRenew`: para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>|
-|Customdata|Cadeia de caracteres|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Opcional.|
-|principalId|Cadeia de caracteres|Identificador da entidade de segurança que recebeu a atribuição. Obrigatório.|
-|roleDefinitionId|Cadeia de caracteres|Identificador do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) que está sendo atribuído. Obrigatório.|
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando a atribuição está no escopo de um aplicativo. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|Justificação|Cadeia de caracteres|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleAssignmentScheduleRequest** . Opcional.|
+|Customdata|Cadeia de Caracteres|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Opcional.|
+|principalId|Cadeia de Caracteres|Identificador da entidade de segurança que recebeu a atribuição. Obrigatório.|
+|roleDefinitionId|Cadeia de Caracteres|Identificador do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) que está sendo atribuído. Obrigatório.|
+|directoryScopeId|Cadeia de Caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|appScopeId|Cadeia de Caracteres|Identificador do escopo específico do aplicativo quando a atribuição está no escopo de um aplicativo. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|Justificação|Cadeia de Caracteres|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleAssignmentScheduleRequest** . Opcional.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O período da solicitação de atribuição de função. No momento, não há suporte para agendamentos recorrentes. Obrigatório.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Detalhes do tíquete vinculados à solicitação de atribuição de função, incluindo detalhes do número do tíquete e do sistema de tíquetes. Opcional.|
 
@@ -74,6 +74,8 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 ### <a name="example-1-admin-assigning-a-directory-role-to-a-principal"></a>Exemplo 1: Administrador atribuindo uma função de diretório a uma entidade de segurança
 
 #### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentschedulerequest_from_"
@@ -97,6 +99,28 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentschedulerequest-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentschedulerequest-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentschedulerequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentschedulerequest-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Resposta
@@ -159,6 +183,8 @@ Na solicitação a seguir, um usuário identificado por **principalId** `071cc71
 
 Para recuperar os detalhes de suas solicitações de qualificação e identificar a qualificação a ser ativada, o usuário chamará [a API unifiedRoleEligibilitySchedule: filterByCurrentUser](unifiedroleeligibilityschedule-filterbycurrentuser.md) .
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests_selfActivate"
@@ -187,6 +213,28 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 

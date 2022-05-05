@@ -2,34 +2,34 @@
 title: Criar sideLoadingKey
 description: Crie um novo objeto sideLoadingKey.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 249a57d10c4e7640b76ed7052906cc0c4b396a87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a55840adf84a5234a7ded834ca03ceb4a9c69498
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027572"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65212906"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto sideLoadingKey.](../resources/intune-onboarding-sideloadingkey.md)
+Crie um novo [objeto sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -47,23 +47,23 @@ POST /deviceAppManagement/sideLoadingKeys
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto sideLoadingKey.
+No corpo da solicitação, forneça uma representação JSON do objeto sideLoadingKey.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar o sideLoadingKey.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|ID exclusiva da chave de carregamento lateral.|
-|value|Cadeia de caracteres|Side Loading Key Value, it is 5x5 value, seperated by hiphens.|
-|displayName|String|Side Loading Key Name displayed to the ITPro Admins.|
-|description|Cadeia de caracteres|Descrição da Chave de Carregamento lateral exibida para os administradores do ITPro..|
-|totalActivation|Int32|Side Loading Key Total Activation displayed to the ITPro Admins.|
-|lastUpdatedDateTime|String|Side Loading Key Last Updated Date displayed to the ITPro Admins.|
+|value|Cadeia de caracteres|Valor da chave de carregamento lateral, é um valor de 5x5, separado por hiphens.|
+|displayName|String|Nome da chave de carregamento lateral exibido para os administradores de ITPro.|
+|descrição|String|Descrição da chave de carregamento lateral exibida para os administradores de ITPro..|
+|totalActivation|Int32|Ativação total da chave de carregamento lateral exibida para os administradores de ITPro.|
+|lastUpdatedDateTime|Cadeia de Caracteres|Data da última atualização da chave de carregamento lateral exibida para os administradores de ITPro.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,6 +101,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

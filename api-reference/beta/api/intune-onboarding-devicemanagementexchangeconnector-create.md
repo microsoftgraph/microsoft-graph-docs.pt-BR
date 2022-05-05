@@ -2,21 +2,21 @@
 title: Criar deviceManagementExchangeConnector
 description: Crie um novo objeto deviceManagementExchangeConnector.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 421bf5ee8639a5b0b02428e253f1a8774d658a44
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 58c69c95a45ce783356fa903146d4f1b1c4ec038
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076842"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206591"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Criar deviceManagementExchangeConnector
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
+|Aplicativo|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceManagement
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Status do conector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange status do conector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
-|serverName|Cadeia de caracteres|O nome do servidor Exchange.|
+|serverName|Cadeia de caracteres|O nome do servidor Exchange servidor.|
 |connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |versão|Cadeia de caracteres|A versão do ExchangeConnectorAgent|
@@ -113,6 +113,7 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
 
 
 

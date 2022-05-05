@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 3db8f5c4073d3ba709e06137c8f5ea02ec78f157
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: d310865432f166a1c16432992b39903952e94873
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704314"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205421"
 ---
 # <a name="create-delegatedadminrelationship"></a>Criar delegatedAdminRelationship
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto delegatedAdminRelationship](../resources/delegatedadminrelationship.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -54,7 +54,7 @@ Você pode especificar as propriedades a seguir ao criar **um delegatedAdminRela
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|Os identificadores das funções administrativas que o parceiro solicita ou tem acesso no locatário do cliente. Obrigatório.|
 |Cliente|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|O nome de exibição e o identificador exclusivo do cliente da relação. Opcional.|
 |displayName|String|O nome de exibição da relação usada para facilitar a identificação. Deve ser exclusivo em *todas as* relações de administrador delegado do parceiro. Obrigatório.|
-|duração|Duração|A duração da relação no formato ISO 8601. Deve ser um valor entre e `P1D` `P2Y` inclusivo. Obrigatório.|
+|duração|Duration|A duração da relação no formato ISO 8601. Deve ser um valor entre e `P1D` `P2Y` inclusivo. Obrigatório.|
 
 ## <a name="response"></a>Resposta
 
@@ -64,6 +64,8 @@ A resposta contém um **cabeçalho Location** que contém uma URL para a relaç�
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_delegatedadminrelationship_from_"
@@ -92,6 +94,28 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-delegatedadminrelationship-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-delegatedadminrelationship-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-delegatedadminrelationship-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-delegatedadminrelationship-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-delegatedadminrelationship-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

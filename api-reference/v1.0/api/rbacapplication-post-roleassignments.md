@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2307fd3a8c4542eae1806f34bc2f9d7a20916848
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 3e0cf3ea1b24c3c5556a11bb0aca3d9bed13df4f
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016824"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206969"
 ---
 # <a name="create-unifiedroleassignment"></a>Criar unifiedRoleAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+| Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
 ### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | EntitlementManagement.ReadWrite.All |
+|Aplicativo | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -66,16 +66,16 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) . A solicitação deve ter um escopo definido no Azure Active Directory (Azure AD) especificado por **directoryScopeId** ou um escopo específico do aplicativo especificado pelo **appScopeId**. Exemplos de escopos do Azure AD são locatário (`/`), unidades administrativas ou aplicativos. Para obter mais informações sobre appScope, consulte [appScope](../resources/appscope.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) . A solicitação deve ter um escopo definido no Azure Active Directory (Azure AD) especificado por **directoryScopeId** ou um escopo específico do aplicativo especificado pelo **appScopeId**. Exemplos de Azure AD escopos são locatário (`/`), unidades administrativas ou aplicativos. Para obter mais informações sobre appScope, consulte [appScope](../resources/appscope.md).
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|roleDefinitionId|String| Identificador da definição de função para a atribuição.|
-|principalId|Cadeia de caracteres| O identificador da entidade de segurança à qual a atribuição é concedida. |
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. Essa propriedade ou **appScopeId** é necessária. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
-|appScopeId|String|Identificador do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Essa propriedade ou **directoryScopeId** é necessário. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
+|roleDefinitionId|Cadeia de Caracteres| Identificador da definição de função para a atribuição.|
+|principalId|Cadeia de Caracteres| O identificador da entidade de segurança à qual a atribuição é concedida. |
+|directoryScopeId|Cadeia de Caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. Essa propriedade ou **appScopeId** é necessária. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
+|appScopeId|Cadeia de Caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Essa propriedade ou **directoryScopeId** é necessário. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
 
 ## <a name="response"></a>Resposta
 
@@ -326,6 +326,8 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignment3_from_rbacapplication_4"
@@ -341,6 +343,32 @@ Content-type: application/json
     "appScopeId": "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment3-from-rbacapplication-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment3-from-rbacapplication-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment3-from-rbacapplication-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment3-from-rbacapplication-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment3-from-rbacapplication-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment3-from-rbacapplication-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

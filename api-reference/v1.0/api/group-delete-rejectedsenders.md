@@ -1,20 +1,20 @@
 ---
 title: Remover rejectedSender
-description: Remova um usuário ou grupo da lista de envios rejeitados.
+description: Remova um usuário ou grupo da lista de remetentes rejeitados.
 author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6351c98d4a256ead2322a4f0acfce3d6bf604ff8
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: df2d5a667b0c1dfbbabf1b8ac3ce544d01a7b381
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589104"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65210119"
 ---
 # <a name="remove-rejectedsender"></a>Remover rejectedSender
 
-Namespace: microsoft.graph Remova um usuário ou grupo da lista rejeitado-senders.
+Namespace: microsoft.graph Remova um usuário ou grupo da lista de remetentes rejeitados.
 
 ## <a name="permissions"></a>Permissions
 
@@ -67,27 +67,27 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-rejectedsender-from-group-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/remove-rejectedsender-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-rejectedsender-from-group-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-rejectedsender-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/remove-rejectedsender-from-group-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/remove-rejectedsender-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/remove-rejectedsender-from-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/remove-rejectedsender-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/remove-rejectedsender-from-group-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/remove-rejectedsender-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

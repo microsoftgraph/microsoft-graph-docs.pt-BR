@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f422483821c191d4d0dffb8a067b513186913aea
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 2b0c37b2f60371139aac89f970a33b4a830d9374
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589391"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65206408"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -66,32 +66,32 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-renew-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-renew-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-renew-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-renew-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/group-renew-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/group-renew-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/group-renew-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-renew-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-renew-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-renew-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

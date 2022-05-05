@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fc64bbe5858ef20f363bd049cd98eec6b75e777e
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 0838b66555e29516b2121f2772b83a88977a15a1
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060700"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65208939"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chatMessage em um canal ou chat
 
@@ -24,7 +24,7 @@ Envie um novo [chatMessage](../resources/chatmessage.md) no canal [especificado]
 
 > **Observação**: é uma violação dos termos [de uso para](/legal/microsoft-apis/terms-of-use) usar Microsoft Teams como um arquivo de log. Enviar apenas mensagens que as pessoas lerão.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -1216,10 +1216,12 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
-> **Nota:** Ao especificar um aplicativo Teams ao qual atribuir um cartão, a ID do aplicativo do Azure AD usada para fazer a chamada deve corresponder à ID do aplicativo do Azure AD do Teams aplicativo. A ID do aplicativo do Azure AD do aplicativo Teams pode ser especificada na seção *webApplicationInfo* do manifesto do aplicativo. Consulte a documentação a seguir sobre o esquema [Teams manifesto do aplicativo atual](/microsoftteams/platform/resources/schema/manifest-schema).
+> **Nota:** Ao especificar um aplicativo Teams ao qual atribuir um cartão, a ID do aplicativo Azure AD usada para fazer a chamada deve corresponder à ID do aplicativo Azure AD do aplicativo Teams. A Azure AD ID do aplicativo Teams aplicativo pode ser especificada na seção *webApplicationInfo* do manifesto do aplicativo. Consulte a documentação a seguir sobre o esquema [Teams manifesto do aplicativo atual](/microsoftteams/platform/resources/schema/manifest-schema).
 >
 > Além disso, o aplicativo especificado no conteúdo deve ser instalado para o usuário que envia a mensagem ou no chat ou canal no qual a mensagem está sendo enviada.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_chatmessage_10"
@@ -1248,6 +1250,32 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-10-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-10-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-10-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-10-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-10-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-10-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

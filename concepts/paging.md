@@ -4,16 +4,16 @@ description: 'Propriedade odata.nextLink` na resposta que contém uma URL para a
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 59bada32be7b896668bf4bd4cadf3894cdf7c5e4
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 82d891298a3c33b0bb496c5ad8a1475ecd295934
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526024"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65208859"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paginação de dados do Microsoft Graph em seu aplicativo 
 
-Algumas consultas em relação ao Microsoft Graph retornam várias páginas de dados devido à paginação do lado do servidor ou devido ao uso do parâmetro de consulta `$top` para limitar especificamente o tamanho da página em uma solicitação. Quando um conjunto de resultados se estende por várias páginas, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém uma URL para a próxima página de resultados. 
+Algumas consultas no Microsoft Graph retornam várias páginas de dados devido à paginação do lado do servidor ou devido ao uso do parâmetro de consulta `$top` para limitar especificamente o tamanho da página em uma solicitação. Quando mais de uma solicitação de consulta é necessária para recuperar todos os resultados, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém uma URL para a próxima página de resultados. 
 
 Por exemplo, a URL a seguir solicita todos os usuários em uma organização com o tamanho de página 5 especificado com o parâmetro de consulta `$top`:
 
@@ -21,7 +21,7 @@ Por exemplo, a URL a seguir solicita todos os usuários em uma organização com
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-Se o resultado contiver mais de cinco usuários, o Microsoft Graph retornará uma propriedade `@odata.nextLink` semelhante à mostrada a seguir, junto com a primeira página de usuários.
+Se o resultado contiver mais resultados, o Microsoft Graph retornará uma propriedade `@odata.nextLink` semelhante à seguinte junto com a primeira página de resultados:
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
@@ -33,12 +33,13 @@ Você pode recuperar a próxima página de resultados enviando o valor de URL da
 https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
 ```
 
-O Microsoft Graph continuará a retornar uma referência para a próxima página de dados na propriedade `@odata.nextLink` com cada resposta até que todas as páginas do resultado sejam lidas.
+O Microsoft Graph continuará a retornar uma referência à próxima página de resultados na propriedade `@odata.nextLink` com cada resposta até que todas as páginas dos resultados tenham sido lidas. Para ler todos os resultados, você deve continuar para todo o Microsoft Graph com a propriedade `@odata.nextLink` retornada em cada resposta até que a propriedade `@odata.nextLink` não seja mais retornada.
 
 >**Importante:** Você deve incluir a URL inteira na propriedade `@odata.nextLink` na solicitação da próxima página de resultados. Dependendo da API em relação à qual a consulta está sendo realizada, o valor de URL `@odata.nextLink` conterá um parâmetro de consulta `$skiptoken` ou `$skip`. A URL também contém todos os outros parâmetros de consulta presentes na solicitação original. Não tente extrair o valor `$skiptoken` ou `$skip` e usá-lo em uma solicitação diferente. 
 
 O comportamento de paginação varia entre diferentes APIs do Microsoft Graph. Ao trabalhar com dados paginados, considere o seguinte:
 
+- Uma página de resultados pode conter zero ou mais resultados.
 - APIs diferentes podem ter tamanhos padrão e máximo de página diferentes.
 - APIs diferentes poderão se comportar de maneira diferente se você especificar um tamanho de página (por meio do parâmetro de consulta `$top`) que exceda o tamanho máximo de página para essa API. Dependendo da API, o tamanho de página solicitado pode ser ignorado, ele pode usar por padrão o tamanho máximo de página para essa API ou o Microsoft Graph pode retornar um erro. 
 - Nem todos os recursos ou relações dão suporte à paginação. Por exemplo, consultas em relação a [directoryRoles](/graph/api/resources/directoryrole) não dão suporte à paginação. Isso inclui os objetos de função de leitura e os membros de função.
