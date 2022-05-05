@@ -1,21 +1,21 @@
 ---
 title: Listar assignmentPolicies
-description: Listar os objetos accessPackageAssignmentPolicy.
+description: Liste os objetos accessPackageAssignmentPolicy.
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 82de66f4eac1095374177eff848ea4e6b67d1540
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: f5a6776ac699e35aa21419d1fa2f1baf018e2ced
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64608239"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209678"
 ---
 # <a name="list-assignmentpolicies"></a>Listar assignmentPolicies
 Namespace: microsoft.graph
 
-No [gerenciamento de direitos do Azure AD](../resources/entitlementmanagement-overview.md), recupere uma lista de [objetos accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) . Se o usuário delegado estiver em uma função de diretório, a lista resultante incluirá todas as políticas de atribuição que o chamador tem acesso à leitura, em todos os catálogos e pacotes de acesso. Se o usuário delegado for um gerenciador de pacotes de acesso ou proprietário de catálogo, ele deverá recuperar as políticas dos pacotes de acesso que podem ser [lidos com accessPackages](entitlementmanagement-list-accesspackages.md) `$expand=accessPackageAssignmentPolicies` de lista incluindo como parâmetro de consulta.
+No [Azure AD de direitos](../resources/entitlementmanagement-overview.md), recupere uma lista de [objetos accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). Se o usuário delegado estiver em uma função de diretório, a lista resultante incluirá todas as políticas de atribuição que o chamador tem acesso para ler em todos os catálogos e pacotes de acesso. Se o usuário delegado for um gerenciador de pacotes de acesso ou proprietário do catálogo, ele deverá recuperar as políticas para os pacotes de acesso que podem ser [lidos com accessPackages](entitlementmanagement-list-accesspackages.md) `$expand=accessPackageAssignmentPolicies` de lista incluindo como um parâmetro de consulta.
 
 ## <a name="permissions"></a>Permissions
 
@@ -39,7 +39,7 @@ GET /identityGovernance/entitlementManagement/assignmentPolicies
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a alguns dos `$filter`parâmetros de consulta , `$select`e `$expand` OData para ajudar a personalizar a resposta. Por exemplo, para recuperar uma política de atribuição de pacote de acesso com um nome de exibição especificado, inclua `$filter=displayName eq 'Employee sales support'` na consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte a alguns dos `$filter`parâmetros de consulta , `$select`e `$expand` OData para ajudar a personalizar a resposta. Por exemplo, para recuperar uma política de atribuição de pacote de acesso com um nome de exibição especificado, inclua `$filter=displayName eq 'Employee sales support'` na consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,11 +51,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de [objetos accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accesspackageassignmentpolicy"
@@ -64,6 +66,32 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 ``` http
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accesspackageassignmentpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accesspackageassignmentpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accesspackageassignmentpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageassignmentpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accesspackageassignmentpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

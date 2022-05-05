@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d2f512c760d0c9d50e8089420ed6c4676bb34ab8
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: ef409744ee99cbf39648252b3d192fb235060943
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589454"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211281"
 ---
 # <a name="create-settings"></a>Criar configurações
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Crie uma nova configuração com base nos modelos disponíveis em [groupSettingTemplates](../resources/groupsettingtemplate.md). Essas configurações podem estar no nível do locatário ou no nível do grupo.
 
-As configurações de grupo se aplicam apenas Microsoft 365 grupos. O modelo nomeado `Group.Unified` pode ser usado para configurar configurações de grupo em todo o Microsoft 365 de locatários, `Group.Unified.Guest` enquanto o modelo nomeado pode ser usado para configurar configurações específicas do grupo.
+As configurações de grupo se aplicam somente Microsoft 365 grupos. O modelo nomeado pode `Group.Unified` ser usado para definir configurações de grupo de Microsoft 365 locatário, `Group.Unified.Guest` enquanto o modelo nomeado pode ser usado para definir configurações específicas do grupo.
 
 ## <a name="permissions"></a>Permissions
 
@@ -57,24 +57,24 @@ POST /groups/{id}/settings
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md). O nome de exibição, templateId e descrição são herdados do objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) referenciado. Somente a propriedade value pode ser alterada do valor padrão.
+No corpo da solicitação, forneça uma representação JSON do objeto [groupSetting](../resources/groupsetting.md). O nome de exibição, templateId e descrição são herdados do objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) referenciado. Somente a propriedade de valor pode ser alterada do valor padrão.
 
 As propriedades a seguir são necessárias ao criar o [objeto groupSetting](../resources/groupsetting.md) .
 
 | Parâmetro  | Tipo                                                    | Descrição                                                                                                                                                                          |
 | :--------- | :------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| templateId | Cadeia de caracteres                                                  | Identificador exclusivo para o objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) no nível de locatário usado para criar esse objeto de configurações de nível de grupo. Somente leitura.              |
-| values     | [coleção settingValue](../resources/settingvalue.md) | Coleção de pares de valores de nome correspondentes ao **nome** e propriedades **defaultValue** no objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) referenciado. |
+| Templateid | Cadeia de Caracteres                                                  | Identificador exclusivo para o objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) no nível do locatário usado para criar esse objeto de configurações de nível de grupo. Somente leitura.              |
+| values     | [coleção settingValue](../resources/settingvalue.md) | Coleção de pares nome-valor correspondentes às propriedades **name e** **defaultValue** no objeto [groupSettingTemplates referenciado](../resources/groupsettingtemplate.md) . |
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [groupSetting](../resources/groupsetting.md) no corpo da resposta.
 
-## <a name="example-1-create-a-new-setting-for-all-microsoft-365-groups-in-the-tenant"></a>Exemplo 1: Criar uma nova configuração para todos os grupos Microsoft 365 no locatário
+## <a name="example-1-create-a-new-setting-for-all-microsoft-365-groups-in-the-tenant"></a>Exemplo 1: Criar uma nova configuração para todos Microsoft 365 grupos no locatário
 
 ### <a name="request"></a>Solicitação
 
-Somente o [objeto groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified` nomeado pode ser aplicado a todos os grupos Microsoft 365 no nível de locatário.
+Somente o [objeto groupSettingTemplates](../resources/groupsettingtemplate.md) `Group.Unified` nomeado pode ser aplicado a todos os Microsoft 365 grupos no nível do locatário.
 
 # <a name="http"></a>[HTTP](#tab/http)
 
@@ -111,27 +111,27 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -177,9 +177,9 @@ Content-type: application/json
 }
 ```
 
-A **propriedade displayName** e outros pares de valores de nome serão preenchidos com os valores padrão do [objeto groupSettingTemplates](../resources/groupsettingtemplate.md) que corresponde ao **templateId**.
+A **propriedade displayName** e outros pares nome-valor serão preenchidos com os valores padrão do objeto [groupSettingTemplates](../resources/groupsettingtemplate.md) que corresponde à **templateId**.
 
-## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Exemplo 2: Criar uma configuração para bloquear convidados para um grupo Microsoft 365 específico
+## <a name="example-2-create-a-setting-to-block-guests-for-a-specific-microsoft-365-group"></a>Exemplo 2: Criar uma configuração para bloquear convidados para um grupo de Microsoft 365 específico
 
 ### <a name="request"></a>Solicitação
 
@@ -208,27 +208,27 @@ Content-type: application/json
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-groupsetting-from-groupsettings-for-guests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsetting-from-groupsettings-for-guests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-
+[!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/create-groupsetting-from-groupsettings-for-guests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-
+[!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/create-groupsetting-from-groupsettings-for-guests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)
-
+[!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/create-groupsetting-from-groupsettings-for-guests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: Listar microsoftApplicationDataAccessSettings
-description: Obter as configurações em um objeto microsoftApplicationDataAccessSettings que especificam o acesso de aplicativos Microsoft para Microsoft 365 dados do usuário em uma organização.
+description: Obtenha as configurações em um objeto microsoftApplicationDataAccessSettings que especificam o acesso de aplicativos da Microsoft Microsoft 365 dados do usuário em uma organização.
 author: ttomi
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 01b0f53b99eaff9abf62b36c8247be44cf5c94e7
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: f5a13e06466c759d9cd74bc1a089a3e935285a9b
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589529"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65205687"
 ---
 # <a name="list-microsoftapplicationdataaccesssettings"></a>Listar microsoftApplicationDataAccessSettings
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as _configurações_ em um [objeto microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) que especificam o acesso de aplicativos Da Microsoft para Microsoft 365 dados do usuário em uma organização.
+Obtenha as _configurações_ em um objeto [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) que especificam o acesso de aplicativos da Microsoft Microsoft 365 dados do usuário em uma organização.
 
 ## <a name="permissions"></a>Permissions
 
@@ -52,11 +52,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de objetos [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_microsoftapplicationdataaccesssettings"
@@ -65,6 +67,32 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
 ``` http
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccess
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-microsoftapplicationdataaccesssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-microsoftapplicationdataaccesssettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-microsoftapplicationdataaccesssettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-microsoftapplicationdataaccesssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-microsoftapplicationdataaccesssettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-microsoftapplicationdataaccesssettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 
@@ -89,4 +117,4 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-[Personalizar privacidade de insights de item](/graph/insights-customize-item-insights-privacy) para uma organização.
+[Personalize a privacidade dos insights do item](/graph/insights-customize-item-insights-privacy) para uma organização.

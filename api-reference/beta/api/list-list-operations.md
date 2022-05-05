@@ -1,25 +1,25 @@
 ---
 title: Listar operações
-description: Obter a lista de richLongRunningOperations associado a uma lista.
+description: Obtenha a lista de richLongRunningOperations associada a uma lista.
 author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 01e4cdd6130ee2d412cd53d5683a690e63fd07fb
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: be2cab5c08ecc7743b5947836b4ad6c1cf6c1010
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262201"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211379"
 ---
 # <a name="list-operations"></a>Listar operações
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista [de richLongRunningOperations](../resources/richlongrunningoperation.md) associado a uma [lista](../resources/list.md).
+Obtenha a lista [de richLongRunningOperations](../resources/richlongrunningoperation.md) associada a uma [lista](../resources/list.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos richLongRunningOperation](../resources/richlongrunningoperation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos richLongRunningOperation](../resources/richlongrunningoperation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/lists/{listId}
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-richlongrunningoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-richlongrunningoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

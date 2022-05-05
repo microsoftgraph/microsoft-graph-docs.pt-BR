@@ -1,16 +1,16 @@
 ---
 title: 'sourceCollection: purgeData'
-description: Use o método purge data para excluir mensagens confidenciais Microsoft Teams extraviadas em uma sourceCollection.
+description: Use o método de limpeza de dados para excluir mensagens confidenciais no Microsoft Teams em uma sourceCollection.
 author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a7a2e7ae0138f57739184325b2615d90d74d5abb
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: fa2bb5cb399d22302d167fd9fb120f13d43e3d43
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64608408"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211417"
 ---
 # <a name="sourcecollection-purgedata"></a>sourceCollection: purgeData
 
@@ -18,19 +18,19 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua permanentemente Microsoft Teams mensagens contidas em [uma sourceCollection](../resources//ediscovery-sourcecollection.md).
+Exclua Microsoft Teams mensagens contidas em uma [sourceCollection](../resources//ediscovery-sourcecollection.md).
 
->**Observação:** Essa solicitação limpa Teams apenas dados. Ele não limpa outros tipos de dados, como itens de caixa de correio.
+>**Nota:** Essa solicitação limpa Teams somente dados. Ele não limpa outros tipos de dados, como itens de caixa de correio.
 
 Você pode coletar e limpar as seguintes categorias de Teams conteúdo:
-- **Teams chats 1:1** - Mensagens de chat, postagens e anexos compartilhados em uma Teams conversa entre duas pessoas. Teams chats 1:1 também são chamados de *conversas*.
-- **Teams de grupo** - Mensagens de chat, postagens e anexos compartilhados em uma Teams conversa entre três ou mais pessoas. Também chamado *de chats 1:N* ou conversas *em grupo*.
-- **Teams canais** - Mensagens de chat, postagens, respostas e anexos compartilhados em um canal Teams padrão.
-- **Canais privados** - Mensagens, respostas e anexos compartilhados em um canal Teams privado.
-- **Canais compartilhados** - Mensagens, respostas e anexos compartilhados em um canal Teams compartilhado.
+- **Teams chats 1:1** – mensagens de chat, postagens e anexos compartilhados em uma Teams conversa entre duas pessoas. Teams chats 1:1 também são chamados de *conversas*.
+- **Teams chats** em grupo – mensagens de chat, postagens e anexos compartilhados em uma Teams conversa entre três ou mais pessoas. Também chamado *de chats 1:N* ou conversas *em grupo*.
+- **Teams canais** - mensagens de chat, postagens, respostas e anexos compartilhados em um canal Teams padrão.
+- **Canais privados** – Postagens de mensagens, respostas e anexos compartilhados em um canal Teams privado.
+- **Canais compartilhados** – Postagens de mensagens, respostas e anexos compartilhados em um canal Teams compartilhado.
 
-Para obter mais informações sobre como Teams mensagens, consulte:
-- [Série de soluções de Descoberta eDiscovery: Cenário de vazamento de dados - Pesquisa e limpeza](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
+Para obter mais informações sobre como limpar Teams mensagens, consulte:
+- [Série de soluções de Descoberta Eletrônica: cenário de vazamento de dados – Pesquisa e limpeza](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
 - [Advanced eDiscovery fluxo de trabalho para conteúdo no Microsoft Teams](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 
 ## <a name="permissions"></a>Permissions
@@ -67,12 +67,14 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`.
 
-Se a operação de limpar dados for iniciada com êxito, essa ação retornará um `202 Accepted` código de resposta. A resposta também conterá um header, que contém o `Location` local da operação [limpar](../resources/ediscovery-purgedataoperation.md) dados que foi criada para confirmação da limpeza.
-Para verificar o status da operação de limpeza de dados, faça uma solicitação GET para a URL de local. Quando a solicitação for concluída com êxito, [o status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) mudará para `succeeded`.
+Se a operação de limpeza de dados for iniciada com êxito, essa ação retornará um código `202 Accepted` de resposta. A resposta também conterá um cabeçalho, que contém o local da operação [limpar](../resources/ediscovery-purgedataoperation.md) dados que foi criada para confirmar a `Location` limpeza.
+Para verificar o status da operação de limpeza de dados, faça uma solicitação GET para a URL de local. Quando a solicitação for concluída com êxito, o [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) será alterado para `succeeded`.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sourcecollectionthis.purgedata"
@@ -81,6 +83,32 @@ Para verificar o status da operação de limpeza de dados, faça uma solicitaç�
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId}/purgeData
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/sourcecollectionthispurgedata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/sourcecollectionthispurgedata-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/sourcecollectionthispurgedata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/sourcecollectionthispurgedata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/sourcecollectionthispurgedata-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sourcecollectionthispurgedata-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 <!-- {

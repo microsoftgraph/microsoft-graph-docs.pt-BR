@@ -1,42 +1,43 @@
 ---
-title: Tipo de número deviceEnrollmentConfigurationType
-description: Descreve TemplateFamily para a entidade Template
+title: Tipo de enumeração deviceEnrollmentConfigurationType
+description: Descreve o TemplateFamily para a entidade Template
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 85ffeb3b0d8215309b0667be4e0ba874aad66bfa
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 98fef8c27ca10a613c02132a4cd80fb8ab909205
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63378703"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211316"
 ---
-# <a name="deviceenrollmentconfigurationtype-enum-type"></a>Tipo de número deviceEnrollmentConfigurationType
+# <a name="deviceenrollmentconfigurationtype-enum-type"></a>Tipo de enumeração deviceEnrollmentConfigurationType
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Descreve TemplateFamily para a entidade Template
+Descreve o TemplateFamily para a entidade Template
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|0|Padrão. Definir como desconhecido se o tipo de configuração não puder ser determinado.|
-|limite|1|Indica que a configuração é do limite de tipo que se refere ao número de dispositivos que um usuário tem permissão para se registrar.|
-|platformRestrictions|2|Indica que a configuração é do tipo restrição de plataforma que se refere aos tipos de dispositivos que um usuário tem permissão para se registrar.|
+|desconhecido|0|Padrão. Defina como desconhecido se o tipo de configuração não puder ser determinado.|
+|limite|1|Indica que a configuração é do limite de tipo que se refere ao número de dispositivos que um usuário tem permissão para registrar.|
+|platformRestrictions|2|Indica que a configuração é do tipo restrição de plataforma que se refere aos tipos de dispositivos que um usuário tem permissão para registrar.|
 |windowsHelloForBusiness|3|Indica que a configuração é do tipo Windows Hello que se refere ao método de autenticação que os dispositivos usariam.|
-|defaultLimit|4|Indica que a configuração é do tipo limite padrão que se refere aos tipos de dispositivos que um usuário tem permissão para se inscrever por padrão.|
-|defaultPlatformRestrictions|5|Indica que a configuração é do tipo de restrição de plataforma padrão que se refere aos tipos de dispositivos que um usuário tem permissão para se registrar por padrão.|
+|defaultLimit|4|Indica que a configuração é do tipo limite padrão que se refere aos tipos de dispositivos que um usuário tem permissão para registrar por padrão.|
+|defaultPlatformRestrictions|5|Indica que a configuração é do tipo de restrição de plataforma padrão que se refere aos tipos de dispositivos que um usuário tem permissão para registrar por padrão.|
 |defaultWindowsHelloForBusiness|6 |Indica que a configuração é do tipo padrão Windows Hello que se refere ao método de autenticação que os dispositivos usariam por padrão.|
 |defaultWindows10EnrollmentCompletionPageConfiguration|7 |Indica que a configuração é do tipo página de status de registro padrão que se refere à página de inicialização exibida durante o OOBE em dispositivos do Autopilot por padrão.|
 |windows10EnrollmentCompletionPageConfiguration|8 |Indica que a configuração é do tipo Página de status de registro que se refere à página de inicialização exibida durante o OOBE em dispositivos do Autopilot.|
-|deviceComanagementAuthorityConfiguration|9 |Indica que a configuração é do tipo Comanagement Authority que se refere às políticas aplicadas a Co-Managed dispositivos.|
-|singlePlatformRestriction|10 |Indica que a configuração é do tipo de restrição de plataforma única que se refere a tipos de dispositivos que um usuário tem permissão para se registrar.|
+|deviceComanagementAuthorityConfiguration|9 |Indica que a configuração é do tipo Comanagement Authority que se refere a políticas aplicadas a Co-Managed dispositivos.|
+|singlePlatformRestriction|10|Indica que a configuração é do tipo de restrição de plataforma única que se refere aos tipos de dispositivos que um usuário tem permissão para registrar.|
 |unknownFutureValue|11|Valor futuro desconhecido|
+|enrollmentNotificationsConfiguration|12 |Indica que a configuração é do tipo Notificação de Registro que se refere aos tipos de notificação que um usuário recebe durante o registro.|
 
 
 

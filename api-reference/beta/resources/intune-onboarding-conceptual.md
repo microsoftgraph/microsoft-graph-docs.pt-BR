@@ -1,15 +1,15 @@
 ---
-title: Dispositivos gerenciados de integração com o Intune - API Graph Microsoft
-description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) usada para a integração (configurar e inicializar) dispositivos para uma organização de locatários.
+title: Integrar dispositivos gerenciados com Intune – Microsoft API do Graph
+description: Lista o Microsoft API do Graph para Intune (REST) usados para integrar (configurar e inicializar) dispositivos para uma organização de locatários.
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 75d06ef328c6af99eaba70df8b0d3fd858921bd1
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: e005cc667656b5620778dc80bd80ffe65736b08e
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367738"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65211323"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
@@ -27,11 +27,12 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Parceiro de gerenciamento de conformidade](intune-onboarding-compliancemanagementpartner.md)
 - [Atribuição de parceiro de gerenciamento de conformidade](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Dados de gerenciamento de aplicativo e dispositivo](intune-onboarding-deviceandappmanagementdata.md)
-- [Configuração da autoridade de comanagement de dispositivo](intune-onboarding-devicecomanagementauthorityconfiguration.md)
+- [Configuração da autoridade de comanagement do dispositivo](intune-onboarding-devicecomanagementauthorityconfiguration.md)
 - [Tipo de configuração de registro de dispositivo](intune-onboarding-deviceenrollmentconfigurationtype.md)
 - [Configuração de limite do registro do dispositivo](intune-onboarding-deviceenrollmentlimitconfiguration.md)
+- [Configuração de notificação de registro de dispositivo](intune-onboarding-deviceenrollmentnotificationconfiguration.md)
 - [Restrição da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestriction.md)
-- [Configuração de restrição de plataforma de registro de dispositivo](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
+- [Configuração de restrição da plataforma de registro de dispositivo](intune-onboarding-deviceenrollmentplatformrestrictionconfiguration.md)
 - [Configuração das restrições da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [Configuração do Windows Hello para empresas do registro do dispositivo](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
 - [Nível de acesso do Exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeaccesslevel.md)
@@ -45,13 +46,15 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Política local do exchange para gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
 - [Parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartner.md)
 - [Tipo de aplicativo de parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartnerapptype.md)
-- [Atribuição de parceiro de gerenciamento de dispositivos](intune-onboarding-devicemanagementpartnerassignment.md)
+- [Atribuição de parceiro de gerenciamento de dispositivo](intune-onboarding-devicemanagementpartnerassignment.md)
 - [Estado de locatário de parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartnertenantstate.md)
 - [Tipo de plataforma do dispositivo](intune-onboarding-deviceplatformtype.md)
 - [Atribuição de configuração do registro](intune-onboarding-enrollmentconfigurationassignment.md)
+- [Opções de identidade visual de notificação de registro](intune-onboarding-enrollmentnotificationbrandingoptions.md)
+- [Tipo de modelo de notificação de registro](intune-onboarding-enrollmentnotificationtemplatetype.md)
 - [Tipo de plataforma de restrição de registro](intune-onboarding-enrollmentrestrictionplatformtype.md)
 - [Marca Intune](intune-onboarding-intunebrand.md)
-- [Autoridade MDM](intune-onboarding-mdmauthority.md)
+- [Autoridade de MDM](intune-onboarding-mdmauthority.md)
 - [Opções de seleção do portal da Microsoft Store para Empresas](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)
 - [Conector de defesa contra ameaças móveis](intune-onboarding-mobilethreatdefenseconnector.md)
 - [Estado de locatário do parceiro de ameaças móveis](intune-onboarding-mobilethreatpartnertenantstate.md)

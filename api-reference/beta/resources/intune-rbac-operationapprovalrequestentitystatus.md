@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7449a0fd644e23bd7cba49398ecb3c84ac6e739d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ffc877ddf0a724b1471c55e2b9edb0455e4da0fb
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343585"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65209125"
 ---
 # <a name="operationapprovalrequestentitystatus-resource-type"></a>Tipo de recurso operationApprovalRequestEntityStatus
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -25,13 +25,13 @@ O objeto OperationApprovalRequestEntityStatus
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|requestId|String|A ID do OperationApprovalRequest para esta entidade. Essa propriedade é somente leitura.|
-|requestExpirationDateTime|DateTimeOffset|O DateTime em que as ações na solicitação não são mais permitidas. Essa propriedade é somente leitura.|
-|requestStatus|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|O status atual da solicitação de aprovação. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
-|entityLocked|Booliano|O status da Entidade em relação às alterações, se outras solicitações são permitidas ou a Entidade está bloqueada. Essa propriedade é somente leitura.|
+|Requestid|Cadeia de Caracteres|A ID do OperationApprovalRequest para esta Entidade. Essa propriedade é somente leitura.|
+|requestExpirationDateTime|DateTimeOffset|O DateTime no qual as ações na solicitação não são mais permitidas. Essa propriedade é somente leitura.|
+|Requeststatus|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|O status atual da solicitação de aprovação. Essa propriedade é somente leitura. Os valores possíveis são: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`, `unknownFutureValue`.|
+|entityLocked|Booliano|O status da Entidade em relação às alterações, se outras solicitações são permitidas ou se a Entidade está bloqueada. Essa propriedade é somente leitura.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
