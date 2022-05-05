@@ -1,16 +1,16 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 284b8ad79870b90c2e3ce7f5c7fb451e13740b00
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c2060d0d4ce9a2fd43b7669b0ba1cc693a696579
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125205"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220231"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgPolicyRoleManagementPolicyAssignment
+Get-MgPolicyRoleManagementPolicyAssignment -Filter "scopeId eq '/' and scopeType eq 'Directory'" 
 
 ```

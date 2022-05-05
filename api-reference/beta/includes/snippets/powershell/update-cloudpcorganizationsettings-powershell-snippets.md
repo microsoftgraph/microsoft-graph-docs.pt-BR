@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c6795f8af5f18448aa9bfd5186daa3cb7abad67c
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: eb066c19fc327807ce5a602294298815be13dc94
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224998"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220190"
 ---
 ```powershell
 
@@ -15,6 +15,9 @@ $params = @{
     "@odata.type" = "#microsoft.graph.cloudPcOrganizationSettings"
     UserAccountType = "standardUser"
     OsVersion = "windows11"
+    WindowsSettings = @{
+        Language = "en-US"
+    }
 }
 
 Update-MgDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params

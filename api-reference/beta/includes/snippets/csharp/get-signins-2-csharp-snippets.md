@@ -1,24 +1,20 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b9e43128b6fc95a16cc5f7751ab6c2aab39d3d21
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1d19385ac516a0d7497699d30eda2d6769d74ca5
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095906"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220217"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var queryOptions = new List<QueryOption>()
-{
-    new QueryOption("top", "10")
-};
-
 var signIns = await graphClient.AuditLogs.SignIns
-    .Request( queryOptions )
+    .Request()
     .Filter("startsWith(appDisplayName,'Azure')")
+    .Top(10)
     .GetAsync();
 
 ```

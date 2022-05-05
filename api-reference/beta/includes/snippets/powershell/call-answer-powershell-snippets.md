@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ce65f5b9e2eba4598db00b77f1c61dc766e802f7
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5369ce02d46ace9f8e09de4708a29fc0047b296c
+ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343203"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65220209"
 ---
 ```powershell
 
@@ -20,6 +20,10 @@ $params = @{
     AcceptedModalities = @(
         "audio"
     )
+    CallOptions = @{
+        "@odata.type" = "#microsoft.graph.incomingCallOptions"
+        IsContentSharingNotificationEnabled = $true
+    }
     ParticipantCapacity = 200
 }
 
