@@ -5,12 +5,12 @@ description: O recurso do site fornece metadados e relações para um site do Sh
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 030edb54913db91f1ff69b3e8589addeae60ba95
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2eef3e7f3e46d28fe848b5693329e967c05a9a54
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134115"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191468"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -37,6 +37,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Criar permissões][]         | POST /sites/{site-id}/permissions
 | [Excluir permissão][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Atualizar permissão][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+| [Listar operações](../api/site-list-operations.md)|Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md)|Obtenha uma lista de [operações avançadas de longa duração](../resources/richlongrunningoperation.md) associadas a um [site](../resources/site.md).
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
@@ -94,7 +95,8 @@ O identificador `root` sempre faz referência ao site raiz de um determinado des
 | **items**         | Collection([baseItem][])                         | Usado para tratar de qualquer item contido neste site. Esta coleção não pode ser enumerada.
 | **lists**         | Collection([list][])                             | O conjunto de listas neste site.
 | **onenote**       | [onenote][]                                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
-| **permissions**   | Coleção ([permissão][])                       | As permissões associadas ao site. Nulas.
+| **operations**    | Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md) | A coleção de operações de longa duração no site.
+| **permissões**   | Coleção ([permissão][])                       | As permissões associadas ao site. Nulas.
 | **sites**         | Collection([site][])                             | O conjunto dos subsites neste site.
 | **LojaDeTermos**     | [microsoft.graph.termStore.store]                | O termStore padrão neste site.
 | **termosStores**    | Coleção([microsoft.graph.termStore.store])    | A coleção de lojas de termos sob este site.
@@ -148,6 +150,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
