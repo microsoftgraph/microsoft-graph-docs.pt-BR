@@ -1,23 +1,23 @@
 ---
 title: Listar roleManagementPolicyAssignments
-description: Obtenha os detalhes de todas as atribuições de política de gerenciamento de função.
+description: Obtenha os detalhes de todas as atribuições de política de gerenciamento de função, incluindo as políticas e regras associadas às Azure AD funções.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5ebb16cc0f2ee140d4c1151a88de3f4bf57b717d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: ec171a251928fab96bfb10a2a9f58143c0e204de
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207347"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246815"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>Listar roleManagementPolicyAssignments
 Namespace: microsoft.graph
 
-Obtenha os detalhes de todas as atribuições de política de gerenciamento de função.
+Obtenha os detalhes de todas as atribuições de política de gerenciamento de função, incluindo as políticas e regras associadas às Azure AD funções.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

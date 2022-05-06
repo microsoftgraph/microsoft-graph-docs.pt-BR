@@ -4,18 +4,18 @@ description: A consulta delta no Microsoft Graph permite consultar adições, ex
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: dc9480b4cb53de576490d95f94bb46df534fbec4
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: d03762372a789d76d3f38121da47d662e281b2f2
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878789"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247221"
 ---
 # <a name="get-incremental-changes-for-users"></a>Obter as alterações incrementais para usuários
 
 A [consulta delta](./delta-query-overview.md) no Microsoft Graph permite consultar adições, exclusões ou atualizações de [recursos com suporte](delta-query-overview.md#supported-resources). Ela é habilitada por meio de uma série de solicitações [delta](/graph/api/user-delta). Para usuários, a consulta delta permite descobrir alterações sem buscar todo o conjunto de usuários para comparar as alterações.
 
-Os clientes que sincronizam usuários com um repositório de perfil local podem usar a consulta delta para a sincronização completa inicial, junto com as sincronizações incrementais subsequentes. Normalmente, um cliente faria uma sincronização completa inicial de todos os usuários em um locatário e depois obteria alterações incrementais para esses usuários periodicamente.
+Os clientes que sincronizam usuários com um repositório de perfis local podem usar a consulta delta para a sincronização completa inicial e para as sincronizações incrementais subsequentes. Normalmente, um cliente faria uma sincronização completa inicial de todos os usuários em um locatário e, em seguida, obteria alterações incrementais nos usuários periodicamente.
 
 ## <a name="track-changes-to-users"></a>Acompanhar alterações a usuários
 
@@ -46,7 +46,7 @@ Para acompanhar as alterações no recurso de usuário, faça uma solicitação 
 Anote os seguintes itens:
 
 - O parâmetro de consulta `$select` opcional está incluído na solicitação para demonstrar como os parâmetros de consulta são automaticamente incluídos nas futuras solicitações.
-- A solicitação inicial não inclui um token de estado. Os tokens de estado serão usados nas solicitações subsequentes.
+- A solicitação inicial não inclui um token de estado. Os tokens de estado serão usados em solicitações subsequentes.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
@@ -54,9 +54,9 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,s
 
 ### <a name="initial-response"></a>Resposta inicial
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto da coleção [user](/graph/api/resources/user) no corpo da resposta. Pressupondo que todo o conjunto de usuários é muito grande, a resposta também incluirá um token de estado `nextLink` em um parâmetro `@odata.nextLink`.
+Se for bem-sucedido, esse método retornará o código de resposta `200 OK` e o objeto de coleção [user](/graph/api/resources/user) no corpo da resposta. Supondo que todo o conjunto de usuários seja muito grande, a resposta também incluirá um token de estado `@odata.nextLink` em um parâmetro `@odata.nextLink`.
 
-Neste exemplo, uma URL `nextLink` é retornada indicando que não há mais páginas de dados a serem recuperados na sessão. O parâmetro de consulta `$select` da solicitação inicial é codificado na URL `nextLink`.
+Neste exemplo, um URL `@odata.nextLink` é retornado indicando que há mais páginas de dados a serem recuperadas na sessão. O parâmetro de consulta `$select` da solicitação inicial é codificado no URL `@odata.nextLink`.
 
 ```http
 HTTP/1.1 200 OK
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ### <a name="nextlink-response"></a>Resposta nextLink
 
-A resposta contém outro `nextLink` com um novo valor `skipToken`, o que indica que mais alterações controladas para usuários estão disponíveis. Use a URL `nextLink` em mais solicitações até que uma URL `deltaLink` (em um parâmetro `@odata.deltaLink`) seja retornada na resposta final, mesmo que o valor seja uma matriz vazia.
+A resposta contém outro `@odata.nextLink` com um novo valor `skipToken`, o que indica que mais alterações controladas para usuários estão disponíveis. Use a URL `@odata.nextLink` em mais solicitações até que uma URL `@odata.deltaLink` (em um parâmetro `@odata.deltaLink`) seja retornada na resposta final, mesmo que o valor seja uma matriz vazia.
 
 ```http
 HTTP/1.1 200 OK
@@ -138,7 +138,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwE
 
 ### <a name="final-nextlink-response"></a>Resposta nextLink final
 
-Quando uma URL `deltaLink` é retornada, não há mais dados sobre o estado existente dos objetos de usuário. Para solicitações futuras, o aplicativo usa a URL `deltaLink` para saber mais sobre outras alterações nos usuários. Salve o `deltaToken` e use-o na URL de solicitação subsequente para descobrir mais alterações nos usuários.
+Quando um URL `@odata.deltaLink` é retornado, não há mais dados sobre o estado existente dos objetos de usuário. Para solicitações futuras, o aplicativo usa a URL `@odata.deltaLink` para conhecer outras alterações nos usuários. Salve o `deltaToken` e use-o no URL de solicitação subsequente para descobrir mais alterações nos usuários.
 
 ```http
 HTTP/1.1 200 OK
@@ -174,7 +174,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## <a name="deltalink-response"></a>Resposta deltaLink
 
-Se nenhuma alteração tiver sido feita, um `deltaLink` será retornado sem resultados - a propriedade **valor** é uma matriz vazia.
+Se nenhuma alteração tiver sido feita, um `@odata.deltaLink` será retornado sem resultados - a propriedade **valor** é uma matriz vazia.
 
 ```http
 HTTP/1.1 200 OK
@@ -187,9 +187,9 @@ Content-type: application/json
 }
 ```
 
-Se ocorreram alterações, um conjunto de objetos de usuário alterados será incluído. A resposta também contém um `nextLink`, caso haja várias páginas de alterações a serem recuperadas, ou um `deltaLink`. Implemente o mesmo padrão de seguir o `nextLink` e persistir o `deltaLink` final para chamadas futuras.
+Se ocorreram alterações, um conjunto de objetos de usuário alterados será incluído. A resposta também contém um `@odata.nextLink`, caso haja várias páginas de alterações a serem recuperadas, ou um `@odata.deltaLink`. Implemente o mesmo padrão de seguir o `@odata.nextLink` e persistir o `@odata.deltaLink` final para chamadas futuras.
 
->**Observação:** essa solicitação pode ter atrasos de replicação para usuários que foram criados, atualizados ou excluídos recentemente. Repita `nextLink` ou `deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
+>**Observação:** essa solicitação pode ter atrasos de replicação para usuários que foram criados, atualizados ou excluídos recentemente. Repita `@odata.nextLink` ou `@odata.deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
 
 ```http
 HTTP/1.1 200 OK

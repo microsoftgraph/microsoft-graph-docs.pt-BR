@@ -4,12 +4,12 @@ description: Os identificadores imutáveis permitem que seu aplicativo obtenha u
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: dbb03ebc6397152b4b9ae9e5e260a0567f477a08
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 51090217a7f92f4bf4803ad97770e4e6e3acbbef
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135890"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246906"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Obter identificadores imutáveis para recursos do Outlook
 
@@ -65,7 +65,7 @@ Você pode solicitar que o Microsoft Graph envie IDs imutáveis em notificaçõe
 
 ## <a name="immutable-id-with-delta-query"></a>ID imutável com a consulta delta
 
-Ao incluir o cabeçalho `Prefer: IdType="ImmutableId"`, você pode solicitar que o Microsoft Graph retorne IDs imutáveis em [respostas de consulta delta](delta-query-overview.md) para tipos de recursos compatíveis. Os valores `nextLink` e `deltaLink` retornados por consultas delta são compatíveis com os dois formatos de ID, então o aplicativo não precisa sincronizar novamente para poder aproveitar o recurso de ID imutável. Você pode usar o cabeçalho para obter as IDs imutáveis de agora em diante e pode [atualizar o armazenamento do aplicativo](#updating-existing-data) separadamente.
+Ao incluir o cabeçalho `Prefer: IdType="ImmutableId"`, você pode solicitar que o Microsoft Graph retorne IDs imutáveis em [respostas de consulta delta](delta-query-overview.md) para tipos de recursos compatíveis. Os valores `@odata.nextLink` e `@odata.deltaLink` retornados por consultas delta são compatíveis com os dois formatos de ID, então o aplicativo não precisa sincronizar novamente para poder aproveitar o recurso de ID imutável. Você pode usar o cabeçalho para obter as IDs imutáveis de agora em diante e pode [atualizar o armazenamento do aplicativo](#updating-existing-data) separadamente.
 
 ## <a name="updating-existing-data"></a>Atualização de dados existentes
 

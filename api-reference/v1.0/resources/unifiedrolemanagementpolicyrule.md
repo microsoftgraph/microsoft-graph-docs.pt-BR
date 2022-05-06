@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 06db472f1af4634d409f51afb788dfca80d33dda
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 1ef9d1e4998a46f503b8960c2c0c9fca452a5c08
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133880"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246976"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyRule
 
@@ -27,7 +27,7 @@ Um tipo abstrato que define as regras associadas às políticas de gerenciamento
 
 Herda de [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 Nenhum.
 
@@ -35,7 +35,7 @@ Nenhum.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador da regra. Herdado da [entidade](../resources/entity.md). Somente leitura.|
-|destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)| **Não implementado.** Define detalhes do escopo direcionado pela regra de política de gerenciamento de função. Os detalhes podem incluir o tipo de entidade de segurança, o tipo de atribuição de função e as ações que afetam uma função. Suporta `$filter` (`eq`, `ne`).|
+|destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)| Define detalhes do escopo direcionado pela regra de política de gerenciamento de função. Os detalhes podem incluir o tipo de entidade de segurança, o tipo de atribuição de função e as ações que afetam uma função. Suporta `$filter` (`eq`, `ne`).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

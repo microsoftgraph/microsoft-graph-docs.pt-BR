@@ -1,18 +1,18 @@
 ---
-title: Listar unifiedRoleDefinitions
+title: Listar roleDefinitions
 description: Obtenha uma lista de objetos unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 992c25a0e050fe8fa58cc0cb674acb0db64302d7
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: eada3530c736ba8be1e027ea4610ddcb6b69cafd
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207123"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246962"
 ---
-# <a name="list-unifiedroledefinitions"></a>Listar unifiedRoleDefinitions
+# <a name="list-roledefinitions"></a>Listar roleDefinitions
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ No momento, há suporte para os seguintes provedores RBAC:
 - directory (Azure AD)
 - gerenciamento de direitos (Azure AD)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

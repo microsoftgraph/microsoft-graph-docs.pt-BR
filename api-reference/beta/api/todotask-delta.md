@@ -1,16 +1,16 @@
 ---
 title: 'todoTask: delta'
-description: Obter um conjunto de recursos todoTask que foram adicionados, excluídos ou atualizados em um todoTaskList especificado.
+description: Obtenha um conjunto de recursos todoTask que foram adicionados, excluídos ou atualizados em um todoTaskList especificado.
 ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6917a732189ce505da75baaf716a0a2ed583b007
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d99309243461dd5d424299b21c8bbd2532fea66a
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947053"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247270"
 ---
 # <a name="todotask-delta"></a>todoTask: delta
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um conjunto de [recursos todoTask](../resources/todotask.md) que foram adicionados, excluídos ou atualizados em [um todoTaskList especificado.](../resources/todotasklist.md)
+Obtenha um conjunto de [recursos todoTask](../resources/todotask.md) que foram adicionados, excluídos ou atualizados em um [todoTaskList especificado](../resources/todotasklist.md).
 
-Uma **chamada** de função delta para recursos **todoTask** em **um todoTaskList** é semelhante a uma solicitação GET, exceto que, aplicando [adequadamente tokens](/graph/delta-query-overview) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais no **todoTask** em **todoTaskList**. Isso permite manter e sincronizar um armazenamento local dos recursos **todoTask** de um usuário sem precisar buscar todo o conjunto do servidor sempre.  
+Uma **chamada** de função delta para recursos **todoTask** em um **todoTaskList** é semelhante a uma solicitação GET, exceto que, aplicando [adequadamente tokens](/graph/delta-query-overview) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais no **todoTask** nesse **todoTaskList**. Isso permite que você mantenha e sincronize um repositório local dos recursos **todoTask** de um usuário sem precisar buscar todo o conjunto do servidor toda vez.  
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Tasks.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Tasks.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Tasks.ReadWrite    |
 |Aplicativo | Sem suporte |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,17 +40,17 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Controlar alterações em uma **coleção todoTask** incorre em uma rodada de uma ou mais chamadas de **função delta.** Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Em solicitações subsequentes, basta copiar e aplicar a URL ou da resposta anterior, pois essa URL já inclui os `nextLink` `deltaLink` parâmetros codificados e desejados.
+O controle de alterações em **uma coleção todoTask** incorre em uma rodada de uma ou mais **chamadas de função delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `@odata.nextLink` ou `@odata.deltaLink` fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Nas solicitações subsequentes, `@odata.nextLink` `@odata.deltaLink` basta copiar e aplicar a URL da resposta anterior, pois essa URL já inclui os parâmetros codificados e desejados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior para a mesma coleção `deltaLink` todoTask, indicando a conclusão dessa rodada de controle de alterações.  Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
-| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL da chamada de função delta anterior, indicando que há outras alterações a serem controladas na mesma coleção `nextLink` todoTask.  |
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `@odata.deltaLink` URL da chamada de função **delta anterior** para a mesma coleção todoTask, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `@odata.deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $skiptoken | string | Um [token de](/graph/delta-query-overview) estado retornado na `@odata.nextLink` URL da chamada de função **delta anterior** , indicando que há mais alterações a serem controladas na mesma coleção todoTask. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
-- Suporte à consulta `$select` delta , e para `$top` `$expand` todoTask. 
+- Suporte a consultas delta `$select`e `$top`todoTask `$expand` . 
 - Há suporte limitado para `$filter` e `$orderby`:
   * As únicas expressões `$filter` com suporte são `$filter=receivedDateTime+ge+{value}` ou `$filter=receivedDateTime+gt+{value}`.
   * A única expressão `$orderby` suportada é `$orderby=receivedDateTime+desc`. Se você não incluir uma expressão `$orderby`, a ordem de retorno não será garantida. 
@@ -65,11 +65,11 @@ Controlar alterações em uma **coleção todoTask** incorre em uma rodada de um
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um objeto da coleção `200 OK` [todoTask](../resources/todotask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e [um objeto de coleção todoTask](../resources/todotask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Para controlar as alterações nos recursos **todoTask** em um **todoTaskList** desde a última rodada de controle de alterações, você faria uma ou mais chamadas de função **delta** para obter o conjunto de alterações incrementais. O exemplo a seguir mostra como iniciar uma próxima rodada de controle de alterações, usando a URL na chamada de última função delta da última rodada, que contém `deltaLink` um  `deltaToken` . Essa **chamada** de função delta limita o número máximo de **todoTask** no corpo da resposta como 2.
+Para controlar as alterações nos recursos **todoTask** em um **todoTaskList** desde a última rodada de controle de alterações, você faria uma ou mais chamadas de função **delta** para obter o conjunto de alterações incrementais. O exemplo a seguir mostra como iniciar uma próxima rodada de controle de alterações, usando a URL `@odata.deltaLink` retornada da última chamada de função **delta** da última rodada, que contém um `deltaToken`. Essa **chamada** de função delta limita o número máximo de **todoTask** no corpo da resposta a 2.
  
 
 ### <a name="http-request"></a>Solicitação HTTP

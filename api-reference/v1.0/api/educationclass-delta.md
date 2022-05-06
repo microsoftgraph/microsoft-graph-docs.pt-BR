@@ -1,22 +1,22 @@
 ---
 title: 'educationClass: delta'
-description: Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection.
+description: Obtenha classes recém-criadas ou atualizadas, incluindo alterações de associação, sem precisar executar uma leitura completa de toda a coleção de classes.
 ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2cf3fd2df6183fd192c66283e038816a6590189f
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 254c72645bb4b21b7c81e20cb8ee9c4fe4809089
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62344250"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247018"
 ---
 # <a name="educationclass-delta"></a>educationClass: delta
 
 Namespace: microsoft.graph
 
-Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. Consulte [Usar consulta delta para](/graph/delta-query-overview) obter detalhes.
+Obtenha classes recém-criadas ou atualizadas, incluindo alterações de associação, sem precisar executar uma leitura completa de toda a coleção de classes. Consulte [Usar consulta delta para](/graph/delta-query-overview) obter detalhes.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,15 +51,15 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma [coleção educationClass](../resources/educationclass.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.
+Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma [coleção educationClass](../resources/educationclass.md) no corpo da resposta. A resposta também inclui uma URL `@odata.nextLink` ou uma URL `@odata.deltaLink`.
 
-- Se uma URL `nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
-- Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use a `deltaLink` URL para saber mais sobre as alterações no recurso no futuro.
+- Se uma URL `@odata.nextLink` é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `@odata.nextLink` até uma URL `@odata.deltaLink` ser incluída na resposta.
+- Se uma URL `@odata.deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Persista e use `@odata.deltaLink` a URL para saber mais sobre as alterações no recurso no futuro.
 
-Para obter detalhes, consulte [Using delta query](/graph/delta-query-overview). Por exemplo, solicitações, [consulte Obter alterações incrementais para usuários](/graph/delta-query-users).
+Para obter detalhes, consulte [Usando a consulta delta](/graph/delta-query-overview). Para obter solicitações de exemplo, [consulte Obter alterações incrementais para usuários](/graph/delta-query-users).
 
 > [!IMPORTANT]
-> os deltas educationClass não incluem classes excluídas.
+> Os deltas educationClass não incluem classes excluídas.
 
 ## <a name="examples"></a>Exemplos
 

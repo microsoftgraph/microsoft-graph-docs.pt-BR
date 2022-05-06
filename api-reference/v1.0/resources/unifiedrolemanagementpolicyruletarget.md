@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1ae571305de5d7f20635467e65d38090761b21ce
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: f0b796bb00601d33bdeba2bd2acab8277f526f4d
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133879"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247249"
 ---
 # <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyRuleTarget
 
@@ -23,15 +23,15 @@ Define detalhes do escopo direcionado pela regra de política de gerenciamento d
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Chamador|Cadeia de caracteres|O tipo de chamador que é o destino da regra de política. Os valores permitidos são: `None`, `Admin`, `EndUser`.|
-|enforcedSettings|Coleção de cadeias de caracteres|A lista de configurações de função que são impostas e não podem ser substituídas por escopos filho. Use `All` para todas as configurações.|
-|inheritableSettings|Coleção de cadeias de caracteres|A lista de configurações de função que podem ser herdadas por escopos filho. Use `All` para todas as configurações.|
+|enforcedSettings|String collection|A lista de configurações de função que são impostas e não podem ser substituídas por escopos filho. Use `All` para todas as configurações.|
+|inheritableSettings|String collection|A lista de configurações de função que podem ser herdadas por escopos filho. Use `All` para todas as configurações.|
 |Nível|Cadeia de caracteres|O tipo de atribuição de função que é o destino da regra de política. Os valores permitidos são: `Eligibility`, `Assignment`.   |
-|operations|Coleção de cadeias de caracteres|As operações de gerenciamento de função que são o destino da regra de política. Os valores permitidos são: `All`, `Activate`, `Deactivate`, `Assign`, `Update`, `Remove`, `Extend`, `Renew`.|
+|operations|String collection|As operações de gerenciamento de função que são o destino da regra de política. Os valores permitidos são: `All`, `Activate`, `Deactivate`, `Assign`, `Update`, `Remove`, `Extend`, `Renew`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|targetObjects|Coleção [directoryObject](../resources/directoryobject.md)| A coleção de usuários, grupos e entidades de serviço que estão no escopo da política. Se não for especificado, todos os objetos estão no escopo da política.|
+|targetObjects|Coleção [directoryObject](../resources/directoryobject.md)| **Não implementado.** A coleção de usuários, grupos e entidades de serviço que estão no escopo da política. Se não for especificado, todos os objetos estão no escopo da política.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

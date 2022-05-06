@@ -1,18 +1,18 @@
 ---
-title: Criar unifiedRoleDefinition
+title: Criar roleDefinitions
 description: Crie um novo objeto unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ed0b30e2e2f1a2c7c0b995cc8062a4bf0e68fde
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 6a53b70d813ba0104bcd93f525866d8c73cf378e
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061080"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246829"
 ---
-# <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
+# <a name="create-roledefinitions"></a>Criar roleDefinitions
 
 Namespace: microsoft.graph
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Crie um novo [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.
 
 No momento, há suporte para os seguintes provedores RBAC:
-- PC na nuvem
+- PC na nuvem.
 - gerenciamento de dispositivo (Intune)
 - directory (Azure AD)
 

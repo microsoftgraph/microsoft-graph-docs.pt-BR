@@ -4,12 +4,12 @@ description: O Microsoft Graph é uma API Web RESTful que permite que você aces
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 299f29cf740d1290a93c62da0724e0ebe21b6387
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7d146c6082aff2c6d1251dbb8b193f1e29d84d2f
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134014"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246598"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
 
@@ -45,7 +45,7 @@ Depois de fazer uma solicitação, uma resposta é retornada, que inclui:
 
 * Código de status – um código de status HTTP que indica o sucesso ou o fracasso. Para obter detalhes sobre os códigos de erro HTTP, confira [Erros](errors.md).
 * Mensagem de resposta – os dados que você solicitou ou o resultado da operação. A mensagem de resposta pode estar vazia em algumas operações.
-* `nextLink` – Se a solicitação retornar muitos dados, será necessário percorrê-los usando a URL retornada no `@odata.nextLink`. Para obter detalhes, confira [Paginação](paging.md).
+* `@odata.nextLink` – Se a solicitação retornar muitos dados, será necessário percorrê-los usando a URL retornada no `@odata.nextLink`. Para obter detalhes, confira [Paginação](paging.md).
 
 ## <a name="http-methods"></a>Métodos HTTP
 

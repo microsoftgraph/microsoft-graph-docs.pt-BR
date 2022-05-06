@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2df707743c55a0b1b07a0c7a8348e502dbd7da92
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 807f77d0d1b4d8030f7dbcd1fae3fdb046b9aaa7
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060518"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247004"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: delta
 
@@ -39,12 +39,12 @@ GET /oauth2PermissionGrants/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Controlar alterações incorre em uma rodada de uma ou mais **chamadas de função delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar parâmetros de consulta uma vez. Em solicitações subsequentes, copie e aplique `nextLink` a URL `deltaLink` da resposta anterior. A URL inclui os parâmetros codificados.
+Controlar alterações incorre em uma rodada de uma ou mais **chamadas de função delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `@odata.nextLink` ou `@odata.deltaLink` fornecida na resposta. Você só precisa especificar parâmetros de consulta uma vez. Em solicitações subsequentes, copie e aplique `@odata.nextLink` a URL `@odata.deltaLink` da resposta anterior. A URL inclui os parâmetros codificados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de](/graph/delta-query-overview) estado retornado na `deltaLink` URL da chamada de função **delta anterior** para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `deltaLink` URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle de alterações para essa coleção.|
-| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos. |
+| $deltatoken | string | Um [token de](/graph/delta-query-overview) estado retornado na `@odata.deltaLink` URL da chamada de função **delta anterior** para a mesma coleção de recursos, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `@odata.deltaLink` URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle de alterações para essa coleção.|
+| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `@odata.nextLink` URL da chamada de função **delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de recursos. |
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -64,10 +64,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto de coleção oauth2permissiongrant](../resources/oauth2permissiongrant.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto de coleção oauth2permissiongrant](../resources/oauth2permissiongrant.md) no corpo da resposta. A resposta também inclui uma URL `@odata.nextLink` ou uma URL `@odata.deltaLink`.
 
-- Se uma `nextLink` URL for retornada, páginas adicionais de dados poderão ser recuperadas na sessão. O **oauth2permissiongrant** continua fazendo `nextLink` solicitações usando a URL até que uma `deltaLink` URL seja incluída na resposta.
-- Se uma `deltaLink` URL for retornada, nenhum dado sobre o recurso será retornado. Persista e use `deltaLink` a URL para saber mais sobre as alterações no recurso no futuro.
+- Se uma `@odata.nextLink` URL for retornada, páginas adicionais de dados poderão ser recuperadas na sessão. O **oauth2permissiongrant** continua fazendo `@odata.nextLink` solicitações usando a URL até que uma `@odata.deltaLink` URL seja incluída na resposta.
+- Se uma `@odata.deltaLink` URL for retornada, nenhum dado sobre o recurso será retornado. Persista e use `@odata.deltaLink` a URL para saber mais sobre as alterações no recurso no futuro.
 
 Para obter detalhes, consulte [Usando a consulta delta](/graph/delta-query-overview). Para obter solicitações de exemplo, [consulte Obter alterações incrementais para usuários](/graph/delta-query-users).
 

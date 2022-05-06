@@ -1,23 +1,23 @@
 ---
 title: Obter unifiedRoleManagementPolicyAssignment
-description: Obtenha os detalhes de uma atribuição de política de gerenciamento de função e a política associada.
+description: Obtenha os detalhes de uma atribuição de política de gerenciamento de função, incluindo a política e as regras associadas à Azure AD função.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 67801e603a87ea395fae33b4ce8b3535659c301e
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 167a2682d5e59ff948a3afcf12fc5143352a62e0
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204497"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246633"
 ---
 # <a name="get-unifiedrolemanagementpolicyassignment"></a>Obter unifiedRoleManagementPolicyAssignment
 Namespace: microsoft.graph
 
-Obtenha os detalhes de uma atribuição de política de gerenciamento de função e a política associada.
+Obtenha os detalhes de uma atribuição de política de gerenciamento de função, incluindo a política e as regras associadas à Azure AD função.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

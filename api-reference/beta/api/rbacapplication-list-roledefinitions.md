@@ -1,36 +1,36 @@
 ---
-title: Listar unifiedRoleDefinitions
-description: Obter uma lista de objetos unifiedRoleDefinition.
+title: Listar roleDefinitions
+description: Obtenha uma lista de objetos unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 197ca38aee291954cdac700a15ce167aaaa6f127
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f9409d573cac02be8e870c6e7572713ec72c30ff
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669253"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246878"
 ---
-# <a name="list-unifiedroledefinitions"></a>Listar unifiedRoleDefinitions
+# <a name="list-roledefinitions"></a>Listar roleDefinitions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista de [objetos unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.
+Obtenha uma lista de [objetos unifiedRoleDefinition](../resources/unifiedroledefinition.md) para um provedor RBAC.
 
 No momento, há suporte para os seguintes provedores RBAC:
-- Cloud PC 
-- gerenciamento de dispositivos (Intune)
+- PC na nuvem. 
+- gerenciamento de dispositivo (Intune)
 - directory (Azure AD) 
 - gerenciamento de direitos (Azure AD)
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado antes](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) de escolher permissões mais privilegiadas, consulte [Permissões](/graph/permissions-reference).
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha entre as tabelas a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [ter cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher permissões mais privilegiadas, consulte [Permissões](/graph/permissions-reference).
 
-### <a name="for-a-cloud-pc-provider"></a>Para um provedor de computadores na nuvem
+### <a name="for-a-cloud-pc-provider"></a>Para um provedor de PC na nuvem
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -64,19 +64,19 @@ Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) nec
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para listar definições de função para um provedor de computadores na nuvem:
+Para listar definições de função para um provedor de PC na nuvem:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions
 ```
 
-Para listar definições de função para um provedor de gerenciamento de dispositivos:
+Para listar definições de função para um provedor de gerenciamento de dispositivo:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleDefinitions
 ```
 
-Para listar definições de função para um provedor de diretórios:
+Para listar definições de função para um provedor de diretório:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleDefinitions
@@ -89,7 +89,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte `$filter` ao parâmetro de consulta `id`em , `displayName`e propriedades `isBuiltIn` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte `$filter` ao parâmetro de consulta `id`em , `displayName`e `isBuiltIn` propriedades. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -103,11 +103,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos unifiedRoleDefinition](../resources/unifiedroledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-role-definitions-for-a-directory-provider"></a>Exemplo 1: Listar definições de função para um provedor de diretórios
+### <a name="example-1-list-role-definitions-for-a-directory-provider"></a>Exemplo 1: listar definições de função para um provedor de diretório
 
 #### <a name="request"></a>Solicitação
 
@@ -261,7 +261,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a>Exemplo 2: Listar definições de função para um provedor de computadores na nuvem
+### <a name="example-2-list-role-definitions-for-a-cloud-pc-provider"></a>Exemplo 2: listar definições de função para um provedor de PC na nuvem
 
 #### <a name="request"></a>Solicitação
 
@@ -392,7 +392,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-role-definitions-for-the-entitlement-management-provider"></a>Exemplo 3: Listar definições de função para o provedor de gerenciamento de direitos
+### <a name="example-3-list-role-definitions-for-the-entitlement-management-provider"></a>Exemplo 3: listar definições de função para o provedor de gerenciamento de direitos
 
 #### <a name="request"></a>Solicitação
 

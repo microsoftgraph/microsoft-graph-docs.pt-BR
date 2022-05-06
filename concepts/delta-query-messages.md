@@ -4,16 +4,16 @@ description: A consulta delta permite consultar adições, exclusões ou atualiz
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2df2a7bf61ed0985210e6fdbd404e38ced704b9c
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 1ad9bdefc50f4b3d2acd14643cb0a24ed74fca2d
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525488"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246381"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Obter as alterações incrementais para as mensagens em uma pasta
 
-A consulta delta permite consultar adições, exclusões ou atualizações de mensagens em uma pasta, por meio de uma série de chamadas de função [delta](/graph/api/message-delta?view=graph-rest-1.0). Os dados delta permitem manter e sincronizar um armazenamento local de mensagens do usuário, sem ter de buscar todo o conjunto de mensagens do usuário no servidor a cada vez que precise deles.
+A consulta delta permite consultar adições, exclusões ou atualizações de mensagens em uma pasta, por meio de uma série de chamadas de função [delta](/graph/api/message-delta). Os dados delta permitem manter e sincronizar um armazenamento local de mensagens do usuário, sem ter de buscar todo o conjunto de mensagens do usuário no servidor a cada vez que precise deles.
 
 A consulta delta oferece suporte à sincronização completa, que recupera todas as mensagens em uma pasta (por exemplo, a Caixa de Entrada do usuário), e à sincronização incremental, que recupera todas as mensagens que foram alteradas nessa pasta desde a última sincronização. Normalmente, você faria uma sincronização completa inicial de todas as mensagens em uma pasta e, logo após, obteria alterações incrementais para essa pasta periodicamente.
 
@@ -21,7 +21,7 @@ A consulta delta oferece suporte à sincronização completa, que recupera todas
 
 A consulta delta é uma operação por pasta. Para controlar as alterações das mensagens em uma hierarquia de pastas, você precisa controlar cada pasta individualmente.
 
-O rastreamento de alterações de mensagem em uma paste de email corresponde a uma série de solicitações GET com a função **delta**. A solicitação GET inicial é muito semelhante à maneira como você [obtém mensagens](/graph/api/user-list-messages?view=graph-rest-1.0), exceto se você incluir a função **delta**:
+O rastreamento de alterações de mensagem em uma paste de email corresponde a uma série de solicitações GET com a função **delta**. A solicitação GET inicial é muito semelhante à maneira como você [obtém mensagens](/graph/api/user-list-messages), exceto se você incluir a função **delta**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
@@ -29,12 +29,12 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 Uma solicitação GET com a função **delta** retorna:
 
-- Uma `nextLink` (que contém uma URL com chamada de função **delta** e um _skipToken_) ou
-- Uma `deltaLink` (que contém uma URL com chamada de função **delta** e _deltaToken_).
+- Uma `@odata.nextLink` (que contém uma URL com chamada de função **delta** e um _skipToken_) ou
+- Uma `@odata.deltaLink` (que contém uma URL com chamada de função **delta** e _deltaToken_).
 
-Esses tokens são [tokens de estado](delta-query-overview.md#state-tokens) que são completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL retornada da última solicitação GET para a próxima chamada de função **delta** da mesma pasta. Um `deltaLink` retornado em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `deltaLink` quando começar a próxima fase.
+Esses tokens são [tokens de estado](delta-query-overview.md#state-tokens) que são completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL retornada da última solicitação GET para a próxima chamada de função **delta** da mesma pasta. Um `@odata.deltaLink` retornado em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `@odata.deltaLink` quando começar a próxima fase.
 
-Verifique o [exemplo](#example-to-synchronize-messages-in-a-folder) abaixo para aprender a usar as URLs `nextLink` e `deltaLink`.
+Verifique o [exemplo](#example-to-synchronize-messages-in-a-folder) abaixo para aprender a usar as URLs `@odata.nextLink` e `@odata.deltaLink`.
 
 ### <a name="use-query-parameters-in-a-delta-query-for-messages"></a>Use os parâmetros de consulta em uma consulta delta para mensagens
 
@@ -114,7 +114,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-initial-response"></a>Resposta inicial de exemplo
 
-A resposta inclui duas mensagens e um cabeçalho de resposta `@odata.nextLink`. A URL `nextLink` indica que há mais mensagens na pasta para obter.
+A resposta inclui duas mensagens e um cabeçalho de resposta `@odata.nextLink`. A URL `@odata.nextLink` indica que há mais mensagens na pasta para obter.
 
 <!-- {
   "blockType": "response",
@@ -160,7 +160,7 @@ A resposta inclui duas mensagens e um cabeçalho de resposta `@odata.nextLink`. 
 
 ### <a name="sample-second-request"></a>Segundo exemplo de solicitação
 
-A segunda solicitação especifica a URL `nextLink` retornada da resposta anterior. Observe que não é mais necessário especificar o mesmo parâmetro `$select` como na solicitação inicial, pois o `skipToken` na URL `nextLink` os codifica e inclui.
+A segunda solicitação especifica a URL `@odata.nextLink` retornada da resposta anterior. Observe que não é mais necessário especificar o mesmo parâmetro `$select` como na solicitação inicial, pois o `skipToken` na URL `@odata.nextLink` os codifica e inclui.
 
 <!-- {
   "blockType": "ignored",
@@ -175,7 +175,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-second-response"></a>Segunda resposta de exemplo
 
-A segunda resposta retorna as 2 próximas mensagens na pasta e outro `nextLink`, indicando que há mais mensagens a ser lidas na pasta.
+A segunda resposta retorna as 2 próximas mensagens na pasta e outro `@odata.nextLink`, indicando que há mais mensagens a ser lidas na pasta.
 
 <!-- {
   "blockType": "response",
@@ -221,7 +221,7 @@ A segunda resposta retorna as 2 próximas mensagens na pasta e outro `nextLink`,
 
 ### <a name="sample-third-request"></a>Terceira solicitação de exemplo
 
-A terceira solicitação continua a usar a última URL do `nextLink` retornada da última solicitação de sincronização.
+A terceira solicitação continua a usar a última URL do `@odata.nextLink` retornada da última solicitação de sincronização.
 
 <!-- {
   "blockType": "ignored",
@@ -235,7 +235,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-third-and-final-response"></a>Terceira e última resposta de exemplo
 
-A terceira resposta retorna a única mensagem restante em uma pasta, e uma URL `deltaLink` que indica que a sincronização está, por enquanto, concluída para esta pasta. Salvar e usar a URL `deltaLink` para [sincronizar a mesma pasta na próxima fase](#synchronize-messages-in-the-same-folder-in-the-next-round).
+A terceira resposta retorna a única mensagem restante em uma pasta, e uma URL `@odata.deltaLink` que indica que a sincronização está, por enquanto, concluída para esta pasta. Salvar e usar a URL `@odata.deltaLink` para [sincronizar a mesma pasta na próxima fase](#synchronize-messages-in-the-same-folder-in-the-next-round).
 
 <!-- {
   "blockType": "response",
@@ -268,7 +268,7 @@ A terceira resposta retorna a única mensagem restante em uma pasta, e uma URL `
 
 ### <a name="synchronize-messages-in-the-same-folder-in-the-next-round"></a>Sincronizar mensagens na mesma pasta na próxima sessão
 
-Usando o `deltaLink` da [última solicitação](#sample-third-request) na última fase, você poderá obter somente as mensagens que sofreram alteração (por serem adicionados, excluídos ou atualizados) nesse nessa pasta desde então. Sua primeira solicitação na próxima fase terá aparência semelhante à seguinte, supondo que você prefira manter o mesmo tamanho máximo de página na resposta:
+Usando o `@odata.deltaLink` da [última solicitação](#sample-third-request) na última fase, você poderá obter somente as mensagens que sofreram alteração (por serem adicionados, excluídos ou atualizados) nesse nessa pasta desde então. Sua primeira solicitação na próxima fase terá aparência semelhante à seguinte, supondo que você prefira manter o mesmo tamanho máximo de página na resposta:
 
 <!-- {
   "blockType": "ignored",
@@ -281,7 +281,7 @@ GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages
 Prefer: odata.maxpagesize=2
 ```
 
-A resposta contém um `deltaLink`. Isso indica que todas as alterações na pasta de email remoto agora estão sincronizadas. Uma mensagem foi excluída e a mensagem foi alterada.
+A resposta contém um `@odata.deltaLink`. Isso indica que todas as alterações na pasta de email remoto agora estão sincronizadas. Uma mensagem foi excluída e a mensagem foi alterada.
 
 <!-- {
   "blockType": "response",

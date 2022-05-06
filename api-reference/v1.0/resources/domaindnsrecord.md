@@ -1,35 +1,43 @@
 ---
 title: Tipo de recurso domainDnsRecord
-description: A entidade DomainDnsRecord é usada para apresentar registros DNS.
+description: A entidade domainDnsRecord é usada para apresentar registros DNS.
 ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: fdd8dd884b19803aede0109a9c5c95bb3abe8585
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8d3c7c4d4be82eada62a68d7f5591adc574353a6
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123791"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247340"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Tipo de recurso domainDnsRecord
 
 Namespace: microsoft.graph
 
-Para cada domínio no locatário, talvez seja necessário adicionar registros DNS ao arquivo de zona DNS do domínio antes que o domínio possa ser usado por Microsoft Online Services. A **entidade DomainDnsRecord** é usada para apresentar esses registros DNS. Entidade base [para entidades DomainDnsCnameRecord,](domaindnscnamerecord.md) [DomainDnsMxRecord,](domaindnsmxrecord.md) [DomainDnsSrvRecord](domaindnssrvrecord.md) e [DomainDnsTxtRecord.](domaindnstxtrecord.md)
+Para cada [domínio](domain.md) no locatário, talvez seja necessário adicionar registros DNS ao arquivo de zona DNS do domínio antes que o domínio possa ser usado pelo Microsoft Online Services. Esses registros DNS são representados
+
+O **tipo de recurso domainDnsRecord** é usado para apresentar registros DNS como expostos por meio de **serviceConfigurationRecords** e **verificationDnsRecords**. Esse tipo de recurso é a entidade base para os seguintes recursos:
++ [domainDnsCnameRecord](domaindnscnamerecord.md)
++ [domainDnsMxRecord](domaindnsmxrecord.md)
++ [domainDnsSrvRecord](domaindnssrvrecord.md)
++ [domainDnsTxtRecord](domaindnstxtrecord.md)
++ [domainDnsUnavailableRecord](domaindnsunavailablerecord.md)
 
 ## <a name="methods"></a>Métodos
-Não há suporte para consultas diretas a esse recurso. Consulte o tópico [de domínio](domain.md) para obter informações sobre como consultar registros de serviço de domínio.
+
+Nenhum.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| Identificador exclusivo atribuído a essa entidade. Não anulada, somente leitura.|
-|isOptional|Booliano| Se for falso, esse registro deverá ser configurado pelo cliente no host DNS para que Microsoft Online Services funcione corretamente com o domínio. |
-|rótulo|String| Valor usado ao configurar o nome do registro DNS no host DNS. |
-|recordType|Cadeia de caracteres| Indica que tipo de registro DNS essa entidade representa.</br></br>O valor pode ser um dos seguintes: *CName*, *Mx,* *Srv,* *Txt*</br></br>Chave |
-|supportedService|String| Serviço ou recurso do Microsoft Online que tem uma dependência nesse registro DNS.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
-|ttl|Int32| Valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro DNS no host DNS. Não anulada |
+|id|Cadeia de caracteres| Identificador exclusivo atribuído a essa entidade. Não anulável, somente leitura.|
+|Isoptional|Booliano| If `false`, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. |
+|rótulo|Cadeia de caracteres| Valor usado ao configurar o nome do registro DNS no host DNS. |
+|recordType|Cadeia de caracteres| Indica o tipo de registro DNS que essa entidade representa.</br></br>O valor pode ser um dos seguintes: `CName`, , `Mx``Srv`, `Txt`. |
+|supportedService|Cadeia de caracteres| Serviço Online da Microsoft ou recurso que tem uma dependência nesse registro DNS.</br></br>Pode ser um dos seguintes valores: , , , , `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, , `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, , `Yammer`, , `Intune`. `Sharepoint``Email``null`|
+|Ttl|Int32| Valor a ser usado ao configurar a propriedade ttl (vida útil) do registro DNS no host DNS. Não anulável. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6293582e47eccc81ee3ac7ecbc47e9e8e6f38082
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: a042e7c3cd23ad8748075dd8e04af8c9b62b0ccc
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133928"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246738"
 ---
 # <a name="overview-of-role-management-through-the-privileged-identity-management-pim-api"></a>Visão geral do gerenciamento de funções por meio da API pim (privileged identity management)
 
@@ -62,11 +62,21 @@ A tabela a seguir lista cenários para usar o PIM para gerenciar eligibilidades 
 
 ## <a name="role-settings-and-pim"></a>Configurações de função e PIM
 
-Cada Azure AD função define configurações ou regras. Essas configurações incluem se a autenticação multifator (MFA), a justificativa ou a aprovação são necessárias para ativar uma função qualificada. Ou se você pode criar atribuições permanentes ou eligibilidades para entidades de segurança para a função. Essas configurações específicas de função determinarão as configurações que você pode aplicar ao criar ou gerenciar atribuições de função e eligibilidades por meio do PIM. No Microsoft Graph, essas configurações de função são expostas por meio do tipo de recurso [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) e métodos relacionados.
+Cada Azure AD função define configurações ou regras. Essas configurações incluem se a autenticação multifator (MFA), a justificativa ou a aprovação são necessárias para ativar uma função qualificada. Ou se você pode criar atribuições permanentes ou eligibilidades para entidades de segurança para a função. Essas configurações específicas de função determinarão as configurações que você pode aplicar ao criar ou gerenciar atribuições de função e eligibilidades por meio do PIM. No Microsoft Graph, essas configurações de função são gerenciadas por meio dos tipos de recursos [unifiedRoleManagementPolicyAssignment e unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) e seus métodos relacionados.[](unifiedrolemanagementpolicy.md)
 
 Por exemplo, suponha que, por padrão, uma função não permita atribuições ativas permanentes e defina um máximo de 15 dias para atribuições ativas. A tentativa de criar um objeto [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) `400 Bad Request` sem data de expiração retornará um código de resposta para violação da regra de expiração.
 
-Use o [tipo de recurso unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) e seus métodos relacionados para recuperar as regras que se aplicam a cada Azure AD função. Em seguida, use a API [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md) para atualizar as regras ou configurações padrão que são aplicadas a uma política atribuída a uma função Azure AD específica.
+A tabela a seguir lista cenários para usar o PIM para gerenciar Azure AD ou regras de função e as APIs a serem chamadas:
+
+|Cenários  |API  |
+|---------|---------|
+|Recuperar políticas de gerenciamento de função e regras ou configurações associadas   |   [Listar unifiedRoleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)      |
+|Recuperar uma política de gerenciamento de função e suas regras ou configurações associadas |   [Obter unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)      |
+|Recuperar as regras ou configurações definidas para a política de gerenciamento de função | [Listar regras](../api/unifiedrolemanagementpolicy-list-rules.md)       |
+|Recuperar uma regra ou configurações definidas para uma política de gerenciamento de função |  [Obter unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)      |
+|Atualizar uma regra ou configuração definida para uma política de gerenciamento de função|[Atualizar unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|
+|Obtenha os detalhes de todas as atribuições de política de gerenciamento de função, incluindo as políticas e regras ou configurações associadas às Azure AD funções |  [Listar unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md)      |
+|Obter os detalhes de uma atribuição de política de gerenciamento de função, incluindo a política e as regras ou as configurações associadas à Azure AD função |   [Obter unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)     |
 
 Para obter mais informações sobre configurações de função, [consulte Definir Azure AD configurações de função no Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings).
 

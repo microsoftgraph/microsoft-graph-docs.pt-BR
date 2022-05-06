@@ -1,25 +1,25 @@
 ---
 title: 'baseTask: delta'
-description: Obter um conjunto de recursos baseTask que foram adicionados, excluídos ou atualizados em uma baseTaskList específica.
+description: Obtenha um conjunto de recursos baseTask que foram adicionados, excluídos ou atualizados em uma baseTaskList específica.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a662af2401b7cb0e56aa1616c04b195aa0bf6cf7
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: c788b04c31b65ee46b7af0416c21bf21822b564e
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341781"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247179"
 ---
 # <a name="basetask-delta"></a>baseTask: delta
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um conjunto de [recursos baseTask](../resources/basetask.md) que foram adicionados, excluídos ou atualizados em uma [baseTaskList específica](../resources/basetasklist.md).
+Obtenha um conjunto de [recursos baseTask](../resources/basetask.md) que foram adicionados, excluídos ou atualizados em uma [baseTaskList específica](../resources/basetasklist.md).
 
-Uma **chamada** de função delta para **recursos baseTask** em uma **baseTaskList** é semelhante a uma solicitação GET, exceto que, aplicando [adequadamente tokens](/graph/delta-query-overview) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais no **baseTask** nessa **baseTaskList**. Isso permite manter e sincronizar um armazenamento local dos recursos **baseTask** de um usuário sem precisar buscar todo o conjunto do servidor sempre.
+Uma **chamada** de função delta para **recursos baseTask** em **uma baseTaskList** é semelhante a uma solicitação GET, exceto que, aplicando [adequadamente tokens](/graph/delta-query-overview) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais na **baseTask** nessa **baseTaskList**. Isso permite que você mantenha e sincronize um repositório local dos recursos **baseTask** de um usuário sem precisar buscar todo o conjunto do servidor toda vez.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,12 +43,12 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-Controlar alterações em uma **coleção baseTask** incorre em uma rodada de uma ou mais chamadas de **função delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Em solicitações subsequentes, basta copiar `nextLink` `deltaLink` e aplicar a URL ou da resposta anterior, pois essa URL já inclui os parâmetros codificados e desejados.
+O controle de alterações em **uma coleção baseTask** incorre em uma rodada de uma ou mais **chamadas de função delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `@odata.nextLink` ou `@odata.deltaLink` fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Nas solicitações subsequentes, `@odata.nextLink` `@odata.deltaLink` basta copiar e aplicar a URL da resposta anterior, pois essa URL já inclui os parâmetros codificados e desejados.
 
 | Parâmetro de consulta    | Tipo |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **delta** anterior para a mesma coleção baseTask, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
-| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **delta** anterior, indicando que há outras alterações a serem controladas na mesma coleção baseTask. |
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `@odata.deltaLink` URL da chamada de função **delta anterior** para a mesma coleção baseTask, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique toda a URL `@odata.deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações desse conjunto.|
+| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `@odata.nextLink` URL da chamada de função **delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção baseTask. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 

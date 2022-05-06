@@ -5,18 +5,18 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d91fbe92928fd339cbccab80296182fc394da8ea
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 570146bf4da429711e3ce7afe31264365bda29b9
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136384"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247347"
 ---
 # <a name="list-domainnamereferences"></a>Listar domainNameReferences
 
 Namespace: microsoft.graph
 
-Recupere uma lista [de directoryObject](../resources/directoryobject.md) com uma referência ao domínio. A lista retornada conterá todos os objetos de diretório que tenham uma dependência no domínio.
+Recupere uma lista [de directoryObject](../resources/directoryobject.md) com uma referência ao domínio. A lista retornada conterá todos os objetos de diretório que têm uma dependência no domínio.
 
 ## <a name="permissions"></a>Permissões
 
@@ -39,7 +39,7 @@ GET /domains/{id}/domainNameReferences
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte aos parâmetros `$select` `$filter` de consulta [OData e ao OData](/graph/query-parameters) para ajudar a personalizar a resposta. Você só pode filtrar pelo tipo OData dos objetos retornados, por exemplo, `/domains/{domainId}/domainNameReferences/microsoft.graph.group` e `/domains/{domainId}/domainNameReferences/microsoft.graph.user`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

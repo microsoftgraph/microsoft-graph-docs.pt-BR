@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: delta'
-description: Obter contatos organizacionais recém-criados, atualizados ou excluídos sem precisar executar uma leitura completa de toda a coleção.
+description: Obtenha contatos organizacionais recém-criados, atualizados ou excluídos sem precisar executar uma leitura completa de toda a coleção.
 ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9f7a3e34188c892af5a759f2f7c9bc43a6acca87
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 1ce29c1e2b55dd0f68e24a25c705e0d9e1bcea60
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671948"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247298"
 ---
 # <a name="orgcontact-delta"></a>orgContact: delta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter contatos organizacionais recém-criados, atualizados ou excluídos sem precisar executar uma leitura completa de toda a coleção. Confira [controle de alterações](/graph/delta-query-overview) para obter detalhes.
+Obtenha contatos organizacionais recém-criados, atualizados ou excluídos sem precisar executar uma leitura completa de toda a coleção. Confira [controle de alterações](/graph/delta-query-overview) para obter detalhes.
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para começar a controlar as alterações, você faz uma solicitação incluindo a função delta no recurso contatos.
+Para começar a controlar as alterações, você faz uma solicitação, incluindo a função delta no recurso de contatos.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -42,22 +42,22 @@ GET /contacts/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-O controle de alterações em contatos organizacionais incorre em uma rodada de uma ou mais chamadas **de função delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta.
+O controle de alterações em contatos organizacionais incorre em uma rodada de uma ou mais **chamadas de função delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `@odata.nextLink` ou `@odata.deltaLink` fornecida na resposta.
 
-Você só precisa especificar os parâmetros de consulta uma vez na frente.
+Você só precisa especificar os parâmetros de consulta uma vez antecipadamente.
 
-Em solicitações subsequentes, copie e aplique a `nextLink` URL ou `deltaLink` da resposta anterior. Essa URL já inclui os parâmetros codificados.
+Em solicitações subsequentes, copie e aplique `@odata.nextLink` a URL `@odata.deltaLink` da resposta anterior. Essa URL já inclui os parâmetros codificados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **delta** anterior para a mesma coleção de contatos da organização, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `deltaLink` URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle de alterações para essa coleção.|
-| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `nextLink` URL da chamada de função **delta** anterior, indicando que há outras alterações a serem controladas na mesma coleção de contatos da organização. |
+| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `@odata.deltaLink` URL da chamada de função **delta anterior** para a mesma coleção de contatos da organização, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `@odata.deltaLink` URL inteira, incluindo esse token, na primeira solicitação da próxima rodada de controle de alterações para essa coleção.|
+| $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na `@odata.nextLink` URL da chamada de função **delta** anterior, indicando que há mais alterações a serem controladas na mesma coleção de contatos da organização. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 
-Este método dá suporte a parâmetros opcionais de consulta OData para ajudar a personalizar a resposta.
+Esse método dá suporte a parâmetros de consulta OData opcionais para ajudar a personalizar a resposta.
 
-- Você pode usar um parâmetro `$select` de consulta como em qualquer solicitação GET para especificar apenas as propriedades de que você precisa para obter o melhor desempenho. A propriedade **id** sempre será retornada.
+- Você pode usar um parâmetro `$select` de consulta como em qualquer solicitação GET para especificar apenas as propriedades necessárias para obter o melhor desempenho. A propriedade **id** sempre será retornada.
 - Há suporte limitado para `$filter`:
   - A única expressão `$filter` suportada é para controlar alterações em um objeto específico: `$filter=id+eq+{value}`. É possível filtrar vários objetos. Por exemplo, `https://graph.microsoft.com/beta/contacts/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Há um limite de 50 objetos filtrados.
 
@@ -65,33 +65,33 @@ Este método dá suporte a parâmetros opcionais de consulta OData para ajudar a
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | &lt;token&gt; de portador. Obrigatório.|
-| Preferir | return=minimal <br><br>Especificar esse cabeçalho com uma solicitação que usa `deltaLink` retorna somente as propriedades do objeto que foram alteradas desde a última vez. Opcional. |
+| Preferir | return=minimal <br><br>Especificar este cabeçalho com uma solicitação que utiliza um `@odata.deltaLink` retornaria apenas as propriedades do objeto que foram alteradas desde a última rodada. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto da coleção orgContact](../resources/orgcontact.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou `deltaLink`.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [de coleção orgContact](../resources/orgcontact.md) no corpo da resposta. A resposta também inclui uma URL `@odata.nextLink` ou `@odata.deltaLink`.
 
-- Se uma URL `nextLink` for retornada:
-  - Existem páginas de dados adicionais a recuperar na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` até uma URL `deltaLink` ser incluída na resposta.
+- Se uma URL `@odata.nextLink` for retornada:
+  - Isso indica que há páginas adicionais de dados a serem recuperados na sessão. O aplicativo continua fazendo solicitações usando o URL `@odata.nextLink` até que um URL `@odata.deltaLink` seja incluído na resposta.
   - A resposta inclui o mesmo conjunto de propriedades como na solicitação de consulta delta inicial. Assim você pode capturar o estado atual de todos os objetos ao iniciar o ciclo de delta.
 
-- Se uma URL `deltaLink` for retornada:
-  - Isso indica que não há mais dados sobre o estado existente do recurso a ser retornado. Salve e use a URL `deltaLink` para saber mais sobre alterações ao recurso na próxima fase.
-  - Você pode especificar o cabeçalho `Prefer:return=minimal` para incluir somente os valores de resposta das propriedades que foram alteradas desde a hora em que o `deltaLink` foi emitido.
+- Se uma URL `@odata.deltaLink` for retornada:
+  - Isso indica que não há mais dados sobre o estado existente do recurso a ser retornado. Salve e use a URL `@odata.deltaLink` para saber mais sobre alterações ao recurso na próxima fase.
+  - Você pode especificar o cabeçalho `Prefer:return=minimal` para incluir somente os valores de resposta das propriedades que foram alteradas desde a hora em que o `@odata.deltaLink` foi emitido.
 
 ### <a name="default-return-the-same-properties-as-initial-delta-request"></a>Padrão: retornar as mesmas propriedades de uma solicitação delta inicial
 
-Por padrão, as solicitações usando `deltaLink` ou `nextLink` retornam as mesmas propriedades selecionadas na consulta delta inicial das seguintes maneiras:
+Por padrão, as solicitações usando `@odata.deltaLink` ou `@odata.nextLink` retornam as mesmas propriedades selecionadas na consulta delta inicial das seguintes maneiras:
 
 - Se a propriedade foi alterada, o novo valor será incluído na resposta. Isso inclui propriedades definidas com valor nulo.
 - Se a propriedade não foi alterada, o valor antigo será incluído na resposta.
 - Se a propriedade nunca tiver sido definida antes, ela não será incluída na resposta.
 
 
-> **Observação:** Com esse comportamento, não é possível dizer se uma propriedade está mudando olhando para a resposta. Além disso, as respostas delta tendem a ser grandes porque contêm todos os valores de propriedade - conforme mostrado no [Exemplo 2](#example-2-selecting-three-properties).
+> **Nota:** Com esse comportamento, não é possível saber se uma propriedade está sendo alterada examinando a resposta. Além disso, as respostas delta tendem a ser grandes porque contêm todos os valores de propriedade , conforme mostrado no [Exemplo 2](#example-2-selecting-three-properties).
 
 ### <a name="alternative-return-only-the-changed-properties"></a>Alternativa: retornar somente as propriedades alteradas
 
@@ -100,7 +100,7 @@ Adicionar o cabeçalho `prefer:return=minimal` opcional na solicitação resulta
 - Se a propriedade foi alterada, o novo valor será incluído na resposta. Isso inclui propriedades definidas com valor nulo.
 - Se a propriedade não foi alterada, a propriedade não será incluído na resposta de forma alguma. (Diferente do comportamento padrão.)
 
-> **Observação:** é possível adicionar o cabeçalho a uma solicitação `deltaLink` a qualquer momento no ciclo de delta. O header afeta apenas o conjunto de propriedades incluídas na resposta e não afeta como a consulta delta é executado. Veja o [Exemplo 3](#example-3-alternative-minimal-response-behavior).
+> **Observação:** é possível adicionar o cabeçalho a uma solicitação `@odata.deltaLink` a qualquer momento no ciclo de delta. O cabeçalho afeta apenas o conjunto de propriedades incluídas na resposta e não afeta como a consulta delta é executada. Veja o [Exemplo 3](#example-3-alternative-minimal-response-behavior).
 
 ## <a name="examples"></a>Exemplos
 
@@ -108,7 +108,7 @@ Adicionar o cabeçalho `prefer:return=minimal` opcional na solicitação resulta
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Como não há parâmetro `$select` , um conjunto padrão de propriedades é rastreado e retornado.
+Este é um exemplo de solicitação. Como não há nenhum parâmetro `$select` , um conjunto padrão de propriedades é rastreado e retornado.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/contacts/delta
 
 #### <a name="response"></a>Resposta
 
-A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta.
+A seguir, um exemplo da resposta ao usar `@odata.deltaLink` obtido da inicialização de consulta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -229,7 +229,7 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 
 #### <a name="response"></a>Resposta
 
-A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que todas as três propriedades foram incluídas na resposta e não se sabe quais foram alteradas desde que o `deltaLink` foi obtido.
+A seguir, um exemplo da resposta ao usar `@odata.deltaLink` obtido da inicialização de consulta. Observe que todas as três propriedades foram incluídas na resposta e não se sabe quais foram alteradas desde que o `@odata.deltaLink` foi obtido.
 
 <!-- {
   "blockType": "response",
@@ -301,7 +301,7 @@ Prefer: return=minimal
 
 #### <a name="response"></a>Resposta
 
-A seguir, um exemplo da resposta ao usar `deltaLink` obtido da inicialização de consulta. Observe que a `mail` propriedade não está incluída, o que significa que ela não foi alterada desde a última consulta delta; `jobTitle` `displayName` e estão incluídas, o que significa que seus valores foram alterados.
+A seguir, um exemplo da resposta ao usar `@odata.deltaLink` obtido da inicialização de consulta. Observe que a `mail` propriedade não está incluída, o que significa que ela não foi alterada desde a última consulta delta e `jobTitle` `displayName` está incluída, o que significa que seus valores foram alterados.
 
 <!-- {
   "blockType": "response",

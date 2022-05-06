@@ -1,18 +1,18 @@
 ---
-title: Criar unifiedRoleDefinition
+title: Criar roleDefinitions
 description: Crie um novo objeto unifiedRoleDefinition.
 ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 582d0c3619779c3291a0cf2bfaa06bab62a4fee1
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: d49fc85b0e16bf7b3377a413123b31588293bf38
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060721"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246997"
 ---
-# <a name="create-unifiedroledefinition"></a>Criar unifiedRoleDefinition
+# <a name="create-roledefinitions"></a>Criar roleDefinitions
 
 Namespace: microsoft.graph
 
