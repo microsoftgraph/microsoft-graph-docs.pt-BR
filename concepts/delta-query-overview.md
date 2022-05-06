@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 45232a25e17aedbd47c208ee31c7f21b51ca4986
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: 4331c661889868bdbf7735e7ef476739d63621fc
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65102987"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247074"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -25,22 +25,22 @@ O padrão típico de chamada corresponde ao que segue:
 1. O aplicativo começa chamando uma solicitação GET com a função delta no recurso desejado.
 2. O Microsoft Graph envia uma resposta que contém o recurso solicitado e um [token de estado](#state-tokens).
 
-     a.  Se uma URL `nextLink` é retornada, poderá haver páginas de dados adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` para recuperar todas as páginas de dados até que uma URL `deltaLink` seja retornada na resposta.
+     a.  Se uma URL `@odata.nextLink` é retornada, poderá haver páginas de dados adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `@odata.nextLink` para recuperar todas as páginas de dados até que uma URL `@odata.deltaLink` seja retornada na resposta.
 
-     b.  Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Em solicitações futuras, o aplicativo usa a URL `deltaLink` para inteirar-se das alterações feitas no recurso.
+     b.  Se uma URL `@odata.deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Em solicitações futuras, o aplicativo usa a URL `@odata.deltaLink` para inteirar-se das alterações feitas no recurso.
 
-3. Quando o aplicativo precisa saber das alterações no recurso, ele faz uma nova solicitação usando a URL `deltaLink` recebida na etapa 2. Esta solicitação *pode* ser feita imediatamente após concluir a etapa 2 ou quando o aplicativo verifica as alterações.
-4. O Microsoft Graph retorna uma resposta, descrevendo alterações no recurso desde a solicitação anterior e em uma URL `nextLink` ou uma URL `deltaLink`.
+3. Quando o aplicativo precisa saber das alterações no recurso, ele faz uma nova solicitação usando a URL `@odata.deltaLink` recebida na etapa 2. Esta solicitação *pode* ser feita imediatamente após concluir a etapa 2 ou quando o aplicativo verifica as alterações.
+4. O Microsoft Graph retorna uma resposta, descrevendo alterações no recurso desde a solicitação anterior e em uma URL `@odata.nextLink` ou uma URL `@odata.deltaLink`.
 
->**Observação:** recursos armazenados no Azure Active Directory (por exemplo, usuários e grupos) dão suporte a cenários do tipo "sincronizar a partir de agora". Isso permite que você ignore as etapas 1 e 2 acima (se você não está interessado em recuperar o estado completo do recurso) e peça para conferir o último `deltaLink` em vez disso. Acrescente `$deltaToken=latest` à função `delta`, e a resposta conterá um `deltaLink` e nenhum dado do recurso. Os recursos do OneDrive e do Microsoft Office SharePoint Online também oferecem suporte a esse recurso. Para recursos no OneDrive e no Microsoft Office SharePoint Online, anexe `token=latest` em vez disso.
+>**Observação:** recursos armazenados no Azure Active Directory (por exemplo, usuários e grupos) dão suporte a cenários do tipo "sincronizar a partir de agora". Isso permite que você ignore as etapas 1 e 2 acima (se você não está interessado em recuperar o estado completo do recurso) e peça para conferir o último `@odata.deltaLink` em vez disso. Acrescente `$deltaToken=latest` à função `delta`, e a resposta conterá um `@odata.deltaLink` e nenhum dado do recurso. Os recursos do OneDrive e do Microsoft Office SharePoint Online também oferecem suporte a esse recurso. Para recursos no OneDrive e no Microsoft Office SharePoint Online, anexe `token=latest` em vez disso.
 
 >**Observação:** a função de consulta Delta geralmente é referida ao acrescentar `/delta` ao nome do recurso. No entanto, `/delta` é um atalho para o nome totalmente qualificado `/microsoft.graph.delta` que você vê em solicitações geradas pelos SDKs do Microsoft Graph.
 
->**Observação:** a solicitação inicial para a função de consulta delta (nenhum token delta ou skip) retornará os recursos existentes na coleção. Os recursos que foram criados e excluídos antes da consulta delta inicial não serão retornados. As atualizações feitas antes da solicitação inicial são resumidas no recurso retornado como seu estado mais recente.
+>**Observação:** A solicitação inicial para a função de consulta delta (sem `$deltaToken` ou `$skipToken`) retornará os recursos que existem atualmente na coleção. Os recursos que foram criados e excluídos antes da consulta delta inicial não serão retornados. As atualizações feitas antes da solicitação inicial são resumidas no recurso retornado como seu estado mais recente.
 
 ### <a name="state-tokens"></a>Tokens de estado
 
-Um GET de consulta delta sempre inclui uma URL especificada em um cabeçalho de resposta `nextLink` ou `deltaLink`. A URL `nextLink` inclui um _skipToken_ e uma URL `deltaLink` inclui um _deltaToken_.
+Um GET de consulta delta sempre inclui uma URL especificada em um cabeçalho de resposta `@odata.nextLink` ou `@odata.deltaLink`. A URL `@odata.nextLink` inclui um `$skipToken` e uma URL `@odata.deltaLink` inclui um `$deltaToken`.
 
 Esses tokens são opacos para o cliente. Os seguintes detalhes são o que você precisa saber sobre eles:
 
@@ -48,17 +48,17 @@ Esses tokens são opacos para o cliente. Os seguintes detalhes são o que você 
 
 - Os tokens de estado também codificam e incluem outros parâmetros da consulta (como `$select`) especificados na solicitação de consulta delta inicial. Portanto, ele não é necessário repeti-los em solicitações de consulta delta subsequentes.
 
-- Ao realizar a consulta delta, você pode copiar e aplicar a URL `nextLink` ou `deltaLink` à próxima chamada de função **delta** sem precisar inspecionar o conteúdo da URL, incluindo seu token de estado.
+- Ao realizar a consulta delta, você pode copiar e aplicar a URL `@odata.nextLink` ou `@odata.deltaLink` à próxima chamada de função **delta** sem precisar inspecionar o conteúdo da URL, incluindo seu token de estado.
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solicitação inicial. O Microsoft Graph codifica automaticamente o parâmetro especificado em `nextLink` ou `deltaLink` fornecidos na resposta. O aplicativo de chamada só precisa especificar os parâmetros de consulta desejados uma vez antecipados. O Microsoft Graph adiciona os parâmetros especificados automaticamente para todas as solicitações subsequentes.
+Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solicitação inicial. O Microsoft Graph codifica automaticamente o parâmetro especificado em `@odata.nextLink` ou `@odata.deltaLink` fornecidos na resposta. O aplicativo de chamada só precisa especificar os parâmetros de consulta desejados uma vez antecipados. O Microsoft Graph adiciona os parâmetros especificados automaticamente para todas as solicitações subsequentes.
 
 Observe o suporte geral limitado dos seguintes parâmetros de consulta opcionais:
 
 - `$orderby`
 
-    Não assuma que uma sequência específica das respostas tenha retornado de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência do `nextLink` e leve isso em conta em sua lógica de mesclagem.
+    Não assuma que uma sequência específica das respostas tenha retornado de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência do `@odata.nextLink` e leve isso em conta em sua lógica de mesclagem.
 - `$top`
 
     O número de objetos em cada página pode variar dependendo do tipo de recurso e do tipo de alterações feitas no recurso.
@@ -71,7 +71,7 @@ Para os recursos de [usuário](/graph/api/resources/user) e [grupo](/graph/api/r
 - Não há suporte para `$top`.
 - Não há suporte para `$orderby`.
 - Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
-- O `$select` também tem suporte para `manager` e `members` propriedade de navegação para usuários e grupos, respectivamente. A seleção dessas propriedades permite controlar as alterações feitas no gerenciador de usuário e nas associações de grupo.
+- `$select` também suporta às propriedades de navegação do **gerente** e **membros** para usuários e grupos, respectivamente. A seleção dessas propriedades permite controlar as alterações feitas no gerenciador de usuário e nas associações de grupo.
 
 - Os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por ID de objeto. Por exemplo, a seguinte solicitação retorna alterações para os grupos que correspondem às IDs especificadas no filtro de consulta.
 
@@ -89,17 +89,17 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - Instâncias atualizadas são representadas por seus **id** com *pelo menos* as propriedades que foram atualizadas, mas podem ser incluídas propriedades adicionais.
 
-- Relações entre os usuários e os grupos são representadas como anotações na representação do recurso padrão. Essas anotações usam o formato `propertyName@delta`. As anotações são incluídas na resposta da solicitação de consulta inicial delta.
+- Os relacionamentos nos usuários e grupos são representados como anotações na representação de recursos padrão. Essas anotações usam o formato **propertyName@delta**. As anotações estão incluídas na resposta da solicitação da consulta delta inicial.
 
-As instâncias removidas são representadas por sua **id** e um objeto `@removed`. O objeto `@removed` pode incluir informações adicionais sobre o porquê de a instância ter sido removida. Por exemplo, "@removed": {"reason": “changed”}.
+As instâncias removidas são representadas pela sia **ID** e um objeto **@removido**. O objeto **@removido** pode incluir informações adicionais sobre por que a instância foi removida. Por exemplo,  `"@removed": {"reason": "changed"}`.
 
-Possíveis motivos @removed podem ser *changed* ou *deleted*.
+Os possíveis motivos de ser **@removido** podem ser `changed` ou `deleted`.
 
-- *Alterado* indica que o item foi excluído e poderá ser restaurado de [deletedItems](/graph/api/resources/directory).
+- `changed` indica que o item foi excluído e poderá ser restaurado de [deletedItems](/graph/api/resources/directory).
 
-- *Deleted* indica que o item foi excluído e não pode ser restaurado.
+- `deleted` indica que o item foi excluído e não pode ser restaurado.
 
-O objeto `@removed` pode ser retornado na resposta de consulta delta inicial e nas respostas rastreadas (deltaLink). Os clientes que usam solicitações de consulta delta devem ser designados para lidar com esses objetos nas respostas.
+O objeto **@removido** pode ser retornado na resposta inicial da consulta delta e nas respostas rastreadas (deltaLink). Os clientes que usam solicitações de consulta delta devem ser projetados para lidar com esses objetos nas respostas.
 
 >**Observação:** é possível que uma única entidade seja incluída várias vezes na resposta, caso essa entidade tenha sido alterada várias vezes e sob determinadas condições. As consultas Delta permitem aos aplicativos listar todas as alterações, mas não garantem que as entidades sejam unificadas em uma única resposta.
 
@@ -185,7 +185,7 @@ As propriedades de navegação não são suportadas. Por exemplo, você não pod
 
 Esperar atrasos variáveis entre o tempo que uma alteração é feita em uma instância de recurso, que pode ser por meio de uma interface de aplicativo ou API, e o tempo em que a alteração controlada é refletida em uma resposta de consulta Delta.
 
-Às vezes, as alterações que ocorreram no objeto podem não ser indicadas ao selecionar `nextLink` ou `deltaLink`. Isso porque algumas solicitações podem ter atrasos de replicação para objetos que foram criados, atualizados ou excluídos recentemente. Repita `nextLink` ou `deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
+Às vezes, as alterações que ocorreram no objeto podem não ser indicadas ao selecionar `@odata.nextLink` ou `@odata.deltaLink`. Isso porque algumas solicitações podem ter atrasos de replicação para objetos que foram criados, atualizados ou excluídos recentemente. Repita `@odata.nextLink` ou `@odata.deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
 
 ### <a name="national-clouds"></a>Nuvens nacionais
 
@@ -197,7 +197,7 @@ O aplicativo deve estar preparado para repetições, que ocorrem quando a mesma 
 
 ### <a name="synchronization-reset"></a>Sincronização redefinida
 
-A consulta delta pode retornar um código de resposta de `410 (gone)` e um cabeçalho de **Localização** contendo um URL de solicitação com um token delta vazio (igual à consulta inicial). Isso é uma indicação de que o aplicativo deve reiniciar com uma sincronização completa do locatário de destino. Isso geralmente acontece para evitar inconsistência de dados devido à manutenção interna ou migração do locatário de destino.
+A consulta Delta pode retornar um código de resposta de `410 (gone)` e um cabeçalho de **Localização** contendo um URL de solicitação com um `$deltaToken` vazio (o mesmo que a consulta inicial). Isso é uma indicação de que o aplicativo deve reiniciar com uma sincronização completa do locatário de destino. Isso geralmente acontece para evitar inconsistência de dados devido à manutenção interna ou migração do locatário de destino.
 
 ### <a name="token-duration"></a>Duração do token
 

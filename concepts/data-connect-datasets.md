@@ -4,20 +4,20 @@ description: Descreve os conjuntos de dados com suporte aos tipos de armazenamen
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 1ac242bf99707916e23f2cccfaba8a05cd62749d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 6d73482dbf2b8b0c85851970460836094a982ad3
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336598"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247191"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Conjuntos de dados, regiões e coletores com suporte da Conexão de dados do Microsoft Graph
 
-A Conexão de Dados do Microsoft Graph dá suporte a vários conjuntos de dados, regiões de dados e locais de armazenamentos do Microsoft Azure. Este tópico descreve os conjuntos de dados suportados e como acessar os esquemas de conjunto de dados, regiões suportadas do Microsoft 365 e do Microsoft Azure, e os locais de armazenamento que a Conexão de Dados usa por meio do Azure Data Factory.
+A Conexão de Dados do Microsoft Graph dá suporte a vários conjuntos de dados, regiões de dados e locais de armazenamentos do Microsoft Azure. Este artigo descreve os conjuntos de dados suportados e como acessar os esquemas de conjunto de dados, as regiões do Microsoft Azure e do Microsoft 365 suportadas e os locais de armazenamento que o Data Connect utiliza por meio do Azure Data Factory.
 
 ## <a name="datasets"></a>Conjuntos de dados
 
-A conexão de dados suporta hoje os seguintes conjuntos de dados. Para exibir esquemas de cada conjunto de dados, crie um novo conjunto de dados no Azure Data Factory e use a guia Esquema para exibi-los.
+No momento o Microsoft Graph Data Connect suporta os conjuntos de dados a seguir. Para exibir os esquemas de cada conjunto de dados, crie um novo conjunto de dados no Azure Data Factory e utilize a guia Esquema para exibi-lo.
 
 | Nome do conjunto de dados | Descrição | Amostra | Esquema |
 |--------------|-------------|--------|--------|
@@ -42,27 +42,29 @@ A conexão de dados suporta hoje os seguintes conjuntos de dados. Para exibir es
 
 ## <a name="regions"></a>Regiões
 
-A Conexão de Dados dá suporte à extração de dados de diversas regiões do Microsoft 365. Para migrar os dados com sucesso do centro de dados do Microsoft 365 para seu armazenamento do Microsoft Azure, a instância do Azure Data Factory e o local de armazenamento do Azure devem mapear para uma região com suporte para o local dos dados do Microsoft 365. A tabela a seguir indica quais regiões do Microsoft 365 têm suporte e as regiões do Azure correspondentes necessárias para a movimentação de dados.
+O Microsoft Graph Data Connect suporta a extração de dados de várias regiões diferentes do Microsoft 365. Para mover com êxito os dados do datacenter do Microsoft 365 para o armazenamento do Microsoft Azure, a instância Azure Data Factory e o local de armazenamento do Azure devem mapear para uma região suportada no local dos dados do Microsoft 365. 
 
-| Região do Office      | Região do Azure                                                                                                                                                               |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Ásia – Pacífico**   | <ul><li>Leste da Ásia</li><li>Sudeste da Ásia</li></ul>                                                                                                                         |
-| **Austrália**      | <ul><li>Leste da Austrália</li><li>Sudeste da Austrália</li></ul>                                                                                                               |
-| **Europa**         | <ul><li>Norte da Europa</li><li>Europa Ocidental</li></ul>                                                                                                                         |
-| **América do Norte**  | <ul><li>EUA Central</li><li>Leste dos EUA</li><li>Leste 2 dos EUA</li><li>Centro-Norte dos EUA</li><li>Centro-Sul dos EUA</li><li>Centro-Oeste dos EUA</li><li>Oeste dos EUA</li><li>Oeste 2 dos EUA</li></ul> |
-| **Reino Unido** | <ul><li>Sul do Reino Unido</li><li>Oeste do Reino Unido do Reino Unido</li></ul>                                                                                                                                 |
+A tabela a seguir indica quais regiões do Microsoft 365 têm suporte e as regiões do Azure correspondentes necessárias para a movimentação de dados.
+
+| Região do Office      | Região do Azure                                                   |
+| ------------------ | ---------------------------------------------------------------|
+| **Ásia – Pacífico**   | <ul><li>Leste da Ásia</li><li>Sudeste da Ásia</li></ul>             |
+| **Austrália**      | <ul><li>Leste da Austrália</li><li>Sudeste da Austrália</li></ul>   |
+| **Europa**         | <ul><li>Norte da Europa</li><li>Europa Ocidental</li></ul>             |
+| **América do Norte**  | <ul><li>EUA Central</li><li>Leste dos EUA</li><li>Leste 2 dos EUA</li><li>Centro-Norte dos EUA</li><li>Centro-Sul dos EUA</li><li>Centro-Oeste dos EUA</li><li>Oeste dos EUA</li><li>Oeste 2 dos EUA</li></ul>                                            |
+| **Reino Unido** | <ul><li>Sul do Reino Unido</li><li>Oeste do Reino Unido do Reino Unido</li></ul>                     |
 
 ## <a name="sinks"></a>Coletores
 
-Coletores são os locais de saída que o Data Factory usa para colocar os dados no armazenamento do Azure. A Conexão de Dados é compatível agora com os seguintes tipos de coletores:
+Os coletores são os locais da saída que o Azure Data Factory utiliza para colocar dados no armazenamento do Azure. A Conexão de Dados é compatível agora com os seguintes tipos de coletores:
 
-- [Azure Data Lake Storage Gen1 (ADLS Gen1)](/azure/data-lake-store/data-lake-store-overview)
-- [Azure Data Lake Storage Gen2 (ADLS Gen2)](/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure Data Lake Storage Gen1](/azure/data-lake-store/data-lake-store-overview)
+- [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Storage Blob](/azure/storage/blobs/storage-blobs-overview)
 
 Os coletores possuem as seguintes características:
 
-- Os arquivos de saída serão no formato Linhas JSON. O formato de saída foi corrigido e não há suporte para modificar o formato de saída. No entanto, você pode usar o Azure Data Factory para copiar o resultado de um pipeline do Data Connect para outro mecanismo de armazenamento (como o Banco de Dados SQL do Azure).
+- Os arquivos de saída são do formato de linhas JSON. O formato da saída é fixo e não tem suporte para a modificação do formato da saída. No entanto, você pode usar o Azure Data Factory para copiar o resultado de um pipeline de Conexão de Dados em outro mecanismo de armazenamento (como o Banco de Dados SQL do Azure).
 - A autenticação da Entidade de Serviço é o único mecanismo de autenticação com suporte para todos os tipos de coletores em uma atividade de cópia com o Microsoft 365 como a origem.
 - Ao usar o Armazenamento de Blob do Azure como coletor, certifique-se de que o aplicativo tem acesso de Colaborador de Dados de Armazenamento de Blob para o local de Armazenamento de Blob do Azure.
 

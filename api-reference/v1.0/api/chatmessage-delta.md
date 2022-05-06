@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2aaa800fd49bc87f6dbe6f107d72a4818e8bc6d6
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 57395fefb1b01b3ea445b34b6b7f860ddb41af9d
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443048"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247144"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -26,10 +26,10 @@ Para obter as respostas de uma mensagem, utilize use a operação [listar respos
 
 Uma solicitação GET com a função delta traz como resultado uma destas opções:
 
-- Uma `nextLink` (que contém uma URL com uma chamada de função **delta** e uma `skipToken`) ou
-- Uma `deltaLink` (que contém uma URL com uma chamada de função **delta** e `deltaToken`).
+- Uma `@odata.nextLink` (que contém uma URL com uma chamada de função **delta** e uma `skipToken`) ou
+- Uma `@odata.deltaLink` (que contém uma URL com uma chamada de função **delta** e `deltaToken`).
 
-Os tokens de estado são totalmente opacos para o cliente. Para continuar com uma rodada de controle de alterações, copie e aplique a `nextLink` ou `deltaLink` URL retornada da última solicitação GET para a próxima chamada de função delta para essa mesma exibição de calendário. Um `deltaLink` retornado em uma resposta significa que a fase atual do controle de alterações está concluída. Você pode salvar e usar a `deltaLink` URL quando começar a recuperar as alterações adicionais (mensagens alteradas ou postadas depois da aquisição `deltaLink`).
+Os tokens de estado são totalmente opacos para o cliente. Para continuar com uma rodada de controle de alterações, copie e aplique a `@odata.nextLink` ou `@odata.deltaLink` URL retornada da última solicitação GET para a próxima chamada de função delta para essa mesma exibição de calendário. Um `@odata.deltaLink` retornado em uma resposta significa que a fase atual do controle de alterações está concluída. Você pode salvar e usar a `@odata.deltaLink` URL quando começar a recuperar as alterações adicionais (mensagens alteradas ou postadas depois da aquisição `@odata.deltaLink`).
 
 Para obter mais informações, consulte a documentação da [consulta Delta](/graph/delta-query-overview).
 
@@ -56,16 +56,16 @@ GET /teams/{team-id}/channels/{channel-id}/messages/delta
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
 
-O controle de alterações nas mensagens de canal gera uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na parte do token da URL `nextLink` ou `deltaLink` fornecida na resposta.
+O rastreamento de alterações nas mensagens do canal incorre em uma rodada de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), deverá especificá-lo na solicitação inicial **delta**. O Microsoft Graph codifica automaticamente quaisquer parâmetros especificados na parte do token do URL `@odata.nextLink` ou `@odata.deltaLink` fornecido na réplica.
 
 Você só precisa especificar uma vez antecipadamente os parâmetros de consulta desejados.
 
-Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior, já que essa URL inclui os parâmetros codificados desejados.
+Em solicitações subsequentes, copie e aplique a URL `@odata.nextLink` ou `@odata.deltaLink` da resposta anterior, já que essa URL inclui os parâmetros codificados desejados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| `$deltatoken` | string | Um [token de estado](/graph/delta-query-overview) retornado na `deltaLink` URL da chamada de função **delta** anterior, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `deltaLink` URL, incluindo esse token na primeira solicitação da próxima rodada do acompanhamento de alterações dessa coleção.|
-| `$skiptoken` | string | Um [ token de estado](/graph/delta-query-overview) retornado na URL`nextLink` da chamada de função **delta** anterior indicando que há mais alterações a serem controladas. |
+| `$deltatoken` | string | Um [token de estado](/graph/delta-query-overview) retornado na `@odata.deltaLink` URL da chamada de função **delta** anterior, indicando a conclusão dessa rodada de controle de alterações. Salve e aplique a `@odata.deltaLink` URL, incluindo esse token na primeira solicitação da próxima rodada do acompanhamento de alterações dessa coleção.|
+| `$skiptoken` | string | Um [ token de estado](/graph/delta-query-overview) retornado na URL`@odata.nextLink` da chamada de função **delta** anterior indicando que há mais alterações a serem controladas. |
 
 ### <a name="optional-odata-query-parameters"></a>Parâmetros de consulta OData opcionais
 
@@ -85,13 +85,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [chatMessage](../resources/chatmessage.md) no corpo da resposta. A resposta também inclui uma URL `nextLink` ou uma URL `deltaLink`.
+Se for bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [chatMessage](../resources/chatmessage.md) no corpo da resposta. A resposta também inclui um `@odata.nextLink` URL ou um `@odata.deltaLink` URL.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-initial-synchronization"></a>Exemplo 1: sincronização inicial
 
-O exemplo a seguir mostra uma série de três solicitações para sincronizar as mensagens num dado canal. Há cinco mensagens no canal.
+O exemplo a seguir mostra uma série de três solicitações para sincronizar as mensagens em um determinado canal. Há cinco mensagens no canal.
 
 - Etapa 1:[solicitação inicial](#initial-request) e [resposta](#initial-request-response).
 - Etapa 2:[segunda solicitação](#second-request) e [resposta](#second-request-response)
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="initial-request-response"></a>Resposta inicial da solicitação
 
-A resposta inclui duas mensagens e um `@odata.nextLink`cabeçalho de resposta com um `skipToken`. A URL `nextLink` indica que há mais mensagens na pasta a serem obtidas.
+A resposta inclui duas mensagens e um cabeçalho de resposta `@odata.nextLink` com um `skipToken`. O URL `@odata.nextLink` indica que há mais mensagens no canal para serem obtidas.
 
 <!-- {
   "blockType": "response",
@@ -247,7 +247,7 @@ Content-type: application/json
 
 #### <a name="second-request"></a>Segunda solicitação
 
-A segunda solicitação especifica a URL `nextLink` retornada na resposta anterior. Observe que não é mais necessário especificar os mesmos parâmetros principais definidos na solicitação inicial, pois o `skipToken` na URL `nextLink` os codifica e inclui.
+A segunda solicitação especifica o `@odata.nextLink` URL retornado da resposta anterior. Observe que não é mais necessário especificar os mesmos parâmetros principais da solicitação inicial, pois o `skipToken` no `@odata.nextLink` URL os codifica e inclui.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -387,7 +387,7 @@ Content-type: application/json
 
 #### <a name="third-request"></a>Terceira solicitação
 
-A terceira solicitação continua a usar a URL `nextLink` mais recente retornada da última solicitação de sincronização.
+A terceira solicitação continua a usar a URL `@odata.nextLink` mais recente retornada da última solicitação de sincronização.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -427,7 +427,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="third-request-response"></a>Resposta da terceira solicitação
 
-A terceira resposta retorna as únicas mensagens restantes no canal e um `@odata.deltaLink` cabeçalho de resposta com um `deltaToken` que indica que todas as mensagens no canal foram lidas. Salve e use a URL `deltaLink` para consultar novas mensagens a partir desse ponto em diante.
+A terceira resposta retorna as únicas mensagens restantes no canal e um `@odata.deltaLink` cabeçalho de resposta com um `deltaToken` que indica que todas as mensagens no canal foram lidas. Salve e use a URL `@odata.deltaLink` para consultar novas mensagens a partir desse ponto em diante.
 
 <!-- {
   "blockType": "response",
@@ -527,7 +527,7 @@ Content-type: application/json
 
 ### <a name="example-2-retrieving-additional-changes"></a>Exemplo 2: recuperar alterações adicionais
 
-Usando o `deltaLink` da última solicitação na última fase, você poderá obter somente as mensagens que sofreram alteração (por terem sido adicionadas, excluídas ou atualizadas) nesse canal desde então. Supondo que você prefira manter o mesmo tamanho máximo de página na resposta, sua solicitação terá um formato semelhante a este :
+Usando o `@odata.deltaLink` da última solicitação na última rodada, você será capaz de obter apenas as mensagens que foram alteradas (ao serem adicionadas ou atualizadas) naquele canal desde então. Sua solicitação será semelhante à seguinte, supondo que você prefira manter o mesmo tamanho máximo da página na réplica:
 
 #### <a name="request"></a>Solicitação
 

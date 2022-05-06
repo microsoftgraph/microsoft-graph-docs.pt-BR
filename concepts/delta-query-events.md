@@ -4,18 +4,18 @@ description: 'O modo de visualização de calendário em um conjunto de eventos 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2734559d7c43b39cd3e144b1c78d2ebd5111fd27
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 9af9c72f3228dc11ef41884ea9e178494ce0a2ad
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525495"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247235"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obter as alterações incrementais para os eventos em um modo de exibição de calendário 
 
 Usando a consulta delta, você pode obter eventos novos, atualizados ou excluídos em um calendário especificado, ou dentro de uma coleção de eventos definida (como um modo de exibição de calendário) no calendário. Este artigo descreve o último - obter essas alterações incrementais nos eventos em um modo de exibição de calendário. 
 
-> **Observação** O recurso para o primeiro - obter alterações incrementais nos eventos em um calendário não vinculado a um período fixo de datas de início e de término - está disponível atualmente apenas na versão beta. Para saber mais, confira a função[delta](/graph/api/event-delta?view=graph-rest-beta).
+> **Observação** A funcionalidade para o primeiro - obter alterações incrementais em eventos em um calendário não vinculado a um intervalo fixo de datas de início e término - está atualmente disponível somente na versão beta. Para obter mais informações, consulte a função [delta](/graph/api/event-delta).
 
 Uma exibição de calendário é uma coleção de eventos em um intervalo de data/hora (.. /me/calendarview) do calendário padrão ou de algum outro calendário especificado de um usuário ou de um calendário de grupo. Os eventos retornados podem incluir instâncias individuais ou ocorrências e exceções de uma série recorrente. Os dados delta permitem que você mantenha e sincronize um repositório local de eventos de um usuário, sem precisar buscar todo o conjunto de eventos do usuário do servidor todas as vezes.
 
@@ -25,7 +25,7 @@ A consulta delta oferece suporte à sincronização completa que recupera todos 
 
 A consulta delta para eventos em uma exibição de calendário é específica para um calendário e um intervalo de data/hora que você especificar. Para controlar as alterações em vários calendários, você precisa acompanhar cada calendário individualmente. 
 
-O rastreamento de alterações de evento em um modo de exibição de calendário normalmente corresponde a uma série de eventos de uma ou mais solicitações GET com a função [delta](/graph/api/event-delta?view=graph-rest-1.0). A solicitação GET inicial é muito semelhante à maneira como você [lista uma calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0), exceto se você incluir a função **delta**. A seguir está a solicitação delta GET inicial de um modo de exibição de calendário no calendário padrão do usuário conectado:
+O acompanhamento de alterações de eventos em uma modo de exibição calendário normalmente é uma rodada de uma ou mais solicitações GET com a função [delta](/graph/api/event-delta). A solicitação GET inicial é muito parecida com a maneira como você [lista um calendarView](/graph/api/calendar-list-calendarview), exceto que você inclui a função **delta**. A seguir está a solicitação inicial GET delta de uma modo de exibição calendário no calendário padrão do usuário conectado:
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -33,14 +33,14 @@ GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datet
 
 Uma solicitação GET com a função **delta** retorna:
 
-- Uma `nextLink` (que contém uma URL com chamada de função **delta** e um _skipToken_) ou 
-- Uma `deltaLink` (que contém uma URL com chamada de função **delta** e _deltaToken_).
+- Uma `@odata.nextLink` (que contém uma URL com uma chamada de função **delta** e uma `$skipToken`) ou 
+- Uma `@odata.deltaLink` (que contém uma URL com uma chamada de função **delta** e `$deltaToken`).
 
 Esses tokens são [tokens de estado](delta-query-overview.md#state-tokens) que codificam os parâmetros _startDateTime_ e _endDateTime_, bem como qualquer outro parâmetro de consulta em sua solicitação GET de consulta delta inicial. Não é necessário incluir esses parâmetros em solicitações subsequentes, uma vez que eles são codificados nos tokens.
 
-Estabeleça tokens de estado que sejam completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL `nextLink` ou `deltaLink` retornada da última solicitação GET para a próxima chamada de função **delta** do mesmo modo de exibição de calendário. Uma `deltaLink` retornada em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `deltaLink` quando começar a próxima fase.
+Estabeleça tokens de estado que sejam completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL `@odata.nextLink` ou `@odata.deltaLink` retornada da última solicitação GET para a próxima chamada de função **delta** do mesmo modo de exibição de calendário. Uma `@odata.deltaLink` retornada em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `@odata.deltaLink` quando começar a próxima fase.
 
-Verifique o [exemplo](#example-to-synchronize-events-in-a-calendar-view) abaixo para aprender a usar essas URLs `nextLink` e `deltaLink`.
+Verifique o [exemplo](#example-to-synchronize-events-in-a-calendar-view) abaixo para aprender a usar essas URLs `@odata.nextLink` e `@odata.deltaLink`.
 
 ### <a name="use-query-parameters-in-a-delta-query-for-calendar-view"></a>Use os parâmetros de consulta de uma consulta delta para a visualização de calendário
 
@@ -50,7 +50,7 @@ Verifique o [exemplo](#example-to-synchronize-events-in-a-calendar-view) abaixo 
 
 ### <a name="optional-request-header"></a>Cabeçalhos de solicitação opcionais
 
-Cada solicitação GET de consulta delta retorna um conjunto de um ou mais eventos na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, `Prefer: odata.maxpagesize={x}`, para configurar o número máximo de eventos em uma resposta.
+Cada solicitação GET de consulta delta retorna um conjunto de um ou mais eventos na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, `Prefer: odata.maxpagesize={x}`, para configurar o máximo de eventos em uma resposta.
 
 
 ## <a name="example-to-synchronize-events-in-a-calendar-view"></a>Exemplo de sincronização de eventos em um modo de exibição de calendário
@@ -107,7 +107,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-initial-response"></a>Resposta inicial de exemplo
 
-A resposta inclui dois eventos e um `@odata.nextLink`cabeçalho de resposta com um `skipToken`. A URL `nextLink` indica que há mais eventos no modo de exibição de calendário a ser obtidos.
+A resposta inclui dois eventos e um `@odata.nextLink`cabeçalho de resposta com um `skipToken`. A URL `@odata.nextLink` indica que há mais eventos no modo de exibição de calendário a ser obtidos.
 
 <!-- {
   "blockType": "response",
@@ -183,7 +183,7 @@ Content-type: application/json
 
 ### <a name="step-2-sample-second-request"></a>Etapa 2: segundo exemplo de solicitação
 
-A segunda solicitação especifica a URL `nextLink` retornada da resposta anterior. Observe que não é mais necessário especificar os mesmos parâmetros _startDateTime_ e _endDateTime_ como na solicitação inicial, conforme o `skipToken` na URL `nextLink` os codifica e inclui.
+A segunda solicitação especifica a URL `@odata.nextLink` retornada da resposta anterior. Observe que não é mais necessário especificar os mesmos parâmetros _startDateTime_ e _endDateTime_ como na solicitação inicial, conforme o `skipToken` na URL `@odata.nextLink` os codifica e inclui.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -216,7 +216,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-second-response"></a>Segunda resposta de exemplo 
 
-A segunda resposta retorna os 2 próximos eventos no modo de visualização de calendário e outro `nextLink`, indicando que há mais eventos a ser obtidos no modo de exibição de calendário.
+A segunda resposta retorna os 2 próximos eventos no modo de visualização de calendário e outro `@odata.nextLink`, indicando que há mais eventos a ser obtidos no modo de exibição de calendário.
 
 <!-- {
   "blockType": "response",
@@ -293,7 +293,7 @@ Content-type: application/json
 
 ### <a name="step-3-sample-third-request"></a>Etapa 3: terceira solicitação de exemplo
 
-A terceira solicitação continua a usar as últimas `nextLink` retornadas da última solicitação de sincronização. 
+A terceira solicitação continua a usar as últimas `@odata.nextLink` retornadas da última solicitação de sincronização. 
  
 
 
@@ -327,7 +327,7 @@ Prefer: odata.maxpagesize=2
 
 ### <a name="sample-third-and-final-response"></a>Terceira e última resposta de exemplo
 
-A terceira resposta retorna o único evento restante no modo de exibição calendário e uma URL `deltaLink` a indicar que a sincronização está concluída para esse modo de exibição de calendário. Salvar e usar a URL `deltaLink` para [sincronizar esse modo de exibição de calendário na próxima fase](#the-next-round-sample-first-request).
+A terceira resposta retorna o único evento restante no modo de exibição calendário e uma URL `@odata.deltaLink` a indicar que a sincronização está concluída para esse modo de exibição de calendário. Salvar e usar a URL `@odata.deltaLink` para [sincronizar esse modo de exibição de calendário na próxima fase](#the-next-round-sample-first-request).
 
 
 <!-- {
@@ -381,7 +381,7 @@ Content-type: application/json
 
 ### <a name="the-next-round-sample-first-request"></a>A próxima fase: primeira solicitação de exemplo
 
-Usando o `deltaLink` da [última solicitação](#step-3-sample-third-request) na última fase, você poderá obter somente os eventos que sofreram alteração (por serem adicionados, excluídos ou atualizados) nesse modo de exibição de calendário desde então. Sua primeira solicitação na próxima fase terá aparência semelhante à seguinte, supondo que você prefira manter o mesmo tamanho máximo de página na resposta:
+Usando o `@odata.deltaLink` da [última solicitação](#step-3-sample-third-request) na última fase, você poderá obter somente os eventos que sofreram alteração (por serem adicionados, excluídos ou atualizados) nesse modo de exibição de calendário desde então. Sua primeira solicitação na próxima fase terá aparência semelhante à seguinte, supondo que você prefira manter o mesmo tamanho máximo de página na resposta:
 
 
 # <a name="http"></a>[HTTP](#tab/http)
