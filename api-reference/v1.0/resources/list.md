@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: O recurso de lista representa uma lista em um site.
 doc_type: resourcePageType
-ms.openlocfilehash: f57507bc75e4e672e0799ac5b0758db5cf16fda6
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 2de3af4c781ad325b59eeb9dff762c47a23dff20
+ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854491"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65191644"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -35,6 +35,7 @@ Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.m
 | [Excluir item de lista][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Criar item de lista][]      | POST /lists/{list-id}
 | [Obter canal WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
+| [Listar operações](../api/list-list-operations.md)| GET /lists/{list-id}/operations
 
 [Obter lista]: ../api/list-get.md
 [Criar lista]: ../api/list-create.md
@@ -80,6 +81,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
 | **items**         | Collection([listItem][])         | Todos os itens contidos na lista.
 | **columns**       | Collection([columnDefinition][]) | A coleção de definições de campo para esta lista.
 | **contentTypes**  | Collection([contentType][])      | A coleção de tipos de conteúdo presentes nesta lista.
+| **operations** | Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md) | A coleção de operações de execução longa na lista. 
 | **assinaturas** | Conjunto([assinatura][])     | O conjunto de assinaturas na lista.
 
 [baseItem]: baseitem.md
@@ -123,6 +125,7 @@ Veja a seguir uma representação JSON do recurso.
     "hidden": false,
     "template&quot;: &quot;documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
+  "operations": [ { "@odata.type": "microsoft.graph.richLongRunningOperation" }],
   "system": false,
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 
