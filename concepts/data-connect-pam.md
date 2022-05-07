@@ -1,59 +1,59 @@
 ---
 title: Integração do Conexão de Dados do Microsoft Graph com o Privileged Access Management
-description: A Conexão de Dados do Microsoft Graph depende do Privileged Access Management para permitir que os administradores do Microsoft 365 aprovem solicitações de movimentação de dados.
+description: A Conexão de Dados do Microsoft Graph depende do Privileged Access Management (PAM) para permitir que os administradores do Microsoft 365 aprovem solicitações de movimentação de dados.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: b7ac532d3a175e2ef93a77c8413b245da3bf1ec8
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: c013afa8de8fa6ed8fbd38d037e536c058eb6ad1
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724016"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65246731"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Integração do Conexão de Dados do Microsoft Graph com o Privileged Access Management
 
-A Conexão de Dados do Microsoft Graph depende do Privileged Access Management (PAM) para permitir que os administradores do Microsoft 365 aprovem solicitações de movimentação de dados. Os pipelines da Conexão de Dados devem ser aprovados por um membro aprovador de solicitação de acesso a dados especificado pelo administrador do Microsoft 365 durante a ativação. Para configurar o grupo aprovador, consulte [Configurar seu locatário Microsoft 365 e habilitar Conexão de Dados do Microsoft Graph](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
+A Conexão de Dados do Microsoft Graph depende do Privileged Access Management (PAM) para permitir que os administradores do Microsoft 365 aprovem solicitações de movimentação de dados. Os pipelines da Conexão de Dados devem ser aprovados por um membro do grupo aprovador de solicitação de acesso a dados especificado pelo administrador do Microsoft 365 durante a ativação. Para configurar o grupo aprovador, consulte [Configurar seu locatário Microsoft 365 e habilitar Conexão de Dados do Microsoft Graph](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
 
-Emails de solicitação de aprovação serão enviados a todos os membros do grupo aprovador para notificá-los quando atividades de cópia solicitam acesso para extrair dados do Microsoft 365. Aprovadores podem aprovar ou negar essas solicitações, especificar um grupo de usuários que deve ser apagado dos dados extraídos ou revogar uma solicitação anteriormente aprovada. As aprovações são válidas por 6 meses, sendo necessária uma aprovação por atividade de cópia no pipeline do Azure Data Factory.
+Emails de solicitação de aprovação são enviados a todos os membros do grupo aprovador para notificá-los quando atividades de cópia solicitam acesso para extrair dados do Microsoft 365. Aprovadores podem aprovar ou negar essas solicitações, especificar um grupo de usuários que deve ser apagado dos dados extraídos ou revogar uma solicitação anteriormente aprovada. As aprovações são válidas por seis meses, sendo necessária uma aprovação por atividade de cópia no pipeline do Azure Data Factory.
 
-Todas as solicitações sempre incluirão os seguintes detalhes sobre o conjunto de dados e os usuários cujos dados estão sendo extraídos:
+Cada solicitação sempre inclui os seguintes detalhes sobre o conjunto de dados e os usuários sobre os quais os dados estão sendo extraídos:
 
 * **Solicitante**: O usuário que solicitou o pipeline.
-* **Duração**: se aprovado, a validade aprovação. Sempre 4.320 horas (6 meses).
+* **Duração**: se aprovada, por quanto tempo a aprovação persiste, que é sempre 4320 horas (6 meses).
 * **Motivo**: motivo para a solicitação, normalmente "um aplicativo instalado para sua organização exige autorização para obter acesso aos dados do Office 365."
 * **Solicitado em**: data e hora da solicitação.
 * **ID da solicitação**: A ID da solicitação, usada para fins de aprovação.
 * **TabelaDados**: O conjunto de dados a ser extraído (por exemplo, itens enviados).
 * **Colunas**: A lista de colunas a ser extraída a partir da tabela de dados (por exemplo, DataHorárioEnviado).
 * **GruposPermitidos**: o grupo ou grupos de usuários em relação a quem o pipeline está extraindo os dados. Se a lista de grupos estiver vazia, o pipeline está solicitando o acesso aos dados de todos os usuários no locatário.
-* **Escopo de Pesquisa de Usuário**: o predicado usado para filtrar os usuários. Somente se aplica se a solicitação for para todos os usuários no locatário. Se esta estiver vazia, nenhum filtro é aplicado.
+* **Escopo de Pesquisa de Usuário**: o predicado usado para filtrar os usuários. Isso só se aplica se a solicitação for para todos os usuários no locatário. Se esta estiver vazia, nenhum filtro é aplicado.
 * **UriSaída**: o caminho de saída no qual os dados extraídos serão armazenados.
 * **IdLocatárioOrigem**: a ID do locatário cujos dados são extraídos.
 * **IdentidadeInstalador**: a identidade do instalador do aplicativo.
 
-Os seguintes campos na solicitação estarão disponíveis apenas em alguns casos:
+Os campos a seguir na solicitação estão disponíveis apenas em alguns casos:
 
-* Nome do aplicativo e URI do Marketplace (disponível somente para aplicativos instalados pelo Azure Marketplace).
+* **Nome do aplicativo** e **URI do Marketplace** (disponível somente para aplicativos instalados pelo Azure Marketplace).
 * Links para a política de privacidade e termos de serviço do aplicativo (disponível somente se o aplicativo fornecer).
 * As políticas de conformidade que o aplicativo impõe, como a criptografia de dados inativos no local de armazenamento de saída (disponível somente se o aplicativo fornecer e se o aplicativo foi instalado pelo Azure Marketplace).
-* Lista de negações – o grupo de usuários que podem ter sido apagados dos dados extraídos. Esse campo está vazio como parte da solicitação de conjuntos de dados compatíveis com a depuração de privacidade de dados extraídos. Pode ser preenchido por um membro do grupo aprovador que autoriza a solicitação no momento da aprovação.
+* **Lista de negações** – o grupo de usuários que podem ter sido apagados dos dados extraídos. Esse campo está vazio como parte da solicitação de conjuntos de dados compatíveis com a depuração de privacidade de dados extraídos. Pode ser preenchido por um membro do grupo aprovador que autoriza a solicitação no momento da aprovação.
 
 ## <a name="approving-requests"></a>Aprovar solicitações
 
-Os pipelines da Conexão de Dados devem ser aprovados por um membro de um grupo aprovador da solicitação de acesso aos dados. Aprovadores podem aprovar, recusar ou revogar pipelines usando a experiência do usuário PAM ou o módulo do PowerShell do Exchange Online.
+Os pipelines do Conector de Dados do Microsoft Graph devem ser aprovados por um membro de um grupo aprovador de solicitação de acesso a dados. Aprovadores podem aprovar, recusar ou revogar pipelines usando a experiência do usuário PAM ou o módulo do PowerShell do Exchange Online.
 
-### <a name="approving-denying-and-revoking-requests-by-using-powershell"></a>Aprovar, negar e revogar solicitações usando o PowerShell
+### <a name="approve-deny-and-revoke-requests-by-using-powershell"></a>Aprovar, negar e revogar solicitações usando o PowerShell
 
 Faça o seguinte para interagir com uma solicitação usando o módulo do PowerShell do Exchange Online:
 
-1. Instalar o módulo do Powershell do Microsoft Exchange Online. Para obter mais informações, confira [Conectar-se ao PowerShell do Exchange Online usando a autenticação de multifator](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+1. Instalar o módulo do Powershell do Microsoft Exchange Online. Para obter mais informações, confira [Conectar-se ao PowerShell do Exchange Online usando a autenticação de multifator](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
-2. Conectar-se ao PowerShell do Exchange Online usando a autenticação multifator (MFA). Para obter mais informações, confira [Conectar-se ao PowerShell do Exchange Online usando a autenticação multifator](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+2. Conectar-se ao PowerShell do Exchange Online usando a MFA (autenticação multifator). Para obter mais informações, confira [Conectar-se ao PowerShell do Exchange Online usando a autenticação multifator](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
     > [!NOTE]
     > **Observação**: você não precisa habilitar a autenticação multifator para sua organização para usar estas etapas ao se conectar ao PowerShell do Exchange Online. Conexão MFA cria um token OAuth usado pelo PAM para assinar suas solicitações.
 
-3. Entrar com sua conta. Observe que você deve fazer parte do grupo aprovador de acesso aos dados definido para aprovar, recusar ou revogar solicitações. Os usuários convidados não podem aprovar solicitações, mesmo se estiverem no grupo aprovador.
+3. Entrar com sua conta. Você deve fazer parte do grupo aprovador de acesso a dados configurado para poder aprovar, negar ou revogar solicitações. Os usuários convidados não podem aprovar solicitações, mesmo se estiverem no grupo aprovador.
 
    ```powershell
    Connect-EXOPSSession
@@ -61,14 +61,15 @@ Faça o seguinte para interagir com uma solicitação usando o módulo do PowerS
 
 4. Localizar todas as solicitações pendentes.
    > [!NOTE]
-   > O valor na propriedade **Identidade** será usado para identificar e aprovar ou recusar a solicitação. Observe que esse valor será usado no parâmetro -RequestId.
+   > O valor na propriedade **Identidade** é usado para identificar e aprovar ou recusar a solicitação. Observe que esse valor será usado no parâmetro -RequestId.
 
    ```powershell
    Get-ElevatedAccessRequest | ?{$_.RequestStatus -eq 'Pending'}
    ```
 
 5. Veja mais detalhes no campo **contexto** da solicitação em que você está interessado.
-   >**Observação:** o campo contexto da solicitação de acesso aos dados descreve os parâmetros e as propriedades de atividade de cópia.
+   > [!NOTE]
+   > O campo contexto da solicitação de acesso aos dados descreve os parâmetros e as propriedades de atividade de cópia.
 
    ```powershell
    Get-ElevatedAccessRequest -RequestId ($requestId).Context | ConvertFrom-Json
@@ -117,7 +118,7 @@ Também é possível revogar as solicitações já aprovadas anteriormente. Seme
    Revoke-ElevatedAccessAuthorization -Comment "Revoking this request!" -RequestId $requestId
    ```
 
-   Você receberá uma resposta semelhante ao seguinte exemplo.
+   Você recebe uma resposta semelhante ao seguinte exemplo:
 
    ```powershell
    AuthorizedBy          : user@tenant.onmicrosoft.com
@@ -134,32 +135,31 @@ Também é possível revogar as solicitações já aprovadas anteriormente. Seme
    DateUpdatedUtc        : 7/24/2018 9:12:55 PM
    ```
 
-### <a name="approving-denying-and-revoking-requests-by-using-the-pam-user-experience"></a>Aprovar, negar e revogar solicitações usando a experiência de usuário do PAM
+### <a name="approve-deny-and-revoke-requests-by-using-the-pam-user-experience"></a>Aprovar, negar e revogar solicitações usando a experiência do usuário do PAM
 
-Faça o seguinte para interagir com uma solicitação usando a experiência Web do PAM:
+Use as etapas a seguir para interagir com uma solicitação usando a experiência do usuário do PAM:
 
-1. Entrar no portal de administração do Microsoft 365 usando credenciais de administrador e vá para a página [Experiência do usuário de aprovação do Gerenciamento de acesso Privilegiado](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess). Isso mostrará todas as solicitações de acesso (pendentes/aprovadas/expiradas/negadas).
+1. Entre no portal de administração do Microsoft 365 usando credenciais de administrador e, em seguida, vá para a página [Experiência do usuário de aprovação do Gerenciamento de acesso Privilegiado](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess). Esta página mostrará todas as solicitações de acesso (pendentes/aprovadas/expiradas/negadas).
 
-2. Na página resultante, escolha a solicitação que você está interessado. Para selecionar uma lista de negação para depuração de privacidade, clique na lista suspensa **ListaNegações**, selecione o grupo que deve ser apagado e selecione **Aprovar**.
+2. Na página resultante, escolha a solicitação que você está interessado. Para selecionar uma lista de negação para depuração de privacidade, selecione a lista suspensa **DenyList**, selecione o grupo que precisa ser depurado e, em seguida, selecione **Aprovar**.
 
-3. Para revogar uma solicitação aprovada anteriormente, escolha a solicitação aprovada a ser revogada e clique em **Revogar**. Se a próxima tentativa de mover dados usar essa aprovação, ela irá falhar.
+3. Para revogar uma solicitação aprovada anteriormente, escolha a solicitação aprovada a ser revogada e clique em **Revogar**. A próxima tentativa de mover dados usando essa aprovação falha.
 
 ### <a name="approval-behavior"></a>Comportamento de aprovação
 
-Aprovação de solicitações da Conexão de Dados têm características específicas que devem ser consideradas:
+Aprovação de solicitações da Conexão de Dados do Microsoft Graph têm características específicas das quais você deve estar ciente:
 
-* As solicitações de aprovação se baseiam no Azure Data Factory, pipeline e copiam nomes de atividades. Toda execução de atividades de cópia verificará se o administrador do Microsoft 365 aprovou a solicitação de atividade de cópia para acessar dados do Office, e também validará parâmetros importantes de atividades de cópia executadas em relação aos parâmetros de aprovação.
-* Em certas condições, uma nova solicitação de aprovação será acionada automaticamente. Um aprovador da Conexão de Dados precisará aprovar a nova solicitação antes que a atividade de cópia acesse dados do Microsoft 365.
-* Se os parâmetros de execução da atividade de cópia forem alterados, uma nova solicitação de aprovação será acionada.
-* Se o Data Factory, pipeline ou nomes de atividades de cópia forem alterados, uma nova solicitação de aprovação será acionada.
-* Por exemplo: uma nova aprovação será necessária se a tabela de dados ou um conjunto de colunas que a atividade de cópia está acessando for alterado.
-* As atividades de cópia precisarão de aprovação a cada seis meses. Se a aprovação original foi aprovada há seis meses, uma nova solicitação de aprovação será acionada automaticamente.
-* Se o aprovador de acesso aos dados do Microsoft 365 negou uma solicitação de aprovação ou revogou uma aprovada anteriormente, a atividade de cópia irá falhar continuamente. Você deve trabalhar com o aprovador para entender o motivo da negação ou revogação e corrigir os parâmetros da atividade de cópia de acordo com o caso. Será necessário implantar uma nova atividade de cópia ou alterar o nome da atividade de cópia existente para acionar uma nova solicitação de aprovação.
-* Se o aprovador de acesso aos dados do Microsoft 365 não der seguimento à solicitação de aprovação em até 24 horas, ela irá expirar. Uma nova solicitação será enviada a cada 24 horas para aprovação. Se você vir suas atividades de cópia aguardando aprovação (no estágio Consentimento Pendente), então trabalhe com os aprovadores de acesso aos dados do Microsoft 365 para que sua solicitação seja aprovada.
+* As solicitações de aprovação são baseadas no Azure Data Factory, pipeline e nomes de atividade de cópia. Cada execução da atividade de cópia verifica se o administrador do Microsoft 365 aprovou a solicitação da atividade de cópia para acessar dados do Office e valida os parâmetros importantes da atividade de cópia executados nos parâmetros da aprovação.
+* Em determinadas condições, uma nova solicitação de aprovação é disparada automaticamente. Um aprovador da Conexão de Dados deve aprovar a nova solicitação antes que a atividade de cópia acesse dados do Microsoft 365.
+* Se os parâmetros de execução da atividade de cópia forem alterados, uma nova solicitação de aprovação é acionada.
+* Se os nomes Azure Data Factory, pipeline ou atividade de cópia forem alterados, uma nova solicitação de aprovação é disparada. Por exemplo: uma nova aprovação é necessária se a tabela de dados ou um conjunto de colunas que a atividade de cópia está acessando for alterado.
+* As atividades de cópia devem ser aprovadas uma vez a cada seis meses. Se a aprovação original tiver sido aprovada há seis meses, uma nova solicitação de aprovação será disparada automaticamente.
+* Se um Microsoft 365 de acesso a dados tiver negado uma solicitação de aprovação ou revogado uma solicitação aprovada anteriormente, a atividade de cópia falhará continuamente. Trabalhe com o aprovador para entender o motivo da negação ou revogação e corrija os parâmetros da atividade de cópia adequadamente. Para disparar uma nova solicitação de aprovação, uma nova atividade de cópia deve ser implantada ou o nome da atividade de cópia existente deve ser alterado.
+* Uma solicitação de aprovação expira em 24 horas, a menos que um aprovador de acesso a dados do Microsoft 365 atue na solicitação. Uma nova solicitação é enviada a cada 24 horas para aprovação. Se você vir suas atividades de cópia aguardando aprovação (no estágio Consentimento Pendente), então trabalhe com os aprovadores de acesso aos dados do Microsoft 365 para que sua solicitação seja aprovada.
 
 ## <a name="privacy-scrubbing"></a>A depuração de privacidade
 
-O membro do grupo aprovador que aprova a solicitação pode especificar o nome de um usuário do grupo cujos dados quer que sejam apagados dos dados extraídos. As linhas com os endereços de email correspondentes aos membros do grupo recusado serão apagadas dos dados extraídos. Grupos aninhados dentro do grupo recusado serão expandidos e somente os usuários serão apagados. Consulte a seção deste tópico para saber como aplicar a lista de negação durante a aprovação, por meio do PowerShell ou experiência de usuários do PAM.
+O membro do grupo aprovador que aprova a solicitação pode especificar o nome de um usuário do grupo cujos dados quer que sejam apagados dos dados extraídos. As linhas com os endereços de email correspondentes aos membros do grupo recusado são apagadas dos dados extraídos. Os grupos aninhados dentro do grupo negado são expandidos e somente os usuários são removidos. Consulte a seção de solicitações de aprovação deste artigo para obter detalhes sobre como aplicar a lista de negações durante a aprovação por meio do PowerShell ou da experiência do usuário do PAM.
 
 A tabela a seguir mostra os nomes dos conjuntos de dados e das colunas cujos conteúdos estão marcados para depuração de privacidade.
 
