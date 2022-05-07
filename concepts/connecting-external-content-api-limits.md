@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 9e05d022b9bcf2359bdd2a84e8d5707d55c086b6
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 88cd4d08db4b903e188c82dd38c8d5b89131887f
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205617"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247333"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Limites de API de conectores do Microsoft Graph
 
@@ -34,7 +34,7 @@ Este artigo descreve a implementação e os limites operacionais dos conectores 
 
 | **Limite** | **Descrição** |
 | --------- | --------------- |
-| 100.000 | O número máximo de [grupos externos](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) por locatário do Microsoft 365. |
+| **100.000** | O número máximo de [grupos externos](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) por locatário do Microsoft 365. |
 | **Mil solicitações/seg.** | O número máximo de solicitações permitidas por segundo na [limitação](#throttling) da administração de grupo. |
 
 ## <a name="item-ingestion"></a>Ingestão de item
@@ -49,4 +49,4 @@ Este artigo descreve a implementação e os limites operacionais dos conectores 
 
 Quando um limite da [limitação](throttling.md) é excedido, o Microsoft Graph limita quaisquer outras solicitações desse cliente por um período de tempo. Quando a limitação acontece, o Microsoft Graph retorna o código de status HTTP 429 (Muitas solicitações) e as solicitações falham. Um tempo de espera sugerido é retornado no cabeçalho da resposta da solicitação com falha.
 
-O comportamento de limitação pode depender do tipo e do número de solicitações. Por exemplo, se você tiver um grande volume de solicitações, todos os tipos de solicitação são limitados. Os limites de limiar variam com base no tipo de solicitação. Portanto, você pode encontrar um cenário onde as gravações são limitadas, mas leituras ainda são permitidas.
+O comportamento de limitação pode depender do tipo e do número de solicitações. Por exemplo, se você tiver um grande volume de solicitações, todos os tipos de solicitações serão limitadas. Os limites de controle variam de acordo com o tipo de solicitação. Portanto, você pode encontrar um cenário em que as gravações são limitadas, mas as leituras ainda são permitidas.

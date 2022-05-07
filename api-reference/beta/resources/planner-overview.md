@@ -5,12 +5,12 @@ author: TarkanSevilmis
 ms.localizationpriority: high
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 18c8f9a7bb418c849a5ac2255f8931ff3ec84a50
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: db63a6a93a6290a368d7aa8eda3254f860ee780f
+ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695333"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65247053"
 ---
 # <a name="use-the-planner-rest-api"></a>Usar a API REST do Planner
 
@@ -34,7 +34,7 @@ Para [obter os planos pertencentes a um grupo](../api/plannergroup-list-plans.md
 GET /groups/{group-id}/planner/plans
 ```
 
-Ao [criar um novo plano](../api/planner-post-plans.md), faça de um grupo seu contêiner definindo a propriedade `container` em um objeto de plano. Os planos devem estar contidos em um recurso com suporte.
+Ao [criar um novo plano](../api/planner-post-plans.md), torne um grupo seu contêiner definindo a propriedade `container` em um objeto de plano. Os planos devem ser contidos por um recurso suportado.
 
 >**Observação:** o usuário que está criando o plano deve ser membro do grupo que conterá o plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
 
@@ -118,11 +118,11 @@ O autor da chamada deve ter um cache que contenha objetos inscritos. Para obter 
 
 O fluxo de chamadas da consulta delta do Planner é assim:
 
-1. O autor da chamada inicia uma consulta de sincronização delta, obtendo um `nextLink` e uma coleção de alterações vazia.
+1. O autor da chamada inicia uma consulta de sincronização delta, obtendo um `@odata.nextLink` e uma coleção de alterações vazia.
 2. O autor da chamada deve [preencher o cache do objeto para consultas delta](#populate-the-object-cache-for-delta-queries) com objetos nos quais o usuário esteja inscrito, atualizando o cache.
-3. O autor da chamada segue o `nextLink` fornecido na consulta de sincronização delta inicial para obter um novo `deltaLink` para alterações desde a etapa anterior.
+3. O autor da chamada segue o `@odata.nextLink` fornecido na consulta de sincronização delta inicial para obter um novo `@odata.deltaLink` para alterações desde a etapa anterior.
 4. O autor da chamada aplica as alterações da resposta delta retornada nos objetos em seu cache.
-5. O autor da chamada segue o novo deltaLink para obter o próximo deltaLink e alterações desde que o `deltaLink` atual foi gerado.
+5. O autor da chamada segue o novo deltaLink para obter o próximo deltaLink e alterações desde que o `@odata.deltaLink` atual foi gerado.
 6. O autor da chamada aplica as alterações (caso existam) e espera um pouco antes de executar novamente as etapas anterior e atual.
 
 ## <a name="planner-resource-versioning"></a>Versão do recurso do Planner
