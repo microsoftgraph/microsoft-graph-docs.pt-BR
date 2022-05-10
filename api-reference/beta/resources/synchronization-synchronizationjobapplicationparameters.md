@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso synchronizationJobApplicationParameters
+title: Tipo de recurso synchronizationJobApplicationParameters
 description: Representa os objetos a serem provisionados e as regras executadas durante o provisionamento sob demanda.
 author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: aeaae3419307787c019402d5b8ddf8268f1f9605
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 08dc3f6494a2c7e641f6ebfc81eb223aa990eb69
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090954"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296448"
 ---
-# <a name="synchronizationjobapplicationparameters-resource-type"></a>tipo de recurso synchronizationJobApplicationParameters
+# <a name="synchronizationjobapplicationparameters-resource-type"></a>Tipo de recurso synchronizationJobApplicationParameters
 
 Namespace: microsoft.graph
 
@@ -21,8 +21,8 @@ Representa os objetos que serão provisionados e as regras de sincronização ex
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ruleId|Cadeia de Caracteres|O identificador de uma sincronizaçãoRule a ser aplicada.|
-|subjects|[coleção synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md)|Os identificadores de um ou mais objetos aos quais um SynchronizationJob deve ser aplicado.|
+|ruleId|Cadeia de caracteres|O identificador do [synchronizationRule](synchronization-synchronizationrule.md) a ser aplicado. Essa ID de regra é definida no esquema [para um determinado trabalho ou modelo de sincronização](../api/synchronization-synchronizationschema-get.md). |
+|Assuntos|[Coleção synchronizationJobSubject](../resources/synchronization-synchronizationjobsubject.md)|Os identificadores de um ou mais objetos aos quais um synchronizationJob deve ser aplicado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

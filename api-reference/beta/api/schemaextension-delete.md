@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 7fc50d29102b83465365365cec6bdc1d5149e9fd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f2c007dadbcdb49b670e23e2237a11d833c985bb
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671990"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296532"
 ---
 # <a name="delete-schemaextension"></a>Excluir schemaExtension
 
@@ -18,9 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui uma definição da [extensão de esquema](../resources/schemaextension.md).
-
-Somente o aplicativo que criou a extensão de esquema (proprietário do aplicativo) pode excluir a definição da extensão de esquema e apenas quando a extensão estiver com o status **InDevelopment**. Excluir uma definição da extensão de esquema não afeta o acesso aos dados personalizados que foram adicionados às instâncias de recursos com base nessa definição.
+Exclui uma definição da [extensão de esquema](../resources/schemaextension.md). Somente o aplicativo que criou a extensão de esquema (aplicativo proprietário) pode excluir a definição de extensão de esquema e somente quando a extensão está no `InDevelopment` estado. Excluir uma definição de extensão de esquema não afeta o acesso a dados personalizados que foram adicionados a instâncias de recurso com base nessa definição.
 
 
 ## <a name="permissions"></a>Permissões
@@ -34,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Sem suporte. |
 
 > [!NOTE]
-> Além disso, para o fluxo delegado, o usuário in-loco só pode excluir esquemaExtensions que possui (onde a  propriedade owner do esquemaExtension `appId` é a de um aplicativo que o usuário inscreveu possui).
+> Além disso, para o fluxo delegado, o usuário conectado só pode excluir schemaExtensions que possui (em que a propriedade  de proprietário do schemaExtension é a **appId** de um aplicativo que o usuário conectado possui).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

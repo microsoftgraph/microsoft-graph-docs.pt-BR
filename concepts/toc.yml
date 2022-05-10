@@ -90,7 +90,7 @@ items:
       - name: Grupos
         items:
           - name: Visão Geral
-            href: /graph/api/resources/groups-overview
+            href: /graph/api/resources/groups-overview?context=graph/context
           - name: Grupos do Microsoft 365
             href: office365-groups-concept-overview.md
           - name: Configurar as opções de grupo

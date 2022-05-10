@@ -4,12 +4,12 @@ description: Descreve as diferenças de propriedade entre Azure AD Graph (entida
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 19f6490cda2c6107de97fd853a8d09e604fb83f6
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 2d5df9eede57ff0987bfced91d34c11d4d5142f1
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65293960"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296237"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Diferenças de propriedade entre Azure AD Graph e o Microsoft Graph
 
@@ -38,7 +38,8 @@ O Azure AD Graph **user** é herdado de **DirectoryObject**; ele foi renomeado p
 | **isCompromised** | beta  &nbsp;-&nbsp; _Não disponível_ <br> v1.0 &nbsp;-&nbsp; _Não disponível_ | A API Graph [proteção de identidade do](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) Microsoft Graph fornece funcionalidades mais sofisticadas. |
 | **lastDirSyncDateTime** | beta &nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
 | **Móvel** | beta  &nbsp;-&nbsp; **mobilePhone** <br> v1.0 &nbsp;-&nbsp; **mobilePhone** | |
-| **passwordProfile** | beta  &nbsp;-&nbsp; **passwordProfile** <br> v1.0 &nbsp;-&nbsp; **passwordProfile** | O nome e o tipo da propriedade ainda são **passwordProfile** , mas as propriedades do tipo complexo **passwordProfile** foram alteradas. Consulte [as diferenças de propriedade passwordProfile](#passwordprofile-property-differences). |
+| **passwordProfile/enforceChangePasswordPolicy** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** | |
+| **passwordProfile/forceChangePasswordNextLogin** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** | |
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Não disponível_ <br> v1.0 &nbsp;-&nbsp; _Não disponível_ | Essa propriedade e suas informações foram preteridas.  No entanto, uma nova propriedade que descreve todos os erros de provisionamento relacionados Conexão AD pode ser encontrada em **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | **betasigninSessionsValidFromDateTime**&nbsp;-&nbsp;<br>**v1.0signinSessionsValidFromDateTime**&nbsp;-&nbsp; | |
 | **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> identidades v1.0 &nbsp;-&nbsp; **/signInType** | Essa propriedade agora faz parte do recurso [objectIdentity](/graph/api/resources/objectIdentity) .|
@@ -47,16 +48,6 @@ O Azure AD Graph **user** é herdado de **DirectoryObject**; ele foi renomeado p
 | **userIdentities** | **identidades beta** &nbsp;-&nbsp; <br> Identidades v1.0 &nbsp;-&nbsp; | Consulte [o tipo de recurso objectIdentity](/graph/api/resources/objectIdentity) para obter mais detalhes.|
 | **Userstate** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | **betaexternalUserStateChangeDateTime**&nbsp;-&nbsp;<br>**v1.0externalUserStateChangeDateTime**&nbsp;-&nbsp; | |
-
-### <a name="passwordprofile-property-differences"></a>Diferenças de propriedade passwordProfile
-
-As propriedades do tipo **complexo passwordProfile** foram renomeadas no Microsoft Graph da seguinte maneira.
-
-| Azure AD Graph. <br>(v1.6) property | Microsoft Graph<br> propriedade | Comentários |
-|--|--|--|
-| enforceChangePasswordPolicy | beta &nbsp;-&nbsp; **forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignIn** |  |
-| forceChangePasswordNextLogin | beta &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **forceChangePasswordNextSignInWithMfa** |  |
-| password | senha **beta** &nbsp;-&nbsp; <br> Senha v1.0 &nbsp;-&nbsp; |  |
 
 ## <a name="group-property-differences"></a>Diferenças de propriedade de grupo
 

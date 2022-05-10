@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 362688a24163da2ed26c625b81d21790269467c8
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: f1bce914868eeb4ccb02daaa608d6d46f00f8325
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671934"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296469"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -32,10 +32,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Application | Application.ReadWrite.All e Directory.ReadWrite.All |
 
 > [!NOTE]
-> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada OU o proprietário do (aplicativo com a)`appId` usada para definir a propriedade **proprietário**.
+> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada OU o proprietário do (aplicativo com o) **appId** usado para definir a propriedade **de** proprietário.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -72,7 +72,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra o uso de um nome de domínio verificado e `graphlearn`um nome de esquema, `courses`para formar uma cadeia de caracteres exclusiva para a propriedade **id** da definição de extensão de esquema. A cadeia de caracteres exclusiva é baseada neste formato,\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
+O exemplo a seguir mostra o uso de um nome de domínio verificado e `graphlearn`um nome de esquema para `courses`formar uma cadeia de caracteres exclusiva para a propriedade **de ID** da definição de extensão de esquema. A cadeia de caracteres exclusiva é baseada neste formato,\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).
 

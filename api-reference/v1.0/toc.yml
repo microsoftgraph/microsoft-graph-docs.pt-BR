@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -5115,24 +5115,44 @@ items:
                 items:
                   - name: Base do provedor de identidade
                     href: resources/identityproviderbase.md
-                  - name: Provedor de identidade interno
-                    href: resources/builtinidentityprovider.md
-                  - name: Provedor de identidade social
-                    href: resources/socialidentityprovider.md
-                  - name: Provedor de identidade da Apple
-                    href: resources/applemanagedidentityprovider.md
-                  - name: Listar
-                    href: api/identitycontainer-list-identityproviders.md
-                  - name: Criar
-                    href: api/identitycontainer-post-identityproviders.md
-                  - name: Obter
-                    href: api/identityproviderbase-get.md
-                  - name: Atualizar
-                    href: api/identityproviderbase-update.md
-                  - name: Excluir
-                    href: api/identityproviderbase-delete.md
-                  - name: Listar os tipos de provedor disponíveis
-                    href: api/identityproviderbase-availableprovidertypes.md
+                  - name: Identidades externas
+                    items:
+                      - name: Tipo de provedor de identidade interno
+                        href: resources/builtinidentityprovider.md
+                      - name: Tipo de provedor de identidade social
+                        href: resources/socialidentityprovider.md
+                      - name: Tipo de provedor de identidade da Apple
+                        href: resources/applemanagedidentityprovider.md
+                      - name: Listar provedores de identidade disponíveis
+                        href: api/identityproviderbase-availableprovidertypes.md
+                      - name: Listar provedores de identidade configurados
+                        href: api/identitycontainer-list-identityproviders.md
+                      - name: Criar o provedor de identidade
+                        href: api/identitycontainer-post-identityproviders.md
+                      - name: Obter o provedor de identidade
+                        href: api/identityproviderbase-get.md
+                      - name: Atualizar provedor de identidade
+                        href: api/identityproviderbase-update.md
+                      - name: Excluir o provedor de identidade
+                        href: api/identityproviderbase-delete.md
+                  - name: Identidades externas baseadas em domínio
+                    items:
+                      - name: Federação de domínio externo SAML/WS-Fed
+                        href: resources/samlorwsfedexternaldomainfederation.md
+                      - name: Listar configurações federadas
+                        href: api/samlorwsfedexternaldomainfederation-list.md
+                      - name: Obter configuração federada
+                        href: api/samlorwsfedexternaldomainfederation-get.md
+                      - name: Criar configuração federada
+                        href: api/samlorwsfedexternaldomainfederation-post.md
+                      - name: Atualizar configuração federada
+                        href: api/samlorwsfedexternaldomainfederation-update.md
+                      - name: Excluir configuração federada
+                        href: api/samlorwsfedexternaldomainfederation-delete.md
+                      - name: Listar domínios
+                        href: api/samlorwsfedexternaldomainfederation-list-domains.md
+                      - name: Criar externalDomainName
+                        href: api/samlorwsfedexternaldomainfederation-post-domains.md
               - name: Provedor de identidade (preterido)
                 items:
                   - name: Tipo de provedor de identidade
@@ -5669,7 +5689,7 @@ items:
                         href: api/agreement-post-files.md
                       - name: Listar arquivos localizados
                         href: api/agreement-list-files.md
-      - name: Email
+      - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -6265,7 +6285,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Busca
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -6859,7 +6879,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6921,7 +6941,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Enviar notificação ao usuário
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: Guia
             href: resources/teamstab.md
             items:
               - name: Guia no canal

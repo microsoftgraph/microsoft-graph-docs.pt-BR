@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 85536cc55604de7f88f561a3b1e232cd333c7ec8
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: fab1fff05253708ddad039d04ebb79a8c747f598
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191349"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296223"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -636,7 +636,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|Nenhum|
 |SecurityGroup|
 |Tudo|
 
@@ -1047,7 +1047,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | Lista
-| descrição
+| description
 | referência
 
 
@@ -1734,7 +1734,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member                |
 |:----------------------|
-| cadeia de caracteres                |
+| string                |
 | booliano               |
 | int64                 |
 | Stringcollection      |
@@ -2072,6 +2072,13 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |dontKnow|
 |notNotified|
 |unknownFutureValue|
+
+### <a name="authenticationprotocol-values"></a>Valores authenticationProtocol 
+
+|Member|
+|:---|
+|wsFed|
+|Saml|
 
 ### <a name="longrunningoperationstatus-values"></a>Valores longRunningOperationStatus
 
