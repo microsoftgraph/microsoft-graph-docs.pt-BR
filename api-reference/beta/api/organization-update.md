@@ -2,15 +2,15 @@
 title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 174c9d51d2c7e67c3b1a9a4c603457ab68715dd7
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d3d005522ca8d4d43bf5416193e15fd380de6e03
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671640"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294051"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Organization.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Organization.ReadWrite.All |
+|Application | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
 |technicalNotificationMails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 
-Como o **recurso da** organização dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview) de uma extensão em uma instância **da organização** existente.
+Como **o recurso** da organização dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview) de uma extensão em uma instância **da organização** existente.
 
 ## <a name="response"></a>Resposta
 
@@ -75,7 +75,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/{id}
+PATCH https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3
 Content-type: application/json
 
 {

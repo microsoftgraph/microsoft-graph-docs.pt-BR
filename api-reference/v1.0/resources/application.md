@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 04f8f16b6c83c97708a2e56cc77474f24b075274
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5bd90acea4a93bba5ae5687141a68b1deaca841f
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333663"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294023"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -71,7 +71,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | addIns | Coleção [addIn](addin.md)| Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de arquivo [podem definir a propriedade addIns](/onedrive/developer/file-handlers) para a funcionalidade "FileHandler". Isso permitirá que serviços como o Office 365 chamem o aplicativo no contexto de um documento em que o usuário esteja trabalhando. |
 | api | [apiApplication](apiapplication.md) | Especifica configurações para um aplicativo que implementa uma API Web. |
 | appId | Cadeia de caracteres | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Microsoft Azure Active Directory. Não anulável. Somente leitura. |
-| applicationTemplateId | String | Identificador exclusivo do applicationTemplate. Suporta `$filter` (`eq`, `not`, `ne`).|
+| applicationTemplateId | String | Identificador exclusivo do applicationTemplate. Apoia `$filter` (`eq`, `not`, `ne`).|
 | appRoles | Coleção [appRole](approle.md) | O conjunto de funções atribuídas ao aplicativo. Com as [atribuições de funções do aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos. Não anulável. |
 | createdDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br> Dá suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`e `eq` em `null` valores ) e `$orderBy`. |
 | deletedDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
@@ -94,6 +94,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | publicClient | [publicClientApplication](publicclientapplication.md) | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
 | publisherDomain | String | O domínio do publicador verificado para o aplicativo. Somente leitura. Para obter mais informações, consulte [Como: configurar o domínio do publisher de um aplicativo](/azure/active-directory/develop/howto-configure-publisher-domain). Suporta `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de permissões delegadas e funções de aplicativo necessárias para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não é possível configurar mais de 50 APIs (serviços de recursos). A partir de meados de outubro de 2021, o número total de permissões necessárias não deve exceder 400. Não anulável. <br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
+| serviceManagementReference | Cadeia de caracteres | Faz referência a informações de contato de aplicativo ou serviço de um banco de dados de Gerenciamento de ativos ou serviço. Anulável. |
 | signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores possíveis são: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (padrão) e `PersonalMicrosoftAccount`. Confira mais na [tabela abaixo](#signinaudience-values). <br><br>Suporta `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
 | categorias |Coleção String| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulada.<br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
@@ -159,6 +160,7 @@ Veja a seguir uma representação JSON do recurso.
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
+  "serviceManagementReference": "String",
   "signInAudience": "String",
   "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],

@@ -2,15 +2,15 @@
 title: tipo de recurso organization
 description: 'Representa um locatário do Azure Active Directory. '
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 916da77d59fb4aee607145ffdbcd8cc40b7669e6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4daead4b510944427edbea4f3c42a8946614293a
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691565"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294009"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -35,7 +35,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |**Licenças da organização**| | |
-|[activateService](../api/organization-activateservice.md) | Nenhum |  Ative um serviço para uma organização. |
+|[Activateservice](../api/organization-activateservice.md) | Nenhum |  Ativar um serviço para uma organização. |
 |**Identidade visual organizacional**| | |
 |[Obter organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Obtenha o objeto de identidade visual organizacional padrão. |
 |[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize o objeto de identidade visual organizacional padrão. |
@@ -62,11 +62,11 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | As informações de cota de tamanho do diretório de uma organização. |
 | displayName | String | O nome de exibição do locatário. |
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
-| isMultipleDataLocationsForServicesEnabled | Boolean | `true` se a organização estiver habilitada para Multi-Geo; `false` se a organização não estiver habilitada para Multi-Geo; `null` (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
+| isMultipleDataLocationsForServicesEnabled | Boolean | `true` se a organização estiver habilitada para Várias Regiões Geográficas; `false` se a organização não estiver habilitada para Multigeográfico; `null` (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
-| objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é `Company` sempre .|
+| objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre `Company`.|
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório no local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Booliano | `true` se esse objeto for sincronizado de um diretório local; se esse objeto foi originalmente sincronizado de um diretório local, mas `false` não está mais sincronizado; Anulavel. `null` se este objeto nunca foi sincronizado de um diretório local (padrão). |
+| onPremisesSyncEnabled | Booliano | `true` se esse objeto for sincronizado de um diretório local; `false` se este objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; Nullable. `null` se este objeto nunca foi sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
 | preferredLanguage | String | O idioma preferencial da organização. Deve seguir o Código ISO 639-1; por exemplo `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | O perfil de privacidade de uma organização. |

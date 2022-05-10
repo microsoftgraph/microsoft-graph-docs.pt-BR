@@ -2,15 +2,15 @@
 title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
 ms.localizationpriority: medium
-author: adimitui
+author: KuiGithui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c2fbb6b2f8c93c9e4f44c6e1877f3b98132d1f9c
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: be0561ea0c96a21dd4829e594a0842b188ba4973
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672711"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65293981"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Organization.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Organization.ReadWrite.All |
+|Application | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -71,7 +71,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/{id}
+PATCH https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3
 Content-type: application/json
 
 {
