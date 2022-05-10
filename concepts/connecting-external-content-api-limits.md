@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 88cd4d08db4b903e188c82dd38c8d5b89131887f
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: e50085b8c59e304c852f8f75c326fca2967a54f9
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247333"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296462"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Limites de API de conectores do Microsoft Graph
 
@@ -18,32 +18,32 @@ Este artigo descreve a implementação e os limites operacionais dos conectores 
 
 ## <a name="connection-limits"></a>Limites de conexão
 
-| **Limite** | **Descrição** |
-| --------- | --------------- |
-| **10 conexões** | O número máximo de recursos de [conexão](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) por locatário do Microsoft 365. |
-| **700.000 itens** | O número máximo de [itens](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) por conexão. |
-| **70 GB** | O tamanho máximo de byte de uma conexão. |
+| Tipo de limite | Limite |
+| ---------- | ----- |
+| Recursos de [Conexão](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0&preserve-view=true) por locatário do Microsoft 365 | 10 |
+| [Itens](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true) por conexão | 700.000 |
+| Tamanho do byte de conexão | 70 GB |
 
 ## <a name="schema-limits"></a>Limites do esquema
 
-| **Limite** | **Descrição** |
-| --------- | --------------- |
-| **128 propriedades** | O número máximo de propriedades que podem ser definidas em um [esquema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true), caracterizando o uso dos dados por meio de uma conexão. |
+| Tipo de limite | Limite |
+| ---------- | ----- |
+| Propriedades que podem ser definidas em um [esquema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true), caracterizando os dados ingeridos através de uma conexão | 128 |
 
 ## <a name="group-limits"></a>Limites de grupo
 
-| **Limite** | **Descrição** |
-| --------- | --------------- |
-| **100.000** | O número máximo de [grupos externos](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) por locatário do Microsoft 365. |
-| **Mil solicitações/seg.** | O número máximo de solicitações permitidas por segundo na [limitação](#throttling) da administração de grupo. |
+| Tipo de limite | Limite |
+| ---------- | ----- |
+| [Grupos externos](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) por locatário do Microsoft 365 | 100.000 | 
+| Solicitações permitidas por segundo (solicitações/s) na administração do grupo [ limitando ](#throttling) limite | 1.000 |
 
 ## <a name="item-ingestion"></a>Ingestão de item
 
-| **Limite** | **Descrição** |
-| --------- | --------------- |
-| **4 itens/seg (250 MB/hora)** | O limite de produtividade para ingerir itens por meio de uma conexão. |
-| **4 MB** | O tamanho máximo de um item; esse limite se aplica ao corpo da solicitação quando [como ingerir e indexar um item](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0). |
-| **N/D** | O tamanho máximo de uma propriedade. |
+| Tipo de limite | Limite |
+| ---------- | ----- |
+| Limite de taxa de transferência para ingerir itens por meio de uma conexão | 4 itens/s <br> (250 MB/hora) |
+| Tamanho do artigo; esse limite se aplica ao [corpo da solicitação ao ingerir e indexar um item](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) | 4 MB |
+| Tamanho da propriedade | N/D |
 
 ## <a name="throttling"></a>Limitação
 
