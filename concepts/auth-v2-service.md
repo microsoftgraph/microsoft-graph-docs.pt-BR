@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1fd849f0176468c76353f9f2c478dfca0b753027
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: b958ca3774218383edc24504a115da37a43d9822
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133423"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296504"
 ---
 # <a name="get-access-without-a-user"></a>Obter acesso sem um usuário
 
@@ -155,15 +155,17 @@ Uma resposta bem-sucedida tem esta aparência:
 {
   "token_type": "Bearer",
   "expires_in": 3599,
+  "ext_expires_in":3599,
   "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1uQ19WWmNBVGZNNXBP..."
 }
 ```
 
-| Parâmetro     | Descrição
-|:--------------|:------------
-| access_token  | O token de acesso solicitado. Seu aplicativo pode usar esse token em chamadas para o Microsoft Graph.
-| token_type    | Indica o valor de tipo de token. O único tipo ao qual o Azure AD dá suporte é `bearer`.
-| expires_in    | Por quanto tempo o token de acesso é válido (em segundos).
+| Parâmetro      | Descrição                                                                                   |
+|:---------------|:----------------------------------------------------------------------------------------------|
+| access_token   | O token de acesso solicitado. Seu aplicativo pode usar esse token em chamadas para o Microsoft Graph.          |
+| expires_in     | Por quanto tempo o token de acesso é válido (em segundos).                                              |
+| ext_expires_in | Usado para indicar uma vida útil estendida para o token de acesso e para suportar à resiliência quando o serviço de emissão de token não estiver respondendo. |
+| token_type     | Indica o valor de tipo de token. O único tipo ao qual o Azure AD dá suporte é `Bearer`.             |
 
 ## <a name="5-use-the-access-token-to-call-microsoft-graph"></a>5. Use o token de acesso para chamar o Microsoft Graph
 

@@ -5,36 +5,18 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5ecbe4a163ab378ecc6a68aa6283c789be785203
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 4f69413ebbe824a87414649ceea6d904cdc24bc4
+ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335882"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65294058"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 
-Para chamar o Microsoft Graph, o aplicativo deve adquirir um token de acesso da Microsoft Identity Plataform. O token de acesso contém informações sobre seu aplicativo e as permissões que ele possui para os recursos e APIs disponíveis no Microsoft Graph. Para obter um token de acesso, o aplicativo deve ser registrado com a Plataforma de identidade da Microsoft e ter autorização de um usuário ou administrador para acessar os recursos necessários do Microsoft Graph.
+Para chamar o Microsoft Graph, seu aplicativo deve adquirir um token de acesso da plataforma de identidade da Microsoft. O token de acesso contém informações sobre o aplicativo e as permissões que ele tem para acessar os recursos e APIs disponíveis no Microsoft Graph. Para obter um token de acesso, o aplicativo deve ser registrado na plataforma de identidade da Microsoft e ter a autorização de um usuário ou administrador para acessar os recursos necessários do Microsoft Graph.
 
-Este artigo fornece uma visão geral dos tokens de acesso, a plataforma de identidade da Microsoft e como seu aplicativo pode obter tokens de acesso. Se você sabe como integrar um aplicativo à plataforma de identidade da Microsoft para obter tokens, consulte as informações e amostras específicas do Microsoft Graph na seção [Passos seguintes](#next-steps).
-
-## <a name="access-tokens"></a>Tokens de acesso
-
-Tokens de acesso emitidos pela plataforma de identidade da Microsoft contêm informações (declarações) que as APIs da Web protegidas pela Plataforma de Identidade da Microsoft, como o Microsoft Graph, usam para validar o chamador e para garantir que o chamador tenha as permissões adequadas para executar a operação solicitada. O chamador deve tratar tokens de acesso como cadeias de caracteres opacos porque o conteúdo do token destina-se apenas à API. Ao chamar o Microsoft Graph, sempre proteja tokens de acesso transmitindo-os por um canal seguro que usa o protocolo TLS (segurança de camada de transporte).
-
-O exemplo a seguir mostra um token de acesso à plataforma de identidade da Microsoft:
-
-```jwt
-EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-```
-
-Para chamar o Microsoft Graph, anexe o token de acesso como um token de portador ao cabeçalho de autorização em uma solicitação HTTP. Por exemplo, a seguinte chamada que retorna as informações de perfil do usuário conectado (o token de acesso foi abreviado para facilitar a leitura):
-
-```http
-GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
-Host: graph.microsoft.com
-Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-```
+Este artigo fornece uma visão geral da plataforma de identidade da Microsoft, tokens de acesso e como seu aplicativo pode obter tokens de acesso. Para obter mais informações sobre a plataforma de identidade da Microsoft, confira [O que é a plataforma de identidade da Microsoft](/azure/active-directory/develop/v2-overview). Se você sabe como integrar um aplicativo à plataforma de identidade da Microsoft para obter tokens, consulte as informações e amostras específicas do Microsoft Graph na seção [Passos seguintes](#next-steps).
 
 ## <a name="register-your-app-with-the-microsoft-identity-platform"></a>Registre um aplicativo na Microsoft Identity Platform
 
@@ -81,7 +63,7 @@ O Microsoft Graph tem dois tipos de permissões:
 
 #### <a name="effective-permissions-in-delegated-vs-application-only-permission-scenarios"></a>Permissões efetivas em cenários de permissão delegado versus somente aplicativo
 
-- No caso de Permissões Delegadas, as *permissões Efetivas* do aplicativo estarão na interseção menos privilegiada das permissões delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. Seu aplicativo nunca poderá ter mais privilégios do que o usuário inscrito.
+- Para permissões delegadas, as *permissões efetivas* do seu aplicativo são a interseção menos privilegiada das permissões delegadas que o aplicativo recebeu (por consentimento) e os privilégios do usuário conectado no momento. Seu aplicativo nunca pode ter mais privilégios do que o usuário conectado.
 
   Suponha que seu aplicativo tenha recebido a permissão delegada *User.ReadWrite.All* e chame a API [Atualizar usuário](/graph/api/user-update). Essa permissão concede nominalmente ao seu aplicativo permissão para ler e atualizar o perfil de cada usuário em uma organização. No entanto, devido a permissões efetivas, as seguintes restrições se aplicam aos privilégios do usuário conectado:
   + Se o usuário conectado for um administrador global, seu aplicativo poderá atualizar o perfil de cada usuário na organização.
@@ -105,7 +87,28 @@ O Microsoft Graph tem dois tipos de permissões:
 
 Para uma lista completa das permissões delegadas e de aplicativos para o Microsoft Graph, e quais permissões exigem o consentimento do administrador, consulte a [Referência Permissões](../permissions-reference.md).
 
-## <a name="getting-an-access-token"></a>Como obter um token de acesso
+
+## <a name="access-tokens"></a>Tokens de acesso
+
+Tokens de acesso emitidos pela plataforma de identidade da Microsoft contêm informações (declarações) que as APIs da Web protegidas pela Plataforma de Identidade da Microsoft, como o Microsoft Graph, usam para validar o chamador e para garantir que o chamador tenha as permissões adequadas para executar a operação solicitada. O chamador deve tratar tokens de acesso como cadeias de caracteres opacos porque o conteúdo do token destina-se apenas à API. Ao chamar o Microsoft Graph, sempre proteja tokens de acesso transmitindo-os por um canal seguro que usa o protocolo TLS (segurança de camada de transporte).
+
+O exemplo a seguir mostra um token de acesso à plataforma de identidade da Microsoft:
+
+```jwt
+EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uSc5Ug008qTI+a9M1tBeKoTs7tHzhJNSKgk7pm5e8d3oGWXX5shyOG3cKSqgfwuNDnmmPDNDivwmi9kmKqWIC9OQRf8InpYXH7NdUYNwN+jljffvNTewdZz42VPrvqoMH7hSxiG7A1h8leOv4F3Ek/XbrnbEErTDLWrV6Lc3JHQMs0bYUyTBg5dThwCiuZ1evaT6BlMMLuSCVxdBGzXTBcvGwihFzZbyNoX+52DS5x+RbIEvd6KWOpQ6Ni+1GAawHDdNUiQTQFXRxLSHfc9fh7hE4qcD7PqHGsykYj7A0XqHCjbKKgWSkcAg==
+```
+
+Para chamar o Microsoft Graph, anexe o token de acesso como um token de portador ao cabeçalho de autorização em uma solicitação HTTP. Por exemplo, a seguinte chamada que retorna as informações de perfil do usuário conectado (o token de acesso foi abreviado para facilitar a leitura):
+
+```http
+GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
+Host: graph.microsoft.com
+Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
+```
+
+Tokens de acesso são um tipo de [token de segurança](/azure/active-directory/develop/security-tokens) fornecido pela plataforma de identidade da Microsoft. Eles são de curta duração, mas com tempos de vida padrão variáveis. Para obter mais informações sobre tokens de acesso e como os clientes usam esses tokens, confira [Tokens de acesso](/azure/active-directory/develop/access-tokens#access-token-lifetime).
+
+### <a name="get-an-access-token"></a>Obter um token de acesso
 
 Como a maioria dos desenvolvedores, você provavelmente utilizará as bibliotecas de autenticação para gerenciar suas interações de token com a plataforma de identidade da Microsoft. Bibliotecas de autenticação abstraem muitos detalhes de protocolo, como validação, manipulação de cookies, cache de token e manutenção de conexões seguras, longe do desenvolvedor, e permitem que você concentre o desenvolvimento no seu aplicativo. A Microsoft publica bibliotecas de cliente de código aberto e middleware de servidor.
 
@@ -121,12 +124,7 @@ Você não precisa usar uma biblioteca de autenticação para obter um token de 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Para etapas rápidas sobre a obtenção de token de acesso para aplicativos que fizerem chamadas para o Microsoft Graph, escolha o tipo de aplicativo adequado ao seu cenário:
-  - [Aplicativo da área de trabalho](/azure/active-directory/develop/scenario-desktop-overview)
-  - [Aplicativo móvel](/azure/active-directory/develop/scenario-mobile-overview)
-  - [Aplicativo Web](/azure/active-directory/develop/scenario-web-app-call-api-overview)
-  - [Aplicativo de página única](/azure/active-directory/develop/scenario-spa-overview)
-  - [Daemon / serviços do plano de fundo](/azure/active-directory/develop/scenario-daemon-overview)
+- Para começar a usar a autenticação e autorizar seu aplicativo a acessar recursos, confira [Introdução: escolha um cenário de aplicativo](/azure/active-directory/develop/v2-overview#getting-started).
 - Para ver as permissões que você pode usar com o Microsoft Graph, confira [Permissões](../permissions-reference.md).
 - Se você é um provedor de Soluções na Nuvem da Microsoft interessado em acessar dados de clientes gerenciados por parceiros por meio do Microsoft Graph, confira [Gerenciar o acesso ao aplicativo (CSPs)](../auth-cloudsolutionprovider.md).
 
