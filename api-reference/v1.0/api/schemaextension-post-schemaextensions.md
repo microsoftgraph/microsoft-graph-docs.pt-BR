@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 1adccedf32431e52bb2deca8f373c591ff4017bd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 46cc17173698ca00f203127d0aa37bbc4b4d433b
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671514"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296420"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -30,10 +30,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Application | Application.ReadWrite.All e Directory.ReadWrite.All |
 
 > [!NOTE]
-> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada OU o proprietário do (aplicativo com a)`appId` usada para definir a propriedade **proprietário**.
+> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada OU o proprietário do (aplicativo com o) **appId** usado para definir a propriedade do **proprietário**.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
