@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8c610b1d795045c49b469ceb906a9994a4020b3a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4817c905f5283a1b248d38d9a1910e9a52db18c6
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021390"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296230"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Chamar o Microsoft Graph por um Provedor de Soluções na Nuvem
 
@@ -18,7 +18,7 @@ ms.locfileid: "59021390"
 
 Este tópico descreve como habilitar o acesso do aplicativo aos dados do cliente gerenciados por parceiros através do Microsoft Graph usando o [fluxo de concessão do código de autorização](/azure/active-directory/develop/active-directory-protocols-oauth-code) ou o [fluxo de credenciais do cliente de serviços](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
-**Importante:** Chamar o Microsoft Graph a partir de um aplicativo CSP só é compatível com recursos de diretório (como **usuário**, **grupo**, **dispositivo**, **organização**) e recursos do [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
+**Importante:** Chamar o Microsoft Graph a partir de um aplicativo CSP só é compatível com recursos de diretório (como **usuário**, **grupo**, **dispositivo**, **organização**) e recursos do [Intune](/graph/api/resources/intune-graph-overview).
 
 ## <a name="what-is-a-partner-managed-application"></a>O que é um aplicativo gerenciado por parceiros
 
@@ -41,7 +41,9 @@ As etapas iniciais exigidas aqui seguem quase as mesmas etapas usadas para regis
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>Consentimento prévio de seu aplicativo para todos os seus clientes
 
-Por fim, conceda ao aplicativo gerenciado por parceiros as permissões configuradas para todos os seus clientes. Você pode fazer isso adicionando o **servicePrincipal** que representa o aplicativo no grupo *Adminagents* do locatário do Parceiro usando o Powershell do Azure AD V2. Você pode baixar e instalar o PowerShell do Azure AD V2 [aqui](https://www.powershellgallery.com/packages/AzureAD).  Siga estas etapas para localizar o grupo *Adminagents*, o **servicePrincipal** e adicioná-lo ao grupo.
+Por fim, conceda ao seu aplicativo gerenciado por parceiro essas permissões configuradas para todos os seus clientes. Você pode fazer isso adicionando o **servicePrincipal** que representa o aplicativo ao grupo *Adminagents* em seu locatário de parceiro, usando [Azure AD powershell V2](https://www.powershellgallery.com/packages/AzureAD) ou [Microsoft Graph PowerShell](/powershell/microsoftgraph/installation). Siga estas etapas para localizar o grupo *Adminagents*, o **servicePrincipal** e adicioná-lo ao grupo.
+
+# <a name="azure-ad-powershell"></a>[Azure AD PowerShell](#tab/azuread)
 
 1. Abra uma sessão do PowerShell e conecte-se ao locatário do parceiro digitando suas credenciais de administrador na janela de entrada.
 
@@ -66,6 +68,33 @@ Por fim, conceda ao aplicativo gerenciado por parceiros as permissões configura
     ```PowerShell
     Add-AzureADGroupMember -ObjectId $group.ObjectId -RefObjectId $sp.ObjectId
     ```
+
+# <a name="microsoft-graph-powershell"></a>[Microsoft Graph PowerShell](#tab/graphpowershell)
+
+1. Abra uma sessão do PowerShell e conecte-se ao locatário do parceiro digitando suas credenciais de administrador na janela de entrada.
+
+    ```PowerShell
+    Connect-MgGraph
+    ```
+
+2. Localize o grupo que representa os *Adminagents*.
+
+    ```PowerShell
+    $group = Get-MgGroup -Filter "displayName eq 'Adminagents'"
+    ```
+
+3. Encontrar a entidade de serviço que tenha a mesma *appId* do aplicativo.
+
+    ```PowerShell
+    $sp = Get-MgServicePrincipal -Filter "appId eq '{yourAppsAppId}'"
+    ```
+
+4. Por fim, adicione a entidade de serviço ao grupo *Adminagents*.
+
+    ```PowerShell
+    New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $sp.Id
+    ```
+----
 
 ## <a name="token-acquisition-flows"></a>Fluxos de aquisição do token
 
