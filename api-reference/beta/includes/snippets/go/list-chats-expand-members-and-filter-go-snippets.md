@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: e22b51eaab35d059b7e38c4ebeea982b49f68ca2
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 90aa977553bfadc6c37236cfc4a099ae3bf8452a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087340"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324301"
 ---
 ```go
 
@@ -16,11 +16,11 @@ requestParameters := &msgraphsdk.ChatsRequestBuilderGetQueryParameters{
     Expand: "members",
     Filter: "members/any(o:%20o/displayname%20eq%20'Peter%20Parker')",
 }
-options := &msgraphsdk.ChatsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.ChatsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 userId := "user-id"
-result, err := graphClient.UsersById(&userId).Chats().Get(options)
+result, err := graphClient.UsersById(&userId).Chats().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

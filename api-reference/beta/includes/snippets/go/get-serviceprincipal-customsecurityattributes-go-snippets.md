@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b66f1acbc9eb61f8782716ef9f909f4dcadba1e2
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 546b16e903f5297d2cc12897c38ff54e5d20fb71
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226230"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325347"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.ServicePrincipalRequestBuilderGetQueryParameters{
     Select: "customSecurityAttributes",
 }
-options := &msgraphsdk.ServicePrincipalRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.ServicePrincipalRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).Get(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 118ba14cd84b097f4269c72ca01c7ce49d24c04e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 44911ca0b197a91f4e289b8a767597f6486258c0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410493"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325477"
 ---
 ```go
 
@@ -23,11 +23,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     }
     "includeUnknownCountriesAndRegions": false,
 }
-options := &msgraphsdk.NamedLocationRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 namedLocationId := "namedLocation-id"
-result, err := graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(options)
+graphClient.Identity().ConditionalAccess().NamedLocationsById(&namedLocationId).Patch(requestBody)
 
 
 ```

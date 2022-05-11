@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d34a11f5719045f3104f2bac718298b824fcf498
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7889caef87e9ff3992761ef2a7ba560af1174de7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410597"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325429"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewIdRequestBody()
 id := "5793aa3b-cca9-4794-679a240f8b58"
 requestBody.SetId(&id)
-options := &msgraphsdk.DeletePasswordSingleSignOnCredentialsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).DeletePasswordSingleSignOnCredentials(servicePrincipal-id).Post(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).DeletePasswordSingleSignOnCredentials(servicePrincipal-id).Post(requestBody)
 
 
 ```

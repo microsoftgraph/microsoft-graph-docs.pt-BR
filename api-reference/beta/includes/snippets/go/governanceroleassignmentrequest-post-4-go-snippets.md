@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 18f9edfdc26701d9fe83acbe3747f3c1a5eafda8
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a04cdd8b5050efb8fc567cb8fba0b06a63a8b0ba
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61085250"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325156"
 ---
 ```go
 
@@ -23,11 +23,8 @@ assignmentState := "Eligible"
 requestBody.SetAssignmentState(&assignmentState)
 type := "AdminRemove"
 requestBody.SetType(&type)
-options := &msgraphsdk.RoleAssignmentRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 privilegedAccessId := "privilegedAccess-id"
-result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(options)
+result, err := graphClient.PrivilegedAccessById(&privilegedAccessId).RoleAssignmentRequests().Post(requestBody)
 
 
 ```
