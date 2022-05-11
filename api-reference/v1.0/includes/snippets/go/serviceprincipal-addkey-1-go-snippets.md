@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a618c18a9ea8a52a289e64a647568b3752292e51
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 55838ac530379ad75e381a5a8e5468c887975c8f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410565"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324195"
 ---
 ```go
 
@@ -24,11 +24,8 @@ keyCredential.SetKey(&key)
 requestBody.SetPasswordCredential(nil)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof)
-options := &msgraphsdk.AddKeyRequestBuilderPostOptions{
-    Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
-result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey(servicePrincipal-id).Post(options)
+result, err := graphClient.ServicePrincipalsById(&servicePrincipalId).AddKey(servicePrincipal-id).Post(requestBody)
 
 
 ```

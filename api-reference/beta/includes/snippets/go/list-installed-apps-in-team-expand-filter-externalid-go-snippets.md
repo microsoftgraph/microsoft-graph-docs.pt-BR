@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: f3eb7a775e105ff6efd8e34dec5676f86b7278c6
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7eea6cf5c17db529ffb2bc39e76cd08eb51faf91
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61100268"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323210"
 ---
 ```go
 
@@ -16,11 +16,11 @@ requestParameters := &msgraphsdk.InstalledAppsRequestBuilderGetQueryParameters{
     Expand: "teamsApp,teamsAppDefinition",
     Filter: "teamsApp/externalId%20eq%20'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'",
 }
-options := &msgraphsdk.InstalledAppsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.InstalledAppsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).InstalledApps().Get(options)
+result, err := graphClient.TeamsById(&teamId).InstalledApps().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

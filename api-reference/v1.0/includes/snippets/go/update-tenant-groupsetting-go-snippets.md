@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9a3c935aa58b5b54c202150cfe0f8127f55afbe0
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: ad87571243bcded6788496f28fc079bdccd8501c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63527988"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323496"
 ---
 ```go
 
@@ -20,11 +20,8 @@ requestBody.SetValues( []SettingValue {
         "value": "false",
     }
 }
-options := &msgraphsdk.GroupSettingRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 groupSettingId := "groupSetting-id"
-graphClient.GroupSettingsById(&groupSettingId).Patch(options)
+graphClient.GroupSettingsById(&groupSettingId).Patch(requestBody)
 
 
 ```

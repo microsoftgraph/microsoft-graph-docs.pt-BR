@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d9504bb7006105e2f2f88aa838e28fce8237e6da
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e41bac5f3141eb996f6092d37c82221c1d288855
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411079"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322182"
 ---
 ```go
 
@@ -39,11 +39,8 @@ user.SetAdditionalData(map[string]interface{}{
 }
 participantId := "909c6581-5130-43e9-88f3-fcb3582cde37"
 transferee.SetParticipantId(&participantId)
-options := &msgraphsdk.TransferRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(options)
+graphClient.Communications().CallsById(&callId).Transfer(call-id).Post(requestBody)
 
 
 ```

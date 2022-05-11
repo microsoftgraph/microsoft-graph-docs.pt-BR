@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a6a3fe904713d205fdcddfd89b79ba59562d5442
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 0a56830b9406a2e5422115599f5745ea158cb828
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61286903"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324518"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61286903"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 credentialUserRegistrationsSummaryId := "credentialUserRegistrationsSummary-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().CredentialUserRegistrationsSummariesById(&credentialUserRegistrationsSummaryId).Get(nil)
+result, err := graphClient.TenantRelationships().ManagedTenants().CredentialUserRegistrationsSummariesById(&credentialUserRegistrationsSummaryId).Get()
 
 
 ```

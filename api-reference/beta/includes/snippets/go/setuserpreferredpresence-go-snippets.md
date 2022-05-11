@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 5155414adc890b457f5b9c5fe50c7bab32d4d274
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b7b56ac1975e66eaaf19ef7a936105d4d3da8278
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410889"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325164"
 ---
 ```go
 
@@ -19,11 +19,8 @@ activity := "DoNotDisturb"
 requestBody.SetActivity(&activity)
 expirationDuration := "PT8H"
 requestBody.SetExpirationDuration(&expirationDuration)
-options := &msgraphsdk.SetUserPreferredPresenceRequestBuilderPostOptions{
-    Body: requestBody,
-}
 userId := "user-id"
-graphClient.UsersById(&userId).Presence().SetUserPreferredPresence(user-id).Post(options)
+graphClient.UsersById(&userId).Presence().SetUserPreferredPresence(user-id).Post(requestBody)
 
 
 ```

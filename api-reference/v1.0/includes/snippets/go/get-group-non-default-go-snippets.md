@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: f5ae34175dcc30e09906ef3adfff8b7f878d5a1c
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 9fab5cf52a5034dadf18370ad1d9a28e26676358
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61081882"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322161"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
     Select: "allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount",
 }
-options := &msgraphsdk.GroupRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.GroupRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Get(options)
+result, err := graphClient.GroupsById(&groupId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

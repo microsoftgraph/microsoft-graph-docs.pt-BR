@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7708cc1abfe58c69af8ef5b517207931b3506c0c
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 0033eb09a660671c251ed310b0437721e4723d71
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61286224"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324435"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61286224"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 bookingCurrencyId := "bookingCurrency-id"
-result, err := graphClient.BookingCurrenciesById(&bookingCurrencyId).Get(nil)
+result, err := graphClient.BookingCurrenciesById(&bookingCurrencyId).Get()
 
 
 ```

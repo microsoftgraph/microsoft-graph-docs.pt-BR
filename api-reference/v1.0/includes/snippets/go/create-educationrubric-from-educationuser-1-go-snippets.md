@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: cbe076a09333309d44e750218fa16f90bdbbaf4b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f8658d3dcb852d71bac8faa94eefecd6acf8eab9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095268"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322334"
 ---
 ```go
 
@@ -43,10 +43,7 @@ requestBody.SetQualities( []RubricQuality {
         }
     }
 }
-options := &msgraphsdk.RubricsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Education().Me().Rubrics().Post(options)
+result, err := graphClient.Education().Me().Rubrics().Post(requestBody)
 
 
 ```

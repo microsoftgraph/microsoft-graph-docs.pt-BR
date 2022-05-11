@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3243653f62c3f5ff20e3181f270a7c5e23bd3d9d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d8e6acc5f078dd16fe2c5483724f760ff5b5f8aa
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411562"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324560"
 ---
 ```go
 
@@ -17,11 +17,8 @@ displayName := "NewName"
 requestBody.SetDisplayName(&displayName)
 description := "A new roleAssignment"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.UnifiedRoleAssignmentMultipleRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 unifiedRoleAssignmentMultipleId := "unifiedRoleAssignmentMultiple-id"
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(options)
+graphClient.RoleManagement().CloudPC().RoleAssignmentsById(&unifiedRoleAssignmentMultipleId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b98c5bc437d0569a14dadac98a4382feccd78a28
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3a9f0dfa4e2cdcc3d3b836b1242ebf615bcbf503
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410705"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322541"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewAppManagementPolicy()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled)
-options := &msgraphsdk.AppManagementPolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 appManagementPolicyId := "appManagementPolicy-id"
-result, err := graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).Patch(options)
+graphClient.Policies().AppManagementPoliciesById(&appManagementPolicyId).Patch(requestBody)
 
 
 ```

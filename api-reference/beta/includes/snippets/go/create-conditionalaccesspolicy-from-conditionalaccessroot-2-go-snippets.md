@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c7a3798f8082b3270de1248907d865d26556e9c4
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: cf4af52c244ed1b4e9d177e2e92db242149a5c20
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103324"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323805"
 ---
 ```go
 
@@ -44,10 +44,7 @@ grantControls.SetOperator(&operator)
 grantControls.SetBuiltInControls( []ConditionalAccessGrantControl {
     "block",
 }
-options := &msgraphsdk.PoliciesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(options)
+result, err := graphClient.Identity().ConditionalAccess().Policies().Post(requestBody)
 
 
 ```

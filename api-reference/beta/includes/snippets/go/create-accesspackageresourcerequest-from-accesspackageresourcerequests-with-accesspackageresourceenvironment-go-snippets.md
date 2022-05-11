@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 834b42f7bba138fee5a0401590f0350b4b8b60fc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1f15912735a3ab4c878760b24d51a33e3655ca78
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119047"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323225"
 ---
 ```go
 
@@ -32,10 +32,7 @@ accessPackageResource.SetAdditionalData(map[string]interface{}{
 }
 requestType := "AdminAdd"
 requestBody.SetRequestType(&requestType)
-options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 
 ```

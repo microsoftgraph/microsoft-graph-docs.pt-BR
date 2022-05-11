@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 56921661a4f91f69a4d066c1898c340b801ef4d8
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: ae0840a5d4ce9c1ec8f60febf1cc5ceb0e8b2a55
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082888"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323670"
 ---
 ```go
 
@@ -34,10 +34,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
         "https://graph.microsoft.com/v1.0/users/69456242-0067-49d3-ba96-9de6f2728e14",
     }
 }
-options := &msgraphsdk.GroupsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Groups().Post(options)
+result, err := graphClient.Groups().Post(requestBody)
 
 
 ```

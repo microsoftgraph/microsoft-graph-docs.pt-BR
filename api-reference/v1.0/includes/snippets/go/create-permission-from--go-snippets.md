@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7c2f46073e8ccb438a5d0daa87efcba70fdb60ef
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f6f5de95772b22dc2482f66ca3a4634d017219bf
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084225"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324191"
 ---
 ```go
 
@@ -21,11 +21,8 @@ requestBody.SetGrantedToIdentities( []IdentitySet {
     SetAdditionalData(map[string]interface{}{
     }
 }
-options := &msgraphsdk.PermissionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 siteId := "site-id"
-result, err := graphClient.SitesById(&siteId).Permissions().Post(options)
+result, err := graphClient.SitesById(&siteId).Permissions().Post(requestBody)
 
 
 ```

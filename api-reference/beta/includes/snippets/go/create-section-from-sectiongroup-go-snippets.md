@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9316fad766a8b1a76ee8f0bb4235ecf602fc7274
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c8949ca366ee1210d33726e29a34407d7ebc0d3b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61087612"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324259"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewOnenoteSection()
 displayName := "Section name"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.SectionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
 sectionGroupId := "sectionGroup-id"
-result, err := graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).Sections().Post(options)
+result, err := graphClient.Me().Onenote().SectionGroupsById(&sectionGroupId).Sections().Post(requestBody)
 
 
 ```

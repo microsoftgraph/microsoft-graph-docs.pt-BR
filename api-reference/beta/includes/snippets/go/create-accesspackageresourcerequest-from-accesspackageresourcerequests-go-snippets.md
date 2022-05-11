@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 60c8ccae3a816345f487e571472d5f99036797d7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: def77a0c3c9056d6d1b83004b299b0fce598921a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119046"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323224"
 ---
 ```go
 
@@ -33,10 +33,7 @@ originId := "https://contoso.sharepoint.com/sites/Sales"
 accessPackageResource.SetOriginId(&originId)
 originSystem := "SharePointOnline"
 accessPackageResource.SetOriginSystem(&originSystem)
-options := &msgraphsdk.AccessPackageResourceRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a812297f6475ca4926cde8e876733411968f74e4
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4b6a68cbf26bdce2913636b299e44868680395b1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097203"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323927"
 ---
 ```go
 
@@ -15,10 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCalendarGroup()
 name := "Personal events"
 requestBody.SetName(&name)
-options := &msgraphsdk.CalendarGroupsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().CalendarGroups().Post(options)
+result, err := graphClient.Me().CalendarGroups().Post(requestBody)
 
 
 ```

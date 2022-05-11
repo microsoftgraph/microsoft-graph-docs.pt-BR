@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 953f3f244a0cddedc0fe8d5923fe993965ffd164
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 831130241dd318f947817393f693c183708dc8ef
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61286454"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322405"
 ---
 ```go
 
@@ -16,7 +16,7 @@ siteId := "site-id"
 groupId := "group-id"
 setId := "set-id"
 termId := "term-id"
-result, err := graphClient.SitesById(&siteId).TermStore().GroupsById(&groupId).SetsById(&setId).TermsById(&termId).Get(nil)
+result, err := graphClient.SitesById(&siteId).TermStore().GroupsById(&groupId).SetsById(&setId).TermsById(&termId).Get()
 
 
 ```

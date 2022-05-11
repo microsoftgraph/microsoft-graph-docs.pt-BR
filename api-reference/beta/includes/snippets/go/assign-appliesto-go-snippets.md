@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 45dfb548e33d2319f1d39a8728c272f501d29386
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: fc43f99946446f181699b8ef239392b8b5bfb3b5
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410689"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323042"
 ---
 ```go
 
@@ -16,12 +16,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}",
 }
-options := &msgraphsdk.AppManagementPolicyRequestBuilderPostOptions{
-    Body: requestBody,
-}
 servicePrincipalId := "servicePrincipal-id"
 appManagementPolicyId := "appManagementPolicy-id"
-graphClient.ServicePrincipalsById(&servicePrincipalId).AppManagementPoliciesById(&appManagementPolicyId).Post(options)
+graphClient.ServicePrincipalsById(&servicePrincipalId).AppManagementPoliciesById(&appManagementPolicyId).Post(requestBody)
 
 
 ```

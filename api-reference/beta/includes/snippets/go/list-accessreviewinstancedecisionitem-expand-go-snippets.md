@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 29c3eb3906ba8441ce532f84a1e4cb3f7d8d3a64
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 02b49c184296a00a08b6c212ab2f3246f7d9c79a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224901"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322609"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderGetQueryParameters{
     Expand: "instance($expand=definition)",
 }
-options := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 accessReviewInstanceDecisionItemId := "accessReviewInstanceDecisionItem-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DecisionsById(&accessReviewInstanceDecisionItemId).Get(options)
+result, err := graphClient.IdentityGovernance().AccessReviews().DecisionsById(&accessReviewInstanceDecisionItemId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

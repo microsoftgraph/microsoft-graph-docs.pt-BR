@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2610850dc51bbc65cde783de996e2db44644f073
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 33eca8f0fbb06f49ea1b1d2d1951ee8cfd163faa
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092302"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324922"
 ---
 ```go
 
@@ -15,12 +15,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.OnPremisesAgentGroupRequestBuilderGetQueryParameters{
     Expand: "publishedResources,agents",
 }
-options := &msgraphsdk.OnPremisesAgentGroupRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.OnPremisesAgentGroupRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 onPremisesPublishingProfileId := "onPremisesPublishingProfile-id"
 onPremisesAgentGroupId := "onPremisesAgentGroup-id"
-result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).Get(options)
+result, err := graphClient.OnPremisesPublishingProfilesById(&onPremisesPublishingProfileId).AgentGroupsById(&onPremisesAgentGroupId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: dd8820d5442fd848d1aedd6317261b5295d88fb3
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: ee257442945dc02578ebd553dd070e61989f406e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63758529"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324271"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewOAuth2PermissionGrant()
 scope := "User.ReadBasic.All Group.ReadWrite.All"
 requestBody.SetScope(&scope)
-options := &msgraphsdk.OAuth2PermissionGrantRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 oAuth2PermissionGrantId := "oAuth2PermissionGrant-id"
-graphClient.Oauth2PermissionGrantsById(&oAuth2PermissionGrantId).Patch(options)
+graphClient.Oauth2PermissionGrantsById(&oAuth2PermissionGrantId).Patch(requestBody)
 
 
 ```
