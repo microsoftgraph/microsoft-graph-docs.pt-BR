@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a72126e1ccab8a89d8e18dee67b9bee17f076f9c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: d91a55df48cf9fa23b179f2af6e9465829daee8e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411366"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325086"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 teamId := "team-id"
 teamsAppInstallationId := "teamsAppInstallation-id"
-graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Upgrade(team-id, teamsAppInstallation-id).Post(nil)
+graphClient.TeamsById(&teamId).InstalledAppsById(&teamsAppInstallationId).Upgrade(team-id, teamsAppInstallation-id).Post()
 
 
 ```

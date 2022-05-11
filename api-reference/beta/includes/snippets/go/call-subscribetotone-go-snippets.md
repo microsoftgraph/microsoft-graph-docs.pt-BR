@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 291e2bdfcda8036a36e813a838eaf794150107a6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 610dbd436d8bfee709125a3c53fc70757375c3e9
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410633"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323811"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewClientContextRequestBody()
 clientContext := "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 requestBody.SetClientContext(&clientContext)
-options := &msgraphsdk.SubscribeToToneRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).SubscribeToTone(call-id).Post(options)
+result, err := graphClient.Communications().CallsById(&callId).SubscribeToTone(call-id).Post(requestBody)
 
 
 ```

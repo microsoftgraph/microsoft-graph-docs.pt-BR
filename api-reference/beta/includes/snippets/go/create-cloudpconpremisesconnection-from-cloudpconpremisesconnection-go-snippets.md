@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8fcc3dc4cf9462816803529e72bfe14217e18c02
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 9dc9e424811aea2781da520f0dc3fdee4697d6a4
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62350881"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325000"
 ---
 ```go
 
@@ -36,10 +36,7 @@ requestBody.SetSubnetId(&subnetId)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
 }
-options := &msgraphsdk.OnPremisesConnectionsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Post(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Post(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 7960d7c601099ecd6f31b79f4b4e6363db335db5
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: bd893242347e5b0595ec5eed36efbd74725855c3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61084474"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325448"
 ---
 ```go
 
@@ -36,10 +36,7 @@ requestBody.SetExtensions( []Extension {
         "dealValue": ,
     }
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Messages().Post(options)
+result, err := graphClient.Me().Messages().Post(requestBody)
 
 
 ```

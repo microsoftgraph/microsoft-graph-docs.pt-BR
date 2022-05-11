@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8c83939c50941f802692102993bd431119bd0119
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 343960dc6a8c3d90db3e40a651f88e988820906d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097491"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322644"
 ---
 ```go
 
@@ -31,11 +31,8 @@ originId := "https://microsoft.sharepoint.com/portals/Community"
 accessPackageResourceScope.SetOriginId(&originId)
 originSystem := "SharePointOnline"
 accessPackageResourceScope.SetOriginSystem(&originSystem)
-options := &msgraphsdk.AccessPackageResourceRoleScopesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 accessPackageId := "accessPackage-id"
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackagesById(&accessPackageId).AccessPackageResourceRoleScopes().Post(requestBody)
 
 
 ```

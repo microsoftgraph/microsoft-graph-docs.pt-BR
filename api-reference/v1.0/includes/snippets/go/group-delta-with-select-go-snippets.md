@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 663a9f701bf63344c1087d5961cd4cf8f282f0e9
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d5adbd7adc33ac36d617a9692cbfa0cc5edd7f2a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137606"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322163"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
     Select: "displayName,description,mailNickname",
 }
-options := &msgraphsdk.DeltaRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.DeltaRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.Groups().Delta()().Get(options)
+result, err := graphClient.Groups().Delta()().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

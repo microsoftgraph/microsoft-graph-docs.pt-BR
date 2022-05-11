@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3aba89d549c8e16d35ef88f000deae8e8377b7b2
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 904e1931e5c12f279579105d2fa5339096113299
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094561"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325550"
 ---
 ```go
 
@@ -52,11 +52,10 @@ requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage)
 headers := map[string]string{
     "Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.FindMeetingTimesRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.FindMeetingTimesRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
-result, err := graphClient.Me().FindMeetingTimes().Post(options)
+result, err := graphClient.Me().FindMeetingTimes().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```
