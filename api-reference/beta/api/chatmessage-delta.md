@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6e8b1555fa56bf884d36aad20c1c382a8279708b
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: c5ea0860085ce2740e6ca014965f0e31586de324
+ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247319"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65296497"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -74,7 +74,10 @@ Em solicitações subsequentes, copie e aplique a URL `@odata.nextLink` ou `@oda
 Os seguintes [parâmetros de consulta OData](/graph/query-parameters) são compatível com esta API:
 - `$top`representa o número máximo de mensagens a buscar em uma chamada. O limite máximo é **50**.
 - `$skip`representa quantas mensagens devem ser ignoradas no início da lista.
-- `$filter` permite retornar mensagens que atendem a certos critérios. A única propriedade que permite a filtragem é `lastModifiedDateTime`, e somente os operadores **gt** são compatíveis. Por exemplo, o`../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` vai buscar todas as mensagens criadas ou alteradas após o período de tempo especificado.
+- `$filter` permite retornar mensagens que atendem a certos critérios. A única propriedade que permite a filtragem é `lastModifiedDateTime`, e somente os operadores **gt** são compatíveis. Por exemplo, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z`**irá buscar qualquer cadeia de resposta (cada mensagem de postagem de canal e mensagens de resposta associadas)** criada ou alterada após a data e hora especificada.
+- `$expand` permite expandir propriedades para cada mensagem de canal. Apenas **respostas** são suportadas. Se uma mensagem do canal contiver mais de 1000 respostas, `replies@odata.nextLink` será fornecida para paginação. 
+
+> **Observação**: para o parâmetro de consulta `$expand`, consulte [Listar Mensagens do Canal](channel-list-messages.md#example-3-request-with-top-and-expand-query-options-on-replies).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho        | Valor                     |
