@@ -1,16 +1,16 @@
 ---
 title: 'privilegedRoleAssignment: makeEligible'
-description: Tornar a atribuição de função qualificada.
+description: Torne a atribuição de função qualificada.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 5307de6cd30474dd5121501329c87636b9e9944f
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 73c4a227589e32bc65238544357b55cf88f97116
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62339689"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314280"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Tornar a atribuição de função qualificada. Se a atribuição de função já estiver qualificada antes da chamada, ela não faz nada. Se a atribuição de função for permanente e o solicitante for diferente do usuário de destino, a atribuição de função se tornará qualificada e a função será desativada para o usuário de destino. Se o solicitante for o usuário de destino e a função for Administrador de Segurança ou Administrador de Função Privilegiada, a função será ativada com a expiração padrão.
+Torne a atribuição de função qualificada. Se a atribuição de função já estiver qualificada antes da chamada, ela não fará nada. Se a atribuição de função for permanente e o solicitante for diferente do usuário de destino, a atribuição de função se tornará qualificada e a função será desativada para o usuário de destino. Se o solicitante for o usuário de destino e a função for Administrador de Segurança ou Administrador de Função Com Privilégios, a função será ativada com a expiração padrão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter função _de Administrador de Função_ Privilegiada. 
+O solicitante precisa ter a função _administrador de função_ com privilégios. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará `200 OK` o código de resposta e [o objeto privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação

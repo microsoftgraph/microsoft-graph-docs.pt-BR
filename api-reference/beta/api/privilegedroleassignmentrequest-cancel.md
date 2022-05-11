@@ -4,13 +4,13 @@ description: Cancele um privilegedRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: bc53828d90a1f80b81bf49ae4e988b1b993a3308
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 8333afad2d35cc41731a3a13d86fb17dd5280f73
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62349116"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314364"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Cancelar privilegedRoleAssignmentRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Cancele [um privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -47,17 +47,17 @@ POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 Ok`. Ele retorna [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 Ok`. Ele retorna [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ### <a name="error-codes"></a>Códigos de erro
-Esta API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os códigos de erro personalizados listados na tabela a seguir.
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os códigos de erro personalizados listados na tabela a seguir.
 
 |Código de erro     | Mensagem de erro              |
 |:--------------------| :---------------------|
 | 400 BadRequest | RequestId não pode ser Null. |
 | 400 BadRequest | Solicitação com ID de solicitação não encontrada. |
-| 400 BadRequest | O cancelamento só pode ser feito no status Scheduled e PendingApproval. |
-| 403 Não Autorizado | O solicitante não tem permissão para fazer cancelar chamada ou solicitação não encontrada. |
+| 400 BadRequest | O cancelamento só pode ser feito no status Agendado e PendingApproval. |
+| 403 Não Autorizado | O solicitante não tem permissão para fazer Cancelar chamada ou solicitação não encontrada. |
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

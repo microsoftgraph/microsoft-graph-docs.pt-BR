@@ -1,24 +1,26 @@
 ---
-title: Listar revisores do accessReview
-description: No recurso de revisões de acesso do Azure AD, recupere os revisores de um objeto accessReview.
+title: Listar revisores accessReview
+description: No recurso Azure AD revisões de acesso, recupere os revisores de um objeto accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b473bf47ab98606ec300f6a9683eea6dc83554bf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0a5ffc308b63eabf9b883be1f68bee1190c86c8a
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100722"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314462"
 ---
-# <a name="list-accessreview-reviewers"></a>Listar revisores do accessReview
+# <a name="list-accessreview-reviewers"></a>Listar revisores accessReview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure AD, recupere os [revisores](../resources/accessreviews-root.md) de um [objeto accessReview.](../resources/accessreview.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso Azure AD [revisões de acesso, recupere os revisores](../resources/accessreviews-root.md) de um [objeto accessReview](../resources/accessreview.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 
- O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
+ O usuário conectado também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,10 +44,10 @@ GET /accessReviews/{reviewId}/reviewers
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo de solicitação deve ser fornecido.
+Nenhum corpo da solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` matriz de [objetos userIdentity](../resources/useridentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma matriz de [objetos userIdentity](../resources/useridentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -112,9 +114,9 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão de acesso. |
-|[Adicionar o revisor accessReview](accessreview-addreviewer.md) |     Nenhum.   |   Adicione um revisor a um accessReview. |
-|[Remover o revisor accessReview](accessreview-removereviewer.md) | Nenhum. |   Remova um revisor de um accessReview. |
+|[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recuperar uma revisão de acesso. |
+|[Adicionar revisor accessReview](accessreview-addreviewer.md) |     Nenhum.   |   Adicione um revisor a um accessReview. |
+|[Remover o revisor accessReview](accessreview-removereviewer.md) | Nenhum. |   Remover um revisor de um accessReview. |
 
 
 <!--

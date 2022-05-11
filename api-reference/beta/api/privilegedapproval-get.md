@@ -4,13 +4,13 @@ description: Recupere as propriedades e as relações do objeto privilegedapprov
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 91af45d12b72923de76b6ad0408e31d7a0c3745f
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: f22e8e5b547b2c36a9b48922aed526be344e4aa4
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671451"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315997"
 ---
 # <a name="get-privilegedapproval"></a>Get privilegedApproval
 
@@ -49,9 +49,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e [um objeto privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e [um objeto privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

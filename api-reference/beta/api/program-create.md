@@ -1,16 +1,16 @@
 ---
 title: Criar programa
-description: No recurso de análises de acesso do Azure AD, crie um novo objeto de programa.
+description: No recurso Azure AD revisões de acesso, crie um novo objeto de programa.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: eb41b5ad613a95c40cf70ce8b91fdf375426ef98
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: aa1ac48fb85b2c20d40b9b211d17183a6a78ab65
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118289"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315276"
 ---
 # <a name="create-program"></a>Criar programa
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de análises de acesso do Azure [AD,](../resources/accessreviews-root.md) crie um novo [objeto de](../resources/program.md) programa.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), crie um novo [objeto de](../resources/program.md) programa.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
-O usuário inscreveu também deve estar em uma função de diretório que permita que ele crie um programa.
+O usuário conectado também deve estar em uma função de diretório que permita que ele crie um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +43,9 @@ POST /programs
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto program.](../resources/program.md)
+No corpo da solicitação, forneça uma representação JSON de um [objeto de](../resources/program.md) programa.
 
-A tabela a seguir mostra as propriedades necessárias ao criar um programa.
+A tabela a seguir mostra as propriedades que são necessárias ao criar um programa.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -52,11 +54,11 @@ A tabela a seguir mostra as propriedades necessárias ao criar um programa.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [program](../resources/program.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201, Created` de resposta [e um objeto de](../resources/program.md) programa no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto program.](../resources/program.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto de](../resources/program.md) programa.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -122,9 +124,9 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programas](program-list.md) | [conjunto de](../resources/program.md) programas|  Obter uma coleção de todos os programas.|
-|[Listar programControls de um programa](program-listcontrols.md) |     [Coleção programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
-|[Atualizar programa](program-update.md) |  [program](../resources/program.md)| Atualize um programa.|
+|[Listar programas](program-list.md) | [coleção de](../resources/program.md) programas|  Obtenha uma coleção de todos os programas.|
+|[Listar programControls de um programa](program-listcontrols.md) |     [coleção programControl](../resources/programcontrol.md)|    Obtenha uma coleção dos controles de um programa.|
+|[Atualizar programa](program-update.md) |  [Programa](../resources/program.md)| Atualizar um programa.|
 |[Criar programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Adicione um programControl a um programa.|
 
 <!--

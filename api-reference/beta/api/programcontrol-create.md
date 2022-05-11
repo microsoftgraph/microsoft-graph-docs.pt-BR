@@ -1,16 +1,16 @@
 ---
 title: Criar programControl
-description: No recurso de revisões de acesso do Azure AD, crie um novo objeto programControl.  Isso vincula uma revisão de acesso a um programa.
+description: No recurso Azure AD revisões de acesso, crie um novo objeto programControl.  Isso vincula uma revisão de acesso a um programa.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 7a95341793ecb1ccd63af596903de2eef2847c3f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 61b903d83b6d5b7c8de8e101e9b435a8ff34496e
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132730"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314933"
 ---
 # <a name="create-programcontrol"></a>Criar programControl
 
@@ -18,13 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) crie um novo [objeto programControl.](../resources/programcontrol.md)  Isso vincula uma revisão de acesso a um programa.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Antes de fazer essa solicitação, o chamador deve ter anteriormente
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), crie um novo [objeto programControl](../resources/programcontrol.md).  Isso vincula uma revisão de acesso a um programa.
 
-- [criou um programa](program-create.md) [ou recuperou um programa](program-list.md), para ter o valor de incluir na `programId` solicitação,
-- [criou uma revisão de](accessreview-create.md) acesso [ou recuperou uma](accessreview-get.md)revisão de acesso , para ter o valor de incluir `controlId` na solicitação e
-- [recuperou a lista de tipos de controle de](programcontroltype-list.md)programa , para ter o valor de incluir na `controlTypeId` solicitação.
+Antes de fazer essa solicitação, o chamador deve ter feito isso anteriormente
+
+- [criou um programa](program-create.md) [ou recuperou um programa](program-list.md), para ter o valor de `programId` incluir na solicitação,
+- [criou uma revisão de](accessreview-create.md) acesso [ou recuperou uma revisão](accessreview-get.md) de acesso, para ter o valor de `controlId` incluir na solicitação e
+- [recuperou a lista de tipos de controle de](programcontroltype-list.md) programa, para ter o valor de `controlTypeId` incluir na solicitação.
 
 
 ## <a name="permissions"></a>Permissões
@@ -36,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            |  ProgramControl.ReadWrite.All  |
 
-O usuário inscreveu também deve estar em uma função de diretório que permita que ele crie um **programControl**. 
+O usuário conectado também deve estar em uma função de diretório que permita que ele crie um **programControl**. 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,23 +51,23 @@ POST /programControls
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto programControl.](../resources/programcontrol.md)
+No corpo da solicitação, forneça uma representação JSON de um [objeto programControl](../resources/programcontrol.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um controle de programa.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | A programId do programa do que esse controle se tornará parte.                             |
-| `controlId`              |`String`                | ControlId do controle, em particular o identificador de uma revisão de acesso.                                                |
-| `controlTypeId`          |`String`                | O programControlType identifica o tipo de controle de programa - por exemplo, um controle que vincula a avaliações de acesso de convidados. |
+| `programId`              |`String`                | A programId do programa do qual esse controle se tornará parte.                             |
+| `controlId`              |`String`                | A controlId do controle, em particular o identificador de uma revisão de acesso.                                                |
+| `controlTypeId`          |`String`                | O programControlType identifica o tipo de controle de programa – por exemplo, um controle vinculado a revisões de acesso de convidado. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `201, Created` de resposta e um objeto [programControl](../resources/programcontrol.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201, Created` de resposta e um [objeto programControl](../resources/programcontrol.md) no corpo da resposta.
 
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto programControl.](../resources/programcontrol.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto programControl](../resources/programcontrol.md) .
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -136,7 +138,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programControlTypes](../api/programcontroltype-list.md) | [Coleção programControlType](../resources/programcontroltype.md)| Listar tipos de controle de programa. |
+|[Listar programControlTypes](../api/programcontroltype-list.md) | [coleção programControlType](../resources/programcontroltype.md)| Listar tipos de controle de programa. |
 
 
 <!--

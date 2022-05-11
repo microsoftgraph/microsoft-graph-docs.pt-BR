@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6bd06aabb0b80a692ac7cabf9d6fde934265373a
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: da634d0914df4beeb63c05adf21314a98b0d71a2
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61286327"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315305"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61286327"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 privilegedRoleAssignmentId := "privilegedRoleAssignment-id"
-graphClient.PrivilegedRoleAssignmentsById(&privilegedRoleAssignmentId).Delete(nil)
+graphClient.PrivilegedRoleAssignmentsById(&privilegedRoleAssignmentId).Delete()
 
 
 ```

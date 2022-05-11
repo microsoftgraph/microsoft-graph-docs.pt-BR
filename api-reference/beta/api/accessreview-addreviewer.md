@@ -1,24 +1,26 @@
 ---
-title: Adicionar o revisor accessReview
-description: 'No recurso de revisões de acesso do Azure AD, atualize um objeto accessReview existente para adicionar outro usuário como revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e somente para uma revisão de acesso em que os revisadores são explicitamente especificados. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revistores. '
+title: Adicionar revisor accessReview
+description: 'No recurso Azure AD revisões de acesso, atualize um objeto accessReview existente para adicionar outro usuário como revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e apenas para uma revisão de acesso em que os revisores são especificados explicitamente. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revisores. '
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e710927e5f67d45ceeb60692a05fb449c482e48d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e5814ab38f90bc0f7f2d3ef55eda276bbf3f27c6
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091090"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314546"
 ---
-# <a name="add-accessreview-reviewer"></a>Adicionar o revisor accessReview
+# <a name="add-accessreview-reviewer"></a>Adicionar revisor accessReview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure AD, atualize um objeto [accessReview](../resources/accessreview.md) existente para adicionar outro usuário como [revisor.](../resources/accessreviews-root.md)  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e somente para uma revisão de acesso em que os revisadores são explicitamente especificados. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revistores. 
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso Azure AD revisões de acesso, atualize um objeto [accessReview](../resources/accessreview.md) existente para adicionar outro usuário como [revisor](../resources/accessreviews-root.md).  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e apenas para uma revisão de acesso em que os revisores são especificados explicitamente. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revisores. 
 
 
 ## <a name="permissions"></a>Permissões
@@ -41,7 +43,7 @@ POST /accessReviews/{reviewId}/reviewers
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON da ID de um usuário que será um revistor.
+No corpo da solicitação, forneça uma representação JSON da ID de um usuário que será um revistor.
 
 A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um accessReview.
 
@@ -51,14 +53,14 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta .
+Se tiver êxito, este método retornará um código `201 Created` de resposta.
 
 ## <a name="example"></a>Exemplo
 
-Este é um exemplo de atualização de uma revisão de acesso única (não recorrente) com um revistor adicional.
+Este é um exemplo de atualização de uma revisão de acesso única (não recorrente) com um revisador adicional.
 
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON da id do objeto do usuário.
+No corpo da solicitação, forneça uma representação JSON da ID do objeto de usuário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

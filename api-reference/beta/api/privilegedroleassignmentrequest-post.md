@@ -4,13 +4,13 @@ description: Crie um objeto privilegedroleassignmentrequest.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: b59eb882f3560847f16aed7f9e4d360f68360989
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: a09a8e23e876ae57fa85c1b579cecf14f34ee510
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671388"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65316362"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Criar privilegedRoleAssignmentRequest
 
@@ -43,28 +43,28 @@ POST /privilegedRoleAssignmentRequests
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON [do objeto privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
+No corpo da solicitação, forneça uma representação JSON do [objeto privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
 
 | Propriedade     | Tipo    |  Descrição|
 |:---------------|:--------|:----------|
-|roleId|String|A ID da função. Obrigatório.|
-|type|String|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: Administradores adicionam usuários a funções;`UserAdd`: Os usuários adicionam atribuições de função. Obrigatório.|
-|assignmentState|String|O estado da atribuição. O valor pode ser `Eligible` para `Active` atribuição qualificada - `Active` se ele for atribuído diretamente pelos administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
+|roleId|Cadeia de caracteres|A ID da função. Obrigatório.|
+|type|String|Representa o tipo da operação na atribuição de função. O valor pode ser: administradores `AdminAdd`adicionam usuários a funções;`UserAdd`: os usuários adicionam atribuições de função. Obrigatório.|
+|assignmentState|Cadeia de caracteres|O estado da atribuição. O valor pode ser `Eligible` para `Active` atribuição qualificada - `Active` se ele for atribuído diretamente por administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
 |motivo|String|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão.|
-|Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O cronograma da solicitação de atribuição de função.|
+|Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O agendamento da solicitação de atribuição de função.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ### <a name="error-codes"></a>Códigos de erro
-Esta API retorna os códigos de erro HTTP padrão. Além disso, ele pode retornar os códigos de erro listados na tabela a seguir.
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele pode retornar os códigos de erro listados na tabela a seguir.
 
 |Código de erro     | Mensagem de erro              | 
 |:--------------------| :---------------------|
-| 400 BadRequest | A propriedade RoleAssignmentRequest foi NULL |
-| 400 BadRequest | Não é possível deserializar o objeto roleAssignmentRequest. |
-| 400 BadRequest | RoleId é obrigatório. |
-| 400 BadRequest | A data de início do agendamento deve ser especificada e deve ser maior do que Agora. |
+| 400 BadRequest | A propriedade RoleAssignmentRequest era NULL |
+| 400 BadRequest | Não é possível desserializar o objeto roleAssignmentRequest. |
+| 400 BadRequest | RoleId é necessário. |
+| 400 BadRequest | A data de início da agenda deve ser especificada e deve ser maior que Agora. |
 | 400 BadRequest | Já existe uma agenda para esse usuário, função e tipo de agendamento. |
 | 400 BadRequest | Já existe uma aprovação pendente para esse usuário, função e tipo de aprovação. |
 | 400 BadRequest | O motivo do solicitante está ausente. |
@@ -72,9 +72,9 @@ Esta API retorna os códigos de erro HTTP padrão. Além disso, ele pode retorna
 | 400 BadRequest | A duração da elevação deve estar entre 0,5 e {from setting}. |
 | 400 BadRequest | Há uma sobreposição entre a ativação agendada e a solicitação. |
 | 400 BadRequest | A função já está ativada. |
-| 400 BadRequest | GenericElevateUserToRoleAssignments: As informações de escala são necessárias e não são fornecidas no processo de ativação. |
+| 400 BadRequest | GenericElevateUserToRoleAssignments: as informações de tique são necessárias e não são fornecidas no processo de ativação. |
 | 400 BadRequest | Há uma sobreposição entre a ativação agendada e a solicitação. |
-| 403 Não Autorizado | A elevação requer Autenticação Multifa factor. |
+| 403 Não Autorizado | A elevação requer Autenticação Multifator. |
 | 403 Não Autorizado | Em nome da elevação não é permitido. |
 
 ## <a name="example"></a>Exemplo

@@ -4,13 +4,13 @@ description: Use essa API para criar um novo privilegedApproval.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 1613da269d527065059fdf3ddee9c6d1b6d1f7b3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 0fa39e7332279fda504b4d8f9563ff1f2dd713d6
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112233"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314806"
 ---
 # <a name="create-privilegedapproval"></a>Create privilegedApproval
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Use essa API para criar um novo privilegedApproval.
 ## <a name="permissions"></a>Permissões
@@ -43,13 +43,13 @@ POST /privilegedApproval
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON [do objeto privilegedApproval.](../resources/privilegedapproval.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto privilegedApproval](../resources/privilegedapproval.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta e o objeto [privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` o código de resposta e [o objeto privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -98,7 +98,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON [do objeto privilegedApproval.](../resources/privilegedapproval.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto privilegedApproval](../resources/privilegedapproval.md) .
 ##### <a name="response"></a>Resposta
 Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {

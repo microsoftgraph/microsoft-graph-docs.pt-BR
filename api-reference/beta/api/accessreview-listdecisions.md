@@ -1,26 +1,28 @@
 ---
-title: Listar decisões do accessReview
-description: No recurso de revisões de acesso do Azure AD, recupere as decisões de um objeto accessReview.
+title: Listar decisões de accessReview
+description: No recurso Azure AD revisões de acesso, recupere as decisões de um objeto accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b5e19b303745d6c217f2dec6dc084330b45eb858
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9e6f9d7430a1fd00357ac2455e4754f7d4958e58
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110117"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314469"
 ---
-# <a name="list-accessreview-decisions"></a>Listar decisões do accessReview
+# <a name="list-accessreview-decisions"></a>Listar decisões de accessReview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) recupere as decisões de um [objeto accessReview.](../resources/accessreview.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Observe que uma revisão de acesso recorrente não terá uma **relação de** decisões.  Em vez disso, o  chamador deve navegar pela relação de instância para encontrar um [objeto accessReview](../resources/accessreview.md) para uma instância atual ou anterior da revisão de acesso.
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), recupere as decisões de um [objeto accessReview](../resources/accessreview.md).
+
+Observe que uma revisão de acesso recorrente não terá uma relação **de** decisões.  Em vez disso, o chamador deve  navegar pela relação de instância para localizar um objeto [accessReview](../resources/accessreview.md) para uma instância atual ou anterior da revisão de acesso.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
- O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
+ O usuário conectado também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,10 +46,10 @@ GET /accessReviews/{reviewId}/decisions
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo de solicitação deve ser fornecido.
+Nenhum corpo da solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma matriz de `200 OK` [objetos accessReviewDecision](../resources/accessreviewdecision.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma matriz de [objetos accessReviewDecision](../resources/accessreviewdecision.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -117,12 +119,12 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão de acesso. |
-|[Listar minhas decisões do accessReview](accessreview-listmydecisions.md) |        [Coleção accessReviewDecision](../resources/accessreviewdecision.md)|    Como revisor, receba minhas decisões de um accessReview.|
+|[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recuperar uma revisão de acesso. |
+|[Listar minhas decisões de accessReview](accessreview-listmydecisions.md) |        [coleção accessReviewDecision](../resources/accessreviewdecision.md)|    Como revisor, obtenha minhas decisões de um accessReview.|
 |[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum.   |   Envie um lembrete aos revisores de um accessReview. |
 |[Parar accessReview](accessreview-stop.md) |        Nenhum.   |   Pare um accessReview. |
-|[Redefinir as decisões do accessReview](accessreview-reset.md) |        Nenhum.   |   Redefinir as decisões em um accessReview em andamento.|
-|[Aplicar decisões do accessReview](accessreview-apply.md) |        Nenhum.   |   Aplicar as decisões de um accessReview concluído.|
+|[Redefinir decisões de accessReview](accessreview-reset.md) |        Nenhum.   |   Redefina as decisões em um accessReview em andamento.|
+|[Aplicar decisões accessReview](accessreview-apply.md) |        Nenhum.   |   Aplique as decisões de um accessReview concluído.|
 
 
 <!--

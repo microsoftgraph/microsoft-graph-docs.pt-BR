@@ -1,16 +1,16 @@
 ---
 title: Listar businessFlowTemplates
-description: No recurso de análises de acesso do Azure AD, liste todos os objetos businessFlowTemplate.
+description: No recurso Azure AD revisões de acesso, liste todos os objetos businessFlowTemplate.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 0fefb1b789b3d13995d93c5acfe09362faa3e600
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 150617d1035cf8036dc4424db5e48f38676f8127
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124120"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315178"
 ---
 # <a name="list-businessflowtemplates"></a>Listar businessFlowTemplates
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de análises de acesso do Azure [AD,](../resources/accessreviews-root.md) liste todos os [objetos businessFlowTemplate.](../resources/businessflowtemplate.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), liste todos os [objetos businessFlowTemplate](../resources/businessflowtemplate.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
-O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
+O usuário conectado também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +43,10 @@ GET /businessFlowTemplates
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo de solicitação deve ser fornecido.
+Nenhum corpo da solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos businessFlowTemplate](../resources/businessflowtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200, OK` de resposta e uma matriz de [objetos businessFlowTemplate](../resources/businessflowtemplate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

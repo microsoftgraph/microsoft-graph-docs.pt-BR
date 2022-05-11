@@ -1,18 +1,23 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 611f3d19841302ce3f915c01d4e084c13f559b224436cf35ebbf1adebbc8d3e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7214254a829b7059adeace6a3d9fa9bfee4fe3f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57215513"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314661"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+    new QueryOption("top", "3")
+};
+
 var messages = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages
-    .Request()
+    .Request( queryOptions )
     .GetAsync();
 
 ```

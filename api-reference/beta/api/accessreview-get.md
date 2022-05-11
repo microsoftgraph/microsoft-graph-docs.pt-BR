@@ -1,16 +1,16 @@
 ---
 title: Obter accessReview
-description: No recurso de revisões de acesso do Azure AD, recupere um objeto accessReview.
+description: No recurso Azure AD revisões de acesso, recupere um objeto accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6a5d14aa63b523d5bd0b3fd9846b96eae055d1a3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 50f3ba903b15db5e2cee1972d0629127e14926f7
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104013"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314504"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
@@ -18,11 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) recupere um [objeto accessReview.](../resources/accessreview.md)  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Para recuperar os revisores da revisão de acesso, use a API de revisores [de acesso à](accessreview-listreviewers.md) lista. Para recuperar as decisões da revisão de acesso, use a API de decisões do [accessReview](accessreview-listdecisions.md) de lista ou a API de decisões [do meu accessReview.](accessreview-listmydecisions.md)
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), recupere um [objeto accessReview](../resources/accessreview.md).  
 
-Se for uma revisão de acesso recorrente, nenhuma decisão será associada à série de revisão de acesso recorrente. Em vez disso, use a relação dessa série para recuperar uma coleção `instances` [accessReview](../resources/accessreview.md) das instâncias passadas, atuais e futuras da revisão de acesso. Cada instância passada e atual terá decisões.
+Para recuperar os revisores da revisão de acesso, use a API [de revisores de acesso à](accessreview-listreviewers.md) lista. Para recuperar as decisões da revisão de acesso, use a API de decisões [de acesso](accessreview-listdecisions.md) à lista ou a lista [minha API de decisões accessReview](accessreview-listmydecisions.md) .
+
+Se essa for uma revisão de acesso recorrente, nenhuma decisão será associada à série de revisão de acesso recorrente. Em vez disso, use `instances` a relação dessa série para recuperar uma coleção [accessReview](../resources/accessreview.md) das instâncias anteriores, atuais e futuras da revisão de acesso. Cada instância passada e atual terá decisões.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
-Para chamar essa API, o usuário inscreveu também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso, ou o usuário pode ser atribuído como revistor na revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviews-root.md)
+Para chamar essa API, o usuário conectado também deve estar em uma função de diretório que permita ler uma revisão de acesso ou o usuário pode ser atribuído como revistor na revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [revisões de acesso](../resources/accessreviews-root.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ GET /accessReviews/{reviewId}
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessReview](../resources/accessreview.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto accessReview](../resources/accessreview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -137,9 +139,9 @@ Content-type: application/json
 - [Criar accessReview](accessreview-create.md)
 - [Listar accessReviews](accessreview-list.md)
 - [Listar programControls](programcontrol-list.md)
-- [Listar revisores do accessReview](accessreview-listreviewers.md)
-- [Listar decisões do accessReview](accessreview-listdecisions.md)
-- [Listar minhas decisões do accessReview](accessreview-listmydecisions.md)
+- [Listar revisores accessReview](accessreview-listreviewers.md)
+- [Listar decisões de accessReview](accessreview-listdecisions.md)
+- [Listar minhas decisões de accessReview](accessreview-listmydecisions.md)
 
 
 <!--

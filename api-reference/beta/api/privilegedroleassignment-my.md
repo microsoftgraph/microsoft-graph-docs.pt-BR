@@ -1,16 +1,16 @@
 ---
 title: 'privilegedRoleAssignment: my'
-description: Obter as atribuições de função privilegiada do solicitante.
+description: Obtenha as atribuições de função com privilégios do solicitante.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 22fa9e10c08ee2446885451eaba1c480be0a30b0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 0212a6597ecdad812749f2f3b9d4a421cc0fe71e
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62349130"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314246"
 ---
 # <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: my
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Obter as atribuições de função privilegiada do solicitante.
+Obtenha as atribuições de função com privilégios do solicitante.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` o código de resposta e o [objeto da coleção privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará o `200 OK` código de resposta e o [objeto da coleção privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

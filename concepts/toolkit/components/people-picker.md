@@ -1,16 +1,16 @@
 ---
-title: People-Picker componente
+title: Componente do seletor de pessoas
 description: Você pode usar o componente Web mgt-people-picker para pesquisar um número especificado de pessoas e renderizar a lista de resultados por meio do Microsoft Graph.
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 4cc135fef448ecadc67a0ad1ba93e5be609d1258
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: d35e801dd851a4bb6f8ace37eb706bdb6182af92
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060707"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314890"
 ---
-# <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker componente no Microsoft Graph Toolkit
+# <a name="people-picker-component-in-microsoft-graph-toolkit"></a>Componente seletor de pessoas no Microsoft Graph Toolkit
 
 Você pode usar o componente `mgt-people-picker` Web para pesquisar pessoas e/ou grupos. Por padrão, o componente pesquisará todas as pessoas e usuários na organização, mas você pode alterar o comportamento para também pesquisar grupos ou apenas grupos. Você também pode filtrar a pesquisa para um grupo específico. Além disso, você pode permitir que o usuário insira e selecione qualquer endereço de email.
 
@@ -44,7 +44,7 @@ Por padrão, o `mgt-people-picker` componente busca pessoas dos pontos `/me/peop
 | disable-images | disableImages | Define se a busca e a exibição de imagens da pessoa devem ser desabilitadas. Quando definido como `true`, as iniciais do usuário são exibidas.
 | allow-any-email | allowAnyEmail | Indica se o seletor de pessoas pode aceitar endereços de email sem selecionar uma pessoa. O valor padrão é `false`. Ao terminar de digitar um endereço de email, você pode pressionar vírgula (`,`), ponto e vírgula (`;`), tabulação ou inserir teclas para adicioná-lo.
 | user-ids | userIds | Uma cadeia de caracteres de IDs de usuário separadas por vírgulas. Eles só aparecerão no menu suspenso ou nos resultados da pesquisa quando você digitar uma consulta. Por exemplo `48d31887-5fad-4d73-a9f5-3c356e68a038,24fcbca3-c3e2-48bf-9ffc-c7f81b81483d` , só exibirá os dois usuários na lista suspensa quando a entrada estiver focada. Quando você digita um texto de pesquisa, ele retorna resultados que correspondem apenas aos usuários nas duas IDs de usuário.
-| filtros de usuário | userFilters | Especifica os critérios de filtro a serem usado ao consultar o ponto de extremidade dos usuários. Ele requer que `user-type` seja definido como `user` ou `contact`. Por padrão, é `user-type` e `any` isso leva a consulta a ocorrer no bloco `people` de ponto de extremidade. Exemplo: `user-filters="startsWith(displayName,'a')"`. Esse atributo é opcional. Saiba mais sobre [o suporte para filtro nas propriedades do usuário de objetos de diretório do Azure AD](/graph/aad-advanced-queries?tabs=http#user-properties).
+| filtros de usuário | userFilters | Especifica os critérios de filtro a serem usado ao consultar o ponto de extremidade dos usuários. Ele requer que `user-type` seja definido como `user` ou `contact`. Por padrão, é `user-type` e `any` isso leva a consulta a ocorrer no bloco `people` de ponto de extremidade. Exemplo: `user-filters="startsWith(displayName,'a')"`. Esse atributo é opcional. Saiba mais sobre [o suporte para filtro nas propriedades do usuário Azure AD de diretório](/graph/aad-advanced-queries?tabs=http#user-properties).
 | filtros de grupo | groupFilters | Especifica os critérios de filtro a serem usado ao consultar o ponto `groups` de extremidade. Ele requer que `type` seja definido como `group`. Exemplo: `group-filters="startsWith(displayName,'a')"`. Esse atributo é opcional.
 | filtros de pessoas | peopleFilters | Especifica os critérios de filtro a serem usado ao consultar o ponto `people` de extremidade. Ele é usado como está. Exemplo: `people-filters="jobTitle eq 'Web Marketing Manager'"`. Esse atributo é opcional. Saiba mais sobre [a filtragem e os recursos com suporte no recurso de pessoas](/graph/people-example).
 | group-ids | groupIds | Uma cadeia de caracteres de IDs de grupo separadas por vírgulas. Os resultados disponíveis devem ser limitados aos grupos especificados. Os usuários que aparecerão no menu suspenso e por meio da experiência de pesquisa só devem vir das IDs de grupo especificadas. Por exemplo, `02bd9fd6-8f93-4758-87c3-1fb73740a315,06f62f70-9827-4e6e-93ef-8e0f2d9b7b23` exibirá apenas os usuários que pertencem a esses grupos. Quando você digita um texto de pesquisa, ele retorna resultados que correspondem apenas aos usuários nas duas IDs de grupo. Essa propriedade não será usada se `group-id` estiver definida. Se a propriedade for definida, ela `type` será definida `group` por padrão e `trnsitive-search` será `true` por padrão. Se o `group-type` conjunto for com a propriedade, poderá `type` ser `any` ou `group`. Se for `type` , `person`a propriedade não será usada.
@@ -136,7 +136,7 @@ mgt-people-picker {
 | erro | null: sem dados | O modelo usado se a pesquisa do usuário não retornar nenhum usuário. |
 | sem dados | null: sem dados | Um modelo alternativo usado se a pesquisa de usuário não retornar nenhum usuário. |
 | pessoa selecionada | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar as pessoas selecionadas. |
-| Pessoa | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
+| person | pessoa: o objeto de detalhes da pessoa | O modelo para renderizar pessoas na lista suspensa. |
 
 Os exemplos a seguir mostram como usar o `error` modelo.
 

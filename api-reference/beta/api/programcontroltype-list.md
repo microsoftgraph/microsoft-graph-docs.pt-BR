@@ -1,16 +1,16 @@
 ---
 title: Listar programControlTypes
-description: No recurso de revisões de acesso do Azure AD, liste todos os objetos programControlType.
+description: No recurso Azure AD revisões de acesso, liste todos os objetos programControlType.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: e06627d9d3e4070e5fa7e63be7f0ee4a820d779b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 69596e18a015c6b8528648f7165894f6244f43c1
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123028"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65315339"
 ---
 # <a name="list-programcontroltypes"></a>Listar programControlTypes
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) liste todos os [objetos programControlType.](../resources/programcontroltype.md)
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), liste todos os [objetos programControlType](../resources/programcontroltype.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | ProgramControl.Read.All', ProgramControl.ReadWrite.All  |
 
-O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
+O usuário conectado também deve estar em uma função de diretório que permita que ele leia um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +43,10 @@ GET /programControlTypes
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo de solicitação deve ser fornecido.
+Nenhum corpo da solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos programControlType](../resources/programcontroltype.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200, OK` de resposta e uma matriz de [objetos programControlType](../resources/programcontroltype.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -124,7 +126,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programControls de um programa](program-listcontrols.md) |     [Coleção programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
+|[Listar programControls de um programa](program-listcontrols.md) |     [coleção programControl](../resources/programcontrol.md)|    Obtenha uma coleção dos controles de um programa.|
 
 
 <!--

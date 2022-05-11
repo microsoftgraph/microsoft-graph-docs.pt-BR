@@ -4,13 +4,13 @@ description: Atualize as propriedades do objeto privilegedapproval.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 522cf6dfab49dd282208ac56bf327d44de838e17
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+author: japere
+ms.openlocfilehash: a431b5fa873cce61fd4b53219f8de09f6729ea64
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671437"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315472"
 ---
 # <a name="update-privilegedapproval"></a>Atualizar privilegedapproval
 
@@ -48,11 +48,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |approvalDuration|Duration||
 |approvalState|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
+|approvalType|Cadeia de caracteres||
 |approverReason|String||
 |endDateTime|DateTimeOffset||
 |requestorReason|String||
-|roleId|String||
+|roleId|Cadeia de caracteres||
 |startDateTime|DateTimeOffset||
 |userId|Cadeia de caracteres||
 
@@ -60,7 +60,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 Se tiver êxito, este método retornará um código `204 No Content` de resposta
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

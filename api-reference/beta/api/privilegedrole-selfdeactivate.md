@@ -4,13 +4,13 @@ description: Desative a função que é atribuída ao solicitante.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 74ace71b13372c00b61b5456bb38a676efb86a7c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: 78c7c918774da2523ac8c42c9409b267f3d5c295
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62342965"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315227"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Desative a função que é atribuída ao solicitante.
 ## <a name="permissions"></a>Permissões
@@ -38,7 +38,7 @@ O solicitante só pode ```selfDeactivate``` chamar a função atribuída a ele.
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-Observe que ``{id}`` é a ID da função de destino.
+Observe que é ``{id}`` a ID da função de destino.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará `200 OK` o código de resposta e [o objeto privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação

@@ -1,16 +1,16 @@
 ---
 title: Get privilegedRoleSettings
-description: Recupere as configurações de função para a função determinada. Um objeto privilegedRoleSettings será retornado.
+description: Recupere as configurações de função para a função especificada. Um objeto privilegedRoleSettings será retornado.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 9dab88badf941a41e69015c04ccd905b0804a15e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 43ec849554f6573f6bb964ba86fa2d5f94b52259
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137014"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65315458"
 ---
 # <a name="get-privilegedrolesettings"></a>Get privilegedRoleSettings
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Recupere as configurações de função para a função determinada. Um [objeto privilegedRoleSettings](../resources/privilegedrolesettings.md) será retornado.
+Recupere as configurações de função para a função especificada. Um [objeto privilegedRoleSettings](../resources/privilegedrolesettings.md) será retornado.
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter uma das seguintes funções: Administrador de Função _Privilegiada,_ _Administrador Global,_ Administrador de Segurança _ou_ Leitor de _Segurança._ 
+O solicitante precisa ter uma das seguintes _funções: Administrador_ de Função Com Privilégios, Administrador _Global__, Administrador_ de Segurança ou _Leitor de Segurança_. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,9 +51,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [privilegedRoleSettings](../resources/privilegedrolesettings.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e o [objeto privilegedRoleSettings](../resources/privilegedrolesettings.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

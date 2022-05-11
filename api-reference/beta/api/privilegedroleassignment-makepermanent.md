@@ -4,13 +4,13 @@ description: Tornar a atribuição de função permanente.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 1d37c53633b41ca729de856d2eaedd8b3325fd18
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+author: japere
+ms.openlocfilehash: e9069d820d85a2b228192a997c70dfbfee0505b9
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340123"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314266"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Tornar a atribuição de função permanente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O locatário precisa ser registrado no PIM. Caso contrário, o erro HTTP 403 Forbidden será retornado.
+O locatário precisa ser registrado no PIM. Caso contrário, o erro HTTP 403 Proibido será retornado.
 
-O solicitante precisa ter função _de Administrador de Função_ Privilegiada. 
+O solicitante precisa ter a função _administrador de função_ com privilégios. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |motivo|string|Opcional. O motivo para fazer essa chamada.|
-|ticketNumber|string|Opcional. O número do tíquete associado a essa ação.|
+|ticketNumber|string|Opcional. O número do tíquete associado a esta ação.|
 |ticketSystem|string|Opcional. O sistema de tíquetes.|
 
 ## <a name="response"></a>Resposta

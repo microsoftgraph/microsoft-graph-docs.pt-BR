@@ -1,16 +1,16 @@
 ---
 title: Listar programControls de um programa
-description: No recurso de revisões de acesso do Azure AD, liste todos os objetos programControl, vinculados a um determinado programa.
+description: No recurso Azure AD revisões de acesso, liste todos os objetos programControl, vinculados a um programa específico.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 4ef0eb2528dddc6ac4ac1edbf215ee16105ac967
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2bcde8209a3abaa5af26f681f6427a07f2476aba
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007367"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314182"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Listar programControls de um programa
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure AD, liste todos os objetos [programControl,](../resources/programcontrol.md) [vinculados](../resources/accessreviews-root.md) a um determinado programa.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), liste todos os [objetos programControl](../resources/programcontrol.md), vinculados a um programa específico.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
- O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
+ O usuário conectado também deve estar em uma função de diretório que permita que ele leia um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +43,10 @@ GET /programs/{programId}/controls
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo de solicitação deve ser fornecido.
+Nenhum corpo da solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200, OK` matriz de [objetos programControl](../resources/programcontrol.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200, OK` de resposta e uma matriz de [objetos programControl](../resources/programcontrol.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -74,7 +76,7 @@ GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b8
 [!INCLUDE [sample-code](../includes/snippets/java/get-programcontrol-from-program-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-programcontrol-from-program-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

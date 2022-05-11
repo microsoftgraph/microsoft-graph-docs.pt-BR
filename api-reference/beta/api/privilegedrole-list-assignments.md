@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos privilegedRoleAssignment associados �
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 143f3da6be204223ef39db8fe2fb886a56f72d18
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: d7b3c48cf104318d62620701aa85b11c210cadee
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137069"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314350"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Recupere uma lista de [objetos privilegedRoleAssignment](../resources/privilegedroleassignment.md) associados à função. Cada [privilegedRoleAssignment](../resources/privilegedroleassignment.md) representa uma atribuição de função a um usuário.
+Recupere uma lista de [objetos privilegedRoleAssignment](../resources/privilegedroleassignment.md) associados à função. Cada [privilegedRoleAssignment representa](../resources/privilegedroleassignment.md) uma atribuição de função a um usuário.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter uma das seguintes funções: Administrador de Função _Privilegiada,_ _Administrador Global,_ Administrador de Segurança _ou_ Leitor de _Segurança._
+O solicitante precisa ter uma das seguintes _funções: Administrador_ de Função Com Privilégios, Administrador _Global__, Administrador_ de Segurança ou _Leitor de Segurança_.
  
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -39,7 +39,7 @@ O solicitante precisa ter uma das seguintes funções: Administrador de Função
 GET /privilegedRoles/{id}/assignments
 ```
 
-Observe que ``{id}`` é a ID da função de destino.
+Observe que é ``{id}`` a ID da função de destino.
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
@@ -53,9 +53,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ab85d0ab98c882fc071f3c254e483c2c5c068fef
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: c6d02657e6cea6f1b330b7aa48c03dc04ed8b572
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246668"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316337"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -19,6 +19,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Veja os usuários recém-criados, atualizados ou excluídos sem precisar executar uma leitura completa de toda a coleção de usuários. Consulte o [acompanhamento de alterações](/graph/delta-query-overview) para obter detalhes.
+
+> [!NOTE]
+> As alterações na **propriedade licenseAssignmentStates** não são controladas no momento.
 
 ## <a name="permissions"></a>Permissões
 

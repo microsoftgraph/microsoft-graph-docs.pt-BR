@@ -5,12 +5,12 @@ author: raprakasMSFT
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 248e5f81d7e5dd85ad1f8bf97c98a87a1d8e6453
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 92fce38d514a42b91f99aca23f2f9528824ddefb
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451522"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65314434"
 ---
 # <a name="create-agreementfilelocalization"></a>Criar agreementFileLocalization
 Namespace: microsoft.graph
@@ -45,30 +45,30 @@ POST /agreements/{agreementsId}/files
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto agreementFileLocalization](../resources/agreementfilelocalization.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto agreementFileLocalization](../resources/agreementfilelocalization.md) .
 
-Você pode especificar as seguintes propriedades ao criar **um agreementFileLocalization**.
+Você pode especificar as propriedades a seguir ao criar **um agreementFileLocalization**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição localizado do arquivo de política de um contrato. O nome de exibição localizado é mostrado aos usuários finais que visualizam o contrato.|
-|fileData|[agreementFileData](../resources/agreementfiledata.md)|Dados que representam os termos de uso do documento PDF.|
+|Filedata|[agreementFileData](../resources/agreementfiledata.md)|Dados que representam os termos de uso do documento PDF.|
 |fileName|String|Nome do arquivo de contrato (por exemplo, TOU.pdf). |
-|isDefault|Booliano|Se nenhum dos idiomas corresponde à preferência do cliente, indica se esse é o arquivo de contrato padrão . Se nenhum dos arquivos for marcado como padrão, o primeiro será tratado como padrão. Somente leitura.|
-|isMajorVersion|Booliano|Indica se o arquivo de contrato é uma atualização de versão principal. Atualizações de versão principais invalidam as aceitaçãos do contrato no idioma correspondente.|
-|idioma|Cadeia de caracteres|O idioma do arquivo de contrato no formato "languagecode2-country/regioncode2". "languagecode2" é um código de duas letras minúsculo derivado da ISO 639-1, enquanto "country/regioncode2" é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas, ou uma marca de idioma BCP-47. Por exemplo, inglês dos EUA é `en-US`.|
+|isDefault|Booliano|Se nenhum dos idiomas corresponder à preferência do cliente, indica se este é o arquivo de contrato padrão. Se nenhum dos arquivos for marcado como padrão, o primeiro será tratado como padrão. Somente leitura.|
+|isMajorVersion|Booliano|Indica se o arquivo de contrato é uma atualização de versão principal. As atualizações de versão principal invalidam as aceitação do contrato no idioma correspondente.|
+|idioma|Cadeia de caracteres|O idioma do arquivo de contrato no formato "languagecode2-country/regioncode2". "languagecode2" é um código de duas letras minúsculo derivado de ISO 639-1, enquanto "country/regioncode2" é derivado da ISO 3166 e geralmente consiste em duas letras maiúsculas ou uma marca de idioma BCP-47. Por exemplo, inglês americano é `en-US`.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto agreementFileLocalization](../resources/agreementfilelocalization.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto agreementFileLocalization](../resources/agreementfilelocalization.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_agreementfilelocalization_from_"
 }
 -->
@@ -83,7 +83,7 @@ Content-Type: application/json
     "isMajorVersion": false,
     "displayName": "Contoso ToU for guest users (French)",
     "fileData": {
-        "data": "JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"
+        "data": "base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"
     }
 }
 ```
@@ -111,7 +111,7 @@ Content-Type: application/json
     "isMajorVersion": false,
     "createdDateTime": "2022-03-04T14:38:22.8292386Z",
     "fileData": {
-        "data": "JVBERi0xLjUKJb/"
+        "data": "base64JVBERi0xLjUKJb/"
     }
 }
 ```

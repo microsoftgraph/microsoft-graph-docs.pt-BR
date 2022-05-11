@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: c19aa0813e8bf7a5fa59fd87e9023a1ea605318c
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 975957cb1dca96e074b9012dc7f6d2d7fa948271
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191817"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315913"
 ---
 # <a name="contenttype-addcopyfromcontenttypehub"></a>contentType: addCopyFromContentTypeHub
 Namespace: microsoft.graph
@@ -53,7 +53,7 @@ A tabela a seguir mostra o parâmetro que pode ser usado com essa ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|Contenttypeid|Cadeia de Caracteres| A ID do tipo de conteúdo no hub de tipo de conteúdo que será adicionado a um site de destino ou a uma lista.|
+|Contenttypeid|Cadeia de caracteres| A ID do tipo de conteúdo no hub de tipo de conteúdo que será adicionado a um site de destino ou a uma lista.|
 
 
 
@@ -71,6 +71,8 @@ O exemplo a seguir adiciona ou sincroniza um tipo de conteúdo de forma síncron
 
 A seguir está um exemplo de uma operação síncrona.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_addcopyfromcontenttypehub"
@@ -85,6 +87,28 @@ Content-length: 33
   "contentTypeId": "0x0101"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-addcopyfromcontenttypehub-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-addcopyfromcontenttypehub-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-addcopyfromcontenttypehub-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-addcopyfromcontenttypehub-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-addcopyfromcontenttypehub-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 

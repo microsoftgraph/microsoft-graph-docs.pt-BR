@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos privilegedRoleAssignment, que corresp
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 932b52c7897cfd1b60b25e5be850e2cd5e49ca91
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+author: japere
+ms.openlocfilehash: 3532915fc41226846a05e3f3ea6520f940fc0875
+ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129597"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "65314294"
 ---
 # <a name="list-privilegedroleassignments"></a>Listar privilegedRoleAssignments
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Recupere uma lista de [objetos privilegedRoleAssignment,](../resources/privilegedroleassignment.md) que correspondem a todas as atribuições de função para a organização.
+Recupere uma lista de [objetos privilegedRoleAssignment](../resources/privilegedroleassignment.md) , que correspondem a todas as atribuições de função para a organização.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter uma das seguintes funções: Administrador de Função _Privilegiada,_ _Administrador Global,_ Administrador de Segurança _ou_ Leitor de _Segurança._ 
+O solicitante precisa ter uma das seguintes _funções: Administrador_ de Função Com Privilégios, Administrador _Global__, Administrador_ de Segurança ou _Leitor de Segurança_. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -50,9 +50,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 ## <a name="examples"></a>Exemplos
 ### <a name="get-all-role-assignments"></a>Obter todas as atribuições de função
 ##### <a name="request"></a>Solicitação
@@ -117,7 +117,7 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="get-active-role-assignments"></a>Obter atribuições de função ativa
+### <a name="get-active-role-assignments"></a>Obter atribuições de função ativas
 ##### <a name="request"></a>Solicitação 
 O exemplo a seguir mostra uma solicitação para consultar atribuições de função ativa:
 
@@ -188,9 +188,9 @@ Content-type: application/json
   ]
 }
 ```
-### <a name="get-permanent-role-assignments"></a>Obter atribuições de função permanente
+### <a name="get-permanent-role-assignments"></a>Obter atribuições de função permanentes
 ##### <a name="request"></a>Solicitação 
-O exemplo a seguir mostra uma solicitação para consultar atribuições de função permanente, onde ``expirationDateTime`` o valor é ``null`` :
+O exemplo a seguir mostra uma solicitação para consultar atribuições de função permanentes, em que o ``expirationDateTime`` valor é ``null``:
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

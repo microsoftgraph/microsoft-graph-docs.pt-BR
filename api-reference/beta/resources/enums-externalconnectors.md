@@ -1,19 +1,19 @@
 ---
-title: Valores de numeração de conectores externos
-description: Valores Graph enumeração de conectores externos da Microsoft
+title: Valores de enumeração de conectores externos
+description: Valores de enumeração Graph conectores externos da Microsoft
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: search
 ms.author: emzho
 author: emzho
-ms.openlocfilehash: a15712ce6fe32efe9e26d659b8e763432c478040
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: c89dfafdd1973dfbdc908368427e43076aaad07d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214647"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65315451"
 ---
-# <a name="external-connectors-enum-values"></a>Valores de numeração de conectores externos
+# <a name="external-connectors-enum-values"></a>Valores de enumeração de conectores externos
 
 Namespace: microsoft.graph.externalConnectors
 
@@ -21,8 +21,8 @@ Namespace: microsoft.graph.externalConnectors
 
 | Member
 |:--------------
-| grant
-| deny
+| Grant
+| Negar
 | unknownFutureValue
 
 ### <a name="acltype-values"></a>valores aclType
@@ -31,35 +31,34 @@ Namespace: microsoft.graph.externalConnectors
 |:--------------
 | usuário
 | group
-| everyone
+| Todos
 | everyoneExceptGuests
 | externalGroup
 | unknownFutureValue
 
 
-### <a name="connectionoperationstatus-values"></a>valores connectionOperationStatus
+### <a name="connectionoperationstatus-values"></a>Valores connectionOperationStatus
 
 | Member
 |:--------------
-| não especificado
-| inprogress
-| completed
-| failed
+| Unspecified
+| Inprogress
+| Concluído
+| Falhou
 | unknownFutureValue
 
 
-### <a name="connectionstate-values"></a>valores connectionState
+### <a name="connectionstate-values"></a>Valores connectionState
 
 |Member
 |:--------------
-| draft
-| ready
-| obsoleto
+| Projecto
+| Pronto
+| Obsoleto
 | limitExceeded
 | unknownFutureValue
 
-
-### <a name="externalgroupmembertype-values"></a>valores externalGroupMemberType
+### <a name="externalgroupmembertype-values"></a>Valores externalGroupMemberType
 
 | Member
 |:--------------
@@ -68,7 +67,7 @@ Namespace: microsoft.graph.externalConnectors
 | unknownFutureValue
 
 
-### <a name="externalitemcontenttype-values"></a>valores externalItemContentType
+### <a name="externalitemcontenttype-values"></a>Valores externalItemContentType
 
 | Member
 |:--------------
@@ -76,12 +75,12 @@ Namespace: microsoft.graph.externalConnectors
 | HTML
 | unknownFutureValue
 
-### <a name="identitysourcetype-values"></a>valores identitySourceType
+### <a name="identitysourcetype-values"></a>Valores identitySourceType
 
 | Member
 |:--------------
 | azureActiveDirectory
-| external
+| Externo
 
 
 ### <a name="label-values"></a>valores de rótulo
@@ -112,24 +111,24 @@ Namespace: microsoft.graph.externalConnectors
 | double
 | dateTime
 | booliano
-| stringCollection
+| Stringcollection
 | int64Collection
-| doubleCollection
+| Doublecollection
 | dateTimeCollection
 | unknownFutureValue
 
-### <a name="ruleoperation-values"></a>valores ruleOperation 
+### <a name="ruleoperation-values"></a>Valores ruleOperation 
 
 |Member|
 |:---|
 |null|
-|igual a|
-|notEquals|
+|Equals|
+|Notequals|
 |contains|
 |notContains|
-|lessThan|
-|greaterThan|
-|startsWith|
+|Lessthan|
+|Greaterthan|
+|startswith|
 |unknownFutureValue|
 
 <!--

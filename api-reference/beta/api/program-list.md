@@ -1,16 +1,16 @@
 ---
 title: Listar programas
-description: No recurso de revisões de acesso do Azure AD, liste todos os objetos do programa.
+description: No recurso Azure AD revisões de acesso, liste todos os objetos do programa.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 3eba8956baafcc7ae7a47d3aa0c83a5340dcd6d4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 04573b0e18fcac50966b58805aeade057da151af
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096186"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "65314968"
 ---
 # <a name="list-programs"></a>Listar programas
 
@@ -18,7 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) liste todos os [objetos do](../resources/program.md) programa.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), liste todos os objetos [do](../resources/program.md) programa.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
- O usuário inscreveu também deve estar em uma função de diretório que permita que ele leia um programa.
+ O usuário conectado também deve estar em uma função de diretório que permita que ele leia um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,10 +43,10 @@ GET /programs
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo de solicitação deve ser fornecido.
+Nenhum corpo da solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma matriz de objetos `200, OK` [de](../resources/program.md) programa no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200, OK` de resposta e uma matriz de [objetos de](../resources/program.md) programa no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -118,7 +120,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programControls de um programa](program-listcontrols.md) |     [Coleção programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
+|[Listar programControls de um programa](program-listcontrols.md) |     [coleção programControl](../resources/programcontrol.md)|    Obtenha uma coleção dos controles de um programa.|
 
 
 <!--
