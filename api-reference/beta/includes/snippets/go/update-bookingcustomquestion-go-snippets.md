@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 106554cf7702e7a2b03629feaec56785478c3b36
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2c09cc74c81d6bf1d7ab3449fabdadbf3059cd57
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410556"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322824"
 ---
 ```go
 
@@ -22,12 +22,9 @@ requestBody.SetAnswerOptions( []string {
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.bookingCustomQuestion",
 }
-options := &msgraphsdk.BookingCustomQuestionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
 bookingCustomQuestionId := "bookingCustomQuestion-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).CustomQuestionsById(&bookingCustomQuestionId).Patch(requestBody)
 
 
 ```

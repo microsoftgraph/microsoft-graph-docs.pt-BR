@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 34bcddef77072e8fcaf5237543372b0850266985
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 6fc368d656c4daeab14af8c208849c8728b1e9cf
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098601"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324254"
 ---
 ```go
 
@@ -21,13 +21,12 @@ requestBody.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
     "Authorization": "Bearer <token>"
 }
-options := &msgraphsdk.SynchronizationTemplateRequestBuilderPutOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.SynchronizationTemplateRequestBuilderPutRequestConfiguration{
+    Headers: headers,
 }
 applicationId := "application-id"
 synchronizationTemplateId := "synchronizationTemplate-id"
-graphClient.ApplicationsById(&applicationId).Synchronization().TemplatesById(&synchronizationTemplateId).Put(options)
+graphClient.ApplicationsById(&applicationId).Synchronization().TemplatesById(&synchronizationTemplateId).PutWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ae3d01632fee12e643a078a438a536d5b004c965
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 9a2401154790c165291806736199bdd396d3326d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095212"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322597"
 ---
 ```go
 
@@ -16,11 +16,11 @@ requestParameters := &msgraphsdk.DecisionsRequestBuilderGetQueryParameters{
     Top: 100,
     Skip: 0,
 }
-options := &msgraphsdk.DecisionsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.DecisionsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 accessReviewInstanceId := "accessReviewInstance-id"
-result, err := graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).Decisions().Get(options)
+result, err := graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).Decisions().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

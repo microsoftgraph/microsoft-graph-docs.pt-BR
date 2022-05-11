@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8d755adbe13268bfe2415a6507558fd2fe741c48
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: d013de24906a27c2e830832eac4d0a9ab91c4c26
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61083584"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323793"
 ---
 ```go
 
@@ -60,10 +60,7 @@ state := "CA"
 residenceAddress.SetState(&state)
 street := "12345 Main St."
 residenceAddress.SetStreet(&street)
-options := &msgraphsdk.UsersRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Education().Users().Post(options)
+result, err := graphClient.Education().Users().Post(requestBody)
 
 
 ```

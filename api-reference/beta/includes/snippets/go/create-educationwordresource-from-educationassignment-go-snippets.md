@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 28c95bc4b0d7f121f91e475c0077fda5229a3a12
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f5a92a3e1e591bca47d11481ba2c63d36245a7ef
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61098101"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323355"
 ---
 ```go
 
@@ -23,12 +23,9 @@ resource.SetAdditionalData(map[string]interface{}{
     "@odata.type": "microsoft.graph.educationWordResource",
     "fileUrl": "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2",
 }
-options := &msgraphsdk.ResourcesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Resources().Post(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).Resources().Post(requestBody)
 
 
 ```

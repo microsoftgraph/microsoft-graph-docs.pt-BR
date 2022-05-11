@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0ea33f78a3d1eb0a5b84acedf5e1e4377c2e4ae2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4887c782d88b86ec77f0357a55e6c3f4ad164c05
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128463"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324193"
 ---
 ```go
 
@@ -16,10 +16,10 @@ requestParameters := &msgraphsdk.SignInsRequestBuilderGetQueryParameters{
     Filter: "startsWith(appDisplayName,'Graph')",
     Top: 10,
 }
-options := &msgraphsdk.SignInsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.SignInsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
-result, err := graphClient.AuditLogs().SignIns().Get(options)
+result, err := graphClient.AuditLogs().SignIns().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

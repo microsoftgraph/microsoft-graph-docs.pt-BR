@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1fc8694fd95cbce5de12fdf390a28594bce0d15b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 1b8102634958125c7e9317a42719d2129cba5b71
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097569"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323885"
 ---
 ```go
 
@@ -30,10 +30,7 @@ participants.SetAttendees( []MeetingParticipantInfo {
         "upn": "test1@contoso.com",
     }
 }
-options := &msgraphsdk.CreateOrGetRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(options)
+result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(requestBody)
 
 
 ```
