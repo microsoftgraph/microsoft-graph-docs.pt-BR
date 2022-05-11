@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: aad4121c29539217f6a57d5e5119a767c8ad5be3
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: e11a72fc6a52f13ee9d6dde74ab8146c14e4c3c0
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398034"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324580"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewProgram()
 displayName := "testprogram3 new name"
 requestBody.SetDisplayName(&displayName)
-options := &msgraphsdk.ProgramRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 programId := "program-id"
-result, err := graphClient.ProgramsById(&programId).Patch(options)
+graphClient.ProgramsById(&programId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: acccb6211f76373d68f5c2489ecab2921e4a2de2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 9b4c846fb9304027d0efb458b31d56fb8ea84756
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411522"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323108"
 ---
 ```go
 
@@ -16,11 +16,8 @@ requestBody := msgraphsdk.NewPersonInterest()
 requestBody.SetCategories( []String {
     "Sports",
 }
-options := &msgraphsdk.PersonInterestRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 personInterestId := "personInterest-id"
-result, err := graphClient.Me().Profile().InterestsById(&personInterestId).Patch(options)
+graphClient.Me().Profile().InterestsById(&personInterestId).Patch(requestBody)
 
 
 ```

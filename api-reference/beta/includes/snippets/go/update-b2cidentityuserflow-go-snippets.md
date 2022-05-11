@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: adfb277f22ae8467a55598aacdc2e1c0259397c2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 863d47eee0fb548d306ad585077244fca0f1d85c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410679"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324706"
 ---
 ```go
 
@@ -17,11 +17,8 @@ isLanguageCustomizationEnabled := true
 requestBody.SetIsLanguageCustomizationEnabled(&isLanguageCustomizationEnabled)
 defaultLanguageTag := "en"
 requestBody.SetDefaultLanguageTag(&defaultLanguageTag)
-options := &msgraphsdk.B2cIdentityUserFlowRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(requestBody)
 
 
 ```

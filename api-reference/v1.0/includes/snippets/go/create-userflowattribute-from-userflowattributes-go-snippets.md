@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: b4d3dc79966e229155b1b6adeb1769a6768a6aff
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2a044b6ed07817b96188a060efabb79d512759a8
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137574"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322941"
 ---
 ```go
 
@@ -19,10 +19,7 @@ description := "Your hobby"
 requestBody.SetDescription(&description)
 dataType := "string"
 requestBody.SetDataType(&dataType)
-options := &msgraphsdk.UserFlowAttributesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Identity().UserFlowAttributes().Post(options)
+result, err := graphClient.Identity().UserFlowAttributes().Post(requestBody)
 
 
 ```

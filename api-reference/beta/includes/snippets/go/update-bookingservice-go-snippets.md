@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3ae0676d600434ed6fbe283ffb8eb8aff5d5ad4f
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 64acaaf2964563369ac96a59b7b268743f188b91
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410637"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323368"
 ---
 ```go
 
@@ -18,12 +18,9 @@ requestBody.SetDefaultDuration(&defaultDuration)
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.bookingService",
 }
-options := &msgraphsdk.BookingServiceRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
 bookingServiceId := "bookingService-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Patch(options)
+graphClient.BookingBusinessesById(&bookingBusinessId).ServicesById(&bookingServiceId).Patch(requestBody)
 
 
 ```

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ddf752b735a6b276b1690a1611dce60e2240f212
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 1ad7867cdd6bee7f577205644e00eca331ac6ba7
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410622"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324853"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
 description := "Target completion date (YYYY/MM/DD)"
 requestBody.SetDescription(&description)
-options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
+graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(requestBody)
 
 
 ```

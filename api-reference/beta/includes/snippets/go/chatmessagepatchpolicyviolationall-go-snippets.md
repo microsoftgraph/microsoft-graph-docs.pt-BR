@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 660e012884ee67d4ad3276a215c943d3754879aa
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 15fbfbc113ff2b8e404b281e5ef35443ef88b4bd
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410919"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324885"
 ---
 ```go
 
@@ -28,13 +28,10 @@ verdictDetails := "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
 policyViolation.SetVerdictDetails(&verdictDetails)
 dlpAction := "BlockAccess"
 policyViolation.SetDlpAction(&dlpAction)
-options := &msgraphsdk.ChatMessageRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
 channelId := "channel-id"
 chatMessageId := "chatMessage-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Patch(options)
+graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Patch(requestBody)
 
 
 ```

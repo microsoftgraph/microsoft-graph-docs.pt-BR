@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ce1858b076354be33751c9469906908043cb8c6a
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: dfde8b697d1c80c7856ef62f3fb18ecebf8a16c6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411387"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323287"
 ---
 ```go
 
@@ -21,11 +21,8 @@ requestBody.SetPrompts( []Prompt {
         "@odata.type": "#microsoft.graph.mediaPrompt",
     }
 }
-options := &msgraphsdk.PlayPromptRequestBuilderPostOptions{
-    Body: requestBody,
-}
 callId := "call-id"
-result, err := graphClient.Communications().CallsById(&callId).PlayPrompt(call-id).Post(options)
+result, err := graphClient.Communications().CallsById(&callId).PlayPrompt(call-id).Post(requestBody)
 
 
 ```

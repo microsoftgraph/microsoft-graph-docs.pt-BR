@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 15fab23abeb4a8aae6bf8b2b12641bbbc9c972f9
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: be5fcce952c91e65a4b33673105c1e2b741ad8d1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411565"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324310"
 ---
 ```go
 
@@ -17,11 +17,8 @@ key := "Base64-encoded-pfx-content"
 requestBody.SetKey(&key)
 password := "password-value"
 requestBody.SetPassword(&password)
-options := &msgraphsdk.UploadPkcs12RequestBuilderPostOptions{
-    Body: requestBody,
-}
 trustFrameworkKeySetId := "trustFrameworkKeySet-id"
-result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadPkcs12(trustFrameworkKeySet-id).Post(options)
+result, err := graphClient.TrustFramework().KeySetsById(&trustFrameworkKeySetId).UploadPkcs12(trustFrameworkKeySet-id).Post(requestBody)
 
 
 ```

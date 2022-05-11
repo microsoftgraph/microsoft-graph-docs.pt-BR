@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ebf3c0c39b6229c1cab9e99f7ae42dfb5d07f495
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 150b983a25b54a3cab3f2ec1234cc80b9365d0f6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410873"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325253"
 ---
 ```go
 
@@ -17,13 +17,10 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "LocalizedStrings":  []Object {
     }
 }
-options := &msgraphsdk.ContentRequestBuilderPutOptions{
-    Body: requestBody,
-}
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
 userFlowLanguageConfigurationId := "userFlowLanguageConfiguration-id"
 userFlowLanguagePageId := "userFlowLanguagePage-id"
-result, err := graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).OverridesPagesById(&userFlowLanguagePageId).$value().Put(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).LanguagesById(&userFlowLanguageConfigurationId).OverridesPagesById(&userFlowLanguagePageId).$value().Put(requestBody)
 
 
 ```

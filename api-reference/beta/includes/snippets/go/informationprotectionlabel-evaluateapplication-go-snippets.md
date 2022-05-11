@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6c8f995230513defaabd3d5e580743ba92e91dd0
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 808f9f514769bdbc5ddde8cab47d1c7c4108ab05
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094084"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324717"
 ---
 ```go
 
@@ -88,11 +88,10 @@ labelingOptions.SetAdditionalData(map[string]interface{}{
 headers := map[string]string{
     "User-Agent": "ContosoLOBApp/1.0"
 }
-options := &msgraphsdk.EvaluateApplicationRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.EvaluateApplicationRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(options)
+result, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

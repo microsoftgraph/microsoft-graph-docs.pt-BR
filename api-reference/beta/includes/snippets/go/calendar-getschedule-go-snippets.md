@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: adcf6c86e457ca1f49f660896eb2296e2c03a65d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: fb62a0f2dd3743fc83fe626215890341b0f69240
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61101529"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325063"
 ---
 ```go
 
@@ -34,11 +34,10 @@ requestBody.SetAvailabilityViewInterval(&availabilityViewInterval)
 headers := map[string]string{
     "Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.GetScheduleRequestBuilderPostOptions{
-    Body: requestBody,
-    H: headers,
+options := &msgraphsdk.GetScheduleRequestBuilderPostRequestConfiguration{
+    Headers: headers,
 }
-result, err := graphClient.Me().Calendar().GetSchedule().Post(options)
+result, err := graphClient.Me().Calendar().GetSchedule().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
 
 
 ```

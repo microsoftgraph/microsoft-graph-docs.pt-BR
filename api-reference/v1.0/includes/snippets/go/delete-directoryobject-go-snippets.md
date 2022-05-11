@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 61f07a34917bcc28fef422711d5727d67ef94ff0
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 7895f226fb4b2d4ab3168605479387c1da049a3a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411512"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322867"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "63411512"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 directoryObjectId := "directoryObject-id"
-result, err := graphClient.DirectoryObjectsById(&directoryObjectId).Delete(nil)
+graphClient.DirectoryObjectsById(&directoryObjectId).Delete()
 
 
 ```

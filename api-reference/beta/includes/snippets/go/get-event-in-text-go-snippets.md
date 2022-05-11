@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 12a8b64565090f3a70a5c65e18d416d667280a2b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: fbcb20ff82750c5465342d85ad6141def54b31a6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61081607"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322707"
 ---
 ```go
 
@@ -18,12 +18,12 @@ requestParameters := &msgraphsdk.EventRequestBuilderGetQueryParameters{
 headers := map[string]string{
     "Prefer": "outlook.body-content-type="text""
 }
-options := &msgraphsdk.EventRequestBuilderGetOptions{
-    Q: requestParameters,
-    H: headers,
+options := &msgraphsdk.EventRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
+    Headers: headers,
 }
 eventId := "event-id"
-result, err := graphClient.Me().EventsById(&eventId).Get(options)
+result, err := graphClient.Me().EventsById(&eventId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```
