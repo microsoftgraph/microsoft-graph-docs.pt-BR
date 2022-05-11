@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1753d2a301a23e8ef48ab820288e1c8028480857
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 46348eee0f7b769deee3ec814eb0add70b5a453f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61095411"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323207"
 ---
 ```go
 
@@ -21,11 +21,8 @@ requestBody.SetLabels( []LocalizedLabel {
         "isDefault": true,
     }
 }
-options := &msgraphsdk.ChildrenRequestBuilderPostOptions{
-    Body: requestBody,
-}
 setId := "set-id"
-result, err := graphClient.TermStore().SetsById(&setId).Children().Post(options)
+result, err := graphClient.TermStore().SetsById(&setId).Children().Post(requestBody)
 
 
 ```

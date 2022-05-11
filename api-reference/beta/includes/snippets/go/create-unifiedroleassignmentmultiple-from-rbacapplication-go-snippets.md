@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 18efd86833e3d3ca90973da905462b6844a1926c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fe5df87357294a9f7d09ae98c6a165242f72feff
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135138"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325355"
 ---
 ```go
 
@@ -28,10 +28,7 @@ requestBody.SetDirectoryScopeIds( []String {
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
 }
-options := &msgraphsdk.RoleAssignmentsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(options)
+result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Post(requestBody)
 
 
 ```

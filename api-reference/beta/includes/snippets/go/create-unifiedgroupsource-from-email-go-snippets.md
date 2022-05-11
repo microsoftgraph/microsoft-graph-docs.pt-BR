@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9d0bd99c425b3885be99f1381137c223f5aa16a8
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: c9d86abaac6a8c440d4003eb8196338780f33abc
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082356"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324847"
 ---
 ```go
 
@@ -19,12 +19,9 @@ mail := "SecretGroup@contoso.com"
 group.SetMail(&mail)
 includedSources := "mailbox, site"
 requestBody.SetIncludedSources(&includedSources)
-options := &msgraphsdk.UnifiedGroupSourcesRequestBuilderPostOptions{
-    Body: requestBody,
-}
 caseId := "case-id"
 custodianId := "custodian-id"
-result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).UnifiedGroupSources().Post(options)
+result, err := graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).UnifiedGroupSources().Post(requestBody)
 
 
 ```

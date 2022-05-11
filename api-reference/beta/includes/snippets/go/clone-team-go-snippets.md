@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 1eee042bb1185c4040ac82d4eb1d00ae56f62baa
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: b42ce304a1218bcde27f1c0085a70de17c9fc470
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61090445"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322797"
 ---
 ```go
 
@@ -23,11 +23,8 @@ partsToClone := "apps,tabs,settings,channels,members"
 requestBody.SetPartsToClone(&partsToClone)
 visibility := "public"
 requestBody.SetVisibility(&visibility)
-options := &msgraphsdk.CloneRequestBuilderPostOptions{
-    Body: requestBody,
-}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Clone().Post(options)
+graphClient.TeamsById(&teamId).Clone(team-id).Post(requestBody)
 
 
 ```

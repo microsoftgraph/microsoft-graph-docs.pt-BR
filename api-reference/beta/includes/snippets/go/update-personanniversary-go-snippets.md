@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9ae5a28f835d6bb3caeb712ebb8357fd87112ec4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: bd567af8bf1c73531805fd0142677dc41000dcf1
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411096"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324327"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewPersonAnnualEvent()
 allowedAudiences := "contacts"
 requestBody.SetAllowedAudiences(&allowedAudiences)
-options := &msgraphsdk.PersonAnnualEventRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 personAnnualEventId := "personAnnualEvent-id"
-result, err := graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Patch(options)
+graphClient.Me().Profile().AnniversariesById(&personAnnualEventId).Patch(requestBody)
 
 
 ```

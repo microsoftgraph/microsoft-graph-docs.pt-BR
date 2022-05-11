@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0ba33a5a390976925a4950d5a3431916bac13f9c
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4c19aee5eb90d4e8ad7a92aca8d77966b7186aa6
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61097410"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323486"
 ---
 ```go
 
@@ -22,10 +22,7 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "recipientEmail": "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
     "messageUri": "https://graph.microsoft.com/v1.0/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
 }
-options := &msgraphsdk.ThreatAssessmentRequestsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(options)
+result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(requestBody)
 
 
 ```

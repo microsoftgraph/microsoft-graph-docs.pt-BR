@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 03c7f1515862cb63c50c6e4b4d815084b858ca97
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4fb58c56a78b6bec3c94df542059942d2b793fcc
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410694"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322733"
 ---
 ```go
 
@@ -16,12 +16,9 @@ requestBody := msgraphsdk.New()
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.id": "https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9",
 }
-options := &msgraphsdk.TokenIssuancePolicyRequestBuilderPostOptions{
-    Body: requestBody,
-}
 applicationId := "application-id"
 tokenIssuancePolicyId := "tokenIssuancePolicy-id"
-graphClient.ApplicationsById(&applicationId).TokenIssuancePoliciesById(&tokenIssuancePolicyId).Post(options)
+graphClient.ApplicationsById(&applicationId).TokenIssuancePoliciesById(&tokenIssuancePolicyId).Post(requestBody)
 
 
 ```

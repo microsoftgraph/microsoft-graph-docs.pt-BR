@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 590ca4255a33a7c6117ffbba3e58b8c0208c95dc
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: f52b5ea5323c7488c49af0b4c7c8f07c7702e714
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61096837"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323418"
 ---
 ```go
 
@@ -62,10 +62,7 @@ requestBody.SetAttendees( []Attendee {
         "type": "required",
     }
 }
-options := &msgraphsdk.EventsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Events().Post(options)
+result, err := graphClient.Me().Events().Post(requestBody)
 
 
 ```

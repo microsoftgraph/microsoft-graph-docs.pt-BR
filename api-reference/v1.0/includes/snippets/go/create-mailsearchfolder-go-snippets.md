@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c4d06d55066f9760565670d48125b59e1d76908b
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: aaee37a4abcdcb9e6aa97173d86ab1bab34e9611
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099166"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325196"
 ---
 ```go
 
@@ -23,11 +23,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     }
     "filterQuery": "contains(subject, 'weekly digest')",
 }
-options := &msgraphsdk.ChildFoldersRequestBuilderPostOptions{
-    Body: requestBody,
-}
 mailFolderId := "mailFolder-id"
-result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Post(options)
+result, err := graphClient.Me().MailFoldersById(&mailFolderId).ChildFolders().Post(requestBody)
 
 
 ```

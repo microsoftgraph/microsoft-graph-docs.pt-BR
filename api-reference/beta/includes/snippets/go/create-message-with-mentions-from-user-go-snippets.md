@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ac21dfa12dd747491ea513cd9ee07ff4922a6e80
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: cf4664dcd2a2154151cce1945226dde37fbca0fe
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094417"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322789"
 ---
 ```go
 
@@ -25,10 +25,7 @@ requestBody.SetMentions( []Mention {
     SetAdditionalData(map[string]interface{}{
     }
 }
-options := &msgraphsdk.MessagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Me().Messages().Post(options)
+result, err := graphClient.Me().Messages().Post(requestBody)
 
 
 ```

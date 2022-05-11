@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 3ddecbd054e396a645545ad2b05415a1ff34a4de
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 226ed17d015f46a4631a1a7ec96750561ba9418b
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61103325"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323913"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderGetQueryParameters{
     Expand: "assignments",
 }
-options := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.CloudPcProvisioningPolicyRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 cloudPcProvisioningPolicyId := "cloudPcProvisioningPolicy-id"
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).Get(options)
+result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPoliciesById(&cloudPcProvisioningPolicyId).GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

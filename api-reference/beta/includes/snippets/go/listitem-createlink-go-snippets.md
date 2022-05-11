@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d5be40dea0c639bca6a2b6b30aaec5ffee60e074
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 576311c0734480111816921d42039d82cf203497
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410674"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65325147"
 ---
 ```go
 
@@ -15,13 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.New()
 type := "embed"
 requestBody.SetType(&type)
-options := &msgraphsdk.CreateLinkRequestBuilderPostOptions{
-    Body: requestBody,
-}
 siteId := "site-id"
 listId := "list-id"
 listItemId := "listItem-id"
-result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).CreateLink(site-id, list-id, listItem-id).Post(options)
+result, err := graphClient.SitesById(&siteId).ListsById(&listId).ItemsById(&listItemId).CreateLink(site-id, list-id, listItem-id).Post(requestBody)
 
 
 ```

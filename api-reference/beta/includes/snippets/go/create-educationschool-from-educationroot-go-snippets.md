@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 52b246b52e5892b7b61ccf946a0e8b17fca0ace6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4930c7faff95d114ae99d8a39d1946853ccd7b1f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120717"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324419"
 ---
 ```go
 
@@ -47,10 +47,7 @@ externalId := "10002"
 requestBody.SetExternalId(&externalId)
 phone := "+1 (253) 555-0102"
 requestBody.SetPhone(&phone)
-options := &msgraphsdk.SchoolsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Education().Schools().Post(options)
+result, err := graphClient.Education().Schools().Post(requestBody)
 
 
 ```

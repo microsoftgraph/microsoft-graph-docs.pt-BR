@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 05a0a0c5769ac616214bea8450be1c5a26aa1923
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: fb1730e5fa39061cb9a7f4bcfbbe638b241e6d0f
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411099"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322689"
 ---
 ```go
 
@@ -15,11 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewOutlookTaskFolder()
 name := "Charity work"
 requestBody.SetName(&name)
-options := &msgraphsdk.OutlookTaskFolderRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 outlookTaskFolderId := "outlookTaskFolder-id"
-result, err := graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Patch(options)
+graphClient.Me().Outlook().TaskFoldersById(&outlookTaskFolderId).Patch(requestBody)
 
 
 ```

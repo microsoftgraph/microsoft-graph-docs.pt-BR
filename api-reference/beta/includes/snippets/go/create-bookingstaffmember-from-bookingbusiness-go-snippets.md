@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8e5672ebbabd4b7316c44f640dcf36b67f3e5234
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 5375e6688af6d7d99d034d6e0910efc7df31d156
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61086953"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322389"
 ---
 ```go
 
@@ -77,11 +77,8 @@ requestBody.SetAdditionalData(map[string]interface{}{
     "role@odata.type": "#microsoft.graph.bookingStaffRole",
     "workingHours@odata.type": "#Collection(microsoft.graph.bookingWorkHours)",
 }
-options := &msgraphsdk.StaffMembersRequestBuilderPostOptions{
-    Body: requestBody,
-}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).StaffMembers().Post(options)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).StaffMembers().Post(requestBody)
 
 
 ```
