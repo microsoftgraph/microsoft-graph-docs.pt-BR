@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d4c82d13853a048d261073abfeef35314ab39bb5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 1b7f60782686ea0ee5653aa95aa1ce0aa333f24c
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212540"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65323085"
 ---
 ```go
 
@@ -15,11 +15,11 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestParameters := &msgraphsdk.AllChannelsRequestBuilderGetQueryParameters{
     Filter: "membershipType%20eq%20'shared'",
 }
-options := &msgraphsdk.AllChannelsRequestBuilderGetOptions{
-    Q: requestParameters,
+options := &msgraphsdk.AllChannelsRequestBuilderGetRequestConfiguration{
+    QueryParameters: requestParameters,
 }
 teamId := "team-id"
-result, err := graphClient.TeamsById(&teamId).AllChannels().Get(options)
+result, err := graphClient.TeamsById(&teamId).AllChannels().GetWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

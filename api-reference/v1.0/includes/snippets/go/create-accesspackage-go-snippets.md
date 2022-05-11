@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ce25a32e6a6b04db056f5c3a27c59b3832bfd96c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: eec672516157547272f070a7e01ab3ea2b342889
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100945"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322332"
 ---
 ```go
 
@@ -23,10 +23,7 @@ catalog := msgraphsdk.NewAccessPackageCatalog()
 requestBody.SetCatalog(catalog)
 id := "66584aae-98bb-48cc-9458-7bee5d2a6577"
 catalog.SetId(&id)
-options := &msgraphsdk.AccessPackagesRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(options)
+result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().Post(requestBody)
 
 
 ```

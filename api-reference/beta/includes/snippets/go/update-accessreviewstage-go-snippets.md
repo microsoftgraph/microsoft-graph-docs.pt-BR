@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 530f44f0ffee64589650744f460b750422cd01f6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4fd555ce9bb3e63f537555c5ca8b7e8b2fa9656e
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410713"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322575"
 ---
 ```go
 
@@ -35,13 +35,10 @@ requestBody.SetFallbackReviewers( []AccessReviewReviewerScope {
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.accessReviewStage",
 }
-options := &msgraphsdk.AccessReviewStageRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 accessReviewScheduleDefinitionId := "accessReviewScheduleDefinition-id"
 accessReviewInstanceId := "accessReviewInstance-id"
 accessReviewStageId := "accessReviewStage-id"
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).StagesById(&accessReviewStageId).Patch(options)
+graphClient.IdentityGovernance().AccessReviews().DefinitionsById(&accessReviewScheduleDefinitionId).InstancesById(&accessReviewInstanceId).StagesById(&accessReviewStageId).Patch(requestBody)
 
 
 ```

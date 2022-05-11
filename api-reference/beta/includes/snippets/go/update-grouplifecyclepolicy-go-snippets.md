@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 8891472d0011d198dc10e0800c62e6302022d210
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: fd5a12402a898fd589513d1ef45a58740d08da1a
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63410517"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65324073"
 ---
 ```go
 
@@ -19,11 +19,8 @@ managedGroupTypes := "Selected"
 requestBody.SetManagedGroupTypes(&managedGroupTypes)
 alternateNotificationEmails := "admin@contoso.com"
 requestBody.SetAlternateNotificationEmails(&alternateNotificationEmails)
-options := &msgraphsdk.GroupLifecyclePolicyRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 groupLifecyclePolicyId := "groupLifecyclePolicy-id"
-result, err := graphClient.GroupLifecyclePoliciesById(&groupLifecyclePolicyId).Patch(options)
+graphClient.GroupLifecyclePoliciesById(&groupLifecyclePolicyId).Patch(requestBody)
 
 
 ```

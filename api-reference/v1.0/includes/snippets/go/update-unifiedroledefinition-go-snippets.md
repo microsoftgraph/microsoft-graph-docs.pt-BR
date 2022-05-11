@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 9f9ef66b93066036a375938bf400a4bc79e7e111
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b9d8f2c6601cf1e93dacb75ee149db41bd22f0d3
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63411254"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65322132"
 ---
 ```go
 
@@ -25,11 +25,8 @@ requestBody.SetRolePermissions( []UnifiedRolePermission {
         }
     }
 }
-options := &msgraphsdk.UnifiedRoleDefinitionRequestBuilderPatchOptions{
-    Body: requestBody,
-}
 unifiedRoleDefinitionId := "unifiedRoleDefinition-id"
-result, err := graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(options)
+graphClient.RoleManagement().Directory().RoleDefinitionsById(&unifiedRoleDefinitionId).Patch(requestBody)
 
 
 ```
