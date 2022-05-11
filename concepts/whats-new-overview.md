@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 4db9be8a564eb133b92830729902f5c36d0ed84c
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 75b01f4903153249131cc69e336bb2d12e26095d
+ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191665"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316158"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -62,6 +62,12 @@ Use a [permissão específica de recurso](/graph/api/resources/resourcespecificp
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 Especifique a [inclusão ou exclusão de aplicativos cliente](/graph/api/resources/conditionalaccessclientapplications) como um [conjunto de condições](/graph/api/resources/conditionalAccessConditionSet) para aplicar uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy).
+
+### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
+Celebre o verdadeiro trabalho em equipe com as contribuições da comunidade e experimente os novos recursos do [Kit de ferramentas do Microsoft Graph v2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0):
+- Otimize a atualização de imagens de pessoas no componente [pessoa](/graph/toolkit/components/person) usando o atributo `disable-image-fetch`para controlar a busca desnecessária.
+- Evite o carregamento desnecessário de imagens de pessoas no componente [seletor de pessoas](/graph/toolkit/components/people-picker) usando o atributo `disable-images`. 
+- Filtre por usuários, grupos e lista de pessoas disponíveis no componente [seletor de pessoas](/graph/toolkit/components/people-picker) usando os atributos `user-filters`, `group-filters` e `people-filters`.
 
 
 ## <a name="march-2022-new-in-preview-only"></a>Março de 2022: novo somente para visualização
