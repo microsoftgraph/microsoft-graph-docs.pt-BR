@@ -4,12 +4,12 @@ description: No Outlook, os clientes podem compartilhar um calendário com outro
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 4b9e57cdd251a72a7a6f51b3ca14eb17a0da9367
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77534a6b1fad8392df01c33f91e0db321767007c
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135981"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366076"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Crie eventos do Outlook em um calendário compartilhado ou delegado
 
@@ -39,7 +39,7 @@ Entre como Adele, obtenha os calendários a que ela tem acesso e identifique aqu
 
 **Permissões do Microsoft Graph**
 
-Use a permissão delegada com menos privilégios, `Calendars.Read.Shared`. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
+Use a permissão delegada menos privilegiada, `Calendars.Read.Shared`. Para obter mais informações, consulte as [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -118,7 +118,7 @@ Content-type: application/json
 }
 ```
 
-> **OBSERVAÇÃO** Conectado como Adele, você pode, como alternativa, obter o calendário delegado diretamente da caixa de correio de Alex, especificando a identidade de Alex e o atalho de `calendar`, como em `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`. A ID do calendário retornado corresponde apenas à caixa de correio de Alex. 
+> **OBSERVAÇÃO** Conectada como Adele, você pode, alternativamente, obter o calendário delegado diretamente da caixa de correio do Alex, especificando a identidade do Alex e o atalho de `calendar`, como em `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`. A ID do calendário retornado corresponde apenas à caixa de correio do Alex. 
 
 ## <a name="step-2-adele-creates-and-sends-an-invitation-on-alex-behalf"></a>Etapa 2: Adele cria e envia um convite em nome de Alex
 
@@ -126,7 +126,7 @@ Conectado como Adele, use o ID do calendário obtido na etapa 1 para criar um [e
 
 **Permissões do Microsoft Graph**
 
-Use a permissão delegada com menos privilégios, `Calendars.ReadWrite.Shared`. Para mais informações, veja [permissões de calendário](permissions-reference.md#calendars-permissions).
+Use a permissão delegada menos privilegiada, `Calendars.ReadWrite.Shared`. Para obter mais informações, confira as [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 <!-- {
   "blockType": "request",
@@ -409,7 +409,6 @@ Content-type: application/json
     "flag": {
         "flagStatus": "notFlagged"
     },
-    "event@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('662b947c-d9a1-4064-926c-eba1316d4462')/messages('AAMkADADVj3fyAABZ5hYdAAA%3D')/microsoft.graph.eventMessage/microsoft.graph.eventMessage/event/$entity",
     "event": {
         "@odata.etag": "W/\"yvNriWFaOEaxVdwA1Y938gAAX+T7Jg==\"",
         "id": "AAMkADADVj3fyAABZ5ieyAAA=",
@@ -519,7 +518,7 @@ Conectada como Clara, define o **evento** como provisório e inclui uma mensagem
 
 **Permissões do Microsoft Graph**
 
-Use a permissão delegada com menos privilégios, `Calendars.ReadWrite.Shared`. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
+Use a permissão delegada menos privilegiada, `Calendars.ReadWrite.Shared`. Para obter mais informações, confira as [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -574,7 +573,7 @@ Conectado como Adele, obtenha o [eventMessage](/graph/api/resources/eventmessage
 
 **Permissões do Microsoft Graph**
 
-Use a permissão delegada com menos privilégios, `Mail.Read.Shared`. Para mais informações, veja [permissões de correio](permissions-reference.md#mail-permissions).
+Use a permissão delegada menos privilegiada, `Mail.Read.Shared`. Para obter mais informações, consulte as [permissões de email](permissions-reference.md#mail-permissions).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -688,7 +687,7 @@ Conectado como Alex, obtenha o [evento](/graph/api/resources/event) que Adele cr
 
 **Permissões do Microsoft Graph**
 
-Use a permissão delegada com menos privilégios, `Calendars.Read`. Para obter mais informações, confira [permissões de calendário](permissions-reference.md#calendars-permissions).
+Use a permissão delegada menos privilegiada, `Calendars.Read`. Para obter mais informações, confira as [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
