@@ -4,12 +4,12 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6f37fdf90f510a650f2b1d13c42e83636c22697a
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: f870167c24d1ccdf24659bc9b8bdb843c8d0b812
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133346"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365915"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -307,6 +307,11 @@ Os limites anteriores se aplicam aos seguintes recursos:
 
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
+#### <a name="identity-and-access-reports-best-practices"></a>Práticas recomendadas para relatórios de identidade e acesso
+As APIs de relatórios do Azure AD são limitadas quando o Azure AD recebe muitas chamadas durante um determinado período de um locatário ou aplicativo. As chamadas também podem ser limitadas se o serviço demorar muito para responder. Se suas solicitações ainda falharem com um código de erro `429 Too Many Requests` apesar de aplicar as [práticas recomendadas acima](#best-practices-to-handle-throttling), tente reduzir a quantidade de dados retornados. Tente estas abordagens primeiro:
+- Use filtros para direcionar sua consulta apenas aos dados de que você precisa. Se você precisar apenas de um determinado tipo de evento ou de um subconjunto de usuários, por exemplo, filtre outros eventos usando os parâmetros de consulta `$filter` e `$select` para reduzir o tamanho do seu objeto de réplica e o risco de limitação.
+- Se você precisar de um amplo conjunto de dados de relatórios do Azure AD, use `$filter` no **createdDateTime** para limitar a quantidade de eventos de entrada que você consulta em uma única chamada. Em seguida, itere pelo próximo intervalo de tempo até ter todos os registros necessários. Por exemplo, se você estiver sendo limitado, poderá começar com uma chamada que solicita 3 dias de dados e iterar com intervalos de tempo mais curtos até que suas solicitações não sejam mais limitadas.
+  
 ### <a name="information-protection-service-limits"></a>Limites do serviço de proteção de informações
 
 Os seguintes limites se aplicam a qualquer solicitação no `/informationProtection`.
