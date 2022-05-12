@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: fb9d91dc1390ecc217f94051006a8d10111d848b
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
-ms.translationtype: MT
+ms.openlocfilehash: c05bc8548fc6e43b96720e358204cb9752c5ddbe
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477885"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366055"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -245,7 +245,7 @@ Recursos de diretório, como **dispositivo**, **grupo** e **usuário**, atualmen
 
 ### <a name="owner-must-be-specified-when-updating-a-schemaextension-definition-using-microsoft-graph-explorer"></a>O proprietário deve ser especificado ao atualizar uma definição de schemaExtension usando o Microsoft Graph Explorer
 
-Ao usar `PATCH` para atualizar uma schemaExtension usando o Graph Explorer, você deve especificar a propriedade de **proprietário** e defini-la com seu valor `appid` atual (que será necessário ser uma `appId` de um aplicativo que você tenha). Esse também é o caso de qualquer aplicativo de cliente cuja `appId` não seja a mesma que a do **proprietário**.
+Ao usar `PATCH` para atualizar uma schemaExtension usando o Graph Explorer, você deve especificar a propriedade de **proprietário** e defini-la com seu valor `appId` atual (que será necessário ser uma `appId` de um aplicativo que você tenha). Esse também é o caso de qualquer aplicativo de cliente cuja `appId` não seja a mesma que a do **proprietário**.
 
 ### <a name="filtering-on-schema-extension-properties-is-not-supported-on-all-entity-types"></a>Não há suporte a filtragem em propriedades de extensão de esquema em todos os tipos de entidade
 
@@ -405,6 +405,24 @@ As chamadas de API a seguir não suportam a instalação de aplicativos que exig
 - [Atualizar o aplicativo instalado para a equipe](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Adicionar o aplicativo ao chat](/graph/api/chat-post-installedapps)
 - [Atualizar aplicativo instalado no chat](/graph/api/chat-teamsappinstallation-upgrade.md)
+
+### <a name="unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id"></a>Não é possível acessar um canal compartilhado entre locatários quando a URL de solicitação contém locatários/{cross-tenant-id}
+A API chama [teams/{team-id}/incomingChannels](/graph/api/team-list-incomingchannels.md) e [teams/{team-id}/allChannels](/graph/api/team-list-allchannels.md) retorna a propriedade **@odata.id** que você pode usar para acessar o canal e executar outras operações no objeto [channel](/graph/api/resources/channel.md). Se você chamar o URL retornado da propriedade **@odata.id**, a solicitação falhará com o seguinte erro ao tentar acessar o [canal](/graph/api/resources/channel.md) compartilhado entre locatários:
+```http
+GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "TenantId in the optional tenants/{tenantId} segment should match the tenantId(tid) in the token used to call Graph.",
+        "innerError": {
+            "date": "2022-03-08T07:33:50",
+            "request-id": "dff19596-b5b2-421d-97d3-8d4b023263f3",
+            "client-request-id": "32ee2cbd-27f8-2441-e3be-477dbe0cedfa"
+        }
+    }
+}
+```
+Para resolver esse problema, remova a parte `/tenants/{tenant-id}` do URL antes de chamar a API para acessar o [canal](/graph/api/resources/channel.md) compartilhado entre locatários.
 
 ## <a name="users"></a>Usuários
 
