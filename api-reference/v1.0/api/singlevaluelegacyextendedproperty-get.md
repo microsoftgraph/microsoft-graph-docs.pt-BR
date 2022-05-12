@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: non-product-specific
 doc_type: apiPageType
-ms.openlocfilehash: 089f906c332d79c63c58985834848538bb1d5e81
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: b2fdfbcdfc0d74ffd4514fb6d2ddd40bcc6171e6
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191736"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366146"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obter singleValueLegacyExtendedProperty
 
@@ -52,8 +52,8 @@ Dependendo do recurso do qual você está obtendo a propriedade estendida e do t
 | [contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Sem suporte |
-| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Sem suporte |
+| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Incompatível |
+| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Incompatível |
 | grupo [post](../resources/post.md) | Group.Read.All | Sem suporte | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
@@ -325,7 +325,6 @@ Content-type: application/json
             }
         }
     ],
-    "singleValueExtendedProperties@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2_bs88AACHsLqWAAA%3D')/singleValueExtendedProperties",
     "singleValueExtendedProperties": [
         {
             "id": "String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",

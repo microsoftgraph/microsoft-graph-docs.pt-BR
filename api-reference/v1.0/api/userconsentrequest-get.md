@@ -5,18 +5,18 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8a7da71a9192510cf3692226b7bf132560e80545
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5b5d8fe39e8f7ea619bb36bb1e29fc32d6859297
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008304"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365810"
 ---
 # <a name="get-userconsentrequest"></a>Obter userConsentRequest
 
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto userConsentRequest.](../resources/userconsentrequest.md)
+Leia as propriedades e as relações de um [objeto userConsentRequest](../resources/userconsentrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{appconsentrequest-id}/use
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao  `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userConsentRequest](../resources/userconsentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto userConsentRequest](../resources/userconsentrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/get-userconsentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-userconsentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,10 +120,8 @@ Content-Type: application/json
       "mail": "AlexW@contoso.com"
     }
   },
-  "approval@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/$entity",
   "approval": {
     "id": "acef2660-d194-4943-b927-4fe4fb5cb7e3",
-    "stages@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/stages",
     "stages": [
       {
         "id": "f5a4ca4a-1316-4872-8112-993c55dab51e",

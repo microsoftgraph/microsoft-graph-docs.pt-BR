@@ -5,19 +5,19 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8821a520a8e0f3572e10e884fb09ece8601a67a5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d92ef61d5f7228a74d2dfd9bf84d2e05ea37b345
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995619"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365859"
 ---
 # <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma coleção de [objetos appConsentRequest](../resources/appconsentrequest.md) para os quais o usuário atual é o revistor e o status do userConsentRequest para acessar o aplicativo especificado é `InProgress` .
+Recupere uma coleção de [objetos appConsentRequest](../resources/appconsentrequest.md) para os quais o usuário atual é o revisores e o status do userConsentRequest para acessar o aplicativo especificado é `InProgress`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,10 +44,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filtre para consultar objetos appConsentRequest para os quais o usuário atual é um revistor. O valor permitido é `reviewer` . Obrigatório.|
+|on|consentRequestFilterByCurrentUserOptions|Filtre para consultar objetos appConsentRequest para os quais o usuário atual é revistor. O valor permitido é `reviewer`. Obrigatório.|
 
 ## <a name="query-parameters"></a>Parâmetros de consulta
-Essa função exige que o parâmetro de consulta OData retorne uma coleção de objetos  `$filter` [userConsentRequest](../resources/userconsentrequest.md) para os quais o status é `InProgress` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Essa função requer que o `$filter` parâmetro de consulta OData retorne uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md) para os quais o status é `InProgress`. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos appConsentRequest](../resources/appconsentrequest.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos appConsentRequest](../resources/appconsentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/appconsentrequest-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/appconsentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -120,7 +120,6 @@ Content-Type: application/json
       "appDisplayName": "Moodle",
       "consentType": "Dynamic",
       "pendingScopes": [],
-      "userConsentRequests@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
       "userConsentRequests": []
     }
   ]

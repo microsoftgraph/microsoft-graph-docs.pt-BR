@@ -5,18 +5,18 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e6ba7198f47257439d3a5a687b906c6c18a5e2d5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2672785b42008872950ecaee78516fd5d84e5dcd
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007065"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366090"
 ---
 # <a name="get-appconsentrequest"></a>Obter appConsentRequest
 
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto appConsentRequest.](../resources/appconsentrequest.md)
+Leia as propriedades e as relações de um [objeto appConsentRequest](../resources/appconsentrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao  `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto appConsentRequest](../resources/appconsentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e [um objeto appConsentRequest](../resources/appconsentrequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/get-appconsentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-appconsentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -112,7 +112,6 @@ Content-Type: application/json
   "appId": "3ca5f23f-94b4-4930-aec9-b8ca0f060e68",
   "appDisplayName": "Moodle",
   "pendingScopes": [],
-  "userConsentRequests@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/appConsent/appConsentRequests('af330b30-dd59-4482-a848-0fd81b0438ed')/userConsentRequests",
   "userConsentRequests": []
 }
 ```

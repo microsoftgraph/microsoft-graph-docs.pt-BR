@@ -1,16 +1,16 @@
 ---
 title: Listar teamsApp
-description: 'Listar aplicativos do Microsoft Teams de aplicativos. '
+description: 'Listar aplicativos do catálogo Microsoft Teams aplicativos. '
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d9c157e69a840f8d8b9326623d1bc73b33588dae
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 77386b0253d0d94096d0687a15111e0e06b66d54
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804287"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365880"
 ---
 # <a name="list-teamsapp"></a>Listar teamsApp
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Listar aplicativos](../resources/teamsapp.md) do Microsoft Teams de aplicativos.
+[Listar aplicativos](../resources/teamsapp.md) do catálogo Microsoft Teams aplicativos.
 Isso inclui aplicativos da Microsoft Teams, bem como aplicativos do catálogo de aplicativos da sua organização (o catálogo de aplicativos de locatário). Para obter aplicativos somente do catálogo de aplicativos da sua organização, especifique `organization` como **distributionMethod** na solicitação.
 
 > [!NOTE]
-> O `id` de um **recurso teamsApp** é gerado pelo servidor `id` e não é o mesmo especificado em um manifesto Teams aplicativo. O `id` fornecido pelo desenvolvedor como parte do manifesto Teams aplicativo é `externalId` carimbado como o no **recurso teamsApp**.
+> O `id` de um **recurso teamsApp** é gerado `id` pelo servidor e não é igual ao especificado em um manifesto Teams aplicativo. O `id` fornecido pelo desenvolvedor como parte do manifesto Teams aplicativo é carimbado como o `externalId` no recurso **teamsApp**.
 
 ## <a name="permissions"></a>Permissões
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
-> **Observação**: as permissões marcadas com ** têm suporte apenas para compatibilidade com versões anteriores. Recomendamos que você atualize suas soluções para usar uma permissão alternativa listada na tabela anterior e evite usar essas permissões adiante.
+> **Observação**: as permissões marcadas com ** têm suporte apenas para compatibilidade com versões anteriores. Recomendamos que você atualize suas soluções para usar uma permissão alternativa listada na tabela anterior e evite usar essas permissões daqui para frente.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,9 +48,9 @@ GET /appCatalogs/teamsApps
 
 Este método suporta o `$filter`, `$select`, e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-O `$expand=AppDefinitions` uso retornará mais informações sobre o estado do aplicativo, como **o publishingState**, que reflete o status da revisão de envio do aplicativo e retorna se um aplicativo foi aprovado, rejeitado ou permanece sob revisão. 
+O `$expand=AppDefinitions` uso retornará mais informações sobre o estado do aplicativo, como **publishingState**, que reflete o status de revisão de envio do aplicativo e retorna se um aplicativo foi aprovado, rejeitado ou permanece sob revisão. 
 
-> **Observação:** Você pode filtrar em qualquer um dos campos do [objeto teamsApp](../resources/teamsapp.md) para reduzir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: Igual, não igual e ou não.
+> **Nota:** Você pode filtrar qualquer um dos campos do objeto [teamsApp](../resources/teamsapp.md) para reduzir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: Igual, não igual a e, ou, e não.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -64,13 +64,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma lista de [objetos teamsApp](../resources/teamsapp.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Exemplo 1: listar todos os aplicativos específicos do locatário
+### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Exemplo 1: listar todos os aplicativos específicos para o locatário
 
-O exemplo a seguir lista todos os aplicativos que são específicos para seu locatário.
+O exemplo a seguir lista todos os aplicativos específicos para seu locatário.
 
 #### <a name="request"></a>Solicitação
 
@@ -141,9 +141,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-applications-with-a-given-id"></a>Exemplo 2: Listar aplicativos com uma determinada ID
+### <a name="example-2-list-applications-with-a-given-id"></a>Exemplo 2: listar aplicativos com uma determinada ID
 
-O exemplo a seguir lista aplicativos com uma determinada ID.
+O exemplo a seguir lista os aplicativos com uma determinada ID.
 
 #### <a name="request"></a>Solicitação
 
@@ -210,9 +210,9 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Exemplo 3: Encontrar aplicativo com base na ID Teams de manifesto do aplicativo
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Exemplo 3: Localizar aplicativo com base na ID Teams manifesto do aplicativo
 
-O exemplo a seguir lista aplicativos que corresponderem à "id" especificada no manifesto Teams aplicativo. No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
+O exemplo a seguir lista os aplicativos que correspondem à 'id' especificada no manifesto Teams aplicativo. No exemplo, a ID de manifesto do aplicativo Teams é 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 #### <a name="request"></a>Solicitação
 
@@ -282,7 +282,7 @@ Content-Type: application/json
 
 ### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Exemplo 4: listar aplicativos com uma determinada ID e retornar o estado de revisão de envio
 
-O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefinitions** para retornar **o publishingState**, que reflete o estado de revisão de envio do aplicativo. `Submitted` significa que a revisão está pendente, significa `published` que o aplicativo foi aprovado pelo administrador e `rejected` significa que o aplicativo foi rejeitado pelo administrador.
+O exemplo a seguir lista aplicativos com uma determinada ID e expande **appDefinitions** para retornar **o publishingState**, que reflete o estado de revisão de envio do aplicativo. `Submitted` significa que a revisão está pendente, `published` significa que o aplicativo foi aprovado `rejected` pelo administrador e significa que o aplicativo foi rejeitado pelo administrador.
 
 #### <a name="request"></a>Solicitação
 
@@ -362,7 +362,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Exemplo 5: listar os detalhes apenas desses aplicativos no catálogo que contêm um bot
+### <a name="example-5-list-the-details-of-only-those-apps-in-the-catalog-that-contain-a-bot"></a>Exemplo 5: Listar os detalhes apenas dos aplicativos no catálogo que contêm um bot
 
 O exemplo a seguir lista apenas os aplicativos no catálogo que contêm um bot.
 
@@ -428,7 +428,6 @@ Content-Type: application/json
             "externalId": "3CAB7543-216D-47C6-986C-6247670F4663",
             "displayName": "Ducks-3",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions(bot())",
             "appDefinitions": [
                 {
                     "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
@@ -452,7 +451,6 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6')/appDefinitions('OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ%3D')/bot/$entity",
                     "bot": {
                         "id": "bb9f67a4-893b-48d7-ab17-40ed466c0f16"
                     }
@@ -464,7 +462,6 @@ Content-Type: application/json
             "externalId": "0ebd3f4d-ca91-495b-a227-a17d298e22cc",
             "displayName": "Self-Install-App-E2E-Tests",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions(bot())",
             "appDefinitions": [
                 {
                     "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
@@ -488,7 +485,6 @@ Content-Type: application/json
                             "userIdentityType": "aadUser"
                         }
                     },
-                    "bot@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('30909dee-f7dd-4f89-8b3b-55de2e32489c')/appDefinitions('MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk')/bot/$entity",
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
                     }
@@ -565,7 +561,6 @@ Content-Type: application/json
             "externalId": "4b3ec336-b998-4623-9e25-d4182fb82159",
             "displayName": "Carriage",
             "distributionMethod": "organization",
-            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a542e1c-5f8c-4793-8b0c-6082464b2378')/appDefinitions(id,displayName,allowedInstallationScopes)",
             "appDefinitions": [
                 {
                     "id": "MWE1NDJlMWMtNWY4Yy00NzkzLThiMGMtNjA4MjQ2NGIyMzc4IyMxLjAuMCMjUHVibGlzaGVk",

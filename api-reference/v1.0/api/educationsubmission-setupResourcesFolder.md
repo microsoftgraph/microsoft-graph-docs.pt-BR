@@ -1,24 +1,24 @@
 ---
 title: 'educationSubmission: setUpResourcesFolder'
-description: Acionar a criação da pasta de recursos SharePoint onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados para um determinado envio.
+description: Dispare a criação da pasta SharePoint recurso em que todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados para um determinado envio.
 ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 46056e35ac29833deb20b1b1f421a9db9bf36e2b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e24eefafa4ded91ca3753aaab29bb1564eff6299
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931798"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366167"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission: setUpResourcesFolder
 
 Namespace: microsoft.graph
 
-Acionar a criação da pasta de recursos SharePoint onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados para um determinado envio.
+Dispare a criação da pasta SharePoint recurso em que todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados para um determinado envio.
 
-Observe que os arquivos devem estar localizados nesta pasta para serem adicionados como recursos. Somente um aluno na classe pode determinar quais arquivos carregar em uma determinada pasta de recursos de nível de envio. 
+Observe que os arquivos devem estar localizados nessa pasta para serem adicionados como recursos. Somente um aluno na classe pode determinar quais arquivos carregar em uma determinada pasta de recursos de nível de envio. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -41,7 +41,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 | Autorização  | `{token}` de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça um json `{}` vazio como corpo da solicitação para este método.
+Forneça um json vazio `{}` como o corpo da solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `200 Ok`. O corpo conterá o modelo de envio.
@@ -133,9 +133,7 @@ Content-type: application/json
             "displayName": null
         }
     },
-    "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions('803fb5dd-3553-455f-3d94-f79fb54a1003')/resources",
     "resources": [],
-    "submittedResources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions('803fb5dd-3553-455f-3d94-f79fb54a1003')/submittedResources",
     "submittedResources": []
 }
 ```

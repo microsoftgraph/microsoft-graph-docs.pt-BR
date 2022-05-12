@@ -1,16 +1,16 @@
 ---
 title: Listar atribuições de classe
-description: Recupere uma lista de objetos de atribuição.
+description: Recuperar uma lista de objetos de atribuição.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e1fed901bb8174247e4108f635791b27e170fca7
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 685fe0a965a21ac2d609219719f1269893909898
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123634"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365957"
 ---
 # <a name="list-class-assignments"></a>Listar atribuições de classe
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de atribuição. 
+Recuperar uma lista de objetos de atribuição. 
 
-Um professor ou um aplicativo que executa com permissões de aplicativo pode ver todos os objetos de atribuição da classe. Os alunos só podem ver atribuições atribuídas a eles.
+Um professor ou um aplicativo em execução com permissões de aplicativo pode ver todos os objetos de atribuição para a classe. Os alunos só podem ver as tarefas atribuídas a eles.
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-As opções `$expand` disponíveis para este método são: , , e que inclui todas as opções `categories` `resources` `rubric` `submissions` `*` anteriores.
+As opções disponíveis `$expand` para esse método são: `categories`, `resources`, e `rubric``submissions` que `*` inclui todas as opções anteriores.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,11 +52,11 @@ As opções `$expand` disponíveis para este método são: , , e que inclui toda
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não fornece um corpo de solicitação para este método.
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -275,7 +275,6 @@ Content-length: 344
                     "displayName": null
                 }
             },
-            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/resources",
             "resources": []
         },
         {
@@ -320,7 +319,6 @@ Content-length: 344
                     "displayName": null
                 }
             },
-            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('c057de5a-850e-4a35-b233-daf89cd55c8b')/resources",
             "resources": [
                 {
                     "distributeForStudentWork": false,

@@ -1,80 +1,81 @@
 ---
-title: Tipo de recurso educationAssignment
+title: tipo de recurso educationAssignment
 description: As atribuições são tarefas ou unidades de trabalho atribuídas a um aluno ou membro da equipe em uma classe como parte do estudo.
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 30d6d5bd5239748b10dc9aab0b2c4acd3f676e70
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: 679b665ff5cac12904918b3293c88262db93a0c6
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567367"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365992"
 ---
-# <a name="educationassignment-resource-type"></a>Tipo de recurso educationAssignment
+# <a name="educationassignment-resource-type"></a>tipo de recurso educationAssignment
 
 Namespace: microsoft.graph
 
 As atribuições são tarefas ou unidades de trabalho atribuídas a um aluno ou membro da equipe em uma classe como parte do estudo. 
 
-Somente professores ou proprietários de equipe podem criar **atribuições**. **As atribuições** contêm atribuições e tarefas nas que o professor deseja que o aluno trabalhe. Cada **atribuição de** aluno tem um [envio associado](educationsubmissionresource.md) que contém qualquer trabalho que o professor solicitou para ser entregue. Um professor pode adicionar pontuações e comentários ao **envio** entregue pelo aluno.
+Somente professores ou proprietários de equipe podem **criar tarefas**. **As tarefas** contêm folhetos e tarefas nas qual o professor deseja que o aluno trabalhe. Cada tarefa **de** aluno tem um [envio associado](educationsubmissionresource.md) que contém qualquer trabalho que seu professor pediu para ser entregue. Um professor pode adicionar pontuações e comentários ao **envio** entregue pelo aluno.
 
-Quando uma **atribuição** é criada, ela está em um estado rascunho. Os alunos não podem ver a **atribuição** e **os envios** não serão criados. Você pode alterar o status de uma **atribuição** usando a [ação publicar.](../api/educationassignment-publish.md) Não é possível usar uma solicitação PATCH para alterar o status **da** atribuição.
+Quando uma **atribuição** é criada, ela está em um estado de Rascunho. Os alunos não podem ver **a tarefa** e **os envios** não serão criados. Você pode alterar o status de uma **atribuição** usando a [ação de](../api/educationassignment-publish.md) publicação. Você não pode usar uma solicitação PATCH para alterar o status **da atribuição** .
 
 As APIs de atribuição são expostas no namespace de classe.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar recurso de tarefa](../api/educationassignment-post-resource.md) |[educationAssignmentResource](educationassignmentresource.md)| Crie uma nova **educationAssignmentResource** postando na coleção resources.|
-|[Obter a tarefa](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Ler propriedades e relações de um **objeto educationAssignment.**|
-|[Atualizar](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize **um objeto educationAssignment.** |
-|[Delete](../api/educationassignment-delete.md) | Nenhum |**Exclua um objeto educationAssignment.** |
-|[Publicar](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Altere o estado de um **objeto educationAssignment** de rascunho para publicado.|
-|[Configurar pasta de recursos de atribuição](../api/educationassignment-setupresourcesfolder.md)| string| Crie uma SharePoint (em local pré-definido) para carregar arquivos como recursos de atribuição.|
-|[Listar recursos](../api/educationassignment-list-resources.md) |[Coleção educationAssignmentResource](educationassignmentresource.md)| Obter uma **coleção de objetos educationAssignmentResource.**|
-|[Listar envios](../api/educationassignment-list-submissions.md) |[Coleção educationSubmission](educationsubmission.md)| Obter uma **coleção de objetos educationSubmission.**|
-|[Listar categorias](../api/educationassignment-list-categories.md) |[Coleção educationCategory](educationcategory.md)| Obter uma **coleção de objetos educationCategory.**|
-|[Adicionar categorias](../api/educationassignment-post-categories.md) |[educationCategory](educationcategory.md) | Atribua **uma educationCategory** pertencente à classe a essa atribuição.|
-|[Remover categoria](../api/educationassignment-remove-category.md) |Nenhum| Remova uma **educationCategory** pertencente à classe desta atribuição.|
-|[Anexar rubric](../api/educationassignment-put-rubric.md)|Nenhum|Anexe um **educationRubric** existente a essa atribuição.|
-|[Remover rubric](../api/educationassignment-delete-rubric.md)|Nenhum|Desconectar **educationRubric** desta atribuição.|
+|[Criar recurso de tarefa](../api/educationassignment-post-resource.md) |[educationAssignmentResource](educationassignmentresource.md)| Crie um novo **educationAssignmentResource** postando na coleção de recursos.|
+|[Obter a tarefa](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Ler propriedades e relações de um **objeto educationAssignment** .|
+|[Atualizar](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize **um objeto educationAssignment** . |
+|[Excluir](../api/educationassignment-delete.md) | Nenhuma |**Exclua um objeto educationAssignment**. |
+|[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Altere o estado de **um objeto educationAssignment** de rascunho para publicado.|
+|[Configurar a pasta de recursos de atribuição](../api/educationassignment-setupresourcesfolder.md)| string| Crie uma SharePoint (em local predefinido) para carregar arquivos como recursos de atribuição.|
+|[Listar recursos](../api/educationassignment-list-resources.md) |[coleção educationAssignmentResource](educationassignmentresource.md)| Obtenha uma **coleção de objetos educationAssignmentResource** .|
+|[Listar envios](../api/educationassignment-list-submissions.md) |[coleção educationSubmission](educationsubmission.md)| Obtenha uma **coleção de objetos educationSubmission** .|
+|[Listar categorias](../api/educationassignment-list-categories.md) |[coleção educationCategory](educationcategory.md)| Obtenha uma **coleção de objetos educationCategory** .|
+|[Adicionar categorias](../api/educationassignment-post-categories.md) |[educationCategory](educationcategory.md) | Atribua **uma educationCategory** que pertence à classe a esta tarefa.|
+|[Remover categoria](../api/educationassignment-remove-category.md) |Nenhuma| Remova uma **educationCategory que** pertence à classe desta tarefa.|
+|[Anexar rubric](../api/educationassignment-put-rubric.md)|Nenhum|Anexe um **educationRubric existente** a essa tarefa.|
+|[Remover rubrica](../api/educationassignment-delete-rubric.md)|Nenhuma|**Desanexe o educationRubric** desta tarefa.|
+|[Obter delta](../api/educationassignment-delta.md)|[coleção educationAssignment](../resources/educationassignment.md)|Obtenha uma lista de objetos **educationAssignment** recém-criados ou atualizados sem precisar executar uma leitura completa da coleção.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura.|
-|addedStudentAction|Cadeia de caracteres|Campo opcional para controlar o comportamento **de** atribuição para alunos que são adicionados após **a** publicação da atribuição. Se não for especificado, o valor será `none` padrão. Atualmente, suporta apenas dois valores: `none` ou `assignIfOpen` .|
-|addToCalendarAction| educationAddToCalendarOptions|Campo opcional para controlar o comportamento **de atribuição** para adicionar atribuições aos **calendários** dos alunos e professores quando a **atribuição** for publicada. Os valores possíveis são: `none` , , , e `studentsAndPublisher` `studentsAndTeamOwners` `unknownFutureValue` `studentsOnly` . Observe que você deve usar o header de solicitação para obter os seguintes valores nesta `Prefer: include-unknown-enum-members` [enum evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly` . O valor padrão é `none`.|
-|allowLateSubmissions|Booliano| Identifica se os alunos podem enviar após a data de vencimento. Se essa propriedade não for especificada durante a criação, ela será padrão como true. |
+|addedStudentAction|Cadeia de caracteres|Campo opcional para controlar o comportamento **da tarefa** para alunos que são adicionados após **a publicação** da tarefa. Se não for especificado, o valor será padrão `none` . Atualmente, dá suporte a apenas dois valores: `none` ou `assignIfOpen`.|
+|addToCalendarAction| educationAddToCalendarOptions|Campo opcional para controlar o comportamento **da** tarefa para adicionar **tarefas aos calendários** dos alunos e professores quando a **tarefa** é publicada. Os valores possíveis são: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`e `studentsOnly`. Observe que você deve usar o `Prefer: include-unknown-enum-members` cabeçalho da solicitação para obter os seguintes valores nesta [enumeração evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. O valor padrão é `none`.|
+|allowLateSubmissions|Booliano| Identifica se os alunos podem enviar após a data de conclusão. Se essa propriedade não for especificada durante a criação, o padrão será true. |
 |allowStudentsToAddResourcesToSubmission|Booliano| Identifica se os alunos podem adicionar seus próprios recursos a um **envio** ou se eles só podem modificar os recursos adicionados pelo professor. |
-|assignDateTime|DateTimeOffset|A data em que a **atribuição** deve ficar ativa.  Se, no futuro, **a atribuição** não for mostrada ao aluno até essa data.  O **tipo Timestamp** representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|assignDateTime|DateTimeOffset|A data em que a **atribuição** deve ficar ativa.  Se, no futuro, **a tarefa** não for mostrada ao aluno até essa data.  O **tipo de carimbo de data** /hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Quais usuários ou classe inteira devem receber um objeto **de envio** depois que a **atribuição** for publicada. |
-|assignedDateTime|DateTimeOffset|O momento em que a **atribuição** foi publicada para os alunos e **a** atribuição aparece na linha do tempo dos alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|classId|Cadeia de caracteres| Classe a qual **essa atribuição** pertence. |
-|closeDateTime|DateTimeOffset| Data em que **a atribuição** será fechada para **envios.** Este é um campo opcional que  pode ser nulo se a atribuição não permitirLateSubmissions ou quando closeDateTime for igual ao dueDateTime. Mas, se especificado, o closeDateTime deve ser maior ou igual ao dueDateTime. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|createdBy|[identitySet](identityset.md)| Who a **atribuição**. |
+|assignedDateTime|DateTimeOffset|O momento em que a **tarefa** foi publicada para os alunos e **a tarefa** aparece na linha do tempo dos alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|classId|Cadeia de caracteres| Classe à qual esta **tarefa** pertence. |
+|closeDateTime|DateTimeOffset| Data em que **a atribuição** será fechada para **envios**. Este é um campo opcional que pode ser nulo se  a atribuição não permitirLateSubmissions ou quando closeDateTime for igual ao dueDateTime. Mas, se especificado, closeDateTime deve ser maior ou igual ao dueDateTime. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|createdBy|[identitySet](identityset.md)| Who criou a **atribuição**. |
 |createdDateTime|DateTimeOffset|Momento em que **a atribuição** foi criada.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |displayName|Cadeia de caracteres|Nome da **atribuição**.|
-|dueDateTime|DateTimeOffset|Data em que a **atribuição dos** alunos é final.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Como a **atribuição** será gradeada. |
-|instructions|[itemBody](itembody.md)| Instruções para a atribuição.  Isso junto com o nome de exibição diz ao aluno o que fazer. |
+|dueDateTime|DateTimeOffset|Data de **conclusão da tarefa** dos alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|Classificação|[educationAssignmentGradeType](educationassignmentgradetype.md)|Como **a tarefa** será classificada. |
+|Instruções|[itemBody](itembody.md)| Instruções para a atribuição.  Isso junto com o nome de exibição informa ao aluno o que fazer. |
 |lastModifiedBy|[identitySet](identityset.md)| Who última modificação da **atribuição**. |
 |lastModifiedDateTime|DateTimeOffset|Momento em que **a atribuição** foi modificada pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|notificationChannelUrl|Cadeia de caracteres|Campo opcional para especificar a URL do [canal para](channel.md) postar a notificação **de** publicação de atribuição. Se não for especificado ou nulo, o padrão será o `General` canal. Este campo só se aplica a **atribuições** em que o **valor assignTo** é [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). A atualização da **notificaçãoChannelUrl** não é permitida após a publicação da atribuição.|
-|status|cadeia de caracteres| Status da **atribuição**.  Não é possível corrigir esse valor.  Os valores possíveis são: `draft`, `scheduled`, `published`, `assigned`.|
-|webUrl|cadeia de caracteres| A URL do link profundo para a **atribuição determinada.**|
-|resourcesFolderUrl|string| URL da pasta onde todos os recursos de arquivo para essa **atribuição** são armazenados.|
+|notificationChannelUrl|Cadeia de caracteres|Campo opcional para especificar a URL do [canal para](channel.md) postar a **notificação de publicação de atribuição** . Se não for especificado ou nulo, o padrão será o `General` canal. Esse campo só se aplica a **atribuições em** que o valor **assignTo** é [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). A atualização do **notificationChannelUrl** não é permitida depois que a atribuição é publicada.|
+|status|cadeia de caracteres| Status da **atribuição**.  Não é possível aplicar PATCH a esse valor.  Os valores possíveis são: `draft`, `scheduled`, `published`, `assigned`.|
+|webUrl|cadeia de caracteres| A URL de link profundo para a **atribuição fornecida**.|
+|resourcesFolderUrl|string| URL da pasta em que todos os recursos de arquivo para essa **atribuição** são armazenados.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|recursos|[Coleção educationAssignmentResource](educationassignmentresource.md)| Learning objetos associados a essa atribuição.  Somente os professores podem modificar essa lista. Anulável.|
-|envios|[Coleção educationSubmission](educationsubmission.md)| Depois de publicado, há um **objeto de envio** para cada aluno que representa seu trabalho e nota.  Somente leitura. Anulável.|
-|categories|[Coleção educationCategory](educationcategory.md)| Quando definido, permite que os usuários encontrem facilmente **atribuições** de um determinado tipo.  Somente leitura. Anulável.|
-|rubric|[educationRubric](educationrubric.md)|Quando definido, a rubrica de classificação anexada a essa **atribuição**.|
+|recursos|[coleção educationAssignmentResource](educationassignmentresource.md)| Learning objetos associados a essa atribuição.  Somente professores podem modificar essa lista. Anulável.|
+|Submissões|[coleção educationSubmission](educationsubmission.md)| Depois de publicado, há um objeto **de envio** para cada aluno que representa seu trabalho e nota.  Somente leitura. Anulável.|
+|categories|[coleção educationCategory](educationcategory.md)| Quando definido, permite que os usuários localizem **facilmente atribuições** de um determinado tipo.  Somente leitura. Anulável.|
+|Rubrica|[educationRubric](educationrubric.md)|Quando definido, a rubrica de classificação anexada a essa **atribuição**.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,16 +1,16 @@
 ---
 title: 'managedDevice: bulkReprovisionCloudPc'
-description: Reprovisionar em massa um conjunto de dispositivos cloud pc com IDs de dispositivo gerenciado do Intune.
+description: Reprovisionar em massa um conjunto de dispositivos de PC na nuvem com Intune IDs de dispositivo gerenciado.
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 2c98d596fad136245eae59daef954256f7045ad1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 314c7170ff700abfb2ae59b303610b4ba309c7eb
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030055"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365054"
 ---
 # <a name="manageddevice-bulkreprovisioncloudpc"></a>managedDevice: bulkReprovisionCloudPc
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reprovisionar em massa um conjunto de dispositivos cloud pc com IDs de dispositivo [gerenciado](../resources/cloudpc.md) do Intune.
+Reprovisionar em massa um conjunto de dispositivos de PC na nuvem com [Intune IDs](../resources/cloudpc.md) de dispositivo gerenciado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -50,17 +50,17 @@ POST /deviceManagement/managedDevices/bulkReprovisionCloudPc
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON das IDs dos dispositivos gerenciados do Intune.
+No corpo da solicitação, forneça uma representação JSON das IDs dos Intune gerenciados.
 
-A tabela a seguir mostra as propriedades necessárias ao reprovisionar em massa um conjunto de dispositivos cloud pc.
+A tabela a seguir mostra as propriedades que são necessárias quando você reprovisiona em massa um conjunto de dispositivos de PC na nuvem.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|managedDeviceIds|Collection(String)|As IDs dos dispositivos cloud pc.|
+|managedDeviceIds|Collection(String)|As IDs dos dispositivos de PC na nuvem.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um objeto [cloudPcBulkRemoteActionResult](../resources/cloudpcbulkremoteactionresult.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -98,7 +98,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/manageddevice-bulkreprovisioncloudpc-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/manageddevice-bulkreprovisioncloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,10 +109,28 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult"
 }
 -->
 
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.cloudPcBulkRemoteActionResult",
+    "successfulDeviceIds": [
+        "30d0e128-de93-41dc-89ec-33d84bb662a0"
+    ],
+    "failedDeviceIds": [
+        "7c82a3e3-9459-44e4-94d9-b92f93bf78dd"
+    ],
+    "notFoundDeviceIds": [
+    ],
+    "notSupportedDeviceIds": [
+    ]
+  }
+}
 ```

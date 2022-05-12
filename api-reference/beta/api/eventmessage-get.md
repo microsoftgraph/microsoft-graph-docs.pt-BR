@@ -1,16 +1,16 @@
 ---
 title: Obter eventMessage
-description: expand' parameter on the **event**
+description: parâmetro expand' no **evento**
 ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9683d97e3b47baf9b44d4eea28b5940a2d39b955
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e2410e6e5839445509caedd01645a47a47a77841
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090082"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366195"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades e os relacionamentos do objeto [eventMessage](../resources/eventmessage.md). Aplique o parâmetro na propriedade de navegação de eventos para obter o `$expand` evento [associado](../resources/event.md) no calendário de um participante. 
+Obtenha as propriedades e os relacionamentos do objeto [eventMessage](../resources/eventmessage.md). Aplique o `$expand` parâmetro na propriedade **de** navegação do evento para obter o evento [associado](../resources/event.md) no calendário de um participante.
 
 ### <a name="get-the-event-message-body-in-html-or-text-format"></a>Obter o corpo da mensagem de evento no formato HTML ou de texto
 
-Os corpos de mensagens de evento podem estar em formato HTML ou texto.
+Os corpos de mensagens de evento podem estar no formato HTML ou de texto.
 
-Você pode usar o header para especificar o formato desejado retornado no corpo e as propriedades `Prefer: outlook.body-content-type` **uniqueBody** em  uma `GET` solicitação:
+Você pode usar o `Prefer: outlook.body-content-type` cabeçalho para especificar o formato desejado retornado no **corpo** e as propriedades **uniqueBody** em uma solicitação `GET` :
 
-- `Prefer: outlook.body-content-type="text"`Especifique para obter um corpo da mensagem de evento retornado no formato de texto.
-- `Prefer: outlook.body-content-type="html"`Especifique , ou apenas pule o header, para retornar o corpo da mensagem de evento no formato HTML.
+- Especifique `Prefer: outlook.body-content-type="text"` para obter um corpo de mensagem de evento retornado no formato de texto.
+- Especifique `Prefer: outlook.body-content-type="html"`ou apenas ignore o cabeçalho para retornar o corpo da mensagem de evento no formato HTML.
 
 Se você especificar um dos cabeçalhos, a resposta incluirá o cabeçalho `Preference-Applied` correspondente como confirmação:
 
@@ -353,7 +353,6 @@ Content-type: application/json
     "previousLocation":null,
     "previousStartDateTime":null,
     "previousEndDateTime":null,
-    "event@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages('AAMkADYAAAImV_jAAA%3D')/microsoft.graph.eventMessage/event/$entity",
     "event":{
         "@odata.etag":"W/\"V5Qf0i9DeEOoOqPo0mABLgAACJpBWg==\"",
         "id":"AAMkADYAAAImVu6AAA=",

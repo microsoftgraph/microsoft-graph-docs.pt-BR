@@ -1,16 +1,16 @@
 ---
 title: Obter mensagem
-description: Recupere as propriedades e as relações do objeto message.
+description: Recupere as propriedades e as relações do objeto de mensagem.
 author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f9894993c6d49126a948a3860e3394f2c23e7a89
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0e2d8b9333cfe0ad327444c6886494c3a7556590
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099498"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365815"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações do [objeto message.](../resources/message.md)
+Recupere as propriedades e as relações do objeto [de](../resources/message.md) mensagem.
 
-Por exemplo, você pode obter uma mensagem e expandir todas [as](../resources/mention.md) instâncias de menção na mensagem. Veja um [exemplo](#example-2-get-all-mentions-in-a-specific-message) abaixo.
+Por exemplo, você pode obter uma mensagem e expandir [todas as](../resources/mention.md) instâncias de menção na mensagem. Veja um [exemplo](#example-2-get-all-mentions-in-a-specific-message) abaixo.
 
 Você pode usar o parâmetro `$value` para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message). Consulte também um [exemplo](#example-5-get-mime-content) abaixo.
 
@@ -75,7 +75,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 
 Use o parâmetro `$value` para obter o conteúdo MIME de uma mensagem.
 
-Use o parâmetro de consulta na propriedade de navegação de menções para obter uma mensagem com os detalhes de `$expand` cada menção na mensagem expandida.  [](../resources/mention.md)
+Use o `$expand` parâmetro de consulta na propriedade **de navegação de** menções para obter uma mensagem com os detalhes de cada [menção](../resources/mention.md) na mensagem expandida.
 
 
 
@@ -97,7 +97,7 @@ Especificar o parâmetro `$value` retorna o conteúdo da mensagem no formato MIM
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-get-a-specific-message"></a>Exemplo 1: Obter uma mensagem específica
 #### <a name="request"></a>Solicitação
-O primeiro exemplo obtém a mensagem especificada. Ele não especifica nenhum header para indicar o formato desejado do corpo a ser retornado.
+O primeiro exemplo obtém a mensagem especificada. Ele não especifica nenhum cabeçalho para indicar o formato desejado do corpo a ser retornado.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -135,8 +135,8 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ---
 
 #### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. As **propriedades body** e **uniqueBody** são retornadas no formato HTML padrão.
-Observação: o objeto de resposta mostrado aqui é truncado para brevidade. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. As **propriedades body** **e uniqueBody** são retornadas no formato HTML padrão.
+Observação: o objeto de resposta mostrado aqui é truncado para fins de brevidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -165,9 +165,9 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-get-all-mentions-in-a-specific-message"></a>Exemplo 2: obter todas as menções em uma mensagem específica
+### <a name="example-2-get-all-mentions-in-a-specific-message"></a>Exemplo 2: Obter todas as menções em uma mensagem específica
 #### <a name="request"></a>Solicitação
-No próximo exemplo, a usuária interna é Dana Swope. O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.
+No próximo exemplo, o usuário conectado é Dana Swope. O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -260,7 +260,6 @@ Content-type: application/json
   "mentionsPreview":{
     "isMentioned":true
   },
-  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAgVZAAAA')/mentions",
   "mentions":[
     {
       "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAgVZAAAA')/mentions('138f4c0a-1130-4776-b780-bf79d73abb3f')",
@@ -376,10 +375,10 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
-### <a name="example-4-get-internet-message-headers"></a>Exemplo 4: Obter os headers de mensagens da Internet
+### <a name="example-4-get-internet-message-headers"></a>Exemplo 4: Obter cabeçalhos de mensagem da Internet
 #### <a name="request"></a>Solicitação
 
-O quarto exemplo mostra como obter os headers de mensagens da Internet de uma mensagem específica.  
+O quarto exemplo mostra como obter os cabeçalhos de mensagem da Internet de uma mensagem específica.  
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -421,7 +420,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o número de headers de mensagens da Internet no objeto de resposta foi reduzido por brevidade.
+Veja a seguir um exemplo da resposta. Observação: o número de cabeçalhos de mensagem da Internet no objeto de resposta foi reduzido por motivos de brevidade.
 
 <!-- {
   "blockType": "response",
@@ -466,7 +465,7 @@ Content-type: application/json
 
 ### <a name="example-5-get-mime-content"></a>Exemplo 5: Obter conteúdo MIME
 #### <a name="request"></a>Solicitação
-O quinto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário de entrada.
+O quinto exemplo obtém o conteúdo MIME de uma mensagem na caixa de correio do usuário conectado.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

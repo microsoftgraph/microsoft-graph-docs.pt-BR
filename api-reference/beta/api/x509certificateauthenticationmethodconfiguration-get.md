@@ -5,19 +5,19 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6986e51bc8815684841158e0b65f7bfbf429a2df
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 2f2c00157ebd34bcdee5ffe7258c38bb81326dd3
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397964"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365936"
 ---
 # <a name="get-x509certificateauthenticationmethodconfiguration"></a>Obter x509CertificateAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia os detalhes de configuração do método de autenticação de certificado [X.509](../resources/x509certificateauthenticationmethodconfiguration.md) na política [de métodos de autenticação](../resources/authenticationmethodspolicy.md).
+Leia os detalhes de configuração do método [de autenticação de certificado X.509](../resources/x509certificateauthenticationmethodconfiguration.md) na política [de métodos de autenticação](../resources/authenticationmethodspolicy.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,13 +25,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Leitor Global
-* Administrador de Política de Autenticação
+* Administrador da Política de Autenticação
 * Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método `200 OK` retornará um código de resposta e um [objeto x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) no corpo da resposta.
+Se bem-sucedido, este `200 OK` método retorna um código de resposta e um objeto [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -130,7 +130,6 @@ Content-Type: application/json
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
     },
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

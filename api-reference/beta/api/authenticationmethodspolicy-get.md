@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 95454980e17b8c531eca7af41d6bd80126e6317f
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 71e539f1343a550fad09008d7fe4a523922344e6
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62238984"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365985"
 ---
 # <a name="get-authenticationmethodspolicy"></a>Obter authenticationMethodsPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto authenticationMethodsPolicy.](../resources/authenticationmethodspolicy.md)
+Leia as propriedades e as relações de um [objeto authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Leitor global
-* Administrador de Política de Autenticação
+* Leitor Global
+* Administrador da Política de Autenticação
 * Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +45,7 @@ GET /policies/authenticationMethodsPolicy
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método não dá suporte a parâmetros de consulta opcionais.
+Esse método não dá suporte a nenhum parâmetro de consulta opcional.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -133,7 +133,6 @@ Content-Type: application/json
             ]
         }
     },
-    "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
     "authenticationMethodConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
@@ -146,7 +145,6 @@ Content-Type: application/json
                 "enforcementType": "block",
                 "aaGuids": []
             },
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -159,7 +157,6 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
             "id": "MicrosoftAuthenticator",
             "state": "disabled",
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -176,7 +173,6 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.smsAuthenticationMethodConfiguration",
             "id": "Sms",
             "state": "enabled",
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Sms')/microsoft.graph.smsAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -195,7 +191,6 @@ Content-Type: application/json
             "minimumLifetimeInMinutes": 60,
             "maximumLifetimeInMinutes": 480,
             "isUsableOnce": false,
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -209,7 +204,6 @@ Content-Type: application/json
             "id": "Email",
             "state": "enabled",
             "allowExternalIdToUseEmailOtp": "default",
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": []
         }
     ]

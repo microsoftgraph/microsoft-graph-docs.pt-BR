@@ -3,14 +3,14 @@ title: Atualizar nameditem
 description: Atualize as propriedades do objeto nameditem.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbook-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: a861709a63239b02385b22ece2a009485bb553b5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5b8876e7e046628c531ad879c148d274739090db
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938207"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364739"
 ---
 # <a name="update-nameditem"></a>Atualizar nameditem
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e o objeto [WorkbookNamedItem](../resources/nameditem.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e o objeto [WorkbookNamedItem](../resources/nameditem.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

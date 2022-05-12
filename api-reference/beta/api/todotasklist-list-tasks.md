@@ -1,21 +1,21 @@
 ---
-title: Listar tarefas de Todo
-description: Obter os recursos todoTask da propriedade de navegação tarefas de um todoTaskList especificado.
+title: Listar tarefas de Tarefas Pendentes
+description: Obtenha os recursos todoTask da propriedade de navegação de tarefas de um todoTaskList especificado.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 950539a9173f8d9ce44590588569ffd50764a829
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cc4af2698729827cbbc5c65c3bf82169ed8e05d1
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136915"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365026"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os **recursos todoTask** da propriedade de navegação **tarefas** de um [todoTaskList especificado.](../resources/todotasklist.md)
+Obtenha os **recursos todoTask** da propriedade **de** navegação de tarefas de um [todoTaskList especificado](../resources/todotasklist.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos todoTask](../resources/todotask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos todoTask](../resources/todotask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -121,7 +121,6 @@ Content-Type: application/json
             "content":"",
             "contentType":"text"
          },
-         "linkedResources@odata.context":"https://graph.microsoft.com/beta/$metadata#users('todoservicetest2412201901%40outlook.com')/todo/lists('35e2-35e2-721a-e235-1a72e2351a7')/tasks('AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtMDACLTAwCgBGAAAD')/linkedResources",
          "linkedResources":[
             {
                "applicationName":"Partner App Name",

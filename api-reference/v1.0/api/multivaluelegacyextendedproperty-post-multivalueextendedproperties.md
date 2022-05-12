@@ -3,14 +3,14 @@ title: Criar propriedade estendida de vários valores
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: non-product-specific
 doc_type: apiPageType
-ms.openlocfilehash: 932dea4df8ffd07659e0097ee5c52612fb9e5a70
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50eb310c66f466c03d80568b72dee806eb698dce
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110190"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365040"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
 
@@ -36,17 +36,17 @@ Também há suporte para os seguintes recursos de grupo:
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
 ## <a name="permissions"></a>Permissões
-Dependendo do recurso em que você está criando a propriedade estendida e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso no qual você está criando a propriedade estendida e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contato](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [pastadeContatos](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
-| grupo [calendar](../resources/calendar.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
-| grupo [event](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
-| grupo [post](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
+| grupo [calendar](../resources/calendar.md) | Group.ReadWrite.All | Sem suporte | Incompatível |
+| grupo [event](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Incompatível |
+| grupo [post](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Incompatível |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 
@@ -129,10 +129,10 @@ Forneça um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../reso
 |Propriedade|Tipo|Descrição|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de vários valores. |
-|id|Cadeia de caracteres|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |valor|string|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
-Ao criar uma propriedade  estendida em uma nova instância de recurso, além da nova coleção **multiValueExtendedProperties,** forneça uma representação JSON dessa instância de recurso também (ou seja, uma mensagem [,](../resources/message.md) [mailFolder](../resources/mailfolder.md), [evento](../resources/event.md)etc.).
+Ao criar uma propriedade estendida em uma  nova instância de recurso, além da nova coleção **multiValueExtendedProperties**, forneça uma representação JSON dessa instância de recurso também (ou seja, uma [mensagem,](../resources/message.md) [mailFolder](../resources/mailfolder.md), [evento](../resources/event.md) etc.).
 
 
 ## <a name="response"></a>Resposta

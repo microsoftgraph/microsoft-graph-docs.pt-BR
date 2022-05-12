@@ -3,21 +3,21 @@ title: Criar printTaskDefinition
 description: Crie uma nova definição de tarefa.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: c9ef9a2726238fdcee143193610d5a70adf75f60
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d963e05888b45d42444cb88013c8558dffe9c32d
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117000"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366237"
 ---
 # <a name="create-printtaskdefinition"></a>Criar printTaskDefinition
 Namespace: microsoft.graph
 
 Crie uma nova definição de tarefa.
 
-Para obter detalhes sobre como usar essa API para adicionar suporte à impressão pull à Impressão Universal, consulte [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Para obter detalhes sobre como usar essa API para adicionar suporte de impressão pull à Impressão Universal, consulte Estender Impressão Universal para dar suporte [à impressão pull](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,13 +47,13 @@ POST /print/taskDefinitions
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto printTaskDefinition.](../resources/printtaskdefinition.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto printTaskDefinition](../resources/printtaskdefinition.md) .
 
-As **propriedades id** e **createdBy.appId** do [objeto printTaskDefinition](../resources/printtaskdefinition.md) são definidas automaticamente após a criação do recurso.
+As **propriedades id** e **createdBy.appId** do objeto [printTaskDefinition](../resources/printtaskdefinition.md) são definidas automaticamente após a criação do recurso.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto printTaskDefinition](../resources/printtaskdefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto printTaskDefinition](../resources/printtaskdefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

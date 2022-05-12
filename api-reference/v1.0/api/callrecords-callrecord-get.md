@@ -5,22 +5,22 @@ ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a34e8541ba99da30027122195e63b9e19b7e76b4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2eebc9d8b84beff27d0f98bcb3a125d714ad0557
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130517"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364970"
 ---
 # <a name="get-callrecord"></a>Obter callRecord
 
 Namespace: microsoft.graph.callRecords
 
-Recupere as propriedades e as relações de um [objeto callRecord.](../resources/callrecords-callrecord.md)
+Recupere as propriedades e as relações de um [objeto callRecord](../resources/callrecords-callrecord.md) .
 
-Há duas maneiras de obter a **id** de um **callRecord**:
+Há duas maneiras de obter a **ID** de um **callRecord**:
 
-* [Inscreva-se para alterar notificações](/graph/api/resources/webhooks?view=graph-rest-1.0) no ponto de `/communications/callRecords` extremidade.
+* Assine para [alterar notificações para](/graph/api/resources/webhooks?view=graph-rest-1.0) o ponto `/communications/callRecords` de extremidade.
 * Use a **propriedade callChainId** de uma [chamada](../resources/call.md). O registro de chamada só estará disponível depois que a chamada associada for concluída.
 
 ## <a name="permissions"></a>Permissões
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e o `200 OK` objeto [microsoft.graph.callRecords.callRecords](../resources/callrecords-callrecord.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -65,7 +65,7 @@ Se tiver êxito, este método retornará um código de resposta e o `200 OK` obj
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter os detalhes básicos de [um callRecord](../resources/callrecords-callrecord.md).
+Veja a seguir um exemplo da solicitação para obter os detalhes básicos de um [callRecord](../resources/callrecords-callrecord.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -157,11 +157,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-full-details"></a>Exemplo 2: obter detalhes completos
+### <a name="example-2-get-full-details"></a>Exemplo 2: Obter detalhes completos
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter os detalhes completos de [um callRecord](../resources/callrecords-callrecord.md), incluindo componentes de sessão e segmento.
+Veja a seguir um exemplo da solicitação para obter os detalhes completos de um [callRecord](../resources/callrecords-callrecord.md), incluindo componentes de sessão e segmento.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -202,7 +202,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Se a lista de sessões estiver truncada, será fornecido um valor para recuperar a `sessions@odata.nextLink` próxima página de sessões.
+Este é um exemplo de resposta. Se a lista de sessões for truncada, um valor será fornecido para recuperar a `sessions@odata.nextLink` próxima página de sessões.
 
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -250,7 +250,6 @@ Content-type: application/json
             }
         }
     ],
-    "sessions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions(segments())",
     "sessions": [
         {
             "modalities": [
@@ -305,7 +304,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",

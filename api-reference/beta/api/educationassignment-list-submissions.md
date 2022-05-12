@@ -5,12 +5,12 @@ author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 58e065a068a2785a3e32860cfbd77d8e33e21463
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 500a2ca9e60c293199a477f06c2a25ed41d28b3e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103175"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365964"
 ---
 # <a name="list-submissions"></a>Listar envios
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Listar todos [os envios associados](../resources/educationsubmission.md) a uma [atribuição](../resources/educationassignment.md).
 
-Um professor ou um aplicativo com permissões de aplicativo pode obter todos os **envios**, um aluno só pode receber **envios** que estão associados.
+Um professor ou um aplicativo com permissões de aplicativo pode obter todos os **envios**, um aluno só pode obter os **envios** aos quais está associado.
 
-Forneça o header `Prefer: include-unknown-enum-members` para listar corretamente **os envios** com o `reassigned` status. Para obter detalhes, consulte a seção exemplos.
+Forneça o cabeçalho para listar `Prefer: include-unknown-enum-members` corretamente **os envios** com o `reassigned` status. Para obter detalhes, consulte a seção de exemplos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,7 +42,7 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Veja a seguir as opções disponíveis para este método: , , e , que `$expand` inclui todas as opções `outcomes` `resources` `submittedResources` `*` anteriores.
+A seguir estão as opções disponíveis `$expand` para esse método: `outcomes`, `resources`, e `submittedResources``*`, que inclui todas as opções anteriores.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -51,10 +51,10 @@ Veja a seguir as opções disponíveis para este método: , , e , que `$expand` 
 | Preferir  | `include-unknown-enum-members`. Opcional.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não fornece um corpo de solicitação para este método.
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -259,7 +259,6 @@ Content-length: 4492
                     "displayName": null
                 }
             },
-            "outcomes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
             "outcomes": [
                 {
                     "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
@@ -320,7 +319,7 @@ Content-length: 4492
 }
 ```
 
-### <a name="example-3-get-submissions---request-with-optional-prefer-header"></a>Exemplo 3: Obter envios - Solicitar com o header Prefer opcional
+### <a name="example-3-get-submissions---request-with-optional-prefer-header"></a>Exemplo 3: Obter envios – Solicitação com cabeçalho prefer opcional
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 

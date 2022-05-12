@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8b7db1af8d1ba0fb6f3fa130c89732a1ce9fb87e
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 44a13df00e5f24ced47957dc49f27f5e4ee0ef2c
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060804"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365005"
 ---
 # <a name="get-unifiedroledefinition"></a>Obter unifiedRoleDefinition
 
@@ -21,10 +21,10 @@ Namespace: microsoft.graph
 Obtenha as propriedades e as relações de um [objeto unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) de um provedor RBAC. 
 
 No momento, há suporte para os seguintes provedores RBAC:
-- PC na nuvem 
+- PC na nuvem. 
 - gerenciamento de dispositivo (Intune)
-- directory (funções de diretório do Azure AD)
-- gerenciamento de direitos (gerenciamento de direitos do Azure AD)
+- directory (funções Azure AD diretório)
+- gerenciamento de direitos (Azure AD gerenciamento de direitos)
 
 ## <a name="permissions"></a>Permissões
 
@@ -187,7 +187,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('f189965f-f560-4c59-9101-933d4c87a91a')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": []
 }
 ```
@@ -292,7 +291,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": [
         {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -300,7 +298,7 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Exemplo 3: obter a definição de uma função interna do Azure AD e $expand na função da qual ele herda
+### <a name="example-3-get-the-definition-of-an-azure-ad-built-in-role-and-expand-on-the-role-it-inherits-from"></a>Exemplo 3: obter a definição de uma função Azure AD interna e $expand na função da qual ela herda
 
 #### <a name="request"></a>Solicitação
 
@@ -401,7 +399,6 @@ Content-type: application/json
             "condition": null
         }
     ],
-    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
     "inheritsPermissionsFrom": [
         {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",

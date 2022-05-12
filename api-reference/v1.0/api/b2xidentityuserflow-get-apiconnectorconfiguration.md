@@ -1,22 +1,22 @@
 ---
 title: Obter userFlowApiConnectorConfiguration
-description: Obter a propriedade userFlowApiConnectorConfiguration de um b2xIdentityUserFlow.
+description: Obtenha a propriedade userFlowApiConnectorConfiguration de um b2xIdentityUserFlow.
 author: nickgmicrosoft
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9f3eab8f03dba29f92dfc2d2d1dde4b8d83c3775
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e7899b28048b93164b8b7c4c885ddcd6b72113e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100460"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365670"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>Obter userFlowApiConnectorConfiguration
 
 Namespace: microsoft.graph
 
-Obter a [propriedade apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) em [um b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) para detalhar os conectores de API habilitados para o fluxo do usuário.
+Obtenha a [propriedade apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) em [um b2xIdentityUserFlow](../resources/userFlowApiConnectorConfiguration.md) para detalhar os conectores de API habilitados para o fluxo do usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityUserFlow.ReadWrite.All|
 
-A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador global
-* Administrador de identidade externa Flow usuário
+* Administrador de Flow usuário de identidade externa
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,7 +46,7 @@ GET identity/b2xUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$expand` parâmetro de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o conector de API para as `postFederationSignup` etapas `postAttributeCollection` e, adicione `$expand=postFederationSignup,postAttributeCollection` . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$expand` parâmetro de consulta OData para ajudar a personalizar a resposta. Por exemplo, para recuperar o conector de API e as etapas `postFederationSignup` `postAttributeCollection` , adicione `$expand=postFederationSignup,postAttributeCollection`. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -60,7 +60,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) .
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,7 +115,6 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration(postFederationSignup(),postAttributeCollection())",
-    "postFederationSignup@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postFederationSignup/$entity",
     "postFederationSignup": {
         "id": "74d13179-2c02-4ae7-bff3-82842d4e2f1f",
         "displayName": "Test API Connector 1",
@@ -126,7 +125,6 @@ Content-Type: application/json
             "password": "******"
         }
     },
-    "postAttributeCollection@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/b2xUserFlows('B2X_1_testuserflow')/apiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/microsoft.graph.userFlowApiConnectorConfiguration/postAttributeCollection/$entity",
     "postAttributeCollection": {
         "id": "900bc92c-bcbf-4093-af8e-450a4a77635f",
         "displayName": "Test API Connector 2",

@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 63a97d3205a140d0f7ad8fecd86023acd2d8e53e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2b3ed96fbda874d3d8eb690cfc1a2e960771f811
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092440"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366251"
 ---
 # <a name="list-submissions"></a>Listar envios
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Listar todos os envios associados a uma [atribuição](../resources/educationassignment.md). 
 
-Um professor ou um aplicativo com permissões de aplicativo pode obter todos os envios enquanto um aluno só pode receber envios aos que estão associados.
+Um professor ou um aplicativo com permissões de aplicativo pode obter todos os envios, enquanto um aluno só pode obter envios aos quais está associado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -38,7 +38,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Veja a seguir as opções disponíveis para este método: , , e , que `$expand` inclui todas as opções `outcomes` `resources` `submittedResources` `*` anteriores.
+A seguir estão as opções disponíveis `$expand` para esse método: `outcomes`, `resources`, e `submittedResources``*`, que inclui todas as opções anteriores.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -46,10 +46,10 @@ Veja a seguir as opções disponíveis para este método: , , e , que `$expand` 
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não fornece um corpo de solicitação para este método.
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -246,7 +246,6 @@ Content-length: 4492
                     "displayName": null
                 }
             },
-            "outcomes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
             "outcomes": [
                 {
                     "@odata.type": "#microsoft.graph.educationFeedbackOutcome",

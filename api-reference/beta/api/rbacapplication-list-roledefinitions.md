@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f9409d573cac02be8e870c6e7572713ec72c30ff
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: b2372c34622a34f7c292652b5b08131da25accd0
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246878"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366196"
 ---
 # <a name="list-roledefinitions"></a>Listar roleDefinitions
 
@@ -194,7 +194,6 @@ Content-type: application/json
                     "condition": null
                 }
             ],
-            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('729827e3-9c14-49f7-bb1b-9608f156bbb8')/inheritsPermissionsFrom",
             "inheritsPermissionsFrom": [
                 {
                     "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -221,7 +220,6 @@ Content-type: application/json
                     "condition": null
                 }
             ],
-            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('f023fd81-a637-4b56-95fd-791ac0226033')/inheritsPermissionsFrom",
             "inheritsPermissionsFrom": [
                 {
                     "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -250,7 +248,6 @@ Content-type: application/json
                     "condition": null
                 }
             ],
-            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('b0f54661-2d74-4c50-afa3-1ec803f12efe')/inheritsPermissionsFrom",
             "inheritsPermissionsFrom": [
                 {
                     "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"

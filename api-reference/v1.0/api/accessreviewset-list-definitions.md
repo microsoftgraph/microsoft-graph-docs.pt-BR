@@ -1,23 +1,23 @@
 ---
 title: Definições de lista
-description: Obter uma lista dos objetos accessReviewScheduleDefinition e suas propriedades.
+description: Obtenha uma lista dos objetos accessReviewScheduleDefinition e suas propriedades.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4d0d664dfb532b1dc8eaa53a85b21249ac732804
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: b9978d6d33ff278f300df6a8a65f93c13c09b80a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722866"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365775"
 ---
 # <a name="list-definitions"></a>Definições de lista
 Namespace: microsoft.graph
 
-Obter uma lista dos [objetos accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) e suas propriedades.
+Obtenha uma lista dos [objetos accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) e suas propriedades.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -26,23 +26,23 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
- O usuário interno também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso. Consulte access review [role and application permission authorization checks](../resources/accessreviewsv2-overview.md#role-and-application-permission-authorization-checks).
+ O usuário conectado também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso. Consulte as verificações de [autorização de permissão de aplicativo e função de revisão de acesso](../resources/accessreviewsv2-overview.md#role-and-application-permission-authorization-checks).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para listar todos os seus accessReviewScheduleDefinitions:
+Para listar todos os accessReviewScheduleDefinitions:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/accessReviews/definitions
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `$select`parâmetros de consulta , `$top`, `$skip`e`$orderBy``$filter` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos `$select`parâmetros`$orderBy``$skip` de consulta , `$top`, e `$filter` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewScheduleDefinition** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewScheduleDefinition** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ### <a name="use-the-filter-query-parameter"></a>Usar o parâmetro $filter consulta
-O `$filter` parâmetro de consulta com o `contains` operador é suportado na propriedade **scope** accessReviewScheduleDefinition. Use o seguinte formato para a solicitação:
+O `$filter` parâmetro de consulta com o `contains` operador tem suporte na propriedade **de** escopo de accessReviewScheduleDefinition. Use o seguinte formato para a solicitação:
 
 ```http
 GET /identityGovernance/accessReviews/definitions?$filter=contains(scope/microsoft.graph.accessReviewQueryScope/query, '{object}')
@@ -52,13 +52,13 @@ O valor de `{object}` pode ser um dos seguintes:
 
 |Valor|Descrição|
 |:---     |:---       |
-|`/groups`  |Listar todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
-|`/groups/{group id}`  |Listar todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
-|`./members`  |Listar todos os accessReviewScheduleDefinition com escopo para todos os grupos Microsoft 365 com usuários convidados.|
-|`accessPackageAssignments`  |Listar todos os accessReviewScheduleDefinition em um pacote de acesso.|
-|`roleAssignmentScheduleInstances`  |Listar todos os accessReviewScheduleDefinition para entidades de serviço atribuídas a uma função privilegiada.|
+|`/groups`  |Liste todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
+|`/groups/{group id}`  |Liste todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
+|`./members`  |Liste todos os accessReviewScheduleDefinition com escopo para todos Microsoft 365 grupos com usuários convidados.|
+|`accessPackageAssignments`  |Liste cada accessReviewScheduleDefinition em um pacote de acesso.|
+|`roleAssignmentScheduleInstances`  |Liste cada accessReviewScheduleDefinition para entidades de serviço atribuídas a uma função privilegiada.|
 
-O `$filter` parâmetro de consulta não é suportado em **accessReviewInactiveUserQueryScope** ou **principalResourceMembershipScope**.
+Não `$filter` há suporte para o parâmetro de consulta **em accessReviewInactiveUserQueryScope** ou **principalResourceMembershipScope**.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -70,11 +70,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetos accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de [objetos accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>Exemplo 1: listar as primeiras 100 definições de revisão de acesso
+### <a name="example-1-list-the-first-one-hundred-access-review-definitions"></a>Exemplo 1: listar as primeiras cem definições de revisão de acesso
 
 #### <a name="request"></a>Solicitação
 
@@ -179,10 +179,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Exemplo 2: Recuperar todas as definições de revisão de acesso com escopo para todos os grupos Microsoft 365 em um locatário
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Exemplo 2: Recuperar todas as definições de revisão de acesso com escopo para todos os Microsoft 365 grupos em um locatário
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso com escopo para todos os grupos Microsoft 365 em um locatário.
+O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso com escopo para todos Microsoft 365 grupos em um locatário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -286,7 +286,6 @@ Content-type: application/json
                     }
                 ]
             },
-            "instances@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/accessReviews/definitions('cc701697-762c-439a-81f5-f58d680fde76')/instances",
             "instances": []
         }
     ]

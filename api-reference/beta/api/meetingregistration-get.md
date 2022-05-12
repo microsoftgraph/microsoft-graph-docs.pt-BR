@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e236bd73973d67305ef43be1809d24ca5d7e5339
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 57108b112413d34fd9cf948e4c5ed5324052b28b
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102816"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365706"
 ---
 # <a name="get-meetingregistration"></a>Obter meetingRegistration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os [detalhes meetingRegistration](../resources/meetingregistration.md) associados a um [onlineMeeting](../resources/onlinemeeting.md) em nome do organizador.
+Obtenha os [detalhes de meetingRegistration](../resources/meetingregistration.md) associados a um [onlineMeeting](../resources/onlinemeeting.md) em nome do organizador.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ GET /me/onlineMeetings/{id}/registration
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 > [!TIP]
-> A **propriedade customQuestions** não é retornada por padrão. Para recuperar **customQuestions** na linha, use a opção de consulta, conforme `expand` mostrado no exemplo mais adiante neste tópico.
+> A **propriedade customQuestions** não é retornada por padrão. Para recuperar **customQuestions** na linha, use `expand` a opção de consulta, conforme mostrado no exemplo mais adiante neste tópico.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto meetingRegistration](../resources/meetingregistration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e [um objeto meetingRegistration](../resources/meetingregistration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -133,7 +133,6 @@ Content-Type: application/json
       "bio": "CFO"
     }
   ],
-  "customQuestions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc17674c-81d9-4adb-bfb2-8f6a442e4622')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/microsoft.graph.meetingRegistration/microsoft.graph.meetingRegistration/customQuestions",
   "customQuestions": [
     {
       "id": "MSNhMjVlZmUyMy01MDBhLTQwYjItYjUwZS04YWU5EG9hX3gwMDIwX2RldmU=",

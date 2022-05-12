@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: eea88e679900db3bbd68a22b8fb9191db125b48a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b65d8433177a4a6e71c267a01e2e7387474617dc
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60924394"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365708"
 ---
 # <a name="get-printjob"></a>Get printJob
 Namespace: microsoft.graph
@@ -20,12 +20,12 @@ Recupere as propriedades e as relações de um trabalho de impressão.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma [](printer-get.md) assinatura de Impressão Universal ativa e ter uma permissão que conceda Obter impressora ou Obter acesso a [PrinterShare,](printershare-get.md) dependendo se a impressora ou impressoraShare está sendo usada.
+Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso Get [printer](printer-get.md) ou [Get printerShare](printershare-get.md) , dependendo se a impressora ou printerShare está sendo usada.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,14 +55,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printJob](../resources/printjob.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto printJob](../resources/printjob.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-get-print-job"></a>Exemplo 1: Obter trabalho de impressão
 
 #### <a name="request"></a>Solicitação
-A seguir, um exemplo de uma solicitação para obter metadados para um trabalho de impressão.
+A seguir está um exemplo de uma solicitação para obter metadados para um trabalho de impressão.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -125,10 +125,10 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-print-job-with-task-list"></a>Exemplo 2: Obter trabalho de impressão com lista de tarefas
+### <a name="example-2-get-print-job-with-task-list"></a>Exemplo 2: Obter trabalho de impressão com a lista de tarefas
 
 #### <a name="request"></a>Solicitação
-A seguir está uma solicitação para [](../resources/printtask.md) obter um trabalho de impressão e todas as tarefas que estão sendo executadas ou executadas em relação a ele.
+A seguir está uma solicitação para obter um trabalho de impressão [](../resources/printtask.md) e todas as tarefas que estão sendo executadas ou executadas nele.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -204,7 +204,7 @@ Content-Type: application/json
 ### <a name="example-3-get-a-print-job-and-its-associated-document-data"></a>Exemplo 3: Obter um trabalho de impressão e seus dados de documento associados
 
 #### <a name="request"></a>Solicitação
-A seguir, um exemplo de uma solicitação para obter um trabalho de impressão e seus dados de documento associados.
+A seguir está um exemplo de uma solicitação para obter um trabalho de impressão e seus dados de documento associados.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -264,7 +264,6 @@ Content-Type: application/json
   "redirectedTo": null,
   "redirectedFrom": null,
   "isFetchable": false,
-  "documents@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs('5182')/documents",
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",

@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b845ff28f9b9a9203066b289a3b0191d58268706
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cf6bde0c9230be7932c86b6a4bb7a6de63f5b351
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62096564"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366020"
 ---
 # <a name="list-educationschools"></a>Listar educationSchools
 
@@ -57,7 +57,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma c
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/education/schools
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 

@@ -1,24 +1,24 @@
 ---
 title: Listar atribuições de classe
-description: Recupere uma lista de objetos de atribuição.
+description: Recuperar uma lista de objetos de atribuição.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f44ea1d6dddca9327e1c189d8d0e08eccf2b7712
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 00e1a1866afc2ed226972fe373ca12f6cc2965ff
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136320"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366244"
 ---
 # <a name="list-class-assignments"></a>Listar atribuições de classe
 
 Namespace: microsoft.graph
 
-Recupere uma lista de objetos de atribuição. 
+Recuperar uma lista de objetos de atribuição. 
 
-Um professor ou um aplicativo que executa com permissões de aplicativo pode ver todos os objetos de atribuição da classe. Os alunos só podem ver atribuições atribuídas a eles.
+Um professor ou um aplicativo em execução com permissões de aplicativo pode ver todos os objetos de atribuição para a classe. Os alunos só podem ver as tarefas atribuídas a eles.
 
 ## <a name="permissions"></a>Permissões
 
@@ -40,7 +40,7 @@ GET /education/classes/{id}/assignments
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Veja a seguir as opções `$expand` disponíveis para este método: , , , e , que inclui todas as opções `categories` `resources` `rubric` `submissions` `*` anteriores.
+A seguir estão as opções disponíveis `$expand` para esse método: `categories`, `resources`, , `rubric`e `submissions``*`, que inclui todas as opções anteriores.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -50,11 +50,11 @@ Veja a seguir as opções `$expand` disponíveis para este método: , , , e , qu
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Não fornece um corpo de solicitação para este método.
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -210,7 +210,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 
 #### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta, que inclui a lista de recursos para cada atribuição. 
+A seguir está um exemplo da resposta, que inclui a lista de recursos para cada atribuição. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
@@ -270,7 +270,6 @@ Content-length: 344
                     "displayName": null
                 }
             },
-            "resources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('7e04c28e-5c5c-4fd0-ba83-62c59d196e5d')/resources",
             "resources": []
         },
         {
@@ -314,7 +313,6 @@ Content-length: 344
                     "displayName": null
                 }
             },
-            "resources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('c057de5a-850e-4a35-b233-daf89cd55c8b')/resources",
             "resources": [
                 {
                     "distributeForStudentWork": false,

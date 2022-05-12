@@ -5,29 +5,29 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0d43735feb2e2b7390fc9e781179353a0c6992e2
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: c6bdbfcd9c2d8500716c36e606f3fa597a4f3bd5
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394296"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364991"
 ---
 # <a name="get-organizationalbranding"></a>Obter organizationalBranding
 Namespace: microsoft.graph
 
-Recupere o objeto de identidade visual organizacional padrão, se o header **Accept-Language** estiver definido como `0` ou `default`. Se nenhum objeto de identidade visual organizacional padrão existir, este método retornará um `404 Not Found` erro.
+Recupere o objeto de identidade visual organizacional padrão, se o cabeçalho **Accept-Language** estiver definido como `0` ou `default`. Se nenhum objeto de identidade visual organizacional padrão existir, esse método retornará um `404 Not Found` erro.
 
-Se o header **Accept-Language** for definido como uma localidade existente identificada pelo valor de sua **id**, esse método recuperará a identidade visual da localidade especificada.
+Se o **cabeçalho Accept-Language** for definido como uma localidade existente identificada pelo valor de sua **ID**, esse método recuperará a identidade visual da localidade especificada.
 
-Este método recupera apenas propriedades que não são stream, por exemplo, **usernameHintText** e **signInPageText**. Para recuperar tipos stream da identidade visual padrão, por exemplo, **bannerLogo** e **backgroundImage**, use o [método GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) .
+Esse método recupera apenas propriedades não Stream, por exemplo, **usernameHintText** e **signInPageText**. Para recuperar tipos de Stream da identidade visual padrão, por exemplo, **bannerLogo** e **backgroundImage**, use o [método GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Delegado (conta corporativa ou de estudante)     | User.Read, Organization.Read.All, User.ReadBasic.All, User.Read.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -42,7 +42,7 @@ GET /organization/{organizationId}/branding
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte apenas ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte apenas ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto organizationalBranding](../resources/organizationalbranding.md) no corpo da resposta. Se nenhum objeto de identidade visual padrão existir, este método retornará um `404 Not Found` código de resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto organizationalBranding](../resources/organizationalbranding.md) no corpo da resposta. Se nenhum objeto de identidade visual padrão existir, esse método retornará um código `404 Not Found` de resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -195,7 +195,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Exemplo 3: Obter identidade visual organizacional para a localidade francesa
 
-No exemplo a seguir, o header **Accept-Language** é usado para especificar para recuperar a `fr-FR` identidade visual de localização.
+No exemplo a seguir, o cabeçalho **Accept-Language** é usado para recuperar a identidade `fr-FR` visual de localização.
 
 #### <a name="request"></a>Solicitação
 
@@ -270,7 +270,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>Exemplo 4: Obter o bannerLogo para a localidade padrão
 
-O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Para recuperar tipos de objeto Stream, por exemplo, **bannerLogo**, use [o get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Você pode especificar o valor da **id** como `default` ou `0` na URL da solicitação. Se a propriedade não estiver definida, a solicitação retornará uma resposta vazia.
+O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Para recuperar tipos de objeto do Stream, por exemplo, **bannerLogo**, use [Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Você pode especificar o valor da **ID** como `default` ou `0` na URL da solicitação. Se a propriedade não estiver definida, a solicitação retornará uma resposta vazia.
 
 #### <a name="request"></a>Solicitação
 
@@ -304,7 +304,7 @@ Content-Type: image/*
 
 ### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>Exemplo 5: Obter o bannerLogo para a localidade padrão quando ele não estiver definido
 
-O exemplo a seguir retorna o **objeto bannerLogo** que não foi definido para a localidade padrão.
+O exemplo a seguir retorna **o objeto bannerLogo** que não foi definido para a localidade padrão.
 
 #### <a name="request"></a>Solicitação
 
@@ -339,6 +339,7 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 
 ---
 

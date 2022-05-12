@@ -1,18 +1,18 @@
 ---
-title: Arquivos de lista (arquivos de contrato localizados)
+title: Listar arquivos (arquivos de contrato localizados)
 description: Recupere todos os arquivos localizados relacionados a um contrato.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 77f8e66b0ec3608290db7778c895748c0a20982f
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 87983a8b92f9ba87b06fe62c8cd18dbc9403f747
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63515778"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366125"
 ---
-# <a name="list-files-localized-agreement-files"></a>Arquivos de lista (arquivos de contrato localizados)
+# <a name="list-files-localized-agreement-files"></a>Listar arquivos (arquivos de contrato localizados)
 Namespace: microsoft.graph
 
 Recupere todos os arquivos localizados relacionados a um contrato.
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos agreementFileLocalization](../resources/agreementfilelocalization.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos agreementFileLocalization](../resources/agreementfilelocalization.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -113,7 +113,6 @@ Content-Type: application/json
     "userReacceptRequiredFrequency": null,
     "isViewingBeforeAcceptanceRequired": true,
     "isPerDeviceAcceptanceRequired": false,
-    "files@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/termsOfUse/agreements('94410bbf-3d3e-4683-8149-f034e55c39dd')/files",
     "files": [
         {
             "id": "08033369-8972-42a3-8533-90bbd2757a01",

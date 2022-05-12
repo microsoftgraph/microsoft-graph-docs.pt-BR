@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9627fc15273cb6eba20a7d550905ebb1f00c36e7
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 0fc06d010aed90b706fa15bc5f5bffb1194f3e3a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210553"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366139"
 ---
 # <a name="create-conversation"></a>Criar conversa
 
@@ -22,7 +22,7 @@ Crie uma nova [conversa](../resources/conversation.md) incluindo um thread e uma
 
 Use [reply thread](conversationthread-reply.md) ou [reply post](post-reply.md) para postar mais na conversa.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -150,7 +150,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
     "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQALW_4yZl5X5HqtIFyIQHmJs=",
-    "threads@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('4d81ce71-486c-41e9-afc5-e41bf2d0722a')/conversations('AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgAQALW_4yZl5X5HqtIFyIQHmJs%3D')/threads",
     "threads": [
         {
             "id": "AAQkAGRhZmRhMWM3LTYwZTktNDZmYy1hNWU1LThhZWU4NzI2YTEyZgMkABAAtb7jJmXlfkeq0gXIhAeYmxAAtb7jJmXlfkeq0gXIhAeYmw=="

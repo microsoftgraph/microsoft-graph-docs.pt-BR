@@ -1,23 +1,23 @@
 ---
-title: Local de atualização
+title: Atualizar local
 description: Atualize as propriedades do objeto place.
 ms.localizationpriority: medium
 author: vrod9429
-ms.prod: Outlook
+ms.prod: calendar
 doc_type: apiPageType
-ms.openlocfilehash: 5b28581b3da3e35c6720d5ba7dee50969cea9dca
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b9954243e415797a7628f8fa503772656ccf20b8
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135900"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366069"
 ---
-# <a name="update-place"></a>Local de atualização
+# <a name="update-place"></a>Atualizar local
 
 Namespace: microsoft.graph
 
 
-Atualize as propriedades [do objeto place,](../resources/place.md) que pode ser uma [sala](../resources/room.md) ou [roomList](../resources/roomlist.md). Você pode identificar a **sala ou** **roomList** especificando a **propriedade id** ou **emailAddress.**
+Atualize as propriedades [do objeto place](../resources/place.md) , que pode ser uma [room ou](../resources/room.md) [roomList](../resources/roomlist.md). Você pode identificar a **sala ou** **roomList** especificando a **id** ou a **propriedade emailAddress** .
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,33 +46,33 @@ PATCH /places/{id | emailAddress}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Somente uma instância de um recurso place (**room** ou **roomList**) pode ser atualizada por vez. No corpo da solicitação, use para especificar o tipo de local e inclua as `@odata.type` propriedades desse tipo para atualizar. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Apenas uma instância de um recurso de local (**room ou** **roomList**) pode ser atualizada por vez. No corpo da solicitação, use `@odata.type` para especificar o tipo de local e inclua as propriedades desse tipo a serem atualizadas. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade               | Tipo                                              | Descrição |
 |:-----------------------|:--------------------------------------------------|:--|
-| address                | [physicalAddress](../resources/physicaladdress.md)             | O endereço de rua da sala ou da lista de sala. |
+| address                | [physicalAddress](../resources/physicaladdress.md)             | O endereço da sala ou da lista de sala. |
 | audioDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de áudio na sala. |
 | bookingType            | [bookingType](../resources/room.md)                            | Tipo de sala. Os valores possíveis são: `Standard` e `Reserved`. |
-| building               | Cadeia de caracteres                                            | Especifica o nome do edifício ou o número de construção em que a sala está. |
-| capacity               | Int32                                             | Especifica a capacidade da sala. |
+| Edifício               | String                                            | Especifica o nome do prédio ou o número de construção em que a sala está. |
+| Capacidade               | Int32                                             | Especifica a capacidade da sala. |
 | displayDeviceName      | Cadeia de caracteres                                            | Especifica o nome do dispositivo de exibição na sala. |
-| floorLabel             | Cadeia de caracteres                                            | Especifica a letra do piso em que a sala está. |
-| floorNumber            | Int32                                             | Especifica o número do piso em que a sala está. |
-| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da lista de espaços em latitude, longitude e, opcionalmente, coordenadas de altitude. |
-| isWheelChairAccessible | Booliano                                           | Especifica se a sala está acessível para cadeira de rodas. |
-| rótulo                  | Cadeia de caracteres                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
-| nickname               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "conf room". |
-| phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou da lista de sala. |
-| categorias                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de móvel. |
+| floorLabel             | String                                            | Especifica a letra do chão em que a sala está. |
+| floorNumber            | Int32                                             | Especifica o número do andar em que a sala está. |
+| geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Especifica o local da sala ou da lista de quarto em coordenadas de latitude, longitude e, opcionalmente, altitude. |
+| isWheelChairAccessible | Booliano                                           | Especifica se a sala é acessível para cadeira de rodas. |
+| rótulo                  | String                                            | Especifica um rótulo descritivo para a sala, por exemplo, um número ou nome. |
+| Alcunha               | Cadeia de caracteres                                            | Especifica um apelido para a sala, por exemplo, "sala de conf". |
+| phone                  | Cadeia de caracteres                                            | O número de telefone da sala ou da lista de quarto. |
+| categorias                   | Coleção de cadeias de caracteres                                 | Especifica recursos adicionais da sala, por exemplo, detalhes como o tipo de exibição ou tipo de móveis. |
 | videoDeviceName        | Cadeia de caracteres                                            | Especifica o nome do dispositivo de vídeo na sala. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto place](../resources/place.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [de local](../resources/place.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-a-room"></a>Exemplo 1: atualizar uma sala
+### <a name="example-1-update-a-room"></a>Exemplo 1: Atualizar uma sala
 
 ### <a name="request"></a>Solicitação
 
@@ -178,7 +178,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-roomlist"></a>Exemplo 2: atualizar uma lista de sala
+### <a name="example-2-update-a-roomlist"></a>Exemplo 2: atualizar uma lista de quarto
 
 ### <a name="request"></a>Solicitação
 

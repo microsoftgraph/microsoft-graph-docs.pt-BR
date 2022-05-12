@@ -1,16 +1,16 @@
 ---
 title: Obter educationSubmission
-description: 'Recupere um envio específico. Um objeto de envio representa o trabalho de um aluno para uma atribuição. Os recursos associados ao envio representam esse trabalho. Somente o aluno ao que o envio é atribuído pode ver e modificar o envio. Um professor ou aplicativo com permissões de aplicativo tem acesso total a todos os envios. '
+description: 'Recuperar um envio específico. Um objeto de envio representa o trabalho de um aluno para uma tarefa. Os recursos associados ao envio representam esse trabalho. Somente o aluno ao qual o envio é atribuído pode ver e modificar o envio. Um professor ou aplicativo com permissões de aplicativo tem acesso completo a todos os envios. '
 author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b30839a0610b9d5bfe93099fdef81d3d21e08021
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e526848340fa4af183539766f2da5c679ce88ae0
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130447"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364781"
 ---
 # <a name="get-educationsubmission"></a>Obter educationSubmission
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 Recuperar um envio [específico](../resources/educationsubmission.md).
 
-Um **objeto de** envio representa o trabalho de um aluno para uma [atribuição](../resources/educationassignment.md). Os recursos associados ao **envio representam** esse trabalho.
+Um **objeto** de envio representa o trabalho de um aluno para uma [tarefa](../resources/educationassignment.md). Os recursos associados ao **envio representam** esse trabalho.
 
-Somente o **aluno assignedTo** pode ver e modificar o **envio**. Um professor ou aplicativo com permissões de aplicativo tem acesso total a todos os **envios.**
+Somente o **aluno assignedTo** pode ver e modificar o **envio**. Um professor ou aplicativo com permissões de aplicativo tem acesso completo a todos os **envios**.
 
-As notas e os comentários de um professor fazem parte do [educationOutcome](../resources/educationoutcome.md) associado a esse objeto. Somente professores ou aplicativos com permissões de aplicativo podem adicionar ou alterar notas e comentários. Os alunos não verão a nota ou os comentários até que **a atribuição** seja lançada.
+A nota e os comentários de um professor fazem parte do [educationOutcome](../resources/educationoutcome.md) associado a este objeto. Somente professores ou aplicativos com permissões de aplicativo podem adicionar ou alterar notas e comentários. Os alunos não verão a nota ou os comentários até que **a tarefa** seja lançada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -41,7 +41,7 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submi
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Veja a seguir as opções disponíveis para este método: , , e , que `$expand` inclui todas as opções `outcomes` `resources` `submittedResources` `*` anteriores. Para obter detalhes, consulte a seção exemplos.
+A seguir estão as opções disponíveis `$expand` para esse método: `outcomes`, `resources`, e `submittedResources``*`, que inclui todas as opções anteriores. Para obter detalhes, consulte a seção de exemplos.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -49,9 +49,9 @@ Veja a seguir as opções disponíveis para este método: , , e , que `$expand` 
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não fornece um corpo de solicitação para este método.
+Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-get-submission"></a>Exemplo 1: Obter envio
@@ -95,9 +95,9 @@ GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 
->**Observações:** O objeto de resposta mostrado aqui pode ser reduzido para a capacidade de leitura. 
+>**Notas:** O objeto de resposta mostrado aqui pode ser reduzido para legibilidade. 
 >
->Se [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) ainda não tiver sido chamado neste [recurso educationSubmission,](../resources/educationsubmission.md) a propriedade **resourcesFolderUrl** será `null` .
+>Se [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) ainda não tiver sido chamado neste recurso [educationSubmission](../resources/educationsubmission.md) , a propriedade **resourcesFolderUrl** será `null`.
 
 <!-- {
   "blockType": "response",
@@ -148,7 +148,7 @@ Content-length: 712
 }
 ```
 
-### <a name="example-2-get-submission-with-expand-options"></a>Exemplo 2: obter envio com $expand opções
+### <a name="example-2-get-submission-with-expand-options"></a>Exemplo 2: Obter envio com $expand opções
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
@@ -223,7 +223,6 @@ Content-length: 4492
             "displayName": null
         }
     },
-    "outcomes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/outcomes",
     "outcomes": [
         {
             "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
@@ -327,9 +326,7 @@ Content-length: 4492
             ]
         }
     ],
-    "resources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/resources",
     "resources": [],
-    "submittedResources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions('869369de-3e5a-89eb-6f2d-83cd88f860b5')/submittedResources",
     "submittedResources": []
 }
 ```

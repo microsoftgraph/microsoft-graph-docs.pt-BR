@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 9cd112f1def4b486c5c5069d3c7bb361f35e0c86
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 247795d16dadacdc5f88ffa45d03ffbb880e839e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62112862"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364998"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
@@ -26,7 +26,7 @@ A tabela a seguir lista os três cenários em que é possível obter uma extens�
 
 |**Cenário GET**|**Recursos com suporte**|**Corpo da resposta**|
 |:-----|:-----|:-----|
-|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md) [,](../resources/group.md)grupo [,](../resources/event.md)evento de grupo [,](../resources/post.md)postagem de grupo [,](../resources/message.md)mensagem [,](../resources/organization.md)organização [,](../resources/contact.md)contato pessoal , [usuário](../resources/user.md), [tarefa](../resources/basetask.md), lista [de tarefas](../resources/basetasklist.md)  | Somente extensão aberta.|
+|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md)[, grupo](../resources/group.md)[, evento](../resources/event.md) de grupo, [postagem](../resources/post.md) de [grupo, mensagem](../resources/message.md)[, organização](../resources/organization.md), [contato](../resources/contact.md) pessoal, [usuário](../resources/user.md), [tarefa](../resources/basetask.md), [lista de tarefas](../resources/basetasklist.md)  | Somente extensão aberta.|
 |Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Unidade administrativa, dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa, lista de tarefas. |Uma instância de recurso expandida com a extensão aberta.|
 |Encontre e expanda instâncias de recursos com uma extensão específica. | Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas |Instâncias de recursos expandidas com a extensão aberta.|
 
@@ -45,7 +45,7 @@ Dependendo do recurso que contém a extensão e o tipo de permissão (delegado o
 | [organização](../resources/organization.md) | User.Read | Incompatível | Organization.Read.All |
 | [contato pessoal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [usuário](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [tarefa](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+| [tarefa](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 | [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -393,8 +393,7 @@ Content-type: application/json
     "isDraft": false,
     "isRead": true,
     "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-    "inferenceClassification": "Focused",
-    "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "inferenceClassification": "Focused", 
     "extensions": [ 
       { 
         "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
@@ -578,8 +577,7 @@ HTTP/1.1 200 OK
     "isDraft": false,
     "isRead": true,
     "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
-    "inferenceClassification": "Focused",
-    "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "inferenceClassification": "Focused", 
     "extensions": [ 
       { 
         "@odata.type": "#Microsoft.Graph.OpenTypeExtension",

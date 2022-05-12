@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f9642ccc072e71ab950448c6e8661149e1e1f302
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7b1de5d2031bd6da5305c6cefa6b6a1fe3fcbfbf
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109006"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365831"
 ---
 # <a name="list-assignments-of-a-user"></a>Listar atribuições de um usuário
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. 
 
-Esse namespace utilitário permite que um chamador encontre todas as atribuições pertencentes a um aluno ou professor em uma única chamada, em vez de precisar solicitar atribuições de cada classe. A lista de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição de dentro do namespace de classe. Todas as outras operações na atribuição devem usar o namespace de classe.
+Esse namespace do utilitário permite que um chamador localize todas as tarefas pertencentes a um aluno ou professor em uma única chamada, em vez de precisar solicitar tarefas de cada classe. A lista de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição de dentro do namespace de classe. Todas as outras operações na atribuição devem usar o namespace de classe.
 
 ## <a name="permissions"></a>Permissões
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -251,9 +251,9 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### <a name="response"></a>Resposta
 
-Se o usuário tentar consultar uma ID de usuário diferente da sua, este método retornará um `403 Forbidden` código de resposta.
+Se o usuário tentar consultar uma ID de usuário diferente da sua, esse método retornará um código `403 Forbidden` de resposta.
 
-As `instructions` propriedades , e sempre serão `assignedDateTime` `assignTo` `resourcesFolderUrl` `webUrl` exibidas nulas.
+As `instructions`propriedades , `assignTo``assignedDateTime`e , `webUrl` `resourcesFolderUrl` sempre exibirão nulo.
 
 Este é um exemplo de resposta. 
 
@@ -402,7 +402,7 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 Este é um exemplo de resposta. 
 
-> **Observação:** Ele expandirá os envios se o usuário tiver uma função de aluno e será nulo para a função de professor.
+> **Nota:** Ele expandirá os envios se o usuário tiver uma função de aluno e será nulo para a função de professor.
 
 
 <!-- {
@@ -458,7 +458,6 @@ Content-type: application/json
                     "displayName": null
                 }
             },
-            "submissions@odata.context": "https://graph.microsoft.com/beta/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions",
             "submissions": [
                 {
                     "status": "working",

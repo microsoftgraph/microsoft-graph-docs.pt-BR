@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 05d2878cf30f7b443ca0661588d0a4e1285a8859
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 15fcab480cd6e125d242d38846ecb01b922f0022
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107736"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364971"
 ---
 # <a name="list-callrecord-sessions"></a>Listar sessões callRecord
 
 Namespace: microsoft.graph.callRecords
 
-Recupere a lista [de sessões associadas](../resources/callrecords-session.md) a um [objeto callRecord.](../resources/callrecords-callrecord.md)
+Recupere a lista de [sessões associadas](../resources/callrecords-session.md) a um [objeto callRecord](../resources/callrecords-callrecord.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e os objetos de [sessão](../resources/callrecords-session.md) solicitados no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e os objetos [de sessão solicitados](../resources/callrecords-session.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -60,7 +60,7 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e os ob
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter a lista de [sessões](../resources/callrecords-session.md) de [um callRecord](../resources/callrecords-callrecord.md).
+A seguir está um exemplo da solicitação para obter a lista de [sessões](../resources/callrecords-session.md) para [um callRecord](../resources/callrecords-callrecord.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -182,7 +182,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação para obter a lista de sessões de [um callRecord](../resources/callrecords-callrecord.md) com [](../resources/callrecords-session.md) [segmentos incluídos.](../resources/callrecords-segment.md)
+A seguir está um exemplo da solicitação para obter a lista de [](../resources/callrecords-session.md) sessões para [um callRecord](../resources/callrecords-callrecord.md) com [segmentos incluídos](../resources/callrecords-segment.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -294,7 +294,6 @@ Content-type: application/json
                     }
                 }
             },
-            "segments@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions('e523d2ed-2966-4b6b-925b-754a88034cc5')/segments",
             "segments": [
                 {
                     "startDateTime": "2020-02-25T18:52:21.2169889Z",

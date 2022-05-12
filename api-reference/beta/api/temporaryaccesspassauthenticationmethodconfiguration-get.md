@@ -5,19 +5,19 @@ author: inbarckms
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1058b313eb447d8abe61d5bc25a06b688c58e887
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: d16fe7c76bdebcb59aa26eaa8ca11d488e1695df
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239236"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365019"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Obter temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto temporaryAccessPassAuthenticationMethodConfiguration,](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) que representa a política de método de autenticação Passagem de Acesso Temporário para o locatário do Azure Active Directory (Azure AD). [](../resources/authenticationmethodspolicies-overview.md)
+Leia as propriedades e as relações de um objeto [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md), que representa a política de método [](../resources/authenticationmethodspolicies-overview.md) de autenticação de Passagem de Acesso Temporário para o locatário Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Leitor global
-* Administrador de Política de Autenticação
+* Leitor Global
+* Administrador da Política de Autenticação
 * Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -75,7 +75,6 @@ Content-type: application/json
     "minimumLifetimeInMinutes": 60,
     "maximumLifetimeInMinutes": 480,
     "isUsableOnce": false,
-    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {
             "targetType": "group",

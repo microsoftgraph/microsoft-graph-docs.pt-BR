@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Remover o acesso a um item
 ms.localizationpriority: medium
 description: Remova o acesso a um DriveItem.
-ms.prod: ''
+ms.prod: files
 doc_type: apiPageType
-ms.openlocfilehash: ffe87066c4a1d99b6458629fcbbc58318585b636
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 36e6a2e455f65ea2975fc751441042d3774356ea
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072838"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365922"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Excluir uma permissão de compartilhamento de um arquivo ou pasta
 
@@ -46,7 +46,7 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name          | Tipo   | Descrição                                                                                                                                                                                       |
+| Nome          | Tipo   | Descrição                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
 

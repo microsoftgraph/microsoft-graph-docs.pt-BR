@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0b380851d0eee45411dc02908d2b905b6ba590ec
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2f8a2dcd2ebb53db5285c77888408be335d92147
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62095719"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365782"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -33,7 +33,7 @@ Por padrão, esta operação salva o rascunho na pasta Rascunhos.
 
 [Enviar](../api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
-Como alternativa, [envie uma nova](../api/user-sendmail.md) mensagem em uma única ação ou [](../api/message-createreplyall.md) crie um [rascunho](../api/message-createforward.md)para encaminhar [,](../api/message-createreply.md) para responder ou para responder a uma mensagem existente.
+Como alternativa, [envie uma nova](../api/user-sendmail.md) mensagem em uma única ação ou crie [um rascunho para](../api/message-createforward.md) [encaminhar, responder](../api/message-createreply.md) ou responder a [](../api/message-createreplyall.md) uma mensagem existente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
@@ -56,23 +56,23 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | Portador {token}.|
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Usar `application/json` para um objeto JSON e para conteúdo `text/plain` MIME |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório.<br/> Usar `application/json` para um objeto JSON e para `text/plain` conteúdo MIME |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Ao usar o formato JSON, forneça uma representação JSON do [objeto message.](../resources/message.md)
+Ao usar o formato JSON, forneça uma representação JSON do [objeto de](../resources/message.md) mensagem.
 
 Ao especificar o corpo no formato MIME, forneça ao conteúdo MIME os cabeçalhos de mensagem da Internet aplicáveis ("Para", "CC", "CCO", "Assunto"), todos codificados no formato **base64** no corpo da solicitação.
 
-Para usar **a menção** para chamar outro usuário na nova mensagem:
-- Inclua a propriedade **required toRecipients,** a propriedade **mentions** e quaisquer propriedades de mensagem writable no corpo da solicitação.
-- Para cada menção na **propriedade mentions,** você deve especificar a **propriedade** mencionada.
+Para usar **a** menção para chamar outro usuário na nova mensagem:
+- Inclua a propriedade **required toRecipients** , a propriedade **mentions** e quaisquer propriedades de mensagem graváveis no corpo da solicitação.
+- Para cada menção na **propriedade de menções** , você deve especificar a **propriedade mencionada** .
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [message](../resources/message.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto de](../resources/message.md) mensagem no corpo da resposta.
 
 Se o corpo da solicitação incluir conteúdo MIME malformado, este método retornará `400 Bad request` e a seguinte mensagem de erro: "Cadeia de caracteres base64 inválida para o conteúdo MIME".
 
@@ -203,9 +203,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a>Exemplo 2: Criar uma mensagem de rascunho que inclui uma @-mention
+### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a>Exemplo 2: Criar uma mensagem de rascunho que inclui uma @-menção
 #### <a name="request"></a>Solicitação
-O próximo exemplo mostra um rascunho de email de Randi Welch para Samantha Booth. A mensagem também inclui uma menção de outra usuário, Dana Swope.
+O exemplo a seguir mostra um rascunho de email de Randi Log para Samantha Booth. A mensagem também inclui uma menção de outro usuário, Dana Swope.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [mensagem](../resources/message.md).
 
@@ -301,7 +301,6 @@ Content-type: application/json
   "mentionsPreview":{
     "isMentioned":false
   },
-  "mentions@odata.context":"https://graph.microsoft.com/beta/$metadata#me/messages('AQMkADJmMTUAAAW1fsAAAAA%3D%3D')/mentions",
   "mentions":[
     {
       "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/messages('AQMkADJmMTUAAAW1fsAAAAA==')/mentions('4577bba4-b063-4cea-9073-6f7ca815fcec')",
@@ -326,7 +325,7 @@ Content-type: application/json
 
 ```
 
-### <a name="example-3-create-a-draft-message-that-includes-custom-internet-message-headers"></a>Exemplo 3: Criar uma mensagem de rascunho que inclua os headers de mensagens da Internet personalizados
+### <a name="example-3-create-a-draft-message-that-includes-custom-internet-message-headers"></a>Exemplo 3: Criar uma mensagem de rascunho que inclui cabeçalhos de mensagem da Internet personalizados
 #### <a name="request"></a>Solicitação
 
 

@@ -5,18 +5,18 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 94f84e40ff5cc9aa620a60d7b41be3360830e5a9
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: ebdb861b41028c11e2a7a4208f7a4f9be1044246
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395297"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364984"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Obter emailAuthenticationMethodConfiguration
 
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md), que representa a política de método de autenticação [OTP de](../resources/authenticationmethodspolicies-overview.md) email para o locatário do Azure Active Directory (Azure AD).
+Leia as propriedades e as relações de um objeto [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md), que representa a política de método de autenticação [OTP de](../resources/authenticationmethodspolicies-overview.md) email para o locatário Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,13 +25,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Leitor Global
-* Administrador de Política de Autenticação
+* Administrador da Política de Autenticação
 * Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta [e um objeto emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -116,7 +116,6 @@ Content-Type: application/json
     "id": "Email",
     "state": "enabled",
     "allowExternalIdToUseEmailOtp": "default",
-    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": []
 }
 ```

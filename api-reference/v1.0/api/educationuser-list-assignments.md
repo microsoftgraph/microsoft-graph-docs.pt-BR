@@ -5,22 +5,22 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4e3a9cfac827c7bc6e2b6d7c8afe9d838b25d291
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: ed12fe80755feac3ac543590a33b2f851457da2a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516135"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365012"
 ---
 # <a name="list-assignments-of-a-user"></a>Listar atribuições de um usuário
 
 Namespace: microsoft.graph
 
-Retorna uma lista [de educationAssignment atribuído](../resources/educationassignment.md) a um [educationUser](../resources/educationuser.md) para todas as [classes](../resources/educationclass.md). 
+Retorna uma lista [de educationAssignment atribuída](../resources/educationassignment.md) a [um educationUser](../resources/educationuser.md) para todas as [classes](../resources/educationclass.md). 
 
-Esse método permite que um chamador encontre todas as atribuições **pertencentes** a um aluno ou professor em uma única chamada, em vez de precisar solicitar **atribuições** de cada **classe**. A **lista** de atribuições contém o que é necessário para obter as informações detalhadas para a atribuição **de dentro** do namespace **de** classe. Use os métodos definidos para a **atribuição** para todas as outras operações.
+Esse método permite que um chamador localize todas as tarefas **pertencentes** a um aluno ou professor em uma única chamada em vez de precisar solicitar **tarefas de cada** **classe**. A **lista** de atribuições contém o que é necessário para obter as informações detalhadas para a **atribuição** de dentro do namespace **de** classe. Use os métodos definidos para a **atribuição** para todas as outras operações.
 
-> **Observação:** As `instructions`propriedades , `assignTo``assignedDateTime`e `resourcesFolderUrl` sempre `webUrl` serão exibidas nulas.
+> **Nota:** As `instructions`propriedades , `assignTo``assignedDateTime`e , `webUrl` `resourcesFolderUrl` sempre exibirão nulo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,7 +45,7 @@ GET /education/users/{user-id}/assignments
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos `$submissions` Parâmetros `$categories` de [Consulta E OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte aos parâmetros `$submissions` `$categories` de consulta [OData e ao OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -252,7 +252,7 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 #### <a name="response"></a>Resposta
 
-Se o usuário tentar consultar uma ID de usuário diferente da sua, este método retornará um `403 Forbidden` código de resposta.
+Se o usuário tentar consultar uma ID de usuário diferente da sua, esse método retornará um código `403 Forbidden` de resposta.
 
 Este é um exemplo de resposta. 
 
@@ -401,7 +401,7 @@ GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-678
 
 Este é um exemplo de resposta. 
 
-> **Observação:** Ele expandirá os envios se o usuário tiver uma função de aluno e será nulo para a função de professor.
+> **Nota:** Ele expandirá os envios se o usuário tiver uma função de aluno e será nulo para a função de professor.
 
 
 <!-- {
@@ -457,7 +457,6 @@ Content-type: application/json
                     "displayName": null
                 }
             },
-            "submissions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/users('80cefd93-8d88-40e2-b5d3-67898383e226')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions",
             "submissions": [
                 {
                     "status": "working",

@@ -5,19 +5,19 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7509590210d6c7061240c69a5f9a53774429f18d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f0cd91a03a32180b9ecc3424772504e4e235f254
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984853"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365187"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma coleção [de objetos userConsentRequest](../resources/userconsentrequest.md) para acessar um aplicativo especificado, para o qual o usuário atual é o revistor.
+Recupere uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md) para acessar um aplicativo especificado, para o qual o usuário atual é o revistor.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,10 +44,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filtrar para consultar objetos userConsentRequest para um objeto appConsentRequest para o qual o usuário atual é um revistor. O valor permitido é `reviewer` . Obrigatório.|
+|on|consentRequestFilterByCurrentUserOptions|Filtre para consultar objetos userConsentRequest para um objeto appConsentRequest para o qual o usuário atual é um revistor. O valor permitido é `reviewer`. Obrigatório.|
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Essa função dá suporte ao  `$filter` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Essa função dá suporte ao `$filter` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -59,13 +59,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos userConsentRequest](../resources/userconsentrequest.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de [objetos userConsentRequest](../resources/userconsentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-Nesta solicitação, você lista todos os **objetos userConsentRequest** para os quais o usuário atual é o revistor e o status é `Completed` .
+Nesta solicitação, você lista todos os **objetos userConsentRequest** para os quais o usuário atual é o revistor e o status é `Completed`.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/java/userconsentrequest-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/userconsentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -129,10 +129,8 @@ Content-Type: application/json
           "mail": "AlexW@contoso.com"
         }
       },
-      "approval@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/$entity",
       "approval": {
         "id": "acef2660-d194-4943-b927-4fe4fb5cb7e3",
-        "steps@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/appConsent/appConsentRequests('ee245379-e3bb-4944-a997-24115f0b8b5e')/userConsentRequests('acef2660-d194-4943-b927-4fe4fb5cb7e3')/approval/steps",
         "steps": [
           {
             "id": "f5a4ca4a-1316-4872-8112-993c55dab51e",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e3b3a8618342afd21f9d18cc1d1c96fa2ed9bbf9
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
+ms.openlocfilehash: d9853bf9d82240801c9853b69a60b21ad8830709
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685240"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366230"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -29,7 +29,7 @@ Herda de [entidade](../resources/entity.md).
 | [Obter educationClass](../api/educationclass-get.md)       | [educationClass](../resources/educationclass.md)            | Leia as propriedades e as relações de um [objeto educationClass](../resources/educationclass.md) . |
 | [Atualizar educationClass](../api/educationclass-update.md) | [educationClass](../resources/educationclass.md)            | Atualize as propriedades de um [objeto educationClass](../resources/educationclass.md) .                 |
 | [Excluir educationClass](../api/educationclass-delete.md) | Nenhuma                                                        | Exclua [um objeto educationClass](../resources/educationclass.md) .                                  |
-| [delta](../api/educationclass-delta.md)                  | Coleção [educationClass](../resources/educationclass.md) | Obter alterações incrementais na coleção de recursos.                                                  |
+| [Obter delta](../api/educationclass-delta.md)                  | Coleção [educationClass](educationclass.md)              | Obter alterações incrementais para **educationClasses**.                                          |
 
 ## <a name="properties"></a>Propriedades
 
@@ -38,13 +38,13 @@ Herda de [entidade](../resources/entity.md).
 | id                   | Cadeia de caracteres                                         | Identificador de objeto. Herdado da [entidade](../resources/entity.md). |
 | displayName          | Cadeia de caracteres                                         | Nome da aula.                                                 |
 | mailNickname         | String                                         | Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada.    |
-| description          | Cadeia de caracteres                                         | Descrição da aula.                                          |
+| description          | String                                         | Descrição da aula.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | Entidade que criou a aula                                       |
 | classCode            | Cadeia de caracteres                                         | Código de aula usada pela escola para identificar a aula.               |
 | externalName         | Cadeia de caracteres                                         | Nome da aula no sistema de sincronização.                           |
 | externalId           | Cadeia de caracteres                                         | ID da aula no sistema de sincronização.                           |
 | externalSource       | educationExternalSource                        | Como essa aula foi criada. Os valores possíveis são: `sis` e `manual`.  |
-| externalSourceDetail | Cadeia de caracteres                                         | O nome da fonte externa da qual esses recursos foram gerados. |
+| externalSourceDetail | String                                         | O nome da fonte externa da qual esses recursos foram gerados. |
 | grade                | Cadeia de caracteres                                         | Nível de nota da classe.                                          |
 | term                 | [educationTerm](../resources/educationterm.md) | Termos dessa aula.                                               |
 
@@ -53,7 +53,7 @@ Herda de [entidade](../resources/entity.md).
 | Relação | Tipo                                                          | Descrição                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
 | assignments  | [coleção educationAssignment](educationAssignment.md) | Todas as atribuições associadas a essa classe. Anulável.     |
-| group        | [group](../resources/group.md)                                | O objeto Microsoft 365 grupo subjacente.                |
+| group        | [grupo](../resources/group.md)                                | O objeto Microsoft 365 grupo subjacente.                |
 | members      | Coleção [educationUser](../resources/educationuser.md)     | Todos os usuários da aula. Anulável.                         |
 | schools      | Coleção [educationSchool](../resources/educationschool.md) | Todas as escolas às quais essa aula está associada. Anulável. |
 | teachers     | Coleção [educationUser](../resources/educationuser.md)     | Todos os professores da aula. Anulável.                      |

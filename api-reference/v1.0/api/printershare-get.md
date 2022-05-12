@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 49281f2f1304c776791ba2fdc04691c21daf151e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f00e3930b337c9789cf80ff7dc1c4bac6ce8473e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62091950"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365929"
 ---
 # <a name="get-printershare"></a>Get printerShare
 Namespace: microsoft.graph
@@ -20,7 +20,7 @@ Recupere as propriedades e as relações de um compartilhamento de impressora.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa.
+Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -40,16 +40,16 @@ GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a alguns dos parâmetros de consulta OData, incluindo `$select` e , para ajudar a personalizar a `$expand` resposta. Por exemplo: 
+Esse método dá suporte a alguns dos parâmetros de consulta OData, incluindo `$select` e `$expand`, para ajudar a personalizar a resposta. Por exemplo: 
 
-por exemplo, 
+E.g. 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Exceções
-* O `$count` operador não tem suporte.
+* Não `$count` há suporte para o operador.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -59,16 +59,16 @@ Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/q
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printerShare](../resources/printershare.md) no corpo da resposta.
-Por padrão, a resposta não conterá [printerCapabilities](../resources/printerCapabilities.md). Para obter **printerCapabilities**, use `$select` o parâmetro de consulta. 
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto printerShare](../resources/printershare.md) no corpo da resposta.
+Por padrão, a resposta não conterá [printerCapabilities](../resources/printerCapabilities.md). Para obter **printerCapabilities**, use o parâmetro `$select` de consulta. 
 
-## <a name="response"></a>Resposta
+<!--## Response
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [printerShare](../resources/printershare.md) no corpo da resposta.
+If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.-->
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-a-printershare"></a>Exemplo 1: Obter uma printerShare
+### <a name="example-1-get-a-printershare"></a>Exemplo 1: Obter um printerShare
 
 #### <a name="request"></a>Solicitação
 

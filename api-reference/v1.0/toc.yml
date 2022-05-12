@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Notas
+          - name: Observações
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -4196,7 +4196,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: Destino de atribuição de todos os usuários licenciados
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Tipo de pacote VPN Always On do Android Enterprise
+                  - name: Android tipo de pacote VPN always on da empresa
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: Status de conformidade
                     href: resources/intune-shared-compliancestatus.md
@@ -4335,7 +4335,7 @@ items:
                 href: api/educationclass-update.md
               - name: Excluir classe
                 href: api/educationclass-delete.md
-              - name: Obter alterações nas classes
+              - name: Obter intervalo
                 href: api/educationclass-delta.md
               - name: Listar professores
                 href: api/educationclass-list-teachers.md
@@ -4423,6 +4423,8 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: Remover rubric da atribuição
                 href: api/educationassignment-delete-rubric.md
+              - name: Obter intervalo
+                href: api/educationassignment-delta.md
           - name: Configurações de atribuição
             href: resources/educationassignmentsettings.md
             items:
@@ -4446,6 +4448,8 @@ items:
                 href: api/educationcategory-get.md
               - name: Excluir
                 href: api/educationcategory-delete.md
+              - name: Obter intervalo
+                href: api/educationcategory-delta.md
           - name: Rubrica
             href: resources/educationrubric.md
             items:
@@ -6609,7 +6613,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano

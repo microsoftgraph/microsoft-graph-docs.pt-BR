@@ -1,16 +1,16 @@
 ---
 title: Obter anexo
-description: Leia as propriedades e as relações de um anexo, anexado a um evento, mensagem, Outlook tarefa ou postagem.
+description: Leia as propriedades e as relações de um anexo, anexadas a um evento, mensagem, Outlook tarefa ou postagem.
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: f49ee7d3aebb7aca29e39ad158dc8f0cceb7a07d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 806d6f606b1978767e2d50b9ca848555e58ec87e
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094990"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365754"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Leia as propriedades, relações ou conteúdo bruto de um anexo anexado a um evento de [usuário,](../resources/event.md) [mensagem,](../resources/message.md)Outlook [tarefa](../resources/outlooktask.md)ou postagem de [grupo.](../resources/post.md) 
+Leia as propriedades, as relações ou o conteúdo bruto de um anexo anexado a um [evento de usuário](../resources/event.md)[, mensagem](../resources/message.md), Outlook [tarefa](../resources/outlooktask.md) ou postagem de [grupo](../resources/post.md). 
 
 Um anexo pode ser de um dos seguintes tipos:
 
@@ -33,21 +33,21 @@ Todos esses tipos de anexos são derivados do recurso [anexo](../resources/attac
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Obter o conteúdo bruto de um arquivo ou anexo de item
 Você pode anexar o segmento do caminho `/$value` para obter o conteúdo bruto de um arquivo ou anexo de item. 
 
-Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Consulte um [exemplo 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
+Para um anexo de arquivo, o tipo de conteúdo é baseado no tipo de conteúdo original. Veja um [exemplo 6](#example-6-get-the-raw-contents-of-a-file-attachment-on-a-message).
 
 Para um anexo de item que é um [contato](../resources/contact.md), [evento](../resources/event.md) ou [mensagem](../resources/message.md), o conteúdo bruto retornado está no formato MIME.
 
 | Tipo de anexo do item  | Conteúdo bruto retornado |
 |:-----------|:----------|
-| **contato** | Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME. Consulte [o exemplo 7](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **event** | Formato iCal MIME. Consulte [o exemplo 8](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | Formato MIME. Consulte [o exemplo 9](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **contato** | Formato [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME. Veja [o exemplo 7](#example-7-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | Formato iCal MIME. Veja [o exemplo 8](#example-8-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | Formato MIME. Veja [o exemplo 9](#example-9-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
 A tentativa de obter o `$value` de um anexo de referência retorna HTTP 405.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem**) ao qual o anexo está anexado e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+Dependendo do **recurso (evento****, mensagem**, **outlookTask** ou **postagem**) ao qual o anexo está anexado e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
@@ -63,9 +63,9 @@ Dependendo do recurso (**evento** **,** mensagem , **outlookTask** ou **postagem
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Esta seção mostra a sintaxe de solicitação GET HTTP para cada uma das entidades ([evento,](../resources/event.md) [mensagem,](../resources/message.md)Outlook [tarefa](../resources/outlooktask.md)e [postagem](../resources/post.md)) que suportam anexos:
+Esta seção mostra a sintaxe de solicitação HTTP GET para cada uma das entidades ([evento](../resources/event.md)[, mensagem](../resources/message.md), Outlook [e](../resources/outlooktask.md) [postagem](../resources/post.md)) que dão suporte a anexos:
 
-- Para obter as propriedades e as relações de um anexo, especifique a ID do anexo para indexar na coleção **attachments,** anexada ao evento especificado [,](../resources/event.md)mensagem [,](../resources/message.md) [Outlook tarefa](../resources/outlooktask.md)ou instância de [postagem.](../resources/post.md)
+- Para obter as propriedades e as relações de um anexo, especifique a ID do anexo a ser indexada na coleção de **anexos**, anexada ao [evento, à](../resources/event.md) [mensagem, à](../resources/message.md) tarefa [Outlook](../resources/outlooktask.md) ou à instância de [postagem especificada](../resources/post.md).
 - Se o anexo for um arquivo ou item do Outlook (contato, evento ou mensagem), você poderá obter ainda mais o conteúdo bruto do anexo anexando o segmento de caminho `/$value` à URL da solicitação.
 
 Um anexo de um [evento](../resources/event.md):
@@ -83,7 +83,7 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-Um anexo de [uma mensagem](../resources/message.md) na caixa de correio de um usuário:
+Um anexo de uma [mensagem na](../resources/message.md) caixa de correio de um usuário:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -103,7 +103,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-Um anexo de uma [mensagem contida](../resources/message.md) em uma pasta filha de [uma mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário:
+Um anexo de uma [mensagem contida](../resources/message.md) em uma pasta filho de [uma mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -115,7 +115,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 
 O exemplo anterior mostra um nível de aninhamento, mas uma mensagem pode ser localizada em um filho de um filho e assim por diante.
 
-Um anexo de uma [tarefa Outlook:](../resources/outlooktask.md)
+Um anexo de uma [Outlook tarefa](../resources/outlooktask.md):
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -125,7 +125,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-Um anexo de uma [postagem](../resources/post.md) em [um thread](../resources/conversationthread.md) pertencente a uma [conversa](../resources/conversation.md) de um grupo:
+Um anexo de uma [postagem](../resources/post.md) em [um thread](../resources/conversationthread.md) que pertence a [uma conversa](../resources/conversation.md) de um grupo:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -153,7 +153,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, o método GET retornará um `200 OK` código de resposta. 
+Se tiver êxito, o método GET retornará um código `200 OK` de resposta. 
 
 Se você estiver obtendo as propriedades e os relacionamentos de um anexo, o corpo da resposta incluirá um objeto de [anexo](../resources/attachment.md).
 As propriedades desse tipo de anexo são retornadas: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceattachment.md).
@@ -350,7 +350,6 @@ Content-type: application/json
   "contentType":null,
   "size":32005,
   "isInline":false,
-  "item@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
   "item":{
     "@odata.type":"#microsoft.graph.message",
     "id":"",
@@ -445,7 +444,6 @@ Content-type: application/json
     "contentType": null,
     "size": 465916,
     "isInline": false,
-    "item@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
     "item": {
         "@odata.type": "#microsoft.graph.message",
         "id": "",
@@ -493,7 +491,6 @@ Content-type: application/json
         "flag": {
             "flagStatus": "notFlagged"
         },
-        "attachments@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/microsoft.graph.itemAttachment/item/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/microsoft.graph.message/attachments",
         "attachments": [
             {
                 "@odata.type": "#microsoft.graph.fileAttachment",

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso educationCategory
 description: Uma categoria que pode ser aplicada a atribuições.
-author: mmast-msft
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 15c6427062f09493168f0f94cca3060bc3f631de
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 49e5f0c27cb643cdba94dc710ae980ef946d19d1
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390882"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65366104"
 ---
 # <a name="educationcategory-resource-type"></a>Tipo de recurso educationCategory
 
@@ -25,17 +25,17 @@ Uma categoria que pode ser aplicada a atribuições.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar categoria](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Criar uma nova **educationCategory**.|
-|[Obter educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Obter uma **educationCategory existente**.|
-|[Excluir categoria](../api/educationcategory-delete.md) | Nenhum | Remover uma **educationCategory**.|
-|[Obter delta](../api/educationcategory-delta.md)|[Coleção educationCategory](../resources/educationcategory.md)|Obter uma lista de **objetos educationCategory** que pertencem a essa classe com suporte à consulta delta.|
+|[Criar categoria](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Crie uma **nova educationCategory**.|
+|[Obter educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Obtenha uma **educationCategory existente**.|
+|[Excluir categoria](../api/educationcategory-delete.md) | Nenhuma | Remover uma **educationCategory**.|
+|[Obter delta](../api/educationcategory-delta.md)|[coleção educationCategory](../resources/educationcategory.md)|Obtenha uma lista de **educationCategory** recém-criada ou atualizada sem precisar executar uma leitura completa da coleção.|
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres|Identificador exclusivo da categoria.|
-|displayName|Cadeia de caracteres|Identificador exclusivo da categoria.|
+|id|Cadeia de caracteres|Identificador exclusivo para a categoria.|
+|displayName|Cadeia de caracteres|Identificador exclusivo para a categoria.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -69,5 +69,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-

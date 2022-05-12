@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3a016999b2b51b3cc0ec80cdc9681a14de15348c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: bc796ce943230b695075e6295195424e2527286a
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587298"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65365787"
 ---
 # <a name="get-organizationsettings"></a>Obter organizationSettings
 
@@ -22,9 +22,9 @@ Recupere as propriedades e as relações de um [objeto organizationSettings](../
 
 Esta operação não retorna [insightsSettings](../resources/insightssettings.md). Dependendo do tipo de insights, você pode obter suas configurações usando [item de listaInsights](organizationsettings-list-iteminsights.md) ou [listar peopleInsights](organizationsettings-list-peopleinsights.md).
 
-Essa operação não retorna [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md). Para obter [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md), use [lista microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md).
+Esta operação não retorna [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md). Para obter [microsoftApplicationDataAccessSettings](../resources/microsoftApplicationDataAccessSettings.md), use [a lista microsoftApplicationDataAccessSettings](organizationsettings-list-microsoftapplicationdataaccess.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
->**Observação:** O uso de permissões delegadas para essa operação exige que o usuário in-loco tenha um administrador de locatário ou uma função de administrador global.
+>**Nota:** O uso de permissões delegadas para essa operação exige que o usuário conectado tenha uma função de administrador de locatários ou de administrador global.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -125,7 +125,6 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/$entity",
     "id": "",
-    "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#organization('a9f3c90b-04fd-4504-a302-47672bbca6c8')/settings/profileCardProperties",
     "profileCardProperties": [
       {
         "directoryPropertyName": "CustomAttribute1",

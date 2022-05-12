@@ -1,16 +1,16 @@
 ---
 title: Adicionar Item nomeado
-description: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
+description: Adicione um novo nome à coleção do escopo fornecido usando a localidade do usuário para a fórmula.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 2f9234510ef0b2604ec5938a06712dfe26c28f6f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: ec18be4e0f3cab4f64fe7c782f440849ccb857e5
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931417"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364753"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Sites.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` o código de resposta e o objeto [WorkbookNamedItem](../resources/nameditem.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta [e o objeto WorkbookNamedItem](../resources/nameditem.md) no corpo da resposta.
 
 
 ## <a name="example"></a>Exemplo

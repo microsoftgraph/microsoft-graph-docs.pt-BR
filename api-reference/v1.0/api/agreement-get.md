@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 71fc2a299be6eba5eef285dbb9cc6031fcf61244
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 84773131cc41cdfedeeb20a8e21a65fb92531144
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63515784"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364949"
 ---
 # <a name="get-agreement"></a>Obter contrato
 
@@ -33,7 +33,7 @@ GET /identityGovernance/termsOfUse/agreements/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
@@ -43,10 +43,10 @@ Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/quer
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta [e um objeto agreement](../resources/agreement.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e [um objeto de](../resources/agreement.md) contrato no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-retrieve-an-agreement"></a>Exemplo 1: Recuperar um contrato
+### <a name="example-1-retrieve-an-agreement"></a>Exemplo 1: recuperar um contrato
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -138,7 +138,6 @@ Content-type: application/json
     "userReacceptRequiredFrequency": "P90D",
     "isViewingBeforeAcceptanceRequired": false,
     "isPerDeviceAcceptanceRequired": false,
-    "files@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/termsOfUse/agreements('0ec9f6a6-159d-4dd8-a563-1f0b5935e80b')/files",
     "files": [
         {
             "id": "681b73a7-e9ae-4f2d-aca5-9e857599cd15",

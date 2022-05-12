@@ -10061,6 +10061,10 @@ items:
                     href: api/virtualendpoint-list-snapshots.md
                   - name: Obter
                     href: api/cloudpcsnapshot-get.md
+                  - name: Obter assinaturas
+                    href: api/cloudpcsnapshot-getsubscriptions.md
+                  - name: Obter contas de armazenamento
+                    href: api/cloudpcsnapshot-getstorageaccounts.md
               - name: Configurações da organização do PC na nuvem
                 href: resources/cloudpcorganizationsettings.md
                 items:

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9f1803c736b272ae4ba853169569b37ee3980f35
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8c1d77d4bbf43592452eb4788ecc502564785a0
+ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115607"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65364784"
 ---
 # <a name="get-threatassessmentrequest"></a>Get threatAssessmentRequest
 
@@ -47,7 +47,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 |Nome            |Valor    |Descrição                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -66,7 +66,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e `200 OK` o objeto [threatAssessmentRequest](../resources/threatassessmentrequest.md) solicitado no corpo da resposta. As propriedades desse tipo são retornadas: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [threatAssessmentRequest solicitado](../resources/threatassessmentrequest.md) no corpo da resposta. As propriedades desse tipo são retornadas: [mailAssessmentRequest](../resources/mailAssessmentRequest.md), [emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md), [fileAssessmentRequest](../resources/fileAssessmentRequest.md), [urlAssessmentRequest](../resources/urlAssessmentRequest.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -309,7 +309,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Exemplo 4: Obter as propriedades de uma solicitação de avaliação de url
+### <a name="example-4-get-the-properties-of-an-url-assessment-request"></a>Exemplo 4: Obter as propriedades de uma solicitação de avaliação de URL
 
 #### <a name="request"></a>Solicitação
 
@@ -387,7 +387,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>Exemplo 5: Expandir resultados de avaliação de ameaças para uma solicitação
+### <a name="example-5-expand-threat-assessment-results-for-a-request"></a>Exemplo 5: Expandir os resultados da avaliação de ameaças para uma solicitação
 
 #### <a name="request"></a>Solicitação
 
@@ -464,7 +464,6 @@ Content-type: application/json
         "displayName": "Ronald Admin"
       }
     },
-    "results@odata.context": "https://graph.microsoft.com/beta/$metadata#informationProtection/threatAssessmentRequests('11922306-b25b-4605-ff0d-08d772fcf996')/microsoft.graph.mailAssessmentRequest/results",
     "results": [
         {
             "id": "63798129-a62c-4f9e-2c6d-08d772fcfb0e",
