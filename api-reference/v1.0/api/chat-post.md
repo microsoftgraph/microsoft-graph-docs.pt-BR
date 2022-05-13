@@ -5,26 +5,28 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e6a84f714afcbfaff254f77b439ac431d0f695dc
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 3119daba10087abfe802405e2878d85851dde1ea
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335154"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397625"
 ---
 # <a name="create-chat"></a>Criar chat
 Namespace: microsoft.graph
 
 Crie um novo [objeto de chat](../resources/chat.md) .
 
+> **Nota:** Somente um chat um-para-um pode existir entre dois membros. Se já existir um chat um-para-um, essa operação retornará o chat existente e não criará um novo.
+> 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Chat.Create, Chat.ReadWrite|
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Chat.Create |
+|Delegada (conta corporativa ou de estudante)|Chat.Create, Chat.ReadWrite|
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application | Chat.Create |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,23 +45,23 @@ POST /chats
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto chat](../resources/chat.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto de chat](../resources/chat.md) .
 
 A tabela a seguir lista as propriedades necessárias para criar um objeto de chat.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|topic|(Opcional) Cadeia de caracteres|O título do chat. O título do chat só poderá ser fornecido se o chat for do `group` tipo.|
+|topic|(Opcional) String|O título do chat. O título do chat só poderá ser fornecido se o chat for do `group` tipo.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne`. |
-|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários que participarão do chat, incluindo o usuário que inicia a solicitação de criação, devem ser especificados nesta lista. Cada membro deve ter uma função de `owner` ou `guest`. Os usuários de locatários convidados devem ser atribuídos à `guest` função.|
+|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários que participarão do chat, incluindo o usuário que inicia a solicitação de criação, devem ser especificados nesta lista. Cada membro deve receber uma função de `owner` ou `guest`. Os usuários do locatário convidado devem receber a `guest` função.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e o recurso **de chat** recém-criado no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e o recurso de **chat** recém-criado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-one-on-one-chat"></a>Exemplo 1: Criar um chat um para um
+### <a name="example-1-create-a-one-on-one-chat"></a>Exemplo 1: Criar um chat um-para-um
 
 #### <a name="request"></a>Solicitação
 
@@ -227,7 +229,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-one-on-one-chat-using-user-principal-name"></a>Exemplo 3: Criar um chat um-a-um usando o nome principal do usuário
+### <a name="example-3-create-a-one-on-one-chat-using-user-principal-name"></a>Exemplo 3: Criar um chat um-para-um usando o nome upn principal do usuário
 
 #### <a name="request"></a>Solicitação
 

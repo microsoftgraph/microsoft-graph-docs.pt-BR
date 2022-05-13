@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso managedTenant
-description: Represente as operações disponíveis que interagem com a plataforma de gerenciamento de vários locatários.
+description: Representa as operações disponíveis que interagem com a plataforma de gerenciamento multilocatário.
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: c072c5b127a4e7b22022d03b674e8a3a8bdacd19
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: a84cfd1bf2cdc0cae6a977ea7b31ed3b7b2c9929
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337023"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397548"
 ---
 # <a name="managedtenant-resource-type"></a>Tipo de recurso managedTenant
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Como o recurso raiz da API Microsoft 365 Lighthouse, **managedTenant** representa os recursos disponíveis para um Provedor de Serviços Gerenciados (MSP) para dimensionar o gerenciamento remoto de seus locatários de clientes para ajudá-los a obter um estado íntegre e seguro.
+Como o recurso raiz da API do Microsoft 365 Lighthouse, **managedTenant** representa os recursos disponíveis para um MSP (Provedor de Serviços Gerenciados) para dimensionar o gerenciamento remoto de seus locatários de clientes para ajudar a obtê-los em um estado íntegro e seguro.
 
-A Microsoft 365 Lighthouse api é definida no subnamespace OData, `microsoft.graph.managedTenants`.
+A MICROSOFT 365 LIGHTHOUSE api é definida no subnamespace OData. `microsoft.graph.managedTenants`
 
 ## <a name="properties"></a>Propriedades
 Nenhum.
@@ -28,27 +28,28 @@ Nenhum.
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|aggregatedPolicyCompliances|[coleção microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md)|Visão agregada das políticas de conformidade do dispositivo entre locatários gerenciados.|
+|aggregatedPolicyCompliances|[Coleção microsoft.graph.managedTenants.aggregatedPolicyCompliance](../resources/managedtenants-aggregatedpolicycompliance.md)|Exibição agregada das políticas de conformidade do dispositivo entre locatários gerenciados.|
 |auditEvents|[coleção microsoft.graph.managedTenants.auditEvent](../resources/managedtenants-auditevent.md)|A coleção de eventos de auditoria entre locatários gerenciados.|
-|cloudPcConnections|[coleção microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md)|A coleção de conexões de computador na nuvem entre locatários gerenciados.|
-|cloudPcDevices|[coleção microsoft.graph.managedTenants.cloudPcDevice](../resources/managedtenants-cloudpcdevice.md)|A coleção de dispositivos de computador na nuvem em locatários gerenciados.|
-|cloudPcsOverview|[coleção microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md)|Visão geral das informações do computador na nuvem em locatários gerenciados.|
-|conditionalAccessPolicyCoverages|[coleção microsoft.graph.managedTenants.conditionalAccessPolicyCoverage](../resources/managedtenants-conditionalaccesspolicycoverage.md)|Visão agregada da cobertura da política de acesso condicional entre locatários gerenciados.|
-|credentialUserRegistrationsSummaries|[coleção microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md)|Informações de resumo para o registro do usuário para autenticação multifafa e redefinição de senha de autoatendido entre locatários gerenciados.|
-|deviceCompliancePolicySettingStateSummaries|[coleção microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md)|Informações de resumo para estados de configuração de política de conformidade de dispositivo entre locatários gerenciados.|
-|managedDeviceCompliances|[coleção microsoft.graph.managedTenants.managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md)|A coleção de conformidade para dispositivos gerenciados em locatários gerenciados.|
-|managedDeviceComplianceTrends|[Coleção microsoft.graph.managedTenants.managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md)|Ideias de tendência para a conformidade do dispositivo entre locatários gerenciados.|
+|cloudPcConnections|[Coleção microsoft.graph.managedTenants.cloudPcConnection](../resources/managedtenants-cloudpcconnection.md)|A coleção de conexões de PC na nuvem entre locatários gerenciados.|
+|cloudPcDevices|[Coleção microsoft.graph.managedTenants.cloudPcDevice](../resources/managedtenants-cloudpcdevice.md)|A coleção de dispositivos de PC na nuvem entre locatários gerenciados.|
+|cloudPcsOverview|[Coleção microsoft.graph.managedTenants.cloudPcOverview](../resources/managedtenants-cloudpcoverview.md)|Visão geral das informações do PC na nuvem entre locatários gerenciados.|
+|conditionalAccessPolicyCoverages|[coleção microsoft.graph.managedTenants.conditionalAccessPolicyCoverage](../resources/managedtenants-conditionalaccesspolicycoverage.md)|Exibição agregada da cobertura de política de acesso condicional entre locatários gerenciados.|
+|credentialUserRegistrationsSummaries|[coleção microsoft.graph.managedTenants.credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md)|Informações resumidas para registro de usuário para autenticação multifator e redefinição de senha de autoatendimento entre locatários gerenciados.|
+|deviceCompliancePolicySettingStateSummaries|[coleção microsoft.graph.managedTenants.deviceCompliancePolicySettingStateSummary](../resources/managedtenants-devicecompliancepolicysettingstatesummary.md)|Informações resumidas para estados de configuração de política de conformidade do dispositivo entre locatários gerenciados.|
+|managedDeviceCompliances|[Coleção microsoft.graph.managedTenants.managedDeviceCompliance](../resources/managedtenants-manageddevicecompliance.md)|A coleção de conformidade para dispositivos gerenciados entre locatários gerenciados.|
+|managedDeviceComplianceTrends|[Coleção microsoft.graph.managedTenants.managedDeviceComplianceTrend](../resources/managedtenants-manageddevicecompliancetrend.md)|Insights de tendência para conformidade do dispositivo entre locatários gerenciados.|
 |managementActions|[Coleção microsoft.graph.managedTenants.managementAction](../resources/managedtenants-managementaction.md)|A coleção de ações de gerenciamento de linha de base entre locatários gerenciados.|
-|managementActionTenantDeploymentStatuses|[coleção microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md)|O status de nível de locatário das ações de gerenciamento em locatários gerenciados.|
-|managementIntents|[coleção microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md)|A coleção de intenções de gerenciamento de linha de base entre locatários gerenciados.|
-|managementTemplates|[coleção microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|A coleção de modelos de gerenciamento de linha de base entre locatários gerenciados.|
-|tenantGroups|[coleção microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md)|A coleção de um grupo lógico de locatários gerenciados usados pela plataforma de gerenciamento de vários locatários.|
-|locatários|[coleção microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|A coleção de locatários associados à entidade de gerenciamento.|
-|tenantsCustomizedInformation|[coleção microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|A coleção de informações personalizadas em nível de locatário entre locatários gerenciados.|
-|tenantsDetailedInformation|[coleção microsoft.graph.managedTenants.tenantDetailedInformation](../resources/managedtenants-tenantdetailedinformation.md)|O nível de locatário de coleção informações detalhadas entre locatários gerenciados.|
-|tenantTags|[coleção microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md)|A coleção de marcas de locatários entre locatários gerenciados.|
-|windowsDeviceMalwareStates|[coleção microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md)|O estado de malware para Windows dispositivos, registrados com Microsoft Endpoint Manager, em locatários gerenciados.|
-|windowsProtectionStates|[coleção microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|O estado de proteção para Windows, registrado com Microsoft Endpoint Manager, em locatários gerenciados.|
+|managementActionTenantDeploymentStatuses|[coleção microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md)|O status de nível de locatário das ações de gerenciamento entre locatários gerenciados.|
+|managementIntents|[Coleção microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md)|A coleção de intenções de gerenciamento de linha de base entre locatários gerenciados.|
+|managementTemplates|[Coleção microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|A coleção de modelos de gerenciamento de linha de base entre locatários gerenciados.|
+|tenantGroups|[Coleção microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md)|A coleção de um agrupamento lógico de locatários gerenciados usados pela plataforma de gerenciamento multilocatário.|
+|Inquilinos|[coleção microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|A coleção de locatários associados à entidade de gerenciamento.|
+|tenantsCustomizedInformation|[coleção microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|A coleção de informações personalizadas no nível do locatário entre locatários gerenciados.|
+|tenantsDetailedInformation|[coleção microsoft.graph.managedTenants.tenantDetailedInformation](../resources/managedtenants-tenantdetailedinformation.md)|As informações detalhadas no nível do locatário da coleção entre locatários gerenciados.|
+|tenantTags|[Coleção microsoft.graph.managedTenants.tenantTag](../resources/managedtenants-tenanttag.md)|A coleção de marcas de locatário entre locatários gerenciados.|
+|tenantUsage|[Coleção microsoft.graph.managedTenants.tenantUsage](../resources/managedtenants-tenantusage.md)|A coleção de uso de locatários entre locatários gerenciados.|
+|windowsDeviceMalwareStates|[coleção microsoft.graph.managedTenants.windowsDeviceMalwareState](../resources/managedtenants-windowsdevicemalwarestate.md)|O estado de malware para Windows, registrado com Microsoft Endpoint Manager, entre locatários gerenciados.|
+|windowsProtectionStates|[Coleção microsoft.graph.managedTenants.windowsProtectionState](../resources/managedtenants-windowsprotectionstate.md)|O estado de proteção para Windows dispositivos, registrados com Microsoft Endpoint Manager, entre locatários gerenciados.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

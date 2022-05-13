@@ -4,13 +4,13 @@ description: Recupere as configurações de função para a função especificad
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 43ec849554f6573f6bb964ba86fa2d5f94b52259
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 20b27f3ac7db34b5aaa31edb850bc99eee67e995
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315458"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397981"
 ---
 # <a name="get-privilegedrolesettings"></a>Get privilegedRoleSettings
 

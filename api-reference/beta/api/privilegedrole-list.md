@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos privilegedRole.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 114db703f0af6b7ce0fedf159f332959c1d2cd51
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 6c3c84e6e78a53cee0ab7b5af59fd050245c547f
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315983"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397513"
 ---
 # <a name="list-privilegedroles"></a>Listar privilegedRoles
 

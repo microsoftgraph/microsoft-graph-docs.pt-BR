@@ -4,13 +4,13 @@ description: Recupere as propriedades e as relações de um objeto governanceRes
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 7670a7a2fb157d6c9dcf752f54d673c8604ed067
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 5ed1ac7790d35f13302e30630df9a2c74a2c60c2
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510496"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398458"
 ---
 # <a name="get-governanceresource"></a>Obter governanceResource
 
@@ -22,32 +22,32 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um [objeto governanceResource](../resources/governanceresource.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureResources |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureAD |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureADGroup |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 
@@ -68,7 +68,7 @@ Esse método **só dá** suporte `$select` a [parâmetros](/graph/query-paramete
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e [um objeto governanceResource](../resources/governanceresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e [um objeto governanceResource](../resources/governanceresource.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Este exemplo mostra como obter os detalhes da assinatura Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5).

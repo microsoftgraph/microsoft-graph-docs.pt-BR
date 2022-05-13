@@ -4,13 +4,13 @@ description: Representa as configurações de uma função privilegiada.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 4cc98c3db18569677e0d158da8b7cfb63b00dac7
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 6c91003b7aa0455c6dd56b374fb45c3664111be3
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510545"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397469"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Tipo de recurso privilegedRoleSettings
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Representa as configurações de uma função privilegiada.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -34,13 +34,13 @@ Representa as configurações de uma função privilegiada.
 |id|string| O identificador exclusivo para as configurações de função. Somente leitura.|
 |isMfaOnElevationConfigurable|booliano|`true` se **mfaOnElevation** for configurável. `false` se **mfaOnElevation** não for configurável.|
 |lastGlobalAdmin|booliano|Somente uso interno.|
-|maxElavationDuration|duração|Duração máxima da função ativada.|
-|mfaOnElevation|booliano|`true` se o MFA for necessário para ativar a função. `false` se o MFA não for necessário para ativar a função.|
+|maxElavationDuration|duração|Duração máxima para a função ativada.|
+|mfaOnElevation|booliano|`true` se a MFA for necessária para ativar a função. `false` se a MFA não for necessária para ativar a função.|
 |minElevationDuration|duração|Duração mínima para a função ativada.|
 |notificationToUserOnElevation|booliano|`true` se enviar notificação ao usuário final quando a função for ativada. `false` se não enviar notificação quando a função for ativada.|
-|ticketingInfoOnElevation|booliano|`true` se as informações de tíquete são necessárias ao ativar a função. `false` se as informações de tíquete não são necessárias ao ativar a função.|
+|ticketingInfoOnElevation|booliano|`true` se as informações de tíquetes são necessárias ao ativar a função. `false` se as informações de tíquete não forem necessárias ao ativar a função.|
 |approvalOnElevation|booliano|`true` se a aprovação for necessária ao ativar a função. `false` se a aprovação não for necessária ao ativar a função.|
-|approverIds| coleção de cadeias de caracteres |Lista de IDs de Aprovação, se a aprovação for necessária para ativação.|
+|approverIds| coleção de cadeias de caracteres |Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

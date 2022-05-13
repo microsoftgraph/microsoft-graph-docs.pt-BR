@@ -4,13 +4,13 @@ description: Use essa API para criar um novo privilegedRoleAssignment.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 8e5c4ea375bae729f4b078ef850575889ffc219c
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 6886d6bb83bdc73f8d9eaf262cfbd9855918a6b4
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65316320"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397511"
 ---
 # <a name="create-privilegedroleassignment"></a>Create privilegedRoleAssignment
 

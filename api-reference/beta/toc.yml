@@ -264,7 +264,7 @@ items:
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -800,7 +800,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1203,7 +1203,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -10322,6 +10322,11 @@ items:
                     href: api/managedtenants-tenanttag-assigntag.md
                   - name: Cancelar a atribuição de marca de locatário
                     href: api/managedtenants-tenanttag-unassigntag.md
+              - name: Uso do locatário
+                href: resources/managedtenants-tenantusage.md
+                items:
+                  - name: List
+                    href: api/managedtenants-managedtenant-list-tenantusage.md
               - name: Estado de malware de dispositivo Windows
                 href: resources/managedtenants-windowsdevicemalwarestate.md
                 items:
@@ -10764,7 +10769,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -11000,7 +11005,7 @@ items:
             items:
               - name: Privilégios de administrador delegado granular (versão prévia)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     displayName: 'GDAP, Partner Center, CSP, VAR'
                     href: resources/delegatedadminrelationships-api-overview.md
                   - name: Relações de administrador delegado
@@ -11973,7 +11978,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/policy-overview.md
                   - name: Política de tempo limite baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -13250,7 +13255,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13717,7 +13722,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13810,7 +13815,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14582,7 +14587,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo

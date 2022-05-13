@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos privilegedRoleAssignment associados Ã
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: d7b3c48cf104318d62620701aa85b11c210cadee
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: b83956890f42e79ce1802a2d355ec2af5004b5d0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314350"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397639"
 ---
 # <a name="list-assignments"></a>Listar tarefas
 

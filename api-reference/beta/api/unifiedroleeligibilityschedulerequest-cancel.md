@@ -1,28 +1,28 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: cancel'
 description: Cancele um unifiedRoleEligibilityScheduleRequest.
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e70449502a4dd715fcfc389f66d2f0d351a3e574
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: c0a89a241a4dfcaf9ed946bee9b1e6ee1e0dae5e
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510362"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397464"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: cancel
 Namespace: microsoft.graph
 
-Cancele imediatamente [um unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) que está em um status e que o sistema exclua automaticamente a `Granted` solicitação cancelada após 30 dias. Depois de chamar essa ação, **o status** do unifiedRoleEligibilityScheduleRequest cancelado muda para `Revoked`.
+Cancele imediatamente [um unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) que esteja em um status e faça com que o sistema exclua automaticamente a `Granted` solicitação cancelada após 30 dias. Depois de chamar essa ação, **o status** do unifiedRoleEligibilityScheduleRequest cancelado muda para `Revoked`.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Delegada (conta corporativa ou de estudante)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleManagement.ReadWrite.Directory |
 

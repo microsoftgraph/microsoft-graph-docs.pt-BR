@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f434a9d8a15a81da23a5e6b2c2ff4eaa24a41193
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: d44f0250507018548fb3b425ea395d9e7e05c7af
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366160"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397863"
 ---
 # <a name="list-chats"></a>Listar chats
 
@@ -28,7 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Application | Chat.ReadBasic.All *, Chat.Read.All*, Chat.ReadWrite.All* |
+
+\* Esse cenário só tem suporte para a seguinte chamada: `GET /users/{user-id | user-principal-name}/chats`
 
 ## <a name="http-request"></a>Solicitação HTTP
 

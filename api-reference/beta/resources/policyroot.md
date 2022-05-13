@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso policyRoot
 description: Tipo de recurso expondo propriedades de navegação para o singleton de políticas.
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8e68d04f42744128027279c7d67cabfab7e1c2bd
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 6cedb7300b521b126a8d6f6bf98f6e932762afe1
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510250"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398416"
 ---
 # <a name="policyroot-resource-type"></a>Tipo de recurso policyRoot
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Tipo de recurso expondo propriedades de navegação para o singleton de políticas.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 Nenhum
 
 ## <a name="properties"></a>Propriedades
@@ -28,22 +28,22 @@ Nenhuma
 
 | Relação                              | Tipo                                                                                                      | Descrição                                                                                                                                                          |
 |:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| accessReviewPolicy                        | [accessReviewPolicy](accessreviewpolicy.md)                                                               | A política que contém configurações de revisão de acesso no nível do diretório.                                                                                                     |
-| activityBasedTimeoutPolicies              | [Coleção activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md)                                    | A política que controla o tempo de ociosidade das sessões da Web para aplicativos.                                                                                        |
+| accessReviewPolicy                        | [accessReviewPolicy](accessreviewpolicy.md)                                                               | A política que contém as configurações de revisão de acesso no nível do diretório.                                                                                                     |
+| activityBasedTimeoutPolicies              | [Coleção activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md)                                    | A política que controla o tempo limite de ociosidade para sessões da Web para aplicativos.                                                                                        |
 | adminConsentRequestPolicy                 | [adminConsentRequestPolicy](adminconsentrequestpolicy.md)                                                 | A política pela qual as solicitações de consentimento são criadas e gerenciadas para todo o locatário.                                                                                  |
-| appManagementPolicies                     | [appManagementPolicy](appmanagementpolicy.md) collection                                                  | As políticas que impõem restrições de gerenciamento de aplicativos para aplicativos e entidades de serviço específicas, substituindo o defaultAppManagementPolicy.                   |
-| authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | A configuração de política da experiência de assinatura de autoatendam de usuários externos.                                                                                   |
-| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | Os métodos de autenticação e os usuários que têm permissão para usá-los para entrar e executar a autenticação multifato (MFA) no Azure Active Directory (Azure AD). |
-| authorizationPolicy                       | [Coleção authorizationPolicy](authorizationpolicy.md)                                                  | A política que controla as configurações de autorização do Azure AD.                                                                                                            |
-| b2cauthenticationmethodspolicy            | [b2cauthenticationmethodspolicy](b2cauthenticationmethodspolicy.md)                                       | As políticas do Azure AD B2C que definem como os usuários finais se registram por meio de contas locais.                                                                                     |
-| claimsMappingPolicies                     | Conjunto [claimsMappingPolicy](claimsmappingpolicy.md)                                                  | As políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e Conexão OpenID, para tokens emitidos para um aplicativo específico.                                   |
+| appManagementPolicies                     | [appManagementPolicy](appmanagementpolicy.md) collection                                                  | As políticas que impõem restrições de gerenciamento de aplicativos para aplicativos específicos e entidades de serviço, substituindo defaultAppManagementPolicy.                   |
+| authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | A configuração de política da experiência de inscrição por autoatendimento de usuários externos.                                                                                   |
+| authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | Os métodos de autenticação e os usuários que têm permissão para usá-los para entrar e executar a MFA (autenticação multifator) no Azure Active Directory (Azure AD). |
+| authorizationPolicy                       | [coleção authorizationPolicy](authorizationpolicy.md)                                                  | A política que controla as Azure AD de autorização.                                                                                                            |
+| b2cauthenticationmethodspolicy            | [b2cauthenticationmethodspolicy](b2cauthenticationmethodspolicy.md)                                       | As Azure AD B2C que definem como os usuários finais se registram por meio de contas locais.                                                                                     |
+| claimsMappingPolicies                     | Conjunto [claimsMappingPolicy](claimsmappingpolicy.md)                                                  | As políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Conexão, para tokens emitidos para um aplicativo específico.                                   |
 | conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | As regras personalizadas que definem um cenário de acesso.                                                                                                                     |
-| crossTenantAccessPolicy                   | [crossTenantAccessPolicy](crosstenantaccesspolicy.md)                           | As regras personalizadas que definem um cenário de acesso ao interagir com locatários externos do Azure AD.                                                                                                                     |
-| defaultAppManagementPolicy                | [tenantAppManagementPolicy](tenantappmanagementpolicy.md)                                                 | A política de todo o locatário que impõe restrições de gerenciamento de aplicativos para todos os aplicativos e entidades de serviço.                                                        |
-| featureRolloutPolicies                    | [Coleção featureRolloutPolicy](featurerolloutpolicy.md)                                                | A política de lançamento de recursos associada a um objeto de diretório.                                                                                                       |
-| homeRealmDiscoveryPolicies                | Conjunto [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)                                        | A política para controlar o comportamento de autenticação do Azure AD para usuários federados.                                                                                          |
+| crossTenantAccessPolicy                   | [crossTenantAccessPolicy](crosstenantaccesspolicy.md)                           | As regras personalizadas que definem um cenário de acesso ao interagir com locatários de Azure AD externos.                                                                                                                     |
+| defaultAppManagementPolicy                | [tenantAppManagementPolicy](tenantappmanagementpolicy.md)                                                 | A política em todo o locatário que impõe restrições de gerenciamento de aplicativos para todos os aplicativos e entidades de serviço.                                                        |
+| featureRolloutPolicies                    | [Coleção featureRolloutPolicy](featurerolloutpolicy.md)                                                | A política de distribuição de recursos associada a um objeto de diretório.                                                                                                       |
+| homeRealmDiscoveryPolicies                | Conjunto [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)                                        | A política para controlar o Azure AD de autenticação para usuários federados.                                                                                          |
 | identitySecurityDefaultsEnforcementPolicy | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md)                 | A política que representa os padrões de segurança que protegem contra ataques comuns.                                                                                |
-| mobileAppManagementPolicies               | [Coleção mobilityManagementPolicy](mobilitymanagementpolicy.md)                                        | A política que define a configuração de registro automático para um aplicativo de gerenciamento de mobilidade (MDM ou MAM).                                                            |
+| mobileAppManagementPolicies               | [coleção mobilityManagementPolicy](mobilitymanagementpolicy.md)                                        | A política que define a configuração de registro automático para um aplicativo de gerenciamento de mobilidade (MDM ou MAM).                                                            |
 | permissionGrantPolicies                   | conjunto [permissionGrantPolicy](permissiongrantpolicy.md)                                              | A política que especifica as condições sob as quais o consentimento pode ser concedido.                                                                                         |
 | roleManagementPolicies                    | [Coleção unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)                     | Representa as políticas de gerenciamento de função.                                                                                                                             |
 | roleManagementPolicyAssignments           | [Coleção unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) | Representa as atribuições de política de gerenciamento de função.                                                                                                                   |

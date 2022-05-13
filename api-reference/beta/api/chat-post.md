@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 80f45a8956863ff99280d595387a8041d00a44de
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8616739bf32756b5421e0a0ed0f3164521c0b916
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335616"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398591"
 ---
 # <a name="create-chat"></a>Criar chat
 Namespace: microsoft.graph
@@ -19,14 +19,16 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto de chat](../resources/chat.md) .
 
+> **Nota:** Somente um chat um-para-um pode existir entre dois membros. Se já existir um chat um-para-um, essa operação retornará o chat existente e não criará um novo.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Chat.Create, Chat.ReadWrite|
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Chat.Create |
+|Delegada (conta corporativa ou de estudante)|Chat.Create, Chat.ReadWrite|
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application | Chat.Create |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,30 +47,30 @@ POST /chats
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto chat](../resources/chat.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto de chat](../resources/chat.md) .
 
 A tabela a seguir lista as propriedades necessárias para criar um objeto de chat.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|topic|(Opcional) Cadeia de caracteres|O título do chat. O título do chat só poderá ser fornecido se o chat for do `group` tipo.|
+|topic|(Opcional) String|O título do chat. O título do chat só poderá ser fornecido se o chat for do `group` tipo.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Especifica o tipo de chat. Os valores possíveis são: `group` e `oneOnOne`. |
-|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários que participarão do chat, incluindo o usuário que inicia a solicitação de criação, devem ser especificados nesta lista. Cada membro deve ter uma função de `owner` ou `guest`. Os usuários de locatários convidados devem ser atribuídos à `guest` função.|
+|members|coleção [conversationMember](../resources/conversationmember.md)|Lista de membros da conversa que devem ser adicionados. Todos os usuários que participarão do chat, incluindo o usuário que inicia a solicitação de criação, devem ser especificados nesta lista. Cada membro deve receber uma função de `owner` ou `guest`. Os usuários do locatário convidado devem receber a `guest` função.|
 |installedApps| Coleção [teamsApp](../resources/teamsapp.md)|Lista de aplicativos que devem ser instalados no chat.|
 
-> **Observação:** Atualmente, há suporte para apenas uma instalação de aplicativo. Se várias instalações de aplicativos estão listadas na solicitação, a resposta será um `Bad Request` erro.
+> **Nota:** Atualmente, há suporte para apenas uma instalação de aplicativo. Se várias instalações de aplicativo forem listadas na solicitação, a resposta será um `Bad Request` erro.
 
 ## <a name="response"></a>Resposta
 
-### <a name="response-for-creating-a-one-on-one-chat-without-installed-apps"></a>Resposta para criar um chat um-a-um sem aplicativos instalados
-Se tiver êxito, este método retornará um `201 Created` código de resposta e o recurso [de chat](../resources/chat.md) recém-criado no corpo da resposta.
+### <a name="response-for-creating-a-one-on-one-chat-without-installed-apps"></a>Resposta para criar um chat um-para-um sem aplicativos instalados
+Se tiver êxito, este método retornará um código `201 Created` de resposta e o recurso de [chat](../resources/chat.md) recém-criado no corpo da resposta.
 
-### <a name="response-for-creating-a-one-on-one-chat-with-installed-apps"></a>Resposta para criar um chat um-a-um com aplicativos instalados
-Se tiver êxito, este método retornará um `202 Accepted` código de resposta e um header location que contém um link para [o teamsAsyncOperation](../resources/teamsasyncoperation.md). O link pode ser usado para obter o status e os detalhes da operação. Para obter detalhes, consulte [Obter operação no chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
+### <a name="response-for-creating-a-one-on-one-chat-with-installed-apps"></a>Resposta para criar um chat um-para-um com aplicativos instalados
+Se tiver êxito, este método retornará um código `202 Accepted` de resposta e um cabeçalho Location que contém um link para [teamsAsyncOperation](../resources/teamsasyncoperation.md). O link pode ser usado para obter o status e os detalhes da operação. Para obter detalhes, consulte [Obter operação no chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-one-on-one-chat"></a>Exemplo 1: Criar um chat um para um
+### <a name="example-1-create-a-one-on-one-chat"></a>Exemplo 1: Criar um chat um-para-um
 
 #### <a name="request"></a>Solicitação
 
@@ -238,7 +240,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-one-on-one-chat-with-installed-apps"></a>Exemplo 3: Criar um chat um-a-um com aplicativos instalados
+### <a name="example-3-create-a-one-on-one-chat-with-installed-apps"></a>Exemplo 3: Criar um chat um-para-um com aplicativos instalados
 
 #### <a name="request"></a>Solicitação
 
@@ -314,9 +316,9 @@ Content-Type: application/json
 Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
 ```
 
-A operação assíncrona é iniciada e a resposta contém um header Location que inclui um link para o [teamsAsyncOperation](../resources/teamsasyncoperation.md). O link pode ser usado para obter o status e os detalhes da operação. Para obter detalhes, consulte [Obter operação no chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
+A operação assíncrona é iniciada e a resposta contém um cabeçalho Location que inclui um link para [o teamsAsyncOperation](../resources/teamsasyncoperation.md). O link pode ser usado para obter o status e os detalhes da operação. Para obter detalhes, consulte [Obter operação no chat](teamsasyncoperation-get.md#example-get-operation-on-chat).
 
-### <a name="example-4-create-a-one-on-one-chat-using-user-principal-name"></a>Exemplo 4: Criar um chat um-a-um usando o nome principal do usuário
+### <a name="example-4-create-a-one-on-one-chat-using-user-principal-name"></a>Exemplo 4: Criar um chat um-para-um usando o nome principal do usuário
 
 #### <a name="request"></a>Solicitação
 

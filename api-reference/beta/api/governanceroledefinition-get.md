@@ -1,18 +1,18 @@
 ---
-title: Obter governançaRoleDefinition
-description: Recupere as propriedades e as relações de um governanceRoleDefinition.
+title: Obter governanceRoleDefinition
+description: Recupere as propriedades e as relações de uma governanceRoleDefinition.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: c154871edfb183ba56d0e03a8fdac16c8500a0d2
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 4dad4a2bc7f4d2b2ad4cbed58036f84e0f185212
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510468"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397849"
 ---
-# <a name="get-governanceroledefinition"></a>Obter governançaRoleDefinition
+# <a name="get-governanceroledefinition"></a>Obter governanceRoleDefinition
 
 Namespace: microsoft.graph
 
@@ -20,36 +20,36 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Recupere as propriedades e as relações de [um governanceRoleDefinition](../resources/governanceroledefinition.md).
+Recupere as propriedades e as relações de uma [governanceRoleDefinition](../resources/governanceroledefinition.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureResources |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureAD |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureADGroup |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
-Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso, à qual a [governanceRoleDefinition](../resources/governanceroledefinition.md) pertence.
+Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso, à qual [a governanceRoleDefinition](../resources/governanceroledefinition.md) pertence.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método não **dá suporte** aos [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método não **dá suporte** aos [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -69,9 +69,9 @@ Este método não **dá suporte** aos [Parâmetros de Consulta OData](/graph/que
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
-Este exemplo mostra como obter detalhes da definição de função DNS Zone Contributor na assinatura Wingtip Toys - Prod.
+Este exemplo mostra como obter detalhes da definição de função colaborador de zona DNS na assinatura Wingtip Toys – Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinition"

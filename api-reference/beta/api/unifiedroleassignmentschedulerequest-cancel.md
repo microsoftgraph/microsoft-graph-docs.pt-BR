@@ -1,30 +1,30 @@
 ---
 title: 'unifiedRoleAssignmentScheduleRequest: cancel'
 description: Cancele um unifiedRoleAssignmentScheduleRequest.
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2e4049599986e847b7ac198ccadfdd3ae9bffdfe
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 8bcfafb372fc5b72b4b404a1a2d87f269ca7b230
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509725"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398381"
 ---
 # <a name="unifiedroleassignmentschedulerequest-cancel"></a>unifiedRoleAssignmentScheduleRequest: cancel
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancele imediatamente um [objeto unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) que está em um status e que o sistema exclua automaticamente a `Granted` solicitação cancelada após 30 dias. Depois de chamar essa ação, **o status** do unifiedRoleAssignmentScheduleRequest cancelado muda para `Canceled`.
+Cancele imediatamente um objeto [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) que esteja em um status e faça com que o sistema exclua automaticamente a `Granted` solicitação cancelada após 30 dias. Depois de chamar essa ação, **o status** do unifiedRoleAssignmentScheduleRequest cancelado muda para `Canceled`.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`. Tentar cancelar uma solicitação que não está em um estado cancelável, por exemplo, um objeto unifiedRoleAssignmentScheduleRequest cujo **status** `Provisioned` é ou `Failed`, `400 Bad Request` retorna um código de erro.
+Se tiver êxito, esta ação retornará um código de resposta `204 No Content`. A tentativa de cancelar uma solicitação que não está em um estado cancelável, por exemplo, um objeto unifiedRoleAssignmentScheduleRequest cujo **status** `Provisioned` é ou `Failed`retorna `400 Bad Request` um código de erro.
 
 ## <a name="examples"></a>Exemplos
 

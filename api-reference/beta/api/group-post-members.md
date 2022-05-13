@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e6ec54c660d31bc5143b31487047569460ce87d3
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5aeaa4a0955ed595a481191fce2946a0e7013be0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208985"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398374"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -23,23 +23,24 @@ Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da proprie
 A tabela a seguir mostra os tipos de membros que podem ser adicionados a grupos de segurança ou Microsoft 365 grupos.
 
 
-| Tipo de objeto          | Membro de grupos de segurança     | Membro do Microsoft 365 grupo |
-|----------------------|-------------------------------|-------------------------------|
-| Usuários                | ![Pode ser membro do grupo][Yes]   | ![Pode ser membro do grupo][Yes]   |
-| Grupos de segurança      | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
-| Grupos do Microsoft 365 | ![Não pode ser membro do grupo][No] | ![Não pode ser membro do grupo][No] |
-| dispositivos              | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
-| entidades de serviço   | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Tipo de objeto             | Membro de grupos de segurança     | Membro do Microsoft 365 grupo |
+|-------------------------|-------------------------------|-------------------------------|
+| Usuários                   | ![Pode ser membro do grupo][Yes]   | ![Pode ser membro do grupo][Yes]   |
+| Grupos de segurança         | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Grupos do Microsoft 365    | ![Não pode ser membro do grupo][No] | ![Não pode ser membro do grupo][No] |
+| Dispositivos                 | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Entidades de serviço      | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Contatos organizacionais | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                             |
 | :------------------------------------- | :---------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                          |
+| Delegada (conta corporativa ou de estudante)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                          |
 | Aplicativo                            | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > [!IMPORTANT]

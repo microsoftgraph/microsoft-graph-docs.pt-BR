@@ -4,13 +4,13 @@ description: Atualize as propriedades do objeto privilegedapproval.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: a431b5fa873cce61fd4b53219f8de09f6729ea64
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: afb9a19c3db9f474973390d725042930025b6be2
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315472"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398024"
 ---
 # <a name="update-privilegedapproval"></a>Atualizar privilegedapproval
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,9 +49,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |approvalDuration|Duration||
 |approvalState|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
 |approvalType|Cadeia de caracteres||
-|approverReason|String||
+|approverReason|Cadeia de caracteres||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
+|requestorReason|Cadeia de caracteres||
 |roleId|Cadeia de caracteres||
 |startDateTime|DateTimeOffset||
 |userId|Cadeia de caracteres||

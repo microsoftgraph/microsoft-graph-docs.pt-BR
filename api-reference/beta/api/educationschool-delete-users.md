@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 051a70df6ffa59cafee08733e1bb1f9dd888f44e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3e5aba9fe623b2f02966246264b44a1a49c94f8b
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396557"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398402"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Remover educationUser de uma educationSchool
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | EduRoster.ReadWrite.All                     |
+| Application                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,9 +53,9 @@ Se bem-sucedido, esse método retornará um código de resposta `204 No Content`
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
 

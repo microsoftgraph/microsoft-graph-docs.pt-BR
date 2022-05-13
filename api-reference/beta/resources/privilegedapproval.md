@@ -4,13 +4,13 @@ description: Representa uma aprovação solicitada no Privileged Identity Manage
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: c2c6ef9ec7ca62b3ccc85cb14f848497b2858dce
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: rkarim-ms
+ms.openlocfilehash: 6b84579b400aa1948aa0ce1faebd29100048fe49
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687680"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398753"
 ---
 # <a name="privilegedapproval-resource-type-deprecated"></a>Tipo de recurso privilegedApproval (preterido)
 
@@ -18,17 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Representa uma aprovação solicitada no Privileged Identity Management (PIM) para entrar em uma função.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Ler propriedades e relações do objeto privilegedApproval.|
-|[Listar objetos privilegedApproval](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) collection|Obter a coleção privilegedApproval.|
+|[Listar objetos privilegedApproval](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) collection|Obtenha a coleção de privilegedApproval.|
 |[Create privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Crie um objeto privilegedApproval. |
 |[Update privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Atualize um objeto privilegedApproval. |
 |[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Receba solicitações de aprovação do solicitante.|
@@ -36,14 +36,14 @@ Representa uma aprovação solicitada no Privileged Identity Management (PIM) pa
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|approvalDuration|Duração||
+|approvalDuration|Duration||
 |approvalState|approvalState| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Cadeia de caracteres||
+|approverReason|Cadeia de caracteres||
 |endDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura.|
-|requestorReason|String||
-|roleId|String||
+|requestorReason|Cadeia de caracteres||
+|roleId|Cadeia de caracteres||
 |startDateTime|DateTimeOffset|O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |userId|Cadeia de caracteres||
 
@@ -51,7 +51,7 @@ Representa uma aprovação solicitada no Privileged Identity Management (PIM) pa
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável.|
-|request|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Apenas leitura. A solicitação de atribuição de função para este objeto de aprovação|
+|Solicitação|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Somente leitura. A solicitação de atribuição de função para este objeto de aprovação|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -4,13 +4,13 @@ description: Representa um evento de auditoria gerado pelo Privileged Identity M
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: ddeba79dba2bd3f329d62fff3b90a599f2ceb49a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: rkarim-ms
+ms.openlocfilehash: 0002e10cff2324d60f9000b1cdf961b865409056
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687540"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397534"
 ---
 # <a name="privilegedoperationevent-resource-type-deprecated"></a>Tipo de recurso privilegedOperationEvent (preterido)
 
@@ -18,34 +18,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Representa um evento de auditoria gerado pelo Privileged Identity Management para as operações de função, como um administrador gerencia funções privilegiadas, um usuário ativa sua função e um usuário desativa sua função.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[List privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [Coleção privilegedOperationEvent.](privilegedoperationevent.md) |Obter coleção de objetos privilegedOperationEvent.|
+|[List privilegedOperationEvent](../api/privilegedoperationevent-list.md) | [Coleção privilegedOperationEvent](privilegedoperationevent.md) . |Obter coleção de objetos privilegedOperationEvent.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|additionalInformation|cadeia de caracteres|Informações detalhadas de leitura humana para o evento.|
+|additionalInformation|string|Informações detalhadas legíveis para o evento.|
 |creationDateTime|DateTimeOffset|Indica a hora em que o evento é criado.|
-|expirationDateTime|DateTimeOffset|Isso só é usado quando **o requestType** é , e indica o tempo de expiração `Activate` para a ativação da função.|
-|id|cadeia de caracteres|O identificador exclusivo de privilegedOperationEvent. Somente leitura.|
-|referenceKey|cadeia de caracteres|Número do tíquete de incidente/solicitação durante a ativação da função. O valor é apresentado somente se o número do tíquete for fornecido durante a ativação da função.|
-|referenceSystem|cadeia de caracteres|Sistema de tíquetes de incidente/solicitação fornecido durante a ativação de tole. O valor é apresentado somente se o sistema de tíquetes for fornecido durante a ativação da função.|
-|requestType|String|O tipo de operação de solicitação. O valor requestType pode ser: (atribuição de função), (ativação de `Assign` `Activate` `Unassign` função), (remover atribuição de função), `Deactivate` (desativação de função), (verificar alertas de segurança), (descartar alerta de `ScanAlertsNow` segurança), (corrigir um `DismissAlert` `FixAlertItem`  `AccessReview_Review` `AccessReview_Create` `AccessReview_Update` problema de `AccessReview_Delete` alerta de segurança), (revisar uma Revisão do Access), (criar uma Revisão do Access) , (atualizar uma Revisão do Access), (excluir uma Revisão do Access).|
-|requestorId|cadeia de caracteres|A ID do usuário do solicitante que inicia a operação.|
+|expirationDateTime|DateTimeOffset|Isso só é usado quando **o requestType** é `Activate`, e indica o tempo de expiração para a ativação da função.|
+|id|string|O identificador exclusivo de privilegedOperationEvent. Somente leitura.|
+|referenceKey|cadeia de caracteres|Número do tíquete de solicitação/incidente durante a ativação da função. O valor será apresentado somente se o número do tíquete for fornecido durante a ativação da função.|
+|referenceSystem|cadeia de caracteres|Sistema de tíquetes de incidente/solicitação fornecido durante a ativação de tole. O valor será apresentado somente se o sistema de tíquetes for fornecido durante a ativação da função.|
+|Requesttype|Cadeia de caracteres|O tipo de operação de solicitação. O valor requestType pode ser: `Assign` (atribuição de função), `Activate` (ativação de função), `Unassign` (remover atribuição de função), `Deactivate` (desativação de função), `ScanAlertsNow` (examinar alertas de segurança), `DismissAlert` (ignorar alerta de segurança), `FixAlertItem` (corrigir um problema de alerta de segurança),  `AccessReview_Review` (examinar uma Revisão de Acesso), `AccessReview_Create` (criar uma Revisão de Acesso), `AccessReview_Update` (atualizar uma Revisão de Acesso) `AccessReview_Delete` (excluir uma Revisão de Acesso).|
+|requestorId|string|A ID de usuário do solicitante que inicia a operação.|
 |requestorName|cadeia de caracteres|O nome de usuário do solicitante que inicia a operação.|
-|roleId|cadeia de caracteres|A id da função associada à operação.|
-|roleName|cadeia de caracteres|O nome da função.|
-|tenantId|cadeia de caracteres|ID do locatário (organização).|
-|userId|cadeia de caracteres|A id do usuário associado à operação.|
-|userMail|cadeia de caracteres|O email do usuário.|
+|roleId|string|A ID da função associada à operação.|
+|Rolename|cadeia de caracteres|O nome da função.|
+|tenantId|cadeia de caracteres|A ID do locatário (organização).|
+|userId|cadeia de caracteres|A ID do usuário que está associado à operação.|
+|userMail|string|O email do usuário.|
 |userName|cadeia de caracteres|O nome de exibição do usuário.|
 
 ## <a name="relationships"></a>Relações

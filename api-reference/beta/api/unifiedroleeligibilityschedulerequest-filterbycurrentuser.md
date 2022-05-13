@@ -1,33 +1,33 @@
 ---
 title: 'unifiedRoleEligibilityScheduleRequest: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleEligibilityScheduleRequest e suas propriedades filtradas por uma entidade de usuário específica
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bdbde5e6eb17dd04a787bcf841d6942971092e21
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: edbdccaa88d6049e3a8835f4616b4f97c8f2853c
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509557"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398332"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-filterbycurrentuser"></a>unifiedRoleEligibilityScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista dos [objetos unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) e suas propriedades associadas ao objeto principal atualmente assinado. 
+Obtenha uma lista dos objetos [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) e suas propriedades associadas ao objeto principal atualmente conectado. 
 
 > [!NOTE]
-> Este método não recupera objetos para grupos dos quais o usuário atualmente está associado e que têm a atribuição qualificada.
+> Esse método não recupera objetos para grupos dos quais o usuário conectado no momento é membro e que têm a atribuição qualificada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+|Delegada (conta corporativa ou de estudante)|RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory |
 
@@ -47,11 +47,11 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|Filtre os objetos de consulta para os quais o usuário atual é a entidade principal. O valor permitido é `principal`. Obrigatório. Não recupera atribuições para grupos dos que esse usuário é membro.|
+|on|RoleEligibilityScheduleRequestFilterByCurrentUserOptions|Filtre para consultar objetos para os quais o usuário atual é a entidade de segurança. O valor permitido é `principal`. Obrigatório. Não recupera atribuições para grupos dos qual esse usuário é membro.|
 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -64,7 +64,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) no corpo da resposta.
+Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma [coleção unifiedRoleEligibilityScheduleRequest](../resources/unifiedRoleEligibilityScheduleRequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

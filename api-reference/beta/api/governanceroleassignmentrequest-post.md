@@ -1,16 +1,16 @@
 ---
 title: Criar governanceRoleAssignmentRequest
-description: Crie uma solicitação de atribuição de função para representar a operação que você deseja em uma atribuição de função. A tabela a seguir lista as operações.
+description: Crie uma solicitação de atribuição de função para representar a operação desejada em uma atribuição de função. A tabela a seguir lista as operações.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: b4047c7e3483e205ca282f77636276a5268b4fd3
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: f742354fb44bf9f478aa6ede6ef87a5383220302
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510257"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397660"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -19,12 +19,12 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Crie uma solicitação de atribuição de função para representar a operação que você deseja em uma atribuição de função. A tabela a seguir lista as operações.
+Crie uma solicitação de atribuição de função para representar a operação desejada em uma atribuição de função. A tabela a seguir lista as operações.
 
-| Operation                                   | Tipo        |
+| Operação                                   | Tipo        |
 |:--------------------------------------------|:------------|
 | Atribuir uma atribuição de função                    | AdminAdd    |
-| Ativar uma atribuição de função qualificada        | UserAdd     |
+| Ativar uma atribuição de função qualificada        | Useradd     |
 | Desativar uma atribuição de função ativada     | UserRemove  |
 | Remover uma atribuição de função                    | AdminRemove |
 | Atualizar uma atribuição de função                    | AdminUpdate |
@@ -33,32 +33,32 @@ Crie uma solicitação de atribuição de função para representar a operação
 | Solicitação para renovar minha atribuição de função expirada | UserRenew   |
 | Renovar uma atribuição de função expirada            | AdminRenew  |
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -78,17 +78,17 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) .
+No corpo da solicitação, forneça uma representação JSON de um [objeto governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) .
 
 | Propriedade         | Tipo                                                     | Descrição |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | Cadeia de caracteres                                                   | O identificador exclusivo do recurso do Azure associado à solicitação de atribuição de função. Os recursos do Azure podem incluir assinaturas, grupos de recursos, máquinas virtuais e SQL bancos de dados. Obrigatório. |
-| roleDefinitionId | String                                                   | O identificador da definição de função do Azure à que a solicitação de atribuição de função está associada. Obrigatório. |
-| subjectId        | String                                                   | O identificador exclusivo da entidade ou entidade à que a solicitação de atribuição de função está associada. Entidades podem ser usuários, grupos ou entidades de serviço. Obrigatório. |
-| assignmentState  | String                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active`. Obrigatório. |
+| resourceId       | Cadeia de caracteres                                                   | O identificador exclusivo do recurso do Azure associado à solicitação de atribuição de função. Os recursos do Azure podem incluir assinaturas, grupos de recursos, máquinas virtuais e bancos de dados SQL. Obrigatório. |
+| roleDefinitionId | Cadeia de caracteres                                                   | O identificador da definição de função do Azure à qual a solicitação de atribuição de função está associada. Obrigatório. |
+| subjectId        | Cadeia de caracteres                                                   | O identificador exclusivo da entidade ou entidade à qual a solicitação de atribuição de função está associada. As entidades de segurança podem ser usuários, grupos ou entidades de serviço. Obrigatório. |
+| assignmentState  | Cadeia de caracteres                                                   | O estado da atribuição. O valor pode ser `Eligible` e `Active`. Obrigatório. |
 | type             | Cadeia de caracteres                                                   | O tipo de solicitação. O valor pode ser `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`e `AdminRenew``AdminExtend`. Obrigatório. |
-| motivo           | String                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |
-| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O cronograma da solicitação de atribuição de função. Para o tipo de solicitação `UserAdd`de , `AdminAdd``AdminUpdate`, e `AdminExtend`, é necessário. |
+| motivo           | Cadeia de caracteres                                                   | O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão. |
+| Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | O agendamento da solicitação de atribuição de função. Para o tipo de `UserAdd`solicitação `AdminAdd`de , `AdminUpdate`, e `AdminExtend`, é necessário. |
 
 ## <a name="response"></a>Resposta
 
@@ -96,34 +96,34 @@ Se tiver êxito, este método retornará um `201 Created` código de resposta e 
 
 ### <a name="error-codes"></a>Códigos de erro
 
-Esta API retorna os códigos de erro HTTP padrão. Além disso, ele também retorna os códigos de erro listados na tabela a seguir.
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele também retorna os códigos de erro listados na tabela a seguir.
 
 | Código de erro     | Mensagem de erro                               | Detalhes       |
 |:---------------|:--------------------------------------------|:--------------|
-| 400 BadRequest | RoleNotFound                                | O `roleDefinitionId` fornecido no corpo da solicitação não pode ser encontrado. |
-| 400 BadRequest | ResourceIsLocked                            | O recurso fornecido no corpo da solicitação está em estado de `Locked` e não pode criar solicitações de atribuição de função. |
-| 400 BadRequest | SubjectNotFound                             | O `subjectId` fornecido no corpo da solicitação não pode ser encontrado. |
-| 400 BadRequest | PendingRoleAssignmentRequest                | Já existe uma [governança pendenteRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no sistema. |
+| 400 BadRequest | RoleNotFound                                | Não `roleDefinitionId` é possível encontrar o fornecido no corpo da solicitação. |
+| 400 BadRequest | ResourceIsLocked                            | O recurso fornecido no corpo da solicitação está no estado e `Locked` não pode criar solicitações de atribuição de função. |
+| 400 BadRequest | SubjectNotFound                             | Não `subjectId` é possível encontrar o fornecido no corpo da solicitação. |
+| 400 BadRequest | PendingRoleAssignmentRequest                | Já existe uma [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) pendente no sistema. |
 | 400 BadRequest | RoleAssignmentExists                        | O [governanceRoleAssignment](../resources/governanceroleassignment.md) solicitado a ser criado já existe no sistema. |
 | 400 BadRequest | RoleAssignmentDoesNotExist                  | O [governanceRoleAssignment](../resources/governanceroleassignment.md) solicitado a ser atualizado/estendido não existe no sistema. |
-| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | O [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) não atendem a políticas internas e não podem ser criados. |
+| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | O [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) não atende às políticas internas e não pode ser criado. |
 
 ## <a name="examples"></a>Exemplos
 
 Os exemplos a seguir mostram como usar essa API.
 
-### <a name="example-1-administrator-assigns-user-to-a-role"></a>Exemplo 1: Administrador atribui usuário a uma função
+### <a name="example-1-administrator-assigns-user-to-a-role"></a>Exemplo 1: o administrador atribui um usuário a uma função
 
 Neste exemplo, um administrador atribui nawu@contoso.com usuário à função Leitor de Cobrança.
 
- >**Observação:** Além da permissão, este exemplo exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Nota:** Além da permissão, este exemplo exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
 
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                      | \<subjectId\> |
-| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Qualificado / Ativo |
+| subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Qualificado/Ativo |
 | type             | Cadeia de caracteres                                                   | Sim                      | AdminAdd |
 | motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
@@ -236,15 +236,15 @@ Content-type: application/json
 
 ### <a name="example-2-user-activates-eligible-role"></a>Exemplo 2: o usuário ativa a função qualificada
 
-Neste exemplo, o usuário nawu@contoso.com ativa a função leitor de cobrança qualificada.
+Neste exemplo, o usuário nawu@contoso.com ativa a função de Leitor de Cobrança qualificada.
 
 | Propriedade         | Tipo                                                     | Obrigatório                 | Valor |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                      | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                      | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                      | Ativo |
-| type             | Cadeia de caracteres                                                   | Sim                      | UserAdd |
+| subjectId        | Cadeia de caracteres                                                   | Sim                      | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                      | Ativo |
+| type             | Cadeia de caracteres                                                   | Sim                      | Useradd |
 | motivo           | Cadeia de caracteres                                                   | depende da função Configurações |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                      |   |
 
@@ -367,7 +367,7 @@ Content-type: application/json
 
 ### <a name="example-3-user-deactivates-an-assigned-role"></a>Exemplo 3: o usuário desativa uma função atribuída
 
-Neste exemplo, o usuário nawu@contoso.com desativa a função leitora de cobrança ativa.
+Neste exemplo, o usuário nawu@contoso.com desativa a função de Leitor de Cobrança ativa.
 
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
@@ -463,18 +463,18 @@ Content-type: application/json
 
 ### <a name="example-4-administrator-removes-user-from-a-role"></a>Exemplo 4: o administrador remove o usuário de uma função
 
-Neste exemplo, um administrador remove o usuário nawu@contoso.com da função Leitor de Cobrança.
+Neste exemplo, um administrador remove a função nawu@contoso.com usuário da função Leitor de Cobrança.
 
- >**Observação:** Além da permissão, este exemplo exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Nota:** Além da permissão, este exemplo exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
 
 | Propriedade         | Tipo                                                     | Obrigatório | Valor |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim      | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim      | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim      | \<subjectId\> |
-| assignmentState  | Cadeia de caracteres                                                   | Sim      | Qualificado / Ativo |
-| type             | String                                                   | Sim      | AdminRemove |
-| motivo           | String                                                   | Não       |   |
+| assignmentState  | Cadeia de caracteres                                                   | Sim      | Qualificado/Ativo |
+| type             | Cadeia de caracteres                                                   | Sim      | AdminRemove |
+| motivo           | Cadeia de caracteres                                                   | Não       |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Não       |   |
 
 #### <a name="request"></a>Solicitação
@@ -557,18 +557,18 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-administrator-updates-role-assignment"></a>Exemplo 5: atribuição de função de atualização de administrador
+### <a name="example-5-administrator-updates-role-assignment"></a>Exemplo 5: o administrador atualiza a atribuição de função
 
 Neste exemplo, os administradores atualizam a atribuição de função para o usuário nawu@contoso.com para Proprietário.
 
- >**Observação:** Além da permissão, este exemplo exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Nota:** Além da permissão, este exemplo exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
 
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
 | roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
 | subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
-| assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado / Ativo |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado/Ativo |
 | type             | Cadeia de caracteres                                                   | Sim                     | AdminUpdate |
 | motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |
@@ -678,16 +678,16 @@ Content-type: application/json
 
 ### <a name="example-6-administrator-extends-expiring-role-assignment"></a>Exemplo 6: o administrador estende a atribuição de função de expiração
 
-Este exemplo estende a atribuição de função de expiração para o usuário ANUJCUSER para Gerenciamento de API Colaborador de Serviço.
+Este exemplo estende a atribuição de função de expiração para o usuário ANUJCUSER para Gerenciamento de API De serviço.
 
- >**Observação:** Além da permissão, este exemplo exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Nota:** Além da permissão, este exemplo exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
 
 | Propriedade         | Tipo                                                     | Obrigatório                | Valor |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | Cadeia de caracteres                                                   | Sim                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Sim                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Sim                     | \<subjectId\> |
-| assignmentState  | String                                                   | Sim                     | Qualificado / Ativo |
+| roleDefinitionId | Cadeia de caracteres                                                   | Sim                     | \<roleDefinitionId\> |
+| subjectId        | Cadeia de caracteres                                                   | Sim                     | \<subjectId\> |
+| assignmentState  | Cadeia de caracteres                                                   | Sim                     | Qualificado/Ativo |
 | type             | Cadeia de caracteres                                                   | Sim                     | AdminExtend |
 | motivo           | Cadeia de caracteres                                                   | depende de roleSettings |   |
 | Cronograma         | [governanceSchedule](../resources/governanceschedule.md) | Sim                     |   |

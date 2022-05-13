@@ -1,16 +1,16 @@
 ---
 title: Listar roleManagementPolicies
-description: Obter os recursos unifiedRoleManagementPolicy da propriedade de navegação roleManagementPolicies.
-author: japere
+description: Obtenha os recursos unifiedRoleManagementPolicy da propriedade de navegação roleManagementPolicies.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 288727407c01fcba34a2f4abee6d6d9dacfe9f09
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 424e26ab89005f9dba9c2a1473c737e2e175c921
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509949"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398770"
 ---
 # <a name="list-rolemanagementpolicies"></a>Listar roleManagementPolicies
 Namespace: microsoft.graph
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Obter os recursos unifiedRoleManagementPolicy da propriedade de navegação roleManagementPolicies.
+Obtenha os recursos unifiedRoleManagementPolicy da propriedade de navegação roleManagementPolicies.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegada (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|PrivilegedAccess.Read.AzureAD|
 
@@ -41,7 +41,7 @@ GET /policies/roleManagementPolicies
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de [objetos unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

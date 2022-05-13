@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso governanceRoleDefinition
-description: Representa as definições de função. Para recursos do Azure, ele pode representar funções do Azure RBAC, como Proprietário, Leitor, Colaborador, etc.
+description: Representa as definições de função. Para recursos do Azure, ele pode representar funções do RBAC do Azure, como Proprietário, Leitor, Colaborador etc.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 631640b8187b2fae87b28fcd6cd1b1b9b57a9bb5
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 5cbb9cb86664407018237def427381610d898ff5
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510552"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398818"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Tipo de recurso governanceRoleDefinition
 
@@ -21,26 +21,26 @@ Namespace: microsoft.graph
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 
-Representa as definições de função. Para recursos do Azure, ele pode representar funções do Azure RBAC, como Proprietário, Leitor, Colaborador, etc.
+Representa as definições de função. Para recursos do Azure, ele pode representar funções do RBAC do Azure, como Proprietário, Leitor, Colaborador etc.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:--------|
-|[List](../api/governanceroledefinition-list.md) | [Coleção governanceRoleDefinition](../resources/governanceroledefinition.md) |Listar uma coleção de definições de função em um recurso.|
-|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Ler propriedades e relações de uma entidade de definição de função especificada pela id.|
+|[Listar](../api/governanceroledefinition-list.md) | [coleção governanceRoleDefinition](../resources/governanceroledefinition.md) |Listar uma coleção de definições de função em um recurso.|
+|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Ler propriedades e relações de uma entidade de definição de função especificada pela ID.|
 
-Não `POST`, `PUT`, `PATCH`é `DELETE` suportado no conjunto `roleDefinitions` de entidades por enquanto.
+Não `POST`, `PUT`, `PATCH`tem `DELETE` suporte no conjunto `roleDefinitions` de entidades por enquanto.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade    | Tipo   | Descrição                                                           |
 |:------------|:-------|:----------------------------------------------------------------------|
-| id          | Cadeia de caracteres | A id da definição de função.                                        |
-| resourceId  | Cadeia de caracteres | Obrigatório. A id do recurso associado à definição de função. |
-| externalId  | Cadeia de caracteres | A id externa da definição de função.                               |
-| displayName | String | O nome de exibição da definição de função.                              |
-| templateId  | Cadeia de caracteres |                                                                       |
+| id          | Cadeia de caracteres | A ID da definição de função.                                        |
+| resourceId  | Cadeia de caracteres | Obrigatório. A ID do recurso associado à definição de função. |
+| externalId  | Cadeia de caracteres | A ID externa da definição de função.                               |
+| displayName | Cadeia de caracteres | O nome de exibição da definição de função.                              |
+| Templateid  | Cadeia de caracteres |                                                                       |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

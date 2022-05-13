@@ -4,13 +4,13 @@ description: 'Representa uma atribuição de função privilegiada para um usuá
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 2786b2a7c2d231c8d3f87f8b538358e45b3fd3bc
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: rkarim-ms
+ms.openlocfilehash: 62ecfd138aa4a0d3d7649f57ef7750a06381a557
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694171"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397471"
 ---
 # <a name="privilegedroleassignment-resource-type-deprecated"></a>Tipo de recurso privilegedRoleAssignment (preterido)
 
@@ -18,31 +18,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
 Representa uma atribuição de função privilegiada para um usuário específico. 
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar coleção privilegedRoleAssignment](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Obter a coleção de objetos privilegedRoleAssignment.|
+|[Listar coleção privilegedRoleAssignment](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Obtenha a coleção de objetos privilegedRoleAssignment.|
 |[Get privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Ler propriedades e relações do objeto privilegedRoleAssignment.|
 |[Criar tarefa](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Crie uma nova atribuição postando na coleção de atribuições.|
 |[Excluir](../api/privilegedroleassignment-delete.md) | Nenhum |Exclua um objeto privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Torne a atribuição de função como permanente.|
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Tornar a atribuição de função como qualificada.|
-|[my](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) collection|Obter as atribuições de função privilegiada do usuário atual.|
+|[my](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) collection|Obtenha as atribuições de função com privilégios do usuário atual.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|expirationDateTime|dateTimeOffset|O UTC DateTime quando a atribuição de função privilegiada temporária será expirada. Para atribuição de função permanente, o valor é nulo.|
-|id|cadeia de caracteres| O identificador exclusivo da atribuição de função privilegiada. Somente leitura. Está no formato de "userId_roleId", onde userId é a cadeia de caracteres GUID para id de usuário do Azure AD e roleId é a cadeia de caracteres GUID para id de função de administrador do Azure.|
+|expirationDateTime|dateTimeOffset|O DateTime UTC quando a atribuição de função com privilégios temporários expirará. Para atribuição de função permanente, o valor é nulo.|
+|id|string| O identificador exclusivo para a atribuição de função com privilégios. Somente leitura. Ele está no formato de 'userId_roleId', em que userId é a cadeia de caracteres GUID para Azure AD id de usuário e roleId é a cadeia de caracteres GUID para a ID da função de administrador do Azure.|
 |isElevated|booliano|**true** se a atribuição de função estiver ativada. **false** se a atribuição de função for desativada.|
-|resultMessage|cadeia de caracteres|Mensagem de resultado definida pelo serviço.|
-|roleId|cadeia de caracteres|Identificador de função. No formato de cadeia de caracteres GUID.|
+|Resultmessage|string|Mensagem de resultado definida pelo serviço.|
+|roleId|string|Identificador de função. No formato de cadeia de caracteres GUID.|
 |userId|cadeia de caracteres|Identificador de usuário. No formato de cadeia de caracteres GUID.|
 
 ## <a name="relationships"></a>Relações

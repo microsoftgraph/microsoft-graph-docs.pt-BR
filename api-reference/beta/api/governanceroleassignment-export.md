@@ -1,18 +1,18 @@
 ---
-title: Exportar governançaRoleAssignmentRequests
-description: Recupere uma coleção de governanceRoleAssignmentRequests `application/octet-stream`no formato , que pode ser analisado como um arquivo .csv no navegador.
+title: Exportar governanceRoleAssignmentRequests
+description: Recupere uma coleção de governanceRoleAssignmentRequests `application/octet-stream`no formato, que pode ser analisado como um arquivo .csv no navegador.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: c7f4aada8b5dd7d31b9dcce99112ddb8d3ec2682
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: c95c544313e0696e340867b2ae4fe538d1e8f9fa
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64508606"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397653"
 ---
-# <a name="export-governanceroleassignmentrequests"></a>Exportar governançaRoleAssignmentRequests
+# <a name="export-governanceroleassignmentrequests"></a>Exportar governanceRoleAssignmentRequests
 
 Namespace: microsoft.graph
 
@@ -20,47 +20,47 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Recupere uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) `application/octet-stream`no formato , que pode ser analisado como um arquivo .csv no navegador.
+Recupere uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) `application/octet-stream`no formato, que pode ser analisado como um arquivo .csv no navegador.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureResources |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureAD |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureADGroup |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Exportar uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso
     
->**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso. 
+>**Nota:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso. 
     
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-Exportar uma coleção [de governançaRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) de minha
+Exportar uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) minha
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
@@ -79,7 +79,7 @@ Não forneça um corpo de solicitação para esse método.
 Se tiver êxito, este método retornará um código `200 OK` de resposta e um conteúdo do tipo `application/octet-stream`.
 
 ## <a name="example"></a>Exemplo
-Este exemplo salva todas as atribuições de função como um arquivo .csv na assinatura Wingtip Toys - Prod. 
+Este exemplo salva todas as atribuições de função como um arquivo .csv na assinatura Wingtip Toys – Prod. 
 
 ##### <a name="request"></a>Solicitação
 ```http

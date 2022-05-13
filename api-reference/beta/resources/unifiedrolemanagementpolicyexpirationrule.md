@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso unifiedRoleManagementPolicyExpirationRule
-description: Uma unifiedRoleManagementPolicyExpirationRule especifica a regra de habilitação associada a uma política de gerenciamento de função. Ele é derivado de microsoft.graph.unifiedRoleManagementPolicyRule.
-author: japere
+description: Um unifiedRoleManagementPolicyExpirationRule especifica a regra de habilitação associada a uma política de gerenciamento de função. Ele é derivado de microsoft.graph.unifiedRoleManagementPolicyRule.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a806283990b42a196c973418eb021542896dd9af
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 0863441c71fea62f4d5f48980f5d1494f2d0a001
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510629"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397296"
 ---
 # <a name="unifiedrolemanagementpolicyexpirationrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyExpirationRule
 
 Namespace: microsoft.graph
 
-Uma unifiedRoleManagementPolicyExpirationRule especifica a regra de habilitação associada a uma política de gerenciamento de função. Ele é derivado de microsoft.graph.unifiedRoleManagementPolicyRule.
+Um unifiedRoleManagementPolicyExpirationRule especifica a regra de habilitação associada a uma política de gerenciamento de função. Ele é derivado de microsoft.graph.unifiedRoleManagementPolicyRule.
 
 Herda [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md).
 
@@ -25,7 +25,7 @@ Herda [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpol
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |isExpirationRequired|Booliano|Indica se a expiração é necessária para qualificação ou atribuição.|
-|maximumDuration|Duration|A duração máxima permitida para a elegência ou atribuição que não é permanente.|
+|maximumDuration|Duration|A duração máxima permitida para qualificação ou atribuição que não é permanente.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>Relações

@@ -4,13 +4,13 @@ description: 'Recupere as propriedades e as relações do objeto privilegedRole.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: c20c41d56da63990764bcf0db06f3bb9805fb4e5
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 3b4e79d03b6364e73d674cd15e406b5bcbd90bd0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315514"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398395"
 ---
 # <a name="get-privilegedrole"></a>Get privilegedRole
 

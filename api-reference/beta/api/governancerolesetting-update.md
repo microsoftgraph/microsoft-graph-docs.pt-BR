@@ -4,13 +4,13 @@ description: Atualize as propriedades de governanceRoleSetting.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 5638532dd97fec4e19cfb19d1b1bf3f19c481f19
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 96ddd9c1da7676ec3a61e2178ada6b973a9c760d
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510441"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398363"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governanceRoleSetting
 
@@ -22,38 +22,38 @@ Namespace: microsoft.graph
 
 Atualize as propriedades [de governanceRoleSetting](../resources/governancerolesetting.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
->**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
+>**Nota:** Essa API também exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
 
-|Tipo de permissão      | Permissions              |
+|Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -69,28 +69,28 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece os valores [para governanceRuleSettings](../resources/governancerulesetting.md) que precisam ser atualizados. 
+No corpo da solicitação, forneça os valores [para governanceRuleSettings](../resources/governancerulesetting.md) que precisam ser atualizados. 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|adminEligibleSettings|[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um administrador tenta adicionar uma atribuição de função qualificada.|
-|adminMemberSettings|[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
-|userEligibleSettings|[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. |
-|userMemberSettings|[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um usuário tenta ativar sua atribuição de função.|
+|adminEligibleSettings|[coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função qualificada.|
+|adminMemberSettings|[coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
+|userEligibleSettings|[coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. |
+|userMemberSettings|[coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta ativar sua atribuição de função.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. Não retorna nada no corpo da resposta. 
 
 ### <a name="error-codes"></a>Códigos de erro
-Esta API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os seguintes códigos de erro personalizados.
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os seguintes códigos de erro personalizados.
 
 |Código de erro     | Mensagem de erro         | Detalhes             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | O [governanceRoleSetting](../resources/governancerolesetting.md) não existe no sistema.
-| 400 BadRequest| InvalidRoleSetting    | Os [valores governanceRuleSettings fornecidos](../resources/governancerulesetting.md) no corpo da solicitação não são válidos.
+| 400 BadRequest| InvalidRoleSetting    | Os [valores de governanceRuleSettings fornecidos](../resources/governancerulesetting.md) no corpo da solicitação não são válidos.
 
 ## <a name="example"></a>Exemplo 
-Este exemplo atualiza a configuração de função para Função Personalizada 3 na assinatura Wingtip Toys - Prod.
+Este exemplo atualiza a configuração de função para a Função Personalizada 3 na assinatura Wingtip Toys – Prod.
 ##### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)

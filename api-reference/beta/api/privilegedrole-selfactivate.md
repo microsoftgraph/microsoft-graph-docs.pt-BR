@@ -4,13 +4,13 @@ description: Ative a função atribuída ao solicitante.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 4c4abcbac602fd0c3c32a2641798aaf7304ba781
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 359f25af6e3f940e10a1d11d6db94bc5f548ed29
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65316376"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397807"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 

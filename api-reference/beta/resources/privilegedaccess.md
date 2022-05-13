@@ -4,13 +4,13 @@ description: " por exemplo, representa `privilegedAccess/azureResources` o PIM g
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: f90b76ca24a4bded8c2206a4a5f45ebcfde4d825
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 408f3fe7e6b0b8c05dfbb27599bc5fa7b048d869
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509550"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397941"
 ---
 # <a name="privilegedaccess-resource-type"></a>Tipo de recurso privilegedAccess
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um grupo de funcionalidades fornecidas pelo serviço Privileged Identity Management (PIM). Diferentes instâncias de representam `privilegedAccess` diferentes provedores gerenciados pelo PIM; por exemplo, `privilegedAccess/azureResources` representa o PIM gerenciando o acesso privilegiado aos recursos do Azure.
+Representa um grupo de funcionalidades fornecido pelo serviço Privileged Identity Management (PIM). Diferentes instâncias de representam `privilegedAccess` provedores diferentes gerenciados pelo PIM; por exemplo, `privilegedAccess/azureResources` representa o PIM que gerencia o acesso privilegiado aos recursos do Azure.
 
 
-`privilegedAccess` é somente leitura por enquanto. Não `POST`, `PUT`, `PATCH`ou `DELETE` as operações são suportadas no conjunto `privilegedAccess` de entidades.
+`privilegedAccess` é somente leitura por enquanto. Não `POST`, `PUT`, `PATCH`ou operações `DELETE` têm suporte no conjunto `privilegedAccess` de entidades.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
-|id         |String     |A id do provedor gerenciado pelo PIM.|
+|id         |Cadeia de caracteres     |A ID do provedor gerenciado pelo PIM.|
 |displayName|Cadeia de caracteres     |O nome de exibição do provedor gerenciado pelo PIM.|
 
 
@@ -34,10 +34,10 @@ Representa um grupo de funcionalidades fornecidas pelo serviço Privileged Ident
 | Relação   | Tipo                                         |Descrição|
 |:---------------|:---------------------------------------------|:----------|
 |recursos       |[Coleção governanceResource](../resources/governanceresource.md)            |Uma coleção de recursos para o provedor.|
-|roleAssignments |[Coleção governanceRoleAssignment](../resources/governanceroleassignment.md)|Uma coleção de atribuições de função para o provedor.|
-|roleDefinitions |[Coleção governanceRoleDefinition](../resources/governanceroledefinition.md)|Uma coleção de definições de função para o provedor.|
-|roleAssignmentRequests |[Coleção governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Uma coleção de solicitações de atribuição de função para o provedor.|
-|roleSettings |[Coleção governanceRoleSetting](../resources/governancerolesetting.md)|Uma coleção de configurações de função para o provedor.|
+|roleAssignments |[coleção governanceRoleAssignment](../resources/governanceroleassignment.md)|Uma coleção de atribuições de função para o provedor.|
+|roleDefinitions |[coleção governanceRoleDefinition](../resources/governanceroledefinition.md)|Uma coleção de definições de função para o provedor.|
+|roleAssignmentRequests |[coleção governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Uma coleção de solicitações de atribuição de função para o provedor.|
+|roleSettings |[coleção governanceRoleSetting](../resources/governancerolesetting.md)|Uma coleção de configurações de função para o provedor.|
 
 
 ## <a name="json-representation"></a>Representação JSON

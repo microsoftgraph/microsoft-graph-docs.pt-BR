@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6fa4e0327a6e02cc5178879c097e441871ec5cc6
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: aeabb92374ade93104b2dfc061c2470ffd75fbc2
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396186"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398844"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Remover educationUser de uma educationSchool
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -45,8 +45,8 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, esse método retornará um código de resposta `204 No Content` e um corpo de resposta vazio.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{use
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response"

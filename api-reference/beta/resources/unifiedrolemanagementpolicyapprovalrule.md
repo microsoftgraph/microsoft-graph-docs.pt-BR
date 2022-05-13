@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso unifiedRoleManagementPolicyApprovalRule
 description: Um unifiedRoleManagementPolicyApprovalRule especifica a regra de aprovação associada a uma política de gerenciamento de função. Ele é derivado de microsoft.graph.unifiedRoleManagementPolicyRule.
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f2777045f45c38274f5a1efa750ea276e744b781
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a48917590c966424473258b9d40af432f98bf917
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510166"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397555"
 ---
 # <a name="unifiedrolemanagementpolicyapprovalrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyApprovalRule
 
@@ -24,7 +24,7 @@ Herda [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpol
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
-|configuração|[approvalSettings](../resources/approvalsettings.md)|A configuração de aprovação da regra.|
+|configuração|[approvalSettings](../resources/approvalsettings.md)|A configuração de aprovação para a regra.|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra. Herdado [de unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
 ## <a name="relationships"></a>Relações

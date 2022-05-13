@@ -4,13 +4,13 @@ description: Recupere as propriedades e as relações do objeto privilegedRoleAs
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 6788f4448e594d97a9808d1702b4161c00e78c20
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: a89d95bd24cba9dfeef48db0e0346b3661fdbb46
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315290"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398052"
 ---
 # <a name="get-privilegedroleassignment"></a>Get privilegedRoleAssignment
 

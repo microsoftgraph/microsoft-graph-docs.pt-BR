@@ -1,18 +1,18 @@
 ---
-title: 'governanceResource: register'
+title: 'governanceResource: registrar'
 description: Registre um objeto governanceResource no PIM.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 22274dd73fe3c2a227bedb863d8d95fd6d38bc3b
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 8f676f534e08e66a481d68c892241ff33206d651
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510299"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398017"
 ---
-# <a name="governanceresource-register"></a>governanceResource: register
+# <a name="governanceresource-register"></a>governanceResource: registrar
 
 Namespace: microsoft.graph
 
@@ -20,36 +20,36 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Registre [um objeto governanceResource](../resources/governanceresource.md) no Privileged Identity Management.
+Registre [um objeto governanceResource](../resources/governanceresource.md) Privileged Identity Management.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
->**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função ativa no recurso.
+>**Nota:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função ativa no recurso.
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -74,11 +74,11 @@ Esse método **só dá** suporte aos parâmetros `$select` `$expand` [de consult
 
 | Propriedades | Tipo | Descrição |
 |:---------- |:---- |:----------- |
-| externalId | Cadeia de caracteres | O identificador externo do recurso a ser registrado no PIM. Se registrar uma assinatura, o identificador será o identificador de assinatura pré-anexado por `/subscriptions/`. Por exemplo, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+| externalId | Cadeia de caracteres | O identificador externo do recurso a ser registrado no PIM. Se estiver registrando uma assinatura, o identificador será o identificador de assinatura precedido por `/subscriptions/`. Por exemplo, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará uma `200 OK` resposta.
+Se for bem-sucedido, este método retornará uma `200 OK` resposta.
 
 ## <a name="example"></a>Exemplo
 

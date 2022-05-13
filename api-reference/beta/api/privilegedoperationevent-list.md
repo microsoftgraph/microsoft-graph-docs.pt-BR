@@ -1,16 +1,16 @@
 ---
 title: Listar privilegedOperationEvents
-description: Recupere eventos de auditoria gerados pelo PIM para operações de função.
+description: Recuperar eventos de auditoria gerados pelo PIM para operações de função.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 4d1c169565671eec804108e44a9cda64b7163802
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+author: rkarim-ms
+ms.openlocfilehash: 744a9c1e5b4468b858bfd318315234c0d6cce7d9
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947661"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398388"
 ---
 # <a name="list-privilegedoperationevents"></a>Listar privilegedOperationEvents
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Recupere uma lista de objetos [privilegedOperationEvent,](../resources/privilegedoperationevent.md) que representam os eventos de auditoria gerados pelo Privileged Identity Management para as operações de função. Para obter os detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use a expressão OData ``$filter`` padrão.
+Recupere uma lista de [objetos privilegedOperationEvent](../resources/privilegedoperationevent.md), que representam os eventos de auditoria gerados pelo Privileged Identity Management para as operações de função. Para obter detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use a expressão OData ``$filter`` padrão.
 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter uma das seguintes funções: Administrador de Função _Privilegiada,_ _Administrador Global,_ Administrador de Segurança _ou_ Leitor de _Segurança._
+O solicitante precisa ter uma das seguintes _funções: Administrador_ de Função Com Privilégios, Administrador _Global__, Administrador_ de Segurança ou _Leitor de Segurança_.
 
  
 
@@ -54,21 +54,21 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos privilegedOperationEvent](../resources/privilegedoperationevent.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
 ## <a name="examples"></a>Exemplos
 
 ### <a name="get-audit-events-for-role-assignment-operations"></a>Obter eventos de auditoria para operações de atribuição de função
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de atribuição de função. Nesse caso, o ``requestType`` valor é ``Assign`` .
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de atribuição de função. Nesse caso, o valor ``requestType`` é ``Assign``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,16 +118,16 @@ Content-type: application/json
     ]
 }
 ```
-### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Obter eventos de auditoria para as operações de ativação de auto-função e makePermanent
+### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Obter eventos de auditoria para as operações de ativação de autoatendimento e makePermanent
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de ativação de auto-função e makePermanent. Nesse caso, o ``requestType`` valor é ``Activate`` .
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de ativação de autoatendimento e makePermanent. Nesse caso, o valor ``requestType`` é ``Activate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,14 +180,14 @@ Content-type: application/json
 
 ### <a name="get-audit-events-for-role-assignment-deactivation"></a>Obter eventos de auditoria para desativação de atribuição de função
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para desativação da atribuição de função. Nesse caso, o ``requestType`` valor é ``Deactivate`` .
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para desativação de atribuição de função. Nesse caso, o valor ``requestType`` é ``Deactivate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -229,7 +229,7 @@ O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria c
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

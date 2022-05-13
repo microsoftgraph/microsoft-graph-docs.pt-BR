@@ -1,18 +1,18 @@
 ---
-title: Obter governançaRoleAssignmentRequest
-description: 'Obter uma governançaRoleAssignmentRequest. '
+title: Obter governanceRoleAssignmentRequest
+description: 'Obtenha uma governanceRoleAssignmentRequest. '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 28112d23ac613cc3694b4105dc0d5300c7e180c8
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 592fc3ac4bbebbbe8f20a759c05a28c1306102e0
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510475"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398563"
 ---
-# <a name="get-governanceroleassignmentrequest"></a>Obter governançaRoleAssignmentRequest
+# <a name="get-governanceroleassignmentrequest"></a>Obter governanceRoleAssignmentRequest
 
 Namespace: microsoft.graph
 
@@ -20,37 +20,37 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Obter uma [governançaRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Obtenha uma [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureResources |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureAD |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureADGroup |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 Além do escopo de permissão, ele requer o solicitante 
-*   ter pelo menos uma atribuição de função no recurso; ou
+*   ter pelo menos uma atribuição de função no recurso; Ou
 *   é o assunto do [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="http-request"></a>Solicitação HTTP

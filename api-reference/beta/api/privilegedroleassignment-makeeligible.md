@@ -4,13 +4,13 @@ description: Torne a atribuição de função qualificada.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 73c4a227589e32bc65238544357b55cf88f97116
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: cd277c4f47e5af8bd40fe09187d08bf5da480e01
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314280"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397562"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 

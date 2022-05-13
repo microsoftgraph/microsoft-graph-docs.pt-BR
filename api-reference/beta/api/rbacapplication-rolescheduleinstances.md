@@ -1,30 +1,30 @@
 ---
 title: 'rbacApplication: roleScheduleInstances'
-description: Recupere tanto roleAssignmentScheduleInstances quanto roleEligibilityScheduleInstances.
-author: japere
+description: Recupere roleAssignmentScheduleInstances e roleEligibilityScheduleInstances.
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1539d4078639d5d7d16a43c70324e7d339b995d0
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a9a0df954f7d83149471ad8afa568cd1a3cd3345
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509858"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398479"
 ---
 # <a name="rbacapplication-rolescheduleinstances"></a>rbacApplication: roleScheduleInstances
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere tanto roleAssignmentScheduleInstances quanto roleEligibilityScheduleInstances.
+Recupere roleAssignmentScheduleInstances e roleEligibilityScheduleInstances.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegada (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|PrivilegedAccess.Read.AzureAD|
 
@@ -44,9 +44,9 @@ A tabela a seguir mostra os parâmetros de consulta que podem ser usados com ess
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|directoryScopeId|Cadeia de caracteres|Identificador do objeto directory que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
-|appScopeId|String|Identificador do escopo específico do aplicativo quando o escopo de atribuição for específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos para os quais a entidade foi concedida acesso. Os escopos do aplicativo são escopos definidos e compreendidos somente por esse aplicativo. Use `/` para escopos de aplicativos de todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. |
-|principalId|Cadeia de caracteres|Identificador da entidade à qual os agendamentos pertencem. |
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. |
+|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. |
+|principalId|Cadeia de caracteres|Identificador da entidade de segurança à qual pertencem as agendas. |
 |roleDefinitionId|Cadeia de caracteres|Identificador do unifiedRoleDefinition para a atribuição. Somente leitura.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma [coleção unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
