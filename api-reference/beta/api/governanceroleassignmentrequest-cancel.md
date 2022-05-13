@@ -1,18 +1,18 @@
 ---
-title: Cancelar governançaRoleAssignmentRequest
-description: Cancele uma governançaRoleAssignmentRequest.
+title: Cancelar governanceRoleAssignmentRequest
+description: Cancele uma governanceRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: e5d7946ca588830552a00a630b3c766ba43ecc03
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: eb0d0d8327851a9b8d18cf4d86af22099df4a2df
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510292"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399541"
 ---
-# <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governançaRoleAssignmentRequest
+# <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governanceRoleAssignmentRequest
 
 Namespace: microsoft.graph
 
@@ -20,37 +20,37 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Cancele [uma governançaRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Cancele [uma governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Sem suporte. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método não **dá suporte** a [Parâmetros de Consulta OData](/graph/query-parameters).
+Esse método não **dá suporte** a [parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -71,12 +71,12 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. Não retorna nada no corpo da resposta. 
 
 ## <a name="error-codes"></a>Códigos de erro
-Esta API segue o padrão de códigos HTTP. Além disso, os códigos de erro personalizados são mostrados abaixo.
+Essa API segue o padrão de códigos HTTP. Além disso, os códigos de erro personalizados são mostrados abaixo.
 
 | Código de erro | Mensagem de erro | Detalhes |
 |:---------- |:------------- |:------- |
 | 400 BadRequest | RoleAssignmentRequestNotFound | O governanceRoleAssignmentRequest não existe no sistema. |
-| 400 BadRequest | RequestCannotBeCancelled | Somente solicitações no status `Granted`de , `PendingApproval`e `PendingAdminDecision` `PendingApprovalProvisioning` podem ser canceladas. |
+| 400 BadRequest | RequestCannotBeCancelled | Somente solicitações com status `Granted`, `PendingApproval`e `PendingApprovalProvisioning` podem `PendingAdminDecision` ser canceladas. |
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação

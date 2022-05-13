@@ -1,30 +1,30 @@
 ---
 title: 'unifiedRoleAssignmentSchedule: filterByCurrentUser'
 description: Obter uma lista dos objetos unifiedRoleAssignmentSchedule e suas propriedades filtradas por uma entidade de usuário específica
-author: japere
+author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3c96ba615ce734d31c4fb717ad3c3ecedf07837f
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: e6499aa163ea860cf7b8e09b4c5d7e80b7447ea4
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510685"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399429"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista dos [objetos unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) e suas propriedades associadas a um objeto principal específico.
+Obtenha uma lista dos [objetos unifiedRoleAssignmentSchedule](../resources/unifiedRoleAssignmentSchedule.md) e suas propriedades associadas a um objeto principal específico.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
+|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
@@ -43,10 +43,10 @@ A tabela a seguir mostra os parâmetros de consulta que podem ser usados com ess
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|roleAssignmentScheduleFilterByCurrentUserOptions|Filtre os objetos de consulta para os quais o usuário atual é a entidade principal. O valor permitido é `principal`. Obrigatório.|
+|on|roleAssignmentScheduleFilterByCurrentUserOptions|Filtre para consultar objetos para os quais o usuário atual é a entidade de segurança. O valor permitido é `principal`. Obrigatório.|
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetosUnifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetosunifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 ### <a name="response"></a>Resposta
 
-A seguir, um exemplo da resposta mostrando um cronograma de qualificação que é por meio de atribuição direta.
+A seguir está um exemplo da resposta que mostra um agendamento de qualificação que é por meio de atribuição direta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

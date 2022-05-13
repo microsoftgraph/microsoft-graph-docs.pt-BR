@@ -4,13 +4,13 @@ description: Desative a função que é atribuída ao solicitante.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 78c7c918774da2523ac8c42c9409b267f3d5c295
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: c231a90d04d251568dfa6ad1059198077b70eda9
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65315227"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399415"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 

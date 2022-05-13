@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b2488935cfb88e1c7e17c99d567ca4a79acbf4a5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 145eded434e80a9418747682e16afb3a654a05eb
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671780"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399436"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -18,20 +18,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um dispositivo. Somente determinadas propriedades de um dispositivo podem ser atualizadas por meio de aplicativos MDM (Gerenciamento de Dispositivo Móvel) aprovados.
+Atualize as propriedades de um dispositivo. Somente determinadas propriedades de um dispositivo podem ser atualizadas por meio de aplicativos Gerenciamento de Dispositivos (MDM) aprovados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-O `{id}` na solicitação é o valor da **propriedade id** do dispositivo, não a **propriedade deviceId** .
+O `{id}` na solicitação é o valor da **propriedade de ID** do dispositivo, não a **propriedade deviceId** .
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,14 +49,14 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções Administrador Global e Administrador de Dispositivos de Nuvem podem atualizar essa propriedade. |
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções administrador global e administrador de dispositivo de nuvem podem atualizar essa propriedade. |
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
-|displayName|String|O nome de exibição do dispositivo.|
-|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false`. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
-|isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false`. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
+|displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|
+|isCompliant|Booliano|`true`se o dispositivo estiver em conformidade com as políticas de MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
+|isManaged|Booliano|`true`se o dispositivo for gerenciado por um aplicativo MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
 
-Como o **recurso de** dispositivo dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview) de uma extensão em uma instância de **dispositivo existente.**
+Como o **recurso** de dispositivo dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados [específicos](/graph/extensibility-overview) do aplicativo em propriedades personalizadas de uma extensão em uma instância de **dispositivo existente.**
 
 ## <a name="response"></a>Resposta
 
@@ -64,7 +64,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-the-accountenabled-property-of-a-device"></a>Exemplo 1: Atualizar a propriedade accountEnabled de um dispositivo
+### <a name="example-1-update-the-accountenabled-property-of-a-device"></a>Exemplo 1: atualizar a propriedade accountEnabled de um dispositivo
 
 #### <a name="request"></a>Solicitação
 
@@ -117,7 +117,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2--write-extensionattributes-on-a-device"></a>Exemplo 2: Gravar extensãoAttributes em um dispositivo
+### <a name="example-2--write-extensionattributes-on-a-device"></a>Exemplo 2: Gravar extensionAttributes em um dispositivo
 
 #### <a name="request"></a>Solicitação
 

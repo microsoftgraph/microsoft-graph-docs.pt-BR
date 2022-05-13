@@ -1,18 +1,18 @@
 ---
-title: Listar governançaResources
-description: Recupere uma coleção de governanceResource à que o solicitante tem acesso.
+title: Listar governanceResources
+description: Recupere uma coleção de governanceResource à qual o solicitante tem acesso.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 2b0a4846b5b75215a25ad8d027dece7a10947608
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 4c27f9c6215de112b06201aac1671382a29a9b4d
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510152"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399149"
 ---
-# <a name="list-governanceresources"></a>Listar governançaResources
+# <a name="list-governanceresources"></a>Listar governanceResources
 
 Namespace: microsoft.graph
 
@@ -20,34 +20,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Recupere uma coleção [de governanceResource](../resources/governanceresource.md) à que o solicitante tem acesso.
+Recupere uma coleção de [governanceResource](../resources/governanceresource.md) à qual o solicitante tem acesso.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureResources |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureAD |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureADGroup |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -65,7 +65,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos governanceResource](../resources/governanceresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos governanceResource](../resources/governanceresource.md) no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 
 Este exemplo lista todos os recursos que posso acessar no momento.

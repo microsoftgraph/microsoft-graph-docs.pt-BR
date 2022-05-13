@@ -4,13 +4,13 @@ description: Crie um objeto privilegedroleassignmentrequest.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: a09a8e23e876ae57fa85c1b579cecf14f34ee510
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: b54785f4c857b3c7c45ffbba3c81e2d64f2a427a
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65316362"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399506"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Criar privilegedRoleAssignmentRequest
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,9 +48,9 @@ No corpo da solicitação, forneça uma representação JSON do [objeto privileg
 | Propriedade     | Tipo    |  Descrição|
 |:---------------|:--------|:----------|
 |roleId|Cadeia de caracteres|A ID da função. Obrigatório.|
-|type|String|Representa o tipo da operação na atribuição de função. O valor pode ser: administradores `AdminAdd`adicionam usuários a funções;`UserAdd`: os usuários adicionam atribuições de função. Obrigatório.|
+|type|Cadeia de caracteres|Representa o tipo da operação na atribuição de função. O valor pode ser: administradores `AdminAdd`adicionam usuários a funções;`UserAdd`: os usuários adicionam atribuições de função. Obrigatório.|
 |assignmentState|Cadeia de caracteres|O estado da atribuição. O valor pode ser `Eligible` para `Active` atribuição qualificada - `Active` se ele for atribuído diretamente por administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
-|motivo|String|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão.|
+|motivo|Cadeia de caracteres|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e revisão.|
 |Cronograma|[governanceSchedule](../resources/governanceschedule.md)|O agendamento da solicitação de atribuição de função.|
 
 ## <a name="response"></a>Resposta

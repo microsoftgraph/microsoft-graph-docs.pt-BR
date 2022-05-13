@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bebfec6cad4865525a1cf453a3141da1fb0881b9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: c820d4953423efef22727ecdf602535b4afab108
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671920"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399485"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -25,13 +25,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-O `{id}` na solicitação é o valor da **propriedade id** do dispositivo, não a **propriedade deviceId** .
+O `{id}` na solicitação é o valor da **propriedade de ID** do dispositivo, não a **propriedade deviceId** .
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /devices/{id}
@@ -49,12 +49,12 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções Administrador Global e Administrador de Dispositivos de Nuvem podem atualizar essa propriedade.|
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções administrador global e administrador de dispositivo de nuvem podem atualizar essa propriedade.|
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
-|displayName|String|O nome de exibição do dispositivo.|
-|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false`. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
-|isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false`. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
+|displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|
+|isCompliant|Booliano|`true`se o dispositivo estiver em conformidade com as políticas de MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
+|isManaged|Booliano|`true`se o dispositivo for gerenciado por um aplicativo MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
 
 ## <a name="response"></a>Resposta
 
@@ -62,7 +62,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-update-the-accountenabled-property-of-a-device"></a>Exemplo 1: Atualizar a propriedade accountEnabled de um dispositivo
+### <a name="example-1-update-the-accountenabled-property-of-a-device"></a>Exemplo 1: atualizar a propriedade accountEnabled de um dispositivo
 
 #### <a name="request"></a>Solicitação
 
@@ -115,7 +115,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2--write-extensionattributes-on-a-device"></a>Exemplo 2: Gravar extensãoAttributes em um dispositivo
+### <a name="example-2--write-extensionattributes-on-a-device"></a>Exemplo 2: Gravar extensionAttributes em um dispositivo
 
 #### <a name="request"></a>Solicitação
 

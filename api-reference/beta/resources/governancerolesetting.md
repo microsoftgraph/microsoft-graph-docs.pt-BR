@@ -4,13 +4,13 @@ description: Representa um conjunto de configurações em cada definição de fu
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 8a98725d26d160b9d8687fceb87e6811440ed31a
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: d5e441b35cd4b6ccdb52710508bd8afe5955d860
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509655"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399465"
 ---
 # <a name="governancerolesetting-resource-type"></a>Tipo de recurso governanceRoleSetting
 
@@ -22,27 +22,27 @@ Namespace: microsoft.graph
 
 Representa um conjunto de configurações em cada definição de função que precisa ser avaliada quando as atribuições de função são criadas ou modificadas. Por exemplo, as configurações de função podem incluir a regra "duração máxima da atribuição", a regra "MFA necessária na ativação" e assim por diante.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:--------|
-|[List](../api/governancerolesetting-list.md) | [Coleção governanceRoleSetting](../resources/governancerolesetting.md)|Listar uma coleção de configurações de função em um recurso.|
+|[Listar](../api/governancerolesetting-list.md) | [coleção governanceRoleSetting](../resources/governancerolesetting.md)|Listar uma coleção de configurações de função em um recurso.|
 |[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Ler propriedades e relações de uma configuração de função.|
 |[Atualizar](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Atualizar um objeto de configuração de função. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade               |Tipo                                      |Descrição|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |Cadeia de caracteres                                  |A id da roleSetting.|
-|resourceId           |Cadeia de caracteres                                  |Obrigatório. A id do recurso ao que a configuração de função está associada.|
-|roleDefinitionId     |Cadeia de caracteres                                  |Obrigatório. A id da definição de função à que a configuração de função está associada.|
-|isDefault            |Booliano                                 |Somente leitura. Indicar se roleSetting é uma roleSetting padrão|
+|id                   |Cadeia de caracteres                                  |A ID da roleSetting.|
+|resourceId           |Cadeia de caracteres                                  |Obrigatório. A ID do recurso ao qual a configuração de função está associada.|
+|roleDefinitionId     |Cadeia de caracteres                                  |Obrigatório. A ID da definição de função à qual a configuração de função está associada.|
+|isDefault            |Booliano                                 |Somente leitura. Indicar se roleSetting é um roleSetting padrão|
 |lastUpdatedDateTime  |DateTimeOffset                          |Somente leitura. A hora em que a configuração de função foi atualizada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|lastUpdatedBy        |String                                  |Somente leitura. O nome de exibição do administrador que atualizou pela última vez a funçãoSetting.|
-|adminEligibleSettings|[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um administrador tenta adicionar uma atribuição de função qualificada.|
-|adminMemberSettings  |[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
-|userEligibleSettings |[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. A configuração não tem suporte por enquanto.|
-|userMemberSettings   |[Coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra avaliadas quando um usuário tenta ativar sua atribuição de função.|
+|lastUpdatedBy        |String                                  |Somente leitura. O nome de exibição do administrador que atualizou a roleSetting pela última vez.|
+|adminEligibleSettings|[coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função qualificada.|
+|adminMemberSettings  |[coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
+|userEligibleSettings |[coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. Por enquanto, não há suporte para a configuração.|
+|userMemberSettings   |[coleção governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta ativar sua atribuição de função.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

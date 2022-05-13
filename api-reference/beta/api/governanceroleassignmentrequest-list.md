@@ -1,18 +1,18 @@
 ---
-title: Listar governançaRoleAssignmentRequests
+title: Listar governanceRoleAssignmentRequests
 description: 'Recupere uma coleção de governanceRoleAssignmentRequests. '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: e14489475e4cfb4b9cf39417f0681135ff9e23df
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 632ceed669ddea34b1ba36b85a893336ca2d0615
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510412"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399478"
 ---
-# <a name="list-governanceroleassignmentrequests"></a>Listar governançaRoleAssignmentRequests
+# <a name="list-governanceroleassignmentrequests"></a>Listar governanceRoleAssignmentRequests
 
 Namespace: microsoft.graph
 
@@ -20,54 +20,54 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
+Recupere uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Recursos do Azure
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureResources |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureResources |
 
-### <a name="azure-ad"></a>Microsoft Azure AD
+### <a name="azure-ad"></a>Azure AD
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:--------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureAD |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Grupos
 
-|Tipo de permissão | Permissions |
+|Tipo de permissão | Permissões |
 |:-------------- |:----------- |
 | Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureADGroup |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo | PrivilegedAccess.Read.AzureADGroup |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Listar uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso.
+Liste uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso.
     
->**Observação:** Além do escopo de permissão, a solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
+>**Nota:** Além do escopo de permissão, a solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-Listar uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) minha.
+Liste uma coleção [de governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) minha.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-Listar uma coleção [de governanceRoleAssignmentRequests que estão pendentes](../resources/governanceroleassignmentrequest.md) de decisões de administrador.
+Liste uma coleção [de governanceRoleAssignmentRequests que estão pendentes](../resources/governanceroleassignmentrequest.md) de decisões de administrador.
     
->**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
+>**Nota:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma atribuição `Active` de função de administrador (`owner` ou `user access administrator`) no recurso.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
@@ -85,14 +85,14 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetos governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de [objetos governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-Os administradores consultam solicitações pendentes de atribuição de função para a assinatura Wingtip Toys - Prod.
+Os administradores consultam solicitações de atribuição de função pendentes para assinatura Wingtip Toys – Prod.
 ##### <a name="request"></a>Solicitação
 
 ```http

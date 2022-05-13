@@ -4,13 +4,13 @@ description: Tornar a atribuição de função permanente.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: e9069d820d85a2b228192a997c70dfbfee0505b9
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 434ade1c8686a9899e8359c0d544f3468173152e
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314266"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399534"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso privilegedRole
-description: 'Representa uma função de administrador do Azure AD, como: Administrador Global, Administrador de Cobrança, Administrador de Serviço, Administrador de Usuário e Administrador de Senha.'
+description: 'Representa uma Azure AD de administrador, como: Administrador Global, Administrador de Cobrança, Administrador de Serviços, Administrador de Usuários e Administrador de Senha.'
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: carolinetempleton
-ms.openlocfilehash: 756ffd580a2f44fad1631bbfd153d1320f1aef05
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+author: rkarim-ms
+ms.openlocfilehash: 8c96fc5c7de9eb907639f7d01795b85750eeaf0a
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687673"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399310"
 ---
 # <a name="privilegedrole-resource-type-deprecated"></a>Tipo de recurso privilegedRole (preterido)
 
@@ -18,31 +18,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+[!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Representa uma função de administrador interna do [Azure AD](/azure/active-directory/roles/permissions-reference), por exemplo, **Administrador Global,** Administrador de Cobrança, Administrador de Serviço, Administrador de Usuário e **Administrador de Senha.**
+Representa uma [Azure AD de](/azure/active-directory/roles/permissions-reference) administrador interna, por exemplo **, Administrador Global,** Administrador de Cobrança, Administrador de Serviços, Administrador de Usuários e Administrador **de Senha.**
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar objetos privilegedRole](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md) collection|Obter a coleção privilegedRole.|
+|[Listar objetos privilegedRole](../api/privilegedrole-list.md) | [privilegedRole](privilegedrole.md) collection|Obtenha a coleção de privilegedRole.|
 |[Get privilegedRole](../api/privilegedrole-get.md) | [privilegedRole](privilegedrole.md) |Ler propriedades e relações do objeto privilegedRole.|
-|[Listar tarefas](../api/privilegedrole-list-assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md) collection| Obter uma coleção de objetos de atribuição para essa função.|
+|[Listar tarefas](../api/privilegedrole-list-assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md) collection| Obtenha uma coleção de objetos de atribuição para essa função.|
 |[selfActivate](../api/privilegedrole-selfactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Ative a função atribuída.|
 |[selfDeactivate](../api/privilegedrole-selfdeactivate.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Desative a função atribuída.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|cadeia de caracteres|O identificador exclusivo da função de administrador. É uma cadeia de caracteres GUID e tem o mesmo valor que a id do modelo de função do Azure AD para a função determinada. Somente leitura.|
+|id|string|O identificador exclusivo para a função de administrador. É uma cadeia de caracteres GUID e tem o mesmo valor que a ID do modelo de função Azure AD para a função fornecida. Somente leitura.|
 |name|string|Nome da função.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) collection| As atribuições dessa função. Somente leitura. Anulável.|
+|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) collection| As atribuições para essa função. Somente leitura. Anulável.|
 |settings|[privilegedRoleSettings](privilegedrolesettings.md)| As configurações dessa função. Somente leitura. Anulável.|
 |summary|[privilegedRoleSummary](privilegedrolesummary.md)| As informações resumidas para essa função. Somente leitura. Anulável.|
 

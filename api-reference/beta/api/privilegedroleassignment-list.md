@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos privilegedRoleAssignment, que corresp
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 3532915fc41226846a05e3f3ea6520f940fc0875
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: rkarim-ms
+ms.openlocfilehash: 3e17151352a9ea68fb58452819772a1addbe4067
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "65314294"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65399520"
 ---
 # <a name="list-privilegedroleassignments"></a>Listar privilegedRoleAssignments
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ---
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -227,7 +227,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: O objeto de resposta exibido aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -298,7 +298,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Resposta 
-O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta exibido aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
