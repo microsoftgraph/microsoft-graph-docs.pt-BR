@@ -5,12 +5,12 @@ author: cindycrane
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 98f63a2f80c4087721040311ece0e157453783f5
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: d0a1b8bb32c5b9bde0a28b3409a37f079ca72bae
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668602"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420632"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de **objetos licenseDetails** para usuários corporativos.
+Recupere uma lista de [objetos licenseDetails](../resources/licensedetails.md) para usuários corporativos. Essa API retorna detalhes para licenças atribuídas diretamente e aquelas atribuídas transitivamente por meio de associações em grupos licenciados.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Delegada (conta corporativa ou de estudante) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | User.Read    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -36,19 +36,19 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao `$select` parâmetro de consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Código do &lt;portador&gt;|
+| Autorização  | Código de &lt;portador&gt;|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos licenseDetails](../resources/licensedetails.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos licenseDetails](../resources/licensedetails.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 
@@ -100,21 +100,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "servicePlans": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/assignedLicenses",
+    "value": [
         {
-          "servicePlanId": "servicePlanId-value",
-          "servicePlanName": "servicePlanName-value",
-          "provisioningStatus": "provisioningStatus-value",
-          "appliesTo": "appliesTo-value"
+            "disabledPlans": [],
+            "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
         }
-      ],
-      "skuId": "skuId-value",
-      "skuPartNumber": "skuPartNumber-value",
-      "id": "id-value"
-    }
-  ]
+    ]
 }
 ```
 

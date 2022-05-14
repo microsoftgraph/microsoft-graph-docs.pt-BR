@@ -1,22 +1,22 @@
 ---
 title: Atualizar plannerplandetails
-description: Atualize as propriedades do **objeto plannerplandetails.**
+description: Atualize as propriedades do **objeto plannerplandetails** .
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: f4ca5cf79d36ff4775d75423619b40b293b15eef
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9d3a583cf3518a351a1a152f29db71d668414003
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117184"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420478"
 ---
 # <a name="update-plannerplandetails"></a>Atualizar plannerplandetails
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do **objeto plannerplandetails.**
+Atualize as propriedades do **objeto plannerplandetails** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -35,7 +35,7 @@ PATCH /planner/plans/{id}/details
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor ETag conhecido para o plannerPlanDetails a ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o plannerPlanDetails a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
@@ -43,11 +43,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](../resources/plannercategorydescriptions.md)|Um objeto que especifica as descrições das seis categorias que podem ser associadas a tarefas no plano|
-|sharedWith|[plannerUserIds](../resources/planneruserids.md)|Conjunto de ids de usuário com as que esse plano é compartilhado. Se você estiver aproveitando Microsoft 365 grupos, use a API grupos para gerenciar a associação ao grupo para compartilhar o [plano do](../resources/group.md) grupo. Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de propriedade do grupo.|
+|sharedWith|[plannerUserIds](../resources/planneruserids.md)|Conjunto de IDs de usuário com as qual esse plano é compartilhado. Se você estiver aproveitando os Microsoft 365, use a API de Grupos para gerenciar a associação de grupo para compartilhar o [plano do](../resources/group.md) grupo. Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano pertencente ao grupo.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e o objeto `Prefer` `return=representation` `200 OK` [plannerPlanDetails](../resources/plannerplandetails.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará a `204 No Content` resposta e o conteúdo vazio. Se a solicitação especificar o `Prefer` cabeçalho com `return=representation` preferência, `200 OK` esse método retornará um código de resposta e o objeto [plannerPlanDetails](../resources/plannerplandetails.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -125,7 +125,26 @@ Content-type: application/json
     "category3": null,
     "category4": null,
     "category5": "Needs materials",
-    "category6": "Needs equipment"
+    "category6": "Needs equipment",
+    "category7": "Description of category 7",
+    "category8": "Description of category 8",
+    "category9": "Description of category 9",
+    "category10": "Description of category 10",
+    "category11": "Description of category 11",
+    "category12": "Description of category 12",
+    "category13": "Description of category 13",
+    "category14": "Description of category 14",
+    "category15": "Description of category 15",
+    "category16": "Description of category 16",
+    "category17": "Description of category 17",
+    "category18": "Description of category 18",
+    "category19": "Description of category 19",
+    "category20": "Description of category 20",
+    "category21": "Description of category 21",
+    "category22": "Description of category 22",
+    "category23": "Description of category 23",
+    "category24": "Description of category 24",
+    "category25": "Description of category 25"
   },
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

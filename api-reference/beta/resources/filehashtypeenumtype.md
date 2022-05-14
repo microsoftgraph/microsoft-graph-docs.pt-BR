@@ -1,18 +1,18 @@
 ---
-title: Enumeração filehashtype
+title: Enumeração fileHashType
 description: Enumeração para tipos de hash de arquivo.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: enumPageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: ab94fec4d4a8f6940b7c2bfccc61d38d9fe66887
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 85d599b600150dc258442bbac99ba96fdfbd2f2b
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076383"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420758"
 ---
-# <a name="filehashtype-enum-type"></a>tipo de enumeração filehashtype
+# <a name="filehashtype-enum-type"></a>Tipo de enumeração fileHashType
 
 Namespace: microsoft.graph
 
@@ -24,12 +24,12 @@ Enumeração para tipos de hash de arquivo.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|,0|Tipo desconhecido.|
-|SHA1|1 |Tipo de hash SHA1.|
-|SHA256|2 | Tipo de hash SHA256.|
-|MD5|3 | Tipo de hash MD5.|
-|authenticodeHash256|4 | Tipo de hash AuthenticodeHash256.|
-|lsHash|5 | Tipo de hash LsHash.|
+|desconhecido|0|Tipo desconhecido.|
+|sha1|1|Tipo de hash SHA1.|
+|sha256|2| Tipo de hash SHA256.|
+|md5|3| Tipo de hash MD5.|
+|authenticodeHash256|4| Tipo de hash AuthenticodeHash256.|
+|lsHash|5| Tipo de hash LsHash.|
 |ctph|6 | Tipo de hash CTPH.|
 |peSha1|7 | Tipo de hash PESHA1.|
 |peSha256|8 | Tipo de hash PESHA256.|

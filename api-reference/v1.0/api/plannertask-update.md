@@ -1,22 +1,22 @@
 ---
-title: Atualizar plannertask
-description: Atualize as propriedades do **objeto plannertask.**
+title: Atualizar plannerTask
+description: Atualize as propriedades do **objeto plannerTask** .
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 935de70d80b26a6a9dd48cd9e46e62c707f7fe16
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5351d68d421f74fcbca649aef2c0c1d04a86c804
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132268"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420660"
 ---
-# <a name="update-plannertask"></a>Atualizar plannertask
+# <a name="update-plannertask"></a>Atualizar plannerTask
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do **objeto plannertask.**
+Atualize as propriedades do **objeto plannerTask** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -35,7 +35,7 @@ PATCH /planner/tasks/{id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor ETag conhecido para o **plannerTask** a ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o **plannerTask** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
@@ -43,19 +43,20 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|As categorias às quais a tarefa foi aplicada. Confira os possíveis valores em [Categorias aplicadas](../resources/plannerappliedcategories.md).|
-|assigneePriority|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
-|assignments|[plannerAssignments](../resources/plannerassignments.md)|O conjunto de usuários aos que a tarefa é atribuída.|
-|bucketId|String|ID de bucket à qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/planner-identifiers-disclaimer.md) é feito no serviço. |
-|conversationThreadId|String|ID de thread da conversa na tarefa. Esta é a id do objeto thread de conversa criado no grupo.|
+|assigneePriority|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usar dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
+|assignments|[plannerAssignments](../resources/plannerassignments.md)|O conjunto de usuários aos quais a tarefa é atribuída.|
+|bucketId|String|ID do bucket à qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/planner-identifiers-disclaimer.md) é feito no serviço. |
+|conversationThreadId|String|ID do thread da conversa na tarefa. Essa é a ID do objeto de thread de conversa criado no grupo.|
 |dueDateTime|DateTimeOffset|Data e hora em que a tarefa deve ser concluída. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usando dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
+|orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [Usar dicas de ordem no Planner](../resources/planner-order-hint-format.md).|
+|prioridade|Int32|Prioridade da tarefa. O intervalo válido de valores está entre `0` e `10`, com o valor crescente sendo de prioridade mais baixa (`0` tem a prioridade mais alta e `10` tem a prioridade mais baixa).  Atualmente, o Planner interpreta valores e como "urgentes `0` `1`" `2`e `4` `3` como "importantes", `6``5`e `7` como "médio" `8`e , `9`e `10` como "baixo".  Além disso, o Planner define o valor `1` para "urgente", `3` para "importante", `5` para "médio" e `9` para "baixo".|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
 |startDateTime|DateTimeOffset|Data e hora em que a tarefa é iniciada. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |title|String|Título da tarefa.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e o objeto `Prefer` `return=representation` `200 OK` [plannerTask](../resources/plannertask.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará a `204 No Content` resposta e o conteúdo vazio. Se a solicitação especificar o `Prefer` cabeçalho com `return=representation` preferência, `200 OK` esse método retornará um código de resposta e o objeto [plannerTask](../resources/plannertask.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -165,7 +166,8 @@ Content-type: application/json
     "category5": true,
     "category6": true,
   },
-  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
+  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh",
+  "priority": 5
 }
 ```
 

@@ -1,22 +1,22 @@
 ---
 title: Atualizar plannerPlan
-description: Atualize as propriedades de um **objeto plannerPlan.**
+description: Atualize as propriedades de um **objeto plannerPlan** .
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1652a725873e05de6b47f5583b426a006393458e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1cbe211096b341fff2ce148e3551d2f521c49244
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62088352"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420709"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de um **objeto plannerPlan.**
+Atualize as propriedades de um **objeto plannerPlan** .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -38,19 +38,19 @@ PATCH /planner/plans/{plan-id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor conhecido de ETag para o plannerPlan ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o plannerPlan a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece os valores para campos relevantes a ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores dos campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|proprietário|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano pertence. Deve haver um grupo válido para que esse campo possa ser definido. Depois de definido, isso só pode ser atualizado pelo proprietário.|
-|title|Cadeia de caracteres|Título do plano.|
+|owner|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano pertence. Deve haver um grupo válido para que esse campo possa ser definido. Depois de definido, isso só pode ser atualizado pelo proprietário.|
+|title|String|Título do plano.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e um `Prefer` `return=representation` objeto `200 OK` [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará a `204 No Content` resposta e o conteúdo vazio. Se a solicitação especificar o `Prefer` cabeçalho com `return=representation` preferência, `200 OK` esse método retornará um código de resposta e um objeto [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -122,7 +122,12 @@ Content-type: application/json
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/v1.0/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

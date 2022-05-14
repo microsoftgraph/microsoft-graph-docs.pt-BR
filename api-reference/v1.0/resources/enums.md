@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: fab1fff05253708ddad039d04ebb79a8c747f598
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: abf5a95ccc6c19bcb656d84c9d6cf4d9891cbea6
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296223"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420569"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -1040,6 +1040,15 @@ Namespace: microsoft.graph
 | Rádio
 
 
+### <a name="plannercontainertype-values"></a>Valores plannerContainerType
+
+|Member|
+|:---|
+|group|
+|unknownFutureValue|
+|Lista|
+
+
 ### <a name="plannerpreviewtype-values"></a>Valores plannerPreviewType
 
 | Member
@@ -1460,7 +1469,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 

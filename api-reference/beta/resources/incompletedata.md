@@ -3,24 +3,24 @@ author: daspek
 description: A faceta incompleteData indica que um recurso foi gerado com dados incompletos.
 ms.date: 10/06/2017
 title: IncompleteData
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 6505d02ee7436e02d90627cfd38a83e3e436706a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: b24b10db7f38ee17356c77d40bcda3b08576e45b
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016554"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420674"
 ---
-# <a name="incompletedata-resource-type"></a>tipo de recurso incompleteData
+# <a name="incompletedata-resource-type"></a>Tipo de recurso incompleteData
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A faceta **incompleteData** indica que um recurso foi gerado com dados incompletos.
-As propriedades dentro podem fornecer informações sobre o motivo pelo qual há dados incompletos.
+A **faceta incompleteData** indica que um recurso foi gerado com dados incompletos.
+As propriedades dentro podem fornecer informações sobre por que há dados incompletos.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -38,7 +38,7 @@ As propriedades dentro podem fornecer informações sobre o motivo pelo qual há
 | Propriedade                  | Tipo           | Descrição
 |:--------------------------|:---------------|:--------------------------------
 | missingDataBeforeDateTime | DateTimeOffset | O serviço não tem dados de origem antes do tempo especificado.
-| wasThrottled              | Booliano        | Alguns dados não foram gravados devido à atividade excessiva.
+| wasThrottled              | Booliano        | Alguns dados não foram registrados devido a uma atividade excessiva.
 
 <!--
 {

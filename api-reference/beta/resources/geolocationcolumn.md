@@ -3,27 +3,27 @@ author: kevklam
 description: O geolocationColumn em um recurso columnDefinition indica que a coluna contém uma localização geográfica.
 ms.date: 09/10/2018
 title: GeolocationColumn
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 5a0fad3a3dfd91808c300431ce55335d9b9a5cf8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 368f86557d7593a60d81d6e9e1d5c8317959c2d7
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973929"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420485"
 ---
-# <a name="geolocationcolumn-resource-type"></a>tipo de recurso geolocationColumn
+# <a name="geolocationcolumn-resource-type"></a>Tipo de recurso geolocationColumn
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O **geolocationColumn** em um recurso [columnDefinition](columndefinition.md) indica que a coluna contém uma localização geográfica.
+O **geolocationColumn em** um [recurso columnDefinition](columndefinition.md) indica que a coluna contém uma localização geográfica.
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON de um recurso **geolocationColumn** .
+Aqui está uma representação JSON de um **recurso geolocationColumn** .
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.geolocationColumn" } -->
 
 ```json
@@ -33,7 +33,7 @@ Veja a seguir uma representação JSON de um recurso **geolocationColumn** .
 
 ## <a name="properties"></a>Propriedades
 
-O recurso **geolocationColumn** não contém propriedades.
+O **recurso geolocationColumn** não contém propriedades.
 
 <!--
 {

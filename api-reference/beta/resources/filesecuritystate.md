@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso filesecuritystate
+title: Tipo de recurso fileSecurityState
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: bec30dec9f30186d3a8a5a0bcbd9be15874c8297
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f080ecded6cf6716f985ccf06e885e9955c8525d
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055474"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420450"
 ---
-# <a name="filesecuritystate-resource-type"></a>tipo de recurso filesecuritystate
+# <a name="filesecuritystate-resource-type"></a>Tipo de recurso fileSecurityState
 
 Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém informações sobre o arquivo (não processo) relacionado ao alerta.
+Contém informações sobre o arquivo (não processo) relacionados ao alerta.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).|
-|name|Cadeia de caracteres|Nome do arquivo (sem o caminho).|
-|caminho|String|Caminho completo do arquivo/ImageFile.|
-|riskScore|Cadeia de caracteres|Geração de um provedor/Pontuação de risco calculado do arquivo de alerta. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
+|fileHash|[fileHash](filehash.md)|Tipo complexo que contém hashes de arquivo (criptográficos e sensíveis à localização).|
+|nome|Cadeia de caracteres|Nome do arquivo (sem caminho).|
+|caminho|String|Caminho de arquivo completo do arquivo/imageFile.|
+|riskScore|Cadeia de caracteres|Pontuação de risco gerada/calculada pelo provedor do arquivo de alerta. Intervalo de valor recomendado de 0 a 1, que equivale a um percentual.|
 
 ## <a name="json-representation"></a>Representação JSON
 

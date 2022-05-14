@@ -1,30 +1,30 @@
 ---
 title: Tipo de recurso cloudAppSecurityState
-description: Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
+description: Contém informações com estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 80011803b1e73a4b0377d739c6f0d0b21e38eeb7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d509aa92fafb3848a5bb77c5f4fb1b0674d66f31
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126069"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420751"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>Tipo de recurso cloudAppSecurityState
 
 Namespace: microsoft.graph
 
-Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
+Contém informações com estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationServiceIp|Cadeia de Caracteres|Endereço IP de destino da conexão com o aplicativo/serviço na nuvem.|
-|destinationServiceName|Cadeia de Caracteres|Nome do aplicativo/serviço na nuvem (por exemplo, "Salesforce", "DropBox", etc.).|
-|riskScore|Cadeia de Caracteres|Pontuação de risco gerada/calculada pelo provedor do Aplicativo/Serviço na Nuvem. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
+|destinationServiceIp|Cadeia de caracteres|Endereço IP de destino da conexão com o aplicativo/serviço de nuvem.|
+|destinationServiceName|Cadeia de caracteres|Nome do aplicativo/serviço de nuvem (por exemplo, "Salesforce", "DropBox", etc.).|
+|riskScore|Cadeia de caracteres|Pontuação de risco calculada/gerada pelo provedor do Aplicativo/Serviço de Nuvem. Intervalo de valor recomendado de 0 a 1, que equivale a um percentual.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,16 +1,16 @@
 ---
 title: Obter plannerPlanDetails
-description: Recupere as propriedades e as relações do **objeto plannerplandetails.**
+description: Recupere as propriedades e as relações do **objeto plannerplandetails** .
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 67b7a4d55aec32becc30dacbd10c93ea4a56ef11
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 583262e4f53b5a1f062e342744665e81a6ea40c2
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62118513"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420723"
 ---
 # <a name="get-plannerplandetails"></a>Obter plannerPlanDetails
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações do **objeto plannerplandetails.**
+Recupere as propriedades e as relações do **objeto plannerplandetails** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto plannerPlanDetails](../resources/plannerplandetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e [um objeto plannerPlanDetails](../resources/plannerplandetails.md) no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -108,7 +108,26 @@ Content-type: application/json
     "category3": null,
     "category4": null,
     "category5": "Needs materials",
-    "category6": "Needs equipment"
+    "category6": "Needs equipment",
+    "category7": "Description of category 7",
+    "category8": "Description of category 8",
+    "category9": "Description of category 9",
+    "category10": "Description of category 10",
+    "category11": "Description of category 11",
+    "category12": "Description of category 12",
+    "category13": "Description of category 13",
+    "category14": "Description of category 14",
+    "category15": "Description of category 15",
+    "category16": "Description of category 16",
+    "category17": "Description of category 17",
+    "category18": "Description of category 18",
+    "category19": "Description of category 19",
+    "category20": "Description of category 20",
+    "category21": "Description of category 21",
+    "category22": "Description of category 22",
+    "category23": "Description of category 23",
+    "category24": "Description of category 24",
+    "category25": "Description of category 25"
   },
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

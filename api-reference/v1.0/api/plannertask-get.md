@@ -1,22 +1,22 @@
 ---
 title: Obter plannerTask
-description: Recupere as propriedades e as relações do **objeto plannertask.**
+description: Recupere as propriedades e as relações do **objeto plannertask** .
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 826554e5d7060561ee7f278ae6b5b9ce14ede230
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: c838cd79c2f37bbf39045c0ddcec5a9594e02a25
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097613"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420667"
 ---
 # <a name="get-plannertask"></a>Obter plannerTask
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações do **objeto plannertask.**
+Recupere as propriedades e as relações do **objeto plannertask** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,7 +42,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto plannerTask](../resources/plannertask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [plannerTask](../resources/plannertask.md) no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -119,7 +119,8 @@ Content-type: application/json
       "orderHint": "RWk1"
     }
   },
-  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh"
+  "id":"01gzSlKkIUSUl6DF_EilrmQAKDhh",
+  "priority": 5
 }
 ```
 

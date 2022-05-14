@@ -1,22 +1,22 @@
 ---
 title: Get plannerPlan
-description: Recupere as propriedades e as relações do **objeto plannerplan.**
+description: Recupere as propriedades e as relações do objeto **plannerplan** .
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 628b664aaf5a308ed373086f206550ee32727820
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b5e2fe71a66c10ed456c80f8d74bfba874ef6b3b
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135872"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420464"
 ---
 # <a name="get-plannerplan"></a>Get plannerPlan
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações de um [objeto plannerplan.](../resources/plannerplan.md)
+Recupere as propriedades e as relações de um [objeto plannerplan](../resources/plannerplan.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto plannerPlan](../resources/plannerplan.md) no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -106,7 +106,12 @@ Content-type: application/json
     }
   },
   "createdDateTime": "2015-03-30T18:36:49.2407981Z",
-  "owner": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "url": "https://graph.microsoft.com/v1.0/groups/ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
+    "type": "group"
+  },
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

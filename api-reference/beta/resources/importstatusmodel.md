@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso importStatusModel
-description: Veja a seguir uma representação JSON do recurso.
-localization_priority: Normal
+title: Tipo de recurso importStatusModel
+description: Aqui está uma representação JSON do recurso importStatusModel.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: non-product-specific
 author: MSGraphDocsVteam
-ms.openlocfilehash: 6fc2d3cabe47df982c72fe1abae5ba5d991fd31d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5c8ea86be6afc6259d3c675889e46d3ece9aa884
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016608"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420457"
 ---
-# <a name="importstatusmodel-resource-type"></a>tipo de recurso importStatusModel
+# <a name="importstatusmodel-resource-type"></a>Tipo de recurso importStatusModel
 
 Namespace: microsoft.graph
 
