@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c2ecae03202adb66cc0aa49148679a5b9807fe41
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 781a90f75e070feb17380e4538a340b88831b422
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205973"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65397627"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -18,14 +18,16 @@ Namespace: microsoft.graph
 
 Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da propriedade de navegação de **membros**.
 
-É possível adicionar usuários, contatos organizacionais, entidades de serviço ou outros grupos.
+A tabela a seguir mostra os tipos de membros que podem ser adicionados a grupos de segurança ou grupos do Microsoft 365.
 
-> [!IMPORTANT]
->
-> - Você pode adicionar membros somente a grupos de segurança e do Microsoft 365. Para obter mais informações, consulte [Tipos de grupo no Microsoft Azure AD e Microsoft Graph apenas](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
-> - Não é possível adicionar grupos de segurança a grupos do Microsoft 365.
-> - Não é possível adicionar grupos do Microsoft 365 a grupos de segurança ou a outros grupos do Microsoft 365.
-> - Um grupo de segurança pode ter usuários, dispositivos, grupos ou entidades de serviço como seus membros, enquanto um grupo do Microsoft 365 pode ter somente usuários como membros.
+| Tipo de objeto             | Membro de grupos de segurança     | Membro do Microsoft 365 grupo |
+|-------------------------|-------------------------------|-------------------------------|
+| Usuários                   | ![Pode ser membro do grupo][Yes]   | ![Pode ser membro do grupo][Yes]   |
+| Grupos de segurança         | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Grupos do Microsoft 365    | ![Não pode ser membro do grupo][No] | ![Não pode ser membro do grupo][No] |
+| Dispositivos                 | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Entidades de serviço      | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Contatos organizacionais | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
 
 ## <a name="permissions"></a>Permissões
 
@@ -33,8 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                |
 | :------------------------------------- | :------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All    |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                             |
+| Delegada (conta corporativa ou de estudante)     | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All    |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                             |
 | Aplicativo                            | GroupMember.ReadWrite.All, Group.ReadWrite.All and Directory.ReadWrite.All |
 
 > [!IMPORTANT]
@@ -213,6 +215,11 @@ HTTP/1.1 204 No Content
 - [Atualizar a função do membro na equipe](team-update-members.md)
 - [Remover membro da equipe](team-delete-members.md)
 
+
+
+[Yes]: /graph/images/yesandnosymbols/greencheck.svg
+[No]: /graph/images/yesandnosymbols/no.svg
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -222,5 +229,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api/group-post-members.md:
+      Failed to parse enumeration values for type microsoft.graph.add. Table requires a column header named one of the following: Member, Name, Value"
   ]
 }-->

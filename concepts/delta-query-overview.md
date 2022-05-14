@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4331c661889868bdbf7735e7ef476739d63621fc
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 714fac5350f7df2222ca563b9660994431a3b382
+ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247074"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65398570"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -58,7 +58,7 @@ Observe o suporte geral limitado dos seguintes parâmetros de consulta opcionais
 
 - `$orderby`
 
-    Não assuma que uma sequência específica das respostas tenha retornado de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência do `@odata.nextLink` e leve isso em conta em sua lógica de mesclagem.
+    Não assuma uma sequência específica das respostas retornadas de uma consulta delta. Suponha que o mesmo item possa aparecer em qualquer lugar na sequência `@odata.nextLink` e trate isso em sua lógica de mesclagem.
 - `$top`
 
     O número de objetos em cada página pode variar dependendo do tipo de recurso e do tipo de alterações feitas no recurso.
@@ -206,7 +206,7 @@ Os tokens Delta só são válidos para um período específico, antes que o apli
 + Para objetos educacionais (**educationSchool**, **educationUser** e **educationClass**), o limite é de sete dias.
 + Para entidades do Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), o limite superior não é corrigido; depende do tamanho do cache de tokens do delta interno. Enquanto os novos tokens delta são adicionados ao cache, após a capacidade do cache ser excedida, os tokens delta mais antigos são excluídos.
 
-No caso de um token expirado, o serviço deve responder com um erro da série 40X com códigos de erro como `syncStateNotFound`. Para obter mais informações, consulte (Códigos de erro no Microsoft Graph](/graph/errors#code-property).
+No caso de um token expirado, o serviço deve responder com um erro da série 40X com códigos de erro como `syncStateNotFound`. Para obter mais informações, consulte [Códigos de erro no Microsoft Graph](/graph/errors#code-property).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
