@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7ebc2b2940ea7fd767279ee9fdbb0b4772c7330f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 079170c91bfa754f1f36dbef1404b7c92c0d1602
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021453"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420646"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
@@ -46,6 +46,7 @@ O recurso **plannerTask** representa uma tarefa do Planner no Microsoft 365. Uma
 |id|String|Somente leitura. A ID da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
+|prioridade|Int32|Prioridade da tarefa. O intervalo válido de valores está entre `0` e `10`, sendo o valor crescente de menor prioridade (`0` tem a prioridade mais alta e `10` tem a prioridade mais baixa).  Atualmente, o Planner interpreta valores `0` e `1`como "urgentes", `2`, `3` e `4`como "importantes", `5`, `6`, e `7` como "médio", e `8`, `9`, e `10` como "baixo".  Além disso, o Planner define o valor `1` para "urgente", `3` para "importante", `5` para "médio" e `9` para "baixo".|
 |planId|String|ID do plano ao qual a tarefa pertence.|
 |previewType|String|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Número de referências externas existentes na tarefa.|
@@ -74,12 +75,12 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "activeChecklistItemCount": 1024,
+  "activeChecklistItemCount": "Int32",
   "appliedCategories": {"@odata.type": "microsoft.graph.plannerAppliedCategories"},
   "assigneePriority": "String",
   "assignments": {"@odata.type": "microsoft.graph.plannerAssignments"},
   "bucketId": "String",
-  "checklistItemCount": 1024,
+  "checklistItemCount": "Int32",
   "completedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "completedDateTime": "String (timestamp)",
   "conversationThreadId": "String",
@@ -89,10 +90,11 @@ Veja a seguir uma representação JSON do recurso.
   "hasDescription": true,
   "id": "String (identifier)",
   "orderHint": "String",
-  "percentComplete": 1024,
+  "percentComplete": "Int32",
+  "priority": "Int32",
   "planId": "String",
   "previewType": "String",
-  "referenceCount": 1024,
+  "referenceCount": "Int32",
   "startDateTime": "String (timestamp)",
   "title": "String"
 }

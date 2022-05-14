@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f4ef9cd3bcefcbc9edd06bedc1b48388b8efca57
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 53497ac4745cecc18d86fe3341da43118ea22210
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129828"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420597"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 
@@ -30,11 +30,12 @@ O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que o plano foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|id|String| Somente leitura. A ID do plano. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
-|owner|String|A ID do [Grupo](group.md) que possui o plano. Deve haver um grupo válido para que esse campo possa ser definido. Depois de definida, essa propriedade não pode ser atualizada.|
-|title|String|Obrigatório. Título do plano.|
+|contêiner|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifica o contêiner do plano. Depois de definida, essa propriedade não pode ser atualizada. Obrigatório.|
 |createdBy|[identitySet](identityset.md)|Somente leitura. O usuário que criou o plano.|
+|createdDateTime|DateTimeOffset|Somente leitura. Data e hora em que o plano é criado. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|id|String| Somente leitura. A ID do plano. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
+|title|String|Obrigatório. Título do plano.|
+|proprietário (obsoleto) |String| Use antes a propriedade **contêiner**. A ID do [grupo](group.md) que possui o plano. Depois de definida, essa propriedade não pode ser atualizada. Esta propriedade não devolverá uma ID de grupo válida se o contêiner do plano não for um grupo.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -58,10 +59,15 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "container": {
+    "@odata.type": "microsoft.graph.plannerPlanContainer",
+    "containerId": "String",
+    "type": "String",
+    "url": "String"
+  },
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "owner": "String",
   "title": "String"
 }
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: c5d25b8de538d96784e5001107063355497c073c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 9213403b8651454bbec57a7dcd6ea0bf0cc09dd5
+ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335903"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65420576"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -29,10 +29,10 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - Uma [impressora][] (quando um trabalho de impressão da impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [printTaskDefinition][] na Impressão Universal. Para obter mais informações, consulte [Assinar para alterar as notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
 - Um [usuário][] no Azure Active Directory.
 
-Para obter os possíveis valores de caminho de recurso para cada recurso com suporte e saber como os recursos usam notificações de ciclo de vida, consulte [Usar a API Microsoft Graph para obter notificações de alteração](webhooks.md).
+Para obter os valores de caminho de recurso possíveis para cada recurso com suporte, consulte [Usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md). Para saber como usar notificações de ciclo de vida, consulte [Reduzir assinaturas ausentes e alterar notificações](/graph/webhooks-lifecycle).
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:-------|:------------|:------------|
@@ -47,8 +47,8 @@ Para obter os possíveis valores de caminho de recurso para cada recurso com sup
 | Propriedade | Tipo | Descrição | Recursos com Suporte |
 |:---------|:-----|:------------|:--------------|
 | ApplicationId | Cadeia de caracteres | Opcional. Identificador do aplicativo usado para criar a assinatura. Somente leitura. | Todos |
-| changeType | Cadeia de caracteres | Obrigatório. Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. <br><br>**Observação:** <li> As notificações de alteração de lista e item raiz da unidade dão suporte apenas `updated` changeType. <li>[Usuário](../resources/user.md) e [grupo](../resources/user.md) notificações de alteração dão suporte `updated` e `deleted` changeType. | Todos |
-| clientState | String | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação de alteração. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço pela comparação do valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida contendo cada notificação de alteração. | Todos |
+| changeType | Cadeia de caracteres | Necessário. Indica o tipo de alteração no recurso inscrito que gerará uma alteração de notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. <br><br>**Observação:** <li> As notificações de alteração de lista e item raiz da unidade dão suporte apenas `updated` changeType. <li>[Usuário](../resources/user.md) e [grupo](../resources/user.md) notificações de alteração dão suporte `updated` e `deleted` changeType. | Todos |
+| clientState | String | Opcional. Especifica o valor `clientState` da propriedade enviada pelo serviço em cada alteração de notificação. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a alteração de notificação foi proveniente do serviço comparando o valor `clientState` da propriedade enviada com a assinatura com o valor `clientState` da propriedade recebida com cada alteração de notificação. | Todos |
 | creatorId | String | Opcional. Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Somente leitura. | Todos |
 | encryptionCertificate | Cadeia de caracteres | Opcional. Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar os dados dos recursos nas notificações de alteração. Opcional, mas necessário quando **includeResourceData** for `true`. | Todos |
 | encryptionCertificateId | String | Opcional. Um aplicativo personalizado forneceu um identificador para ajudar a identificar o certificado necessário para decodificar os dados dos recursos. | Todos |
