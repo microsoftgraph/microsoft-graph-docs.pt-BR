@@ -1,17 +1,17 @@
 ---
-title: Visão geral dos SDKs de Microsoft Graph
+title: Visão geral Graph SDK do Microsoft Graph
 description: Descreve os SDKs disponíveis, os idiomas aos quais eles dão suporte e o valor que eles fornecem aos desenvolvedores.
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c8ea966ce6ef2510e484897816dc62f7359a882f
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 9a1d2713019de95661b532d32e00e2a918991b3e
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176797"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461510"
 ---
-# <a name="microsoft-graph-sdks-overview"></a>Visão geral dos SDKs de Microsoft Graph
+# <a name="microsoft-graph-sdk-overview"></a>Visão geral Graph SDK do Microsoft Graph
 
 Os SDKs do Microsoft Graph foram projetados para simplificar a criação de aplicativos de alta qualidade, eficientes e resilientes que acessam o Microsoft Graph. Os SDKs incluem dois componentes: uma biblioteca de serviços e uma biblioteca principal.
 

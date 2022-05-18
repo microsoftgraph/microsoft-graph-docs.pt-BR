@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 39718aad157a43d68c2c0b3fce4f8c63ef128983
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: a4d53873710269c68501b8cdd3201ae71083e015
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398010"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461335"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicy
 
@@ -21,7 +21,7 @@ Um unifiedRoleManagementPolicy especifica as várias políticas associadas a um 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar unifiedRoleManagementPolicies](../api/unifiedrolemanagementpolicy-list.md)|[Coleção unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Obtenha uma lista dos [objetos unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) e suas propriedades.|
+|[Listar unifiedRoleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)|[Coleção unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Obtenha uma lista dos [objetos unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) e suas propriedades.|
 |[Obter unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Leia as propriedades e as relações de um [objeto unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) considerando o escopo.|
 |[Listar regras](../api/unifiedrolemanagementpolicy-list-rules.md)|[Coleção unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Obtenha os recursos unifiedRoleManagementPolicyRule da propriedade de navegação de regras.|
 |[Obter regras](../api/unifiedrolemanagementpolicyrule-get.md)|[Coleção unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Obtenha as regras para um objeto unifiedRoleManagementPolicyRule.|
@@ -33,14 +33,14 @@ Um unifiedRoleManagementPolicy especifica as várias políticas associadas a um 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|Cadeia de caracteres|Descrição da política.|
-|displayName|Cadeia de caracteres|Nome de exibição da política.|
-|id|Cadeia de caracteres|Identificador exclusivo da política.|
+|description|String|Descrição da política.|
+|displayName|String|Nome de exibição da política.|
+|id|String|Identificador exclusivo da política.|
 |isOrganizationDefault|Booliano|Isso só pode ser definido como true para uma única política de todo o locatário que será aplicada a todos os escopos e funções. Defina scopeId como "/" e scopeType como Directory.|
 |lastModifiedBy|[identity](../resources/identity.md)|A identidade que modificou a configuração de função pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A hora em que a configuração de função foi modificada pela última vez.|
-|Scopeid|Cadeia de caracteres|A ID do escopo em que a política é criada. Pode ser para `/` o locatário ou uma ID de grupo. Obrigatório.|
-|scopeType|Cadeia de caracteres|O tipo do escopo em que a política é criada. Um dos`Directory`. `DirectoryRole` Obrigatório.|
+|Scopeid|String|A ID do escopo em que a política é criada. Pode ser para `/` o locatário ou uma ID de grupo. Obrigatório.|
+|scopeType|String|O tipo do escopo em que a política é criada. Um dos`Directory`. `DirectoryRole` Obrigatório.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

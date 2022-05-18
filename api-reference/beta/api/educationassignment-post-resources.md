@@ -1,16 +1,16 @@
 ---
 title: Criar educationAssignmentResource
-description: Criar um recurso de atribuição de educação.
+description: Crie um recurso de atribuição de educação.
 ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 58af8c78229aa5f2656eac1403a19f02d7729406
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6cbf5e876145bdf342397b162257068904bb8053
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103204"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461293"
 ---
 # <a name="create-educationassignmentresource"></a>Criar educationAssignmentResource
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um [recurso de atribuição](../resources/educationassignmentresource.md). Você pode criar os seguintes tipos de recursos de atribuição:
+Crie um recurso [de atribuição](../resources/educationassignmentresource.md). Você pode criar os seguintes tipos de recursos de atribuição:
 
 - [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
@@ -26,19 +26,20 @@ Criar um [recurso de atribuição](../resources/educationassignmentresource.md).
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
+- [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
-Cada recurso tem uma propriedade @odata.type para indicar qual tipo de recurso está sendo criado. 
+Cada recurso tem uma @odata.type para indicar qual tipo de recurso está sendo criado. 
 
 > [!IMPORTANT] 
-> Antes de carregar um recurso de atribuição, você deve configurar a pasta [de](../api/educationassignment-setupresourcesfolder.md) recursos para o [educationAssignment](../resources/educationassignment.md) para carregar os arquivos.
+> Antes de carregar um recurso de atribuição, você [](../api/educationassignment-setupresourcesfolder.md) deve configurar a pasta de recursos para [o educationAssignment](../resources/educationassignment.md) para carregar os arquivos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +54,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um dos seguintes tipos de recurso: 
+No corpo da solicitação, forneça uma representação JSON de um dos seguintes tipos de recursos: 
 
 - [educationFileResource](../resources/educationfileresource.md)
 - [educationExcelResource](../resources/educationexcelresource.md)
@@ -61,11 +62,12 @@ No corpo da solicitação, fornece uma representação JSON de um dos seguintes 
 - [educationLinkResource](../resources/educationlinkresource.md)
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
+- [educationTeamsAppResource](../resources/educationteamsappresource.md)
 
->**Observação:** Você não pode usar essa operação para criar [um educationExternalResource](../resources/educationexternalresource.md).
+>**Nota:** Você não pode usar essa operação para criar [um educationExternalResource](../resources/educationexternalresource.md).
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto educationAssignmentResource](../resources/educationassignmentresource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto educationAssignmentResource](../resources/educationassignmentresource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-create-an-educationlinkresource"></a>Exemplo 1: Criar um educationLinkResource
@@ -589,11 +591,85 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-7-create-an-educationteamsappresource"></a>Exemplo 7: Criar um educationTeamsAppResource
+#### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","1618dfb0-3ff2-4edf-8d5c-b8f81df00e80"], 
+  "name": "create_educationTeamsAppResource_from_educationassignment"
+}-->
+```http
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
+Content-type: application/json
+
+{
+    "distributeForStudentWork": false,
+    "resource": {
+        "displayName": "Template - My Story",
+        "appId": "6fbeb90c-3d55-4bd5-82c4-bfe824be4300",
+        "appIconWebUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2",
+        "teamsEmbeddedContentUrl": "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1",
+        "webUrl": "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08",
+        "@odata.type": "#microsoft.graph.educationTeamsAppResource"
+    }
+}
+```
+
+#### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationMediaResource"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/resources/$entity",
+  "distributeForStudentWork": false,
+  "id": "5bae19da-a720-4046-8af8-f56b9ae62d25",
+  "resource": {
+      "@odata.type": "#microsoft.graph.educationTeamsAppResource",
+      "displayName": "Template - My Story",
+      "createdDateTime": "2022-04-22T13:51:20.577384Z",
+      "lastModifiedDateTime": "2022-04-22T13:51:20.577384Z",
+      "appId": "6fbeb90c-3d55-4bd5-82c4-bfe824be4300",
+      "appIconWebUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2",
+      "teamsEmbeddedContentUrl": "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1",
+      "webUrl": "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08",
+      "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+              "displayName": null
+          }
+      },
+      "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+              "displayName": null
+          }
+      }
+  }
+}
+```
+
+
 
 ## <a name="see-also"></a>Confira também
 
 * [Estados, transições e limitações para atribuições e envios](/graph/assignments-submissions-states-transition)
-* [Upload arquivos para atribuições e envios de educação](/graph/education-upload-resource-overview)
+* [Upload arquivos para tarefas e envios educacionais](/graph/education-upload-resource-overview)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,12 +4,12 @@ description: Saiba como usar a API Privileged Identity Management (PIM) no Micro
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 78e523a12d59ac7b25482da26f3fb594e9517657
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 0f15636c80b72ba67f56a28d4352236fa4c0e19e
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247186"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461209"
 ---
 # <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>Tutorial: Usar a API Privileged Identity Management (PIM) para atribuir Azure AD funções
 
@@ -469,7 +469,5 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>Confira também
 
++ [Tutorial: Atribuir Azure AD funções no Privileged Identity Management usando o Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim)
 + [Visão geral do gerenciamento de funções por meio do PIM](/graph/api/resources/privilegedidentitymanagementv3-overview)
-+ [Azure AD funções internas](/azure/active-directory/roles/permissions-reference#all-roles)
-+ [Habilitar a autenticação Azure AD multifator por usuário para proteger eventos de entrada](/azure/active-directory/authentication/howto-mfa-userstates)
-+ [Tipo de recurso unifiedRoleEligibilityScheduleRequest](/graph/api/resources/unifiedroleeligibilityschedulerequest)

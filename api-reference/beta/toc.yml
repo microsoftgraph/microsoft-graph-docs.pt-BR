@@ -264,7 +264,7 @@ items:
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -472,7 +472,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -800,7 +800,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1203,7 +1203,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -10769,7 +10769,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -11005,7 +11005,7 @@ items:
             items:
               - name: Privilégios de administrador delegado granular (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     displayName: 'GDAP, Partner Center, CSP, VAR'
                     href: resources/delegatedadminrelationships-api-overview.md
                   - name: Relações de administrador delegado
@@ -11487,6 +11487,8 @@ items:
                           - name: Obter
                             href: api/unifiedrbacresourceaction-get.md
                   - name: Privileged Identity Management
+                    displayName: 'Privileged identity management, PIM'
+                    href: resources/privilegedidentitymanagementv3-overview.md
                     items:
                       - name: Atribuições de função
                         items:
@@ -11494,9 +11496,9 @@ items:
                             href: resources/unifiedroleassignmentschedulerequest.md
                             items:
                               - name: Listar
-                                href: api/unifiedroleassignmentschedulerequest-list.md
+                                href: api/rbacapplication-list-roleassignmentschedulerequests.md
                               - name: Criar
-                                href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+                                href: api/rbacapplication-post-roleassignmentschedulerequests.md
                               - name: Obter
                                 href: api/unifiedroleassignmentschedulerequest-get.md
                               - name: Cancelar
@@ -11507,7 +11509,7 @@ items:
                             href: resources/unifiedroleassignmentschedule.md
                             items:
                               - name: Lista
-                                href: api/unifiedroleassignmentschedule-list.md
+                                href: api/rbacapplication-list-roleassignmentschedules.md
                               - name: Obter
                                 href: api/unifiedroleassignmentschedule-get.md
                               - name: Filtrar pelo usuário atual
@@ -11516,7 +11518,7 @@ items:
                             href: resources/unifiedroleassignmentscheduleinstance.md
                             items:
                               - name: Lista
-                                href: api/unifiedroleassignmentscheduleinstance-list.md
+                                href: api/rbacapplication-list-roleassignmentscheduleinstances.md
                               - name: Obter
                                 href: api/unifiedroleassignmentscheduleinstance-get.md
                               - name: Filtrar pelo usuário atual
@@ -11527,9 +11529,9 @@ items:
                             href: resources/unifiedroleeligibilityschedulerequest.md
                             items:
                               - name: Listar
-                                href: api/unifiedroleeligibilityschedulerequest-list.md
+                                href: api/rbacapplication-list-roleeligibilityschedulerequests.md
                               - name: Criar
-                                href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+                                href: api/rbacapplication-post-roleeligibilityschedulerequests.md
                               - name: Obter
                                 href: api/unifiedroleeligibilityschedulerequest-get.md
                               - name: Cancelar
@@ -11540,7 +11542,7 @@ items:
                             href: resources/unifiedroleeligibilityschedule.md
                             items:
                               - name: Lista
-                                href: api/unifiedroleeligibilityschedule-list.md
+                                href: api/rbacapplication-list-roleeligibilityschedules.md
                               - name: Obter
                                 href: api/unifiedroleeligibilityschedule-get.md
                               - name: Filtrar pelo usuário atual
@@ -11549,7 +11551,7 @@ items:
                             href: resources/unifiedroleeligibilityscheduleinstance.md
                             items:
                               - name: Lista
-                                href: api/unifiedroleeligibilityscheduleinstance-list.md
+                                href: api/rbacapplication-list-roleeligibilityscheduleinstances.md
                               - name: Obter
                                 href: api/unifiedroleeligibilityscheduleinstance-get.md
                               - name: Filtrar pelo usuário atual
@@ -11575,7 +11577,7 @@ items:
                             href: resources/unifiedrolemanagementpolicyassignment.md
                             items:
                               - name: Lista
-                                href: api/unifiedRoleManagementPolicyAssignment-list.md
+                                href: api/policyroot-list-rolemanagementpolicyassignments.md
                               - name: Obter
                                 href: api/unifiedrolemanagementpolicyassignment-get.md
           - name: Identidade e entrada
@@ -11978,7 +11980,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/policy-overview.md
                   - name: Política de tempo limite baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -13255,7 +13257,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13419,7 +13421,7 @@ items:
                     href: api/personname-update.md
                   - name: Excluir
                     href: api/personname-delete.md
-              - name: Observações
+              - name: Notas
                 items:
                   - name: Anotação de pessoa
                     href: resources/personannotation.md
@@ -13722,7 +13724,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13815,7 +13817,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md

@@ -5,18 +5,18 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 67fb91da3601c467e33725064ca68753f35eab86
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 59adc6589ea351d565248797aeb9384b9ae3f890
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133888"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461440"
 ---
 # <a name="requestschedule-resource-type"></a>Tipo de recurso requestSchedule
 
 Namespace: microsoft.graph
 
-No PIM, use esse recurso para definir o agendamento para quando a entidade de segurança terá uma atribuição de função qualificada ou ativa.
+No PIM ao criar ou atualizar um objeto [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) ou [unifiedRoleEligibilityScheduleRequest](unifiedroleeligibilityschedulerequest.md) , use esse recurso para definir o agendamento de quando a entidade de segurança terá uma atribuição de função qualificada ou ativa. As configurações permitidas para esse objeto dependem das [configurações para a Azure AD função](../api/unifiedrolemanagementpolicy-list-rules.md).
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

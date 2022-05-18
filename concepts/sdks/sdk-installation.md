@@ -3,12 +3,12 @@ title: Instalar o Microsoft Graph SDK
 description: Fornece instruções para instalar os SDKs C#, Java, Javascript, Objective-C, PHP e Ruby Microsoft Graph.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 770b1e72d418a3f0308651b8fdd93a5e2fb7e834
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 048d9fc3daee48d5b41623916dab937eae595f78
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848766"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461426"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Instalar os SDKs do Microsoft Graph
 
@@ -94,31 +94,31 @@ O Microsoft Graph SDK javascript está incluído nos seguintes pacotes:
 - @microsoft/microsoft-graph-client ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-client)) – a biblioteca principal para fazer chamadas para o Microsoft Graph.
 - @microsoft/microsoft-graph-types ([npm](https://www.npmjs.com/package/@microsoft/microsoft-graph-types)) – os tipos Typescript para as entidades do Microsoft Graph.
 
-Você pode usar [o npm](https://www.npmjs.com) para instalar o SDK do Microsoft Graph Javascript:
+Você pode usar [npm](https://www.npmjs.com) para instalar o SDK Graph Javascript do Microsoft Graph:
 
 ```Shell
 npm install @microsoft/microsoft-graph-client --save
 npm install @microsoft/microsoft-graph-types --save-dev
 ```
 
-## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Instalar o SDK do Microsoft Graph Objective-C
+## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Instalar o Microsoft Graph Objective-C SDK
 
-O SDK do Microsoft Graph Objective-C dá suporte a plataformas iOS e macOS e pode ser instalado em seu projeto usando CocoaPods ou Carthage.
+O Microsoft Graph Objective-C SDK dá suporte a plataformas iOS e macOS e pode ser instalado em seu projeto usando CocoaPods ou Carthage.
 
 ### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>Instalar o SDK do Microsoft Graph Objective-C usando Cocoapods
 
-Adicione a seguinte linha em seu podfile para incluir o SDK do Objective-C Microsoft Graph e o SDK de Autenticação Objective-C do Microsoft Graph em seu projeto xcode:
+Adicione a seguinte linha em seu podfile para incluir o SDK do Objective-C Microsoft Graph e o SDK de Autenticação do Microsoft Graph Objective-C em seu projeto xcode:
 
 ```ruby
 pod 'MSGraphClientSDK'
 pod 'MSGraphMSALAuthProvider'
 ```
 
-### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Instalar o SDK do Microsoft Graph Objective-C usando o Carthage
+### <a name="install-the-microsoft-graph-objective-c-sdk-using-carthage"></a>Instalar o Microsoft Graph Objective-C SDK usando o Carthage
 
-Execute as etapas a seguir para instalar o SDK do Microsoft Graph Objective-C e o SDK de Autenticação Objective-C do Microsoft Graph usando o gerenciador de pacotes [do Carthage](https://github.com/Carthage/Carthage).
+Execute as etapas a seguir para instalar o SDK do Microsoft Graph Objective-C e o SDK do Microsoft Graph Objective-C Auth usando o gerenciador [de pacotes do Carthage](https://github.com/Carthage/Carthage).
 
-1. Crie um **Cartfile** que especifica o SDK do Objective-C GitHub e a marca [de versão](https://github.com/microsoftgraph/msgraph-sdk-objc/releases) para o destino.
+1. Crie um **Cartfile** que especifica o Objective-C SDK GitHub e a marca [de versão para](https://github.com/microsoftgraph/msgraph-sdk-objc/releases) o destino.
 
     ```text
     github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
@@ -127,7 +127,7 @@ Execute as etapas a seguir para instalar o SDK do Microsoft Graph Objective-C e 
 
 1. Execute `carthage update`. Isso buscará dependências em uma pasta Carthage/Checkouts e criará a biblioteca MSGraphClientSDK.
 
-1. Usando o Xcode, na guia Configurações Gerais  do destino do aplicativo, na seção **Estruturas Vinculadas e Bibliotecas**, arraste e solte o **MSGraphClientSDK.framework** e **o MSGraphMSALAuthProvider.framework** da pasta Carthage/Build no disco.
+1. Usando Xcode, na guia Configurações Gerais do destino do aplicativo, na seção **Estruturas e Bibliotecas Vinculadas**, arraste e solte **o MSGraphClientSDK.framework** e **o MSGraphMSALAuthProvider.framework** da pasta Carthage/Build no disco.
 
 1. Na guia Configurações de **Fases de Build** do destino do aplicativo, clique **+** no ícone e escolha **Nova Fase de Script de Execução**. Crie um script de execução no qual você especifique seu shell (por exemplo: /bin/sh) e adicione o seguinte conteúdo ao script:
 
@@ -164,7 +164,17 @@ composer require microsoft/microsoft-graph
 
 ## <a name="install-the-microsoft-powershell-sdk"></a>Instalar o SDK do Microsoft PowerShell
 
-Consulte [Instalar o SDK do PowerShell do Microsoft Graph](/powershell/microsoftgraph/installation.md).
+Todos os módulos são publicados [Galeria do PowerShell](https://www.powershellgallery.com/packages/Microsoft.Graph). Para instalar:
+
+``` powershell
+Install-Module Microsoft.Graph
+```
+
+Se você estiver atualizando dos módulos de visualização, `Install-Module` execute com os parâmetros AllowClobber e Force para evitar conflitos de nome de comando:
+
+``` powershell
+ Install-Module Microsoft.Graph -AllowClobber -Force
+```
 
 ## <a name="install-the-microsoft-graph-ruby-sdk"></a>Instalar o Microsoft Graph Ruby SDK
 

@@ -3,12 +3,12 @@ title: Usar os SDKs Graph Microsoft com a API beta
 description: Descreve como usar os SDKs do Microsoft Graph com a versão beta da API.
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: aee313a4f4e5eb9efd68c9fd0877dcc96722633c
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: 2761c88fe43a5f1994c53ae8016486f2fa139962
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733189"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65460682"
 ---
 # <a name="use-the-microsoft-graph-sdks-with-the-beta-api"></a>Usar os SDKs Graph Microsoft com a API beta
 
@@ -22,7 +22,10 @@ Muitos dos SDKs do Microsoft Graph usam o ponto de [extremidade do Microsoft Gra
 Para chamar a API beta, você deve instalar o [Microsoft.Graph. Pacote beta](https://www.nuget.org/packages/Microsoft.Graph.Beta). O uso é o mesmo que o `Microsoft.Graph` pacote.
 
 ```csharp
-using Microsoft.Graph;
+// Version 5.x
+using Microsoft.Graph.Beta;
+// Version 4.x and earlier
+// using Microsoft.Graph;
 
 // Create a new instance of GraphServiceClient.
 GraphServiceClient graphClient = new GraphServiceClient(...);

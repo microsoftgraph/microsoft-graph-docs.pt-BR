@@ -1,28 +1,28 @@
 ---
-title: Criar unifiedRoleEligibilityScheduleRequest
+title: Criar roleEligibilityScheduleRequest
 description: No PIM, solicite uma qualificação de função para uma entidade de segurança por meio do objeto unifiedRoleEligibilityScheduleRequest.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c778b6bf713bafd3199d7fa2fe8743ecdca4bf19
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 1bf7255803de1632512ae24afb0b17007bb92fae
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206675"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461342"
 ---
-# <a name="create-unifiedroleeligibilityschedulerequest"></a>Criar unifiedRoleEligibilityScheduleRequest
+# <a name="create-roleeligibilityschedulerequest"></a>Criar roleEligibilityScheduleRequest
 Namespace: microsoft.graph
 
 No PIM, solicite uma qualificação de função para uma entidade de segurança por meio do objeto [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) . Essa operação permite que administradores e usuários qualificados adicionem, revoguem ou estendam atribuições qualificadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleEligibilitySchedule.ReadWrite.Directory|
+|Delegada (conta corporativa ou de estudante)|RoleEligibilitySchedule.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleAssignmentSchedule.ReadWrite.Directory|
 
@@ -50,13 +50,13 @@ Você pode especificar as propriedades a seguir ao criar **um unifiedRoleEligibi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ação|unifiedRoleScheduleRequestActions|Representa o tipo de operação na solicitação de qualificação de função. Os valores possíveis são: , , , , , `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, , `selfRenew`, `unknownFutureValue`. `selfActivate``adminRemove``adminUpdate``adminAssign` <br/><ul><li>`adminAssign`: para que os administradores atribuam funções qualificadas às entidades de segurança.</li><li>`adminRemove`: para que os administradores removam funções qualificadas das entidades de segurança.</li><li> `adminUpdate`: para que os administradores alterem as eligibilidades de função existentes.</li><li>`adminExtend`: para que os administradores estendam as eligibilidades de função expiradas.</li><li>`adminRenew`: para que os administradores renovem as eligibilidades expiradas.</li><li>`selfActivate`: para que os usuários ativem suas atribuições.</li><li>`selfDeactivate`: para que os usuários desativem suas atribuições ativas.</li><li>`selfExtend`: para que os usuários solicitem a extensão de suas atribuições de expiração.</li><li>`SelfRenew`: para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>|
-|appScopeId|Cadeia de Caracteres|Identificador do escopo específico do aplicativo quando a elegibilidade de função está no escopo de um aplicativo. O escopo de uma elegibilidade de função determina o conjunto de recursos para os quais a entidade de segurança está qualificada para acessar. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|directoryScopeId|Cadeia de Caracteres|Identificador do objeto de diretório que representa o escopo da elegibilidade da função. O escopo de uma elegibilidade de função determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|isValidationOnly|Boolean|Determina se a chamada é uma validação ou uma chamada real. Defina essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação. Opcional.|
-|Justificação|Cadeia de Caracteres|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleEligibilityScheduleRequest** . Opcional quando **a ação** é `adminRemove`.|
-|principalId|Cadeia de Caracteres|Identificador da entidade de segurança que recebeu a qualificação de função. Obrigatório.|
-|roleDefinitionId|Cadeia de Caracteres|Identificador do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) que está sendo atribuído à entidade de segurança. Obrigatório.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O período de qualificação da função. No momento, não há suporte para agendamentos recorrentes. Opcional quando **a ação** é `adminRemove`.|
+|appScopeId|String|Identificador do escopo específico do aplicativo quando a elegibilidade de função está no escopo de um aplicativo. O escopo de uma elegibilidade de função determina o conjunto de recursos para os quais a entidade de segurança está qualificada para acessar. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|directoryScopeId|String|Identificador do objeto de diretório que representa o escopo da elegibilidade da função. O escopo de uma elegibilidade de função determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|isValidationOnly|Booliano|Determina se a chamada é uma validação ou uma chamada real. Defina essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação. Opcional.|
+|Justificação|String|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleEligibilityScheduleRequest** . Opcional quando **a ação** é `adminRemove`. Se essa propriedade é necessária ou opcional também depende das [configurações para a Azure AD função](../api/unifiedrolemanagementpolicy-list-rules.md).|
+|principalId|String|Identificador da entidade de segurança que recebeu a qualificação de função. Obrigatório.|
+|roleDefinitionId|String|Identificador do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) que está sendo atribuído à entidade de segurança. Obrigatório.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O período de qualificação da função. Opcional quando **a ação** é `adminRemove`. O período de qualificação depende das [configurações da Azure AD função](../api/unifiedrolemanagementpolicy-list-rules.md).|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Detalhes do tíquete vinculados à solicitação de qualificação de função, incluindo detalhes do número do tíquete e do sistema de tíquetes. Opcional|
 
 

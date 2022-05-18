@@ -5,42 +5,45 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 905bc47f41271bcaff38ab16431bcfbf6c555272
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: cd48eb10d40a44d6dfbf392c7207ddd7bf9b4b6b
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61402906"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461461"
 ---
 # <a name="get-subjectrightsrequest"></a>Obter subjectRightsRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto subjectRightsRequest.](../resources/subjectRightsRequest.md)
+Leia as propriedades e as relações de um [objeto subjectRightsRequest](../resources/subjectRightsRequest.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método não dá suporte ao parâmetro [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método não dá suporte ao parâmetro [de consulta OData para](/graph/query-parameters) ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto subjectRightsRequest](../resources/subjectRightsRequest.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto subjectRightsRequest](../resources/subjectRightsRequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -83,7 +86,7 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 [!INCLUDE [sample-code](../includes/snippets/java/get-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -103,19 +106,19 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-    {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
+{
+    "type": "export",
+    "dataSubjectType": "customer",
     "regulations": [
-        "String"
+        "GDPR"
     ],
-    "displayName": "String",
-    "description": "String",
+    "displayName": "Export request for Monica Thompson",
+    "description": "This is a export request",
     "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
+    "internalDueDateTime": "2022-06-20T22:42:28Z",
+    "lastModifiedDateTime": "2022-04-20T22:42:28Z",
+    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+    "createdDateTime": "2022-04-19T22:42:28Z",
     "stages": [
         {
             "stage": "contentRetrieval",
@@ -139,22 +142,36 @@ Content-Type: application/json
         }
     ],
     "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "user": {
+            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+            "displayName": "srradmin@contoso.com"
+        }
     },
     "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+        "firstName": "Monica",
+        "lastName": "Thompson",
+        "email": "Monica.Thompson@contoso.com",
+        "residency": "USA",
+        "SSN": "123-456-7890"
     },
     "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
+        "id": "5484809c-fb5b-415a-afc6-da7ff601034e",
+        "webUrl": "https://teams.contoso.com/teams/teamid"
+    },
+    "includeAllVersions": false,
+    "pauseAfterEstimate": true,
+    "includeAuthoredContent": true,
+    "externalId": null,
+    "contentQuery": "(('Monica Thompson' OR 'Monica.Thompson@contoso.com') OR (participants=Monica.Thompson@contoso.com))",
+    "mailboxLocations": null,
+    "siteLocations": {
+        "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
     }
 }
 ```

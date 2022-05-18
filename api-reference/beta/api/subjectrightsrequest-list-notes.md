@@ -1,40 +1,43 @@
 ---
 title: Listar anotações
-description: Obter os recursos authoredNote da propriedade de navegação notes.
+description: Obtenha os recursos authoredNote da propriedade de navegação de anotações.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: b9290ad1c10f2b8ec3e3fe36afcce619f2630d01
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: e1a934f721f079699e63920e58e62d551d4e1534
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403093"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461538"
 ---
 # <a name="list-notes"></a>Listar anotações
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de anotações autorais associadas a uma solicitação de direitos de assunto. 
+Obtenha a lista de anotações autoradas associadas a uma solicitação de direitos de assunto. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/notes
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
@@ -51,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de objetos `200 OK` [authoredNote](../resources/authorednote.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos authoredNote](../resources/authorednote.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -82,7 +85,7 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 [!INCLUDE [sample-code](../includes/snippets/java/list-authorednote-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-authorednote-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -106,11 +109,17 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/privacy/subjectRightsRequests('77f885ac-1d7b-4317-bde8-4cb3d24a3ed8')/notes",
     "value": [
         {
-            "id": "String (identifier)",
-            "createdDateTime": "String (timestamp)",
-            "author": { "@odata.type": "microsoft.graph.identitySet"},
+            "id": "73A1E594-D973-4740-B1CC-42FD21727543",
+            "createdDateTime": "2022-06-20T22:42:28Z",
+            "author": {
+                "user": {
+                    "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+                    "displayName": "srradmin@contoso.com"
+                }
+            },
             "content": {
-                 "@odata.type": "microsoft.graph.itemBody"
+                "content": "Please review all the files tagged with follow up.",
+                "contentType": "text"
             }
         }
     ]

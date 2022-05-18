@@ -5,36 +5,39 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 007df34dfddc56344627f21419b37c3a9ea6937e
-ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
+ms.openlocfilehash: 896790cb8a6c69a247695819b8d3f26cef2e2410
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61403079"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461482"
 ---
 # <a name="update-subjectrightsrequest"></a>Atualizar subjectRightsRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto subjectRightsRequest.](../resources/subjectRightsRequest.md)
+Atualize as propriedades de um [objeto subjectRightsRequest](../resources/subjectRightsRequest.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|SubjectRightsRequest.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+PATCH /security/subjectRightsRequests/{subjectRightsRequestId}
 PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
@@ -45,20 +48,19 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto subjectRightsRequest.](../resources/subjectRightsRequest.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto subjectRightsRequest](../resources/subjectRightsRequest.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao atualizar [subjectRightsRequest](../resources/subjectRightsRequest.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignedTo|[microsoft.graph.identity](../resources/identity.md)|As informações de identidade para o usuário ao que a solicitação é atribuída.|
 |description|String|Descrição atualizada para a solicitação.|
 |displayName|String|Nome atualizado da solicitação.|
-|internalDueDateTime|DateTimeOffset|Data de vencimento interna atualizada para a solicitação.|
+|internalDueDateTime|DateTimeOffset|Data de conclusão interna atualizada para a solicitação.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto subjectRightsRequest](../resources/subjectRightsRequest.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [subjectRightsRequest](../resources/subjectRightsRequest.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -75,8 +77,8 @@ PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRig
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.subjectRightsRequest",
-  "internalDueDateTime": "2021-08-30T00:00:00Z"
+    "@odata.type": "#microsoft.graph.subjectRightsRequest",
+    "internalDueDateTime": "2021-08-30T00:00:00Z"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -95,7 +97,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -115,36 +117,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
-    "regulations": [
-        "String"
-    ],
-    "displayName": "String",
-    "description": "String",
-    "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
-    "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-    },
-    "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
-    },
-    "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
-    }
+    "displayName": "Updated case name for Diego Siciliani",
+    "description": "This is an updated case",
+    "internalDueDateTime": "2022-07-20T22:42:28Z"
 }
 ```
 

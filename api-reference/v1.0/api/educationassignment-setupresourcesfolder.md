@@ -1,16 +1,16 @@
 ---
 title: 'educationAssignment: setUpResourcesFolder'
-description: Crie uma SharePoint para carregar arquivos para um determinado educationAssignment.
+description: Crie uma SharePoint para carregar arquivos para uma determinada educationAssignment.
 ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d7847f6e38f6a4ce1ce64773f0ced248417beae1
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2416a4a53c1b8cfee579fa604a5f8ba873875233
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936380"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65460667"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment: setUpResourcesFolder
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Crie uma SharePoint para carregar arquivos para um [determinado educationAssignment](../resources/educationassignment.md). 
 
-O professor determina os recursos a carregar na pasta da atribuição. 
+O professor determina os recursos a serem carregados na pasta da tarefa. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
 |Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -37,14 +37,15 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | `{token}` de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Você precisa fornecer um json vazio `{}` como corpo da solicitação para este método.
-## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) no corpo da solicitação.
+No corpo da solicitação, forneça um objeto JSON vazio `{}` para esse método.
 
-Se a atribuição **especificada já** tiver uma pasta, este método retornará uma e uma resposta `400 Bad request` de erro.
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-1.0&preserve-view=true) no corpo da solicitação.
+
+Se a atribuição **especificada** já tiver uma pasta, esse método retornará uma `400 Bad request` e uma resposta de erro.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -86,7 +87,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo de uma resposta. 
+Este é um exemplo de resposta. 
 
 <!-- {
   "blockType": "response",
@@ -148,7 +149,7 @@ Content-type: application/json
 }
 ```
 
-Se a atribuição **especificada já** tiver uma pasta, este método retornará uma e uma resposta `400 Bad request` de erro.
+Se a atribuição **especificada** já tiver uma pasta, esse método retornará uma `400 Bad request` e uma resposta de erro.
 
 <!-- {
   "blockType": "response",

@@ -1,40 +1,43 @@
 ---
 title: 'subjectRightsRequest: getFinalReport'
-description: Obter o relatório final de uma solicitação de direitos de assunto.
+description: Obtenha o relatório final de uma solicitação de direitos de entidade.
 author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c4341f58e52ce37be2071a4699d0a14f11923aa5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dc4fca0e134b1d596783727360da1e630bd41a38
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098761"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461531"
 ---
 # <a name="subjectrightsrequest-getfinalreport"></a>subjectRightsRequest: getFinalReport
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o relatório final de uma solicitação de direitos de assunto. O relatório é um arquivo de texto que contém informações sobre os arquivos incluídos pelo administrador de privacidade.
+Obtenha o relatório final de uma solicitação de direitos de entidade. O relatório é um arquivo de texto que contém informações sobre os arquivos que foram incluídos pelo administrador de privacidade.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 ```
 
@@ -48,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e um Stream no corpo da resposta.
+Se tiver êxito, essa função retornará um `200 OK` código de resposta e um Fluxo no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

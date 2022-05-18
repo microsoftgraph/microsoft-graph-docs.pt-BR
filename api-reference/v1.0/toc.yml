@@ -428,7 +428,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -4871,10 +4871,9 @@ items:
                       - name: Excluir
                         href: api/unifiedroleassignment-delete.md
                   - name: Privileged Identity Management
+                    displayName: 'Privileged identity management, PIM'
+                    href: resources/privilegedidentitymanagementv3-overview.md
                     items:
-                      - name: Visão Geral
-                        displayName: 'Privileged identity management, PIM'
-                        href: resources/privilegedidentitymanagementv3-overview.md
                       - name: Atribuições de função
                         items:
                           - name: Agendar solicitações
@@ -5693,7 +5692,7 @@ items:
                         href: api/agreement-post-files.md
                       - name: Listar arquivos localizados
                         href: api/agreement-list-files.md
-      - name: Correio
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -6613,7 +6612,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano

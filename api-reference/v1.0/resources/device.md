@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: b6248929247c72a742a350a3d4af58f86af98efb
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: cda079886ed0bde20238d338cbba1428305b0d7c
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322237"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461587"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -29,11 +29,11 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Listar dispositivos](../api/device-list.md) | Coleção [device](device.md)| Recupere uma lista de dispositivos registrados no diretório. |
 |[Atualizar dispositivo](../api/device-update.md) | [device](device.md) |Atualize as propriedades de um objeto device. |
 |[Excluir dispositivo](../api/device-delete.md) | Nenhuma |Exclua um objeto device. |
-|[Listar memberOf](../api/device-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Listar os grupos dos que o dispositivo é um membro direto. |
+|[Listar memberOf](../api/device-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Liste os grupos dos qual o dispositivo é membro direto. |
 |[Listar registeredOwners](../api/device-list-registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
 |[Listar registeredUsers](../api/device-list-registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
 |[checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de grupos, função de diretório ou objetos de unidade administrativa. |
-|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Retorne todos os grupos, unidades administrativas e funções de diretório das quais o dispositivo é membro. A verificação é transitiva. |
+|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Retornar todos os grupos, unidades administrativas e funções de diretório dos qual o dispositivo é membro. A verificação é transitiva. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
@@ -47,36 +47,36 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Obrigatório. O padrão é `true`. <br/><br/> Suporta `$filter` (`eq`, `ne`, `not`, `in`). Somente chamadores nas funções Administrador Global e Administrador de Dispositivos de Nuvem podem definir essa propriedade.|
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Obrigatório. O padrão é `true`. <br/><br/> Suporta `$filter` (`eq`, `ne`, `not`, `in`). Somente chamadores nas funções administrador global e administrador de dispositivo de nuvem podem definir essa propriedade.|
 |alternativeSecurityIds|Coleção [alternativeSecurityId](alternativeSecurityId.md)| Apenas para uso interno. Não anulável. Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
-|approximateLastSignInDateTime|DateTimeOffset| O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Suporta `$filter` ( , , , , e em `eq` `ne` `not` `ge` `le` `eq` `null` valores) e `$orderBy` . |
-|complianceExpirationDateTime|DateTimeOffset| O timestamp quando o dispositivo não é mais considerado compatível. O tipo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
+|approximateLastSignInDateTime|DateTimeOffset| O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. Dá `$filter` suporte a (`eq`, `not``ne`, `ge`, `le`, e `eq` em `null` valores) e `$orderBy`. |
+|complianceExpirationDateTime|DateTimeOffset| O carimbo de data/hora quando o dispositivo não é mais considerado compatível. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 |deviceId|Cadeia de caracteres| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. Suporta `$filter` (`eq`, `ne`, `not`, `startsWith`).|
-|deviceMetadata|String| Apenas para uso interno. Definido como `null`. |
+|deviceMetadata|String| Apenas para uso interno. Definido como `null` |
 |deviceVersion|Int32| Apenas para uso interno. |
 |displayName|String|O nome de exibição do dispositivo. Obrigatório. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`.  |
-| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém atributos de extensão 1 a 15 para o dispositivo. Os atributos de extensão individuais não são selecionáveis. Essas propriedades são masterizados na nuvem e podem ser definidas durante a criação ou atualização de um objeto de dispositivo no Azure AD. <br><br>Suporte `$filter` (`eq`, `not`, `startsWith`, e `eq` no `null` valores). |
+| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém atributos de extensão de 1 a 15 para o dispositivo. Os atributos de extensão individuais não são selecionáveis. Essas propriedades são dominadas na nuvem e podem ser definidas durante a criação ou atualização de um objeto de dispositivo Azure AD. <br><br>Suporte `$filter` (`eq`, `not`, `startsWith`, e `eq` no `null` valores). |
 |id|String|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
-|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com políticas de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, `false` . Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`).|
-|isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel). caso contrário, `false` . Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional de dispositivo ou por um [aplicativo MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`). |
+|isCompliant|Booliano|`true`se o dispositivo estiver em conformidade com as políticas de MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Somente leitura. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`).|
+|isManaged|Booliano|`true`se o dispositivo for gerenciado por um aplicativo MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. Suporta `$filter` (`eq`, `ne`, `not`). |
 |fabricante|String| Fabricante do dispositivo. Somente leitura. |
 |mdmAppId|String|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |modelo|String| Modelo do dispositivo. Somente leitura. |
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 |onPremisesSyncEnabled|Booliano|`true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sido sincronizado de um diretório local (padrão).  Somente leitura. Suporte `$filter` (`eq`, `ne`, `not`, `in`, e `eq` no `null` valores). |
-|operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. Suporta `$filter` ( , , , , , e sobre `eq` `ne` `not` `ge` `le` `startsWith` `eq` `null` valores). |
-|operatingSystemVersion|String|A versão do sistema operacional do dispositivo. Obrigatório. Suporta `$filter` ( , , , , , e sobre `eq` `ne` `not` `ge` `le` `startsWith` `eq` `null` valores). |
-|physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
-|profileType|deviceProfileType|O tipo de perfil do dispositivo. Valores possíveis: `RegisteredDevice` (padrão), `SecureVM` , , , `Printer` `Shared` `IoT` .|
-|systemLabels|Coleção String| Lista de rótulos aplicados ao dispositivo pelo sistema. |
-|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: (indica trazer seus próprios dispositivos pessoais ), (Dispositivos ingressados apenas na nuvem) (dispositivos ingressados no domínio local `Workplace`  `AzureAd` `ServerAd` ingressados no Azure AD). Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
+|operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. Dá `$filter` suporte (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`e em `null` `eq` valores). |
+|operatingSystemVersion|String|A versão do sistema operacional do dispositivo. Obrigatório. Dá `$filter` suporte (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`e em `null` `eq` valores). |
+|physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. Dá `$filter` suporte (`eq`, `not`, `ge`, `le`, `startsWith`e contando coleções vazias). |
+|profileType|deviceProfileType|O tipo de perfil do dispositivo. Valores possíveis: `RegisteredDevice` (padrão), `SecureVM`, `Printer`, `Shared`. `IoT`|
+|systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. Dá `$filter` suporte (`eq` ao contar coleções vazias). |
+|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores *possíveis:*`Workplace` (indica trazer seus próprios dispositivos pessoais), `AzureAd` (somente dispositivos ingressados na nuvem) `ServerAd` (dispositivos ingressados no domínio local ingressados no Azure AD). Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
-|memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos que esse dispositivo é membro. Somente leitura. Anulável. Suporta o `$expand`. |
-|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos que o dispositivo é membro. Esta operação é transitiva. Suporta o `$expand`.  |
+|memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos qual este dispositivo é membro. Somente leitura. Anulável. Suporta o `$expand`. |
+|transitiveMemberOf |Coleção [directoryObject](directoryobject.md)| Grupos dos qual o dispositivo é membro. Esta operação é transitiva. Suporta o `$expand`.  |
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável. Suporta o `$expand`.  |
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável. Suporta o `$expand`. |
 
