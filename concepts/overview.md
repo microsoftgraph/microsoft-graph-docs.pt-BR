@@ -4,12 +4,12 @@ description: O Microsoft Graph é a porta de entrada para dados e inteligência 
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 966ace44a87d79a6c74ad758c342cdcf5796a788
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: 867fcfb9baeda7b07ee672cd74a94819e39b61a6
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103050"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461503"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão Geral do Microsoft Graph
 
@@ -30,7 +30,7 @@ Juntos, a API do Microsoft Graph, os conectores e a conexão de dados capacitam 
 
 O Microsoft Graph expõe as APIs REST e bibliotecas do cliente para acessar dados nos seguintes serviços na nuvem da Microsoft:
 
-- Serviços principais do Microsoft 365: Bookings, Calendar, Delve, Excel, Descoberta eletrônica de conformidade com o Microsoft 365, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (contatos do Outlook), Planner, SharePoint, Teams, To Do, Workplace Analytics
+- Serviços principais do Microsoft 365: Reservas, Calendário, Delve, Excel, Descoberta eletrônica de conformidade com o Microsoft 365, Pesquisa da Microsoft, OneDrive, OneNote, Outlook/Exchange, Pessoas (contatos do Outlook), Planner, SharePoint, Teams, To Do, Insights do Viva
 - Serviços Enterprise Mobility + Security: Análise de Ameaças Avançada, Proteção Contra Ameaças Avançada, Azure Active Directory, Identity Manager e Intune
 - Serviços do Windows: atividades, dispositivos, notificações, Impressão Universal
 - Dynamics 365 Business Central

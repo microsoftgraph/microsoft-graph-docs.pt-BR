@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 921070300f91cb0e41d4189b33d4bbad0a024126
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d83b3aed5b8f803d1e12e946201a161245858ab2
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098549"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461272"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -20,16 +20,16 @@ As extensões abertas (anteriormente conhecidas como extensões de dados do Offi
 
 Extensões abertas são representadas pelo recurso **openTypeExtension**. Qualquer extensão aberta adicionada a um recurso é mostrada na propriedade de navegação **extensions**, que deriva do tipo abstrato [extension](extension.md). Cada extensão tem uma propriedade **extensionName**, que é a única propriedade predefinida e gravável para todas as extensões, juntamente com seus dados personalizados.
 
-Um modo de garantir que os nomes de extensão sejam exclusivos é usar um formato reverso de DNS no sistema de nomes de domínio que dependa de _seu próprio domínio_, por exemplo, `Com.Contoso.ContactInfo`. Não use o domínio Microsoft (`Com.Microsoft` ou `Com.OnMicrosoft`) em um nome de extensão.
+Um modo de garantir que os nomes de extensão sejam exclusivos é usar um formato DNS (sistema de nomes de domínio) reverso que dependa de _seu próprio domínio_, por exemplo, `com.contoso.ContactInfo`. **Não use** os domínios da Microsoft (`com.microsoft` ou `com.onmicrosoft`) em um nome de extensão.
 
 Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
 
-As extensões abertas têm suporte nos recursos a seguir nas versões correspondentes - disponibilidade geral (GA: /v1.0 e /beta) ou visualização (/beta).
+As extensões abertas têm suporte nos recursos a seguir nas versões correspondentes – disponibilidade geral (/v1.0) ou visualização (/beta).
 
 |Recurso |Versão |
 |:---------------|:-------|
 | [Unidade administrativa](/graph/api/resources/administrativeunit)  | GA |
-| [Evento de calendário](event.md) | GA |
+| [Evento de calendário](event.md) \* | GA |
 | [Evento de calendário](event.md) do grupo | GA |
 | [Postagem](post.md) de thread de conversa do grupo | GA |
 | [device](device.md) | GA |
@@ -40,6 +40,8 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 | [user](user.md) | GA |
 | [Tarefa](todotask.md)  | GA |
 | [Lista de tarefas](todotasklist.md)  | GA |
+
+>\* **Observação:** Devido a uma limitação de serviço existente, os representantes não podem criar eventos abertos acrescentados à extensão em calendários de caixa de correio compartilhados. As tentativas de fazer isso resultarão em uma resposta de `ErrorAccessDenied`.
 
 ## <a name="outlook-specific-considerations"></a>Considerações específicas do Outlook
 
@@ -52,7 +54,7 @@ Aplique as seguintes diretrizes quando você criar extensões abertas em recurso
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Use extensões abertas (para recursos do Outlook) ou propriedades estendidas
 
-Extensões abertas são a solução recomendada para a maioria dos cenários que envolvem armazenar e acessar dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](/graph/traverse-the-graph#microsoft-graph-api-metadata), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode confirmar quais propriedades os metadados expõem em https://graph.microsoft.com/v1.0/$ metadados.
+As extensões abertas são a solução recomendada para a maioria dos cenários que envolvem armazenar e acessar dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](/graph/traverse-the-graph#microsoft-graph-api-metadata), você pode usar as [propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode confirmar quais propriedades os metadados expõem em https://graph.microsoft.com/v1.0/$metadata.
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2efa24746d8670e9e96d9f3d66f6ec884c643a72
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 50ba58f3546ec06e4c7dab0c62a9453687c99a90
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110330"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461300"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -24,13 +24,15 @@ Ao usar o formato JSON, você pode:
 
 Ao utilizar o formato MIME:
 - Fornecer os [cabeçalhos de mensagem da Internet](https://tools.ietf.org/html/rfc2076) e o [conteúdo MIME](https://tools.ietf.org/html/rfc2045) aplicáveis, todos codificados no formato **base64** no corpo da solicitação.
-- Adicionar quaisquer anexos e propriedades S/MIME ao conteúdo MIME.
+- \*Adicione anexos e propriedades S/MIME ao conteúdo MIME.
 
 Por padrão, esta operação salva o rascunho na pasta Rascunhos.
 
 [Enviar](../api/message-send.md) o rascunho da mensagem em uma operação subsequente.
 
 Como alternativa, [envie uma nova mensagem](../api/user-sendmail.md) em uma única operação ou crie um rascunho para [encaminhar](../api/message-createforward.md), [responder](../api/message-createreply.md) e [responder a todos](../api/message-createreplyall.md) a uma mensagem existente.
+
+>\***Observação:** No momento, os conteúdos de mensagens S/MIME estão limitados a 4 MB. Tentativas de envio que excedem esse limite resultarão em uma resposta de erro `HTTP 413 Request Entity Too Large`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, consulte [Permissões](/graph/permissions-reference).
