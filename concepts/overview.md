@@ -4,12 +4,12 @@ description: O Microsoft Graph é a porta de entrada para dados e inteligência 
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 867fcfb9baeda7b07ee672cd74a94819e39b61a6
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 195425a45bd89e299fe623185553af07170cd489
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461503"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549285"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão Geral do Microsoft Graph
 
@@ -20,9 +20,9 @@ O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. Ele 
 ## <a name="data-and-services-powering-the-microsoft-365-platform"></a>Dados e serviços que impulsionam a plataforma Microsoft 365
 Na plataforma Microsoft 365, três componentes principais facilitam o acesso e o fluxo de dados:
 
-- A **API do Microsoft Graph** oferece um único ponto de extremidade, `https://graph.microsoft.com`, para fornecer acesso a **dados e insights avançados e centrados em pessoas na nuvem da Microsoft**, incluindo Microsoft 365, Windows e Enterprise Mobility + Security. Você pode usar APIs REST ou SDKs para acessar o endpoint e criar aplicativos que oferecem suporte a cenários do Microsoft 365, abrangendo produtividade, colaboração, educação, inteligência de pessoas e local de trabalho e muito mais. O Microsoft Graph também inclui um conjunto avançado de serviços que gerencia a identidade do usuário e do dispositivo, acesso, conformidade, segurança e ajuda a proteger organizações contra vazamento ou perda de dados.
-- **[Conectores do Microsoft Graph](#bring-data-from-an-external-content-source-to-microsoft-graph)** trabalham na direção de entrada, **entregando dados externos à nuvem da Microsoft para os serviços e aplicativos do Microsoft Graph**, para aprimorar as experiências do Microsoft 365, como a Pesquisa da Microsoft. Existem conectores para muitas fontes de dados comumente usadas, como Box, Google Drive, Jira e Salesforce.
-- **[Conexão de Dados do Microsoft Graph](#access-microsoft-graph-data-at-scale)** fornece um conjunto de ferramentas para simplificar a entrega segura e escalonável **de dados do Microsoft Graph para armazenamentos de dados populares do Azure**. Os dados em cache servem como fontes de dados para ferramentas de desenvolvimento do Azure que você pode usar para criar aplicativos inteligentes.
+- A **API do Microsoft Graph** oferece um único ponto de extremidade, `https://graph.microsoft.com`, para fornecer acesso a dados e insights avançados e centrados em pessoas na nuvem da Microsoft, incluindo Microsoft 365, Windows e Enterprise Mobility + Security. Você pode usar APIs REST ou SDKs para acessar o endpoint e criar aplicativos que oferecem suporte a cenários do Microsoft 365, abrangendo produtividade, colaboração, educação, inteligência de pessoas e local de trabalho e mais. O Microsoft Graph também inclui um conjunto avançado de serviços que gerencia a identidade do usuário e do dispositivo, acesso, conformidade, e segurança e ajuda a proteger organizações contra vazamento ou perda de dados.
+- **[Conectores do Microsoft Graph](#bring-data-from-an-external-content-source-to-microsoft-graph)** trabalham na direção de entrada, entregando dados externos à nuvem da Microsoft para os serviços e aplicativos do Microsoft Graph, para aprimorar as experiências do Microsoft 365, como a Pesquisa da Microsoft. Existem conectores para muitas fontes de dados comumente usadas, como Box, Google Drive, Jira e Salesforce.
+- **[Conexão de Dados do Microsoft Graph](#access-microsoft-graph-data-at-scale)** fornece um conjunto de ferramentas para simplificar a entrega segura e escalonável de dados do Microsoft Graph para armazenamentos de dados populares do Azure. Os dados em cache servem como fontes de dados para ferramentas de desenvolvimento do Azure que você pode usar para criar aplicativos inteligentes.
 
 Juntos, a API do Microsoft Graph, os conectores e a conexão de dados capacitam a plataforma Microsoft 365. Com a capacidade de acessar dados do Microsoft Graph e outros conjuntos de dados, você pode obter percepções e análises, estender as experiências do Microsoft 365 e criar aplicativos exclusivos e inteligentes.
 
@@ -30,10 +30,11 @@ Juntos, a API do Microsoft Graph, os conectores e a conexão de dados capacitam 
 
 O Microsoft Graph expõe as APIs REST e bibliotecas do cliente para acessar dados nos seguintes serviços na nuvem da Microsoft:
 
-- Serviços principais do Microsoft 365: Reservas, Calendário, Delve, Excel, Descoberta eletrônica de conformidade com o Microsoft 365, Pesquisa da Microsoft, OneDrive, OneNote, Outlook/Exchange, Pessoas (contatos do Outlook), Planner, SharePoint, Teams, To Do, Insights do Viva
-- Serviços Enterprise Mobility + Security: Análise de Ameaças Avançada, Proteção Contra Ameaças Avançada, Azure Active Directory, Identity Manager e Intune
-- Serviços do Windows: atividades, dispositivos, notificações, Impressão Universal
-- Dynamics 365 Business Central
+- **Serviços principais do Microsoft 365:** Reservas, Calendário, Delve, Excel, Descoberta eletrônica de conformidade com o Microsoft 365, Pesquisa da Microsoft, OneDrive, OneNote, Outlook/Exchange, Pessoas (contatos do Outlook), Planner, SharePoint, Teams, To Do, Insights do Viva
+- **Serviços Enterprise Mobility + Security:** Análise de Ameaças Avançada, Proteção Contra Ameaças Avançada, Azure Active Directory, Identity Manager e Intune
+- **Serviços do Windows:** atividades, dispositivos, notificações, Impressão Universal
+- **Serviços Dynamics 365 Business Central**
+
 
 Para saber mais, confira os [Principais serviços e recursos do Microsoft Graph](overview-major-services.md).
 
