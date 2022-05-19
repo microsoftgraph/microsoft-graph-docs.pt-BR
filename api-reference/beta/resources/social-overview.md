@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 1ae0e4bd967238aa5566177b89c808231999f688
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 460f5d4af2dbc75b9496b7ff0e5c33d9d62a7fd0
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61861248"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461195"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo
 
@@ -86,7 +86,7 @@ Recurso: Análise (visualização)
 
 Usar a API de análise para obter estatísticas de atividade e configurações relacionadas para um usuários:
 
-- [configurações](../resources/settings.md): Para a API de análise retornar os resultados para um usuários, as configurações de análise de usuário atuais devem mostrar uma licença válida do MyAnalytics, ser aceitas no uso do MyAnalytics e ter uma caixa de correio hospedada na nuvem habilitada para o Microsoft Graph.
+- [configurações](../resources/settings.md): Para a API de análise retornar os resultados para um usuário, as configurações de análise de usuário atual devem mostrar uma licença válida do Microsoft Viva Insights, ser optadas para usar o Viva Insights, e ter uma caixa de correio hospedada na nuvem habilitada para representar em gráfico.
 - [activityStatistics](../resources/activitystatistics.md): Obtém dados da última semana concluída (ou do intervalo de tempo especificado) das atividades do Microsoft 365 nas quais um usuário passou algum tempo, incluindo o número de horas gastas em [chamadas](callactivitystatistics.md), [conversas (mensagens instantâneas)](chatactivitystatistics.md), [email](emailactivitystatistics.md) e [reuniões](meetingactivitystatistics.md) durante e fora das horas de trabalho e o número de horas disponíveis para o [trabalho prioritário](focusactivitystatistics.md).
 
 ## <a name="whats-new"></a>Novidades

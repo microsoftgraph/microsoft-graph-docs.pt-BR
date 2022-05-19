@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: fc9f732c3cb5269866f9dafc24043b0b06c65fcb
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: e0af0692e89f0ea099fb480ecd57cd60e54bd798
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629411"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461370"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -18,7 +18,7 @@ O Microsoft Graph fornece suporte a parâmetros de consulta opcionais que você 
 > [!TIP] 
 > No ponto de extremidade beta, o prefixo `$` é opcional. Por exemplo, em vez de `$filter`, você pode usar `filter`. No ponto de extremidade v1, o prefixo `$` é opcional apenas para um subconjunto de APIs. Para simplificar, inclua sempre `$` se estiver usando o ponto de extremidade v1.
 
-Os parâmetros de consulta podem ser opções de consulta de sistema OData ou outros parâmetros de consulta. 
+Os parâmetros de consulta podem ser [opções de consulta de sistema OData](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) ou outros parâmetros de consulta.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
@@ -58,6 +58,7 @@ Os seguintes recursos OData 4.0 são segmentos de URL, não parâmetros de consu
 | [$count](/graph/api/user-list#example-3-get-only-a-count-of-users)| Recupera o total inteiro da coleção. | `GET /users/$count` <br> `GET /groups/{id}/members/$count`|
 | [$ref](/graph/api/group-post-members) | Atualiza a associação de entidades a uma coleção. | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | Recupera ou atualiza o valor binário de um item. | `GET /me/photo/$value` |
+| [&batch](/graph/json-batching) | Combina várias solicitações HTTP em uma solicitação em lote. | `POST /$batch` |
 
 ## <a name="encoding-query-parameters"></a>Codificação de parâmetros da consulta
 
@@ -85,12 +86,15 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 ## <a name="count-parameter"></a>parâmetro count
 
-Use o parâmetro de consulta `$count` para incluir uma contagem do número total de itens em um conjunto, juntamente com a página de valores de dados retornados do Microsoft Graph.
+Use o `$count` parâmetro de consulta para recuperar a contagem do número total de itens em uma coleção ou correspondência de uma expressão. `$count` pode ser usado das seguintes maneiras:
+
+1. Como um parâmetro de consulta de cadeia de caracteres `$count=true` para incluir uma contagem do número total de itens em uma coleção ao lado da página de valores de dados devolvidos do Microsoft Graph. Por exemplo, `users?$count=true`.
+2. Como um [segmento de URL](#other-odata-url-capabilities) para recuperar somente o total inteiro da coleção. Por exemplo, `users/$count`.
+3. Em uma `$filter` expressão com operadores de igualdade para recuperar uma coleção de dados onde a propriedade filtrada é uma coleção vazia. Consulte [os exemplos abaixo](#examples-using-the-filter-query-operator).
 
 > [!NOTE]
-> `$count` também pode ser usado como um [segmento de URL](#other-odata-url-capabilities) para recuperar o total inteiro da coleção. Em recursos que derivam de [directoryObject](/graph/api/resources/directoryobject), ele ´r suportado apenas em uma consulta avançada. Consulte [Recursos avançados de consulta em objetos de diretório do Microsoft Azure Active Directory](/graph/aad-advanced-queries).
->
-> Não há suporte para o uso de `$count` em locatários do Microsoft Azure Active Directory B2C.
+> 1. Em recursos que derivam do [directoryObject](/graph/api/resources/directoryobject), `$count` só é suportado em uma consulta avançada. Consulte [Recursos avançados de consulta em objetos de diretório do Microsoft Azure Active Directory](/graph/aad-advanced-queries).
+> 2. Não há suporte para o uso de `$count` em locatários do Microsoft Azure Active Directory B2C.
 
 Por exemplo, a solicitação a seguir retornará tanto o conjunto **contato** do usuário atual quanto o número de itens no conjunto **contato** na propriedade `@odata.count`.
 
@@ -208,6 +212,7 @@ A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$fil
 |:------------|:--------|
 | Pesquisar por usuários com o nome Clara entre várias propriedades. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) `../users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')` |
 | Obter todos os usuários com o domínio de email igual a 'hotmail.com' | [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@hotmail.com')`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
+| Obtenha todos os usuários sem licenças atribuídas | [OBTER](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedLicenses/$count eq 0&$count=true`. Esta é uma [consulta avançada](/graph/aad-advanced-queries). |
 | Obter todos os eventos do usuário conectado que começaram após 01/07/2017. | 
   [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) `../me/events?$filter=start/dateTime ge '2017-07-01T08:00'`. <br/>**OBSERVAÇÃO:** A propriedade **dateTime** é um tipo Cadeia de caracteres. |
 | Obter todos os emails de um endereço específico recebidos pelo usuário conectado. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) `../me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'` |

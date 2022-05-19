@@ -1,20 +1,22 @@
 ---
 title: Usar o Postman com a API de conectores do Microsoft Graph
-description: Experimentar as APIs de conectores usando o Postman
+description: Tente usar a API de conectores do Microsoft Graph com o Postman.
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: dcd8af90915c9e8e6440d238f239eb3335bbad1c
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 977a0a2a1c361a46795556d336a2eefe41ee3917
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176637"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461545"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
-Este artigo descreve como você pode usar as APIs do conector do Microsoft Graph com o Postman.
+Postman é uma plataforma de API para compilar e usar APIs. O Postman simplifica cada etapa do ciclo de vida da API e simplifica a colaboração para que você possa criar APIs melhores com mais rapidez.
+
+Este artigo descreve como você pode usar a API do conector do Microsoft Graph com o Postman.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -47,42 +49,41 @@ Para usar esta coleção Postman em seu navegador, baixe o [Agente de área de t
 
 Você não pode usar o Postman para a Web sem isso devido a restrições CORS no navegador da Web: "O número máximo de recursos de [conexão](/graph/api/resources/externalconnectors-externalconnection) por locatário do Microsoft 365".
 
-> [!NOTE]
-> Você não precisará do agente se estiver usando o aplicativo Postman para Windows. Se você abrir o Postman para Windows, verá essa coleção em seu espaço de trabalho.
+Você não precisará do agente se estiver usando o aplicativo Postman para Windows. Se você abrir o Postman para Windows, verá essa coleção em seu espaço de trabalho.
 
 ## <a name="step-3-create-an-azure-ad-application"></a>Etapa 3: criar um aplicativo do Azure Active Directory
 
 Para usar essa coleção em seu próprio locatário de desenvolvedor, crie um aplicativo do Azure Active Directory (Azure AD) e dê a ele as permissões apropriadas para as solicitações que você deseja chamar.
 
-1. Acesse o [portal.azure.com](https://portal.azure.com/) e **Entre** com sua conta de administrador de locatários de desenvolvedor.
-2. Em Serviços do Azure, selecione o **Azure Active Directory**.
+1. Vá até o [portal.azure.com](https://portal.azure.com/) e entre com sua conta de administrador de locatários de desenvolvedor.
+2. Em **Serviços do Azure**, selecione **Azure Active Directory**.
 3. No menu à esquerda, selecione **Registros de aplicativo**.
 4. No menu horizontal, selecione **Novo registro**.
-5. Defina o nome do aplicativo como "Inventário de peças".
-6. Defina a URI de redirecionamento comohttps://oauth.pstmn.io/v1/browser-callback.
+5. Defina o **Nome do aplicativo** como `Parts Inventory`.
+6. Defina a **URI de redirecionamento** como`https://oauth.pstmn.io/v1/browser-callback`.
 7. Selecione **Registrar**.
 8. No menu à esquerda, selecione **Permissões da API**.
-9. No menu horizontal, selecione **Adicionar uma permissão** > **Microsoft Graph** > **Permissões delegadas**.
+9. No menu horizontal, selecione **Adicionar uma permissão** > **Microsoft Graph** > **Permissões Delegadas**.
 10. Comece a digitar `ExternalItem.ReadWrite.All` e selecione `ExternalItem.ReadWrite.All`.
-11. Selecione **Permissões do aplicativo**, digite "Usuário" e selecione **Permissões do aplicativo**.
-12. Expanda as **Opções de usuário** e selecione **`ExternalItem.ReadWrite.All`**.
+11. Selecione **Permissões do aplicativo**, digite `ExternalItem`, e então selecione **Permissões do Aplicativo**.
+12. Expanda as opções **ExternalItem**, e então selecione `ExternalItem.ReadWrite.All`.
 13. Selecione **Adicionar permissões**.
 14. No menu horizontal, selecione **Conceder consentimento de administrador** para e, em seguida, selecione **Sim**.
-15. No menu à esquerda, selecione **Visão geral**. A partir daqui, você pode obter o ID do aplicativo (cliente) e o ID do diretório (locatário). Você precisará deles na etapa 4.
+15. No menu à esquerda, selecione **Visão geral**. A partir daqui, você pode obter o **ID do aplicativo (cliente)** e o **ID do diretório (locatário)**. Você precisará deles na etapa 4.
 16. No menu à esquerda, selecione **Certificados e segredos**.
 17. Selecione **Novo** segredo do cliente, insira uma descrição e selecione **Adicionar**. Copie o novo valor do segredo do cliente; você precisará disso na etapa 4.
 
-O aplicativo do Azure AD agora tem permissões para fazer solicitações em nome de um usuário para chamar `ExternalItem.ReadWrite.All` e como aplicativo do `ExternalItem.ReadWrite.All`.
+O aplicativo agora tem duas permissões configuradas. `ExternalItem.ReadWrite.All` é adicionado como uma permissão delegada, que é uma permissão que requer um usuário conectado. O aplicativo pode fazer leitura/gravação de itens externos em nome do usuário. `ExternalItem.ReadWrite.All` é adicionado como uma permissão de aplicativo, que é uma permissão que não requer um usuário conectado. O aplicativo pode fazer leitura/gravação de itens externos em seu próprio nome.
 
 ## <a name="step-4-configure-authentication"></a>Etapa 4: Configurar autenticação
 
-Configure as variáveis no Postman. Essa informação é usada pra gerar o token de acesso.
+Nesta etapa, você configura as variáveis de ambiente no Postman que você usa para recuperar um token de acesso.
 
 1. Selecione a **Microsoft Graph** e vá para a seção **Variáveis**.
 
    ![Captura de tela da guia API de conectores do Microsoft Graph e da seção Variáveis](./images/connectors-images/07-postman.png)
 
-2. Na seção Variáveis, forneça as informações necessárias usando as informações da etapa 3:
+2. Na seção **Variáveis**, forneça as informações necessárias usando as informações da etapa 3:
 
    - Defina o valor atual do **locatário** para o valor de ID do diretório (locatário) da etapa 3.15.
    - Defina o valor atual de **client\_id** para o valor de ID do aplicativo (cliente) da etapa 3.15.
@@ -271,7 +272,7 @@ Depois que o estado da conexão mudar de **rascunho** para **pronto**, você pod
 
 ## <a name="step-8-add-external-group-member-optional"></a>Etapa 8: adicionar membro do grupo externo (opcional)
 
-Se o serviço externo usa ACLs que não sejam do Azure AD, sincronize essas permissões.  
+Se seu serviço externo usa listas de controle de acesso não-Azure AD, sincronize essas permissões.  
 
 Grupos externos (junto com usuários e grupos do Azure Active Directory) são usados para definir permissões em `externalItems` adicionados a uma conexão do Microsoft Graph. Para obter detalhes, consulte [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true).
 
@@ -309,7 +310,7 @@ Depois de criar uma conexão, você pode adicionar seu conteúdo. Cada item da f
 
 Se você tiver arquivos binários, deverá analisá-los para obter os metadados e uma versão em texto do conteúdo. Se você tiver conteúdo não textual, como um arquivo PDF ou BMP, deverá usar o reconhecimento de caracteres do objeto para converter o conteúdo em texto.  
 
-Você é responsável por converter suas permissões de fonte para conceder ou negar. Negar tem maior precedência sobre a concessão.
+Você é responsável por converter suas permissões de fonte para `grant` ou `deny`. `Deny` tem maior precedência sobre `grant`.
 
 Veja a seguir um exemplo de uma solicitação.
 
@@ -354,3 +355,7 @@ HTTP/1.1 200 OK
 ## <a name="error-handling"></a>Tratamento de erro
 
 Para obter detalhes sobre como resolver erros, consulte [Resolver erros de autorização do Microsoft Graph](/graph/resolve-auth-errors).
+
+## <a name="see-also"></a>Confira também
+
+- [Use o Postman com a API do Microsoft Graph](use-postman.md)

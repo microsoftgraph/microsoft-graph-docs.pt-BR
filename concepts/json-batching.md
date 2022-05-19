@@ -4,12 +4,12 @@ description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 55de4d5a122487173425ad297f8834267534f659
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 016f096eee9d601f0f178c0fa256c4271d1cd563
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477423"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461377"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
@@ -59,6 +59,14 @@ Content-Type: application/json
       "headers": {
         "Content-Type": "application/json"
       }
+    },
+    {
+      "id": "5",
+      "url": "users?$select=id,displayName,userPrincipalName&$filter=city eq null&$count=true",
+      "method": "GET",
+      "headers": {
+        "ConsistencyLevel": "eventual"
+      }
     }
   ]
 }
@@ -87,6 +95,24 @@ Content-Type: application/json
           "code": "Forbidden",
           "message": "..."
         }
+      }
+    },
+    {
+      "id": "5",
+      "status": 200,
+      "headers": {
+        "OData-Version": "4.0",
+      },
+      "body": {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,userPrincipalName)",
+        "@odata.count": 12,
+        "value": [
+          {
+            "id": "071cc716-8147-4397-a5ba-b2105951cc0b",
+            "displayName": "Adele Vance",
+            "userPrincipalName": "AdeleV@Contoso.com"
+          }
+        ]
       }
     },
     {
@@ -128,6 +154,7 @@ O formato de resposta para solicitações de lote JSON é semelhante ao formato 
 * A propriedade no objeto principal do JSON é nomeada **respostas** em oposição a **solicitações**.
 * As respostas individuais podem aparecer em uma ordem diferente das solicitações.
 * Em vez de **método** e **url**, as respostas individuais têm uma propriedade **status**. O valor de **status** é um número que representa o código de status HTTP.
+* A propriedade **cabeçalhos** em cada resposta individual representa os cabeçalhos devolvidos pelo servidor, por exemplo, cabeçalhos de **Cache-Control** e **Content-Type**.
 
 O código de status em uma resposta em lote geralmente é `200` ou `400`. Se a própria solicitação de lote estiver malformada, o código de status será `400`. Se a solicitação em lote for analisável, o código de status será `200`. Um código de status `200` na resposta do lote não indica que as solicitações individuais dentro do lote foram bem-sucedidas. É por isso que cada resposta individual na propriedade **respostas** tem um código de status.
 

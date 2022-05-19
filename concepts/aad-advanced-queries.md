@@ -4,20 +4,20 @@ description: Os objetos do diretório Microsoft Azure Active Directory suportam 
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b5eff1cba4f2f8db4e09c5224aaf4b43ff86d513
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 8156670a19364be7a58722ce966067c2e9e4a8b3
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848641"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461552"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Recursos avançados de consulta nos objetos do diretório Microsoft Azure Active Directory
 
-Como o Microsoft Azure Active Directory continua a oferecer mais capacidades e melhorias na estabilidade, disponibilidade e desempenho, o Microsoft Graph também continua a evoluir e a escalar para acessar os dados de forma eficiente. Uma maneira é através do suporte crescente do Microsoft Graph para capacidades avançadas de consulta em vários objetos Microsoft Azure Active Directory e suas propriedades. Por exemplo, a adição de **Não** (`not`), **Não é igual a** (`ne`) e **termina com** (`endsWith`) operadores no parâmetro de consulta `$filter`.
+Como o Microsoft Azure Active Directory continua a oferecer mais capacidades e melhorias na estabilidade, disponibilidade e desempenho, o Microsoft Graph também continua a evoluir e a escalar para acessar os dados de forma eficiente. Uma maneira é através do suporte crescente do Microsoft Graph para capacidades avançadas de consulta em vários objetos Microsoft Azure Active Directory e suas propriedades. Por exemplo, a adição de **não** (`not`), **não é igual a** (`ne`) e **termina com** (`endswith`) operadores no parâmetro de consulta`$filter`.
 
 O mecanismo de consulta do Microsoft Graph usa um repositório de índice para atender às solicitações de consulta. Para adicionar suporte as funcionalidades adicionais de consulta em algumas propriedades, essas propriedades agora são indexadas em um repositório separado. Essa indexação separada permite que o Microsoft Azure AD aumente o suporte e melhore o desempenho das solicitações de consulta. No entanto, essas funcionalidades de consulta avançada não estão disponíveis por padrão, mas o solicitante também deve definir o cabeçalho **ConsistencyLevel** para `eventual` *e*, com exceção de `$search`, use o parâmetro de consulta `$count`. O cabeçalho **ConsistencyLevel** e `$count` são referidos como *parâmetros de consulta avançados*.
 
-Por exemplo, se você deseja recuperar apenas contas de usuários inativos, você pode executar qualquer uma destas consultas que utilizam o Parâmetro de consulta `$filter`.
+Por exemplo, para recuperar apenas contas de usuários inativos, você pode executar qualquer uma destas consultas que utilizam o parâmetro de consulta `$filter`.
 
 <!-- markdownlint-disable MD023 MD024 MD025 -->
 + Opção 1: Use o parâmetro de consulta `$filter` com o operador `eq`. Esta solicitação funcionará por padrão, ou seja, a solicitação não requer os parâmetros de consulta avançados.
@@ -222,6 +222,7 @@ A tabela a seguir lista os cenários de consulta em objetos de diretório com su
 | :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Usar `$count` como um segmento URL                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=groups%2F%24count&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups/$count`                                                                                                                                                                                       |
 | Usar o `$count` como parâmetro consultar cadeia de caracteres                              | [GET](https://developer.microsoft.com/graph/graph-explorer?request=servicePrincipals%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../servicePrincipals?$count=true`                                                                                                                                                     |
+| Uso de `$count` em uma expressão `$filter`                                 | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedLicenses%2F%24count%2Bne%2B0%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedLicenses/$count eq 0&$count=true`                                                                                                                                                                                       |
 | Usar de `$search`                                                         | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24search%3D%22displayName%3ABrowser%22&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$search="displayName:Browser"`                                                                                                                     |
 | Usar `$orderby` em propriedades selecionadas                                   | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$count=true`                                                                                                               |
 | Usar o `$filter` com o `endsWith` operador                            | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                                                                       |
@@ -238,6 +239,7 @@ A tabela a seguir lista os cenários de consulta em objetos de diretório com su
 > + O uso de `$filter` e `$orderBy` juntos é suportado apenas em consultas avançadas.
 > + `$expand` atualmente não é suportado em consultas avançadas.
 > + As funcionalidades de consulta avançada não estão disponíveis no momento para locatários do Azure AD B2C.
+> + Para usar recursos avançados de consulta em [solicitações em lote](json-batching.md), especifique o cabeçalho **ConsistencyLevel** na propriedade **cabeçalhos** da solicitação JSON.
 
 ## <a name="support-for-filter-on-properties-of-azure-ad-directory-objects"></a>Suporte para filtro nas propriedades dos objetos do diretório Microsoft Azure Active Directory
 
@@ -245,7 +247,7 @@ As propriedades dos objetos de diretório se comportam de forma diferente em seu
 
 + As consultas que são suportadas por padrão também funcionarão em consultas avançadas, mas a resposta será eventualmente consistente.
 + O operador `in` é suportado por padrão sempre que o operador `eq` for suportado por padrão.
-+ O operador `endsWith` é suportado apenas em consultas avançadas nas propriedades `mail` e `userPrincipalName`.
++ O operador `endsWith` é suportado apenas em consultas avançadas nas propriedades **email**, e **userPrincipalName**, e propriedades **proxyAddresses**.
 + Os operadores de negação `not` e `ne` são suportados apenas em consultas avançadas.
   + Todas as propriedades que suportam o `eq` operador também suportam os `ne` ou `not` operadores.
   + Para consultas que utilizam o `any` operador lambda, usar o `not` operador. Veja [Filtrar utilizando operadores lambda](/graph/query-parameters#filter-using-lambda-operators).

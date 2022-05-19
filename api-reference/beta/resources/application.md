@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: a4c6b7ebd169c8c0557748a476a773072df75a7a
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 6b3d2bc227b81eb39f6bb324579366f5bf3b7386
+ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294030"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65461405"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -109,7 +109,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | publicClient | [publicClientApplication](publicclientapplication.md) | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
 | publisherDomain | String | O domínio do editor verificado para o aplicativo. Somente leitura. Dá suporte a `$filter`(`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de permissões delegadas e funções de aplicativo necessárias para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não é possível configurar mais de 50 APIs (serviços de recursos). A partir de meados de outubro de 2021, o número total de permissões necessárias não deve exceder 400. Não anulável. <br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
-| referênciaDeGerenciamentoDeServiços | Cadeia de caracteres | Faz referência as informações de contato do aplicativo ou serviço de um banco de dados de Gerenciamento de Serviços ou Ativos. Anulável. |
+| referênciaDeGerenciamentoDeServiços | Cadeia de caracteres | Faz referências de aplicativo ou informações de contato de serviço de um banco de dados de Gerenciamento de Serviços ou Ativos. Anulável. |
 | signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores possíveis são: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (padrão) e `PersonalMicrosoftAccount`. Confira mais na [tabela abaixo](#signinaudience-values). <br><br>Suporta `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
 | categorias |Coleção String| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulada.<br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
@@ -136,8 +136,8 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |calls           |Coleção [call](call.md)                   |Somente leitura. Anulável.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| O conectorGrupo que o aplicativo está usando com o Proxy de Aplicativo do Microsoft Azure Active Directory. Anulável.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|
-|extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Somente leitura. Anulável.|
-|federatedIdentityCredentials|Coleção [federatedIdentityCredential](federatedidentitycredential.md) |Identidades federadas dos aplicativos. Esse objeto só pode ser recuperado em uma única solicitação do GET (`GET /applications/{id}/federatedIdentityCredentials`).|
+|extensionProperties|Coleção [extensionProperty](extensionproperty.md)| Somente leitura. Anulável. Dá suporte a `$expand` e `$filter` (`eq` ao contar as coleções vazias).|
+|federatedIdentityCredentials|Coleção [federatedIdentityCredential](federatedidentitycredential.md) |Identidades federadas para aplicativos. Dá suporte a `$expand` e `$filter` (`eq` ao contar as coleções vazias).|
 |onlineMeetings  |Coleção [onlineMeeting](onlinemeeting.md)|Somente leitura. Anulável.|
 |owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários do aplicativo. Somente leitura. Nullable. Dá `$expand`.|
 |tokenLifetimePolicies|Conjunto [tokenLifetimePolicy](tokenLifetimePolicy.md)|O tokenLifetimePolicies atribuído a este aplicativo. Dá `$expand`.|
