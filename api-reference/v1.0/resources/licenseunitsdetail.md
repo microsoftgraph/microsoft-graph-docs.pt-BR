@@ -2,15 +2,15 @@
 title: Tipo de recurso licenseUnitsDetail
 description: A propriedade **prepaidUnits** da entidade subscribedSku é do tipo **licenseUnitsDetail**.
 ms.localizationpriority: medium
-author: 'michaelcurnutt '
+author: jconley76
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3ffa692611bd1414d04f55200da8d4f398d34719
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef2891e465bdeefcb7bec8314394bc298bf8f48d
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036162"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549551"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Tipo de recurso licenseUnitsDetail
 
@@ -21,9 +21,9 @@ A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:-------------|:-----|:----------|
-|enabled|Int32| O número de unidades habilitadas para a assinatura ativa do SKU do serviço.  |
-|suspended|Int32| O número de unidades suspensas porque a assinatura do SKU do serviço foi cancelada. As unidades não podem ser atribuídas, mas ainda podem ser reativadas antes de serem excluídas. |
-|warning|Int32| O número de unidades que estão em status de aviso. Quando a assinatura do SKU do serviço expirou, o cliente tem um período de carência para renovar sua assinatura antes de ser cancelada (movida para um **estado suspenso).**  |
+|enabled|Int32| O número de unidades que estão habilitadas para a assinatura ativa do SKU de serviço.  |
+|suspended|Int32| O número de unidades suspensas porque a assinatura do SKU de serviço foi cancelada. As unidades não podem ser atribuídas, mas ainda podem ser reativadas antes de serem excluídas. |
+|warning|Int32| O número de unidades que estão no status de aviso. Quando a assinatura do SKU do serviço tiver expirado, o cliente terá um período de carência para renovar sua assinatura antes de ser cancelada (movida para um **estado suspenso** ).  |
 
 ## <a name="json-representation"></a>Representação JSON
 

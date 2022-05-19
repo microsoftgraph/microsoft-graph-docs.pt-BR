@@ -5,12 +5,12 @@ title: recurso listItem
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bfda041c473da6d5d98c7c6b076ba9be276cd486
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: e7e0c01ccbdbbf532b9faecab32bcc3e0d7d4ba8
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060672"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549481"
 ---
 # <a name="listitem-resource"></a>recurso listItem
 
@@ -40,9 +40,10 @@ Todos os exemplos a seguir referem-se a uma **[list][]**, por exemplo: `https://
 | [Update][]                     | PATCH /items/{item-id}                       |
 | [Atualizar valores de coluna][Update] | PATCH /items/{item-id}/fields                |
 | [createLink][CreateLink]       | POST /items/{itemId}/createLink              |
-|[Listar documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
-|[Criar documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
-|[Restaurar documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+| [Listar documentSetVersions](../api/listitem-list-documentsetversions.md)| GET /items/{item-id}/documentSetVersions |
+| [Criar documentSetVersion](../api/listitem-post-documentsetversions.md)| POST /items/{item-id}/documentSetVersions |
+| [Restaurar documentSetVersion](../api/documentsetversion-restore.md)| POST /items/{item-id}/documentSetVersions/{documentSetVersion-id}/restore |
+| [Obter delta][item-changes]    | GET /items/{item-id}/delta
 
 [Obter]: ../api/listitem-get.md
 [Obter análises]: ../api/itemanalytics-get.md
@@ -51,6 +52,7 @@ Todos os exemplos a seguir referem-se a uma **[list][]**, por exemplo: `https://
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
 [CreateLink]: ../api/listitem-createlink.md
+[item-changes]: ../api/listitem-delta.md
 
 ## <a name="json-representation"></a>Representação JSON
 

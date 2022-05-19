@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso licenseUnitsDetail
 description: A propriedade **prepaidUnits** da entidade subscribedSku é do tipo **licenseUnitsDetail**.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
-author: michaelcurnutt
-ms.openlocfilehash: 0f2f069cbbff191cefcdc8b735b2847b48a8f2ed
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+author: jconley76
+ms.openlocfilehash: ed149138aac5253ffbb2af4ef6447fffce3b9522
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030779"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549488"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Tipo de recurso licenseUnitsDetail
 
@@ -23,9 +23,9 @@ A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:-------------|:-----|:----------|
-|enabled|Int32| O número de unidades habilitadas para a assinatura ativa do SKU do serviço. |
-|suspended|Int32| O número de unidades suspensas porque a assinatura do SKU do serviço foi cancelada. As unidades não podem ser atribuídas, mas ainda podem ser reativadas antes de serem excluídas. |
-|warning|Int32| O número de unidades que estão em status de aviso. Quando a assinatura do SKU do serviço expirou, o cliente tem um período de carência para renovar sua assinatura antes de ser cancelada (movida para um **estado suspenso).** |
+|enabled|Int32| O número de unidades que estão habilitadas para a assinatura ativa do SKU de serviço. |
+|suspended|Int32| O número de unidades suspensas porque a assinatura do SKU de serviço foi cancelada. As unidades não podem ser atribuídas, mas ainda podem ser reativadas antes de serem excluídas. |
+|warning|Int32| O número de unidades que estão no status de aviso. Quando a assinatura do SKU do serviço tiver expirado, o cliente terá um período de carência para renovar sua assinatura antes de ser cancelada (movida para um **estado suspenso** ). |
 
 ## <a name="json-representation"></a>Representação JSON
 

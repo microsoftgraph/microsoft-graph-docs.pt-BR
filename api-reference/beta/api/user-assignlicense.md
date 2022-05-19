@@ -1,16 +1,16 @@
 ---
 title: assignLicense
-description: Adicione ou remova licenças para o usuário habilitar ou desabilitar o uso de ofertas de nuvem da Microsoft. Por exemplo, uma organização pode ter uma assinatura Microsoft 365 Enterprise E3 com 100 licenças e essa solicitação atribui uma dessas licenças a um usuário específico. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. Para saber mais sobre assinaturas e licenças, consulte este artigo do Technet.
+description: Adicione ou remova licenças para o usuário habilitar ou desabilitar o uso das ofertas de nuvem da Microsoft. Por exemplo, uma organização pode ter uma assinatura Microsoft 365 Enterprise E3 com 100 licenças e essa solicitação atribui uma dessas licenças a um usuário específico. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. Para saber mais sobre assinaturas e licenças, confira este artigo do Technet.
 ms.localizationpriority: medium
-author: jpettere
+author: jconley76
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 04f4e91c082f8edb0d78ad2ea767b6db80e7736c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5c84288339cc6f59e11dcf4ea7318d83b5621612
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63339977"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549509"
 ---
 # <a name="user-assignlicense"></a>usuário: assignLicense
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione ou remova licenças para o usuário habilitar ou desabilitar o uso de ofertas de nuvem da Microsoft. Por exemplo, uma organização pode ter uma assinatura Microsoft 365 Enterprise E3 com 100 licenças e essa solicitação atribui uma dessas licenças a um usuário específico. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. Para saber mais sobre assinaturas e licenças, consulte este [artigo do Technet](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
+Adicione ou remova licenças para o usuário habilitar ou desabilitar o uso das ofertas de nuvem da Microsoft. Por exemplo, uma organização pode ter uma assinatura Microsoft 365 Enterprise E3 com 100 licenças e essa solicitação atribui uma dessas licenças a um usuário específico. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. Para saber mais sobre assinaturas e licenças, confira este [artigo do Technet](/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
 Para obter as assinaturas disponíveis no diretório, execute uma [solicitação GET subscribedSkus](subscribedsku-list.md). 
 
@@ -48,15 +48,15 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |addLicenses|Coleção [assignedLicense](../resources/assignedlicense.md)|Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar servicePlans associado a uma licença definindo a propriedade **disabledPlans** em [um objeto assignedLicense](../resources/assignedlicense.md) .|
-|removeLicenses|Coleção de GUIDs|Uma coleção de skuIds que identificam as licenças a remover.|
+|removeLicenses|Coleção de GUIDs|Uma coleção de skuIds que identificam as licenças a serem removidas.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` o código de resposta e um [objeto de usuário](../resources/user.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` o código de resposta e um objeto [de usuário](../resources/user.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-assign-licenses-to-the-signed-in-user"></a>Exemplo 1: Atribuir licenças ao usuário in-locar
+### <a name="example-1-assign-licenses-to-the-signed-in-user"></a>Exemplo 1: Atribuir licenças ao usuário conectado
 
 #### <a name="request"></a>Solicitação
 
@@ -142,7 +142,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-remove-licenses-from-the-signed-in-user"></a>Exemplo 2: Remover licenças do usuário in-locar
+### <a name="example-2-remove-licenses-from-the-signed-in-user"></a>Exemplo 2: Remover licenças do usuário conectado
 
 #### <a name="request"></a>Solicitação
 

@@ -1,16 +1,16 @@
 ---
-title: Atualizar propriedades educationSchool
+title: Atualizar as propriedades educationSchool
 description: Atualize as propriedades de um objeto de escola.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fbc31501492e364a935a60b7600ab01807567af5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9fb09925d8f34ca9ebe816262f1519a1b62aada2
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123679"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549579"
 ---
 # <a name="update-educationschool-properties"></a>Atualizar as propriedades educationschool
 
@@ -49,10 +49,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade            | Tipo                                               | Descrição                        |
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | Cadeia de caracteres                                             | Nome de exibição da escola         |
-| description         | Cadeia de caracteres                                             | Descrição da escola          |
-| principalEmail      | Cadeia de caracteres                                             | Endereço de email da entidade de segurança     |
-| principalName       | Cadeia de caracteres                                             | Nome da entidade de segurança              |
+| displayName         | Cadeia de caracteres                                             | Nome de exibição da escola.        |
+| description         | Cadeia de caracteres                                             | Descrição da escola.         |
+| principalEmail      | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.    |
+| principalName       | Cadeia de caracteres                                             | Nome da entidade de segurança.             |
 | externalPrincipalId | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização. |
 | highestGrade        | Cadeia de caracteres                                             | Ensino de nível mais alto.              |
 | lowestGrade         | Cadeia de caracteres                                             | Ensino de nível mais baixo.               |
@@ -67,7 +67,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um ob
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 

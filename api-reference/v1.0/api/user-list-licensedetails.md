@@ -1,16 +1,16 @@
 ---
 title: Listar licenseDetails
 description: Recupere uma lista de objetos licenseDetails.
-author: cindycrane
+author: jconley76
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2007d3960008fbf2f8588c89f1fa6203697b8ef0
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 29dce61e32e17c4ffa2c67c5dacc9b4209132489
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420443"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549572"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | User.Read    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 

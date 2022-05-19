@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: eb05f82d9f6cfc2ef88ee0104875caa88cd5a9ba
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 004a4af4b84712d824787e7d45d7b4f083d9fd6b
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133904"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549341"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-resource-type"></a>Tipo de recurso unifiedRoleAssignmentScheduleInstance
 
@@ -20,7 +20,7 @@ Representa a instância de uma atribuição de função ativa em seu locatário.
 
 Herda [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar unifiedRoleAssignmentScheduleInstances](../api/rbacapplication-list-roleassignmentscheduleinstances.md)|[Coleção unifiedRoleAssignmentScheduleInstance](../resources/unifiedroleassignmentscheduleinstance.md)|Obtenha as instâncias de atribuições de função ativas.|
@@ -31,14 +31,14 @@ Herda [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinsta
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando a atribuição está no escopo de um aplicativo. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. Dá `$filter` suporte (`eq`e `ne`em `null` valores). Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
-|assignmentType|Cadeia de caracteres|Tipo da atribuição que pode ser `Assigned` ou `Activated`. Suporta `$filter` (`eq`, `ne`).|
+|assignmentType|String|Tipo da atribuição que pode ser `Assigned` ou `Activated`. Suporta `$filter` (`eq`, `ne`).|
 |directoryScopeId|Cadeia de caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. Dá `$filter` suporte (`eq`e `ne`em `null` valores). Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
 |endDateTime|DateTimeOffset| A data de término da instância de agendamento.|
-|id|Cadeia de caracteres|O identificador exclusivo do **objeto unifiedRoleAssignmentScheduleInstance** . Herdado da [entidade](../resources/entity.md).|
+|id|String|O identificador exclusivo do **objeto unifiedRoleAssignmentScheduleInstance** . Herdado da [entidade](../resources/entity.md).|
 |Membertype|Cadeia de caracteres|Como as atribuições são herdadas. Pode ser `Inherited`, `Direct`ou `Group`. Isso pode implicar ainda se **o unifiedRoleAssignmentSchedule** pode ser gerenciado pelo chamador. Suporta `$filter` (`eq`, `ne`).|
 |principalId|Cadeia de caracteres|Identificador da entidade de segurança que recebeu a atribuição de função. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Suporta `$filter` (`eq`, `ne`). |
-|roleAssignmentOriginId|Cadeia de caracteres|O identificador da atribuição de função no Azure AD.|
-|roleAssignmentScheduleId|Cadeia de caracteres|O identificador do **objeto unifiedRoleAssignmentSchedule** do qual essa instância foi criada.|
+|roleAssignmentOriginId|Cadeia de caracteres|O identificador da atribuição de função no Azure AD. Suporta `$filter` (`eq`, `ne`).|
+|roleAssignmentScheduleId|Cadeia de caracteres|O identificador do **objeto unifiedRoleAssignmentSchedule** do qual essa instância foi criada. Suporta `$filter` (`eq`, `ne`).|
 |roleDefinitionId|Cadeia de caracteres|O identificador do [objeto unifiedRoleDefinition](unifiedroledefinition.md) que está sendo atribuído à entidade de segurança. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Suporta `$filter` (`eq`, `ne`).|
 |startDateTime|DateTimeOffset|Quando essa instância é iniciada.|
 

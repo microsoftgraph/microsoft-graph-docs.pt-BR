@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 91ed173a26262fd6285df4d60518a80aded68b60
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: e219bdce8f3cc5c2ec83d8cecf7b9b779a8ed782
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133902"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549292"
 ---
 # <a name="unifiedroleeligibilityscheduleinstance-resource-type"></a>Tipo de recurso unifiedRoleEligibilityScheduleInstance
 
@@ -20,7 +20,7 @@ Representa a instância de uma qualificação de função em seu locatário.
 
 Herda [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar unifiedRoleEligibilityScheduleInstances](../api/rbacapplication-list-roleeligibilityscheduleinstances.md)|[Coleção unifiedRoleEligibilityScheduleInstance](../resources/unifiedroleeligibilityscheduleinstance.md)|Obtenha as instâncias de eligibilidades de função.|
@@ -38,7 +38,7 @@ Herda [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinsta
 |Membertype|Cadeia de caracteres|Como a elegibilidade de função é herdada. Pode ser `Inherited`, `Direct`ou `Group`. Isso pode implicar ainda se **o unifiedRoleEligibilitySchedule** pode ser gerenciado pelo chamador. Suporta `$filter` (`eq`, `ne`).|
 |principalId|Cadeia de caracteres|Identificador da entidade de segurança qualificada para uma função. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Suporta `$filter` (`eq`, `ne`). |
 |roleDefinitionId|Cadeia de caracteres|Identificador do [objeto unifiedRoleDefinition](unifiedroledefinition.md) para o qual a entidade de segurança está qualificada. Herdado [de unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md). Suporta `$filter` (`eq`, `ne`).|
-|roleEligibilityScheduleId|Cadeia de caracteres|O identificador do **objeto unifiedRoleEligibilitySchedule** do qual essa instância foi criada.|
+|roleEligibilityScheduleId|String|O identificador do **objeto unifiedRoleEligibilitySchedule** do qual essa instância foi criada. Suporta `$filter` (`eq`, `ne`).|
 |startDateTime|DateTimeOffset|Quando essa instância é iniciada.|
 
 ## <a name="relationships"></a>Relações

@@ -1857,11 +1857,11 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: Listar marcas como hierarquia
                     href: api/ediscovery-tag-ashierarchy.md
-          - name: Solicitação de direitos do sujeito
+          - name: Solicitação de direitos do titular
             items:
               - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: Solicitação de direitos do sujeito
+              - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: Listar
@@ -14490,6 +14490,8 @@ items:
                 href: api/itemanalytics-get.md
               - name: Listar versões
                 href: api/listitem-list-versions.md
+              - name: Obter intervalo
+                href: api/listitem-delta.md
           - name: Versão do conjunto de documentos
             items:
               - name: Versão do conjunto de documentos
@@ -14958,7 +14960,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: Excluir membro
                 href: api/teamworktagmember-delete.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 145eded434e80a9418747682e16afb3a654a05eb
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 7e5732fc3f634123401780549e4d24d12f819d5c
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399436"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549586"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicativo | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +52,7 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 |accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções administrador global e administrador de dispositivo de nuvem podem atualizar essa propriedade. |
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
-|displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|
+|displayName|String|O nome de exibição do dispositivo.|
 |isCompliant|Booliano|`true`se o dispositivo estiver em conformidade com as políticas de MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
 |isManaged|Booliano|`true`se o dispositivo for gerenciado por um aplicativo MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
 
@@ -75,7 +75,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
   "name": "update_device"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/devices/{id}
+PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 Content-type: application/json
 
 {
@@ -128,7 +128,7 @@ HTTP/1.1 204 No Content
   "name": "update_device_extensionAttributes"
 }-->
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/devices/{id}
+PATCH https://graph.microsoft.com/beta/devices/7c06cd31-7c30-4f3b-a5c3-444cd8dd63ac
 Content-type: application/json
 
 {

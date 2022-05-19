@@ -2,15 +2,15 @@
 title: Tipo de recurso licenseDetails
 description: Contém informações sobre uma licença atribuída a um usuário.
 ms.localizationpriority: medium
-author: jpettere
+author: jconley76
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: a8edde4e0e1e5df6e2fad7bcacca1fb67641d9b7
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: bd5e7dfd7f6edcbf3cc7d79dcbfc4db9b0da7cfa
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62853967"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549362"
 ---
 # <a name="licensedetails-resource-type"></a>Tipo de recurso licenseDetails
 
@@ -29,10 +29,10 @@ Contém informações sobre uma licença atribuída a um usuário.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| O identificador exclusivo do objeto de detalhes da licença. Somente leitura, Chave, Não anulada |
-|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviço atribuídos à licença. Somente leitura, Não anulada |
-|skuId|GUID| Identificador exclusivo (GUID) para a SKU de serviço. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
-|skuPartNumber|Cadeia de caracteres| Nome de exibição SKU exclusivo. Igual ao skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado; por exemplo: "AAD_Premium". Somente leitura |
+|id|Cadeia de caracteres| O identificador exclusivo do objeto de detalhes da licença. Somente leitura, chave, não anulável |
+|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviço atribuídos com a licença. Somente leitura, não anulável |
+|skuId|Guid| Identificador exclusivo (GUID) para o SKU de serviço. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
+|skuPartNumber|Cadeia de caracteres| Nome de exibição de SKU exclusivo. Igual ao skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado; por exemplo: "AAD_Premium". Somente leitura |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "id": "String (identifier)",
   "servicePlans": [{"@odata.type": "microsoft.graph.servicePlanInfo"}],
-  "skuId": "GUID",
+  "skuId": "Guid",
   "skuPartNumber": "String"
 }
 

@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 70502ab3ad21d6d71d9560c95e2cdef1fc5c5f98
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4e2f1528590020420631fc789a672a3147400c6e
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117652"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549467"
 ---
 # <a name="update-educationschool"></a>Atualizar educationSchool
 
 Namespace: microsoft.graph
 
-Atualize as propriedades de um [objeto educationSchool.](../resources/educationschool.md)
+Atualize as propriedades de um [objeto educationSchool](../resources/educationschool.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,7 +44,7 @@ PATCH /education/schools/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto educationSchool.](../resources/educationschool.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto educationSchool](../resources/educationschool.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o educationSchool](../resources/educationschool.md).
 
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao atualizar [o e
 | :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName          | Cadeia de caracteres                                             | Nome de exibição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                            |
 | description          | Cadeia de caracteres                                             | Descrição da escola. Herdado de [educationOrganization](../resources/educationorganization.md).                                                             |
-| externalSource       | educationExternalSource                            | Fonte de onde essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` e `manual`. |
-| externalSourceDetail | Cadeia de caracteres                                             | O nome da fonte externa de onde esses recursos foram gerados.                                                                                                    |
+| externalSource       | educationExternalSource                            | Origem da qual essa organização foi criada. Herdado de [educationOrganization](../resources/educationorganization.md). Os valores possíveis são: `sis` e `manual`. |
+| externalSourceDetail | String                                             | O nome da fonte externa da qual esses recursos foram gerados.                                                                                                    |
 | principalEmail       | Cadeia de caracteres                                             | Endereço de email da entidade de segurança.                                                                                                                                       |
 | principalName        | Cadeia de caracteres                                             | Nome da entidade de segurança.                                                                                                                                                |
 | externalPrincipalId  | Cadeia de caracteres                                             | ID da entidade de segurança no sistema de sincronização.                                                                                                                                    |
@@ -72,7 +72,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um ob
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -118,7 +118,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 

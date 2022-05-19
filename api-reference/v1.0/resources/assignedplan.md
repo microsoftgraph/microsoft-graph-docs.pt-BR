@@ -2,15 +2,15 @@
 title: Tipo de recurso assignedPlan
 description: A propriedade **assignedPlans** das entidades user e organization é uma coleção de **assignedPlan**.
 ms.localizationpriority: medium
-author: jpettere
+author: jconley76
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 599a462e49822c6b69fe75ac7104a101e986db6c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e1ac85a836ce9b46c908b33cc5d9577c40188ebc
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333187"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549453"
 ---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
@@ -24,20 +24,20 @@ A propriedade **assignedPlans** das entidades [user](user.md) e [organization](o
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignedDateTime|DateTimeOffset|A data e a hora em que o plano foi atribuído. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
-|capabilityStatus|Cadeia de caracteres|Condição da atribuição de recursos. Os valores possíveis são , , , , `LockedOut``Deleted`. `Suspended``Warning``Enabled` Consulte [uma descrição detalhada](#capabilitystatus-values) de cada valor.|
+|capabilityStatus|Cadeia de caracteres|Condição da atribuição de funcionalidade. Os valores possíveis são `Enabled`, `Warning`, `Suspended`, `Deleted`. `LockedOut` Consulte [uma descrição detalhada](#capabilitystatus-values) de cada valor.|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, `exchange`.|
-|servicePlanId|Guid|Um GUID que identifica o plano de serviço. Para uma lista completa de GUIDs e seus nomes de serviço amigáveis equivalentes, consulte Nomes de produtos e identificadores de plano de [serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference).|
+|servicePlanId|Guid|Um GUID que identifica o plano de serviço. Para obter uma lista completa de GUIDs e seus nomes de serviço amigáveis equivalentes, consulte Nomes de produtos e identificadores de plano [de serviço para licenciamento](/azure/active-directory/enterprise-users/licensing-service-plan-reference).|
 
 
-### <a name="capabilitystatus-values"></a>valores de capabilityStatus
+### <a name="capabilitystatus-values"></a>Valores de capabilityStatus
 
 | Member | Descrição  |
 |:---------------|:--------|
 | Habilitado | Disponível para uso normal. |
 | Aviso | Disponível para uso normal, mas está em um período de carência. |
 | Suspenso | Indisponível, mas todos os dados associados à funcionalidade devem ser preservados. |
-| Deleted | Indisponíveis e quaisquer dados associados à funcionalidade podem ser excluídos. |
-| LockedOut | Indisponível para todos os administradores e usuários, mas todos os dados associados à funcionalidade devem ser preservados. |
+| Deleted | Indisponível e todos os dados associados à funcionalidade podem ser excluídos. |
+| Bloqueado | Não disponível para todos os administradores e usuários, mas todos os dados associados à funcionalidade devem ser preservados. |
 
 ## <a name="json-representation"></a>Representação JSON
 
