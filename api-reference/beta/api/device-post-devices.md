@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 18fb7ea822974d12037a7c140f11354a8cefb73c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a5edf3cc84b8e922376bdda54a38d2bf9e768a70
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103642"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602725"
 ---
 # <a name="create-device"></a>Criar dispositivo
 
@@ -29,6 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
+O usuário chamador também deve estar em uma das seguintes funções [Azure AD: Administrador](/azure/active-directory/roles/permissions-reference) *Global*, Intune *Administrador* ou *Windows 365 Administrador*.
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -43,7 +45,7 @@ POST /devices
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).
 
-Como o **recurso de dispositivo** dá suporte a extensões, você pode usar a operação e adicionar propriedades [personalizadas](/graph/extensibility-overview)com seus próprios dados à instância `POST` do dispositivo durante a criação.
+Como o **recurso de** dispositivo dá suporte a extensões, `POST` você pode usar a operação e adicionar propriedades [personalizadas](/graph/extensibility-overview) com seus próprios dados à instância do dispositivo ao criá-la.
 
 ## <a name="response"></a>Resposta
 

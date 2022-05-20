@@ -1,23 +1,23 @@
 ---
 title: Criar indicador
-description: Crie um novo objeto bookmark.
+description: Crie um novo objeto de indicador.
 author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f935c97a966755a3cdb519cf5d6e1ff6bf76dd96
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 84283c08a8e80427ff34a310cbcae799bd26ecef
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337988"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602746"
 ---
 # <a name="create-bookmark"></a>Criar indicador
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto bookmark](../resources/search-bookmark.md) .
+Crie um novo [objeto de indicador](../resources/search-bookmark.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,31 +44,31 @@ POST /search/bookmarks
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto bookmark](../resources/search-bookmark.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto de indicador](../resources/search-bookmark.md) .
 
-A tabela a seguir mostra as propriedades que estão disponíveis quando você cria [um indicador](../resources/search-bookmark.md).
+A tabela a seguir mostra as propriedades que estão disponíveis quando você cria um [indicador](../resources/search-bookmark.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome do indicador exibido nos resultados da pesquisa. Herdado [de searchAnswer](../resources/search-searchAnswer.md).|
-|descrição|String|Descrição do indicador mostrada na página de resultados da pesquisa. Herdado [de searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|Link da URL do indicador. Quando os usuários clicarem nesse indicador nos resultados da pesquisa, eles irão para essa URL. Herdado [de searchAnswer](../resources/search-searchAnswer.md).|
-|categories|String collection|Categorias comumente usadas para descrever esse indicador. Por exemplo, IT e RH.|
-|availabilityStartDateTime|DateTimeOffset|Carimbo de data/hora de quando o indicador começará a aparecer como um resultado de pesquisa. Definir como `null` para sempre disponível.|
-|availabilityEndDateTime|DateTimeOffset|Carimbo de data/hora de quando o indicador será parar para aparecer como resultado da pesquisa. Definir como `null` para sempre disponível.|
-|languageTags|String collection|Lista de países ou regiões capazes de exibir esse indicador.|
-|plataformas|coleção microsoft.graph.devicePlatformType|Lista de dispositivos e sistemas operacionais capazes de exibir esse indicador. Os valores possíveis são: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
+|displayName|Cadeia de caracteres|Nome do indicador exibido nos resultados da pesquisa. Herdado de [searchAnswer](../resources/search-searchAnswer.md).|
+|descrição|String|Descrição do indicador mostrada na página de resultados da pesquisa. Herdado de [searchAnswer](../resources/search-searchAnswer.md).|
+|webUrl|String|Link da URL do indicador. Quando os usuários clicarem nesse indicador nos resultados da pesquisa, eles acessarão essa URL. Herdado de [searchAnswer](../resources/search-searchAnswer.md).|
+|categories|String collection|Categorias comumente usadas para descrever esse indicador. Por exemplo, TI e RH.|
+|availabilityStartDateTime|DateTimeOffset|Carimbo de data/hora de quando o indicador começará a aparecer como um resultado de pesquisa. Defina `null` como sempre disponível.|
+|availabilityEndDateTime|DateTimeOffset|Carimbo de data/hora de quando o indicador será interrompido para aparecer como um resultado de pesquisa. Defina `null` como sempre disponível.|
+|languageTags|Coleção de cadeias de caracteres|Lista de países ou regiões capazes de exibir esse indicador.|
+|Plataformas|Coleção microsoft.graph.devicePlatformType|Lista de dispositivos e sistemas operacionais capazes de exibir esse indicador. Os valores possíveis são: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
 |targetedVariations|[coleção microsoft.graph.search.answerVariant](../resources/search-answerVariant.md)|Variações de um indicador para diferentes países ou dispositivos. Use quando precisar mostrar conteúdo diferente para os usuários com base em seu dispositivo, país/região ou ambos. As configurações de data e grupo serão aplicadas a todas as variações.|
-|powerAppIds|String collection|Lista de Power Apps associados a esse indicador. Se os usuários adicionarem Power Apps existentes a um indicador, eles poderão concluir tarefas, como inserir o período de férias ou relatar despesas na página de resultados da pesquisa.|
+|powerAppIds|Conjunto de cadeias de caracteres|Lista de Power Apps associado a este indicador. Se os usuários adicionarem Power Apps existentes a um indicador, eles poderão concluir tarefas, como inserir o tempo de férias ou relatar despesas na página de resultados da pesquisa.|
 |palavras-chave|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Palavras-chave que disparam esse indicador aparecem nos resultados da pesquisa.|
-|state|microsoft.graph.search.answerState|Estado do indicador. Os valores possíveis são: `published`, `draft`, `excluded`ou `unknownFutureValue`.|
+|state|microsoft.graph.search.answerState|Estado do indicador. Os valores possíveis são`draft`: `published`, , `excluded`ou `unknownFutureValue`.|
 |groupIds|Coleção de cadeias de caracteres|Lista de grupos de segurança capazes de exibir esse indicador.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta com a `201 Created` ID do indicador criado.
+Se bem-sucedido, este método retorna um `201 Created` código de resposta com a ID do indicador criado.
 
 ## <a name="examples"></a>Exemplos
 
@@ -97,13 +97,11 @@ Content-Type: application/json
   "platforms": ["windows"],
   "targetedVariations": [
     {
-      "languageTag": "es-ES",
+      "languageTag": "es-es",
       "displayName": "Sitio de instalación Contoso",
       "description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
     }
   ],
-  "groupIds": ["groupId"],
-  "powerAppIds": ["powerAppId"],
   "state": "published"
 }
 ```

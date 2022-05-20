@@ -1,23 +1,23 @@
 ---
 title: Criar federatedIdentityCredential
 description: Crie um novo objeto federatedIdentityCredential para um aplicativo.
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 09c06d30a39755b7b0d04fba29352d4f4a94da64
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b110f00734c7d7ad2044f289917713ad5d19887a
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097270"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602694"
 ---
 # <a name="create-federatedidentitycredential"></a>Criar federatedIdentityCredential
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) para um aplicativo. Ao configurar uma relação de confiança entre seu registro de aplicativo do Azure AD e o provedor de identidade para [sua](/azure/active-directory/develop/workload-identity-federation-create-trust) plataforma de computação, você pode usar tokens emitidos por essa plataforma para autenticar com plataforma de identidade da Microsoft e chamar APIs no ecossistema da Microsoft. No máximo 20 objetos podem ser adicionados a um aplicativo.
+Crie um novo [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) para um aplicativo. Ao [](/azure/active-directory/develop/workload-identity-federation-create-trust) configurar uma relação de confiança entre o registro do aplicativo Azure AD e o provedor de identidade para sua plataforma de computação, você pode usar tokens emitidos por essa plataforma para autenticar com plataforma de identidade da Microsoft e chamar APIs no ecossistema da Microsoft. Máximo de 20 objetos podem ser adicionados a um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) |  Application.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) |  Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,22 +45,22 @@ POST /applications/{applicationsId}/federatedIdentityCredentials
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto federatedIdentityCredential.](../resources/federatedidentitycredential.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [federatedIdentityCredential](../resources/federatedidentitycredential.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o federatedIdentityCredential](../resources/federatedidentitycredential.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|audiences|Coleção de cadeias de caracteres|Lista as audiências que podem aparecer no token externo. Esse campo é obrigatório e é padrão para "api://AzureADTokenExchange". Ele diz o plataforma de identidade da Microsoft deve aceitar na `aud` declaração no token de entrada. Esse valor representa o Azure AD em seu provedor de identidade externo e não tem valor fixo entre provedores de identidade - talvez seja necessário criar um novo registro de aplicativo em seu provedor de identidade para servir como audiência desse token. Obrigatório.|
-|emissor|Cadeia de caracteres|TThe URL of the external identity provider and must match the issuer claim of the external token being exchanged. A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo. Obrigatório.|
-|nome|Cadeia de caracteres|O identificador exclusivo da credencial de identidade federada, que tem um limite de caracteres de 120 caracteres e deve ser amigável à URL. É imutável uma vez criado|
-|assunto|Cadeia de caracteres|Obrigatório. O identificador da carga de trabalho de software externo no provedor de identidade externa. Como o valor da audiência, ele não tem formato fixo, pois cada provedor de identidade usa seu próprio - às vezes um GUID, às vezes um identificador delimitado por dois pontos, às vezes cadeias de caracteres arbitrárias. O valor aqui deve corresponder à subclatura dentro do token apresentado ao Azure AD. A combinação de **emissor e** **assunto** deve ser exclusiva no aplicativo.|
+|Público|Coleção de cadeias de caracteres|Lista as audiências que podem aparecer no token externo. Esse campo é obrigatório e usa como padrão "api://AzureADTokenExchange". Ele diz o plataforma de identidade da Microsoft deve aceitar na declaração `aud` no token de entrada. Esse valor representa Azure AD em seu provedor de identidade externo e não tem nenhum valor fixo entre provedores de identidade – talvez seja necessário criar um novo registro de aplicativo em seu provedor de identidade para servir como o público-alvo desse token. Obrigatório.|
+|Emissor|String|A URL do provedor de identidade externa e deve corresponder à declaração do emissor do token externo que está sendo trocado. A combinação dos valores do **emissor e** **da entidade** deve ser exclusiva no aplicativo. Obrigatório.|
+|nome|Cadeia de caracteres|O identificador exclusivo para a credencial de identidade federada, que tem um limite de caracteres de 120 caracteres e deve ser amigável para URL. Ele é imutável depois de criado|
+|assunto|String|Obrigatório. O identificador da carga de trabalho de software externo no provedor de identidade externo. Como o valor do público-alvo, ele não tem nenhum formato fixo, pois cada provedor de identidade usa seu próprio – às vezes, um GUID, às vezes um identificador delimitado por dois-pontos, às vezes cadeias de caracteres arbitrárias. O valor aqui deve corresponder à sub declaração dentro do token apresentado Azure AD. A combinação de **emissor e** **assunto** deve ser exclusiva no aplicativo.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

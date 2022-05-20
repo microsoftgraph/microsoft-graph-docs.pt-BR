@@ -1,23 +1,23 @@
 ---
 title: Obter indicador
-description: Leia as propriedades e as relações de um objeto bookmark.
+description: Leia as propriedades e as relações de um objeto de indicador.
 author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 274cf589a20babbb584e1edde1159e803a54157b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 2b02bfc05e0fc1e993942c7002287a62edc19947
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338054"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602788"
 ---
 # <a name="get-bookmark"></a>Obter indicador
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto bookmark](../resources/search-bookmark.md) .
+Leia as propriedades e as relações de um [objeto de indicador](../resources/search-bookmark.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /search/bookmarks/{bookmarksId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `select`parâmetros , `expand`, `filter`, `orderBy`, e `maxTop``count` [OData Query para](/graph/query-parameters) ajudar a personalizar a resposta.
+Esse método dá suporte aos `select`[parâmetros](/graph/query-parameters) de consulta , `expand``filter`, `orderBy`, e `maxTop``count` OData para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [indicador](../resources/search-bookmark.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [de indicador](../resources/search-bookmark.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -126,7 +126,7 @@ Content-Type: application/json
   "categories": ["HR"],
   "availabilityStartDateTime": "2020-09-21T20:01:37Z",
   "availabilityEndDateTime": "2020-11-21T20:01:37Z",
-  "languageTags": ["en-US"],
+  "languageTags": ["en-us"],
   "platforms": ["ios"],
   "groupIds": ["groupId"],
   "targetedVariations": null,

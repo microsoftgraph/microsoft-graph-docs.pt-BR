@@ -5,12 +5,12 @@ author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b0e0c563b76dfd74bf095fc8ea005d78cbbbb1d9
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d3b2266238a74b052aba433c75e5b91d08669386
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63338003"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602718"
 ---
 # <a name="create-qna"></a>Criar qna
 Namespace: microsoft.graph.search
@@ -45,29 +45,29 @@ POST /search/qnas
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto qna](../resources/search-qna.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto qna](../resources/search-qna.md) .
 
 A tabela a seguir mostra as propriedades que estão disponíveis quando você cria um [qna](../resources/search-qna.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Pergunta exibida nos resultados da pesquisa. Herdado [de searchAnswer](../resources/search-searchAnswer.md).|
-|descrição|String|Resposta exibida nos resultados da pesquisa. Herdado [de searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|Link de URL de Qna. Quando os usuários clicarem nesse qna nos resultados da pesquisa, eles irão para essa URL. Herdado [de searchAnswer](../resources/search-searchAnswer.md).|
-|availabilityStartDateTime|DateTimeOffset|Timestamp de quando a qna começará a aparecer como um resultado de pesquisa. Definir como `null` para sempre disponível.|
-|availabilityEndDateTime|DateTimeOffset|Timestamp de quando a qna será parada para aparecer como um resultado de pesquisa. Definir como `null` para sempre disponível.|
-|languageTags|Coleção de cadeias de caracteres|Lista de países ou regiões capazes de exibir esse qna.|
-|plataformas|coleção microsoft.graph.devicePlatformType|Lista de dispositivos e sistemas operacionais capazes de exibir esse qna. Os valores possíveis são: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
-|targetedVariations|[coleção microsoft.graph.search.answerVariant](../resources/search-answerVariant.md)|Variações de uma qna para diferentes países ou dispositivos. Use quando precisar mostrar conteúdo diferente para os usuários com base em seu dispositivo, país/região ou ambos. As configurações de data e grupo serão aplicadas a todas as variações.|
-|palavras-chave|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Palavras-chave que disparam esse qna aparecem nos resultados da pesquisa.|
-|state|microsoft.graph.search.answerState|Estado da qna. Os valores possíveis são: `published`, `draft`, `excluded`ou `unknownFutureValue`.|
-|groupIds|Coleção de cadeias de caracteres|Lista de grupos de segurança capazes de exibir esse qna.|
+|displayName|Cadeia de caracteres|Pergunta exibida nos resultados da pesquisa. Herdado de [searchAnswer](../resources/search-searchAnswer.md).|
+|descrição|Cadeia de caracteres|Resposta exibida nos resultados da pesquisa. Herdado de [searchAnswer](../resources/search-searchAnswer.md).|
+|webUrl|String|Link da URL do Qna. Quando os usuários clicarem nesse qna nos resultados da pesquisa, eles acessarão essa URL. Herdado de [searchAnswer](../resources/search-searchAnswer.md).|
+|availabilityStartDateTime|DateTimeOffset|Carimbo de data/hora de quando o qna começará a aparecer como um resultado de pesquisa. Defina `null` como sempre disponível.|
+|availabilityEndDateTime|DateTimeOffset|Carimbo de data/hora de quando o qna será interrompido para aparecer como um resultado de pesquisa. Defina `null` como sempre disponível.|
+|languageTags|Coleção de cadeias de caracteres|Lista de países ou regiões capazes de exibir este qna.|
+|Plataformas|Coleção microsoft.graph.devicePlatformType|Lista de dispositivos e sistemas operacionais capazes de exibir esse qna. Os valores possíveis são: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
+|targetedVariations|[coleção microsoft.graph.search.answerVariant](../resources/search-answerVariant.md)|Variações de um qna para diferentes países ou dispositivos. Use quando precisar mostrar conteúdo diferente para os usuários com base em seu dispositivo, país/região ou ambos. As configurações de data e grupo serão aplicadas a todas as variações.|
+|palavras-chave|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Palavras-chave que disparam esse qna para aparecer nos resultados da pesquisa.|
+|state|microsoft.graph.search.answerState|Estado do qna. Os valores possíveis são`draft`: `published`, , `excluded`ou `unknownFutureValue`.|
+|groupIds|Coleção de cadeias de caracteres|Lista de grupos de segurança capazes de exibir este qna.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta com a `201 Created` ID da pergunta e da resposta criada.
+Se tiver êxito, este método retornará um `201 Created` código de resposta com a ID da pergunta e resposta criadas.
 
 ## <a name="examples"></a>Exemplos
 
@@ -93,9 +93,8 @@ Content-Type: application/json
   },
   "availabilityStartDateTime": "2020-09-21T20:01:37Z",
   "availabilityEndDateTime": "2021-12-31T20:01:37Z",
-  "languageTags": ["en-US"],
+  "languageTags": ["en-us"],
   "platforms": ["ios"],
-  "groupIds": ["groupId"],
   "state": "published"
 }
 ```

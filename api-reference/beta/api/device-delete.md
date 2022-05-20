@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5b0cd39783c97f93bbf3c52ea3d2377d4e0c56da
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 317d482ab6ccce74d501ed09ffa186a352d843dc
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100309"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602711"
 ---
 # <a name="delete-device"></a>Excluir dispositivo
 
@@ -30,9 +30,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
+O usuário chamador também deve estar em uma das seguintes [funções de Azure AD](/azure/active-directory/roles/permissions-reference): Administrador *Global*, Administrador do *Intune*, Administrador *Windows 365 ou* Administrador de Dispositivo de *Nuvem*.
+
 ## <a name="http-request"></a>Solicitação HTTP
 
-O `{id}` na solicitação é o valor da **propriedade id** do dispositivo, não a **propriedade deviceId.**
+O `{id}` na solicitação é o valor da **propriedade de ID** do dispositivo, não a **propriedade deviceId** .
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}

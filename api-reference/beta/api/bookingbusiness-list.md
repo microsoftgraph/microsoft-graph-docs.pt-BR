@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1308d0a8b01eeb2d073fcb69c0a71addcdf70b82
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 312ad8d2337ec0c7273c192721389d0465fd3203
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755513"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602767"
 ---
 # <a name="list-bookingbusinesses"></a>Listar bookingBusinesses
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

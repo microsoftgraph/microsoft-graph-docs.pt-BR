@@ -1,23 +1,23 @@
 ---
 title: Obter federatedIdentityCredential
 description: Leia as propriedades e as relações de um objeto federatedIdentityCredential.
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4950aeaae15578ae14b5dfbfd67c42b4408c6ad4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5df46a8578c0aa39ed5157c346a196a27837bc6c
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113556"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602795"
 ---
 # <a name="get-federatedidentitycredential"></a>Obter federatedIdentityCredential
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto federatedIdentityCredential.](../resources/federatedidentitycredential.md)
+Leia as propriedades e as relações de um [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) |  Application.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) |  Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
@@ -42,7 +42,7 @@ GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentit
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

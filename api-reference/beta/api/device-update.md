@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7e5732fc3f634123401780549e4d24d12f819d5c
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: d03c5d1a1d58f1347bb485bd5661357e288b7785
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549586"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602690"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -28,6 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Device.ReadWrite.All, Directory.ReadWrite.All |
+
+O usuário chamador também deve estar em uma das seguintes funções [Azure AD:](/azure/active-directory/roles/permissions-reference) *Administrador Global*, *Intune Administrador*. Um usuário chamador na  função Administrador de Dispositivos na Nuvem só pode habilitar ou desabilitar dispositivos usando essa API e um usuário com a função de Administrador do *Windows 365* só pode atualizar as propriedades básicas do dispositivo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

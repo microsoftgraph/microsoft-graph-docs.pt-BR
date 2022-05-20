@@ -1,23 +1,23 @@
 ---
 title: Atualizar federatedIdentityCredential
 description: Atualize as propriedades de um objeto federatedIdentityCredential.
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4ed503883bca7da4a1e141684f373f932d07b2db
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 11ee8eb14f13398dcf322b1f2553f076e3db9038
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127864"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602753"
 ---
 # <a name="update-federatedidentitycredential"></a>Atualizar federatedIdentityCredential
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto federatedIdentityCredential.](../resources/federatedidentitycredential.md)
+Atualize as propriedades de um [objeto federatedIdentityCredential](../resources/federatedidentitycredential.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) |  Application.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) |  Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
@@ -55,10 +55,10 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|audiences|Coleção de cadeias de caracteres|A lista de audiências que podem aparecer no token emitido. O valor recomendado é `api://AzureADTokenExchange` . |
-|description|Cadeia de caracteres|Uma descrição fornecida pelo usuário para o qual o federatedIdentityCredential é usado. |
-|emissor|Cadeia de caracteres|A URL do emissor confiável de entrada (Serviço de Token Seguro). Corresponde à declaração do emissor de um token de acesso. Por exemplo, com o cenário chaves gerenciadas pelo cliente, o Azure AD é o emissor e um valor válido seria `https://login.microsoftonline.com/{tenantid}/v2.0` . A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo. |
-|assunto|Cadeia de caracteres|<li>Para o emissor do Azure AD, o do servicePrincipal (pode representar uma identidade gerenciada) que `objectId` pode representar o aplicativo. O objeto associado a esse GUID precisa existir no locatário.</li><li>Para todos os outros emissores, uma cadeia de caracteres sem validação adicional</ul><br><br>A combinação dos valores de **emissor** e **assunto** deve ser exclusiva no aplicativo.|
+|Público|Conjunto de cadeias de caracteres|A lista de audiências que podem aparecer no token emitido. O valor recomendado é `api://AzureADTokenExchange`. |
+|descrição|Cadeia de caracteres|Uma descrição fornecida pelo usuário do que o federatedIdentityCredential é usado. |
+|Emissor|Cadeia de caracteres|A URL do emissor confiável de entrada (Serviço de Token Seguro). Corresponde à declaração do emissor de um token de acesso. Por exemplo, com o cenário chaves gerenciadas pelo cliente, Azure AD é o emissor e um valor válido seria `https://login.microsoftonline.com/{tenantid}/v2.0`. A combinação dos valores do **emissor e** **da entidade** deve ser exclusiva no aplicativo. |
+|assunto|String|<li>Para Azure AD emissor, o `objectId` do servicePrincipal (pode representar uma identidade gerenciada) que pode representar o aplicativo. O objeto associado a esse GUID precisa existir no locatário.</li><li>Para todos os outros emissores, uma cadeia de caracteres sem validação adicional</ul><br><br>A combinação dos valores do **emissor e** **da entidade** deve ser exclusiva no aplicativo.|
 
 
 

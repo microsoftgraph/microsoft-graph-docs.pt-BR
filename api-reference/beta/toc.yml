@@ -9960,7 +9960,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: Ação de restauração remota em massa
                     href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: Solução de problemas
+                  - name: Solucionar problema
                     href: api/cloudpc-troubleshoot.md
                   - name: Lista de usuários
                     href: api/user-list-cloudpcs.md
@@ -11772,6 +11772,7 @@ items:
               - name: Acesso entre locatários (versão prévia)
                 items:
                   - name: Visão Geral
+                    displayName: 'Cross-tenant access settings, XTAP'
                     href: resources/crosstenantaccesspolicy-overview.md
                   - name: Política
                     items:

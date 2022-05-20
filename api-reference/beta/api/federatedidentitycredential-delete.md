@@ -1,16 +1,16 @@
 ---
 title: Excluir federatedIdentityCredential
 description: Exclui um objeto federatedIdentityCredential.
-author: kjyam98
+author: shahzad-khalid
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dad6470b7e4d2c7f6d4e0d8443d2b3d81d5da1c4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a19e88bfcac1bb453fc59fcbd5e82c9265f40a4b
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62106133"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602760"
 ---
 # <a name="delete-federatedidentitycredential"></a>Excluir federatedIdentityCredential
 Namespace: microsoft.graph
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) |  Application.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) |  Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
