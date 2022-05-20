@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 75b01f4903153249131cc69e336bb2d12e26095d
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: b3584d205e5d511d77e6283b5ca0fa8cb9595084
+ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316158"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65603069"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -16,6 +16,16 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 
 > [!IMPORTANT]
 > Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
+
+
+## <a name="april-2022-new-and-generally-available"></a>Abril de 2022: novo e com disponibilidade geral
+### <a name="search--index"></a>Pesquisa | Índice
+- Use as permissões do aplicativo `ExternalConnection.Read.All` e `ExternalConnection.ReadWrite.All` para ler ou gravar todas as conexões externas sem a presença de um usuário conectado.
+- Use a permissão do aplicativo `ExternalItem.Read.All` para ler todos os itens externos sem a presença de um usuário conectado.
+- Use a permissão delegada `ExternalConnection.ReadWrite.OwnedBy` para ler e gravar conexões externas em nome de um usuário conectado ao qual seu aplicativo está autorizado.
+- Use a permissão delegada `ExternalConnection.Read.All` ou `ExternalConnection.ReadWrite.All` para ler ou gravar todas as conexões externas em nome de um usuário conectado.
+- Use a permissão delegada `ExternalItem.ReadWrite.OwnedBy` para ler e gravar itens externos em nome de um usuário conectado, para o qual seu aplicativo está autorizado.
+- Use a permissão delegada `ExternalItem.Read.All` ou `ExternalItem.ReadWrite.All` para ler ou gravar todos os itens externos em nome de um usuário conectado.
 
 
 ## <a name="april-2022-new-in-preview-only"></a>Abril de 2022: novo somente para visualização
@@ -26,7 +36,9 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 - Use a permissão de aplicativo `BookingsAppointment.ReadWrite.All` para operações de leitura/gravação para recursos de cliente e compromisso.
 
 ### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem
-Especifique [Configurações do Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) como parte das [configurações da organização do PC na nuvem](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) para um locatário.
+- Especifique [Configurações do Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) como parte das [configurações da organização do PC na nuvem](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) para um locatário.
+- [Obtenha](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true) os dispositivos de PC na nuvem atribuídos ao usuário conectado.
+- [Obter informações para iniciar um dispositivo de PC na nuvem](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) para o usuário conectado.
 
 ### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
 Configure [ configurações de federação](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) para federar domínios com o Azure Active Directory.
