@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 714fac5350f7df2222ca563b9660994431a3b382
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 3cb2ae70d84b8eeb2087bebfeae60a95b1e84184
+ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398570"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65549523"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -121,6 +121,7 @@ Atualmente, a consulta delta é compatível com os recursos a seguir. Observe qu
 | Escolas da Educação                                              | Função [delta](/graph/api/educationschool-delta) do recurso [educationSchool](/graph/api/resources/educationschool)                                   |
 | Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](/graph/api/event-delta) do recurso [evento](/graph/api/resources/event)                         |
 | Grupos                                                         | Função [delta](/graph/api/group-delta) do recurso [group](/graph/api/resources/group)                         |
+| Listar itens\*                                                   | função [delta](/graph/api/listitem-delta) do recurso [listItem](/graph/api/resources/listitem)             |
 | Pastas de email                                                   | função [delta](/graph/api/mailfolder-delta) do recurso [mailFolder](/graph/api/resources/mailfolder)           |
 | Mensagens de uma pasta                                           | função [delta](/graph/api/message-delta) do recurso [mensagem](/graph/api/resources/message)                    |
 | Contatos organizacionais                                        | função [delta](/graph/api/orgcontact-delta) do recurso [orgContact](/graph/api/resources/orgcontact)          |
@@ -134,9 +135,9 @@ Atualmente, a consulta delta é compatível com os recursos a seguir. Observe qu
 | Usuários                                                          | função [delta](/graph/api/user-delta) do recurso [usuário](/graph/api/resources/user)                            |
 
 
-> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/driveitem-delta).
+> \* O padrão de uso para recursos do OneDrive e do SharePoint é semelhante aos outros recursos com suporte com algumas pequenas diferenças de sintaxe. A consulta delta para unidades e listas será atualizada no futuro para ser consistente com outros tipos de recursos. Para obter mais detalhes sobre a sintaxe atual, consulte [driveItem: delta](/graph/api/driveitem-delta) e [listItem: delta](/graph/api/listitem-delta).
 
-> \*\* O padrão de uso dos recursos do Planner é semelhante a outros recursos com suporte com algumas diferenças. Para obter detalhes, consulte [Rastrear alterações no Planner](/graph/api/planneruser-list-delta).
+> \*\* O padrão de uso dos recursos do Planner é semelhante a outros recursos com suporte com algumas diferenças. Para obter detalhes, consulte [planner: delta](/graph/api/planneruser-list-delta).
 
 ## <a name="limitations"></a>Limitações
 
