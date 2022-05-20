@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: cc3b041d0cac4e65ba7ef563a9fd57d3df7c57ef
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: bdef923ed9c92ff34f93d588300c2d3180b42acf
+ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586892"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65603055"
 ---
 # <a name="list-cloudpcs"></a>Listar cloudPCs
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Listar propriedades e relações dos objetos [cloudPC](../resources/cloudpc.md) .
+Liste os [dispositivos cloudPC](../resources/cloudpc.md) em um locatário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$select`a parâmetros de `$filter` `$count` consulta OData e para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte `$select`a parâmetros `$filter` `$count` de consulta OData e para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [cloudPC](../resources/cloudpc.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos cloudPC](../resources/cloudpc.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

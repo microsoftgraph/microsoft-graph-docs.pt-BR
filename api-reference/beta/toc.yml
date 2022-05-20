@@ -300,7 +300,7 @@ items:
             href: resources/calendar.md
             displayName: 'Outlook, Outlook calendar'
             items:
-              - name: Criar
+              - name: Criar calendário
                 href: api/user-post-calendars.md
               - name: Criar grupo de calendários
                 href: api/user-post-calendargroups.md
@@ -328,7 +328,7 @@ items:
             items:
               - name: PC na nuvem.
                 href: resources/cloudpc.md
-              - name: List
+              - name: Listar cloudPCs
                 href: api/user-list-cloudpcs.md
               - name: Obter informações de inicialização
                 href: api/cloudpc-getcloudpclaunchinfo.md
@@ -9934,14 +9934,22 @@ items:
               - name: PC na nuvem.
                 href: resources/cloudpc.md
                 items:
-                  - name: Lista
+                  - name: Listar cloudPCs para a organização
                     href: api/virtualendpoint-list-cloudpcs.md
-                  - name: Obter
+                  - name: Listar cloudPCs para o usuário
+                    href: api/user-list-cloudpcs.md
+                  - name: Obter cloudPC
                     href: api/cloudpc-get.md
+                  - name: Ação remota de reprovisionamento em massa
+                    href: api/manageddevice-bulkreprovisioncloudpc.md
+                  - name: Ação de restauração remota em massa
+                    href: api/manageddevice-bulkrestorecloudpc.md
                   - name: Alterar o tipo de accout do usuário
                     href: api/cloudpc-changeuseraccounttype.md
                   - name: Fim do período de carência
                     href: api/cloudpc-endgraceperiod.md
+                  - name: Obter informações de inicialização para o usuário
+                    href: api/cloudpc-getcloudpclaunchinfo.md
                   - name: Obter resultados da ação remota
                     href: api/manageddevice-getcloudpcremoteactionresults.md
                   - name: Reiniciar
@@ -9952,20 +9960,12 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: Reprovisionar a ação remota
                     href: api/manageddevice-reprovisioncloudpc.md
-                  - name: Ação remota de reprovisionamento em massa
-                    href: api/manageddevice-bulkreprovisioncloudpc.md
                   - name: Redimensionar a ação remota
                     href: api/manageddevice-resizecloudpc.md
                   - name: Restaurar ação remotamente
                     href: api/manageddevice-restorecloudpc.md
-                  - name: Ação de restauração remota em massa
-                    href: api/manageddevice-bulkrestorecloudpc.md
                   - name: Solucionar problema
                     href: api/cloudpc-troubleshoot.md
-                  - name: Lista de usuários
-                    href: api/user-list-cloudpcs.md
-                  - name: Obter informações de inicialização para o usuário
-                    href: api/cloudpc-getcloudpclaunchinfo.md
               - name: Imagem do dispositivo de PC na nuvem
                 href: resources/cloudpcdeviceimage.md
                 items:
