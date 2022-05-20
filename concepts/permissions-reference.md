@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 67b5398e5e8374e55f54af399d6c045624d8e6cb
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: c9edf63d9cc2ebbc68597963ca90790ada14e390
+ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247326"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65602774"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -340,10 +340,10 @@ Nenhuma.
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Bookings.Read.All_ |  Permite que um aplicativo leia compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. | Destinados a aplicativos somente leitura. O usuário-alvo típico é o cliente de uma empresa de reservas. | Não | Não |
-| _BookingsAppointment.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos e clientes do Bookings, permitindo também a leitura de empresas, serviços e funcionários em nome do usuário conectado. | Desenvolvido para aplicativos de agendamento que precisam manipular compromissos e clientes. Não pode alterar informações fundamentais sobre a empresa de reservas, nem seus serviços e funcionários. O usuário-alvo típico é o cliente de uma empresa de reservas.| Não | Não |
-| _Bookings.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. Não permite criar, excluir ou publicar de empresas do Bookings. | Voltado a aplicativos de gerenciamento que manipulam empresas existentes, seus serviços e seus funcionários. Não pode criar, excluir ou alterar o status de publicação de uma empresa de reservas. O usuário-alvo típico é o funcionário de suporte de uma organização.| Não | Não |
-| _Bookings.Manage.All_ | Permite que um aplicativo leia, grave e gerencie compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado.  | Permite que o aplicativo tenha acesso total. <br>Voltado a uma experiência de gerenciamento completa. O usuário-alvo típico é o administrador de uma organização.| Não | Não |
+| _Bookings.Read.All_ |  Permite que um aplicativo leia compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. | Destinados a aplicativos somente leitura. O usuário-alvo típico é o cliente de uma empresa de reservas. | Sim | Não |
+| _BookingsAppointment.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos e clientes do Bookings, permitindo também a leitura de empresas, serviços e funcionários em nome do usuário conectado. | Desenvolvido para aplicativos de agendamento que precisam manipular compromissos e clientes. Não pode alterar informações fundamentais sobre a empresa de reservas, nem seus serviços e funcionários. O usuário-alvo típico é o cliente de uma empresa de reservas.| Sim | Não |
+| _Bookings.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. Não permite criar, excluir ou publicar de empresas do Bookings. | Voltado a aplicativos de gerenciamento que manipulam empresas existentes, seus serviços e seus funcionários. Não pode criar, excluir ou alterar o status de publicação de uma empresa de reservas. O usuário-alvo típico é o funcionário de suporte de uma organização.| Sim | Não |
+| _Bookings.Manage.All_ | Permite que um aplicativo leia, grave e gerencie compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado.  | Permite que o aplicativo tenha acesso total. <br>Voltado a uma experiência de gerenciamento completa. O usuário-alvo típico é o administrador de uma organização.| Sim | Não |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -604,7 +604,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_CloudPC.Read.All_ | Leia PCs na Internet | Permite que o aplicativo leia objetos do PC na Internet, como políticas de provisionamento, sem um usuário conectado. | Não | Não |
+|_CloudPC.Read.All_ | Leia PCs na Internet | Permite que o aplicativo leia objetos do PC na Internet, como políticas de provisionamento, sem um usuário conectado. | Sim | Não |
 |_CloudPC.ReadWrite.All_ | Ler e escrever PCs na Internet | Permite que o aplicativo crie, leia, atualize e exclua objetos do PC na Nuvem, como conexões de rede Azure, políticas de provisionamento e imagens de dispositivos, sem um usuário conectado. | Sim | Não |
 
 ### <a name="example-usage"></a>Exemplo de uso
@@ -1262,7 +1262,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Mail.ReadBasic.All_        | Ler emails básicos de todos usuários                 | Permite que o aplicativo leia as caixas de correio de todos os usuários, exceto Body, BodyPreview, UniqueBody, Attachments, ExtendedProperties e Extensions. Não inclui permissões para pesquisar mensagens. | Sim                    |
 | _Mail.ReadWrite_            | Ler e gravar emails em todas as caixas de correio     | Permite ao aplicativo criar, ler, atualizar e excluir emails em todas as caixas de correio sem um usuário conectado. Não inclui a permissão para enviar emails.                                       | Sim                    |
 | _Mail.Send_                 | Enviar email como qualquer usuário                    | Permite ao aplicativo enviar emails como qualquer usuário sem um usuário conectado.                                                                                                                  | Sim                    |
-| _MailboxSettings.Read_      | Ler as configurações de caixa de correio do usuário           | Permite que o aplicativo leia configurações da caixa de correio do usuário sem um usuário conectado. Não inclui a permissão para enviar emails.                                                                 | Não                     |
+| _MailboxSettings.Read_      | Ler as configurações de caixa de correio do usuário           | Permite que o aplicativo leia configurações da caixa de correio do usuário sem um usuário conectado. Não inclui a permissão para enviar emails.                                                                 | Sim                     |
 | _MailboxSettings.ReadWrite_ | Ler e gravar todas as configurações de caixa de correio do usuário | Permite que o aplicativo crie, leia, atualize e exclua as configurações da caixa de correio sem um usuário conectado. Não inclui a permissão para enviar emails.                                     | Sim                    |
 
 > Os Administradores **Importantes** podem configurar a [política de acesso ao aplicativo](auth-limit-mailbox-access.md) para limitar o acesso do aplicativo às caixas de correio _específicas_ e não a todas as caixas de correio na organização, mesmo que as permissões de aplicativo do Mail.Read, Mail.ReadWrite, Mail.Send, MailboxSettings.Read, ou MailboxSettings.ReadWrite sejam concedidas ao aplicativo. 
@@ -1462,7 +1462,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| OnPremisesPublishingProfiles.ReadWrite.All |    Acessar Perfis de Publicações Locais| Permite que o aplicativo gerencie a configuração do serviço de identidade híbrida criando, exibindo, atualizando e excluindo recursos de publicações locais, agentes locais e grupos de agentes, em nome do usuário conectado. | Não | Não |
+| OnPremisesPublishingProfiles.ReadWrite.All |    Acessar Perfis de Publicações Locais| Permite que o aplicativo crie, visualize, atualize e exclua recursos publicados no local, agentes locais e grupos de agentes, como parte de uma configuração de identidade híbrida, sem um usuário conectado. | Sim | Não |
 
 ---
 
@@ -2237,7 +2237,7 @@ As permissões de taxonomia só são válidas para contas do trabalho ou da esco
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Team.ReadBasic.All_ | Obter uma lista de todas as equipes.| Obter uma lista de todas as equipes, sem um usuário conectado.|Sim| Não |
 | _TeamSettings.Read.All_ | Ler as configurações de todas as equipes| Ler as configurações dessa equipe, sem um usuário conectado.|Sim| Não |
-| _TeamSettings.ReadWrite.All_ | Ler e alterar todas as configurações das equipes| Ler e alterar as configurações de todas as equipes, sem um usuário conectado.|Não | Não |
+| _TeamSettings.ReadWrite.All_ | Ler e alterar todas as configurações das equipes| Ler e alterar as configurações de todas as equipes, sem um usuário conectado.|Sim | Não |
 
 ## <a name="teams-tab-permissions"></a>Permissões de guia no Teams
 
