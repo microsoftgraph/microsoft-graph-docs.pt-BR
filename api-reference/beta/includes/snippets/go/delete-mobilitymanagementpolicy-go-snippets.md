@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 90658121503c77af190914546fab7ec0532ecada
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: f833fef4a3f4ce96bb6fe6ff3f2a872bdb91b431
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65323788"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629783"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "65323788"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 mobilityManagementPolicyId := "mobilityManagementPolicy-id"
-graphClient.Policies().MobileAppManagementPoliciesById(&mobilityManagementPolicyId).Delete()
+graphClient.Policies().MobileDeviceManagementPoliciesById(&mobilityManagementPolicyId).Delete()
 
 
 ```
