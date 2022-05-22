@@ -127,7 +127,7 @@ items:
     items:
       - name: Visão geral
         href: /graph/sdks/sdks-overview?context=graph/api/1.0
-      - name: Instalar o SDK
+      - name: Instalar um SDK
         href: /graph/sdks/sdk-installation?context=graph/api/1.0
       - name: Criar um cliente
         href: /graph/sdks/create-client?context=graph/api/1.0
@@ -1336,7 +1336,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1405,11 +1405,11 @@ items:
         items:
           - name: Visão Geral
             href: resources/complianceapioverview.md
-          - name: Solicitação de direitos do sujeito
+          - name: Solicitação de direitos do titular
             items:
               - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: Solicitação de direitos do sujeito
+              - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: Listar
@@ -4245,7 +4245,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e Integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -6882,7 +6882,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

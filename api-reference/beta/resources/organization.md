@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4daead4b510944427edbea4f3c42a8946614293a
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 0dd40e8cb399b055d8568c97c3d6560110fc0aad
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294009"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629080"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -64,7 +64,6 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | id | Cadeia de caracteres | A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` se a organização estiver habilitada para Várias Regiões Geográficas; `false` se a organização não estiver habilitada para Multigeográfico; `null` (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Coleção de cadeias de caracteres | Não anulável. |
-| objectType | String | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre `Company`.|
 | onPremisesLastSyncDateTime | DateTimeOffset | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório no local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.|
 | onPremisesSyncEnabled | Booliano | `true` se esse objeto for sincronizado de um diretório local; `false` se este objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; Nullable. `null` se este objeto nunca foi sincronizado de um diretório local (padrão). |
 | postalCode | Cadeia de caracteres | CEP do endereço da organização. |
@@ -84,7 +83,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso da organização. Anulável.| 
-|organizationalBranding|coleção [organizationalBranding](organizationalbranding.md)| Recurso para gerenciar a identidade visual padrão da organização. Anulável.|
+|Marca|coleção [organizationalBranding](organizationalbranding.md)| Recurso para gerenciar a identidade visual padrão da organização. Anulável.|
 |settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e as relações do objeto organizationSettings. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -114,7 +113,6 @@ Veja a seguir uma representação JSON do recurso
   "id": "String (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "Boolean",
   "marketingNotificationEmails": ["String"],
-  "objectType": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "String",

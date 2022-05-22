@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e16a5b406970934c74e481f050c28c19c6485407
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: ea800fc1b154b61f70e3573110ef980bf8ef278b
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65314589"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629332"
 ---
 # <a name="get-connection"></a>Obter conexão
 
@@ -62,6 +62,8 @@ Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [obje
 
 Veja a seguir um exemplo de uma solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connection"
@@ -70,6 +72,32 @@ Veja a seguir um exemplo de uma solicitação.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/connections/contosohr
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-connection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-connection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-connection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-connection-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-connection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="response"></a>Resposta

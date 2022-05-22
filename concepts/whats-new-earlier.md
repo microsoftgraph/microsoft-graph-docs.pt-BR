@@ -3,14 +3,80 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: bcfced8791bddae5bac1d32f0a900f40db286511
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 7e9ec0b2b9bba305b3ad2acdf9cce1d3ecbfb65a
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060693"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629173"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="march-2022-new-and-generally-available"></a>Março de 2022: Novo e disponível para o público geral
+
+### <a name="files"></a>Arquivos
+Use um [pacote](/graph/api/resources/bundle) para compartilhar vários arquivos ao mesmo tempo, assim como outros recursos [driveItem](/graph/api/resources/driveitem). Você pode aplicar operações CRUD em um pacote e [adicionar](/graph/api/bundle-additem) um item ou [remover](/graph/api/bundle-removeitem) um item de um pacote.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+Use a [permissão específica de recurso](/graph/api/resources/resourcespecificpermission) para autorizar um aplicativo do Teams a acessar diretamente os dados de uma instância específica de um chat ou equipe. Por exemplo, a permissão específica do recurso ChannelMessage.Read.Group permite que um aplicativo do Teams leia as mensagens de canal de uma única equipe.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+- [Obter](/graph/api/approval-get)decisões de [aprovação](/graph/api/resources/approval) associadas a uma [solicitação de atribuição de pacote de acesso](/graph/api/resources/accesspackageassignmentrequest).
+- Como parte do[Gerenciamento de direitos do Azure Active Directory (Azure AD)](/graph/api/resources/entitlementmanagement-overview), use uma [política de atribuição de pacote de acesso](/graph/api/resources/accesspackageassignmentpolicy) para gerenciar uma solicitação, aprovação, atribuição ou revisão regular para um [pacote de acesso](/graph/api/resources/accesspackage). Você pode controlar o acesso de usuários internos e externos a grupos, aplicativos e sites do SharePoint Online de uma organização.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+Especifique a [inclusão ou exclusão de aplicativos cliente](/graph/api/resources/conditionalaccessclientapplications) como um [conjunto de condições](/graph/api/resources/conditionalAccessConditionSet) para aplicar uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy).
+
+### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
+Celebre o verdadeiro trabalho em equipe com as contribuições da comunidade e experimente os novos recursos do [Kit de ferramentas do Microsoft Graph v2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0):
+- Otimize a atualização de imagens de pessoas no componente [pessoa](/graph/toolkit/components/person) usando o atributo `disable-image-fetch`para controlar a busca desnecessária.
+- Evite o carregamento desnecessário de imagens de pessoas no componente [seletor de pessoas](/graph/toolkit/components/people-picker) usando o atributo `disable-images`. 
+- Filtre por usuários, grupos e lista de pessoas disponíveis no componente [seletor de pessoas](/graph/toolkit/components/people-picker) usando os atributos `user-filters`, `group-filters` e `people-filters`.
+
+
+## <a name="march-2022-new-in-preview-only"></a>Março de 2022: novo somente para visualização
+
+### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
+Especifique um ou [participantes da reunião](/graph/api/resources/meetingParticipants?view=graph-rest-beta&preserve-view=true) como co-organizador.
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta Eletrônica
+[Limpe dados](/graph/api/ediscovery-sourcecollection-purgeData?view=graph-rest-beta&preserve-view=true) e exclua permanentemente mensagens do Microsoft Teams de uma [coleção de origem](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true) de descoberta eletrônica.
+
+### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem
+- Use permissões delegadas ou de aplicativo de `RoleManagement.Read.CloudPC` para as operações de leitura do recurso [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true).
+- Use permissões delegadas ou de aplicativo de `RoleManagement.ReadWrite.CloudPC` para as operações de leitura e gravação do recurso [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true).
+- Especifique a ID e o nome de exibição de uma assinatura do Azure como parte das informações de uma [imagem de origem de um dispositivo](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true).
+- Especifique e configure as[configurações do Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) ao criar PCs na nuvem para uma [política de provisionamento](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true).
+
+### <a name="device-and-app-management--corporate-management"></a>Gerenciamento de dispositivos e aplicativos | Gerenciamento corporativo
+- As atualizações de março do Intune para a versão beta.
+
+### <a name="device-and-app-management--multi-tenant-management"></a>Gerenciamento de dispositivos e aplicativos | Gerenciamento multilocatário
+[Listar](/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta&preserve-view=true) e [obter](/graph/api/managedtenants-auditevent-get?view=graph-rest-beta&preserve-view=true) eventos de auditoria para locatários gerenciados no Microsoft 365 Lighthouse.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+- [Listar](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true) as [configurações](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true) que especificam o acesso de aplicativos da Microsoft aos dados do Microsoft 365 pertencentes a usuários em uma organização. Por exemplo, dada a autorização adequada, se apenas aplicativos Microsoft 365 (como Word e Excel) podem acessar os dados do Microsoft 365 dos usuários ou se outros aplicativos da Microsoft (como o Windows) também podem acessar os dados. Por padrão, todos os usuários em uma organização podem acessar em um aplicativo da Microsoft quaisquer dados do Microsoft 365 que o usuário tenha sido autorizado a acessar. 
+- Seguindo o modelo de segurança cibernética de Confiança Zero, os parceiros da Microsoft podem usar [GDAP (privilégios de administrador delegado granular)](/graph/api/resources/delegatedadminrelationships-api-overview?view=graph-rest-beta&preserve-view=true) para executar tarefas administrativas com acesso menos privilegiado aos locatários dos clientes, a fim de evitar possíveis exposições de segurança. Em vez de solicitar a função de Administrador Global como no passado, os parceiros solicitam funções específicas para a administração de locatários do cliente por um período definido, e seus clientes devem conceder explicitamente acesso menos privilegiado a eles.
+
+### <a name="security--attack-simulation-and-training"></a>Segurança | Treinamento e simulação de ataque
+- [Listar automações de simulação](/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-beta&preserve-view=true) para um locatário.
+- [Listar execuções](/graph/api/resources/simulationautomationrun?view=graph-rest-beta&preserve-view=true) de automações de simulação para um locatário.
+
+### <a name="search"></a>Pesquisar
+- Especifique em uma [solicitação de pesquisa](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) se os arquivos duplicados do SharePoint devem ser cortados dos resultados da pesquisa. O padrão é false. 
+- Qualifique uma cadeia de caracteres de [consulta de pesquisa](/graph/api/resources/searchquery?view=graph-rest-beta&preserve-view=true) com um modelo, que dá suporte a KQL e variáveis de consulta.
+
+### <a name="sites-and-lists"></a>Sites e listas
+- Para uma [coluna](/graph/api/resources/columnDefinition?view=graph-rest-beta&preserve-view=true) que contém dados de taxonomia especifique o [termo](/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) pai e o [conjunto de termos](/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true) para os quais os termos filho podem ser selecionados como valores de coluna.
+- Obtenha as configurações de um [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true), incluindo seu idioma e fuso horário.
+
+### <a name="tasks-and-plans"></a>Tarefas e planos
+Identifique se um plano do Planner destinado a experiências fora do Planner (como o Microsoft Teams) pode acompanhar o trabalho nesse contexto, verificando os **detalhes** da relação do recurso [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) correspondente.
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Obtenha ou defina [informações de resumo](/graph/api/resources/teamSummary?view=graph-rest-beta&preserve-view=true) sobre uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), incluindo a contagem de proprietários, membros e convidados.
+- Classifique mensagens em ordem decrescente ao [listar mensagens em um chat](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
+
 
 ## <a name="february-2022-new-and-generally-available"></a>Janeiro de 2022: Novo e disponível ao público em geral
 
