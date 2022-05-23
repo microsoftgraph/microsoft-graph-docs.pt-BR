@@ -4,12 +4,12 @@ metadata:
   description: Estas perguntas frequentes respondem dúvidas relacionadas aos Inícios Rápidos do Microsoft Graph.
   author: jasonjoh
   ms.localizationpriority: medium
-  ms.openlocfilehash: 9a102ce9cec318be5ced141dad413ad1cb45348e
-  ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+  ms.openlocfilehash: bbf4f3711aa9fdd62df12388d15cd14f363384c4
+  ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/12/2021
-  ms.locfileid: "59019046"
+  ms.lasthandoff: 05/22/2022
+  ms.locfileid: "65628737"
 title: Perguntas frequentes do início rápido do Microsoft Graph
 summary: >
   Estas perguntas frequentes respondem dúvidas relacionadas aos [Inícios Rápidos do Microsoft Graph](https://developer.microsoft.com/graph/quick-start).
@@ -18,19 +18,19 @@ summary: >
   ## <a name="general-design"></a>Design geral
 
 
-  Os exemplos de início rápido mostram como acessar os recursos do Microsoft Graph. Esses exemplos acessam dois serviços com uma autenticação: conta da Microsoft e o Outlook. Cada início rápido acessa informações de perfis de usuários com uma conta Microsoft e exibe eventos no calendário.
+  Os exemplos de início rápido mostram como acessar os recursos do Microsoft Graph. Esses exemplos acessam dois serviços com uma autenticação: Azure Active Directory e Outlook. Cada início rápido acessa informações dos perfis dos usuários da conta da Microsoft e exibe mensagens da caixa de entrada.
 
 
   Os inícios rápidos envolvem quatro etapas:
 
 
-  - Selecione sua plataforma
+  - Selecione seu idioma
 
-  - Obter sua ID de aplicativo (ID do cliente)
+  - Obter a ID do cliente (ID do aplicativo)
 
-  - Criar o exemplo
+  - Baixar o exemplo
 
-  - Entrar e exibir eventos no calendário
+  - Executar o exemplo
 
 
   Quando você completar o início rápido, você possui um aplicativo pronto para ser executado.
@@ -39,19 +39,19 @@ summary: >
   ## <a name="prerequisites"></a>Pré-requisitos
 
 
-  Todos os exemplos de início rápido exigem acesso a uma conta pessoal da Microsoft com uma caixa de correio em Outlook.com ou a uma conta de estudante ou de trabalho da Microsoft com uma caixa de correio Exchange Online pessoal. Se você não tiver uma conta da Microsoft, há algumas opções para obter uma conta gratuita:
+  Todos os exemplos de início rápido exigem acesso a uma conta pessoal da Microsoft com uma caixa de correio no Outlook.com ou a uma conta corporativa ou de estudante da Microsoft com uma Exchange Online de correio. Se você não tiver uma conta da Microsoft, há algumas opções para obter uma conta gratuita:
 
 
-  - Você pode [se inscrever em uma nova conta pessoal da Microsoft.](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)
+  - Você pode [se inscrever para uma nova conta pessoal da Microsoft](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1).
 
-  - Você pode [se inscrever no programa Microsoft 365 desenvolvedor](https://developer.microsoft.com/office/dev-program) para obter uma assinatura Microsoft 365 gratuita.
+  - Você pode [se inscrever no Microsoft 365 Developer Program](https://developer.microsoft.com/office/dev-program) para obter uma assinatura Microsoft 365 assinatura gratuita.
 sections:
 - name: Exemplos de perguntas do início rápido gerais
   questions:
   - question: >
       Posso obter o código de início rápido sem fazer o download através da página de início rápido?
     answer: >
-      Com certeza! Todo download de início rápido é baseado em um [tutorial do Microsoft Graph](tutorials.yml), portanto, você terá duas outras opções para obter o mesmo código-fonte:
+      Com certeza! Todo download de início rápido é baseado em um [tutorial do Microsoft Graph](tutorials.md), portanto, você terá duas outras opções para obter o mesmo código-fonte:
 
 
       - Crie o código por conta própria seguindo tutorial passo a passo.
@@ -69,29 +69,21 @@ sections:
 
       |-------------|----------|-------------------|
 
-      | Android | [Tutorial](/graph/tutorials/android) | [GitHub](https://github.com/microsoftgraph/msgraph-training-android) |
+      | .NET | [Tutorial](/tutorials/dotnet) | [microsoftgraph/msgraph-training-dotnet](https://github.com/microsoftgraph/msgraph-training-dotnet) |
 
-      | Angular | [Tutorial](/graph/tutorials/angular) | [GitHub](https://github.com/microsoftgraph/msgraph-training-angularspa) |
+      | Ir | [Tutorial](/tutorials/go) | [microsoftgraph/msgraph-training-go](https://github.com/microsoftgraph/msgraph-training-go) |
 
-      | ASP.NET MVC | [Tutorial](/learn/modules/msgraph-build-aspnetmvc-apps) | [GitHub](https://github.com/microsoftgraph/msgraph-training-aspnetmvcapp) |
+      | Java | [Tutorial](/tutorials/java) | [microsoftgraph/msgraph-training-java](https://github.com/microsoftgraph/msgraph-training-java) |
 
-      | iOS (Swift) | [Tutorial](/graph/tutorials/ios-swift) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-swift) |
+      | JavaScript | [Tutorial](/tutorials/javascript) | [microsoftgraph/msgraph-training-javascript](https://github.com/microsoftgraph/msgraph-training-javascript) |
 
-      | iOS (Objective-C) | [Tutorial](/graph/tutorials/ios-objectivec) | [GitHub](https://github.com/microsoftgraph/msgraph-training-ios-objectivec) |
+      | PHP | [Tutorial](/tutorials/php) | [microsoftgraph/msgraph-training-php](https://github.com/microsoftgraph/msgraph-training-php) |
 
-      | Node.js | [Tutorial](/graph/tutorials/node) | [GitHub](https://github.com/microsoftgraph/msgraph-training-nodeexpressapp) |
+      | PowerShell | [Tutorial](/tutorials/powershell) | [microsoftgraph/msgraph-training-powershell](https://github.com/microsoftgraph/msgraph-training-powershell) |
 
-      | PHP | [Tutorial](/graph/tutorials/php) | [GitHub](https://github.com/microsoftgraph/msgraph-training-phpapp) |
+      | Python | [Tutorial](/tutorials/python) | [microsoftgraph/msgraph-training-python](https://github.com/microsoftgraph/msgraph-training-python) |
 
-      | Python | [Tutorial](/graph/tutorials/python) | [GitHub](https://github.com/microsoftgraph/msgraph-training-pythondjangoapp) |
-
-      | React | [Tutorial](/graph/tutorials/react) | [GitHub](https://github.com/microsoftgraph/msgraph-training-reactspa) |
-
-      | Ruby | [Tutorial](/graph/tutorials/ruby) | [GitHub](https://github.com/microsoftgraph/msgraph-training-rubyrailsapp) |
-
-      | UWP | [Tutorial](/graph/tutorials/uwp) | [GitHub](https://github.com/microsoftgraph/msgraph-training-uwp) |
-
-      | Xamarin | [Tutorial](/graph/tutorials/xamarin) | [GitHub](https://github.com/microsoftgraph/msgraph-training-xamarin) |
+      | TypeScript | [Tutorial](/tutorials/typescript) | [microsoftgraph/msgraph-training-typescript](https://github.com/microsoftgraph/msgraph-training-typescript) |
   - question: >
       Por que nenhum dos exemplos de início rápido mostra casos de uso de autenticação avançados?
     answer: >
@@ -103,25 +95,14 @@ sections:
 - name: Problemas conhecidos
   questions:
   - question: >
-      O início rápido do ASP.NET exibe um erro ao executá-lo: Não é possível localizar uma parte do caminho '[...]\Graph Tutorial\graph-tutorial\bin\roslyn\csc.exe'.
-    answer: >
-      Isso é causado por um [problema com o Visual Studio e o compilador Roslyn](https://github.com/dotnet/roslyn/issues/15556). Uma das opções a seguir deve resolver o erro.
-
-
-      - Descarregar/recarregar o projeto no Gerenciador de Soluções
-
-      - Limpar/Reconstruir a solução
-
-      - Atualizar pacotes do NuGet
-  - question: >
       Estou recebendo "AADSTS50011: O URL de resposta especificado na solicitação não corresponde aos URLs de resposta configurados para o aplicativo" ao executar um início rápido.
     answer: >
       Isso indica um problema com o registro do aplicativo para o início rápido. Quando você faz o download de um início rápido da página [Início Rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start), nós criamos o registro do aplicativo para você e configuramos um URL de resposta (também conhecido como URL de redirecionamento) que corresponde ao URL padrão usado pelo projeto de amostra. Se você alterar o URL, o registro do aplicativo não mais corresponderá e poderá causar esse erro. Para resolver esse erro, consulte o arquivo README.md incluído no projeto de início rápido para obter instruções sobre como criar um registro de aplicativo e configurá-lo no código de amostra.
   - question: >
-      Depois de entrar, me foi dito que preciso da aprovação do administrador.
+      Depois de entrar, me disseram que preciso de aprovação do administrador.
     answer: >
-      Depois de entrar em um dos exemplos de início rápido, você pode ver uma mensagem que diz Precisar de aprovação do administrador **"XXX** Tutorial precisa de permissão para acessar recursos em sua organização que somente um administrador pode conceder. Peça a um administrador para conceder permissão a esse aplicativo antes de usá-lo." Isso não é um bug com o exemplo! Nenhum dos inícios rápidos solicita Graph escopos de permissão *que, por padrão,* exigem consentimento do administrador. Os administradores de locatários podem desabilitar sua capacidade de consentir Graph escopos de permissões para todos os aplicativos que eles não aprovaram. Nesse caso, você verá esse erro.
+      Depois de entrar em um dos exemplos de início rápido, você poderá ver uma mensagem informando Que precisa de aprovação do **administrador "XXX** Tutorial precisa de permissão para acessar recursos em sua organização que somente um administrador pode conceder. Peça a um administrador para conceder permissão a este aplicativo antes de usá-lo." Isso não é um bug com o exemplo! Nenhum dos inícios rápidos solicita nenhum escopo Graph permissão que, por *padrão,* exigem consentimento do administrador. Os administradores de locatários podem desabilitar sua capacidade de Graph escopos de permissões para todos os aplicativos que eles não aprovaram. Nesse caso, você verá esse erro.
 
 
-      Você precisará trabalhar com seus administradores para obter aprovação, usar uma conta pessoal da Microsoft (Outlook.com) ou usar um locatário de teste Microsoft 365 com Exchange Online.
+      Você precisará trabalhar com seus administradores para obter aprovação, usar uma conta microsoft pessoal (Outlook.com) ou usar um locatário de teste Microsoft 365 com Exchange Online.
 additionalContent: "\n## <a name=\"didnt-find-what-you-need\"></a>Não consegue encontrar o que precisa?\n\nSe essas Perguntas Frequentes não esclareceram a dúvida ou problema encontrado em um ou mais inícios rápidos, por favor nos avise usando a seção **Feedback** abaixo."
