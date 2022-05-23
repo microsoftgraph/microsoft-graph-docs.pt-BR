@@ -9,4 +9,4 @@ ms.locfileid: "60992260"
 ---
 <!-- markdownlint-disable MD041 -->
 > [!IMPORTANT]
-> O Microsoft Graph SDK para Go está atualmente em visualização. Não há suporte para o uso desse SDK na produção.
+> O Microsoft Graph SDK para Go está atualmente em versão prévia. Não há suporte para o uso desse SDK em produção.
