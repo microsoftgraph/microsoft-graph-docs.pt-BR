@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 0a237a7ab6abd6c9f6c0f04dfda6174e5a0d436e
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 87c36421b4abc2742d0f368331cecfbf74528a23
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461629"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629171"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -177,7 +177,7 @@ Esse recurso permite:
 | aboutMe | String | Um campo de entrada de texto em forma livre para o usuário se descrever. <br><br>Retornado apenas em `$select`. |
 | accountEnabled | Booliano | `true` se a conta estiver habilitada. Caso contrário, `false`. Essa propriedade é obrigatória quando um usuário é criado.<br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`). |
 | ageGroup | [ageGroup](#agegroup-values) | Define a faixa etária do usuário. Valores permitidos: `null`, `Minor`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Suporte `$filter` (`eq`, `ne`, `not` e `in`). |
-| assignedLicenses | Coleção [assignedLicense](assignedlicense.md) | As licenças atribuídas ao usuário, incluindo licenças herdadas (baseadas em grupo). <br><br>Não anulável. Dá suporte a `$filter` (`eq`, `not` e a contagem de coleções vazias). |
+| assignedLicenses | Coleção [assignedLicense](assignedlicense.md) | As licenças atribuídas ao usuário, incluindo licenças herdadas (baseadas em grupo). <br><br>Não anulável. Suporta `$filter` (`eq`, `not` e contando coleções vazias). |
 | assignedPlans | Coleção [assignedPlan](assignedplan.md) | Os planos que são atribuídos ao usuário. Somente leitura. Não anulável.<br><br>Suporte para `$filter` (`eq` e `not`). |
 | birthday | DateTimeOffset | O aniversário do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z` <br><br>Retornado apenas em `$select`. |
 | businessPhones | Coleção de cadeias de caracteres | Números de telefone para o usuário. Somente um número pode ser definido para essa propriedade.<br><br>Somente leitura para usuários sincronizados do diretório local. Suporte `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
@@ -239,7 +239,7 @@ Esse recurso permite:
 | refreshTokensValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir.|
 | responsibilities | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em `$select`. |
 | schools | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar as escolas que frequentou. <br><br>Retornado apenas em `$select`. |
-| showInAddressList | Booliano | `true` se a lista de endereços global do Outlook deve conter o usuário, caso contrário `false`. Se não estiver configurado, isso será tratado como `true`. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como `false`. <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
+| showInAddressList | Booliano | **Não use no Microsoft Graph. Gerencie essa propriedade por meio do centro de administração do Microsoft 365.** Representa se o usuário deve ser incluído na lista de endereços global do Outlook. Consulte [Problema conhecido](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
 | signInSessionsValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
 | skills | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas qualificações. <br><br>Retornado apenas em `$select`. |
 | signInActivity | [signInActivity](signinactivity.md) | Obter a última data de login e solicitar a ID de login para um determinado usuário. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *mas*, não com quaisquer outras propriedades filtráveis. **Observação:** os detalhes dessa propriedade exigem uma licença do Azure Active Directory Premium P1/P2 e a permissão **AuditLog.Read.All**.<br><br>**Observação:** <br/><li>Há um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) ao recuperar essa propriedade.<li>Essa propriedade não é retornada para um usuário que nunca entrou ou entrou pela última vez antes de abril de 2020.|
