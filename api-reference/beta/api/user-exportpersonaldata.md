@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 77c61da4c9857dc45aaa059e93f94abd9c9d4d4f
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: e592061e5cd7b3838be4d036beb46d5df4594b62
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294037"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653501"
 ---
 # <a name="user-exportpersonaldata"></a>user: exportPersonalData
 
 Namespace: microsoft.graph
 
-Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização.
+Envie uma solicitação de operação de política de dados de um administrador da empresa ou de um aplicativo para exportar os dados de um usuário organizacional. Esses dados incluem os dados do usuário armazenados em OneDrive e seus relatórios de atividades. Para obter mais diretrizes sobre como exportar dados enquanto estiver em conformidade com as regulamentações, consulte Solicitações de Titulares de Dados e o [RGPD e CCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User.Export.All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Application | User.Export.All |
+|Aplicativo | User.Export.All |
 
 >**Nota:** A exportação só pode ser executada por um administrador da empresa quando a permissão delegada é usada.
 

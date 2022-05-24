@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ed825ae07c1a707be2847b9bdc40f7fe71add334
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: beea220ebf3a0b12e40e56997c236b82fcb5d2fe
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103008"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653536"
 ---
 # <a name="crosstenantaccesspolicy-resource-type"></a>Tipo de recurso crossTenantAccessPolicy
 
@@ -34,6 +34,7 @@ Herda de [tenantRelationshipAccessPolicyBase](../resources/tenantrelationshipacc
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 | displayName | Cadeia de caracteres | O nome de exibição da política de acesso entre locatários. Herdado do [policyBase](../resources/policybase.md).|
+| allowedCloudEndpoints | Coleção de cadeias de caracteres | Usado para especificar com quais nuvens da Microsoft uma organização gostaria de colaborar. Por padrão, esse valor está vazio. Os valores com suporte para este campo são: `microsoftonline.com`, `microsoftonline.us`e `partner.microsoftonline.cn`. |
 | definição (preterido) | Cadeia de caracteres | A definição JSON bruta da política de acesso entre locatários. **Preterido. Não use.**|
 
 ## <a name="relationships"></a>Relações
@@ -59,6 +60,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicy",
   "displayName": "String",
-  "definition": "String"
+  "definition": "String",
+  "allowedCloudEndpoints": ["String"]
 }
 ```

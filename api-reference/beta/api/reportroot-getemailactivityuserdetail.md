@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 9e7a8c4b0906e534d91ff62bd32e471fe46cf083
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: dfb96e4428ac51c62b0280e9c830e3d9ce3c379e
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044607"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653550"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 
@@ -81,22 +81,22 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Contagem de Envios
 - Contagem de Recebimentos
 - Contagem de Leituras
-- Reunião Criada
-- Reunião Interagido
+- Contagem de Reuniões Criadas
+- Contagem de Reuniões Interaagidas
 - Produtos Atribuídos
 - Período de Relatório
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto JSON no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto JSON no corpo da resposta.
 
-O tamanho padrão da página para essa solicitação é de 200 itens.
+O tamanho de página padrão para essa solicitação é de 200 itens.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir, um exemplo que dá saída ao CSV.
+A seguir está um exemplo que gera CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -137,12 +137,12 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Assigned Products,Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Last Activity Date,Send Count,Receive Count,Read Count,Meeting Created Count,Meeting Interacted Count,Assigned Products,Report Period
 ```
 
 ### <a name="json"></a>JSON
 
-A seguir, um exemplo que retorna JSON.
+A seguir está um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -191,6 +191,8 @@ Content-Length: 424
       "assignedProducts": [
         "Microsoft 365 ENTERPRISE E5"
       ], 
+      "meetingCreatedCount": 50, 
+      "meetingInteractedCount": 86, 
       "reportPeriod": "7"
     }
   ]

@@ -472,7 +472,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Notas
+          - name: Observações
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -592,7 +592,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para o usuário
                 href: api/chat-list.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -938,7 +938,7 @@ items:
                         href: api/extensionproperty-delete.md
               - name: Credenciais de identidade federada (versão prévia)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1203,7 +1203,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -10082,7 +10082,7 @@ items:
                     href: api/cloudpcorganizationsettings-get.md
                   - name: Atualizar
                     href: api/cloudpcorganizationsettings-update.md
-          - name: Atualizações do dispositivo (visualização)
+          - name: Atualizações do dispositivo (prévia)
             displayName: Windows updates
             items:
               - name: Atualizações
@@ -10351,7 +10351,7 @@ items:
                     href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
                   - name: Obter Windows de proteção
                     href: api/managedtenants-windowsprotectionstate-get.md
-          - name: Comunicações e Integridade do serviço
+          - name: Comunicações e integridade do serviço
             items:
               - name: Visão Geral
                 href: resources/service-communications-api-overview.md
@@ -12631,7 +12631,7 @@ items:
               - name: Solicitações de consentimento
                 href: resources/consentrequests-overview.md
                 items:
-                  - name: Política de solicitação de consentimento do administrador
+                  - name: Administração de solicitação de consentimento
                     href: resources/adminconsentrequestpolicy.md
                     items:
                       - name: Obter
@@ -13432,7 +13432,7 @@ items:
                     href: api/personname-update.md
                   - name: Excluir
                     href: api/personname-delete.md
-              - name: Notas
+              - name: Observações
                 items:
                   - name: Anotação de pessoa
                     href: resources/personannotation.md
@@ -14403,20 +14403,6 @@ items:
                 href: api/site-list-operations.md
               - name: Obter configurações do site
                 href: api/sitesettings-get.md
-              - name: Permissões
-                items:
-                  - name: Permissão
-                    href: resources/permission.md
-                  - name: Listar permissões de site
-                    href: api/site-list-permissions.md
-                  - name: Criar permissões de site
-                    href: api/site-post-permissions.md
-                  - name: Obter permissão do site
-                    href: api/site-get-permission.md
-                  - name: Atualizar a permissão do site
-                    href: api/site-update-permission.md
-                  - name: Excluir permissão do site
-                    href: api/site-delete-permission.md
           - name: Listas
             items:
               - name: List
@@ -14541,6 +14527,20 @@ items:
                 href: api/list-list-operations.md
               - name: Obter operação
                 href: api/richlongrunningoperation-get.md
+          - name: Permissões de site
+            items:
+              - name: Permissão
+                href: resources/permission.md
+              - name: Listar permissões de site
+                href: api/site-list-permissions.md
+              - name: Criar permissões de site
+                href: api/site-post-permissions.md
+              - name: Obter permissão do site
+                href: api/site-get-permission.md
+              - name: Atualizar a permissão do site
+                href: api/site-update-permission.md
+              - name: Excluir permissão do site
+                href: api/site-delete-permission.md
           - name: Taxonomia
             displayname: Taxonomy API
             items:
@@ -14597,10 +14597,18 @@ items:
                     href: api/termStore-term-list-relations.md
                   - name: Criar
                     href: api/termStore-relation-post.md
+          - name: Configurações de locatário
+            items:
+              - name: Settings
+                href: resources/tenantadmin-settings.md
+              - name: Obter configurações
+                href: api/tenantadmin-settings-get.md
+              - name: Atualizar configurações
+                href: api/tenantadmin-settings-update.md
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -14923,6 +14931,12 @@ items:
                 href: api/chat-hideforuser.md
               - name: Reexibir chat
                 href: api/chat-unhideforuser.md
+              - name: Listar mensagens fixadas
+                href: api/chat-list-pinnedmessages.md
+              - name: Fixar mensagem
+                href: api/chat-post-pinnedmessages.md
+              - name: Desafixar mensagem
+                href: api/chat-delete-pinnedmessages.md
           - name: Mensagem de chat
             href: resources/chatmessage.md
             items:
@@ -14950,6 +14964,15 @@ items:
                 href: api/chatmessage-list-hostedcontents.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
+          - name: Mensagem de chat fixada
+            href: resources/pinnedChatMessageInfo.md
+            items:
+              - name: Listar mensagens fixadas
+                href: api/chat-list-pinnedmessages.md
+              - name: Fixar mensagem
+                href: api/chat-post-pinnedmessages.md
+              - name: Desafixar mensagem
+                href: api/chat-delete-pinnedmessages.md
           - name: Tags
             href: resources/teamworktag.md
             items:
@@ -15326,7 +15349,7 @@ items:
                 href: api/group-list-permissiongrants.md
               - name: Lista para chat
                 href: api/chat-list-permissiongrants.md
-      - name: Tarefas To do
+      - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
           - name: Visão Geral
@@ -15407,7 +15430,7 @@ items:
                 href: api/linkedresource_v2-delete.md
           - name: Tarefas pendentes (antiga)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/todo-overview.md
               - name: Lista de tarefas
                 href: resources/todotasklist.md

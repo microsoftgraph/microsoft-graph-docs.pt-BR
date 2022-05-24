@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: d1ce2708cece59e39f289677b8804f8dd57b9556
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: f635887cb9dfe86c5707bb012cdeb493106558fd
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044740"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653473"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 
@@ -73,19 +73,19 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Receber
 - Ler
 - Reunião Criada
-- Reunião Interagido
+- Reunião Interage
 - Data do relatório
 - Período de Relatório
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` objeto JSON no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto JSON no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="csv"></a>CSV
 
-A seguir, um exemplo que dá saída ao CSV.
+A seguir está um exemplo que gera CSV.
 
 #### <a name="request"></a>Solicitação
 
@@ -126,12 +126,12 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Send,Receive,Read,Report Date,Report Period
+Report Refresh Date,Send,Receive,Read,Meeting Created,Meeting Interacted,Report Date,Report Period
 ```
 
 ### <a name="json"></a>JSON
 
-A seguir, um exemplo que retorna JSON.
+A seguir está um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
@@ -172,6 +172,8 @@ Content-Length: 237
       "send": 69, 
       "receive": 197, 
       "read": 158, 
+      "meetingCreated": 59, 
+      "meetingInteracted": 90, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

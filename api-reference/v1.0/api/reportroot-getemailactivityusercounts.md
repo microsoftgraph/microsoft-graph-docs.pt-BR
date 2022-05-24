@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 1bd8841083659e6976248f4725dd26c6ca12c82d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d03d890e0c2c233639fbeac8919e46fd34e4785f
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119174"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653459"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 
@@ -68,6 +68,8 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Enviar
 - Receber
 - Ler
+- Reunião Criada
+- Reunião Interage
 - Data do relatório
 - Período de Relatório
 
@@ -113,7 +115,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Send,Receive,Read,Report Date,Report Period
+Report Refresh Date,Send,Receive,Read,Meeting Created,Meeting Interacted,Report Date,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

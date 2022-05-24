@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aa2c2db38d3c65dae58f5efb6d922559c9c524d3
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8b94ab5f20642ea7283d5a3c3552a4b2a271c2e3
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336603"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653515"
 ---
 # <a name="update-crosstenantaccesspolicy"></a>Atualizar crossTenantAccessPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de uma [política de acesso entre locatários](../resources/crosstenantaccesspolicy.md).
+Atualize as propriedades de uma política [de acesso entre locatários](../resources/crosstenantaccesspolicy.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -58,16 +58,14 @@ PATCH /policies/crossTenantAccessPolicy
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
-O [tamanho do objeto crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) atualmente está limitado a 25KB. Este método retornará um `400 Bad Request` código de erro se o tamanho da política exceder 25KB.
+O [tamanho do objeto crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) está atualmente limitado a 25 KB. Esse método retornará um código `400 Bad Request` de erro se o tamanho da política exceder 25 KB.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicy"
@@ -79,35 +77,9 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
 Content-Type: application/json
 
 {
-  "displayName": "CrossTenantAccessPolicy",
+  "allowedCloudEndpoints": ["microsoftonline.us", "partner.microsoftonline.cn"]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-crosstenantaccesspolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Resposta
 
