@@ -938,7 +938,7 @@ items:
                         href: api/extensionproperty-delete.md
               - name: Credenciais de identidade federada (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1588,7 +1588,7 @@ items:
                     href: api/addlargegalleryviewoperation-get.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1697,7 +1697,7 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta Eletrônica (versão prévia)
             items:
@@ -1859,7 +1859,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -9940,10 +9940,12 @@ items:
                     href: api/user-list-cloudpcs.md
                   - name: Obter cloudPC
                     href: api/cloudpc-get.md
-                  - name: Ação remota de reprovisionamento em massa
+                  - name: Reprovisionamento em massa remotamente
                     href: api/manageddevice-bulkreprovisioncloudpc.md
-                  - name: Ação de restauração remota em massa
+                  - name: Restauração em massa remotamente
                     href: api/manageddevice-bulkrestorecloudpc.md
+                  - name: Status de revisão de conjunto em massa
+                    href: api/manageddevice-bulksetcloudpcreviewstatus.md
                   - name: Alterar o tipo de accout do usuário
                     href: api/cloudpc-changeuseraccounttype.md
                   - name: Fim do período de carência
@@ -9952,6 +9954,8 @@ items:
                     href: api/cloudpc-getcloudpclaunchinfo.md
                   - name: Obter resultados da ação remota
                     href: api/manageddevice-getcloudpcremoteactionresults.md
+                  - name: Obter status de revisão
+                    href: api/manageddevice-getcloudpcreviewstatus.md
                   - name: Reiniciar
                     href: api/cloudpc-reboot.md
                   - name: Renomear
@@ -9960,22 +9964,14 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: Reprovisionar remotamente
                     href: api/manageddevice-reprovisioncloudpc.md
-                  - name: Reprovisionamento em massa remotamente
-                    href: api/manageddevice-bulkreprovisioncloudpc.md
                   - name: Redimensionar remotamente
                     href: api/manageddevice-resizecloudpc.md
                   - name: Restaurar remotamente
                     href: api/manageddevice-restorecloudpc.md
-                  - name: Restauração em massa remotamente
-                    href: api/manageddevice-bulkrestorecloudpc.md
-                  - name: Solucionar problema
-                    href: api/cloudpc-troubleshoot.md
                   - name: Definir o status da revisão
                     href: api/manageddevice-setcloudpcreviewstatus.md
-                  - name: Obter status de revisão
-                    href: api/manageddevice-getcloudpcreviewstatus.md
-                  - name: Status da revisão do conjunto em massa
-                    href: api/manageddevice-bulksetcloudpcreviewstatus.md
+                  - name: Solucionar problema
+                    href: api/cloudpc-troubleshoot.md
               - name: Imagem do dispositivo de PC na nuvem
                 href: resources/cloudpcdeviceimage.md
                 items:
@@ -11015,7 +11011,7 @@ items:
             items:
               - name: Privilégios de administrador delegado granular (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     displayName: 'GDAP, Partner Center, CSP, VAR'
                     href: resources/delegatedadminrelationships-api-overview.md
                   - name: Relações de administrador delegado
@@ -12008,7 +12004,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (versão prévia)
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativo de locatário
                         items:
@@ -13268,7 +13264,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13735,7 +13731,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -13828,7 +13824,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14105,7 +14101,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-answers-overview.md
               - name: Acronym
                 href: resources/search-acronym.md
@@ -14148,7 +14144,7 @@ items:
                     href: api/search-qna-delete.md
           - name: Index
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -14608,7 +14604,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -15100,7 +15096,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Enviar notificação ao usuário
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Guia
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: Guia no canal
