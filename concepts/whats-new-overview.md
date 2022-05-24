@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: b3584d205e5d511d77e6283b5ca0fa8cb9595084
-ms.sourcegitcommit: 4d8161fb286a3529bd6565856450d2fecb6a8c1a
+ms.openlocfilehash: f4ea5833922cbc36465bba32a7f4ade9b18c11d8
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65603069"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629003"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -18,7 +18,41 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 > Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
 
 
+## <a name="may-2022-new-and-generally-available"></a>Maio de 2022: novos e geralmente disponíveis
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+Um [aplicativo](/graph/api/resources/application) registrado no Azure Active Directory (Microsoft Azure AD) pode especificar as informações de contato do aplicativo ou serviço de um banco de dados de Gerenciamento de Ativos ou Serviços.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+Permitir que um locatário do Azure Active Directory (Azure AD) defina uma [federação com outra organização cujo provedor de identidade (IdP) ofereça suporte ao protocolo SAML ou WS-Fed](/graph/api/resources/samlOrWsFedExternalDomainFederation). Isso permite que o locatário do Azure AD dê acesso aos seus recursos para usuários convidados.
+
+### <a name="sites-and-lists"></a>Sites e listas
+- Obtenha uma coleção de recursos de [tipo de conteúdo](/graph/api/resources/contentType) do hub de tipo de conteúdo que são compatíveis usando a ação [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes). 
+- Adicione ou sincronize um tipo de conteúdo do hub de tipo de conteúdo para um [site](/graph/api/resources/site) ou [lista](/graph/api/resources/list), usando a ação [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub). Isso torna um tipo de conteúdo ou sua atualização disponível para um site ou lista específica onde é necessário. Essa é uma melhoria da infraestrutura de sincronização herdada que envia o tipo de conteúdo para todos os sites de uma organização, reduzindo os tempos de espera para a propagação da publicação. 
+- Obtenha uma ou mais [operações avançadas e de longa duração](/graph/api/resources/richlongrunningoperation) ocorrendo em um site ou lista, o que pode acontecer ao adicionar um tipo de conteúdo de forma síncrona.
+
+### <a name="teamwork"></a>Trabalho em equipe
+[Receba mensagens em um canal](/graph/api/channel-list-messages) e [inclua todas as respostas](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies) à mensagem.
+
+
+## <a name="may-2022-new-in-preview-only"></a>Maio de 2022: novo apenas na versão prévia
+
+### <a name="application"></a>Aplicativo
+Ao configurar o Proxy de Aplicativo do Microsoft Azure AD para aplicativos locais para acesso remoto seguro, use a propriedade **isStateSessionEnabled** no recurso [onPremisesPublishing](/graph/api/resources/onPremisesPublishing?view=graph-rest-beta&preserve-view=true) para especificar se o parâmetro de estado deve ser validado se o aplicativo usar o fluxo de concessão do código de autorização do OAuth 2.0. Definir essa propriedade ajuda os administradores a proteger o aplicativo contra solicitação intersite forjada (CSRF).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+Como parte da [função de usuário padrão](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) de uma [ política de autorização ](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true), especifique se o proprietário registrado de um dispositivo pode ler suas próprias chaves de recuperação do BitLocker.
+
+### <a name="search--index"></a>Pesquisa | Índice
+[Obtenha](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) as [informações da cota](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) para uma [conexão](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Essas informações incluem o número de itens que você pode ingerir na conexão, levando em consideração os itens restantes na conexão e a cota restante no nível do locatário para todas as suas conexões.
+
+
+
 ## <a name="april-2022-new-and-generally-available"></a>Abril de 2022: novo e com disponibilidade geral
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+Use a [Gestão de Identidade Privilegiada (PIM)](/graph/api/resources/privilegedidentitymanagementv3-overview) em aplicativos de produção para gerenciar, controlar e monitorar o acesso a recursos importantes na sua organização. O acesso é habilitado por meio de funções privilegiadas e do controle de acesso baseado em função (RBAC) e pode ser concedido a usuários, grupos ou entidades de serviço. Os recursos podem estar no Microsoft Azure AD, no Azure e em outros serviços de nuvem da Microsoft, tais como o Microsoft 365 ou o Microsoft Intune.
+
 ### <a name="search--index"></a>Pesquisa | Índice
 - Use as permissões do aplicativo `ExternalConnection.Read.All` e `ExternalConnection.ReadWrite.All` para ler ou gravar todas as conexões externas sem a presença de um usuário conectado.
 - Use a permissão do aplicativo `ExternalItem.Read.All` para ler todos os itens externos sem a presença de um usuário conectado.
@@ -43,6 +77,9 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 ### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
 Configure [ configurações de federação](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) para federar domínios com o Azure Active Directory.
 
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+[Obtenha atribuições](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true) para as quais o usuário correspondente tem pacotes de acesso incompatíveis. 
+
 ### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
 Confirme se um evento é [de alto risco e está comprometido](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true) ou é [seguro](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true) marcando o evento nos logs de entrada Azure Active Directory correspondentes.
 
@@ -58,72 +95,6 @@ Compartilhar um canal com uma ou mais equipes:
 - [Remova um canal compartilhado com uma equipe](/graph/api/team-delete-incomingchannel?view=graph-rest-beta&preserve-view=true).
 - [Liste as equipes que compartilharam um canal especificado](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
 - [ Deixe de compartilhar um canal com uma equipe](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
-
-
-## <a name="march-2022-new-and-generally-available"></a>Março de 2022: Novo e disponível para o público geral
-
-### <a name="files"></a>Arquivos
-Use um [pacote](/graph/api/resources/bundle) para compartilhar vários arquivos ao mesmo tempo, assim como outros recursos [driveItem](/graph/api/resources/driveitem). Você pode aplicar operações CRUD em um pacote e [adicionar](/graph/api/bundle-additem) um item ou [remover](/graph/api/bundle-removeitem) um item de um pacote.
-
-### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
-Use a [permissão específica de recurso](/graph/api/resources/resourcespecificpermission) para autorizar um aplicativo do Teams a acessar diretamente os dados de uma instância específica de um chat ou equipe. Por exemplo, a permissão específica do recurso ChannelMessage.Read.Group permite que um aplicativo do Teams leia as mensagens de canal de uma única equipe.
-
-### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-- [Obter](/graph/api/approval-get)decisões de [aprovação](/graph/api/resources/approval) associadas a uma [solicitação de atribuição de pacote de acesso](/graph/api/resources/accesspackageassignmentrequest).
-- Como parte do[Gerenciamento de direitos do Azure Active Directory (Azure AD)](/graph/api/resources/entitlementmanagement-overview), use uma [política de atribuição de pacote de acesso](/graph/api/resources/accesspackageassignmentpolicy) para gerenciar uma solicitação, aprovação, atribuição ou revisão regular para um [pacote de acesso](/graph/api/resources/accesspackage). Você pode controlar o acesso de usuários internos e externos a grupos, aplicativos e sites do SharePoint Online de uma organização.
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
-Especifique a [inclusão ou exclusão de aplicativos cliente](/graph/api/resources/conditionalaccessclientapplications) como um [conjunto de condições](/graph/api/resources/conditionalAccessConditionSet) para aplicar uma [política de acesso condicional](/graph/api/resources/conditionalaccesspolicy).
-
-### <a name="use-the-toolkit"></a>Usar o kit de ferramentas
-Celebre o verdadeiro trabalho em equipe com as contribuições da comunidade e experimente os novos recursos do [Kit de ferramentas do Microsoft Graph v2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0):
-- Otimize a atualização de imagens de pessoas no componente [pessoa](/graph/toolkit/components/person) usando o atributo `disable-image-fetch`para controlar a busca desnecessária.
-- Evite o carregamento desnecessário de imagens de pessoas no componente [seletor de pessoas](/graph/toolkit/components/people-picker) usando o atributo `disable-images`. 
-- Filtre por usuários, grupos e lista de pessoas disponíveis no componente [seletor de pessoas](/graph/toolkit/components/people-picker) usando os atributos `user-filters`, `group-filters` e `people-filters`.
-
-
-## <a name="march-2022-new-in-preview-only"></a>Março de 2022: novo somente para visualização
-
-### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
-Especifique um ou [participantes da reunião](/graph/api/resources/meetingParticipants?view=graph-rest-beta&preserve-view=true) como co-organizador.
-
-### <a name="compliance--ediscovery"></a>Conformidade | Descoberta Eletrônica
-[Limpe dados](/graph/api/ediscovery-sourcecollection-purgeData?view=graph-rest-beta&preserve-view=true) e exclua permanentemente mensagens do Microsoft Teams de uma [coleção de origem](/graph/api/resources/ediscovery-sourcecollection?view=graph-rest-beta&preserve-view=true) de descoberta eletrônica.
-
-### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem
-- Use permissões delegadas ou de aplicativo de `RoleManagement.Read.CloudPC` para as operações de leitura do recurso [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true).
-- Use permissões delegadas ou de aplicativo de `RoleManagement.ReadWrite.CloudPC` para as operações de leitura e gravação do recurso [unifiedRoleDefinition](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true).
-- Especifique a ID e o nome de exibição de uma assinatura do Azure como parte das informações de uma [imagem de origem de um dispositivo](/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta&preserve-view=true).
-- Especifique e configure as[configurações do Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) ao criar PCs na nuvem para uma [política de provisionamento](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true).
-
-### <a name="device-and-app-management--corporate-management"></a>Gerenciamento de dispositivos e aplicativos | Gerenciamento corporativo
-- As atualizações de março do Intune para a versão beta.
-
-### <a name="device-and-app-management--multi-tenant-management"></a>Gerenciamento de dispositivos e aplicativos | Gerenciamento multilocatário
-[Listar](/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta&preserve-view=true) e [obter](/graph/api/managedtenants-auditevent-get?view=graph-rest-beta&preserve-view=true) eventos de auditoria para locatários gerenciados no Microsoft 365 Lighthouse.
-
-### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
-- [Listar](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true) ou [atualizar](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true) as [configurações](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true) que especificam o acesso de aplicativos da Microsoft aos dados do Microsoft 365 pertencentes a usuários em uma organização. Por exemplo, dada a autorização adequada, se apenas aplicativos Microsoft 365 (como Word e Excel) podem acessar os dados do Microsoft 365 dos usuários ou se outros aplicativos da Microsoft (como o Windows) também podem acessar os dados. Por padrão, todos os usuários em uma organização podem acessar em um aplicativo da Microsoft quaisquer dados do Microsoft 365 que o usuário tenha sido autorizado a acessar. 
-- Seguindo o modelo de segurança cibernética de Confiança Zero, os parceiros da Microsoft podem usar [GDAP (privilégios de administrador delegado granular)](/graph/api/resources/delegatedadminrelationships-api-overview?view=graph-rest-beta&preserve-view=true) para executar tarefas administrativas com acesso menos privilegiado aos locatários dos clientes, a fim de evitar possíveis exposições de segurança. Em vez de solicitar a função de Administrador Global como no passado, os parceiros solicitam funções específicas para a administração de locatários do cliente por um período definido, e seus clientes devem conceder explicitamente acesso menos privilegiado a eles.
-
-### <a name="security--attack-simulation-and-training"></a>Segurança | Treinamento e simulação de ataque
-- [Listar automações de simulação](/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-beta&preserve-view=true) para um locatário.
-- [Listar execuções](/graph/api/resources/simulationautomationrun?view=graph-rest-beta&preserve-view=true) de automações de simulação para um locatário.
-
-### <a name="search"></a>Pesquisar
-- Especifique em uma [solicitação de pesquisa](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) se os arquivos duplicados do SharePoint devem ser cortados dos resultados da pesquisa. O padrão é false. 
-- Qualifique uma cadeia de caracteres de [consulta de pesquisa](/graph/api/resources/searchquery?view=graph-rest-beta&preserve-view=true) com um modelo, que dá suporte a KQL e variáveis de consulta.
-
-### <a name="sites-and-lists"></a>Sites e listas
-- Para uma [coluna](/graph/api/resources/columnDefinition?view=graph-rest-beta&preserve-view=true) que contém dados de taxonomia especifique o [termo](/graph/api/resources/termstore-term?view=graph-rest-beta&preserve-view=true) pai e o [conjunto de termos](/graph/api/resources/termstore-set?view=graph-rest-beta&preserve-view=true) para os quais os termos filho podem ser selecionados como valores de coluna.
-- Obtenha as configurações de um [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true), incluindo seu idioma e fuso horário.
-
-### <a name="tasks-and-plans"></a>Tarefas e planos
-Identifique se um plano do Planner destinado a experiências fora do Planner (como o Microsoft Teams) pode acompanhar o trabalho nesse contexto, verificando os **detalhes** da relação do recurso [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) correspondente.
-
-### <a name="teamwork"></a>Trabalho em equipe
-- Obtenha ou defina [informações de resumo](/graph/api/resources/teamSummary?view=graph-rest-beta&preserve-view=true) sobre uma [equipe](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), incluindo a contagem de proprietários, membros e convidados.
-- Classifique mensagens em ordem decrescente ao [listar mensagens em um chat](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?

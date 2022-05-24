@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1c96894d044e77d1faddf27085163248d1fd4d9b
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: adcef3a522e3f906176285d7f4b477541118bbb9
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65293967"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629185"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -76,7 +76,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para a organização. Somente leitura. Anulável.|
-|organizationalBranding|coleção [organizationalBranding](organizationalbranding.md)| Identidade visual da organização. Anulável.|
+|identidade visual|coleção [organizationalBranding](organizationalbranding.md)| Identidade visual da organização. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
