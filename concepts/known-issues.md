@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: c05bc8548fc6e43b96720e358204cb9752c5ddbe
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: d5234149ddfafb4633803975e33a57294cba656b
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366055"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "65629012"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -456,6 +456,10 @@ O [usuário: revokeSignInSessions API](/graph/api/user-revokesigninsessions) dev
 ### <a name="incomplete-objects-are-returned-when-using-getbyids-request"></a>Objetos incompletos são retornados ao usar a solicitação getByIds
 
 A solicitação de objetos usando a opção de [Obter objetos de diretório de uma lista de IDs](/graph/api/directoryobject-getbyids) deve retornar objetos completos. No entanto, atualmente, os objetos de [usuário](/graph/api/resources/user) no ponto de extremidade v1.0 são retornados com um conjunto limitado de propriedades. Como solução temporária, ao usar a operação em combinação com a opção de consulta `$select`, objetos de [usuário](/graph/api/resources/user) mais completos serão retornados. Esse comportamento não está de acordo com as especificações do OData. Como esse comportamento pode ser atualizado no futuro, use esta solução alternativa apenas quando fornecer `$select=` com todas as propriedades de seu interesse e somente se futuras alterações nessa solução alternativa forem aceitáveis.
+
+### <a name="showinaddresslist-property-is-out-of-sync-with-microsoft-exchange"></a>A propriedade showInAddressList está fora de sincronia com o Microsoft Exchange
+
+Ao consultar usuários por meio do Microsoft Graph, a propriedade **showInAddressList** pode não indicar o mesmo status mostrado no Microsoft Exchange. Recomendamos que você gerencie essa funcionalidade diretamente com o Microsoft Exchange por meio do Centro de administração do Microsoft 365 e não use essa propriedade no Microsoft Graph.
 
 ## <a name="query-parameters"></a>Parâmetros de consulta 
 

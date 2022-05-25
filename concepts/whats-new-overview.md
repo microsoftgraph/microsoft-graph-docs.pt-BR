@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: O que há de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: f4ea5833922cbc36465bba32a7f4ade9b18c11d8
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: a49bab69acbb630474223a6de7095b8c34157fda
+ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629003"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65653522"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -38,13 +38,13 @@ Permitir que um locatário do Azure Active Directory (Azure AD) defina uma [fede
 ## <a name="may-2022-new-in-preview-only"></a>Maio de 2022: novo apenas na versão prévia
 
 ### <a name="application"></a>Aplicativo
-Ao configurar o Proxy de Aplicativo do Microsoft Azure AD para aplicativos locais para acesso remoto seguro, use a propriedade **isStateSessionEnabled** no recurso [onPremisesPublishing](/graph/api/resources/onPremisesPublishing?view=graph-rest-beta&preserve-view=true) para especificar se o parâmetro de estado deve ser validado se o aplicativo usar o fluxo de concessão do código de autorização do OAuth 2.0. Definir essa propriedade ajuda os administradores a proteger o aplicativo contra solicitação intersite forjada (CSRF).
+Ao configurar o Proxy de Aplicativo do Azure AD para aplicativos locais para acesso remoto seguro, use a propriedade **isStateSessionEnabled** no recurso [onPremisesPublishing](/graph/api/resources/onPremisesPublishing?view=graph-rest-beta&preserve-view=true) para especificar se deve validar o parâmetro de estado se o aplicativo usar o fluxo de concessão do código de autorização OAuth 2.0. Definir essa propriedade ajuda os administradores a proteger o aplicativo contra solicitação intersite forjada (CSRF).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 Como parte da [função de usuário padrão](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) de uma [ política de autorização ](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true), especifique se o proprietário registrado de um dispositivo pode ler suas próprias chaves de recuperação do BitLocker.
 
 ### <a name="search--index"></a>Pesquisa | Índice
-[Obtenha](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) as [informações da cota](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) para uma [conexão](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Essas informações incluem o número de itens que você pode ingerir na conexão, levando em consideração os itens restantes na conexão e a cota restante no nível do locatário para todas as suas conexões.
+[Obtenha](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) as [informações de cota](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) de uma [conexão](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Essas informações incluem o número de itens que você pode ingerir na conexão, levando em consideração os itens restantes na conexão e a cota restante no nível do locatário de todas as suas conexões.
 
 
 
@@ -107,7 +107,7 @@ Estas são algumas maneiras de se envolver:
     1. Estreia no status de **_visualização_**. Todas as atualizações da API REST relacionadas estão no ponto de extremidade beta (`https://graph.microsoft.com/beta`).  
 
     2. Promovido para o status de **_disponibilidade geral_ (GA)**, se um feedback suficiente indicar a viabilidade. Todas as atualizações da API REST relacionadas serão adicionadas ao ponto de extremidade do v 1.0 (`https://graph.microsoft.com/v1.0`). 
-- Seja um membro ativo da comunidade do Microsoft Graph! [Participe](https://aka.ms/microsoftgraphcall) da chamada mensal à comunidade do Microsoft Graph.
+- Seja um membro ativo da comunidade do Microsoft Graph! [Participe](https://aka.ms/m365-dev-call) da chamada semanal da comunidade da plataforma Microsoft 365.
 - Inscreva-se no [programa para desenvolvedores do Microsoft 365](https://developer.microsoft.com/office/dev-program), ganhe uma assinatura gratuita do Microsoft 365 e comece a desenvolver!
 
 
