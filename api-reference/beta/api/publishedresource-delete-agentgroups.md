@@ -1,16 +1,16 @@
 ---
 title: Remover publishedResource de um onPremisesAgentGroup
-description: Remova um [objeto publishedResource](../resources/publishedresource.md) de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
-localization_priority: Normal
+description: Remova um [objeto publishedResource](../resources/publishedresource.md) de um [objeto onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4c93aeab74a8ef4191bd66354144e6746a5b5abf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 139ffd1950a7d02cff33ff33b277d997bd3bee18
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787580"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695339"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Remover publishedResource de um onPremisesAgentGroup
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova um [objeto publishedResource](../resources/publishedresource.md) de um [objeto onPremisesAgentGroup.](../resources/onpremisesagentgroup.md)
+Remova um [objeto publishedResource](../resources/publishedresource.md) de um [objeto onPremisesAgentGroup](../resources/onpremisesagentgroup.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:--------------------------------------|:---------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | OnPremisesPublishingProfiles.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisionin
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-onpremisesagentgroup-from-publishedresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-onpremisesagentgroup-from-publishedresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

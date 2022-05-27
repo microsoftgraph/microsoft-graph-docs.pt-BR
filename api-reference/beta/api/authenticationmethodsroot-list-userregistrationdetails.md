@@ -1,32 +1,32 @@
 ---
 title: Listar userRegistrationDetails
-description: Obter uma lista dos métodos de autenticação registrados para o usuário conforme definido no objeto userRegistrationDetails.
+description: Obtenha uma lista dos métodos de autenticação registrados para o usuário, conforme definido no objeto userRegistrationDetails.
 author: danielwood95
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: f89d322841c7b9d3e1d6c3153bd6e9e06415b5cb
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 474750f2f954a75d7fcaa403f061fc96bc663283
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239005"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694852"
 ---
 # <a name="list-userregistrationdetails"></a>Listar userRegistrationDetails
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista dos métodos de autenticação registrados para o usuário conforme definido no [objeto userRegistrationDetails.](../resources/userregistrationdetails.md)
+Obtenha uma lista dos métodos de autenticação registrados para o usuário, conforme definido no [objeto userRegistrationDetails](../resources/userregistrationdetails.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Delegada (conta corporativa ou de estudante)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ GET /reports/authenticationMethods/userRegistrationDetails
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte apenas aos `$filter` `$orderBy` parâmetros de consulta e OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte apenas aos parâmetros `$filter` `$orderBy` de consulta e OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos userRegistrationDetails](../resources/userregistrationdetails.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de [objetos userRegistrationDetails](../resources/userregistrationdetails.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -122,7 +122,8 @@ Content-Type: application/json
             "methodsRegistered": [
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "microsoftAuthenticatorPush"
         },
         {
             "id": "c6ad1942-4afa-47f8-8d48-afb5d8d69d2f",
@@ -134,7 +135,8 @@ Content-Type: application/json
             "isMfaRegistered": false,
             "isMfaCapable": false,
             "isPasswordlessCapable": false,
-            "methodsRegistered": []
+            "methodsRegistered": [],
+            "defaultMethod": ""    
         },
         {
             "id": "c8096958-797c-44fa-8fde-a6fb62567cf0",
@@ -150,7 +152,8 @@ Content-Type: application/json
                 "mobilePhone",
                 "microsoftAuthenticatorPush",
                 "softwareOneTimePasscode"
-            ]
+            ],
+            "defaultMethod": "mobilePhone"
         }
     ]
 }

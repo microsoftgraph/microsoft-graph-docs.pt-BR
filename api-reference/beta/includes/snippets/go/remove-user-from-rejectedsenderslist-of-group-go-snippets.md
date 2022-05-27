@@ -1,26 +1,25 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 501c75bedf0366d23fda06acf0cc7bb40fa6fade
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 48ba3887c4f99acd6b3bded78e238b42d425e1f0
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65322494"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719094"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.DirectoryObjectRequestBuilderDeleteQueryParameters{
+requestParameters := &msgraphsdk.RefRequestBuilderDeleteQueryParameters{
     Id: "https://graph.microsoft.com/beta/users/%7Bid%7D",
 }
-options := &msgraphsdk.DirectoryObjectRequestBuilderDeleteRequestConfiguration{
+options := &msgraphsdk.RefRequestBuilderDeleteRequestConfiguration{
     QueryParameters: requestParameters,
 }
 groupId := "group-id"
-directoryObjectId := "directoryObject-id"
-graphClient.GroupsById(&groupId).RejectedSendersById(&directoryObjectId).DeleteWithRequestConfigurationAndResponseHandler(options, nil)
+graphClient.GroupsById(&groupId).RejectedSenders().$ref().DeleteWithRequestConfigurationAndResponseHandler(options, nil)
 
 
 ```

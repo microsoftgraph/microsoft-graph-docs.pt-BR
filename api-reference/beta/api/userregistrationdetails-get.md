@@ -1,32 +1,32 @@
 ---
 title: Obter userRegistrationDetails
 description: Leia as propriedades e as relações de um objeto userRegistrationDetails.
-author: danielwood95
+author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 895d2a6a744fe2233fecaf9252962354bd963771
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 9d0b5e114aa9a990bcafffcf2ee94a858cc83ab0
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239126"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694739"
 ---
 # <a name="get-userregistrationdetails"></a>Obter userRegistrationDetails
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto userRegistrationDetails.](../resources/userregistrationdetails.md)
+Leia as propriedades e as relações de um [objeto userRegistrationDetails](../resources/userregistrationdetails.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Delegada (conta corporativa ou de estudante)|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|UserAuthenticationMethod.Read.All, AuditLog.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto userRegistrationDetails](../resources/userregistrationdetails.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto userRegistrationDetails](../resources/userregistrationdetails.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -120,7 +120,8 @@ Content-Type: application/json
     "methodsRegistered": [
     "microsoftAuthenticatorPush",
       "softwareOneTimePasscode"
-    ]
+    ],
+    "defaultMfaMethod": "microsoftAuthenticatorPush"
   }
 }
 ```

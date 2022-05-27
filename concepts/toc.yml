@@ -732,6 +732,8 @@ items:
                 href: toolkit/providers/teams.md
               - name: Provedor de Teams MSAL2
                 href: toolkit/providers/teams-msal2.md
+              - name: Provedor teamsFx
+                href: toolkit/providers/teamsfx.md
               - name: Provedor de Electron
                 href: toolkit/providers/electron.md
               - name: Provedor de proxy

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 053dbc3d75efb488a94e97a977809ba44bb93095
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: cf1e30184fb1471476d339aa94c180fc0c586bc5
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696147"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719142"
 ---
 ```javascript
 
@@ -15,7 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-let externalConnection = await client.api('/external/connections/contosohr')
+let connectionQuota = await client.api('/external/connections/contosohr/quota')
     .version('beta')
     .get();
 

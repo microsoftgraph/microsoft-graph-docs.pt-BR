@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: d524a6d1015943b269f95535aa7cf3a390aa57b7
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 14b0c2e9af8ea111cca62036bf4de18a9af57f50
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917630"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695549"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -190,7 +190,7 @@ Namespace: microsoft.graph
 | Membro             | Valor | Descrição |
 |:-------------------|:------| :------|
 | none               | 0     | A política não se aplica a nenhum usuário ou grupo na organização. |
-| Todos                | 1     | A política se aplica a todos os usuários e grupos na organização. Valor padrão. |
+| tudo                | 1     | A política se aplica a todos os usuários e grupos na organização. Valor padrão. |
 | Selecionado           | 2     | A política se aplica a usuários ou grupos específicos na organização. |
 | unknownFutureValue | 3     | Valor de sentinel de enumeração evolvável. Não usar. |
 
@@ -320,7 +320,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Todos|
+|tudo|
 |Navegador|
 |mobileAppsAndDesktopClients|
 |exchangeActiveSync|
@@ -338,11 +338,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binária|
-|Boolean|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -597,6 +597,21 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 
+### <a name="defaultmfamethodtype-values"></a>Valores defaultMfaMethodType 
+
+
+
+|Member|
+|:---|
+|none|
+|mobilePhone|
+|alternateMobilePhone|
+|officePhone|
+|microsoftAuthenticatorPush|
+|softwareOneTimePasscode|
+|unknownFutureValue|
+
+
 ### <a name="clientcredentialtype-values"></a>Valores clientCredentialType 
 
 
@@ -673,7 +688,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Todos|
+|tudo|
 |privilegedAdmin|
 |Admin|
 |usuário|
@@ -683,7 +698,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Todos|
+|tudo|
 |Membro|
 |Convidado|
 |unknownFutureValue|
@@ -1347,7 +1362,7 @@ Namespace: microsoft.graph
 |:-------------------------
 | none
 | contactsOnly
-| Todos
+| tudo
 
 
 ### <a name="automaticrepliesstatus-values"></a>Valores automaticRepliesStatus
@@ -1624,7 +1639,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | Lista
-| descrição
+| description
 | referência
 
 
@@ -1740,12 +1755,12 @@ Namespace: microsoft.graph
 | preset7  | 7      |
 | preset8  | 8      |
 | preset9  | 9      |
-| preset10 | 10     |
+| preset10 | 10    |
 | preset11 | 11    |
 | preset12 | 12     |
 | preset13 | 13    |
-| preset14 | 14     |
-| preset15 | 15     |
+| preset14 | 14    |
+| preset15 | 15    |
 | preset16 | 16    |
 | preset17 | 17     |
 | preset18 | 18     |
@@ -1804,7 +1819,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | Membro    | Valor | Descrição                   |
 | :-------- | :---- | :---------------------------- |
 | desconhecido   | 0     | Desconhecido.                      |
-| Untrusted | 10     | O nível de integridade não é confiável. |
+| Untrusted | 10    | O nível de integridade não é confiável. |
 | low       | 20    | O nível de integridade é Baixo.       |
 | medium    | 30    | O nível de integridade é Médio.    |
 | high      | 40    | O nível de integridade é Alto.      |
@@ -1847,11 +1862,11 @@ Enumeração para tipos de valor do Registro conforme definido pelos [tipos de v
 | dwordWordScriptEndian | 3     | REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.    |
 | expandSz          | 5     | REG_EXPAND_SZ tipo de valor do Registro.           |
-| vínculo              | 6      | REG_LINK tipo de valor do Registro.                |
+| link              | 6      | REG_LINK tipo de valor do Registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
 | none              | 8      | REG_NONE tipo de valor do Registro.                |
 | Qword             | 9      | REG_QWORD tipo de valor do Registro.               |
-| qwordwordEndian | 10     | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro. |
+| qwordwordEndian | 10    | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | Sz                | 11    | REG_SZ tipo de valor do Registro.                  |
 
 ### <a name="alertseverity-values"></a>Valores alertSeverity
@@ -1873,7 +1888,7 @@ Valores possíveis de um status de ciclo de vida de alerta (estágio).
 | Membro     | Valor | Descrição           |
 | :--------- | :---- | :-------------------- |
 | desconhecido    | 0     | Status desconhecido.       |
-| newAlert   | 10     | O alerta é novo.         |
+| newAlert   | 10    | O alerta é novo.         |
 | Inprogress | 20    | O alerta está em andamento. |
 | resolvido   | 30    | O alerta é resolvido.    |
 
@@ -1907,7 +1922,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | Membro        | Valor | Descrição                     |
 | :------------ | :---- | :------------------------------ |
 | desconhecido       | -1    | Desconhecido.                        |
-| Padrão      | 0     | Membro do grupo Usuários Padrão. |
+| padrão      | 0     | Membro do grupo Usuários Padrão. |
 | Poder         | 1     | Membro do grupo Usuários Avançados.    |
 | Administrador | 2     | Membro do grupo Administradores. |
 
@@ -1924,7 +1939,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Member|
 |:---|
-|Todos|
+|tudo|
 |qualquer|
 
 ### <a name="risklevel-values"></a>valores riskLevel
@@ -2047,7 +2062,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member             |
 | :----------------- |
-| Padrão           |
+| padrão           |
 | Privada            |
 | unknownFutureValue |
 | compartilhado             |
@@ -2169,7 +2184,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Membro     | Valor | Descrição                                                                                                                      |
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
-| Padrão   | 0     | O rótulo foi definido por uma condição de serviço ou política.                                                                              |
+| padrão   | 0     | O rótulo foi definido por uma condição de serviço ou política.                                                                              |
 | Privilegiada | 1     | O rótulo foi definido explicitamente por um usuário.                                                                                          |
 | Automático       | 2     | Permite a substituição de qualquer rótulo existente. Justificativa necessária no downgrade. Resulta no método `standard` de atribuição em metadados. |
 
@@ -2289,7 +2304,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |windows|
 |windowsPhone|
 |macOS|
-|Todos|
+|tudo|
 |unknownFutureValue|
 
 ### <a name="priority-values"></a>valores de prioridade
@@ -2361,12 +2376,12 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | notInAddressBook      | 7      | Exclua o remetente que não está no catálogo de endereços. |
 | firstTimeSender       | 8      | Bloqueado devido ao remetente da primeira vez.   |
 | autoPurgeToInbox      | 9      | TimeTravel move a mensagem para a caixa de entrada.   |
-| autoPurgeToJunk       | 10     | TimeTravel move mensagem para lixo eletrônico.    |
+| autoPurgeToJunk       | 10    | TimeTravel move mensagem para lixo eletrônico.    |
 | autoPurgeToDeleted    | 11    | Mensagem de movimentação timeTravel a ser excluída. |
 | Saída              | 12     | Email de saída.                      |
 | notJunk               | 13    | Permita devido a não lixo eletrônico.              |
-| Lixo                  | 14     | Bloqueado devido a lixo eletrônico.                |
-| unknownFutureValue    | 15     | Um membro do Sentinel.                  |
+| Lixo                  | 14    | Bloqueado devido a lixo eletrônico.                |
+| unknownFutureValue    | 15    | Um membro do Sentinel.                  |
 
 ### <a name="threatassessmentrequestpivotproperty-values"></a>Valores threatAssessmentRequestPivotProperty
 
@@ -2431,7 +2446,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |url | hiperlink ou coluna de imagem. |
 |Calculado | coluna calculada. |
 |localização | coluna de localização. |
-|Geolocalização | coluna de localização geográfica. |
+|Localização geográfica | coluna de localização geográfica. |
 |term | coluna de metadados gerenciados. |
 |Multiterm | coluna de metadados gerenciados aceitando vários valores. |
 |Miniatura | Coluna de imagem. |
@@ -2529,7 +2544,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:---|
 |group|
 |unknownFutureValue|
-|Lista|
+|lista de participantes|
 
 ### <a name="plannerplancontexttype-values"></a>Valores plannerPlanContextType
 
@@ -2555,7 +2570,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |Member|
 |:---|
 |none|
-|Todos|
+|tudo|
 |Selecionado|
 
 ### <a name="teamsappinstallationscope-values"></a>Valores de teamsAppInstallationScope
@@ -2718,7 +2733,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Membro| Valor | Descrição               |
 |:---|:---- | :------------------------ |
-|Padrão| 0     |Tipo padrão para uma marca. As marcas do tipo padrão podem ser gerenciadas na equipe por membros que têm permissões.|
+|padrão| 0     |Tipo padrão para uma marca. As marcas do tipo padrão podem ser gerenciadas na equipe por membros que têm permissões.|
 
 ### <a name="teamworkapplicationidentitytype-values"></a>Valores teamworkApplicationIdentityType
 
@@ -2736,7 +2751,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |Member|
 |:---|
 |team|
-|canal|
+|Canal|
 |chat|
 |unknownFutureValue|
 
@@ -2798,7 +2813,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Member|
 |:---|
-|or|
+|ou|
 |e|
 
 ### <a name="subjectrightsrequeststage-values"></a>valores subjectRightsRequestStage 

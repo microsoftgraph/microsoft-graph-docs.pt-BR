@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a2b9b4428153c0f05bea254e8a41d2a2cf64a766
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e50e8b7e372b773b4a34e4b7df647101da16e25d
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020095"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694494"
 ---
-# <a name="attach-educationrubric-to-an-assignment"></a>Anexar educationRubric a uma atribuição
+# <a name="attach-educationrubric-to-an-assignment"></a>Anexar educationRubric a uma tarefa
 
 Namespace: microsoft.graph
 
-Anexar um objeto [educationRubric](../resources/educationrubric.md) existente a [um educationAssignment](../resources/educationassignment.md).
+Anexe um [objeto educationRubric](../resources/educationrubric.md) existente a [um educationAssignment](../resources/educationassignment.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,7 +44,7 @@ PUT /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece a ID OData de um [objeto educationRubric](../resources/educationrubric.md) existente.
+No corpo da solicitação, forneça a ID OData de um objeto [educationRubric](../resources/educationrubric.md) existente.
 
 ## <a name="response"></a>Resposta
 
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationrubric-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

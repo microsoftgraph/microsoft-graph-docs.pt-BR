@@ -1,25 +1,25 @@
 ---
 title: Excluir educationRubric de educationAssignment
 description: Remover um educationRubric de um educationAssignment
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 619938b8550647acfe10f648a20460fe9c7554aa
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: c5c0ae0cf55767753f65788575ac5e3ed22c3045
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911942"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695367"
 ---
-# <a name="remove-educationrubric-from-educationassignment"></a>Remover educationRubric do educationAssignment
+# <a name="remove-educationrubric-from-educationassignment"></a>Remover educationRubric de educationAssignment
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir um [educationRubric](../resources/educationrubric.md) de [um educationAssignment](../resources/educationassignment.md).
-Este método não exclui a rubrica em si.
+[Exclua um educationRubric](../resources/educationrubric.md) de [um educationAssignment](../resources/educationassignment.md).
+Esse método não exclui o próprio rubric.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationrubric-from-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationrubric-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,26 +1,26 @@
 ---
-title: Tipo de recurso entitlementManagement
+title: tipo de recurso entitlementManagement
 description: O contêiner para recursos de gerenciamento de direitos.
 author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c9c34a3699402f8d49fb2c0a0d9af3d5159a0eb3
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 2768db11986466e864884d611877cf93dab6ef1a
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651679"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694894"
 ---
-# <a name="entitlementmanagement-resource-type"></a>Tipo de recurso entitlementManagement
+# <a name="entitlementmanagement-resource-type"></a>tipo de recurso entitlementManagement
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O singleton de gerenciamento de direitos é o contêiner para recursos de gerenciamento de direitos, incluindo [accessPackageCatalog,](accesspackagecatalog.md) [connectedOrganization](connectedorganization.md)e [entitlementManagementSettings](entitlementmanagementsettings.md).  Para ver uma lista completa de recursos, consulte Visão geral do gerenciamento [de direitos.](entitlementmanagement-overview.md)
+O singleton de gerenciamento de direitos é o contêiner para recursos de gerenciamento de direitos, incluindo [accessPackageCatalog](accesspackagecatalog.md), [connectedOrganization](connectedorganization.md) e [entitlementManagementSettings](entitlementmanagementsettings.md).  Para obter uma lista completa de recursos, consulte a [visão geral do gerenciamento de direitos](entitlementmanagement-overview.md).
 
-Herda da [entidade](entity.md).
+Herda de [entidade](entity.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -34,18 +34,18 @@ Nenhum.
 
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|accessPackageAssignmentPolicies|[coleção accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)| Representa a política que rege quais assuntos podem solicitar ou ser atribuídos a um pacote de acesso por meio de uma atribuição de pacote de acesso. |
+|accessPackageAssignmentPolicies|[coleção accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)| Representa a política que rege quais assuntos podem solicitar ou receber um pacote de acesso por meio de uma atribuição de pacote de acesso. |
 |accessPackageAssignmentRequests|[coleção accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)|Representa solicitações de atribuição de pacote de acesso criadas por ou em nome de um usuário.|
-|accessPackageAssignmentResourceRoles|[Coleção accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md)| Representa a função específica do recurso que um assunto foi atribuído por meio de uma atribuição de pacote de acesso.|
-|accessPackageAssignments|[Coleção accessPackageAssignment](../resources/accesspackageassignment.md)|Representa a concessão de um pacote de acesso a um assunto (usuário ou grupo).|
-|accessPackageCatalogs|[Coleção accessPackageCatalog](../resources/accesspackagecatalog.md)|Representa um grupo de pacotes de acesso.|
-|accessPackageResourceEnvironments|[coleção accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)| Uma referência ao ambiente de localização geográfica no qual um recurso está localizado.|
-|accessPackageResourceRequests|[Coleção accessPackageResourceRequest](../resources/accesspackageresourcerequest.md)|Representa uma solicitação para adicionar ou remover um recurso para ou de um catálogo, respectivamente. |
-|accessPackageResourceRoleScopes|[Coleção accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)| Uma referência a um escopo dentro de um recurso e uma função nesse recurso para esse escopo. |
+|accessPackageAssignmentResourceRoles|[coleção accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md)| Representa a função específica do recurso à qual uma entidade foi atribuída por meio de uma atribuição de pacote de acesso.|
+|accessPackageAssignments|[coleção accessPackageAssignment](../resources/accesspackageassignment.md)|A atribuição de um pacote de acesso a um assunto por um período de tempo.|
+|accessPackageCatalogs|[coleção accessPackageCatalog](../resources/accesspackagecatalog.md)|Um contêiner de pacotes de acesso.|
+|accessPackageResourceEnvironments|[coleção accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)| Uma referência ao ambiente de geolocalização no qual um recurso está localizado.|
+|accessPackageResourceRequests|[coleção accessPackageResourceRequest](../resources/accesspackageresourcerequest.md)|Representa uma solicitação para adicionar ou remover um recurso de ou para um catálogo, respectivamente. |
+|accessPackageResourceRoleScopes|[coleção accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)| Uma referência a um escopo dentro de um recurso e uma função nesse recurso para esse escopo. |
 |accessPackageResources|[Coleção accessPackageResource](../resources/accesspackageresource.md)| Uma referência a um recurso associado a um catálogo de pacotes de acesso.|
 |accessPackages|[Coleção accessPackage](../resources/accesspackage.md)|Representa objetos do pacote de acesso.|
-|connectedOrganizations|[Coleção connectedOrganization](../resources/connectedorganization.md)|Representa referências a um diretório ou domínio de outra organização cujos usuários podem solicitar acesso.|
-|configurações|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)|Representa as configurações que controlam o comportamento do gerenciamento de direitos do Azure AD.|
+|connectedOrganizations|[coleção connectedOrganization](../resources/connectedorganization.md)|Representa referências a um diretório ou domínio de outra organização cujos usuários podem solicitar acesso.|
+|settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)|Representa as configurações que controlam o comportamento do Azure AD gerenciamento de direitos.|
 
 ## <a name="json-representation"></a>Representação JSON
 

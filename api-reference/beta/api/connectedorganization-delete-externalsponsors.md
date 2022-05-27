@@ -1,18 +1,18 @@
 ---
-title: Remover patrocinador externo da organização conectada
+title: Remover o responsável externo da organização conectada
 description: Remova um usuário ou grupo dos patrocinadores externos da organização conectada.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 936c91f5ebd3bff0af8ec25a4ce542707e04227d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 44b70bf8018afd72d55a2905a6ba9dddd6297eb8
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786507"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695437"
 ---
-# <a name="remove-connected-organization-external-sponsor"></a>Remover patrocinador externo da organização conectada
+# <a name="remove-connected-organization-external-sponsor"></a>Remover o responsável externo da organização conectada
 
 Namespace: microsoft.graph
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 Remova um usuário ou um grupo dos patrocinadores externos da organização conectada. Os patrocinadores externos são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | EntitlementManagement.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-externalsponsor-from-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-externalsponsor-from-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 79f3097f521f40124539314c06973f21b4a8a764
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 520d786906963250024121144865cfcf15e07560
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133213"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694732"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Trabalhando com a API Azure AD de gerenciamento de direitos
 
@@ -43,14 +43,14 @@ Para obter um tutorial que mostra como usar o gerenciamento de direitos para cri
 
 Observe que o recurso de gerenciamento de direitos, incluindo a API, está incluído Azure AD Premium P2. O locatário em que o gerenciamento de direitos está sendo usado deve ter uma assinatura válida de compra ou avaliação Azure AD Premium P2 ou emS E5. Para obter mais informações sobre os requisitos de licença para o recurso de gerenciamento de direitos, consulte [Requisitos de licença de gerenciamento de direitos](/azure/active-directory/governance/entitlement-management-overview#license-requirements).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 A tabela a seguir lista os métodos que você pode usar para interagir com recursos relacionados ao gerenciamento de direitos.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 | [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Leia as propriedades de **um objeto entitlementManagementSettings** . |
-| [Atualizar](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings** . |
+| [Atualização](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Atualize as propriedades de **um objeto entitlementManagementSettings** . |
 | [Listar accessPackages](../api/entitlementmanagement-list-accesspackages.md) | [Coleção accessPackage](accesspackage.md) | Recupere uma lista de **objetos accessPackage** . |
 | [Criar accessPackage](../api/entitlementmanagement-post-accesspackages.md) | [accessPackage](accesspackage.md) | Crie um novo **objeto accessPackage** . |
 | [Obter accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Ler propriedades e relações de um **objeto accessPackage** . |
@@ -117,7 +117,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 - [approvalStep](approvalstep.md) – usado na [aprovação](approval.md) para distinguir as diferentes etapas de aprovação.
 - [subtipos userSet](userset.md) [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) e [externalSponsors](externalsponsors.md) - Usado em [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md), [approvalStep](approvalstep.md) e [assignmentReviewSettings](assignmentreviewsettings.md).
 - [accessPackageSubject](accesspackagesubject.md) – usado no [accessPackageAssignment](accesspackageassignment.md) como um usuário da entidade que tem uma atribuição de pacote de acesso.
-- [identitySource](identitysource.md) - usado no [connectedOrganization](connectedorganization.md), um de [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) [ou externalDomainFederation](externaldomainfederation.md).
+- [identitySource](identitysource.md) - usado no [connectedOrganization](connectedorganization.md), um de [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [crossCloudAzureActiveDirectoryTenant](crosscloudazureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) ou [externalDomainFederation](externaldomainfederation.md).
 
 ## <a name="see-also"></a>Confira também
 

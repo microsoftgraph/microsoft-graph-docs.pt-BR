@@ -1,26 +1,26 @@
 ---
-title: Remover accessPackage de incompatívelAccessPackages
+title: Remover accessPackage de incompatibleAccessPackages
 description: Remova um link que indica que um pacote de acesso é incompatível com um pacote de acesso especificado.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c228402a433c3d9920481030ead07e79333459bc
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: d06f46f1e93b9afb97ab0b49a707f90f1f08f10d
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439357"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65694067"
 ---
-# <a name="remove-accesspackage-from-incompatibleaccesspackages"></a>Remover accessPackage de incompatívelAccessPackages
+# <a name="remove-accesspackage-from-incompatibleaccesspackages"></a>Remover accessPackage de incompatibleAccessPackages
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remover um [pacote de](../resources/accesspackage.md) acesso da lista de pacotes de acesso que foram marcados como incompatíveis em [um accessPackage](../resources/accesspackage.md).  
+Remova um [pacote de](../resources/accesspackage.md) acesso da lista de pacotes de acesso que foram marcados como incompatíveis em um [accessPackage](../resources/accesspackage.md).  
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
 | Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | EntitlementManagement.ReadWrite.All |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/remove-incompatibleaccesspackage-from-accesspackage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-incompatibleaccesspackage-from-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

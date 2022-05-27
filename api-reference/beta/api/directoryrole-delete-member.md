@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aa3e387e53141d2de7511069deb1b664e86a1082
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 7a6b3cfdbc2ca8bca29c2e07f8b137a72efbf300
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671647"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695112"
 ---
 # <a name="remove-directory-role-member"></a>Remover membro da função de diretório
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Remove um membro de um directoryRole.
 
-Você pode usar a ID do objeto e a ID do modelo do **directoryRole** com essa API. A ID do modelo de uma função embutida é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+Você pode usar a ID de objeto e a ID de modelo do **directoryRole** com essa API. A ID do modelo de uma função interna é imutável e pode ser vista na descrição da função no portal do Azure. Para obter detalhes, consulte [IDs de modelo de função](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | RoleManagement.ReadWrite.Directory |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -62,7 +62,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 #### <a name="request"></a>Solicitação
 
-Neste exemplo, substitua `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` pelo valor **de id** `bb165b45-151c-4cf6-9911-cd7188912848` da função de diretório e pelo valor **de id** do usuário ou objeto de diretório que você deseja desasinalhar da função de diretório.
+Neste exemplo, substitua `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` pelo valor **de ID** `bb165b45-151c-4cf6-9911-cd7188912848` da função de diretório e pelo valor de **ID** do objeto de usuário ou diretório que você deseja cancelar a atribuição da função de diretório.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/directoryRoles/f8e85ed8-f66f-4058-b170-3
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-directoryrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-directoryrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,7 +110,7 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Substitua `9f06204d-73c1-4d4c-880a-6edb90606fd8` pelo valor de sua roleTemplateId e `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor **de id** do usuário do objeto directory.
+Este é um exemplo de solicitação. Substitua `9f06204d-73c1-4d4c-880a-6edb90606fd8` pelo valor de sua roleTemplateId e `bb165b45-151c-4cf6-9911-cd7188912848` pelo valor **de ID** do usuário do objeto de diretório.
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

@@ -1,16 +1,16 @@
 ---
 title: Criar assinatura
-description: Inscreve um aplicativo ouvinte para receber notificações de alteração quando os dados em um recurso microsoft Graph alterações.
+description: Assina um aplicativo ouvinte para receber notificações de alteração quando os dados em um recurso do Microsoft Graph são alterados.
 ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: a348466b45132e641d68785e0537cd4826a299b9
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 8351c0801700cc6d9e724fdcbbc609e646834bc8
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451393"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695416"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -28,7 +28,7 @@ Alguns recursos suportam a opção de incluir dados de recursos criptografados e
 
 A criação de uma assinatura requer permissão de leitura para o recurso. Por exemplo, para receber notificações de alteração nas mensagens, seu aplicativo precisa da permissão Mail.Read. 
 
-Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [ter cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões, pesquise as permissões a seguir [em Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -66,6 +66,8 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
+Recomendamos que você use as permissões conforme documentado na tabela anterior. Devido a restrições de segurança, as assinaturas do Microsoft Graph não darão suporte a permissões de acesso de gravação quando apenas permissões de acesso de leitura forem necessárias.
+
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
@@ -80,13 +82,13 @@ OneDrive for Business e Microsoft Office SharePoint Online suportam o envio de n
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você Outlook pode assinar as alterações nos recursos de **contato, evento** ou mensagem e, opcionalmente **, especificar** na carga de solicitação POST se deve incluir dados de recursos criptografados em notificações.
+Você pode assinar alterações em Outlook de **contato, evento** ou mensagem **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings, presença
 
-As assinaturas **em onlineMeetings** e **presença** exigem [a](/graph/webhooks-with-resource-data#creating-a-subscription) propriedade **encryptionCertificate** e **encryptionCertificateId** ao criar uma assinatura para notificações com dados de recursos criptografados. Para obter mais informações, consulte [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
+As assinaturas **em onlineMeetings** e presença exigem [a](/graph/webhooks-with-resource-data#creating-a-subscription) propriedade **encryptionCertificate** e **encryptionCertificateId** ao criar uma assinatura para notificações com dados de recursos criptografados. Para obter mais informações, consulte [configurar notificações de alteração para incluir dados de recursos](/graph/webhooks-with-resource-data).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -108,7 +110,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto de [assin
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto de](../resources/subscription.md) assinatura no corpo da resposta.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 
@@ -116,9 +118,10 @@ Para detalhes sobre como os erros são retornados, confira [Respostas de erro][e
 
 ### <a name="request"></a>Solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto de [assinatura](../resources/subscription.md). Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
+No corpo da solicitação, forneça uma representação JSON do objeto [subscription](../resources/subscription.md).
+Os campos `clientState` e `latestSupportedTlsVersion` são opcionais.
 
-Essa solicitação cria uma assinatura para notificações de alteração sobre novos emails recebidos pelo usuário atualmente inscrito.
+Essa solicitação cria uma assinatura para notificações de alteração sobre novos emails recebidos pelo usuário conectado no momento.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,7 +172,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto de [assin
 
 #### <a name="resources-examples"></a>Exemplos de recursos
 
-Os valores a seguir são válidos para a propriedade resource.
+A seguir estão os valores válidos para a propriedade do recurso.
 
 | Tipo de recurso | Exemplos |
 |:------ |:----- |
@@ -229,7 +232,7 @@ Content-type: application/json
 
 #### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade da notificação
 
-O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação conforme descrito em Configurar notificações para alterações nos dados [do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
+O ponto de extremidade de notificação de assinatura (especificado na propriedade **notificationUrl** ) deve ser capaz de responder a uma solicitação de validação, conforme descrito em Configurar notificações para alterações nos dados [do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de Solicitação Incorreta 400.
 
 [error-response]: /graph/errors
 

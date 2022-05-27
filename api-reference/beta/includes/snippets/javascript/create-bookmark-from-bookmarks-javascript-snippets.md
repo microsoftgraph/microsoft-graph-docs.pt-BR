@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2c4a39505750ad36f3a02c8fb578cca7f676d06e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 256a9c19bd0bd7330d7313e4e58baf4a69dad220
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337989"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65719183"
 ---
 ```javascript
 
@@ -29,13 +29,11 @@ const bookmark = {
   platforms: ['windows'],
   targetedVariations: [
     {
-      languageTag: 'es-ES',
+      languageTag: 'es-es',
       displayName: 'Sitio de instalación Contoso',
       description: 'Pruebe o compre Contoso hogar o negocios y vea la información del producto'
     }
   ],
-  groupIds: ['groupId'],
-  powerAppIds: ['powerAppId'],
   state: 'published'
 };
 

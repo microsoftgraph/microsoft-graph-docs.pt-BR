@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 046fd5a8e3463ab9efcdd63c79eacb82302d70fa
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 50e476e116ca4af3882364415c665d705f96817f
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894758"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695388"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -72,8 +72,9 @@ Práticas recomendadas:
 
 - Especifique uma primeira página menor na solicitação inicial. Por exemplo, especifique **from** como 0 e **size** como 25.
 - Pagine as páginas subsequentes atualizando as propriedades **from** e **size**. Você pode aumentar o tamanho de página em cada solicitação subsequente. A tabela a seguir mostra um exemplo.
+- O tamanho máximo da página é 1000.
 
-    | Página | from | size |
+    | Page | from | size |
     |:-----|:-----|:-----|
     | 1    | 0 | 25 |
     | 2    | 25 | 50 |

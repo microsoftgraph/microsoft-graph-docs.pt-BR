@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5aeaa4a0955ed595a481191fce2946a0e7013be0
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 763147a8fd43ff64bab71e2c6248957936960919
+ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398374"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65695206"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da propriedade de navegação de **membros**.
 
-A tabela a seguir mostra os tipos de membros que podem ser adicionados a grupos de segurança ou Microsoft 365 grupos.
+A tabela a seguir mostra os tipos de membros que podem ser adicionados a grupos de segurança ou grupos do Microsoft 365.
 
 
 | Tipo de objeto             | Membro de grupos de segurança     | Membro do Microsoft 365 grupo |
@@ -116,7 +116,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
-
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
