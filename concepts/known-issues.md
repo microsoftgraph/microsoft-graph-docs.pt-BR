@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: d5234149ddfafb4633803975e33a57294cba656b
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 925062122223563e00b3a4413b06076fc0164c41
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629012"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820200"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -309,6 +309,10 @@ A API [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) pode exigi
 + Se houver objetos **claimsMappingPolicy** a serem recuperados, seu aplicativo deverá consentir com ambas as permissões. Caso contrário, um erro `403 Forbidden` será retornado.
 
 No futuro, qualquer permissão será suficiente para chamar ambos os métodos.
+
+### <a name="linux-based-devices-cant-be-updated-by-an-app-with-application-permissions"></a>Dispositivos baseados em Linux não podem ser atualizados por um aplicativo com permissões de aplicativo
+
+Quando um aplicativo com permissões de aplicativo tenta atualizar qualquer propriedade do objeto do dispositivo em que a propriedade **operationSystem** é `linux`, além da propriedade **extensionAttributes**, a API de [Atualização do Dispositivo](/graph/api/device-update) retorna um código de erro `400 Bad request` com a mensagem de erro "Propriedades diferentes de ExtendedAttribute1..15 podem ser modificadas apenas em dispositivos Windows.". Use as permissões delegadas para atualizar as propriedades dos dispositivos baseados em Linux.
 
 ## <a name="json-batching"></a>Envio em lote JSON
 

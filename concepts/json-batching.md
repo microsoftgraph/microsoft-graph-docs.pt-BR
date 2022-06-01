@@ -4,12 +4,12 @@ description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 016f096eee9d601f0f178c0fa256c4271d1cd563
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 52c50796722faf51c91b65d65a21b3b495566924
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461377"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819696"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
@@ -201,13 +201,24 @@ Se uma solicitação individual falhar, qualquer solicitação que dependa dessa
 
 Um caso de uso adicional para processamento em lotes JSON é ignorar as limitações de tamanho de URL. Em casos nos quais a cláusula de filtro é complexa, o comprimento de URL pode superar limitações incorporadas a navegadores ou a outros clientes HTTP. Você pode usar processamento em lotes JSON como solução alternativa para executar essas solicitações já que a URL longa simplesmente torna-se parte da carga da solicitação.
 
+## <a name="batch-size-limitations"></a>Limitações de tamanho do lote
+
+As solicitações em lote JSON estão atualmente limitadas a 20 solicitações individuais, além das seguintes limitações:
+
+* Dependendo das APIs que fazem parte da solicitação em lote, os serviços subjacentes impõem seus próprios limites de restrição que afetam os aplicativos que usam o Microsoft Graph para acessá-los.
+* As solicitações em um lote são avaliadas individualmente em relação aos limites de controle e, se alguma solicitação exceder os limites, ela falhará com um status de `429`.
+* Os lotes direcionados aos recursos do Outlook (como correio e calendário) podem conter apenas quatro solicitações direcionadas à mesma caixa de correio. Para obter detalhes, confira [Limites de serviço do Outlook][throttling-outlook].
+
+Para obter mais informações, confira [Limitação e envio em lote][throttling-and-batching].
+
 ## <a name="known-issues"></a>Problemas conhecidos
 
 Para obter uma lista de limitações atuais relacionadas a lotes, veja [problemas conhecidos][batching-known-issues].
 
 [batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
-
+[throttling-and-batching]: throttling.md#throttling-and-batching
+[throttling-outlook]: throttling.md#outlook-service-limits
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,22 +1,22 @@
 ---
 title: Usar a API do Microsoft To Do
-description: Você pode usar a API do Microsoft Graph para criar um aplicativo que se conecta com tarefas no Microsoft To Do.
+description: Você pode usar a API do Microsoft Graph criada no todoTask para criar um aplicativo que se conecta com as tarefas no Microsoft To Do.
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: fc1e872fa5a75775c436a02afa5f8ee28e68040f
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: e20b6102eb94e05b62b701026fa6958b895739d3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696376"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820382"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Usar a API do Microsoft To Do
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use a API To Do no Microsoft Graph para criar um aplicativo que se conecta com tarefas através do Microsoft To Do. Compilar uma variedade de experiências com tarefas, tais como as seguintes:
+Use a API de Tarefas Pendentes do Microsoft Graph criada em [todoTask](todotask.md) para criar um aplicativo que se conecta a tarefas em todos os clientes do Microsoft To Do. Compilar uma variedade de experiências com tarefas, tais como as seguintes:
 
 * Crie tarefas a partir do fluxo de trabalho do seu aplicativo, por exemplo, por email ou notificações, e salve-as no To Do. Use a entidade [linkedResource](linkedresource.md) para armazenar o link de volta ao seu aplicativo.
 * Sincronize as tarefas existentes de seu aplicativo com o To Do e crie uma única exibição de tarefa para melhor priorização e gerenciabilidade.
@@ -26,11 +26,11 @@ Atualmente, a API suporta apenas as permissões delegadas pelo usuário conectad
 
 Antes de começar com a API To Do, dê uma olhada nos recursos e como eles se relacionam entre si.
 
-![Entidades da API To Do](/graph/images/todo-api-entities.png)
+![Captura de tela realçando entidades de To Do API pendentes. A captura de tela mostra uma lista de listas de tarefas à esquerda, tarefas dentro de uma lista de tarefas específica no centro e, à direita, itens de lista de verificação e recursos vinculados junto com outras propriedades de tarefas.](/graph/images/tasks-api-entities.png)
 
 ## <a name="task-list"></a>Lista de tarefas
 
-O [todoTaskList](./todotasklist.md) representa um contêiner lógico dos recursos [todoTask](./todotask.md). Atualmente, você só pode criar tarefas em uma lista de tarefas. Para [obter todas as suas listas de tarefas](../api/todotasklist-get.md), faça a seguinte solicitação HTTP:
+Neste conjunto de APIs, uma lista de tarefas é representada por [todoTaskList](./todotasklist.md), que é um recipiente lógico de recursos do [todoTask](./todotask.md). Atualmente, você só pode criar tarefas em uma lista de tarefas. Para [obter todas as suas listas de tarefas](../api/todotasklist-get.md), faça a seguinte solicitação HTTP:
 
 ``` http
 GET /me/todo/lists
@@ -38,9 +38,16 @@ GET /me/todo/lists
 
 ## <a name="task"></a>Tarefas
 
-O [todoTask](./todotask.md) representa uma tarefa, ou seja, um trabalho ou um item pessoal que pode ser acompanhado e concluído. Para obter suas tarefas de uma lista de tarefas, faça a seguinte solicitação HTTP:
+Neste conjunto de APIs, uma tarefa é representada por um recurso [todoTask](./todotask.md) que é uma peça de trabalho ou item pessoal que pode ser rastreado e concluído. Para obter suas tarefas de uma lista de tarefas, faça a seguinte solicitação HTTP:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
+```
+
+## <a name="checklist-item"></a>Item da lista de verificação 
+
+Um [checklistItem](checklistitem.md) representa uma subtarefa em um [todoTask](./todotask.md) maior. **ChecklistItem** permite dividir uma tarefa complexa em tarefas menores e mais acionáveis. Para obter um **checklistItem** de uma tarefa, faça a seguinte solicitação HTTP:
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItems}
 ```
 
 ## <a name="linked-resource"></a>Recurso vinculado
