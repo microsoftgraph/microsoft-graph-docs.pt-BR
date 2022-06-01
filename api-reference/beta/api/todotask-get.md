@@ -5,25 +5,25 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f85d4b229b8e0b822ae8d968fdacf51201572466
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bb26739dd736e95c4714af0de278f5a0b1be1e5b
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62115474"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821089"
 ---
 # <a name="get-todotask"></a>Obter todoTask
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto todoTask.](../resources/todotask.md)
+Leia as propriedades e as relações de um [objeto todoTask](../resources/todotask.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [todoTask](../resources/todotask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um [objeto todoTask](../resources/todotask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -115,6 +115,10 @@ Content-Type: application/json
     "title": "Shop for dinner",
     "createdDateTime": "2020-07-22T10:39:03.7937971Z",
     "lastModifiedDateTime": "2020-07-22T12:02:10.8835421Z",
+    "categories": [
+       "Important",
+       "Urgent"
+            ],
     "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
     "body": {
         "content": "",

@@ -1,32 +1,34 @@
 ---
 title: Criar linkedResource_v2
-description: Crie um novo objeto linkedResource_v2.
+description: Crie um novo linkedResource_v2 objeto.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 96ed1ca949a1485e952d44e4d1113fa5d80fe3f5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 85b87094a277b39dab56fe0dc49ed9da5e82b019
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124141"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820298"
 ---
-# <a name="create-linkedresource_v2"></a>Criar linkedResource_v2
+# <a name="create-linkedresource_v2-deprecated"></a>Criar linkedResource_v2 (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto linkedResource_v2.](../resources/linkedresource_v2.md)
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Crie um novo [linkedResource_v2](../resources/linkedresource_v2.md) objeto.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
-|Aplicativo|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Application|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,20 +47,20 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto linkedResource_v2.](../resources/linkedresource_v2.md)
+No corpo da solicitação, forneça uma representação JSON do [linkedResource_v2](../resources/linkedresource_v2.md) objeto.
 
-Você pode especificar as seguintes propriedades ao criar um **linkedResource_v2**.
+Você pode especificar as propriedades a seguir ao criar um **linkedResource_v2**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando **o linkedResource**.|
-|displayName|Cadeia de caracteres|Campo que indica o título do **linkedResource**.|
+|applicationName|Cadeia de caracteres|Campo que indica o nome do aplicativo da origem que está enviando **o linkedResource**.|
+|displayName|String|Campo que indica o título do **linkedResource**.|
 |externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiro.|
 |webUrl|String|Link profundo para **o linkedResource**.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [linkedResource_v2](../resources/linkedresource_v2.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta [e linkedResource_v2](../resources/linkedresource_v2.md) objeto no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

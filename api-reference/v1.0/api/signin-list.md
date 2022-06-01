@@ -1,24 +1,27 @@
 ---
 title: Listar logons
-description: Descreve o método de lista do recurso signIn (entidade) do microsoft API do Graph.
+description: Descreve o método de lista do recurso signIn (entidade) do Microsoft API do Graph.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: f4e3f31e3a713d39129d99d726b6628b3d4e10dc
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 8348d19b8c9f15436bb09d8c34c6b0865aaf95f8
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64629014"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819640"
 ---
 # <a name="list-signins"></a>Listar logons
 
 Namespace: microsoft.graph
 
-Recupera os logons de usuário do Azure AD para seu locatário. As inserções interativas de natureza (onde um nome de usuário/senha é passado como parte do token de autenticação) e as inserções federadas bem-sucedidas estão atualmente incluídas nos logs de login. 
+Recupera os logons de usuário do Azure AD para seu locatário. As entradas interativas por natureza (em que um nome de usuário/senha é passado como parte do token de autenticação) e entradas federadas bem-sucedidas estão incluídas atualmente nos logs de entrada. 
 
-O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as inscrições mais recentes são retornadas primeiro. Somente os eventos de login que ocorreram dentro do período de retenção padrão Azure Active Directory (Azure AD[) estão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) disponíveis.
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as entradas mais recentes são retornadas primeiro. Somente os eventos de entrada que ocorreram dentro do período de retenção Azure Active Directory ([Azure AD) padrão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) estão disponíveis.
+
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,22 +29,22 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All e Directory.Read.All  |
 
 > [!IMPORTANT]
-> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
+> Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [estar registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) corretamente no Azure AD.
+Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para Azure AD.
 
-Além das permissões delegadas, o usuário inscreveu precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de logons. Para saber mais sobre funções de diretório, consulte [Funções in-loco do Azure AD](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, [Azure AD funções internas](/azure/active-directory/roles/permissions-reference):
 + Administrador global
 + Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
-+ Leitor de Segurança
++ Leitor de segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +55,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos `$top`parâmetros , `$skiptoken`e `$filter` OData Query para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
+Esse método dá suporte aos `$top`parâmetros de consulta , `$skiptoken`e `$filter` OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, confira [Parâmetros de consulta do OData](/graph/query-parameters).
 
 ## <a name="response"></a>Resposta
 
@@ -60,7 +63,7 @@ Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma c
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-sign-ins"></a>Exemplo 1: Listar todas as assinaturas
+### <a name="example-1-list-all-sign-ins"></a>Exemplo 1: Listar todas as entradas
 
 #### <a name="request"></a>Solicitação
 
@@ -186,7 +189,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>Exemplo 2: Recuperar os primeiros 10 logins em aplicativos com o appDisplayName que começa com "Graph"
+### <a name="example-2-retrieve-the-first-10-sign-ins-to-apps-with-the-appdisplayname-that-starts-with-graph"></a>Exemplo 2: recuperar as 10 primeiras entradas em aplicativos com o appDisplayName que começa com 'Graph'
 
 #### <a name="request"></a>Solicitação
 

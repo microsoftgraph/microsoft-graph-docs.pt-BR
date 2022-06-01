@@ -5,29 +5,29 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: d76b36380c5cac12a3607e0475c3a57386e2f985
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ec5128ade8bd56526be0bbed3ee608d5c7fa9855
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128585"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821152"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
 Namespace: microsoft.graph
 
-Atualize uma extensão aberta[(objeto openTypeExtension)](../resources/opentypeextension.md) com as propriedades no corpo da solicitação:
+Atualize uma extensão aberta ([objeto openTypeExtension](../resources/opentypeextension.md) ) com as propriedades no corpo da solicitação:
 
 - Se uma propriedade no corpo da solicitação corresponder ao nome de uma propriedade existente na extensão, os dados na extensão serão atualizados.
 - Caso contrário, essa propriedade e seus dados serão adicionados à extensão. 
 
 Os dados em uma extensão podem ser tipos primitivos ou matrizes de tipos primitivos.
 
-Consulte a tabela na seção [Permissões](#permissions) para a lista de recursos que suportam extensões abertas.
+Consulte a tabela na seção [Permissões para](#permissions) obter a lista de recursos que dão suporte a extensões abertas.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
@@ -39,9 +39,9 @@ Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (de
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [tarefa](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 Na solicitação, identifique a instância de recurso, use a propriedade de navegação **extensions** dessa instância para identificar a extensão e faça um `PATCH` nessa instância de extensão.
@@ -61,7 +61,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extension
 PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
->**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de atualizar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a atualização de extensões abertas neles de maneira semelhante.
+>**Nota:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso para atualizar uma extensão nela. Todas as outras sintaxes que permitem identificar essas instâncias de recurso dão suporte à atualização de extensões abertas neles de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.
 

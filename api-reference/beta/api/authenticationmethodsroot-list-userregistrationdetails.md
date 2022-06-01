@@ -1,16 +1,16 @@
 ---
 title: Listar userRegistrationDetails
 description: Obtenha uma lista dos métodos de autenticação registrados para o usuário, conforme definido no objeto userRegistrationDetails.
-author: danielwood95
+author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 474750f2f954a75d7fcaa403f061fc96bc663283
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: e504bbd4ac4326c68eef1b94ccdde2e6aca68762
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694852"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820851"
 ---
 # <a name="list-userregistrationdetails"></a>Listar userRegistrationDetails
 Namespace: microsoft.graph

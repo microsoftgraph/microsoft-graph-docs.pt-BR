@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9eef6d0de67b3e124f95cd0763ac5948b6d2fd10
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: bf369451c3a2b0d5ab4ca01894a4c7d546f7e630
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704158"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820935"
 ---
 # <a name="delegatedadminrelationshipoperation-resource-type"></a>Tipo de recurso delegatedAdminRelationshipOperation
 
@@ -34,7 +34,7 @@ Representa uma operação de execução longa relacionada a uma relação de adm
 |id|Cadeia de caracteres|O identificador exclusivo da operação de execução longa do administrador delegado. Somente leitura. Herdado da [entidade](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|A hora no formato ISO 8601 e no horário UTC em que a operação de execução longa foi modificada pela última vez. Somente leitura.|
 |operationType|delegatedAdminRelationshipOperationType|O tipo de operação de execução longa. Os valores possíveis são: `delegatedAdminAccessAssignmentUpdate`, `unknownFutureValue`. Somente leitura.|
-|status|delegatedAdminRelationshipOperationStatus|O status da operação. Somente leitura. Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`. Somente leitura. Oferece suporte para `$orderBy`.|
+|status|Longrunningoperationstatus|O status da operação. Somente leitura. Os valores possíveis são: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Somente leitura. Oferece suporte para `$orderBy`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

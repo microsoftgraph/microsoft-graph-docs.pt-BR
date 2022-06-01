@@ -1,23 +1,23 @@
 ---
 title: 'authenticationMethodsRoot: usersRegisteredByFeature'
-description: Obter o número de usuários capazes de autenticação multifafa, redefinição de senha de autoatendados e autenticação sem senha.
-author: danielwood95
-localization_priority: Normal
+description: Obtenha o número de usuários capazes de autenticação multifator, redefinição de senha de autoatendimento e autenticação sem senha.
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 874b8cd14f663913c89dbfba1e48900a14274b9f
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 2ce9fe387526d4f0762ffebc282ec4e6b3a4eb56
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384095"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820690"
 ---
 # <a name="authenticationmethodsroot-usersregisteredbyfeature"></a>authenticationMethodsRoot: usersRegisteredByFeature
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter o número de usuários capazes de autenticação multifafa, redefinição de senha de autoatendados e autenticação sem senha.
+Obtenha o número de usuários capazes de autenticação multifator, redefinição de senha de autoatendimento e autenticação sem senha.
 
 ## <a name="permissions"></a>Permissões
 As seguintes permissões são obrigatórias para chamar esta API. Para saber mais, incluindo como escolher as permissões, consulte [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ As seguintes permissões são obrigatórias para chamar esta API. Para saber mai
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para acessar a API, uma [das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) é necessária:
+Para acessar a API, [uma das seguintes funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) é necessária:
 
 * Leitor de relatórios
 * Leitor de segurança
@@ -66,7 +66,7 @@ O valor `privilegedAdmin` consiste nas seguintes funções de administrador priv
 * Administrador de usuários
 * Administrador de autenticação
 
-O valor inclui todas as funções de administrador `admin` do Azure AD. 
+O valor `admin` inclui todas as Azure AD de administrador. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -78,7 +78,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um código de resposta e um `200 OK` [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) no corpo da resposta.
+Se tiver êxito, essa função retornará `200 OK` um código de resposta e um [userRegistrationFeatureSummary](../resources/userregistrationfeaturesummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

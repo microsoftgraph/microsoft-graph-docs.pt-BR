@@ -5,25 +5,25 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 27efc8b0f8f02170dac49405128ed12da9e9afe3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 39c71639e061e0faa61437ebb1705a4ae91750da
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110475"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820774"
 ---
 # <a name="update-todotask"></a>Atualizar todoTask
 Namespace: microsoft.graph
 
-Atualize as propriedades de um [objeto todoTask.](../resources/todotask.md)
+Atualize as propriedades de um [objeto todoTask](../resources/todotask.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,7 +44,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto todoTask.](../resources/todotask.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto todoTask](../resources/todotask.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTask](../resources/todotask.md).
 
@@ -52,13 +52,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo da tarefa. Herdado da [entidade](../resources/entity.md)|
 |corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
+|Categorias|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](../resources/outlookcategory.md) definida pelo usuário.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
-|importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal` e `high`.|
+|importância|importância|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
-|status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|status|taskStatus|Indica o estado ou o progresso da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|Cadeia de caracteres|Uma breve descrição da tarefa.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação.|
@@ -68,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [todoTask](../resources/todotask.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [todoTask](../resources/todotask.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -143,6 +144,7 @@ Content-Type: application/json
     "title": "Shop for dinner",
     "createdDateTime": "2020-07-22T10:39:03.7937971Z",
     "lastModifiedDateTime": "2020-07-22T12:02:10.8835421Z",
+    "categories": [],
     "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
     "body": {
         "content": "",

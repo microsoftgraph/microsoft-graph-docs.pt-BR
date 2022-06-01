@@ -5,27 +5,29 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b8c543bb5c07979c26654b64245cde8bddcd6bd
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 9c1ebb6868569bebb63eef01c487e3c2342e68e4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451162"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819899"
 ---
-# <a name="update-basetasklist"></a>Atualizar baseTaskList
+# <a name="update-basetasklist-deprecated"></a>Atualizar baseTaskList (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto taskList](../resources/tasklist.md) .
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Atualize as propriedades de um [objeto baseTaskList](../resources/tasklist.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,13 +52,13 @@ PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Campo indicando o título atualizado da lista de tarefas.|
+|displayName|Cadeia de caracteres|Campo que indica o título atualizado da lista de tarefas.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto baseTaskList](../resources/basetasklist.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto baseTaskList](../resources/basetasklist.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

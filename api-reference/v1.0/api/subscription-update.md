@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: c89c28c780b8d9a39b49e0779e08cbef538585b9
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8dbd41bed4c7b9cccc1cb1ee6fd83c37f33fd92c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336848"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819368"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 Renove uma assinatura ampliando seu tempo de validade.
 
-A tabela na seção [Permissões](#permissions) lista os recursos que suportam a assinatura para alterar notificações.
+A tabela na seção [Permissões lista os](#permissions) recursos que dão suporte à assinatura para alterar notificações.
 
-As assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para evitar notificações de alteração ausentes, um aplicativo deve renovar suas assinaturas bem antes da data de expiração. Consulte [assinatura](../resources/subscription.md) para o tamanho máximo de uma assinatura para cada tipo de recurso.
+As assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para evitar notificações de alteração ausentes, um aplicativo deve renovar suas assinaturas bem antes da data de expiração. Consulte [a assinatura](../resources/subscription.md) para obter o comprimento máximo de uma assinatura para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,6 +44,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -58,7 +59,7 @@ No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer 
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você pode assinar as alterações nos recursos de **contato****, evento** **ou mensagem Outlook** contato.
+Você pode assinar as alterações nos recursos **contato**, **evento** ou **mensagem** do Outlook.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
@@ -82,7 +83,7 @@ PATCH /subscriptions/{id}
 
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| expirationDateTime  | DateTimeOffset  | Especifica a data e a hora em UTC quando a assinatura expira. Para o tempo máximo de assinatura com suporte varia dependendo do recurso. |
+| expirationDateTime  | DateTimeOffset  | Especifica a data e a hora em UTC quando a assinatura expira. Para o período máximo de assinatura com suporte, varia dependendo do recurso. |
 
 ## <a name="response"></a>Resposta
 

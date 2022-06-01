@@ -1,18 +1,18 @@
 ---
-title: Listar decisões de accessReview
+title: Listar decisões de accessReview (preterido)
 description: No recurso Azure AD revisões de acesso, recupere as decisões de um objeto accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e6f9d7430a1fd00357ac2455e4754f7d4958e58
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: d4d50761e56f3c8b3d342b1b1d704ea37a4cc13b
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314469"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819130"
 ---
-# <a name="list-accessreview-decisions"></a>Listar decisões de accessReview
+# <a name="list-accessreview-decisions-deprecated"></a>Listar decisões de accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -29,9 +29,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
  O usuário conectado também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 
@@ -121,10 +121,10 @@ Content-type: application/json
 |:---------------|:--------|:----------|
 |[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recuperar uma revisão de acesso. |
 |[Listar minhas decisões de accessReview](accessreview-listmydecisions.md) |        [coleção accessReviewDecision](../resources/accessreviewdecision.md)|    Como revisor, obtenha minhas decisões de um accessReview.|
-|[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum.   |   Envie um lembrete aos revisores de um accessReview. |
-|[Parar accessReview](accessreview-stop.md) |        Nenhum.   |   Pare um accessReview. |
-|[Redefinir decisões de accessReview](accessreview-reset.md) |        Nenhum.   |   Redefina as decisões em um accessReview em andamento.|
-|[Aplicar decisões accessReview](accessreview-apply.md) |        Nenhum.   |   Aplique as decisões de um accessReview concluído.|
+|[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum   |   Envie um lembrete aos revisores de um accessReview. |
+|[Parar accessReview](accessreview-stop.md) |        Nenhum   |   Pare um accessReview. |
+|[Redefinir decisões de accessReview](accessreview-reset.md) |        Nenhum   |   Redefina as decisões em um accessReview em andamento.|
+|[Aplicar decisões accessReview](accessreview-apply.md) |        Nenhum   |   Aplique as decisões de um accessReview concluído.|
 
 
 <!--

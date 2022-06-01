@@ -1,18 +1,18 @@
 ---
-title: Obter accessReview
+title: Obter accessReview (preterido)
 description: No recurso Azure AD revisões de acesso, recupere um objeto accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 50f3ba903b15db5e2cee1972d0629127e14926f7
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ee160d056e4aa4ba792a85551d14ac10c5801d17
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314504"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819134"
 ---
-# <a name="get-accessreview"></a>Obter accessReview
+# <a name="get-accessreview-deprecated"></a>Obter accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -31,9 +31,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 Para chamar essa API, o usuário conectado também deve estar em uma função de diretório que permita ler uma revisão de acesso ou o usuário pode ser atribuído como revistor na revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [revisões de acesso](../resources/accessreviews-root.md).
 

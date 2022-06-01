@@ -1,18 +1,18 @@
 ---
-title: Criar programControl
+title: Criar programControl (preterido)
 description: No recurso Azure AD revisões de acesso, crie um novo objeto programControl.  Isso vincula uma revisão de acesso a um programa.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 61b903d83b6d5b7c8de8e101e9b435a8ff34496e
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: f1a2e919a24d71d50fe0af26dc7f766fd4c0a8d1
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314933"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820900"
 ---
-# <a name="create-programcontrol"></a>Criar programControl
+# <a name="create-programcontrol-deprecated"></a>Criar programControl (preterido)
 
 Namespace: microsoft.graph
 
@@ -34,9 +34,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            |  ProgramControl.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            |  ProgramControl.ReadWrite.All  |
 
 O usuário conectado também deve estar em uma função de diretório que permita que ele crie um **programControl**. 
 

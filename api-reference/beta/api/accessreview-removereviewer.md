@@ -1,18 +1,18 @@
 ---
-title: Remover o revisor accessReview
-description: Remover um revistor de revisão de acesso.
+title: Remover o revisor accessReview (preterido)
+description: Remover um revisador de revisão de acesso.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e5bd42bf61f85a20b63462ce902809302d30dfd5
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ca1c1eca841524963f79f05f8a70c1f7495e94d7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63394170"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819149"
 ---
-# <a name="remove-accessreview-reviewer"></a>Remover o revisor accessReview
+# <a name="remove-accessreview-reviewer-deprecated"></a>Remover o revisor accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure AD, atualize um objeto [accessReview](../resources/accessreview.md) existente para remover um usuário como [revisor](../resources/accessreviews-root.md).  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e somente para uma revisão de acesso em que os revisadores são explicitamente especificados. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revistores. 
+No recurso Azure AD revisões de acesso, atualize um objeto [accessReview](../resources/accessreview.md) existente para remover um usuário como [revisor](../resources/accessreviews-root.md).  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e apenas para uma revisão de acesso em que os revisores são especificados explicitamente. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revisores. 
 
 
 ## <a name="permissions"></a>Permissões
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ DELETE /accessReviews/{reviewId}/reviewers/{userId}
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo de solicitação deve ser fornecido.
+Nenhum corpo da solicitação deve ser fornecido.
 
 
 ## <a name="response"></a>Resposta
@@ -51,11 +51,11 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="example"></a>Exemplo
 
-Este é um exemplo de atualização de uma revisão de acesso única (não recorrente) para remover um revistor desnecessário.
+Este é um exemplo de atualização de uma revisão de acesso única (não recorrente) para remover um revisador desnecessário.
 
 
 ##### <a name="request"></a>Solicitação
-Na URL de solicitação, fornece a id do objeto accessReview e, em seguida, a id do objeto user.
+Na URL da solicitação, forneça a ID do objeto accessReview e, em seguida, a ID do objeto de usuário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

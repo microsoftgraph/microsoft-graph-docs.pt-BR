@@ -1,18 +1,18 @@
 ---
-title: Tipo de recurso accessReviewRecurrenceSettings
-description: Especifica que a revisão de acesso se recorre a intervalos regulares.
-localization_priority: Normal
+title: Tipo de recurso accessReviewRecurrenceSettings (preterido)
+description: Especifica que a revisão de acesso se repetirá em intervalos regulares.
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: cb2a05589bfa92331a213a489bfb2a5129850065
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 9fa6fb47c541094c85778621289d1abb6d71f727
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52755655"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821208"
 ---
-# <a name="accessreviewrecurrencesettings-resource-type"></a>Tipo de recurso accessReviewRecurrenceSettings
+# <a name="accessreviewrecurrencesettings-resource-type-deprecated"></a>Tipo de recurso accessReviewRecurrenceSettings (preterido)
 
 Namespace: microsoft.graph
 
@@ -20,16 +20,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-O tipo de recurso **accessReviewRecurrenceSettings** é usado no recurso [accessReviewSettings](accessreviewsettings.md) e especifica que a revisão de acesso se recorre a intervalos regulares.
+O **tipo de recurso accessReviewRecurrenceSettings** é usado no recurso [accessReviewSettings](accessreviewsettings.md) e especifica que a revisão de acesso se repetirá em intervalos regulares.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 | :------- | :--- | :---------- |
-| recurrenceType | Cadeia de caracteres | O intervalo de recorrência. Vaules possíveis: `onetime` , , , ou `weekly` `monthly` `quarterly` `halfyearly` `annual` .                                                                   |
-| recurrenceEndType | Cadeia de caracteres | Como a recorrência termina. Valores possíveis: `never` `endBy` , , ou `occurrences` `recurrenceCount` . Se for `never` , não haverá fim explícito da série de recorrência. Se for `endBy` , a recorrência terminará em uma determinada data. Se for , a série terminará após a conclusão das `occurrences` `recurrenceCount` instâncias da revisão. |
+| recurrenceType | Cadeia de caracteres | O intervalo de recorrência. Possíveis vaules: `onetime`, `weekly`, `monthly`, `quarterly`, `halfyearly` ou `annual`.                                                                   |
+| recurrenceEndType | String | Como a recorrência termina. Valores possíveis: `never`, `endBy`, `occurrences`ou `recurrenceCount`. Se for `never`, não haverá nenhum fim explícito da série de recorrência. Se for, `endBy`a recorrência terminará em uma determinada data. Se for, `occurrences`a série terminará depois que `recurrenceCount` as instâncias da revisão forem concluídas. |
 | durationInDays | Int32 | A duração em dias para recorrência. |
-| recurrenceCount | Int32 | A contagem de recorrências, se o valor de **recorrênciaEndType** for `occurrences` , ou de outra `0` forma. |
+| recurrenceCount | Int32 | A contagem de recorrências, se o valor de **recurrenceEndType** for `occurrences`ou não `0` . |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 778ed1164d41d05193dae32f90187ab6f3d4604a
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6d031e6c18b3611efdf6c0ae37962c3e977abc54
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208733"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819486"
 ---
 # <a name="group-evaluatedynamicmembership"></a>group: evaluateDynamicMembership
 
@@ -23,7 +23,7 @@ Avaliar se um usuário ou dispositivo é ou seria membro de um grupo dinâmico. 
 - Avalie se um usuário ou dispositivo é membro de um grupo dinâmico especificado.
 - Avalie se um usuário ou dispositivo seria membro de um grupo dinâmico com base na ID do usuário ou dispositivo e em uma regra de associação.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,16 +31,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                                          |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Para o usuário: Group.Read.All e User.Read.All, Directory.Read.All<br>Para dispositivo: Group.Read.All e Device.Read.All, Directory.Read.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                                       |
+| Delegada (conta corporativa ou de estudante)     | Para o usuário: Group.Read.All e User.Read.All, Directory.Read.All<br>Para dispositivo: Group.Read.All e Device.Read.All, Directory.Read.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                                                       |
 | Aplicativo                            | Sem suporte.                                                                                                                       |
 
 ### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a>Avaliar a associação dinâmica com a ID de membro e a regra de associação
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                    |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Para usuário: User.Read.All, Directory.Read.All<br>Para dispositivo: Device.Read.All, Directory.Read.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                 |
+| Delegada (conta corporativa ou de estudante)     | Para usuário: User.Read.All, Directory.Read.All<br>Para dispositivo: Device.Read.All, Directory.Read.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                 |
 | Aplicativo                            | Sem suporte.                                                                                 |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -67,8 +67,8 @@ A tabela a seguir lista as propriedades que são necessárias ao avaliar a assoc
 
 | Parâmetro      | Tipo              | Descrição                                                                                                                                                                                                                                                                                                                                                                                                            |
 | :------------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Memberid       | Conjunto de cadeias de caracteres | memberId é a ID de objeto do usuário ou dispositivo a ser avaliado.                                                                                                                                                                                                                                                                                                                                                       |
-| membershipRule | Conjunto de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra para o grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado quanto à possível associação em um grupo com a mesma regra. Para obter mais informações, [regras de associação dinâmica para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
+| Memberid       | Coleção de cadeias de caracteres | memberId é a ID de objeto do usuário ou dispositivo a ser avaliado.                                                                                                                                                                                                                                                                                                                                                       |
+| membershipRule | Coleção de cadeias de caracteres | A regra usada para avaliação de associação. Se essa propriedade não for fornecida, a regra para o grupo existente será avaliada. Se essa propriedade for fornecida, o usuário ou dispositivo será avaliado quanto à possível associação em um grupo com a mesma regra. Para obter mais informações, [regras de associação dinâmica para grupos no Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 
 ## <a name="response"></a>Resposta
 
@@ -206,6 +206,10 @@ Content-type: application/json
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-evaluatedynamicmembership-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

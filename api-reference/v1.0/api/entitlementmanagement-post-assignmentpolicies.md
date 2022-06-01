@@ -5,27 +5,27 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c4337a07e9667ac23d3d0c386964fc1f9f44a275
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: f47448533da07ad369ca3013f9efeae0ca8f8919
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209594"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820386"
 ---
 # <a name="create-assignmentpolicies"></a>Criar assignmentPolicies
 Namespace: microsoft.graph
 
 No [Azure AD de direitos](../resources/entitlementmanagement-overview.md), crie um novo [objeto accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).  A solicitação incluirá uma referência ao [accessPackage](../resources/accesspackage.md) que conterá essa política, que já deve existir.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All  |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | EntitlementManagement.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All  |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,11 +52,12 @@ Você pode especificar as propriedades a seguir ao criar **um accessPackageAssig
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |description|Cadeia de caracteres|A descrição da política.|
-|displayName|String|O nome de exibição da política.|
+|displayName|Cadeia de caracteres|O nome de exibição da política.|
 |allowedTargetScope|allowedTargetScope|Who pode receber o pacote de acesso por meio dessa política. Os valores possíveis são `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Opcional.|
 |Expiração|[expirationPattern](../resources/expirationpattern.md)|A data de validade das atribuições criadas nesta política.|
 |requestApprovalSettings|[accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md)|Especifica as configurações para aprovação de solicitações para uma atribuição de pacote de acesso por meio dessa política. Por exemplo, se a aprovação for necessária para novas solicitações.|
 |requestorSettings|[accessPackageAssignmentRequestorSettings](../resources/accesspackageassignmentrequestorsettings.md)|Fornece configurações adicionais para selecionar quem pode criar uma solicitação para uma atribuição de pacote de acesso por meio dessa política e o que eles podem incluir em sua solicitação.|
+|reviewSettings|[accessPackageAssignmentReviewSettings](../resources/accesspackageassignmentreviewsettings.md)|Configurações para revisões de acesso de atribuições por meio dessa política.|
 |specificAllowedTargets|[coleção subjectSet](../resources/subjectset.md)|Os destinos para acesso atribuído a partir de um pacote de acesso dessa política.|
 |accessPackage|[accessPackage](../resources/accesspackage.md)| Uma referência ao pacote de acesso que conterá a política, que já deve existir.|
 
@@ -163,7 +164,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-a-policy-for-users-from-other-organizations-to-request"></a>Exemplo 2: Criar uma política para que os usuários de outras organizações solicitem
 
-O exemplo a seguir mostra uma política mais complexa com dois estágios de aprovação.
+O exemplo a seguir mostra uma política mais complexa com dois estágios de aprovação e revisões de acesso recorrentes.
 
 #### <a name="request"></a>Solicitação
 
@@ -243,6 +244,40 @@ Content-Type: application/json
                 "fallbackEscalationApprovers": []
             }
         ]
+    },
+    "reviewSettings": {
+        "isEnabled": true,
+        "expirationBehavior": "keepAccess",
+        "isRecommendationEnabled": true,
+        "isReviewerJustificationRequired": true,
+        "isSelfReview": false,
+        "schedule": {
+            "startDateTime": "2022-07-02T06:59:59.998Z",
+            "expiration": {
+                "duration": "P14D",
+                "type": "afterDuration"
+            },
+            "recurrence": {
+                "pattern": {
+                    "type": "absoluteMonthly",
+                    "interval": 3,
+                    "month": 0,
+                    "dayOfMonth": 0,
+                    "daysOfWeek": []
+                },
+                "range": {
+                    "type": "noEnd",
+                    "numberOfOccurrences": 0
+                }
+            }
+        },
+        "primaryReviewers": [
+            {
+                "@odata.type": "#microsoft.graph.groupMembers",
+                "groupId": "1623f912-5e86-41c2-af47-39dd67582b66"
+            }
+        ],
+        "fallbackReviewers": []
     },
     "accessPackage": {
         "id": "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b"

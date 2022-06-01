@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessClientApplications
 description: Representa aplicativos cliente (entidades de serviço e identidades de carga de trabalho) incluídos e excluídos do escopo da política.
-author: danielwood95
+author: calebb
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f53d79f311d5f6be8b3d9ee0781636eb4c62c686
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0afcbcc68291d73aa83f9d730d81c257932c1dd7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672746"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819059"
 ---
 # <a name="conditionalaccessclientapplications-resource-type"></a>Tipo de recurso conditionalAccessClientApplications
 

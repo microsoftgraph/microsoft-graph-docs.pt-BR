@@ -5,29 +5,32 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2041afd2cb16b20a5863104e2b54247ecab77ba2
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d6b963bdc85b9be95fcf68e001c1a4327cc6900a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343091"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820739"
 ---
-# <a name="organization-activateservice"></a>organization: activateService
+# <a name="organization-activateservice-deprecated"></a>organization: activateService (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ative um serviço para uma organização.
+> [!CAUTION]
+> A API **activateService** foi preterida e interromperá o retorno de dados em 30 de junho de 2022.
+
+Ativar um serviço para uma organização.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para ativar um serviço para uma organização, o solicitante precisa ter a função administrador  da empresa com as seguintes permissões.
+Para ativar um serviço para uma organização, o solicitante precisa ter a função de  Administrador da Empresa com as permissões a seguir.
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 | :--- | :--- |
-| Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All|
+| Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All|
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Directory.ReadWrite.All|
 
@@ -49,14 +52,14 @@ POST /organization/{organizationId}/activateService
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto activateService](../resources/activateService.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto activateService](../resources/activateService.md) .
 Você deve definir **o serviço** ou (**servicePlanId** _e_ **skuId**) para que essa ação seja válida.
 
 | Propriedade         | Tipo         | Descrição                           |
 | ----------------- | ------------ | ------------------------------------- |
 | service| Cadeia de caracteres | O nome do serviço a ser ativado. |
 | servicePlanId | Guid | O identificador de plano do plano de serviço a ser ativado. |
-| skuId | Guid | O identificador SKU do plano de serviço. |
+| skuId | Guid | O identificador de SKU do plano de serviço. |
 
 ## <a name="response"></a>Resposta
 

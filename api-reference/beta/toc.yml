@@ -163,7 +163,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
@@ -260,11 +260,11 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/users.md
           - name: Usuário
             href: resources/user.md
@@ -360,7 +360,7 @@ items:
           - name: Objetos de diretório
             href: resources/directoryobject.md
             items:
-              - name: Ativar plano de serviço
+              - name: Ativar plano de serviço (preterido)
                 href: api/user-activateserviceplan.md
               - name: Atribuir licença
                 href: api/user-assignlicense.md
@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -594,7 +594,7 @@ items:
                 href: api/chat-list.md
           - name: Tarefas pendentes
             items:
-              - name: Tarefa
+              - name: Tarefa pendente
                 href: resources/todotask.md
               - name: Criar tarefa
                 href: api/todotasklist-post-tasks.md
@@ -800,7 +800,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -938,7 +938,7 @@ items:
                         href: api/extensionproperty-delete.md
               - name: Credenciais de identidade federada (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1441,7 +1441,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1697,11 +1697,11 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta Eletrônica (versão prévia)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1859,7 +1859,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -7297,7 +7297,7 @@ items:
                     href: resources/intune-deviceconfig-wirednetworkauthenticationtype.md
                   - name: Interface de rede com fio
                     href: resources/intune-deviceconfig-wirednetworkinterface.md
-              - name: Gerenciamento de dispositivos
+              - name: Gerenciamento de dispositivo
                 href: resources/intune-device-mgt-conceptual.md
                 items:
                   - name: Ações de assistência remota permitidas
@@ -10349,7 +10349,7 @@ items:
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -10775,7 +10775,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -11118,7 +11118,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11313,7 +11313,7 @@ items:
                     href: api/organization-get.md
                   - name: Atualizar detalhes org
                     href: api/organization-update.md
-                  - name: Ativar serviço
+                  - name: Ativar serviço (preterido)
                     href: api/organization-activateservice.md
               - name: Configurações da organização
                 href: resources/organizationSettings.md
@@ -11777,7 +11777,7 @@ items:
                         href: api/authenticationcontextclassreference-update.md
               - name: Acesso entre locatários (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     displayName: 'Cross-tenant access settings, XTAP'
                     href: resources/crosstenantaccesspolicy-overview.md
                   - name: Política
@@ -12004,7 +12004,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (versão prévia)
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativo de locatário
                         items:
@@ -13709,7 +13709,7 @@ items:
                 href: api/contactmergesuggestions-update.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13783,7 +13783,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registros de usuário de credencial
                     href: resources/credentialuserregistrationcount.md
@@ -14091,7 +14091,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14101,7 +14101,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-answers-overview.md
               - name: Acronym
                 href: resources/search-acronym.md
@@ -14144,7 +14144,7 @@ items:
                     href: api/search-qna-delete.md
           - name: Index
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -14299,7 +14299,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Ameaça
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -14355,7 +14355,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             items:
@@ -14604,7 +14604,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -14617,6 +14617,8 @@ items:
                 href: api/plannerplan-get.md
               - name: Atualizar plano
                 href: api/plannerplan-update.md
+              - name: Excluir plano
+                href: api/plannerplan-delete.md
               - name: Listar tarefas de planos
                 href: api/plannerplan-list-tasks.md
               - name: Listar buckets de planos
@@ -15351,51 +15353,43 @@ items:
         displayName: Microsoft To Do
         items:
           - name: Visão geral
-            href: resources/tasks-overview.md
-          - name: Lista de tarefas
+            href: resources/todo-overview.md
+          - name: Lista de tarefas pendentes
             items:
-              - name: Lista de tarefas base
-                href: resources/basetasklist.md
-              - name: Lista de tarefas
-                href: resources/tasklist.md
-              - name: Lista de tarefas conhecida
-                href: resources/wellknowntasklist.md
+              - name: Lista de tarefas pendentes
+                href: resources/todotasklist.md
               - name: Lista de listas de tarefas
-                href: api/tasks-list-lists.md
+                href: api/todo-list-lists.md
               - name: Criar uma lista de tarefas
-                href: api/tasks-post-lists.md
+                href: api/todo-post-lists.md
               - name: Obter lista de tarefas
-                href: api/basetasklist-get.md
+                href: api/todotasklist-get.md
               - name: Atualizar lista de tarefas
-                href: api/tasklist-update.md
+                href: api/todotasklist-update.md
               - name: Excluir lista de tarefas
-                href: api/tasklist-delete.md
-              - name: Obter delta da lista de tarefas
-                href: api/basetasklist-delta.md
+                href: api/todotasklist-delete.md
+              - name: Obter delta para lista de tarefas
+                href: api/todotasklist-delta.md
               - name: Criar extensão aberta
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefa pendente
             items:
-              - name: Tarefa base
-                href: resources/basetask.md
-              - name: Tarefa
-                href: resources/task.md
+              - name: Tarefa pendente
+                href: resources/todotask.md
               - name: Listar tarefas
-                href: api/basetasklist-list-tasks.md
+                href: api/todotasklist-list-tasks.md
               - name: Criar tarefa
-                href: api/basetasklist-post-tasks.md
+                href: api/todotasklist-post-tasks.md
               - name: Obter tarefa
-                href: api/basetask-get.md
+                href: api/todotask-get.md
               - name: Atualizar tarefa
-                href: api/basetask-update.md
-              - name: Mover tarefa
-                href: api/basetask-move.md
+                href: api/todotask-update.md
               - name: Excluir tarefa
-                href: api/basetask-delete.md
-              - name: Obter delta da tarefa
-                href: api/basetask-delta.md
+                href: api/todotask-delete.md
+              - name: Obter delta para tarefa
+                href: api/todotask-delta.md
               - name: Criar extensão aberta
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
@@ -15404,9 +15398,9 @@ items:
             href: resources/checklistitem.md
             items:
               - name: Listar
-                href: api/basetask-list-checklistitems.md
+                href: api/todotask-list-checklistitems.md
               - name: Criar
-                href: api/basetask-post-checklistitems.md
+                href: api/todotask-post-checklistitems.md
               - name: Obter
                 href: api/checklistitem-get.md
               - name: Atualizar
@@ -15414,73 +15408,96 @@ items:
               - name: Excluir
                 href: api/checklistitem-delete.md
           - name: Recurso vinculado
-            href: resources/linkedresource_v2.md
+            href: resources/linkedresource.md
             items:
               - name: Listar
-                href: api/basetask-list-linkedresources.md
+                href: api/todotask-list-linkedresources.md
               - name: Criar
-                href: api/basetask-post-linkedresources.md
+                href: api/todotask-post-linkedresources.md
               - name: Obter
-                href: api/linkedresource_v2-get.md
+                href: api/linkedresource-get.md
               - name: Atualizar
-                href: api/linkedresource_v2-update.md
+                href: api/linkedresource-update.md
               - name: Excluir
-                href: api/linkedresource_v2-delete.md
-          - name: Tarefas pendentes (antiga)
+                href: api/linkedresource-delete.md
+          - name: API de Tarefas Pendentes com tarefas base (preteridas)
             items:
-              - name: Visão geral
-                href: resources/todo-overview.md
-              - name: Lista de tarefas
-                href: resources/todotasklist.md
+              - name: Visão Geral
+                href: resources/tasks-overview.md
+              - name: Lista de tarefas base
                 items:
-                  - name: Lista de listas de tarefas
-                    href: api/todo-list-lists.md
-                  - name: Criar uma lista de tarefas
-                    href: api/todo-post-lists.md
-                  - name: Obter lista de tarefas
-                    href: api/todotasklist-get.md
-                  - name: Atualizar lista de tarefas
-                    href: api/todotasklist-update.md
-                  - name: Excluir lista de tarefas
-                    href: api/todotasklist-delete.md
-                  - name: Obter delta da lista de tarefas
-                    href: api/todotasklist-delta.md
+                  - name: Lista de tarefas base
+                    href: resources/basetasklist.md
+                  - name: Lista de tarefas
+                    href: resources/tasklist.md
+                  - name: Lista de tarefas conhecida
+                    href: resources/wellknowntasklist.md
+                  - name: Listar listas de tarefas base
+                    href: api/tasks-list-lists.md
+                  - name: Criar lista de tarefas base
+                    href: api/tasks-post-lists.md
+                  - name: Obter lista de tarefas base
+                    href: api/basetasklist-get.md
+                  - name: Atualizar lista de tarefas base
+                    href: api/tasklist-update.md
+                  - name: Excluir lista de tarefas base
+                    href: api/tasklist-delete.md
+                  - name: Obter delta para a lista de tarefas base
+                    href: api/basetasklist-delta.md
                   - name: Criar extensão aberta
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: Obter extensão aberta
                     href: api/opentypeextension-get.md
-              - name: Tarefa
-                href: resources/todotask.md
+              - name: Tarefa base
                 items:
-                  - name: Listar tarefas
-                    href: api/todotasklist-list-tasks.md
-                  - name: Criar tarefa
-                    href: api/todotasklist-post-tasks.md
-                  - name: Obter tarefa
-                    href: api/todotask-get.md
-                  - name: Atualizar tarefa
-                    href: api/todotask-update.md
-                  - name: Excluir tarefa
-                    href: api/todotask-delete.md
-                  - name: Obter delta da tarefa
-                    href: api/todotask-delta.md
+                  - name: Tarefa base
+                    href: resources/basetask.md
+                  - name: Tarefa
+                    href: resources/task.md
+                  - name: Listar tarefas base
+                    href: api/basetasklist-list-tasks.md
+                  - name: Criar tarefa base
+                    href: api/basetasklist-post-tasks.md
+                  - name: Obter tarefa base
+                    href: api/basetask-get.md
+                  - name: Atualizar tarefa base
+                    href: api/basetask-update.md
+                  - name: Mover tarefa base
+                    href: api/basetask-move.md
+                  - name: Excluir tarefa base
+                    href: api/basetask-delete.md
+                  - name: Obter delta para a tarefa base
+                    href: api/basetask-delta.md
                   - name: Criar extensão aberta
                     href: api/opentypeextension-post-opentypeextension.md
                   - name: Obter extensão aberta
                     href: api/opentypeextension-get.md
-              - name: Recurso vinculado
-                href: resources/linkedresource.md
+              - name: Item da lista de verificação
+                href: resources/checklistitem.md
                 items:
                   - name: Listar
-                    href: api/todotask-list-linkedresources.md
+                    href: api/basetask-list-checklistitems.md
                   - name: Criar
-                    href: api/todotask-post-linkedresources.md
+                    href: api/basetask-post-checklistitems.md
                   - name: Obter
-                    href: api/linkedresource-get.md
+                    href: api/checklistitem-get.md
                   - name: Atualizar
-                    href: api/linkedresource-update.md
+                    href: api/checklistitem-update.md
                   - name: Excluir
-                    href: api/linkedresource-delete.md
+                    href: api/checklistitem-delete.md
+              - name: Recurso vinculado v2
+                href: resources/linkedresource_v2.md
+                items:
+                  - name: Listar
+                    href: api/basetask-list-linkedresources.md
+                  - name: Criar
+                    href: api/basetask-post-linkedresources.md
+                  - name: Obter
+                    href: api/linkedresource_v2-get.md
+                  - name: Atualizar
+                    href: api/linkedresource_v2-update.md
+                  - name: Excluir
+                    href: api/linkedresource_v2-delete.md
           - name: Tarefas do Outlook (obsoleto)
             items:
               - name: Outlook tarefa (preterido)
@@ -15567,7 +15584,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

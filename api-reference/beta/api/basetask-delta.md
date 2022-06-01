@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c788b04c31b65ee46b7af0416c21bf21822b564e
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: f3c4de491115f354f133dd2748df5b4fb2461878
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247179"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820375"
 ---
-# <a name="basetask-delta"></a>baseTask: delta
+# <a name="basetask-delta-deprecated"></a>baseTask: delta (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Obtenha um conjunto de [recursos baseTask](../resources/basetask.md) que foram adicionados, excluídos ou atualizados em uma [baseTaskList específica](../resources/basetasklist.md).
 
@@ -26,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP

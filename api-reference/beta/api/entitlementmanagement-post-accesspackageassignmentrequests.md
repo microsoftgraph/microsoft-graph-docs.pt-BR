@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e266fd6e67c51c7de27341a1880e65d090cc00aa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1018bedc70bf164698aba075b4a8b921a49e7a6e
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129841"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820809"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Criar accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), crie um novo [objeto accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Essa operação é usada para atribuir um usuário a um pacote de acesso ou para remover uma atribuição de pacote de acesso.
+No [Azure AD gerenciamento de direitos](../resources/entitlementmanagement-overview.md), crie um novo [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Essa operação é usada para atribuir um usuário a um pacote de acesso ou para remover uma atribuição de pacote de acesso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | EntitlementManagement.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,27 +47,27 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON [do objeto accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) .
 
-Para que um administrador solicite a criação de uma atribuição para um usuário, o valor da propriedade **requestType** é , e a propriedade accessPackageAssignment contém o do usuário que está sendo atribuído, a propriedade `AdminAdd`  `targetId` **assignmentPolicyId** que identifica [o accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)e a propriedade **accessPackageId** que identifica [o accessPackage](../resources/accesspackage.md).
+Para que um administrador solicite a criação de uma atribuição para um usuário, o valor da propriedade **requestType** `AdminAdd`é , e a propriedade **accessPackageAssignment** `targetId` contém o usuário que está sendo atribuído, a propriedade **assignmentPolicyId** que identifica [o accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) e a propriedade **accessPackageId** que identifica [o accessPackage](../resources/accesspackage.md).
 
-Para que um administrador solicite a remoção de uma atribuição, o valor da propriedade **requestType** é , e a propriedade `AdminRemove` **accessPackageAssignment** contém a propriedade **id** que identifica [o accessPackageAssignment](../resources/accesspackageassignment.md) sendo removido.
+Para que um administrador solicite a remoção de uma atribuição, o valor da propriedade **requestType** `AdminRemove`é , e a propriedade **accessPackageAssignment** contém a propriedade **ID** que identifica [o accessPackageAssignment](../resources/accesspackageassignment.md) que está sendo removido.
 
-Para um usuário não administrador solicitar a criação de sua própria atribuição para uma primeira atribuição ou renovação de atribuição, o valor da **propriedade requestType** é `UserAdd` . A **propriedade accessPackageAssignment** contém `targetId` a com os `id` usuários. A **propriedade assignmentPolicyId** identifica [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). A **propriedade accessPackageId** identifica [o accessPackage](../resources/accesspackage.md). O usuário que faz a solicitação já deve existir no diretório.
+Para um usuário não administrador solicitar a criação de sua própria atribuição para uma primeira atribuição ou renovação de atribuição, o valor da **propriedade requestType** é `UserAdd`. A **propriedade accessPackageAssignment** contém a `targetId` com os `id` usuários. A **propriedade assignmentPolicyId** identifica [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). A **propriedade accessPackageId** identifica [o accessPackage](../resources/accesspackage.md). O usuário que está fazendo a solicitação já deve existir no diretório.
 
-Para um usuário que não seja administrador solicitar estender suas próprias atribuições, o valor da **propriedade requestType** é `UserExtend` . A **propriedade accessPackageAssignment** contém `targetId` a com os `id` usuários. A **propriedade assignmentPolicyId** identifica [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). A **propriedade accessPackageId** identifica [o accessPackage](../resources/accesspackage.md). O usuário que faz a solicitação já deve existir no diretório.
+Para um usuário não administrador solicitar a extensão de suas próprias atribuições, o valor da **propriedade requestType** é `UserExtend`. A **propriedade accessPackageAssignment** contém a `targetId` com os `id` usuários. A **propriedade assignmentPolicyId** identifica [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). A **propriedade accessPackageId** identifica [o accessPackage](../resources/accesspackage.md). O usuário que está fazendo a solicitação já deve existir no diretório.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta de 200 séries e um novo [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) no corpo da resposta.  
+Se tiver êxito, este método retornará um código de resposta da série 200 e um novo [objeto accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) no corpo da resposta.  
 
-Se isso for uma solicitação, em seguida, um `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) e, se necessário, um [accessPackageSubject](../resources/accesspackagesubject.md) também serão criados. Você pode localizá-los usando os parâmetros de consulta ao [listar accessPackageAssignments](entitlementmanagement-list-accesspackageassignments.md).
+Se essa for uma solicitação `AdminAdd` , posteriormente um [accessPackageAssignment](../resources/accesspackageassignment.md) e, se necessário, um [accessPackageSubject](../resources/accesspackagesubject.md) também será criado. Você pode localizá-los usando os parâmetros de consulta ao [listar accessPackageAssignments](entitlementmanagement-list-accesspackageassignments.md).
 
 ## <a name="examples"></a>Exemplos
-### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>Exemplo 1: o administrador solicita uma atribuição direta para um usuário que já está no diretório
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>Exemplo 1: Administração solicita uma atribuição direta para um usuário que já está no diretório
 #### <a name="request"></a>Solicitação
 
-A seguir está um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário. Como o [accessPackageSubject](../resources/accesspackagesubject.md) pode ainda não existir, o valor do **targetID** é a ID do objeto do usuário que está sendo atribuído, o valor do **accessPackageId** é o pacote de acesso desejado para esse usuário, e o valor de **assignmentPolicyId** é uma política de atribuição direta nesse pacote de acesso.
+A seguir está um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário. Como [o accessPackageSubject](../resources/accesspackagesubject.md) pode ainda não existir, o valor da **targetID** é a ID de objeto do usuário que está sendo atribuído, o valor do **accessPackageId** é o pacote de acesso desejado para esse usuário e o valor de **assignmentPolicyId** é uma política de atribuição direta nesse pacote de acesso.
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -142,10 +142,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Exemplo 2: o usuário solicita um pacote e responde perguntas para aprovação
+### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Exemplo 2: o usuário solicita um pacote e responde a perguntas para aprovação
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo de uma solicitação em que o solicitante forneceu respostas ao aprovador para ajudá-lo a tomar sua decisão.
+A seguir está um exemplo de uma solicitação em que o solicitante forneceu respostas ao aprovador para ajudá-lo a tomar sua decisão.
  
 
 
@@ -380,8 +380,8 @@ Content-type: application/json
 
 Para remover atribuições, crie um novo objeto accessPackageAssignmentRequest com as seguintes configurações:
 
-+ O valor da **propriedade requestType** definida como `AdminRemove` .
-+ Na propriedade accessPackageAssignment, inclua uma lista com o identificador dos objetos accessPackageAssignment a ser excluídos.
++ O valor da propriedade **requestType** definido como `AdminRemove`.
++ Na propriedade accessPackageAssignment, inclua um objeto com o identificador dos objetos accessPackageAssignment a serem excluídos.
 
 #### <a name="request"></a>Solicitação
 
@@ -431,10 +431,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>Exemplo 5: o administrador solicita uma atribuição direta para um usuário que ainda não está no diretório
+### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>Exemplo 5: Administração solicita uma atribuição direta para um usuário que ainda não está no diretório
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário, para um usuário que não existe no diretório. O valor do **accessPackageId** é o pacote de acesso desejado para esse usuário, e o valor **de assignmentPolicyId** é uma política de atribuição direta nesse pacote de acesso.
+A seguir está um exemplo da solicitação de uma atribuição direta, na qual o administrador está solicitando a criação de uma atribuição para o usuário, para um usuário que não existe no diretório. O valor de **accessPackageId** é o pacote de acesso desejado para esse usuário e o valor **de assignmentPolicyId** é uma política de atribuição direta nesse pacote de acesso.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

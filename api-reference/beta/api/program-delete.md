@@ -1,18 +1,18 @@
 ---
-title: Excluir programa
-description: No recurso de revisões de acesso do Azure AD, exclua um objeto program.
+title: Excluir programa (preterido)
+description: No recurso Azure AD revisões de acesso, exclua um objeto de programa.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 2220f7dc45749723e813fdcd85a8313001ff1804
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 1ce817894608eb0833d687855d2bead42c126fa5
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63396760"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821103"
 ---
-# <a name="delete-program"></a>Excluir programa
+# <a name="delete-program-deprecated"></a>Excluir programa (preterido)
 
 Namespace: microsoft.graph
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) exclua um [objeto program](../resources/program.md) .
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), exclua um [objeto de](../resources/program.md) programa.
 
-Não exclua um programa que `programControl` ainda tenha sido vinculado a ele, essas avaliações de acesso devem primeiro ser excluídas ou desvinculadas do programa e vinculadas a um programa diferente.  Além disso, observe que o programa padrão integrado não pode ser excluído.
+Não exclua um programa que `programControl` ainda tenha vinculado a ele, essas revisões de acesso devem primeiro ser excluídas ou desvinculadas do programa e vinculadas a um programa diferente.  Além disso, observe que o programa padrão interno não pode ser excluído.
 
 
 ## <a name="permissions"></a>Permissões
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
-O usuário inscreveu também deve estar em uma função de diretório que permita que ele crie um programa.
+O usuário conectado também deve estar em uma função de diretório que permita que ele crie um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

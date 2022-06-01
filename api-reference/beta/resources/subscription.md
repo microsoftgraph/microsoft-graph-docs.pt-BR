@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 224403f8479c72b9076627f9f1fafb3b8a1443d2
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 68cce260c78a68aad3c6b233a47e662c1d7350ff
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420471"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821040"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -18,11 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 Uma assinatura que permite a um aplicativo cliente receber notificações sobre alterações de dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para os recursos a seguir.
 
 > **Nota** As assinaturas marcadas com um asterisco (*) têm suporte apenas no ponto `/beta` de extremidade.
 
 - Um [alert][] da API de Segurança do Microsoft Graph.
+- Uma [baseTask][] (preterida) de um usuário no Microsoft To Do.*
 - Uma [callRecord][] produzida após uma chamada ou uma reunião no Microsoft Teams.
 - Um [canal](./channel.md) no Microsoft Teams.*
 - Um [chat](./chat.md) em Microsoft Teams.*
@@ -37,10 +40,10 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - A [presença][] de um usuário no Microsoft Teams.*
 - Uma [equipe](./team.md) Microsoft Teams.*
 - Uma [impressora][] (quando um trabalho de impressão da impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [printTaskDefinition][] na Impressão Universal. Para obter mais informações, consulte [Assinar para alterar as notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
-- Uma [baseTask][] de um usuário no Microsoft To Do.*
+- Um [todoTask][] de um usuário no Microsoft To Do.
 - Um [usuário][] no Azure Active Directory.
 
-Para obter os valores de caminho de recurso possíveis para cada recurso com suporte, consulte [Usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md). Para saber como usar notificações do ciclo de vida, consulte [Reduzir assinaturas ausentes e alterar notificações](/graph/webhooks-lifecycle).
+Para obter os valores de caminho de recurso possíveis para cada recurso com suporte, consulte [Usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md). Para saber como usar notificações de ciclo de vida, consulte [Reduzir assinaturas ausentes e alterar notificações](/graph/webhooks-lifecycle).
 
 ## <a name="methods"></a>Métodos
 
@@ -57,7 +60,7 @@ Para obter os valores de caminho de recurso possíveis para cada recurso com sup
 | Propriedade | Tipo | Descrição | Recursos com Suporte |
 |:---------|:-----|:------------|:--------------|
 | ApplicationId | Cadeia de caracteres | Opcional. Identificador do aplicativo usado para criar a assinatura. Somente leitura.  | Todos |
-| changeType | Cadeia de caracteres | Obrigatório. Indica qual é o tipo de alteração no recurso inscrito que irá emitir uma notificação de alteração. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. <br><br>**Observação:** <li> As notificações de alteração de lista e item raiz da unidade dão suporte apenas `updated` changeType. <li>[Usuário](../resources/user.md) e [grupo](../resources/user.md) notificações de alteração dão suporte `updated` e `deleted` changeType. | Todos |
+| changeType | Cadeia de caracteres | Necessário. Indica o tipo de alteração no recurso inscrito que gerará uma alteração de notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. <br><br>**Observação:** <li> As notificações de alteração de lista e item raiz da unidade dão suporte apenas `updated` changeType. <li>[Usuário](../resources/user.md) e [grupo](../resources/user.md) notificações de alteração dão suporte `updated` e `deleted` changeType. | Todos |
 | clientState | String | Opcional. Especifica o valor da propriedade **clientState** enviado pelo serviço em cada notificação de alteração. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação de alteração veio do serviço comparando o valor da propriedade **clientState** enviada com a assinatura com o valor da propriedade **clientState** recebida com cada notificação de alteração. | Todos |
 | creatorId | String | Opcional. Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, esse campo conterá a ID do usuário conectado do qual o aplicativo chamou em nome. Se o aplicativo usou permissões de aplicativo, esse campo contém a ID da entidade de serviço correspondente ao aplicativo. Somente leitura. | Todos |
 | encryptionCertificate | Cadeia de caracteres | Opcional. Uma representação codificada em Base64 de um certificado com uma chave pública usada para criptografar os dados dos recursos nas notificações de alteração. Opcional, mas necessário quando **includeResourceData** for `true`. | Todos |
@@ -94,7 +97,8 @@ Para obter os valores de caminho de recurso possíveis para cada recurso com sup
 | **presence**        | 60 minutos (1 hora) |
 | Imprimir **printer** | 4230 minutos (em 3 dias)    |
 | Imprimir **printTaskDefinition** | 4230 minutos (em 3 dias)    |
-| **baseTask**              | 4230 minutos (em 3 dias)    |
+| **todoTask**              | 4230 minutos (em 3 dias)    |
+| **baseTask** (preterido) | 4230 minutos (em 3 dias)    |
 
 
 > **Observação:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor suportado. No futuro, as solicitações para criar ou renovar uma assinatura além do valor máximo falharão.
@@ -165,8 +169,9 @@ Veja a seguir uma representação JSON do recurso.
 [presence]: ./presence.md
 [impressora]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
-[baseTask]: ./basetask.md
+[todoTask]: ./todotask.md
 [reunião online]: ./onlinemeeting.md
+[baseTask]: ./basetask.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

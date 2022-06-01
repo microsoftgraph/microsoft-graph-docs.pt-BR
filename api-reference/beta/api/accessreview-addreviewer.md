@@ -1,18 +1,18 @@
 ---
-title: Adicionar revisor accessReview
+title: Adicionar revisor accessReview (preterido)
 description: 'No recurso Azure AD revisões de acesso, atualize um objeto accessReview existente para adicionar outro usuário como revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e apenas para uma revisão de acesso em que os revisores são especificados explicitamente. Essa operação não é permitida para uma revisão de acesso na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão de acesso na qual os proprietários do grupo são atribuídos como revisores. '
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e5814ab38f90bc0f7f2d3ef55eda276bbf3f27c6
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 1f59b588bb1ae59b9c21ee35beed218b23479195
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314546"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819383"
 ---
-# <a name="add-accessreview-reviewer"></a>Adicionar revisor accessReview
+# <a name="add-accessreview-reviewer-deprecated"></a>Adicionar revisor accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.ReadWrite.Membership |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

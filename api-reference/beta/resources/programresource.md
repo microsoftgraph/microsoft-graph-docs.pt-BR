@@ -1,24 +1,26 @@
 ---
-title: Tipo de recurso programResource
+title: Tipo de recurso programResource (preterido)
 description: Representa uma referência a um objeto que é o destino da revisão de acesso.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0ef610650887b1d34569465bd5babb7ec91c194d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a324c047f6a2a7cf5143d1394696f20c429a12ea
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761825"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819731"
 ---
-# <a name="programresource-resource-type"></a>Tipo de recurso programResource
+# <a name="programresource-resource-type-deprecated"></a>Tipo de recurso programResource (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O **objeto programResource,** contido em um objeto [programControl,](programcontrol.md) representa uma referência a um objeto que é o destino da revisão de acesso.
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
+
+O **objeto programResource** , contido em um objeto [programControl](programcontrol.md) , representa uma referência a um objeto que é o destino da revisão de acesso.
 
 Esse tipo herda da [identidade](identity.md).
 
@@ -26,7 +28,7 @@ Esse tipo herda da [identidade](identity.md).
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| tipo | Cadeia de caracteres | Tipo do recurso, indicando se é um grupo ou um aplicativo. |
+| type | Cadeia de caracteres | Tipo do recurso, indicando se ele é um grupo ou um aplicativo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

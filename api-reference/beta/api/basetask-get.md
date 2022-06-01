@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b1cef10bb6f67b2f9613d566b971a9e353271cb
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 11ffe48ba964d736d3dc459f01712a681fd01da3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365194"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820018"
 ---
-# <a name="get-basetask"></a>Obter baseTask
+# <a name="get-basetask-deprecated"></a>Obter baseTask (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Leia as propriedades e as relações de um [objeto baseTask](../resources/basetask.md) .
 
@@ -24,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP

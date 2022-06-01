@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: apiPageType
-ms.openlocfilehash: 5389273d9ee0f9cef015da5131ba4477461cc452
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 8486c6d4fb6166da42378f434b1b86e95aa746af
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204090"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820977"
 ---
 # <a name="get-delegatedadminrelationshipoperation"></a>Obter delegatedAdminRelationshipOperation
 Namespace: microsoft.graph
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 
 Leia as propriedades de um [objeto delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)| Sem suporte. |
+|Delegada (conta corporativa ou de estudante)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)| Sem suporte. |
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -109,7 +109,7 @@ Content-Type: application/json
   "id": "57e4479a-aafb-4d00-ab0f-8ce6027466cf",
   "operationType": "delegatedAdminAccessAssignmentUpdate",
   "data": "{\"id\":\"a97a9b4c-f43e-4c47-bbd6-50d8d3c88d94\",\"accessContainer\":{\"accessContainerId\":\"869713c9-0b28-4d08-8949-ae07ae1bf528\",\"accessContainerType\":\"securityGroup\"},\"accessDetails\":{\"unifiedRoles\":[{\"roleDefinitionId\":\"e3973bdf-4987-49ae-837a-ba8e231c7286\"}]},\"status\":\"active\"}",
-  "status": "complete",
+  "status": "succeeded",
   "createdDateTime": "2022-02-11T19:27:31.4047395Z",
   "lastModifiedDateTime": "2022-02-11T19:27:31.4047395Z"
 }

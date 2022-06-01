@@ -1,31 +1,33 @@
 ---
-title: Excluir taskList
+title: Excluir baseTaskList
 description: Exclui um objeto taskList.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4aec06d9b1e8984686dd06afee52a3eef7dfe9fb
-ms.sourcegitcommit: 4e16f26b6b685a6a3dae855a04979c84105609b9
+ms.openlocfilehash: 3cf2defb603273d7402d5070d2b05eabf36e4730
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62519275"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819916"
 ---
-# <a name="delete-basetasklist"></a>Excluir baseTaskList
+# <a name="delete-basetasklist-deprecated"></a>Excluir baseTaskList (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um [objeto taskList](../resources/tasklist.md) .
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
-## <a name="permissions"></a>Permissions
+Exclui um [objeto baseTaskList](../resources/tasklist.md) .
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP

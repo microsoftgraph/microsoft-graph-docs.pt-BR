@@ -5,25 +5,25 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c2cfd346ec14222c63bdf97ef5aa6555ad6cd82f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ed01fa8abbef32fd290d54ce3aeae7fe0777eaac
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093035"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820816"
 ---
 # <a name="create-todotask"></a>Criar todoTask
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo objeto de tarefa em [um todoTaskList especificado.](../resources/todotasklist.md)
+Crie um novo objeto de tarefa em um [todoTaskList especificado](../resources/todotasklist.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,7 +44,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto todoTask.](../resources/todotask.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto todoTask](../resources/todotask.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTask](../resources/todotask.md).
 
@@ -52,6 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo para a tarefa. Por padrão, esse valor muda quando o item é movido de uma lista para outra.|
 |corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](../resources/outlookcategory.md) definida pelo usuário.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
 |importância|importância|A importância da tarefa. Os valores possíveis são: `low`, `normal`, `high`.|
@@ -68,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [todoTas
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [todoTask](../resources/todotask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `201 Created` código de resposta e um [objeto todoTask](../resources/todotask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,6 +89,7 @@ Content-Type: application/json
 
 {
    "title":"A new task",
+   "categories": ["Important"],
    "linkedResources":[
       {
          "webUrl":"http://microsoft.com",
@@ -145,6 +147,7 @@ Content-Type: application/json
    "title":"A new task",
    "createdDateTime":"2020-08-18T09:03:05.8339192Z",
    "lastModifiedDateTime":"2020-08-18T09:03:06.0827766Z",
+   "categories": ["Important"],
    "id":"AlMKXwbQAAAJws6wcAAAA=",
    "body":{
       "content":"",

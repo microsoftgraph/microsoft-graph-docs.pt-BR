@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso userRegistrationMethodSummary
 description: Resumo do número de usuários registrados para cada método de autenticação.
-author: danielwood95
-localization_priority: Normal
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 6ff9a079ddce0df5031eef2b1374ebb1d233d56d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e7c5288fb533f3b97ea5c69d7916e3cd3bc33d50
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132913"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820025"
 ---
 # <a name="userregistrationmethodsummary-resource-type"></a>Tipo de recurso userRegistrationMethodSummary
 
@@ -30,7 +30,7 @@ Resumo do número de usuários registrados para cada método de autenticação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |totalUserCount|Int64|Número total de usuários no locatário.|
-|userRegistrationMethodCounts|[Coleção userRegistrationMethodCount](../resources/userregistrationmethodcount.md)|Número de usuários registrados para cada método de autenticação.|
+|userRegistrationMethodCounts|[coleção userRegistrationMethodCount](../resources/userregistrationmethodcount.md)|Número de usuários registrados para cada método de autenticação.|
 |userRoles|includedUserRoles|Tipo de função de usuário. Os valores possíveis são: `all`, `privilegedAdmin`, `admin`, `user`.|
 |userTypes|includedUserTypes|Tipo de usuário. Os valores possíveis são: `all`, `member`, `guest`.|
 
@@ -46,7 +46,7 @@ O valor `privilegedAdmin` consiste nas seguintes funções de administrador priv
 * Administrador de usuários
 * Administrador de autenticação
 
-O valor inclui todas as funções de administrador do `admin` Azure AD. 
+O valor `admin` inclui todas as Azure AD de administrador. 
 
 ## <a name="relationships"></a>Relações
 Nenhum

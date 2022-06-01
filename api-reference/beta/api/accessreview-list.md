@@ -1,18 +1,18 @@
 ---
-title: Listar accessReviews
+title: Listar accessReviews (preterido)
 description: Recuperar objetos accessReview para um businessFlowTemplate.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8330e5dedcaae077864c556b9def9d09dac2cc8b
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 916229324c87bf4d7423dde0af86f6434e7cdef7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314518"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819122"
 ---
-# <a name="list-accessreviews"></a>Listar accessReviews
+# <a name="list-accessreviews-deprecated"></a>Listar accessReviews (preterido)
 
 Namespace: microsoft.graph
 
@@ -35,9 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
  O usuário conectado também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
 

@@ -1,18 +1,18 @@
 ---
-title: Listar programas
+title: Listar programas (preterido)
 description: No recurso Azure AD revisões de acesso, liste todos os objetos do programa.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 04573b0e18fcac50966b58805aeade057da151af
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 4593f93710161dc000ea8fbe98a3970390185106
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314968"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821285"
 ---
-# <a name="list-programs"></a>Listar programas
+# <a name="list-programs-deprecated"></a>Listar programas (preterido)
 
 Namespace: microsoft.graph
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
  O usuário conectado também deve estar em uma função de diretório que permita que ele leia um programa.
 

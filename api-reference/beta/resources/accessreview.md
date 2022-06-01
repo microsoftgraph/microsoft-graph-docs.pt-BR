@@ -1,16 +1,16 @@
 ---
-title: Tipo de recurso accessReview
-description: 'No recurso de revisões de acesso do Azure AD, o representa `accessReview` uma revisão de acesso.  '
-localization_priority: Normal
+title: Tipo de recurso accessReview (preterido)
+description: 'No recurso Azure AD revisões de acesso, ele representa `accessReview` uma revisão de acesso.  '
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 75f844a165b8e5603f2d423a9d0a7aef17ab9186
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 353dfec671a400e87f613779f9d50a6e68845a34
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579274"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819472"
 ---
 # <a name="accessreview-resource-type-deprecated"></a>Tipo de recurso accessReview (preterido)
 
@@ -20,57 +20,57 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Representa uma revisão de acesso do Azure [AD.](accessreviews-root.md)  
+Representa uma Azure AD [de acesso.](accessreviews-root.md)  
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar accessReviews](../api/accessreview-list.md) | [Coleção accessReview](accessreview.md) | Listar accessReviews para um businessFlowTemplate. |
-|[Obter accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Obter uma revisão de acesso com uma id específica. |
+|[Listar accessReviews](../api/accessreview-list.md) | [coleção accessReview](accessreview.md) | Listar accessReviews para um businessFlowTemplate. |
+|[Obter accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Obtenha uma revisão de acesso com uma ID específica. |
 |[Criar accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Crie um novo accessReview. |
 |[Atualizar accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Atualize um accessReview. |
-|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum.   | Excluir um accessReview. |
-|[Listar revisores do accessReview](../api/accessreview-listreviewers.md) | [Coleção userIdentity](useridentity.md)|  Obter os revisores de um accessReview. |
-|[Adicionar o revisor accessReview](../api/accessreview-addreviewer.md) | Nenhum.    |   Adicione um revisor a um accessReview. |
-|[Remover o revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum. |    Remova um revisor de um accessReview. |
-|[Listar decisões do accessReview](../api/accessreview-listdecisions.md) | [Coleção accessReviewDecision](accessreviewdecision.md) | Obter as decisões de um accessReview. |
-|[Listar minhas decisões do accessReview](../api/accessreview-listmydecisions.md) | [Coleção accessReviewDecision](accessreviewdecision.md) | Como revisor, receba minhas decisões de um accessReview. |
-|[Enviar lembrete accessReview](../api/accessreview-sendreminder.md) | Nenhum. | Envie um lembrete aos revisores de um accessReview. |
-|[Parar accessReview](../api/accessreview-stop.md) | Nenhum. | Pare um accessReview. |
-|[Redefinir as decisões do accessReview](../api/accessreview-reset.md) | Nenhum.   |   Redefinir as decisões em um accessReview em andamento. |
-|[Aplicar decisões do accessReview](../api/accessreview-apply.md) | Nenhum. | Aplicar as decisões de um accessReview concluído. |
+|[Excluir accessReview](../api/accessreview-delete.md) | Nenhum   | Exclua um accessReview. |
+|[Listar revisores accessReview](../api/accessreview-listreviewers.md) | [coleção userIdentity](useridentity.md)|  Obtenha os revisores de um accessReview. |
+|[Adicionar revisor accessReview](../api/accessreview-addreviewer.md) | Nenhum    |   Adicione um revisor a um accessReview. |
+|[Remover o revisor accessReview](../api/accessreview-removereviewer.md) | Nenhum |    Remover um revisor de um accessReview. |
+|[Listar decisões de accessReview](../api/accessreview-listdecisions.md) | [coleção accessReviewDecision](accessreviewdecision.md) | Obtenha as decisões de um accessReview. |
+|[Listar minhas decisões de accessReview](../api/accessreview-listmydecisions.md) | [coleção accessReviewDecision](accessreviewdecision.md) | Como revisor, obtenha minhas decisões de um accessReview. |
+|[Enviar lembrete accessReview](../api/accessreview-sendreminder.md) | Nenhum | Envie um lembrete aos revisores de um accessReview. |
+|[Parar accessReview](../api/accessreview-stop.md) | Nenhum | Pare um accessReview. |
+|[Redefinir decisões de accessReview](../api/accessreview-reset.md) | Nenhum   |   Redefina as decisões em um accessReview em andamento. |
+|[Aplicar decisões accessReview](../api/accessreview-apply.md) | Nenhum | Aplique as decisões de um accessReview concluído. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo   | Descrição |
 |:-------- |:---- |:----------- |
-| id | String | O identificador exclusivo atribuído ao recurso de uma revisão de acesso. |
-| displayName | String | O nome da revisão de acesso. Obrigatório durante a criação. |
-| startDateTime | DateTimeOffset | DateTime quando a revisão está agendada para ser inicial.  Isso pode ser uma data no futuro.  Obrigatório durante a criação. |
-| endDateTime | DateTimeOffset | DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início.  Obrigatório durante a criação. |
-| status | String | Este campo somente leitura especifica o status de um accessReview. Os estados típicos `Initializing` `NotStarted` incluem , `Starting` , , , , , e `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . |
-| descrição | String | A descrição fornecida pelo criador da revisão de acesso, para mostrar aos revisadores. |
-| businessFlowTemplateId | String | O identificador do modelo de fluxo de negócios. Obrigatório durante a criação.  Esse valor é sensível a minúsculas. |
-| reviewerType | String | O tipo de relação do revistor para o objeto de destino, um `self` de , `delegated` ou `entityOwners` . Obrigatório durante a criação. | 
+| id | Cadeia de caracteres | O identificador exclusivo atribuído ao recurso de uma revisão de acesso. |
+| displayName | Cadeia de caracteres | O nome da revisão de acesso. Obrigatório durante a criação. |
+| startDateTime | DateTimeOffset | O DateTime quando a revisão está agendada para ser iniciada.  Isso pode ser uma data no futuro.  Obrigatório durante a criação. |
+| endDateTime | DateTimeOffset | O DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início.  Obrigatório durante a criação. |
+| status | Cadeia de caracteres | Esse campo somente leitura especifica o status de um accessReview. Os estados típicos incluem `Initializing`, `NotStarted`, `Starting`,`InProgress` , `Completing`, `Completed`e `AutoReviewed``AutoReviewing`. |
+| description | Cadeia de caracteres | A descrição fornecida pelo criador da revisão de acesso para mostrar aos revisores. |
+| businessFlowTemplateId | Cadeia de caracteres | O identificador do modelo de fluxo de negócios. Obrigatório durante a criação.  Esse valor diferencia maiúsculas de minúsculas. |
+| reviewerType | Cadeia de caracteres | O tipo de relação do revistor com o objeto de destino, um de `self`, `delegated` ou `entityOwners`. Obrigatório durante a criação. | 
 | createdBy | [userIdentity](useridentity.md) | O usuário que criou essa revisão. |
-| reviewedEntity | [identity](identity.md) | O objeto para o qual as análises de acesso estão revendo as atribuições de direitos de acesso. Esse pode ser o grupo para a revisão de associações de usuários em um grupo ou o aplicativo para uma revisão de atribuições de usuários para um aplicativo. Obrigatório durante a criação. | 
+| reviewedEntity | [identity](identity.md) | O objeto para o qual as revisões de acesso estão revisando as atribuições de direitos de acesso. Esse pode ser o grupo para a revisão de associações de usuários em um grupo ou o aplicativo para uma revisão das atribuições de usuários a um aplicativo. Obrigatório durante a criação. | 
 | settings | [accessReviewSettings](accessreviewsettings.md) | As configurações de um accessReview, consulte a definição de tipo abaixo. |
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   | Descrição |
 |:------------ |:---- |:----------- |
-| revisadores | [Coleção userIdentity](useridentity.md) | A coleção de revisadores para uma revisão de acesso, se o access reviewerType for do tipo `delegated` . |
-| decisions | [Coleção accessReviewDecision](accessreviewdecision.md) | O conjunto de decisões para essa revisão de acesso. |
-| myDecisions | [Coleção accessReviewDecision](accessreviewdecision.md) | A coleção de decisões para o chamador, se o chamador for um revistor. |
-| instances | [Coleção accessReview](accessreview.md) | A coleção de instâncias de críticas de acesso passado, presente e futuro, se esse objeto for uma revisão de acesso recorrente. |
+| Revisores | [coleção userIdentity](useridentity.md) | A coleção de revisores para uma revisão de acesso, se o reviewerType de acesso for do tipo `delegated`. |
+| Decisões | [coleção accessReviewDecision](accessreviewdecision.md) | A coleção de decisões para essa revisão de acesso. |
+| myDecisions | [coleção accessReviewDecision](accessreviewdecision.md) | A coleção de decisões para o chamador, se o chamador for um revisores. |
+| instances | [coleção accessReview](accessreview.md) | A coleção de revisões de acesso revisões de instâncias passadas, presentes e futuras, se esse objeto for uma revisão de acesso recorrente. |
 
-Se essas relações estão presentes em um objeto, depende se o objeto é uma revisão de acesso único, a série de uma revisão de acesso recorrente ou uma instância de uma revisão de acesso recorrente.
+Se essas relações estão presentes em um objeto, depende se o objeto é uma revisão de acesso única, a série de uma revisão de acesso recorrente ou uma instância de uma revisão de acesso recorrente.
 
-| Cenário | Tem revisadores? | Tem decisões e myDecisions? | Tem instâncias? |
+| Cenário | Tem revisores? | Tem decisões e myDecisions? | Tem instâncias? |
 |:-------- |:-------------- |:------------------------------ |:-------------- |
-| Revisão de acesso único | Sim | Sim, uma vez iniciado | Não |
+| Revisão de acesso única | Sim | Sim, uma vez iniciado | Não |
 | Revisão de acesso recorrente | Sim | Não | Sim |
 | Instância de uma revisão de acesso recorrente | Sim | Sim, uma vez iniciado | Não |
 

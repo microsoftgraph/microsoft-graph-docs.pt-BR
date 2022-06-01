@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 0703504f98312b39e1c0b2e22d9407e56662e576
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 42341e7d5fc27a912be45bc1eb811433aadbb8c9
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367633"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821187"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Exclua uma assinatura.
 
-Para ver a lista de recursos que suportam a assinatura para alterar notificações, consulte a tabela na [seção Permissões](#permissions) .
+Para obter a lista de recursos que dão suporte à assinatura para alterar notificações, consulte a tabela na [seção](#permissions) Permissões.
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,6 +42,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[printer](../resources/printer.md) | Sem suporte. | Sem suporte. | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte. | Sem suporte. | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte. | SecurityEvents.ReadWrite.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 
@@ -82,7 +83,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 Para detalhes sobre como os erros são retornados, confira [Respostas de erro][error-response].
 

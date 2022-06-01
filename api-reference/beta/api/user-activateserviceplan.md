@@ -1,24 +1,27 @@
 ---
 title: 'user: activateServicePlan'
-description: Ative um plano de serviço com um determinado `servicePlanId` e `skuId` para um determinado usuário.
+description: Ative um plano de serviço com um determinado `servicePlanId` usuário `skuId` e para um determinado usuário.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4e39fc0f9c6d27c4c820c5fd10eb7e648ed07bba
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: b35b36a42c1c979dc777615d8f73012c47cab13d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62855158"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820669"
 ---
-# <a name="user-activateserviceplan"></a>user: activateServicePlan
+# <a name="user-activateserviceplan-deprecated"></a>user: activateServicePlan (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ative um plano de serviço com um determinado `servicePlanId` e `skuId` para um determinado usuário.
+> [!CAUTION]
+> A API **activateServicePlan** foi preterida e interromperá o retorno de dados em 30 de junho de 2022.
+
+Ative um plano de serviço com um determinado `servicePlanId` usuário `skuId` e para um determinado usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 | :--- | :--- |
-| Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo | Directory.ReadWrite.All |
 
@@ -54,8 +57,8 @@ No corpo da solicitação, forneça um objeto JSON com o seguinte parâmetro:
 
 | Parâmetro | Tipo | Descrição |
 | :--- | :--- | :--- |
-| servicePlanId | GUID | PlanId do ServicePlan a ser ativado. |
-| skuId | GUID | SkuId de SKU o plano de serviço está em. |
+| servicePlanId | Guid | PlanId do ServicePlan a ser ativado. |
+| skuId | Guid | SkuId de SKU em que o plano de serviço está ativado. |
 
 ## <a name="response"></a>Resposta
 

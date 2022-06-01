@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 92b6400c3541e4964cf5ef1ba09cc99e05a60665
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: a50cd0f2569fb9f076a89fa9275a891b7e487ae7
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365803"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820979"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 Crie uma extensão aberta ([objeto openTypeExtension](../resources/opentypeextension.md) ) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
 
@@ -30,6 +32,8 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [baseTaskList](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Sem suporte | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [grupo](../resources/group.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
@@ -38,9 +42,9 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [tarefa](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
-| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,6 +59,8 @@ POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
+POST /users/{id|userPrincipalName}/todo/lists
 POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks
 POST /users/{id|userPrincipalName}/tasks/lists
 ```
@@ -79,6 +85,8 @@ POST /users/{id|userPrincipalName}/messages/{id}/extensions
 POST /organization/{id}/extensions
 POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
+POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks/{id}/extensions
 POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 ```

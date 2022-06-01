@@ -5,28 +5,30 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a77aae528bbe86a6c45e6e31205c41b49b66155d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 83429f43474d247e599b0c562e32e899df8e0a6a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114200"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821005"
 ---
 # <a name="create-checklistitem"></a>Criar checklistItem
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto checklistItem.](../resources/checklistitem.md)
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Crie um novo [objeto checklistItem](../resources/checklistitem.md) como uma subtarefa em uma [baseTask maior](../resources/basetask.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
-|Aplicativo|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Application|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,21 +48,21 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto checklistItem.](../resources/checklistitem.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto checklistItem](../resources/checklistitem.md) .
 
-Você pode especificar as seguintes propriedades ao criar **um checklistItem**.
+Você pode especificar as propriedades a seguir ao criar **um checklistItem**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|A data e a hora em que **o checklistItem** foi concluído.|
 |createdDateTime|DateTimeOffset|A data e a hora em que **o checklistItem** foi criado.|
 |displayName|Cadeia de caracteres|Campo que indica o título **de checklistItem**.|
-|isChecked|Booliano|Estado indicando se o item foi verificado ou não.|
+|Ischecked|Booliano|Estado que indica se o item foi verificado ou não.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [checklistItem](../resources/checklistitem.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto checklistItem](../resources/checklistitem.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

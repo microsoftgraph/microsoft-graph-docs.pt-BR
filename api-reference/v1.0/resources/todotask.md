@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9e620161e48f87a4e46afcfcfe6a0dce6bb069b3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5ace3cd2e43a5410f55125f7018e816c5ca3199b
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134315"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821138"
 ---
 # <a name="todotask-resource-type"></a>Tipo de recurso todoTask
 
@@ -18,28 +18,31 @@ Namespace: microsoft.graph
 
 Um **todoTask** representa uma tarefa, como um item pessoal ou de trabalho, que pode ser rastreada e concluída. 
 
-Um **todoTask** está sempre contido em [um todoTaskList](todotasklist.md). Ele inclui uma relação com uma coleção de [objetos linkedResource,](./linkedResource.md) acompanhando uma ou mais fontes da tarefa.
+Um **todoTask** está sempre contido em [um todoTaskList](todotasklist.md). Ele inclui uma relação com uma coleção de [objetos linkedResource](./linkedResource.md) , acompanhando uma ou mais fontes da tarefa.
 
 Esse recurso dá suporte ao seguinte:
-* Adicionar seus dados como propriedades personalizadas em [extensões abertas.](/graph/extensibility-overview)
-* Usando [a consulta delta para](/graph/delta-query-overview) rastrear adições incrementais, exclusões e atualizações.
+* Adicionar seus dados como propriedades personalizadas [em extensões abertas](/graph/extensibility-overview).
+* Usando [a consulta delta para](/graph/delta-query-overview) acompanhar adições incrementais, exclusões e atualizações.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar tarefas](../api/todotasklist-list-tasks.md)|Coleção [todoTask](todotask.md)|Obtenha todos os recursos [todoTask](todotask.md) na lista especificada.|
 |[Criar tarefa](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Criar um [todoTask](todotask.md) na lista de tarefas especificada|
-|[Obter tarefa](../api/todotask-get.md)|[todoTask](../resources/todotask.md)|Leia as propriedades e as relações de um [objeto todoTask.](../resources/todotask.md)|
-|[Atualizar tarefa](../api/todotask-update.md)|[todoTask](../resources/todotask.md)|Atualize as propriedades de um [objeto todoTask.](../resources/todotask.md)|
-|[Excluir tarefa](../api/todotask-delete.md)|Nenhum(a)|Exclui um [objeto todoTask.](../resources/todotask.md)|
-|[Listar linkedResources](../api/todotask-list-linkedresources.md)|[Coleção linkedResource](../resources/linkedresource.md)|Obter o linkedResources da propriedade de navegação linkedResources.|
-|[Criar linkedResources](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Crie um novo objeto linkedResources.|
+|[Obter tarefa](../api/todotask-get.md)|[todoTask](../resources/todotask.md)|Leia as propriedades e as relações de um [objeto todoTask](../resources/todotask.md) .|
+|[Atualizar tarefa](../api/todotask-update.md)|[todoTask](../resources/todotask.md)|Atualize as propriedades de um [objeto todoTask](../resources/todotask.md) .|
+|[Excluir tarefa](../api/todotask-delete.md)|Nenhum|Exclui um [objeto todoTask](../resources/todotask.md) .|
+|[Listar checklistItems](../api/todotask-list-checklistitems.md)|[coleção checklistItem](../resources/checklistitem.md)|Obtenha os **recursos checklistItem** da propriedade de navegação checklistItems.|
+|[Criar checklistItem](../api/todotask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Crie um novo **objeto checklistItem** .|
+|[Listar linkedResources](../api/todotask-list-linkedresources.md)|[Coleção linkedResource](../resources/linkedresource.md)|Obtenha o linkedResources da propriedade de navegação linkedResources.|
+|[Criar linkedResources](../api/todotask-post-linkedresources.md)|[Linkedresource](../resources/linkedresource.md)|Crie um novo objeto linkedResources.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
 |bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](../resources/outlookcategory.md) definida pelo usuário.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
@@ -50,14 +53,14 @@ Esse recurso dá suporte ao seguinte:
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
 |status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|String|Uma breve descrição da tarefa.|
+|title|Cadeia de caracteres|Uma breve descrição da tarefa.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|extensions|[extension](extension.md) collection| A coleção de extensões abertas definidas para a tarefa. Anulável.|
-|linkedResources|[Coleção linkedResource](../resources/linkedresource.md)|Uma coleção de recursos vinculados à tarefa.|
-
+|checklistItems|[coleção checklistItem](../resources/checklistitem.md)|Uma coleção de checklistItems vinculados a uma tarefa. |
+|extensions|Coleção [extension](extension.md)| A coleção de extensões abertas definidas para a tarefa. Anulável.|
+|Linkedresources|[Coleção linkedResource](../resources/linkedresource.md)|Uma coleção de recursos vinculados à tarefa.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -76,6 +79,7 @@ Veja a seguir uma representação JSON do recurso.
   "body": {
     "@odata.type": "microsoft.graph.itemBody"
   },
+  "categories": ["string"],
   "completedDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },

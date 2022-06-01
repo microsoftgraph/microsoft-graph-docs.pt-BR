@@ -1,18 +1,18 @@
 ---
-title: Excluir accessReview
-description: No recurso de análises de acesso do Azure AD, exclua um objeto accessReview.
+title: Excluir accessReview (preterido)
+description: No recurso Azure AD revisões de acesso, exclua um objeto accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a76ae76a0cb709de16ce94b0e1e1929262eff4ff
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 4c25cf00feb128faf2d3686adf5a7619de72b535
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63393477"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819252"
 ---
-# <a name="delete-accessreview"></a>Excluir accessReview
+# <a name="delete-accessreview-deprecated"></a>Excluir accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-No recurso de análises de acesso do Azure [AD,](../resources/accessreviews-root.md) exclua um [objeto accessReview](../resources/accessreview.md) .
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), [exclua um objeto accessReview](../resources/accessreview.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.ReadWrite.Membership |
+|Application                            | AccessReview.ReadWrite.Membership |
 
-O chamador também deve ter permissão ProgramControl.ReadWrite.All, para que ele possa excluir um [programControl](../resources/programcontrol.md).
+O chamador também deve ter a permissão ProgramControl.ReadWrite.All, para que ele possa excluir um [programControl](../resources/programcontrol.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

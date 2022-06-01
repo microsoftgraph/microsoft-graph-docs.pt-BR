@@ -1,16 +1,16 @@
 ---
 title: Remover educationCategory
-description: Remover uma educationCategory existente deste educationAssignment
-localization_priority: Normal
+description: Remova uma educationCategory existente deste educationAssignment.
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: edf054ba1d7b81800a75e260c5a2357ae2d9bcba
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 09d59485a83fcb01887c3a98087bae57f45c3124
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044183"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820837"
 ---
 # <a name="remove-educationcategory"></a>Remover educationCategory
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -38,17 +38,15 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
-
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "ignored",
@@ -58,11 +56,8 @@ Este é um exemplo de solicitação.
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
-
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
-
 
 <!-- {
   "blockType": "ignored",

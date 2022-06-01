@@ -1,32 +1,32 @@
 ---
-title: Listar decisões (de uma revisão de acesso em vários estágios)
-description: Obter as decisões de um estágio em uma revisão de acesso em vários estágios.
+title: Listar decisões (de uma revisão de acesso de vários estágios)
+description: Obtenha as decisões de um estágio em uma revisão de acesso de vários estágios.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a188aa60896a31cdde5cdbb6ca7edcf8929cce9d
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 3a2e06ed7d927686a84e352eab52d7a8554e04c0
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63721854"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819633"
 ---
-# <a name="list-decisions-from-a-multi-stage-access-review"></a>Listar decisões (de uma revisão de acesso em vários estágios)
+# <a name="list-decisions-from-a-multi-stage-access-review"></a>Listar decisões (de uma revisão de acesso de vários estágios)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as decisões de um estágio em uma revisão de acesso em vários estágios. As decisões em [um objeto accessReviewStage](../resources/accessReviewStage.md) são representadas por um accessReviewInstanceDecisionItem](.. Objeto /resources/accessreviewinstancedecisionitem.md).
+Obtenha as decisões de um estágio em uma revisão de acesso de vários estágios. As decisões em [um objeto accessReviewStage](../resources/accessReviewStage.md) são representadas por um [objeto accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,9 +39,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `$select`parâmetros de consulta , `$filter``$orderBy`, , `$skip`e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos `$select`parâmetros `$orderBy`de consulta , `$filter`, e `$skip``$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewStage** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewStage** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -54,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

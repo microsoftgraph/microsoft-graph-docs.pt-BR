@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: KuiGithui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 0dd40e8cb399b055d8568c97c3d6560110fc0aad
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 68dea07be58926aeb918ea51ae176471e6a17d68
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629080"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820504"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -35,7 +35,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |**Licenças da organização**| | |
-|[Activateservice](../api/organization-activateservice.md) | Nenhum |  Ativar um serviço para uma organização. |
+|[activateService](../api/organization-activateservice.md) (preterido) | Nenhum |  Ativar um serviço para uma organização. |
 |**Identidade visual organizacional**| | |
 |[Obter organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Obtenha o objeto de identidade visual organizacional padrão. |
 |[Atualizar organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Atualize o objeto de identidade visual organizacional padrão. |
@@ -83,7 +83,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|coleção [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Propriedade de navegação para gerenciar a configuração de autenticação baseada em certificado. Somente uma única instância de certificateBasedAuthConfiguration pode ser criada na coleção.  |
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o recurso da organização. Anulável.| 
-|Marca|coleção [organizationalBranding](organizationalbranding.md)| Recurso para gerenciar a identidade visual padrão da organização. Anulável.|
+|identidade visual|coleção [organizationalBranding](organizationalbranding.md)| Recurso para gerenciar a identidade visual padrão da organização. Anulável.|
 |settings|[organizationSettings](organizationsettings.md) | Recupere as propriedades e as relações do objeto organizationSettings. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

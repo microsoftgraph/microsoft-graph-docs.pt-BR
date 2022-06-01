@@ -5,17 +5,19 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b58413d2933a236bf9e5772dc8063be9414e7fa
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: f34757d950146c0d1df8c515360ff7f823cd6793
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451330"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821054"
 ---
-# <a name="create-basetask"></a>Criar baseTask
+# <a name="create-basetask-deprecated"></a>Criar baseTask (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Crie um novo [objeto baseTask](../resources/basetask.md) em uma [baseTaskList específica](../resources/basetasklist.md).
 
@@ -24,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,13 +48,13 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto baseTask](../resources/basetask.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto baseTask](../resources/basetask.md) .
 
-Você pode especificar as seguintes propriedades ao criar **uma baseTask**.
+Você pode especificar as propriedades a seguir ao criar uma **baseTask**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|textBody|Cadeia de caracteres|O corpo da tarefa no formato de texto que normalmente contém informações sobre a tarefa.|
+|Textbody|Cadeia de caracteres|O corpo da tarefa no formato de texto que normalmente contém informações sobre a tarefa.|
 |createdDateTime|DateTimeOffset|A data no fuso horário especificado que a tarefa foi concluída.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
 |bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
@@ -63,13 +65,13 @@ Você pode especificar as seguintes propriedades ao criar **uma baseTask**.
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |displayName|Cadeia de caracteres|Uma breve descrição da tarefa.|
 |status|taskStatus_v2|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Obrigatório.|
-|mirante|[taskViewpoint](../resources/taskviewpoint.md)|Propriedades que são pessoais para um usuário, como reminderDateTime.|
+|Vista|[taskViewpoint](../resources/taskviewpoint.md)|Propriedades que são pessoais para um usuário, como reminderDateTime.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto baseTask](../resources/basetask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto baseTask](../resources/basetask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

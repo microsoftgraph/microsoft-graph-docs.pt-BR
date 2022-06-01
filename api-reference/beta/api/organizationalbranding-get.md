@@ -5,23 +5,23 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e9651b07552be60586a9a15050881b80aa13b80d
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 599b38bf2d1b1552cf7e3cd4dc518f266f2ca832
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395675"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820991"
 ---
 # <a name="get-organizationalbranding"></a>Obter organizationalBranding
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o objeto de identidade visual organizacional padrão, se o header **Accept-Language** estiver definido como `0` ou `default`. Se nenhum objeto de identidade visual organizacional padrão existir, este método retornará um `404 Not Found` erro.
+Recupere o objeto de identidade visual organizacional padrão, se o cabeçalho **Accept-Language** estiver definido como `0` ou `default`. Se nenhum objeto de identidade visual organizacional padrão existir, esse método retornará um `404 Not Found` erro.
 
-Se o header **Accept-Language** for definido como uma localidade existente identificada pelo valor de sua **id**, esse método recuperará a identidade visual da localidade especificada.
+Se o **cabeçalho Accept-Language** for definido como uma localidade existente identificada pelo valor de sua **ID**, esse método recuperará a identidade visual da localidade especificada.
 
-Este método recupera apenas propriedades que não são stream, por exemplo, **usernameHintText** e **signInPageText**. Para recuperar tipos stream da identidade visual padrão, por exemplo, **bannerLogo** e **backgroundImage**, use o [método GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) .
+Esse método recupera apenas propriedades não Stream, por exemplo, **usernameHintText** e **signInPageText**. Para recuperar tipos de Stream da identidade visual padrão, por exemplo, **bannerLogo** e **backgroundImage**, use o [método GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,20 +44,20 @@ GET /organization/{organizationId}/branding
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte apenas ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte apenas ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
 |:---|:---|
 |Autorização|{token} de portador. Obrigatório.|
-|Accept-Language|Uma localidade ISO 639-1 válida. Obrigatório.|
+|Accept-Language|Uma localidade ISO 639-1 válida ou `0` para a localidade padrão. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto organizationalBranding](../resources/organizationalbranding.md) no corpo da resposta. Se nenhum objeto de identidade visual padrão existir, este método retornará um `404 Not Found` código de resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto organizationalBranding](../resources/organizationalbranding.md) no corpo da resposta. Se nenhum objeto de identidade visual padrão existir, esse método retornará um código `404 Not Found` de resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -215,7 +215,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Exemplo 3: Obter identidade visual organizacional para a localidade francesa
 
-No exemplo a seguir, o header **Accept-Language** é usado para especificar para recuperar a `fr-FR` identidade visual de localização.
+No exemplo a seguir, o cabeçalho **Accept-Language** é usado para recuperar a identidade `fr-FR` visual de localização.
 
 #### <a name="request"></a>Solicitação
 
@@ -290,7 +290,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>Exemplo 4: Obter o bannerLogo para a localidade padrão
 
-O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Para recuperar tipos de objeto Stream, por exemplo, **bannerLogo**, use [o get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Você pode especificar o valor da **id** como `default` ou `0` na URL da solicitação. Se a propriedade não estiver definida, a solicitação retornará uma resposta vazia.
+O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Para recuperar tipos de objeto do Stream, por exemplo, **bannerLogo**, use [Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Você pode especificar o valor da **ID** como `default` ou `0` na URL da solicitação. Se a propriedade não estiver definida, a solicitação retornará uma resposta vazia.
 
 #### <a name="request"></a>Solicitação
 
@@ -324,7 +324,7 @@ Content-Type: image/*
 
 ### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>Exemplo 5: Obter o bannerLogo para a localidade padrão quando ele não estiver definido
 
-O exemplo a seguir retorna o **objeto bannerLogo** que não foi definido para a localidade padrão.
+O exemplo a seguir retorna **o objeto bannerLogo** que não foi definido para a localidade padrão.
 
 #### <a name="request"></a>Solicitação
 

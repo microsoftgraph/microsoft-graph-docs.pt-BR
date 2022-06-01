@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso userRegistrationMethodCount
 description: Número de usuários registrados para um método de autenticação.
-author: danielwood95
-localization_priority: Normal
+author: besiler
+ms.localizationpriority: medium
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 8e4c19c48771ccd0bd1dd1f1a4b049334266834a
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c505ea408599dbb7b0c6803d03b87b2586d6d0c3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132928"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820074"
 ---
 # <a name="userregistrationmethodcount-resource-type"></a>Tipo de recurso userRegistrationMethodCount
 
@@ -23,7 +23,7 @@ Número de usuários registrados para um método de autenticação.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|authenticationMethod|String|Nome do método de autenticação.|
+|authenticationMethod|Cadeia de caracteres|Nome do método de autenticação.|
 |userCount|Int64|Número de usuários registrados.|
 
 ## <a name="relationships"></a>Relações

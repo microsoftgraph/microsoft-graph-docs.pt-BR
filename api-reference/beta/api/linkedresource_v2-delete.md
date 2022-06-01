@@ -1,32 +1,34 @@
 ---
 title: Excluir linkedResource_v2
-description: Exclua linkedResource_v2 objeto.
+description: Exclua um linkedResource_v2 objeto.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 202435c81dc9bb95dc64316f6ec5509506980360
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9c4c5e2a33f970481e7366adbc07ae1b23839bdc
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113276"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821012"
 ---
-# <a name="delete-linkedresource_v2"></a>Excluir linkedResource_v2
+# <a name="delete-linkedresource_v2-deprecated"></a>Excluir linkedResource_v2 (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Exclua linkedResource_v2](../resources/linkedresource_v2.md) objeto.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+[Exclua um linkedResource_v2](../resources/linkedresource_v2.md) objeto.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
-|Aplicativo|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Application|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
 

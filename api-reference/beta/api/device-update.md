@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d03c5d1a1d58f1347bb485bd5661357e288b7785
-ms.sourcegitcommit: 995056279c2151d7ce4a0fcff067fbc6edced728
+ms.openlocfilehash: 902ad8c6980ef3d1d42e4c267ab5039673a6e0f0
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65602690"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820711"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -20,6 +20,9 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um dispositivo. Somente determinadas propriedades de um dispositivo podem ser atualizadas por meio de aplicativos Gerenciamento de Dispositivos (MDM) aprovados.
 
+> [!IMPORTANT]
+> Essa API tem um [problema conhecido](/graph/known-issues#linux-based-devices-cant-be-updated-by-an-app-with-application-permissions). Um aplicativo com permissões de aplicativo só pode atualizar a propriedade **extensionAttributes para dispositivos baseados** em Linux, ou seja, onde a **propriedade operationSystem** está `linux`.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -27,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 O usuário chamador também deve estar em uma das seguintes funções [Azure AD:](/azure/active-directory/roles/permissions-reference) *Administrador Global*, *Intune Administrador*. Um usuário chamador na  função Administrador de Dispositivos na Nuvem só pode habilitar ou desabilitar dispositivos usando essa API e um usuário com a função de Administrador do *Windows 365* só pode atualizar as propriedades básicas do dispositivo.
 
@@ -54,7 +57,7 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 |accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções administrador global e administrador de dispositivo de nuvem podem atualizar essa propriedade. |
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
-|displayName|String|O nome de exibição do dispositivo.|
+|displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|
 |isCompliant|Booliano|`true`se o dispositivo estiver em conformidade com as políticas de MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
 |isManaged|Booliano|`true`se o dispositivo for gerenciado por um aplicativo MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
 

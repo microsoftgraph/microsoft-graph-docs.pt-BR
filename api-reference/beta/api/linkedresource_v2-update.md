@@ -5,28 +5,30 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0709b060f69c426c83d35e3c8b9c9d38306f9c19
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 52bd6eebf4bd03a46748da730303c64370dd536c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089913"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819934"
 ---
-# <a name="update-linkedresource_v2"></a>Atualizar linkedResource_v2
+# <a name="update-linkedresource_v2-deprecated"></a>Atualização linkedResource_v2 (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [linkedResource_v2](../resources/linkedresource_v2.md) objeto.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Atualize as propriedades de [um linkedResource_v2](../resources/linkedresource_v2.md) objeto.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
-|Aplicativo|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Application|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,15 +53,15 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applicationName|Cadeia de caracteres|Campo indicando o nome do aplicativo da fonte que está enviando **o linkedResource**.|
-|displayName|Cadeia de caracteres|Campo que indica o título do **linkedResource**.|
+|applicationName|Cadeia de caracteres|Campo que indica o nome do aplicativo da origem que está enviando **o linkedResource**.|
+|displayName|String|Campo que indica o título do **linkedResource**.|
 |externalId|Cadeia de caracteres|ID do objeto associado a essa tarefa no sistema de terceiros/parceiro.|
 |webUrl|String|Link profundo para **o linkedResource**.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto linkedResource_v2](../resources/linkedresource_v2.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta [e um objeto linkedResource_v2](../resources/linkedresource_v2.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

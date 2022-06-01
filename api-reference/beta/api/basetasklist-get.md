@@ -5,27 +5,29 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f2b0537b62836ca93ff713d6d739198a617e4431
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 925d8094ac0e8a93f582409a656903a4b1127f82
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62116619"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819766"
 ---
-# <a name="get-basetasklist"></a>Obter baseTaskList
+# <a name="get-basetasklist-deprecated"></a>Obter baseTaskList (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto baseTaskList.](../resources/basetasklist.md)
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Leia as propriedades e as relações de um [objeto baseTaskList](../resources/basetasklist.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.Read|
-|Delegado (conta pessoal da Microsoft)|Tasks.Read|
+|Delegada (conta corporativa ou de estudante)|Tasks.Read|
+|Delegada (conta pessoal da Microsoft)|Tasks.Read|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [baseTaskList](../resources/basetasklist.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto baseTaskList](../resources/basetasklist.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

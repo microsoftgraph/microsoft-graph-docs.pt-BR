@@ -5,27 +5,29 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f696ef66adced69dd286725cb5e1709ba6dbbe27
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 890d5f89ed3b77b237a1bfa0b546d76bf6ce95e3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451421"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820725"
 ---
-# <a name="create-basetasklist"></a>Criar baseTaskList
+# <a name="create-basetasklist-deprecated"></a>Criar baseTaskList (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto taskList](../resources/basetasklist.md) .
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Crie um novo [objeto baseTaskList](../resources/basetasklist.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,19 +48,19 @@ POST /users/{userId|userPrincipalName}/tasks/lists
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto baseTaskList](../resources/basetasklist.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto baseTaskList](../resources/basetasklist.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar **uma baseTaskList**.
+A tabela a seguir mostra as propriedades que são necessárias ao criar uma **baseTaskList**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Campo indicando o título da lista de tarefas.|
+|displayName|Cadeia de caracteres|Campo que indica o título da lista de tarefas.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto baseTaskList](../resources/basetasklist.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto baseTaskList](../resources/basetasklist.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

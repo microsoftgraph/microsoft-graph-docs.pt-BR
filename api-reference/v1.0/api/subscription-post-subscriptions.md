@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 08789be4954db6948693d64d110e8512ca72d19e
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 32eac4175ef0f5d4a1419c7b05cf65dbed8d16bd
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694859"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820011"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -47,6 +47,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 Recomendamos que você use as permissões conforme documentado na tabela anterior. Devido a restrições de segurança, as assinaturas do Microsoft Graph não darão suporte a permissões de acesso de gravação quando apenas permissões de acesso de leitura forem necessárias.
@@ -169,6 +170,7 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 |[impressora](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[printTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Alerta de segurança](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+|[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`|
 |[Usuários](../resources/user.md)|`users`|
 
 > **Observação:** qualquer caminho iniciado por `me` também pode ser usado com `users/{id}` em vez de `me` para direcionar um usuário específico, em vez de usar o usuário atual.

@@ -1,18 +1,18 @@
 ---
-title: Atualizar programa
-description: No recurso de revisões de acesso do Azure AD, atualize um objeto de programa existente.
+title: Programa de atualização (preterido)
+description: No recurso Azure AD revisões de acesso, atualize um objeto de programa existente.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 0aaa99de12963528a5b0dc08c8556c5d632f4d30
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ba710e22bc40300513bed7c31cacf47213dc3b14
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63398027"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820879"
 ---
-# <a name="update-program"></a>Atualizar programa
+# <a name="update-program-deprecated"></a>Programa de atualização (preterido)
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-No recurso de [revisões](../resources/accessreviews-root.md) de acesso do Azure AD, atualize um objeto [de programa](../resources/program.md) existente.
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), atualize um objeto de [programa](../resources/program.md) existente.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
-O usuário inscreveu também deve estar em uma função de diretório que permita que ele atualize um programa.
+O usuário conectado também deve estar em uma função de diretório que permita que ele atualize um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ PATCH /programs/{programId}
 | Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto program](../resources/program.md) .
+No corpo da solicitação, forneça uma representação JSON de um [objeto de](../resources/program.md) programa.
 
 A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um programa.
 
@@ -54,11 +54,11 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `204, Accepted` código de resposta [e um objeto program](../resources/program.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `204, Accepted` de resposta [e um objeto de](../resources/program.md) programa no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON dos parâmetros de objeto do [programa](../resources/program.md) a ser alterado.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros [de](../resources/program.md) objeto do programa a serem alterados.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -123,7 +123,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar programControls de um programa](program-listcontrols.md) |     [Coleção programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
+|[Listar programControls de um programa](program-listcontrols.md) |     [coleção programControl](../resources/programcontrol.md)|    Obtenha uma coleção dos controles de um programa.|
 |[Criar programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Adicione um programControl a um programa.|
 
 <!--

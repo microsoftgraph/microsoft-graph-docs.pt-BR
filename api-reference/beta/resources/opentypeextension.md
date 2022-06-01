@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: 476747b9341f0d7b2d5b551809319ccec5edc787
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: caab6f1549f4f5098070b91b254e1ce0b1194b75
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461398"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821264"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -18,16 +18,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) oferecem uma maneira fácil de adicionar diretamente propriedades não tipadas a um recurso do Microsoft Graph.
 Extensões abertas são representadas pelo recurso **openTypeExtension**. Qualquer extensão aberta adicionada a um recurso é mostrada na propriedade de navegação **extensions**, que deriva do tipo abstrato [extension](extension.md).  Cada extensão tem uma propriedade **extensionName**, que é a única propriedade predefinida e gravável para todas as extensões, juntamente com seus dados personalizados. Um modo de garantir que os nomes de extensão sejam exclusivos é usar um formato reverso de DNS no sistema de nomes de domínio que dependa de _seu próprio domínio_, por exemplo, `com.contoso.ContactInfo`. **Não use o** domínio da Microsoft (`com.microsoft` ou `com.onmicrosoft`) em um nome de extensão.
 
 Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
 
-As extensões abertas são compatíveis com os seguintes recursos nas versões correspondentes : disponibilidade geral (/v1.0) ou versão prévia (/beta).
+As extensões abertas têm suporte nos recursos a seguir nas versões correspondentes – disponibilidade geral (/v1.0) ou visualização (/beta).
 
 | Recurso | Versão |
 |---------------|-------|
 | [Unidade administrativa](administrativeunit.md) | GA |
+| [Tarefa base (preterida)](basetask.md) | Beta |
+| [Lista de tarefas base (preterido)](basetasklist.md) | Beta |
 | [Evento de calendário](event.md) \* | GA |
 | [Evento de calendário](event.md) do grupo | GA |
 | [Postagem](post.md) de thread de conversa do grupo | GA |
@@ -37,10 +41,10 @@ As extensões abertas são compatíveis com os seguintes recursos nas versões c
 | [Organização](organization.md) | GA |
 | [Contato pessoal](contact.md) | GA |
 | [Usuário](user.md) | GA |
-| [Tarefa](basetask.md) | GA |
-| [Lista de tarefas](basetasklist.md) | GA |
+| [Tarefa pendente](todotask.md) | GA |
+| [Lista de tarefas pendentes](todotasklist.md) | GA |
 
->\***Nota:** Devido a uma limitação de serviço existente, os representantes não podem criar eventos abertos acrescentados à extensão em calendários de caixa de correio compartilhados. As tentativas de fazer isso resultarão em uma `ErrorAccessDenied` resposta.
+>\* **Observação:** Devido a uma limitação de serviço existente, os representantes não podem criar eventos abertos acrescentados à extensão em calendários de caixa de correio compartilhados. As tentativas de fazer isso resultarão em uma resposta de `ErrorAccessDenied`.
 
 ## <a name="outlook-specific-considerations"></a>Considerações específicas do Outlook
 
@@ -53,7 +57,7 @@ Aplique as seguintes diretrizes quando você criar extensões abertas em recurso
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Use extensões abertas (para recursos do Outlook) ou propriedades estendidas
 
-Extensões abertas são a solução recomendada para a maioria dos cenários que envolvem armazenar e acessar dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](/graph/traverse-the-graph#microsoft-graph-api-metadata), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode confirmar quais propriedades os metadados expõem em https://graph.microsoft.com/v1.0/$ metadados.
+As extensões abertas são a solução recomendada para a maioria dos cenários que envolvem armazenar e acessar dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](/graph/traverse-the-graph#microsoft-graph-api-metadata), você pode usar as [propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode confirmar quais propriedades os metadados expõem em https://graph.microsoft.com/v1.0/$metadata.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -89,7 +93,7 @@ Nenhuma
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (em uma instância de recurso existente) ou um novo [contato, evento](contact.md)[, mensagem](event.md)[,](message.md) [postagem](post.md), [Tarefa](basetask.md) ou [TaskList](basetasklist.md) que contém um objeto openTypeExtension. | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
+|[Criar](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (em uma instância de recurso existente) ou um novo [contato baseTask](basetask.md), [baseTaskList](basetasklist.md)[,](contact.md) [evento](event.md)[, mensagem](message.md), [post](post.md), [todoTask](todotask.md) [ou todoTaskList](todotasklist.md) que contém um objeto openTypeExtension. | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Atualize o objeto openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Nenhuma |Exclua um objeto openTypeExtension. |

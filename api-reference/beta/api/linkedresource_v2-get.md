@@ -5,17 +5,19 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 22108f9e4859552ebfc5e4f88ae96b31f42f6c41
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1159d79c8c74b0170f59dc45d7c7e61d5c5f64c1
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099567"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821173"
 ---
-# <a name="get-linkedresource_v2"></a>Obter linkedResource_v2
+# <a name="get-linkedresource_v2-deprecated"></a>Obter linkedResource_v2 (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
 
 Leia as propriedades e as relações de um [linkedResource_v2](../resources/linkedresource_v2.md) objeto.
 
@@ -24,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
-|Aplicativo|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
+|Application|Tasks.Read, Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [linkedResource_v2](../resources/linkedresource_v2.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta [e linkedResource_v2](../resources/linkedresource_v2.md) objeto no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,18 +1,18 @@
 ---
-title: Listar revisores accessReview
+title: Listar revisores accessReview (preterido)
 description: No recurso Azure AD revisões de acesso, recupere os revisores de um objeto accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0a5ffc308b63eabf9b883be1f68bee1190c86c8a
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 6a120097d4baca6533091c0eeba9e2557bd3e8b6
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314462"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819132"
 ---
-# <a name="list-accessreview-reviewers"></a>Listar revisores accessReview
+# <a name="list-accessreview-reviewers-deprecated"></a>Listar revisores accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 
  O usuário conectado também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso.
@@ -115,8 +115,8 @@ Content-type: application/json
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recuperar uma revisão de acesso. |
-|[Adicionar revisor accessReview](accessreview-addreviewer.md) |     Nenhum.   |   Adicione um revisor a um accessReview. |
-|[Remover o revisor accessReview](accessreview-removereviewer.md) | Nenhum. |   Remover um revisor de um accessReview. |
+|[Adicionar revisor accessReview](accessreview-addreviewer.md) |     Nenhum   |   Adicione um revisor a um accessReview. |
+|[Remover o revisor accessReview](accessreview-removereviewer.md) | Nenhum |   Remover um revisor de um accessReview. |
 
 
 <!--

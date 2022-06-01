@@ -1,16 +1,16 @@
 ---
 title: Remover educationCategory
-description: Remover uma educationCategory existente deste educationAssignment
+description: Remova uma educationCategory existente deste educationAssignment.
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c457654c4ff05e90e0e75a27d0386302fff9a1cf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 78035badbf5e481f752a54874ac7769f594a9b82
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61337109"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820781"
 ---
 # <a name="remove-educationcategory"></a>Remover educationCategory
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 Remover uma [educationCategory](../resources/educationcategory.md) de [um educationAssignment](../resources/educationassignment.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,10 +36,9 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não fornece um corpo de solicitação para este método.
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
@@ -74,7 +73,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e
 [!INCLUDE [sample-code](../includes/snippets/java/add-educationcategory-to-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

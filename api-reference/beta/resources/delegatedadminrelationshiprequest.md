@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4f4683ea9887b4df3b94e1a8f3475cb5a3dfea06
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: 5aaaabed54e6f5a4f0ba21cbdf64fb7d9deb0e8f
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704188"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821180"
 ---
 # <a name="delegatedadminrelationshiprequest-resource-type"></a>Tipo de recurso delegatedAdminRelationshipRequest
 
@@ -34,7 +34,7 @@ Representa uma solicitação específica para uma relação de administrador del
 |createdDateTime|DateTimeOffset|A data e hora no formato ISO 8601 e na hora UTC em que a solicitação de relação foi criada. Somente leitura. |
 |id|Cadeia de caracteres|O identificador exclusivo da solicitação de relação. Somente leitura. Herdado da [entidade](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora no formato ISO 8601 e hora UTC em que essa solicitação de relação foi modificada pela última vez. Somente leitura.|
-|status|delegatedAdminRelationshipRequestStatus|O status da solicitação. Somente leitura. Os valores possíveis são: `created`, `pending`, `complete`, `failed`, `unknownFutureValue`.|
+|status|delegatedAdminRelationshipRequestStatus|O status da solicitação. Somente leitura. Os valores possíveis são: `created`, `pending`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

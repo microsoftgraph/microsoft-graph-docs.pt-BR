@@ -1,31 +1,33 @@
 ---
 title: Listar baseTasks
-description: Obter os recursos baseTask da propriedade de navegação tarefas de uma baseTaskList específica.
+description: Obtenha os recursos baseTask da propriedade de navegação de tarefas de uma baseTaskList específica.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 84128000fb785e9d5d572de5e81b8d0b8d71b308
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: 356a59cb3804a7ae5ca27b5b382c59c0228b7c14
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451379"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820683"
 ---
-# <a name="list-basetasks"></a>Listar baseTasks
+# <a name="list-basetasks-deprecated"></a>Listar baseTasks (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os [recursos baseTask](../resources/basetask.md) da propriedade de navegação tarefas de uma [baseTaskList específica](../resources/basetasklist.md).
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Obtenha os [recursos baseTask](../resources/basetask.md) da propriedade de navegação de tarefas de uma [baseTaskList específica](../resources/basetasklist.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,7 +42,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `$expand`a [parâmetros de](/graph/query-parameters) `$filter` `$top` consulta EData para personalizar a resposta.  
+Esse método dá suporte `$expand`a parâmetros `$filter` `$top`  [de consulta OData e](/graph/query-parameters) para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos baseTask](../resources/basetask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos baseTask](../resources/basetask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

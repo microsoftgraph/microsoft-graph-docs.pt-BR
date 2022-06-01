@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 14b0c2e9af8ea111cca62036bf4de18a9af57f50
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 509a12dc4e819a18dc2728e924814ff8d7db38cb
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695549"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820396"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -340,7 +340,7 @@ Namespace: microsoft.graph
 |:---|
 |Cadeia de caracteres|
 |Inteiro|
-|Referência|
+|Referências|
 |Binária|
 |Booliano|
 |DateTime|
@@ -3021,16 +3021,6 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |Securitygroup|
 |unknownFutureValue|
 
-### <a name="delegatedadminrelationshipoperationstatus-values"></a>Valores delegatedAdminRelationshipOperationStatus 
-
-|Member|
-|:---|
-|Notstarted|
-|Executando|
-|complete|
-|Falhou|
-|unknownFutureValue|
-
 ### <a name="delegatedadminrelationshipoperationtype-values"></a>Valores delegatedAdminRelationshipOperationType 
 
 |Member|
@@ -3052,7 +3042,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |:---|
 |criadas|
 |Pendente|
-|complete|
+|Conseguiu|
 |Falhou|
 |unknownFutureValue|
 

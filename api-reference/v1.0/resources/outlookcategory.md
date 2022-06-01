@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 907f2e96f3f37ff62a6189970c5149241035c9b9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cac718b00fbfde14308f60fb10afbf2e52c27b6d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094146"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819661"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. O usuário define categorias em uma lista mestra e pode aplicar uma ou mais das seguintes categorias definidas pelo usuário a um item. 
 
 Usando a API REST, é possível [criar](../api/outlookuser-post-mastercategories.md) e definir categorias na lista mestra de categorias para um usuário. Também é possível [acessar essa lista mestra de categorias](../api/outlookuser-list-mastercategories.md), [obter uma categoria específica](../api/outlookcategory-get.md), [atualizar](../api/outlookcategory-update.md) a cor associada a uma categoria ou [excluir](../api/outlookcategory-delete.md) uma categoria. É possível aplicar uma categoria a um item atribuindo a propriedade **displayName** da categoria à coleção **categories** do item.
-Entre os recursos que podem ser atribuídos às categorias estão [contact](contact.md), [event](event.md), [message](message.md) e [post](post.md).   
+Os recursos que podem ser atribuídos a categorias [incluem contato](contact.md), [evento](event.md), [mensagem](message.md), [postagem](post.md) e [todoTask](todotask.md).   
 
 Cada categoria é atribuída por duas propriedades: **displayName** e **color**. O valor **displayName** deve ser exclusivo na lista mestra de um usuário. No entanto, o valor **color** não precisa ser exclusivo. Várias categorias na lista mestra podem ser mapeadas para a mesma cor. É possível mapear até 25 cores diferentes para as categorias na lista mestra a um usuário.
 
@@ -88,7 +88,7 @@ Veja a seguir uma representação JSON do recurso.
 |[Obter categoria](../api/outlookcategory-get.md) | [outlookCategory](../resources/outlookcategory.md) |Obtenha as propriedades e as relações do objeto **outlookCategory** especificado.|
 |[Criar](../api/outlookuser-post-mastercategories.md) | [outlookCategory](../resources/outlookcategory.md) |Cria um objeto **outlookCategory** na lista mestra de categorias do usuário.|
 |[Atualizar](../api/outlookcategory-update.md) | [outlookCategory](../resources/outlookcategory.md) |Atualize a propriedade gravável, **color**, do objeto **outlookCategory** especificado. |
-|[Delete](../api/outlookcategory-delete.md) | Nenhum(a) |Exclua o objeto **outlookCategory** especificado. |
+|[Delete](../api/outlookcategory-delete.md) | Nenhum |Exclua o objeto **outlookCategory** especificado. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

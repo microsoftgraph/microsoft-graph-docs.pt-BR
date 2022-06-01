@@ -1,18 +1,18 @@
 ---
-title: Listar programControls
+title: Listar programControls (preterido)
 description: No recurso Azure AD revisões de acesso, liste todos os objetos programControl em todos os programas no locatário.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 1fe6c105296369d6119a857916dfa3510b3dd4b1
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: ac3fac52b12e46e3f8299beaccbd977ea88f0c1f
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65315325"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819983"
 ---
-# <a name="list-programcontrols"></a>Listar programControls
+# <a name="list-programcontrols-deprecated"></a>Listar programControls (preterido)
 
 Namespace: microsoft.graph
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
 O usuário conectado também deve estar em uma função de diretório que permita que ele leia um programa.
 

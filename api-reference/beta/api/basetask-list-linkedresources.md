@@ -1,32 +1,34 @@
 ---
 title: Listar linkedResources
-description: Obter os linkedResource_v2 associados a um baseTask da propriedade de navegação linkedResources.
+description: Obtenha os linkedResource_v2 associados a uma baseTask da propriedade de navegação linkedResources.
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4c6ee298f7ed86fa997f127cbbe9b416b00829f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cbff5c559ef909821b1f1f48acc3f076fb9b773b
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124232"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820718"
 ---
-# <a name="list-linkedresources"></a>Listar linkedResources
+# <a name="list-linkedresources-deprecated"></a>Listar linkedResources (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter os [linkedResource_v2](../resources/linkedresource_v2.md) associados a um [baseTask](../resources/basetask.md) da propriedade de navegação linkedResources.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Obtenha os [linkedResource_v2](../resources/linkedresource_v2.md) associados a uma [baseTask](../resources/basetask.md) da propriedade de navegação linkedResources.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
-|Aplicativo|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.Read, Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.Read, Tasks.ReadWrite|
+|Application|Tasks.Read, Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +42,7 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte a parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte não dá suporte a parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -52,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção [de linkedResource_v2](../resources/linkedresource_v2.md) objetos no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma [coleção linkedResource_v2](../resources/linkedresource_v2.md) objetos no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,16 +1,16 @@
 ---
 title: Atualizar plannerPlan
-description: Atualize as propriedades de um **objeto plannerPlan.**
+description: Atualize as propriedades de um **objeto plannerPlan** .
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: df853231704a3922c420fa2b0ddac79c5b0637bd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9275c8ef3afadbde73bf986b630aa0314af8656f
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133108"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820901"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um **objeto plannerPlan.**
+Atualize as propriedades de um **objeto plannerPlan** .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,14 +40,18 @@ PATCH /planner/plans/{plan-id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor conhecido de ETag para o plannerPlan ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o plannerPlan a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece os valores dos campos relevantes a ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores dos campos relevantes a serem atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|title|String|Título do plano.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `204 No Content` resposta e conteúdo vazio. Se a solicitação especificar o header com preferência, este método retornará um código de resposta e um `Prefer` `return=representation` objeto `200 OK` [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará a `204 No Content` resposta e o conteúdo vazio. Se a solicitação especificar o `Prefer` cabeçalho com `return=representation` preferência, `200 OK` esse método retornará um código de resposta e um objeto [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 

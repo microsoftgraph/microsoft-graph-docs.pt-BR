@@ -1,31 +1,33 @@
 ---
 title: 'baseTask: move'
-description: Mova um objeto baseTask de um baseTaskList para outro.
+description: Mova um objeto baseTask de uma baseTaskList para outra.
 author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9f3fe575d2614ea2e9763fd7679e66cf03c928bd
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e17821703a355d436104394f2c899452d3cc1ad3
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341712"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820312"
 ---
-# <a name="basetask-move"></a>baseTask: move
+# <a name="basetask-move-deprecated"></a>baseTask: move (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mova um [objeto baseTask](../resources/basetask.md) de [um baseTaskList](../resources/basetasklist.md) para outro.
+[!INCLUDE [todo-deprecate-basetaskapi](../includes/todo-deprecate-basetaskapi.md)]
+
+Mova um [objeto baseTask](../resources/basetask.md) de [uma baseTaskList](../resources/basetasklist.md) para outra.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Sem suporte|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,13 +59,13 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|destinationTaskListId|String|O [baseTaskList para](../resources/basetasklist.md) o qual [o objeto baseTask](../resources/basetask.md) deve ser movido.|
+|destinationTaskListId|Cadeia de caracteres|A [baseTaskList](../resources/basetasklist.md) para a qual [o objeto baseTask](../resources/basetask.md) deve ser movido.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa ação retornará um `200 OK` código de resposta e [um baseTask](../resources/basetask.md) no corpo da resposta.
+Se bem-sucedida, essa ação retornará `200 OK` um código de resposta e [uma baseTask](../resources/basetask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso userRegistrationFeatureSummary
-description: Resumo de usuários capazes de autenticação multifa factor, redefinição Self-Service senha e autenticação sem senha.
-author: danielwood95
-localization_priority: Normal
+description: Resumo de usuários com capacidade para Autenticação Multifator, Self-Service redefinição de senha e autenticação sem senha.
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 291da483380d6e1d65b5db527128098b8b416c83
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b058276eaa3bc9f12dbe46ddc33afbe06b0bc2f2
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132927"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820144"
 ---
 # <a name="userregistrationfeaturesummary-resource-type"></a>Tipo de recurso userRegistrationFeatureSummary
 
@@ -18,19 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o estado atual de quantos usuários em sua organização são capazes de autenticação multifafa, redefinição de senha de autoatendado e autenticação sem senha.
+Representa o estado atual de quantos usuários em sua organização são capazes de autenticação multifator, redefinição de senha de autoatendimento e autenticação sem senha.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | userRegistrationFeatureSummary | Obter o número de usuários capazes de autenticação multifa factor, Self-Service redefinição de senha e autenticação sem senha. |
+| [usersRegisteredByFeature](../api/authenticationmethodsroot-usersregisteredbyfeature.md) | userRegistrationFeatureSummary | Obtenha o número de usuários capazes de autenticação multifator, redefinição Self-Service senha e autenticação sem senha. |
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|totalUserCount|Int64|Número total de contas de usuários, excluindo aquelas bloqueadas|
-|userRegistrationFeatureCounts|[Coleção userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md)|Número de usuários registrados ou com capacidade para Autenticação Multifa factor, Self-Service redefinição de senha e autenticação sem senha.|
+|totalUserCount|Int64|Número total de contas de usuários, excluindo aquelas que estão bloqueadas|
+|userRegistrationFeatureCounts|[coleção userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md)|Número de usuários registrados ou capazes de autenticação multifator, Self-Service redefinição de senha e autenticação sem senha.|
 |userRoles|includedUserRoles|Tipo de função de usuário. Os valores possíveis são: `all`, `privilegedAdmin`, `admin`, `user`.|
 |userTypes|includedUserTypes|Tipo de usuário. Os valores possíveis são: `all`, `member`, `guest`.|
 
@@ -46,7 +46,7 @@ O valor `privilegedAdmin` consiste nas seguintes funções de administrador priv
 * Administrador de usuários
 * Administrador de autenticação
 
-O valor inclui todas as funções de administrador do `admin` Azure AD. 
+O valor `admin` inclui todas as Azure AD de administrador. 
 
 ## <a name="relationships"></a>Relações
 Nenhum

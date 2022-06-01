@@ -1,18 +1,18 @@
 ---
-title: Criar programa
+title: Criar programa (preterido)
 description: No recurso Azure AD revisões de acesso, crie um novo objeto de programa.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: aa1ac48fb85b2c20d40b9b211d17183a6a78ab65
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 15a74a350d62e31976e62f00726b2aea8f558aed
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65315276"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820963"
 ---
-# <a name="create-program"></a>Criar programa
+# <a name="create-program-deprecated"></a>Criar programa (preterido)
 
 Namespace: microsoft.graph
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 O usuário conectado também deve estar em uma função de diretório que permita que ele crie um programa.

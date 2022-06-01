@@ -5,18 +5,20 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 247795d16dadacdc5f88ffa45d03ffbb880e839e
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: fab76137d91db84b5034e6565676feb396045f18
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364998"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820753"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
 Obtenha uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) identificada por nome ou nome totalmente qualificado.
 
@@ -26,9 +28,9 @@ A tabela a seguir lista os três cenários em que é possível obter uma extens�
 
 |**Cenário GET**|**Recursos com suporte**|**Corpo da resposta**|
 |:-----|:-----|:-----|
-|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md)[, grupo](../resources/group.md)[, evento](../resources/event.md) de grupo, [postagem](../resources/post.md) de [grupo, mensagem](../resources/message.md)[, organização](../resources/organization.md), [contato](../resources/contact.md) pessoal, [usuário](../resources/user.md), [tarefa](../resources/basetask.md), [lista de tarefas](../resources/basetasklist.md)  | Somente extensão aberta.|
-|Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Unidade administrativa, dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa, lista de tarefas. |Uma instância de recurso expandida com a extensão aberta.|
-|Encontre e expanda instâncias de recursos com uma extensão específica. | Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas |Instâncias de recursos expandidas com a extensão aberta.|
+|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [baseTask](../resources/basetask.md) (preterido), [baseTaskList](../resources/basetasklist.md) (preterido), [dispositivo](../resources/device.md)[, evento](../resources/event.md), [grupo](../resources/group.md)[, evento](../resources/event.md) de [grupo,](../resources/post.md) postagem de [grupo, mensagem](../resources/message.md)[, organização](../resources/organization.md)[, contato](../resources/contact.md) pessoal, [usuário](../resources/user.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md)  | Somente extensão aberta.|
+|Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Unidade administrativa, tarefa base, lista de tarefas base, dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa pendente, lista de tarefas pendentes. |Uma instância de recurso expandida com a extensão aberta.|
+|Encontre e expanda instâncias de recursos com uma extensão específica. | Tarefa base, lista de tarefas base, evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa pendente, lista de tarefas pendentes |Instâncias de recursos expandidas com a extensão aberta.|
 
 ## <a name="permissions"></a>Permissões
 
@@ -36,6 +38,8 @@ Dependendo do recurso que contém a extensão e o tipo de permissão (delegado o
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [baseTaskList](../resources/basetasklist.md) (preterido)  | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [device](../resources/device.md) | Directory.Read.All | Sem suporte | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
@@ -44,9 +48,9 @@ Dependendo do recurso que contém a extensão e o tipo de permissão (delegado o
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organização](../resources/organization.md) | User.Read | Incompatível | Organization.Read.All |
 | [contato pessoal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [usuário](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [tarefa](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
-| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -68,13 +72,15 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{todoTaskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{baseTaskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
 ```
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Obtenha uma instância de recurso conhecida, expandida com uma extensão correspondente. 
 
-Para os tipos de recurso de evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas, você pode usar a mesma solicitação REST para obter a instância de recurso, procure uma extensão que corresponda a um filtro em sua propriedade **id** e expanda a instância com a extensão. A resposta inclui a maioria das propriedades do recurso.
+Para os tipos de recurso de evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas, você pode usar a mesma solicitação REST que obtém a instância de recurso, procure uma extensão que corresponda a um filtro em seu **id** e expanda a instância com a extensão. A resposta inclui a maioria das propriedades do recurso.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -83,7 +89,9 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
@@ -112,7 +120,7 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
->**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso ou coleção, para obter uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos ou coleções dão suporte à obtenção de extensões abertas delas de maneira semelhante.
+>**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância ou coleção de recurso para obter uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias ou coleções de recursos são compatíveis com a obtenção de extensões abertas delas de maneira semelhante.
 
 
 ## <a name="path-parameters"></a>Parâmetros do caminho
@@ -486,24 +494,14 @@ O quinto exemplo analisa todas as mensagens na caixa de correio do usuário cone
 
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response-5"></a>Resposta 5

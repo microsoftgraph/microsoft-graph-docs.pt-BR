@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso userRegistrationFeatureCount
-description: Número de usuários registrados ou com capacidade para Autenticação Multifa factor, Self-Service redefinição de senha e autenticação sem senha.
-author: danielwood95
-localization_priority: Normal
+description: Número de usuários registrados ou capazes de autenticação multifator, Self-Service redefinição de senha e autenticação sem senha.
+author: besiler
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 7c73d9cd17d5bf13eb5f8899e0d1e9dc6e27af67
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 609c8d30547093c19d93428a0c779687b93ae018
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132941"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820159"
 ---
 # <a name="userregistrationfeaturecount-resource-type"></a>Tipo de recurso userRegistrationFeatureCount
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o número de usuários registrados ou com capacidade para Autenticação Multifa factor, Self-Service redefinição de senha e autenticação sem senha.
+Representa o número de usuários registrados ou capazes de autenticação multifator, Self-Service redefinição de senha e autenticação sem senha.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|recurso|authenticationMethodFeature|Número de usuários registrados ou com capacidade para Autenticação Multifa factor, Self-Service redefinição de senha e autenticação sem senha. Os valores possíveis são: `ssprRegistered`, `ssprEnabled`, `ssprCapable`, `passwordlessCapable`, `mfaCapable`.|
-|userCount|Int64|Número de usuários.|
+|Recurso|authenticationMethodFeature|Número de usuários registrados ou capazes de autenticação multifator, Self-Service redefinição de senha e autenticação sem senha. Os valores possíveis são: `ssprRegistered`, `ssprEnabled`, `ssprCapable`, `passwordlessCapable`, `mfaCapable`.|
+|userCount|Int64|Número de usuários|
 
 ## <a name="relationships"></a>Relações
 Nenhum

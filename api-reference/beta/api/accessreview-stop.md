@@ -1,18 +1,18 @@
 ---
-title: Parar accessReview
-description: No recurso de análises de acesso do Azure AD, pare um accessReview ativo no momento.  O objeto de destino pode ser uma revisão de acesso único ou uma instância de uma revisão de acesso recorrente.  (Para impedir que uma revisão de acesso recorrente inseja instâncias futuras, atualize-a para alterar sua data de término agendada).  Depois que a revisão de acesso parar, os revisadores não poderão mais dar entrada e as decisões de revisão de acesso podem ser aplicadas.
+title: Parar accessReview (preterido)
+description: No recurso Azure AD revisões de acesso, interrompa um accessReview ativo no momento.  O objeto de destino pode ser uma revisão de acesso única ou uma instância de uma revisão de acesso recorrente.  (Para impedir que uma revisão de acesso recorrente comece instâncias futuras, atualize-a para alterar sua data de término agendada).  Depois que a revisão de acesso for interrompida, os revisores não poderão mais fornecer entrada e as decisões de revisão de acesso poderão ser aplicadas.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e38afea02221d670812932efead6f05ca219d21
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 13a522a327d9067d5e5c8a9c5c6ae755a3d38f10
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340628"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819133"
 ---
-# <a name="stop-accessreview"></a>Parar accessReview
+# <a name="stop-accessreview-deprecated"></a>Parar accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-No recurso de análises de acesso do Azure [AD,](../resources/accessreviews-root.md) pare um [accessReview ativo no momento](../resources/accessreview.md).  O objeto de destino pode ser uma revisão de acesso único ou uma instância de uma revisão de acesso recorrente.  (Para impedir que uma revisão de acesso recorrente inseja instâncias futuras, [atualize-a](accessreview-update.md) para alterar sua data de término agendada).  Depois que a revisão de acesso parar, os revisadores não poderão mais dar entrada e as decisões de revisão de acesso podem ser aplicadas.
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), interrompa um [accessReview ativo no momento](../resources/accessreview.md).  O objeto de destino pode ser uma revisão de acesso única ou uma instância de uma revisão de acesso recorrente.  (Para impedir que uma revisão de acesso recorrente comece instâncias futuras, [atualize-a](accessreview-update.md) para alterar sua data de término agendada).  Depois que a revisão de acesso for interrompida, os revisores não poderão mais fornecer entrada e as decisões de revisão de acesso poderão ser aplicadas.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.ReadWrite.Membership  |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | AccessReview.ReadWrite.Membership  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

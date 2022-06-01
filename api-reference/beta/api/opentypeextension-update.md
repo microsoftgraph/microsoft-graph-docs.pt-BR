@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e0e11621f10ce5e137b1f90f4e3d53287978e182
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: acd04e9d1bd24bcd87228a8b29c1f9154f02c5d9
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62089864"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820744"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
@@ -18,21 +18,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize uma extensão aberta[(objeto openTypeExtension)](../resources/opentypeextension.md) com as propriedades no corpo da solicitação:
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
+Atualize uma extensão aberta ([objeto openTypeExtension](../resources/opentypeextension.md) ) com as propriedades no corpo da solicitação:
 
 - Se uma propriedade no corpo da solicitação corresponder ao nome de uma propriedade existente na extensão, os dados na extensão serão atualizados.
 - Caso contrário, essa propriedade e seus dados serão adicionados à extensão. 
 
 Os dados em uma extensão podem ser tipos primitivos ou matrizes de tipos primitivos.
 
-Consulte a tabela na seção [Permissões](#permissions) para a lista de recursos que suportam extensões abertas.
+Consulte a tabela na seção [Permissões para](#permissions) obter a lista de recursos que dão suporte a extensões abertas.
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
+| [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [baseTasklist](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Sem suporte | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [grupo](../resources/group.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
@@ -41,9 +45,9 @@ Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (de
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [tarefa](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -61,11 +65,13 @@ PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 PATCH /organization/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{baseTaskListId}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{Id}/tasks/{Id}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{Id}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{Id}/tasks/{Id}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{Id}/extensions/{extensionId}
 ```
 
->**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de atualizar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a atualização de extensões abertas neles de maneira semelhante.
+>**Nota:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso para atualizar uma extensão nela. Todas as outras sintaxes que permitem identificar essas instâncias de recurso dão suporte à atualização de extensões abertas neles de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.
 

@@ -5,14 +5,14 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6645da51b2f292d787c277096465b0a4b65e0347
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5f6c54c79010e08f0e44d2202141decb69c2036c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63331864"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820270"
 ---
-# <a name="activateservice-resource-type"></a>Tipo de recurso activateService
+# <a name="activateservice-resource-type-deprecated"></a>Tipo de recurso activateService (preterido)
 
 Namespace: microsoft.graph
 
@@ -26,7 +26,7 @@ Representa um serviço a ser ativado.
 | ----------------- | ------------ | ------------------------------------- |
 | service| Cadeia de caracteres | O nome do serviço a ser ativado. |
 | servicePlanId | Guid | O identificador de plano do plano de serviço a ser ativado. |
-| skuId | Guid | O identificador SKU do plano de serviço. |
+| skuId | Guid | O identificador de SKU do plano de serviço. |
 
 ## <a name="json-representation"></a>Representação JSON
 

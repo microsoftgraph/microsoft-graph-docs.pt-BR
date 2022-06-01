@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 99307a2f2de13a6b526dceed38134440e92f8118
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: 183155c31a69c0f669d4bafcaa19cb0a6fa78ee4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549621"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821131"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -20,6 +20,9 @@ Atualiza as propriedades de um dispositivo registrado.
 
 Somente algumas propriedades de um dispositivo podem ser atualizadas por meio de aplicativos de gerenciamento de dispositivo móvel aprovados(MDM).
 
+> [!IMPORTANT]
+> Essa API tem um [problema conhecido](/graph/known-issues#linux-based-devices-cant-be-updated-by-an-app-with-application-permissions). Um aplicativo com permissões de aplicativo só pode atualizar a propriedade **extensionAttributes para dispositivos baseados** em Linux, ou seja, onde a **propriedade operationSystem** está `linux`.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -27,7 +30,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
+
+O usuário chamador também deve estar em uma das seguintes funções [Azure AD:](/azure/active-directory/roles/permissions-reference) *Administrador Global*, *Intune Administrador*. Um usuário chamador na  função Administrador de Dispositivos na Nuvem só pode habilitar ou desabilitar dispositivos usando essa API e um usuário com a função de Administrador do *Windows 365* só pode atualizar as propriedades básicas do dispositivo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,7 +54,7 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções administrador global e administrador de dispositivo de nuvem podem atualizar essa propriedade.|
+|accountEnabled|Booliano| `true` se a conta estiver habilitada; caso contrário, `false`. Somente chamadores nas funções *administrador global e* administrador *de dispositivo de* nuvem podem atualizar essa propriedade.|
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
 |displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|
@@ -120,6 +125,8 @@ HTTP/1.1 204 No Content
 #### <a name="request"></a>Solicitação
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_device_extensionAttributes"
@@ -134,6 +141,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-device-extensionattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-device-extensionattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-device-extensionattributes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-device-extensionattributes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Resposta

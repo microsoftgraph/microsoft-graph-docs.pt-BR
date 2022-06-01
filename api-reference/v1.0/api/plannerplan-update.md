@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 1cbe211096b341fff2ce148e3551d2f521c49244
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 048768a10d303e6c5b84d5d1fa3c00d6db8e0311
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420709"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821110"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
@@ -45,7 +45,6 @@ No corpo da solicitação, forneça os valores dos campos relevantes a serem atu
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|owner|Cadeia de caracteres|[Grupo](../resources/group.md) `id` pelo qual o plano pertence. Deve haver um grupo válido para que esse campo possa ser definido. Depois de definido, isso só pode ser atualizado pelo proprietário.|
 |title|String|Título do plano.|
 
 ## <a name="response"></a>Resposta

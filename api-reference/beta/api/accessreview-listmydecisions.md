@@ -1,18 +1,18 @@
 ---
-title: Listar minhas decisões de accessReview
+title: Listar minhas decisões de accessReview (preterido)
 description: No recurso Azure AD revisões de acesso, recupere as decisões de um objeto accessReview para o usuário chamador como revisor.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 60e70fb24ec64648bc273a68dc0b640ad7865be5
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 0a7c60cb53c6232240a8786a19e8a9c97add990d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314476"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819123"
 ---
-# <a name="list-my-accessreview-decisions"></a>Listar minhas decisões de accessReview
+# <a name="list-my-accessreview-decisions-deprecated"></a>Listar minhas decisões de accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 O usuário conectado também deve ter permissão para ler essa revisão de acesso específica.

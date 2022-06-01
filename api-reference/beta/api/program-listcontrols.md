@@ -1,18 +1,18 @@
 ---
-title: Listar programControls de um programa
+title: Listar programControls de um programa (preterido)
 description: No recurso Azure AD revisões de acesso, liste todos os objetos programControl, vinculados a um programa específico.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 2bcde8209a3abaa5af26f681f6427a07f2476aba
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 9c28d2666134268f9c5f76cedc807fb918f7c99a
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314182"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820928"
 ---
-# <a name="list-programcontrols-of-a-program"></a>Listar programControls de um programa
+# <a name="list-programcontrols-of-a-program-deprecated"></a>Listar programControls de um programa (preterido)
 
 Namespace: microsoft.graph
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
  O usuário conectado também deve estar em uma função de diretório que permita que ele leia um programa.
 

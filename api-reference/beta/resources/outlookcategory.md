@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso outlookCategory
-description: Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. No Outlook, o usuário define categorias em uma lista mestra e pode aplicar uma ou mais dessas definições pelo usuário
-localization_priority: Normal
+description: Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. No Outlook, o usuário define categorias em uma lista mestra e pode aplicar uma ou mais dessas definidas pelo usuário
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fbaa5b6387cfdb869c7e71693a5ef4ae722ca68e
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f88c5df573e52e852311f71eb08781cd8061d503
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50293089"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820921"
 ---
 # <a name="outlookcategory-resource-type"></a>Tipo de recurso outlookCategory
 
@@ -23,14 +23,14 @@ Namespace: microsoft.graph
 Representa uma categoria pela qual um usuário pode agrupar itens do Outlook como mensagens e eventos. No Outlook, o usuário define categorias em uma lista mestra e pode aplicar uma ou mais dessas categorias definidas pelo usuário a um item. 
 
 Usando a API REST, é possível [criar](../api/outlookuser-post-mastercategories.md) e definir categorias na lista mestra de categorias para um usuário. Também é possível [acessar essa lista mestra de categorias](../api/outlookuser-list-mastercategories.md), [obter uma categoria específica](../api/outlookcategory-get.md), [atualizar](../api/outlookcategory-update.md) a cor associada a uma categoria ou [excluir](../api/outlookcategory-delete.md) uma categoria. É possível aplicar uma categoria a um item atribuindo a propriedade **displayName** da categoria à coleção **categories** do item.
-Recursos que podem ser atribuídos categorias incluem [contato](contact.md), [evento](event.md), [mensagem](message.md), [outlookTask](outlooktask.md)e [postagem](post.md).   
+Os recursos que podem ser atribuídos a categorias incluem [contato](contact.md)[,](message.md) [evento](event.md), mensagem, [outlookTask](outlooktask.md), [post](post.md) e [todoTask](todotask.md).   
 
 Cada categoria é atribuída por duas propriedades: **displayName** e **color**. O valor **displayName** deve ser exclusivo na lista mestra de um usuário. No entanto, o valor **color** não precisa ser exclusivo. Várias categorias na lista mestra podem ser mapeadas para a mesma cor. É possível mapear até 25 cores diferentes para as categorias na lista mestra a um usuário.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Um nome exclusivo que identifica uma categoria na caixa de correio do usuário. Após a criação de uma categoria, o nome não poderá ser alterado. Somente leitura.|
+|displayName|Cadeia de caracteres|Um nome exclusivo que identifica uma categoria na caixa de correio do usuário. Após a criação de uma categoria, o nome não poderá ser alterado. Somente leitura.|
 |color|String|Uma constante de cor predefinida que caracteriza uma categoria e que é mapeada para uma das 25 cores predefinidas. Confira a observação abaixo. |
 
 > **Observação** Os valores possíveis para **color** são constantes predefinidas como `None`, `preset0` e `preset1`. Cada constante predefinida é mapeada para uma cor. A cor real depende do cliente do Outlook em que as categorias estão sendo exibidas. A tabela a seguir mostra as cores mapeadas para cada constante predefinida do Outlook (cliente da área de trabalho). 

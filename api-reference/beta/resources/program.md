@@ -1,43 +1,45 @@
 ---
-title: tipo de recurso de programa
-description: 'No recurso de revisões de acesso do Azure AD, um programa é um contêiner, mantendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para facilitar a localização de avaliações de acesso relacionadas.  '
-localization_priority: Normal
+title: tipo de recurso de programa (preterido)
+description: 'No recurso Azure AD revisões de acesso, um programa é um contêiner, mantendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa para facilitar a localização de revisões de acesso relacionadas.  '
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: eb04c1e05c669758e282aebdcccfa4e55507e659
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f0d0a7a42a21a95bbf57b971d09e20046bd46ffa
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960366"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819395"
 ---
-# <a name="program-resource-type"></a>tipo de recurso de programa
+# <a name="program-resource-type-deprecated"></a>tipo de recurso de programa (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure AD, um programa é um contêiner, mantendo [controles](accessreviews-root.md) de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para facilitar a localização de avaliações de acesso relacionadas.  
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-Cada locatário que tenha avaliações de acesso do Azure AD no Azure tem um programa, `Default program` .  Um administrador global pode criar programas adicionais, por exemplo, para representar iniciativas de conformidade. 
+No recurso Azure AD [revisões de acesso](accessreviews-root.md), um programa é um contêiner, mantendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa para facilitar a localização de revisões de acesso relacionadas.  
+
+Cada locatário que tem revisões de acesso Azure AD internas tem um programa, `Default program`.  Um administrador global pode criar programas adicionais, por exemplo, para representar iniciativas de conformidade. 
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar programa](../api/program-create.md) |   [program](program.md)   |   Crie um novo programa.|
+|[Criar programa](../api/program-create.md) |   [Programa](program.md)   |   Crie um novo programa.|
 |[Excluir programa](../api/program-delete.md) |   Nenhum   |   Excluir um programa.|
-|[Listar programas](../api/program-list.md) |  [conjunto de](program.md) programas|   Obter uma coleção de todos os programas.|
-|[Listar programControls de um programa](../api/program-listcontrols.md) |      [Coleção programControl](programcontrol.md)| Obter uma coleção dos controles de um programa.|
-|[Atualizar programa](../api/program-update.md) |   [program](program.md)|  Atualize um programa.|
+|[Listar programas](../api/program-list.md) |  [coleção de](program.md) programas|   Obtenha uma coleção de todos os programas.|
+|[Listar programControls de um programa](../api/program-listcontrols.md) |      [coleção programControl](programcontrol.md)| Obtenha uma coleção dos controles de um programa.|
+|[Atualizar programa](../api/program-update.md) |   [Programa](program.md)|  Atualizar um programa.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | id                        |Cadeia de caracteres                              |  O identificador atribuído ao recurso do programa.                    |
-| displayName               |Cadeia de caracteres                              |  O nome do programa.  Obrigatório durante a criação.                  |
+| displayName               |String                              |  O nome do programa.  Obrigatório durante a criação.                  |
 | description               |Cadeia de caracteres                              |  A descrição do programa.           |
 
 ## <a name="relationships"></a>Relações

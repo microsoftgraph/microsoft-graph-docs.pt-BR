@@ -1,18 +1,18 @@
 ---
-title: Aplicar accessReview
-description: 'No recurso de revisões de acesso do Azure AD, aplique as decisões de um accessReview concluído.  O objeto de destino pode ser uma revisão de acesso único ou uma instância de uma revisão de acesso recorrente.  '
+title: Aplicar accessReview (preterido)
+description: 'No recurso Azure AD revisões de acesso, aplique as decisões de um accessReview concluído.  O objeto de destino pode ser uma revisão de acesso única ou uma instância de uma revisão de acesso recorrente.  '
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 04b17b5ae906d3a5465505f6c8be530f89559acc
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: d1f08c7690796f55d97ee48d623d3906decc5557
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340696"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819332"
 ---
-# <a name="apply-accessreview"></a>Aplicar accessReview
+# <a name="apply-accessreview-deprecated"></a>Aplicar accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -20,14 +20,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-No recurso de revisões de acesso do Azure [AD,](../resources/accessreviews-root.md) aplique as decisões de um [accessReview concluído](../resources/accessreview.md).  O objeto de destino pode ser uma revisão de acesso único ou uma instância de uma revisão de acesso recorrente.  
+No recurso Azure AD [revisões de acesso](../resources/accessreviews-root.md), aplique as decisões de um [accessReview concluído](../resources/accessreview.md).  O objeto de destino pode ser uma revisão de acesso única ou uma instância de uma revisão de acesso recorrente.  
 
 
-Depois que uma revisão de acesso for concluída, porque ela atingiu a data de término ou um administrador a interrompeu manualmente e a aplicação automática não foi configurada para a revisão, você pode chamar Apply para aplicar as alterações. Até que ocorra a aplicação, as decisões para remover direitos de acesso não aparecem no recurso de origem, os usuários, por exemplo, retêm suas associações de grupo. Ao chamar aplicar, o resultado da revisão é implementado atualizando o grupo ou aplicativo. Se o acesso de um usuário foi negado na revisão, quando um administrador chama essa API, o Azure AD remove sua atribuição de associação ou aplicativo. 
+Depois que uma revisão de acesso for concluída, porque ela atingiu a data de término ou um administrador a interrompeu manualmente e a aplicação automática não foi configurada para a revisão, você pode chamar Aplicar para aplicar as alterações. Até que a aplicação ocorra, as decisões para remover direitos de acesso não aparecem no recurso de origem, os usuários, por exemplo, mantêm suas associações de grupo. Ao chamar aplicar, o resultado da revisão é implementado atualizando o grupo ou aplicativo. Se o acesso de um usuário foi negado na revisão, quando um administrador chama essa API, o Azure AD remove sua associação ou atribuição de aplicativo. 
 
-Depois que uma revisão de acesso for concluída e a aplicação automática tiver sido configurada, o status da revisão mudará de Concluído para estados intermediários e, finalmente, mudará para o estado Aplicado. Você deve esperar ver usuários negados, se algum, sendo removidos da associação do grupo de recursos ou atribuição de aplicativos em alguns minutos.
+Depois que uma revisão de acesso for concluída e a aplicação automática tiver sido configurada, o status da revisão será alterado de Concluído por estados intermediários e, por fim, mudará para o estado Aplicado. Você deve esperar ver os usuários negados, se houver, sendo removidos da associação do grupo de recursos ou da atribuição de aplicativo em alguns minutos.
 
-Uma revisão automática configurada ou selecionar Aplicar não tem efeito em um grupo que se origina em um diretório local ou em um grupo dinâmico. Se você quiser alterar um grupo que se origina no local, baixe os resultados e aplique essas alterações à representação do grupo nesse diretório.
+Uma revisão de aplicação automática configurada ou a seleção de Aplicar não tem efeito em um grupo originado em um diretório local ou em um grupo dinâmico. Se você quiser alterar um grupo originado localmente, baixe os resultados e aplique essas alterações à representação do grupo nesse diretório.
 
 
 ## <a name="permissions"></a>Permissões
@@ -35,9 +35,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.ReadWrite.Membership |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

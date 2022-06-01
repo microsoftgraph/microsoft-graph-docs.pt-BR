@@ -1,18 +1,18 @@
 ---
-title: Criar accessReview
+title: Criar accessReview (preterido)
 description: No recurso Azure AD revisões de acesso, crie um novo objeto accessReview.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: bfddca0486d9f622107b4e234c5baa6ab66cbaa0
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 2d23b1a6607564e7ea073738a0e8e58af39331a4
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "65314532"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819381"
 ---
-# <a name="create-accessreview"></a>Criar accessReview
+# <a name="create-accessreview-deprecated"></a>Criar accessReview (preterido)
 
 Namespace: microsoft.graph
 
@@ -32,9 +32,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | AccessReview.ReadWrite.Membership |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 O chamador também deve ter a permissão ProgramControl.ReadWrite.All, para que, depois de criar uma revisão de acesso, o chamador possa criar um [programControl](../resources/programcontrol.md).
 Além disso, o usuário conectado também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [revisões de acesso](../resources/accessreviews-root.md).
@@ -57,10 +57,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um acces
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| displayName             |Cadeia de caracteres                                                        | O nome da revisão de acesso.  |
+| displayName             |String                                                        | O nome da revisão de acesso.  |
 | startDateTime           |DateTimeOffset                                                | O DateTime quando a revisão está agendada para ser iniciada.  Isso deve ser uma data no futuro.   |
 | endDateTime             |DateTimeOffset                                                | O DateTime quando a revisão está agendada para terminar. Isso deve ser pelo menos um dia depois da data de início.   |
-| description             |Cadeia de caracteres                                                        | A descrição, a ser mostrada aos revisores. |
+| description             |String                                                        | A descrição, a ser mostrada aos revisores. |
 | businessFlowTemplateId  |Cadeia de caracteres                                                        | O identificador do modelo de fluxo de negócios, obtido de um [businessFlowTemplate](../resources/businessflowtemplate.md).  |
 | reviewerType            |String                                                        | O tipo de relação do revistor com os direitos de acesso do objeto revisado, um de `self`, `delegated`ou `entityOwners`. | 
 | reviewedEntity          |[identity](../resources/identity.md)                                     | O objeto para o qual uma revisão de acesso é criada, como a associação de um grupo ou as atribuições de usuários a um aplicativo. | 

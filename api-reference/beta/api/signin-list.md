@@ -5,12 +5,12 @@ description: Obtenha uma lista das entradas do usuário em um locatário Azure A
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 547b13bbd97b459eec60b88270e13c6063107704
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 08f857df962878ff60d711043ac4c32c4543951d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848773"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821229"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -20,7 +20,10 @@ Namespace: microsoft.graph
 
 Obtenha uma lista de [objetos signIn](../resources/signin.md) . A lista contém as entradas do usuário para seu Azure Active Directory locatário. As entradas em que um nome de usuário e senha são passados como parte do token de autorização e entradas federadas bem-sucedidas estão incluídas atualmente nos logs de entrada.
 
-O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as entradas mais recentes são retornadas primeiro. Somente os eventos de entrada que ocorreram dentro do período de retenção Azure Active Directory (Azure AD[) padrão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) estão disponíveis.
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as entradas mais recentes são retornadas primeiro. Somente os eventos de entrada que ocorreram dentro do período de retenção Azure Active Directory ([Azure AD) padrão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) estão disponíveis.
+
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
+
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,22 +31,22 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------- |:------------------------------------------- |
-| Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+| Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
 > [!IMPORTANT]
 > Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
+Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para Azure AD.
 
-Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, confira [as funções internas do Azure AD](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, [Azure AD funções internas](/azure/active-directory/roles/permissions-reference):
 + Administrador global
-+ Leitor Global
++ Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
-+ Leitor de Segurança
++ Leitor de segurança
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

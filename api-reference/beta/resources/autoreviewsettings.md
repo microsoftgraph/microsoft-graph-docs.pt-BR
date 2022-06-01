@@ -1,22 +1,24 @@
 ---
-title: Tipo de recurso autoReviewSettings
+title: Tipo de recurso autoReviewSettings (preterido)
 description: Especifica o comportamento de quando uma revisão de acesso é concluída.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f46ef4b57a921cc08fbb8f3768597eef12c1ce4f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 593c07266432a389b0f63891675fa9f4823db784
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136928"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820256"
 ---
-# <a name="autoreviewsettings-resource-type"></a>Tipo de recurso autoReviewSettings
+# <a name="autoreviewsettings-resource-type-deprecated"></a>Tipo de recurso autoReviewSettings (preterido)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
 O **tipo de recurso autoReviewSettings** é usado no recurso [accessReviewSettings](accessreviewsettings.md) e especifica o comportamento de quando uma revisão de acesso é concluída.    
 
@@ -24,7 +26,7 @@ O **tipo de recurso autoReviewSettings** é usado no recurso [accessReviewSettin
 
 | Propriedade | Tipo | Descrição |
 | :------- | :--- | :---------- |
-| notReviewedResult | String | Valores possíveis: `Approve` `Deny` , ou `Recommendation` .  If `Recommendation` , then **accessRecommendationsEnabled** in the **accessReviewSettings** resource should also be set to `true` . Se você quiser que o sistema forneça uma decisão mesmo se o revisor não fizer uma escolha, defina a propriedade **autoReviewEnabled** no recurso **accessReviewSettings** para e inclua um objeto `true` **autoReviewSettings** com a propriedade **notReviewedResult.** Em seguida, quando uma revisão é concluída, com base na **propriedade notReviewedResult,** a decisão é registrada como `Approve` um ou `Deny` .|
+| notReviewedResult | Cadeia de caracteres | Valores possíveis: `Approve`, `Deny`ou `Recommendation`.  If `Recommendation`, **então accessRecommendationsEnabled** no **recurso accessReviewSettings** também deve ser definido como `true`. Se você quiser que o sistema forneça uma decisão mesmo que o revisor não faça uma escolha, defina a propriedade **autoReviewEnabled** no recurso **accessReviewSettings** `true` para e inclua um **objeto autoReviewSettings** com a propriedade **notReviewedResult** . Em seguida, quando uma revisão é concluída, com base na **propriedade notReviewedResult** , a decisão é registrada como um ou `Approve` `Deny`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso plannerPlan
-description: O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pertencer a um grupo e conter um conjunto de plannerTasks. Ele também pode ter uma coleção de plannerBuckets. Cada objeto plan tem um objeto de detalhes que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o Planner.
-localization_priority: Normal
+description: O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pertencer a um grupo e conter um conjunto de plannerTasks. Ele também pode ter uma coleção de plannerBuckets. Cada objeto de plano tem um objeto de detalhes que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o Planner.
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 4763f268628a4609ac91d0597aeb4f55a2d406ce
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 8972c3073cb11a7c008a52503b4a4b4a8c231487
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720988"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821278"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pertencer a um [grupo](group.md) e conter uma coleção de [plannerTasks](plannertask.md). Ele também pode ter uma coleção de [plannerBuckets](plannerbucket.md). Cada objeto plan tem um [objeto de](plannerplandetails.md) detalhes que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o [Planner](planner-overview.md).
+O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pertencer a um [grupo](group.md) e conter uma coleção de [plannerTasks](plannertask.md). Ele também pode ter uma coleção de [plannerBuckets](plannerbucket.md). Cada objeto de plano tem [um objeto de](plannerplandetails.md) detalhes que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o [Planner](planner-overview.md).
 
 
 
@@ -30,17 +30,18 @@ O recurso **plannerPlan** representa um plano no Microsoft 365. Um plano pode pe
 |[Listar buckets](../api/plannerplan-list-buckets.md) |Coleção [plannerBucket](plannerbucket.md)| Obter uma coleção de objetos **plannerBucket**.|
 |[Listar tarefas](../api/plannerplan-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
 |[Atualizar](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |Atualize o objeto **plannerPlan**. |
+|[Excluir](../api/plannerplan-delete.md) | Nenhum | Excluir **objeto plannerPlan** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contêiner|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifica o contêiner do plano. Depois de definida, essa propriedade não pode ser atualizada. Obrigatório.|
-|createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que o plano foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|createdDateTime|DateTimeOffset|Somente leitura. Data e hora em que o plano é criado. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |id|String| Somente leitura. A ID do plano. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
 |title|String|Obrigatório. Título do plano.|
 |createdBy|[identitySet](identityset.md)|Somente leitura. O usuário que criou o plano.|
-|contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Somente leitura. Experiências adicionais de usuário nas quais esse plano é usado, representadas como entradas [plannerPlanContext.](plannerplancontext.md)|
-|owner (preterido) |Cadeia de caracteres| Use a **propriedade container** em vez disso. ID do [grupo](group.md) que possui o plano. Depois de definida, essa propriedade não pode ser atualizada. Essa propriedade não retornará uma ID de grupo válida se o contêiner do plano não for um grupo.|
+|Contextos|[plannerPlanContextCollection](plannerplancontextcollection.md)| Somente leitura. Experiências de usuário adicionais nas quais esse plano é usado, representadas como entradas [plannerPlanContext](plannerplancontext.md) .|
+|proprietário (obsoleto) |String| Use antes a propriedade **contêiner**. A ID do [grupo](group.md) que possui o plano. Depois de definida, essa propriedade não pode ser atualizada. Esta propriedade não devolverá uma ID de grupo válida se o contêiner do plano não for um grupo.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

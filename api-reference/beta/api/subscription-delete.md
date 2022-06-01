@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: fd99c3017337177433d2e554fdcd88b53a9ca4cf
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: de1a3acb06435868442fb72b9442fc5f2b9e990e
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396235"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820886"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 
@@ -18,16 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
+
 Exclua uma assinatura.
 
-Para ver a lista de recursos que suportam a assinatura para alterar notificações, consulte a tabela na [seção Permissões](#permissions) .
+Para obter a lista de recursos que dão suporte à assinatura para alterar notificações, consulte a tabela na [seção](#permissions) Permissões.
 
 ## <a name="permissions"></a>Permissões
 
 Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
+|[baseTask](../resources/todotask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte. |
 |[callRecord](../resources/callrecords-callrecord.md) | Sem suporte. | Sem suporte. | CallRecords.Read.All  |
 |[canais](../resources/channel.md) (/teams/getAllChannels todos – os canais em uma organização) | Sem suporte.  | Sem suporte. | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Sem suporte. | Channel.ReadBasic.All, ChannelSettings.Read.All  |
@@ -51,7 +54,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte. | Sem suporte. |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Sem suporte. | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
-|[reunião online](../resources/onlinemeeting.md) | Incompatível | Sem suporte | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+|[reunião online](../resources/onlinemeeting.md) | Incompatível | Incompatível | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 |[presence](../resources/presence.md) | Presence.Read.All | Sem suporte. | Sem suporte. |
 |[impressora](../resources/printer.md) | Sem suporte. | Sem suporte. | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte. | Sem suporte. | PrintTaskDefinition.ReadWrite.All |
@@ -59,7 +62,6 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte. | Sem suporte. | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Sem suporte. | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte. |
-|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte. |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
@@ -74,13 +76,13 @@ No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer 
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você Outlook pode assinar as alterações nos recursos de **contato, evento** ou mensagem e, opcionalmente **, especificar** na carga de solicitação POST se deve incluir dados de recursos criptografados em notificações.
+Você pode assinar alterações em Outlook de **contato, evento** ou mensagem **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings, presença
 
-**OnlineMeetings e assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data) para notificações com dados de recursos. A criação de assinatura falhará se [encryptionCertificate](../resources/subscription.md) e [encryptionCertificateId](../resources/subscription.md) não são especificados se os dados de recursos são desejados em notificações.
+**OnlineMeetings** e **assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data) para notificações com dados de recurso. A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) e [encryptionCertificateId](../resources/subscription.md) não forem especificados se os dados de recurso forem desejados em notificações.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
