@@ -5,12 +5,12 @@ author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: d9a16eff7edee32a45709bf614bf401ea15af408
-ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
+ms.openlocfilehash: 5b1efac48762e1f1e69f9ac42d63d2c62b3b9a81
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64842297"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820704"
 ---
 # <a name="set-up-notifications-for-changes-in-resource-data"></a>Configurar notificações para alterações nos dados de recursos
 
@@ -51,7 +51,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - Teams [presença][]
 - [onlineMeeting][] do Teams
 - Equipe do [Teams][]
-- [todoTask][] (pré-visualização)
+- [Tarefas Pendentes][]
 - [usuário][]
 
 ### <a name="sample-scenarios"></a>Exemplo de cenários
@@ -357,7 +357,7 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 [list]: /graph/api/resources/list
 [impressora]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
-[todoTask]: /graph/api/resources/todotask
+[Tarefas Pendentes]: /graph/api/resources/todotask
 [canal]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember

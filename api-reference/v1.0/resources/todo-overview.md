@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: e24dfe413f46c4d8e4cc65dd6327ff17ef8d7927
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f5a1c64039f1ba2fd77913e76a1c18f4ff48927c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071858"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821159"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Usar a API do Microsoft To Do
 
@@ -24,7 +24,7 @@ Atualmente, a API suporta apenas as permissões delegadas pelo usuário conectad
  
 Antes de começar com a API To Do, dê uma olhada nos recursos e como eles se relacionam entre si.
 
-![Entidades da API To Do](/graph/images/todo-api-entities.png)
+![Captura de tela realçando entidades de To Do API pendentes. A captura de tela mostra uma lista de listas de tarefas à esquerda, tarefas dentro de uma lista de tarefas específica no centro e, à direita, itens de lista de verificação e recursos vinculados junto com outras propriedades de tarefas.](/graph/images/tasks-api-entities.png)
 
 ## <a name="task-list"></a>Lista de tarefas
 
@@ -39,6 +39,13 @@ GET /me/todo/lists
 O [todoTask](./todotask.md) representa uma tarefa, ou seja, um trabalho ou um item pessoal que pode ser acompanhado e concluído. Para obter suas tarefas de uma lista de tarefas, faça a seguinte solicitação HTTP:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks
+```
+
+## <a name="checklist-item"></a>Item da lista de verificação 
+
+Um [checklistItem](checklistitem.md) representa uma subtarefa em um [todoTask](./todotask.md) maior. **ChecklistItem** permite dividir uma tarefa complexa em tarefas menores e mais acionáveis. Para obter um **checklistItem** de uma tarefa, faça a seguinte solicitação HTTP:
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItems}
 ```
 
 ## <a name="linked-resource"></a>Recurso vinculado

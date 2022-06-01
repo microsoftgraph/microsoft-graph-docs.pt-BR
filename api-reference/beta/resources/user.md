@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 87c36421b4abc2742d0f368331cecfbf74528a23
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 8a225554d15fb3095f04f28db3d57b659ada1d5d
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629171"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820494"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -66,7 +66,6 @@ Esse recurso permite:
 | [Listar contatos](../api/user-list-contacts.md) | Coleção [Contact](contact.md) | Obter uma coleção de contatos da pasta padrão de contatos do usuário conectado. |
 | [Listar contactFolders](../api/user-list-contactfolders.md) | Coleção [ContactFolder](contactfolder.md) | Obtenha a coleção de pastas de contatos na pasta de contatos padrão do usuário conectado. |
 | **Objetos de diretório**|||
-| [activateServicePlan](../api/user-activateserviceplan.md) | Nenhum | Ative um serviço com um determinado`servicePlanId` e `skuId`para um determinado[ usuário](user.md). |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Nenhum | Envia uma solicitação de operação de política de dados, realizada por um administrador da empresa para exportar os dados de um usuário da organização. |
 | [getByIds](../api/directoryobject-getbyids.md) | Coleção de cadeias de caracteres | Retorna os objetos de diretório especificados a partir de uma lista de ids. |
@@ -88,6 +87,7 @@ Esse recurso permite:
 | [Obter usuário excluído](../api/directory-deleteditems-get.md) | Coleção [directoryObject](directoryobject.md) | Recupere um usuário excluído por ID. |
 | [Restaurar usuário excluído](../api/directory-deleteditems-delete.md) | Coleção [directoryObject](directoryobject.md) | Restaure um usuário excluído do locatário nos últimos 30 dias. |
 | [Excluir usuário permanentemente](../api/directory-deleteditems-restore.md) | Coleção [directoryObject](directoryobject.md) | Exclua permanentemente um usuário excluído do locatário. |
+| [activateServicePlan](../api/user-activateserviceplan.md) (preterido) | Nenhum | Ative um serviço com um determinado`servicePlanId` e `skuId`para um determinado[ usuário](user.md). |
 | **Unidade** |||
 | [Obter unidade](../api/drive-get.md) | [unidade](drive.md) | Recuperar as propriedades e as relações de um recurso Drive. |
 | [Filhos de lista](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem. |

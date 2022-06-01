@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 9213403b8651454bbec57a7dcd6ea0bf0cc09dd5
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 831de5675b78e94ada5a64c625738b869848c02c
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420576"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819451"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -27,6 +27,7 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - Uma [list][] em um [site][] do SharePoint.
 - Uma [message][], [event][] ou [contact][] no Outlook.
 - Uma [impressora][] (quando um trabalho de impressão da impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [printTaskDefinition][] na Impressão Universal. Para obter mais informações, consulte [Assinar para alterar as notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
+- Uma [todoTask][] de um usuário no Microsoft To Do.*
 - Um [usuário][] no Azure Active Directory.
 
 Para obter os valores de caminho de recurso possíveis para cada recurso com suporte, consulte [Usar a API do Microsoft Graph para obter notificações de alteração](webhooks.md). Para saber como usar notificações de ciclo de vida, consulte [Reduzir assinaturas ausentes e alterar notificações](/graph/webhooks-lifecycle).
@@ -77,6 +78,8 @@ Para obter os valores de caminho de recurso possíveis para cada recurso com sup
 | **presence**        | 60 minutos (1 hora) |
 | Imprimir **printer** | 4230 minutos (em 3 dias)    |
 | Imprimir **printTaskDefinition** | 4230 minutos (em 3 dias)    |
+| **todoTask**              | 4230 minutos (em 3 dias)    |
+
 
 
 > **Observação:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor suportado. No futuro, as solicitações para criar ou renovar uma assinatura além do valor máximo falharão.
@@ -145,6 +148,7 @@ Veja a seguir uma representação JSON do recurso.
 [callRecord]: ./callrecords-callrecord.md
 [impressora]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
+[todoTask]: ./todotask.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

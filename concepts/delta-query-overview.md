@@ -4,12 +4,12 @@ description: A consulta delta permite que aplicativos localizem entidades recém
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3cb2ae70d84b8eeb2087bebfeae60a95b1e84184
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: bb0acf60a44ead08fe779678bd0bcbba53e2b618
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549523"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65819626"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -111,14 +111,14 @@ Atualmente, a consulta delta é compatível com os recursos a seguir. Observe qu
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Aplicativos                                                   | Função [delta](/graph/api/application-delta) do recurso [aplicativo](/graph/api/resources/application)                                               |
 | Unidades administrativas (visualização)                                 | Função [delta](/graph/api/administrativeunit-delta) (visualização) do recurso [administrativeUnit](/graph/api/resources/administrativeunit)                |
-| Categorias de atribuição                                          | função [delta](/graph/api/educationcategory-delta) do recurso [educationCategory](/graph/api/resources/educationcategory)                                    |
 | Mensagens de chat em um canal.                                     | Função [delta](/graph/api/chatmessage-delta) (visualização) do [chatMessage](/graph/api/resources/chatmessage)                                              |
 | Funções de diretório                                                | Função [delta](/graph/api/directoryrole-delta) do recurso [directoryRole](/graph/api/resources/directoryrole) |
 | Itens de unidade\*                                                  | Função [delta](/graph/api/driveitem-delta) do recurso [driveItem](/graph/api/resources/driveitem)             |
 | Atribuições de educação                                          | função [delta](/graph/api/educationassignment-delta) do recurso [educationAssignment](/graph/api/resources/educationassignment)                                    |
+| Categorias educacionais                                           | função [delta](/graph/api/educationcategory-delta) do recurso [educationCategory](/graph/api/resources/educationcategory)                                    |
 | Aulas de educação                                              | Função [delta](/graph/api/educationclass-delta) do recurso [educationClass](/graph/api/resources/educationclass)                                      |
-| Usuários da educação                                                | Função [delta](/graph/api/educationuser-delta) do recurso [educationUser](/graph/api/resources/educationuser)                                         |
 | Escolas da Educação                                              | Função [delta](/graph/api/educationschool-delta) do recurso [educationSchool](/graph/api/resources/educationschool)                                   |
+| Usuários da educação                                                | Função [delta](/graph/api/educationuser-delta) do recurso [educationUser](/graph/api/resources/educationuser)                                         |
 | Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](/graph/api/event-delta) do recurso [evento](/graph/api/resources/event)                         |
 | Grupos                                                         | Função [delta](/graph/api/group-delta) do recurso [group](/graph/api/resources/group)                         |
 | Listar itens\*                                                   | função [delta](/graph/api/listitem-delta) do recurso [listItem](/graph/api/resources/listitem)             |
@@ -130,8 +130,8 @@ Atualmente, a consulta delta é compatível com os recursos a seguir. Observe qu
 | Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta) do recurso [contato](/graph/api/resources/contact)                   |
 | Itens do Planner\*\* (pré-visualização)                                    | Função [delta](/graph/api/planneruser-list-delta) (visualização) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser)                 |
 | Entidades de serviço                                             | Função [delta](/graph/api/serviceprincipal-delta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal)                                |
-| Tarefas em uma lista de tarefas                                           | Função [delta](/graph/api/todotask-delta) do recurso [todoTask](/graph/api/resources/todotask)                                                        |
-| Listas de tarefas                                                     | Função [delta](/graph/api/todotasklist-delta) do recurso [todoTaskList](/graph/api/resources/todotasklist)                                            |
+| Tarefas pendente em uma lista de tarefas                                     | Função [delta](/graph/api/todotask-delta) do recurso [todoTask](/graph/api/resources/todotask)                                                        |
+| Listas de tarefas pendentes                                               | Função [delta](/graph/api/todotasklist-delta) do recurso [todoTaskList](/graph/api/resources/todotasklist)                                            |
 | Usuários                                                          | função [delta](/graph/api/user-delta) do recurso [usuário](/graph/api/resources/user)                            |
 
 
