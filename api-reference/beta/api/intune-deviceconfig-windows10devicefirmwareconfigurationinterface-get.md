@@ -1,35 +1,35 @@
 ---
 title: Obter windows10DeviceFirmwareConfigurationInterface
-description: Leia propriedades e relações do objeto windows10DeviceFirmwareConfigurationInterface.
+description: Ler propriedades e relações do objeto windows10DeviceFirmwareConfigurationInterface.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ccde1d108601672ca3326943e71c005c0e530315
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cb1cdfe817474d5fd30206b5c3a20b78774aab3c
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59048595"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857845"
 ---
 # <a name="get-windows10devicefirmwareconfigurationinterface"></a>Obter windows10DeviceFirmwareConfigurationInterface
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia propriedades e relações do [objeto windows10DeviceFirmwareConfigurationInterface.](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+Ler propriedades e relações do [objeto windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -55,7 +55,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1670
+Content-Length: 2051
 
 {
   "value": {
@@ -114,10 +114,23 @@ Content-Length: 1670
     "bootFromExternalMedia": "enabled",
     "bootFromBuiltInNetworkAdapters": "enabled",
     "windowsPlatformBinaryTable": "enabled",
-    "simultaneousMultiThreading": "enabled"
+    "simultaneousMultiThreading": "enabled",
+    "frontCamera": "enabled",
+    "rearCamera": "enabled",
+    "infraredCamera": "enabled",
+    "microphone": "enabled",
+    "bluetooth": "enabled",
+    "wirelessWideAreaNetwork": "enabled",
+    "nearFieldCommunication": "enabled",
+    "wiFi": "enabled",
+    "usbTypeAPort": "enabled",
+    "sdCard": "enabled",
+    "wakeOnLAN": "enabled",
+    "wakeOnPower": "enabled"
   }
 }
 ```
+
 
 
 

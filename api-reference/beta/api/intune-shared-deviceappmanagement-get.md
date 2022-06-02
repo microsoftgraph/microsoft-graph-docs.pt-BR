@@ -2,21 +2,21 @@
 title: Get deviceAppManagement
 description: Ler propriedades e relações do objeto deviceAppManagement.
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63d3f21639ce33dd7e8a2fe53f8fa02482f2e801
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 070a4fd85b7720e8140a3afb95746d649978bd90
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096351"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857677"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** APIs na versão /beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs na versão /beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -24,16 +24,16 @@ Ler propriedades e relações do objeto [deviceAppManagement](../resources/intun
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão apropriada varia de acordo com o fluxo de trabalho.
+Uma das permissões a seguir é necessária para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão apropriada varia de acordo com o fluxo de trabalho.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-| Delegado (conta corporativa ou de estudante) | |
-| &nbsp;&nbsp; **Aplicativos,** **livros,** **integração,** **integração de** parceiros ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
+| Delegada (conta corporativa ou de estudante) | |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **integração**, **integração de parceiros** ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| |
-| &nbsp;&nbsp; **Aplicativos,** **livros,** **integração,** **integração de** parceiros ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application| |
+| &nbsp;&nbsp; **Aplicativos**, **livros**, **integração**, **integração de parceiros** ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

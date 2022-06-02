@@ -2,34 +2,34 @@
 title: Criar windows10DeviceFirmwareConfigurationInterface
 description: Crie um novo objeto windows10DeviceFirmwareConfigurationInterface.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de7e72ef42ee60337d16b723daf88ee9211bfe43
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ef1042b4942160c2491760ccbfc33358c772e8d
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018555"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857887"
 ---
 # <a name="create-windows10devicefirmwareconfigurationinterface"></a>Criar windows10DeviceFirmwareConfigurationInterface
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto windows10DeviceFirmwareConfigurationInterface.](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+Crie um novo [objeto windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -48,7 +48,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto windows10DeviceFirmwareConfigurationInterface.
+No corpo da solicitação, forneça uma representação JSON do objeto windows10DeviceFirmwareConfigurationInterface.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar o windows10DeviceFirmwareConfigurationInterface.
 
@@ -56,29 +56,41 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o window
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|A aplicabilidade da edição do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|A regra de aplicabilidade da versão do sistema operacional para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|A regra de aplicabilidade do modo de dispositivo para esta Política. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |changeUefiSettingsPermission|[changeUefiSettingsPermission](../resources/intune-deviceconfig-changeuefisettingspermission.md)|Define o nível de permissão concedido aos usuários para alterar as configurações da UEFI. Os valores possíveis são: `notConfiguredOnly` e `none`.|
-|virtualizationOfCpuAndIO|[enablement](../resources/intune-shared-enablement.md)|Define se a virtualização de CPU e E/S está habilitada. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|cameras|[enablement](../resources/intune-shared-enablement.md)|Define se as câmeras instaladas estão habilitadas. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|microphonesAndSpeakers|[enablement](../resources/intune-shared-enablement.md)|Define se microfones ou alto-falantes integrados estão habilitados. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|rádios|[enablement](../resources/intune-shared-enablement.md)|Define se os rádios integrados, por exemplo, WIFI, NFC, Bluetooth, estão habilitados. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|bootFromExternalMedia|[enablement](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para inicializar a partir de mídia externa. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para inicializar a partir de adaptadores de rede integrados. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|windowsPlatformBinaryTable|[enablement](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar Windows Plataforma Binária. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|simultaneousMultiThreading|[enablement](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar MultiThreading Simultâneo. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|virtualizationOfCpuAndIO|[Capacitação](../resources/intune-shared-enablement.md)|Define se a virtualização de CPU e E/S está habilitada. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|Câmeras|[Capacitação](../resources/intune-shared-enablement.md)|Define se as câmeras internas estão habilitadas. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|microphonesAndSpeakers|[Capacitação](../resources/intune-shared-enablement.md)|Define se microfones ou alto-falantes internos estão habilitados. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|Rádios|[Capacitação](../resources/intune-shared-enablement.md)|Define se rádios internos, por exemplo, WIFI, NFC, Bluetooth, estão habilitados. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|bootFromExternalMedia|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para inicializar de mídia externa. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|bootFromBuiltInNetworkAdapters|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para inicializar de adaptadores de rede internos. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|windowsPlatformBinaryTable|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar Windows Tabela Binária da Plataforma. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|simultaneousMultiThreading|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar MultiThreading Simultâneo. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|frontCamera|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar o Front Câmera. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|rearCamera|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar a câmera traseira. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|infravermelhaCamera|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar a câmera infravermelha. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|Microfone|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar o Microfone. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|Bluetooth|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar Bluetooth. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|wirelessWideAreaNetwork|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar a Rede de Área Larga Sem Fio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|nearFieldCommunication|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar a Comunicação em Campo Próximo. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|Wifi|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar o WiFi. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|usbTypeAPort|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar a Porta USB tipo A. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|Sdcard|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar a Porta do Cartão SD. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnLAN|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar o Wake on LAN. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|wakeOnPower|[Capacitação](../resources/intune-shared-enablement.md)|Define se um usuário tem permissão para habilitar o Wake On Power. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um [objeto windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -87,7 +99,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1397
+Content-length: 1754
 
 {
   "@odata.type": "#microsoft.graph.windows10DeviceFirmwareConfigurationInterface",
@@ -127,7 +139,19 @@ Content-length: 1397
   "bootFromExternalMedia": "enabled",
   "bootFromBuiltInNetworkAdapters": "enabled",
   "windowsPlatformBinaryTable": "enabled",
-  "simultaneousMultiThreading": "enabled"
+  "simultaneousMultiThreading": "enabled",
+  "frontCamera": "enabled",
+  "rearCamera": "enabled",
+  "infraredCamera": "enabled",
+  "microphone": "enabled",
+  "bluetooth": "enabled",
+  "wirelessWideAreaNetwork": "enabled",
+  "nearFieldCommunication": "enabled",
+  "wiFi": "enabled",
+  "usbTypeAPort": "enabled",
+  "sdCard": "enabled",
+  "wakeOnLAN": "enabled",
+  "wakeOnPower": "enabled"
 }
 ```
 
@@ -136,7 +160,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1569
+Content-Length: 1926
 
 {
   "@odata.type": "#microsoft.graph.windows10DeviceFirmwareConfigurationInterface",
@@ -179,9 +203,22 @@ Content-Length: 1569
   "bootFromExternalMedia": "enabled",
   "bootFromBuiltInNetworkAdapters": "enabled",
   "windowsPlatformBinaryTable": "enabled",
-  "simultaneousMultiThreading": "enabled"
+  "simultaneousMultiThreading": "enabled",
+  "frontCamera": "enabled",
+  "rearCamera": "enabled",
+  "infraredCamera": "enabled",
+  "microphone": "enabled",
+  "bluetooth": "enabled",
+  "wirelessWideAreaNetwork": "enabled",
+  "nearFieldCommunication": "enabled",
+  "wiFi": "enabled",
+  "usbTypeAPort": "enabled",
+  "sdCard": "enabled",
+  "wakeOnLAN": "enabled",
+  "wakeOnPower": "enabled"
 }
 ```
+
 
 
 

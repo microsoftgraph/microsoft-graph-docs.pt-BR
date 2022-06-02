@@ -1,22 +1,22 @@
 ---
-title: Tipo de número managedAppDataIngestionLocation
+title: Tipo de enumeração managedAppDataIngestionLocation
 description: Locais que podem ser usados para trazer dados para documentos da organização
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b3813667004fe02be232f91c5831b628bd4459cd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5ea6e9f3ff9d31420dd17f4d5e29415364415a86
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59075113"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857852"
 ---
-# <a name="managedappdataingestionlocation-enum-type"></a>Tipo de número managedAppDataIngestionLocation
+# <a name="managedappdataingestionlocation-enum-type"></a>Tipo de enumeração managedAppDataIngestionLocation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -26,8 +26,10 @@ Locais que podem ser usados para trazer dados para documentos da organização
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive for business|
-|sharePoint|2|SharePoint Online|
-|camera|3|A câmera do dispositivo|
+|Sharepoint|2|SharePoint Online|
+|Câmera|3|A câmera do dispositivo|
+|photoLibrary|4|Biblioteca de fotos do dispositivo|
+
 
 
 

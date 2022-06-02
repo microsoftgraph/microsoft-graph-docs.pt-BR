@@ -1,34 +1,36 @@
 ---
-title: Tipo de número managedAppDataStorageLocation
-description: Armazenamento locais onde aplicativos gerenciados podem armazenar seus dados potencialmente
+title: Tipo de enumeração managedAppDataStorageLocation
+description: Armazenamento locais em que os aplicativos gerenciados podem armazenar seus dados
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d522cde6ab1a5d9ccc22627503e0eff5f1bc2cbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a15b2efaeff2a677699660b1346516d8bb190a45
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030169"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857740"
 ---
-# <a name="managedappdatastoragelocation-enum-type"></a>Tipo de número managedAppDataStorageLocation
+# <a name="managedappdatastoragelocation-enum-type"></a>Tipo de enumeração managedAppDataStorageLocation
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Armazenamento locais onde aplicativos gerenciados podem armazenar seus dados potencialmente
+Armazenamento locais em que os aplicativos gerenciados podem armazenar seus dados
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive for business|
-|sharePoint|2|SharePoint|
-|box|3|Caixa|
-|localStorage|6 |Armazenamento local no dispositivo|
+|Sharepoint|2|SharePoint|
+|Caixa|3|Caixa|
+|Localstorage|6 |Armazenamento local no dispositivo|
+|photoLibrary|7 |Biblioteca de fotos do dispositivo|
+
 
 
 

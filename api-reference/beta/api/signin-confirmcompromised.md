@@ -1,32 +1,32 @@
 ---
 title: 'signIn: confirmCompromised'
-description: Permite que você marque Azure AD eventos de entrada como arriscados para Azure AD Identity Protection.
+description: Permitir que os administradores marquem Azure AD eventos de entrada como arriscados para Azure AD Identity Protection.
 author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 226a9986402ce315b77472ea1f37062f9e1f6753
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 75e0f6e4ffc85f54a54c964ec72e56d6703ac751
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65212819"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858265"
 ---
 # <a name="signin-confirmcompromised"></a>signIn: confirmCompromised
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permite que os administradores marquem um evento no Azure AD logs de entrada como arriscados. Os eventos marcados como arriscados por um administrador são imediatamente sinalizados como de alto risco no Azure AD Identity Protection, substituindo os estados de risco anteriores. Os administradores podem confirmar se os eventos sinalizados como arriscados pelo Azure AD Identity Protection são de fato arriscados ou podem marcar eventos não marcados como arriscados. 
+Permitir que os administradores marquem um evento no Azure AD logs de entrada como arriscados. Os eventos marcados como arriscados por um administrador são imediatamente sinalizados como de alto risco no Azure AD Identity Protection, substituindo os estados de risco anteriores. Os administradores podem confirmar que os eventos sinalizados como arriscados pelo Azure AD Identity Protection são de fato arriscados e movê-los para alto risco. Para obter detalhes sobre como investigar os riscos do Identity Protection, consulte [Como investigar o risco](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|IdentityRiskyUser.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|IdentityRiskyUser.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|IdentityRiskyUser.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|IdentityRiskEvent.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|requestIds|Conjunto de cadeias de caracteres|As IDs dos eventos de entrada que devem ser marcados como arriscados para Azure AD Identity Protection.|
+|requestIds|Coleção de cadeias de caracteres|As IDs dos eventos de entrada que devem ser marcados como arriscados para Azure AD Identity Protection.|
 
 
 
