@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: d83b3aed5b8f803d1e12e946201a161245858ab2
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: e7b5097a43325fd356c0d33e2ec59965d17b8d79
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461272"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820760"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -38,8 +38,8 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 | [organization](organization.md) | GA |
 | [Contato pessoal](contact.md) | GA |
 | [user](user.md) | GA |
-| [Tarefa](todotask.md)  | GA |
-| [Lista de tarefas](todotasklist.md)  | GA |
+| [Tarefa pendente](todotask.md)  | GA |
+| [Listas de tarefas pendentes](todotasklist.md)  | GA |
 
 >\* **Observação:** Devido a uma limitação de serviço existente, os representantes não podem criar eventos abertos acrescentados à extensão em calendários de caixa de correio compartilhados. As tentativas de fazer isso resultarão em uma resposta de `ErrorAccessDenied`.
 

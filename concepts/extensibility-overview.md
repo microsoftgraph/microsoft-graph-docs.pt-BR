@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece um único ponto de extremidade de API que
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2cc63ae714b09060976b984aff576dd5a7c0bf05
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1433de1b011f76bac8c1f0b0bda2dbbbdeebf288
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224395"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65821082"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados aos recursos usando extensões
 
@@ -40,8 +40,8 @@ A seguinte tabela lista os recursos que oferecem suporte às extensões de abert
 | [Organização](/graph/api/resources/organization) | GA | GA |
 | [Contato pessoal](/graph/api/resources/contact)| GA | GA |
 | [Usuário](/graph/api/resources/user) | GA | GA |
-| [Tarefa](/graph/api/resources/todotask) | GA | GA |
-| [Lista de tarefas](/graph/api/resources/todotasklist) | GA | GA |
+| [Tarefa pendente](/graph/api/resources/todotask) | GA | GA |
+| [Listas de tarefas pendentes](/graph/api/resources/todotasklist) | GA | GA |
 
 Você pode usar extensões em todos esses recursos ao se conectar com uma conta corporativa ou de estudante. Além disso, você pode usar extensões de recursos de **evento**, **post**, **grupo**, **mensagem**, **contato** e **usuário** quando conectado a uma conta pessoal.
 

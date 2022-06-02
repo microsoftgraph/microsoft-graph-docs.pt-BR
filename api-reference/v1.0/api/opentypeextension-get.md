@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 97eab08847dcbb23ba67c5928528b6a611e9dbe5
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 8682c47e0ec7503c3a41d60a7b93f8d4346cb8d6
+ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365768"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65820410"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
@@ -24,8 +24,8 @@ A tabela a seguir lista os três cenários em que é possível obter uma extens�
 
 |**Cenário GET**|**Recursos com suporte**|**Corpo da resposta**|
 |:-----|:-----|:-----|
-|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md), [evento de grupo](../resources/event.md), [postagem de grupo](../resources/post.md), [mensagem](../resources/message.md), [organização](../resources/organization.md), [contato pessoal](../resources/contact.md), [usuário](../resources/user.md), [tarefa](../resources/todotask.md), [tasklist](../resources/todotasklist.md).  | Somente extensão aberta.|
-|Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa, lista de tarefas. |Uma instância de recurso expandida com a extensão aberta.|
+|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md), [evento de grupo](../resources/event.md), [postagem de grupo](../resources/post.md), [mensagem](../resources/message.md), [organização](../resources/organization.md), [contato pessoal](../resources/contact.md), [usuário](../resources/user.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md).  | Somente extensão aberta.|
+|Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, todoTask, todoTaskList. |Uma instância de recurso expandida com a extensão aberta.|
 |Encontre e expanda instâncias de recursos com uma extensão específica. |Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa, lista de tarefas.|Instâncias de recursos expandidas com a extensão aberta.|
 
 ## <a name="permissions"></a>Permissões
@@ -42,9 +42,9 @@ Dependendo do recurso que contém a extensão e o tipo de permissão (delegado o
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organização](../resources/organization.md) | User.Read | Incompatível | Organization.Read.All |
 | [contato pessoal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [usuário](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [tarefa](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -482,23 +482,13 @@ Content-Type: application/json
 O quinto exemplo analisa todas as mensagens na caixa de correio do usuário conectado para localizar aquelas uma contêm uma extensão correspondente a um filtro e as expande com a inclusão dessa extensão. O filtro retorna extensões cuja propriedade **id** corresponde ao nome da extensão `Com.Contoso.Referral`.
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-opentypeextension-5-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 
