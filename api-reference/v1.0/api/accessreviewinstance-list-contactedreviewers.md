@@ -1,30 +1,30 @@
 ---
 title: Listar contactedReviewers
-description: Obter os revisadores que receberam notificações para uma instância de revisão de acesso.
+description: Obtenha os revisores para uma instância de revisão de acesso.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f225dd42748cf54e79cc3694dfa04aa2a28b7b33
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: c1ad80bb8d4620dc1a320e6d5d95b85dd00b9359
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722409"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858139"
 ---
 # <a name="list-contactedreviewers"></a>Listar contactedReviewers
 Namespace: microsoft.graph
 
-Obter os revisadores que receberam notificações para uma [instância de revisão de acesso](../resources/accessreviewinstance.md). Os revisores são representados por um [objeto accessReviewReviewer](../resources/accessreviewreviewer.md) . Uma lista de zero ou mais objetos são retornados, incluindo todas as propriedades aninhadas.
+Obtenha os revisores para uma [instância de revisão de](../resources/accessreviewinstance.md) acesso, independentemente de eles receberem ou não uma notificação. Os revisores são representados por um [objeto accessReviewReviewer](../resources/accessreviewreviewer.md) . Uma lista de zero ou mais objetos é retornada, incluindo todas as suas propriedades aninhadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -37,9 +37,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte `$select`a parâmetros de consulta , `$filter``$orderBy`, , `$skip`e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá `$select`suporte a `$filter`parâmetros `$orderBy`de consulta , , `$skip`e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewReviewer** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewReviewer** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessReviewReviewer](../resources/accessreviewreviewer.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos accessReviewReviewer](../resources/accessreviewreviewer.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

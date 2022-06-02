@@ -1,38 +1,42 @@
 ---
-title: tipo de número androidKeyguardFeature
-description: Recurso de keyguard do Android.
+title: Tipo de enumeração androidKeyguardFeature
+description: Android keyguard.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 61995572516ee1ea9eabfea9e868bb775e085ba9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4961ed70921aa8b7c7f5756299c74ae4d9c2928
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59101748"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857586"
 ---
-# <a name="androidkeyguardfeature-enum-type"></a>tipo de número androidKeyguardFeature
+# <a name="androidkeyguardfeature-enum-type"></a>Tipo de enumeração androidKeyguardFeature
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Recurso de keyguard do Android.
+Android keyguard.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|camera|1|Uso da câmera quando em telas de proteção de chave seguras.|
-|notificações|2|Mostrando notificações quando em telas de proteção de chave seguras.|
-|unredactedNotifications|3|Mostrando notificações não notificadas quando em telas de proteção de chave seguras.|
-|trustAgents|4 |Estado do agente de confiança quando em telas de proteção de chave seguras.|
-|fingerprint|5 |Uso do sensor de impressão digital quando em telas de proteção de chave seguras.|
-|remoteInput|6 |Entrada de texto de notificação quando em telas de proteção de chave seguras.|
-|allFeatures|7 |Todos os recursos de keyguard quando em telas de proteção de chave seguras.|
+|Câmera|1|Câmera uso quando estiver em telas seguras do KeyGuard.|
+|notificações|2|Mostrando notificações quando em telas de keyguard seguras.|
+|unredactedNotifications|3|Mostrando notificações não editadas quando em telas de proteção de chaves seguras.|
+|trustAgents|4|Estado do agente de confiança quando estiver em telas de proteção de chaves seguras.|
+|Impressão digital|5|Uso do sensor de impressão digital em telas seguras do KeyGuard.|
+|remoteInput|6 |Entrada de texto de notificação quando estiver em telas de keyguard seguras.|
+|allFeatures|7 |Todos os recursos do KeyGuard quando estão em telas de keyguard seguras.|
+|Cara|8 |Autenticação facial em telas seguras do KeyGuard.|
+|Iris|9 |Autenticação iris em telas de keyguard seguras.|
+|Biometria|10|Toda a autenticação biométrica em telas de keyguard seguras.|
+
 
 
 

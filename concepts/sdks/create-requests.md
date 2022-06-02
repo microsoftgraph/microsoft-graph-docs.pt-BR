@@ -3,12 +3,12 @@ title: Fazer chamadas à API usando os SDKs do Microsoft Graph
 description: Fornece instruções para criar solicitações HTTP Graph Microsoft usando os SDKs.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 49be5a3fdb2ead7e8e3a4d39b459b7ef068a9a74
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: 28fad7ebf6a6aec274bb607b79e3cc3c1f4c20fa
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848689"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858146"
 ---
 <!-- markdownlint-disable MD025 -->
 
@@ -16,7 +16,7 @@ ms.locfileid: "64848689"
 
 As bibliotecas de Graph do SDK da Microsoft fornecem uma classe de cliente que você pode usar como ponto de partida para criar todas as solicitações de API. Há dois estilos de classe de cliente: um usa uma interface fluente para criar a solicitação (por exemplo) `client.Users["user-id"].Manager`e o outro aceita uma cadeia de caracteres de caminho (por exemplo, `api("/users/user-id/manager")`). Quando você tiver um objeto de solicitação, poderá especificar uma variedade de opções, como filtragem e classificação e, por fim, selecionar o tipo de operação que deseja executar.
 
-Também há o [Microsoft Graph SDK do PowerShell](/powershell/microsoftgraph/get-started.md), que não tem nenhuma classe de cliente. Em vez disso, todas as solicitações são representadas como comandos do PowerShell. Por exemplo, para obter o gerente de um usuário, o comando é `Get-MgUserManager`. Para obter mais informações sobre como localizar comandos para chamadas à API, consulte [Navegando no SDK do Microsoft Graph PowerShell](/powershell/microsoftgraph/navigating.md).
+Também há o [Microsoft Graph SDK do PowerShell](/powershell/microsoftgraph/get-started), que não tem nenhuma classe de cliente. Em vez disso, todas as solicitações são representadas como comandos do PowerShell. Por exemplo, para obter o gerente de um usuário, o comando é `Get-MgUserManager`. Para obter mais informações sobre como localizar comandos para chamadas à API, consulte [Navegando no SDK do Microsoft Graph PowerShell](/powershell/microsoftgraph/navigating).
 
 ## <a name="read-information-from-microsoft-graph"></a>Ler informações do Microsoft Graph
 

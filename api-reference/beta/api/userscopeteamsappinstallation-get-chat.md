@@ -1,24 +1,24 @@
 ---
-title: Obter chat entre usuário e teamsApp
-description: Recupere o chat um-a-um entre o usuário especificado e o Teams aplicativo.
+title: Obter chat entre o usuário e o teamsApp
+description: Recupere o chat um para um entre o usuário especificado e o Teams aplicativo.
 author: AkJo
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6648e4a808c587a0cabfc3e63699027cee7a1dd8
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a1459d3d91606ec0cedcfe57627ac0ed60ea2bb0
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102023"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65857719"
 ---
-# <a name="get-chat-between-user-and-teamsapp"></a>Obter chat entre usuário e teamsApp
+# <a name="get-chat-between-user-and-teamsapp"></a>Obter chat entre o usuário e o teamsApp
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o [chat](../resources/chat.md) do usuário especificado [e](../resources/user.md) Teams [app](../resources/teamsapp.md).
+Recupere o [chat](../resources/chat.md) do usuário [especificado e](../resources/user.md) Teams [aplicativo](../resources/teamsapp.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Delegada (conta corporativa ou de estudante) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -40,7 +40,7 @@ GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installat
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -54,15 +54,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` instância de objeto de [chat](../resources/chat.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma instância de [objeto de chat](../resources/chat.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a>Exemplo 1: Listar chats um-a-um entre o usuário especificado e o Teams aplicativo
+### <a name="request"></a>Solicitação
 
-#### <a name="request"></a>Solicitação
-
-Este é um exemplo de solicitação.
+A seguir está um exemplo de uma solicitação que lista chats um para um entre o usuário especificado e o Teams aplicativo.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,7 +98,7 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 ---
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

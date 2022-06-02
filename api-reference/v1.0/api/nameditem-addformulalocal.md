@@ -5,25 +5,27 @@ ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 732e233bf0e110c97415c51695a0358fddecf688
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: f8a76a1212f6a53e3f913391c2d672c3c0bf9142
+ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365796"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65858416"
 ---
 # <a name="add-named-item-formulalocal"></a>Adicionar item nomeado FormulaLocal
 
-Namespace: microsoft.graph Adiciona um novo nome à coleção do escopo fornecido usando a localidade do usuário para a fórmula.
+Namespace: microsoft.graph
+
+Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Sites.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sites.Read.All |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite, Sites.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
