@@ -5,19 +5,19 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 278c13a743b00890f3db105456a8b721982364aa
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 4706e4b7ef0ea410d1442c5b79dbd3a772cf492f
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884257"
 ---
 # <a name="get-credentialuserregistrationssummary"></a>Obter credentialUserRegistrationsSummary
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de [um objeto credentialUserRegistrationsSummary.](../resources/managedtenants-credentialuserregistrationssummary.md)
+Leia as propriedades e as relações de um [objeto credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /tenantRelationships/managedTenants/credentialUserRegistrationsSummaries/{cr
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$apply` , , , , , , e `$count` `$filter` `$orderBy` `$select` `$skip` `$top` .
+Esse método dá suporte [aos parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, `$apply`incluindo , `$count`, `$filter`, `$orderBy`, `$select`, `$skip`e `$top`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um [objeto credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -107,6 +107,7 @@ Content-Type: application/json
     "mfaAndSsprCapableUserCount": 0,
     "ssprEnabledUserCount": 1,
     "mfaRegisteredUserCount": 0,
+    "mfaExcludedUserCount": 2,
     "ssprRegisteredUserCount": 0,
     "totalUserCount": 7,
     "securityDefaultsEnabled": false,

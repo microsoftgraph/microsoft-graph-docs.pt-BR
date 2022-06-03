@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: f0bf0d668aacd62cf452f7fa8a469d7e6b9663f7
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 6dfc2326b062becde4fd29138c29e21cf701f7d6
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917728"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883849"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -27,7 +27,7 @@ Há duas maneiras principais de endereçar um recurso **driveItem**:
 * Pelo identificador exclusivo de **driveItem** usando `drive/items/{item-id}`
 * Usando o caminho do sistema de arquivos `/drive/root:/path/to/file`
 
-Para obter mais informações, consulte o [endereçamento de ItensDaUnidade](/graph/concepts/onedrive-addressing-driveitems.md).
+Para obter mais informações, consulte o [endereçamento de ItensDaUnidade](/graph/onedrive-addressing-driveitems).
 
 Os recursos **DriveItem** têm facetas modeladas como propriedades que fornecem dados sobre as identidades e capacidades de driveItem. Por exemplo:
 
@@ -98,7 +98,7 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.
 | malware              | [malware][]        | Metadados de malware, se o item for detectado como contendo malware. Somente leitura.
-| Mídia                | [mídia][]          | Informações sobre o item de mídia (áudio ou vídeo). Leitura e gravação. Somente em OneDrive for Business e SharePoint.
+| mídia                | [mídia][]          | Informações sobre o item de mídia (áudio ou vídeo). Leitura e gravação. Somente no OneDrive for Business e no SharePoint.
 | nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
@@ -112,7 +112,7 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 | sharepointIds        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
 | size                 | Int64              | O tamanho do item em bytes. Somente leitura.
 | specialFolder        | [specialFolder][]  | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.
-| source               | [driveItemSource][]| Informações sobre a origem do item de unidade. Somente leitura. Somente em OneDrive for Business e SharePoint.
+| source               | [driveItemSource][]| Informações sobre a origem do item de unidade. Somente leitura. Somente no OneDrive for Business e no SharePoint.
 | video                | [video][]          | Metadados de vídeo, se o item for um vídeo. Somente leitura.
 | webDavUrl            | String             | URL compatível com WebDAV para o item.
 | webUrl               | String             | URL que exibe o recurso no navegador. Somente leitura.

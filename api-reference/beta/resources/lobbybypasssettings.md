@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c5fa0fac27d8dfaacb27572476ab49e80cb3832e
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+ms.openlocfilehash: db525d4d3a4f2999dd637745532789043b4f68df
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805543"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884164"
 ---
 # <a name="lobbybypasssettings-resource-type"></a>Tipo de recurso lobbyBypassSettings
 
@@ -24,20 +24,22 @@ Especifica quais participantes podem ignorar o lobby da reunião.
 
 | Propriedade              | Tipo    | Descrição                                                         |
 | --------------------- | ------- | ------------------------------------------------------------------- |
-| scope                 | [lobbyBypassScope](#lobbybypassscope-values)  | Especifica o tipo de participantes que são automaticamente admitidos em uma reunião, ignorando o lobby. Opcional.|
-| isDialInBypassEnabled | Booliano | Especifica se os chamadores de discagem sempre podem ou não ignorar o lobby. Opcional. |
+| scope                 | [lobbyBypassScope](#lobbybypassscope-values)  | Especifica o tipo de participantes que são admitidos automaticamente em uma reunião, ignorando o lobby. Opcional.|
+| isDialInBypassEnabled | Booliano | Especifica se os chamadores de discagem sempre devem ou não ignorar o lobby. Opcional. |
 
-### <a name="lobbybypassscope-values"></a>valores lobbyBypassScope
+### <a name="lobbybypassscope-values"></a>valores de lobbyBypassScope
+
+A tabela a seguir lista os membros de [uma enumeração evolvável](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Você deve usar o `Prefer: include-unknown-enum-members` cabeçalho da solicitação para obter os seguintes valores nesta enumeração evolvável: `invited`, `organizationExcludingGuests`.
 
 | Valor                    | Descrição     |
 | ------------------------ | --------------------------------------------------- |
 | organizer | Somente o organizador é admitido na reunião e ignora o lobby. Todos os outros participantes são colocados no lobby da reunião. |
-| organização | Somente os participantes da mesma empresa e **convidados** são admitidos na reunião e ignoram o lobby. Todos os outros participantes são colocados no lobby da reunião. |
-| organizationAndFederated | Somente os participantes da mesma empresa ou organização confiável e convidados são admitidos na reunião e ignoram o lobby. Todos os outros participantes são colocados no lobby da reunião. |
-| everyone | Todos são admitidos na reunião. Nenhum participante é colocado no lobby da reunião. |
-| invited | Somente as pessoas convidadas pelo organizador são internadas na reunião e ignoram o lobby. Todos os outros participantes são colocados no lobby da reunião. |
-| organizationExcludingGuests |  Somente os participantes da mesma empresa são admitidos na reunião e ignoram o lobby. Todos os outros participantes são colocados no lobby da reunião. |
-| unknownFutureValue | Valor de sentinela de enumeração evolvável. Não usar. |
+| organization | Somente os participantes da mesma empresa e **convidados** são admitidos na reunião e ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião. |
+| organizationAndFederated | Somente os participantes da mesma empresa ou organização confiável e convidados são admitidos na reunião e ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião. |
+| Todos | Todos são admitidos na reunião. Nenhum participante é colocado no lobby da reunião. |
+| Convidado | Somente as pessoas que o organizador convida são admitidos na reunião e ignoram o lobby. Todos os outros participantes são colocados no lobby da reunião. |
+| organizationExcludingGuests |  Somente os participantes da mesma empresa são admitidos na reunião e ignorando o lobby. Todos os outros participantes são colocados no lobby da reunião. |
+| unknownFutureValue | Valor de sentinel de enumeração evolvável. Não usar. |
 
 ## <a name="json-representation"></a>Representação JSON
 

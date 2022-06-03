@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: c0d6a5538b97a2109c51698a1df55f5b7210622e
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 4b605df9871e0847c13206da3fcc9144d6b63a34
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917749"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883996"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para permissões delegadas permitirem que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador do locatário deve ter atribuído ao usuário a função de administrador Azure Active Directory limitada apropriada. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+> **Observação**: para permissões delegadas permitirem que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure Active Directory. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -97,7 +97,7 @@ O tamanho de página padrão para essa solicitação é de 2.000 itens.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="csv"></a>CSV
+### <a name="example-1-csv-output"></a>Exemplo 1: saída CSV
 
 A seguir está um exemplo que gera CSV.
 
@@ -143,7 +143,7 @@ Content-Type: application/octet-stream
 Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 
-### <a name="json"></a>JSON
+### <a name="example-2-json-output"></a>Exemplo 2: saída JSON
 
 A seguir está um exemplo que retorna JSON.
 

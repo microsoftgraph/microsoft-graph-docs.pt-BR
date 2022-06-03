@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f96c7b413532f092b60ac684c79b4949622d3e50
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 1dddf9b98e39f7ff34b72d662a939ffb9561a9a8
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820859"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884185"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -21,9 +21,9 @@ Recupere as propriedades e as relações de um [objeto onlineMeeting](../resourc
 Por exemplo, você pode:
 
 - Obtenha detalhes de uma reunião online usando [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID de reunião](#example-2-retrieve-an-online-meeting-by-meeting-id) ou [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use o `/attendeeReport` caminho para obter o relatório de participantes [de um evento Microsoft Teams ao](/microsoftteams/teams-live-events/what-are-teams-live-events) vivo na forma de um link de download, conforme mostrado [no exemplo 4](#example-4-fetch-attendee-report-of-a-teams-live-event).
+- Use o `/attendeeReport` caminho para obter o relatório de participantes de um evento ao vivo do [Microsoft Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) na forma de um link de download, conforme mostrado [no exemplo 4](#example-4-fetch-attendee-report-of-a-teams-live-event).
 
-Teams relatório de participantes do evento ao vivo é um artefato de reunião online. Para obter detalhes, consulte [artefatos e permissões](/graph/cloud-communications-online-meeting-artifacts) de reunião online.
+O relatório de participantes do evento ao vivo do Teams é um artefato de reunião online. Para obter detalhes, consulte [artefatos e permissões](/graph/cloud-communications-online-meeting-artifacts) de reunião online.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,12 +41,15 @@ Para usar a permissão do aplicativo para essa API, os administradores de [](/gr
 > Somente as _permissões OnlineMeetingArtifact.Read.All_ serão necessárias se você buscar artefatos de reunião online e não puder buscar artefatos de reunião sem ele. Para obter detalhes, consulte [artefatos e permissões](/graph/cloud-communications-online-meeting-artifacts) de reunião online.
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 Para obter uma **reunião online usando a** ID da reunião com permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
+
+Essas URLs de solicitação aceitam o token de usuário do organizador e do participante convidado (permissão delegada) ou a ID de usuário (permissão do aplicativo).
 
 Para obter um **onlineMeeting usando** **videoTeleconferenceId** com permissão de aplicativo*:
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +64,7 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-Para obter o relatório do participante de [Teams evento ao vivo com](/microsoftteams/teams-live-events/what-are-teams-live-events) permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
+Para obter o relatório do participante de um [evento ao vivo do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) com permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -96,7 +99,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK`. A respost
 
 - Se você buscar uma reunião online por ID de reunião, esse método retornará um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
 - Se você buscar uma reunião online por **videoTeleconferenceId** ou **joinWebUrl**, esse método retornará uma coleção que contém apenas um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
-- Se você buscar o relatório de participante de Teams [evento](/microsoftteams/teams-live-events/what-are-teams-live-events) ao vivo, `Location` esse método retornará um cabeçalho que indica o URI para o relatório do participante.
+- Se você buscar o relatório do participante de um evento ao vivo do [Teams](/microsoftteams/teams-live-events/what-are-teams-live-events), `Location` esse método retornará um cabeçalho que indica o URI para o relatório do participante.
 
 ## <a name="examples"></a>Exemplos
 
@@ -221,7 +224,7 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Exemplo 2: Recuperar uma reunião online por ID de reunião
-Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar um [onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião online pela primeira vez usando o API do Graph e, em seguida, recupera informações de reunião posteriormente como uma ação separada.
+Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar um [onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião online pela primeira vez usando a API do Graph e, em seguida, recupera informações de reunião posteriormente como uma ação separada.
 
 #### <a name="request"></a>Solicitação
 
@@ -378,7 +381,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>Exemplo 4: buscar o relatório de participante de um Teams ao vivo
+### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>Exemplo 4: Buscar relatório de participante de um evento ao vivo do Teams
 
 O exemplo a seguir mostra uma solicitação para baixar um relatório de participantes.
 

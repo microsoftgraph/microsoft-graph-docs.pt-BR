@@ -258,7 +258,7 @@ items:
   - name: Referência v1.0
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
@@ -386,9 +386,9 @@ items:
                 href: api/user-list-transitivememberof.md
           - name: Insights
             items:
-              - name: Office Graph insights
+              - name: Insights do Office Graph
                 items:
-                  - name: Office Graph insights
+                  - name: Insights do Office Graph
                     href: resources/officegraphinsights.md
                   - name: Listar compartilhados
                     href: api/insights-list-shared.md
@@ -455,10 +455,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Atualizar configurações de Caixa de Correio
                     href: api/user-update-mailboxsettings.md
-              - name: Outlook de usuário
+              - name: Serviços de usuário do Outlook
                 expanded: true
                 items:
-                  - name: Outlook usuário
+                  - name: Usuário do Outlook
                     href: resources/outlookuser.md
                   - name: Criar categoria
                     href: api/outlookuser-post-mastercategories.md
@@ -743,7 +743,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1403,7 +1403,7 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Solicitação de direitos do titular
             items:
@@ -1457,7 +1457,7 @@ items:
       - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -4196,7 +4196,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: Destino de atribuição de todos os usuários licenciados
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Android tipo de pacote VPN always on da empresa
+                  - name: Tipo de pacote VPN Always On do Android Enterprise
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: Status de conformidade
                     href: resources/intune-shared-compliancestatus.md
@@ -4256,7 +4256,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: Obter integridade do serviço
                     href: api/servicehealth-get.md
-              - name: Integridade do serviço problema
+              - name: Problema de integridade do serviço
                 href: resources/servicehealthissue.md
                 items:
                   - name: Listar problemas
@@ -4725,9 +4725,9 @@ items:
                     href: api/device-delete-registeredowners.md
                   - name: Remover usuário registrado
                     href: api/device-delete-registeredusers.md
-                  - name: Listar grupos de dispositivos
+                  - name: Listar associações de dispositivo
                     href: api/device-list-memberof.md
-                  - name: Listar grupos transitivos de dispositivos
+                  - name: Listar associações transitivas do dispositivo
                     href: api/device-list-transitivememberof.md
                   - name: Listar proprietários registrados
                     href: api/device-list-registeredowners.md
@@ -5242,7 +5242,7 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: Excluir
                             href: api/fido2authenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator política
+                      - name: Política do Microsoft Authenticator
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: Obter
@@ -5435,7 +5435,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: Atualizar
                         href: api/identityapiconnector-update.md
-                      - name: Upload um certificado do cliente
+                      - name: Carregar um certificado do cliente
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
@@ -5516,7 +5516,7 @@ items:
               - name: Solicitações de consentimento
                 href: resources/consentrequests-overview.md
                 items:
-                  - name: Administração de solicitação de consentimento
+                  - name: Política de solicitação de consentimento do administrador
                     href: resources/adminconsentrequestpolicy.md
                     items:
                       - name: Obter
@@ -5843,7 +5843,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -5964,7 +5964,7 @@ items:
                 href: api/user-list-people.md
           - name: Insights
             items:
-              - name: Office Graph insights
+              - name: Insights do Office Graph
                 href: resources/officegraphinsights.md
               - name: Compartilhados
                 href: resources/insights-shared.md
@@ -6045,7 +6045,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -6088,7 +6088,7 @@ items:
                 items:
                   - name: Listar provisionamento
                     href: api/provisioningobjectsummary-list.md
-          - name: Microsoft 365 de uso
+          - name: Relatórios de uso do Microsoft 365
             items:
               - name: Visão geral
                 href: resources/report.md
@@ -6293,7 +6293,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -6303,7 +6303,7 @@ items:
                 href: api/search-query.md
           - name: Index
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -6418,7 +6418,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -6610,9 +6610,9 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -7190,7 +7190,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
-          - name: Tarefa
+          - name: Tarefas
             href: resources/todotask.md
             items:
               - name: Listar tarefas

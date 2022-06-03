@@ -1,24 +1,22 @@
 ---
 title: Adicionar um membro
-description: Use essa API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
+description: Use essa API para adicionar um membro (usuário, grupo ou dispositivo) a uma unidade administrativa.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 22cc8c5022cdc27d434ba62bdf76891a7344d7e9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 9598d63f17e83d92913724f0b64cb5092307a3a4
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672025"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884100"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
 Namespace: microsoft.graph
 
-Use essa API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
-
-`NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
+Use essa API para adicionar um membro (usuário, grupo ou dispositivo) a uma unidade administrativa. Atualmente, só é possível adicionar um membro por vez a uma unidade administrativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AdministrativeUnit.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +40,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça `id` o de um [usuário](../resources/user.md),  [grupo](../resources/group.md) ou [directoryObject](../resources/directoryobject.md) a ser adicionado.
+No corpo da solicitação, forneça o `id` de um [usuário](../resources/user.md),  [grupo](../resources/group.md), [dispositivo](../resources/device.md) ou [directoryObject](../resources/directoryobject.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 
@@ -58,7 +56,7 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "post_administrativeUnits_members"
 } -->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
 
@@ -93,7 +91,6 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça o `id` objeto [do usuário](../resources/user.md) [ou grupo](../resources/group.md) que você deseja adicionar.
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.

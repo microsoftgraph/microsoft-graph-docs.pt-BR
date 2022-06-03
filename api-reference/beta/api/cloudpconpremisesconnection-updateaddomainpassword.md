@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 0328358f712f952fa4a264405298ea7fd22858c5
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: f6101ee472cb1df688760f79bcf38034f999216c
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733201"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884045"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Namespace: microsoft.graph
@@ -27,16 +27,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|CloudPC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
+
+> [!CAUTION] 
+> A sintaxe PATCH dessa ação foi preterida e interromperá o trabalho após junho de 2022. Recomendamos que você use POST no futuro.
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 ```
 
@@ -53,7 +57,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|adDomainPassword|Cadeia de caracteres|A senha associada **a adDomainUsername**.|
+|adDomainPassword|String|A senha associada **a adDomainUsername**.|
 
 
 
@@ -73,7 +77,7 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
 Content-Type: application/json
 
 {

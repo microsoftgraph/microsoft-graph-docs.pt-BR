@@ -1,16 +1,16 @@
 ---
 title: Excluir página
-description: Exclua OneNote página.
+description: Excluir uma página do OneNote.
 ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c18f3421dbd68755ac8c2cdb124bb1f4d1c5a085
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 7fe2c042daed84c349b8b054a779239f09f619bd
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133220"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884243"
 ---
 # <a name="delete-page"></a>Excluir página
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua OneNote página.
+Excluir uma página do OneNote.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.ReadWrite, Notes.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Notes.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,8 +46,8 @@ DELETE /sites/{id}/onenote/pages/{id}
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,8 +83,8 @@ DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
 
 ---
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,23 +1,23 @@
 ---
 title: Listar credentialUserRegistrationsSummaries
-description: Obter uma lista dos objetos credentialUserRegistrationsSummary e suas propriedades.
+description: Obtenha uma lista dos objetos credentialUserRegistrationsSummary e suas propriedades.
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 0d17a2bccf9289d144d90efda970d97cd777c38a
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: a683661fe309b99d97d2cd6d5a771bc17b0bcb97
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61862076"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884066"
 ---
 # <a name="list-credentialuserregistrationssummaries"></a>Listar credentialUserRegistrationsSummaries
 Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista dos [objetos credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) e suas propriedades.
+Obtenha uma lista dos [objetos credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /tenantRelationships/managedTenants/credentialUserRegistrationsSummaries
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, incluindo `$apply` , , , , , , e `$count` `$filter` `$orderBy` `$select` `$skip` `$top` .
+Esse método dá suporte [aos parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta, `$apply`incluindo , `$count`, `$filter`, `$orderBy`, `$select`, `$skip`e `$top`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetos credentialUserRegistrationsSummary](../resources/managedtenants-credentialuserregistrationssummary.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -110,6 +110,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 2,
       "ssprEnabledUserCount": 9,
       "mfaRegisteredUserCount": 3,
+      "mfaExcludedUserCount": 0,
       "ssprRegisteredUserCount": 2,
       "totalUserCount": 9,
       "securityDefaultsEnabled": false,
@@ -123,6 +124,7 @@ Content-Type: application/json
       "mfaAndSsprCapableUserCount": 0,
       "ssprEnabledUserCount": 1,
       "mfaRegisteredUserCount": 0,
+      "mfaExcludedUserCount": 2,
       "ssprRegisteredUserCount": 0,
       "totalUserCount": 7,
       "securityDefaultsEnabled": false,

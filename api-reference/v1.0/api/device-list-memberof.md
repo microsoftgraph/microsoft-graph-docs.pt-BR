@@ -1,22 +1,22 @@
 ---
-title: Listar grupos de dispositivos
-description: Obter grupos dos qual este dispositivo é um membro direto. Essa operação não é transitiva.
+title: Listar associações de dispositivo
+description: Obtenha grupos e unidades administrativas das qual este dispositivo é membro direto. Essa operação não é transitiva.
 author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a7a8321c12f3fb31c7daef3e79c2f4f9da82d353
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: abdb2d72f22aaf3cf86e5f8f914d25f8828852b2
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65209753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883961"
 ---
-# <a name="list-device-groups"></a>Listar grupos de dispositivos
+# <a name="list-device-memberships"></a>Listar associações de dispositivo
 
 Namespace: microsoft.graph
 
-Obter grupos dos qual este dispositivo é um membro direto. Essa operação não é transitiva.
+Obtenha grupos e unidades administrativas das qual este dispositivo é membro direto. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

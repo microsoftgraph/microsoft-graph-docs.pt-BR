@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 505a31673ea110f899b37b7d6404b5020ed6d88e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d46f15a86742a23b6ec4e9f6c270308de34c169c
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883982"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>Tipo de recurso meetingParticipantInfo
 
@@ -22,9 +22,13 @@ Informações sobre um participante em uma reunião.
 
 | Propriedade | Tipo                          | Descrição                                                                         |
 | :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
-| identity | [identitySet](identityset.md) | Informações de identidade do participante.                                            |
-| upn      | String                        | Nome principal do usuário do participante.                                             |
-| role     | onlineMeetingRole             | Especifica a função do participante na reunião.  Os valores possíveis `attendee` `presenter` são , e `producer` `unknownFutureValue` .|
+| Identidade | [identitySet](identityset.md) | Informações de identidade do participante.                                            |
+| Upn      | String                        | Nome principal do usuário do participante.                                             |
+| role     | onlineMeetingRole             | Especifica a função do participante na reunião.  Os valores possíveis `attendee`são `presenter`, `producer`e `unknownFutureValue`.|
+
+> [!TIP]
+>
+> Para definir a  **função de apresentador** de um participante da reunião ao criar ou atualizar um [onlineMeeting](onlinemeeting.md), o valor de **allowedPresenters** também deve ser definido como `roleIsPresenter`.
 
 ## <a name="json-representation"></a>Representação JSON
 

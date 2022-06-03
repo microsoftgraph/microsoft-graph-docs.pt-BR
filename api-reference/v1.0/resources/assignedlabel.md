@@ -1,29 +1,29 @@
 ---
-title: Tipo de recurso assignedLabel
-description: Representa um rótulo de sensibilidade atribuído a um Microsoft 365 grupo.
+title: tipo de recurso assignedLabel
+description: Representa um rótulo de confidencialidade atribuído a um grupo do Microsoft 365.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a4992960d63c90efb06d3799944c9df66616759c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: bcc89583a1611093c58f4cd7cbe2ec6907820945
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64588320"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883947"
 ---
-# <a name="assignedlabel-resource-type"></a>Tipo de recurso assignedLabel
+# <a name="assignedlabel-resource-type"></a>tipo de recurso assignedLabel
 
 Namespace: microsoft.graph
 
-Representa um rótulo de sensibilidade atribuído a um Microsoft 365 grupo. Os rótulos de confidencialidade permitem que os administradores imigam configurações de grupo específicas em um grupo atribuindo uma classificação ao grupo (como Confidencial, Altamente Confidencial ou Geral). Os rótulos de sensibilidade são publicados pelos administradores Microsoft 365 Centro de Conformidade & Segurança como parte dos recursos Proteção de Informações da Microsoft segurança. Para obter mais informações sobre rótulos de sensibilidade, consulte [Visão geral dos rótulos de sensibilidade](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide).
+Representa um rótulo de confidencialidade atribuído a um grupo do Microsoft 365. Os rótulos de confidencialidade permitem que os administradores imponham configurações de grupo específicas em um grupo atribuindo uma classificação ao grupo (como Confidencial, Altamente Confidencial ou Geral). Os rótulos de confidencialidade são publicados pelos administradores no Centro de Conformidade de Segurança do Microsoft 365 & como parte dos recursos de Proteção de Informações do Microsoft Purview. Para obter mais informações sobre rótulos de confidencialidade, consulte [Visão geral dos rótulos de confidencialidade](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade    | Tipo   | Descrição                               |
 | :---------- | :----- | :---------------------------------------- |
-| labelId     | Cadeia de caracteres | O identificador exclusivo do rótulo.       |
-| displayName | Cadeia de caracteres | O nome de exibição do rótulo. Somente leitura. |
+| labelId     | String | O identificador exclusivo do rótulo.       |
+| displayName | String | O nome de exibição do rótulo. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON
 
