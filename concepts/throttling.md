@@ -4,18 +4,24 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: f870167c24d1ccdf24659bc9b8bdb843c8d0b812
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 4dd9dfb9471d127d54bd27e644a296201f3501bf
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884108"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
 Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
 
 Os limites de controle variam de acordo com o cenário. Por exemplo, se você estiver executando um grande volume de gravações, a possibilidade de limitação é mais alta do que se você estiver realizando apenas leituras.
+
+> [!NOTE]
+> As soluções que precisam extrair um grande volume de dados do Microsoft Graph devem usar o [Microsoft Graph Data Connect](data-connect-concept-overview.md) em vez das APIs REST do Microsoft Graph. O Microsoft Graph Data Connect permite que as organizações extraiam dados do Microsoft 365 em massa sem estarem sujeitas a limites de limitação.
+
+<!-- markdownlint-disable MD033 -->
+<br/>
 
 <!-- markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
@@ -130,7 +136,6 @@ Os limites de serviço do Outlook são avaliados para cada combinação de ID de
 | API de contatos pessoais | <li>[contato](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
 | Inteligência social e do local de trabalho | <li>[pessoa](/graph/api/resources/person) |
 | API de tarefas pendentes (visualização) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
-
 
 ### <a name="cloud-communication-service-limits"></a>Limites dos serviços de comunicação em nuvem
 
@@ -315,7 +320,7 @@ As APIs de relatórios do Azure AD são limitadas quando o Azure AD recebe muita
 ### <a name="information-protection-service-limits"></a>Limites do serviço de proteção de informações
 
 Os seguintes limites se aplicam a qualquer solicitação no `/informationProtection`.
-  
+
 Para o email, o recurso é um par único de mensagens de rede ID/recipiente. Por exemplo, enviar um email com o mesmo ID de mensagem enviado à mesma pessoa várias vezes em um período de 15 minutos acionará o limite por limite de recursos estabelecido na tabela a seguir. Entretanto, você pode enviar até 150 emails únicos a cada 15 minutos (limite de locatário).
 
 | Operation                 | Limite por inquilino                                            | Limite por recurso (email, URL, arquivo)                |
@@ -331,7 +336,6 @@ Para o email, o recurso é um par único de mensagens de rede ID/recipiente. Por
 | Qualquer | 1 solicitação por segundo |
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
-
 
 > **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
@@ -351,7 +355,6 @@ Os limites anteriores se aplicam aos seguintes recursos:
 - [tendências](/graph/api/resources/trending)
 - [usedInsight](/graph/api/resources/usedinsight)
 
-
 ### <a name="microsoft-graph-reports-service-limits"></a>Limites do serviço de relatórios do Microsoft Graph
 
 Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
@@ -364,7 +367,6 @@ Os seguintes limites se aplicam a qualquer solicitação no `/reports`.
 Os limites anteriores se aplicam individualmente a cada API de relatório. Por exemplo, uma solicitação para a API do relatório de atividades do usuário do Microsoft Teams e uma solicitação para a API do relatório de atividades do usuário do Outlook em 10 minutos contará como 1 solicitação de 14 para cada API, não 2 solicitações de 14 para ambas.
 
 Os limites anteriores se aplicam a todos os recursos de [relatórios de uso](/graph/api/resources/report).
-
 
 ### <a name="invitation-manager-service-limits"></a>Limites de serviço do gerenciador de convite
 
@@ -392,7 +394,6 @@ Os seguintes limites se aplicam a qualquer solicitação no `/security`.
 | Qualquer          | 455 solicitações a cada 10 segundos |
 
 Os limites anteriores se aplicam aos seguintes recursos:[!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
-
 
 ### <a name="files-and-lists-service-limits"></a>Limites de serviço dos arquivos e listas
 
@@ -499,6 +500,7 @@ Os limites anteriores se aplicam aos seguintes recursos:
 - [tendências](/graph/api/resources/trending)
 - [educationResource](/graph/api/resources/educationresource)
 
+
 ### <a name="service-communications-service-limits"></a>Limites do Serviço de Comunicações
 Os limites a seguir se aplicam a qualquer tipo de solicitação de comunicações de serviço em `/admin/serviceAnnouncement/`.
 
@@ -506,3 +508,4 @@ Os limites a seguir se aplicam a qualquer tipo de solicitação de comunicaçõe
 | ------------ | ------------------------ |
 | Qualquer | 240 solicitações por 60 segundos |
 |Qualquer | 800 solicitações por hora |
+
