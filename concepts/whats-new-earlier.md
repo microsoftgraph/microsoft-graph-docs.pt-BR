@@ -3,12 +3,12 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 7e9ec0b2b9bba305b3ad2acdf9cce1d3ecbfb65a
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: 38bfe22b2f5b9e571d40243d0bbb9bbc83a2b238
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629173"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65884122"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
 
@@ -2038,7 +2038,7 @@ Administradores ou usuários podem [revogar](/graph/api/user-revokesigninsession
 - Consulta Delta e adições de propriedade para objetos [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta&preserve-view=true) e [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="group"></a>Grupo
-Obtenha [rótulos de confidencialidade](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true) para ajudar a proteger dados confidenciais de grupos do Microsoft 365 e atender às políticas de conformidade. Esses rótulos são objetos [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true), publicados por administradores no Centro de Conformidade e Segurança do Microsoft 365, como parte dos recursos de Proteção de Informações da Microsoft. 
+Obtenha [rótulos de confidencialidade](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true) para ajudar a proteger dados confidenciais de grupos do Microsoft 365 e atender às políticas de conformidade. Esses rótulos são objetos [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true), publicados por administradores no Centro de Conformidade e Segurança do Microsoft 365, como parte dos recursos de Proteção de Informações do Microsoft Purview. 
 
 ### <a name="identity-and-access"></a>Identidade e acesso
 - Obtenha uma instância de um [aplicativo](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) ou adicione uma instância da galeria de aplicativos do Azure AD ao seu diretório como modelo.

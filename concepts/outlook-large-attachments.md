@@ -4,12 +4,12 @@ description: Dependendo do tamanho do arquivo, você pode escolher uma das duas 
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 582501205c106b3deaf0312f3db9c81488feb3de
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: c6e23f8f30e5dc155f54015fd740df761b9a7769
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883828"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Anexar arquivos grandes a mensagens ou eventos do Outlook
 
@@ -193,11 +193,11 @@ Especificar os bytes reais do arquivo a ser anexado, que estão no intervalo de 
 Um carregamento bem-sucedido retorna `HTTP 200 OK` e um objeto **uploadSession**. Observe o seguinte no objeto de resposta:
 
 - A propriedade **ExpirationDateTime** indica a data/hora de vencimento para o token de autenticação inserido no valor da propriedade **uploadUrl**. Essa data/hora de vencimento permanece a mesma que foi retornada pela **uploadSession** inicial na etapa 1.
-- **NextExpectedRanges** especifica o próximo local do byte para começar o carregamento a partir de `"NextExpectedRanges":["2097152"]`, por exemplo. Você deve carregar os bytes em um arquivo na ordem.
-<!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
+- O **nextExpectedRanges ** especifica o próximo local do byte para iniciar o upload, por exemplo,`"nextExpectedRanges":["2097152"]`. Você deve carregar os bytes em um arquivo na ordem.
+<!-- The **nextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
-  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`.
-  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
+  - On a successful upload, this property returns the next range to start from, for example, `"nextExpectedRanges":["2097152"]`.
+  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"nextExpectedRanges":["1998457-2097094"]`.
 -->
 - A propriedade **uploadUrl** não é retornada explicitamente, pois todas as operações `PUT` de uma sessão de carregamento usam a mesma URL retornada ao criar a sessão (etapa 1).
 
@@ -219,7 +219,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### <a name="response"></a>Resposta
 
-O exemplo de resposta a seguir mostra na propriedade **NextExpectedRanges** o início do próximo intervalo de bytes que o servidor espera.
+A resposta de exemplo a seguir mostra na propriedade **nextExpectedRanges** o início do próximo intervalo de bytes que o servidor espera.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -230,7 +230,7 @@ Content-type: application/json
 {
   "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('a8e8e219-4931-95c1-b73d-62626fd79c32%4072aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA%3D')/AttachmentSessions/$entity",
   "ExpirationDateTime":"2019-09-25T01:09:30.7671707Z",
-  "NextExpectedRanges":["2097152"]
+  "nextExpectedRanges":["2097152"]
 }
 ```
 
@@ -252,7 +252,7 @@ Content-Range: bytes 0-2097151/3483322
 
 #### <a name="response"></a>Resposta
 
-O exemplo de resposta a seguir mostra na propriedade **NextExpectedRanges** o início do próximo intervalo de bytes que o servidor espera.
+A resposta de exemplo a seguir mostra na propriedade **nextExpectedRanges** o início do próximo intervalo de bytes que o servidor espera.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -263,14 +263,14 @@ Content-type: application/json
 {
     "@odata.context":"https://outlook.office.com/api/v2.0/$metadata#Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69%4098a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA%3D')/AttachmentSessions/$entity",
     "ExpirationDateTime":"2020-02-22T02:46:56.7410786Z",
-    "NextExpectedRanges":["2097152"]
+    "nextExpectedRanges":["2097152"]
 }
 ```
 
 
 ## <a name="step-3-continue-uploading-byte-ranges-until-the-entire-file-has-been-uploaded"></a>Etapa 3: continuar carregando intervalos de bytes até que todo o arquivo tenha sido carregado
 
-Após o carregamento inicial na etapa 2, continue a carregar a parte restante do arquivo, usando uma solicitação `PUT` semelhante, conforme descrito na etapa 2, antes que você atinja a data/hora de vencimento da sessão. Use a coleção **NextExpectedRanges** para determinar onde começar o próximo intervalo de bytes a ser carregado. É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisa retomar uma transferência que foi interrompida, e seu cliente não tem certeza sobre o estado no serviço.
+Após o carregamento inicial na etapa 2, continue a carregar a parte restante do arquivo, usando uma solicitação `PUT` semelhante, conforme descrito na etapa 2, antes que você atinja a data/hora de vencimento da sessão. Use a coleção **nextExpectedRanges** para determinar onde iniciar o próximo intervalo de bytes a ser carregado. É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisa retomar uma transferência que foi interrompida, e seu cliente não tem certeza sobre o estado no serviço.
 
 Quando o último byte do arquivo for carregado com êxito, a operação de `PUT` final retornará `HTTP 201 Created` e um cabeçalho `Location` que indica a URL para o anexo de arquivo no domínio `https://outlook.office.com`. Você pode obter a ID do anexo na URL e salvá-la para uso posterior. Dependendo do cenário, você pode usar essa ID para [obter os metadados do anexo](/graph/api/attachment-get)ou [remover o anexo do item do Outlook](/graph/api/attachment-delete) usando o ponto de extremidade do Microsoft Graph.
 
