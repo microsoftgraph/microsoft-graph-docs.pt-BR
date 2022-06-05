@@ -5,12 +5,12 @@ description: Item é o principal modelo de dados na API do OneDrive. Tudo é um 
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 86589350f5808667067a26d4f89ee0693928c418
-ms.sourcegitcommit: f5382652b6880fab42040df40a08de7cb2d74d35
+ms.openlocfilehash: 3648f56678be1fb23e818982c03ba58ec2191562
+ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63559766"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65883954"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -25,7 +25,7 @@ Há duas maneiras principais de endereçar um recurso **driveItem**:
 * Pelo identificador exclusivo de **driveItem** usando `drive/items/{item-id}`
 * Usando o caminho do sistema de arquivos `/drive/root:/path/to/file`
 
-Para obter mais informações, consulte o [endereçamento de ItensDaUnidade](/graph/concepts/onedrive-addressing-driveitems.md).
+Para obter mais informações, consulte o [endereçamento de ItensDaUnidade](/concepts/onedrive-addressing-driveitems.md).
 
 Os recursos **driveItem** têm facetas modeladas como propriedades que fornecem dados sobre as identidades e capacidades de driveItem. Por exemplo:
 
@@ -61,7 +61,7 @@ Itens com a faceta **folder** atuam como contêineres de itens e, portanto, têm
 | [Deixar de seguir o item](../api/driveitem-unfollow.md)            | Sem conteúdo | Deixar de seguir um driveItem.
 | [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | coleção de driveItem | Listar driveItems com suas miniaturas. 
 | [Criar link de compartilhamento](../api/driveitem-createlink.md)    | link de compartilhamento | Criar um link para compartilhar o driveItem.
-| [Adicionar permissões](../api/driveitem-invite.md)            | coleção de [permissão][] | Envia um convite de compartilhamento a um usuário.
+| [Adicionar permissões](../api/driveitem-invite.md)            | coleção de [permissão][] | Envia um convite de compartilhamento para um usuário.
 | [Listar permissões](../api/driveitem-list-permissions.md) | coleção de [permissão][] | Recupera a coleção de permissões em um driveItem.
 | [Excluir permissão](../api/permission-delete.md)         | Sem Conteúdo | Remove a permissão do driveItem.
 | [Obter canal WebSocket][getWebSocket]                    | [assinatura][] | Recebe notificações de alteração quase em tempo real para uma unidade usando o socket.io.
