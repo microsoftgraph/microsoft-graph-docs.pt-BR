@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b6bbfac2cbdb8fcafccbd385c4aa43c994f3c04d
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: ce7a883bb8efa93e356883af90522fd064eb9955
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64684694"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900517"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Obter notificações de alteração para equipes e canais usando o Microsoft Graph
 
@@ -22,16 +22,16 @@ Para obter notificações de alteração para todas as alterações (criar, atua
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All   | beta|
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All   |
 
 ### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -53,18 +53,18 @@ Para obter notificações de alteração para todas as alterações relacionadas
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All | beta |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All    | beta |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All    |
 
 >**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -87,16 +87,16 @@ Para obter notificações de alteração para todas as alterações (criar, atua
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | beta |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All |
 
 ### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -119,18 +119,18 @@ Para obter notificações de alteração para todas as alterações relacionadas
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All | beta |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All   | beta |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All   |
 
 >**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

@@ -5,12 +5,12 @@ author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5b1efac48762e1f1e69f9ac42d63d2c62b3b9a81
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 63da00b8f88d589d0a8d05d3635abae4a02dd0d4
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820704"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899905"
 ---
 # <a name="set-up-notifications-for-changes-in-resource-data"></a>Configurar notificações para alterações nos dados de recursos
 
@@ -110,6 +110,22 @@ Cada recurso do Teams possui cotas de assinatura diferentes.
 
 - Para assinaturas de **chatMessages** (canais ou chats):
   - Por combinação por aplicativo e canal ou por chat: uma assinatura
+  - Por organização: 10.000 assinaturas totais
+
+- Para assinaturas de **canais**:
+  - Combinação por aplicativo e equipe: 1 assinatura
+  - Por organização: 10.000 assinaturas totais
+
+- Para assinaturas de **chats**:
+  - Combinação por aplicativo e chat: 1 assinatura
+  - Por organização: 10.000 assinaturas totais
+
+- Para assinaturas de **equipes**:
+  - Combinação por aplicativo e equipe: 1 assinatura
+  - Por organização: 10.000 assinaturas totais
+  
+- Para assinaturas para **conversationMembers**:
+  - Combinação por aplicativo e equipe: 1 assinatura
   - Por organização: 10.000 assinaturas totais
 
 ## <a name="subscription-lifetime"></a>Tempo de vida da assinatura

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c9bd130ce01738ae03cb0521b85774e974240055
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 564ed33603585b333f12f72b6a8e1f8e3f9de406
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133325"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899544"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
@@ -28,16 +28,16 @@ Para obter notificações de alteração para todas as mensagens e respostas nos
 
 #### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | ChannelMessage.Read.All | beta, v1.0 |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | ChannelMessage.Read.All |
 
 #### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -60,16 +60,16 @@ Para obter notificações de alteração para todas as mensagens em chats em um 
 
 #### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Chat.Read.All | beta, v1.0 |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Chat.Read.All |
 
 #### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -92,18 +92,18 @@ As assinaturas no nível do canal também oferecem suporte à pesquisa baseada e
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |Com suporte na versão |
-|:--------------------|:---------------------------------------------------------|:--------------------|
-|Delegado (conta corporativa ou de estudante) | ChannelMessage.Read.All | beta, v1.0 |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | ChannelMessage.Read.Group*, ChannelMessage.Read.All  | beta, v1.0 |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | ChannelMessage.Read.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 
 >**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a>Exemplo 1: assinar em todas as mensagens (e respostas) em um canal
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -123,7 +123,7 @@ Content-Type: application/json
 A solicitação a seguir enviará mensagens que contêm `Hello` ao banco de dados do assinante.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -141,7 +141,7 @@ Content-Type: application/json
 ### <a name="example-3-subscribe-to-messages-and-replies-in-a-channel-without-resource-data"></a>Exemplo 3: assinar para receber mensagens (e respostas) em um canal sem dados de recursos
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -159,7 +159,7 @@ Content-Type: application/json
 Para obter notificações somente para mensagens em que um usuário específico foi mencionado, você pode especificar a ID do usuário (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` nesse exemplo) na consulta.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -182,18 +182,18 @@ As assinaturas no nível do chat também oferecem suporte à pesquisa baseada em
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Com suporte na versão |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegada (conta corporativa ou de estudante) | Chat.Read | beta, v1.0 |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | ChatMessage.Read.Chat*, Chat.Read.All | beta, v1.0 |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | Chat.Read |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | ChatMessage.Read.Chat*, Chat.Read.All |
 
 >**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) apenas para a versão beta atualmente.
 
 ### <a name="example-1-subscribe-to-messages-in-a-chat"></a>Exemplo 1: assinar para receber mensagens em um chat
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -213,7 +213,7 @@ Content-Type: application/json
 A solicitação a seguir enviará mensagens que contêm `Hello` ao banco de dados do assinante.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -231,7 +231,7 @@ Content-Type: application/json
 ### <a name="example-3-subscribe-to-messages-and-replies-in-a-chat-without-resource-data"></a>Exemplo 3: assinar para receber mensagens (e respostas) em um chat sem dados de recursos
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 {
   "changeType": "created,updated",
@@ -248,7 +248,7 @@ Content-Type: application/json
 Para obter notificações somente para mensagens em que um usuário específico foi mencionado, você pode especificar a ID do usuário (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` nesse exemplo) na consulta.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -261,9 +261,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-changes-at-the-user-level"></a>Assinar para receber alterações no nível do usuário
+## <a name="subscribe-to-changes-at-the-user-level-preview"></a>Assinar as alterações no nível do usuário (versão prévia)
 
-Para rastrear mensagens em todos os chats de que um determinado usuário faz parte, você pode criar uma assinatura de notificação de alteração no nível do usuário. Para fazer isso, assine o `/users/{user-id}/chats/getAllMessages`. Esse recurso dá suporte [à inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação nos modos *delegado* e *somente aplicativo*.
+Para rastrear mensagens em todos os chats de que um determinado usuário faz parte, você pode criar uma assinatura de notificação de alteração no nível do usuário. Para fazer isso, assine o `/users/{user-id}/chats/getAllMessages`. Esse recurso dá suporte [à inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação nos modos *delegado* e *somente aplicativo*. Esta assinatura está disponível apenas no ponto de extremidade beta.
 
 As assinaturas de mensagens de chat no nível do usuário também suportam a pesquisa baseada em palavra-chave por meio do parâmetro de consulta `$search`.
 
@@ -271,11 +271,11 @@ As assinaturas de mensagens de chat no nível do usuário também suportam a pes
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Com suporte na versão |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegado (conta corporativa ou de estudante) | Chat.Read, Chat.ReadWrite | beta |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | Chat.Read.All, Chat.ReadWrite.All | beta |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Chat.Read, Chat.ReadWrite |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Chat.Read.All, Chat.ReadWrite.All |
 
 ### <a name="example-subscribe-to-messages-across-all-chats-a-particular-user-is-part-of"></a>Exemplo: assine para receber mensagens em todos os chats de que um usuário específico faz parte
 

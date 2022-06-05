@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: resourcePageType
-ms.openlocfilehash: 831de5675b78e94ada5a64c625738b869848c02c
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 3adc9490dc554344b553de5a0520c66e2f905956
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819451"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900041"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -20,13 +20,17 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 
 - Um [alert][] da API de Segurança do Microsoft Graph.
 - Uma [callRecord][] produzida após uma chamada ou uma reunião no Microsoft Teams.
+- Um [canal](./channel.md) no Microsoft Teams.
+- Um [chat](./chat.md) no Microsoft Teams.
 - Um [chatMessage][] enviado por meio de equipes ou canais no Microsoft Teams.
 - Uma [conversation][] em um grupo do Microsoft 365.
+- Um [conversationMember](./conversationmember.md) em uma equipe ou canal no Microsoft Teams.
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário.
 - Um [grupo][] no Azure Active Directory.
 - Uma [list][] em um [site][] do SharePoint.
 - Uma [message][], [event][] ou [contact][] no Outlook.
 - Uma [impressora][] (quando um trabalho de impressão da impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [printTaskDefinition][] na Impressão Universal. Para obter mais informações, consulte [Assinar para alterar as notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
+- Uma [equipe](./team.md) no Microsoft Teams.
 - Uma [todoTask][] de um usuário no Microsoft To Do.*
 - Um [usuário][] no Azure Active Directory.
 
@@ -69,7 +73,11 @@ Para obter os valores de caminho de recurso possíveis para cada recurso com sup
 |:--------------------|:-------------------------|
 | **Alerta** de segurança     | 43200 minutos (em 30 dias )  |
 | Teams **callRecord**    | 4230 minutos (em 3 dias)  |
+| **Canal** do Teams    | 60 minutos (1 hora)  |
+| **Chat** do Teams    | 60 minutos (1 hora)  |
 | Teams **chatMessage**    | 60 minutos (1 hora)  |
+| **conversationMember** do Teams    | 60 minutos (1 hora)  |
+| Equipe do **Teams**    | 60 minutos (1 hora)  |
 | **Conversa** em grupo | 4230 minutos (em 3 dias)    |
 | OneDrive **driveItem**    | 42.300 minutos (menos de 30 dias)    |
 | **Lista** do Microsoft Office SharePoint Online    | 42.300 minutos (menos de 30 dias)    |
