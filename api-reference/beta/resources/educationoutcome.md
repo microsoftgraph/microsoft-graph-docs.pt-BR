@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 327ab957b3c78a9b6c848a6b29c1108fee6928c4
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5b5363bda8faec782fda47255db37bd8d09e53c0
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767402"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897948"
 ---
 # <a name="educationoutcome-resource-type"></a>Tipo de recurso educationOutcome
 
@@ -18,20 +18,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O resultado da classificação de uma atribuição. Esta é uma classe base; os tipos derivados [são educationFeedbackOutcome](educationfeedbackoutcome.md), [educationPointsOutcome](educationpointsoutcome.md)e [educationRubricOutcome](educationrubricoutcome.md).
+O resultado da classificação de uma atribuição. Esta é uma classe base; os tipos derivados [são educationFeedbackOutcome](educationfeedbackoutcome.md), [educationPointsOutcome](educationpointsoutcome.md), [educationRubricOutcome](educationrubricoutcome.md) e [educationFeedbackResourceOutcome](educationfeedbackresourceoutcome.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Atualizar educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Atualizar o objeto educationOutcome. |
+| [Atualizar educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Atualize o objeto educationOutcome. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String|Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|O indivíduo que atualizou o recurso.|
-|lastModifiedDateTime|DateTimeOffset|Momento no tempo em que o recurso foi modificado pela última vez.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2021 é `2021-01-01T00:00:00Z` .|
+|lastModifiedDateTime|DateTimeOffset|Momento no tempo em que o recurso foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2021 é `2021-01-01T00:00:00Z`.|
 
 ## <a name="relationships"></a>Relações
 

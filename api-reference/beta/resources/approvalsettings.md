@@ -1,16 +1,16 @@
 ---
 title: Tipo complexo approvalSettings
-description: Usada para a propriedade requestApprovalSettings de uma diretiva de atribuição de pacote de acesso. Fornece configurações adicionais para selecionar quem deve aprovar cada solicitação.
-localization_priority: Normal
+description: As configurações de aprovação conforme definido em uma regra de política de gerenciamento de função.
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 99892e0943b993fe43edb4bd104fd2a3a8736a51
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0fd8af9a314052dab87908fde5987850899e8f90
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50135252"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900216"
 ---
 # <a name="approvalsettings-complex-type"></a>Tipo complexo approvalSettings
 
@@ -18,37 +18,40 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usado para a propriedade `requestApprovalSettings` de uma política de [atribuição de pacote de acesso.](accesspackageassignmentpolicy.md) Fornece configurações adicionais para selecionar quem deve aprovar cada solicitação. 
+As configurações de aprovação conforme definido em uma regra de política de gerenciamento de função.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade                     | Tipo                      | Descrição |
-| :--------------------------- | :------------------------ | :---------- |
-| isApprovalRequired | Boolean | Se for falso, a aprovação não será necessária para solicitações nesta política. |
-| isApprovalRequiredForExtension | Boolean| Se for falso, a aprovação não será necessária para um usuário que já tenha uma atribuição para estender sua atribuição. |
-| isRequestorJustificationRequired | Boolean | Indica se o solicitante é obrigado a fornecer uma justificativa em sua solicitação. |
-| approvalMode| String | Um dos `NoApproval` , `SingleStage` ou `Serial` . O `NoApproval` é usado quando é `isApprovalRequired` falso. |
-| approvalStages | [coleção approvalStage](approvalstage.md)| Se a aprovação for necessária, um ou dois elementos dessa coleção definirão cada um dos estágios de aprovação. Uma matriz vazia se nenhuma aprovação for necessária.  |
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|approvalMode|Cadeia de Caracteres|Um de `SingleStage`, `Serial`, `Parallel`, `NoApproval` (padrão). `NoApproval` é usado quando `isApprovalRequired` é `false`.|
+|approvalStages|[coleção approvalStage](../resources/approvalstage.md)|Se a aprovação for necessária, um ou dois elementos dessa coleção definirão cada um dos estágios de aprovação. Uma matriz vazia se nenhuma aprovação for necessária.|
+|isApprovalRequired|Booliano|Indica se a aprovação é necessária para solicitações nesta política.|
+|isApprovalRequiredForExtension|Booliano|Indica se a aprovação é necessária para que um usuário estenda sua atribuição.|
+|isRequestorJustificationRequired|Booliano|Indica se o solicitante é necessário para fornecer uma justificativa em sua solicitação.|
+
+## <a name="relationships"></a>Relações
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
-
-A seguir está uma representação JSON da propriedade de configurações de aprovação de solicitação.
-
+Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.approvalSettings"
-}-->
-
-```json
+}
+-->
+``` json
 {
-    "isApprovalRequired": true,
-    "isApprovalRequiredForExtension": false,
-    "isRequestorJustificationRequired": true,
-    "approvalMode": "Serial",
-    "approvalStages": [{"@odata.type": "microsoft.graph.approvalStage"}]
+  "@odata.type": "#microsoft.graph.approvalSettings",
+  "isApprovalRequired": "Boolean",
+  "isApprovalRequiredForExtension": "Boolean",
+  "isRequestorJustificationRequired": "Boolean",
+  "approvalMode": "String",
+  "approvalStages": [
+    {
+      "@odata.type": "microsoft.graph.approvalStage"
+    }
+  ]
 }
 ```
 

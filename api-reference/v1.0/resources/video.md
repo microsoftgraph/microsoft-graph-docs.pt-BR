@@ -1,29 +1,29 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Vídeo
+title: tipo de recurso de vídeo
 ms.localizationpriority: medium
-description: O recurso Video agrupa itens de dados relacionados a vídeos em uma única estrutura.
-ms.prod: ''
+description: O recurso de vídeo agrupa itens de dados relacionados a vídeo em uma única estrutura.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: d46949bf48455fbb74a99891a80984bdedb460fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 81a2ccd6250261c87b5af84cc0bef0ace4342702
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134266"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897822"
 ---
-# <a name="video-resource-type"></a>Tipo de recurso Video
+# <a name="video-resource-type"></a>tipo de recurso de vídeo
 
 Namespace: microsoft.graph
 
-O recurso **Video** agrupa itens de dados relacionados a vídeos em uma única estrutura.
+O **recurso** de vídeo agrupa itens de dados relacionados a vídeo em uma única estrutura.
 
-Se um [**DriveItem**](driveitem.md) tiver uma faceta **video** não nula, o item representa um vídeo. As propriedades do recurso **Video** são preenchidas extraindo-se os metadados do arquivo.
+Se um [**driveItem**](driveitem.md) tiver uma faceta de vídeo **não nula** , o item representará um arquivo de vídeo.
+As propriedades do recurso **de** vídeo são preenchidas extraindo metadados do arquivo.
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -57,7 +57,7 @@ Veja a seguir uma representação JSON do recurso
 | **bitrate**               | Int32  | Taxa de bits do vídeo em bits por segundo.
 | **duration**              | Int64  | Duração do arquivo em milissegundos.
 | **fourCC**                | string | Nome do formato de vídeo "Código de quatro caracteres".
-| **frameRate**             | double | Taxa de quadros do vídeo.
+| **Framerate**             | double | Taxa de quadros do vídeo.
 | **height**                | Int32  | A altura do vídeo em pixels.
 | **width**                 | Int32  | A largura do vídeo em pixels.
 
@@ -65,7 +65,7 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="remarks"></a>Comentários
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para obter mais informações sobre as facetas em um driveItem, consulte [driveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

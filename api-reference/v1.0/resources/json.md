@@ -1,28 +1,28 @@
 ---
-title: Tipo de recurso Json
-description: Representa os dados retornados no formato do JSON
+title: Tipo de recurso json
+description: Representa os dados retornados no formato JSON para Excel.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: c0be936af70345098792572ec55066eb4b858239
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d95939170f870e3dd9ab2a5d28bcda98f6487479
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036225"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898494"
 ---
-# <a name="json-resource-type"></a>Tipo de recurso Json
+# <a name="json-resource-type"></a>Tipo de recurso json 
 
 Namespace: microsoft.graph
 
-Representa os dados retornados no formato do JSON
+Representa os dados retornados no formato JSON para Excel.
 ## <a name="properties"></a>Propriedades
-|Propriedade|Tipo|Descrição|
-|:---|:---|:---|
+Nenhum.
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!--{

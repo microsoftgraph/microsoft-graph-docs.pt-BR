@@ -1,53 +1,53 @@
 ---
 title: Tipo de recurso windowsDomainJoinConfiguration
-description: Windows Configuração do dispositivo de Junção de Domínio.
+description: Configuração do dispositivo de Ingresso no Domínio do Windows.
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a061a2254625253a599b078f1b3aceb7cf0013e3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ca8f7ef727bfe3b0518ff8bd29c340412482f56
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051052"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899852"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>Tipo de recurso windowsDomainJoinConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Windows Configuração do dispositivo de Junção de Domínio.
+Configuração do dispositivo de Ingresso no Domínio do Windows.
 
 Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)
 
 ## <a name="methods"></a>Métodos
-|Método|Tipo de retorno|Descrição|
-|:---|:---|:---|
-|[Listar windowsDomainJoinConfigurations](../api/intune-shared-windowsdomainjoinconfiguration-list.md)|[Coleção windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Listar propriedades e relações dos [objetos windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
-|[Obter windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-get.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Leia propriedades e relações do [objeto windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
-|[Criar windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-create.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Crie um novo [objeto windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
-|[Excluir windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-delete.md)|Nenhum|Exclui um [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).|[Exclua um objeto windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
-|[Atualizar windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-update.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Atualize as propriedades de um [objeto windowsDomainJoinConfiguration.](../resources/intune-shared-windowsdomainjoinconfiguration.md)|
+| Método | Tipo de retorno | Descrição |
+| --- | --- | --- |
+|[Listar windowsDomainJoinConfigurations](../api/intune-shared-windowsdomainjoinconfiguration-list.md)|[coleção windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Listar propriedades e relações dos [objetos windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) .|
+|[Obter windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-get.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Ler propriedades e relações do objeto [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) .|
+|[Criar windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-create.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Crie um novo [objeto windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) .|
+|[Excluir windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-delete.md)|Nenhum|Exclui um [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).|[Exclua um objeto windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).|
+|[Atualizar windowsDomainJoinConfiguration](../api/intune-shared-windowsdomainjoinconfiguration-update.md)|[windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md)|Atualize as propriedades de um [objeto windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |**Configuração do dispositivo**|
-|activeDirectoryDomainName|Cadeia de Caracteres|Nome de domínio do Active Directory para ingressar.|
-|computerNameStaticPrefix|Cadeia de Caracteres|Prefixo fixo a ser usado para nome do computador.|
+|activeDirectoryDomainName|Cadeia de Caracteres|Nome de domínio do Active Directory a ser ingressado.|
+|computerNameStaticPrefix|Cadeia de Caracteres|Prefixo fixo a ser usado para o nome do computador.|
 |computerNameSuffixRandomCharCount|Int32|Caracteres gerados dinamicamente usados como sufixo para o nome do computador. Valores válidos de 3 a 14|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|organizationalUnit|Cadeia de Caracteres|Unidade organizacional (OU) onde a conta do computador será criada. Se esse parâmetro for NULL, o contêiner de objeto de computador conhecido será usado como publicado no domínio.|
-|roleScopeTagIds|String collection|Lista de marcas de escopo para esta instância entity. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|supportsScopeTags|Boleano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|organizationalUnit|String|Unidade organizacional (UO) em que a conta de computador será criada. Se esse parâmetro for NULL, o contêiner de objeto de computador conhecido será usado como publicado no domínio.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 
 ## <a name="relationships"></a>Relações
@@ -64,7 +64,7 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status de usuários para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>Representação JSON
-Veja a seguir uma representação JSON do recurso.  Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Os objetos response conterão propriedades relevantes para o contexto da chamada.
+Veja a seguir uma representação JSON do recurso.  Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Os objetos de resposta conterão propriedades relevantes para o contexto da chamada.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

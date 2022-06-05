@@ -1,16 +1,16 @@
 ---
 title: Obter entrada
 doc_type: apiPageType
-description: Obtenha um objeto signIn que contém todas as entradas para um Azure Active Directory locatário.
+description: Obtenha um objeto signIn que contém todas as entradas para um locatário do Azure Active Directory.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: f6880fe40bc4560454b985f00bef03eec7891868
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 332a222e8d84b8fe2db37115e843f3a79591c8d1
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820732"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899810"
 ---
 # <a name="get-signin"></a>Obter entrada
 
@@ -35,15 +35,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 > [!IMPORTANT]
 > Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para Azure AD.
+Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
-Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, [Azure AD funções internas](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, confira [as funções internas do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador global
 + Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
 + Leitor de segurança
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
 

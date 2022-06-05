@@ -3,14 +3,14 @@ title: Atualizar ícone
 description: Atualize as propriedades do objeto de ícone.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: f523d44be11a1a5a27324cec2e4613dc6241161f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a34bfa55d16235905b45fa434ddb13a6cf22211f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937231"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897829"
 ---
 # <a name="update-icon"></a>Atualizar ícone
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -46,7 +46,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|int|Representa o índice do ícone em determinado conjunto.|
-|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são: `Invalid` , , , , , , , , , `ThreeArrows` , `ThreeArrowsGray` , , , , `ThreeFlags` , , `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` , `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` , `ThreeStars` `ThreeTriangles` `FiveBoxes`|
+|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são: , , , , , `ThreeTrafficLights1`, `ThreeSymbols``ThreeSigns``ThreeTrafficLights2`, `ThreeSymbols2`, `FourArrows`, , `FourArrowsGray`, `FourRating``FourRedToBlack`, , `FourTrafficLights`, , `FiveArrows``FiveArrowsGray`, , `FiveRating`, , , `FiveBoxes``ThreeTriangles``ThreeStars``FiveQuarters``ThreeFlags``ThreeArrowsGray``ThreeArrows``Invalid`|
 
 ## <a name="response"></a>Resposta
 

@@ -3,14 +3,14 @@ title: 'Filter: apply'
 description: Aplica os critérios de filtro determinados à coluna fornecida.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 6ee159fc7519a1fa62cb10d5317d188101c2d847
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: fb273d52932a1aeb4a2ba517e8a62eac0d1cdc29
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943777"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900356"
 ---
 # <a name="filter-apply"></a>Filter: apply
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 

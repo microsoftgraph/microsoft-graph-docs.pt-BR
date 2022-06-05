@@ -1,30 +1,31 @@
 ---
 title: Listar scopedRoleMembers
-description: Recupere uma lista de recursos scopedRoleMembership.
+description: Listar atribuições de função do Azure AD (Azure Active Directory) com escopo de unidade administrativa.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d67c0895a0c885e1712e38271cc2347ef431b7f6
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 86fe1e462c4729cfc330d55819f3533a06f74185
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669169"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899089"
 ---
 # <a name="list-scopedrolemembers"></a>Listar scopedRoleMembers
 
 Namespace: microsoft.graph
 
-Recupere uma lista de [recursos scopedRoleMembership](../resources/scopedrolemembership.md) .
+Listar atribuições de função do Azure AD (Azure Active Directory) com escopo de unidade administrativa.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

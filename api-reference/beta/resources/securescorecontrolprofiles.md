@@ -1,55 +1,55 @@
 ---
-title: tipo de recurso secureScoreControlProfile
-description: Representa a pontuação segura de um locatário por dados de controle. Por padrão, ele retorna todos os controles de um locatário e pode explicitamente extrair controles individuais.
-localization_priority: Normal
+title: Tipo de recurso secureScoreControlProfile
+description: Representa a pontuação de segurança de um locatário por dados de controle. Por padrão, ele retorna todos os controles de um locatário e pode efetuar pull explícito de controles individuais.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: f4bcee22036cf344fec83be8ec08bba602e08c3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd4e9ee6372e9d063515ad83e851008e01ec6b60
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087555"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900139"
 ---
-# <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
+# <a name="securescorecontrolprofile-resource-type"></a>Tipo de recurso secureScoreControlProfile
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a pontuação segura de um locatário por dados de controle. Por padrão, ele retorna todos os controles de um locatário e pode explicitamente extrair controles individuais.
+Representa a pontuação de segurança de um locatário por dados de controle. Por padrão, ele retorna todos os controles de um locatário e pode efetuar pull explícito de controles individuais.
 
 
 ## <a name="methods"></a>Métodos
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Listar secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | coleção [secureScoreControlProfile](securescorecontrolprofiles.md) |Obtenha uma coleção de objetos secureScoreControlProfile.|
+|[Lista secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [coleção secureScoreControlProfile](securescorecontrolprofiles.md) |Obtenha uma coleção de objetos secureScoreControlProfile.|
 
 
 ## <a name="properties"></a>Propriedades
 
 |Nome |Tipo |Descrição |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   Cadeia de caracteres GUID para ID do locatário.  |
-|   controlName |   Cadeia de caracteres  |   Nome do controle. |
+|   azureTenantId   |   String  |   Cadeia de caracteres GUID para a ID do locatário.  |
+|   Controlname |   Cadeia de Caracteres  |   Nome do controle. |
 |   title   |   String  |   Título do controle.   |
-| complianceInformation | coleção [complianceInformation](complianceinformation.md) | O conjunto de informações de conformidade associadas ao controle de Pontuação segura |
-|   controlCategory |   Cadeia de caracteres  |   Categoria de ação de controle (conta, dados, dispositivo, aplicativos, infraestrutura).  |
-|   actionType  |   Cadeia de caracteres  |   Tipo de ação de controle (configuração, revisão, comportamento). |
-|   service |   Cadeia de caracteres  |   Serviço que possui o controle (Exchange, SharePoint, Azure AD). |
-|   maxScore |  Cadeia de caracteres  |   A pontuação máxima obtida na data especificada.   |
-|   camada |  Cadeia de caracteres  |   Camada de controle (Core, defesa profunda, avançada)    |
-|   userimpact |    Cadeia de caracteres  | Impacto do usuário da implementação do controle (baixo, moderado, alto).    |
-|   implementationCost |    Cadeia de caracteres  |   Custo do recurso do controle implemmentating (baixo, moderado, alto). |
+| complianceInformation | [coleção complianceInformation](complianceinformation.md) | A coleção de informações de conformidade associadas ao controle de pontuação segura |
+|   controlCategory |   Cadeia de Caracteres  |   Categoria de ação de controle (Conta, Dados, Dispositivo, Aplicativos, Infraestrutura).  |
+|   actionType  |   Cadeia de caracteres  |   Tipo de ação de controle (Configuração, Revisão, Comportamento). |
+|   service |   Cadeia de caracteres  |   Serviço que possui o controle (Exchange, Sharepoint, Azure AD). |
+|   maxScore |  Cadeia de Caracteres  |   Pontuação máxima obtida no momento na data especificada.   |
+|   Camada |  Cadeia de Caracteres  |   Camada de controle (Core, Defesa em Profundidade, Avançado.)    |
+|   userImpact |    Cadeia de Caracteres  | Impacto do usuário na implementação do controle (baixo, moderado, alto).    |
+|   implementationCost |    Cadeia de Caracteres  |   Custo de recurso de controle implemmentating (baixo, moderado, alto). |
 |   classificação |  Int32   |   Classificação de pilha da Microsoft de controle.   |
-|   las |   String Collection   |   Lista de ameaças o controle atenua (accountBreach, dataexclusão, dataExfiltration, dataderramamento, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
-|   preterido |    Boolean |   Sinalizador para indicar se um controle está depreciado.   |
-|   correção |   Cadeia de caracteres  |   Descrição do que o controle ajudará a corrigir. |
-|   remediationImpact | Cadeia de caracteres  |   Descrição do impacto sobre os usuários da correção. |
-|   actionUrl | Cadeia de caracteres  |   URL para onde o controle pode ser acionado. |
-|   controlStateUpdates | coleção [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Sinalizador para indicar onde o locatário marcou um controle (ignore, terceiros, revisado) (suporta [atualização](../api/securescorecontrolprofiles-update.md)). |
+|   Ameaças |   String Collection   |   Lista de ameaças que o controle reduz (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing). |
+|   Preterido |    Booliano |   Sinalizador para indicar se um controle é depreciado.   |
+|   Remediação |   String  |   Descrição do que o controle ajudará a corrigir. |
+|   remediationImpact | Cadeia de Caracteres  |   Descrição do impacto sobre os usuários da correção. |
+|   Actionurl | Cadeia de Caracteres  |   URL para onde o controle pode ser acionado. |
+|   controlStateUpdates | [coleção secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Sinalizador para indicar onde o locatário marcou um controle (ignorar, thirdParty, revisado) (dá suporte à [atualização](../api/securescorecontrolprofiles-update.md)). |
 |   vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
 ## <a name="relationships"></a>Relações

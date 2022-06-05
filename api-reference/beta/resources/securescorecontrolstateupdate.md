@@ -1,25 +1,25 @@
 ---
 title: " Tipo de recurso secureScoreControlStateUpdate"
-description: Esse recurso contém histórico de estados de controle atualizados pelo usuário (os estados de controle incluem Default, Ignored, ThirdParty, Reviewed).
+description: Esse recurso contém o histórico de estados de controle atualizados pelo usuário (os estados de controle incluem Default, Ignored, ThirdParty, Reviewed).
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 17d35370907ac82d47b28e67b7fb4ba6c0068bb7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72be4693fa6b851ee587462d96451d78430a24a6
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063612"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899507"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>Tipo de recurso secureScoreControlStateUpdate
 Contém o histórico dos estados de controle atualizados pelo usuário (os estados de controle incluem Default, Ignored, ThirdParty, Reviewed).
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|assignedTo | cadeia de caracteres | Atribuir o controle ao usuário que tomará a ação |
-|comment | string | Fornece comentários opcionais sobre o controle |
-|estado | string | O estado do controle pode ser modificado usando o comando PATCH(Ex: ignorado, thirdParty etc) |
+|assignedTo | string | Atribuir o controle ao usuário que executará a ação |
+|comment | string | Fornece um comentário opcional sobre o controle |
+|estado | string | O estado do controle pode ser modificado usando o comando PATCH (por exemplo: ignorado, thirdParty etc.) |
 |updatedBy | string |ID do usuário que atualizou o estado do locatário |
 |updatedDateTime | DateTimeOffset |Hora em que o estado de controle foi atualizado |
  ## <a name="json-representation"></a>Representação JSON

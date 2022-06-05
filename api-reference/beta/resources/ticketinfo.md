@@ -1,28 +1,28 @@
 ---
 title: Tipo de recurso ticketInfo
-description: O objeto que representa informações de tíquete relacionadas a solicitações de atribuição de função
+description: Representa informações de tíquete relacionadas a solicitações de qualificação e atribuição de função.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d64bd63615ec156548942d14deb5833eb5dd990a
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: e2356ef6fdbf0d1832d79fc2b68ecbef69db1ede
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399450"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900461"
 ---
 # <a name="ticketinfo-resource-type"></a>Tipo de recurso ticketInfo
 
 Namespace: microsoft.graph
 
-O objeto que representa informações de tíquete relacionadas a solicitações de atribuição de função
+Representa informações de tíquete relacionadas a solicitações de qualificação e atribuição de função. Use este objeto para definir parâmetros de tíquete para uma atribuição de função ou solicitação de qualificação é iniciada por outra solicitação feita em um sistema externo.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ticketNumber|Cadeia de caracteres|Metadados de número de tíquete|
-|ticketSystem|Cadeia de caracteres|Metadados do sistema de tíquetes|
+|ticketNumber|Cadeia de Caracteres|O número do tíquete.|
+|ticketSystem|String|A descrição do sistema de tíquetes.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

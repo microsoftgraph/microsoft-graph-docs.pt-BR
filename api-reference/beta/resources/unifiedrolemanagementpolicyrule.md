@@ -1,35 +1,40 @@
 ---
 title: Tipo de recurso unifiedRoleManagementPolicyRule
-description: Um unifiedRoleManagementPolicyRule especifica a regra associada a uma política de gerenciamento de função. É abstrato.
+description: Um tipo abstrato que define as regras associadas às políticas de gerenciamento de função.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d8dee3e3e6b28668b1370a2bb0c34f58e28c82ef
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 4851f090b4e73ace7de7b86fc85db76555c918fa
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461307"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898515"
 ---
 # <a name="unifiedrolemanagementpolicyrule-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicyRule
 
 Namespace: microsoft.graph
 
-Um unifiedRoleManagementPolicyRule especifica a regra associada a uma política de gerenciamento de função. É abstrato.
+Um tipo abstrato que define as regras associadas às políticas de gerenciamento de função. Esse tipo abstrato é herdado pelos seguintes recursos que definem os vários tipos de regras e suas configurações associadas às políticas de gerenciamento de função.
++ [unifiedRoleManagementPolicyApprovalRule](unifiedrolemanagementpolicyapprovalrule.md)
++ [unifiedRoleManagementPolicyAuthenticationContextRule](unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyEnablementRule](unifiedrolemanagementpolicyenablementrule.md)
++ [unifiedRoleManagementPolicyExpirationRule](unifiedrolemanagementpolicyexpirationrule.md)
++ [unifiedRoleManagementPolicyNotificationRule](unifiedrolemanagementpolicynotificationrule.md)
+
+
+Herda de [entidade](../resources/entity.md).
 
 ## <a name="methods"></a>Métodos
-|Método|Tipo de retorno|Descrição|
-|:---|:---|:---|
-|[Listar unifiedRoleManagementPolicyRules](../api/unifiedrolemanagementpolicy-list-rules.md)|[Coleção unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Obtenha uma lista dos [objetos unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) e suas propriedades.|
-|[Obter unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Leia as propriedades e as relações de um [objeto unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .|
-|[Atualizar unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Atualize as propriedades de [um objeto unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .|
+
+Nenhum.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da regra.|
-|destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|O destino da regra de política.|
+|id|String|Identificador da regra. Herdado da [entidade](../resources/entity.md). Somente leitura.|
+|destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)| **Não implementado.** Define detalhes do escopo direcionado pela regra de política de gerenciamento de função. Os detalhes podem incluir o tipo de entidade de segurança, o tipo de atribuição de função e as ações que afetam uma função. Suporta `$filter` (`eq`, `ne`).|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -40,6 +45,7 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
@@ -52,4 +58,3 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-

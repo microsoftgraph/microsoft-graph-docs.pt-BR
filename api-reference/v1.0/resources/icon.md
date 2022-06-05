@@ -3,14 +3,14 @@ title: Tipo de recurso Icon
 description: Representa um ícone de célula.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 73ae9bbe240df7bd1e8ca2b6cb7a4a0556fae0f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc8a3ff251a321d6accc89015ba9b0ec751ed0ed
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098997"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899705"
 ---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
 
@@ -30,7 +30,7 @@ Representa um ícone de célula.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|int|Representa o índice do ícone em determinado conjunto.|
-|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são: `Invalid` , , , , , , , , , `ThreeArrows` , `ThreeArrowsGray` , , , , `ThreeFlags` , , `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` , `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` , `ThreeStars` `ThreeTriangles` `FiveBoxes`|
+|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são: , , , , , `ThreeTrafficLights1`, `ThreeSymbols``ThreeSigns``ThreeTrafficLights2`, `ThreeSymbols2`, `FourArrows`, , `FourArrowsGray`, `FourRating``FourRedToBlack`, , `FourTrafficLights`, , `FiveArrows``FiveArrowsGray`, , `FiveRating`, , , `FiveBoxes``ThreeTriangles``ThreeStars``FiveQuarters``ThreeFlags``ThreeArrowsGray``ThreeArrows``Invalid`|
 
 ## <a name="relationships"></a>Relações
 Nenhum

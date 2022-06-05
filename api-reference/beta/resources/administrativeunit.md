@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2d1083dcca8eb48697d12e6c5bc7a3fa5b1e544a
-ms.sourcegitcommit: b19b19bf192688f4c513492e8391e4d8dc104633
+ms.openlocfilehash: b79f63e01e085278a45af675cc43ed4ec21c07b4
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62878733"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900097"
 ---
 # <a name="administrativeunit-resource-type"></a>Tipo de recurso administrativeUnit
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário, grupo e dispositivo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários, grupos e dispositivos contidos dentro ou com escopo para uma unidade administrativa para um administrador regional ou departamento.
+Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário, grupo e dispositivo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários, grupos e dispositivos contidos dentro ou no escopo de uma unidade administrativa para um administrador regional ou departamento.
 
 Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/administrativeunit-delta.md). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
 
-Vejamos um exemplo. Imagine que a Contoso Corp é feita de duas divisões : uma Divisão da Costa Oeste e uma Divisão da Costa Leste. As funções de diretório na Contoso têm escopo para todo o locatário. Lee, administrador da empresa Contoso, deseja delegar responsabilidades administrativas, mas as escopo para a Divisão da Costa Oeste ou para a divisão da Costa Leste.  Lee pode criar uma *unidade admistrativa* da Costa Oeste e colocar todos os usuários da Costa Oeste nessa unidade administrativa.  Da mesma forma, Lee pode criar uma *unidade administrativa da Costa Leste*.  Agora, Lee pode começar a delegar responsabilidades administrativas a outras  pessoas, mas com escopo para as novas unidades administrativas que ele criou. Lee coloca Jennifer em *uma função de administrador de helpdesk* **com escopo** para a *unidade administrativa da Costa Oeste*.  Isso permite que a Jennifer redefinir a senha de qualquer usuário, mas somente se esses usuários estão na *unidade administrativa da Costa Oeste*.  Da mesma forma, Lee coloca Dave em uma função *de* administrador de conta de usuário com **escopo para a** *unidade administrativa da Costa Leste*.  Isso permite que Dave atualize usuários, atribua licenças e redefinir a senha de qualquer usuário, mas somente se esses usuários estão na unidade administrativa *da Costa Leste*. Para uma visão geral de vídeo, consulte [Introdução às Azure Active Directory Administrativas](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units).
+Vejamos um exemplo. Imagine que a Contoso Corp é composta por duas divisões: uma Divisão da Costa Oeste e uma Divisão da Costa Leste. As funções de diretório na Contoso têm como escopo todo o locatário. Lee, um administrador da empresa Contoso, deseja delegar responsabilidades administrativas, mas defina-as como escopo para a Divisão da Costa Oeste ou para a divisão da Costa Leste.  Lee pode criar uma *unidade admistrativa* da Costa Oeste e colocar todos os usuários da Costa Oeste nessa unidade administrativa.  Da mesma forma, Lee pode criar uma *unidade administrativa da Costa Leste*.  Agora Lee, pode começar a delegar responsabilidades administrativas a outras  pessoas, mas com escopo para as novas unidades administrativas que ele criou. Lee coloca Jennifer em uma *função de* administrador de assistência **técnica com** escopo para a *unidade administrativa da Costa Oeste*.  Isso permite que Jennifer redefina a senha de qualquer usuário, mas somente se esses usuários estão na *unidade administrativa da Costa Oeste*.  Da mesma forma, Lee coloca Dave em uma função de administrador de *conta* de **usuário** com escopo para a *unidade administrativa da Costa Leste*.  Isso permite que Dave atualize usuários, atribua licenças e redefina a senha de qualquer usuário, mas somente se esses usuários estão na unidade administrativa *da Costa Leste*. Para obter uma visão geral em vídeo, consulte [Introdução às Unidades Administrativas do Azure Active Directory](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units).
 
 Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](/graph/extensibility-overview).
 
-Este tópico fornece descrições das propriedades declaradas e propriedades de navegação expostas pela entidade administrativeUnit, bem como as operações e funções que podem ser chamadas no recurso administrativeUnits.
+Este tópico fornece descrições das propriedades declaradas e das propriedades de navegação expostas pela entidade administrativeUnit, bem como as operações e funções que podem ser chamadas no recurso administrativeUnits.
 
 
 ## <a name="methods"></a>Métodos
@@ -34,19 +34,19 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Criar](../api/directory-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Crie uma nova unidade administrativa.|
-|[Lista](../api/directory-list-administrativeunits.md) | [Coleção administrativeUnit](administrativeunit.md) |Listar propriedades de todas as administrativeUnits.|
+|[Lista](../api/directory-list-administrativeunits.md) | [coleção administrativeUnit](administrativeunit.md) |Listar propriedades de todas as administrativeUnits.|
 |[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Ler propriedades e relações de um objeto administrativeUnit específico.|
-|[Atualizar](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualizar o objeto administrativeUnit. |
-|[Delete](../api/administrativeunit-delete.md) | Nenhum |Excluir objeto administrativeUnit. |
-|[Obter delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Get newly created, updated, or **deleted administrativeUnits** without having to perform a full read of the entire resource collection.|
+|[Atualizar](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Atualize o objeto administrativeUnit. |
+|[Excluir](../api/administrativeunit-delete.md) | Nenhum |Exclua o objeto administrativeUnit. |
+|[Obter delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Obtenha **administrativeUnits** recém-criados, atualizados ou excluídos sem precisar executar uma leitura completa de toda a coleção de recursos.|
 |[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicione um membro (usuário, grupo ou dispositivo).|
-|[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obter a lista de membros (usuário, grupo e dispositivo).|
+|[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha a lista de membros (usuário, grupo e dispositivo).|
 |[Obter um membro](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Obter um membro específico.|
-|[Remover um membro](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remova um membro.|
-|[Adicionar membro de função com escopo](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Adicione um membro de função com escopo.|
-|[Listar membros de função com escopo](../api/administrativeunit-list-scopedrolemembers.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Obter a lista de administradores de função de escopo.|
-|[Obter um membro de função com escopo](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Obter um membro de função de escopo específico.|
-|[Remover um membro de função com escopo](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remova um membro de função com escopo.|
+|[Remover um membro](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remover um membro.|
+|[Adicionar um scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Atribuir uma função do Azure AD com escopo de unidade administrativa.|
+|[Listar scopedRoleMembers](../api/administrativeunit-list-scopedrolemembers.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Listar atribuições de função do Azure AD com escopo de unidade administrativa.|
+|[Obter um scopedRoleMember](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Obtenha uma atribuição de função do Azure AD com escopo de unidade administrativa.|
+|[Remover um scopedRoleMember](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remova uma atribuição de função do Azure AD com escopo de unidade administrativa.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
@@ -54,7 +54,7 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 |[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 
 > [!NOTE]
-> O ponto de extremidade da URL para chamar a API **administrativeUnits** está `/administrativeUnits` no `beta` ponto de extremidade, mas `/directory/administrativeUnits` no `v1.0` ponto de extremidade.
+> O ponto de extremidade de URL para chamar a API `/administrativeUnits` **administrativeUnits** está no ponto `beta` de extremidade, mas `/directory/administrativeUnits` no ponto `v1.0` de extremidade.
 
 ## <a name="properties"></a>Propriedades
 
@@ -63,17 +63,17 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|String|Uma descrição opcional para a unidade administrativa. Suporta `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
-|displayName|String|Nome de exibição da unidade administrativa. Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores), `$search`, e `$orderBy`.|
-|id|String|Identificador exclusivo da unidade administrativa. Somente leitura. Suporta `$filter` (`eq`).|
-|visibility|Cadeia de caracteres|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como `HiddenMembership`. Se não for definido (o valor é `null`), o comportamento padrão será público. Quando definido como `HiddenMembership`, somente membros da unidade administrativa podem listar outros membros da unidade administrativa.|
+|description|String|Uma descrição opcional para a unidade administrativa. Dá `$filter` suporte a (`eq`, `ne`, `in`, `startsWith`), `$search`.|
+|displayName|String|Nome de exibição da unidade administrativa. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`.|
+|id|String|Identificador exclusivo para a unidade administrativa. Somente leitura. Suporta `$filter` (`eq`).|
+|visibility|String|Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como `HiddenMembership`. Se não estiver definido (o valor é `null`), o comportamento padrão será público. Quando definido como `HiddenMembership`, somente os membros da unidade administrativa podem listar outros membros da unidade administrativa.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para essa unidade administrativa. Anulável.|
-|members|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros dessa unidade administrativa. Suporta o `$expand`.|
-|scopedRoleMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros de função de escopo desta unidade administrativa.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para esta unidade administrativa. Anulável.|
+|members|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros desta unidade administrativa. Suporta o `$expand`.|
+|scopedRoleMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros de função com escopo desta unidade administrativa.|
 
 ## <a name="json-representation"></a>Representação JSON
 

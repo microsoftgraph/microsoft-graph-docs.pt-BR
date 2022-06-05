@@ -1,16 +1,16 @@
 ---
 title: Remover um scopedRoleMember
-description: Remova um membro de função com escopo de uma unidade administrativa.
+description: Remova uma atribuição de função do Azure AD (Azure Active Directory) com escopo de unidade administrativa.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ed090a121c3ed8e8eb1572e10f8701964138ab6a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 90cc6d4221a362cecf0418b4ca554a4f34574781
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669491"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898192"
 ---
 # <a name="remove-a-scopedrolemember"></a>Remover um scopedRoleMember
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova um membro de função com escopo de uma unidade administrativa.
+Remova uma atribuição de função do Azure AD (Azure Active Directory) com escopo de unidade administrativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,9 +26,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
+
+Para remover uma atribuição de função de uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -1,21 +1,26 @@
 ---
 title: Obter unifiedRoleManagementPolicyRule
-description: Leia as propriedades e as relações de um objeto unifiedRoleManagementPolicyRule.
+description: Recuperar uma regra definida para uma política de gerenciamento de função.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a48bf5b553e38a1085748cab79e173ef1855b170
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: a75326c388969bf63b8bf3e40d3fb41177c300ec
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399422"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900314"
 ---
 # <a name="get-unifiedrolemanagementpolicyrule"></a>Obter unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) .
+Recuperar uma regra definida para uma política de gerenciamento de função. A regra pode ser um dos seguintes tipos derivados do objeto [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) :
++ [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
++ [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
++ [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
++ [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
++ [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -34,11 +39,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
-GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRules/{unifiedRoleManagementPolicyRuleId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos parâmetros `$select` `$expand` de consulta e OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -63,7 +67,7 @@ Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objet
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448/rules/Expiration_Admin_Eligibility
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyrule-csharp-snippets.md)]
@@ -106,12 +110,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "ba9cc2d6-c2d6-ba9c-d6c2-9cbad6c29cba",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies('DirectoryRole_cab01047-8ad9-4792-8e42-569340767f1b_70c808b5-0d35-4863-a0ba-07888e99d448')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_Admin_Eligibility",
+    "isExpirationRequired": false,
+    "maximumDuration": "P365D",
     "target": {
-      "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
+        "caller": "Admin",
+        "operations": [
+            "All"
+        ],
+        "level": "Eligibility",
+        "inheritableSettings": [],
+        "enforcedSettings": []
     }
-  }
 }
 ```
 

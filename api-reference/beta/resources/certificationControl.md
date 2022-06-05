@@ -1,27 +1,27 @@
 ---
-title: " tipo de recurso certificationControl"
-description: Esse recurso contém dados de certificação de conformidade associados ao controle de pontuação seguro.
+title: " Tipo de recurso certificationControl"
+description: Esse recurso contém dados de certificação de conformidade associados ao controle de pontuação segura.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: 6f436e2b9e8ebbea1ff03cdcadb024b4dae1ef6c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dd18b83f6f370caabe3d6518f7d9e2d92241f1d3
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069513"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900202"
 ---
-#  <a name="certificationcontrol-resource-type"></a>tipo de recurso certificationControl
+#  <a name="certificationcontrol-resource-type"></a>Tipo de recurso certificationControl
 
 Namespace: microsoft.graph
 
-Contém dados de certificação de conformidade associados ao controle de pontuação seguro.
+Contém dados de certificação de conformidade associados ao controle de pontuação segura.
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
 |nome | string | Nome do controle de certificação |
-|url | string | URL do Portal de Confiança do Serviço Microsoft |
+|url | string | URL do Portal de Confiança do Serviço da Microsoft |
 
 ## <a name="json-representation"></a>Representação JSON
 

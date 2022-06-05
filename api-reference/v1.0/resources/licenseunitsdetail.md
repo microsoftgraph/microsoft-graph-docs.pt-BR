@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jconley76
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ef2891e465bdeefcb7bec8314394bc298bf8f48d
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: 6a321eeb77b011730ec99b76112bd441862e72d2
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549551"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900398"
 ---
 # <a name="licenseunitsdetail-resource-type"></a>Tipo de recurso licenseUnitsDetail
 
 Namespace: microsoft.graph
 
-A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é do tipo **licenseUnitsDetail**. Para obter mais informações sobre os estados de progressão de uma assinatura, consulte [E se minha assinatura expirar?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide)
+A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é do tipo **licenseUnitsDetail**. Para obter mais informações sobre os estados de progressão de uma assinatura, consulte [E se minha assinatura expirar?](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide&preserve-view=true)
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

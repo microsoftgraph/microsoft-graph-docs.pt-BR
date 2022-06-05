@@ -2,21 +2,21 @@
 title: Tipo de recurso deviceAppManagement
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de aplicativos de dispositivos.
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a021bc627833ecc0187938b18b7ac39f515c2ff6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97184dcbbf4e76576b8166a9fa10030970b8c2ff
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063668"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899502"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -33,29 +33,29 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |**Integração**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
-|microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é <languagecode2>-<country/regioncode2>, onde <languagecode2> é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
+|microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é `<languagecode2>`-<country/regioncode2>, onde `<languagecode2>` é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|A última vez em uma sincronização de aplicativo na Microsoft Store para Empresas foi concluída.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|A última vez que os aplicativos da Microsoft Store para Empresas foram sincronizados com êxito para essa conta.|
-|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|As informações do portal do usuário final são usadas para sincronizar aplicativos do Microsoft Store para Empresas para Portal da Empresa do Intune. Há três opções para escolher em 'Somente portal da empresa', 'Portal da empresa e loja \[ privada', 'Somente armazenamento particular' \] . Os valores possíveis são: `none`, `companyPortal`, `privateStore`.|
+|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|As informações do portal do usuário final são usadas para sincronizar aplicativos da Microsoft Store para Empresas com o Portal da Empresa do Intune. Há três opções para escolher entre \['Somente portal da empresa', 'Portal da empresa e repositório particular', 'Somente repositório particular'\]. Os valores possíveis são: `none`, `companyPortal`, `privateStore`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |**Aplicativos**|
-|enterpriseCodeSigningCertificates|[coleção enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|O Windows Enterprise de assinatura de código.|
-|iosLobAppProvisioningConfigurations|[Coleção iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|As Configurações de Provisionamento de Aplicativos lob do IOS.|
+|enterpriseCodeSigningCertificates|[coleção enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)|O Certificado de Assinatura de Código Empresarial do Windows.|
+|iosLobAppProvisioningConfigurations|[Coleção iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|As configurações de provisionamento de aplicativo lob do IOS.|
 |mobileAppCategories|Coleção [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|As categorias dos aplicativos móveis.|
 |mobileAppConfigurations|Coleção [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|As configurações de aplicativos móveis de gerenciamento de dispositivos.|
 |mobileApps|Coleção [mobileApp](../resources/intune-shared-mobileapp.md)|Os aplicativos móveis.|
-|symantecCodeSigningCertificate|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|O Certificado de Assinatura de Código Symantec do WinPhone.|
-|**Livros**|
+|symantecCodeSigningCertificate|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|O certificado de assinatura de código da Symantec do WinPhone.|
+|**Manuais**|
 |managedEBooks|Conjunto [managedEBook](../resources/intune-books-managedebook.md)|Livro eletrônico gerenciado.|
 |managedEBookCategories|[Coleção managedEBookCategory](../resources/intune-books-managedebookcategory.md)|As categorias de eBook móvel.|
 |**Gerenciamento de dispositivo**|
-|windowsManagementApp|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Windows de gerenciamento.|
+|windowsManagementApp|[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)|Aplicativo de gerenciamento do Windows.|
 |**Gerenciamento de aplicativo móvel (GAM)**|
 |androidManagedAppProtections|Coleção [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Políticas de aplicativos gerenciados para Android.|
 |defaultManagedAppProtections|Coleção [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|Políticas de aplicativos gerenciados padrão.|
@@ -67,23 +67,23 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 |targetedManagedAppConfigurations|Coleção [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md)|Configurações de aplicativos gerenciados direcionadas.|
 |windowsInformationProtectionPolicies|Coleção [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Proteção de informações do Windows para aplicativos em execução em dispositivos que não estão registrados no MDM.|
 |**Integração**|
-|sideLoadingKeys|[Coleção sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Teclas de carregamento de lado que são necessárias para a instalação Windows 8 e 8.1 Apps.|
+|sideLoadingKeys|[Coleção sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Chaves de Carregamento Lateral necessárias para a instalação dos Aplicativos do Windows 8 e 8.1.|
 |vppTokens|Coleção de [vppToken](../resources/intune-onboarding-vpptoken.md)|Lista de tokens Vpp desta organização.|
 |**Conjunto de Políticas**|
-|policySets|[Coleção policySet](../resources/intune-policyset-policyset.md)|The PolicySet of Policies and Applications|
+|policySets|[Coleção policySet](../resources/intune-policyset-policyset.md)|O PolicySet de políticas e aplicativos|
 |mobileApps|Coleção [mobileApp](../resources/intune-shared-mobileapp.md)|Os aplicativos móveis.|
 |targetedManagedAppConfigurations|Coleção [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md)|Configurações de aplicativos gerenciados direcionadas.|
 |androidManagedAppProtections|Coleção [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Políticas de aplicativos gerenciados para Android.|
 |iosManagedAppProtections|Coleção [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Políticas de aplicativos gerenciados para iOS.|
 |mdmWindowsInformationProtectionPolicies|Coleção [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md)|Proteção de informações do Windows para aplicativos em execução em dispositivos que estão registrados no MDM.|
-|iosLobAppProvisioningConfigurations|[Coleção iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|As Configurações de Provisionamento de Aplicativos lob do IOS.|
+|iosLobAppProvisioningConfigurations|[Coleção iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|As configurações de provisionamento de aplicativo lob do IOS.|
 |**Integração de parceiros**|
-|deviceAppManagementTasks|[Coleção deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|Tarefas de gerenciamento de aplicativos de dispositivo.|
+|deviceAppManagementTasks|[Coleção deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|Tarefas de gerenciamento de aplicativo de dispositivo.|
 |**Unlock**|
-|wdacSupplementalPolicies|[Coleção windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|A coleção de políticas suplementares Windows Defender controle de aplicativos.|
+|wdacSupplementalPolicies|[coleção windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|A coleção de Políticas Complementares do Controle de Aplicativos do Windows Defender.|
 
 ## <a name="json-representation"></a>Representação JSON
-Veja a seguir uma representação JSON do recurso.  Observe que isso é apenas um exemplo; respostas de consulta a consultas reais conterão as propriedades apropriadas para o contexto.  
+Veja a seguir uma representação JSON do recurso.  Observe que este é apenas um exemplo; as respostas de consulta a consultas reais conterão as propriedades apropriadas para o contexto.  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

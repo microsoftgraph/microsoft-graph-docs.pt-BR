@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: de7c9260c5682c12f2d61cbc336f22ecb7579d20
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 40f81892de0fe1a9925a6d9d62d51e679b57748b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883975"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899460"
 ---
 # <a name="administrativeunit-resource-type"></a>Tipo de recurso administrativeUnit
 
@@ -37,10 +37,10 @@ Este tópico fornece descrições das propriedades declaradas e das propriedades
 |[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha a lista de membros (usuário, grupo ou dispositivo).|
 |[Obter um membro](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Obter um membro específico.|
 |[Remover um membro](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remover um membro.|
-|[Adicionar membro de função com escopo](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Adicione um membro de função com escopo.|
-|[Listar membros de função com escopo](../api/administrativeunit-list-scopedrolemembers.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Obter a lista de administradores de função com escopo.|
-|[Obter um membro de função com escopo](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Obter um membro de função com escopo específico.|
-|[Remover um membro de função com escopo](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remover um membro de função com escopo.|
+|[Adicionar um scopedRoleMember](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Atribuir uma função do Azure AD com escopo de unidade administrativa.|
+|[Listar scopedRoleMembers](../api/administrativeunit-list-scopedrolemembers.md) |Coleção [scopedRoleMembership](scopedrolemembership.md)| Listar atribuições de função do Azure AD com escopo de unidade administrativa.|
+|[Obter um scopedRoleMember](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Obtenha uma atribuição de função do Azure AD com escopo de unidade administrativa.|
+|[Remover um scopedRoleMember](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Remova uma atribuição de função do Azure AD com escopo de unidade administrativa.|
 
 ## <a name="properties"></a>Propriedades
 

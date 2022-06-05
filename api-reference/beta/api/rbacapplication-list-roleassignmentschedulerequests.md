@@ -1,16 +1,16 @@
 ---
 title: Listar roleAssignmentScheduleRequests
-description: Obtenha uma lista dos objetos unifiedRoleAssignmentScheduleRequest e suas propriedades.
+description: Recupere as solicitações de atribuições de função ativas para entidades de segurança feitas por meio do objeto unifiedRoleAssignmentScheduleRequest do PIM ou da API de atribuições de função.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9a82b30e19d30eacc04c55b586e0bd9f06598b84
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 4396f1b4bef429aca76274e91aea9b218cf9aa6a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461658"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899179"
 ---
 # <a name="list-roleassignmentschedulerequests"></a>Listar roleAssignmentScheduleRequests
 
@@ -18,7 +18,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista dos [objetos unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) e suas propriedades.
+Recupere as solicitações de atribuições de função ativas para entidades de segurança. As atribuições ativas incluem aquelas feitas por meio de [atribuições e solicitações](rbacapplication-post-roleassignmentschedulerequests.md) de ativação e diretamente por meio da [API de atribuições de função](../resources/unifiedroleassignment.md). As atribuições de função podem ser permanentemente ativas com ou sem uma data de expiração ou temporariamente ativas após a ativação do usuário de atribuições qualificadas.
+
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +44,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos `$select`parâmetros de consulta , `$filter`e `$expand` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

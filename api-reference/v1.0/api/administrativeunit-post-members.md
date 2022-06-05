@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9598d63f17e83d92913724f0b64cb5092307a3a4
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 287b06162d8c8d5f4ccd3853ae15d2542516ffd6
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884100"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899768"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
@@ -26,7 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|Aplicativo | AdministrativeUnit.ReadWrite.All |
+
+Para adicionar um membro a uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

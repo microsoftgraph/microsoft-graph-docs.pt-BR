@@ -1,23 +1,23 @@
 ---
 title: 'unifiedRoleAssignmentScheduleInstance: filterByCurrentUser'
-description: Obter uma lista dos objetos unifiedRoleAssignmentScheduleInstance e suas propriedades filtradas por uma entidade de usuário específica
+description: Obtenha as instâncias de atribuições de função ativas para a entidade de chamada.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a3f20d169afb59308e27953ff973e58716bebd6c
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: e1912dfe565825768bcb3c729273a4db1093239b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399499"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900195"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista dos [objetos unifiedRoleAssignmentScheduleInstance](../resources/unifiedRoleAssignmentScheduleInstance.md) e suas propriedades associadas a um objeto principal específico.
+Obtenha as instâncias de atribuições de função ativas para a entidade de chamada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,15 +39,16 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
-A tabela a seguir mostra os parâmetros que podem ser usados com esse método.
+Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
+A tabela a seguir mostra os parâmetros necessários com essa função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|Filtre para consultar objetos para os quais o usuário atual é a entidade de segurança. O valor permitido é `principal`. Obrigatório.|
+|on|roleAssignmentScheduleInstanceFilterByCurrentUserOptions|Os valores possíveis são `principal`, `unknownFutureValue`.|
 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos `$select`parâmetros de consulta , `$filter`e `$expand` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

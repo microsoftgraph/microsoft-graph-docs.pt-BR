@@ -1,16 +1,16 @@
 ---
 title: Valores de enumeração
-description: Valores Graph enumeração do Microsoft Graph
+description: Valores de enumeração do Microsoft Graph
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 509a12dc4e819a18dc2728e924814ff8d7db38cb
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 94dec31967c4ca5caf349d3ddbee5f9a7d000343
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820396"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900006"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -338,7 +338,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|Cadeia de Caracteres|
 |Inteiro|
 |Referências|
 |Binária|
@@ -948,6 +948,15 @@ Namespace: microsoft.graph
 |Retornado|
 |unknownFutureValue|
 |Reatribuída|
+
+### <a name="educationfeedbackresourceoutcomestatus-values"></a>valores educationFeedbackResourceOutcomeStatus
+|Member|
+|:---|
+|notPublished|
+|pendingPublish|
+|Publicado|
+|failedPublish|
+|unknownFutureValue|
 
 ### <a name="externalemailotpstate-values"></a>Valores externalEmailOtpState
 
@@ -1639,7 +1648,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | Lista
-| description
+| descrição
 | referência
 
 
@@ -1917,7 +1926,7 @@ Valores possíveis para o método de entrada do usuário.
 
 ### <a name="useraccountsecuritytype-values"></a>Valores userAccountSecurityType
 
-Valores possíveis para tipos de conta de usuário (associação de grupo), por definição Windows usuário.
+Valores possíveis para tipos de conta de usuário (associação de grupo), de acordo com a definição do Windows.
 
 | Membro        | Valor | Descrição                     |
 | :------------ | :---- | :------------------------------ |
@@ -2178,7 +2187,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | Resto   | 0     | Os dados estão em repouso; Um arquivo em um compartilhamento, por exemplo.                                 |
 | Movimento | 1     | Os dados estão em movimento. Um arquivo interceptado por um dispositivo de rede em trânsito.         |
-| Usar    | 2     | Os dados estão em uso. Um arquivo é aberto em um aplicativo cliente, como Microsoft Office. |
+| Usar    | 2     | Os dados estão em uso. Um arquivo é aberto em um aplicativo cliente, como o Microsoft Office. |
 
 ### <a name="assignmentmethod-values"></a>Valores assignmentMethod
 
@@ -2367,8 +2376,8 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
 | none                  | 0     | Ainda não sei.                       |
-| mailFlowRule          | 1     | Exchange de transporte.            |
-| safeSender            | 2     | Cofre lista de remetentes.                   |
+| mailFlowRule          | 1     | Regra de transporte do Exchange.            |
+| safeSender            | 2     | Lista de remetentes seguros.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4     | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5     | Lista de permissões de domínio do remetente.           |
@@ -2577,9 +2586,9 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o Teams aplicativo pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |Groupchat |1        |Indica que o aplicativo Teams pode ser instalado em um chat em grupo e está autorizado a acessar os dados desse chat em grupo.|
-|pessoal  |2        |Indica que o Teams aplicativo pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
+|pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>Valores roleAssignmentScheduleRequestFilterByCurrentUserOptions
 

@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Identidade
+title: Tipo de recurso Identity
 ms.localizationpriority: medium
-description: O recurso Identity representa uma identidade de um actor.
-ms.prod: ''
+description: O recurso de identidade representa uma identidade de um ator.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 3165b70282fd3a0a20c373e3c10ca8ab0c6fc909
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5445aec8f1f6901ccfba72b5262528fc2d84c203
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098976"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900335"
 ---
-# <a name="identity-resource-type"></a>Tipo de recurso Identity
+# <a name="identity-resource-type"></a>tipo de recurso de identidade
 
 Namespace: microsoft.graph
 
-O recurso **Identity** representa uma identidade de um _actor_. Por exemplo, e ator pode ser um usuário, aplicativo ou dispositivo.
+O **recurso** de identidade representa uma identidade de um _ator_.
+Por exemplo, e ator pode ser um usuário, aplicativo ou dispositivo.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -37,7 +37,7 @@ O recurso **Identity** representa uma identidade de um _actor_. Por exemplo, e a
 | Propriedade    | Tipo   | Descrição                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName | String | Nome de exibição da identidade. Talvez isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [delta](../api/driveitem-delta.md).     |
-| id          | Cadeia de caracteres | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
+| id          | String | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>Comentários
 

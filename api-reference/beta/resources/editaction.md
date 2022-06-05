@@ -3,15 +3,15 @@ author: daspek
 description: A presença do recurso EditAction em uma itemActivity indica que a atividade editou um item.
 ms.date: 09/14/2017
 title: EditAction
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 33d70965c945f2ad91d2ed9e609c1232284d7200
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: e82a4b8b9ed53d5eb4884cdd49b8583e9c60917e
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089697"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898641"
 ---
 # <a name="editaction-resource-type"></a>Tipo de recurso EditAction
 
@@ -30,7 +30,7 @@ A presença do recurso **EditAction** em uma [**itemActivity**][activity] indica
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.editAction"
+  "@type&quot;: &quot;microsoft.graph.editAction"
 }-->
 
 ```json

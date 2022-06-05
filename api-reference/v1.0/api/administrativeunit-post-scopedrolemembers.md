@@ -1,22 +1,22 @@
 ---
 title: Adicionar um scopedRoleMember
-description: 'Adicione um novo scopedRoleMembership. OBSERVAÇÃO: No momento, apenas as *funções* de administrador de conta de usuário e *helpdesk* são suportadas para associações de função com escopo.'
+description: Atribua uma função do Azure AD (Azure Active Directory) com escopo de unidade administrativa.
 ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a64df76a10add9a302287515bd38eaea71cb4762
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: a56eace9e73a8a6e96eb5f42e1b31ea534fd4367
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671878"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898291"
 ---
 # <a name="add-a-scopedrolemember"></a>Adicionar um scopedRoleMember
 
 Namespace: microsoft.graph
 
-Adicione um novo [scopedRoleMembership](../resources/scopedrolemembership.md). OBSERVAÇÃO: No momento, apenas as *funções* de administrador de conta de usuário e *helpdesk* são suportadas para associações de função com escopo.
+Atribua uma função do Azure AD (Azure Active Directory) com escopo de unidade administrativa. Para obter uma lista de funções que podem ser atribuídas com o escopo da unidade administrativa, consulte Atribuir funções do [Azure AD com escopo de unidade administrativa](/azure/active-directory/roles/admin-units-assign-roles).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,9 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
+
+Para atribuir funções do Azure AD com um escopo de unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +45,7 @@ POST /directory/administrativeUnits/{id}/scopedRoleMembers
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto scopedRoleMembership](../resources/scopedrolemembership.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto scopedRoleMembership](../resources/scopedrolemembership.md) .
 
 ## <a name="response"></a>Resposta
 
@@ -96,7 +101,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON do [objeto scopedRoleMembership](../resources/scopedrolemembership.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto scopedRoleMembership](../resources/scopedrolemembership.md) .
 ##### <a name="response"></a>Resposta
 Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso integerRange
+title: Tipo de recurso integerRange
 description: Representa um intervalo inclusivo de inteiros descritos por dois limites Int64.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ee879104878189ddcaf51f65e4e127a61798c811
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e370d7b0fcf67c76fcb43cba7c9382521e8ada78
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986053"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900132"
 ---
-# <a name="integerrange-resource-type"></a>tipo de recurso integerRange
+# <a name="integerrange-resource-type"></a>Tipo de recurso integerRange
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,8 @@ Representa um intervalo inclusivo de inteiros descritos por dois limites Int64.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|iniciar|Int64|O limite inferior inclusivo do intervalo de inteiros.|
-|end|Int64|O limite superior inclusivo do intervalo de inteiros.|
+|iniciar|Int64|O limite inferior inclusivo do intervalo inteiro.|
+|end|Int64|O limite superior inclusivo do intervalo inteiro.|
 
 ## <a name="json-representation"></a>Representação JSON
 

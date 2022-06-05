@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Representa os valores de coluna em um recurso listItem.
 ms.date: 09/11/2017
 title: FieldValueSet
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 62a7d55813877a1808c4930322f1a0ddc33bf89f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: a9416cda6123a6982ca10e51a59002b82319d84a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071196"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898711"
 ---
 # <a name="fieldvalueset-resource"></a>Recurso de FieldValueSet
 

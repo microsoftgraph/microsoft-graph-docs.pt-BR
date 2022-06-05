@@ -1,16 +1,16 @@
 ---
 title: Listar logons
-description: Descreve o método de lista do recurso signIn (entidade) do Microsoft API do Graph.
+description: Descreve o método de lista do recurso signIn (entidade) da API do Microsoft Graph.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8348d19b8c9f15436bb09d8c34c6b0865aaf95f8
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: bd01785c267fc3497adb85308493062ca8742240
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819640"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899285"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Recupera os logons de usuário do Azure AD para seu locatário. As entradas interativas por natureza (em que um nome de usuário/senha é passado como parte do token de autenticação) e entradas federadas bem-sucedidas estão incluídas atualmente nos logs de entrada. 
 
-O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as entradas mais recentes são retornadas primeiro. Somente os eventos de entrada que ocorreram dentro do período de retenção Azure Active Directory ([Azure AD) padrão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) estão disponíveis.
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as entradas mais recentes são retornadas primeiro. Somente os eventos de entrada que ocorreram dentro do período de retenção padrão do Azure AD (Azure Active [Directory) estão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) disponíveis.
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
@@ -36,15 +36,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 > [!IMPORTANT]
 > Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para Azure AD.
+Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
-Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, [Azure AD funções internas](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, confira [as funções internas do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador global
 + Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
 + Leitor de segurança
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
 

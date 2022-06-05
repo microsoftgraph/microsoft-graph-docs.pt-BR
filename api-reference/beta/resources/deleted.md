@@ -3,15 +3,15 @@ author: JeremyKelley
 description: O recurso Deleted indica que o item foi excluído.
 ms.date: 09/10/2017
 title: Deleted
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 6f42f5cea70e4dd4304a12130aaa34376fde226d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: c62d3a6e0636b2e39875bef17dabe2b92cad806a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049867"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900034"
 ---
 # <a name="deleted-facet"></a>Faceta Deleted
 
@@ -43,7 +43,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade | Tipo   | Descrição                               |
 |:---------|:-------|:------------------------------------------|
-| state    | Cadeia de caracteres | Representa o estado do item excluído. |
+| estado    | String | Representa o estado do item excluído. |
 
 ## <a name="remarks"></a>Comentários 
 

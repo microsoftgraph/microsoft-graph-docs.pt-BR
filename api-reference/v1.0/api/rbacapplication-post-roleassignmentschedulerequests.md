@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: aa00d85024698cbc802db7e07fcf82683750dc8b
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 07cdbffa0dec600aedceb691d935e2d7991519ab
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461608"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899747"
 ---
 # <a name="create-roleassignmentschedulerequests"></a>Criar roleAssignmentScheduleRequests
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ No PIM, execute as seguintes operações por meio do [objeto unifiedRoleAssignme
 + Solicite atribuições de função ativas e persistentes para uma entidade de segurança, com ou sem datas de expiração.
 + Ativar, desativar, estender ou renovar uma atribuição de função qualificada para uma entidade de segurança.
 
-Para chamar essa API para atualizar, renovar e estender as atribuições por conta própria, você deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual elas foram desafiadas para MFA. Consulte [Habilitar a autenticação Azure AD multifator para proteger eventos de entrada](/azure/active-directory/authentication/howto-mfa-userstates).
+Para chamar essa API para atualizar, renovar e estender as atribuições por conta própria, você deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual elas foram desafiadas para MFA. Consulte [Habilitar a Autenticação Multifator do Azure AD por usuário para proteger eventos de entrada](/azure/active-directory/authentication/howto-mfa-userstates).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,6 +47,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) .
 
 Você pode especificar as propriedades a seguir ao criar **um unifiedRoleAssignmentScheduleRequest**.
@@ -54,15 +55,14 @@ Você pode especificar as propriedades a seguir ao criar **um unifiedRoleAssignm
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ação|unifiedRoleScheduleRequestActions|Representa o tipo da operação na solicitação de atribuição de função. Os valores possíveis são `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. <br/><ul><li>`adminAssign`: para administradores atribuirem funções a usuários ou grupos.</li><li>`adminRemove`: para administradores removerem usuários ou grupos de funções.</li><li> `adminUpdate`: para que os administradores alterem as atribuições de função existentes.</li><li>`adminExtend`: para que os administradores estendam as atribuições de expiração.</li><li>`adminRenew`: para que os administradores renovem atribuições expiradas.</li><li>`selfActivate`: para que os usuários ativem suas atribuições.</li><li>`selfDeactivate`: para que os usuários desativem suas atribuições ativas.</li><li>`selfExtend`: para que os usuários solicitem a extensão de suas atribuições de expiração.</li><li>`selfRenew`: para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>|
-|Customdata|String|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Opcional.|
-|principalId|String|Identificador da entidade de segurança que recebeu a atribuição. Obrigatório.|
+|Customdata|Cadeia de Caracteres|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Opcional.|
+|principalId|Cadeia de Caracteres|Identificador da entidade de segurança que recebeu a atribuição. Obrigatório.|
 |roleDefinitionId|String|Identificador do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) que está sendo atribuído. Obrigatório.|
 |directoryScopeId|String|Identificador do objeto de diretório que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|appScopeId|String|Identificador do escopo específico do aplicativo quando a atribuição está no escopo de um aplicativo. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|Justificação|String|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleAssignmentScheduleRequest** . Opcional. Se essa propriedade é necessária ou opcional também depende das [configurações para a Azure AD função](../api/unifiedrolemanagementpolicy-list-rules.md).|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O período da solicitação de atribuição de função. Obrigatório. O período de atribuição depende das [configurações da Azure AD função](../api/unifiedrolemanagementpolicy-list-rules.md).|
+|appScopeId|Cadeia de Caracteres|Identificador do escopo específico do aplicativo quando a atribuição está no escopo de um aplicativo. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|Justificação|Cadeia de Caracteres|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleAssignmentScheduleRequest** . Opcional.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O período da solicitação de atribuição de função. No momento, não há suporte para agendamentos recorrentes. Obrigatório.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Detalhes do tíquete vinculados à solicitação de atribuição de função, incluindo detalhes do número do tíquete e do sistema de tíquetes. Opcional.|
-
 
 
 ## <a name="response"></a>Resposta
@@ -181,7 +181,7 @@ Content-Type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Na solicitação a seguir, um usuário identificado por **principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` ativa sua própria  função qualificada para uma Azure AD função identificada pela ID`8424c6f0-a189-499e-bbd0-26c1753c96d4`. O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é de cinco horas. Para executar essa solicitação, o usuário de chamada deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA.
+Na solicitação a seguir, um usuário identificado por **principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` ativa sua própria  função qualificada para uma função do Azure AD identificada pela ID`8424c6f0-a189-499e-bbd0-26c1753c96d4`. O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é de cinco horas. Para executar essa solicitação, o usuário de chamada deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA.
 
 Para recuperar os detalhes de suas solicitações de qualificação e identificar a qualificação a ser ativada, o usuário chamará [a API unifiedRoleEligibilitySchedule: filterByCurrentUser](unifiedroleeligibilityschedule-filterbycurrentuser.md) .
 

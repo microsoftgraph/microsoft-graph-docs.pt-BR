@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Recupere os metadados de um driveItem em um drive por ID ou caminho do sistema de arquivos.
 doc_type: apiPageType
-ms.openlocfilehash: 0a4adf8b6e1a241380f357a6a71e8c291d5903da
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 8e7dc48164c6f0e17af752401089974f5c7c5ad1
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289809"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900510"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso driveItem
 
@@ -99,7 +99,7 @@ GET /me/drive/root
 ---
 
 
-## <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta.
 

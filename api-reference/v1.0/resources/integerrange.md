@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso integerRange
-description: Representa um intervalo inclusivo de inteiros descrito por dois limites int64.
+description: Representa um intervalo inclusivo de inteiros descritos por dois limites Int64.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 31661802fa198790e4d30f2da58ac11c86f19b6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b869d99fc4fef8b6804a3559ddd21e7d661ea32b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036477"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899432"
 ---
 # <a name="integerrange-resource-type"></a>Tipo de recurso integerRange
 
 Namespace: microsoft.graph
 
-Representa um intervalo inclusivo de inteiros descrito por dois limites int64.
+Representa um intervalo inclusivo de inteiros descritos por dois limites Int64.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |

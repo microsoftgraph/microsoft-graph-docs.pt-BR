@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4f69413ebbe824a87414649ceea6d904cdc24bc4
-ms.sourcegitcommit: a11c874a7806fb5825752c8348e12079d23323e4
+ms.openlocfilehash: 01d1206a3083fda0820be91b8e84a4f5edc2397f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65294058"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899649"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
 
@@ -74,7 +74,7 @@ O Microsoft Graph tem dois tipos de permissões:
 ##### <a name="comparison-of-delegated-and-application-permissions"></a>Comparação de permissões delegadas e de aplicativo
 
 
-| <!-- No header--> | Permissões delegadas | Permissões de aplicativos |
+| Item | Permissões delegadas | Permissões de aplicativos |
 |--|--|--|
 | Cenários de tipo de aplicativo | Aplicativo web/móvel/de página única (SPA) | Web / Daemon |
 | Contexto de acesso | [Obter acesso em nome de um usuário](../auth-v2-user.md) | [Obter acesso como um serviço](../auth-v2-service.md) |

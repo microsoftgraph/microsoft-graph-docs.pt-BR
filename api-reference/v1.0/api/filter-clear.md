@@ -3,14 +3,14 @@ title: 'Filter: clear'
 description: Limpa o filtro na coluna determinada.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 29a6d9cc30c8e5f34d9b2188e6850283b94d5566
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 01b363636e923ae5f4fd010d640201b1482895c6
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045973"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898816"
 ---
 # <a name="filter-clear"></a>Filter: clear
 

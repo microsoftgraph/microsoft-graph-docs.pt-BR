@@ -1,16 +1,16 @@
 ---
 title: Listar logons
 doc_type: apiPageType
-description: Obtenha uma lista das entradas do usuário em um locatário Azure Active Directory usuário.
+description: Obtenha uma lista das entradas do usuário em um locatário do Azure Active Directory.
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 08f857df962878ff60d711043ac4c32c4543951d
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 2774b547eb38c2d02944f7187fb6aefe0c021a07
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821229"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900027"
 ---
 # <a name="list-signins"></a>Listar logons
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de [objetos signIn](../resources/signin.md) . A lista contém as entradas do usuário para seu Azure Active Directory locatário. As entradas em que um nome de usuário e senha são passados como parte do token de autorização e entradas federadas bem-sucedidas estão incluídas atualmente nos logs de entrada.
+Obtenha uma lista de [objetos signIn](../resources/signin.md) . A lista contém as entradas do usuário para seu locatário do Azure Active Directory. As entradas em que um nome de usuário e senha são passados como parte do token de autorização e entradas federadas bem-sucedidas estão incluídas atualmente nos logs de entrada.
 
-O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as entradas mais recentes são retornadas primeiro. Somente os eventos de entrada que ocorreram dentro do período de retenção Azure Active Directory ([Azure AD) padrão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) estão disponíveis.
+O tamanho máximo e padrão da página é de 1.000 objetos e, por padrão, as entradas mais recentes são retornadas primeiro. Somente os eventos de entrada que ocorreram dentro do período de retenção padrão do Azure AD (Azure Active [Directory) estão](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) disponíveis.
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
@@ -38,15 +38,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 > [!IMPORTANT]
 > Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
-Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para Azure AD.
+Os aplicativos devem [ser registrados corretamente](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
-Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, [Azure AD funções internas](/azure/active-directory/roles/permissions-reference):
+Além das permissões delegadas, o usuário conectado precisa pertencer a uma das seguintes funções de diretório que permitem ler relatórios de entrada. Para saber mais sobre funções de diretório, confira [as funções internas do Azure AD](/azure/active-directory/roles/permissions-reference):
 + Administrador global
 + Leitor global
 + Leitor de Relatórios
 + Administrador de Segurança
 + Operador de segurança
 + Leitor de segurança
+
+[!INCLUDE [signins-roles-for-ca-data](../../includes/signins-roles-for-ca-data.md)]
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

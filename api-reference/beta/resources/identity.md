@@ -3,19 +3,19 @@ author: JeremyKelley
 description: O recurso Identity representa uma identidade de um actor.
 ms.date: 09/14/2017
 title: Identidade
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 5b3f831a51097664c7afc5905aa2960f1fefaec5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 818fed7343a5af9cd39f0ebc00c43a411089eb96
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013559"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899390"
 ---
-# <a name="identity-resource-type"></a>tipo de recurso Identity
+# <a name="identity-resource-type"></a>tipo de recurso de identidade
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

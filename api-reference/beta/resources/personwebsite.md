@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso personWebsite
-description: tipo de recurso personWebsite
-localization_priority: Normal
+title: Tipo de recurso personWebsite
+description: Representa informações detalhadas sobre sites associados a um usuário em vários serviços.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 3b480370309b6c843359a711ff27307c4d6e41e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c26bda366fe03893e138551cb3ae3e8ab1efd8c8
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997911"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900468"
 ---
-# <a name="personwebsite-resource-type"></a>tipo de recurso personWebsite
+# <a name="personwebsite-resource-type"></a>Tipo de recurso personWebsite
 
 Namespace: microsoft.graph
 
@@ -20,41 +20,25 @@ Namespace: microsoft.graph
 
 Representa informações detalhadas sobre sites associados a um usuário em vários serviços.
 
-Herda de [Myfacet](itemfacet.md).
+Herda de [itemFacet](itemfacet.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar sites](../api/profile-list-websites.md)|coleção [personWebsite](../resources/personwebsite.md)|Obtenha os recursos personWebsite da propriedade de navegação sites.|
-|[Criar personWebsite](../api/profile-post-websites.md)|[personWebsite](../resources/personwebsite.md)|Criar um novo objeto personWebsite.|
-|[Obter personWebsite](../api/personwebsite-get.md)|[personWebsite](../resources/personwebsite.md)|Leia as propriedades e os relacionamentos de um objeto [personWebsite](../resources/personwebsite.md) .|
-|[Atualizar personWebsite](../api/personwebsite-update.md)|[personWebsite](../resources/personwebsite.md)|Atualiza as propriedades de um objeto [personWebsite](../resources/personwebsite.md) .|
-|[Excluir personWebsite](../api/personwebsite-delete.md)|Nenhum|Exclui um objeto [personWebsite](../resources/personwebsite.md) .|
+|[Listar sites](../api/profile-list-websites.md)|[coleção personWebsite](../resources/personwebsite.md)|Obtenha os recursos personWebsite da propriedade de navegação de sites.|
+|[Criar personWebsite](../api/profile-post-websites.md)|[personWebsite](../resources/personwebsite.md)|Crie um novo objeto personWebsite.|
+|[Obter personWebsite](../api/personwebsite-get.md)|[personWebsite](../resources/personwebsite.md)|Leia as propriedades e as relações de um [objeto personWebsite](../resources/personwebsite.md) .|
+|[Atualizar personWebsite](../api/personwebsite-update.md)|[personWebsite](../resources/personwebsite.md)|Atualize as propriedades de um [objeto personWebsite](../resources/personwebsite.md) .|
+|[Excluir personWebsite](../api/personwebsite-delete.md)|Nenhum|Exclui um [objeto personWebsite](../resources/personwebsite.md) .|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo              | Descrição                                                                                   |
 |:-------------|:------------------|:----------------------------------------------------------------------------------------------|
-|Categorias    |Coleção de cadeias de caracteres  | Contém categorias que um usuário associou ao site (por exemplo, pessoal, receitas).  |
-|description   |String             | Contém uma descrição do site.                                                        |
+|categories    |Coleção de cadeias de caracteres  | Contém categorias que um usuário associou ao site (por exemplo, receitas pessoais).  |
+|descrição   |String             | Contém uma descrição do site.                                                        |
 |displayName   |String             | Contém um nome amigável para o site.                                                     |
 |webUrl        |String             | Contém um link para o próprio site.                                                        |
-
-## <a name="properties"></a>Propriedades
-|Propriedade|Tipo|Descrição|
-|:---|:---|:---|
-|allowedAudiences|String|As audiências que podem ver os valores contidos na entidade. Herdado de [MyFace](../resources/itemfacet.md). Os valores possíveis são: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|Categorias|Coleção de cadeias de caracteres|Contém categorias que um usuário associou ao site (por exemplo, pessoal, receitas).|
-|createdBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que criou a entidade. Herdado de [MyFace](../resources/itemfacet.md).|
-|createdDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
-|description|String|Contém uma descrição do site.|
-|displayName|String|Contém um nome amigável para o site.|
-|id|String|Identificador usado para o endereçamento individual da entidade. Herdado da [entidade](../resources/entity.md)|
-|fracassa|[inferenceData](../resources/inferencedata.md)|Contém detalhes de inferência se a entidade for inferida pelo aplicativo de criação ou modificação. Herdado de [MyFace](../resources/itemfacet.md).|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Fornece o identificador do usuário e/ou aplicativo que modificou a entidade pela última vez. Herdado de [MyFace](../resources/itemfacet.md).|
-|lastModifiedDateTime|DateTimeOffset|Fornece o dateTimeOffset para quando a entidade foi criada. Herdado de [MyFace](../resources/itemfacet.md).|
-|source|[personDataSource](../resources/persondatasource.md)|Onde os valores são originados se forem sincronizados a partir de outro serviço. Herdado de [MyFace](../resources/itemfacet.md).|
-|webUrl|String|Contém um link para o próprio site.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,32 +1,32 @@
 ---
 title: Obter unifiedRoleAssignmentSchedule
-description: Leia as propriedades e as relações de um objeto unifiedRoleAssignmentSchedule.
+description: Recupere o agendamento de uma operação de atribuição de função ativa.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9117b495e94db2789d91c2e501aec21c00c4af57
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 2d2428e17ff66a3401d6f453c5dd6275bc8de693
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399324"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899901"
 ---
 # <a name="get-unifiedroleassignmentschedule"></a>Obter unifiedRoleAssignmentSchedule
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) .
+Recupere o agendamento de uma operação de atribuição de função ativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory|
+|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory   |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Aplicativo|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,8 @@ GET /roleManagement/directory/roleAssignmentSchedules/{unifiedRoleAssignmentSche
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+Esse método dá suporte aos parâmetros `$select` `$expand` de consulta e OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

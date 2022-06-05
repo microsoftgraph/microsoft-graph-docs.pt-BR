@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso locationConstraintItem
-description: As condições indicadas por um cliente para o local de uma reunião.
+description: locationConstraintItem - As condições declaradas por um cliente para o local de uma reunião.
 ms.localizationpriority: medium
 author: harini84
-ms.prod: ''
+ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f9f4e550c1378cd40acf99bd93c2a24f847a9ca0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb5828e603c9a5dc2ef0f66d6d00b8c5fe7741ed
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134672"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900342"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Tipo de recurso locationConstraintItem
 
@@ -44,7 +44,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
-| displayName  | Cadeia de caracteres | O nome associado ao local.                       |
+| displayName  | String | O nome associado ao local.                       |
 | locationEmailAddress | String | O endereço de email opcional do local. |
 | resolveAvailability | Booliano | Se definido como true e o recurso especificado está ocupado, [findMeetingTimes](../api/user-findmeetingtimes.md) procura outro recurso livre. Se definido como false e o recurso especificado está ocupado, **findMeetingTimes** retorna o recurso melhor classificado no cache do usuário sem verificar se ele está livre. O padrão é true. |
 

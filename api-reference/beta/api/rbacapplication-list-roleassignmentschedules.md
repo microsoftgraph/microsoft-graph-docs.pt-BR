@@ -1,23 +1,23 @@
 ---
 title: Listar roleAssignmentSchedules
-description: Obtenha uma lista dos objetos unifiedRoleAssignmentSchedule e suas propriedades.
+description: Obtenha os agendamentos para operações de atribuição de função ativa.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 737cbfcbe717368814e7f406866c7f331be4936d
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 1498de955c0f67e980a01ca783d269bc1ce62543
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461648"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899156"
 ---
 # <a name="list-roleassignmentschedules"></a>Listar roleAssignmentSchedules
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista dos [objetos unifiedRoleAssignmentSchedule](../resources/unifiedroleassignmentschedule.md) e suas propriedades.
+Obtenha os agendamentos para operações de atribuição de função ativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentSchedules
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte aos parâmetros `$select` `$filter` de consulta e OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos `$select`parâmetros de consulta , `$filter`e `$expand` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

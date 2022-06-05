@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso hostSecurityState
+title: Tipo de recurso hostSecurityState
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: a76797ed5660a80e1bbce73609617844de326863
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55a947e26b8ebb147ac0ef52d5764435846d30ea
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013591"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899642"
 ---
-# <a name="hostsecuritystate-resource-type"></a>tipo de recurso hostSecurityState
+# <a name="hostsecuritystate-resource-type"></a>Tipo de recurso hostSecurityState
 
-Namespace: Microsoft Graph
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém informações de estado sobre o host (incluindo dispositivos, computadores e assim por diante).
+Contém informações com estado sobre o host (incluindo dispositivos, computadores e assim por diante).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|FQDN|String|FQDN do host (nome de domínio totalmente qualificado) (por exemplo, machine.company.com).|
-|isAzureAadJoined|Boolean|True se o host estiver associado ao domínio nos serviços de domínio do Azure Active Directory.|
-|isAzureAadRegistered|Boolean|True se o host registrado no registro de dispositivo do Azure Active Directory (dispositivos BYOD-ou seja, não é totalmente gerenciado pela empresa).|
-|isHybridAzureDomainJoined|Boolean|True se o host é membro de um domínio do Active Directory local.|
-|NetBiosName|String|O nome do host local, sem o nome de domínio DNS.|
-|Opera|String|Sistema operacional host. (Por exemplo, Windows10, MacOS, RHEL, etc.).|
-|privateIpAddress|String|Privado (não roteável) endereço IPv4 ou IPv6 (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
-|publicIpAddress|String|Endereço IPv4 ou IPv6 roteável publicamente (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
-|riskScore|String|Pontuação de risco calculado/gerado pelo provedor do host.  O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
+|Fqdn|Cadeia de Caracteres|FQDN do host (nome de domínio totalmente qualificado) (por exemplo, machine.company.com).|
+|isAzureAadJoined|Booliano|True se o host for ingressado no domínio para o Azure Active Directory Domain Services.|
+|isAzureAadRegistered|Booliano|True se o host registrado com o Registro de Dispositivo do Azure Active Directory (dispositivos BYOD – ou seja, não totalmente gerenciado pela empresa).|
+|isHybridAzureDomainJoined|Booliano|True se o host for ingressado no domínio em um domínio do Active Directory local.|
+|netBiosName|Cadeia de Caracteres|O nome do host local, sem o nome de domínio DNS.|
+|os|String|Sistema operacional do host. (Por exemplo, Windows10, MacOS, RHEL etc.).|
+|privateIpAddress|Cadeia de Caracteres|Endereço IPv4 ou IPv6 privado (não roteável) (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
+|publicIpAddress|Cadeia de Caracteres|Endereço IPv4 ou IPv6 roteável publicamente (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
+|riskScore|Cadeia de Caracteres|Pontuação de risco calculada/gerada pelo provedor do host.  Intervalo de valor recomendado de 0 a 1, que equivale a um percentual.|
 
 ## <a name="json-representation"></a>Representação JSON
 

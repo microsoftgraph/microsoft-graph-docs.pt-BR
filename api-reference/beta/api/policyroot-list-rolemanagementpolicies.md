@@ -1,34 +1,32 @@
 ---
 title: Listar roleManagementPolicies
-description: Obtenha os recursos unifiedRoleManagementPolicy da propriedade de navegação roleManagementPolicies.
+description: Obtenha políticas de gerenciamento de funções e seus detalhes.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 424e26ab89005f9dba9c2a1473c737e2e175c921
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: b3b24f143d1d0cb7daa42947526d39ac9147403e
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398770"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900300"
 ---
 # <a name="list-rolemanagementpolicies"></a>Listar roleManagementPolicies
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Obtenha os recursos unifiedRoleManagementPolicy da propriedade de navegação roleManagementPolicies.
-
+Obtenha políticas de gerenciamento de funções e seus detalhes. Essa API só se aplica a funções do Azure AD. Para recuperar políticas que se aplicam ao RBAC do Azure, use a [API REST PIM do Azure para políticas de gerenciamento de funções](/rest/api/authorization/role-management-policies/list-for-scope).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|PrivilegedAccess.ReadWrite.AzureAD|
+|Delegada (conta corporativa ou de estudante)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
-|Aplicativo|PrivilegedAccess.Read.AzureAD|
+|Aplicativo|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -37,11 +35,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /policies/roleManagementPolicies
+GET /policies/roleManagementPolicies?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método requer o parâmetro `$filter` de consulta (`eq`) para definir o escopo da solicitação para **um scopeId** e **um scopeType**. Você também pode usar os parâmetros `$select` de `$expand` consulta e OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -59,6 +57,8 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma cole
 
 ### <a name="request"></a>Solicitação
 
+O exemplo a seguir recupera políticas com escopo para o locatário e se aplicam a funções de diretório.
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma cole
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/roleManagementPolicies
+GET https://graph.microsoft.com/beta/policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicy-csharp-snippets.md)]
@@ -109,20 +109,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "id": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "displayName": "Policy1",
-      "description": "A policy for all privileged administrators",
-      "isOrganizationDefault": true,
-      "scopeId": "f93a5c37-5c37-f93a-375c-3af9375c3af9",
-      "scopeType": "subscriptions",
-      "lastModifiedDateTime": "2021-03-17T02:54:27.167+00:00",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identity"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies",
+    "value": [
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        },
+        {
+            "id": "DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_da83a66c-eb51-44ae-98d8-3da5f924f90a",
+            "displayName": "DirectoryRole",
+            "description": "DirectoryRole",
+            "isOrganizationDefault": false,
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "lastModifiedDateTime": null,
+            "lastModifiedBy": {
+                "displayName": null,
+                "id": null
+            }
+        }
+    ]
 }
 ```
 

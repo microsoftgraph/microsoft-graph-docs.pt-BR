@@ -5,24 +5,24 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 808cff2707016d16cccff7dbda3bf6971626f06c
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5ec4eb01ee725109d3e746fa41570f2ee240a705
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205323"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898529"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule: filterByCurrentUser
 Namespace: microsoft.graph
 
 Recupere os agendamentos para operações de atribuição de função ativas para as quais o usuário conectado é a entidade de segurança.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory   |
+|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory   |
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory |
 
@@ -38,7 +38,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pa
 
 ## <a name="function-parameters"></a>Parâmetros de função
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
-A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
+A tabela a seguir mostra os parâmetros necessários com essa função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|

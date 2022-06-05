@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 68cce260c78a68aad3c6b233a47e662c1d7350ff
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: f8a329d6855a9ab17ff2d9a6372c56b8823b6a63
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821040"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899125"
 ---
 # <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
@@ -27,18 +27,18 @@ Uma assinatura que permite a um aplicativo cliente receber notificações sobre 
 - Um [alert][] da API de Segurança do Microsoft Graph.
 - Uma [baseTask][] (preterida) de um usuário no Microsoft To Do.*
 - Uma [callRecord][] produzida após uma chamada ou uma reunião no Microsoft Teams.
-- Um [canal](./channel.md) no Microsoft Teams.*
-- Um [chat](./chat.md) em Microsoft Teams.*
+- Um [canal](./channel.md) no Microsoft Teams.
+- Um [chat](./chat.md) no Microsoft Teams.
 - Um [chatMessage][] enviado por meio de equipes ou canais no Microsoft Teams.
 - Uma [conversation][] em um grupo do Microsoft 365.
-- Um [conversationMember](./conversationmember.md) em uma equipe, canal ou chat em Microsoft Teams.*
+- Um [membro da conversa em](./conversationmember.md) uma equipe, canal ou chat no Microsoft Teams.
 - Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário.
 - Um [grupo][] no Azure Active Directory.
 - Uma [list][] em um [site][] do SharePoint.
 - Uma [message][], [event][] ou [contact][] no Outlook.
 - Uma [reunião online][] no Microsoft Teams.*
 - A [presença][] de um usuário no Microsoft Teams.*
-- Uma [equipe](./team.md) Microsoft Teams.*
+- Uma [equipe](./team.md) no Microsoft Teams.
 - Uma [impressora][] (quando um trabalho de impressão da impressora chegar ao estado JobFetchable – pronto para ser buscado para impressão) e uma [printTaskDefinition][] na Impressão Universal. Para obter mais informações, consulte [Assinar para alterar as notificações de APIs de impressão na nuvem](/graph/universal-print-webhook-notifications).
 - Um [todoTask][] de um usuário no Microsoft To Do.
 - Um [usuário][] no Azure Active Directory.
@@ -70,7 +70,7 @@ Para obter os valores de caminho de recurso possíveis para cada recurso com sup
 | includeResourceData | Booleano | Opcional. Quando definido como `true`, alterar as notificações [inclui dados de recurso](/graph/webhooks-with-resource-data) (como o conteúdo de uma mensagem de bate-papo). | Todos |
 | latestSupportedTlsVersion | Cadeia de caracteres | Opcional. Especifique a versão mais recente do Protocolo TLS que o ponto de extremidade de notificação, especificado por **notificationUrl**, oferece suporte. Os valores possíveis são: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>Quanto aos assinantes cujo ponto de extremidade de notificação oferece suporte a uma versão inferior à versão recomendada no momento (TLS 1.2), especificar essa propriedade por um conjunto de [linhas do tempo](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) permite que eles usem temporariamente sua versão preterida do TLS antes de concluir a atualização para o TLS 1.2. Para esses assinantes, não definir essa propriedade de acordo com a linha do tempo resultaria em erro nas operações de assinatura.</br></br>Para os assinantes cujo ponto de extremidade já tem suporte ao TLS 1.2, a configuração dessa propriedade é opcional. Nesses casos, o Microsoft Graph padroniza a propriedade como `v1_2`. | Todos |
 | lifecycleNotificationUrl | String | Opcional. A URL do ponto de extremidade que recebe notificações do ciclo de vida, incluindo notificações de `subscriptionRemoved` e `missed`. Esta URL deve fazer uso do protocolo HTTPS. | Todos |
-| notificationContentType | Cadeia de caracteres | Opcional. O **tipo de conteúdo** desejado para notificações de alteração do Microsoft Graph para tipos de recursos com suporte. O tipo de conteúdo padrão é `application/json`. | Todos |
+| notificationContentType | String | Opcional. O **tipo de conteúdo** desejado para notificações de alteração do Microsoft Graph para tipos de recursos com suporte. O tipo de conteúdo padrão é `application/json`. | Todos |
 | notificationQueryOptions | String |Opcional.  Opções de consulta OData para especificar o valor do recurso de direcionamento. Os clientes recebem notificações quando o recurso atinge o estado correspondente às opções de consulta fornecidas aqui. Com essa nova propriedade na carga de criação da assinatura juntamente com todas as propriedades existentes, os Webhooks entregarão notificações sempre que um recurso atingir o estado desejado mencionado na propriedade **notificationQueryOptions** . Por exemplo, quando o trabalho de impressão é concluído ou quando um valor de propriedade de recurso de trabalho de impressão `isFetchable` torna-se `true` etc. | [Serviço de Impressão Universal](/graph/universal-print-webhook-notifications) |
 | notificationUrl | Cadeia de caracteres | Obrigatório. A URL do ponto de extremidade que recebe as notificações de alteração. Esta URL deve fazer uso do protocolo HTTPS.  | Todos |
 | notificationUrlAppId| String | Opcional. A ID do aplicativo que o serviço de assinatura pode usar para gerar o token de validação. Isso permite que o cliente valide a autenticidade da notificação recebida.  | Todos |

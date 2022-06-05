@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0b2f2c9cff290ec80a298a43744fa357d9c3bdf0
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 4109d5c1a1f7882f04e9479c2eca355e5e3a926b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442922"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899929"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>Obtenha as notificações de alteração para associação de chat o usando o Microsoft Graph
 
@@ -24,16 +24,16 @@ Para obter notificações de alteração para alterações de associação em qu
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta|
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  |
 
 ### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -54,18 +54,18 @@ Para obter notificações de alteração de membros em um chat específico, insc
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | beta |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  | beta |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All  |
 
 > **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

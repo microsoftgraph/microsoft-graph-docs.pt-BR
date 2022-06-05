@@ -3,14 +3,14 @@ title: Tipo de recurso Filter
 description: Gerencia a filtragem da coluna de uma tabela.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: f0abc2b341e8833472593db8ce9ceb21a9e5e6a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f221a50d17a8df230fba96f8d657a478cc99502a
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137662"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898963"
 ---
 # <a name="filter-resource-type"></a>Tipo de recurso Filter
 

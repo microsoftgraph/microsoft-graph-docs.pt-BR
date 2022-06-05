@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso de site
+title: tipo de recurso do site
 description: Representa um site.
 ms.localizationpriority: medium
 author: AAmatino
-ms.prod: ''
+ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c0daa5106f70f049d070968749e5a7d391783d59
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f63aba19d6f3e0e942ad35f445b43ed7b1bff1e3
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134210"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899663"
 ---
-# <a name="website-resource-type"></a>tipo de recurso de site
+# <a name="website-resource-type"></a>tipo de recurso do site
 
 Namespace: microsoft.graph
 
@@ -22,7 +22,7 @@ Representa um site.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|type|websiteType| Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.|
+|type|Websitetype| Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.|
 |address|cadeia de caracteres|A URL do site.|
 |displayName|cadeia de caracteres|O nome de exibição do site.|
 

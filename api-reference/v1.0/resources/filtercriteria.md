@@ -3,14 +3,14 @@ title: Tipo de recurso FilterCriteria
 description: Representa os critérios de filtragem aplicados a uma coluna.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: resourcePageType
-ms.openlocfilehash: 66699827ca088268d55280a56e2f8a921daed1f3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7b86420f4306ecacc051e52ff241e9d7d5786c71
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137655"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897815"
 ---
 # <a name="filtercriteria-resource-type"></a>Tipo de recurso FilterCriteria
 

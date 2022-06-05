@@ -3,14 +3,14 @@ title: Tipo de recurso locationConstraint
 description: As condições indicadas por um cliente para o local de uma reunião.
 ms.localizationpriority: medium
 author: harini84
-ms.prod: ''
+ms.prod: calendar
 doc_type: resourcePageType
-ms.openlocfilehash: a2cafad390f0283ddefa09ea25f9ddf8d16b4dd5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5381c688f007a6c9d30deccf384ae70a98492c43
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134693"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898487"
 ---
 # <a name="locationconstraint-resource-type"></a>Tipo de recurso locationConstraint
 
@@ -20,7 +20,7 @@ As condições indicadas por um cliente para o local de uma reunião.
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -41,7 +41,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|isRequired|Booliano|O cliente solicita o serviço para incluir na resposta um local para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, [findMeetingTimes](../api/user-findmeetingtimes.md) não retorna nenhuma sugestão de horário para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, **findMeetingTimes** continuará procurando horários para a reunião sem local. |
+|Isrequired|Booliano|O cliente solicita o serviço para incluir na resposta um local para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, [findMeetingTimes](../api/user-findmeetingtimes.md) não retorna nenhuma sugestão de horário para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, **findMeetingTimes** continuará procurando horários para a reunião sem local. |
 |locations|Coleção [locationConstraintItem](locationconstraintitem.md)|Informações de restrição de um ou mais locais que o cliente solicita para a reunião.|
 |suggestLocation|Booliano|O cliente solicita o serviço para sugerir um ou mais locais para a reunião.|
 

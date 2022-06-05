@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Imagem
+title: tipo de recurso de imagem
 ms.localizationpriority: medium
-description: O recurso Image agrupa propriedades relacionadas a imagens em uma única estrutura.
-ms.prod: ''
+description: O recurso de imagem agrupa propriedades relacionadas à imagem em uma única estrutura.
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: a5ccc3baf969199161936ffd635790c56ab75363
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c457a139504615cde6e21628e82c8875a47b6a9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089722"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900524"
 ---
-# <a name="image-resource-type"></a>Tipo de recurso Image
+# <a name="image-resource-type"></a>tipo de recurso de imagem
 
 Namespace: microsoft.graph
 
-O recurso **Image** agrupa propriedades relacionadas a imagens em uma única estrutura. Se um [**DriveItem**](driveitem.md) tiver uma faceta **image** não nula, o item representa uma imagem bitmap.
+O **recurso de** imagem agrupa propriedades relacionadas à imagem em uma única estrutura.
+Se um [**driveItem**](driveitem.md) tiver uma faceta de  imagem não nula, o item representará uma imagem de bitmap.
 
-**Observação:** se o serviço não puder determinar a largura e a altura da imagem, o recurso **Image** poderá ficar vazio.
+>**Nota:** Se o serviço não puder determinar a largura e a altura da imagem, o recurso **de** imagem poderá estar vazio.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -42,7 +42,7 @@ O recurso **Image** agrupa propriedades relacionadas a imagens em uma única est
 
 No OneDrive for Business, esse recurso retorna em itens que devem ser imagens com base na extensão de arquivo.
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para obter mais informações sobre as facetas em um DriveItem, consulte [driveItem](driveitem.md).
 
 
 <!-- {

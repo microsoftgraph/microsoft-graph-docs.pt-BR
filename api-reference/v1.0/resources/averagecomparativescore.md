@@ -3,14 +3,14 @@ title: Tipo de recurso averageComparativeScore
 description: Contém várias pontuações diferentes com base em escopos diferentes.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: eb78b045105725d8151d229525396fd205cd427f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 88444bfab00622a6ac8cc89a3af287650ad1af7e
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089848"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899971"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>Tipo de recurso averageComparativeScore
 
@@ -22,7 +22,7 @@ Contém várias pontuações diferentes com base em escopos diferentes (por exem
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|base|Cadeia de caracteres|Tipo de escopo. Os valores possíveis são: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
+|Base|Cadeia de Caracteres|Tipo de escopo. Os valores possíveis são: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 |averageScore|Duplo|Pontuação média dentro da base especificada.|
 
 ## <a name="json-representation"></a>Representação JSON

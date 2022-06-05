@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5a6c4c2ba37e1c5e36b4b6906aab301325fd237e
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 14b8319c0043e40964273a74c138c9724d17d164
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695466"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900321"
 ---
 # <a name="remove-member"></a>Remover membro
 
@@ -40,6 +40,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
+> [!IMPORTANT]
+> `/$ref` Se não for acrescentado à solicitação, o usuário será excluído do Azure AD (Azure Active Directory) se as permissões apropriadas forem usadas; caso contrário, `403 Forbidden` um erro será retornado. 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

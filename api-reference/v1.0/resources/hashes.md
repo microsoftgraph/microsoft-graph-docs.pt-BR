@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
 ms.localizationpriority: medium
-title: Tipo de recurso de hashes
+title: tipo de recurso hashes
 description: O recurso hash agrupa hashes disponíveis em uma estrutura simples para um item.
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 2321d710c73aa4ed37a9cdd65fb63eac33a1f8ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b682b30615d605bf0200e5a43e89672791563ad
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084521"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898571"
 ---
-# <a name="hashes-resource-type"></a>Tipo de recurso de hashes
+# <a name="hashes-resource-type"></a>tipo de recurso hashes
 
 Namespace: microsoft.graph
 
-O recurso **hash** agrupa hashes disponíveis em uma estrutura simples para um item.
+Os **hashes** de recursos agrupam hashes disponíveis em uma única estrutura para um item.
 
-**Observação:** Nem todos os serviços fornecem um valor para todas as propriedades de hash listadas.
+>**Observação:** Nem todos os serviços fornecem um valor para todas as propriedades de hash listadas.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -45,15 +44,15 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade         | Tipo   | Descrição                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
 | **sha1Hash**     | String | Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura. |
-| **sha256Hash**   | Cadeia de caracteres | Hash SHA256 para o conteúdo do arquivo (se disponível). Somente leitura. |
-| **crc32Hash**    | String | O valor CRC32 do arquivo em pouco endian (se disponível). Somente leitura.            |
+| **sha256Hash**   | Cadeia de Caracteres | Hash SHA256 para o conteúdo do arquivo (se disponível). Somente leitura. |
+| **crc32Hash**    | String | O valor CRC32 do arquivo em little endian (se disponível). Somente leitura.            |
 | **quickXorHash** | String | Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura. |
 
-**Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.
+>**Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.
 
 ## <a name="remarks"></a>Comentários
 
-No OneDrive for Business e SharePoint Server 2016, **sha1Hash** e **crc32Hash**, **e sha256Hash** não estão disponíveis.
+No OneDrive for Business e no SharePoint Server 2016, **sha1Hash** e **crc32Hash** e **sha256Hash** não estão disponíveis.
 
 No OneDrive Personal, o **quickXorHash** não está disponível.
 

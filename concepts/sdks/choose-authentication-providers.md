@@ -1,14 +1,14 @@
 ---
-title: Escolher um provedor de autenticação Graph Microsoft
+title: Escolher um provedor de autenticação do Microsoft Graph
 description: Saiba como escolher provedores de autenticação específicos do cenário para seu aplicativo.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 040a42ae20ee48d5af92dd4460b2e26b059ffea7
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: e04d6352012227fcb34ba030ce0cbfdc6a8fed57
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733241"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898760"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -16,7 +16,7 @@ ms.locfileid: "64733241"
 
 Os provedores de autenticação implementam o código necessário para adquirir um token usando a MSAL (Biblioteca de Autenticação da Microsoft); tratar vários erros potenciais para casos como consentimento incremental, senhas expiradas e acesso condicional; e, em seguida, defina o cabeçalho de autorização de solicitação HTTP. A tabela a seguir lista o conjunto de provedores que correspondem aos cenários de diferentes tipos [de aplicativo](/azure/active-directory/develop/v2-app-types).
 
-| Cenário                                                                                               | Flow/Conceder         | Espectadores               | Provedor |
+| Cenário                                                                                               | Fluxo/Concessão         | Espectadores               | Provedor |
 |--------------------------------------------------------------------------------------------------------|--------------------|------------------------|-----|
 | [Aplicativo de Página Única](/azure/active-directory/develop/scenario-spa-acquire-token)                          | Código de autorização com PKCE | Consumidor delegado/organização | [Provedor de código de autorização](#authorization-code-provider) |
 | [Aplicativo Web que chama APIs Web](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) |                    |                        |     |
@@ -27,7 +27,7 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 |                                                                                                        | Credenciais do cliente | Somente aplicativo               | [Provedor de credenciais do cliente](#client-credentials-provider) |
 | [Aplicativo da área de trabalho que chama APIs Web](/azure/active-directory/develop/scenario-desktop-acquire-token)      |                    |                        |     |
 |                                                                                                        | Interativo        | Consumidor delegado/organização | [Provedor interativo](#interactive-provider) |
-|                                                                                                        | Integração Windows | Organização Delegada          | [Provedor Windows integrado](#integrated-windows-provider) |
+|                                                                                                        | Windows integrado | Organização Delegada          | [Provedor integrado do Windows](#integrated-windows-provider) |
 |                                                                                                        | Proprietário do Recurso     | Organização Delegada          | [Provedor de nome de usuário/senha](#usernamepassword-provider) |
 |                                                                                                        | Código do dispositivo        | Organização Delegada          | [Provedor de código do dispositivo](#device-code-provider) |
 | [Aplicativo Daemon](/azure/active-directory/develop/scenario-daemon-acquire-token)                            |                    |                        |     |
@@ -44,7 +44,7 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 
 ## <a name="authorization-code-provider"></a>Provedor de código de autorização
 
-O fluxo de código de autorização permite que aplicativos Nativos e Web obtenham tokens com segurança no nome do usuário. Para saber mais, confira plataforma de identidade da Microsoft fluxo de código de autorização [do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+O fluxo de código de autorização permite que aplicativos Nativos e Web obtenham tokens com segurança no nome do usuário. Para saber mais, confira a [plataforma de identidade da Microsoft e o fluxo de código de autorização do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -160,11 +160,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não está disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="go"></a>[Ir](#tab/Go)
 
@@ -202,7 +202,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="client-credentials-provider"></a>Provedor de credenciais do cliente
 
-O fluxo de credenciais do cliente permite que os aplicativos de serviço executem sem interação do usuário. O acesso é baseado na identidade do aplicativo. Para obter mais informações, [plataforma de identidade da Microsoft fluxo de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+O fluxo de credenciais do cliente permite que os aplicativos de serviço executem sem interação do usuário. O acesso é baseado na identidade do aplicativo. Para obter mais informações, consulte [a plataforma de identidade da Microsoft e o fluxo de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -239,7 +239,7 @@ var graphClient = new GraphServiceClient(clientSecretCredential, scopes);
 ### <a name="using-a-client-certificate"></a>Usando um certificado de cliente
 
 ```csharp
-var scopes = new[] { "User.Read" };
+var scopes = new[] { "https://graph.microsoft.com/.default" };
 
 // Multi-tenant apps can use "common",
 // single-tenant apps must use the tenant ID from the Azure portal
@@ -317,11 +317,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="go"></a>[Ir](#tab/Go)
 
@@ -356,7 +356,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="on-behalf-of-provider"></a>Provedor em nome de
 
-O fluxo em nome de é aplicável quando seu aplicativo chama um serviço/API Web que, por sua vez, chama o Microsoft API do Graph. Saiba mais lendo [plataforma de identidade da Microsoft e o fluxo On-Behalf-Of do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+O fluxo em nome de é aplicável quando seu aplicativo chama um serviço/API Web que, por sua vez, chama a API do Microsoft Graph. Saiba mais lendo a [plataforma de identidade da Microsoft e o fluxo On-Behalf-Of do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -439,17 +439,17 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="go"></a>[Ir](#tab/Go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 ---
 
@@ -459,7 +459,7 @@ O fluxo de Autenticação Implícita não é recomendado devido às [suas desvan
 
 ## <a name="device-code-provider"></a>Provedor de código do dispositivo
 
-O fluxo de código do dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, [consulte plataforma de identidade da Microsoft fluxo de código do dispositivo OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
+O fluxo de código do dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, consulte [a plataforma de identidade da Microsoft e o fluxo de código do dispositivo OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -550,11 +550,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="go"></a>[Ir](#tab/Go)
 
@@ -588,13 +588,13 @@ result, err := client.Me().Get(nil)
 
 ---
 
-## <a name="integrated-windows-provider"></a>Provedor Windows integrado
+## <a name="integrated-windows-provider"></a>Provedor integrado do Windows
 
-O fluxo Windows integrado fornece uma maneira para que Windows computadores adquiram silenciosamente um token de acesso quando eles são ingressados no domínio. Para obter detalhes, consulte [Autenticação do Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+O fluxo integrado do Windows fornece uma maneira para computadores Windows adquirirem silenciosamente um token de acesso quando eles forem ingressados no domínio. Para obter detalhes, consulte [Autenticação integrada do Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
 # <a name="c"></a>[C#](#tab/CS)
 
-No `Azure.Identity` momento, o pacote não dá suporte Windows autenticação integrada. Em vez disso, crie um provedor de autenticação personalizado usando a MSAL.
+No `Azure.Identity` momento, o pacote não dá suporte à autenticação integrada do Windows. Em vez disso, crie um provedor de autenticação personalizado usando a MSAL.
 
 ```csharp
 var scopes = new[] { "User.Read" };
@@ -691,7 +691,7 @@ var graphClient = new GraphServiceClient(interactiveCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -782,7 +782,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="usernamepassword-provider"></a>Provedor de nome de usuário/senha
 
-O provedor de nome de usuário/senha permite que um aplicativo conecte um usuário usando seu nome de usuário e senha. Use esse fluxo somente quando não for possível usar nenhum dos outros fluxos OAuth. Para obter mais informações, [plataforma de identidade da Microsoft a credencial de senha do proprietário do recurso OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
+O provedor de nome de usuário/senha permite que um aplicativo conecte um usuário usando seu nome de usuário e senha. Use esse fluxo somente quando não for possível usar nenhum dos outros fluxos OAuth. Para obter mais informações, consulte [a plataforma de identidade da Microsoft e a credencial de senha do proprietário do recurso OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -814,7 +814,7 @@ var graphClient = new GraphServiceClient(userNamePasswordCredential, scopes);
 
 # <a name="javascript"></a>[Javascript](#tab/Javascript)
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="java"></a>[Java](#tab/Java)
 
@@ -846,11 +846,11 @@ Não aplicável.
 
 # <a name="php"></a>[PHP](#tab/PHP)
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="ruby"></a>[Ruby](#tab/Ruby)
 
-Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph caso](https://aka.ms/graphrequests) isso seja importante para você.
+Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
 # <a name="go"></a>[Ir](#tab/Go)
 
@@ -886,6 +886,6 @@ result, err := client.Me().Get(nil)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Para obter exemplos de código que mostram como usar o plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativo, consulte plataforma de identidade da Microsoft de código (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
+- Para obter exemplos de código que mostram como usar a plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativos, consulte exemplos de código da plataforma de identidade da Microsoft (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
 - Os provedores de autenticação exigem uma ID de cliente. Você desejará registrar seu [aplicativo depois](https://portal.azure.com/) de configurar seu provedor de autenticação.
-- Informe-nos se no momento não há suporte para um fluxo OAuth necessário votando ou abrindo uma solicitação de recurso do [Microsoft Graph.](https://aka.ms/graphrequests)
+- Informe-nos se atualmente não há suporte para um fluxo OAuth necessário votando ou abrindo uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests).

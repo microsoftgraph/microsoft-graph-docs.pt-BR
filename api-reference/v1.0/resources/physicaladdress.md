@@ -3,14 +3,14 @@ title: Tipo de recurso physicalAddress
 description: Representa o endereço físico de um recurso, como um contato ou evento.
 ms.localizationpriority: medium
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 18f7867efcefba774c9fdd83b5dac9db7ddbcb66
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44ee09d7f02614c7fc7fc6afd8ef88a79f557369
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59006918"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898137"
 ---
 # <a name="physicaladdress-resource-type"></a>Tipo de recurso physicalAddress
 
@@ -22,10 +22,10 @@ Representa o endereço físico de um recurso, como um contato ou evento.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|Cadeia de caracteres|A cidade.|
+|city|String|A cidade.|
 |countryOrRegion|String|O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".|
 |postalCode|String|O código de endereçamento postal, ou CEP.|
-|state|String|O estado.|
+|estado|String|O estado.|
 |street|String|O tipo de logradouro (rua, alameda, avenida, etc.).|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -1,22 +1,22 @@
 ---
 title: Remover um scopedRoleMember
-description: Remova um membro de função com escopo de uma unidade administrativa.
+description: Remova uma atribuição de função do Azure AD (Azure Active Directory) com escopo de unidade administrativa.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5baaa9475e4e6a90b7b7290675e0ce17136094ff
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 57a8f4aadbfeba5d3405f3406c2bce70600139fd
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672095"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900440"
 ---
 # <a name="remove-a-scopedrolemember"></a>Remover um scopedRoleMember
 
 Namespace: microsoft.graph
 
-Remova um membro de função com escopo de uma unidade administrativa.
+Remova uma atribuição de função do Azure AD (Azure Active Directory) com escopo de unidade administrativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,9 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
+
+Para remover uma atribuição de função de uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

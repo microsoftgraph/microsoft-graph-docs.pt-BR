@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 54f3bf6e57baad1f12cdeeeb8945dda50bdf5783
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 65b46e7683e5ab715c381fe646657becb9e843a2
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014212"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898921"
 ---
 # <a name="create-bookingbusiness"></a>Criar bookingBusiness
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Crie uma nova [empresa do Microsoft Bookings](../resources/bookingbusiness.md) em um locatário.
 
-Esta é a primeira etapa na configuração de uma empresa do Bookings em que você deve especificar o nome de exibição comercial. Você pode incluir outras informações, como endereço comercial, endereço do site e [](bookingbusiness-update.md) política de agendamento, ou definir essas informações posteriormente atualizando **o bookingBusiness**.
+Esta é a primeira etapa na configuração de uma empresa do Bookings em que você deve especificar o nome de exibição comercial. Você pode incluir outras informações, como endereço comercial, endereço do site e política de agendamento, ou definir essas informações posteriormente [](bookingbusiness-update.md) atualizando **o bookingBusiness**.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.Manage.All  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta corporativa ou de estudante) |  Bookings.Manage.All  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,11 +40,11 @@ POST /solutions/bookingBusinesses
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto bookingBusiness.](../resources/bookingbusiness.md)
+No corpo da solicitação, forneça uma representação JSON de um [objeto bookingBusiness](../resources/bookingbusiness.md) .
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -60,7 +60,6 @@ Content-type: application/json
 {
     "displayName":"Fourth Coffee",
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",
@@ -98,7 +97,6 @@ Content-type: application/json
     "isPublished":false,
     "publicUrl":null,
     "address":{
-        "type":"mall",
         "postOfficeBox":"P.O. Box 123",
         "street":"4567 Main Street",
         "city":"Buffalo",

@@ -3,27 +3,27 @@ title: Tipo de recurso secureScore
 description: Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível de locatário e controle.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 01499bbd755739310bc309656379bde278401544
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4773436fa1ef3f2e2465b99cd9c29e2d844d8b54
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084122"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900384"
 ---
 # <a name="securescore-resource-type"></a>Tipo de recurso secureScore
 
 Namespace: microsoft.graph
 
-Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível de locatário e controle. Por padrão, 90 dias de dados são mantidos. Esses dados são organizados por **createdDateTime**, do mais recente ao mais antigo. Isso permitirá que você page responses by using $top=n, where n = the number of days of data that you want to retrieve. 
+Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível de locatário e controle. Por padrão, 90 dias de dados são mantidos. Esses dados são classificados por **createdDateTime**, do mais recente ao mais antigo. Isso permitirá que você page as respostas usando $top=n, em que n = o número de dias de dados que você deseja recuperar. 
 
 
 ## <a name="methods"></a>Métodos
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Lista secureScores](../api/security-list-securescores.md) | [Coleção secureScores](securescore.md) |Obter coleção de objetos secureScore.|
+|[Lista secureScores](../api/security-list-securescores.md) | [Coleção secureScores](securescore.md) |Obtenha a coleção de objetos secureScore.|
 |[Obter secureScore](../api/securescore-get.md) | [secureScore](securescore.md) |Ler propriedades e metadados de um objeto secureScore. | 
 
 
@@ -33,16 +33,16 @@ Representa a pontuação segura de um locatário por dia de dados de pontuação
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
 |id |String|Identificador GUID/exclusivo gerado pelo provedor. Somente leitura. Obrigatório.|
-|   azureTenantId   |   String  |   Cadeia de caracteres GUID para ID de locatário.  |
-|   activeUserCount |   Int32   |   Contagem ativa do usuário do locatário determinado.  |
+|   azureTenantId   |   String  |   Cadeia de caracteres GUID para a ID do locatário.  |
+|   activeUserCount |   Int32   |   Contagem de usuários ativos do locatário determinado.  |
 |   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
-|   currentScore    |   Duplo  |   Pontuação atual atingida pelo locatário na data especificada.    |
-|   enabledServices |   Coleção String   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange online, Skype, Sharepoint).   |
-|   licensedUserCount   |   Int32   |   Contagem de usuários licenciados do locatário determinado.    |
+|   currentScore    |   Duplo  |   Pontuação atual do locatário obtido na data especificada.    |
+|   enabledServices |   Coleção String   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, Sharepoint).   |
+|   licensedUserCount   |   Int32   |   Contagem de usuários licenciados do locatário especificado.    |
 |   maxScore |  Duplo  |   Pontuação máxima possível do locatário na data especificada.    |
-|   averageComparativeScores |  [Coleção averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por assento) e categoria de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura) dentro do escopo. |
-|   controlScores | [Coleção controlScore](controlscore.md)  |   Contém pontuações de locatários para um conjunto de controles.   |
-|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor de produtos/serviços de segurança, provedor e subprovider (por exemplo, vendor=Microsoft; provider=SecureScore). Obrigatório.|
+|   averageComparativeScores |  [coleção averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por assento) e categoria de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura) dentro do escopo. |
+|   controlScores | [Coleção controlScore](controlscore.md)  |   Contém pontuações de locatário para um conjunto de controles.   |
+|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor, o provedor e o subprovidador de produto/serviço de segurança (por exemplo, vendor=Microsoft; provider=SecureScore). Obrigatório.|
 
 
 ## <a name="relationships"></a>Relações

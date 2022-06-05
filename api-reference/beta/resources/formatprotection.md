@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso FormatProtection
 description: Representa a proteção de formatação de um objeto range.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: workbooks-and-charts
 author: ruoyingl
-ms.openlocfilehash: 3f2f2747c2d5dd5945ada93d53d65241fa3ce6ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9bc101baf4270aaf3f26544c9805ab6416408747
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973941"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900265"
 ---
 # <a name="formatprotection-resource-type"></a>Tipo de recurso FormatProtection
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Representa a proteção de formatação de um objeto range.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -31,7 +31,7 @@ Representa a proteção de formatação de um objeto range.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formulaHidden|booliano|Indica se o Excel ocultará a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.|
+|Formulahidden|booliano|Indica se o Excel ocultará a fórmula para as células no intervalo. Um valor nulo indica que o intervalo inteiro não tem configuração uniforme de fórmula oculta.|
 |locked|booliano|Indica se o Excel bloqueia as células no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de bloqueio uniforme.|
 
 ## <a name="relationships"></a>Relações

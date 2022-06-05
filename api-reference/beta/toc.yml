@@ -592,7 +592,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para o usuário
                 href: api/chat-list.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa pendente
                 href: resources/todotask.md
@@ -616,7 +616,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -10825,7 +10825,7 @@ items:
                 href: api/educationclass-post-category.md
               - name: Obter intervalo
                 href: api/educationclass-delta.md
-          - name: Usuários
+          - name: Comercial
             href: resources/educationuser.md
             items:
               - name: Obter usuário
@@ -10869,6 +10869,8 @@ items:
                 href: api/educationassignment-list-submissions.md
               - name: Configurar a pasta de recursos de atribuição
                 href: api/educationassignment-setupresourcesfolder.md
+              - name: Configurar a pasta de recursos de comentários de atribuição
+                href: api/educationassignment-setupfeedbackresourcesfolder.md
               - name: Obter rubric anexado à atribuição
                 href: api/educationassignment-get-rubric.md
               - name: Listar categorias
@@ -10926,10 +10928,14 @@ items:
                 href: api/educationsubmission-list-resources.md
               - name: Adicionar recurso de envio
                 href: api/educationsubmission-post-resources.md
+              - name: Adicionar resultado do recurso de comentários de envio
+                href: api/educationfeedbackresourceoutcome-post-outcomes.md
               - name: Obter recurso de envio
                 href: api/educationsubmissionresource-get.md
               - name: Excluir recurso de envio
                 href: api/educationsubmissionresource-delete.md
+              - name: Excluir resultado do recurso de comentários
+                href: api/educationfeedbackresourceoutcome-delete.md
               - name: Obter envio
                 href: api/educationsubmission-get.md
               - name: Configurar a pasta de recursos de envio
@@ -11451,13 +11457,13 @@ items:
                     href: api/administrativeunit-get-members.md
                   - name: Remover um membro
                     href: api/administrativeunit-delete-members.md
-                  - name: Adicionar um administrador de função no escopo
+                  - name: Atribuir uma função com escopo
                     href: api/administrativeunit-post-scopedrolemembers.md
-                  - name: Listar administradores de função no escopo
+                  - name: Listar atribuições de função com escopo
                     href: api/administrativeunit-list-scopedrolemembers.md
-                  - name: Obter um administrador de função no escopo
+                  - name: Obter uma atribuição de função com escopo
                     href: api/administrativeunit-get-scopedrolemembers.md
-                  - name: Remover um administrador de função no escopo
+                  - name: Remover uma atribuição de função com escopo
                     href: api/administrativeunit-delete-scopedrolemembers.md
               - name: Chave de recuperação do BitLocker (versão prévia)
                 items:
@@ -12772,7 +12778,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Atribuição de atributo de fluxo de usuário
                     items:
-                      - name: User
+                      - name: Usuário
                         href: resources/identityuserflowattributeassignment.md
                       - name: Obter
                         href: api/identityuserflowattributeassignment-get.md
@@ -14444,7 +14450,7 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Obter cobertura de treinamento para usuários
                     href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Pesquisar
+      - name: Busca
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -14905,7 +14911,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Criar
@@ -15707,7 +15713,7 @@ items:
                 href: api/group-list-permissiongrants.md
               - name: Lista para chat
                 href: api/chat-list-permissiongrants.md
-      - name: Tarefas pendentes
+      - name: Tarefas To do
         displayName: Microsoft To Do
         items:
           - name: Visão geral

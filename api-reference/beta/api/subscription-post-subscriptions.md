@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 879238c0468b15f1ae4466ed8c9efef8b25d540e
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 4e06b0ed81a85de2e49c97d739073cadcdaf7fe1
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820522"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900244"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -32,12 +32,12 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 
 Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [ter cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões, pesquise as permissões a seguir em [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Incompatível | Incompatível | CallRecords.Read.All  |
-|[canais](../resources/channel.md) (/teams/getAllChannels todos – os canais em uma organização) | Incompatível  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[canais](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[canal](../resources/channel.md) (/teams/getAllChannels – todos os canais em uma organização) | Incompatível  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[canal](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) chat (/conversa – todos os chats em uma organização) | Incompatível | Incompatível | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Sem suporte | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
@@ -63,10 +63,10 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[printer](../resources/printer.md) | Sem suporte | Sem suporte | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Sem suporte | Sem suporte | PrintTaskDefinition.ReadWrite.All |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
-|[teams](../resources/team.md) (/teams – todas as equipes em uma organização) | Sem suporte | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
-|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
+|[equipe](../resources/team.md) (/equipes – todas as equipes em uma organização) | Sem suporte | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
+|[equipe](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Incompatível | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
-|[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 Recomendamos que você use as permissões conforme documentado na tabela anterior. Devido a restrições de segurança, as assinaturas do Microsoft Graph não darão suporte a permissões de acesso de gravação quando apenas permissões de acesso de leitura forem necessárias.
 
@@ -84,7 +84,7 @@ OneDrive for Business e Microsoft Office SharePoint Online suportam o envio de n
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você pode assinar alterações em Outlook de **contato, evento** ou mensagem **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
+Você pode assinar alterações nos recursos de **contato, evento** ou mensagem  do Outlook **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 

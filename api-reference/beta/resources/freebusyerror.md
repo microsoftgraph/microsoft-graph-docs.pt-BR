@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso freeBusyError
+title: Tipo de recurso freeBusyError
 description: Representa informações de erro da tentativa de obter a disponibilidade de um usuário, lista de distribuição ou recurso.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: calendar
 author: harini84
-ms.openlocfilehash: 565abb49b82a2d8fa41120a9df556113d790ed36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 58e55ce6a77d10f5be794de4c5223e903d5d5af9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973940"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900167"
 ---
-# <a name="freebusyerror-resource-type"></a>tipo de recurso freeBusyError
+# <a name="freebusyerror-resource-type"></a>Tipo de recurso freeBusyError
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ Representa informações de erro da tentativa de obter a disponibilidade de um u
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |mensagem |String |Descreve o erro. |
-|responseCode |String |O código de resposta da consulta para a disponibilidade do usuário, lista de distribuição ou recurso. |
+|responseCode |Cadeia de Caracteres |O código de resposta da consulta para a disponibilidade do usuário, da lista de distribuição ou do recurso. |
 
 
 ## <a name="json-representation"></a>Representação JSON

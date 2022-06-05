@@ -1,22 +1,22 @@
 ---
 title: Excluir administrativeUnit
-description: Excluir um administrativeUnit.
+description: Exclua uma administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7ed4083bf8e55298d5587af8ed352b0697bef967
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 74bd3b7c68679e539758f8ad943cda7688b8fd26
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672424"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898704"
 ---
 # <a name="delete-administrativeunit"></a>Excluir administrativeUnit
 
 Namespace: microsoft.graph
 
-Excluir um [administrativeUnit](../resources/administrativeunit.md).
+[Exclua uma administrativeUnit](../resources/administrativeunit.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,9 +24,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
+
+Para excluir uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

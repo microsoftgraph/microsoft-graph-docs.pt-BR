@@ -1,24 +1,27 @@
 ---
 title: 'unifiedRoleAssignmentScheduleRequest: filterByCurrentUser'
-description: Obter uma lista dos objetos unifiedRoleAssignmentScheduleRequest e suas propriedades filtradas por uma entidade de usuário específica
+description: No PIM, recupere as solicitações de atribuições de função ativas para uma entidade de segurança específica. A entidade de segurança pode ser o criador ou aprovador do objeto unifiedRoleAssignmentScheduleRequest ou pode ser o destino da atribuição.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5aef3e2169d0b928a335d55cf5e49ef04beaf2c4
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 84ce9c59debc1170f4cebe1a6e8e4ff20cc4b3ca
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398472"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900349"
 ---
 # <a name="unifiedroleassignmentschedulerequest-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+No PIM, recupere as solicitações de atribuições de função ativas para uma entidade de segurança específica. A entidade de segurança pode ser o criador ou aprovador do objeto **unifiedRoleAssignmentScheduleRequest** ou pode ser o destino da atribuição.
 
-Obtenha uma lista dos [objetos unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) e suas propriedades associadas a um objeto principal específico.
+> [!NOTE]
+> Essa API não retorna atribuições de função ativas por meio de associações de grupo.
+
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,15 +43,17 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
-A tabela a seguir mostra os parâmetros de consulta que podem ser usados com esse método.
+Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
+A tabela a seguir mostra os parâmetros necessários com essa função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|RoleAssignmentScheduleRequestFilterByCurrentUserOptions|Filtre para consultar objetos para os quais o usuário atual é a entidade de segurança. O valor permitido é `principal`. Obrigatório.|
+|on|roleAssignmentScheduleRequestFilterByCurrentUserOptions| Os valores possíveis são `principal`, `createdBy`, `approver`. `unknownFutureValue` Somente `principal` e `approver` têm suporte no momento.|
 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+
+Esse método dá suporte aos `$select`parâmetros de consulta , `$filter`e `$expand` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -60,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método `200 OK` retorna um código de resposta e uma coleção de [objetosUnifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) no corpo da resposta.
+Se bem-sucedido, este método `200 OK` retorna um código de resposta e uma coleção de[objetos unifiedRoleAssignmentScheduleRequest](../resources/unifiedRoleAssignmentScheduleRequest.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,23 +1,23 @@
 ---
 title: Obter unifiedRoleAssignmentScheduleRequest
-description: Leia as propriedades e as relações de um objeto unifiedRoleAssignmentScheduleRequest.
+description: No PIM, leia os detalhes de uma solicitação para uma atribuição de função ativa e persistente feita por meio do objeto unifiedRoleAssignmentScheduleRequest.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ad7e492f4456aefe187dfa03f50d31cd546c7d44
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 4b272459ae057476e746c55a2ee41e5c392b69ad
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398584"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898473"
 ---
 # <a name="get-unifiedroleassignmentschedulerequest"></a>Obter unifiedRoleAssignmentScheduleRequest
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) .
+No PIM, leia os detalhes de uma solicitação para uma atribuição de função ativa e persistente feita por meio do objeto [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/{unifiedRoleAssignm
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos parâmetros `$select` `$expand` de consulta e OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

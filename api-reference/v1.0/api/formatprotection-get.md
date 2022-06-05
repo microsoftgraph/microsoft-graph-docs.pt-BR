@@ -3,14 +3,14 @@ title: Obter FormatProtection
 description: Recupere as propriedades e os relacionamentos do objeto formatprotection.
 ms.localizationpriority: medium
 author: ruoyingl
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 50d3f298981e843f7b98681fa012b8c4fa878e97
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5a9b7ffb9e142219ee0f88f2e732f0905694396d
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940741"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899313"
 ---
 # <a name="get-formatprotection"></a>Get FormatProtection
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.ReadWrite    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 

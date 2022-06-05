@@ -5,25 +5,25 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 198bae1ac133b23049347363d003019d4cdb11fa
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 78e9e916da41ad8e28c2776e6c7924c5a5c4cf38
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205274"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900069"
 ---
 # <a name="unifiedroleassignmentscheduleinstance-filterbycurrentuser"></a>unifiedRoleAssignmentScheduleInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
 Obtenha as instâncias de atribuições de função ativas para a entidade de chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -38,7 +38,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 
 ## <a name="function-parameters"></a>Parâmetros de função
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
-A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
+A tabela a seguir mostra os parâmetros necessários com essa função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|

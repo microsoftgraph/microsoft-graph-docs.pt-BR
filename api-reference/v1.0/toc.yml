@@ -508,7 +508,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para o usuário
                 href: api/chat-list.md
-          - name: Tarefas pendentes
+          - name: Tarefas To do
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -532,7 +532,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/groups-overview.md
-          - name: Group
+          - name: Grupo
             href: resources/group.md
             items:
               - name: Listar grupos
@@ -4661,13 +4661,13 @@ items:
                     href: api/administrativeunit-get-members.md
                   - name: Remover um membro
                     href: api/administrativeunit-delete-members.md
-                  - name: Adicionar um administrador de função no escopo
+                  - name: Atribuir uma função com escopo
                     href: api/administrativeunit-post-scopedrolemembers.md
-                  - name: Listar administradores de função no escopo
+                  - name: Listar atribuições de função com escopo
                     href: api/administrativeunit-list-scopedrolemembers.md
-                  - name: Obter um administrador de função no escopo
+                  - name: Obter uma atribuição de função com escopo
                     href: api/administrativeunit-get-scopedrolemembers.md
-                  - name: Remover um administrador de função no escopo
+                  - name: Remover uma atribuição de função com escopo
                     href: api/administrativeunit-delete-scopedrolemembers.md
               - name: Chave de recuperação do BitLocker
                 href: resources/bitlockerrecoverykey.md
@@ -6288,7 +6288,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Busca
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -6561,7 +6561,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Atualizar
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Grupo
                 href: resources/termstore-group.md
                 items:
                   - name: Listar
@@ -7166,7 +7166,7 @@ items:
             items:
               - name: Lista de grupos
                 href: api/group-list-permissiongrants.md
-      - name: Tarefas pendentes
+      - name: Tarefas To do
         displayName: Microsoft To Do
         items:
           - name: Visão geral

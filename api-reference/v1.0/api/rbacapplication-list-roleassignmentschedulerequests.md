@@ -1,28 +1,28 @@
 ---
 title: Listar roleAssignmentScheduleRequests
-description: No PIM, recupere as solicitações de atribuições de função ativas para entidades de segurança feitas por meio do objeto unifiedRoleAssignmentScheduleRequest.
+description: Recupere as solicitações de atribuições de função ativas para entidades de segurança feitas por meio do objeto unifiedRoleAssignmentScheduleRequest do PIM ou da API de atribuições de função.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 167fa54bcca28c3d9b362e3a44b6834aecab864d
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 163ff3370f7e39e93dc0b855d18bf7ea599956a5
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65207228"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898774"
 ---
 # <a name="list-roleassignmentschedulerequests"></a>Listar roleAssignmentScheduleRequests
 Namespace: microsoft.graph
 
-No PIM, recupere as solicitações de atribuições de função ativas para entidades de segurança. As atribuições ativas incluem aquelas feitas por meio de [atribuições e solicitações](rbacapplication-post-roleassignmentschedulerequests.md) de ativação e diretamente por meio da [API de atribuições de função](../resources/unifiedroleassignment.md). As atribuições de função podem ser permanentemente ativas com ou sem uma data de expiração ou temporariamente ativas após a ativação do usuário de atribuições qualificadas.
+Recupere as solicitações de atribuições de função ativas para entidades de segurança. As atribuições ativas incluem aquelas feitas por meio de [atribuições e solicitações](rbacapplication-post-roleassignmentschedulerequests.md) de ativação e diretamente por meio da [API de atribuições de função](../resources/unifiedroleassignment.md). As atribuições de função podem ser permanentemente ativas com ou sem uma data de expiração ou temporariamente ativas após a ativação do usuário de atribuições qualificadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
+| Delegada (conta corporativa ou de estudante)     | RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory               |
 

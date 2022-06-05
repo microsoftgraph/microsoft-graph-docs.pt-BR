@@ -1,16 +1,16 @@
 ---
 title: Gerenciar a Caixa de Entrada Prioritária
-description: 'A Caixa de Entrada Focada permite que você veja mensagens importantes na guia Caixa de Entrada e o restante das mensagens de Caixa `Focused` de Entrada na `Other` guia. O sistema de classificação '
+description: 'A Caixa de Entrada Destaques `Focused` permite exibir mensagens importantes na guia da Caixa de Entrada e o restante das mensagens da Caixa de Entrada na `Other` guia. O sistema de classificação '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: conceptualPageType
-ms.openlocfilehash: d50f6f1769af34ec15b20d7eea4e2ec7ca102396
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7566a26daedb35d558b231ab75f95a4bd31ed20f
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113641"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900405"
 ---
 # <a name="manage-focused-inbox"></a>Gerenciar a Caixa de Entrada Prioritária
 
@@ -33,7 +33,7 @@ Observe que o sistema de classificação aprende e aplica a classificação apen
 
 **Usar substituições para classificar consistentemente por remetente**
 
-[Criar uma substituição para um remetente](../api/inferenceclassification-post-overrides.md)  |  [Listar todas as substituições de usuário](../api/inferenceclassification-list-overrides.md) |
+[Criar uma substituição para um remetente](../api/inferenceclassification-post-overrides.md) |  [Listar todas as substituições de usuário](../api/inferenceclassification-list-overrides.md) |
 
-[Atualizar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md)  |  [Excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md)
+[Atualizar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md) |  [Excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md)
 

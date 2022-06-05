@@ -3,14 +3,14 @@ title: Atualizar inferenceclassificationoverride
 description: 'Altere o campo **classifyAs** de uma substituição conforme especificado. '
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: apiPageType
-ms.openlocfilehash: ac4dec87574e5b6c440e9737b7eb4e1816c33270
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0efc49ab4e47e5b58a1f6da9d1d048601df8cbaf
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124736"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65897913"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceclassificationoverride
 
@@ -51,7 +51,7 @@ No corpo da solicitação, forneça o novo valor para **classifyAs**. Para obter
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|classifyAs|string| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` , `other` .|
+|classifyAs|string| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused`, `other`.|
 
 ## <a name="response"></a>Resposta
 

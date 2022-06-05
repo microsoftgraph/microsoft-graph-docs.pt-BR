@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22d42ddb59a73a0acccd8b21628e47dbc9614a7f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a7228dbb4add26e2eaa13c409491ce132c7965ee
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448545"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899677"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Tipo de recurso windows10NetworkProxyServer
 
@@ -23,7 +23,7 @@ Política de Servidor Proxy de Rede.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|address|Cadeia de caracteres|Endereço para o servidor proxy. Especifique um endereço no formato <server>\[“:”<port>\]|
+|address|Cadeia de caracteres|Endereço para o servidor proxy. Especifique um endereço no formato \<server\>\[“:”\<port\>\]|
 |exceptions|Coleção de cadeias de caracteres|Endereços que não devem usar o servidor proxy. O sistema não usará o servidor proxy para endereços que começam com o conteúdo especificado nesse nó.|
 |useForLocalAddresses|Booliano|Especifica se o servidor proxy deve ser usado para endereços locais (intranet).|
 

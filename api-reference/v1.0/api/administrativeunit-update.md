@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6319913db5228b8dc93451513b45ecabc14de4c6
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: b82b3797b72e1f3b7b608fdf92937d273cf183bc
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672018"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898676"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeUnit
 
@@ -23,9 +23,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
+
+Para atualizar uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +52,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição da unidade administrativa.|
-|displayName|string|Nome de exibição da unidade administrativa.|
+|displayName|cadeia de caracteres|Nome de exibição da unidade administrativa.|
 
 Como o **recurso administrativeUnit** dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview) de uma extensão em uma instância **administrativeUnit** existente.
 

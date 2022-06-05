@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: IdentitySet
+title: Tipo de recurso identitySet
 ms.localizationpriority: medium
-description: O recurso IdentitySet é uma coleção de chaves dos recursos identity.
-ms.prod: ''
+description: Representa uma coleção chaveada de recursos de identidade.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: a37afd466cf99851ef6343f69c8d97188476ae72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f91b44dd10d842787aba9af96fa57a4ef67f53b
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032367"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899936"
 ---
-# <a name="identityset-resource-type"></a>Tipo de recurso IdentitySet
+# <a name="identityset-resource-type"></a>Tipo de recurso identitySet
 
 Namespace: microsoft.graph
 
-O recurso **IdentitySet** é uma coleção de chaves dos recursos [identity](identity.md). É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
+O **recurso identitySet** é uma coleção chaveada de recursos [de](identity.md) identidade.
+É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -44,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="remarks"></a>Comentários 
 
-Consulte [DriveItem](driveitem.md) para saber mais sobre o uso de recursos **IdentitySet**.
+Consulte [driveItem](driveitem.md) para o uso de **recursos identitySet** .
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

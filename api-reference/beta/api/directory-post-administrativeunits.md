@@ -1,16 +1,16 @@
 ---
 title: Criar administrativeUnit
-description: Use essa API para criar um novo administrativeUnit.
+description: Use essa API para criar uma nova administrativeUnit.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a7bb53d098ef2383035485c7cb9311db3935dcf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: c63191d9f5c71a08cc96b81277c7b9d1712df0c5
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670240"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900013"
 ---
 # <a name="create-administrativeunit"></a>Criar administrativeUnit
 
@@ -18,16 +18,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um [novo administrativeUnit](../resources/administrativeunit.md).
+Use essa API para criar uma [nova administrativeUnit](../resources/administrativeunit.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
+
+Para criar uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções [do Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,13 +47,13 @@ POST /directory/administrativeUnits
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto administrativeUnit](../resources/administrativeunit.md) .
+No corpo da solicitação, forneça uma representação JSON de um [objeto administrativeUnit](../resources/administrativeunit.md) .
 
-Como o **recurso administrativeUnit** dá suporte a extensões, você pode usar `POST` a operação e adicionar propriedades [personalizadas](/graph/extensibility-overview) com seus próprios dados à unidade administrativa durante a criação.
+Como o **recurso administrativeUnit** dá suporte a extensões, `POST` você pode usar a operação e adicionar propriedades [personalizadas](/graph/extensibility-overview) com seus próprios dados à unidade administrativa ao criá-la.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,7 +102,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto administrativeUnit](../resources/administrativeunit.md) .
+No corpo da solicitação, forneça uma representação JSON de um [objeto administrativeUnit](../resources/administrativeunit.md) .
 
 ### <a name="response"></a>Resposta
 

@@ -1,23 +1,23 @@
 ---
 title: Obter unifiedRoleManagementPolicy
-description: Leia as propriedades e as relações de um objeto unifiedRoleManagementPolicy.
+description: Recupere os detalhes de uma política de gerenciamento de função.
 author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9838eff41eda53f7bd1657631f4e6a0c194aa7c9
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 77c14e4a85de4e68031bf4cdc1c87d37ef6c1dc7
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398451"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900293"
 ---
 # <a name="get-unifiedrolemanagementpolicy"></a>Obter unifiedRoleManagementPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) . Para ler uma política que se aplica ao RBAC do Azure, use a [API REST PIM do Azure para políticas de gerenciamento de funções](/rest/api/authorization/role-management-policies/get).
+Recupere os detalhes de uma política de gerenciamento de função. Para ler uma política que se aplica ao RBAC do Azure, use a [API REST PIM do Azure para políticas de gerenciamento de funções](/rest/api/authorization/role-management-policies/get).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método dá suporte a todos os parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos parâmetros `$select` `$expand` de consulta e OData para ajudar a personalizar a resposta. Você também pode especificar o valor curinga `*` para expandir todas as relações com suporte, ou seja, `?$expand=*`. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

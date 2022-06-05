@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Criar uma nova lista em um site.
 doc_type: apiPageType
-ms.openlocfilehash: 8539ce7508d49476edf663eb2fc3cbfdeebca6ea
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: d79d8392672253aeb273656f2479460a840a10fe
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335623"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900086"
 ---
 # <a name="create-a-new-list"></a>Crie uma nova lista
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |            Tipo de permissão             | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Sites.Manage.All                            |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | Sites.Manage.All                            |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,11 +45,11 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto list][] .
+No corpo da solicitação, forneça uma representação JSON de um [objeto de][] lista.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto list][] no corpo da resposta. 
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto de][] lista no corpo da resposta. 
 
 ## <a name="examples"></a>Exemplos
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 ---
 
 
-## <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 

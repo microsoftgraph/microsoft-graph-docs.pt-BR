@@ -1,22 +1,22 @@
 ---
 title: Criar workbookCommentReply
-description: Use essa API para criar uma nova workbookCommentReply.
+description: Use essa API para criar uma nova pasta de trabalhoCommentReply.
 ms.localizationpriority: medium
 author: grangeryy
-ms.prod: ''
+ms.prod: workbooks-and-charts
 doc_type: apiPageType
-ms.openlocfilehash: 191a97ed263c448790f795437bebca305216daf2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44487008863da83246198fcde39394d6ecc078fd
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104521"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898592"
 ---
 # <a name="create-workbookcommentreply"></a>Criar workbookCommentReply
 
 Namespace: microsoft.graph
 
-Crie um novo [objeto workbookCommentReply.](../resources/workbookcommentreply.md)
+Crie um novo [objeto workbookCommentReply](../resources/workbookcommentreply.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Files.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Files.ReadWrite |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,11 +45,11 @@ POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto workbookCommentReply.](../resources/workbookcommentreply.md)
+No corpo da solicitação, forneça uma representação JSON de um [objeto workbookCommentReply](../resources/workbookcommentreply.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um novo objeto `201 Created` [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um novo objeto [workbookCommentReply](../resources/workbookcommentreply.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: FolderView
+title: folderView
 ms.localizationpriority: medium
 description: O recurso FolderView fornece ou define recomendações sobre a experiência do usuário de uma pasta.
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 72371634e8cebba4c520277de6bae7055a63ea97
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 79614af785392918026c857816505a12c9f8e476
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078844"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900160"
 ---
-# <a name="folderview-resource-type"></a>Tipo de recurso FolderView
+# <a name="folderview-resource-type"></a>Tipo de recurso folderView
 
 Namespace: microsoft.graph
 
@@ -43,7 +42,7 @@ Está disponível a partir da propriedade [folder][folder-facet] dos recursos [d
 
 Você pode usar a propriedade _sortBy_ para controlar a ordem de classificação dos itens em aplicativos que respeitam a faceta **viewType**.
 
-### <a name="sortby-options"></a>opções sortBy
+### <a name="sortby-options"></a>Opções sortBy
 
 Os seguintes valores são definidos para a propriedade **sortBy**.
 
@@ -68,7 +67,7 @@ Os seguintes valores são definidos para a propriedade **sortOrder**.
 | `descending` | Os itens devem ser organizados em ordem decrescente.
 
 
-### <a name="viewtype-options"></a>opções viewType
+### <a name="viewtype-options"></a>Opções viewType
 
 Os seguintes valores são definidos para a propriedade **viewType**.
 

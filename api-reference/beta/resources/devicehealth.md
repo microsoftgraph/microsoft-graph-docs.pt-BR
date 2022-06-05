@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso deviceHealth
-description: Representa a integridade de um dispositivo, incluindo quaisquer erros.
+title: Tipo de recurso deviceHealth
+description: Representa a integridade de um dispositivo, incluindo erros.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 7da256308ee63607d7d2d0e7ba62cb3030db4835
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1900ac9e0c00104c7bea83a153abe2e7d3a3523
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049853"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900272"
 ---
-# <a name="devicehealth-resource-type"></a>tipo de recurso deviceHealth
+# <a name="devicehealth-resource-type"></a>Tipo de recurso deviceHealth
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a integridade de um dispositivo, incluindo quaisquer erros.
+Representa a integridade de um dispositivo, incluindo erros.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |

@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2a69b010885c79dba87ef80a23f035e50d7aec53
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: bdc228637496774dd7eb90dcd9b09dff8a6c9da7
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084088"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65900472"
 ---
 # <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>Receba notificações de alteração de membros em equipes e canais usando o Microsoft Graph
 
@@ -22,18 +22,18 @@ Para obter notificações de alterações para alterações de membros em uma eq
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | TeamMember.Read.All, TeamMember.ReadWrite.All | beta |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   | beta |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | TeamMember.Read.All, TeamMember.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All   |
 
 >**Nota:** As permissões marcadas com * são suportadas como parte do [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -56,17 +56,17 @@ Para obter notificações de alteração de membros em todos os canais privados 
 
 ### <a name="permissions"></a>Permissões
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | Versões com suporte |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte. | Sem suporte. |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | Sem suporte. |
-|Aplicativo | ChannelMember.Read.All   | beta |
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Sem suporte. |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | ChannelMember.Read.All   |
 
 
 ### <a name="example"></a>Exemplo
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

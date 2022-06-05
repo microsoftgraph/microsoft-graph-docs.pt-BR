@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cfe40b6d418759c3087eb31f4e0b9dcf5fd87fe9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: b34bdd4930eec2c58fce432314c259c4fa5d12f9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669407"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898182"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para adicionar um membro (usuário, grupo ou dispositivo) a uma unidade administrativa ou para criar um novo grupo em uma unidade administrativa. Todos [os tipos de](/graph/api/resources/groups-overview) grupo podem ser criados em uma unidade administrativa.
+Use essa API para adicionar um membro (usuário, grupo ou dispositivo) a uma unidade administrativa ou para criar um novo grupo dentro de uma unidade administrativa. Todos [os tipos de](/graph/api/resources/groups-overview) grupo podem ser criados em uma unidade administrativa.
 
-**Observação:** Atualmente, só é possível adicionar um membro por vez a uma unidade administrativa.
+**Nota:** Atualmente, só é possível adicionar um membro por vez a uma unidade administrativa."
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ### <a name="permissions-to-add-an-existing-user-group-or-device"></a>Permissões para adicionar um usuário, grupo ou dispositivo existente
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
 ### <a name="permissions-to-create-a-new-group"></a>Permissões para criar um novo grupo
@@ -38,6 +38,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+Para adicionar um membro a uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,11 +64,11 @@ POST /administrativeUnits/{id}/members
 | Autorização  | {token} de portador. Obrigatório. |
 | Content-type  | application/json. Obrigatório. |
 
-### <a name="adding-an-existing-user-or-group"></a>Adicionar um usuário ou grupo existente
-No corpo da solicitação, forneça `id` o de um [usuário](../resources/user.md),  [grupo](../resources/group.md), [dispositivo](../resources/device.md) ou [directoryObject](../resources/directoryobject.md) a ser adicionado.
+### <a name="adding-an-existing-user-or-group"></a>Adicionando um usuário ou grupo existente
+No corpo da solicitação, forneça o `id` de um [usuário](../resources/user.md),  [grupo](../resources/group.md), [dispositivo](../resources/device.md) ou [directoryObject](../resources/directoryobject.md) a ser adicionado.
 
 ### <a name="creating-a-new-group"></a>Criando um novo grupo
-A tabela a seguir mostra as propriedades do recurso [de](../resources/group.md) grupo a ser especificado quando você cria um grupo na unidade administrativa. 
+A tabela a seguir mostra as propriedades do recurso [de](../resources/group.md) grupo a serem especificadas quando você cria um grupo na unidade administrativa. 
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
@@ -81,7 +86,7 @@ A tabela a seguir mostra as propriedades do recurso [de](../resources/group.md) 
 
 Se tiver êxito, adicionar um objeto existente (usando `$ref`) retornará o `204 No Content` código de resposta. Não retorna nada no corpo da resposta. 
 
-Ao criar um novo grupo (sem `$ref`), este método retorna `201 Created` um código de resposta e um objeto [group](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão do grupo.
+Ao criar um novo grupo (sem `$ref`), esse método retorna `201 Created` um código de resposta e um objeto [de](../resources/group.md) grupo no corpo da resposta. A resposta inclui somente as propriedades padrão do grupo.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-add-an-existing-user-or-group"></a>Exemplo 1: Adicionar um usuário ou grupo existente
@@ -124,15 +129,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 
-No corpo da solicitação, forneça o `id` do [usuário](../resources/user.md), [grupo](../resources/group.md) ou [objeto de](../resources/device.md) dispositivo que você deseja adicionar.
+No corpo da solicitação, forneça o `id` [usuário, grupo](../resources/user.md)[](../resources/group.md) [ou objeto de](../resources/device.md) dispositivo que você deseja adicionar.
 
 #### <a name="response"></a>Resposta
 
@@ -200,7 +201,7 @@ Content-length: 244
 
 
 
-No corpo da solicitação, forneça as propriedades do [objeto de](../resources/group.md) grupo que você deseja adicionar.
+No corpo da solicitação, forneça as propriedades do objeto [de](../resources/group.md) grupo que você deseja adicionar.
 
 #### <a name="response"></a>Resposta
 

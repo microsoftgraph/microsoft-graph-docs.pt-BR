@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 449b154059bb869abf894c315516ac65f585af23
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: b3fac827fb6f526fa515ab6c87d7027a9cb863c9
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884287"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65899978"
 ---
 # <a name="remove-a-member"></a>Remover um membro
 
@@ -26,7 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+|Aplicativo | AdministrativeUnit.ReadWrite.All |
+
+Para remover um membro de uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
