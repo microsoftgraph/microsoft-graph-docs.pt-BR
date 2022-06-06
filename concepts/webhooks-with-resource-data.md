@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 3cb94fcc4ba55447646e31635a0e9a68a9b8d1a2
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 9bbd29d374160fdd8c86b6bd34293ce7fe241e17
+ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368179"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65898823"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -39,6 +39,16 @@ Disponível nos pontos de extremidade v1.0 e beta:
 - Mensagens novas ou alteradas em todos os canais do Teams em toda a organização (locatário): `/teams/getAllMessages`
 - Mensagens novas ou alteradas em um bate-papo específico do Teams: `/chats/{id}/messages`
 - Mensagens novas ou alteradas em todos os bate-papos em toda a organização (locatário): `/chats/getAllMessages`
+- Membros novos ou alterados em todos os chats do Teams: `/chats/getAllMembers`
+- Membros novos ou alterados em um chat específico do Teams: `/chats/{id}/members`
+- Chat novo ou alterado em todo o locatário: `/chats`
+- Alterações de propriedade em um chat específico: `/chats/{id}`
+- Membros novos ou alterados em todos os canais de uma equipe específica: `/teams/{id}/channels/getAllMembers`
+- Membros novos ou alterados em uma equipe específica: `/teams/{id}/members`
+- Equipe nova ou alterada em todo o locatário: `/teams`
+- Alterações de propriedade em uma equipe específica: `/teams/{id}`
+- Canais novos ou alterados em todas as equipes do Teams: `/teams/getAllChannels`
+- Canal novo ou alterado em uma equipe específica: `/teams/{id}/channels`
 - Atualização das informações de presença do usuário: `/communications/presences/{id}`
 
 Disponível apenas no ponto de extremidade beta:
