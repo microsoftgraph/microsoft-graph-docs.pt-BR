@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ead756447a5733c5d062daa2099ab36198c84c58
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1bd185bd88c8d04f8ceb9a2a8cb669304096d7bd
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049743"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924062"
 ---
 # <a name="mediastream-resource-type"></a>Tipo de recurso mediaStream
 
@@ -22,31 +22,33 @@ Representa informações sobre um fluxo de mídia entre dois pontos de extremida
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|averageAudioDegradation|Duplo|Degradação média de pontuação de opinião de rede para fluxo. Representa o quanto a perda de rede e a tremedeira afetaram a qualidade do áudio recebido.|
-|averageAudioNetworkJitter|Duration|Tremido médio para o fluxo calculado conforme especificado no [RFC 3550][], indicado no [formato ISO 8601.][] Por exemplo, 1 segundo é denodo como , onde 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o `'PT1S'` segundo designador.|
+|audioCodec|microsoft.graph.callRecords.audioCodec|Nome do codec usado para codificar áudio para transmissão na rede. Os valores possíveis são: , , , , , , , , `multiChannelAudio``g7221c``g729``g722``g7221`, . `unknownFutureValue``xmsRTA``siren``silkWide``satinFullband``silk``satin``rtAudio8``opus``rtAudio16``silkNarrow``muchv2``amrWide``pcmu``pcma``cn``invalid``unknown`|
+|averageAudioDegradation|Duplo|Degradação média da pontuação de opinião média de rede para fluxo. Representa o quanto a perda de rede e tremulação afetaram a qualidade do áudio recebido.|
+|averageAudioNetworkJitter|Duration|Tremulação média para o fluxo calculado conforme especificado no [RFC 3550][], indicado no [formato ISO 8601][] . Por exemplo, 1 segundo `'PT1S'`é indicado como , em que 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o segundo designador.|
 |averageBandwidthEstimate|Int64|Largura de banda estimada média disponível entre dois pontos de extremidade em bits por segundo.|
-|averageJitter|Duration|Tremido médio para o fluxo calculado conforme especificado no [RFC 3550][], indicado no [formato ISO 8601.][] Por exemplo, 1 segundo é denodo como , onde 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o `'PT1S'` segundo designador.|
+|averageJitter|Duration|Tremulação média para o fluxo calculado conforme especificado no [RFC 3550][], indicado no [formato ISO 8601][] . Por exemplo, 1 segundo `'PT1S'`é indicado como , em que 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o segundo designador.|
 |averagePacketLossRate|Duplo|Taxa média de perda de pacotes para fluxo.|
-|averageRatioOfConcealedSamples|Duplo|Taxa do número de quadros de áudio com exemplos gerados pela ocultação de perda de pacotes para o número total de quadros de áudio.|
+|averageRatioOfConcealedSamples|Duplo|Proporção do número de quadros de áudio com amostras geradas pela ocultação de perda de pacotes para o número total de quadros de áudio.|
 |averageReceivedFrameRate|Duplo|Média de quadros por segundo recebidos para todos os fluxos de vídeo calculados durante a sessão.|
-|averageRoundTripTime|Duration|Tempo médio de propagação de rede calculado conforme especificado no [RFC 3550][], indicado no [formato ISO 8601.][] Por exemplo, 1 segundo é denodo como , onde 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o `'PT1S'` segundo designador.|
-|averageVideoFrameLossPercentage|Duplo|Porcentagem média de quadros de vídeo perdidos conforme exibido para o usuário.|
-|averageVideoFrameRate|Duplo|Quadros médios por segundo recebidos para um fluxo de vídeo, calculados durante a duração da sessão.|
-|averageVideoPacketLossRate|Duplo|Fração média de pacotes perdidos, conforme especificado em [RFC 3550][], calculado durante a duração da sessão.|
-|endDateTime|DateTimeOffset|Hora UTC quando o fluxo terminou. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|lowFrameRateRatio|Duplo|Fração da chamada em que a taxa de quadros é inferior a 7,5 quadros por segundo.|
-|lowVideoProcessingCapabilityRatio|Duplo|Fração da chamada que o cliente está executando menos de 70% do recurso de processamento de vídeo esperado.|
-|maxAudioNetworkJitter|Duration|Máximo de tremedeira de rede de áudio calculada em cada uma das janelas de 20 segundos durante a sessão, denotado no [formato ISO 8601.][] Por exemplo, 1 segundo é denodo como , onde 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o `'PT1S'` segundo designador.|
-|maxJitter|Duration|Tremedeira máxima para o fluxo calculado conforme especificado no RFC 3550, indicado no [formato ISO 8601.][] Por exemplo, 1 segundo é denodo como , onde 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o `'PT1S'` segundo designador.|
+|averageRoundTripTime|Duration|Tempo médio de ida e volta de propagação de rede calculado conforme especificado no [RFC 3550][], indicado no [formato ISO 8601][] . Por exemplo, 1 segundo `'PT1S'`é indicado como , em que 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o segundo designador.|
+|averageVideoFrameLossPercentage|Duplo|Percentual médio de quadros de vídeo perdidos conforme exibido para o usuário.|
+|averageVideoFrameRate|Duplo|Média de quadros por segundo recebidos para um fluxo de vídeo, calculados durante a sessão.|
+|averageVideoPacketLossRate|Duplo|Fração média de pacotes perdidos, conforme especificado no [RFC 3550][], computado durante a sessão.|
+|endDateTime|DateTimeOffset|Hora UTC em que o fluxo terminou. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|lowFrameRateRatio|Duplo|Fração da chamada em que a taxa de quadros é menor que 7,5 quadros por segundo.|
+|lowVideoProcessingCapabilityRatio|Duplo|Fração da chamada em que o cliente está executando menos de 70% da capacidade esperada de processamento de vídeo.|
+|maxAudioNetworkJitter|Duration|Máximo de tremulação de rede de áudio computada em cada uma das janelas de 20 segundos durante a sessão, indicada no [formato ISO 8601][] . Por exemplo, 1 segundo `'PT1S'`é indicado como , em que 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o segundo designador.|
+|maxJitter|Duration|Tremulação máxima para o fluxo calculado conforme especificado no RFC 3550, indicado no [formato ISO 8601][] . Por exemplo, 1 segundo `'PT1S'`é indicado como , em que 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o segundo designador.|
 |maxPacketLossRate|Duplo|Taxa máxima de perda de pacotes para o fluxo.|
-|maxRatioOfConcealedSamples|Duplo|Taxa máxima de pacotes ocultos pelo curador.|
-|maxRoundTripTime|Duration|Tempo máximo de propagação de rede calculado conforme especificado no [RFC 3550][], indicado no [formato ISO 8601.][] Por exemplo, 1 segundo é denodo como , onde 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o `'PT1S'` segundo designador.|
+|maxRatioOfConcealedSamples|Duplo|Taxa máxima de pacotes ocultados pelo curador.|
+|maxRoundTripTime|Duration|Tempo de ida e volta de propagação de rede máximo calculado conforme especificado no [RFC 3550][], indicado no [formato ISO 8601][] . Por exemplo, 1 segundo `'PT1S'`é indicado como , em que 'P' é o designador de duração, 'T' é o designador de tempo e 'S' é o segundo designador.|
 |packetUtilization|Int64|Contagem de pacotes para o fluxo.|
-|postForwardErrorCorrectionPacketLossRate|Duplo|Taxa de perda de pacotes após a aplicação do FEC agregada em todos os fluxos de vídeo e codecs.|
-|startDateTime|DateTimeOffset|Hora UTC quando o fluxo foi iniciado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
+|postForwardErrorCorrectionPacketLossRate|Duplo|Taxa de perda de pacotes após a agregação do FEC em todos os fluxos de vídeo e codecs.|
+|startDateTime|DateTimeOffset|Hora UTC em que o fluxo foi iniciado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Indica a direção do fluxo de mídia. Os valores possíveis são: `callerToCallee` e `calleeToCaller`.|
-|streamId|String|Identificador exclusivo do fluxo.|
-|wasMediaBypassed|Booliano|True se o fluxo de mídia ignorar o Servidor de Mediação e ir direto entre cliente e Gateway PSTN/PBX, false caso contrário.|
+|streamId|Cadeia de caracteres|Identificador exclusivo do fluxo.|
+|videoCodec|microsoft.graph.callRecords.videoCodec|Nome do codec usado para codificar vídeo para transmissão na rede. Os valores possíveis são: `unknown`, `invalid`, `av1`, `h263`, `h264`, `h264s`, `h264uc`, `h265`, `rtvc1`, `rtVideo`, `xrtvc1`, `unknownFutureValue`.|
+|wasMediaBypassed|Booleano|True se o fluxo de mídia ignorar o Servidor de Mediação e ir direto entre o cliente e o Gateway PSTN/PBX, caso contrário, false.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -64,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
+  "audioCodec": "String",
   "averageAudioDegradation": "Double",
   "averageAudioNetworkJitter": "String (duration)",
   "averageBandwidthEstimate": 1024,
@@ -88,6 +91,7 @@ Veja a seguir uma representação JSON do recurso.
   "startDateTime": "String (timestamp)",
   "streamDirection": "String",
   "streamId": "String",
+  "videoCodec": "String",
   "wasMediaBypassed": true
 }
 ```

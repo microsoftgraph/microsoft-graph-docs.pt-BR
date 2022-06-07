@@ -1,24 +1,24 @@
 ---
 title: 'reportRoot: getTeamsUserActivityCounts'
-description: Obtém o número de atividades do Microsoft Teams por tipo de atividade. Os tipos de atividade são mensagens de chat de equipes, mensagens de chat privadas, chamadas e reuniões.
+description: Obtém o número de atividades do Microsoft Teams por tipo de atividade. As atividades são executadas por usuários licenciados do Microsoft Teams.
 ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2bc02b6505b4d407b4161a81e772a98fc60b6f66
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4cf69a3d38791290406795b9e3e22f52f90e6d01
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050051"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924046"
 ---
 # <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
 
 Namespace: microsoft.graph
 
-Obtém o número de atividades do Microsoft Teams por tipo de atividade. Os tipos de atividade são mensagens de chat de equipes, mensagens de chat privadas, chamadas e reuniões.
+Obtém o número de atividades do Microsoft Teams por tipo de atividade. As atividades são executadas por usuários licenciados do Microsoft Teams.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -63,9 +63,16 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - Data de atualização do relatório
 - Data do relatório
 - Mensagens de chat de equipes
+- Postar Mensagens
+- Mensagens de Resposta
 - Mensagens de chat privadas
 - Chamadas
 - Reuniões
+- Duração do áudio
+- Duração do vídeo
+- Duração do Compartilhamento de Tela
+- Reuniões Organizadas
+- Reuniões atendidas
 - Período de Relatório
 
 ## <a name="example"></a>Exemplo
@@ -108,7 +115,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,Meetings,Report Period
+Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,Private Chat Messages,Calls,Meetings,Audio Duration,Video Duration,Screen Share Duration,Meetings Organized,Meetings Attended,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

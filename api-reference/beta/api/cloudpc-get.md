@@ -1,16 +1,16 @@
 ---
 title: Obter cloudPC
-description: Exibir as propriedades e as relações de um objeto cloudPC.
+description: Leia as propriedades e as relações de um objeto cloudPC específico.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: a84621b6b723f873867fff6d5d961fb6042d9e3c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: ed3df398cf3bd8f3fd3216552e8e453c970b8a0b
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587802"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924118"
 ---
 # <a name="get-cloudpc"></a>Obter cloudPC
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte `$select` ao parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -57,11 +57,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto cloudPC](../resources/cloudpc.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto cloudPC](../resources/cloudpc.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-default-properties-of-a-cloud-pc"></a>Exemplo 1: Obter as propriedades padrão de um computador na nuvem
+### <a name="example-1-get-the-default-properties-of-a-cloud-pc"></a>Exemplo 1: Obter as propriedades padrão de um PC na nuvem
 
 #### <a name="request"></a>Solicitação
 
@@ -154,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-a-cloud-pc"></a>Exemplo 2: Obter as propriedades selecionadas de um computador na nuvem
+### <a name="example-2-get-the-selected-properties-of-a-cloud-pc"></a>Exemplo 2: Obter as propriedades selecionadas de um PC na nuvem
 
 #### <a name="request"></a>Solicitação
 

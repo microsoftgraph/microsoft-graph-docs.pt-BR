@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: ce12fdd6e2103fa996a70804123310fc020e783f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93c319667bfb2862024951a45d7cac3ec91474b5
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050065"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924083"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtém o número de usuários exclusivos diários do Microsoft Teams por tipo de dispositivo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -67,8 +67,13 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - iOS
 - Mac
 - Windows
-- Data do Relatório
+- Sistema operacional Chrome
+- Linux
+- Data do relatório
 - Período de Relatório
+
+> [!CAUTION] 
+> A **coluna do Windows Phone** foi preterida e seu valor sempre será `0`. Ele é mantido na resposta por motivos de compatibilidade com versões anteriores.
 
 ## <a name="example"></a>Exemplo
 
@@ -111,7 +116,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Date,Report Period
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Chrome OS,Linux,Report Date,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

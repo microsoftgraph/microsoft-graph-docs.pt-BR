@@ -1,31 +1,31 @@
 ---
-title: Valores de números de registros de chamada
-description: Valores Graph enumeração de registros de chamada da Microsoft
+title: Valores de enumeração de registros de chamada
+description: Valores de enumeração de registros de chamada do Microsoft Graph
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: b69b28e2aa7fa6d1b5f67aa4cf9620a59a7ee51d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9d99964dee81259f39cbabc1494b6189e51621ac
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339679"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924146"
 ---
-# <a name="call-records-enum-values"></a>Valores de números de registros de chamada
+# <a name="call-records-enum-values"></a>Valores de enumeração de registros de chamada
 
 Namespace: microsoft.graph.callRecords
 
-### <a name="calltype-values"></a>valores callType
+### <a name="calltype-values"></a>Valores callType
 
 | Member
 |:--------------
 | desconhecido
 | groupCall
-| peerToPeer
+| Peertopeer
 | unknownFutureValue
 
-### <a name="clientplatform-values"></a>valores clientPlatform
+### <a name="clientplatform-values"></a>Valores clientPlatform
 
 | Member
 |:--------------
@@ -33,7 +33,7 @@ Namespace: microsoft.graph.callRecords
 | windows
 | macOS
 | iOS
-| android
+| Android
 | web
 | ipPhone
 | roomSystem
@@ -74,24 +74,33 @@ Namespace: microsoft.graph.callRecords
 | Member
 |:--------------
 | desconhecido
-| wired
-| wifi
+| Wired
+| Wifi
 | móvel
-| tunnel
+| Túnel
 | unknownFutureValue
 
-### <a name="productfamily-values"></a>ProductFamily values
+### <a name="networktransportprotocol-values"></a>valores networkTransportProtocol
+
+| Member             |
+|:-------------------|
+| desconhecido            |
+| Udp                |
+| tcp                |
+| unknownFutureValue |
+
+### <a name="productfamily-values"></a>Valores productFamily
 
 | Member
 |:--------------
 | desconhecido
-| teams
+| Equipes
 | skypeForBusiness
-| lync
+| Lync
 | unknownFutureValue
 | azureCommunicationServices
 
-### <a name="servicerole-values"></a>valores serviceRole
+### <a name="servicerole-values"></a>Valores serviceRole
 
 | Member
 |:--------------
@@ -111,26 +120,26 @@ Namespace: microsoft.graph.callRecords
 | audioTeleconferencerController
 | skypeForBusinessUnifiedCommunicationApplicationPlatform
 | responseGroupServiceAnnouncementService
-| gateway
+| Gateway
 | skypeTranslator
 | skypeForBusinessAttendant
 | responseGroupService
-| voicemail
+| Voicemail
 | unknownFutureValue
 
-### <a name="userfeedbackrating-values"></a>valores userFeedbackRating
+### <a name="userfeedbackrating-values"></a>Valores userFeedbackRating
 
 | Member
 |:--------------
 | notRated
-| bad
-| poor
-| fair
-| good
+| Ruim
+| Pobre
+| Justo
+| Bom
 | Excelente
 | unknownFutureValue
 
-### <a name="wifiband-values"></a>valores wifiBand
+### <a name="wifiband-values"></a>Valores wifiBand
 
 | Member
 |:--------------
@@ -153,12 +162,57 @@ Namespace: microsoft.graph.callRecords
 | wifi80211ax
 | unknownFutureValue
 
-### <a name="pstncalldurationsource-values"></a>Valores pstnCallDurationSource 
+### <a name="pstncalldurationsource-values"></a>Valores de pstnCallDurationSource 
 
 |Member|
 |:---|
-|microsoft|
+|Microsoft|
 |operator|
+
+### <a name="audiocodec-values"></a>Valores de audioCodec 
+
+| Member             |
+|:-------------------|
+| desconhecido            |
+| Inválido            |
+| Cn                 |
+| pcma               |
+| pcmu               |
+| amrWide            |
+| g722               |
+| g7221              |
+| g7221c             |
+| g729               |
+| multiChannelAudio  |
+| muchv2             |
+| Opus               |
+| Cetim              |
+| satinFullband      |
+| rtAudio8           |
+| rtAudio16          |
+| Seda               |
+| silkNarrow         |
+| silkWide           |
+| Sirene              |
+| xmsRta             |
+| unknownFutureValue |
+
+### <a name="videocodec-values"></a>valores de videoCodec 
+
+| Member             |
+|:-------------------|
+| desconhecido            |
+| Inválido            |
+| av1                |
+| h263               |
+| h264               |
+| h264s              |
+| h264uc             |
+| h265               |
+| rtvc1              |
+| rtVideo            |
+| xrtvc1             |
+| unknownFutureValue |
 
 <!--
 {
