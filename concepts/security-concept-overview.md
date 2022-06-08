@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0b054c0defdce7ba026e5391bd16aadc3bbead8a
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 7a8f45505439446e9d42881dddf32b2f08cdb8e0
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214654"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65945001"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
@@ -67,6 +67,23 @@ Habilite a ação swift para se proteger contra novas ameaças, como ações par
 ### <a name="proactively-manage-security-risks-preview"></a>Gerenciar proativamente riscos de segurança (visualização)
 
 Use o Microsoft Secure Score (visualização) para proporcionar visibilidade às necessidades de segurança de sua organização e obter sugestões sobre como melhorá-las, além de projetar uma pontuação melhorada depois dessas sugestões serem implementadas. Meça facilmente seu progresso ao longo do tempo e obtenha ideias sobre alterações específicas que conduziram à melhoria de sua pontuação.
+
+### <a name="manage-your-ediscovery-workflows-preview"></a>Gerenciar seus fluxos de trabalho de Descoberta Eletrônica (versão prévia)
+
+As organizações contam com os recursos do [Descoberta Eletrônica do Microsoft Purview](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) para atender aos requisitos e descobrir a verdade sobre o que aconteceu em sua organização quando necessário, com base em requisitos internos ou externos, como litígio, investigação ou conformidade regulatória.
+Em muitas organizações, os fluxos de trabalho de descoberta eletrônica são frequentes, críticos e de alto volume. Nos casos em que há tarefas repetidas comuns ou um alto volume de atividades, as APIs ajudarão a fornecer uma maneira escalável de repetir processos de forma consistente e eficaz.
+Muitas organizações lidam com um grande volume de casos e solicitações de descoberta eletrônica e preferem automatizar algumas tarefas. As APIs do Microsoft Graph para Descoberta Eletrônica avançada fornecem acesso de API à maioria das funções disponíveis na solução de Descoberta Eletrônica do Microsoft Purview (premium).
+Dependendo dos sistemas e processos atuais em vigor, as organizações podem ter várias prioridades para automação e integração, desde processos upstream, como criação de caso, até downstream, como coleta, consultas de conjunto de revisão ou exportação. O suporte a fluxos de trabalho com APIs em todo o fluxo de trabalho avançado de Descoberta Eletrônica fornece flexibilidade e opções.
+
+#### <a name="build-custom-ediscovery-workflows-with-microsoft-graph"></a>Criar fluxos de trabalho de descoberta eletrônica personalizados com o Microsoft Graph
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/gXqBEHy5K6E]
+
+- Automatize o gerenciamento e a sincronização de casos com ferramentas de gerenciamento de casos.
+
+- Adicione paletes de identificação padronizados às caixas.
+
+- Crie relatórios personalizados para rastrear a carga de casos e o progresso de casos individuais.
 
 ## <a name="benefits-of-using-the-microsoft-graph-security-api"></a>Benefícios do uso da API de Segurança do Microsoft Graph
 
