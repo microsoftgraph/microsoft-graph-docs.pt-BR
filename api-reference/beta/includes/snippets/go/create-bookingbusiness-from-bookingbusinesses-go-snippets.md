@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: ca61acc083f0b512789c9d512510a7af4e162cb4
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 3d97fc049de442d3fb59582728f075c17df9027c
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65324604"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65946776"
 ---
 ```go
 
@@ -17,8 +17,6 @@ displayName := "Fourth Coffee"
 requestBody.SetDisplayName(&displayName)
 address := msgraphsdk.NewPhysicalAddress()
 requestBody.SetAddress(address)
-type := "mall"
-address.SetType(&type)
 postOfficeBox := "P.O. Box 123"
 address.SetPostOfficeBox(&postOfficeBox)
 street := "4567 Main Street"
