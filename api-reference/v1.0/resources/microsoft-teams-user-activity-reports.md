@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 566dd86e2ac97ea7aa1c53703d55d3a7f2dc141d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a2c61edbc5e8df05fb47eca2f34dfb2b84606c9b
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134518"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923964"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Relatórios de atividades de usuários do Microsoft Teams
 
@@ -23,6 +23,6 @@ Use os relatórios de atividades do Microsoft Teams para obter percepções sobr
 | Método                                   | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Obter dados de usuário](../api/reportroot-getteamsuseractivityuserdetail.md) | Fluxo      | Obtém detalhes sobre a atividade de usuários do Microsoft Teams por usuário. |
-| [Obter contagens de atividades](../api/reportroot-getteamsuseractivitycounts.md) | Fluxo      | Obtém o número de atividades do Microsoft Teams por tipo de atividade. Os tipos de atividade são o número de mensagens de chat de equipes, mensagens de chat privadas, chamadas ou reuniões. |
+| [Obter contagens de atividades](../api/reportroot-getteamsuseractivitycounts.md) | Fluxo      | Obtém o número de atividades do Microsoft Teams por tipo de atividade. As atividades são executadas por usuários licenciados do Microsoft Teams. |
 | [Obter contagens de usuários](../api/reportroot-getteamsuseractivityusercounts.md) | Fluxo      | Obtém o número de usuários por tipo de atividade. Os tipos de atividade são o número de mensagens de chat de equipes, mensagens de chat privadas, chamadas ou reuniões. |
 

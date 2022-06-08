@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2774c0a729ed5154b4148698585d79ac79c0d028
-ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
+ms.openlocfilehash: 2a3add855edad204d45be5aaaa20d02afef2cd84
+ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62239103"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65924035"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -56,6 +56,10 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 | :------------ | :------------------------ |
 | Autorização | {token} de portador. Obrigatório. |
 
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
 
 Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
@@ -65,6 +69,8 @@ As URLs de download previamente autenticadas são válidas apenas por um curto p
 O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
 - Data de atualização do relatório
+- Nome de Exibição do Locatário
+- Nomes de Exibição de Locatário de Canal Compartilhado
 - User Id
 - Nome UPN
 - Data da última atividade
@@ -75,7 +81,25 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - Contagem de mensagens de chat privadas
 - Contagem de chamadas
 - Contagem de reuniões
+- Postar Mensagens
+- Mensagens de Resposta
+- Mensagens Urgentes
+- Contagem de Reuniões Organizadas
+- Contagem de Reuniões Atendidas
+- Contagem de Reuniões Ad Hoc Organizadas
+- Contagem de Reuniões Ad Hoc Atendidas
+- Contagem Organizada de Reuniões Únicas Agendadas
+- Contagem de Reuniões Agendadas uma Única Vez
+- Contagem Organizada de Reuniões Recorrentes Agendadas
+- Contagem de Reuniões Recorrentes Agendadas
+- Duração do Áudio
+- Duração do Vídeo
+- Duração do Compartilhamento de Tela
+- Duração do Áudio em Segundos
+- Duração do Vídeo em Segundos
+- Duração do Compartilhamento de Tela em Segundos
 - Tem outra ação
+- Está Licenciado
 - Período de Relatório
 
 ## <a name="example"></a>Exemplo
@@ -119,7 +143,7 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,Tenant Display Name,Shared Channel Tenant Display Names,User Id,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Post Messages,Reply Messages,Urgent Messages,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
