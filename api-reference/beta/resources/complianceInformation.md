@@ -1,27 +1,27 @@
 ---
 title: " Tipo de recurso complianceInformation"
-description: Esse recurso contém dados de conformidade associados ao controle de pontuação seguro.
+description: Esse recurso contém dados de conformidade associados ao controle de pontuação segura.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: security
 author: preetikr
-ms.openlocfilehash: d5d59735dd8dc3dac96607bfc012f127283ca966
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9d65043ca09ce945bbc87b83bfe2ec84d7f512bb
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023749"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944924"
 ---
 #  <a name="complianceinformation-resource-type"></a>Tipo de recurso complianceInformation
 
 Namespace: microsoft.graph
 
-Contém dados de conformidade associados ao controle de pontuação seguro.
+Contém dados de conformidade associados ao controle de pontuação segura.
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|certificationName | cadeia de caracteres | Nome da certificação de conformidade (por exemplo, ISO 27018:2014, RGPD, FedRAMP, NIST 800-171) |
-|certificationControls | [Coleção certificationControl](certificationcontrol.md) | Coleção dos controles de certificação associados à certificação |
+|certificationName | cadeia de caracteres | Nome de certificação de conformidade (por exemplo, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
+|certificationControls | [coleção certificationControl](certificationcontrol.md) | Coleção dos controles de certificação associados à certificação |
 
 ## <a name="json-representation"></a>Representação JSON
 

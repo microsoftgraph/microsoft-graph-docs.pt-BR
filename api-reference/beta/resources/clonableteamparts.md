@@ -1,33 +1,33 @@
 ---
-title: tipo de enumeração clonableTeamParts
-description: 'Descreve que parte de uma equipe deve ser clonada. '
-localization_priority: Normal
+title: Tipo de enumeração clonableTeamParts
+description: 'Descreve qual parte de uma equipe deve ser clonada. '
+ms.localizationpriority: medium
 doc_type: enumPageType
-ms.prod: ''
+ms.prod: teamwork
 author: nkramer
-ms.openlocfilehash: 666dc3cc60490a9a30a5e2bab0b0642c34fb5009
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 99a50eb62af486b1d5eb84ae779627bbf8509cc1
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034074"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944138"
 ---
-# <a name="clonableteamparts-enum-type"></a>tipo de enumeração clonableTeamParts
+# <a name="clonableteamparts-enum-type"></a>Tipo de enumeração clonableTeamParts
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve que parte de uma [equipe](../resources/team.md) deve ser clonada.
+Descreve qual parte de uma [equipe](../resources/team.md) deve ser clonada.
 
 ## <a name="members"></a>Membros
 
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
-|apps|1 |Copie a lista de aplicativos instalados.|
-|guias|2 |Copia as guias nos canais.|
-|settings|4 |Copia todas as configurações da equipe, juntamente com as configurações de grupo de chaves.|
-|channels|8 |Copia a estrutura do canal (mas não as mensagens no canal).|
-|membros|16 |Copia os membros e os proprietários da equipe.|
+|apps|1|Copie a lista de aplicativos instalados.|
+|guias|2|copia as guias dentro dos canais.|
+|settings|4|Copia todas as configurações dentro da equipe, juntamente com as configurações do grupo de chaves.|
+|channels|8 |copia a estrutura do canal (mas não as mensagens no canal).|
+|members|16|copia os membros e proprietários da equipe.|
 
 

@@ -1,30 +1,30 @@
 ---
 title: Criar relação
-description: Crie um novo objeto relation.
+description: Crie um novo objeto de relação.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: Sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 3341e09c91734b0c9a306a0c51d692a084451b80
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 804c598c840e34913149ad8fc9555abe41b8fbee
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926081"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944931"
 ---
 # <a name="create-relation"></a>Criar relação
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto relation.](../resources/termstore-relation.md) Eles são usados para criar relações fixadas e reutilizadas entre termos ou entre um termo e um conjunto. Ao criar um termo fixado/reutilizado entre o termo e o conjunto, a partir deTerm no corpo da postagem deve ser nulo.
+Crie um novo [objeto de](../resources/termstore-relation.md) relação. Eles são usados para criar relações fixadas e reutilizadas entre termos ou entre um termo e um conjunto. Ao criar um termo fixado/reutilizados entre o termo e definido em seguida, fromTerm no corpo da postagem deve ser nulo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -46,21 +46,21 @@ POST /termStore/sets/{setId}/terms/{termId}/relations
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto relation.](../resources/termstore-relation.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto de](../resources/termstore-relation.md) relação.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar a [relação](../resources/termstore-relation.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|relação|relationType|Tipo de relação a ser criada. Os valores possíveis são: `pin` e `reuse`.|
-|set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| O conjunto onde a relação precisa ser criada.
+|relação|relationType|Tipo de relação a ser criado. Os valores possíveis são: `pin` e `reuse`.|
+|set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| O conjunto em que a relação precisa ser criada.
 |fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | O termo com o qual a relação precisa ser criada.
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [relation](../resources/termstore-relation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e [um objeto de](../resources/termstore-relation.md) relação no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

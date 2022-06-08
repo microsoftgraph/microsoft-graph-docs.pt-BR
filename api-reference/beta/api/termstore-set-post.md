@@ -3,28 +3,28 @@ title: Criar conjunto
 description: Crie um novo objeto set.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: Sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 03cee9f09aca4fd30e79659fccfe1749c936d8ef
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9a81822f9810bf0d730ebaf8d963e6954ad3cb06
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926060"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944142"
 ---
 # <a name="create-set"></a>Criar conjunto
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto set.](../resources/termstore-set.md)
+Crie um novo [objeto set](../resources/termstore-set.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -46,7 +46,7 @@ POST /termStore/sets
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto set.](../resources/termstore-set.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto set](../resources/termstore-set.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar o [conjunto](../resources/termstore-set.md).
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [conju
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [set](../resources/termstore-set.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto set](../resources/termstore-set.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -5,17 +5,32 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 94dec31967c4ca5caf349d3ddbee5f9a7d000343
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: c61273ced5a43a0a200bbcdf433c844643130845
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900006"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944987"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
 
+
+### <a name="signinfrequencyauthenticationtype-values"></a>Valores signInFrequencyAuthenticationType
+
+|Member|
+|:---|
+|primaryAndSecondaryAuthentication|
+|secondaryAuthentication|
+|unknownFutureValue|
+
+### <a name="signinfrequencyinterval-values"></a>Valores signInFrequencyInterval
+
+|Member|
+|:---|
+|timeBased|
+|Sempre|
 
 #### <a name="authenticationprotocol-values"></a>Valores authenticationProtocol
 
@@ -338,11 +353,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|Cadeia de caracteres|
 |Inteiro|
-|Referências|
+|Referência|
 |Binária|
-|Booliano|
+|Booleano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -646,7 +661,7 @@ Namespace: microsoft.graph
 |aplicação|
 |usuários|
 |devicePlatform|
-|localização|
+|location|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -1182,7 +1197,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalItem|
 |site|
@@ -2053,7 +2068,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|message|
+|mensagem|
 |chatEvent |
 |Digitação |
 |unknownFutureValue|
@@ -2139,7 +2154,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 | Member       |
 |:--------------|
 |event|
-|message|
+|mensagem|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2454,7 +2469,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |usuário | coluna de pessoa ou grupo. |
 |url | hiperlink ou coluna de imagem. |
 |Calculado | coluna calculada. |
-|localização | coluna de localização. |
+|location | coluna de localização. |
 |Localização geográfica | coluna de localização geográfica. |
 |term | coluna de metadados gerenciados. |
 |Multiterm | coluna de metadados gerenciados aceitando vários valores. |

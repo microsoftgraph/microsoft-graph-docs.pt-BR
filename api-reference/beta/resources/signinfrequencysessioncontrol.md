@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso signInFrequencySessionControl
-description: Controle de sessão para impor a frequência de signin.
-localization_priority: Normal
-author: dkershaw10
+description: Controle de sessão para impor a frequência de entrada.
+ms.localizationpriority: medium
+author: rckyplln
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 1f224c1e9ba72e114fd9c9bcacdd74670713837d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a42697bd49f9f6742c3f6c1e61ace9a8a1362111
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945624"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944446"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>Tipo de recurso signInFrequencySessionControl
 
@@ -18,15 +18,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Controle de sessão para impor a frequência de login. Herda do [Controle de Sessão de Acesso Condicional](conditionalaccesssessioncontrol.md).
+Controle de sessão para impor a frequência de entrada. Herda do [controle de sessão de acesso condicional](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |isEnabled     |Booliano      | Especifica se o controle de sessão está habilitado. |
-|tipo          |signinFrequencyType       | Os valores possíveis são: `days` e `hours`.|
-|valor         |Int32        | O número de `days` ou `hours` .|
+|type          |signinFrequencyType       | Os valores possíveis são: `days`, ou se `null` frequencyInterval for `everyTime` `hours`.|
+|valor         |Int32        | O número de `days` ou `hours`.|
+|Authenticationtype |signInFrequencyAuthenticationType  | Os valores possíveis são `primaryAndSecondaryAuthentication`, `secondaryAuthentication`. `unknownFutureValue`|
+|frequencyInterval  |signInFrequencyInterval  | Os valores possíveis são `timeBased`, `everyTime`. `unknownFutureValue`|
 
 ## <a name="relationships"></a>Relações
 
@@ -47,9 +49,11 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "isEnabled": true,
+  "isEnabled":true,
   "type": "String",
-  "value": 1024
+  "value": 1024,
+  "authenticationType": "String",
+  "frequencyInterval": "String"
 }
 ```
 

@@ -1,30 +1,30 @@
 ---
 title: Criar grupo
-description: Crie um novo objeto group.
+description: Crie um novo objeto de grupo.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: Sharepoint
+ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 2d7a697bbbf616053c0adf709256b443c0851d33
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3456e128d28ef9e604e26aa860bb9f1c1eae9389
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940908"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944868"
 ---
 # <a name="create-group"></a>Criar grupo
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto group.](../resources/termstore-group.md)
+Crie um novo [objeto de](../resources/termstore-group.md) grupo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
+|Delegada (conta corporativa ou de estudante) |TermStore.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 

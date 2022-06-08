@@ -163,7 +163,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
@@ -260,7 +260,7 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: overview.md
       - name: Usuários
         items:
@@ -800,7 +800,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -938,7 +938,7 @@ items:
                         href: api/extensionproperty-delete.md
               - name: Credenciais de identidade federada (versão prévia)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1441,7 +1441,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1697,11 +1697,11 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/complianceapioverview.md
           - name: Descoberta Eletrônica (versão prévia)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1859,7 +1859,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -10282,7 +10282,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10328,7 +10328,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: Definir o status da revisão
                     href: api/manageddevice-setcloudpcreviewstatus.md
-                  - name: Solução de problemas
+                  - name: Solucionar problema
                     href: api/cloudpc-troubleshoot.md
               - name: Imagem do dispositivo de PC na nuvem
                 href: resources/cloudpcdeviceimage.md
@@ -10707,7 +10707,7 @@ items:
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -11139,7 +11139,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -11375,7 +11375,7 @@ items:
             items:
               - name: Privilégios de administrador delegado granular (versão prévia)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     displayName: 'GDAP, Partner Center, CSP, VAR'
                     href: resources/delegatedadminrelationships-api-overview.md
                   - name: Relações de administrador delegado
@@ -11482,7 +11482,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (versão prévia)
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -12370,7 +12370,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (versão prévia)
                     items:
-                      - name: Visão Geral
+                      - name: Visão geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativo de locatário
                         items:
@@ -12430,7 +12430,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Política de métodos de autenticação
                     items:
-                      - name: Visão Geral
+                      - name: Visão geral
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Política de métodos de autenticação
                         href: resources/authenticationmethodspolicy.md
@@ -13438,7 +13438,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -14075,7 +14075,7 @@ items:
                 href: api/contactmergesuggestions-update.md
           - name: Propriedades estendidas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -14097,7 +14097,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -14124,7 +14124,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -14149,7 +14149,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registros de usuário de credencial
                     href: resources/credentialuserregistrationcount.md
@@ -14457,7 +14457,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14467,7 +14467,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-answers-overview.md
               - name: Acronym
                 href: resources/search-acronym.md
@@ -14510,7 +14510,7 @@ items:
                     href: api/search-qna-delete.md
           - name: Index
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -14646,6 +14646,237 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: Obter cobertura de treinamento para usuários
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
+          - name: Descoberta Eletrônica (versão prévia)
+            items:
+              - name: Caso
+                href: resources/security-ediscoverycase.md
+                items:
+                  - name: Listar
+                    href: api/security-casesroot-list-ediscoverycases.md
+                  - name: Criar
+                    href: api/security-casesroot-post-ediscoverycases.md
+                  - name: Obter
+                    href: api/security-ediscoverycase-get.md
+                  - name: Atualizar
+                    href: api/security-ediscoverycase-update.md
+                  - name: Excluir
+                    href: api/security-casesroot-delete-ediscoverycases.md
+                  - name: Fechar
+                    href: api/security-ediscoverycase-close.md
+                  - name: Reabrir
+                    href: api/security-ediscoverycase-reopen.md
+                  - name: Listar operações
+                    href: api/security-ediscoverycase-list-operations.md
+                  - name: Listar custodiantes
+                    href: api/security-ediscoverycase-list-custodians.md
+                  - name: Criar custodiante
+                    href: api/security-ediscoverycase-post-custodians.md
+                  - name: Listar fontes de dados não custodiais
+                    href: api/security-ediscoverycase-list-noncustodialdatasources.md
+                  - name: Criar fonte de dados não custodiante
+                    href: api/security-ediscoverycase-post-noncustodialdatasources.md
+                  - name: Listar retenções legais
+                    href: api/security-ediscoverycase-list-legalholds.md
+                  - name: Criar retenção legal
+                    href: api/security-ediscoverycase-post-legalholds.md
+                  - name: Listar pesquisas
+                    href: api/security-ediscoverycase-list-searches.md
+                  - name: Criar pesquisa
+                    href: api/security-ediscoverycase-post-searches.md
+                  - name: Listar conjuntos de revisão
+                    href: api/security-ediscoverycase-list-reviewsets.md
+                  - name: Criar conjunto de revisão
+                    href: api/security-ediscoverycase-post-reviewsets.md
+                  - name: Listar marcas
+                    href: api/security-ediscoverycase-list-tags.md
+                  - name: Criar marca
+                    href: api/security-ediscoverycase-post-tags.md
+              - name: Configurações de caso
+                href: resources/security-ediscoverycasesettings.md
+                items:
+                  - name: Obter configurações
+                    href: api/security-ediscoverycasesettings-get.md
+                  - name: Atualizar configurações
+                    href: api/security-ediscoverycasesettings-update.md
+                  - name: Redefinir as configurações para o padrão
+                    href: api/security-ediscoverycasesettings-resettodefault.md
+              - name: Operation
+                href: resources/security-caseoperation.md
+                items:
+                  - name: Listar operações de caso
+                    href: api/security-ediscoverycase-list-operations.md
+                  - name: Obter opreação de maiúsculas e minúsculas por ID
+                    href: api/security-caseoperation-get.md
+              - name: Custodian
+                href: resources/security-ediscoverycustodian.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-custodians.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-custodians.md
+                  - name: Obter
+                    href: api/security-ediscoverycustodian-get.md
+                  - name: Atualizar
+                    href: api/security-ediscoverycustodian-update.md
+                  - name: Ativar
+                    href: api/security-ediscoverycustodian-activate.md
+                  - name: Liberar
+                    href: api/security-ediscoverycustodian-release.md
+                  - name: Aplicar retenção
+                    href: api/security-ediscoverycustodian-applyhold.md
+                  - name: Remover retenção
+                    href: api/security-ediscoverycustodian-removehold.md
+                  - name: Atualizar índice
+                    href: api/security-ediscoverycustodian-updateindex.md
+                  - name: Listar fontes de usuário
+                    href: api/security-ediscoverycustodian-list-usersources.md
+                  - name: Criar fonte de usuário
+                    href: api/security-ediscoverycustodian-post-usersources.md
+                  - name: Listar fontes do site
+                    href: api/security-ediscoverycustodian-list-sitesources.md
+                  - name: Criar origem do site
+                    href: api/security-ediscoverycustodian-post-sitesources.md
+                  - name: Listar fontes de grupo unitadas
+                    href: api/security-ediscoverycustodian-list-unifiedgroupsources.md
+                  - name: Criar fonte de grupo não especificada
+                    href: api/security-ediscoverycustodian-post-unifiedgroupsources.md
+                  - name: Obter a última operação de índice
+                    href: api/security-ediscoverycustodian-list-lastindexoperation.md
+              - name: Fonte de dados não custodiante
+                href: resources/security-ediscoverynoncustodialdatasource.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-noncustodialdatasources.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-noncustodialdatasources.md
+                  - name: Obter
+                    href: api/security-ediscoverynoncustodialdatasource-get.md
+                  - name: Liberar
+                    href: api/security-ediscoverynoncustodialdatasource-release.md
+                  - name: Aplicar retenção
+                    href: api/security-ediscoverynoncustodialdatasource-applyhold.md
+                  - name: Remover retenção
+                    href: api/security-ediscoverynoncustodialdatasource-removehold.md
+                  - name: Atualizar índice
+                    href: api/security-ediscoverynoncustodialdatasource-updateindex.md
+                  - name: Obter a última operação de índice
+                    href: api/security-ediscoverycustodian-list-lastindexoperation.md
+              - name: Política de retenção
+                href: resources/security-ediscoveryholdpolicy.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-legalholds.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-legalholds.md
+                  - name: Obter
+                    href: api/security-ediscoveryholdpolicy-get.md
+                  - name: Atualizar
+                    href: api/security-ediscoveryholdpolicy-update.md
+                  - name: Excluir
+                    href: api/security-ediscoverycase-delete-legalholds.md
+                  - name: Listar fontes de usuário
+                    href: api/security-ediscoverycustodian-list-usersources.md
+                  - name: Criar fonte de usuário
+                    href: api/security-ediscoveryholdpolicy-post-usersources.md
+                  - name: Listar fontes do site
+                    href: api/security-ediscoverycustodian-list-sitesources.md
+                  - name: Criar origem do site
+                    href: api/security-ediscoveryholdpolicy-post-sitesources.md
+              - name: Search
+                href: resources/security-ediscoverysearch.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-searches.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-searches.md
+                  - name: Obter
+                    href: api/security-ediscoverysearch-get.md
+                  - name: Atualizar
+                    href: api/security-ediscoverysearch-update.md
+                  - name: Excluir
+                    href: api/security-ediscoverycase-delete-searches.md
+                  - name: Estimar estatísticas
+                    href: api/security-ediscoverysearch-estimatestatistics.md
+                  - name: Limpar dados
+                    href: api/security-ediscoverysearch-purgedata.md
+                  - name: Listar fontes custodiante
+                    href: api/security-ediscoverysearch-list-custodiansources.md
+                  - name: Adicionar fontes custodiante
+                    href: api/security-ediscoverysearch-post-custodiansources.md
+                  - name: Remover fontes custodiante
+                    href: api/security-ediscoverysearch-delete-custodiansources.md
+                  - name: Listar fontes de dados não custodiais
+                    href: api/security-ediscoverysearch-list-noncustodialsources.md
+                  - name: Adicionar fontes de dados não custodiais
+                    href: api/security-ediscoverysearch-post-noncustodialsources.md
+                  - name: Remover fontes de dados não custodiais
+                    href: api/security-ediscoverysearch-delete-noncustodialsources.md
+                  - name: Listar fontes adicionais
+                    href: api/security-ediscoverysearch-list-additionalsources.md
+                  - name: Adicionar fontes adicionais
+                    href: api/security-ediscoverysearch-post-additionalsources.md
+                  - name: Obter a última operação de estimativa de estatísticas
+                    href: api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
+              - name: Conjuntos de revisão
+                href: resources/security-ediscoveryreviewset.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-reviewsets.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-reviewsets.md
+                  - name: Obter
+                    href: api/security-ediscoveryreviewset-get.md
+                  - name: Adicionar ao conjunto de revisão
+                    href: api/security-ediscoveryreviewset-addtoreviewset.md
+                  - name: Exportar
+                    href: api/security-ediscoveryreviewset-export.md
+                    items:
+                      - name: Obter URL de download
+                        href: api/security-ediscoveryexportoperation-downloadurl.md
+                  - name: Consulta
+                    href: resources/security-ediscoveryreviewsetquery.md
+                    items:
+                      - name: Listar
+                        href: api/security-ediscoveryreviewset-list-queries.md
+                      - name: Criar
+                        href: api/security-ediscoveryreviewset-post-queries.md
+                      - name: Obter
+                        href: api/security-ediscoveryreviewsetquery-get.md
+                      - name: Atualizar
+                        href: api/security-ediscoveryreviewsetquery-update.md
+                      - name: Excluir
+                        href: api/security-ediscoveryreviewset-delete-queries.md
+                      - name: Exportar
+                        href: api/security-ediscoveryreviewsetquery-export.md
+                        items:
+                          - name: Obter URL de download
+                            href: api/security-ediscoveryexportoperation-downloadurl.md
+                      - name: Apply tags
+                        href: api/security-ediscoveryreviewsetquery-applytags.md
+                      - name: Executar
+                        href: api/security-ediscoveryreviewsetquery-run.md
+                  - name: Arquivo
+                    href: resources/security-ediscoveryfile.md
+                    items:
+                      - name: Lista
+                        href: api/security-ediscoveryreviewset-list-files.md
+                      - name: Obter
+                        href: api/security-ediscoveryfile-get.md
+              - name: Tag
+                href: resources/security-ediscoveryreviewtag.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-tags.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-tags.md
+                  - name: Obter
+                    href: api/security-ediscoveryreviewtag-get.md
+                  - name: Atualizar
+                    href: api/security-ediscoveryreviewtag-update.md
+                  - name: Excluir
+                    href: api/security-ediscoverycase-delete-tags.md
+                  - name: Listar marcas como hierarquia
+                    href: api/security-ediscoveryreviewtag-ashierarchy.md
           - name: Proteção de informações
             items:
               - name: Rótulos
@@ -14665,7 +14896,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Ameaça
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -14970,7 +15201,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -15788,7 +16019,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: API de Tarefas Pendentes com tarefas base (preteridas)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/tasks-overview.md
               - name: Lista de tarefas base
                 items:
@@ -15950,7 +16181,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

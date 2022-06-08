@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: DeleteAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: f5e47f178da27708422e14897a1dd8b19ff328b9
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: e7fcdac76d208bcb2f2fe79ca51d95ac89ef23ae
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723497"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944875"
 ---
 # <a name="deleteaction-resource-type"></a>Tipo de recurso DeleteAction
 
@@ -43,7 +43,7 @@ A presença do recurso **DeleteAction** em uma [**itemActivity**][activity] indi
 | Propriedade   | Tipo   | Descrição                                                    |
 | :--------- | :----- | :------------------------------------------------------------- |
 | nome       | string | O nome do item que foi excluído.                         |
-| objectType | string | `File` ou `Folder`, dependendo do tipo do item excluído. |
+| objectType | cadeia de caracteres | `File` ou `Folder`, dependendo do tipo do item excluído. |
 
 ## <a name="remarks"></a>Comentários
 

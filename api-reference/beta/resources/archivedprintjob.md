@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso archivedPrintJob
-description: Um registro de um trabalho de impressão "estado final" (concluído, anulado ou com falha) que é usado para fins de relatório. Este não é um trabalho de impressão ativo.
+title: Tipo de recurso archivedPrintJob
+description: Um registro de um trabalho de impressão de "estado final" (concluído, anulado ou com falha) usado para fins de relatório. Este não é um trabalho de impressão ativo.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: d4bd76dc84ad41c6d412144d13a784bec4f6a9f7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8ba8d49a01e3b10768e83b04b259d6cfd87d65b5
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050126"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944973"
 ---
-# <a name="archivedprintjob-resource-type"></a>tipo de recurso archivedPrintJob
+# <a name="archivedprintjob-resource-type"></a>Tipo de recurso archivedPrintJob
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um registro de um trabalho de impressão "estado final" (concluído, anulado ou com falha) que é usado para fins de relatório. Este não é um trabalho de impressão ativo.
+Um registro de um trabalho de impressão de "estado final" (concluído, anulado ou com falha) usado para fins de relatório. Este não é um trabalho de impressão ativo.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|Cadeia de caracteres|O GUID do trabalho de impressão arquivado. Somente leitura.|
-|printerid|Cadeia de caracteres|A ID da impressora para a qual o trabalho foi enfileirado. Somente leitura.|
-|ProcessingState|printJobProcessingState|O estado de processamento final do trabalho de impressão. Somente leitura.|
+|printerId|Cadeia de caracteres|A ID da impressora para a qual o trabalho foi enfileirado. Somente leitura.|
+|processingState|printJobProcessingState|O estado de processamento final do trabalho de impressão. Somente leitura.|
 |createdDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi criado. Somente leitura.|
 |acquiredDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi adquirido pela impressora, se houver. Somente leitura.|
 |completionDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi concluído, cancelado ou anulado. Somente leitura.|
-|acquiredByPrinter|Booliano|True se o trabalho foi adquirido por uma impressora; caso contrário, false. Somente leitura.|
+|acquiredByPrinter|Booleano|True se o trabalho foi adquirido por uma impressora; caso contrário, false. Somente leitura.|
 |copiesPrinted|Int32|O número de cópias que foram impressas. Somente leitura.|
-|pageCount|Int32|O número total de páginas que foram impressas. Somente leitura.|
+|Pagecount|Int32|O número total de páginas que foram impressas. Somente leitura.|
 |blackAndWhitePageCount|Int32|O número de páginas em preto e branco que foram impressas. Somente leitura.|
-|colorPageCount|Int32|O número de páginas de cores que foram impressas. Somente leitura.|
-|simplexPageCount|Int32|O número de páginas simplex (de lado único) que foram impressas. Somente leitura.|
+|colorPageCount|Int32|O número de páginas coloridas que foram impressas. Somente leitura.|
+|simplexPageCount|Int32|O número de páginas simplex (lado único) que foram impressas. Somente leitura.|
 |duplexPageCount|Int32|O número de páginas duplex (frente e verso) que foram impressas. Somente leitura.|
 |createdBy|[userIdentity](useridentity.md)|O usuário que criou o trabalho de impressão. Somente leitura.|
 

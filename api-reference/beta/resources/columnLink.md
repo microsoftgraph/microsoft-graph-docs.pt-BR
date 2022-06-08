@@ -5,13 +5,13 @@ ms.date: 09/12/2017
 title: ColumnLink
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: ae75a605f8476b9ec25d5aab5cf50f1bf9508c95
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: sites-and-lists
+ms.openlocfilehash: 8bf46496209b62748c82e46ca52ec7e7e80ded7c
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723525"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944945"
 ---
 # <a name="columnlink-resource-type"></a>Tipo de recurso ColumnLink
 
@@ -40,7 +40,7 @@ Aqui está uma representação JSON de um recurso **columnLink**.
 
 | Propriedade | Tipo   | Descrição                                   |
 | :------- | :----- | :-------------------------------------------- |
-| **id**   | string | O identificador exclusivo da coluna.         |
+| **id**   | cadeia de caracteres | O identificador exclusivo da coluna.         |
 | **name** | string | O nome da coluna desse tipo de conteúdo. |
 
 <!--
