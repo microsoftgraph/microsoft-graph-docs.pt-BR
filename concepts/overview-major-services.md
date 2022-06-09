@@ -4,12 +4,12 @@ description: 'O Microsoft Graph permite a integração com os melhores serviços
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ae8f0b29fccbfea9d7c71342a5bc45f08367e943
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: eff2c9e58e9d091ba72ccec2151b746b61186e34
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461251"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944432"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -98,7 +98,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Integração de segurança | Azure AD Identity Protection, Proteção de Informações do Azure, Central de Segurança do Azure, Microsoft Defender for Cloud Apps, Windows Defender Proteção Avançada contra Ameaças e [mais](/graph/api/resources/security-api-overview) | Fornece um gateway unificado para insights e ações de segurança em todos os parceiros da Microsoft e do ecossistema. | [Segurança no Microsoft Graph](security-concept-overview.md) |
-
+| Descoberta Eletrônica (versão prévia) | Descoberta Eletrônica do Microsoft Purview (Premium) | Fornece acesso aos recursos de descoberta eletrônica usados no processo de identificação e entrega de informações eletrônicas que podem ser usadas como evidência em casos legais.|[Segurança no Microsoft Graph](security-concept-overview.md)|
 
 
 ## <a name="cross-device-experiences"></a>Experiências entre dispositivos

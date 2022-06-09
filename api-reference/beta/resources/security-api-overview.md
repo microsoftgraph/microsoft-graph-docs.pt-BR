@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 86a26afb9bba3421fa2ceaa8fbad035e2f47b6fa
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f8efa4a80cf754de11eddf7777a2548fc617fc05
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129264"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944861"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -60,6 +60,10 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 ## <a name="attack-simulation-and-training-preview"></a>Simulação de ataque e treinamento (visualização)
 
 [Simulação de ataque e treinamento](/microsoft-365/security/office-365-security/attack-simulation-training) é parte do [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). Esse serviço permite que os usuários em um locatário experimentem um ataque de phishing benigno realista e aprendam com ele. Simulação de engenharia social e experiências de treinamento para usuários finais ajudam a reduzir o risco de usuários serem violados por meio dessas técnicas de ataque. A API de simulação e treinamento de ataque permite que os administradores de locatário visualizem os exercícios e treinamentos de [simulação](simulation.md) lançados e obtenham [relatórios](report-m365defender-reports-overview.md) sobre os insights derivados dos comportamentos online dos usuários nas simulações de phishing.
+
+## <a name="ediscovery-preview"></a>Descoberta Eletrônica (versão prévia)
+
+O [Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) fornece um fluxo de trabalho de ponta a ponta para preservar, coletar, analisar, revisar e exportar conteúdo que responde às investigações internas e externas de sua organização.
 
 ## <a name="information-protection"></a>Proteção de informações
 
