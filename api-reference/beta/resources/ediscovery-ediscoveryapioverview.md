@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: conceptualPageType
-ms.openlocfilehash: 655636052c849e42b977b0dbca121b4f8b62c21b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b5154880913e25ca6ed90a19695ff1c103a42eea
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101890"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65944938"
 ---
 # <a name="use-the-microsoft-graph-ediscovery-api"></a>Usar a API de Descoberta Eletrônica do Microsoft Graph
 
@@ -25,6 +25,9 @@ As APIs do Microsoft Graph para Descoberta eletrônica fornecem funcionalidade p
 > Durante a visualização, o uso destas APIs pode exigir uma assinaturas de ofertas específicas da Microsoft e está sujeito aos [Termos de Uso de APIs Microsoft](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Mediante disponibilidade geral, a Microsoft pode exigir que você ou o seu cliente paguem taxas adicionais.
 >
 > Atualmente, as APIs de Descoberta Eletrônica no Microsoft Graph funcionam apenas em casos de Descoberta Eletrônica Avançada.
+
+> [!CAUTION]
+> As APIs de Descoberta Eletrônica no subnamespace de Descoberta Eletrônica estão sendo preteridas. Use as novas [APIs de Descoberta Eletrônica em segurança](security-api-overview.md#ediscovery-preview).
 
 A API da Descoberta Eletrônica é definida no subnamespace OData, microsoft.graph.ediscovery. A API inclui as seguintes entidades principais.
 
