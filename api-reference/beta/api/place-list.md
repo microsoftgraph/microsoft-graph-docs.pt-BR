@@ -1,16 +1,16 @@
 ---
 title: Listar locais
-description: Recupere uma lista de objetos de local.
+description: Recuperar uma lista de objetos de local.
 ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cbf78d68fc26aab3007551b532c270ecfb139fe0
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5e316e529fe0e7ffb540912da8acd0df0567f3f9
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62093919"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971634"
 ---
 # <a name="list-places"></a>Listar locais
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma coleção do tipo especificado de [objetos de local](../resources/place.md) definidos no locatário. Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário.
+Obtenha uma coleção do tipo especificado de objetos [de local](../resources/place.md) definidos no locatário. Por exemplo, você pode obter todas as salas, todas as listas de salas ou as salas em uma lista de salas específica no locatário.
 
-Um **objeto place** pode ser um dos seguintes tipos:
+Um **objeto** place pode ser um dos seguintes tipos:
 
-* Uma [sala](../resources/room.md) que inclui propriedades ricas, como um endereço de email para a sala e acessibilidade, capacidade e suporte a dispositivos. 
-* Uma [lista de](../resources/roomlist.md) sala que inclui um endereço de email para a lista de sala e uma propriedade de navegação para obter a coleção de instâncias de sala na lista de sala. 
+* Uma [sala](../resources/room.md) que inclui propriedades avançadas, como um endereço de email para a sala e acessibilidade, capacidade e suporte ao dispositivo. 
+* Uma [lista de sala](../resources/roomlist.md) que inclui um endereço de email para a lista de sala e uma propriedade de navegação para obter a coleção de instâncias de sala na lista de sala. 
 
-Sala **e** **roomList** são derivados do **objeto place.**
+Room **e** **roomList** são derivados do **objeto place** .
 
 Por padrão, essa operação retorna 100 locais por página. 
 
-Em comparação com [as funções findRooms](../api/user-findrooms.md) e [findRoomLists,](../api/user-findroomlists.md) essa operação retorna uma carga mais rica para salas e listas de salas. Confira [detalhes](../resources/place.md#using-the-places-api) sobre como eles se comparam.
+Em comparação com [as funções findRooms](../api/user-findrooms.md) e [findRoomLists](../api/user-findroomlists.md) , essa operação retorna uma carga mais rica para salas e listas de salas. Veja [os detalhes](../resources/place.md#using-the-places-api) de como eles se comparam.
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Place.Read.All |
+| Delegada (conta corporativa ou de estudante)     | Place.Read.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte |
 | Aplicativo                            | Place.Read.All |
 
@@ -51,7 +51,7 @@ Para obter todas as salas em um locatário:
 GET /places/microsoft.graph.room
 ```
 
-Para obter todas as listas de sala em um locatário:
+Para obter todas as listas de salas em um locatário:
 
 ```http
 GET /places/microsoft.graph.roomlist
@@ -63,10 +63,10 @@ Para obter todas as salas na lista de salas especificada:
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**Observação**: para obter salas em uma lista de salas, você deve especificar a lista de salas por sua **propriedade emailAddress,** não por **sua id**. 
+>**Observação**: para obter salas em uma lista de salas, você deve especificar a lista de salas por sua **propriedade emailAddress** , não por **sua ID**. 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:
+Esse método dá suporte aos seguintes parâmetros de consulta para ajudar a personalizar a resposta:
 - $filter
 - $select
 - $top
@@ -89,11 +89,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [place](../resources/place.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de [objetos de](../resources/place.md) local no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a>Exemplo 1: Listar todas as salas definidas no locatário
+### <a name="example-1-list-all-the-rooms-defined-in-the-tenant"></a>Exemplo 1: listar todas as salas definidas no locatário
 
 #### <a name="request"></a>Solicitação
 
@@ -223,7 +223,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a>Exemplo 2: Listar todas as listas de sala definidas no locatário
+### <a name="example-2-list-all-the-room-lists-defined-in-the-tenant"></a>Exemplo 2: listar todas as listas de salas definidas no locatário
 
 #### <a name="request"></a>Solicitação
 
@@ -318,7 +318,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-list-rooms-contained-in-a-room-list"></a>Exemplo 3: Listar salas contidas em uma lista de salas
+### <a name="example-3-list-rooms-contained-in-a-room-list"></a>Exemplo 3: listar salas contidas em uma lista de salas
 
 #### <a name="request"></a>Solicitação
 
@@ -347,6 +347,14 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

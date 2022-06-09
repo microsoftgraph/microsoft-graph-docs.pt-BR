@@ -1,33 +1,33 @@
 ---
 title: Tipo de recurso archivedPrintJob
-description: Um registro de um trabalho de impressão "estado final" (concluído, abortado ou com falha) usado para fins de relatório. Este não é um trabalho de impressão ativo.
+description: Um registro de um trabalho de impressão de "estado final" (concluído, anulado ou com falha) usado para fins de relatório. Este não é um trabalho de impressão ativo.
 author: nilakhan
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 9f6818801a12eb635a86350432108d3d0e3b6332
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90e694b0a6bd4019fd75f871b03bcc34d999df3a
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109518"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971382"
 ---
 # <a name="archivedprintjob-resource-type"></a>Tipo de recurso archivedPrintJob
 
 Namespace: microsoft.graph
 
-Um registro de um trabalho de impressão "estado final" (concluído, abortado ou com falha) usado para fins de relatório. Este não é um trabalho de impressão ativo.
+Um registro de um trabalho de impressão de "estado final" (concluído, anulado ou com falha) usado para fins de relatório. Este não é um trabalho de impressão ativo.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres|GUID do trabalho de impressão arquivado. Somente leitura.|
-|printerId|String|A ID da impressora na fila do trabalho. Somente leitura.|
-|processingState|printJobProcessingState|O estado final de processamento do trabalho de impressão. Somente leitura.|
-|createdDateTime|DateTimeOffset|DateTimeOffset quando o trabalho foi criado. Somente leitura.|
-|acquiredDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi adquirido pela impressora, se for o caso. Somente leitura.|
-|completionDateTime|DateTimeOffset|DateTimeOffset quando o trabalho foi concluído, cancelado ou abortado. Somente leitura.|
-|acquiredByPrinter|Boolean|True se o trabalho foi adquirido por uma impressora; false caso contrário. Somente leitura.|
+|id|Cadeia de caracteres|O GUID do trabalho de impressão arquivado. Somente leitura.|
+|printerId|Cadeia de caracteres|A ID da impressora para a qual o trabalho foi enfileirado. Somente leitura.|
+|processingState|printJobProcessingState|O estado de processamento final do trabalho de impressão. Somente leitura.|
+|createdDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi criado. Somente leitura.|
+|acquiredDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi adquirido pela impressora, se houver. Somente leitura.|
+|completionDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi concluído, cancelado ou anulado. Somente leitura.|
+|acquiredByPrinter|Booleano|True se o trabalho foi adquirido por uma impressora; caso contrário, false. Somente leitura.|
 |copiesPrinted|Int32|O número de cópias que foram impressas. Somente leitura.|
 |createdBy|[userIdentity](useridentity.md)|O usuário que criou o trabalho de impressão. Somente leitura.|
 

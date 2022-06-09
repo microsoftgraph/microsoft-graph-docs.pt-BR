@@ -1,31 +1,31 @@
 ---
 title: Tipo de recurso fileSecurityState
-description: Contém informações sobre o arquivo (não processo) relacionado ao alerta.
+description: Contém informações sobre o arquivo (não processo) relacionados ao alerta.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 2db9d028c6a1550886a956bbfaad3bb3141f3141
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 00a8f3ce61c185969fab0adaf99483a8d03c906c
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078858"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971067"
 ---
 # <a name="filesecuritystate-resource-type"></a>Tipo de recurso fileSecurityState
 
 Namespace: microsoft.graph
 
-Contém informações sobre o arquivo (não processo) relacionado ao alerta.
+Contém informações sobre o arquivo (não processo) relacionados ao alerta.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|Tipo complexo que contém hashes de arquivo (criptográficos e sensíveis ao local).|
+|fileHash|[fileHash](filehash.md)|Tipo complexo que contém hashes de arquivo (criptográficos e sensíveis à localização).|
 |nome|Cadeia de caracteres|Nome do arquivo (sem caminho).|
-|caminho|String|Caminho completo do arquivo/imageFile.|
-|riskScore|String|Pontuação de risco gerada/calculada pelo provedor do arquivo de alerta. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
+|caminho|String|Caminho de arquivo completo do arquivo/imageFile.|
+|riskScore|Cadeia de caracteres|Pontuação de risco gerada/calculada pelo provedor do arquivo de alerta. Intervalo de valor recomendado de 0 a 1, que equivale a um percentual.|
 
 ## <a name="json-representation"></a>Representação JSON
 

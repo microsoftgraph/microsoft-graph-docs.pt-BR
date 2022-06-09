@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: DateTimeColumn
 ms.localizationpriority: medium
 description: dateTimeColumn em um recurso columnDefinition indica que os valores da coluna são datas ou horas.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 21f9f3491d87823926bbc6c0f541362114a6d710
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 462110be3c0972745570e935e9d7a432b0415708
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029084"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65970990"
 ---
 # <a name="datetimecolumn-resource-type"></a>Tipo de recurso DateTimeColumn
 
@@ -38,7 +38,7 @@ Aqui está uma representação JSON de um recurso **dateTimeColumn**.
 | **displayAs**      | string             | Como o valor deve ser apresentado na experiência do usuário. Deve ser `default`, `friendly` ou `standard`. Consulte abaixo para ver mais detalhes. Se não for especificado, é tratado como `default`.
 | **format**         | string             | Indica se o valor deve ser apresentado como apenas uma data ou uma data e hora. Deve ser `dateOnly` ou `dateTime`
 
-## <a name="displayas-options"></a>Opções DisplayAs
+## <a name="displayas-options"></a>Opções de DisplayAs
 
 | Valor        | Descrição
 |:-------------|:--------------------------------------------------------------

@@ -1,29 +1,29 @@
 ---
 title: Tipo de recurso fileHash
-description: Contém informações de estado sobre hashes de arquivo (criptográficos e confidenciais de localização).
+description: Contém informações com estado sobre hashes de arquivo (criptográficos e sensíveis à localização).
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7cad197e0f7273ddab688196ed01ffa7c52b7aad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94bf605b3f6c09b83bb58edfcc73eb9f0d005073
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078893"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971277"
 ---
 # <a name="filehash-resource-type"></a>Tipo de recurso fileHash
 
 Namespace: microsoft.graph
 
-Contém informações de estado sobre hashes de arquivo (criptográficos e confidenciais de localização).
+Contém informações com estado sobre hashes de arquivo (criptográficos e sensíveis à localização).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |hashType|fileHashType|Tipo de hash de arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|hashValue|Cadeia de caracteres|Valor do hash do arquivo.|
+|Hashvalue|Cadeia de caracteres|Valor do hash do arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

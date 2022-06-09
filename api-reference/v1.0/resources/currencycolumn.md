@@ -4,14 +4,14 @@ ms.date: 09/11/2017
 title: CurrencyColumn
 ms.localizationpriority: medium
 description: currencyColumn em um recurso columnDefinition indica que os valores da coluna representam moeda.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 40d2fe4058940f7062796cf5deb5dcdc99b00aee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 170899638fb34ed92618d7ee3a91c6afdae30bd0
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053122"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65970941"
 ---
 # <a name="currencycolumn-resource-type"></a>Tipo de recurso CurrencyColumn
 

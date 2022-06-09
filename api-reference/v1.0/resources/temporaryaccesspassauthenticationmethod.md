@@ -5,18 +5,16 @@ author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 01a393d03bd7095cce9cb8acf07335e92ce6a967
+ms.openlocfilehash: 67f364c387554e972b7fa68d50ac6ee77be26ca9
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971249"
+ms.locfileid: "65971641"
 ---
 # <a name="temporaryaccesspassauthenticationmethod-resource-type"></a>Tipo de recurso temporaryAccessPassAuthenticationMethod
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma Passagem de Acesso Temporária registrada para um usuário. Uma Passagem de Acesso Temporária é uma senha com tempo limitado que serve como uma credencial forte e permite a integração de credenciais sem senha.
 
@@ -24,23 +22,22 @@ Representa uma Passagem de Acesso Temporária registrada para um usuário. Uma P
 
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar](../api/temporaryaccesspassauthenticationmethod-list.md)|[Coleção temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Recupere uma lista dos objetos **temporaryAccessPassAuthenticationMethod** de um usuário e suas propriedades. Os usuários só podem ter um método de autenticação de Passagem de Acesso Temporário.|
-|[Criar](../api/temporaryaccesspassauthenticationmethod-post.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Crie o objeto **temporaryAccessPassAuthenticationMethod de um** usuário.|
+|[Listar](../api/authentication-list-temporaryaccesspassmethods.md)|[Coleção temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Recupere uma lista dos objetos **temporaryAccessPassAuthenticationMethod** de um usuário e suas propriedades. Os usuários só podem ter um método de autenticação de Passagem de Acesso Temporário.|
+|[Criar](../api/authentication-post-temporaryaccesspassmethods.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Crie o objeto **temporaryAccessPassAuthenticationMethod de um** usuário.|
 |[Get](../api/temporaryaccesspassauthenticationmethod-get.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Recupere as propriedades do objeto **temporaryAccessPassAuthenticationMethod do** usuário.|
 |[Excluir](../api/temporaryaccesspassauthenticationmethod-delete.md)|Nenhum|Exclua o **objeto temporaryAccessPassAuthenticationMethod de um** usuário.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador da Passagem de Acesso Temporário registrada para esse usuário.|
-|temporaryAccessPass|Cadeia de caracteres|O temporaryAccessPass usado para autenticar. Retornado somente na criação de um novo temporaryAccessPass; retornado como NULL com GET.|
-|createdDateTime|DateTimeOffset|A data e a hora em que o temporaryAccessPass foi criado.|
-|startDateTime|DateTimeOffset|A data e a hora em que o temporaryAccessPass fica disponível para uso.|
-|lifetimeInMinutes|Int32|O tempo de vida do temporaryAccessPass em minutos, começando em startDateTime. Mínimo de 10, máximo de 43200 (equivalente a 30 dias).|
-|isUsableOnce|Booleano|Determina se a passagem está limitada a um uso único. If `true`, the pass can be used once; if `false`, the pass can be used multiple times within the temporaryAccessPass lifetime.|
+|createdDateTime|DateTimeOffset|A data e a hora em que a Passagem de Acesso Temporário foi criada.|
+|id|String|O identificador da Passagem de Acesso Temporário registrada para esse usuário. Herdado da [entidade](../resources/entity.md).|
+|isUsableOnce|Booleano|Determina se a passagem está limitada a um uso único. If `true`, the pass can be used once; if `false`, the pass can be used multiple times within the Temporary Access Pass lifetime.|
 |isUsable|Booleano|O estado do método de autenticação que indica se ele pode ser usado no momento pelo usuário.|
-|methodUsabilityReason|Cadeia de caracteres|Detalhes sobre o estado de usabilidade (isUsable). Os motivos podem incluir: `enabledByPolicy`, `disabledByPolicy`, `expired`, `notYetValid`, `oneTimeUsed`.|
-
+|lifetimeInMinutes|Int32|O tempo de vida da Passagem de Acesso Temporário em minutos, começando em **startDateTime**. Deve estar entre 10 e 43200 inclusive (equivalente a 30 dias).|
+|methodUsabilityReason|String|Detalhes sobre o estado de usabilidade (**isUsable**). Os motivos podem incluir: `EnabledByPolicy`, `DisabledByPolicy`, `Expired`, `NotYetValid`, `OneTimeUsed`.|
+|startDateTime|DateTimeOffset|A data e a hora em que a Passagem de Acesso Temporário fica disponível para uso e quando **isUsable** é `true` imposta.|
+|temporaryAccessPass|Cadeia de caracteres|A Passagem de Acesso Temporária usada para autenticar. Retornado somente na criação de um novo temporaryAccessPass; Oculto em operações de leitura subsequentes e retornado como `null` com GET.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,29 +1,29 @@
 ---
 title: Tipo de recurso complianceInformation
-description: Esse recurso contém dados de conformidade associados ao controle de pontuação seguro.
+description: Esse recurso contém dados de conformidade associados ao controle de pontuação segura.
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 05ba1b7900f50474e2eaaac64326f02eeadfd913
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc7f50753723d5ae0566803b3ad3b1937ec08f1f
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109259"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971522"
 ---
 #  <a name="complianceinformation-resource-type"></a>Tipo de recurso complianceInformation
 
 Namespace: microsoft.graph
 
-Contém dados de conformidade associados ao controle de pontuação seguro.
+Contém dados de conformidade associados ao controle de pontuação segura.
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|certificationName|Cadeia de caracteres| Nome da certificação de conformidade (por exemplo, ISO 27018:2014, RGPD, FedRAMP, NIST 800-171) |
-|certificationControls|[Coleção certificationControl](certificationcontrol.md)|Coleção dos controles de certificação associados à certificação|
+|certificationName|Cadeia de caracteres| Nome de certificação de conformidade (por exemplo, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
+|certificationControls|[coleção certificationControl](certificationcontrol.md)|Coleção dos controles de certificação associados à certificação|
 
 ## <a name="json-representation"></a>Representação JSON
 

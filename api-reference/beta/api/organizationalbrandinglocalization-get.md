@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 46742b1b73665037c778cafa1ca9b5cbbf86d0a4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3b014626b5781119561ea09aa9215d982a0f3cdb
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63393301"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971403"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Obter organizationalBrandingLocalization
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) . Para recuperar um objeto de identidade visual de localização, especifique o valor da **id** na URL.
+Leia as propriedades e as relações de um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) . Para recuperar um objeto de identidade visual de localização, especifique o valor **da ID** na URL.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -175,6 +175,11 @@ GET https://graph.microsoft.com/beta/organization/99b24e1b-abec-4598-9d63-a2baf0
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationalbrandinglocalization-locale-signinpagetext-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+
 ---
 
 
@@ -203,7 +208,7 @@ Content-Type: application/json
 
 ### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>Exemplo 3: Obter o bannerLogo para a localidade padrão
 
-O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Você pode especificar **a id** como `default` ou `0` na URL da solicitação. Se o objeto não estiver definido, a solicitação retornará uma resposta vazia.
+O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Você pode especificar a **ID** como ou `default` `0` na URL da solicitação. Se o objeto não estiver definido, a solicitação retornará uma resposta vazia.
 
 #### <a name="request"></a>Solicitação
 
@@ -237,7 +242,7 @@ Content-Type: image/*
 
 ### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>Exemplo 4: Obter o bannerLogo para a localidade fr-FR
 
-O exemplo a seguir retorna o **objeto bannerLogo** para a `fr-FR` localidade cujo bannerLogo não está definido.
+O exemplo a seguir retorna **o objeto bannerLogo** para a `fr-FR` localidade cuja bannerLogo não está definida.
 
 #### <a name="request"></a>Solicitação
 

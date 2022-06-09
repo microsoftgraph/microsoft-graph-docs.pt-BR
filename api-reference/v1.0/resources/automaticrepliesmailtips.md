@@ -1,30 +1,30 @@
 ---
 title: Tipo de recurso automaticRepliesMailTips
-description: Dicas de Email sobre quaisquer respostas automáticas que tenham sido configuradas em uma caixa de correio.
+description: Dicas de Email sobre as respostas automáticas que foram configuradas em uma caixa de correio.
 ms.localizationpriority: medium
 author: abheek-das
-ms.prod: ''
+ms.prod: mail
 doc_type: resourcePageType
-ms.openlocfilehash: 3e9904fe54d14fe707f4917934b81750aa9ec5fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9d9350df4929bb6fbf428a229812df206e658363
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089862"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971270"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>Tipo de recurso automaticRepliesMailTips
 
 Namespace: microsoft.graph
 
 
-[Dicas de Email](../resources/mailtips.md) sobre quaisquer respostas automáticas que tenham sido configuradas em uma caixa de correio.
+[Dicas de Email](../resources/mailtips.md) sobre as respostas automáticas que foram configuradas em uma caixa de correio.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:-----|:-----|:-----|
 | mensagem | String | A mensagem de resposta automática. |
 | messageLanguage | [localeInfo](../resources/localeinfo.md) | O idioma em que a mensagem de resposta automática está. |
-| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas estão definidas como terminadas. |
+| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas são definidas como terminadas. |
 | scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | A data e a hora em que as respostas automáticas estão definidas para começar. |
 
 ## <a name="json-representation"></a>Representação JSON

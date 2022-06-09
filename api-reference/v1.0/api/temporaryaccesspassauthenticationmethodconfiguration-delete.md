@@ -1,23 +1,21 @@
 ---
 title: Excluir temporaryAccessPassAuthenticationMethodConfiguration
-description: Remova as alterações feitas em um objeto temporaryAccessPassAuthenticationMethodConfiguration.
+description: Reverta a política de Passagem de Acesso Temporário para sua configuração padrão, representada por um objeto temporaryAccessPassAuthenticationMethodConfiguration padrão.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a9ba4b0729f0c2f15af5e251a470f05ef8812c90
+ms.openlocfilehash: ae877c66ca6c989b11706dff072f729895e69dcf
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65970983"
+ms.locfileid: "65971645"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethodconfiguration"></a>Excluir temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Remova as alterações feitas [no objeto temporaryAccessPassAuthenticationMethodConfiguration revertendo](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) a política para sua configuração padrão.
+Reverta a política de Passagem de Acesso Temporário para sua configuração padrão, representada por um objeto [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) padrão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,9 +38,8 @@ Para cenários delegados, o administrador precisa de uma das seguintes funções
 }
 -->
 ``` http
-DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
-
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -64,14 +61,17 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
   "name": "delete_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
+```msgraph-interactive
+DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass`
+```
 
 ### <a name="response"></a>Resposta
-
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```

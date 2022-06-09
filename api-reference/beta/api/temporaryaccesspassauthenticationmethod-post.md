@@ -1,48 +1,39 @@
 ---
 title: Criar temporaryAccessPassAuthenticationMethod
 description: Crie um novo objeto temporaryAccessPassAuthenticationMethod.
-author: inbarckMS
+author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e96a886a3627bf12b42bcd249bd5b800036c67c5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43d4b5df97653498c4c3630cb95ca5abb48a9a60
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126744"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971571"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>Criar temporaryAccessPassAuthenticationMethod
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) em um usuário. Um usuário só pode ter um Passe de Acesso Temporário. A senha pode ser usada entre a hora de início e término do Passe de Acesso Temporário. Se o usuário exigir um novo Passe de Acesso Temporário:
-* Embora o Passe de Acesso Temporário atual seja válido – o administrador precisa excluir o Passe de Acesso Temporário existente e criar uma nova passagem no usuário. Excluir um Passe de Acesso Temporário válido revoga as sessões do usuário. 
-* Depois que o Passe de Acesso Temporário tiver expirado – uma nova passagem de acesso temporário substitui o passe de acesso temporário atual e não revoga as sessões do usuário.
+Crie um novo [objeto temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) em um usuário. Um usuário só pode ter uma Passagem de Acesso Temporária. A senha pode ser usada entre a hora de início e término da Passagem de Acesso Temporária. Se o usuário exigir uma nova Passagem de Acesso Temporária:
+* Embora a passagem de acesso temporária atual seja válida– o administrador precisa excluir a passagem de acesso temporária existente e criar uma nova passagem no usuário. A exclusão de uma passagem de acesso temporária válida revogará as sessões do usuário. 
+* Depois que a Passagem de Acesso Temporário tiver expirado , uma nova passagem de acesso temporário substituirá a passagem de acesso temporário atual e não revogará as sessões do usuário.
 
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="permissions-acting-on-self"></a>Permissões agindo em si mesmo
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:---------------------------------------|:-------------------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Sem suporte. |
-
-### <a name="permissions-acting-on-other-users"></a>Permissões atuando em outros usuários
-
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:---------------------------------------|:-------------------------|
-| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | UserAuthenticationMethod.ReadWrite.All |
 
-Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes funções [do Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes funções do [Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Administrador global
 * Administrador de autenticação privilegiada
 * Administrador de autenticação
@@ -64,21 +55,21 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto temporaryAccessPassAuthenticationMethod.](../resources/temporaryaccesspassauthenticationmethod.md)
+No corpo da solicitação, forneça uma representação JSON do objeto [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) .
 
-A tabela a seguir descreve propriedades opcionais que podem ser usadas ao criar [o temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
+A tabela a seguir descreve as propriedades opcionais que podem ser usadas ao criar [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md).
 
 |Propriedade|Tipo|Descrição|Obrigatório| 
 |:---|:---|:---|:---|
-|startDateTime|DateTimeOffset|A data e a hora em que o temporaryAccessPass fica disponível para uso, se não definir o Passe de Acesso Temporário estará disponível para uso no momento da criação.| Não|
-|lifetimeInMinutes|Int32|O tempo de vida do temporaryAccessPass em minutos começando na hora da criação ou em startDateTime, se definido. Mínimo 10, Máximo 43200 (equivalente a 30 dias).| Não|
-|isUsableOnce|Booliano|Determina se a passagem está limitada a um uso único. Se True – o passe pode ser usado uma vez, se False – o passe pode ser usado várias vezes dentro do tempo de vida temporaryAccessPass. Um Passe de Acesso Temporário com vários usos (isUsableOnce = false), só poderá ser criado e usado para entrar se for permitido pela política de método Autenticação de Passagem de Acesso Temporário.|  Não|
+|startDateTime|DateTimeOffset|A data e a hora em que o temporaryAccessPass fica disponível para uso, se não estiver definido, a Passagem de Acesso Temporário estará disponível para uso no momento da criação.| Não|
+|lifetimeInMinutes|Int32|O tempo de vida do temporaryAccessPass em minutos, começando na hora de criação ou em startDateTime, se definido. Mínimo de 10, máximo de 43200 (equivalente a 30 dias).| Não|
+|isUsableOnce|Booleano|Determina se a passagem está limitada a um uso único. Se True – a passagem pode ser usada uma vez, se False – a passagem pode ser usada várias vezes dentro do tempo de vida temporaryAccessPass. Uma Passagem de Acesso Temporário de vários usos (isUsableOnce = false) só poderá ser criada e usada para entrar se for permitida pela política de método autenticação de passagem de acesso temporário.|  Não|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

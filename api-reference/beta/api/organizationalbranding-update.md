@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5e86cdf3c3068d407aa2a24312f982dc82df622f
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 6dbcccc8fb457d8a34dc62b366c46e1bf845f4a6
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820956"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971172"
 ---
 # <a name="update-organizationalbranding"></a>Atualizar organizationalBranding
 Namespace: microsoft.graph
@@ -50,22 +50,22 @@ PATCH /organization/{organizationId}/branding
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Backgroundcolor | String | Cor que aparece no lugar da imagem de plano de fundo em conexões de baixa largura de banda. Recomendamos que você use a cor principal do logotipo da faixa ou da cor da sua organização. Especifique isso no formato hexadecimal, por exemplo, branco é `#FFFFFF`. |
-| Backgroundimage | Stream | Imagem que aparece como a tela de fundo da página de entrada. Os tipos permitidos são PNG ou JPEG não menores que 300 KB e não maiores que 1920 × 1080 pixels. Uma imagem menor reduzirá os requisitos de largura de banda e fará com que o carregamento da página seja mais rápido. |
-| bannerLogo | Stream | Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. Os tipos permitidos são PNG ou JPEG não maiores que 36 × 245 pixels. É recomendável usar uma imagem transparente sem preenchimento ao redor do logotipo. |
-| customAccountResetCredentialsUrl | Cadeia de caracteres | Uma URL personalizada para redefinir as credenciais da conta. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
+| Backgroundcolor | Cadeia de caracteres | Cor que aparece no lugar da imagem de plano de fundo em conexões de baixa largura de banda. Recomendamos que você use a cor principal do logotipo da faixa ou da cor da sua organização. Especifique isso no formato hexadecimal, por exemplo, branco é `#FFFFFF`. |
+| Backgroundimage | Fluxo | Imagem que aparece como a tela de fundo da página de entrada. Os tipos permitidos são PNG ou JPEG não menores que 300 KB e não maiores que 1920 × 1080 pixels. Uma imagem menor reduzirá os requisitos de largura de banda e fará com que o carregamento da página seja mais rápido. |
+| bannerLogo | Fluxo | Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. Os tipos permitidos são PNG ou JPEG não maiores que 36 × 245 pixels. É recomendável usar uma imagem transparente sem preenchimento ao redor do logotipo. |
+| customAccountResetCredentialsUrl | String | Uma URL personalizada para redefinir as credenciais da conta. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
 | customCannotAccessYourAccountText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o padrão "Não é possível acessar sua conta?" texto de hiperlink de redefinição de senha de autoatendimento (SSPR) na página de entrada. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
-| customForgotMyPasswordText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Esqueci minha senha" no formulário de entrada. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
-| customPrivacyAndCookiesText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Privacidade e Cookies" no rodapé. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customForgotMyPasswordText | String | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Esqueci minha senha" no formulário de entrada. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customPrivacyAndCookiesText | String | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Privacidade e Cookies" no rodapé. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
 | customPrivacyAndCookiesUrl | Cadeia de caracteres | Uma URL personalizada para substituir a URL padrão do hiperlink "Privacidade e Cookies" no rodapé. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
 | customTermsOfUseText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Termos de Uso" no rodapé. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
 | customTermsOfUseUrl | Cadeia de caracteres | Uma URL personalizada para substituir a URL padrão do hiperlink "Termos de Uso" no rodapé. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
-| Favicon | Stream | Um ícone personalizado (favicon) para substituir um favicon de produto padrão da Microsoft em um Azure AD locatário. |
-| headerBackgroundColor | Cadeia de caracteres | A cor RGB a ser aplicada para personalizar a cor do cabeçalho. |
+| Favicon | Fluxo | Um ícone personalizado (favicon) para substituir um favicon de produto padrão da Microsoft em um locatário do Azure AD. |
+| headerBackgroundColor | String | A cor RGB a ser aplicada para personalizar a cor do cabeçalho. |
 | loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](../resources/loginPageTextVisibilitySettings.md) | Representa os vários textos que podem ser ocultos na página de logon de um locatário. Todas as propriedades podem ser atualizadas. |
 | signInPageText | Cadeia de caracteres | Texto que aparece na parte inferior da caixa de entrada. Use isso para comunicar informações adicionais, como o número de telefone para o suporte de assistência técnica ou uma declaração legal. Esse texto deve estar no formato Unicode e não exceder 1024 caracteres. |
-| squareLogo | Stream | Uma versão quadrada do logotipo da sua empresa que aparece Windows 10 OOBE (experiências prontos para uso) e quando o Windows Autopilot está habilitado para implantação. Os tipos permitidos são PNG ou JPEG não maiores que 240 x 240 pixels e não têm mais de 10 KB de tamanho. É recomendável usar uma imagem transparente sem preenchimento ao redor do logotipo.|
-| usernameHintText | Cadeia de caracteres | Uma cadeia de caracteres que mostra como a dica na caixa de texto de nome de usuário na tela de entrada. Esse texto deve ser um Unicode, sem links ou código, e não pode exceder 64 caracteres. |
+| squareLogo | Fluxo | Uma versão quadrada do logotipo da sua empresa que aparece nas experiências integradas do Windows 10 (OOBE) e quando o Windows Autopilot está habilitado para implantação. Os tipos permitidos são PNG ou JPEG não maiores que 240 x 240 pixels e não têm mais de 10 KB de tamanho. É recomendável usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+| usernameHintText | String | Uma cadeia de caracteres que mostra como a dica na caixa de texto de nome de usuário na tela de entrada. Esse texto deve ser um Unicode, sem links ou código, e não pode exceder 64 caracteres. |
 
 ## <a name="response"></a>Resposta
 
@@ -166,10 +166,23 @@ Content-Type: image/jpeg
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandinglocaliation-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
-
 
 #### <a name="response"></a>Resposta
 

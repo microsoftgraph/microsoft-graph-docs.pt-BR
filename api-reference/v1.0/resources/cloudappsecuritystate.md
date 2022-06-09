@@ -1,30 +1,30 @@
 ---
 title: Tipo de recurso cloudAppSecurityState
-description: Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
+description: Contém informações com estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 ms.localizationpriority: medium
 author: preetikr
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d04a23bb38c9f5264057d56d43de0f053dd58b9c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b367766b7605a0c0444c17d962e9e034269683f2
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118754"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65970934"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>Tipo de recurso cloudAppSecurityState
 
 Namespace: microsoft.graph
 
-Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
+Contém informações com estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationServiceIp|Cadeia de caracteres|Endereço IP de destino da conexão com o aplicativo/serviço na nuvem.|
-|destinationServiceName|String|Nome do aplicativo/serviço na nuvem (por exemplo, "Salesforce", "DropBox", etc.).|
-|riskScore|String|Pontuação de risco gerada/calculada pelo provedor do Aplicativo/Serviço na Nuvem. Intervalo de valores recomendado de 0 a 1, que equivale a uma porcentagem.|
+|destinationServiceIp|Cadeia de caracteres|Endereço IP de destino da conexão com o aplicativo/serviço de nuvem.|
+|destinationServiceName|String|Nome do aplicativo/serviço de nuvem (por exemplo, "Salesforce", "DropBox", etc.).|
+|riskScore|Cadeia de caracteres|Pontuação de risco calculada/gerada pelo provedor do Aplicativo/Serviço de Nuvem. Intervalo de valor recomendado de 0 a 1, que equivale a um percentual.|
 
 ## <a name="json-representation"></a>Representação JSON
 

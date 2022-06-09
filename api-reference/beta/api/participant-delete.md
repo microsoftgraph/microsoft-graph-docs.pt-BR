@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 72ccc0e8b12545914d7d1cfad9ea01a974b1430a
-ms.sourcegitcommit: 10719607271380ea56076ccff5a3b774d0005773
+ms.openlocfilehash: a494e5180db305f012db73018df42fed6b4fbd19
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64607558"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971022"
 ---
 # <a name="delete-participant"></a>Excluir participante
 
@@ -18,9 +18,9 @@ ms.locfileid: "64607558"
 
 Namespace: microsoft.graph
 
-Exclua um participante específico em uma chamada. Em algumas situações, é apropriado que um aplicativo remova um participante de uma chamada ativa. Essa ação pode ser feita antes ou depois que o participante responder à chamada. Quando um chamador ativo é removido, ele é imediatamente removido da chamada sem notificação de pré ou pós-remoção. Quando um participante convidado é removido, qualquer solicitação de participante de adicionar pendente é cancelada.
+Exclua um participante específico em uma chamada. Em algumas situações, é apropriado para um aplicativo remover um participante de uma chamada ativa. Essa ação pode ser feita antes ou depois que o participante responde à chamada. Quando um chamador ativo é removido, ele é imediatamente removido da chamada sem notificação de pré ou pós-remoção. Quando um participante convidado é removido, qualquer solicitação de adicionar participante pendente é cancelada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
 | Aplicativo                            | Calls.JoinGroupCallsasGuest.All ou Calls.JoinGroupCalls.All |
 
-A configuração de reunião de aplicativo no nível de locatário é necessária para permitir que um aplicativo chame essa API. O administrador do locatário deve chamar o cmdlet a seguir no PowerShell remoto do locatário para conceder a permissão ao aplicativo para chamar essa API. Para obter mais informações, [consulte Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
+A configuração de reunião de aplicativo no nível do locatário é necessária para permitir que um aplicativo chame essa API. O administrador de locatários deve chamar o cmdlet a seguir no PowerShell remoto do locatário para conceder a permissão ao aplicativo para chamar essa API. Para obter mais informações, [consulte Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
 PS C:\> Set-CsApplicationMeetingConfiguration -AllowRemoveParticipantAppIds @{Add="app_id"}
 ```
@@ -162,6 +162,10 @@ Content-Length: 464
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-invite-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -212,7 +216,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>Excluir participante convidado antes de o participante ser adicionado à lista de participantes
+#### <a name="delete-invited-participant-before-participant-is-added-to-the-roster"></a>Excluir participante convidado antes que o participante seja adicionado à lista de participantes
 
 <!-- {
   "blockType": "request",

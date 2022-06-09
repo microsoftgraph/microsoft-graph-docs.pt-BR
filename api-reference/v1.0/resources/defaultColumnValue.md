@@ -4,14 +4,14 @@ ms.date: 09/12/2017
 title: DefaultColumnValue
 ms.localizationpriority: medium
 description: defaultColumnValue em um recurso columnDefinition especifica o valor padrão dessa coluna.
-ms.prod: ''
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 93ba93e33359f17aaad8f5cc9f814f0b67758e3e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 47896062a7e0ce6a97fd7968a8e593fc70bc8e1e
+ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029056"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "65971508"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Tipo de recurso DefaultColumnValue
 

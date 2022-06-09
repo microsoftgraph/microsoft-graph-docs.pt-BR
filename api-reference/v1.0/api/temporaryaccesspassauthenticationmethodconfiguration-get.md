@@ -1,23 +1,21 @@
 ---
 title: Obter temporaryAccessPassAuthenticationMethodConfiguration
-description: Leia as propriedades e as relações de um objeto temporaryAccessPassAuthenticationMethodConfiguration.
-author: inbarckms
+description: Leia os detalhes da política de Passagem de Acesso Temporário para o locatário do Azure AD, representada por um objeto temporaryAccessPassAuthenticationMethodConfiguration.
+author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1fb4b2959631b6e99ad2ea64da26a9c8de460bd6
+ms.openlocfilehash: bc6fc21af43a28072c7f193d449ee8a4dad6aec2
 ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971564"
+ms.locfileid: "65971653"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Obter temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Leia as propriedades e as relações de um objeto [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md), que representa a política de método [](../resources/authenticationmethodspolicies-overview.md) de autenticação de Passagem de Acesso Temporário para o locatário do Azure AD (Azure Active Directory).
+Leia os detalhes da política de Passagem de Acesso Temporário para o locatário do Azure AD (Azure Active Directory), representada por um objeto [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -41,7 +39,7 @@ Para cenários delegados, o administrador precisa de uma das seguintes funções
 }
 -->
 ``` http
-GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -54,31 +52,30 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método `200 OK` retornará um código de resposta e um objeto [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) no corpo da resposta.
 
-
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
-Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 
 ### <a name="response"></a>Resposta
 
 A seguir está um exemplo da resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -91,7 +88,7 @@ Content-Type: application/json
     "defaultLength": 8,
     "minimumLifetimeInMinutes": 60,
     "maximumLifetimeInMinutes": 480,
-    "isUsableOnce": true,
+    "isUsableOnce": false,
     "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [
         {

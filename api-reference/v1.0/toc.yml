@@ -508,7 +508,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para o usuário
                 href: api/chat-list.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa
                 href: resources/todotask.md
@@ -4243,7 +4243,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: Atualizar
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
-          - name: Comunicações e integridade do serviço
+          - name: Comunicações e Integridade do serviço
             items:
               - name: Visão geral
                 href: resources/service-communications-api-overview.md
@@ -5002,17 +5002,28 @@ items:
                         href: api/windowshelloforbusinessauthenticationmethod-get.md
                       - name: Excluir
                         href: api/windowshelloforbusinessauthenticationmethod-delete.md
-              - name: Configuração de autenticação baseada em certificado
-                href: resources/certificatebasedauthconfiguration.md
-                items:
-                  - name: Listar
-                    href: api/certificatebasedauthconfiguration-list.md
-                  - name: Criar
-                    href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-                  - name: Obter
-                    href: api/certificatebasedauthconfiguration-get.md
-                  - name: Excluir
-                    href: api/certificatebasedauthconfiguration-delete.md
+                  - name: Passagem de Acesso Temporária
+                    href: resources/temporaryaccesspassauthenticationmethod.md
+                    items:
+                      - name: Listar
+                        href: api/authentication-list-temporaryaccesspassmethods.md
+                      - name: Criar
+                        href: api/authentication-post-temporaryaccesspassmethods.md
+                      - name: Obter
+                        href: api/temporaryaccesspassauthenticationmethod-get.md
+                      - name: Excluir
+                        href: api/temporaryaccesspassauthenticationmethod-delete.md
+                  - name: Configuração de autenticação baseada em certificado
+                    href: resources/certificatebasedauthconfiguration.md
+                    items:
+                      - name: Listar
+                        href: api/certificatebasedauthconfiguration-list.md
+                      - name: Criar
+                        href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                      - name: Obter
+                        href: api/certificatebasedauthconfiguration-get.md
+                      - name: Excluir
+                        href: api/certificatebasedauthconfiguration-delete.md
               - name: Acesso condicional
                 items:
                   - name: Políticas
@@ -5251,6 +5262,15 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: Excluir
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+                      - name: Política de Passagem de Acesso Temporária
+                        href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+                        items:
+                          - name: Obter
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+                          - name: Atualizar
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+                          - name: Excluir
+                            href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
                       - name: Política de email
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
@@ -5692,7 +5712,7 @@ items:
                         href: api/agreement-post-files.md
                       - name: Listar arquivos localizados
                         href: api/agreement-list-files.md
-      - name: Correio
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -5952,7 +5972,7 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
           - name: Visão geral
             href: resources/social-overview.md
@@ -6288,7 +6308,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Busca
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -6612,7 +6632,7 @@ items:
         items:
           - name: Visão geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -7166,7 +7186,7 @@ items:
             items:
               - name: Lista de grupos
                 href: api/group-list-permissiongrants.md
-      - name: Tarefas To do
+      - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
           - name: Visão geral
