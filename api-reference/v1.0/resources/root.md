@@ -1,27 +1,26 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Root
+title: tipo de recurso raiz
 ms.localizationpriority: medium
-description: A faceta Root indica que um objeto é o mais alto em sua hierarquia.
-ms.prod: ''
+description: A faceta raiz indica que um objeto é o mais alto em sua hierarquia.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 260d7af5898acd07d7e27c0613bc7d218fd5ded0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6cbf588c35fd5a58d67e5f092c8762766f31cad4
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108853"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034849"
 ---
-# <a name="root-resource-type"></a>Tipo de recurso Root
+# <a name="root-resource-type"></a>tipo de recurso raiz
 
 Namespace: microsoft.graph
 
-A faceta **Root** indica que um objeto é o mais alto em sua hierarquia.
+A **faceta** raiz indica que um objeto é o mais alto em sua hierarquia.
 A presença (não nulo) do valor da faceta indica que o objeto é a raiz.
 Um valor nulo (ou ausente) indica que o objeto não é a raiz.
 
-**Observação**: Embora essa faceta esteja vazia no momento, em revisões futuras da API a faceta pode ser preenchida com propriedades adicionais.
+>**Observação**: Embora essa faceta esteja vazia no momento, em revisões futuras da API a faceta pode ser preenchida com propriedades adicionais.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -34,7 +33,7 @@ Um valor nulo (ou ausente) indica que o objeto não é a raiz.
 
 ## <a name="properties"></a>Propriedades
 
-O recurso **Root** não tem propriedades.
+O **recurso** raiz não tem propriedades.
 
 
 <!-- {

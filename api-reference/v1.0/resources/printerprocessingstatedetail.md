@@ -1,63 +1,63 @@
 ---
-title: tipo de número printerProcessingStateDetail
-description: Representa o detalhe do status do processamento da impressora.
+title: Tipo de enumeração printerProcessingStateDetail
+description: Representa os detalhes do status de processamento da impressora.
 author: tomsato-ms
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: enumPageType
-ms.openlocfilehash: cc1aad000e302e18234b3992ed9563bf19f473d7
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f081c159b72c566f285c1fada9a8262e65be2938
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777139"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034863"
 ---
-# <a name="printerprocessingstatedetail-enum-type"></a>tipo de número printerProcessingStateDetail
+# <a name="printerprocessingstatedetail-enum-type"></a>Tipo de enumeração printerProcessingStateDetail
 
 Namespace: microsoft.graph
 
-Representa o detalhe do status do processamento da impressora.
+Representa os detalhes do status de processamento da impressora.
 
-Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitamente valores de números além `unknownFutureValue` de . Para obter detalhes, consulte [Handling future members in evolvable enumerations](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
+Inclua o `Prefer: include-unknown-enum-members` cabeçalho para solicitar explicitamente valores de enumeração além `unknownFutureValue`de . Para obter detalhes, [consulte Tratamento de membros futuros em enumerações evolváveis](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
 
 ## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|pausado|0| Um trabalho de impressão em andamento foi pausado.|
-|mediaJam|2|A mídia em uma ou mais bandejas está emperrada.|
-|mediaNeededed|3|A mídia na bandeja de entrada usada no momento precisa ser substituída antes que o trabalho possa continuar.|
-|mediaLow|4 |A mídia em uma ou mais bandejas está quase esgotada.|
+|Pausado|0| Um trabalho de impressão em andamento foi pausado.|
+|mediaJam|2|A mídia em uma ou mais bandejas está emperrou.|
+|mediaNeeded|3|A mídia na bandeja de entrada usada no momento precisa ser substituída antes que o trabalho possa continuar.|
+|mediaLow|4|A mídia em uma ou mais bandejas está quase esgotada.|
 |mediaEmpty|5|A mídia em uma ou mais bandejas está esgotada.|
 |coverOpen|6 |Uma ou mais capas estão abertas.|
-|interlockOpen|7 |Um ou mais dispositivos de bloqueio estão abertos.|
+|interlockOpen|7 |Um ou mais dispositivos de interconexão estão abertos.|
 |outputTrayMissing|9 |Uma ou mais bandejas de saída estão ausentes.|
-|outputAreaFull|10 |Uma ou mais bandejas de saída estão cheias e não podem aceitar mais mídia.|
+|outputAreaFull|10|Uma ou mais bandejas de saída estão cheias e não podem aceitar mais mídia.|
 |markerSupplyLow|11|Uma ou mais fontes de marcador (por exemplo, tinta, toner ou faixa de opções) estão baixas.|
 |markerSupplyEmpty|12 |Uma ou mais fontes de marcador (por exemplo, tinta, toner ou faixa de opções) estão esgotadas.|
 |inputTrayMissing|13|Uma ou mais bandejas de entrada não estão no dispositivo.|
-|outputAreaAlmostFull|14 |Uma ou mais área de saída está quase cheia (por exemplo, bandeja, empilhador, colator).|
-|markerWasteAlmostFull|15 |O recipiente de lixo de fornecimento de marcador de dispositivo está quase cheio.|
-|markerWasteFull|16 |O recipiente de lixo de fornecimento de marcador de dispositivo está cheio.|
-|fuserOverTemp|17 |A temperatura do fusor está acima do normal.|
-|fuserUnderTemp|18 |A temperatura do fusor está abaixo do normal.|
-|other|19|Qualquer outro motivo que não se enquadra no restante dos motivos.|
-|none|20|Sem motivos.|
-|movingToPaused| 21 |Alguém fez uma pausa na impressora usando a Pause-Printer de usuário.|
-|shutdown|22|Alguém removeu um objeto Printer do serviço e o dispositivo pode ser desligado ou removido fisicamente.|
-|connectingToDevice|23|A impressora está no processo de conexão com um Dispositivo de Saída de Rede Compartilhada.|
-|timedOut|24|O servidor não conseguiu obter uma resposta do dispositivo de saída.|
-|stopping|25|O objeto Printer está em processo de interrupção do dispositivo.|
+|outputAreaAlmostFull|14|Uma ou mais áreas de saída estão quase cheias (por exemplo, bandeja, empilhador, collator).|
+|markerWasteAlmostFull|15|O recipiente de resíduos de fornecimento de marcador de dispositivo está quase cheio.|
+|markerWasteFull|16|O recipiente de resíduos de fornecimento do marcador do dispositivo está cheio.|
+|fuserOverTemp|17 |A temperatura do fuser está acima do normal.|
+|fuserUnderTemp|18 |A temperatura do fuser está abaixo do normal.|
+|Outros|19|Qualquer outra razão que não se enquadra no resto das razões.|
+|none|20|Não há motivos.|
+|movingToPaused| 21 |Alguém fez uma pausa na impressora usando a Pause-Printer operação.|
+|Desligamento|22|Alguém removeu um objeto Printer do serviço e o dispositivo pode estar desligado ou fisicamente removido.|
+|connectingToDevice|23|A impressora está no processo de conexão com um dispositivo de saída de rede compartilhada.|
+|Timedout|24|O servidor não pôde obter uma resposta do dispositivo de saída.|
+|Parar|25|O objeto Printer está em processo de interrupção do dispositivo.|
 |stoppedPartially|26|Um ou mais dispositivos de saída são interrompidos.|
-|tonerLow|27|O dispositivo está com pouca toner.|
+|tonerLow|27|O dispositivo está com pouco toner.|
 |tonerEmpty|28|O dispositivo está sem toner.|
 |spoolAreaFull|29|O limite de armazenamento persistente alocado para o spooling foi atingido.|
 |doorOpen|30|Uma ou mais portas no dispositivo estão abertas.|
-|opticalPhotoConductorNearEndOfLife|31|O condutor de fotos óptico está quase no fim da vida útil.|
+|opticalPhotoConductorNearEndOfLife|31|O condutor óptico de fotos está perto do fim da vida útil.|
 |opticalPhotoConductorLifeOver|32|O condutor óptico de fotos não está mais funcionando.|
 |developerLow|33|O dispositivo está com pouco desenvolvedor.|
 |developerEmpty|34|O dispositivo está fora do desenvolvedor.|
-|interpreterResourceUnavailable|35|Um recurso de intérprete não está disponível (por exemplo, fonte, formulário).|
+|interpreterResourceUnavailable|35|Um recurso de interpretador não está disponível (por exemplo, fonte, formulário).|
 |alertRemovalOfBinaryChangeEntry|37|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |banderAdded|38|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |banderAlmostEmpty|39|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -131,17 +131,17 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |binderUnrecoverableFailure|107|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |binderUnrecoverableStorageError|108|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |binderWarmingUp|109|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|cameraFailure|110|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|chamberCooling|111|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|chamberFailure|112|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|chamberHeating|113|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|chamberTemperatureHigh|114|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|chamberTemperatureLow|115|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|cleanerLifeAlmostOver|116|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.13.|
-|cleanerLifeOver|117|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.13.|
+|cameraFailure|110|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|chamber Cooling|111|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|chamberFailure|112|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|chamberHeating|113|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|chamberTemperatureHigh|114|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|chamberTemperatureLow|115|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|cleanerLifeAlmostOver|116|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.13.|
+|cleanerLifeOver|117|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.13.|
 |configurationChange|118|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|desativado|119|Este é um valor padrão de Atributo de Impressora IPP descrito em RFC3998.|
-|deleted|120|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.22.|
+|Desativado|119|Esse é um valor padrão de Atributo de Impressora IPP descrito em RFC3998.|
+|deleted|120|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.22.|
 |dieCutterAdded|121|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |dieCutterAlmostEmpty|122|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |dieCutterAlmostFull|123|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -177,19 +177,19 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |dieCutterUnderTemperature|153|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |dieCutterUnrecoverableFailure|154|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |dieCutterUnrecoverableStorageError|155|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|dieCutterWarmingUp|156|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|extruderCooling|157|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|extruderFailure|158|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|extruderHeating|159|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|extruderJam|160|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|extruderTemperatureHigh|161|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|extruderTemperatureLow|162|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|fanFailure|163|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|faxModemLifeAlmostOver|164|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|faxModemLifeOver|165|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|faxModemMissing|166|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|faxModemTurnedOff|167|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|faxModemTurnedOn|168|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|dieCutterCutterCuttUp|156|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|extruder Cooling|157|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|extruderFailure|158|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|extruderHeating|159|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|extruderJam|160|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|extruderTemperatureHigh|161|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|extruderTemperatureLow|162|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|fanFailure|163|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|faxModemLifeAlmostOver|164|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|faxModemLifeOver|165|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|faxModemMissing|166|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|faxModemTurnedOff|167|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|faxModemTurnedOn|168|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |folderAdded|169|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |folderAlmostEmpty|170|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |folderAlmostFull|171|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -225,60 +225,60 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |folderUnderTemperature|201|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |folderUnrecoverableFailure|202|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |folderUnrecoverableStorageError|203|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|folderWarmingUp|204|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|hibernar|205|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5106.4.|
-|holdNewJobs|206|Este é um valor padrão de Atributo de Impressora IPP descrito em RFC3998.|
-|identifyPrinterRequested|207|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.18.|
-|imprinterAdded|208|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterAlmostEmpty|209|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterAlmostFull|210|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterAtLimit|211|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterClosed|212|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterConfigurationChange|213|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterCoverClosed|214|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterCoverOpen|215|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterEmpty|216|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterFull|217|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterInterlockClosed|218|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterInterlockOpen|219|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterJam|220|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterLifeAlmostOver|221|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterLifeOver|222|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|folder LatestUp|204|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|Hibernate|205|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5106.4.|
+|holdNewJobs|206|Esse é um valor padrão de Atributo de Impressora IPP descrito em RFC3998.|
+|identifyPrinterRequested|207|Esse é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.18.|
+|impressõesAdded|208|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesAlmostEmpty|209|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesAlmostFull|210|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesAtLimit|211|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesClosed|212|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesConfigurationChange|213|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesCoverClosed|214|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesCoverOpen|215|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesEmpty|216|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesFull|217|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesInterlockClosed|218|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesInterlockOpen|219|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressorJam|220|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesLifeAlmostOver|221|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõeserLifeOver|222|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |imprinterMemoryExhausted|223|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterMissing|224|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterMotorFailure|225|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesmissivas|224|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesMotorFailure|225|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |imprinterNearLimit|226|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterOffline|227|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterOpened|228|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterOverTemperature|229|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterPowerSaver|230|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterRecoverableFailure|231|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterRecoverableStorage|232|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterRemoved|233|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterResourceAdded|234|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterResourceRemoved|235|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterThermistorFailure|236|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterTimingFailure|237|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesoffline|227|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesOpened|228|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesOverTemperature|229|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesPowerSaver|230|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesrecoverableFailure|231|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesrecoverableStorage|232|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesRemoved|233|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|textureerResourceAdded|234|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesResourceRemoved|235|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesThermistorFailure|236|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõestimingFailure|237|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |imprinterTurnedOff|238|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterTurnedOn|239|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterUnderTemperature|240|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterUnrecoverableFailure|241|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterUnrecoverableStorageError|242|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|imprinterWarmingUp|243|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesTurnedOn|239|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesUnderTemperature|240|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesUnrecoverableFailure|241|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesUnrecoverableStorageError|242|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|impressõesEsqueletoraUp|243|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inputCannotFeedSizeSelected|244|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inputManualInputRequest|245|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inputMediaColorChange|246|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inputMediaFormPartsChange|247|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inputMediaSizeChange|248|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|inputMediaTrayFailure|249|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|inputMediaTrayFeedError|250|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|inputMediaTrayJam|251|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|inputMediaTrayFailure|249|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|inputMediaTrayFeedError|250|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|inputMediaTrayJam|251|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |inputMediaTypeChange|252|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inputMediaWeightChange|253|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|inputPickRollerFailure|254|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|inputPickRollerLifeOver|255|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|inputPickRollerLifeWarn|256|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|inputPickRollerMissing|257|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|inputPickRollerFailure|254|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|inputPickRollerLifeOver|255|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|inputPickRollerLifeWarn|256|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|inputPickRollerMissing|257|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |inputTrayElevationFailure|258|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inputTrayPositionFailure|259|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inserterAdded|260|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -318,19 +318,19 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |inserterUnrecoverableStorageError|294|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |inserterWarmingUp|295|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |interlockClosed|296|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|interpreterCartrichAdded|297|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|interpreterCartrichDeleted|298|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|interpreterCartridgeAdded|297|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|interpreterCartridgeDeleted|298|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |interpreterComplexPageEncountered|299|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |interpreterMemoryDecrease|300|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |interpreterMemoryIncrease|301|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |interpreterResourceAdded|302|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |interpreterResourceDeleted|303|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|lampAtEol|304|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|lampFailure|305|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|lampNearEol|306|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|laserAtEol|307|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|laserFailure|308|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|laserNearEol|309|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
+|lampAtEol|304|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|lampFailure|305|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|lampNearEol|306|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|laserAtEol|307|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|laserFailure|308|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|laserNearEol|309|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
 |makeEnvelopeAdded|310|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |makeEnvelopeAlmostEmpty|311|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |makeEnvelopeAlmostFull|312|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -368,100 +368,100 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |makeEnvelopeUnrecoverableStorageError|344|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |makeEnvelopeWarmingUp|345|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |markerAdjustingPrintQuality|346|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|markerCleanerMissing|347|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerCleanerMissing|347|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |markerDeveloperAlmostEmpty|348|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |markerDeveloperEmpty|349|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|markerDeveloperMissing|350|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|markerFuserMissing|351|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerDeveloperMissing|350|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerFuserMissing|351|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |markerFuserThermistorFailure|352|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |markerFuserTimingFailure|353|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |markerInkAlmostEmpty|354|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |markerInkEmpty|355|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|markerInkMissing|356|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|markerOpcMissing|357|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerInkMissing|356|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerOpcMissing|357|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |markerPrintRibbonAlmostEmpty|358|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |markerPrintRibbonEmpty|359|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|markerPrintRibbonMissing|360|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|markerSupplyAlmostEmpty|361|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|markerSupplyMissing|362|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|markerTonerCartrichMissing|363|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|markerTonerMissing|364|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerPrintRibbonMissing|360|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerSupplyAlmostEmpty|361|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerSupplyMissing|362|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerTonerCartridgeMissing|363|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|markerTonerMissing|364|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |markerWasteInkReceptacleAlmostFull|365|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |markerWasteInkReceptacleFull|366|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|markerWasteInkReceptacleMissing|367|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|markerWasteMissing|368|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerWasteInkReceptacleMissing|367|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|markerWasteMissing|368|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |markerWasteTonerReceptacleAlmostFull|369|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |markerWasteTonerReceptacleFull|370|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|markerWasteTonerReceptacleMissing|371|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|materialEmpty|372|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|materialLow|373|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|materialNeededed|374|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|mediaDrying|375|Este é um valor padrão de Atributo de Impressora IPP descrito em HP20181213.|
+|markerWasteTonerReceptacleMissing|371|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|materialEmpty|372|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|materialLow|373|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|materialNeeded|374|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|mediaDrying|375|Esse é um valor padrão do Atributo de Impressora IPP descrito em HP20181213.|
 |mediaPathCannotDuplexMediaSelected|376|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|mediaPathFailure|377|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathInputEmpty|378|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathInputFeedError|379|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathInputJam|380|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathInputRequest|381|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathJam|382|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathFailure|377|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathInputEmpty|378|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathInputFeedError|379|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathInputJam|380|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathInputRequest|381|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathJam|382|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |mediaPathMediaTrayAlmostFull|383|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |mediaPathMediaTrayFull|384|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |mediaPathMediaTrayMissing|385|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|mediaPathOutputFeedError|386|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathOutputFull|387|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathOutputJam|388|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathPickRollerFailure|389|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathPickRollerLifeOver|390|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathPickRollerLifeWarn|391|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|mediaPathPickRollerMissing|392|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|motorFailure|393|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
+|mediaPathOutputFeedError|386|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathOutputFull|387|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathOutputJam|388|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathPickRollerFailure|389|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathPickRollerLifeOver|390|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathPickRollerLifeWarn|391|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|mediaPathPickRollerMissing|392|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|motorFailure|393|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
 |outputMailboxSelectFailure|394|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|outputMediaTrayFailure|395|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|outputMediaTrayFeedError|396|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|outputMediaTrayJam|397|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|aduladorAdded|398|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|399|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|400|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|401|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerClosed|402|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|403|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerCoverClosed|404|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|405|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerEmpty|406|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerFull|407|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|outputMediaTrayFailure|395|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|outputMediaTrayFeedError|396|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|outputMediaTrayJam|397|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|cabeçadaAdded|398|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|cerAlmostEmpty|399|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|bitserAlmostFull|400|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|cerAtLimit|401|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|edempastaClosed|402|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|cerConfigurationChange|403|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|armadorCoverClosed|404|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|armadorCoverOpen|405|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|cerEmpty|406|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|full de 12 anos|407|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |oerInterlockClosed|408|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|409|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerJam|410|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|411|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|de acordo com o trabalho do 21 de outubro de 2|412|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|dememoryExhausted|413|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|100% de 2016.|414|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016.|415|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerNearLimit|416|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerOffline|417|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|418|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|dooerOverTemperature|419|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|300000.000.000|420|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016.|421|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|422|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerRemoved|423|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016.|424|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016.|425|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016.|426|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|427|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|100% de 100%.|428|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|100% de 2006|429|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|queerUnderTemperature|430|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|431|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|100%.|432|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|2016|433|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|platformCooling|434|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|platformFailure|435|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|platformHeating|436|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|platformTemperatureHigh|437|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|platformTemperatureLow|438|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.21.|
-|powerDown|439|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|powerUp|440|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|oerInterlockOpen|409|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|cerjamjam|410|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|bitserLifeAlmostOver|411|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|oerlifeover|412|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|jerMemoryExhausted|413|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|100% de 100% de 1|414|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|buildererMotorFailure|415|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|perforaterNearLimit|416|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|armaçãoOffline|417|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|opened|418|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|desaforoTemperature|419|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|armaçãoPowerSaver|420|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|buildererRecoverableFailure|421|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|perforaterRecoverableStorage|422|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|cedidoRemoved|423|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|textureerResourceAdded|424|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|textureerResourceRemoved|425|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|buildererThermistorFailure|426|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|buildererTimingFailure|427|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|oerturnedOff|428|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|edígrafoTurnedOn|429|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|undererUnderTemperature|430|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|buildererUnrecoverableFailure|431|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|todos os 10000 anos de idade|432|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|todos os 1000 anos de vida|433|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|platform Cooling|434|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|platformFailure|435|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|platformHeating|436|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|platformTemperatureHigh|437|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|platformTemperatureLow|438|Este é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.21.|
+|Powerdown|439|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|Powerup|440|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |printerManualReset|441|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |printerNmsReset|442|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |printerReadyToPrint|443|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -501,31 +501,31 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |puncherUnrecoverableFailure|477|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |puncherUnrecoverableStorageError|478|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |puncherWarmingUp|479|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|retomada|480|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.22.|
-|scanMediaPathFailure|481|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathInputEmpty|482|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathInputFeedError|483|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathInputJam|484|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathInputRequest|485|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathJam|486|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathOutputFeedError|487|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathOutputFull|488|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathOutputJam|489|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathPickRollerFailure|490|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathPickRollerLifeOver|491|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathPickRollerLifeWarn|492|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathPickRollerMissing|493|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathTrayAlmostFull|494|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathTrayFull|495|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scanMediaPathTrayMissing|496|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scannerLightFailure|497|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scannerLightLifeAlmostOver|498|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scannerLightLifeOver|499|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scannerLightMissing|500|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scannerSensorFailure|501|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scannerSensorLifeAlmostOver|502|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scannerSensorLifeOver|503|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
-|scannerSensorMissing|504|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5107.3.|
+|Retomar|480|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.22.|
+|scanMediaPathFailure|481|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathInputEmpty|482|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathInputFeedError|483|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathInputJam|484|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathInputRequest|485|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathJam|486|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathOutputFeedError|487|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathOutputFull|488|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathOutputJam|489|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathPickRollerFailure|490|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathPickRollerLifeOver|491|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathPickRollerLifeWarn|492|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathPickRollerMissing|493|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathTrayAlmostFull|494|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathTrayFull|495|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scanMediaPathTrayMissing|496|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scannerLightFailure|497|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scannerLightLifeAlmostOver|498|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scannerLightLifeOver|499|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scannerLightMissing|500|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scannerSensorFailure|501|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scannerSensorLifeAlmostOver|502|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scannerSensorLifeOver|503|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
+|scannerSensorMissing|504|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5107.3.|
 |separationCutterAdded|505|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |separationCutterAlmostEmpty|506|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |separationCutterAlmostFull|507|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -561,7 +561,7 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |separationCutterUnderTemperature|537|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |separationCutterUnrecoverableFailure|538|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |separationCutterUnrecoverableStorageError|539|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|separationCutterWarmingUp|540|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|separationCutterCutterCuttUp|540|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |sheetRotatorAdded|541|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |sheetRotatorAlmostEmpty|542|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |sheetRotatorAlmostFull|543|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -670,20 +670,20 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |stackerUnrecoverableFailure|646|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |stackerUnrecoverableStorageError|647|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |stackerWarmingUp|648|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|standby|649|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5106.4.|
-|staplerAdded|650|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|Espera|649|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5106.4.|
+|grampeadorAdded|650|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerAlmostEmpty|651|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerAlmostFull|652|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerAtLimit|653|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|staplerClosed|654|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|grampeadorClosed|654|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerConfigurationChange|655|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerCoverClosed|656|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerCoverOpen|657|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|staplerEmpty|658|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|staplerFull|659|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|grampeadorEmpty|658|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|grampeadorFull|659|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerInterlockClosed|660|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerInterlockOpen|661|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|staplerJam|662|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|grampeadorJam|662|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerLifeAlmostOver|663|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerLifeOver|664|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerMemoryExhausted|665|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -691,7 +691,7 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |staplerMotorFailure|667|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerNearLimit|668|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerOffline|669|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|staplerOpened|670|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|grampeadorOpened|670|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerOverTemperature|671|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerPowerSaver|672|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerRecoverableFailure|673|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -703,7 +703,7 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |staplerTimingFailure|679|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerTurnedOff|680|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerTurnedOn|681|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|staplerUnderTemperature|682|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
+|grampeadorUnderTemperature|682|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerUnrecoverableFailure|683|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerUnrecoverableStorageError|684|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |staplerWarmingUp|685|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -748,7 +748,7 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |subunitAlmostFull|724|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |subunitAtLimit|725|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |subunitClosed|726|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|subunitCoolingDown|727|Este é um valor padrão de Atributo de Impressora IPP descrito no HPINC20180215.|
+|subunit CoolingDown|727|Esse é um valor padrão do Atributo de Impressora IPP descrito em HPINC20180215.|
 |subunitEmpty|728|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |subunitFull|729|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |subunitLifeAlmostOver|730|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -774,8 +774,8 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |subunitUnrecoverableFailure|750|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |subunitUnrecoverableStorage|751|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |subunitWarmingUp|752|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|suspend|753|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5106.4.|
-|testing|754|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.22.|
+|Suspender|753|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5106.4.|
+|Teste|754|Esse é um valor padrão do Atributo de Impressora IPP descrito em PWG5100.22.|
 |trimmerAdded|755|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |trimmerAlmostEmpty|756|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |trimmerAlmostFull|757|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
@@ -849,4 +849,4 @@ Inclua o `Prefer: include-unknown-enum-members` header para solicitar explicitam
 |wrapperUnrecoverableFailure|825|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |wrapperUnrecoverableStorageError|826|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
 |wrapperWarmingUp|827|Este é um valor padrão de Atributo de Impressora IPP descrito em PWG5100.9.|
-|unknownFutureValue|36|Valor de sentinela de enumeração evolvável. Não usar.|
+|unknownFutureValue|36|Valor de sentinel de enumeração evolvável. Não usar.|

@@ -1,28 +1,27 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: RemoteItem
+title: remoteItem
 ms.localizationpriority: medium
 description: O recurso remoteItem indica que um driveItem faz referência a um item que existe em outra unidade.
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 4338b6c6f4a4191b7d073b834030af6a7fad5202
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2c9a71820f0862c827a62e827899de483fedbb0f
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59006938"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034436"
 ---
-# <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
+# <a name="remoteitem-resource-type"></a>Tipo de recurso remoteItem
 
 Namespace: microsoft.graph
 
 O recurso **remoteItem** indica que um [**driveItem**](driveitem.md) faz referência a um item que existe em outra unidade.
 Este recurso fornece as IDs exclusivas do da unidade de origem e do item de destino.
 
-[**DriveItems**](driveitem.md) com uma faceta **remoteItem** não nula são recursos que são compartilhados, adicionados ao OneDrive do usuário ou em itens retornados de coleções de itens heterogêneas (como resultados de pesquisa).
+[**driveItems**](driveitem.md) com uma faceta **remoteItem** não nula são recursos que são compartilhados, adicionados ao OneDrive do usuário ou em itens retornados de coleções hetrogêneas de itens (como resultados da pesquisa).
 
-**Observação:** Diferentemente de pastas na mesma unidade, um **driveItem** movido para um item remoto pode ter seu valor `id` alterado.
+>**Observação:** Diferentemente de pastas na mesma unidade, um **driveItem** movido para um item remoto pode ter seu valor `id` alterado.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -74,7 +73,7 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Fornece interoperabilidade entre itens no OneDrive for Business e no SharePoint com o conjunto completo de identificadores de item. Somente leitura.                                          |
 | size                 | Int64                               | Tamanho do item remoto. Somente leitura.                                                                                                                               |
 | specialFolder        | [specialFolder][]                   | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.                                                                     |
-| video                | [Video](video.md)                   | Metadados de vídeo, se o item for um vídeo. Somente leitura.                                                                                                    |
+| video                | [Vídeo](video.md)                   | Metadados de vídeo, se o item for um vídeo. Somente leitura.                                                                                                    |
 | webDavUrl            | URL                                 | URL compatível com DAV para o item.                                                                                                                                  |
 | webUrl               | URL                                 | URL que exibe o recurso no navegador. Somente leitura.                                                                                                         |
 

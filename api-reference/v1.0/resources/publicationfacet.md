@@ -3,14 +3,14 @@ title: Tipo de recurso PublicationFacet
 description: O recurso **publicationFacet** fornece detalhes sobre o status de publicado em um recurso driveItemVersion ou driveItem.
 ms.localizationpriority: medium
 author: JeremyKelley
-ms.prod: ''
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 50d793c591f06ef926aa268cf9fa6b878d45e302
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b2b0f1e329c7dd638d63ffbdc89a9ba891022ce3
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078690"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034828"
 ---
 # <a name="publicationfacet-resource-type"></a>Tipo de recurso PublicationFacet
 

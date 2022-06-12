@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 53c94889543ab366279c369e31b1b4efaa7552b5
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: e79f1ef900a9c012f7f3e91c32ddc7b53fa904fd
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451316"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034563"
 ---
 # <a name="delete-a-user"></a>Excluir um usuário
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All |
 
-A conta profissional ou escolar deve desempenhar uma das seguintes funções:
+O usuário ou aplicativo de chamada deve receber uma das seguintes Azure AD [funções](/azure/active-directory/roles/permissions-reference):
 + Administrador Global
 + Administrador do usuário
 

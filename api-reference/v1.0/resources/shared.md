@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Compartilhados
+title: tipo de recurso compartilhado
 ms.localizationpriority: medium
-description: O recurso Shared indica que um DriveItem foi compartilhado com outras pessoas.
-ms.prod: ''
+description: O recurso compartilhado indica que um driveItem foi compartilhado com outras pessoas.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 4298f35f95e4e5e5f18c8ee8492c70fae30d4928
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7dc698106ffcb619e9e5e8e28845841084f59702
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126622"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034387"
 ---
-# <a name="shared-resource-type"></a>Tipo de recurso Shared
+# <a name="shared-resource-type"></a>tipo de recurso compartilhado
 
 Namespace: microsoft.graph
 
-O recurso **Shared** indica que um DriveItem foi compartilhado com outras pessoas. O recurso inclui informações sobre como o item é compartilhado.
+O **recurso** compartilhado indica que um **driveItem** foi compartilhado com outras pessoas.
+O recurso inclui informações sobre como o item é compartilhado.
 
-Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item foi compartilhada.
+Se um [**driveitem**](driveitem.md) tiver uma faceta compartilhada  não nula, o item será compartilhado.
 
 ## <a name="json-representation"></a>Representação JSON
 

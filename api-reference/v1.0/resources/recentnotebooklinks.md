@@ -3,14 +3,14 @@ title: tipo de recurso recentNotebookLinks
 description: Links para abrir um bloco de anotações do OneNote. Esse tipo de recurso existe como uma propriedade em um recurso recentNotebook.
 ms.localizationpriority: medium
 author: jewan-microsoft
-ms.prod: ''
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: 40ad8a64d96f8b9a98a7689eda9b4147d2deed62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ddcdad1e3bfaeb6ca21c20071eefd7e3fc43921d
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078669"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034590"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>tipo de recurso recentNotebookLinks
 

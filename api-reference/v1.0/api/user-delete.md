@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f5b00898335d1c83ce8579d3007284478fc52901
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9514fed277a8d3775a8f75325757db7586c8764d
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104237"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034758"
 ---
 # <a name="delete-a-user"></a>Excluir um usuário
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | User.ReadWrite.All |
 
-A conta profissional ou escolar deve desempenhar uma das seguintes funções:
+Deve ser atribuída ao usuário ou aplicativo de chamada uma das [funções do Azure AD](/azure/active-directory/roles/permissions-reference) a seguir:
 + Administrador Global
 + Administrador do usuário
 
@@ -61,7 +61,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. 
+Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true

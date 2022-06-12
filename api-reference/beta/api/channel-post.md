@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9440a84f25f92836f56fb740f460af546ed1aece
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 241296e2cbddb94d582a7241c6f81c195a5cabfe
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202776"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034544"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -19,24 +19,25 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.
+> **Nota:** Você pode adicionar no máximo 200 membros ao criar um canal privado.
 
 > [!IMPORTANT]
 > Os canais compartilhados estão atualmente no status de visualização pública. Durante esse tempo, o Microsoft API do Graph criar um canal compartilhado está disponível para um público limitado. É recomendável criar canais compartilhados no cliente Teams e usar apIs do Microsoft Graph para gerenciá-los. Para obter detalhes sobre como habilitar canais compartilhados Teams cliente, consulte Canais compartilhados [no Microsoft Teams (versão prévia)](/microsoftteams/shared-channels).
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Channel.Create.Group *, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
-> **Observação**: esta API dá suporte a permissões de administrador. Os administradores globais e os administradores de serviços do Microsoft Teams podem acessar equipes das quais não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 > **Observação**: no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados usando Teamwork.Migrate.All e/ou [APIs de migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 

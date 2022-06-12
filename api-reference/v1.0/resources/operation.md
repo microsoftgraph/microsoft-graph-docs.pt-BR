@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso operation
-description: O status de uma operação de longa duração.
+title: tipo de recurso de operação
+description: O status de uma operação de execução longa.
 ms.localizationpriority: medium
 author: billbliss
-ms.prod: ''
+ms.prod: teamwork
 doc_type: resourcePageType
-ms.openlocfilehash: fddecc3226904acd5b871212acf7df6583b844e3
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: e43d86c5c53ce95855bdb0ccd42c3a43049073ca
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860401"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034527"
 ---
-# <a name="operation-resource-type"></a>tipo de recurso operation
+# <a name="operation-resource-type"></a>tipo de recurso de operação
 
 Namespace: microsoft.graph
 
-O status de uma operação de longa duração.
+O status de uma operação de execução longa.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |A hora de início da operação.|
 |lastActionDateTime| DateTimeOffset |A hora da última ação da operação.|
-|status|operationStatus|O status atual da operação: `notStarted` , `running` , `completed` , `failed` |
+|status|operationStatus|O status atual da operação: `notStarted`, , `running`, `completed``failed` |
 
 ## <a name="json-representation"></a>Representação JSON
 

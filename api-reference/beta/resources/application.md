@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 6b3d2bc227b81eb39f6bb324579366f5bf3b7386
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 5ae85fb034e508460057fb11725df349e785f1ce
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461405"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034541"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -109,6 +109,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | publicClient | [publicClientApplication](publicclientapplication.md) | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
 | publisherDomain | String | O domínio do editor verificado para o aplicativo. Somente leitura. Dá suporte a `$filter`(`eq`, `ne`, `ge`, `le`, `startsWith`).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de permissões delegadas e funções de aplicativo necessárias para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não é possível configurar mais de 50 APIs (serviços de recursos). A partir de meados de outubro de 2021, o número total de permissões necessárias não deve exceder 400. Não anulável. <br><br>Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
+| samlMetadataUrl | Cadeia de caracteres | A URL em que o serviço expõe os metadados SAML para federação. Essa propriedade é válida apenas para aplicativos de locatário único. Anulável. |
 | referênciaDeGerenciamentoDeServiços | Cadeia de caracteres | Faz referências de aplicativo ou informações de contato de serviço de um banco de dados de Gerenciamento de Serviços ou Ativos. Anulável. |
 | signInAudience | Cadeia de caracteres | Especifique quais contas Microsoft têm suporte para o aplicativo atual. Os valores possíveis são: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (padrão) e `PersonalMicrosoftAccount`. Confira mais na [tabela abaixo](#signinaudience-values). <br><br>Suporta `$filter` (`eq`, `ne`, `not`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 41adbba8d7ffb988ddad7cd91a754712f329aca3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: d13d3d077faf34f80fb4f5446589156933219a29
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125689"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034576"
 ---
 # <a name="create-unifiedroleassignment"></a>Criar unifiedRoleAssignment
 
@@ -18,31 +18,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md)
+Crie um novo [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguinte permissão com menos privilégios necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
+Dependendo do provedor RBAC e do tipo de permissão (delegado ou aplicativo) necessário, escolha na tabela a seguir a permissão menos privilegiada necessária para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
-### <a name="for-directory-azure-ad-provider"></a>Provedor do Azure AD (Diretório)
+### <a name="for-the-directory-azure-ad-provider"></a>Para o provedor de diretório (Azure AD)
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) |  RoleManagement.ReadWrite.Directory   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | RoleManagement.ReadWrite.Directory |
 
-### <a name="for-entitlement-management-provider"></a>Para provedor de gerenciamento de direitos
+### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Crie uma atribuição de função para o provedor de diretórios:
+Crie uma atribuição de função para o provedor de diretório:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -67,19 +67,19 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto unifiedRoleAssignment.](../resources/unifiedroleassignment.md) A solicitação deve ter um escopo definido no Azure AD, como **directoryScopeId** ou um escopo específico do aplicativo, como **appScopeId**. Exemplos de escopos do Azure AD são locatário ("/"), unidades administrativas ou aplicativos. O gerenciamento de direitos usa escopos de catálogo de pacotes de locatários ("/") e de acesso. Para obter mais informações, consulte [appScope](../resources/appscope.md).
+No corpo da solicitação, forneça uma representação JSON de um [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) . A solicitação deve ter um escopo definido no Azure AD, como **directoryScopeId** ou um escopo específico do aplicativo, como **appScopeId**. Exemplos de Azure AD escopos são locatário ("/"), unidade administrativa, conjunto de atributos ou aplicativo. O gerenciamento de direitos usa escopos de catálogo de pacotes de acesso e locatário ("/"). Para obter mais informações, consulte [appScope](../resources/appscope.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-role-assignment-at-tenant-scope"></a>Exemplo 1: Criar uma atribuição de função no escopo do locatário
+### <a name="example-1-create-a-role-assignment-with-tenant-scope"></a>Exemplo 1: Criar uma atribuição de função com escopo de locatário
 
 #### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação. Observe o uso do roleTemplateId para roleDefinitionId. roleDefinitionId pode ser a ID do modelo de todo o serviço ou a função específica do diretórioDefinitionId.
+Este é um exemplo de solicitação. Observe o uso do roleTemplateId para roleDefinitionId. roleDefinitionId pode ser a ID do modelo de todo o serviço ou a roleDefinitionId específica do diretório.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -151,11 +151,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-over-an-administrative-unit-scope"></a>Exemplo 2: Criar uma atribuição de função em um escopo de unidade administrativa
+### <a name="example-2--create-a-role-assignment-with-administrative-unit-scope"></a>Exemplo 2: Criar uma atribuição de função com escopo de unidade administrativa
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir atribui uma função de Administrador de Usuário principal sobre uma unidade administrativa.
+O exemplo a seguir atribui a função de Administrador de Usuário a uma entidade de segurança com escopo de unidade administrativa.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -170,9 +170,9 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
-    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1", //template id of User Account Administrator
+    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
+    "directoryScopeId": "/administrativeUnits/5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -193,6 +193,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-administrativeunit-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -224,7 +228,55 @@ Content-type: application/json
 ```
 
 
-### <a name="example-3-create-a-role-assignment-at-access-package-catalog-scope"></a>Exemplo 3: Criar uma atribuição de função no escopo do catálogo de pacotes de acesso
+### <a name="example-3--create-a-role-assignment-with-attribute-set-scope"></a>Exemplo 3: Criar uma atribuição de função com o escopo do conjunto de atributos
+
+#### <a name="request"></a>Solicitação
+
+O exemplo a seguir atribui a função de Administrador de Atribuição de Atributo a uma entidade de segurança com um escopo de conjunto de atributos chamado Engenharia. Para obter mais informações sobre Azure AD atributos de segurança personalizados e o escopo do conjunto de atributos, consulte Gerenciar o acesso a atributos de segurança [personalizados Azure AD](/azure/active-directory/fundamentals/custom-security-attributes-manage).
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment_attributeset_scope"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "roleDefinitionId": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "/attributeSets/Engineering"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
+    "id": "oz6hWDLGrkae4JwNQ81_PU-mYqx8m71OpqEQPdN1u",
+    "roleDefinitionId": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "/attributeSets/Engineering"
+}
+```
+
+### <a name="example-4-create-a-role-assignment-with-access-package-catalog-scope"></a>Exemplo 4: Criar uma atribuição de função com o escopo do catálogo de pacotes de acesso
 
 #### <a name="request"></a>Solicitação
 

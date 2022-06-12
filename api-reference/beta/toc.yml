@@ -163,7 +163,7 @@ items:
         href: /graph/toolkit/overview?context=graph/api/beta
       - name: Introdução
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
           - name: /graph/toolkit para React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
@@ -260,7 +260,7 @@ items:
   - name: Referência beta
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
       - name: Usuários
         items:
@@ -434,7 +434,7 @@ items:
                     href: api/insights-list-used.md
               - name: Controle da organização (versão prévia)
                 items:
-                  - name: Configurações de insights
+                  - name: Insights configurações
                     href: resources/insightssettings.md
                   - name: Listar
                     href: api/organizationsettings-list-iteminsights.md
@@ -499,10 +499,10 @@ items:
                     href: api/user-get-mailboxsettings.md
                   - name: Atualizar configurações de Caixa de Correio
                     href: api/user-update-mailboxsettings.md
-              - name: Serviços de usuário do Outlook
+              - name: Outlook de usuário
                 expanded: true
                 items:
-                  - name: Usuário do Outlook
+                  - name: Outlook usuário
                     href: resources/outlookuser.md
                   - name: Criar categoria
                     href: api/outlookuser-post-mastercategories.md
@@ -530,7 +530,7 @@ items:
                 href: api/user-list-people.md
               - name: Controle da organização para insights de pessoas (versão prévia)
                 items:
-                  - name: Configurações de insights
+                  - name: Insights configurações
                     href: resources/insightssettings.md
                   - name: Listar
                     href: api/organizationsettings-list-peopleinsights.md
@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -592,7 +592,7 @@ items:
                 href: api/chat-get.md
               - name: Listar chats para o usuário
                 href: api/chat-list.md
-          - name: Tarefas To do
+          - name: Tarefas pendentes
             items:
               - name: Tarefa pendente
                 href: resources/todotask.md
@@ -800,7 +800,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -938,7 +938,7 @@ items:
                         href: api/extensionproperty-delete.md
               - name: Credenciais de identidade federada (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1203,7 +1203,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -1441,7 +1441,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1588,7 +1588,7 @@ items:
                     href: api/addlargegalleryviewoperation-get.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1697,11 +1697,11 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Descoberta Eletrônica (versão prévia)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1859,7 +1859,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -1917,7 +1917,7 @@ items:
       - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -2187,7 +2187,7 @@ items:
               - name: Gerenciamento de aplicativos
                 href: resources/intune-app-conceptual.md
                 items:
-                  - name: Modo de registro do proprietário do dispositivo Android
+                  - name: Android de registro do proprietário do dispositivo
                     href: resources/intune-androidforwork-androiddeviceownerenrollmentmode.md
                   - name: Perfil de registro de proprietário do dispositivo Android
                     href: resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md
@@ -2206,7 +2206,7 @@ items:
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md
                       - name: Ação createToken
                         href: api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md
-                  - name: Tipo de token de registro do proprietário do dispositivo Android
+                  - name: Android token de registro do proprietário do dispositivo
                     href: resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md
                   - name: Código da empresa de registro do Android
                     href: resources/intune-androidforwork-androidenrollmentcompanycode.md
@@ -2374,9 +2374,9 @@ items:
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md
                   - name: Tipo de dados do item de esquema de configuração do aplicativo do repositório gerenciado Android
                     href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md
-                  - name: Faixa de aplicativos da loja gerenciada do Android
+                  - name: Android de aplicativos da loja gerenciada
                     href: resources/intune-apps-androidmanagedstoreapptrack.md
-                  - name: Aplicativo Web da Loja Gerenciada do Android
+                  - name: Android aplicativo Web da loja gerenciada
                     href: resources/intune-apps-androidmanagedstorewebapp.md
                     items:
                       - name: Lista
@@ -2395,7 +2395,7 @@ items:
                     href: resources/intune-apps-androidpermissionaction.md
                   - name: Tipo de ação de permissão do Android
                     href: resources/intune-apps-androidpermissionactiontype.md
-                  - name: Aplicabilidade do perfil do Android
+                  - name: Android aplicabilidade do perfil
                     href: resources/intune-apps-androidprofileapplicability.md
                   - name: Aplicativo da loja Android
                     href: resources/intune-apps-androidstoreapp.md
@@ -2612,7 +2612,7 @@ items:
                         href: api/intune-apps-iosipadoswebclip-update.md
                   - name: Par chave/valor
                     href: resources/intune-androidforwork-keyvaluepair.md
-                  - name: aplicativo macOS dmg
+                  - name: macOS dmg app
                     href: resources/intune-apps-macosdmgapp.md
                     items:
                       - name: Lista
@@ -2625,7 +2625,7 @@ items:
                         href: api/intune-apps-macosdmgapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-macosdmgapp-update.md
-                  - name: Aplicativo incluído no macOS
+                  - name: macOS aplicativo incluído
                     href: resources/intune-apps-macosincludedapp.md
                   - name: Aplicativo LOB para macOS
                     href: resources/intune-apps-macoslobapp.md
@@ -2642,7 +2642,7 @@ items:
                         href: api/intune-apps-macoslobapp-update.md
                   - name: Aplicativo filho macOS LOB
                     href: resources/intune-apps-macoslobchildapp.md
-                  - name: Aplicativo mdatp macOS
+                  - name: macOS aplicativo mdatp
                     href: resources/intune-apps-macosmdatpapp.md
                     items:
                       - name: Lista
@@ -2655,7 +2655,7 @@ items:
                         href: api/intune-apps-macosmdatpapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-macosmdatpapp-update.md
-                  - name: aplicativo macOS microsoft edge
+                  - name: macOS microsoft edge app
                     href: resources/intune-apps-macosmicrosoftedgeapp.md
                     items:
                       - name: Lista
@@ -3089,7 +3089,7 @@ items:
                     href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
                   - name: Destino de atribuição de grupo de configuração do Office
                     href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-                  - name: ID do produto do Office
+                  - name: Office ID do produto
                     href: resources/intune-apps-officeproductid.md
                   - name: Aplicativo do pacote Office
                     href: resources/intune-apps-officesuiteapp.md
@@ -3250,7 +3250,7 @@ items:
                     href: resources/intune-apps-windowsarchitecture.md
                   - name: Tipo de dispositivo Windows
                     href: resources/intune-apps-windowsdevicetype.md
-                  - name: Aplicativo Microsoft Edge do Windows
+                  - name: Windows microsoft edge app
                     href: resources/intune-apps-windowsmicrosoftedgeapp.md
                     items:
                       - name: Lista
@@ -3278,7 +3278,7 @@ items:
                         href: api/intune-apps-windowsmobilemsi-delete.md
                       - name: Atualizar
                         href: api/intune-apps-windowsmobilemsi-update.md
-                  - name: Configuração do cliente do Windows Office
+                  - name: Windows de cliente do Office
                     href: resources/intune-cirrus-windowsofficeclientconfiguration.md
                     items:
                       - name: Lista
@@ -3291,7 +3291,7 @@ items:
                         href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
-                  - name: Configuração de segurança do cliente do Windows Office
+                  - name: Windows de segurança do cliente do Office
                     href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
                     items:
                       - name: Lista
@@ -3397,7 +3397,7 @@ items:
                         href: api/intune-apps-windowsuniversalappxcontainedapp-delete.md
                       - name: Atualizar
                         href: api/intune-apps-windowsuniversalappxcontainedapp-update.md
-                  - name: Aplicativo Web do Windows
+                  - name: Windows aplicativo Web
                     href: resources/intune-apps-windowswebapp.md
                     items:
                       - name: Lista
@@ -3745,7 +3745,7 @@ items:
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
                       - name: Ação unassignResourceAccountFromDevice
                         href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
-                  - name: Estado de correção de dispositivo do Windows Autopilot
+                  - name: Windows estado de correção do dispositivo autopilot
                     href: resources/intune-enrollment-windowsautopilotdeviceremediationstate.md
                   - name: Tipo de dispositivo do Windows Autopilot
                     href: resources/intune-enrollment-windowsautopilotdevicetype.md
@@ -3836,14 +3836,14 @@ items:
                     href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
                   - name: Modo conectado da bateria do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
-                  - name: Base de perfil de certificado do proprietário do dispositivo Android
+                  - name: Android de perfil de certificado do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md
                     items:
                       - name: Lista
                         href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-list.md
                       - name: Obter
                         href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-get.md
-                  - name: Política de conformidade do proprietário do dispositivo Android
+                  - name: Android de conformidade do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md
                     items:
                       - name: Lista
@@ -3856,11 +3856,11 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
-                  - name: Compartilhamento de dados entre perfis do proprietário do dispositivo Android
+                  - name: Android de dados entre perfis do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md
                   - name: Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
-                  - name: Configuração de autenticação de credencial derivada do proprietário do dispositivo Android
+                  - name: Android de autenticação de credencial derivada do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md
                     items:
                       - name: Lista
@@ -3873,9 +3873,9 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md
-                  - name: Tipo de perfil de registro do proprietário do dispositivo Android
+                  - name: Android perfil de registro do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md
-                  - name: Configuração do enterprise Wi-Fi proprietário do dispositivo Android
+                  - name: Android configuração corporativa do proprietário Wi-Fi dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
                     items:
                       - name: Lista
@@ -3901,13 +3901,13 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-update.md
-                  - name: Proxy global do proprietário do dispositivo Android
+                  - name: Android proxy global do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerglobalproxy.md
-                  - name: Configuração automática de proxy global do proprietário do dispositivo Android
+                  - name: Android configuração automática de proxy global do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md
-                  - name: Proxy global direto do proprietário do dispositivo Android
+                  - name: Android proxy global do proprietário do dispositivo direto
                     href: resources/intune-deviceconfig-androiddeviceownerglobalproxydirect.md
-                  - name: O proprietário do dispositivo Android importou o perfil de certificado PFX
+                  - name: Android proprietário do dispositivo importou o perfil de certificado PFX
                     href: resources/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md
                     items:
                       - name: Lista
@@ -3920,31 +3920,31 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
-                  - name: Barra de status de personalização do quiosque do proprietário do dispositivo Android
+                  - name: Android de status de personalização do quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md
-                  - name: Navegação do sistema de personalização de quiosque do proprietário do dispositivo Android
+                  - name: Android do sistema de personalização do quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md
-                  - name: Aplicativo do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodeapp.md
-                  - name: Item de posição do aplicativo no modo de quiosque do proprietário do dispositivo Android
+                  - name: Android item de posição do aplicativo no modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md
-                  - name: Ícone da pasta do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android de pasta do modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md
-                  - name: Item de pasta do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android de pasta do modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodefolderitem.md
-                  - name: Item de tela inicial do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android de tela inicial do modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodehomescreenitem.md
-                  - name: Tamanho do ícone do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android ícone do modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md
-                  - name: Pasta gerenciada do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android de modo gerenciado do modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md
-                  - name: Referência de pasta gerenciada do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android de pasta gerenciada do modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolderreference.md
-                  - name: Orientação da tela do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android de tela do modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md
-                  - name: Weblink do modo de quiosque do proprietário do dispositivo Android
+                  - name: Android weblink do modo de quiosque do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodeweblink.md
-                  - name: Perfil de certificado PKCS do proprietário do dispositivo Android
+                  - name: Android de certificado PKCS do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md
                     items:
                       - name: Lista
@@ -3957,13 +3957,13 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-update.md
-                  - name: Modo de play store do proprietário do dispositivo Android
+                  - name: Android modo de repositório de reprodução do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
                   - name: Tipo de senha obrigatória do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
-                  - name: Desbloqueio de senha necessário do proprietário do dispositivo Android
+                  - name: Android o proprietário do dispositivo exigiu o desbloqueio de senha
                     href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md
-                  - name: Perfil de certificado SCEP do proprietário do dispositivo Android
+                  - name: Android de certificado SCEP do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md
                     items:
                       - name: Lista
@@ -3976,11 +3976,11 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
-                  - name: Período de congelamento da atualização do sistema do proprietário do dispositivo Android
+                  - name: Android período de congelamento da atualização do sistema do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md
                   - name: Tipo de instalação de atualização do sistema do proprietário do dispositivo Android
                     href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
-                  - name: Certificado raiz confiável do proprietário do dispositivo Android
+                  - name: Android certificado raiz confiável do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md
                     items:
                       - name: Lista
@@ -3993,11 +3993,11 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md
-                  - name: Mensagem voltada para o usuário do proprietário do dispositivo Android
+                  - name: Android mensagem voltada para o usuário do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceowneruserfacingmessage.md
-                  - name: Tipo de botão página inicial virtual do proprietário do dispositivo Android
+                  - name: Android de página inicial virtual do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md
-                  - name: Configuração de VPN do proprietário do dispositivo Android
+                  - name: Android vpn do proprietário do dispositivo
                     href: resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md
                     items:
                       - name: Lista
@@ -4285,11 +4285,11 @@ items:
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-androidpkcscertificateprofile-update.md
-                  - name: Complexidade de senha necessária do Android
+                  - name: Android complexidade de senha necessária
                     href: resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md
                   - name: Tipo de senha obrigatória do Android
                     href: resources/intune-deviceconfig-androidrequiredpasswordtype.md
-                  - name: Tipo de avaliação da rede de segurança do Android
+                  - name: Android de avaliação da rede de segurança
                     href: resources/intune-deviceconfig-androidsafetynetevaluationtype.md
                   - name: Perfil de certificado do SCEP do Android
                     href: resources/intune-deviceconfig-androidscepcertificateprofile.md
@@ -5612,7 +5612,7 @@ items:
                     href: resources/intune-deviceconfig-internetexplorermessagesetting.md
                   - name: Nível de segurança do site da Internet
                     href: resources/intune-deviceconfig-internetsitesecuritylevel.md
-                  - name: Extensão de logon único do azure ad do iOS
+                  - name: iOS extensão de logon único do Azure AD
                     href: resources/intune-deviceconfig-iosazureadsinglesignonextension.md
                   - name: Indicador do iOS
                     href: resources/intune-deviceconfig-iosbookmark.md
@@ -5643,7 +5643,7 @@ items:
                         href: api/intune-deviceconfig-ioscompliancepolicy-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-ioscompliancepolicy-update.md
-                  - name: Extensão de logon único de credencial do iOS
+                  - name: iOS de logon único de credencial
                     href: resources/intune-deviceconfig-ioscredentialsinglesignonextension.md
                   - name: Configuração personalizada do iOS
                     href: resources/intune-deviceconfig-ioscustomconfiguration.md
@@ -5658,7 +5658,7 @@ items:
                         href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-ioscustomconfiguration-update.md
-                  - name: Configuração de autenticação de credencial derivada do iOS
+                  - name: iOS configuração de autenticação de credencial derivada
                     href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
                     items:
                       - name: Lista
@@ -5738,7 +5738,7 @@ items:
                         href: api/intune-deviceconfig-iosenterprisewificonfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-iosenterprisewificonfiguration-update.md
-                  - name: Configuração de check-in acelerada do iOS
+                  - name: iOS configuração de check-in acelerada
                     href: resources/intune-deviceconfig-iosexpeditedcheckinconfiguration.md
                     items:
                       - name: Lista
@@ -5787,15 +5787,15 @@ items:
                         href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-update.md
-                  - name: Extensão de logon único kerberos do iOS
+                  - name: iOS extensão de logon único kerberos
                     href: resources/intune-deviceconfig-ioskerberossinglesignonextension.md
-                  - name: Tipo de aplicativo no modo de quiosque do iOS
+                  - name: iOS de aplicativo no modo de quiosque
                     href: resources/intune-deviceconfig-ioskioskmodeapptype.md
                   - name: Regras de uso de rede do iOS
                     href: resources/intune-deviceconfig-iosnetworkusagerule.md
                   - name: Tipo de alerta de notificação do iOS
                     href: resources/intune-deviceconfig-iosnotificationalerttype.md
-                  - name: Visibilidade da visualização de notificação do iOS
+                  - name: iOS de visualização de notificação
                     href: resources/intune-deviceconfig-iosnotificationpreviewvisibility.md
                   - name: Configurações de notificação do iOS
                     href: resources/intune-deviceconfig-iosnotificationsettings.md
@@ -5812,7 +5812,7 @@ items:
                         href: api/intune-deviceconfig-iospkcscertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-iospkcscertificateprofile-update.md
-                  - name: Extensão de logon único de redirecionamento do iOS
+                  - name: iOS de logon único de redirecionamento
                     href: resources/intune-deviceconfig-iosredirectsinglesignonextension.md
                   - name: Perfil de certificado do SCEP do iOS
                     href: resources/intune-deviceconfig-iosscepcertificateprofile.md
@@ -5827,11 +5827,11 @@ items:
                         href: api/intune-deviceconfig-iosscepcertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-iosscepcertificateprofile-update.md
-                  - name: Extensão de logon único do iOS
+                  - name: iOS extensão de logon único
                     href: resources/intune-deviceconfig-iossinglesignonextension.md
                   - name: Configurações de logon único do iOS
                     href: resources/intune-deviceconfig-iossinglesignonsettings.md
-                  - name: Tipo de agendamento de atualização de software do iOS
+                  - name: iOS de agendamento de atualização de software
                     href: resources/intune-deviceconfig-iossoftwareupdatescheduletype.md
                   - name: Certificado raiz confiável do iOS
                     href: resources/intune-deviceconfig-iostrustedrootcertificate.md
@@ -5887,7 +5887,7 @@ items:
                         href: api/intune-deviceconfig-iosvpnconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-iosvpnconfiguration-update.md
-                  - name: Parâmetros de associação de segurança de VPN do iOS
+                  - name: iOS de associação de segurança vpn
                     href: resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md
                   - name: Local de exibição do papel de parede do iOS
                     href: resources/intune-deviceconfig-ioswallpaperdisplaylocation.md
@@ -5961,11 +5961,11 @@ items:
                     href: resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md
                   - name: Tipo de comportamento de solicitação de elevação de usuário padrão de opções de segurança local
                     href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
-                  - name: receptor de evento macOS apple
+                  - name: macOS receptor de evento apple
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
-                  - name: Item de domínios associados ao macOS
+                  - name: macOS item de domínios associados
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
-                  - name: Extensão de logon único do macOS Azure AD
+                  - name: macOS extensão de logon único do Azure AD
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: Base de perfil de certificado do macOS
                     href: resources/intune-deviceconfig-macoscertificateprofilebase.md
@@ -5987,17 +5987,17 @@ items:
                         href: api/intune-deviceconfig-macoscompliancepolicy-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macoscompliancepolicy-update.md
-                  - name: Política do cliente de cache de conteúdo do macOS
+                  - name: macOS do cliente de cache de conteúdo
                     href: resources/intune-deviceconfig-macoscontentcachingclientpolicy.md
-                  - name: Política de seleção pai de cache de conteúdo do macOS
+                  - name: macOS de seleção pai de cache de conteúdo
                     href: resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md
-                  - name: Política de par de cache de conteúdo do macOS
+                  - name: macOS de cache de conteúdo
                     href: resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md
-                  - name: Tipo de cache de conteúdo do macOS
+                  - name: macOS de cache de conteúdo
                     href: resources/intune-deviceconfig-macoscontentcachingtype.md
-                  - name: Extensão de logon único de credencial do macOS
+                  - name: macOS de logon único de credencial
                     href: resources/intune-deviceconfig-macoscredentialsinglesignonextension.md
-                  - name: Configuração de aplicativo personalizado do macOS
+                  - name: macOS configuração personalizada do aplicativo
                     href: resources/intune-deviceconfig-macoscustomappconfiguration.md
                     items:
                       - name: Lista
@@ -6062,7 +6062,7 @@ items:
                         href: api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macosenterprisewificonfiguration-update.md
-                  - name: Configuração de extensões do macOS
+                  - name: macOS de extensões
                     href: resources/intune-deviceconfig-macosextensionsconfiguration.md
                     items:
                       - name: Lista
@@ -6075,7 +6075,7 @@ items:
                         href: api/intune-deviceconfig-macosextensionsconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macosextensionsconfiguration-update.md
-                  - name: Tipos de chave de recuperação do cofre de arquivos macOS
+                  - name: macOS chave de recuperação do cofre de arquivos
                     href: resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md
                   - name: Aplicativo de firewall do macOS
                     href: resources/intune-deviceconfig-macosfirewallapplication.md
@@ -6107,13 +6107,13 @@ items:
                         href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-update.md
-                  - name: Extensão de logon único do kerberos do macOS
+                  - name: macOS extensão de logon único kerberos
                     href: resources/intune-deviceconfig-macoskerberossinglesignonextension.md
-                  - name: Extensão de kernel do macOS
+                  - name: macOS de kernel
                     href: resources/intune-deviceconfig-macoskernelextension.md
-                  - name: Item de inicialização do macOS
+                  - name: macOS item de inicialização
                     href: resources/intune-deviceconfig-macoslaunchitem.md
-                  - name: Perfil de certificado PKCS do macOS
+                  - name: macOS de certificado PKCS
                     href: resources/intune-deviceconfig-macospkcscertificateprofile.md
                     items:
                       - name: Lista
@@ -6126,11 +6126,11 @@ items:
                         href: api/intune-deviceconfig-macospkcscertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macospkcscertificateprofile-update.md
-                  - name: Item de controle de acesso de privacidade do macOS
+                  - name: macOS de controle de acesso de privacidade
                     href: resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md
-                  - name: Tipo de identificador de processo do macOS
+                  - name: macOS identificador de processo
                     href: resources/intune-deviceconfig-macosprocessidentifiertype.md
-                  - name: Extensão de logon único de redirecionamento do macOS
+                  - name: macOS de logon único de redirecionamento
                     href: resources/intune-deviceconfig-macosredirectsinglesignonextension.md
                   - name: Perfil de certificado do SCEP do macOS
                     href: resources/intune-deviceconfig-macosscepcertificateprofile.md
@@ -6145,9 +6145,9 @@ items:
                         href: api/intune-deviceconfig-macosscepcertificateprofile-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
-                  - name: Extensão de logon único do macOS
+                  - name: macOS de logon único
                     href: resources/intune-deviceconfig-macossinglesignonextension.md
-                  - name: Resumo da conta de atualização de software do macOS
+                  - name: macOS da conta de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md
                     items:
                       - name: Lista
@@ -6160,11 +6160,11 @@ items:
                         href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md
-                  - name: Comportamento de atualização de software macOS
+                  - name: macOS de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdatebehavior.md
-                  - name: Categoria de atualização de software macOS
+                  - name: macOS de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdatecategory.md
-                  - name: Resumo da categoria de atualização de software do macOS
+                  - name: macOS de categoria de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md
                     items:
                       - name: Lista
@@ -6177,7 +6177,7 @@ items:
                         href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md
-                  - name: Configuração de atualização de software macOS
+                  - name: macOS de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdateconfiguration.md
                     items:
                       - name: Lista
@@ -6190,13 +6190,13 @@ items:
                         href: api/intune-deviceconfig-macossoftwareupdateconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md
-                  - name: Política de atraso de atualização de software macOS
+                  - name: macOS de atraso de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md
-                  - name: Tipo de agendamento de atualização de software macOS
+                  - name: macOS de agendamento de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdatescheduletype.md
-                  - name: Estado de atualização de software macOS
+                  - name: macOS de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdatestate.md
-                  - name: Resumo do estado de atualização de software do macOS
+                  - name: macOS de estado de atualização de software
                     href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
                     items:
                       - name: Lista
@@ -6209,11 +6209,11 @@ items:
                         href: api/intune-deviceconfig-macossoftwareupdatestatesummary-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macossoftwareupdatestatesummary-update.md
-                  - name: Extensão do sistema macOS
+                  - name: macOS do sistema
                     href: resources/intune-deviceconfig-macossystemextension.md
-                  - name: Tipo de extensão do sistema macOS
+                  - name: macOS de extensão do sistema
                     href: resources/intune-deviceconfig-macossystemextensiontype.md
-                  - name: Mapeamento de tipo de extensão do sistema macOS
+                  - name: macOS de tipo de extensão do sistema
                     href: resources/intune-deviceconfig-macossystemextensiontypemapping.md
                   - name: Certificado raiz confiável do macOS
                     href: resources/intune-deviceconfig-macostrustedrootcertificate.md
@@ -6254,7 +6254,7 @@ items:
                         href: api/intune-deviceconfig-macoswificonfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-macoswificonfiguration-update.md
-                  - name: Configuração de rede com fio do macOS
+                  - name: macOS de rede com fio
                     href: resources/intune-deviceconfig-macoswirednetworkconfiguration.md
                     items:
                       - name: Lista
@@ -6698,7 +6698,7 @@ items:
                         href: api/intune-deviceconfig-windows10customconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-windows10customconfiguration-update.md
-                  - name: Interface de configuração do firmware do dispositivo Windows 10
+                  - name: Windows 10 de configuração do firmware do dispositivo
                     href: resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md
                     items:
                       - name: Lista
@@ -6711,7 +6711,7 @@ items:
                         href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-update.md
-                  - name: Tipo de modo de dispositivo Windows 10
+                  - name: Windows 10 tipo de modo de dispositivo
                     href: resources/intune-deviceconfig-windows10devicemodetype.md
                   - name: Configuração de perfil de email do EAS do Windows 10
                     href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
@@ -6990,7 +6990,7 @@ items:
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
-                  - name: Opções de proteção contra adulterações do Windows Defender
+                  - name: Windows de proteção contra adulterações do Defender
                     href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
                   - name: Configuração de otimização de distribuição do Windows
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
@@ -7007,7 +7007,7 @@ items:
                         href: api/intune-deviceconfig-windowsdeliveryoptimizationconfiguration-update.md
                   - name: Modo de otimização de distribuição do Windows
                     href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
-                  - name: Tipo de quiosque do Windows Edge
+                  - name: Windows quiosque de borda
                     href: resources/intune-deviceconfig-windowsedgekiosktype.md
                   - name: Perfil de rede de firewall do Windows
                     href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
@@ -7076,7 +7076,7 @@ items:
                         href: api/intune-deviceconfig-windowskioskconfiguration-update.md
                   - name: Aplicativo para área de trabalho de quiosque do Windows
                     href: resources/intune-deviceconfig-windowskioskdesktopapp.md
-                  - name: Agenda de atualização forçada de quiosque do Windows
+                  - name: Windows de atualização forçada de quiosque
                     href: resources/intune-deviceconfig-windowskioskforceupdateschedule.md
                   - name: Grupo local do quiosque do Windows
                     href: resources/intune-deviceconfig-windowskiosklocalgroup.md
@@ -7088,7 +7088,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskprofile.md
                   - name: Aplicativo UWP do único quiosque do Windows
                     href: resources/intune-deviceconfig-windowskiosksingleuwpapp.md
-                  - name: Aplicativo win32 único de quiosque do Windows
+                  - name: Windows aplicativo win32 único de quiosque
                     href: resources/intune-deviceconfig-windowskiosksinglewin32app.md
                   - name: Usuário do quiosque do Windows
                     href: resources/intune-deviceconfig-windowskioskuser.md
@@ -7096,7 +7096,7 @@ items:
                     href: resources/intune-deviceconfig-windowskioskuwpapp.md
                   - name: Visitante do quiosque do Windows
                     href: resources/intune-deviceconfig-windowskioskvisitor.md
-                  - name: Aplicativo win32 de quiosque do Windows
+                  - name: Windows aplicativo win32 de quiosque
                     href: resources/intune-deviceconfig-windowskioskwin32app.md
                   - name: Política de isolamento de rede do Windows
                     href: resources/intune-deviceconfig-windowsnetworkisolationpolicy.md
@@ -7304,7 +7304,7 @@ items:
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-delete.md
                       - name: Atualizar
                         href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-update.md
-                  - name: Configuração de rede com fio do Windows
+                  - name: Windows de rede com fio
                     href: resources/intune-deviceconfig-windowswirednetworkconfiguration.md
                     items:
                       - name: Lista
@@ -8914,7 +8914,7 @@ items:
                     href: resources/intune-devices-userexperienceanalyticssettings.md
                   - name: Análise da experiência do usuário resumida por
                     href: resources/intune-devices-userexperienceanalyticssummarizedby.md
-                  - name: Resumo de dispositivos Windows 10 de análise de experiência do usuário
+                  - name: Análise de experiência do usuário Windows 10 de dispositivos
                     href: resources/intune-devices-userexperienceanalyticswindows10devicessummary.md
                   - name: A análise da experiência do usuário funciona em qualquer lugar do dispositivo
                     href: resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md
@@ -8968,7 +8968,7 @@ items:
                     href: resources/intune-devices-warrantyoffer.md
                   - name: Tipo de garantia
                     href: resources/intune-devices-warrantytype.md
-                  - name: Status do produto Windows Defender
+                  - name: Windows status do produto defender
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Resultado de ação de verificação do Windows Defender
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
@@ -9020,7 +9020,7 @@ items:
                     href: resources/intune-devices-windowsmalwareoverview.md
                   - name: Gravidade de malware do Windows
                     href: resources/intune-devices-windowsmalwareseverity.md
-                  - name: Contagem de severidade de malware do Windows
+                  - name: Windows de gravidade do malware
                     href: resources/intune-devices-windowsmalwareseveritycount.md
                   - name: Estado de malware do Windows
                     href: resources/intune-devices-windowsmalwarestate.md
@@ -9086,7 +9086,7 @@ items:
                     href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
                   - name: Tipo de atestado de dispositivo de rede de segurança do aplicativo gerenciado para Android
                     href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
-                  - name: Tipo de avaliação da rede de segurança do aplicativo gerenciado android
+                  - name: Android de avaliação da rede de segurança do aplicativo gerenciado
                     href: resources/intune-mam-androidmanagedappsafetynetevaluationtype.md
                   - name: Identificador de aplicativo móvel Android
                     href: resources/intune-mam-androidmobileappidentifier.md
@@ -9285,7 +9285,7 @@ items:
                         href: api/intune-mam-targetedmanagedappprotection-assign.md
                       - name: ação targetApps
                         href: api/intune-mam-targetedmanagedappprotection-targetapps.md
-                  - name: Identificador de aplicativo do Windows
+                  - name: Windows do aplicativo
                     href: resources/intune-mam-windowsappidentifier.md
                   - name: Proteção de informações do Windows
                     href: resources/intune-mam-windowsinformationprotection.md
@@ -9394,11 +9394,11 @@ items:
                         href: api/intune-mam-windowsinformationprotectionwipeaction-delete.md
                       - name: Atualizar
                         href: api/intune-mam-windowsinformationprotectionwipeaction-update.md
-                  - name: Nível de compartilhamento da área de transferência de aplicativo gerenciado do Windows
+                  - name: Windows nível de compartilhamento da área de transferência do aplicativo gerenciado
                     href: resources/intune-mam-windowsmanagedappclipboardsharinglevel.md
-                  - name: Nível de transferência de dados do aplicativo gerenciado do Windows
+                  - name: Windows transferência de dados do aplicativo gerenciado
                     href: resources/intune-mam-windowsmanagedappdatatransferlevel.md
-                  - name: Proteção de aplicativo gerenciado do Windows
+                  - name: Windows de aplicativo gerenciado
                     href: resources/intune-mam-windowsmanagedappprotection.md
                     items:
                       - name: Lista
@@ -9878,7 +9878,7 @@ items:
                     href: resources/intune-shared-alldevicesassignmenttarget.md
                   - name: Destino de atribuição de todos os usuários licenciados
                     href: resources/intune-shared-alllicensedusersassignmenttarget.md
-                  - name: Tipo de pacote VPN Always On do Android Enterprise
+                  - name: Android tipo de pacote VPN always on da empresa
                     href: resources/intune-shared-androidenterprisealwaysonvpnpackagetype.md
                   - name: Proteção de aplicativo gerenciado pelo Android
                     href: resources/intune-shared-androidmanagedappprotection.md
@@ -9895,9 +9895,9 @@ items:
                         href: api/intune-shared-androidmanagedappprotection-update.md
                       - name: Ação hasPayloadLinks
                         href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
-                  - name: Configurações de atribuição de aplicativo da loja gerenciada do Android
+                  - name: Android configurações de atribuição de aplicativo da loja gerenciada
                     href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
-                  - name: Modo de atualização automática do repositório gerenciado android
+                  - name: Android modo de atualização automática do repositório gerenciado
                     href: resources/intune-shared-androidmanagedstoreautoupdatemode.md
                   - name: Armazenamento de destino de certificados
                     href: resources/intune-shared-certificatedestinationstore.md
@@ -10093,7 +10093,7 @@ items:
                     href: resources/intune-shared-keystorageprovideroption.md
                   - name: Usos de chave
                     href: resources/intune-shared-keyusages.md
-                  - name: Configurações de atribuição de aplicativo LOB do macOS
+                  - name: macOS configurações de atribuição de aplicativo LOB
                     href: resources/intune-shared-macoslobappassignmentsettings.md
                   - name: Configurações de atribuição do aplicativo VPP do macOS
                     href: resources/intune-shared-macosvppappassignmentsettings.md
@@ -10251,7 +10251,7 @@ items:
                         href: api/intune-shared-windowsdomainjoinconfiguration-update.md
                   - name: Configurações de atribuição do aplicativo Windows universal AppX
                     href: resources/intune-shared-windowsuniversalappxappassignmentsettings.md
-                  - name: Estado de atualização do Windows
+                  - name: Windows de atualização
                     href: resources/intune-shared-windowsupdatestate.md
                     items:
                       - name: Lista
@@ -10282,7 +10282,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10328,7 +10328,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: Definir o status da revisão
                     href: api/manageddevice-setcloudpcreviewstatus.md
-                  - name: Solucionar problema
+                  - name: Solução de problemas
                     href: api/cloudpc-troubleshoot.md
               - name: Imagem do dispositivo de PC na nuvem
                 href: resources/cloudpcdeviceimage.md
@@ -10491,14 +10491,14 @@ items:
                     href: api/windowsupdates-updatableasset-get.md
                   - name: Excluir ativo atualizável
                     href: api/windowsupdates-updatableasset-delete.md
-                  - name: Dispositivo do Azure AD
+                  - name: Azure AD dispositivo
                     href: resources/windowsupdates-azureaddevice.md
                     items:
-                      - name: Listar dispositivos do Azure AD
+                      - name: Listar Azure AD dispositivos
                         href: api/windowsupdates-updates-list-updatableassets-azureaddevice.md
-                      - name: Obter dispositivo do Azure AD
+                      - name: Obter Azure AD dispositivo
                         href: api/windowsupdates-azureaddevice-get.md
-                      - name: Excluir dispositivo do Azure AD
+                      - name: Excluir Azure AD dispositivo
                         href: api/windowsupdates-azureaddevice-delete.md
                       - name: Registrar-se no gerenciamento de atualizações
                         href: api/windowsupdates-updatableasset-enrollassets.md
@@ -10694,20 +10694,20 @@ items:
               - name: Estado de malware de dispositivo Windows
                 href: resources/managedtenants-windowsdevicemalwarestate.md
                 items:
-                  - name: Listar estados de malware do dispositivo Windows
+                  - name: Listar Windows de malware do dispositivo
                     href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
-                  - name: Obter o estado de malware do dispositivo Windows
+                  - name: Obter Windows estado de malware do dispositivo
                     href: api/managedtenants-windowsdevicemalwarestate-get.md
               - name: Estado de proteção do Windows
                 href: resources/managedtenants-windowsprotectionstate.md
                 items:
-                  - name: Listar o estado de proteção do Windows
+                  - name: Listar Windows de proteção
                     href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
-                  - name: Obter o estado de proteção do Windows
+                  - name: Obter Windows de proteção
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -10718,7 +10718,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: Obter integridade do serviço
                     href: api/servicehealth-get.md
-              - name: Problema de integridade do serviço
+              - name: Integridade do serviço problema
                 href: resources/servicehealthissue.md
                 items:
                   - name: Listar problemas
@@ -10825,7 +10825,7 @@ items:
                 href: api/educationclass-post-category.md
               - name: Obter intervalo
                 href: api/educationclass-delta.md
-          - name: Comercial
+          - name: Usuários
             href: resources/educationuser.md
             items:
               - name: Obter usuário
@@ -11139,7 +11139,7 @@ items:
       - name: Finanças (visualização)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/dynamics-graph-reference.md
           - name: Conta
             href: resources/dynamics-account.md
@@ -11375,7 +11375,7 @@ items:
             items:
               - name: Privilégios de administrador delegado granular (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     displayName: 'GDAP, Partner Center, CSP, VAR'
                     href: resources/delegatedadminrelationships-api-overview.md
                   - name: Relações de administrador delegado
@@ -11482,7 +11482,7 @@ items:
                     href: api/contract-list.md
               - name: Atributos de segurança personalizados (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/custom-security-attributes-overview.md
                   - name: Conjuntos de atributos
                     href: resources/attributeset.md
@@ -11686,7 +11686,7 @@ items:
                 items:
                   - name: Obter configurações da organização
                     href: api/organizationSettings-get.md
-                  - name: Configurações de aplicativo para dados do Microsoft 365 (versão prévia)
+                  - name: Configurações do aplicativo para Microsoft 365 dados (versão prévia)
                     items:
                       - name: Configurações de acesso a dados do aplicativo
                         href: resources/microsoftapplicationdataaccesssettings.md
@@ -11696,7 +11696,7 @@ items:
                         href: api/microsoftapplicationdataaccesssettings-update.md
                   - name: Controle da organização para insights de item (versão prévia)
                     items:
-                      - name: Configurações de insights
+                      - name: Insights configurações
                         href: resources/insightssettings.md
                       - name: Listar
                         href: api/organizationsettings-list-iteminsights.md
@@ -11704,7 +11704,7 @@ items:
                         href: api/insightssettings-update.md
                   - name: Controle da organização para insights de pessoas (versão prévia)
                     items:
-                      - name: Configurações de insights
+                      - name: Insights configurações
                         href: resources/insightssettings.md
                       - name: Listar
                         href: api/organizationsettings-list-peopleinsights.md
@@ -11990,7 +11990,7 @@ items:
                         href: api/softwareOathAuthenticationMethod-get.md
                       - name: Excluir
                         href: api/softwareOathAuthenticationMethod-delete.md
-                  - name: Telefone sem senha do Microsoft Authenticator Sign-In (preterido)
+                  - name: Microsoft Authenticator sem senha Telefone Sign-In senha (preterido)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: Lista
@@ -12032,9 +12032,9 @@ items:
                         href: api/phoneauthenticationmethod-delete.md
                       - name: Adicionar
                         href: api/authentication-post-phonemethods.md
-                      - name: Habilitar a entrada por SMS
+                      - name: Habilitar SMS entrada
                         href: api/phoneauthenticationmethod-enablesmssignin.md
-                      - name: Desabilitar a entrada por SMS
+                      - name: Desabilitar SMS entrada
                         href: api/phoneauthenticationmethod-disablesmssignin.md
                   - name: Email
                     href: resources/emailauthenticationmethod.md
@@ -12143,7 +12143,7 @@ items:
                         href: api/authenticationcontextclassreference-update.md
               - name: Acesso entre locatários (versão prévia)
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     displayName: 'Cross-tenant access settings, XTAP'
                     href: resources/crosstenantaccesspolicy-overview.md
                   - name: Política
@@ -12257,7 +12257,7 @@ items:
                         href: resources/socialidentityprovider.md
                       - name: Tipo de provedor de identidade da Apple
                         href: resources/applemanagedidentityprovider.md
-                      - name: Tipo de provedor de identidade do OpenID Connect
+                      - name: Tipo de provedor de Conexão OpenID
                         href: resources/openidconnectidentityprovider.md
                       - name: Listar provedores de identidade disponíveis
                         href: api/identityproviderbase-availableprovidertypes.md
@@ -12289,7 +12289,7 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
                       - name: Criar domínio
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
-                  - name: Federação com o Azure AD
+                  - name: Federação com Azure AD
                     items:
                       - name: Configuração de domínio federado
                         href: resources/internaldomainfederation.md
@@ -12305,7 +12305,7 @@ items:
                 items:
                   - name: Tipo de provedor de identidade
                     href: resources/identityprovider.md
-                  - name: Tipo de provedor de identidade do OpenID Connect
+                  - name: Tipo de provedor de Conexão OpenID
                     href: resources/openidconnectprovider.md
                   - name: Listar
                     href: api/identityprovider-list.md
@@ -12353,7 +12353,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/policy-overview.md
                   - name: Política de tempo limite baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -12370,7 +12370,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Política de método de autenticação de aplicativo (versão prévia)
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Política de gerenciamento de aplicativo de locatário
                         items:
@@ -12430,7 +12430,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Política de métodos de autenticação
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Política de métodos de autenticação
                         href: resources/authenticationmethodspolicy.md
@@ -12457,7 +12457,7 @@ items:
                             href: api/x509certificateauthenticationmethodconfiguration-update.md
                           - name: Excluir
                             href: api/x509certificateauthenticationmethodconfiguration-delete.md
-                      - name: Política do Microsoft Authenticator
+                      - name: Microsoft Authenticator política
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: Obter
@@ -12466,7 +12466,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
                           - name: Excluir
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
-                      - name: Política de entrada de telefone sem senha do Microsoft Authenticator (preterida)
+                      - name: Microsoft Authenticator política Telefone entrada sem senha (preterida)
                         href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                         items:
                           - name: Obter
@@ -12659,11 +12659,11 @@ items:
                     href: api/trustframeworkkeyset-generatekey.md
                   - name: Obter chave ativa
                     href: api/trustframeworkkeyset-getactivekey.md
-                  - name: Carregar certificado
+                  - name: Upload certificado
                     href: api/trustframeworkkeyset-uploadcertificate.md
-                  - name: Carregar certificado PKCS12
+                  - name: Upload certificado PKCS12
                     href: api/trustframeworkkeyset-uploadpkcs12.md
-                  - name: Carregar segredo
+                  - name: Upload segredo
                     href: api/trustframeworkkeyset-uploadsecret.md
               - name: Política da Estrutura de Confiança
                 href: resources/trustframeworkpolicy.md
@@ -12820,7 +12820,7 @@ items:
                         href: api/identityapiconnector-get.md
                       - name: Atualizar
                         href: api/identityapiconnector-update.md
-                      - name: Carregar um certificado do cliente
+                      - name: Upload um certificado do cliente
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Excluir
                         href: api/identityapiconnector-delete.md
@@ -13438,7 +13438,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -13630,7 +13630,7 @@ items:
                 href: api/user-post-notifications.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -13640,7 +13640,7 @@ items:
                 href: api/user-list-people.md
               - name: Controle da organização para insights de pessoas (versão prévia)
                 items:
-                  - name: Configurações de insights
+                  - name: Insights configurações
                     href: resources/insightssettings.md
                   - name: Listar
                     href: api/organizationsettings-list-peopleinsights.md
@@ -13852,7 +13852,7 @@ items:
                     href: api/workposition-delete.md
               - name: Projects
                 items:
-                  - name: Participação do projeto
+                  - name: Project participação
                     href: resources/projectparticipation.md
                   - name: Listar
                     href: api/profile-list-projects.md
@@ -13962,7 +13962,7 @@ items:
                     href: api/insights-list-used.md
               - name: Controle da organização (versão prévia)
                 items:
-                  - name: Configurações de insights
+                  - name: Insights configurações
                     href: resources/insightssettings.md
                   - name: Listar
                     href: api/organizationsettings-list-iteminsights.md
@@ -14075,7 +14075,7 @@ items:
                 href: api/contactmergesuggestions-update.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -14097,7 +14097,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -14124,7 +14124,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -14149,7 +14149,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registros de usuário de credencial
                     href: resources/credentialuserregistrationcount.md
@@ -14188,9 +14188,9 @@ items:
                         href: api/authenticationmethodsroot-list-userregistrationdetails.md
                       - name: Obter
                         href: api/userregistrationdetails-get.md
-          - name: Relatórios de uso do Microsoft 365
+          - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14224,7 +14224,7 @@ items:
                     href: api/reportroot-getteamsuseractivitydistributiontotalusercounts.md
                   - name: Obter contagens totais de atividades de distribuição
                     href: api/reportroot-getteamsuseractivitytotaldistributioncounts.md
-              - name: Atividade da equipe do Microsoft Teams
+              - name: Microsoft Teams atividade da equipe
                 href: resources/microsoft-teams-team-usage-reports.md
                 items:
                   - name: Obter detalhes da equipe
@@ -14429,7 +14429,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Relatórios de segurança do Microsoft Defender para Office 365
+          - name: Microsoft Defender para Office 365 de segurança
             items:
               - name: Relatórios de simulação de ataque
                 displayname: Attack simulation and training
@@ -14452,12 +14452,12 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Obter cobertura de treinamento para usuários
                     href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Search
+      - name: Pesquisar
         displayname: Microsoft Search API
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14467,7 +14467,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-answers-overview.md
               - name: Acronym
                 href: resources/search-acronym.md
@@ -14510,7 +14510,7 @@ items:
                     href: api/search-qna-delete.md
           - name: Index
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -14716,8 +14716,6 @@ items:
                     href: api/security-ediscoverycase-post-custodians.md
                   - name: Obter
                     href: api/security-ediscoverycustodian-get.md
-                  - name: Atualizar
-                    href: api/security-ediscoverycustodian-update.md
                   - name: Ativar
                     href: api/security-ediscoverycustodian-activate.md
                   - name: Liberar
@@ -14782,7 +14780,7 @@ items:
                     href: api/security-ediscoverycustodian-list-sitesources.md
                   - name: Criar origem do site
                     href: api/security-ediscoveryholdpolicy-post-sitesources.md
-              - name: Search
+              - name: Pesquisar
                 href: resources/security-ediscoverysearch.md
                 items:
                   - name: Listar
@@ -14832,7 +14830,7 @@ items:
                     href: api/security-ediscoveryreviewset-export.md
                     items:
                       - name: Obter URL de download
-                        href: api/security-ediscoveryexportoperation-downloadurl.md
+                        href: api/security-ediscoveryexportoperation-getdownloadurl.md
                   - name: Consulta
                     href: resources/security-ediscoveryreviewsetquery.md
                     items:
@@ -14850,7 +14848,7 @@ items:
                         href: api/security-ediscoveryreviewsetquery-export.md
                         items:
                           - name: Obter URL de download
-                            href: api/security-ediscoveryexportoperation-downloadurl.md
+                            href: api/security-ediscoveryexportoperation-getdownloadurl.md
                       - name: Apply tags
                         href: api/security-ediscoveryreviewsetquery-applytags.md
                       - name: Executar
@@ -14896,7 +14894,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Ameaça
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -14952,7 +14950,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             items:
@@ -15201,7 +15199,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -15946,10 +15944,10 @@ items:
                 href: api/group-list-permissiongrants.md
               - name: Lista para chat
                 href: api/chat-list-permissiongrants.md
-      - name: Tarefas To do
+      - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Listas de tarefas pendentes
             items:
@@ -16019,7 +16017,7 @@ items:
                 href: api/linkedresource-delete.md
           - name: API de Tarefas Pendentes com tarefas base (preteridas)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/tasks-overview.md
               - name: Lista de tarefas base
                 items:
@@ -16097,7 +16095,7 @@ items:
                     href: api/linkedresource_v2-delete.md
           - name: Tarefas do Outlook (obsoleto)
             items:
-              - name: Tarefa do Outlook (preterida)
+              - name: Outlook tarefa (preterido)
                 items:
                   - name: Tarefa do Outlook
                     href: resources/outlooktask.md
@@ -16117,7 +16115,7 @@ items:
                     href: api/outlooktask-list-attachments.md
                   - name: Adicionar anexo
                     href: api/outlooktask-post-attachments.md
-              - name: Pasta de tarefas do Outlook (preterido)
+              - name: Outlook pasta de tarefas (preterido)
                 items:
                   - name: Pasta de tarefas do Outlook
                     href: resources/outlooktaskfolder.md
@@ -16135,7 +16133,7 @@ items:
                     href: api/outlooktaskfolder-list-tasks.md
                   - name: Criar tarefas na pasta
                     href: api/outlooktaskfolder-post-tasks.md
-              - name: Grupo de tarefas do Outlook (preterido)
+              - name: Outlook grupo de tarefas (preterido)
                 items:
                   - name: Grupo de tarefas do Outlook
                     href: resources/outlooktaskgroup.md
@@ -16181,7 +16179,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Propriedades estendidas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/extended-properties-overview.md
                   - name: Propriedades estendidas de valor único
                     items:

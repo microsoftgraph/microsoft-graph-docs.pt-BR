@@ -1,27 +1,17 @@
 ---
-author: JeremyKelley
-ms.date: 09/10/2017
-title: Pacote
-ms.localizationpriority: medium
-description: " ou uma coleção de itens que devem ser tratados como uma coleção em vez de itens individuais."
-ms.prod: ''
-doc_type: resourcePageType
-ms.openlocfilehash: cf4a0ec97c328bb10aa51800c7ec18b4a8512286
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: MT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094118"
+author: JeremyKelley title: package ms.localizationpriority: medium description: "Indicates that a driveItem is the top-level item in a "package" or a collection of items that should be treated as a collection instead of individual items."
+ms.prod: arquivos doc_type: resourcePageType
 ---
-# <a name="package-resource-type"></a>Tipo de recurso Package
+
+# <a name="package-resource-type"></a>tipo de recurso de pacote
 
 Namespace: microsoft.graph
 
-O recurso **Package** indica que um DriveItem é o item de nível superior em um "pacote" ou uma coleção de itens que devem ser tratados como uma coleção, em vez de itens individuais.
+O **recurso** de pacote indica que um **driveItem** é o item de nível superior em um "pacote" ou uma coleção de itens que devem ser tratados como uma coleção em vez de itens individuais.
 
 Um exemplo de um pacote é um bloco de anotações do OneNote. Embora o bloco de anotações seja composto de arquivos e pastas que representam o conteúdo do bloco de anotações, o item de nível superior que representa o bloco de anotações tem uma faceta **package** para indicar aos clientes que se trata de uma coleção de dados que deve ser tratada de forma especial.
 
-DriveItems com a faceta **package** não incluem uma faceta **folder** ou **file**, mas são conceitualmente semelhantes a um item com uma faceta **folder**.
+**driveItems** com **a faceta** do pacote não incluem  uma pasta **ou faceta** de arquivo, mas são conceitualmente semelhantes a um item com uma faceta **de** pasta.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -40,7 +30,7 @@ DriveItems com a faceta **package** não incluem uma faceta **folder** ou **file
 
 ## <a name="remarks"></a>Comentários 
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para obter mais informações sobre as facetas em um DriveItem, consulte [driveItem](driveitem.md).
 
 
 <!-- {

@@ -4,12 +4,12 @@ description: O Microsoft Graph fornece parâmetros de consulta opcionais que voc
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e0af0692e89f0ea099fb480ecd57cd60e54bd798
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 7f87d5c3d410a351c366d5cc66550f868aba4711
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461370"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034716"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -21,6 +21,9 @@ O Microsoft Graph fornece suporte a parâmetros de consulta opcionais que você 
 Os parâmetros de consulta podem ser [opções de consulta de sistema OData](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) ou outros parâmetros de consulta.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
+
+> [!NOTE]
+> O [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2) exige que os caracteres reservados sejam codificados em porcentagem em URLs. No entanto, este documento pode não mostrar os caracteres codificados por porcentagem para legibilidade. Os caracteres reservados, como a vírgula (`,`) em uma expressão `startsWith`, devem, no entanto, ser codificados por porcentagem nas suas solicitações.
 
 ## <a name="odata-system-query-options"></a>Opções de consulta de sistema OData
 Uma operação de API do Microsoft Graph pode oferecer suporte a uma ou mais das seguintes opções de consulta de sistema OData. Essas opções de consulta são compatíveis com a [linguagem de consulta OData V4][odata-query].

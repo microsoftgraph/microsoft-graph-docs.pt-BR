@@ -3,14 +3,14 @@ title: tipo de recurso de página
 description: Uma página em um bloco OneNote bloco de anotações.
 ms.localizationpriority: medium
 author: jewan-microsoft
-ms.prod: ''
+ms.prod: notes
 doc_type: resourcePageType
-ms.openlocfilehash: f2a21f47d0e29930cf4012f4a2713b372cd77d2c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f1cdc80494d8b16aa34ca5675fcbe5652bdf4c76
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117974"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034912"
 ---
 # <a name="page-resource-type"></a>tipo de recurso de página
 
@@ -52,17 +52,17 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|conteúdo|Fluxo|Conteúdo HTML da página.|
+|conteúdo|Fluxo|O conteúdo HTML da página.|
 |contentUrl|Cadeia de caracteres|A URL do conteúdo HTML da página.  Somente leitura.|
 |createdByAppId|Cadeia de caracteres|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a página foi criada. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|id|String|O identificador exclusivo da página.  Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da página.  Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a página foi modificada pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.|
-|level|Int32|O nível de recuo da página. Somente leitura.|
-|links|[PageLinks](pagelinks.md)|Links para abrir a página. O `oneNoteClientURL` link abre a página no OneNote cliente nativo se estiver instalado. O `oneNoteWebUrl` link abre a página em OneNote na Web. Somente leitura.|
-|order|Int32|A ordem da página em sua seção pai. Somente leitura.|
-|self|Cadeia de caracteres|O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.|
-|title|String|O título da página. |
+|Nível|Int32|O nível de recuo da página. Somente leitura.|
+|links|[PageLinks](pagelinks.md)|Links para abrir a página. O `oneNoteClientURL` link abre a página no OneNote nativo se ele estiver instalado. O `oneNoteWebUrl` link abre a página no OneNote na Web. Somente leitura.|
+|Ordem|Int32|A ordem da página dentro de sua seção pai. Somente leitura.|
+|Auto|Cadeia de caracteres|O ponto de extremidade em que você pode obter detalhes sobre a página. Somente leitura.|
+|title|Cadeia de caracteres|O título da página. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -75,9 +75,9 @@ Veja a seguir uma representação JSON do recurso.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter página](../api/page-get.md) | [Page](page.md) |Leia as propriedades e as relações da página.|
-|[Atualizar conteúdo da página](../api/page-update.md) | Nenhum(a) |Atualize o conteúdo HTML da página. |
-|[Excluir página](../api/page-delete.md) | Nenhum(a) |Exclua a página. |
-|[copyToSection](../api/page-copytosection.md)| Nenhum(a) |Copia a página para uma seção específica.|
+|[Atualizar conteúdo da página](../api/page-update.md) | Nenhum |Atualize o conteúdo HTML da página. |
+|[Excluir página](../api/page-delete.md) | Nenhum |Exclua a página. |
+|[copyToSection](../api/page-copytosection.md)| Nenhum |Copia a página para uma seção específica.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3e0cf3ea1b24c3c5556a11bb0aca3d9bed13df4f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 35b230794b6fca690b90b6a8dff32edb43a8601a
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206969"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034940"
 ---
 # <a name="create-unifiedroleassignment"></a>Criar unifiedRoleAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Crie um novo [objeto unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,16 +27,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | RoleManagement.ReadWrite.Directory |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | RoleManagement.ReadWrite.Directory |
 
 ### <a name="for-the-entitlement-management-provider"></a>Para o provedor de gerenciamento de direitos
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) |  EntitlementManagement.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -66,16 +66,16 @@ POST /roleManagement/entitlementManagement/roleAssignments
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) . A solicitação deve ter um escopo definido no Azure Active Directory (Azure AD) especificado por **directoryScopeId** ou um escopo específico do aplicativo especificado pelo **appScopeId**. Exemplos de Azure AD escopos são locatário (`/`), unidades administrativas ou aplicativos. Para obter mais informações sobre appScope, consulte [appScope](../resources/appscope.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) . A solicitação deve ter um escopo definido no Azure Active Directory (Azure AD) especificado por **directoryScopeId** ou um escopo específico do aplicativo especificado pelo **appScopeId**. Exemplos de Azure AD escopos são locatário (`/`), unidade administrativa ou aplicativo. Para obter mais informações sobre appScope, consulte [appScope](../resources/appscope.md).
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um objeto [unifiedRoleAssignment](../resources/unifiedroleassignment.md) .
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|roleDefinitionId|Cadeia de Caracteres| Identificador da definição de função para a atribuição.|
-|principalId|Cadeia de Caracteres| O identificador da entidade de segurança à qual a atribuição é concedida. |
-|directoryScopeId|Cadeia de Caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. Essa propriedade ou **appScopeId** é necessária. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
-|appScopeId|Cadeia de Caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Essa propriedade ou **directoryScopeId** é necessário. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
+|roleDefinitionId|Cadeia de caracteres| Identificador da definição de função para a atribuição.|
+|principalId|Cadeia de caracteres| O identificador da entidade de segurança à qual a atribuição é concedida. |
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. Essa propriedade ou **appScopeId** é necessária. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo.|
+|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando o escopo de atribuição é específico do aplicativo. Essa propriedade ou **directoryScopeId** é necessário. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas.|
 
 ## <a name="response"></a>Resposta
 
@@ -83,7 +83,7 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-a-role-assignment-with-a-tenant-wide-scope"></a>Exemplo 1: Criar uma atribuição de função com um escopo de todo o locatário
+### <a name="example-1-create-a-role-assignment-with-tenant-scope"></a>Exemplo 1: Criar uma atribuição de função com escopo de locatário
 
 #### <a name="request"></a>Solicitação
 
@@ -161,11 +161,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--create-a-role-assignment-with-an-administrative-unit-scope"></a>Exemplo 2: Criar uma atribuição de função com um escopo de unidade administrativa
+### <a name="example-2--create-a-role-assignment-with-administrative-unit-scope"></a>Exemplo 2: Criar uma atribuição de função com escopo de unidade administrativa
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir atribui a uma entidade de segurança a função de Administrador de Usuário em uma unidade administrativa.
+O exemplo a seguir atribui a função de Administrador de Usuário a uma entidade de segurança com escopo de unidade administrativa.
 
 
 
@@ -239,7 +239,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3--create-a-role-assignment-with-an-application-scope"></a>Exemplo 3: Criar uma atribuição de função com um escopo de aplicativo
+### <a name="example-3--create-a-role-assignment-with-application-scope"></a>Exemplo 3: Criar uma atribuição de função com o escopo do aplicativo
 
 #### <a name="request"></a>Solicitação
 

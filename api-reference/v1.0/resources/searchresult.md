@@ -1,23 +1,22 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SearchResult
+title: Tipo de recurso searchResult
 ms.localizationpriority: medium
-description: O recurso SearchResult indica que um item é a resposta a uma consulta de pesquisa.
-ms.prod: ''
+description: O recurso searchResult indica que um item é a resposta a uma consulta de pesquisa.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: ad26c1df29e78d6c04c4332d5a1c1e9f88c12513
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 376e0a709f7607215aac1b1509434549bd437db3
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126685"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034793"
 ---
-# <a name="searchresult-resource-type"></a>Tipo de recurso SearchResult
+# <a name="searchresult-resource-type"></a>Tipo de recurso searchResult
 
 Namespace: microsoft.graph
 
-O recurso **SearchResult** indica que um item é a resposta a uma consulta de pesquisa.
+O **recurso searchResult** indica que um item é a resposta a uma consulta de pesquisa.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -41,7 +40,7 @@ O recurso **SearchResult** indica que um item é a resposta a uma consulta de pe
 
 ## <a name="remarks"></a>Comentários 
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para obter mais informações sobre as facetas em um DriveItem, consulte [driveItem](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

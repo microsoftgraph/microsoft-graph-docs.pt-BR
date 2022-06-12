@@ -5,18 +5,19 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fceaca74289ed68c861e23c30ce6dd2b46a6d2b5
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: f74ab131db847a942923e2caac074a40bed6db45
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62804714"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034499"
 ---
 # <a name="create-channel"></a>Criar canal
 
 Namespace: microsoft.graph
 
 Crie um novo [canal](../resources/channel.md) em uma equipe, conforme especificado no corpo da solicitação.
+> **Nota:** Você pode adicionar no máximo 200 membros ao criar um canal privado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,15 +25,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Channel.Create.Group *, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Observações**: As permissões marcadas com ** só têm suporte para compatibilidade com compatibilidade Recomendamos que você atualize suas soluções para usar uma permissão alternativa listada na tabela anterior e evite usar essas permissões adiante. Permissões marcadas com * usem [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Observações**: as permissões marcadas com ** têm suporte apenas para compatibilidade com versões anteriores. Recomendamos que você atualize suas soluções para usar uma permissão alternativa listada na tabela anterior e evite usar essas permissões daqui para frente. Permissões marcadas com * usem [consentimento específico do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 >
-> Esta API dá suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> Essa API dá suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 >
-> No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados usando APIs de trabalho em equipe.Migrate.All e/ou [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+> No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados usando o Teamwork.Migrate.All e/ou [APIs de migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -130,7 +131,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Exemplo 2: Criar canal privado em nome do usuário
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Exemplo 2: Criar um canal privado em nome do usuário
 
 #### <a name="request"></a>Solicitação
 
@@ -272,7 +273,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Resposta
 
-O exemplo a seguir mostra a resposta. O header Content-Location na resposta especifica o caminho para o canal que está sendo provisionado.
+O exemplo a seguir mostra a resposta. O cabeçalho Content-Location na resposta especifica o caminho para o canal que está sendo provisionado.
 Depois de provisionado, esse canal pode ser usado para [importar mensagens](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 <!-- {
   "blockType": "response",
@@ -299,7 +300,7 @@ Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24
 }
 ```
 
-### <a name="example-4-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>Exemplo 4: Criar canal privado em nome do usuário usando o nome principal do usuário
+### <a name="example-4-create-private-channel-on-behalf-of-user-using-user-principal-name"></a>Exemplo 4: Criar um canal privado em nome do usuário usando o nome UPN
 
 #### <a name="request"></a>Solicitação
 

@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: SharingLink
+title: Tipo de recurso sharingLink
 ms.localizationpriority: medium
-description: O recurso SharingLink agrupa itens de dados relacionados ao link em uma única estrutura.
-ms.prod: ''
+description: Os recursos sharingLink agrupam itens de dados relacionados ao link em uma única estrutura.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 5333d397af2627537017de1f90e193e6442fcac5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 95994292e4925e577c5ffe3dee4edb88fdeaf5a6
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032213"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034394"
 ---
-# <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
+# <a name="sharinglink-resource-type"></a>Tipo de recurso sharingLink
 
 Namespace: microsoft.graph
 
-O recurso **SharingLink** agrupa itens de dados relacionados ao link em uma única estrutura.
+Agrupa itens de dados relacionados ao link em uma única estrutura.
 
-Se um recurso [**Permission**](permission.md) tiver uma faceta **sharingLink** não nula, a permissão representará um link de compartilhamento (em vez de permissões concedidas a uma pessoa ou um grupo).
+Se um [**recurso**](permission.md) de permissão tiver uma faceta **sharingLink** não nula, a permissão representará um link de compartilhamento (em vez de permissões concedidas a uma pessoa ou grupo).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -47,7 +46,7 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade    | Tipo          | Descrição
 |:------------|:--------------|:-------------------------------------
 | aplicativo | [identity][]  | O aplicativo ao qual o link está associado.
-| tipo        | Cadeia de caracteres        | O tipo do link criado.
+| type        | Cadeia de caracteres        | O tipo do link criado.
 | scope       | String        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
 | preventsDownload | Booliano       | Se for true, o usuário só poderá usar esse link para exibir o item na Web e não poderá usá-lo para baixar o conteúdo do item. Somente para OneDrive for Business e SharePoint.
 | webHtml     | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
@@ -59,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
 
 Esta tabela define os valores possíveis para a propriedade **type**:
 
-| Valor   | Role    | Descrição
+| Valor   | Função    | Descrição
 |:--------|:--------|:---------------------------------------------------------
 | `view`  | `read`  | Um link somente de compartilhamento para exibição, permitindo o acesso somente leitura.
 | `edit`  | `write` | Um link de compartilhamento de edição, permitindo o acesso de leitura e gravação.

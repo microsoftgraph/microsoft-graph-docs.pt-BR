@@ -1,23 +1,22 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Cota
+title: quota
 ms.localizationpriority: medium
-description: O recurso quota fornece detalhes sobre restrições de espaço em um recurso Drive.
-ms.prod: ''
+description: O recurso de cota fornece detalhes sobre restrições de espaço em um recurso de unidade.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 71f0f29c4ab6979f7154940e9007665d020b7f68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f53fc260a785bc44d4e82a149504eca4066e728f
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143807"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034709"
 ---
-# <a name="quota-resource-type"></a>Tipo de recurso Quota
+# <a name="quota-resource-type"></a>tipo de recurso de cota
 
 Namespace: microsoft.graph
 
-O recurso **quota** fornece detalhes sobre restrições de espaço em um recurso [Drive](drive.md).
+O **recurso** de cota fornece detalhes sobre restrições de espaço em um recurso [de](drive.md) unidade.
 
 ## <a name="json-representation"></a>Representação JSON
 

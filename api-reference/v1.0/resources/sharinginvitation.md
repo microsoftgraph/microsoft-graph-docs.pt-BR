@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: SharingInvitation
+title: Tipo de recurso sharingInvitation
 ms.localizationpriority: medium
-description: O recurso SharingInvitation transforma itens de dados relacionados a convite em uma única estrutura.
-ms.prod: ''
+description: O recurso sharingInvitation agrupa itens de dados relacionados ao convite em uma única estrutura.
+ms.prod: files
 doc_type: resourcePageType
-ms.openlocfilehash: 064c687b761872f587f8fe992d320c204dc260f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7c76fe60f21831db94b44df5f6e0ccabdeff98d8
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032255"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034933"
 ---
-# <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
+# <a name="sharinginvitation-resource-type"></a>Tipo de recurso sharingInvitation
 
 Namespace: microsoft.graph
 
-O **recurso SharingInvitation** transforma itens de dados relacionados a convite em uma única estrutura.
+Agrupa itens de dados relacionados ao convite em uma única estrutura.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,7 +49,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="remarks"></a>Comentários
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para saber mais sobre as facetas de um **driveItem**, confira [driveItem](driveitem.md).
 
 [DriveItem]: driveitem.md
 [IdentitySet]: identityset.md
