@@ -5,17 +5,17 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 02f329dbebfa7ecafe4ba2ee7d74695a70c2c753
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bd1b5c588a99ae9f995b47fd40c862ed1daef4f7
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019028"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "66040984"
 ---
 # <a name="list-availableprovidertypes"></a>Listar availableProviderTypes
 Namespace: microsoft.graph
 
-Obter todos os provedores de identidade com suporte em um diretório.
+Obtenha todos os provedores de identidade com suporte em um diretório.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,10 +27,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador Global
-* Administrador do Provedor de Identidade Externa
+* Administrador do Provedor de Identidade Externo
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,11 +51,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção de cadeias de caracteres no corpo da resposta. A coleção de cadeias de caracteres contém os nomes dos provedores de identidade com suporte no locatário.
+Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma coleção de cadeias de caracteres no corpo da resposta. A coleção de cadeias de caracteres contém os nomes dos provedores de identidade com suporte no locatário.
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-list-all-identity-providers-available-in-an-azure-ad-directory"></a>Exemplo 1: listar todos os provedores de identidade disponíveis em um diretório do Azure AD
+### <a name="example-1-list-all-identity-providers-available-in-an-azure-ad-directory"></a>Exemplo 1: listar todos os provedores de identidade disponíveis em um Azure AD de dados
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -87,8 +87,12 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProvide
 [!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -121,7 +125,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-all-identity-providers-available-in-an-azure-ad-b2c-directory"></a>Exemplo 2: listar todos os provedores de identidade disponíveis em um diretório do Azure AD B2C
+### <a name="example-2-list-all-identity-providers-available-in-an-azure-ad-b2c-directory"></a>Exemplo 2: listar todos os provedores de identidade disponíveis em um Azure AD B2C
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -153,7 +157,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProvide
 [!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-b2c-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-b2c-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

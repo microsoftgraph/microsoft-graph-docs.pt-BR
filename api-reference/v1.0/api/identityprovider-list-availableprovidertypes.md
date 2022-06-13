@@ -1,18 +1,18 @@
 ---
 title: Listar availableProviderTypes
-description: Recupere todos os tipos de provedores de identidade disponíveis no diretório.
+description: Recupere todos os tipos de provedor de identidade disponíveis no diretório.
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: b4a3c7205d73e0c8c880787ccfdac864ac26ed1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c58f1bc72dff5c9c60787e1f71d7e5f1649cdfaa
+ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029592"
+ms.lasthandoff: 05/22/2022
+ms.locfileid: "66041004"
 ---
-# <a name="list-availableprovidertypes-deprecated"></a>Listar availableProviderTypes (preterido)
+# <a name="list-availableprovidertypes-deprecated"></a>ListarvailableProviderTypes (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
@@ -29,10 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador Global
-* Administrador do Provedor de Identidade Externa
+* Administrador do Provedor de Identidade Externo
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -89,8 +89,12 @@ GET https://graph.microsoft.com/v1.0/identityProviders/availableProviderTypes
 [!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/identityprovider-availableprovidertypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

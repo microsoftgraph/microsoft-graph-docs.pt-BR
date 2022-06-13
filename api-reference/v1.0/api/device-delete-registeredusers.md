@@ -1,16 +1,16 @@
 ---
 title: Excluir registeredUsers
 description: Remova um usuário como um usuário registrado do dispositivo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3173b57739bc3c9021c3147b74f0183a5bc667f0
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 0d675eaf7446d726da0e3af415070ebbfc2de618
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "66040899"
 ---
 # <a name="delete-registereduser"></a>Excluir registeredUser
 

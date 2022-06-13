@@ -6,16 +6,18 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Recupere uma coleção de recursos ThumbnailSet para um recurso DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 3ac4c607ec2231767248f109a110add506ea4e0e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4e2d37391e18928d5a343e5072628834eaa93981
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140862"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "66041053"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
 Namespace: microsoft.graph
+
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 Recupere uma coleção de recursos [ThumbnailSet](../resources/thumbnailset.md) para um recurso [DriveItem](../resources/driveitem.md).
 
@@ -55,9 +57,9 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte ao [Parâmetro de consulta OData](/graph/query-parameters) `$select` para personalizar a resposta.
+Esse método dá suporte ao`$select` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta.
 
-Além disso, este método dá suporte à recuperação da miniatura com o valor de orientação original EXIF e sem a rotação aplicada, aplicando o parâmetro `originalOrientation=true` de consulta.
+Além disso, esse método dá suporte à recuperação da miniatura com o valor EXIF `originalOrientation=true` de orientação original e sem a rotação aplicada acrescentando o parâmetro de consulta.
 No momento, só há suporte para isso no OneDrive pessoal.
 
 ## <a name="response"></a>Resposta
@@ -157,7 +159,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | O identificador exclusivo do item referenciado.                                           |
 | **thumb-id** | number | O índice da miniatura, geralmente de 0 a 4. Se houver uma miniatura personalizada, seu índice será 0. |
-| **size**     | string | O tamanho da miniatura solicitada. Pode ter um dos tamanhos padrão listados abaixo, ou um tamanho personalizado. |
+| **size**     | string | O tamanho da miniatura solicitada. Este pode ser um dos tamanhos padrão listados abaixo ou um tamanho personalizado. |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -215,7 +217,7 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-URLs de miniaturas são seguras em cache. A URL mudará se o item for alterado de uma maneira que exigir que uma nova miniatura seja gerada.
+As URLs em miniatura são seguras em cache. A URL será alterada, se o item se alterar de uma forma que exija a geração de uma nova miniatura.
 
 
 ## <a name="getting-thumbnails-while-listing-driveitems"></a>Obter miniaturas ao listar DriveItems
