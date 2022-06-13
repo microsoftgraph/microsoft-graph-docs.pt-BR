@@ -4,12 +4,12 @@ description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 52c50796722faf51c91b65d65a21b3b495566924
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 3ca25ff3e16437463cac719b2ea5ab6dd47c8687
+ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819696"
+ms.lasthandoff: 06/12/2022
+ms.locfileid: "66034549"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
@@ -207,7 +207,7 @@ As solicitações em lote JSON estão atualmente limitadas a 20 solicitações i
 
 * Dependendo das APIs que fazem parte da solicitação em lote, os serviços subjacentes impõem seus próprios limites de restrição que afetam os aplicativos que usam o Microsoft Graph para acessá-los.
 * As solicitações em um lote são avaliadas individualmente em relação aos limites de controle e, se alguma solicitação exceder os limites, ela falhará com um status de `429`.
-* Os lotes direcionados aos recursos do Outlook (como correio e calendário) podem conter apenas quatro solicitações direcionadas à mesma caixa de correio. Para obter detalhes, confira [Limites de serviço do Outlook][throttling-outlook].
+* Os lotes direcionados a recursos do Outlook (como email e calendário) podem conter apenas quatro solicitações direcionadas à mesma caixa de correio. Para obter detalhes, confira [Limites de serviço do Outlook][throttling-outlook].
 
 Para obter mais informações, confira [Limitação e envio em lote][throttling-and-batching].
 
