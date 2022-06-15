@@ -1,15 +1,15 @@
 ---
 title: Visão geral do Microsoft Graph
-description: O Microsoft Graph é a porta de entrada para dados e inteligência no Microsoft 365. O Microsoft Graph fornece um modelo de programação unificado que você pode usar para aproveitar a enorme quantidade de dados no Microsoft 365, Enterprise Mobility + Security e Windows.
+description: Use os dados do Microsoft Graph e outros conjuntos de dados para obter insights e análises, estender as experiências do Microsoft 365 e criar aplicativos exclusivos e inteligentes.
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 195425a45bd89e299fe623185553af07170cd489
-ms.sourcegitcommit: 562dc670cea411de0ecc232840ce1c650abbe34c
+ms.openlocfilehash: fcc08f9cbb1fb002399957c58e7634621a1d7218
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65549285"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093077"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão Geral do Microsoft Graph
 
@@ -18,6 +18,7 @@ O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. Ele 
 ![Os conectores do Microsoft Graph, do Microsoft Graph Data Connect e do Microsoft Graph permitem estender as experiências do Microsoft 365 e criar aplicativos inteligentes.](images/microsoft-graph-dataconnect-connectors-enhance.png)
 
 ## <a name="data-and-services-powering-the-microsoft-365-platform"></a>Dados e serviços que impulsionam a plataforma Microsoft 365
+
 Na plataforma Microsoft 365, três componentes principais facilitam o acesso e o fluxo de dados:
 
 - A **API do Microsoft Graph** oferece um único ponto de extremidade, `https://graph.microsoft.com`, para fornecer acesso a dados e insights avançados e centrados em pessoas na nuvem da Microsoft, incluindo Microsoft 365, Windows e Enterprise Mobility + Security. Você pode usar APIs REST ou SDKs para acessar o endpoint e criar aplicativos que oferecem suporte a cenários do Microsoft 365, abrangendo produtividade, colaboração, educação, inteligência de pessoas e local de trabalho e mais. O Microsoft Graph também inclui um conjunto avançado de serviços que gerencia a identidade do usuário e do dispositivo, acesso, conformidade, e segurança e ajuda a proteger organizações contra vazamento ou perda de dados.
@@ -34,7 +35,6 @@ O Microsoft Graph expõe as APIs REST e bibliotecas do cliente para acessar dado
 - **Serviços Enterprise Mobility + Security:** Análise de Ameaças Avançada, Proteção Contra Ameaças Avançada, Azure Active Directory, Identity Manager e Intune
 - **Serviços do Windows:** atividades, dispositivos, notificações, Impressão Universal
 - **Serviços Dynamics 365 Business Central**
-
 
 Para saber mais, confira os [Principais serviços e recursos do Microsoft Graph](overview-major-services.md).
 
@@ -124,7 +124,6 @@ Microsoft Graph Data Connect fornece uma nova maneira de interagir com os dados 
 | **Consentimento do usuário** | Self<br>Tipos de recursos | Nenhum |
 | **Consentimento do administrador** | Toda a organização<br>Tipos de recursos | Selecione grupos de usuários<br>Propriedades e tipos de recursos<br>Exclui usuários |
 | **Ferramentas de acesso** | Consultas da Web RESTful | Azure Data Factory |
-
 
 ## <a name="next-steps"></a>Próximas etapas
 
