@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: c873eac5de6e2c047b39122f662aaaae2f7d2b26
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 260728cc77cfb33ed8688009ec3fa7393f316b51
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65322883"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098635"
 ---
 ```go
 
@@ -15,9 +15,12 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewProfileCardProperty()
 requestBody.SetAnnotations( []ProfileCardAnnotation {
     msgraphsdk.NewProfileCardAnnotation(),
-    SetAdditionalData(map[string]interface{}{
-        "localizations":  []Object {
-        }
+    SetLocalizations( []DisplayNameLocalization {
+        msgraphsdk.NewDisplayNameLocalization(),
+languageTag := "no-NB"
+        SetLanguageTag(&languageTag)
+displayName := "Kostnads Senter"
+        SetDisplayName(&displayName)
     }
 }
 organizationId := "organization-id"

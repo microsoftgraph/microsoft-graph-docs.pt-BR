@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 56e9ac30c4bceb883d53d0930da268b900548673
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: c67597aa41deb43839bb20f9c78b7769aa82f37f
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65322309"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098575"
 ---
 ```go
 
@@ -25,8 +25,10 @@ content := "They were <b>awesome</b>!"
 body.SetContent(&content)
 requestBody.SetToRecipients( []Recipient {
     msgraphsdk.NewRecipient(),
-    SetAdditionalData(map[string]interface{}{
-    }
+emailAddress := msgraphsdk.NewEmailAddress()
+    SetEmailAddress(emailAddress)
+address := "AdeleV@contoso.onmicrosoft.com"
+    emailAddress.SetAddress(&address)
 }
 result, err := graphClient.Me().Messages().Post(requestBody)
 

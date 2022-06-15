@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 904e1931e5c12f279579105d2fa5339096113299
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: ef6e62c02101242c26d302e05a5b25a613153aa2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65325550"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098479"
 ---
 ```go
 
@@ -38,8 +38,18 @@ activityDomain := "work"
 timeConstraint.SetActivityDomain(&activityDomain)
 timeConstraint.SetTimeSlots( []TimeSlot {
     msgraphsdk.NewTimeSlot(),
-    SetAdditionalData(map[string]interface{}{
-    }
+start := msgraphsdk.NewDateTimeTimeZone()
+    SetStart(start)
+dateTime := "2019-04-16T09:00:00"
+    start.SetDateTime(&dateTime)
+timeZone := "Pacific Standard Time"
+    start.SetTimeZone(&timeZone)
+end := msgraphsdk.NewDateTimeTimeZone()
+    SetEnd(end)
+dateTime := "2019-04-18T17:00:00"
+    end.SetDateTime(&dateTime)
+timeZone := "Pacific Standard Time"
+    end.SetTimeZone(&timeZone)
 }
 isOrganizerOptional := "false"
 requestBody.SetIsOrganizerOptional(&isOrganizerOptional)

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 0aa435cfda18ffcb12b463f3c7c75d0ccb2b0d7e
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 4c31a4729e43dba9363c1b070667aede6a2511a9
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65324588"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098588"
 ---
 ```go
 
@@ -15,10 +15,10 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 requestBody := msgraphsdk.NewGovernanceRoleSetting()
 requestBody.SetAdminEligibleSettings( []GovernanceRuleSetting {
     msgraphsdk.NewGovernanceRuleSetting(),
-    SetAdditionalData(map[string]interface{}{
-        "ruleIdentifier": "ExpirationRule",
-        "setting": "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}",
-    }
+ruleIdentifier := "ExpirationRule"
+    SetRuleIdentifier(&ruleIdentifier)
+setting := "{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}"
+    SetSetting(&setting)
 }
 privilegedAccessId := "privilegedAccess-id"
 governanceRoleSettingId := "governanceRoleSetting-id"

@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: bdc9d3b5455cdb18c794e454a0c56363552581d9
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 2b71929eae474697b406dc737287923caee2f5db
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092070"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098587"
 ---
 ```go
 
@@ -19,15 +19,15 @@ description := "My Class Team’s Description"
 requestBody.SetDescription(&description)
 requestBody.SetChannels( []Channel {
     msgraphsdk.NewChannel(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Class Announcements 📢",
-        "isFavoriteByDefault": true,
-    }
+displayName := "Class Announcements 📢"
+    SetDisplayName(&displayName)
+isFavoriteByDefault := true
+    SetIsFavoriteByDefault(&isFavoriteByDefault)
     msgraphsdk.NewChannel(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Homework 🏋️",
-        "isFavoriteByDefault": true,
-    }
+displayName := "Homework 🏋️"
+    SetDisplayName(&displayName)
+isFavoriteByDefault := true
+    SetIsFavoriteByDefault(&isFavoriteByDefault)
 }
 memberSettings := msgraphsdk.NewTeamMemberSettings()
 requestBody.SetMemberSettings(memberSettings)
@@ -54,10 +54,7 @@ requestBody.SetInstalledApps( []TeamsAppInstallation {
 requestBody.SetAdditionalData(map[string]interface{}{
     "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
 }
-options := &msgraphsdk.TeamsRequestBuilderPostOptions{
-    Body: requestBody,
-}
-result, err := graphClient.Teams().Post(options)
+result, err := graphClient.Teams().Post(requestBody)
 
 
 ```

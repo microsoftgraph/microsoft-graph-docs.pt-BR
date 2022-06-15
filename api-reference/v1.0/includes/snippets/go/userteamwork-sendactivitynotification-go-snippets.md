@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: fd712dbd6efbbfb0df7a49d8f1fe099b90ed7c8b
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 9ea8d07cb016f8c86e3c7d2af2befc840cc3eff5
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65323149"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66098573"
 ---
 ```go
 
@@ -27,10 +27,10 @@ content := "New Task Created"
 previewText.SetContent(&content)
 requestBody.SetTemplateParameters( []KeyValuePair {
     msgraphsdk.NewKeyValuePair(),
-    SetAdditionalData(map[string]interface{}{
-        "name": "taskId",
-        "value": "Task 12322",
-    }
+name := "taskId"
+    SetName(&name)
+value := "Task 12322"
+    SetValue(&value)
 }
 userId := "user-id"
 graphClient.UsersById(&userId).Teamwork().SendActivityNotification(user-id).Post(requestBody)
