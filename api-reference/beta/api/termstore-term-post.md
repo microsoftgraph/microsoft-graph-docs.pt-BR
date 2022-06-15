@@ -1,23 +1,23 @@
 ---
 title: Criar termo
-description: Crie um novo objeto term.
+description: Crie um novo objeto de termo.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 36aefc94e89881e25792617fcc48d158d62473f2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 43feb7bc5f3b86fa5fbf7255904788f195492ebf
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977585"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66094835"
 ---
 # <a name="create-term"></a>Criar termo
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto term.](../resources/termstore-term.md)
+Crie um novo [objeto de](../resources/termstore-term.md) termo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,19 +47,19 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto term.](../resources/termstore-term.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto de](../resources/termstore-term.md) termo.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar o [termo](../resources/termstore-term.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|labels|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulo para o termo a ser criado|
+|Rótulos|[coleção microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Rótulo para o termo a ser criado|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [term](../resources/termstore-term.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto de](../resources/termstore-term.md) termo no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-term-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-term-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

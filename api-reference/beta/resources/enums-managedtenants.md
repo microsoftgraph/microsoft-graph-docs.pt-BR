@@ -1,18 +1,18 @@
 ---
-title: Valores de enumeração de gerenciamento de vários locatários
-description: Valores Graph enumeração de gerenciamento de vários locatários
+title: Valores de enumeração de gerenciamento multilocatário
+description: Valores de enumeração de gerenciamento multilocatário do Microsoft Graph
 author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: 7218824959465cb7740953f837da0e3e630ec449
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 9b93794e763025b409ff00c0a2b5d13909ca705d
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321621"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095948"
 ---
-# <a name="multi-tenant-management-enumeration-values"></a>Valores de enumeração de gerenciamento de vários locatários
+# <a name="multi-tenant-management-enumeration-values"></a>Valores de enumeração de gerenciamento multilocatário
 
 ### <a name="delegatedprivilegestatus-values"></a>valores delegatedPrivilegeStatus
 
@@ -21,17 +21,19 @@ ms.locfileid: "61321621"
 |none|
 |delegatedAdminPrivileges|
 |unknownFutureValue|
+|granularDelegatedAdminPrivileges|
+|delegatedAndGranularDelegetedAdminPrivileges|
 
-### <a name="managementactionstatus-values"></a>valores managementActionStatus
+### <a name="managementactionstatus-values"></a>Valores managementActionStatus
 
 |Member|
 |:---|
 |toAddress|
-|completed|
+|Concluído|
 |erro|
-|timeOut|
-|inProgress|
-|planejado|
+|Timeout|
+|Inprogress|
+|Planejado|
 |resolvedBy3rdParty|
 |resolvedThroughAlternateMitigation|
 |riskAccepted|
@@ -41,12 +43,12 @@ ms.locfileid: "61321621"
 
 |Member|
 |:---|
-|custom|
+|Personalizado|
 |dispositivos|
-|identity|
+|Identidade|
 |unknownFutureValue|
 
-### <a name="managementparametervaluetype-values"></a>valores managementParameterValueType
+### <a name="managementparametervaluetype-values"></a>Valores managementParameterValueType
 
 |Member|
 |:---|
@@ -54,56 +56,56 @@ ms.locfileid: "61321621"
 |inteiro|
 |booliano|
 |guid|
-|stringCollection|
-|integerCollection|
+|Stringcollection|
+|Integercollection|
 |booleanCollection|
 |guidCollection|
 |unknownFutureValue|
 
-### <a name="tenantonboardingstatus-values"></a>valores tenantOnboardingStatus
+### <a name="tenantonboardingstatus-values"></a>Valores tenantOnboardingStatus
 
 |Member|
 |:---|
-|inelegível|
+|Inelegível|
 |inProcess|
-|active|
-|inativo|
+|Ativo|
+|Inativo|
 |unknownFutureValue|
 
-### <a name="tenantonboardingeligibilityreason-values"></a>valores tenantOnboardingEligibilityReason
+### <a name="tenantonboardingeligibilityreason-values"></a>Valores tenantOnboardingEligibilityReason
 
 |Member|
 |:---|
 |none|
-|contractType|
+|Contracttype|
 |delegatedAdminPrivileges|
 |usersCount|
 |license|
 |unknownFutureValue|
 
-### <a name="workloadactioncategory-values"></a>valores workloadActionCategory
+### <a name="workloadactioncategory-values"></a>Valores workloadActionCategory
 
 |Member|
 |:---|
-|automatizado|
+|Automatizado|
 |Manual|
 |unknownFutureValue|
 
-### <a name="workloadactionstatus-values"></a>valores workloadActionStatus
+### <a name="workloadactionstatus-values"></a>Valores workloadActionStatus
 
 |Member|
 |:---|
 |toAddress|
-|completed|
+|Concluído|
 |erro|
-|timeOut|
-|inProgress|
+|Timeout|
+|Inprogress|
 |unknownFutureValue|
 
-### <a name="workloadonboardingstatus-values"></a>valores workloadOnboardingStatus
+### <a name="workloadonboardingstatus-values"></a>Valores workloadOnboardingStatus
 
 |Member|
 |:---|
 |notOnboarded|
-|onboarded|
+|integrado|
 |unknownFutureValue|

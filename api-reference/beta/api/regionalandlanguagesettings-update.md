@@ -5,12 +5,12 @@ author: jasonbro
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5be6239d350e8964583967f9647396f921b2a1e3
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6ab22ef6f3f51ff43b7441157e85ede2a5d93a59
+ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62102415"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "66096074"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Atualizar regionalAndLanguageSettings
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize algumas ou todas as propriedades de um [objeto regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
+Atualize algumas ou todas as propriedades de um [objeto regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão                   |Permissão (do mínimo para o mais privilegiado)     |
+|Tipo de permissão                   |Permissão (do menos para o mais privilegiado)     |
 |----------------------------------|---------------------------------------------- |
 |Delegado (conta corporativa ou de estudante)|User.ReadWrite, User.ReadWrite.All             |
-|Delegada (conta pessoal)      |User.ReadWrite, User.ReadWrite.All             |
+|Delegado (conta pessoal)      |User.ReadWrite, User.ReadWrite.All             |
 |Aplicativo                       |User.ReadWrite, User.ReadWrite.All             |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,17 +50,17 @@ PATCH /settings/regionalAndLanguageSettings
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
- **PUT**: No corpo da solicitação, fornece um [objeto regionalAndLanguageSettings.](../resources/regionalAndLanguageSettings.md)
+ **PUT**: No corpo da solicitação, forneça um [objeto regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) .
  
- **PATCH**: fornece somente os valores para campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
+ **PATCH**: forneça apenas os valores para campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
  
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta 200 e o **objeto regionalAndLanguageSettings** atualizado.
+Se bem-sucedido, este método retorna um código de resposta 200 e o objeto **regionalAndLanguageSettings** atualizado.
 
 ## <a name="example"></a>Exemplo
 
-### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>Exemplo 1: Atualizar todo o objeto regionalAndLanguageSettings do usuário in-loca
+### <a name="example-1-update-the-entire-regionalandlanguagesettings-object-of-the-signed-in-user"></a>Exemplo 1: Atualizar todo o objeto regionalAndLanguageSettings do usuário conectado
 
 #### <a name="request"></a>Solicitação
 
@@ -136,8 +136,9 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/put-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
-
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -152,7 +153,7 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>Exemplo 2: Atualizar propriedades selecionadas do usuário in-locar
+### <a name="example-2-update-selected-properties-of-the-signed-in-user"></a>Exemplo 2: Atualizar as propriedades selecionadas do usuário conectado
 
 #### <a name="request"></a>Solicitação
 
@@ -206,7 +207,6 @@ Content-type: application/json
 ---
 
 
----
 
 #### <a name="response"></a>Resposta
 

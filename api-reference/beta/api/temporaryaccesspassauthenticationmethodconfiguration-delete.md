@@ -1,23 +1,23 @@
 ---
 title: Excluir temporaryAccessPassAuthenticationMethodConfiguration
-description: Remova as alterações feitas em um objeto temporaryAccessPassAuthenticationMethodConfiguration.
+description: Reverta a política de Passagem de Acesso Temporário para sua configuração padrão, representada por um objeto temporaryAccessPassAuthenticationMethodConfiguration padrão.
 author: tilarso
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a9ba4b0729f0c2f15af5e251a470f05ef8812c90
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: c7ec488a7ce482939221c56a6ee4f87aa9af4cb8
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65970983"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095955"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethodconfiguration"></a>Excluir temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova as alterações feitas [no objeto temporaryAccessPassAuthenticationMethodConfiguration revertendo](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) a política para sua configuração padrão.
+Reverta a política de Passagem de Acesso Temporário para sua configuração padrão, representada por um objeto [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) padrão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -25,10 +25,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Administrador da Política de Autenticação
 * Administrador Global
@@ -40,9 +40,8 @@ Para cenários delegados, o administrador precisa de uma das seguintes funções
 }
 -->
 ``` http
-DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/TemporaryAccessPass
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
-
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -64,14 +63,17 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
   "name": "delete_temporaryaccesspassauthenticationmethodconfiguration"
 }
 -->
+```msgraph-interactive
+DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass`
+```
 
 ### <a name="response"></a>Resposta
-
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```

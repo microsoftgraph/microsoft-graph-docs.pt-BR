@@ -1,24 +1,24 @@
 ---
 author: JeremyKelley
-description: Confira um recurso driveItem para impedir que outras pessoas editem o documento e suas alterações sejam visíveis até que a documentação esteja marcada.
-title: 'driveItem: checkout'
-localization_priority: Normal
+description: Confira um recurso driveItem para impedir que outras pessoas editem o documento e suas alterações sejam visíveis até que o check-in documentado seja feito.
+title: 'driveItem: check-out'
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8697f139243c59bd05d88612293645bfb42733ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 60a780e48114d322425a0f8ca8c3b7ff362cf5d3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48963841"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093659"
 ---
-# <a name="driveitem-checkout"></a>driveItem: checkout
+# <a name="driveitem-checkout"></a>driveItem: check-out
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Confira um recurso **driveItem** para impedir que outras pessoas editem o documento e impedir que as alterações sejam visíveis até que seja [feito o check-in](driveitem-checkin.md)documentado.
+Confira um **recurso driveItem** para impedir que outras pessoas editem o documento e impedir que suas alterações sejam visíveis até que o [documento seja verificado](driveitem-checkin.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -73,12 +73,16 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 [!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkout-item-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a chamada de API retornará `204 No content` .
+Se tiver êxito, a chamada à API retornará `204 No content`.
 
 <!-- { "blockType": "response" } -->
 

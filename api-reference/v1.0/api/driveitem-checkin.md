@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Verifique um recurso driveItem de check-out, que disponibiliza a versão do documento para outras pessoas.
-title: 'driveItem: checkin'
+description: Faça check-in de um recurso driveItem com check-out, que disponibiliza a versão do documento para outras pessoas.
+title: 'driveItem: check-in'
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6c98cf8ced988a769b12726b5d2b8a0f60f33c05
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b628a482bebcf43205241afdc396c89159813d1c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090660"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094653"
 ---
-# <a name="driveitem-checkin"></a>driveItem: checkin
+# <a name="driveitem-checkin"></a>driveItem: check-in
 
 Namespace: microsoft.graph
 
-Verifique um recurso **driveItem** de check-out, que disponibiliza a versão do documento para outras pessoas.
+Faça check-in de um **recurso driveItem** com check-out, que disponibiliza a versão do documento para outras pessoas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a chamada da API retornará `204 No content` .
+Se tiver êxito, a chamada à API retornará `204 No content`.
 
 ## <a name="example"></a>Exemplo
 
@@ -85,6 +85,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkin-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

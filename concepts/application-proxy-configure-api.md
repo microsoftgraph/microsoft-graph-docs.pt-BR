@@ -1,26 +1,26 @@
 ---
-title: Configurar Proxy de Aplicativo apIs do Microsoft Graph
-description: Configure Proxy de Aplicativo usando as APIs do Microsoft Graph para fornecer acesso remoto e logon único a aplicativos locais.
+title: Configurar Proxy de Aplicativo usando o Microsoft API do Graph
+description: Forneça acesso remoto e logon único para aplicativos locais configurando o Proxy de Aplicativo usando o Microsoft API do Graph.
 author: FaithOmbongi
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 832060f2aed60311b8315a4511a467cc57847f47
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 6c28aeee7809ff71f04beae39a151f344eb05589
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060776"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095137"
 ---
 # <a name="configure-application-proxy-using-the-microsoft-graph-api"></a>Configurar Proxy de Aplicativo usando o Microsoft API do Graph
 
-Neste artigo, você aprenderá a configurar o Azure Active Directory (Azure AD) Proxy de Aplicativo para um aplicativo. Proxy de Aplicativo fornece acesso remoto seguro e logon único para aplicativos Web locais. Depois de Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal do Meus Aplicativos ou de outros portais de aplicativos internos.
+Neste artigo, você aprenderá a configurar Azure Active Directory (Azure AD) Proxy de Aplicativo para um aplicativo. Proxy de Aplicativo fornece acesso remoto seguro e logon único para aplicativos Web locais. Depois de Proxy de Aplicativo para um aplicativo, os usuários podem acessar seus aplicativos locais por meio de uma URL externa, do portal do Meus Aplicativos ou de outros portais de aplicativos internos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial pressupõe que você já instalou um conector e concluiu os [pré-requisitos](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) do Proxy de Aplicativo para que os conectores possam se comunicar com os serviços do Azure AD.
-- Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Conclua as seguintes etapas para definir as permissões no Microsoft Graph Explorer:
-    1. Inicie o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Este tutorial pressupõe que você já instalou um conector e concluiu os [pré-requisitos](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) do Proxy de Aplicativo para que os conectores possam se comunicar com Azure AD serviços.
+- Este tutorial pressupõe que você esteja usando o Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar apIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Conclua as seguintes etapas para definir permissões no Graph Explorer:
+    1. Inicie [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     2. Selecione **Entrar com a conta da Microsoft** e entre usando uma conta de administrador global do Azure AD. Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.
     3. Selecione o ícone de configurações à direita dos detalhes da conta do usuário e, em seguida, selecione **Selecionar permissões**.
 
@@ -435,13 +435,13 @@ No Content - 204
 ## <a name="see-also"></a>Confira também
 
 - [Proxy de Aplicativo](/azure/active-directory/manage-apps/what-is-application-proxy)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [applicationTemplate: criar uma instância](/graph/api/applicationtemplate-instantiate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta)
-- [connector](/graph/api/resources/connector?view=graph-rest-beta)
-- [connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)
-- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0)
-- [perfis de publicação locais](/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [application](/graph/api/resources/application)
+- [applicationTemplate: criar uma instância](/graph/api/applicationtemplate-instantiate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [connector](/graph/api/resources/connector)
+- [connectorGroup](/graph/api/resources/connectorGroup)
+- [implicitGrantSettings](/graph/api/resources/implicitgrantsettings)
+- [perfis de publicação locais](/graph/api/resources/onpremisespublishingprofile-root)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [singleSignOnSettings](/graph/api/resources/onpremisespublishingsinglesignon)
+- [user](/graph/api/resources/user)

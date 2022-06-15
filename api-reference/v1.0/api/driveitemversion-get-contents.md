@@ -1,22 +1,22 @@
 ---
-title: Baixar conteúdo de um recurso DriveItemVersion
-description: Recuperar o conteúdo de uma versão específica de um DriveItem.
+title: Baixar o conteúdo de um recurso driveItemVersion
+description: Recupere o conteúdo de uma versão específica de um driveItem.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: 421a42d1a36fe8e02c53b8a5a6b0f52b3ce92cec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8f080ab1893ea520f4e2094e914356ce71010b6
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037968"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094654"
 ---
-# <a name="download-contents-of-a-driveitemversion-resource"></a>Baixar conteúdo de um recurso DriveItemVersion
+# <a name="download-contents-of-a-driveitemversion-resource"></a>Baixar o conteúdo de um recurso driveItemVersion
 
 Namespace: microsoft.graph
 
-Recuperar o conteúdo de uma versão específica de um [DriveItem](../resources/driveitem.md).
+Recupere o conteúdo de uma versão específica de [um driveItem](../resources/driveitem.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +47,7 @@ Retorna uma resposta `302 Found` que redireciona para uma URL de download previa
 
 Para baixar o conteúdo do arquivo, seu aplicativo precisará seguir o cabeçalho `Location` na resposta. Várias bibliotecas de cliente HTTP seguirão automaticamente o redirecionamento 302 e começarão a baixar imediatamente o arquivo.
 
-URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.
+URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não requerem um cabeçalho `Authorization` para download.
 
 ## <a name="example"></a>Exemplo
 
@@ -97,7 +97,7 @@ Location: https://onedrive.com/34FF49D6...
 
 O OneDrive não preserva os metadados completos de versões anteriores de um arquivo.
 
-Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, um recurso [DriveItemVersion](../resources/driveitemversion.md) é retornado e fornece as informações disponíveis sobre a versão específica.
+Quando seu aplicativo recupera a lista de versões disponíveis para um arquivo, um recurso [driveItemVersion](../resources/driveitemversion.md) é retornado que fornece as informações disponíveis sobre a versão específica.
 
 <!-- {
   "type": "#page.annotation",

@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8d7944e12d093ca62c428f5d90183fbc4f8ff5e9
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ffff5554b829c12e4aab78a40d74f85d6af3f00b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668607"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093953"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Restaura um item recentemente excluído de [itens excluídos](../resources/directory.md). 
 
-Atualmente, a funcionalidade de restaurar itens excluídos só tem suporte para os recursos de [aplicativo,](../resources/application.md) [grupo](../resources/group.md) [e](../resources/user.md) usuário. Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não se aplica aos grupos de Segurança que são excluídos permanentemente.
+Atualmente, a funcionalidade de restaurar itens excluídos só tem suporte [para os recursos](../resources/application.md) de aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário. Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não se aplica a grupos de segurança que são excluídos permanentemente.
 
 Um item recentemente excluído permanecerá disponível por até 30 dias. Após 30 dias, esse item será excluído permanentemente.
 
@@ -61,7 +61,7 @@ POST /directory/deleteditems/{id}/restore
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Token de &lt;portador&gt; *Obrigatório*|
+| Autorização  | Token de &lt;portador&gt; *obrigatório*|
 | Content-type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -97,6 +97,10 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-directory-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

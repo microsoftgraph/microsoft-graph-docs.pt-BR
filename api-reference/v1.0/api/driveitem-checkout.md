@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Confira um recurso driveItem para impedir que outras pessoas editem o documento e suas alterações não se vejam visíveis até que o check-in documentado seja feito.
+description: Confira um recurso driveItem para impedir que outras pessoas editem o documento e suas alterações sejam visíveis até que o check-in documentado seja feito.
 title: 'driveItem: check-out'
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fd10f488467047e4d5df3048b86fd98b21158f26
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 683e16aab6670c0ccc6beb1304176b0eb767b18c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063458"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093260"
 ---
 # <a name="driveitem-checkout"></a>driveItem: check-out
 
 Namespace: microsoft.graph
 
-Confira um **recurso driveItem** para impedir que outras pessoas editem o documento e impedir que suas alterações se vejam visíveis até que o documento [seja feito check-in](driveitem-checkin.md).
+Confira um **recurso driveItem** para impedir que outras pessoas editem o documento e impedir que suas alterações sejam visíveis até que o [documento seja verificado](driveitem-checkin.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a chamada da API retornará `204 No content` .
+Se tiver êxito, a chamada à API retornará `204 No content`.
 
 ## <a name="example"></a>Exemplo
 
@@ -75,6 +75,10 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/checkout-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkout-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

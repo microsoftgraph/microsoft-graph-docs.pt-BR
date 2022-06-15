@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: a84cfd1bf2cdc0cae6a977ea7b31ed3b7b2c9929
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 4518a6b4f3b05e237e4a44c06bed12901369879b
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65397548"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094155"
 ---
 # <a name="managedtenant-resource-type"></a>Tipo de recurso managedTenant
 
@@ -42,6 +42,7 @@ Nenhum.
 |managementActionTenantDeploymentStatuses|[coleção microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md)|O status de nível de locatário das ações de gerenciamento entre locatários gerenciados.|
 |managementIntents|[Coleção microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md)|A coleção de intenções de gerenciamento de linha de base entre locatários gerenciados.|
 |managementTemplates|[Coleção microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|A coleção de modelos de gerenciamento de linha de base entre locatários gerenciados.|
+|myRoles|[Coleção microsoft.graph.managedTenants.myRole](../resources/managedtenants-myrole.md)|A coleção de atribuições de função para um usuário conectado para um locatário gerenciado.|
 |tenantGroups|[Coleção microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md)|A coleção de um agrupamento lógico de locatários gerenciados usados pela plataforma de gerenciamento multilocatário.|
 |Inquilinos|[coleção microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|A coleção de locatários associados à entidade de gerenciamento.|
 |tenantsCustomizedInformation|[coleção microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md)|A coleção de informações personalizadas no nível do locatário entre locatários gerenciados.|

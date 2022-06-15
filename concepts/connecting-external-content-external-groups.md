@@ -1,24 +1,24 @@
 ---
 title: Usar grupos externos para gerenciar permissões para fontes de dados do Microsoft Graph conectores
-description: Os grupos externos permitem que você gerencie permissões para exibir itens externos em uma conexão do Microsoft Graph e conectar-se a fontes de dados fora Azure AD grupos.
+description: Saiba como usar grupos externos para gerenciar permissões para exibir itens externos em uma conexão do Microsoft Graph e conectar-se a fontes de dados fora Azure AD grupos.
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
 ms.localizationpriority: medium
-ms.openlocfilehash: 17b6b37da6f91f08cf7397b52880bb2235dc430a
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: c4d59a2db68849a79dac32b1ad0f1f0647deeb85
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211022"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094050"
 ---
 # <a name="use-external-groups-to-manage-permissions-to-microsoft-graph-connectors-data-sources"></a>Usar grupos externos para gerenciar permissões para fontes de dados do Microsoft Graph conectores
 
-[Os grupos externos](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) permitem que você gerencie permissões para exibir itens externos em uma conexão do Microsoft Graph e conectar-se a fontes de dados fora Azure Active Directory (Azure AD).[](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0&preserve-view=true)
+[Os grupos externos](/graph/api/resources/externalconnectors-externalgroup) permitem que você gerencie permissões para exibir itens externos em uma conexão do Microsoft Graph e conectar-se a fontes de dados fora Azure Active Directory (Azure AD).[](/graph/api/resources/externalconnectors-externalitem)
 
-Para fontes de dados que dependem de usuários e grupos do Azure AD, defina permissões em itens externos associando uma ACL (lista de controle de acesso) a um usuário do Azure AD e uma ID de grupo [](/graph/api/externalconnectors-externalconnection-put-items?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0) ao criar ou atualizar os itens externos.
+Para fontes de dados que dependem de usuários e grupos do Azure AD, defina permissões em itens externos associando uma ACL (lista de controle de acesso) a um usuário do Azure AD e uma ID de grupo [](/graph/api/externalconnectors-externalconnection-put-items) ao criar ou atualizar os itens externos.
 
-No entanto, para fontes de dados que usam grupos não Azure AD ou constructos semelhantes a grupos, como Perfis do Salesforce, Unidades de Negócios do Dynamics, grupos de SharePoint, grupos locais do ServiceNow ou grupos locais do Confluence, recomendamos que *você use grupos* externos.
+No entanto, para fontes de dados que usam grupos não Azure AD ou constructos semelhantes a grupos, como Perfis do Salesforce, Unidades de Negócios do Dynamics, grupos SharePoint, grupos locais do ServiceNow ou grupos locais do Confluence, recomendamos que *você use grupos* externos.
 
 ## <a name="common-external-group-scenarios"></a>Cenários comuns de grupo externo
 
@@ -31,7 +31,7 @@ A imagem a seguir mostra a estrutura das unidades de negócios e das equipes.
 <!---Using html to adjust the size of the image --->
 <br><p align="center"><img src="images/connectors-images/bu-teams-D365.png" alt="Diagram of a structure in Dynamics 365. A business unit has a team and a manager under it. This manager has other users." width="400px;"/></p>
 
-O Salesforce usa perfis, funções e conjuntos de permissões para autorização. Elas são específicas do Salesforce e as informações de associação não estão disponíveis no Azure AD.
+Salesforce usa perfis, funções e conjuntos de permissões para autorização. Elas são específicas para Salesforce e as informações de associação não estão disponíveis no Azure AD.
 
 A imagem a seguir mostra a estrutura das informações de associação no Salesforce.
 
@@ -50,10 +50,10 @@ Para usar grupos externos em sua conexão, siga estas etapas:
 
 Grupos externos pertencem a uma conexão. Para criar grupos externos em suas conexões, siga estas etapas:
 
-1. Use a [API de](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) grupos no Microsoft Graph, conforme mostrado no exemplo a seguir.
+1. Use a [API de](/graph/api/resources/group) grupos no Microsoft Graph, conforme mostrado no exemplo a seguir.
 
     > [!NOTE]
-    > [DisplayName e](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true#properties) **descrição são** campos opcionais.
+    > [DisplayName e](/graph/api/resources/externalconnectors-externalgroup#properties) **descrição são** campos opcionais.
 
     ```http
     POST /external/connections/{connectionId}/groups
@@ -156,9 +156,9 @@ Mantenha a associação de seu grupo externo atualizada no Microsoft Graph. Quan
 
 ### <a name="manage-external-groups-and-membership"></a>Gerenciar grupos externos e associação
 
-Você pode usar a API de grupos para gerenciar seus grupos externos e associação de grupo. Para obter detalhes, [consulte externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true) e [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember?view=graph-rest-beta&preserve-view=true&viewFallbackFrom=graph-rest-1.0).
+Você pode usar a API de grupos para gerenciar seus grupos externos e associação de grupo. Para obter detalhes, [consulte externalGroup](/graph/api/resources/externalconnectors-externalgroup) e [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 - [Saiba mais sobre os limites da API Graph conectores do Microsoft Graph](connecting-external-content-api-limits.md)
 - [Trabalhar com a API de conectores do Microsoft Graph ](connecting-external-content-connectors-api-overview.md)

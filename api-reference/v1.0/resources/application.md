@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8b7864114f357ea031fbaae72c8ee20ad6c477c3
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 188da50ffc613d375fbd57a2035b49a07da624a8
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461188"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094407"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -73,6 +73,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | appId | Cadeia de caracteres | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Microsoft Azure Active Directory. Não anulável. Somente leitura. |
 | applicationTemplateId | String | Identificador exclusivo do applicationTemplate. Apoia `$filter` (`eq`, `not`, `ne`).|
 | appRoles | Coleção [appRole](approle.md) | O conjunto de funções atribuídas ao aplicativo. Com as [atribuições de funções do aplicativo](approleassignment.md), essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço de outros aplicativos. Não anulável. |
+|certificação|[certificação](certification.md)|Especifica o status de certificação do aplicativo.|
 | createdDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi registrado. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. <br><br> Dá suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`e `eq` em `null` valores ) e `$orderBy`. |
 | deletedDateTime | DateTimeOffset | A data e a hora em que o aplicativo foi excluído. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura. |
 | description | Cadeia de caracteres | Campo de texto livre para fornecer uma descrição do objeto de aplicativo aos usuários finais. O tamanho máximo permitido é de 1.024 caracteres. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) e `$search`. |
@@ -140,6 +141,7 @@ Veja a seguir uma representação JSON do recurso.
   "appId": "String",
   "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "certification": {"@odata.type": "microsoft.graph.certification"},
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",

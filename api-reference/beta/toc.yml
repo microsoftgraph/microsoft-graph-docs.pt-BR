@@ -572,7 +572,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -1588,7 +1588,7 @@ items:
                     href: api/addlargegalleryviewoperation-get.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1859,7 +1859,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -10282,7 +10282,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10633,6 +10633,11 @@ items:
                     href: api/managedtenants-managedtenant-list-managementtemplates.md
                   - name: Obter modelo de gerenciamento
                     href: api/managedtenants-managementtemplate-get.md
+              - name: Minhas funções
+                href: resources/managedtenants-myrole.md
+                items:
+                  - name: List
+                    href: api/managedtenants-managedtenant-list-myroles.md
               - name: Informações personalizadas do locatário
                 href: resources/managedtenants-tenantcustomizedinformation.md
                 items:
@@ -12012,9 +12017,9 @@ items:
                     href: resources/temporaryaccesspassauthenticationmethod.md
                     items:
                       - name: Listar
-                        href: api/temporaryaccesspassauthenticationmethod-list.md
+                        href: api/authentication-list-temporaryaccesspassmethods.md
                       - name: Criar
-                        href: api/temporaryaccesspassauthenticationmethod-post.md
+                        href: api/authentication-post-temporaryaccesspassmethods.md
                       - name: Obter
                         href: api/temporaryaccesspassauthenticationmethod-get.md
                       - name: Excluir
@@ -12353,7 +12358,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/policy-overview.md
                   - name: Política de tempo limite baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -12993,7 +12998,7 @@ items:
               - name: Solicitações de consentimento
                 href: resources/consentrequests-overview.md
                 items:
-                  - name: Política de solicitação de consentimento do administrador
+                  - name: Administração de solicitação de consentimento
                     href: resources/adminconsentrequestpolicy.md
                     items:
                       - name: Obter
@@ -14190,7 +14195,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14457,7 +14462,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14467,7 +14472,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-answers-overview.md
               - name: Acronym
                 href: resources/search-acronym.md
@@ -14700,7 +14705,7 @@ items:
                     href: api/security-ediscoverycasesettings-update.md
                   - name: Redefinir as configurações para o padrão
                     href: api/security-ediscoverycasesettings-resettodefault.md
-              - name: Operation
+              - name: Operação
                 href: resources/security-caseoperation.md
                 items:
                   - name: Listar operações de caso
@@ -15201,7 +15206,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -15947,7 +15952,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/todo-overview.md
           - name: Listas de tarefas pendentes
             items:

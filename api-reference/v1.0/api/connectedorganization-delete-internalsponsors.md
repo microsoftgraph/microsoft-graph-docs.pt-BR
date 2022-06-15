@@ -5,21 +5,21 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e64a08c5c3b70bbce3842111a93df8166485c3ac
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 52e962df12889c8ecc70fe52a7df0aaf274630f6
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335996"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093367"
 ---
 # <a name="remove-internalsponsors"></a>Remover internalSponsors
 
 Namespace: microsoft.graph
 
-Remova um usuário ou um grupo dos patrocinadores internos da organização conectada. Os [patrocinadores internos](../resources/internalsponsors.md) são um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
+Remova um usuário ou um grupo dos patrocinadores internos da organização conectada. Os [patrocinadores internos são](../resources/internalsponsors.md) um conjunto de usuários que podem aprovar solicitações em nome de outros usuários dessa organização conectada.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-internalsponsor-from-connectedorganization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-internalsponsor-from-connectedorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

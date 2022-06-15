@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: security
 author: preetikr
-ms.openlocfilehash: f289ef7c91dbe7975970e679d1950a03498ab333
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 9565a507eac6d5c1be272749a45c6e4b234d5da2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900125"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094092"
 ---
 # <a name="securescore-resource-type"></a>Tipo de recurso secureScore
 
@@ -25,7 +25,7 @@ Representa a pontuação segura de um locatário por dia de dados de pontuação
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Lista secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Ler propriedades e metadados de um objeto secureScores.|
+|[Listar secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Ler propriedades e metadados de um objeto secureScores.|
 
 
 ## <a name="properties"></a>Propriedades
@@ -33,16 +33,18 @@ Tipo de entidade que contém propriedades da pontuação de segurança do locat�
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   Cadeia de caracteres GUID para a ID do locatário.  |
-|   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
-|   id  |   String  |   Combinação de azureTenantId_createdDateTime.   |
-|   licensedUserCount   |   Int32   |   Contagem de usuários licenciados do locatário especificado.    |
 |   activeUserCount |   Int32   |   Contagem de usuários ativos do locatário determinado.  |
-|   currentScore    |   Duplo  |   Pontuação atual do locatário obtido na data especificada.    |
-|   maxScore |  Duplo  |   Pontuação máxima possível do locatário na data especificada.    |
-|   enabledServices |   Coleção de cadeias de caracteres   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, Sharepoint).   |
 |   averageComparativeScores |  [coleção averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por assento) e categoria de controle (Identidade, Dados, Dispositivo, Aplicativos, Infraestrutura) dentro do escopo. |
+|   azureTenantId   |   String  |   Cadeia de caracteres GUID para a ID do locatário.  |
 |   controlScores | [Coleção controlScore](controlscore.md)  |   Contém pontuações de locatário para um conjunto de controles.   |
+|   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
+|   currentScore    |   Duplo  |   Pontuação atual do locatário obtido na data especificada.    |
+|   enabledServices |   Coleção String   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange online, Skype, SharePoint).   |
+|   id  |   Cadeia de caracteres  |   Combinação de azureTenantId_createdDateTime.   |
+|   licensedUserCount   |   Int32   |   Contagem de usuários licenciados do locatário especificado.    |
+|   maxScore |  Duplo  |   Pontuação máxima possível do locatário na data especificada.    |
+
+
 
 
 ## <a name="relationships"></a>Relações
@@ -63,20 +65,19 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "String",
-  "azureTenantId": "Guid",
-  "createdDate": "DateTimeOffset",
-  "licensedUserCount": "Int32",
   "activeUserCount": "Int32",
-  "currentScore": "Int32",
-  "maxScore": "Int32",
-  "averageScore": "Double",
-  "enabledServices": "Collection(string)",
   "averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
+  "averageScore": "Double",
+  "azureTenantId": "Guid",
   "controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
-  "createdDateTime": "2019-02-07T20:33:53.156Z"
+  "createdDate": "DateTimeOffset",
+  "createdDateTime": "2019-02-07T20:33:53.156Z",
+  "currentScore": "Int32",
+  "enabledServices": "Collection(string)",
+  "id": "String",
+  "licensedUserCount": "Int32",
+  "maxScore": "Int32"
 }
-
 ```
 
 

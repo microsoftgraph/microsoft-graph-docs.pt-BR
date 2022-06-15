@@ -1,0 +1,116 @@
+---
+title: Listar temporaryAccessPassMethods
+description: Obtenha uma lista dos objetos temporaryAccessPassAuthenticationMethod para um usuário.
+author: tilarso
+ms.localizationpriority: medium
+ms.prod: identity-and-sign-in
+doc_type: apiPageType
+ms.openlocfilehash: d742a2bcb2664aab4152ee35306475b23a83f576
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66096334"
+---
+# <a name="list-temporaryaccesspassmethods"></a>Listar temporaryAccessPassMethods
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+
+Recupere uma lista dos objetos [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) de um usuário e suas propriedades. Essa API retornará apenas um único objeto na coleção, pois um usuário pode ter apenas um método de Passagem de Acesso Temporário.
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+### <a name="permissions-acting-on-self"></a>Permissões agindo por conta próprio
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | Sem suporte. |
+
+### <a name="permissions-acting-on-other-users"></a>Permissões que atuam em outros usuários
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:---------------------------------------|:-------------------------|
+| Delegado (conta corporativa ou de estudante)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+
+
+Para cenários delegados em que um administrador está agindo em outro usuário, o administrador precisa de uma das seguintes [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+
+* Administrador global
+* Leitor global
+* Administrador de autenticação privilegiada
+* Administrador de autenticação
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/authentication/temporaryAccessPassMethods
+GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Esse método não dá suporte a parâmetros de consulta opcionais para personalizar a resposta.
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Nome|Descrição|
+|:---|:---|
+|Autorização|{token} de portador. Obrigatório.|
+
+## <a name="request"></a>Solicitação 
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se bem-sucedido, este método `200 OK` retorna um código de resposta e uma coleção de objetos [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) no corpo da resposta.  Essa chamada retornará apenas um único objeto porque apenas um **temporaryAccessPassAuthenticationMethod** pode ser definido nos usuários.
+
+## <a name="examples"></a>Exemplos
+
+### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "list_temporaryaccesspassauthenticationmethod"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/temporaryAccessPassMethods
+```
+
+### <a name="response"></a>Resposta
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.temporaryAccessPassAuthenticationMethod)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('071cc716-8147-4397-a5ba-b2105951cc0b')/authentication/temporaryAccessPassMethods",
+     "value": [
+        {
+            "id": "bdaede67-61e0-4349-9347-d2d6afd84009",
+            "temporaryAccessPass": null,
+            "createdDateTime": "2022-06-06T16:43:04.6438213Z",
+            "startDateTime": "2022-06-06T16:48:03.027Z",
+            "lifetimeInMinutes": 60,
+            "isUsableOnce": false,
+            "isUsable": false,
+            "methodUsabilityReason": "NotYetValid"
+        }
+    ]
+}
+```

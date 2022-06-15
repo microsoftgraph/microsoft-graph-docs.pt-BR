@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f47448533da07ad369ca3013f9efeae0ca8f8919
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: ba18409605253898d60381de3c21286c8642623e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820386"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094632"
 ---
 # <a name="create-assignmentpolicies"></a>Criar assignmentPolicies
 Namespace: microsoft.graph
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All  |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All  |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -302,6 +302,10 @@ Content-Type: application/json
 
 # <a name="powershell"></a>[PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentpolicy-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentpolicy-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

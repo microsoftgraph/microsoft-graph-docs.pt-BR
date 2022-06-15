@@ -1,24 +1,24 @@
 ---
 author: JeremyKelley
-description: Faça check-in em um recurso de DriveItem com check-out, que torna a versão do documento disponível para outras pessoas.
-title: 'driveItem: checkin'
-localization_priority: Normal
+description: Faça check-in de um recurso DriveItem com check-out, que disponibiliza a versão do documento para outras pessoas.
+title: 'driveItem: check-in'
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c259b4c5c729d3af04876367d1273435b32302f5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: eb7a174c1cfff4337c20fb2b9c75ba9b96381823
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955678"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093672"
 ---
-# <a name="driveitem-checkin"></a>driveItem: checkin
+# <a name="driveitem-checkin"></a>driveItem: check-in
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Faça check-in em um recurso de **driveItem** com check-out, que torna a versão do documento disponível para outras pessoas.
+Faça check-in de um **recurso driveItem** com check-out, que disponibiliza a versão do documento para outras pessoas.
 
 ## <a name="permissions"></a>Permissões
 
@@ -82,6 +82,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/checkin-item-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
