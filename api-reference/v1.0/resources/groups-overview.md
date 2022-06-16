@@ -1,22 +1,22 @@
 ---
 title: Trabalhando com grupos no Microsoft Graph
-description: Grupos são coleções de entidades de segurança com acesso compartilhado a recursos em serviços Microsoft ou no seu aplicativo. Diferentes entidades de segurança, como usuários, outros grupos, dispositivos e aplicativos, podem fazer parte de grupos. O uso de grupos ajuda você a evitar trabalhar com entidades de segurança individuais e simplifica o gerenciamento do acesso aos seus recursos.
+description: Use a API de grupos para criar e gerenciar diferentes tipos de grupos, como grupos do Microsoft 365, grupos de segurança, grupos de segurança habilitados para email e grupos de distribuição.
 author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 151d8aff7d48f4ef954554a480736a391833544b
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 0a41fce3ab121951108fd1dbcde484491d65173c
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296434"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093861"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
 Grupos são coleções de entidades de segurança com acesso compartilhado a recursos em serviços Microsoft ou no seu aplicativo. Diferentes entidades de segurança, como usuários, outros grupos, dispositivos e aplicativos, podem fazer parte de grupos. O uso de grupos ajuda você a evitar trabalhar com entidades de segurança individuais e simplifica o gerenciamento do acesso aos seus recursos.
 
-O Microsoft Graph expõe a API de grupos para criar e gerenciar diferentes tipos de grupos e funcionalidades de grupo. 
+O Microsoft Graph expõe a API de grupos para criar e gerenciar diferentes tipos de grupos e funcionalidades de grupo.
 
 > [!NOTE]
 > 1. Os grupos só podem ser criados por meio de contas corporativas ou de estudante. As contas pessoais da Microsoft não são compatíveis com grupos.
@@ -32,7 +32,7 @@ O Azure Active Directory (Microsoft Azure AD) suporta os seguintes tipos de grup
 - Grupos de distribuição
 
 > [!NOTE]
-> A Microsoft também suporta [grupos dinâmicos de distribuição](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) que não podem ser gerenciados ou recuperados através do Microsoft Graph.
+> A Microsoft também suporta [grupos dinâmicos de distribuição](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) que não podem ser gerenciados ou recuperados através do Microsoft Graph.
 
 Somente grupos de segurança e do Microsoft 365 podem ser gerenciados por meio da API de grupos do Microsoft Graph. Grupos de distribuição e habilitados para email são somente leitura por meio do Microsoft Graph.
 
