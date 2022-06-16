@@ -4,12 +4,12 @@ description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias 
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3ca25ff3e16437463cac719b2ea5ab6dd47c8687
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 8b83b501f286bcfac80f50081bfaa6084e866b15
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034549"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118358"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
@@ -20,6 +20,8 @@ Os lotes JSON permitem otimizar seu aplicativo combinando várias solicitações
 3. O calendário de um grupo
 
 Combinar essas três solicitações individuais em uma única solicitação em lote pode economizar latência da rede significativa para o aplicativo.
+
+O Microsoft Graph implementa o segmento de caminho de URL do OData `$batch` para dar suporte ao envio em lote JSON.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
 

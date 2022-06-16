@@ -4,18 +4,18 @@ description: Dependendo do tamanho do arquivo, você pode escolher uma das duas 
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: c6e23f8f30e5dc155f54015fd740df761b9a7769
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: ecb8d470e7a6946286b27f78b3a61f569bafe261
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883828"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118589"
 ---
 # <a name="attach-large-files-to-outlook-messages-or-events"></a>Anexar arquivos grandes a mensagens ou eventos do Outlook
 
 Usando a API do Microsoft Graph, é possível anexar arquivos de até 150 MB a uma [mensagem](/graph/api/resources/message) ou item de [evento](/graph/api/resources/event) do Outlook. Dependendo do tamanho do arquivo, escolha uma das duas maneiras de anexar o arquivo:
 - Se o tamanho do arquivo for inferior a 3 MB, faça um único POST na propriedade de navegação **attachments** do item do Outlook; veja como fazer isso [para uma mensagem](/graph/api/message-post-attachments) ou [para um evento](/graph/api/event-post-attachments). A resposta `POST` bem-sucedida inclui o ID do anexo do arquivo.
-- Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de upload e use iterativamente `PUT` para carregar intervalos de bytes do arquivo até que você tenha carregado o arquivo inteiro. Um cabeçalho na resposta final `PUT` bem-sucedida inclui um URL com o ID do anexo.
+- Se o tamanho do arquivo estiver entre 3 MB e 150 MB, crie uma sessão de carregamento e use `PUT` iteradamente para carregar intervalos de bytes do arquivo até que você carregue todo o arquivo. Um cabeçalho na resposta `PUT` finalizada com êxito inclui uma URL com a ID do anexo.
 
 Para anexar vários arquivos a uma mensagem, escolha a abordagem de cada arquivo com base em seu tamanho e anexe-os individualmente.
 
@@ -193,7 +193,7 @@ Especificar os bytes reais do arquivo a ser anexado, que estão no intervalo de 
 Um carregamento bem-sucedido retorna `HTTP 200 OK` e um objeto **uploadSession**. Observe o seguinte no objeto de resposta:
 
 - A propriedade **ExpirationDateTime** indica a data/hora de vencimento para o token de autenticação inserido no valor da propriedade **uploadUrl**. Essa data/hora de vencimento permanece a mesma que foi retornada pela **uploadSession** inicial na etapa 1.
-- O **nextExpectedRanges ** especifica o próximo local do byte para iniciar o upload, por exemplo,`"nextExpectedRanges":["2097152"]`. Você deve carregar os bytes em um arquivo na ordem.
+- O **nextExpectedRanges** especifica o próximo local do byte para iniciar o carregamento, por exemplo, `"nextExpectedRanges":["2097152"]`. Você deve carregar os bytes em um arquivo na ordem.
 <!-- The **nextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
   - On a successful upload, this property returns the next range to start from, for example, `"nextExpectedRanges":["2097152"]`.
@@ -234,7 +234,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-first-upload-to-the-event"></a>Exemplo: primeiro carregamento na evento
+### <a name="example-first-upload-to-the-event"></a>Exemplo: primeiro carregamento no evento
 #### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "ignored"
