@@ -6,6 +6,7 @@ items:
     items:
       - name: Visão geral
         href: /graph/auth/index?context=graph/api/beta
+        displayName: 'authentication, authorization, authenticate, authorize'
       - name: Noções básicas
         href: /graph/auth/auth-concepts?context=graph/api/beta
       - name: Registrar seu aplicativo
@@ -20,44 +21,75 @@ items:
         href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
       - name: Acesso à caixa de correio limitado
         href: /graph/auth-limit-mailbox-access?context=graph/api/beta
+      - name: Solucionar erros de autorização
+        href: /graph/resolve-auth-errors?context=graph/api/beta
   - name: Usar a API
     items:
-      - name: Visão Geral
+      - name: Visão geral
         href: /graph/use-the-api?context=graph/api/beta
+        displayName: 'Microsoft Graph API, API, Microsoft Graph REST API, REST API'
+      - name: Acessar dados e métodos
+        href: /graph/traverse-the-graph?context=graph/api/beta
       - name: Paginação
         href: /graph/paging?context=graph/api/beta
-      - name: Usar os parâmetros de consulta
-        href: /graph/query-parameters?context=graph/api/beta
+      - name: Parâmetros de consulta
         items:
+          - name: Usar os parâmetros de consulta
+            href: /graph/query-parameters?context=graph/api/beta
+            displayName: 'OData query parameters, OData'
           - name: Use o parâmetro de consulta de pesquisa
             href: /graph/search-query-parameter?context=graph/api/beta
           - name: 'Recursos de consulta avançados '
             href: /graph/aad-advanced-queries?context=graph/api/beta
+          - name: Otimizar solicitações com parâmetros de consulta
+            href: /learn/modules/optimize-data-usage
       - name: Envio em lote
-        displayName: Batch requests
         href: /graph/json-batching?context=graph/api/beta
+        displayName: Batch request
       - name: Limitação
-        href: /graph/throttling?context=graph/api/beta
+        items:
+          - name: Visão geral
+            href: /graph/throttling?context=graph/api/beta
+            displayName: throttling
+          - name: Otimize o tráfego de rede
+            href: /learn/modules/optimize-network-traffic
       - name: Notificações de alteração
         items:
           - name: Visão Geral
-            displayName: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
             href: /graph/api/resources/webhooks?context=graph/api/beta
-          - name: Tutorial
+            displayName: 'change notifications, WebHooks, set up notifications for changes in resource data'
+          - name: Alterar tutorial de notificações
             href: /learn/modules/msgraph-changenotifications-trackchanges
           - name: Notificações de alterações ausentes
-            href: /graph/webhooks-lifecycle
+            href: /graph/webhooks-lifecycle?context=graph/api/beta
           - name: Notificações com dados de recursos
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: Receba notificações de diferentes maneiras (visualização)
             href: /graph/change-notifications-delivery?context=graph/api/beta
-          - name: Obter notificações de alteração para mensagens de chat e canal
-            href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
+          - name: Alterar notificações para impressão na nuvem
+            href: /graph/universal-print-webhook-notifications?context=graph/api/beta
+          - name: Alterar as notificações para os recursos do Microsoft Teams
+            items:
+              - name: Tipos de notificação e conteúdos
+                href: /graph/teams-change-notification-in-microsoft-teams-overview?context=graph/api/beta
+                displayName: 'change notifications, Teams, Microsoft Teams'
+              - name: Equipes e canais
+                href: /graph/teams-changenotifications-team-and-channel?context=graph/api/beta
+              - name: Associação de equipe e canal
+                href: /graph/teams-changenotifications-teamMembership?context=graph/api/beta
+              - name: Mensagens de chat e de canal
+                href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
+              - name: Chat
+                href: /graph/teams-changenotifications-chat?context=graph/api/beta
+              - name: Chat da associação
+                href: /graph/teams-changenotifications-chatMembership?context=graph/api/beta
+          - name: Alterar notificações de recursos do Outlook
+            href: /graph/outlook-change-notifications-overview?context=graph/api/beta
       - name: Controle de alterações
         items:
           - name: Visão geral
-            displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
             href: /graph/delta-query-overview?context=graph/api/beta
+            displayName: 'Delta query, track changes, change tracking'
           - name: Obter alterações em eventos (exemplo)
             href: /graph/delta-query-events?context=graph/api/beta
           - name: Obter alterações em grupos (exemplo)
@@ -69,8 +101,8 @@ items:
       - name: Adicionar dados personalizados
         items:
           - name: Visão Geral
-            displayName: 'Extensions, Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
             href: /graph/extensibility-overview?context=graph/api/beta
+            displayName: 'add custom data, extensions, resources using extensions'
           - name: Usar extensões abertas (exemplo)
             href: /graph/extensibility-open-users?context=graph/api/beta
           - name: Usar extensões de esquema (exemplo)
@@ -79,6 +111,7 @@ items:
         items:
           - name: Introdução
             href: /graph/graph-explorer/graph-explorer-overview?context=graph/api/beta
+            displayName: 'Graph Explorer, try the API, try API'
           - name: Trabalhar com o Explorador do Graph
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/beta
       - name: Usar o Postman
@@ -86,13 +119,12 @@ items:
       - name: Mensagens do sistema
         href: /graph/system-messages?context=graph/api/beta
   - name: Migrar
-    expanded: false
     items:
       - name: Azure AD Graph.
         items:
-          - name: Visão geral
-            displayName: Azure AD Graph Migration
-            href: /graph/migrate-azure-ad-graph-overview
+          - name: Migrar aplicativos do Azure AD Graph
+            href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
+            displayName: 'Migration, Azure AD Graph, migrate'
           - name: Lista de verificação para migração de aplicativos
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
           - name: '1: Examinar as diferenças'
@@ -121,16 +153,28 @@ items:
                 href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/beta
           - name: '4: implantar, testar e estender'
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
-          - name: Perguntas frequentes sobre migração
+          - name: Perguntas frequentes sobre a migração do Azure AD Graph
             href: /graph/migrate-azure-ad-graph-faq?context=graph/api/beta
+            displayName: 'migrate, frequently asked questions'
           - name: Configurar permissões do Azure AD Graph
             href: /graph/migrate-azure-ad-graph-configure-permissions?context=graph/api/beta
+      - name: Serviços de Web do Exchange
+        items:
+          - name: Migrar aplicativos do EWS
+            href: /graph/migrate-exchange-web-services-overview?context=graph/api/beta
+            displayName: 'Migration, Exchange Web Services, EWS, migrate'
+          - name: Autenticação
+            href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
+          - name: Mapeamento de API
+            href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
   - name: Usar SDKs
     items:
       - name: Visão geral
         href: /graph/sdks/sdks-overview?context=graph/api/beta
+        displayName: 'SDK, SDKs, Microsoft Graph SDK'
       - name: Instalar um SDK
         href: /graph/sdks/sdk-installation?context=graph/api/beta
+        displayName: 'install SDK, install SDKs, installation'
       - name: Criar um cliente
         href: /graph/sdks/create-client?context=graph/api/beta
       - name: Personalizar um cliente
@@ -149,25 +193,29 @@ items:
         href: /graph/sdks/use-beta?context=graph/api/beta
       - name: Usar o Windows PowerShell!
         items:
-          - name: Instalação
-            href: /graph/powershell/installation?context=graph/api/beta
+          - name: Visão geral do PowerShell
+            href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+          - name: Instalar o SDK do PowerShell
+            href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
           - name: Introdução
-            href: /graph/powershell/get-started?context=graph/api/beta
-          - name: Navegando no SDK
-            href: /graph/powershell/navigating?context=graph/api/beta
+            href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+          - name: Navegar pelo SDK do PowerShell
+            href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: Autenticação somente para aplicativo
-            href: /graph/powershell/app-only?context=graph/api/beta
+            href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
   - name: Usar o kit de ferramentas
     items:
-      - name: Visão geral do kit de ferramentas
+      - name: Visão Geral
         href: /graph/toolkit/overview?context=graph/api/beta
+        displayName: 'Microsoft Graph Toolkit, toolkit'
       - name: Introdução
         items:
-          - name: Visão Geral
+          - name: Introdução
             href: /graph/toolkit/get-started/overview?context=graph/api/beta
-          - name: /graph/toolkit para React
+            displayName: 'Microsoft Graph Toolkit, toolkit'
+          - name: Kit de ferramentas para o React
             href: /graph/toolkit/get-started/mgt-react?context=graph/api/beta
-          - name: /graph/toolkit para SPFx
+          - name: Kit de ferramentas para SPFx
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
       - name: Desenvolver seu primeiro aplicativo
         items:
@@ -191,6 +239,7 @@ items:
         items:
           - name: Usando os provedores
             href: /graph/toolkit/providers/providers?context=graph/api/beta
+            displayName: 'Microsoft Graph Toolkit providers, toolkit provider'
           - name: Provedor MSAL
             href: /graph/toolkit/providers/msal?context=graph/api/beta
           - name: Provedor MSAL2
@@ -201,6 +250,8 @@ items:
             href: /graph/toolkit/providers/teams?context=graph/api/beta
           - name: Provedor de Teams MSAL2
             href: /graph/toolkit/providers/teams-msal2?context=graph/api/beta
+          - name: Provedor teamsFx
+            href: /graph/toolkit/providers/teamsfx?context=graph/api/beta
           - name: Provedor de Electron
             href: /graph/toolkit/providers/electron?context=graph/api/beta
           - name: Provedor de proxy
@@ -211,6 +262,7 @@ items:
         items:
           - name: Logon
             href: /graph/toolkit/components/login?context=graph/api/beta
+            displayName: 'Microsoft Graph toolkit components, toolkit component'
           - name: Obter
             href: /graph/toolkit/components/get?context=graph/api/beta
           - name: Pessoa
@@ -251,17 +303,21 @@ items:
     items:
       - name: Práticas recomendadas
         href: /graph/best-practices-concept?context=graph/api/beta
+        displayName: 'Microsoft Graph, Best practices for working with Microsoft Graph'
       - name: Problemas conhecidos
         href: /graph/known-issues?context=graph/api/beta
-      - name: Log de mudanças
+        displayName: 'Microsoft Graph, Known issues with Microsoft Graph'
+      - name: Log de alterações da API
         href: 'https://developer.microsoft.com/graph/changelog'
       - name: Erros
         href: /graph/errors?context=graph/api/beta
-  - name: Referência beta
+        displayName: Microsoft Graph error responses and error resource types
+  - name: Referência beta da API
     expanded: true
     items:
       - name: Visão Geral
         href: overview.md
+        displayName: 'Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta'
       - name: Usuários
         items:
           - name: Visão Geral
@@ -1588,7 +1644,7 @@ items:
                     href: api/addlargegalleryviewoperation-get.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1859,7 +1915,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -10282,7 +10338,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -10436,7 +10492,7 @@ items:
                     href: api/cloudpcorganizationsettings-get.md
                   - name: Atualizar
                     href: api/cloudpcorganizationsettings-update.md
-          - name: Atualizações do dispositivo (prévia)
+          - name: Atualizações do dispositivo (visualização)
             displayName: Windows updates
             items:
               - name: Atualizações
@@ -10710,7 +10766,7 @@ items:
                     href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
                   - name: Obter Windows de proteção
                     href: api/managedtenants-windowsprotectionstate-get.md
-          - name: Comunicações e integridade do serviço
+          - name: Comunicações e Integridade do serviço
             items:
               - name: Visão Geral
                 href: resources/service-communications-api-overview.md
@@ -12358,7 +12414,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/policy-overview.md
                   - name: Política de tempo limite baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -13358,7 +13414,7 @@ items:
                         href: api/agreement-post-files.md
                       - name: Listar arquivos localizados
                         href: api/agreement-list-files.md
-      - name: Correio
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -13633,7 +13689,7 @@ items:
             items:
               - name: Criar e enviar uma notificação (preterido)
                 href: api/user-post-notifications.md
-      - name: Inteligência de pessoas e local de trabalho
+      - name: Inteligência de pessoas e no local de trabalho
         items:
           - name: Visão Geral
             href: resources/social-overview.md
@@ -14195,7 +14251,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Microsoft 365 de uso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14462,7 +14518,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -14472,7 +14528,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-answers-overview.md
               - name: Acronym
                 href: resources/search-acronym.md
@@ -15206,7 +15262,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -15952,7 +16008,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Listas de tarefas pendentes
             items:

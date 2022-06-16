@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1a356633196358d94e6a486ffda336af52206f84
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: a10dd74a15f531316e08d745087e578b2e0e2b0b
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256400"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118596"
 ---
 # <a name="delete-registereduser"></a>Excluir registeredUser
 
@@ -37,6 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 DELETE /devices/{id}/registeredUsers/{id}/$ref
 ```
+> [!CAUTION]
+> `/$ref` Se não for acrescentado à solicitação e o aplicativo de chamada tiver permissões para gerenciar o usuário que é um usuário registrado do dispositivo, o usuário também será excluído do Azure Active Directory (Azure AD); caso contrário, `403 Forbidden` um erro será retornado. Você pode restaurar usuários excluídos por meio da [API Restaurar itens excluídos](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|

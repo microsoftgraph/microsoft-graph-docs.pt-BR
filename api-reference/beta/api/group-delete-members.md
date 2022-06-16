@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 14b8319c0043e40964273a74c138c9724d17d164
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 875fad2dd6921d19cd1ac1834bc684f1e0eae161
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900321"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118442"
 ---
 # <a name="remove-member"></a>Remover membro
 
@@ -40,8 +40,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 DELETE /groups/{id}/members/{id}/$ref
 ```
-> [!IMPORTANT]
-> `/$ref` Se não for acrescentado à solicitação, o usuário será excluído do Azure AD (Azure Active Directory) se as permissões apropriadas forem usadas; caso contrário, `403 Forbidden` um erro será retornado. 
+> [!CAUTION]
+> `/$ref` Se não for acrescentado à solicitação e o aplicativo de chamada tiver permissões para gerenciar o tipo de objeto membro, o objeto membro também será excluído de Azure Active Directory (Azure AD); caso contrário, `403 Forbidden` um erro será retornado. Por exemplo, um aplicativo com as permissões *GroupMember.ReadWrite.All* e *User.ReadWrite.All* excluirá um usuário. Você pode restaurar objetos específicos por meio da [API Restaurar itens excluídos](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

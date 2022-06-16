@@ -5,12 +5,12 @@ title: 'driveItem: createUploadSession'
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: dfb6b231b0db8664b7c01fd81f2697f4387554b6
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: e121323bd1d564b27a253c055f29a4b0c4b10372
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62442642"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118344"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 
-Uma sessão de carregamento permite que seu aplicativo carregue intervalos do arquivo em solicitações de API sequenciais, o que permite que a transferência seja retomada se uma conexão for retirada enquanto o carregamento estiver em andamento.
+Uma sessão de upload permite que seu aplicativo carregue intervalos do arquivo em solicitações de API sequenciais, o que permite que a transferência seja retomada se uma conexão for descartada enquanto o upload estiver em andamento.
 
-Para carregar um arquivo usando uma sessão de carregamento:
+Para carregar um arquivo usando uma sessão de upload:
 
 1. [Criar uma sessão de upload](#create-an-upload-session)
 2. [Carregar bytes na sessão de upload](#upload-bytes-to-the-upload-session)
@@ -409,6 +409,10 @@ Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [mediaSource]: ../resources/mediaSource.md
+
+## <a name="see-also"></a>Confira também
+
+[Upload de arquivo grande](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
 
 <!--
 {

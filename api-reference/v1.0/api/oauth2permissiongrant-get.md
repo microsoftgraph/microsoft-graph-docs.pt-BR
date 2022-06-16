@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 708dbc4342e905e5c925416e8c94dc27a22b613d
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: d3dd89e1a062d84c7d7cd2123d79d664c7f72bb6
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060511"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118547"
 ---
 # <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>Obter oAuth2PermissionGrant (uma concessão de permissão delegada)
 
@@ -20,6 +20,9 @@ Recupere as propriedades de uma única concessão de permissão delegada represe
 
 Um **oAuth2PermissionGrant** representa permissões delegadas que foram concedidas a um aplicativo cliente para acessar uma API em nome de um usuário conectado.
 
+> [!NOTE]
+> Esse pedido pode ter atrasos de replicação das concessões de permissão delegadas que foram criadas, atualizadas ou excluídas recentemente.
+
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

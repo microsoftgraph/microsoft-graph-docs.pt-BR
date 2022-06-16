@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 2f8027d0ee84819c665a3c60efaa94ff9c2552ab
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: 4be576a62589715f3851a9ffc434d29c72a2a1a1
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65060762"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118645"
 ---
 # <a name="list-oauth2permissiongrants-delegated-permission-grants"></a>Listar oauth2PermissionGrants (concessões de permissão delegadas)
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,7 +43,7 @@ GET /oauth2PermissionGrants
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$filter` parâmetro de [consulta OData](/graph/query-parameters) para`eq` ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 79dad5d78b3e6804a0f0b950a37dd3bce5c057e1
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 70151180d99ed4d83b1a36dfbb804c65e1966ec0
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399492"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118351"
 ---
 # <a name="eventmessagedetail-resource-type"></a>Tipo de recurso eventMessageDetail
 
@@ -22,7 +22,7 @@ Esse tipo abstrato representa detalhes de uma mensagem de evento do sistema.
 
 As mensagens do sistema são mensagens geradas para eventos como membros adicionados a um canal, membros adicionados a um chat e descrição da equipe atualizada.
 
-Lista de eventos com suporte
+A tabela a seguir lista os eventos com suporte.
 
 | Evento | Descrição |
 | :---- | :---------- |
@@ -43,6 +43,8 @@ Lista de eventos com suporte
 | [membersDeletedEventMessageDetail](../resources/membersDeletedEventMessageDetail.md) | Membros foram removidos. |
 | [membersJoinedEventMessageDetail](../resources/membersJoinedEventMessageDetail.md) | Membros ingressaram. |
 | [membersLeftEventMessageDetail](../resources/membersLeftEventMessageDetail.md) | Os membros foram embora. |
+| [messagePinnedEventMessageDetail](../resources/messagepinnedeventmessagedetail.md) | Uma mensagem foi fixada. |
+| [messageUnpinnedEventMessageDetail](../resources/messageunpinnedeventmessagedetail.md) | Uma mensagem foi desafixada. |
 | [tabUpdatedEventMessageDetail](../resources/tabUpdatedEventMessageDetail.md) | Uma guia foi atualizada. |
 | [teamArchivedEventMessageDetail](../resources/teamArchivedEventMessageDetail.md) | Uma equipe foi arquivada. |
 | [teamCreatedEventMessageDetail](../resources/teamCreatedEventMessageDetail.md) | Uma equipe foi criada. |

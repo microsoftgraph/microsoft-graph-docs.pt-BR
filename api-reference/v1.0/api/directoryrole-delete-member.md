@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0b654bb741ac5be56941eee279110ff39d415e8a
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 0cb41863dbfb53ee933e488f11c51c8c453c89d9
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694628"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118638"
 ---
 # <a name="remove-directory-role-member"></a>Remover membro da função de diretório
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
+|Delegado (conta corporativa ou de estudante) | RoleManagement.ReadWrite.Directory    |
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | RoleManagement.ReadWrite.Directory |
+|Aplicativo | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,6 +39,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 DELETE /directoryRoles/{role-id}/members/{id}/$ref
 DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
+> [!CAUTION]
+> `/$ref` Se não for acrescentado à solicitação e o aplicativo de chamada tiver permissões para gerenciar o objeto membro, o objeto também será excluído de Azure Active Directory (Azure AD); caso contrário, `403 Forbidden` um erro será retornado. Você pode restaurar objetos específicos por meio da [API Restaurar itens excluídos](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

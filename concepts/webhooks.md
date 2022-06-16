@@ -5,12 +5,12 @@ author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 63da00b8f88d589d0a8d05d3635abae4a02dd0d4
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 343ff94d14506b5f4caa8147a5248ddaebe8448b
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899905"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118365"
 ---
 # <a name="set-up-notifications-for-changes-in-resource-data"></a>Configurar notificações para alterações nos dados de recursos
 
@@ -90,14 +90,6 @@ Quando os limites são excedidos, a tentativa de criar uma assinatura resultará
 - Existe um [problema conhecido](known-issues.md#change-notifications) nas assinaturas de usuários e grupos.
 
 ### <a name="outlook-resource-limitations"></a>Limitações de recursos do Outlook
-
-Ao assinar recursos do Outlook, como **mensagens**, **eventos** ou **contatos**, se você optar por usar o **userPrincipalName** (UPN) no caminho do recurso, a solicitação de assinatura poderá falhar se o UPN contiver um apóstrofo. Considere usar IDs de usuário em vez de UPNs para evitar encontrar esse problema. Por exemplo, em vez de usar o caminho de recursos:
-
-`/users/sh.o'neal@contoso.com/messages`
-
-Use:
-
-`/users/{guid-user-id}/messages`
 
 É permitido um máximo de 1000 assinaturas ativas por caixa de correio para todos os aplicativos.
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae85fb034e508460057fb11725df349e785f1ce
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 6798369b62aab7195ebe56c6ad225a011f244466
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034541"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118323"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -32,7 +32,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Listar aplicativos](../api/application-list.md) | Coleção [application](application.md) | Recuperar a lista de aplicativos na organização. |
 |[Criar aplicativo](../api/application-post-applications.md) | [application](application.md) | Cria (registra) um novo aplicativo.|
 |[Obter aplicativo](../api/application-get.md) | [application](application.md) |Ler as propriedades e as relações de um objeto de aplicativo.|
-|[Atualizar aplicativo](../api/application-update.md) | [application](application.md) |Atualize o objeto application. |
+|[Atualizar aplicativo](../api/application-update.md) | Nenhum |Atualize o objeto application. |
 |[Excluir aplicativo](../api/application-delete.md) | Nenhum |Exclua o objeto application. |
 |[Listar aplicativos excluídos](../api/directory-deleteditems-list.md) | Conjunto [directoryObject](directoryobject.md) | Recuperar uma lista de aplicativos excluídos recentemente. |
 | [Lista de aplicativos excluídos pertencentes a usuários](../api/directory-deleteditems-user-owned.md) | Coleção [directoryObject](directoryobject.md) | Recupere os aplicativos excluídos no locatário nos últimos 30 dias e que pertencem a um usuário. |

@@ -1,16 +1,16 @@
 ---
 title: Excluir proprietários registrados
-description: Remova um usuário como proprietário registrado do dispositivo.
+description: Remova um usuário como um proprietário registrado do dispositivo.
 ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 49c66978f37876509fcf7ae37634acf9d1677887
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: cae18bd61afcf283853cd73fcf91540a0de00564
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256190"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118575"
 ---
 # <a name="delete-registeredowner"></a>Excluir registeredOwner
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova um usuário como proprietário registrado do dispositivo.
+Remova um usuário como um proprietário registrado do dispositivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,6 +37,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 DELETE /devices/{id}/registeredOwners/{id}/$ref
 ```
+> [!CAUTION]
+> `/$ref` Se não for acrescentado à solicitação e o aplicativo de chamada tiver permissões para gerenciar o usuário que é um proprietário registrado do dispositivo, o usuário também será excluído do Azure Active Directory (Azure AD); caso contrário, `403 Forbidden` um erro será retornado. Você pode restaurar usuários excluídos por meio da [API Restaurar itens excluídos](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -76,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredOwners/{id}/$ref
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-registeredowners-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-registeredowners-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
