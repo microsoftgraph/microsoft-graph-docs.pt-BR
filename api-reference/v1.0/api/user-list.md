@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a9c9632a65c7423ea80d60d0eae0e05bdb8ad4bd
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 28e9f77ecee53b668932c6453615a041bde1cab0
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204289"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095785"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -166,7 +166,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
->Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**. O valor de **issuerAssignedId** deve ser o endereço de email da conta do usuário, não o nome de usuário principal (UPN). Se um UPN for usado, a resposta será uma lista em branco.
+> **Observação:** ao filtrar em **issuerAssignedId**, você deve fornecer **emissor** e **issuerAssignedId**. Entretanto, o valor do **emissor** será ignorado em determinados cenários. Para obter mais detalhes sobre a filtragem nas identidades, consulte o [tipo de recurso objectIdentity](../resources/objectIdentity.md)
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -175,7 +175,7 @@ Este é um exemplo de solicitação.
   "name": "get_signinname_users"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
@@ -223,7 +223,8 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "John Smith"
+      "displayName": "John Smith",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
 }
@@ -648,7 +649,7 @@ Content-type: application/json
 }
 ```
 
->**Observação**: também é possível aplicar `$filter` na propriedade de extensão do esquema para recuperar objetos em que uma propriedade na coleção corresponde a um valor especificado. A sintaxe é `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. Por exemplo, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. Há suporte para os operadores `eq` e `not`.
+>**Observação**: você também pode aplicar `$filter` na propriedade de extensão do esquema para recuperar objetos em que uma propriedade na coleção corresponde a um valor especificado. A sintaxe é `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. Por exemplo, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. Os operadores `eq` e `not` têm suporte.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

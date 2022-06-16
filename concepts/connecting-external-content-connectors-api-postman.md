@@ -1,16 +1,16 @@
 ---
 title: Usar o Postman com a API de conectores do Microsoft Graph
-description: Tente usar a API de conectores do Microsoft Graph com o Postman.
+description: Siga as etapas neste guia para criar uma API de conectores do Microsoft Graph usando a plataforma de API do Postman.
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 977a0a2a1c361a46795556d336a2eefe41ee3917
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 872107e33f956a13b9748e1153c8286f8620d053
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461545"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095052"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Usar o Postman com a API de conectores do Microsoft Graph
 
@@ -274,7 +274,7 @@ Depois que o estado da conexão mudar de **rascunho** para **pronto**, você pod
 
 Se seu serviço externo usa listas de controle de acesso não-Azure AD, sincronize essas permissões.  
 
-Grupos externos (junto com usuários e grupos do Azure Active Directory) são usados para definir permissões em `externalItems` adicionados a uma conexão do Microsoft Graph. Para obter detalhes, consulte [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0&preserve-view=true).
+Grupos externos (junto com usuários e grupos do Azure Active Directory) são usados para definir permissões em `externalItems` adicionados a uma conexão do Microsoft Graph. Para obter detalhes, consulte [externalGroup](/graph/api/resources/externalconnectors-externalgroup).
 
 Este é um exemplo de uma solicitação.
 

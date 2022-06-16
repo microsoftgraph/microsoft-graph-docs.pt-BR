@@ -1,16 +1,16 @@
 ---
 title: Use as APIs do Microsoft Graph para configurar o logon único baseado em SAML
-description: Aprenda a economizar tempo usando as APIs do Microsoft Graph para automatizar a configuração de logon único baseado em SAML.
+description: Siga estas etapas para criar e configurar um SSO (logon único) baseado em SAML para seu aplicativo no Azure AD usando a API do Microsoft Graph.
 author: kenwith
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
-ms.openlocfilehash: 06fb882695affc40898d7c9391f655e0bdccfff7
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 3f4d56fec8e09f7e530687b8f8777390da3d96a2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65314820"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095136"
 ---
 # <a name="configure-saml-based-single-sign-on-for-your-application-using-the-microsoft-graph-api"></a>Configure o logon único baseado em SAML para seu aplicativo usando a API do Microsoft Graph
 
@@ -20,9 +20,9 @@ Este artigo usa um modelo de aplicativo Azure AD da AWS como exemplo, mas você 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Para este tutorial, as permissões delegadas `Application.ReadWrite.All`,`AppRoleAssignment.ReadWrite.All`,`Policy.Read.All`,`Policy.ReadWrite.ApplicationConfiguration` e `User.ReadWrite.All` são necessárias. Conclua as seguintes etapas para definir as permissões no Microsoft Graph Explorer:
+Este tutorial presume que você está usando o Explorador do Graph, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Para este tutorial, as permissões delegadas `Application.ReadWrite.All`,`AppRoleAssignment.ReadWrite.All`,`Policy.Read.All`,`Policy.ReadWrite.ApplicationConfiguration` e `User.ReadWrite.All` são necessárias. Conclua as seguintes etapas para definir as permissões no Explorador do Graph:
 
-1. Vá para o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+1. Vá para [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 2. Selecione **Entrar com a conta da Microsoft** e entre usando uma conta de administrador global do Azure AD. Uma vez acessado, você verá os detalhes da conta do usuário no painel esquerdo.
 3. Selecione o ícone de configurações à direita dos detalhes da conta do usuário e, em seguida, selecione **Selecionar permissões**.
 

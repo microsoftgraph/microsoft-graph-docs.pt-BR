@@ -1,15 +1,15 @@
 ---
-title: 'Controle de versão, suporte e mudanças significativas de políticas para o Microsoft Graph '
-description: Este artigo descreve o suporte e as alterações significativas de políticas do Microsoft Graph e as versões da API Microsoft Graph disponível no momento.
+title: Controle de versão, suporte e mudanças significativas de políticas para o Microsoft Graph
+description: Saiba mais sobre o suporte e as políticas de alteração de falha do Microsoft Graph e das versões da API do Microsoft Graph que estão disponíveis no momento.
 ms.localizationpriority: high
-ms.openlocfilehash: 1ecf67a8630c055baf00993e3defbae7f57376da
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: 3b5b385cbf738c04b976e6ca3e0749c47942eabf
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016596"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095010"
 ---
-# <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Controle de versão, suporte e mudanças significativas de políticas do Microsoft Graph
+# <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Controle de versão, suporte e mudanças significativas de políticas para o Microsoft Graph
 
 Este artigo descreve o suporte e as alterações significativas de políticas do Microsoft Graph e as versões da API Microsoft Graph disponível no momento.
 

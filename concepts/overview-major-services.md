@@ -1,19 +1,19 @@
 ---
-title: Principais serviços e recursos do Microsoft Graph
-description: 'O Microsoft Graph permite a integração com os melhores serviços do Microsoft 365, Windows e Enterprise Mobility + Security no Microsoft 365, usando a APIs REST e as bibliotecas de clientes. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
+title: Serviços e recursos do Microsoft Graph
+description: Saiba como a rede do Microsoft Graph e os serviços e recursos do Microsoft 365 gerenciam, protegem e extraem dados para dar suporte a uma ampla variedade de cenários.
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eff2c9e58e9d091ba72ccec2151b746b61186e34
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 63e7235dc8e5c2cbc3690774f6bde086aa0d6391
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65944432"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094225"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
-O Microsoft Graph permite a integração com os melhores serviços do Microsoft 365, Windows e Enterprise Mobility + Security no Microsoft 365, usando a APIs REST e as bibliotecas de clientes. Além disso, oferece segurança e inteligência que podem aumentar a produtividade do usuário, bem como a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
+O Microsoft Graph permite a integração com os melhores serviços do Microsoft 365, Windows e Enterprise Mobility + Security no Microsoft 365, usando a APIs REST e as bibliotecas de clientes. Além disso, oferece segurança e inteligência que podem aumentar a produtividade do usuário, bem como a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários.
 
 ## <a name="users-and-groups"></a>Usuários e grupos
 
@@ -38,13 +38,11 @@ Começando com usuários e grupos no núcleo, o Microsoft Graph forma uma rede d
 
 Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outros são bem conhecidos como serviços autônomos, mas já estão convergindo no Microsoft Graph. Seus conjuntos de APIs seguem um design simplificado, conforme detalhado nas [diretrizes da API REST da Microsoft](https://github.com/Microsoft/api-guidelines), e agora estão acessíveis por meio do único ponto de extremidade REST do Microsoft Graph `https://graph.microsoft.com`. O restante deste artigo lista os principais serviços e recursos por categoria. 
 
-
 ## <a name="identity-and-access-management"></a>Gerenciamento de identidades e acesso
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Gerenciamento de identidades e acesso | Azure AD | Cria e gerencia recursos de diretório, como usuários, grupos e aplicativos. Gerencie o acesso a recursos e dados. Oferece acesso aos clientes a dados de entrada e de risco da conta no Azure AD.| [Visão geral do gerenciamento de identidade e acesso do Azure AD](azuread-identity-access-management-concept-overview.md)  |
-
 
 ## <a name="productivity"></a>Produtividade
 
@@ -69,7 +67,6 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |Tarefas e planos | Planner | Permite que os usuários dos grupos do Microsoft 365 criem planos, atribuam tarefas e acompanhem o progresso. | [Visão geral de tarefas e planos do Planner](planner-concept-overview.md) |
 |Trabalho em equipe |  Microsoft Teams | O hub digital e espaço de trabalho baseado em bate-papo para as equipes compartilharem arquivos, observações, calendários e planos. | [Visão geral do trabalho em equipe do Microsoft Teams](teams-concept-overview.md) |
 
-
 ## <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e no local de trabalho
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
@@ -79,7 +76,6 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Personalização do cartão de perfil (visualização) | Cartão de perfil | Fornece um mecanismo leve para que um administrador personalize o conteúdo que aparece no cartão de perfil do Microsoft 365 dentro de uma organização. | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
 | Insights do documento  | Delve, OneDrive, Outlook, SharePoint | Usa análises avançadas e técnicas de aprendizado de máquina para obter documentos mais populares, vistos, modificados ou compartilhados por um usuário.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md)  |
 | Análise (visualização) | Viva Insights | Usa análises e técnicas avançadas de aprendizado de máquina para fornecer informações sobre como e com quem as pessoas passam o tempo. Esses dados podem ajudar as pessoas a planejar o dia, obter informações sobre seus diferentes padrões de trabalho e ajudar a equilibrar o trabalho e a vida.  | [Inteligência de pessoas e no local de trabalho no Microsoft Graph](social-intel-concept-overview.md) |
-
 
 ## <a name="device-and-app-management"></a>Gerenciamento de aplicativo e dispositivo
 
@@ -92,14 +88,12 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Gerenciamento multilocatário (visualização) | Microsoft 365 Lighthouse | Permite que os Provedores de Serviços Gerenciados (MSPs) gerenciem remotamente vários locatários do cliente para conformidade e detecção de ameaças, e ajudam a manter os dispositivos dos locatários em um estado íntegro e seguro. | [Gerenciamento multilocatário usando o Microsoft 365 Lighthouse](managedtenants-concept-overview.md) |
 | Comunicações e Integridade do serviço | Serviços do Microsoft 365 e Dynamics 365 | Fornece acesso ao status de integridade e postagens do centro de mensagens sobre os serviços em nuvem da Microsoft. Um exemplo importante que usa a API de comunicações de serviço é o Centro de administração do Microsoft 365. | [Acessando as comunicações e a Integridade do serviço no Microsoft Graph](service-communications-concept-overview.md) |
 
-
 ## <a name="security"></a>Segurança
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Integração de segurança | Azure AD Identity Protection, Proteção de Informações do Azure, Central de Segurança do Azure, Microsoft Defender for Cloud Apps, Windows Defender Proteção Avançada contra Ameaças e [mais](/graph/api/resources/security-api-overview) | Fornece um gateway unificado para insights e ações de segurança em todos os parceiros da Microsoft e do ecossistema. | [Segurança no Microsoft Graph](security-concept-overview.md) |
 | Descoberta Eletrônica (versão prévia) | Descoberta Eletrônica do Microsoft Purview (Premium) | Fornece acesso aos recursos de descoberta eletrônica usados no processo de identificação e entrega de informações eletrônicas que podem ser usadas como evidência em casos legais.|[Segurança no Microsoft Graph](security-concept-overview.md)|
-
 
 ## <a name="cross-device-experiences"></a>Experiências entre dispositivos
 
@@ -116,13 +110,11 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |:-----------|:--------------------|:-----------|:----------------|
 | Notificações do usuário | Notificações do usuário | Permite que experiências de aplicativos criem experiências de notificação centradas no usuário e em várias plataformas, incluindo fan-out com base no usuário, dispensa universal e acesso ao histórico de notificações. | [Habilitando experiências de notificação centradas no ser humano usando notificações do Microsoft Graph](notifications-concept-overview.md) |
 
-
 ## <a name="usage-reports"></a>Relatórios de uso
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Relatórios | Microsoft Teams, OneDrive, Outlook, SharePoint, Skype for Business, Yammer | Obtém informações sobre atividades e uso de um serviço de suporte. | [Visão geral dos relatórios de uso](reportroot-concept-overview.md) |
-
 
 ## <a name="education"></a>Educação
 
@@ -130,14 +122,12 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |:-----------|:--------------------|:-----------|:----------------|
 | Educação | Azure AD, Educação | Fornece informações relevantes para cenários educacionais, incluindo escolas, turmas, alunos, professores e informações sobre tarefas. Permite que os ISVs criem aplicativos para as salas de aula que economizem o tempo dos professores e promovam o trabalho em equipe e a colaboração.  | [Visão geral de educação](education-concept-overview.md) |
 
-
 ## <a name="business-applications"></a>Aplicativos de negócios
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Reserva de clientes (prévia) | Microsoft Bookings | Tem como alvo organizações para permitir que seus usuários e clientes reservem serviços diretamente na Web ou no Facebook. Permite que os provedores de negócios gerenciem preferências, serviços e preços do cliente, listas e agendas de funcionários e outras informações empresariais comuns. | [Visão geral da API do Microsoft Bookings](booking-concept-overview.md) |
 | Finanças (visualização) | Dynamics 365 Business Central | Permite o gerenciamento de dados financeiros, automação e segurança da cadeia de suprimentos, gerenciamento de vendas e melhor atendimento ao cliente, gerenciamento de projetos e otimização de operações com a solução completa de gerenciamento de negócios.| [Visão geral da API Business Central](dynamics-business-central-concept-overview.md) |
-
 
 ## <a name="next-steps"></a>Próximas etapas
 

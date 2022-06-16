@@ -1,15 +1,15 @@
 ---
 title: Perguntas frequentes sobre a Conexão de Dados do Microsoft Graph
-description: Obtenha dicas que o ajudarão a aproveitar as vantagens da Conexão de Dados do Microsoft Graph.
+description: Encontre respostas para perguntas frequentes sobre como a Conexão de Dados permite que os desenvolvedores criem aplicativos que fornecem acesso gerenciado a conjuntos de dados do Microsoft Graph em escala.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 24a740efea421b18b1044401f0252102262da6b7
-ms.sourcegitcommit: 4ef29d4a2cfa1ccc4a3da649e683377b17b90108
+ms.openlocfilehash: 53e8231d4e60d498a687f5fb3c8ae6c92b4578d3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125882"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093126"
 ---
 # <a name="microsoft-graph-data-connect-frequently-asked-questions"></a>Perguntas frequentes sobre a Conexão de Dados do Microsoft Graph
 
@@ -17,11 +17,11 @@ O Data Connect do Microsoft Graph permite que os desenvolvedores criem aplicativ
 
 ## <a name="is-microsoft-graph-data-connect-right-for-me"></a>A Conexão de Dados do Microsoft Graph é adequada para mim?
 
-A Conexão de Dados e as APIs do Microsoft Graph fornecem acesso aos mesmos dados subjacentes, mas de formas muito diferentes. OA Data Connect foi projetado para extrair grandes quantidades de dados em massa, enquanto as APIs do Microsoft Graph são mais adequadas para acessar conjuntos específicos de dados em tempo real. Em alguns casos, ainda pode fazer sentido combiná-los. Por exemplo, você pode querer usar o Data Connect para fazer uma extração inicial dos dados de email do último ano e, em seguida, usar as APIs do Microsoft Graph para analisar emails em tempo real daqui para frente. A Conexão de Dados e as APIs do Microsoft Graph são ferramentas diferentes para trabalhos diferentes. É importante pensar sobre o qual método de acesso melhor se encaixa em seu cenário. Para obter mais informações, consulte [Quando devo usar a API do Microsoft Graph ou o Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
+A Conexão de Dados e as APIs do Microsoft Graph fornecem acesso aos mesmos dados subjacentes, mas de formas muito diferentes. A Conexão de Dados foi projetada para extrair grandes quantidades de dados em massa, enquanto as APIs do Microsoft Graph são mais adequadas para acessar conjuntos específicos de dados em tempo real. Em alguns casos, ainda pode fazer sentido combiná-los. Por exemplo, você pode usar a Conexão de Dados para fazer uma extração inicial dos dados de email do último ano e, em seguida, usar as APIs do Microsoft Graph para analisar emails em tempo real daqui para frente. A Conexão de Dados e as APIs do Microsoft Graph são ferramentas diferentes para trabalhos diferentes. É importante pensar sobre o qual método de acesso melhor se encaixa em seu cenário. Para obter mais informações, consulte [Quando devo usar a API do Microsoft Graph ou o Data Connect](/graph/overview#when-should-i-use-microsoft-graph-api-or-data-connect).
 
 ## <a name="is-there-any-initial-overhead"></a>Há alguma sobrecarga inicial?
 
-Como o Data Connect foi projetado para extrair grandes quantidades de dados em massa, ocorre alguma sobrecarga antes que os dados possam ser extraídos. Essa sobrecarga é de aproximadamente 45 minutos, ou seja, todos os pipelines levarão no mínimo esse tempo, independentemente do tamanho dos dados. Isso pode ser um custo insignificante para grandes quantidades de dados, mas se for inaceitável para seu cenário, as APIs do Microsoft Graph podem fornecer uma melhor abordagem.
+Como o Data Connect foi projetado para extrair grandes quantidades de dados em massa, ocorre alguma sobrecarga antes que os dados possam ser extraídos. Essa sobrecarga é de aproximadamente 45 minutos, ou seja, todos os pipelines levarão no mínimo esse tempo, independentemente do tamanho dos dados. Isso pode ser um custo insignificante para grandes quantidades de dados, mas, se neste momento for inaceitável para seu cenário, as APIs do Microsoft Graph podem fornecer uma melhor abordagem.
 
 ## <a name="how-much-do-i-have-to-pay-for-data-connect"></a>Quanto devo pagar pelo Data Connect?
 

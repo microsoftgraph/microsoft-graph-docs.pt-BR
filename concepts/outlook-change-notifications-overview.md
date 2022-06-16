@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 04361ff86fc4106d0792b43b2ea7638a41e04b7c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: e43b300119e8a3efb1b8deca5d82b36a26c339e3
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337888"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66093064"
 ---
 # <a name="change-notifications-for-outlook-resources-in-microsoft-graph"></a>Alterar notificações para recursos do Outlook no Microsoft Graph
 
@@ -36,13 +36,13 @@ Para [criar uma assinatura](webhooks.md#creating-a-subscription), especifique o 
 
 [!INCLUDE [outlook-subscription-notes](../includes/outlook-subscription-notes.md)]
 
-Dependendo do recurso, a permissão especificada na tabela a seguir é a menos privilegiada necessária para chamar essa API.
+Dependendo do recurso, use a permissão menos privilegiada especificada na tabela a seguir para chamar essa API.
 
 | Resource| Trajetórias dos recursos com suporte| Delegado (conta corporativa ou de estudante)| Delegada (conta pessoal da Microsoft)| Aplicativo|
 |:--------|:------------------------|:----------------------------------|:--------------------------------------|:-----------|
 |[contato](/graph/api/resources/contact) | Alterações em todas as mensagens na caixa de correio de um usuário: <br>`/me/contacts`<br>`/users/{id}/contacts`<br>Alterações nos contatos no contactFolder de um usuário:<br>`/users/{id}/contactFolders/{id}/contacts` | Contacts.Read | Contacts.Read | Contacts.Read |
 |[event](/graph/api/resources/event)     | Alterações em todas as mensagens na caixa de correio de um usuário: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
-|[message](/graph/api/resources/message) | Alterações em todas as mensagens na caixa de correio de um usuário: <br>`/me/messages`<br>`/users/{id}/messages`<br>Alterações nas mensagens na mailFolder de um usuário:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[message](/graph/api/resources/message) | Alterações em todas as mensagens na caixa de correio de um usuário: <br>`/me/messages`<br>`/users/{id}/messages`<br>Alterações nas mensagens na mailFolder de um usuário:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.Read |
 
 ### <a name="include-resource-data-in-notification-payload-preview"></a>Incluir dados de recurso no conteúdo de notificação (versão prévia)
 

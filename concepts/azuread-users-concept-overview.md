@@ -1,16 +1,16 @@
 ---
-title: Visão geral de usuários do Microsoft Graph
-description: Os usuários são a representação de uma conta de usuário corporativa ou de estudante do Azure Active Directory (Azure AD) ou uma conta da Microsoft no Microsoft Graph. O recurso **usuário** no Microsoft Graph é um hub do qual você pode acessar as relações e os recursos que são relevantes para seus usuários.
+title: Usuários no Microsoft Graph
+description: Você pode usar o Microsoft Graph para acessar relações, documentos, contatos e preferências contextualmente relevantes para o usuário conectado na sua organização.
 author: dkershaw10
 ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 88f03a5fad2a6aa9ae473e8ce6d1f9f51cee018d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03a9e667a665363c4d36ca9c576c1472f66726fe
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127987"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095045"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Visão geral de usuários do Microsoft Graph
 
@@ -59,18 +59,16 @@ Maximizar a relevância no aplicativo promovendo documentos e contatos mais popu
 - Listar documentos compartilhados com um usuário por email ou pelo OneDrive for Business.
 
 ## <a name="api-reference"></a>Referência da API
+
 Está procurando a referência de API para esse serviço?
 
-- [API de Usuários no Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0)
-- [API de Usuários no Microsoft Graph beta](/graph/api/resources/users?view=graph-rest-beta)
+- [API de Usuários no Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0&preserve-view=true)
+- [API de Usuários no Microsoft Graph beta](/graph/api/resources/users?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Saiba mais sobre como [trabalhar com usuários](/graph/api/resources/users?view=graph-rest-1.0).
+- Saiba mais sobre como [trabalhar com usuários](/graph/api/resources/users).
 - Explore seus próprios dados no recurso **usuário** no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Autentique com o Microsoft Graph [em nome de um usuário](auth-v2-user.md) ou [como um daemon ou serviço autorizado por um administrador](auth-v2-service.md).
-- Configure o controle de acesso e políticas para usuários com a [API do Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Analise as [permissões](permissions-reference.md) que serão necessárias para o aplicativo acessar dados do usuário. 
-<!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with Microsoft Graph [changelog](changelog.md).
--->
+- Configure o controle de acesso e políticas para usuários com a [API do Azure AD](/graph/api/resources/azure-ad-overview).
+- Analise as [permissões](permissions-reference.md) que serão necessárias para o aplicativo acessar dados do usuário.

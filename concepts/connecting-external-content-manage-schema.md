@@ -1,22 +1,22 @@
 ---
 title: Registrar e atualizar o esquema para a Microsoft Graph conexão
-description: Saiba como usar o Microsoft Graph para registrar o esquema para sua conexão do Microsoft Graph.
+description: Antes de adicionar itens a uma conexão, você deve registrar o esquema. Descreve o esquema de exemplo, atributos de propriedade, rótulos semânticos e recursos de atualização de esquema.
 ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 7f0871b0f95425fbdd46ad6587195bcb1ef62b0b
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 961b8729bea3a835bcb1d6d49c9f1953a7267004
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202046"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66092678"
 ---
 <!---<author of this doc: rsamai>--->
 
 # <a name="register-and-update-schema-for-the-microsoft-graph-connection"></a>Registrar e atualizar o esquema para a Microsoft Graph conexão
 
-O [esquema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true) de conexão determina como seu conteúdo é usado em várias experiências do Microsoft Graph. O esquema é uma lista simples de todas as propriedades que você planeja adicionar à conexão junto com seus atributos, rótulos e aliases. Você deve registrá-lo antes de adicionar itens na conexão.
+O [esquema](/graph/api/resources/externalconnectors-schema) de conexão determina como seu conteúdo é usado em várias experiências do Microsoft Graph. O esquema é uma lista simples de todas as propriedades que você planeja adicionar à conexão junto com seus atributos, rótulos e aliases. Você deve registrá-lo antes de adicionar itens na conexão.
 
 ## <a name="example-schema"></a>Exemplo de esquema
 
@@ -162,7 +162,7 @@ Os aliases são nomes amigáveis para as propriedades que você atribuir. Eles s
 
 ## <a name="schema-update-capabilities"></a>Recursos de atualização de esquema
 
-Esta seção inclui informações sobre os recursos de atualização da API do [esquema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0&preserve-view=true).
+Esta seção inclui informações sobre os recursos de atualização da API do [esquema](/graph/api/resources/externalconnectors-schema).
 
 > [!NOTE]
 > Recomendamos que você reinsira os itens após uma atualização para trazê-los para o esquema mais recente. Sem reingestão, o comportamento dos itens será inconsistente.
@@ -192,7 +192,7 @@ Adicionar um rótulo semântico pode afetar experiências como Relevância e Tó
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Adicionar itens à conexão](connecting-external-content-manage-items.md)
-- [Revisar a referência da API do conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Revisar a referência da API do conectores do Microsoft Graph](/graph/api/resources/indexing-api-overview)
 - [Pesquisar tipos personalizados (externalItem)](search-concept-custom-types.md)
 - [Criar seu primeiro conector Microsoft Graph personalizado](/graph/connecting-external-content-build-quickstart)
 

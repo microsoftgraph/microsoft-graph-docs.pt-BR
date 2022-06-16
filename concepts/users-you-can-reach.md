@@ -1,33 +1,33 @@
 ---
 title: Usuários que você pode alcançar com o Microsoft Graph
-description: 'A Microsoft oferece soluções e serviços que ampliam a vida moderna e o trabalho atual. '
+description: Use a API do Microsoft Graph para criar aplicativos do Microsoft 365 que conectam os usuários aos serviços pessoais, serviços corporativos e serviços escolares.
 author: dkershaw10
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: aea7510ff9b0b4b5986616317c74b092be011812
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9c9876d58d645bc48f87e6b2d1891728fa06c18
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134007"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095017"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Usuários que você pode alcançar com o Microsoft Graph
 
 A Microsoft oferece soluções e serviços que ampliam a vida moderna e o trabalho atual.
 
-Como desenvolvedor, você pode usar a API do Microsoft Graph para criar aplicativos que se conectam a milhões de usuários que usam os produtos de nuvem da Microsoft para o trabalho, a escola e produtividade pessoal.
+Como desenvolvedor, você pode usar a API do Microsoft Graph para criar aplicativos que se conectam a milhões de usuários que usam os produtos da Microsoft 365 para produtividade no trabalho, escolar e pessoal.
 
 ## <a name="connect-to-personal-services"></a>Conectar-se aos serviços pessoais
 
-Use o Microsoft Graph para alcançar usuários com contas pessoais da Microsoft, como contas @outlook.com, @hotmail.com ou @live.com. Com o consentimento deles, você poderá usar o Microsoft Graph para acessar os perfis de usuário, seus serviços do Office como o OneDrive e o email do Outlook, o calendário, os contatos e os dispositivos deles no Windows 10, assim como as atividades deles.
+Use o Microsoft Graph para alcançar usuários com contas pessoais da Microsoft, como contas @outlook.com, @hotmail.com ou @live.com. Com o consentimento deles, você poderá usar o Microsoft Graph para acessar os perfis de usuário, seus serviços do Office, como o OneDrive e o email, calendário e contatos do Outlook, e os seus dispositivos e atividades do Windows.
 
 ## <a name="connect-to-work-services"></a>Conectar-se aos serviços profissionais
 
-Use o Microsoft Graph para alcançar usuários e organizações que possuem licenças de serviços do Microsoft 365 para negócios, empresas ou educação. Esses serviços do Microsoft 365 incluem:
+Use o Microsoft Graph para alcançar usuários e organizações que têm licenças dos serviços do Microsoft 365 para negócios, empresas ou educação. Esses serviços do Microsoft 365 incluem:
 
 - Microsoft 365
 - Enterprise Mobility + Security
-- Windows 10
+- Windows
 
 Com o consentimento deles, você pode usar o Microsoft Graph para obter acesso aos dados de usuários e organizacionais de acordo com os serviços para os quais eles têm licenças e os serviços e recursos disponíveis no Microsoft Graph. Para saber mais, veja os [principais serviços e recursos do Microsoft Graph](overview-major-services.md).
 

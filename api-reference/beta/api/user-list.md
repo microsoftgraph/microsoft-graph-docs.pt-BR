@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a14aa4ee74a3d978b0da3e8c8076098545f03e0
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: e2b6657c3b4475b47f03e33b193ea26630fe304f
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210059"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095569"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -141,8 +141,7 @@ Content-type: application/json
 
 Encontrar uma conta de usuário usando um nome de entrada (também conhecido como conta local).
 
->[!NOTE]
->Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**. O valor de **issuerAssignedId** deve ser o endereço de email da conta do usuário, não o nome de usuário principal (UPN). Se um UPN for usado, a resposta será uma lista em branco.
+> **Observação:** ao filtrar em **issuerAssignedId**, você deve fornecer **emissor** e **issuerAssignedId**. Entretanto, o valor do **emissor** será ignorado em determinados cenários. Para obter mais detalhes sobre a filtragem em identidades, consulte o [tipo de recurso objectIdentity](../resources/objectIdentity.md).
 
 #### <a name="request"></a>Solicitação
 
@@ -154,7 +153,7 @@ Este é um exemplo de solicitação.
   "name": "get_signinname_users"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
@@ -200,7 +199,8 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "John Smith"
+      "displayName": "John Smith",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
 }

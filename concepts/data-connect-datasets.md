@@ -1,15 +1,15 @@
 ---
 title: Conjuntos de dados, regiões e coletores com suporte da Conexão de dados do Microsoft Graph
-description: Descreve os conjuntos de dados com suporte aos tipos de armazenamento de destino que podem ser usados com a Conexão de Dados do Microsoft Graph.
+description: Saiba mais sobre os conjuntos de dados com suporte, regiões do Microsoft 365 e tipos de armazenamento de coletor que você pode usar com a Conexão de Dados do Microsoft Graph.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 6d73482dbf2b8b0c85851970460836094a982ad3
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: b9138bfe4bbbb664deeea463745a264116035fb1
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247191"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094023"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Conjuntos de dados, regiões e coletores com suporte da Conexão de dados do Microsoft Graph
 
@@ -42,7 +42,7 @@ No momento o Microsoft Graph Data Connect suporta os conjuntos de dados a seguir
 
 ## <a name="regions"></a>Regiões
 
-O Microsoft Graph Data Connect suporta a extração de dados de várias regiões diferentes do Microsoft 365. Para mover com êxito os dados do datacenter do Microsoft 365 para o armazenamento do Microsoft Azure, a instância Azure Data Factory e o local de armazenamento do Azure devem mapear para uma região suportada no local dos dados do Microsoft 365. 
+A Conexão de Dados do Microsoft Graph dá suporte à extração de dados de diversas regiões do Microsoft 365. Para mover os dados do datacenter do Microsoft 365 com êxito no armazenamento do seu Microsoft Azure, a instância do Azure Data Factory e o local de armazenamento do Azure devem mapear em uma região com suporte no local dos dados do Microsoft 365. 
 
 A tabela a seguir indica quais regiões do Microsoft 365 têm suporte e as regiões do Azure correspondentes necessárias para a movimentação de dados.
 
