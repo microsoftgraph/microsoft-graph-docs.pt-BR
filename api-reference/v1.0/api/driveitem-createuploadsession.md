@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 doc_type: apiPageType
-ms.openlocfilehash: 9cde7d026cce22eaf10a0efb769bf451d0343523
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: e3b03cb0e48a32ba26d5f1dfa323de9fed06adf7
+ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115400"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66118519"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -362,7 +362,7 @@ If-Match: {etag or ctag}
 }
 ```
 
-**Observação:** Você pode usar os cabeçalhos `@microsoft.graph.conflictBehavior` e `if-match` conforme esperado nessa chamada.
+>**Observação:** Você pode usar os cabeçalhos `@microsoft.graph.conflictBehavior` e `if-match` conforme esperado nessa chamada.
 
 ### <a name="response"></a>Resposta
 
@@ -403,12 +403,16 @@ Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
+## <a name="see-also"></a>Confira também
+
+[Upload de arquivos grandes](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
+
 <!-- {
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
   ],
-  "section&quot;: &quot;documentation"
+  "section": "documentation"
 } -->
 
