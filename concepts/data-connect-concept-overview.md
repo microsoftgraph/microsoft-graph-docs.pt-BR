@@ -1,16 +1,16 @@
 ---
-title: Visão geral da A Conexão de Dados do Microsoft Graph
-description: A Conexão de Dados do Microsoft Graph traz informações do Microsoft 365 para o Microsoft Azure, que oferece acesso às melhores ferramentas de desenvolvimento e hospedagem para trabalhar com esses dados.
+title: Visão geral da Conexão de Dados do Microsoft Graph
+description: Use a Conexão de Dados do Microsoft Graph para acessar dados em massa do Microsoft 365 em escala, habilitar o consentimento granular e fornecer segurança e governança de dados.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f2275f5b2163c8b340fb4660d478d07338f11298
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 2870f56b2c784bba233fc2db9accac12f13e82d2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176603"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094043"
 ---
 # <a name="overview-of-microsoft-graph-data-connect"></a>Visão geral da A Conexão de Dados do Microsoft Graph
 

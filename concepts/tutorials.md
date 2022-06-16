@@ -1,14 +1,14 @@
 ---
 title: Tutoriais do Microsoft Graph
-description: Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo que orientam você na criação de um aplicativo básico que acessa dados por meio do Microsoft Graph.
+description: Crie um aplicativo básico que acesse dados por meio do Microsoft Graph em 30 minutos usando um tutorial passo a passo do Microsoft Graph.
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: 8c1bc3d12fb540f948c55a68cc83ba943a092283
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: b2c810e437197f5702abebe46c76648315178ed7
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653333"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66095031"
 ---
 # <a name="microsoft-graph-tutorials"></a>Tutoriais do Microsoft Graph
 

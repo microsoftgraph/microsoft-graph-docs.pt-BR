@@ -1,15 +1,15 @@
 ---
 title: Recursos de seleção e filtragem de usuários na Conexão de Dados do Microsoft Graph
-description: Descreve como usar a Conexão de Dados do Microsoft Graph ara selecionar os usuários cujos dados serão extraídos e filtrar os dados retornados.
+description: Você pode utilizar o Microsoft Graph Data Connect para selecionar os usuários para os quais deseja extrair dados e incluir filtros para limitar os dados retornados.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: f87810144bd5b7edff28ea33b6a733559ecdc0f5
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: bcdbfe58b628ee0f431a529d8a3372c6c1c9266e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247277"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094022"
 ---
 # <a name="user-selection-and-filtering-capabilities-in-microsoft-graph-data-connect"></a>Recursos de seleção e filtragem de usuários na Conexão de Dados do Microsoft Graph
 
