@@ -1,17 +1,17 @@
 ---
-title: Integração do Conexão de Dados do Microsoft Graph com o Privileged Access Management
+title: Integração do Microsoft Graph Data Connect com o PAM
 description: A Conexão de Dados do Microsoft Graph depende do Privileged Access Management (PAM) para permitir que os administradores do Microsoft 365 aprovem solicitações de movimentação de dados.
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: c013afa8de8fa6ed8fbd38d037e536c058eb6ad1
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 7326580a1fa5516c516ff949dace93c20a5930d2
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246731"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66094036"
 ---
-# <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Integração do Conexão de Dados do Microsoft Graph com o Privileged Access Management
+# <a name="microsoft-graph-data-connect-integration-with-pam"></a>Integração do Microsoft Graph Data Connect com o PAM
 
 A Conexão de Dados do Microsoft Graph depende do Privileged Access Management (PAM) para permitir que os administradores do Microsoft 365 aprovem solicitações de movimentação de dados. Os pipelines da Conexão de Dados devem ser aprovados por um membro do grupo aprovador de solicitação de acesso a dados especificado pelo administrador do Microsoft 365 durante a ativação. Para configurar o grupo aprovador, consulte [Configurar seu locatário Microsoft 365 e habilitar Conexão de Dados do Microsoft Graph](/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
 

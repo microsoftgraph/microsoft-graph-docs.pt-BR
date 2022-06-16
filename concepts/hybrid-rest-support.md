@@ -1,13 +1,13 @@
 ---
 title: Usar as APIs REST para acessar as caixas de correio nas implantações híbridas do Exchange (preteridas)
-description: O uso das APIs REST nas implantações híbridas do Exchange é preterido e não terá mais suporte a partir de março de 2023.
+description: O uso das APIs REST nas implantações híbridas do Exchange está preterido e não terá mais suporte a partir de março de 2023.
 ms.localizationpriority: high
-ms.openlocfilehash: a7dd122b2a9e15e04613bd31a003dc4f80967f42
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5775a3019b6a4161f7f09141b2f9e128f966fc3e
+ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63335868"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66096207"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-deprecated"></a>Usar as APIs REST para acessar as caixas de correio nas implantações híbridas do Exchange (preteridas)
 
