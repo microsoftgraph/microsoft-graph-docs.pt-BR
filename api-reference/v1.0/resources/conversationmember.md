@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52b71c62e203bb1adba7c14f9bf72681ff4464a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 299c98d0e751e835861fda43216c2bdabed05e24
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067476"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141226"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 
 Namespace: microsoft.graph
 
-Representa um usuário em uma [equipe,](team.md)um [canal](channel.md)ou [um chat.](chat.md)
+Representa um usuário em uma [equipe](team.md), um [canal](channel.md) ou um [chat](chat.md).
 Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 
 ## <a name="methods"></a>Métodos
@@ -44,7 +44,7 @@ Consulte também [aadUserConversationMember](aaduserconversationmember.md).
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID exclusiva do usuário.|
 |displayName| cadeia de caracteres | O nome de exibição do usuário. |
-|funções| coleção de cadeias de caracteres | As funções desse usuário. |
+|funções| coleção de cadeias de caracteres | As funções desse usuário. Essa propriedade contém apenas qualificadores adicionais quando relevantes, por exemplo, `owner` se o membro tiver privilégios,  `owner` a propriedade de funções conterá como um dos valores. Da mesma forma, se o membro for um convidado, a propriedade **de** funções conterá `guest` como um dos valores. Um membro básico não deve ter nenhum valor especificado na propriedade **de** funções.  |
 |visibleHistoryStartDateTime| DateTimeOffset | O carimbo de data/hora indicando quanto o histórico de uma conversa é compartilhado com o membro da conversa. Essa propriedade é configurável somente para os membros de um bate-papo. |
 
 ## <a name="json-representation"></a>Representação JSON

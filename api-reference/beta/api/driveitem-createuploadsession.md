@@ -5,12 +5,12 @@ title: 'driveItem: createUploadSession'
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: e121323bd1d564b27a253c055f29a4b0c4b10372
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: d8f47342e11210024e8c07ea70971a68fd866a13
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118344"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141219"
 ---
 # <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
@@ -412,7 +412,7 @@ Confira o tópico [Respostas de Erro][error-response] para saber detalhes sobre 
 
 ## <a name="see-also"></a>Confira também
 
-[Upload de arquivo grande](/concepts/sdks/large-file-upload.md?view=graph-rest-1.0&preserve-view=true&tabs=java)
+[Upload de arquivos grandes](/graph/sdks/large-file-upload)
 
 <!--
 {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fd0a85bb14d6b205e81a47259dbdc7616fc86a9f
-ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
+ms.openlocfilehash: fa41b65aa3cfdd894795337430622aebbf80c45a
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62056334"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141233"
 ---
 # <a name="conversationmember-resource-type"></a>tipo de recurso conversationMember
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um usuário em uma [equipe ou](team.md) canal [ou](channel.md) [chat.](chat.md)
+Representa um usuário em uma [equipe,](team.md) canal [ou](channel.md) [chat](chat.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -46,7 +46,7 @@ Representa um usuário em uma [equipe ou](team.md) canal [ou](channel.md) [chat.
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID exclusiva do usuário.|
 |displayName| cadeia de caracteres | O nome de exibição do usuário. |
-|funções| coleção de cadeias de caracteres | As funções desse usuário. |
+|funções| coleção de cadeias de caracteres | As funções desse usuário. Essa propriedade contém apenas qualificadores adicionais quando relevantes, por exemplo, `owner` se o membro tiver privilégios,  `owner` a propriedade de funções conterá como um dos valores. Da mesma forma, se o membro for um convidado, a propriedade **de** funções conterá `guest` como um dos valores. Um membro básico não deve ter nenhum valor especificado na propriedade **de** funções. |
 |visibleHistoryStartDateTime| DateTimeOffset | O carimbo de data/hora indicando quanto o histórico de uma conversa é compartilhado com o membro da conversa. Essa propriedade é configurável somente para os membros de um bate-papo. |
 
 ## <a name="json-representation"></a>Representação JSON
