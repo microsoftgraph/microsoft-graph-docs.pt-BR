@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 50e476e116ca4af3882364415c665d705f96817f
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 49fbbcef1cb43158894517ea41c90fbe2912b3c7
+ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695388"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141641"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -59,12 +59,12 @@ Para controlar a paginação dos resultados da pesquisa, especifique as duas seg
 
 - **from** – um número inteiro que indica o ponto de partida baseado em 0 para listar os resultados da pesquisa na página. O valor padrão é 0.
 
-- **size** – um número inteiro que indica o número de resultados a serem retornados para uma página. O valor padrão é 25.
+- **size** – um número inteiro que indica o número de resultados a serem retornados para uma página. O padrão é 25 resultados. O máximo é de 1000 resultados.
 
 Observe os seguintes limites se você estiver pesquisando a entidade **event** ou **message**:
 
 - **from** deve começar em zero na primeira solicitação de página; caso contrário, a solicitação resultará em um HTTP 400 `Bad request`.
-- O máximo de resultados por página (**size**) é 25 por **mensagem** e **evento**. 
+- O número máximo de resultados por página (**size**) é 25 para **message** e **event**. 
 
 Não há um limite superior para itens do SharePoint ou do OneDrive. Um tamanho de página razoável é 200. Um tamanho de página maior geralmente gera uma latência maior.
 
@@ -72,9 +72,9 @@ Práticas recomendadas:
 
 - Especifique uma primeira página menor na solicitação inicial. Por exemplo, especifique **from** como 0 e **size** como 25.
 - Pagine as páginas subsequentes atualizando as propriedades **from** e **size**. Você pode aumentar o tamanho de página em cada solicitação subsequente. A tabela a seguir mostra um exemplo.
-- O tamanho máximo da página é 1000.
 
-    | Page | from | size |
+
+    | Página | from | size |
     |:-----|:-----|:-----|
     | 1    | 0 | 25 |
     | 2    | 25 | 50 |

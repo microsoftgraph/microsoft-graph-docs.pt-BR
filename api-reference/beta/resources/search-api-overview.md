@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3ebab5bc652f6e6b484312420fb779d849eabb20
-ms.sourcegitcommit: 7deb4fad6acc69fd6bc02cd4e2f6774de5784c97
+ms.openlocfilehash: 052fac1ad96394862a58abff595ad68b22dcecbf
+ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62894744"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141655"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Usar a API de Pesquisa da Microsoft para consultar dados
 
@@ -66,12 +66,12 @@ Para controlar a paginação dos resultados da pesquisa, especifique as duas seg
 
 - **from** – um número inteiro que indica o ponto de partida baseado em 0 para listar os resultados da pesquisa na página. O valor padrão é 0.
 
-- **size** – um número inteiro que indica o número de resultados a serem retornados para uma página. O valor padrão é 25.
+- **size** – um número inteiro que indica o número de resultados a serem retornados para uma página. O padrão é 25 resultados. O máximo é de 1000 resultados.
 
 Observe os seguintes limites se você estiver pesquisando a entidade **event** ou **message**:
 
 - **from** deve começar em zero na primeira solicitação de página; caso contrário, a solicitação resultará em um HTTP 400 `Bad request`.
-- O máximo de resultados por página (**size**) é 25 por **mensagem** e **evento**.
+- O número máximo de resultados por página (**size**) é 25 para **message** e **event**.
 
 Não há um limite superior para itens do SharePoint ou do OneDrive. Um tamanho de página razoável é 200. Um tamanho de página maior geralmente gera uma latência maior.
 
