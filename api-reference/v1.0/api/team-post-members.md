@@ -5,17 +5,20 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 27c2e61b6e5b94731071b504d78f2d7c70e721ca
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 8d249d41a71b4e9e6e49c85d4e4ae30afa521c76
+ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333222"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66141247"
 ---
 # <a name="add-member-to-team"></a>Adicionar membro à equipe.
 Namespace: microsoft.graph
 
 Adicione um novo [conversationMember](../resources/conversationmember.md) à uma [equipe](../resources/team.md).
+
+> [!NOTE] 
+> A propriedade **funções** estará vazia por padrão para todos os membros. Esta propriedade só contém qualificadores adicionais quando relevante - por exemplo, se o membro tiver `owner` privilégios, a propriedade funções conterá `owner` como um dos valores. Da mesma forma, se o membro for um convidado, a propriedade **funções** conterá `guest` como um dos valores. Um membro básico não deve ter valores especificados na propriedade **funções**.
 
 ## <a name="permissions"></a>Permissões
 
