@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c08705efe8d88387aed81b0c1f98e9d87cfba017
-ms.sourcegitcommit: 5516b107d72caef6ec042fe74228be4031b32fa5
+ms.openlocfilehash: c65d9b0a4b418784af1851f87deb0ecef87cd174
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65061073"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160696"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -51,7 +51,7 @@ Namespace: microsoft.graph
 |[Remover guia do canal](../api/channel-delete-tabs.md) | Nenhum | Remover (Desafixar) uma Tabulação de um canal.|
 |[Endereço de email do canal de provisão](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provisione um endereço de e-mail para o canal.|
 |[Remover o endereço de email do canal](../api/channel-removeemail.md) | Nenhum | Remova o endereço de e-mail do canal.|
-|[Remover canal de entrada](../api/team-delete-incomingchannel.md) | Nenhum| Remova um canal de entrada.|
+|[Remover canal de entrada](../api/team-delete-incomingchannels.md) | Nenhum| Remova um canal de entrada.|
 |[Listar equipes que compartilham um canal](../api/sharedwithchannelteaminfo-list.md)|coleção [sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Obtenha a lista de equipes que foram compartilhadas no canal especificado.|
 |[Obter equipe compartilhando um canal](../api/sharedwithchannelteaminfo-get.md)|[sharedWithChannelTeamInfo](../resources/sharedwithchannelteaminfo.md)|Obtenha uma equipe que tenha sido compartilhada com o canal especificado.|
 |[Descompartilhar canal com a equipe](../api/sharedwithchannelteaminfo-delete.md)|Nenhum|Descompartilhe um canal com uma equipe.|

@@ -1,16 +1,16 @@
 ---
 title: Criar bookingBusiness
-description: Crie uma nova empresa do Microsoft Bookings em um locatário.
+description: Crie um novo Microsoft Bookings em um locatário.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1fab03031b2fc74647d5e3014ec649e65c5869ab
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 20a5934baeb7d0f7c762b15f9895eb958b615080
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898900"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160570"
 ---
 # <a name="create-bookingbusiness"></a>Criar bookingBusiness
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma nova empresa do Microsoft Bookings em um locatário.
+Crie um novo Microsoft Bookings em um locatário.
 
 Esta é a primeira etapa na configuração de uma empresa do Bookings em que você deve especificar o nome de exibição comercial. Você pode incluir outras informações, como endereço comercial, endereço do site e política de agendamento, ou definir essas informações posteriormente [](bookingbusiness-update.md) atualizando **o bookingBusiness**.
 ## <a name="permissions"></a>Permissões
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  Bookings.Manage.All  |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.Manage.All  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -193,6 +193,7 @@ Content-type: application/json
             ]
         }
     ],
+    "languageTag":"en-US",
     "schedulingPolicy":{
         "timeSlotInterval":"PT30M",
         "minimumLeadTime":"P1D",

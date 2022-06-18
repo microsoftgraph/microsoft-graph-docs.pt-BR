@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 34ab4476c00db82e365b4657ad38acac8ddf6ac7
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 063e695b386d1ed4730a6aa6160cd5853d04513d
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755639"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160438"
 ---
 # <a name="create-bookingappointment"></a>Criar bookingAppointment
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 > [!NOTE]
 > Se você criar um aplicativo personalizado usando permissões de aplicativo, deverá seguir a validação [de regras de negócios](/graph/bookingsbusiness-business-rules).
@@ -123,6 +123,7 @@ Content-type: application/json
     "invoiceUrl":"theInvoiceUrl",
     "isLocationOnline": true,
     "optOutOfCustomerEmail": false,
+    "anonymousJoinWebUrl": null,
     "postBuffer": "PT10M",
     "preBuffer": "PT5M",
     "price": 10.0,
@@ -297,6 +298,7 @@ Content-type: application/json
     "price": 10,
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
+    "anonymousJoinWebUrl": null,
     "staffMemberIds": [],
     "invoiceAmount": 10,
     "invoiceId": "1001",

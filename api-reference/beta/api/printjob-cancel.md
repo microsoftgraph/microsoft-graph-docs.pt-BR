@@ -1,35 +1,39 @@
 ---
-title: 'printJob: cancel'
-description: Cancele um trabalho de impressão.
+title: 'printJob: cancelar'
+description: Cancelar um trabalho de impressão.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b2eb7c40f1f2474752b316a412dbb4c382152741
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 9901e74d9aef456c52b16f6b62ce80cad43587bb
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787510"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160661"
 ---
-# <a name="printjob-cancel"></a>printJob: cancel
+# <a name="printjob-cancel"></a>printJob: cancelar
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancele um trabalho de impressão. Trabalhos de impressão só podem ser cancelados em nome de um usuário, usando permissões delegadas.
+Cancelar um trabalho de impressão. Trabalhos de impressão podem ser cancelados somente em nome de um usuário, usando permissões delegadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso à](printer-get.md) impressora.
+Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
+
+Para um aplicativo com permissões delegadas cancelar trabalhos de outros usuários, o usuário conectado deve ser membro de uma das seguintes funções de administrador:
+- Administrador Global
+- Administrador da impressora
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +46,7 @@ POST /print/printers/{id}/jobs/{id}/cancel
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-O corpo da solicitação deve estar vazio.
+Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.

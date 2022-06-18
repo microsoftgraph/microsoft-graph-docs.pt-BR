@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 66a16e9e90f45a82b107d8e5d5b0a748b87f987d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f104af1735ff41d0f6e6d9f1e1e8a8cd8313cb16
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113994"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160689"
 ---
 # <a name="create-bookingservice"></a>Criar bookingService
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [bookingService](../resources/bookingservice.md) para o [bookingBusiness especificado.](../resources/bookingbusiness.md)
+Crie um [novo bookingService](../resources/bookingservice.md) para o [bookingBusiness especificado](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,11 +40,11 @@ POST /bookingBusinesses/{id}/services
 | Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto bookingService.](../resources/bookingservice.md)
+No corpo da solicitação, forneça uma representação JSON de um [objeto bookingService](../resources/bookingservice.md) .
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [bookingService](../resources/bookingservice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto bookingService](../resources/bookingservice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -102,6 +102,7 @@ Content-type: application/json
     "displayName":"Bento",
     "isLocationOnline": true,
     "smsNotificationsEnabled": true,
+    "languageTag": "en-US",
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
     "postBuffer":"PT10M",
@@ -118,7 +119,8 @@ Content-type: application/json
     "staffMemberIds":[
         "d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
         "2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
-    ]
+    ],
+    "isAnonymousJoinEnabled": false
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

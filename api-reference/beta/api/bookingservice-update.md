@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4a31643464159f7578619eb318ea186a988d6023
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 674221dd3195ed136230e64496f1a2af50041397
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62094488"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160448"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de [um objeto bookingService](../resources/bookingservice.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
+Atualize as propriedades de [um objeto bookingService](../resources/bookingservice.md) no [bookingBusiness especificado](../resources/bookingbusiness.md).
 
-Veja a seguir alguns exemplos que você pode personalizar para um serviço:
+A seguir estão alguns exemplos que você pode personalizar para um serviço:
 - Price
-- Tamanho típico de um compromisso
+- Comprimento típico de um compromisso
 - Reminders
-- Qualquer buffer de tempo para configurar antes ou concluir após o serviço
-- [Os parâmetros de política](../resources/bookingschedulingpolicy.md) de agendamento, como aviso mínimo para reservar ou cancelar, e se os clientes podem selecionar membros específicos da equipe para um compromisso.
+- Qualquer buffer de tempo a ser configurado antes ou terminar após o serviço
+- [Agendando parâmetros](../resources/bookingschedulingpolicy.md) de política, como aviso mínimo para reservar ou cancelar, e se os clientes podem selecionar membros específicos da equipe para um compromisso.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,21 +51,22 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|defaultDuration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M59.99999999999S. |
-|defaultLocation|[location](../resources/location.md)|O local físico padrão do serviço.|
-|defaultPrice|Duplo|O preço monetário padrão do serviço.|
+|defaultDuration|Duration|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M59.999999999999S. |
+|Defaultlocation|[location](../resources/location.md)|O local físico padrão para o serviço.|
+|defaultPrice|Duplo|O preço monetário padrão para o serviço.|
 |defaultPriceType|bookingPriceType|A maneira padrão como o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
-|defaultReminders|[Coleção bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao ler este **bookingService** por sua ID.|
+|defaultReminders|[coleção bookingReminder](../resources/bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao ler este **bookingService** por sua ID.|
 |description|Cadeia de caracteres|Uma descrição de texto para o serviço.|
 |displayName|Cadeia de caracteres|Um nome de serviço.|
 |id|String| Somente leitura.|
-|isHiddenFromCustomers|Booliano|True significa que esse serviço não está disponível para os clientes para reserva.|
-|isLocationOnline|Booliano|True indica que os compromissos do serviço serão mantidos online. O valor padrão é falso.|
+|languageTag|Cadeia de Caracteres|O idioma da página de reserva de autoatendimento.|
+|isHiddenFromCustomers|Boolean|True significa que esse serviço não está disponível para os clientes para reserva.|
+|isLocationOnline|Boolean|True indica que os compromissos para o serviço serão mantidos online. O valor padrão é falso.|
 |notes|String|Informações adicionais sobre esse serviço.|
-|postBuffer|Duração|O tempo para buffer após o fim de um compromisso para esse serviço e antes que o próximo compromisso do cliente possa ser reservado.|
-|preBuffer|Duração|O tempo para buffer antes que um compromisso para esse serviço possa começar.|
+|Postbuffer|Duration|O tempo para armazenar em buffer após um compromisso para esse serviço termina e antes que o próximo compromisso do cliente possa ser reservado.|
+|Prebuffer|Duration|O tempo para armazenar em buffer antes que um compromisso para esse serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos para esse tipo de serviço devem ser criados e gerenciados.|
-|smsNotificationsEnabled|Booliano|True indica que as notificações de SMS podem ser enviadas aos clientes para o compromisso do serviço. O valor padrão é falso.|
+|smsNotificationsEnabled|Boolean|True indica SMS notificações podem ser enviadas aos clientes para o compromisso do serviço. O valor padrão é falso.|
 |staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](../resources/bookingstaffmember.md) que fornecem esse serviço. |
 |customQuestions|[coleção bookingQuestionAssignment](../resources/bookingquestionassignment.md)|Isso contém o conjunto de perguntas personalizadas associadas a um serviço específico. Opcional.|
 |maximumAttendeesCount|Int32|O número máximo de clientes permitidos em um serviço.  |

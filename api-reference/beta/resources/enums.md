@@ -1,16 +1,16 @@
 ---
 title: Valores de enumeração
-description: Valores de enumeração do Microsoft Graph
+description: Valores Graph enumeração do Microsoft Graph
 doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: c61273ced5a43a0a200bbcdf433c844643130845
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 8bfa73b97a08a71028cad90562269e9cabb07ff8
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65944987"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160675"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -151,7 +151,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |primaryRefreshToken|
 |saml11|
 |saml20|
@@ -162,7 +162,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |oAuth2|
 |ropc|
 |wsFederation|
@@ -204,7 +204,7 @@ Namespace: microsoft.graph
 
 | Membro             | Valor | Descrição |
 |:-------------------|:------| :------|
-| none               | 0     | A política não se aplica a nenhum usuário ou grupo na organização. |
+| Nenhuma               | 0     | A política não se aplica a nenhum usuário ou grupo na organização. |
 | tudo                | 1     | A política se aplica a todos os usuários e grupos na organização. Valor padrão. |
 | Selecionado           | 2     | A política se aplica a usuários ou grupos específicos na organização. |
 | unknownFutureValue | 3     | Valor de sentinel de enumeração evolvável. Não usar. |
@@ -231,7 +231,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:----|
-|Nenhum|
+|Nenhuma|
 |UserName|
 |Password|
 |SecretToken|
@@ -353,11 +353,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|Cadeia de Caracteres|
 |Inteiro|
-|Referência|
+|Referências|
 |Binária|
-|Booleano|
+|Boolean|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -373,7 +373,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhum|
+|Nenhuma|
 |Attributenames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -473,7 +473,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |noMissedCall|
 |disableForwardingExceptPhone|
 |disableForwarding|
@@ -549,7 +549,7 @@ Namespace: microsoft.graph
 ### <a name="recipientscopetype-values"></a>Valores recipientScopeType
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |Interno|
 |Externo|
 |externalPartner|
@@ -618,7 +618,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |mobilePhone|
 |alternateMobilePhone|
 |officePhone|
@@ -633,7 +633,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |clientSecret|
 |clientAssertion|
 |federatedIdentityCredential|
@@ -646,7 +646,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |Livre|
 |Basic|
 |premiumP1|
@@ -657,11 +657,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |aplicação|
 |usuários|
 |devicePlatform|
-|location|
+|localização|
 |clientType|
 |signInRisk|
 |userRisk|
@@ -855,7 +855,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |Interno|
 |Externo|
 |externalPartner|
@@ -933,14 +933,14 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |assignIfOpen|
 |unknownFutureValue|
 
 ### <a name="educationaddtocalendaroptions-values"></a>valores educationAddToCalendarOptions
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
@@ -1257,7 +1257,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |Carro|
 |calendar|
 |Executando|
@@ -1319,7 +1319,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |shift|
 |swapRequest|
 |userShiftPreferences|
@@ -1336,7 +1336,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| none|
+| Nenhuma|
 | usuário|
 | manager|
 | unknownFutureValue|
@@ -1384,7 +1384,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| none
+| Nenhuma
 | contactsOnly
 | tudo
 
@@ -1501,7 +1501,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| none
+| Nenhuma
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -1533,7 +1533,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | Banner
 | Modal
-| none
+| Nenhuma
 
 ### <a name="deviceenrollmentfailurereason-values"></a>Valores deviceEnrollmentFailureReason
 
@@ -1735,7 +1735,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| none
+| Nenhuma
 | organizer
 | tentativelyAccepted
 | Aceito
@@ -1768,7 +1768,7 @@ Namespace: microsoft.graph
 
 | Membro   | Valor |
 | :------- | :---- |
-| none     | -1    |
+| Nenhuma     | -1    |
 | preset0  | 0     |
 | preset1  | 1     |
 | preset2  | 2     |
@@ -1888,7 +1888,7 @@ Enumeração para tipos de valor do Registro conforme definido pelos [tipos de v
 | expandSz          | 5     | REG_EXPAND_SZ tipo de valor do Registro.           |
 | link              | 6      | REG_LINK tipo de valor do Registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
-| none              | 8      | REG_NONE tipo de valor do Registro.                |
+| Nenhuma              | 8      | REG_NONE tipo de valor do Registro.                |
 | Qword             | 9      | REG_QWORD tipo de valor do Registro.               |
 | qwordwordEndian | 10    | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | Sz                | 11    | REG_SZ tipo de valor do Registro.                  |
@@ -1941,7 +1941,7 @@ Valores possíveis para o método de entrada do usuário.
 
 ### <a name="useraccountsecuritytype-values"></a>Valores userAccountSecurityType
 
-Valores possíveis para tipos de conta de usuário (associação de grupo), de acordo com a definição do Windows.
+Valores possíveis para tipos de conta de usuário (associação de grupo), por definição Windows usuário.
 
 | Membro        | Valor | Descrição                     |
 | :------------ | :---- | :------------------------------ |
@@ -1954,7 +1954,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Valor |
 |:-----------------|
-| none |
+| Nenhuma |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -1974,14 +1974,14 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |medium|
 |high|
 |hidden|
-|none|
+|Nenhuma|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>Valores riskState
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |confirmedSafe|
 |corrigido|
 |Demitido|
@@ -2180,7 +2180,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |freeBusyRead|
 |limitedRead|
 |leitura|
@@ -2202,7 +2202,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | Resto   | 0     | Os dados estão em repouso; Um arquivo em um compartilhamento, por exemplo.                                 |
 | Movimento | 1     | Os dados estão em movimento. Um arquivo interceptado por um dispositivo de rede em trânsito.         |
-| Usar    | 2     | Os dados estão em uso. Um arquivo é aberto em um aplicativo cliente, como o Microsoft Office. |
+| Usar    | 2     | Os dados estão em uso. Um arquivo é aberto em um aplicativo cliente, como Microsoft Office. |
 
 ### <a name="assignmentmethod-values"></a>Valores assignmentMethod
 
@@ -2290,7 +2290,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |b2bCollaboration|
 |b2bDirectConnect|
 |microsoftSupport|
@@ -2390,9 +2390,9 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| none                  | 0     | Ainda não sei.                       |
-| mailFlowRule          | 1     | Regra de transporte do Exchange.            |
-| safeSender            | 2     | Lista de remetentes seguros.                   |
+| Nenhuma                  | 0     | Ainda não sei.                       |
+| mailFlowRule          | 1     | Exchange de transporte.            |
+| safeSender            | 2     | Cofre lista de remetentes.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4     | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5     | Lista de permissões de domínio do remetente.           |
@@ -2438,7 +2438,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Member
 |:----------------------
-| none
+| Nenhuma
 | defaultList
 | flaggedEmails
 | unknownFutureValue
@@ -2469,7 +2469,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |usuário | coluna de pessoa ou grupo. |
 |url | hiperlink ou coluna de imagem. |
 |Calculado | coluna calculada. |
-|location | coluna de localização. |
+|localização | coluna de localização. |
 |Localização geográfica | coluna de localização geográfica. |
 |term | coluna de metadados gerenciados. |
 |Multiterm | coluna de metadados gerenciados aceitando vários valores. |
@@ -2557,7 +2557,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |onPremisesKerberos|
 |aadHeaderBased|
 |pingHeaderBased|
@@ -2593,7 +2593,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |tudo|
 |Selecionado|
 
@@ -2601,9 +2601,9 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Membro    |Valor    |Descrição |
 |:---------|:--------|:----------- |
-|team      |0        |Indica que o aplicativo Teams pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
+|team      |0        |Indica que o Teams aplicativo pode ser instalado em uma equipe e está autorizado a acessar os dados dessa equipe.|
 |Groupchat |1        |Indica que o aplicativo Teams pode ser instalado em um chat em grupo e está autorizado a acessar os dados desse chat em grupo.|
-|pessoal  |2        |Indica que o aplicativo Teams pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
+|pessoal  |2        |Indica que o Teams aplicativo pode ser instalado no escopo pessoal de um usuário e está autorizado a acessar os dados desse usuário.|
 
 ### <a name="roleassignmentschedulerequestfilterbycurrentuseroptions-values"></a>Valores roleAssignmentScheduleRequestFilterByCurrentUserOptions
 
@@ -2707,7 +2707,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|Microsoft|
+|microsoft|
 |thirdParty|
 |Cliente|
 |unknownFutureValue|
@@ -2915,7 +2915,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |defaultList|
 |flaggedEmail|
 |unknownFutureValue|
@@ -2943,6 +2943,8 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |Visualizador|
 |externalGuest|
 |unknownFutureValue|
+|Agendador|
+|Membro|
 
 ### <a name="bookingreminderrecipients-values"></a>valores bookingReminderRecipients 
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 67b6a8fb4d8764665f855c815c1813ffc44092c7
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: ac51723b68846979106017b58200a87b2ca7415b
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755660"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160612"
 ---
 # <a name="list-staffmembers"></a>Listar staffMembers
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -165,7 +165,8 @@ Content-type: application/json
                         }
                     ]
                 }
-            ]
+            ],
+            "isEmailNotificationEnabled": false
         },
         {
             "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
@@ -234,7 +235,8 @@ Content-type: application/json
 
                     ]
                 }
-            ]
+            ],
+            "isEmailNotificationEnabled": false
         }
     ]
 }

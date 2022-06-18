@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b34bdd4930eec2c58fce432314c259c4fa5d12f9
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 76ce28e022d171ccd50486527e2ac0c0cfe5df58
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898182"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160549"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
@@ -28,21 +28,27 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ### <a name="permissions-to-add-an-existing-user-group-or-device"></a>Permissões para adicionar um usuário, grupo ou dispositivo existente
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | AdministrativeUnit.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Application | AdministrativeUnit.ReadWrite.All |
+
+Para adicionar um usuário, grupo ou dispositivo a uma unidade administrativa, a entidade de chamada deve receber uma das seguintes Azure AD [funções](/azure/active-directory/roles/permissions-reference):
+
+* Administrador de Função Com Privilégios
+* Administrador Global
 
 ### <a name="permissions-to-create-a-new-group"></a>Permissões para criar um novo grupo
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
-Para adicionar um membro a uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+Para criar um novo grupo em uma unidade administrativa, a entidade de chamada deve receber uma das seguintes Azure AD [funções](/azure/active-directory/roles/permissions-reference):
 
 * Administrador de Função Com Privilégios
 * Administrador Global
+* Administrador de Grupos
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -127,6 +133,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

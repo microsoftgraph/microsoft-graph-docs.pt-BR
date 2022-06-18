@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 35cfd16d36878f51d34cfc684b9f7cfa86a056f1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 32c4901237c17429d3908607dffd186fc3919199
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129989"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160654"
 ---
 # <a name="update-bookingbusiness"></a>Atualizar bookingbusiness
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto bookingBusiness.](../resources/bookingbusiness.md)
+Atualize as propriedades de um [objeto bookingBusiness](../resources/bookingbusiness.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,21 +43,22 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|O endereço da rua do negócio.|
-|businessHours|[Coleção bookingWorkHours](../resources/bookingworkhours.md)|Os horários de operação para os negócios.|
-|businessType|Cadeia de caracteres|O tipo de negócio.|
-|defaultCurrencyIso|Cadeia de caracteres|O código da moeda em que a empresa opera no Microsoft Bookings.|
-|displayName|Cadeia de caracteres|Um nome para a empresa que faz interface com os clientes.|
+|address|[physicalAddress](../resources/physicaladdress.md)|O endereço da empresa.|
+|businessHours|[coleção bookingWorkHours](../resources/bookingworkhours.md)|As horas de operação para os negócios.|
+|businessType|Cadeia de Caracteres|O tipo de negócio.|
+|defaultCurrencyIso|Cadeia de Caracteres|O código para a moeda na qual a empresa opera Microsoft Bookings.|
+|displayName|Cadeia de caracteres|Um nome para a empresa que se interface com os clientes.|
 |email|Cadeia de caracteres|O endereço de email da empresa.|
+|languageTag|Cadeia de Caracteres|O idioma da página de reserva de autoatendimento.
 |phone|Cadeia de caracteres|O número de telefone da empresa.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Especifica como as reservas podem ser criadas para essa empresa.|
-|webSiteUrl|Cadeia de caracteres|A URL do site comercial.|
+|webSiteUrl|Cadeia de Caracteres|A URL do site de negócios.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir atualiza o endereço de email comercial e a política de agendamento, para alterar o intervalo de tempo de reserva padrão da empresa para uma hora e avançar a reserva até 30 dias.
+O exemplo a seguir atualiza o endereço de email comercial e a política de agendamento, para alterar o intervalo de tempo de reserva padrão da empresa para uma hora e avançar a reserva de até 30 dias.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

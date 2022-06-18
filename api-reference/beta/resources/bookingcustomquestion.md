@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 65baf5850be3dc5c9b86c24078061b54dff7d1aa
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: cf672b93e30b6351d3f543b5cc9341d53fea1d5d
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526946"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160633"
 ---
 # <a name="bookingcustomquestion-resource-type"></a>Tipo de recurso bookingCustomQuestion
 
@@ -22,23 +22,23 @@ Representa uma pergunta personalizada para [um bookingBusiness](bookingbusiness.
 
 Herda de [bookingNamedEntity](../resources/bookingnamedentity.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método                                                                         | Tipo de retorno                                                               | Descrição                                                                                                       |
 | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------- |
-| [Listar bookingCustomQuestions](../api/bookingbusiness-list-customquestions.md)            | [coleção bookingCustomQuestion](../resources/bookingcustomquestion.md) | Obter uma lista dos objetos [bookingCustomQuestion](../resources/bookingcustomquestion.md) e suas propriedades.    |
-| [Criar bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md) | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Crie um novo [objeto bookingCustomQuestion.](../resources/bookingcustomquestion.md)                               |
-| [Obter bookingCustomQuestion](../api/bookingcustomquestion-get.md)               | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Leia as propriedades e as relações de um [objeto bookingCustomQuestion.](../resources/bookingcustomquestion.md) |
-| [Atualizar bookingCustomQuestion](../api/bookingcustomquestion-update.md)         | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Atualize as propriedades de um [objeto bookingCustomQuestion.](../resources/bookingcustomquestion.md)                 |
-| [Excluir bookingCustomQuestion](../api/bookingcustomquestion-delete.md)         | Nenhuma                                                                      | [Exclua um objeto bookingCustomQuestion.](../resources/bookingcustomquestion.md)                                  |
+| [Listar bookingCustomQuestions](../api/bookingbusiness-list-customquestions.md)            | [coleção bookingCustomQuestion](../resources/bookingcustomquestion.md) | Obtenha uma lista dos objetos [bookingCustomQuestion](../resources/bookingcustomquestion.md) e suas propriedades.    |
+| [Criar bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md) | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Crie um novo [objeto bookingCustomQuestion](../resources/bookingcustomquestion.md) .                               |
+| [Obter bookingCustomQuestion](../api/bookingcustomquestion-get.md)               | [bookingCustomQuestion](../resources/bookingcustomquestion.md)            | Leia as propriedades e as relações de um [objeto bookingCustomQuestion](../resources/bookingcustomquestion.md) . |
+| [Atualizar bookingCustomQuestion](../api/bookingcustomquestion-update.md)         | Nenhuma     | Atualize as propriedades de um [objeto bookingCustomQuestion](../resources/bookingcustomquestion.md) .                 |
+| [Excluir bookingCustomQuestion](../api/bookingcustomquestion-delete.md)         | Nenhuma                                                                      | [Exclua um objeto bookingCustomQuestion](../resources/bookingcustomquestion.md).                                  |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade        | Tipo              | Descrição                                                                                               |
 | :-------------- | :---------------- | :-------------------------------------------------------------------------------------------------------- |
 | answerInputType | answerInputType   | O tipo de resposta esperado. Os valores possíveis são: `text`, `radioButton`, `unknownFutureValue`.     |
-| answerOptions   | Coleção de cadeias de caracteres | Lista de valores de resposta possíveis.                                                                    |
-| displayName     | Cadeia de caracteres            | A pergunta. Herdado [de bookingNamedEntity](../resources/bookingnamedentity.md). |
+| answerOptions   | Coleção String | Lista de possíveis valores de resposta.                                                                    |
+| displayName     | Cadeia de caracteres            | A pergunta. Herdado de [bookingNamedEntity](../resources/bookingnamedentity.md). |
 | id              | Cadeia de caracteres            | A ID da pergunta personalizada. Herdado da [entidade](../resources/entity.md).                           |
 
 ## <a name="relationships"></a>Relações

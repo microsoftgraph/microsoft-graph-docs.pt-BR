@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso archivedPrintJob
-description: Um registro de um trabalho de impressão de "estado final" (concluído, anulado ou com falha) usado para fins de relatório. Este não é um trabalho de impressão ativo.
+description: Um registro de um trabalho de impressão de "estado final" (concluído, anulado ou cancelado) usado para fins de relatório. Este não é um trabalho de impressão ativo.
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 8ba8d49a01e3b10768e83b04b259d6cfd87d65b5
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: a136d56e8ce6eeb9429b66ea142142628ef187ca
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65944973"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160640"
 ---
 # <a name="archivedprintjob-resource-type"></a>Tipo de recurso archivedPrintJob
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um registro de um trabalho de impressão de "estado final" (concluído, anulado ou com falha) usado para fins de relatório. Este não é um trabalho de impressão ativo.
+Um registro de um trabalho de impressão de "estado final" (concluído, anulado ou cancelado) usado para fins de relatório. Este não é um trabalho de impressão ativo.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |id|Cadeia de caracteres|O GUID do trabalho de impressão arquivado. Somente leitura.|
-|printerId|Cadeia de caracteres|A ID da impressora para a qual o trabalho foi enfileirado. Somente leitura.|
+|printerId|Cadeia de Caracteres|A ID da impressora para a qual o trabalho foi enfileirado. Somente leitura.|
 |processingState|printJobProcessingState|O estado de processamento final do trabalho de impressão. Somente leitura.|
 |createdDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi criado. Somente leitura.|
 |acquiredDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi adquirido pela impressora, se houver. Somente leitura.|
 |completionDateTime|DateTimeOffset|O dateTimeOffset quando o trabalho foi concluído, cancelado ou anulado. Somente leitura.|
-|acquiredByPrinter|Booleano|True se o trabalho foi adquirido por uma impressora; caso contrário, false. Somente leitura.|
+|acquiredByPrinter|Boolean|True se o trabalho foi adquirido por uma impressora; caso contrário, false. Somente leitura.|
 |copiesPrinted|Int32|O número de cópias que foram impressas. Somente leitura.|
 |Pagecount|Int32|O número total de páginas que foram impressas. Somente leitura.|
 |blackAndWhitePageCount|Int32|O número de páginas em preto e branco que foram impressas. Somente leitura.|

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 628a8b6aa9a36d525fd6aae2d4205891ab23a50d
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: c125433d99b5c496f88f83a0667d13168036a680
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755625"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160682"
 ---
 # <a name="bookingbusiness-resource-type"></a>Tipo de recurso bookingBusiness
 
@@ -29,8 +29,8 @@ Herda de [bookingNamedEntity](bookingnamedentity.md)
 |[Listar bookingBusinesses](../api/bookingbusiness-list.md) | [coleção bookingBusiness](bookingbusiness.md) |Obtenha uma coleção de objetos bookingbusiness no locatário. |
 |[Criar bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Crie um novo Microsoft Bookings negócios. |
 |[Obter bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Ler propriedades e relações do objeto bookingBusiness.|
-|[Atualizar](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Atualize as propriedades em **um objeto bookingBusiness** . |
-|[Delete](../api/bookingbusiness-delete.md) | Nenhum |Exclua **um objeto bookingBusiness** . |
+|[Atualizar](../api/bookingbusiness-update.md) | Nenhum(a) |Atualize as propriedades em **um objeto bookingBusiness** . |
+|[Excluir](../api/bookingbusiness-delete.md) | Nenhuma |Exclua **um objeto bookingBusiness** . |
 |[Criar bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Crie um novo bookingAppointment postando na coleção de compromissos.|
 |[Listar compromissos](../api/bookingbusiness-list-appointments.md) |[coleção bookingAppointment](bookingappointment.md)| Obtenha uma coleção de objetos bookingAppointment.|
 |[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) |[bookingCustomer](bookingcustomer.md)| Crie um novo bookingCustomer postando na coleção de clientes.|
@@ -42,8 +42,8 @@ Herda de [bookingNamedEntity](bookingnamedentity.md)
 |[Listar customQuestions](../api/bookingbusiness-list-customquestions.md)|[coleção bookingCustomQuestion](../resources/bookingcustomquestion.md)|Obtenha os **recursos bookingCustomQuestion** da **propriedade de navegação customQuestions** .|
 |[Criar bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md)|Crie um novo **objeto bookingCustomQuestion** .|
 |[Listar calendarView](../api/bookingbusiness-list-calendarview.md)|[coleção bookingAppointment](bookingappointment.md)|Obtenha a coleção de **objetos bookingAppointment** que ocorre no intervalo de datas especificado.|
-|[publish](../api/bookingbusiness-publish.md)|Nenhum|Dispobilize a página de agendamento dessa empresa para clientes externos. Defina **a propriedade isPublished** como true e **a propriedade publicUrl** como a URL da página de agendamento.|
-|[unpublish](../api/bookingbusiness-unpublish.md)|Nenhum| Torne a página de agendamento dessa empresa não disponível para clientes externos. Defina **a propriedade isPublished** como false e **a propriedade publicUrl** como null.|
+|[publish](../api/bookingbusiness-publish.md)|Nenhuma|Dispobilize a página de agendamento dessa empresa para clientes externos. Defina **a propriedade isPublished** como true e **a propriedade publicUrl** como a URL da página de agendamento.|
+|[unpublish](../api/bookingbusiness-unpublish.md)|Nenhuma| Torne a página de agendamento dessa empresa não disponível para clientes externos. Defina **a propriedade isPublished** como false e **a propriedade publicUrl** como null.|
 |[Obter disponibilidade da equipe](../api/bookingbusiness-getstaffavailability.md) |[Coleção staffAvailabilityItem](staffavailabilityitem.md)| Obtenha as informações de disponibilidade dos membros da equipe de um Microsoft Bookings calendário.|
 
 ## <a name="properties"></a>Propriedades
@@ -52,16 +52,17 @@ Herda de [bookingNamedEntity](bookingnamedentity.md)
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|O endereço da empresa. A **propriedade** de endereço, juntamente **com telefone** **e webSiteUrl**, aparece no rodapé de uma página de agendamento de negócios.|
 |businessHours|[coleção bookingWorkHours](bookingworkhours.md)|As horas de operação para os negócios.|
-|businessType|String|O tipo de negócio.|
-|defaultCurrencyIso|Cadeia de caracteres|O código para a moeda na qual a empresa opera Microsoft Bookings.|
+|businessType|Cadeia de Caracteres|O tipo de negócio.|
+|defaultCurrencyIso|Cadeia de Caracteres|O código para a moeda na qual a empresa opera Microsoft Bookings.|
 |displayName|Cadeia de caracteres|O nome da empresa, que se interface com os clientes. Esse nome aparece na parte superior da página de agendamento de negócios.|
 |email|Cadeia de caracteres|O endereço de email da empresa.|
-|id|String|Um identificador programático exclusivo para a empresa. Somente leitura.|
+|id|Cadeia de caracteres|Um identificador programático exclusivo para a empresa. Somente leitura.|
 |isPublished|Boolean|A página de agendamento foi disponibilizada para clientes externos. Use as **ações publicar** **e cancelar a publicação** para definir essa propriedade. Somente leitura.|
+|languageTag|Cadeia de Caracteres|O idioma da página de reserva de autoatendimento|
 |phone|Cadeia de caracteres|O número de telefone da empresa. A **propriedade** de telefone, **juntamente com o endereço** e **WebSiteUrl**, aparece no rodapé de uma página de agendamento de negócios.|
-|publicUrl|String|A URL da página de agendamento, que é definida depois que você [publica ou cancela a publicação](../api/bookingbusiness-unpublish.md) da página.[](../api/bookingbusiness-publish.md) Somente leitura.|
+|publicUrl|Cadeia de Caracteres|A URL da página de agendamento, que é definida depois que você [publica ou cancela a publicação](../api/bookingbusiness-unpublish.md) da página.[](../api/bookingbusiness-publish.md) Somente leitura.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Especifica como as reservas podem ser criadas para essa empresa.|
-|webSiteUrl|Cadeia de caracteres|A URL do site de negócios. A **propriedade webSiteUrl** , juntamente com **endereço**, **telefone**, aparece no rodapé de uma página de agendamento de negócios.|
+|webSiteUrl|Cadeia de Caracteres|A URL do site de negócios. A **propriedade webSiteUrl** , juntamente com **endereço**, **telefone**, aparece no rodapé de uma página de agendamento de negócios.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -98,6 +99,7 @@ Veja a seguir uma representação JSON do recurso.
   "isPublished": true,
   "phone": "String",
   "publicUrl": "String",
+  "languageTag": "String",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
   "webSiteUrl": "String"
 }

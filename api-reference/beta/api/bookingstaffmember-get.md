@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d43a755d9ded6a0226775fcc66ba69b20670607a
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: b06787d9741550cb4fc89ca853b22b9a2b78d9c2
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755499"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160563"
 ---
 # <a name="get-bookingstaffmember"></a>Obter bookingStaffMember
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -168,7 +168,8 @@ Content-type: application/json
             "day": "sunday",
             "timeSlots": []
         }
-    ]
+    ],
+    "isEmailNotificationEnabled": false
 }
 ```
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 43723d7e05328ab64b382df8c415b0d7fb6544b7
-ms.sourcegitcommit: 19558bd9de9b717e7a36bfce1d6d84d0132e2697
+ms.openlocfilehash: 3f2b088c0da875e906c83bf7923c2c8388d3fbb6
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64755604"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160587"
 ---
 # <a name="list-appointments"></a>Listar compromissos
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings. Read.All, BookingsAppointment.ReadWrite.All, Bookings. ReadWrite.All, Bookings. Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings. Read.All  |
+|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /bookingBusinesses/{id}/appointments
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Para obter o conjunto de compromissos de uma Bookings dentro de um intervalo de datas, `$filter`em vez de , obtenha o [calendarView](bookingbusiness-list-calendarview.md) para esse intervalo de datas.
+Para obter o conjunto de compromissos de uma empresa do Bookings dentro de um intervalo de datas, `$filter`em vez de , obtenha o [calendarView](bookingbusiness-list-calendarview.md) para esse intervalo de datas.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -162,6 +162,7 @@ Content-type: application/json
             "price": 10,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
+            "anonymousJoinWebUrl": "String",
             "staffMemberIds": [],
             "invoiceAmount": 10,
             "invoiceId": "1002",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1fffb31cf469671056797ea04aa9babcd955c401
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 82fe74b068d4013aa305cd3c0309699b6175fb3f
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62109726"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160668"
 ---
 # <a name="create-bookingstaffmember"></a>Criar bookingStaffMember
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [membro da equipe](../resources/bookingstaffmember.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
+Crie um novo [membro da](../resources/bookingstaffmember.md) equipe no [bookingBusiness especificado](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,15 +40,15 @@ POST /bookingBusinesses/{id}/staffMembers
 | Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto bookingStaffMember.](../resources/bookingstaffmember.md) Você deve incluir as seguintes propriedades:
+No corpo da solicitação, forneça uma representação JSON de um [objeto bookingStaffMember](../resources/bookingstaffmember.md) . Você deve incluir as seguintes propriedades:
 
 - **displayName**
 - **emailAddress**
-- **role**
+- **Papel**
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -139,7 +139,8 @@ Content-type: application/json
                 }
             ]
         }
-    ]
+    ],
+    "isEmailNotificationEnabled": false
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

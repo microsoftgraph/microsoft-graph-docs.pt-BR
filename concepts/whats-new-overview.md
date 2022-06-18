@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: Exiba os destaques das novidades Microsoft Graph nos últimos dois meses, o que foi adicionado em versões anteriores e como você pode compartilhar suas ideias.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 33d64635297761f0ac625c4a460e36abba34795e
-ms.sourcegitcommit: 8f54d85e8e8b0a1f72d4557d2bb7749b972dd3e2
+ms.openlocfilehash: 7fd388275a31b3b7e426e3f27dc6f5861b9a297f
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66141613"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160276"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -136,7 +136,7 @@ Compartilhar um canal com uma ou mais equipes:
 - [Liste os canais que são compartilhados com uma equipe](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true).
 - [Liste todos os canais em uma equipe](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true) incluindo aqueles hospedados em uma equipe ou compartilhados com ela.
 - [Liste membros da equipe que podem acessar um canal compartilhado especificado](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true).
-- [Remova um canal compartilhado com uma equipe](/graph/api/team-delete-incomingchannel?view=graph-rest-beta&preserve-view=true).
+- [Remova um canal compartilhado com uma equipe](/graph/api/team-delete-incomingchannels?view=graph-rest-beta&preserve-view=true).
 - [Liste as equipes que compartilharam um canal especificado](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
 - [ Deixe de compartilhar um canal com uma equipe](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
 

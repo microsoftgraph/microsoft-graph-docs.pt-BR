@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b65d8433177a4a6e71c267a01e2e7387474617dc
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c30dc6b0f4358ce4cc265c10a5127599907ec954
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365708"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160710"
 ---
 # <a name="get-printjob"></a>Get printJob
 Namespace: microsoft.graph
@@ -20,13 +20,19 @@ Recupere as propriedades e as relações de um trabalho de impressão.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso Get [printer](printer-get.md) ou [Get printerShare](printershare-get.md) , dependendo se a impressora ou printerShare está sendo usada.
+Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura de Impressão Universal ativa.
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+
+Para um aplicativo com permissões delegadas para recuperar trabalhos de outros usuários, o usuário conectado deve ser membro de uma das seguintes funções de administrador:
+- Administrador Global
+- Administrador da impressora
+
+Para um aplicativo com permissões de aplicativo para recuperar trabalhos dos usuários, o aplicativo precisa de uma permissão que conceda acesso à impressora, juntamente com uma das permissões de aplicativo [descritas](#permissions) na tabela Permissões.[](printer-get.md)
 
 ## <a name="http-request"></a>Solicitação HTTP
 

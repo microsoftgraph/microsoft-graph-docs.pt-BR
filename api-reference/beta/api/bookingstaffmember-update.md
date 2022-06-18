@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a44ba8d8ca373107e37a8c77b19b604661558144
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 3aa430d1e59bf3506dc7d1bbfd3dc4083e2f9fbe
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094247"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160444"
 ---
 # <a name="update-bookingstaffmember"></a>Atualizar bookingstaffmember
 
@@ -47,9 +47,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página **Detalhes da** equipe no aplicativo Bookings.|
 |displayName|Cadeia de caracteres|O nome do membro da equipe, conforme exibido aos clientes.|
 |emailAddress|String|O endereço de email do membro da equipe. Isso pode estar no mesmo locatário Microsoft 365 que a empresa ou em um domínio de email diferente. Esse endereço de email será usado se **a propriedade sendConfirmationsToOwner** estiver definida como true na política de agendamento da empresa.|
-|role|cadeia de caracteres| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|isEmailNotificationEnabled|Boolean|True significa que o membro da equipe será notificado por email quando uma reserva atribuída a ele for criada ou alterada..
+|role|string| A função do membro da equipe na empresa. Os possíveis valores são: `guest`, `administrator`, `viewer`, `scheduler`, `member`, `externalGuest`.|
 |timeZone|Cadeia de caracteres|O fuso horário do membro da equipe. Para obter uma lista de valores possíveis, consulte [dateTimeTimeZone](../resources/datetimetimezone.md).|
-|useBusinessHours|Booliano|True significa que a disponibilidade do membro da equipe é determinada pela **propriedade businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHouse** do membro da equipe.|
+|useBusinessHours|Boolean|True significa que a disponibilidade do membro da equipe é determinada pela **propriedade businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHouse** do membro da equipe.|
 |workingHours|[coleção bookingWorkHours](../resources/bookingworkhours.md)|O intervalo de horas a cada dia da semana em que o membro da equipe está disponível para reserva.|
 
 ## <a name="response"></a>Resposta

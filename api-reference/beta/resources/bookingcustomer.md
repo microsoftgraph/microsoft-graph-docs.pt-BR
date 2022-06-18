@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 6c8dae5ce7f541f45bc3856e1c3b4de83d5a5307
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 7e4c31ec68cdda121dcb1f7954faa742746271fc
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526146"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160641"
 ---
 # <a name="bookingcustomer-resource-type"></a>Tipo de recurso bookingCustomer
 
@@ -21,24 +21,24 @@ Namespace: microsoft.graph
 Representa um cliente de [um bookingBusiness](bookingbusiness.md).
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar clientes](../api/bookingbusiness-list-customers.md) | [coleção bookingCustomer](bookingcustomer.md) | Obter uma lista de **objetos bookingCustomer.** |
-|[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Crie um novo **objeto bookingCustomer.** |
-|[Obter bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Leia as propriedades e as relações de um **objeto bookingCustomer.**|
-|[Atualizar](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Atualize um **objeto bookingCustomer.** |
-|[Delete](../api/bookingcustomer-delete.md) | Nenhuma |**Exclua um objeto bookingCustomer.** |
+|[Listar clientes](../api/bookingbusiness-list-customers.md) | [coleção bookingCustomer](bookingcustomer.md) | Obtenha uma lista de **objetos bookingCustomer** . |
+|[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Crie um novo **objeto bookingCustomer** . |
+|[Obter bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Leia as propriedades e as relações de um **objeto bookingCustomer** .|
+|[Atualizar](../api/bookingcustomer-update.md) | Nenhum(a)  |Atualize **um objeto bookingCustomer** . |
+|[Excluir](../api/bookingcustomer-delete.md) | Nenhuma |Exclua **um objeto bookingCustomer** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|addresses|[Coleção physicalAddress](../resources/physicaladdress.md)|Endereços associados ao cliente, incluindo home, business e outros endereços.|
+|addresses|[coleção physicalAddress](../resources/physicaladdress.md)|Endereços associados ao cliente, incluindo endereços domésticos, comerciais e outros.|
 |displayName|Cadeia de caracteres|O nome do cliente.|
 |emailAddress|String|O endereço SMTP do cliente.|
 |id|Cadeia de caracteres| A ID do cliente. Somente leitura.|
-|telefones|Coleção [phone](../resources/phone.md)|Telefone números associados ao cliente, incluindo números fixos, comerciais e móveis.|
+|telefones|Coleção [phone](../resources/phone.md)|Telefone números associados ao cliente, incluindo números domésticos, comerciais e móveis.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
