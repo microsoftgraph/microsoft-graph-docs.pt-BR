@@ -4,12 +4,12 @@ description: Saiba mais sobre os modelos de licenciamento e pagamento que se apl
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: aac85b96442c7162d67f16d198a076402aa03314
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: cddf9cf46ae120be49051cadb98a538c6904a5da
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722259"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160556"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
 
@@ -21,7 +21,7 @@ Algumas APIs oferecem a opção de escolher um modelo de licenciamento e pagamen
 No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que consomem além da [capacidade de propagação](#seeded-capacity).
 
 - [`model=B`](#modelb-requirements) é restrito a aplicações que não desempenham uma [função de segurança ou de conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms). 
-[`model=B`](#modelb-requirements) está livre para usar hoje; no entanto, no futuro, os aplicativos pagarão com base no número de mensagens que consomem. Não há requisitos de licenciamento para `model=B`.
+[`model=B`](#modelb-requirements) a partir de 5 de julho de 2022, os eventos de cobrança atingirão a disponibilidade geral. Não há requisitos de licenciamento para `model=B`.
 
 - [O Modo de Avaliação (padrão)](#evaluation-mode-default-requirements) permite o acesso a APIs com uso limitado por aplicativo solicitando para fins de avaliação. As notificações de alteração não serão enviadas se o limite for excedido.
 
@@ -34,14 +34,14 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 | [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) | Remetente de mensagem | 800 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem | A capacidade de semente é compartilhada com notificações de alteração de conversationMember |
 | [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | Qualquer usuário no locatário | 800 notificações por usuário por mês por aplicativo  | US$ 0,00075 por notificação | A capacidade de propagação é compartilhada com notificações de alteração do chatMessage |
 | [Obter mensagens em todos os chats para o usuário](/graph/api/chats-getallmessages) | Usuário nomeado | 1600 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem | O usuário nomeado é o usuário identificado na URL de solicitação GET. Cobrança mínima de 1 mensagem por solicitação de API. A capacidade de propagação é compartilhada com a exportação de canal. |
-|  [Obtenha todas as mensagens em todos os canais](/graph/api/channel-getallmessages).| Qualquer membro da equipe | 1600 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem |  Cobrança mínima de 1 mensagem por solicitação de API. A capacidade de propagação é compartilhada com a exportação de chat. |
+| [Obtenha todas as mensagens em todos os canais](/graph/api/channel-getallmessages).| Qualquer membro da equipe | 1600 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem |  Cobrança mínima de 1 mensagem por solicitação de API. A capacidade de propagação é compartilhada com a exportação de chat. |
 | [Atualizando a policyViolation do chatMessage](/graph/api/chatmessage-update) |  Remetente de mensagem |  800 mensagens por usuário por mês por aplicativo | $0,00075 por mensagem |
 
 ## <a name="modelb-requirements"></a>Requisitos do `model=B`
 
 `model=B` é restrito a aplicações que não desempenham uma função de segurança ou de conformidade. Para obter detalhes, consulte a seção Termos da API para Aplicativos de Segurança e Conformidade dos [termos do produto para Serviços do Microsoft Azure](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
->**Observação:**[`model=B`](#modelb-requirements) é gratuito para uso hoje; no entanto, no futuro, os aplicativos pagarão com base no número de mensagens que consumirem. 
+>**Observação:** [`model=B`](#modelb-requirements) a partir de 5 de julho de 2022, os eventos de cobrança dessas APIs atingirão a disponibilidade geral. 
 
 |API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | [Preço para uso adicional](#price-for-additional-use) | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
@@ -57,13 +57,18 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 | [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) |  N/D | 500 mensagens por mês por aplicativo | N/D |
 | [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | N/D | 500 mensagens por mês por aplicativo | N/D | 
 | [Obter mensagens em todos os chats para o usuário](/graph/api/chats-getallmessages) |  N/D | 500 mensagens por mês por aplicativo | N/D |  Cobrança mínima de 1 mensagem por solicitação de API. |
-|  [Obtenha todas as mensagens em todos os canais](/graph/api/channel-getallmessages).|  N/D | 500 mensagens por mês por aplicativo | N/D |  Cobrança mínima de 1 mensagem por solicitação de API. |
+| [Obtenha todas as mensagens em todos os canais](/graph/api/channel-getallmessages).|  N/D | 500 mensagens por mês por aplicativo | N/D |  Cobrança mínima de 1 mensagem por solicitação de API. |
 | [Atualizando a policyViolation do chatMessage](/graph/api/chatmessage-update) |   N/D |  500 mensagens por mês por aplicativo | N/D |
 
 No modo de avaliação, a capacidade de propagação é compartilhada em todas as APIs. Quando a capacidade de propagação for excedida, as chamadas de API com requisitos de licenciamento e pagamento falharão com um código de erro 402, e as assinaturas com requisitos de licenciamento e pagamento não enviarão notificações de alteração.
 
-> **Observação**: uma chamada de API bem-sucedida não significa que o licenciamento adequado está no local. 
-> Nem todas as violações de licença podem ser detectadas, e os períodos de carência podem ser concedidos em alguns casos.
+| Tipo de erro | Código de status | Mensagem de erro |
+|:-----------|:-----------|:-----------------|
+|Requisito de licença E5 não atendido| 402 (Pagamento Obrigatório) |`User '{userId}' needs a valid license to access this API.`, `Tenant {tenantId} needs a valid license to access this API.`|
+|Não há suporte para o modelo B na API de Patch| 402 (Pagamento Obrigatório) |`Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'.`|
+|Capacidade de avaliação excedida|402 (Pagamento Obrigatório)|`Evaluation mode capacity has been exceeded. Use a valid billing model.`|
+
+> **Observação**: uma chamada de API bem-sucedida não significa que o licenciamento adequado está no local. Nem todas as violações de licença podem ser detectadas, e os períodos de carência podem ser concedidos em alguns casos.
 
 ## <a name="required-licenses-for-modela"></a>Licenças necessárias para `model=A` 
 

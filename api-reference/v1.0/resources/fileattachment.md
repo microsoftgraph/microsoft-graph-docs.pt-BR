@@ -1,16 +1,16 @@
 ---
 title: tipo de recurso fileAttachment
-description: 'Um arquivo (como um arquivo de texto ou um documento do Word) anexado a um evento, mensagem ou postagem. O  **contentBytes** '
+description: Um arquivo (como um arquivo de texto ou documento do Word) anexado a um evento, mensagem ou postagem.
 ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3e90553500e44ff20d13de2b56c64b1ac94d7222
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ffd35829cfafac92b2cd6707e0d653325b37993e
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007233"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160620"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
@@ -32,8 +32,8 @@ Derivado de [attachment](attachment.md).
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades, relações ou conteúdo bruto de um objeto fileAttachment.|
-|[Delete](../api/attachment-delete.md) | Nenhuma |Exclua um objeto fileAttachment. |
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia propriedades, relacionamentos ou conteúdo bruto de um objeto **fileAttachment**.|
+|[Excluir](../api/attachment-delete.md) | Nenhuma |Exclua um objeto **fileAttachment**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -43,7 +43,7 @@ Derivado de [attachment](attachment.md).
 |contentLocation|Cadeia de caracteres|Não use essa propriedade que não tem suporte.|
 |contentType|String|O tipo de conteúdo do anexo.|
 |id|String|A ID do anexo.|
-|isInline|Booliano|Defina como true se este for um anexo embutido.|
+|isInline|Booliano|Defina como `true` se este for um anexo embutido.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez.|
 |name|String|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
 |size|Int32|O tamanho do anexo em bytes.|
@@ -76,7 +76,7 @@ Veja a seguir uma representação JSON do recurso
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": "Int32"
 }
 
 ```

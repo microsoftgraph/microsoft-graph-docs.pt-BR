@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3225578752ab8d58f5e909fe849aa0f038701d73
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: b8749e7831a54e4d6b94add1e37e5eaa6a95e86b
+ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685107"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160542"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -41,14 +41,14 @@ Cada equipe está associada a um [grupo Microsoft 365](../resources/group.md). O
 |[Desarquivar equipe](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restaure a equipe com um estado de leitura e gravação. |
 |[Clonar equipe](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copie a equipe e o grupo associado. |
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
-|[Listar equipes associadas](../api/associatedteaminfo-list.md) | [coleção associatedTeamInfo](associatedteaminfo.md) | Obtenha a lista de [objetos AssociatedTeamInfo](associatedteaminfo.md) [Microsoft Teams a que](user.md) um usuário está associado. |
+|[Listar equipes associadas](../api/associatedteaminfo-list.md) | Coleção [associatedTeamInfo](associatedteaminfo.md) | Obtenha a lista de objetos [associatedTeamInfo](associatedteaminfo.md) no Microsoft Teams as quais um [usuário](user.md) está associado. |
 |[Listar todas as equipes em uma organização](../api/teams-list.md) | Coleção [team](team.md) | Listar todas as equipes em uma organização. |
 |[Obter foto da equipe](../api/team-get-photo.md) | Dados Binários | Obter a foto (imagem) de uma equipe. |
 |[Migração completa](../api/team-completemigration.md)|[equipe](team.md)| Remove o modo de migração da equipe e disponibiliza a equipe aos usuários para postar e ler mensagens.|
-|[Listar todos os canais](../api/team-list-allchannels.md)|Coleção [channel](../resources/channel.md)|Obtenha a lista de [canais nesta](../resources/channel.md) equipe **ou** compartilhados com essa **equipe** (canais de entrada).|
+|[Listar todos os canais](../api/team-list-allchannels.md)|Coleção [channel](../resources/channel.md)|Obtenha a lista de [canais](../resources/channel.md) desta **equipe** ou compartilhados com esta **equipe** (canais de entrada).|
 |[List channels](../api/channel-list.md)|[channel](../resources/channel.md) collection|Obtenha a lista de [canais](../resources/channel.md) em uma **equipe**.|
-|[Listar canais de entrada](../api/team-list-incomingchannels.md)|Coleção [channel](../resources/channel.md)|Obtenha a lista de [canais compartilhados](../resources/channel.md) com essa **equipe**.|
-|[Remover canal de entrada](../api/team-delete-incomingchannel.md) | Nenhuma| Remover um canal de entrada.|
+|[Lstar canais de entrada](../api/team-list-incomingchannels.md)|Coleção [channel](../resources/channel.md)|Obtenha a lista de [canais](../resources/channel.md) compartilhados com esta **equipe**.|
+|[Remover canal de entrada](../api/team-delete-incomingchannels.md) | Nenhum| Remova um canal de entrada.|
 |[Listar aplicativos em equipe](../api/team-list-installedapps.md) | Coleção [teamsAppInstallation](teamsappinstallation.md) | Liste os aplicativos instalados em uma equipe.|
 |[Adicionar aplicativo à equipe](../api/team-post-installedapps.md) |Nenhuma | Adicione (instale) um aplicativo a uma equipe.|
 |[Instalar o aplicativo na equipe do](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obtenha o aplicativo especificado instalado em uma equipe.|
@@ -77,7 +77,7 @@ Cada equipe está associada a um [grupo Microsoft 365](../resources/group.md). O
 |isMembershipLimitedToOwners|Booliano|Se definido para `true`, a equipe está atualmente no estado de membro da equipe apenas para o proprietário e não é acessível a outros membros da equipe, tais como estudantes.|
 |createdDateTime|dateTimeOffset|Carimbo de data/hora de criação da equipe.|
 |summary|[teamSummary](teamsummary.md)| Contém informações resumidas sobre a equipe, incluindo o número de proprietários, membros e convidados. |
-|tenantId |cadeia de caracteres | A ID do locatário Azure Active Directory usuário. |
+|tenantId |cadeia de caracteres | A ID do locatário do Azure Active Directory. |
 
 ### <a name="instance-attributes"></a>Atributos de instância
 
@@ -95,6 +95,7 @@ Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no e
 |:---------------|:--------|:----------|
 |allChannels|Coleção [channel](channel.md)|Lista de canais hospedados ou compartilhados com a equipe (canais de entrada).|
 |channels|Coleção [channel](channel.md)|A coleção de canais e mensagens associadas à equipe.|
+|incomingChannels|Coleção [channel](channel.md)|Lista de [canais](../resources/channel.md) compartilhados com a equipe.|
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nessa equipe.|
 |members|coleção [conversationMember](../resources/conversationmember.md)|Membros e proprietários da equipe.|
 |owners|[user](user.md)| A lista de proprietários desta equipe. Atualmente, ao criar uma equipe usando permissões de aplicativo, exatamente um proprietário deve ser especificado. Ao usar permissões delegadas pelo usuário, nenhum proprietário pode ser especificado (o usuário atual é o proprietário). O proprietário deve ser especificado como um objeto ID (GUID), não um UPN. |
