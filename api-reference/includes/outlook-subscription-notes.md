@@ -11,7 +11,7 @@ ms.lasthandoff: 03/08/2022
 ms.locfileid: "63333712"
 ---
 <!-- markdownlint-disable MD041-->
-Criar e gerenciar (obter, atualizar e excluir) uma assinatura requer um escopo de leitura para o recurso. Por exemplo, para receber notificações de alteração em mensagens, seu aplicativo precisa da permissão Mail.Read. Outlook notificações de alteração suportam escopos delegados e de permissão de aplicativo. Observe as seguintes limitações:
+Criar e gerenciar (obter, atualizar e excluir) uma assinatura requer um escopo de leitura para o recurso. Por exemplo, para receber notificações de alteração nas mensagens, seu aplicativo precisa da permissão Mail.Read. As notificações de alteração do Outlook dão suporte a escopos de permissão de aplicativo e delegados. Observe as seguintes limitações:
 
 - A permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Por exemplo, você não pode usar os Calendários de permissões delegadas. Leia para assinar eventos na caixa de correio de outro usuário.
 - Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas _compartilhadas ou delegadas_:

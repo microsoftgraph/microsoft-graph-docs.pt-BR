@@ -1,22 +1,22 @@
 ---
-title: Obter atividades de usuário recentes
-description: " API. O serviço consultará os historyItems mais recentes e, em seguida, puxará essas atividades relacionadas. As atividades serão classificação de acordo com o **últimoModified mais** recente no **historyItem**. Isso significa que as atividades **sem historyItems não serão incluídas** na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar."
+title: Obter atividades recentes do usuário
+description: " API. O serviço consultará os historyItems mais recentes e efetuará pull dessas atividades relacionadas. As atividades serão classificadas de acordo com o **lastModified mais** recente no **historyItem**. Isso significa que as atividades **sem historyItems** não serão incluídas na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor poderá resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar."
 ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: bb4fbb27fb59b5f9d533d47b2d2314cbd2f0673c
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: cc32f22e7617a4a8d73978d7b7d01b8182d986eb
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62348016"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186964"
 ---
-# <a name="get-recent-user-activities"></a>Obter atividades de usuário recentes
+# <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
 
 Namespace: microsoft.graph
 
-Obter atividades recentes para um determinado usuário. Esta função OData tem alguns comportamentos padrão incluídos para fazê-lo funcionar como uma API "usada mais recentemente". O serviço consultará os [historyItems mais recentes](../resources/projectrome-historyitem.md) e, em seguida, puxará essas atividades relacionadas. As atividades serão classificação de acordo com o **últimoModified mais** recente no **historyItem**. Isso significa que as atividades **sem historyItems não serão incluídas** na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos criarem atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar.
+Obter atividades recentes para um determinado usuário. Essa função OData tem alguns comportamentos padrão incluídos para fazê-la operar como uma API "usada mais recentemente". O serviço consultará os [historyItems](../resources/projectrome-historyitem.md) mais recentes e efetuará pull dessas atividades relacionadas. As atividades serão classificadas de acordo com o **lastModified mais** recente no **historyItem**. Isso significa que as atividades **sem historyItems** não serão incluídas na resposta. A permissão UserActivity.ReadWrite.CreatedByApp também aplicará filtragem extra à resposta, para que somente as atividades criadas pelo aplicativo sejam retornadas. Essa filtragem do lado do servidor poderá resultar em páginas vazias se o usuário estiver particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a **propriedade nextLink** para paginar.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,7 +38,7 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns [Parâmetros de Consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Os seguintes parâmetros de consulta são suportados:
+Esse método dá suporte a alguns [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
 
 - $expand para a **propriedade de navegação historyItems** .
 - $top limitar o número máximo de itens entre páginas.
@@ -70,7 +70,7 @@ Se tiver êxito, este método retornará o `200 OK` código de resposta com as a
 
 ## <a name="example"></a>Exemplo
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/activities/recent
 ---
 
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 

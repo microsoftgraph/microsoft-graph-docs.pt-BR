@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 28dfc04b0286ffc7adcb16dfb690da1051036bda
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: ddeacbf8c8fd7b408d8907fdb3817a3ba652ec54
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723233"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186915"
 ---
 # <a name="get-cloudpcprovisioningpolicy"></a>Obter cloudPcProvisioningPolicy
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Leia as propriedades e as relações de um [objeto cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) .
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte `$select` e `$expand` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte `$select` a parâmetros `$expand` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -66,6 +66,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um [o
 
 #### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -106,6 +107,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -133,7 +136,8 @@ Content-Type: application/json
     "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
     "windowsSettings": {
       "language": "en-US"
-    }
+    },
+    "managedBy": "windows365"
 }
 ```
 
@@ -141,6 +145,7 @@ Content-Type: application/json
 
 #### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -181,6 +186,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 
 #### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -219,6 +226,66 @@ Content-Type: application/json
           "groupId":"64ff06de-9c00-4a5a-98b5-7f5abe26bfd9"
           }
       }
-    ]
+    ],
+    "managedBy": "windows365"
+}
+```
+
+### <a name="example-3-get-the-selected-properties-of-the-specified-provisioning-policy"></a>Exemplo 3: Obter as propriedades selecionadas da política de provisionamento especificada
+
+O exemplo a seguir mostra uma solicitação que recupera as propriedades selecionadas da política de provisionamento especificada.
+
+#### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpcprovisioningpolicy_3"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/60b94f83-3e22-430e-a69d-440f65b922d6?$select=id,description,displayName,displayName,domainJoinConfiguration,imageDisplayName,imageId,imageType,onPremisesConnectionId,windowsSettings,managedBy,cloudPcGroupDisplayName,gracePeriodInHours,localAdminEnabled,alternateResourceUrl
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
+    "alternateResourceUrl": "https://ms.portal.azure.com/#contoso.com/resource/subscriptions/827f2432-9c7b-4637-b694-570b3c2f969c/resourceGroups/myResourceGroupName/providers/Microsoft.Fidalgo/projects/myProjectName/pools/myPoolName",
+    "cloudPcGroupDisplayName": "MyCloudPcGroup",
+    "description": "The ProvisioningPolicy for West US employees.",
+    "displayName": "WestUsPolicy",
+    "domainJoinConfiguration": {
+        "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+        "regionName": null,
+        "type": "hybridAzureADJoin"
+    },
+    "gracePeriodInHours": 2,
+    "id": "1d164206-bf41-4fd2-8424-a3192d39ffff",
+    "imageDisplayName": "myCustomImage",
+    "imageId": "d4e0541a-f7bb-4bdf-ad8f-b92b915a229f",
+    "imageType": "custom",
+    "localAdminEnabled": true,
+    "managedBy": "windows365",
+    "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
+    "windowsSettings": {
+      "language": "en-US"
+    }
 }
 ```

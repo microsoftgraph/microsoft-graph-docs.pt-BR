@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 3c6e3630ffe7ed1853c758ce14a32178ea835549
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: 10088c87531c250b24314f5df4b9bae3a842e31a
+ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733222"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66186943"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>Tipo de recurso cloudPcOnPremisesConnection
 
@@ -38,22 +38,23 @@ Representa uma coleção definida de informações de recursos do Azure que pode
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para a conexão de rede do Azure. Somente leitura.|
-|Managedby|[cloudPcManagementService](#cloudpcmanagementservice-values)|Especifica quais serviços gerenciam a conexão de rede do Azure. Os valores possíveis são: `windows365`e `devBox` `unknownFutureValue`. Somente leitura.
-|type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Especifica como o PC na nuvem provisionado será ingressado no Azure Active Directory. O valor padrão é `hybridAzureADJoin`. Os valores possíveis são: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
-|displayName|Cadeia de caracteres|O nome de exibição da conexão de rede do Azure.|
-|subscriptionId|Cadeia de caracteres|A ID da assinatura do Azure de destino associada ao seu locatário.|
-|subscriptionName|String|O nome da assinatura de destino do Azure. Somente leitura.|
-|adDomainName|Cadeia de caracteres|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar. Opcional.|
-|adDomainUsername|Cadeia de caracteres|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: admin@contoso.com. Opcional.|
+|adDomainName|String|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar. Opcional.|
 |adDomainPassword|Cadeia de caracteres|A senha associada **a adDomainUsername**.|
-|Organizationalunit|Cadeia de caracteres|A UO (unidade organizacional) na qual a conta de computador é criada. Se for deixado nulo, a UO configurada como padrão (um contêiner de objeto de computador conhecido) em seu domínio do Active Directory (UO) será usada. Opcional.|
-|resourceGroupId|Cadeia de caracteres|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|String|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|Cadeia de caracteres|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
-|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|O status da verificação de integridade mais recente feita na conexão de rede do Azure. Por exemplo, se o status for "passado", a conexão de rede do Azure terá passado todas as verificações executadas pelo serviço. Os valores possíveis são: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Somente leitura.|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Os detalhes das verificações de integridade da conexão e os resultados correspondentes. Retornado somente em `$select`. Para obter um exemplo que mostra como obter a propriedade **inUse** , consulte o Exemplo 2: Obter as propriedades selecionadas de uma conexão de rede do [Azure, incluindo healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Somente leitura.|
+|adDomainUsername|String|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: `admin@contoso.com`. Opcional.|
+|alternateResourceUrl|String|A URL da interface do recurso do serviço de parceiro que se vincula a essa conexão de rede do Azure. Retornado apenas em `$select`.|
+|displayName|Cadeia de caracteres|O nome de exibição da conexão de rede do Azure.|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|O status da verificação de integridade mais recente feita na conexão de rede do Azure. Por exemplo, se o status for `passed`, a conexão de rede do Azure passou todas as verificações executadas pelo serviço. Os valores possíveis são: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Somente leitura.|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Os detalhes das verificações de integridade da conexão e os resultados correspondentes. Retornado apenas em `$select`. Para obter um exemplo que mostra como obter a propriedade **inUse** , consulte o Exemplo 2: Obter as propriedades selecionadas de uma conexão de rede do [Azure, incluindo healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Somente leitura.|
+|id|Cadeia de caracteres|Identificador exclusivo para a conexão de rede do Azure. Somente leitura.|
 |inUse|Booliano|Quando `true`, a conexão de rede do Azure está em uso. Quando `false`, a conexão não está em uso. Você não pode excluir uma conexão que está em uso. Retornado apenas em `$select`. Para obter um exemplo que mostra como obter a propriedade **inUse** , consulte o Exemplo 2: Obter as propriedades selecionadas de uma conexão de rede do [Azure, incluindo healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Somente leitura.|
+|Managedby|[cloudPcManagementService](#cloudpcmanagementservice-values)|Especifica quais serviços gerenciam a conexão de rede do Azure. Os valores possíveis são: `windows365` e `devBox,` `unknownFutureValue`. Somente leitura.|
+|organizationalUnit|Cadeia de caracteres|A UO (unidade organizacional) na qual a conta de computador é criada. Se for deixado nulo, a UO configurada como padrão (um contêiner de objeto de computador conhecido) em seu domínio do Active Directory (UO) será usada. Opcional.|
+|resourceGroupId|Cadeia de caracteres|A ID do grupo de recursos de destino. Formato obrigatório: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}`.|
+|subnetId|Cadeia de caracteres|A ID da sub-rede de destino. Formato obrigatório: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}`.|
+|subscriptionId|Cadeia de caracteres|A ID da assinatura do Azure de destino associada ao seu locatário.|
+|subscriptionName|Cadeia de caracteres|O nome da assinatura de destino do Azure. Somente leitura.|
+|type|[cloudPcOnPremisesConnectionType](#cloudpconpremisesconnectiontype-values)|Especifica como o PC na nuvem provisionado será ingressado no Azure Active Directory. O valor padrão é `hybridAzureADJoin`. Os valores possíveis são: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
+|virtualNetworkId|Cadeia de caracteres|A ID da rede virtual de destino. Formato obrigatório: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}`.|
 
 ### <a name="cloudpcmanagementservice-values"></a>Valores de cloudPcManagementService
 
@@ -67,8 +68,8 @@ Representa uma coleção definida de informações de recursos do Azure que pode
 
 |Member|Descrição|
 |:---|:---|
-|hybridAzureADJoin|Ingressado no Active Directory local e no Azure AD. Somente usuários híbridos podem ser atribuídos e entrar no PC na nuvem.|
-|azureADJoin|Ingressado somente no Azure AD. Usuários híbridos e somente na nuvem podem ser atribuídos e entrar no PC na nuvem.|
+|hybridAzureADJoin|Ingressado Active Directory local e Azure AD. Somente usuários híbridos podem ser atribuídos e entrar no PC na nuvem.|
+|azureADJoin|Ingressado apenas Azure AD. Usuários híbridos e somente na nuvem podem ser atribuídos e entrar no PC na nuvem.|
 |unknownFutureValue|Valor de sentinel de enumeração evolvável. Não usar.|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>Valores cloudPcOnPremisesConnectionStatus
@@ -80,7 +81,7 @@ Representa uma coleção definida de informações de recursos do Azure que pode
 |Passado|Verificações de integridade aprovadas.|
 |Falhou|Falha nas verificações de integridade.|
 |warning|Verificações de integridade passadas com aviso.|
-|unknownFutureValue|Status futuro desconhecido (reservado, não usado no momento).|
+|unknownFutureValue|Valor de sentinel de enumeração evolvável. Não usar.|
 
 ## <a name="relationships"></a>Relações
 
@@ -102,37 +103,38 @@ Veja a seguir uma representação JSON do recurso.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
-  "id": "String (identifier)",
-  "managedBy": "String",
-  "type": "String",
-  "displayName": "String",
-  "subscriptionId": "String",
-  "subscriptionName": "String",
   "adDomainName": "String",
-  "adDomainUsername": "String",
   "adDomainPassword": "String",
-  "organizationalUnit": "String",
-  "resourceGroupId": "String",
-  "virtualNetworkId": "String",
-  "subnetId": "String",
-  "healthCheckStatus": "string",
+  "adDomainUsername": "String",
+  "alternateResourceUrl": "String",
+  "displayName": "String",
+  "healthCheckStatus": "String",
   "healthCheckStatusDetails": {
     "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
-    "startDateTime": "String (timestamp)",
     "endDateTime": "String (timestamp)",
     "healthChecks": [
-      {
+      { 
         "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+        "additionalDetails": "String",
         "displayName": "String",
-        "status": "String",
-        "startDateTime": "String (timestamp)",
         "endDateTime": "String (timestamp)",
         "errorType": "String",
         "recommendedAction": "String",
-        "additionalDetails": "String"
+        "startDateTime": "String (timestamp)",
+        "status": "String"
       }
-    ]
+    ],
+    "startDateTime": "String (timestamp)"
   },
-  "inUse": "Boolean"
+  "id": "String (identifier)",
+  "inUse": "Boolean",
+  "managedBy": "String",
+  "organizationalUnit": "String",
+  "resourceGroupId": "String",
+  "subnetId": "String",
+  "subscriptionId": "String",
+  "subscriptionName": "String",
+  "type": "String",
+  "virtualNetworkId": "String"
 }
 ```
