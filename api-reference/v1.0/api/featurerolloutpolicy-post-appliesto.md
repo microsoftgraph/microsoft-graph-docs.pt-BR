@@ -1,22 +1,22 @@
 ---
 title: Atribuir appliesTo
-description: Atribua um directoryObject à atribuição de recursos.
+description: Atribua um directoryObject à distribuição de recursos.
 ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9e6b7d35dfcd440fc026775836152fa396050a1b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5ef2aab8ad61b48c9a69d88ad9de7bcdb5b5557e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976759"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446221"
 ---
 # <a name="assign-appliesto"></a>Atribuir appliesTo
 
 Namespace: microsoft.graph
 
-Adicione um appliesTo em um [objeto featureRolloutPolicy](../resources/featurerolloutpolicy.md) para especificar [o directoryObject](../resources/directoryobject.md) ao qual [o featureRolloutPolicy](../resources/featurerolloutpolicy.md) deve ser aplicado.
+Adicione um appliesTo a um [objeto featureRolloutPolicy](../resources/featurerolloutpolicy.md) para especificar [o directoryObject](../resources/directoryobject.md) ao qual [o featureRolloutPolicy](../resources/featurerolloutpolicy.md) deve ser aplicado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | Directory.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [direc
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo [objeto directoryObject](../resources/directoryobject.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -87,8 +87,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryobject-from-featurerolloutpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-directoryobject-from-featurerolloutpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-directoryobject-from-featurerolloutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

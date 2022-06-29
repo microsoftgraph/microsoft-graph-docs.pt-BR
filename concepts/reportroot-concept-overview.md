@@ -1,20 +1,20 @@
 ---
 title: Visão geral da API de relatórios do Microsoft Graph
-description: A API de relatórios do Microsoft Graph permite o entendimento da atividade de recursos de aplicativos e locatários.
+description: Você pode usar a API de relatórios para incorporar os dados de uso do Microsoft 365 à solução de relatórios existente na sua organização, para que todos os relatórios do serviço de TI estejam em um único local.
 ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8c0ea574670cd5d52d33a0ef6f8479335206cef4
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: 84718f4a6fb1b0046387e6338980c99e5d91b881
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917791"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446123"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Visão geral da API de relatórios do Microsoft Graph
 
-A API de relatórios do Microsoft Graph permite entender as atividades de aplicativos e recursos no seu locatário no Azure Active Directory.
+A API de relatórios do Microsoft Graph permite entender as atividades de aplicativos e recursos no seu locatário no Azure Active Directory (Azure AD).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/P6HneRXYdx8]
 
@@ -41,32 +41,32 @@ Os relatórios de uso dos métodos de autenticação ajudam a entender como os u
 
 Entenda melhor como seus usuários acessam e utilizam os serviços do Microsoft Azure Active Directory. Você pode analisar os dados para criar soluções personalizadas adaptadas às necessidades específicas da sua organização.
 
-## <a name="what-data-can-i-access-by-using-the-reports-apis"></a>Quais dados eu posso acessar usando as APIs de relatórios?
+## <a name="what-data-can-i-access-by-using-the-reports-api"></a>Quais dados eu posso acessar usando a API de relatórios?
 
-Você pode utilizar as APIs de relatórios para acessar os conjuntos de dados listados na tabela a seguir.
+Você pode usar a API de relatórios para acessar os conjuntos de dados listados na tabela a seguir.
 
 | APIs de relatórios | Conjunto de dados |
 |:------------ |:-------- |
-| Atividade | [Auditoria de diretório](/graph/api/resources/directoryaudit?view=graph-rest-1.0)<br/>[Entrar](/graph/api/resources/signin?view=graph-rest-1.0)<br/>[Provisionamento (Visualização)](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) |
-| Aplicativos AD FS | [Resumo detalhado da parte de confiança (Visualização)](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) |
-| Registro de aplicativo | [Contagem da credencial de registro de usuário (Visualização)](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta)<br/>[Detalhes da credencial de registro de usuário (Visualização)](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) <br/>[Detalhes de utilização da credencial do usuário (Visualização)](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) <br/>[Resumo de utilização da credencial (Visualização)](/graph/api/resources/credentialusagesummary?view=graph-rest-beta)|
-| Entrar no aplicativo | [Resumo da entrada (Visualização)](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) <br/>[Detalhes da entrada (Visualização)](/graph/api/resources/applicationsignindetailedsummary?view=graph-rest-beta)|
-| Microsoft Teams | [Uso do dispositivo](/graph/api/resources/microsoft-teams-device-usage-reports?view=graph-rest-1.0)<br/>[Uso da equipe](/graph/api/resources/microsoft-teams-team-usage-reports?view=graph-rest-beta)<br/>[Atividades do usuário](/graph/api/resources/microsoft-teams-user-activity-reports?view=graph-rest-1.0)|
-| Microsoft 365 (geral) | [Ativações](/graph/api/resources/office-365-activations-reports?view=graph-rest-1.0)<br/>[Usuários ativos](/graph/api/resources/office-365-active-users-reports?view=graph-rest-1.0)<br/>[Atividades de grupos](/graph/api/resources/office-365-groups-activity-reports?view=graph-rest-1.0) |
-| OneDrive | [Atividades](/graph/api/resources/onedrive-activity-reports?view=graph-rest-1.0)<br/>[Uso](/graph/api/resources/onedrive-usage-reports?view=graph-rest-1.0) |
-| Outlook | [Atividades](/graph/api/resources/email-activity-reports?view=graph-rest-1.0)<br/>[Uso do aplicativo](/graph/api/resources/email-app-usage-reports?view=graph-rest-1.0)<br/>[Uso de caixa de correio](/graph/api/resources/mailbox-usage-reports?view=graph-rest-1.0) |
-| SharePoint | [Atividades](/graph/api/resources/sharepoint-activity-reports?view=graph-rest-1.0)<br/>[Uso do site](/graph/api/resources/sharepoint-site-usage-reports?view=graph-rest-1.0) |
-| Skype for Business | [Atividades](/graph/api/resources/skype-for-business-activity-reports?view=graph-rest-1.0)<br/>[Uso do dispositivo](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0)<br/>[Uso do dispositivo](/graph/api/resources/skype-for-business-device-usage-reports?view=graph-rest-1.0)<br/>[Atividades dos participantes](/graph/api/resources/skype-for-business-participant-activity-reports?view=graph-rest-1.0)<br/>[Atividades de ponto a ponto](/graph/api/resources/skype-for-business-peer-to-peer-activity?view=graph-rest-1.0) |
-| Yammer | [Atividades](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0)<br/>[Uso do dispositivo](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0)<br/>[Atividades de grupos](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0) |
+| Atividade | [Auditoria de diretório](/graph/api/resources/directoryaudit)<br/>[Entrar](/graph/api/resources/signin)<br/>[Provisioning](/graph/api/resources/provisioningobjectsummary) |
+| Aplicativos AD FS | [Resumo detalhado da parte de confiança (visualização)](/graph/api/resources/relyingpartydetailedsummary) |
+| Registro de aplicativo | [Contagem da credencial de registro de usuário (visualização)](/graph/api/resources/credentialuserregistrationcount)<br/>[Detalhes da credencial de registro de usuário (visualização)](/graph/api/resources/credentialuserregistrationdetails) <br/>[Detalhes de utilização da credencial do usuário (visualização)](/graph/api/resources/usercredentialusagedetails) <br/>[Resumo de utilização da credencial (visualização)](/graph/api/resources/credentialusagesummary)|
+| Entrar no aplicativo | [Resumo da entrada (visualização)](/graph/api/resources/applicationsigninsummary) <br/>[Detalhes da entrada (visualização)](/graph/api/resources/applicationsignindetailedsummary)|
+| Microsoft Teams | [Uso do dispositivo](/graph/api/resources/microsoft-teams-device-usage-reports)<br/>[Uso da equipe](/graph/api/resources/microsoft-teams-team-usage-reports)<br/>[Atividades do usuário](/graph/api/resources/microsoft-teams-user-activity-reports)|
+| Microsoft 365 (geral) | [Ativações](/graph/api/resources/office-365-activations-reports)<br/>[Usuários ativos](/graph/api/resources/office-365-active-users-reports)<br/>[Atividades de grupos](/graph/api/resources/office-365-groups-activity-reports) |
+| OneDrive | [Atividades](/graph/api/resources/onedrive-activity-reports)<br/>[Uso](/graph/api/resources/onedrive-usage-reports) |
+| Outlook | [Atividades](/graph/api/resources/email-activity-reports)<br/>[Uso do aplicativo](/graph/api/resources/email-app-usage-reports)<br/>[Uso de caixa de correio](/graph/api/resources/mailbox-usage-reports) |
+| SharePoint | [Atividades](/graph/api/resources/sharepoint-activity-reports)<br/>[Uso do site](/graph/api/resources/sharepoint-site-usage-reports) |
+| Skype for Business | [Atividades](/graph/api/resources/skype-for-business-activity-reports)<br/>[Uso do dispositivo](/graph/api/resources/skype-for-business-device-usage-reports)<br/>[Uso do dispositivo](/graph/api/resources/skype-for-business-device-usage-reports)<br/>[Atividades dos participantes](/graph/api/resources/skype-for-business-participant-activity-reports)<br/>[Atividades de ponto a ponto](/graph/api/resources/skype-for-business-peer-to-peer-activity) |
+| Yammer | [Atividades](/graph/api/resources/yammer-activity-reports)<br/>[Uso do dispositivo](/graph/api/resources/yammer-device-usage-reports)<br/>[Atividades de grupos](/graph/api/resources/yammer-groups-activity-reports) |
 
 ## <a name="api-reference"></a>Referência da API
+
 Está procurando a referência de API para esse serviço?
 
-- [API de relatórios de identidade e acesso no Microsoft Graph beta](/graph/api/resources/report-identity-access?view=graph-rest-beta)
-- [API de relatórios de uso do Microsoft 365 no Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0)
-- [API de relatórios de uso do Microsoft 365 no Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta)
+- [API de relatórios de identidade e acesso no Microsoft Graph beta](/graph/api/resources/report-identity-access?view=graph-rest-beta&preserve-view=true)
+- [API de relatórios de uso do Microsoft 365 no Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0&preserve-view=true)
+- [API de relatórios de uso do Microsoft 365 no Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 * Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-* Saiba mais sobre como [usar a API REST de relatórios](/graph/api/resources/report?view=graph-rest-1.0).

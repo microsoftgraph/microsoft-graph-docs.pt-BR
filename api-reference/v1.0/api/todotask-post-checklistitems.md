@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8f8153c76e9861676e526add07a44eb00b9a9b3
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 4567698b78e069462bf0dc18b0406dceecbeb174
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "66041011"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441332"
 ---
 # <a name="create-checklistitem"></a>Criar checklistItem
 Namespace: microsoft.graph
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Tasks.ReadWrite|
-|Delegado (conta pessoal da Microsoft)|Tasks.ReadWrite|
+|Delegada (conta corporativa ou de estudante)|Tasks.ReadWrite|
+|Delegada (conta pessoal da Microsoft)|Tasks.ReadWrite|
 |Aplicativo|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-checklistitem-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-checklistitem-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,36 +1,36 @@
 ---
 title: Criar iosLobAppProvisioningConfiguration
 description: Crie um novo objeto iosLobAppProvisioningConfiguration.
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a42abddc26cb9be23286c7a3682740fffa04111e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 52a92cbd29cc69b807a230ad32401a59f41e2451
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116266"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446494"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Criar iosLobAppProvisioningConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto iosLobAppProvisioningConfiguration.](../resources/intune-shared-ioslobappprovisioningconfiguration.md)
+Crie um novo [objeto iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
 | &nbsp; &nbsp; **Aplicativos** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementApps.ReadWrite.All|
@@ -51,17 +51,17 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto iosLobAppProvisioningConfiguration.
+No corpo da solicitação, forneça uma representação JSON do objeto iosLobAppProvisioningConfiguration.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar iosLobAppProvisioningConfiguration.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o iosLobAppProvisioningConfiguration.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data e hora opcionais de expiração do perfil.|
-|payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision | *.xml).|
+|payloadFileName|Cadeia de caracteres|Nome do arquivo de conteúdo (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
-|roleScopeTagIds|String collection|Lista de Marcas de Escopo para essa entidade de configuração de provisionamento de aplicativos LOB do iOS.|
+|roleScopeTagIds|Coleção String|Lista de Marcas de Escopo para esta entidade de configuração de provisionamento de aplicativo LOB do iOS.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
@@ -71,7 +71,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosLobAp
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

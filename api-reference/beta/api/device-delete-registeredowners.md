@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cae18bd61afcf283853cd73fcf91540a0de00564
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 0e90bc070facca9faefaeade11490d526e673d6f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118575"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442586"
 ---
 # <a name="delete-registeredowner"></a>Excluir registeredOwner
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredOwners/{id}/$ref
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-registeredowners-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-registeredowners-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

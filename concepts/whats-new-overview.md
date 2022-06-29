@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: Exiba os destaques das novidades Microsoft Graph nos últimos dois meses, o que foi adicionado em versões anteriores e como você pode compartilhar suas ideias.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 7fd388275a31b3b7e426e3f27dc6f5861b9a297f
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: 9faaf3d0db85a040bbb65b21896819dfb59e1ee4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160276"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444226"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -16,6 +16,52 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 
 > [!IMPORTANT]
 > Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
+
+## <a name="june-2022-new-and-generally-available"></a>Junho de 2022: novo e disponível para o público geral
+
+### <a name="cloud-communications--call-records"></a>Comunicações na nuvem | Registros de chamadas
+Obtenha informações sobre o codec de áudio, codec de vídeo, protocolo de transporte de rede e saltos de rota de rastreamento para um [fluxo de mídia](/graph/api/resources/callrecords-mediastream) ao [obter um registro de chamada](/graph/api/callrecords-callrecord-get) e expandir cada [segmento](/graph/api/resources/callrecords-segment) de uma [sessão](/graph/api/resources/callrecords-session).
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+- [Liste as unidades administrativas ](/graph/api/device-list-memberOf) que um [dispositivo](/graph/api/resources/device) é membro.
+- Gerenciar dispositivos como membros em uma [unidade administrativa](/graph/api/resources/administrativeunit): [listar membros](/graph/api/administrativeunit-list-members) incluindo dispositivos, e [obter](/graph/api/administrativeunit-get-members), [adicionar](/graph/api/administrativeunit-post-members), e [remover](/graph/api/administrativeunit-delete-members) um dispositivo como membro. 
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+ Configure e gerencie as [configurações da política de métodos de autenticação de Passagem de Acesso Temporário](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) no seu locatário.
+
+### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
+- Encontre novas colunas nos relatórios do Teams gerados pelos seguintes métodos:
+  - [getTeamsUserActivityCounts](/graph/api/reportroot-getteamsuseractivitycounts)
+  - [getTeamsUserActivityUserDetail](/graph/api/reportroot-getTeamsUserActivityUserDetail)
+  - [getTeamsDeviceUsageUserDetail](/graph/api/reportroot-getTeamsDeviceUsageUserDetail)
+  - [getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts)
+  - [getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts)
+- A coluna Windows Phone nos relatórios do Teams gerados pelos seguintes métodos:
+  - [getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts)
+  - [getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts)
+
+
+### <a name="teamwork"></a>Trabalho em equipe
+Assine as notificações de alteração do seguinte no Teams:
+- [equipe e canal](teams-changenotifications-team-and-channel.md)
+- [associação de equipe e canal](teams-changenotifications-teammembership.md)
+- [chat](teams-changenotifications-chat.md)
+- [associação do chat](teams-changenotifications-chatmembership.md)
+
+## <a name="june-2022-new-in-preview-only"></a>Junho de 2022: novo somente na visualização
+
+### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
+Acesse a [API de Descoberta Eletrônica](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) do namespace de [segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) no futuro, em vez do namespace de conformidade.
+
+### <a name="education"></a>Educação
+- [Crie](/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-beta&preserve-view=true) uma pasta do SharePoint em uma [atribuição](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) para carregar documentos de comentários.
+- [Crie](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) um [documento de comentários](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true) em um [envio](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) na pasta de comentários associada à atribuição.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+[Promover](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) um subdomínio verificado no domínio raiz.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+Ocultar links de redefinição de senha de autoatendimento (SSPR) nas [configurações de visibilidade de texto da página de logon](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) na página de entrada de um locatário. 
 
 
 ## <a name="may-2022-new-and-generally-available"></a>Maio de 2022: novos e geralmente disponíveis
@@ -91,54 +137,6 @@ Obtenha um [relatório de uso para os métodos de autenticação registrados de 
 
 ### <a name="to-do-tasks"></a>Tarefas pendentes
 A partir de 31 de maio de 2022, o [conjunto de API de tarefas pendentes que é compilado sobre a baseTask](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true) está preterido. Esse conjunto de API deixará de retornar dados em 31 de agosto de 2022. Em vez disso, use o [conjunto de API de tarefas pendentes compilado o todoTask](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true).
-
-## <a name="april-2022-new-and-generally-available"></a>Abril de 2022: novo e com disponibilidade geral
-
-### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-Use a [Gestão de Identidade Privilegiada (PIM)](/graph/api/resources/privilegedidentitymanagementv3-overview) em aplicativos de produção para gerenciar, controlar e monitorar o acesso a recursos importantes na sua organização. O acesso é habilitado por meio de funções privilegiadas e do controle de acesso baseado em função (RBAC) e pode ser concedido a usuários, grupos ou entidades de serviço. Os recursos podem estar no Microsoft Azure AD, no Azure e em outros serviços de nuvem da Microsoft, tais como o Microsoft 365 ou o Microsoft Intune.
-
-### <a name="search--index"></a>Pesquisa | Índice
-- Use as permissões do aplicativo `ExternalConnection.Read.All` e `ExternalConnection.ReadWrite.All` para ler ou gravar todas as conexões externas sem a presença de um usuário conectado.
-- Use a permissão do aplicativo `ExternalItem.Read.All` para ler todos os itens externos sem a presença de um usuário conectado.
-- Use a permissão delegada `ExternalConnection.ReadWrite.OwnedBy` para ler e gravar conexões externas em nome de um usuário conectado ao qual seu aplicativo está autorizado.
-- Use a permissão delegada `ExternalConnection.Read.All` ou `ExternalConnection.ReadWrite.All` para ler ou gravar todas as conexões externas em nome de um usuário conectado.
-- Use a permissão delegada `ExternalItem.ReadWrite.OwnedBy` para ler e gravar itens externos em nome de um usuário conectado, para o qual seu aplicativo está autorizado.
-- Use a permissão delegada `ExternalItem.Read.All` ou `ExternalItem.ReadWrite.All` para ler ou gravar todos os itens externos em nome de um usuário conectado.
-
-
-## <a name="april-2022-new-in-preview-only"></a>Abril de 2022: novo somente para visualização
-
-### <a name="customer-bookings"></a>Reservas do Cliente
-- [Obtenha informações de disponibilidade](/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta&preserve-view=true) para recursos de um [membro da equipe](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) em uma [empresa](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true).
-- Use a permissão de aplicativo `Bookings.Read.All` em operações de leitura para recursos de[empresas](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true), [membro da equipe](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true), [serviço](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true), [cliente](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) e [compromisso](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true).
-- Use a permissão de aplicativo `BookingsAppointment.ReadWrite.All` para operações de leitura/gravação para recursos de cliente e compromisso.
-
-### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem
-- Especifique [Configurações do Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) como parte das [configurações da organização do PC na nuvem](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) para um locatário.
-- [Obtenha](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true) os dispositivos de PC na nuvem atribuídos ao usuário conectado.
-- [Obter informações para iniciar um dispositivo de PC na nuvem](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) para o usuário conectado.
-
-### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
-Configure [ configurações de federação](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) para federar domínios com o Azure Active Directory.
-
-### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
-[Obtenha atribuições](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true) para as quais o usuário correspondente tem pacotes de acesso incompatíveis. 
-
-### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
-Confirme se um evento é [de alto risco e está comprometido](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true) ou é [seguro](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true) marcando o evento nos logs de entrada Azure Active Directory correspondentes.
-
-### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
-- [Obtenha um relatório de distribuição total](/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta&preserve-view=true) para a contagem de atividades específicas do Teams em um período especificado. As contagens de atividades do Teams incluem mensagens de chat da equipe, chamadas, reuniões, duração do áudio, postagem de mensagens e assim por diante.
-- Obtenha tipos de atividade adicionais em relatórios que [obtém detalhes do usuário](/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta&preserve-view=true), [obtém contagens de atividades ](/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta&preserve-view=true)e [obtém contagens de total de atividade](/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta&preserve-view=true).
-
-### <a name="teamwork"></a>Trabalho em equipe
-Compartilhar um canal com uma ou mais equipes:
-- [Liste os canais que são compartilhados com uma equipe](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true).
-- [Liste todos os canais em uma equipe](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true) incluindo aqueles hospedados em uma equipe ou compartilhados com ela.
-- [Liste membros da equipe que podem acessar um canal compartilhado especificado](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true).
-- [Remova um canal compartilhado com uma equipe](/graph/api/team-delete-incomingchannels?view=graph-rest-beta&preserve-view=true).
-- [Liste as equipes que compartilharam um canal especificado](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
-- [ Deixe de compartilhar um canal com uma equipe](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?

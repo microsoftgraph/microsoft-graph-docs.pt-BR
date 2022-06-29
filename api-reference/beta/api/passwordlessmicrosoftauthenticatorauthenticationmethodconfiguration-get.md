@@ -1,26 +1,26 @@
 ---
 title: Obter passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: Leia as propriedades e as relações de um objetoMicrosoftAuthenticatorAuthenticatorAuthenticationMethodConfiguration.
+description: Leia as propriedades e as relações de um objeto PasswordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1acc6f6a559aede82a2e0dd74260c51e833e35eb
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 4df6a3dc45ac3418647025b207a1939e672322c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395381"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446845"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Obter passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e as relações do [objetoMicrosoftAuthenticatorAuthenticationAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md), que representa Microsoft Authenticator política de método de autenticação de Telefone sem senha para o [](../resources/authenticationmethodspolicies-overview.md) locatário do Azure AD.
+Recupere as propriedades e as relações do objeto [PasswordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md), que representa a política de método de autenticação de entrada de telefone [](../resources/authenticationmethodspolicies-overview.md) sem senha do Microsoft Authenticator para o locatário do Azure AD.
 
 > [!CAUTION]
-> A MICROSOFT AUTHENTICATOR de autenticação sem senha Telefone a API do método de autenticação de login está preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de [Microsoft Authenticator de autenticação](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
+> A API do método de autenticação de autenticação de telefone sem senha do Microsoft Authenticator foi preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de [método de autenticação do Microsoft Authenticator](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,11 +31,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Leitor Global
-* Administrador de Política de Autenticação
-* Administrador Global
+* Administrador da Política de Autenticação
+* Administrador global
 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este `200 OK` método retornará um código de resposta e um [objetoMicrosoftAuthenticatorAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) no corpo da resposta.
+Se tiver êxito, este `200 OK` método retornará um código de resposta e um objeto [PasswordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

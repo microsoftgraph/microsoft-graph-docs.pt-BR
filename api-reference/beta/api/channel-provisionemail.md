@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e0848b9e722191549bc52593cd0154929ed98eeb
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: e553a716836e0516baa4855116122ec846b8e5f7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62343148"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443372"
 ---
 # <a name="channel-provisionemail"></a>channel: provisionEmail
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 Provisione um endereço de email para um [canal](../resources/channel.md).
 
-Microsoft Teams não provisiona automaticamente um endereço de email para um **canal** por padrão. Para ter Teams provisionar um endereço de email, você pode chamar **provisionEmail** ou por meio da interface de usuário Teams, selecione Obter endereço de **email**, que dispara Teams para gerar um endereço de email se ele ainda não tiver provisionado um.
+O Microsoft Teams não provisiona automaticamente um endereço de email para um **canal** por padrão. Para que o Teams provisione um endereço de email, você pode chamar **o provisionEmail** ou por meio da interface do usuário do Teams, selecione Obter endereço de **email**, o que aciona o Teams a gerar um endereço de email se ele ainda não tiver provisionado um.
 
-Para remover o endereço de email de um **canal**, use o [método removeEmail](channel-removeemail.md) .
+Para remover o endereço de email de **um canal**, use o [método removeEmail](channel-removeemail.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | ChannelSettings.ReadWrite.All               |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Delegada (conta corporativa ou de estudante)     | ChannelSettings.ReadWrite.All               |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Sem suporte.                              |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) no corpo da resposta. O endereço de email provisionado está na `email` propriedade.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) no corpo da resposta. O endereço de email provisionado está na `email` propriedade.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo de uma resposta.
-**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

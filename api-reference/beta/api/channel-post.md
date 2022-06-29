@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 241296e2cbddb94d582a7241c6f81c195a5cabfe
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 59dbcb55dc4a0e8ae2d267f71dd549903301081a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034544"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443449"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -22,7 +22,7 @@ Crie um novo [canal](../resources/channel.md) em uma equipe, conforme especifica
 > **Nota:** Você pode adicionar no máximo 200 membros ao criar um canal privado.
 
 > [!IMPORTANT]
-> Os canais compartilhados estão atualmente no status de visualização pública. Durante esse tempo, o Microsoft API do Graph criar um canal compartilhado está disponível para um público limitado. É recomendável criar canais compartilhados no cliente Teams e usar apIs do Microsoft Graph para gerenciá-los. Para obter detalhes sobre como habilitar canais compartilhados Teams cliente, consulte Canais compartilhados [no Microsoft Teams (versão prévia)](/microsoftteams/shared-channels).
+> Os canais compartilhados estão atualmente no status de visualização pública. Durante esse tempo, o Microsoft API do Graph criar um canal compartilhado está disponível para um público limitado. É recomendável criar canais compartilhados no cliente do Teams e usar APIs do Microsoft Graph para gerenciá-los. Para obter detalhes sobre como habilitar canais compartilhados no cliente do Teams, consulte [Canais compartilhados no Microsoft Teams (versão prévia)](/microsoftteams/shared-channels).
 
 
 ## <a name="permissions"></a>Permissões
@@ -60,7 +60,7 @@ No corpo da solicitação, forneça uma representação JSON de um [objeto de](.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de [](../resources/channel.md) resposta e um objeto de canal no corpo da resposta para o canal com um **valor membershipType** de `standard` ou .`private` Para o canal com **um valor membershipType** de `shared`, este método retorna `202 Accepted` uma resposta que contém um link para [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+Se bem-sucedido, este método retorna `201 Created` um código de [](../resources/channel.md) resposta e um objeto de canal no corpo da resposta para um canal com um **valor membershipType** de `standard` ou .`private` Para um canal com um **valor membershipType** `shared`de , este método retorna `202 Accepted` um código de resposta e um link para [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 Se a solicitação não for bem-sucedida, este método retorna um código de resposta `400 Bad Request`. Os seguintes são motivos comuns para esta resposta:
 

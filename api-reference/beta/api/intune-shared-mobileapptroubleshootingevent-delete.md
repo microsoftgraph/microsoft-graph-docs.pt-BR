@@ -1,22 +1,22 @@
 ---
 title: Excluir mobileAppTroubleshootingEvent
-description: Descreve o método Delete mobileAppTroubleshootingEvent da API do Microsoft Graph para o Intune, que oferece suporte a vários fluxos de trabalho.
-ms.localizationpriority: medium
-author: rolyon
+description: Descreve o método Delete mobileAppTroubleshootingEvent do Microsoft API do Graph for Intune, que dá suporte a vários fluxos de trabalho.
+localization_priority: Normal
+author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a00892c99ff5355306ca41eb47cc432ac98278bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6bbf3c5ce57fbc6f2ff5347e618c20ffd70026b2
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121043"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436634"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>Excluir mobileAppTroubleshootingEvent
 
 Namespace: microsoft.graph
 
-> **Importante:** APIs na versão /beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs na versão /beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,13 +27,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
-|&nbsp; &nbsp; **Gerenciamento de dispositivo**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)||
+|&nbsp; &nbsp; **Gerenciamento de dispositivos**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Solução de Problemas**|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
-|&nbsp; &nbsp; **Gerenciamento de dispositivo**|DeviceManagementManagedDevices.ReadWrite.All|
-|&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Gerenciamento de dispositivos**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Solução de Problemas**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

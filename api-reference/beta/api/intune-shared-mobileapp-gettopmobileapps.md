@@ -1,22 +1,22 @@
 ---
 title: Função getTopMobileApps
 description: Ainda não documentado
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46136c68ed22c5754ce77e6bcddea0d7ad3a4347
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2058dbbe7d81712c1832f3c47f70542b528a67e8
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017721"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445227"
 ---
 # <a name="gettopmobileapps-function"></a>Função getTopMobileApps
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma coleção [mobileApp](../resources/intune-shared-mobileapp.md) no corpo da resposta.
+Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma [coleção mobileApp](../resources/intune-shared-mobileapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

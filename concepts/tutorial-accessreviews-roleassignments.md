@@ -1,19 +1,19 @@
 ---
 title: 'Tutorial: Usar a API de revisões de acesso para examinar o acesso a funções privilegiadas'
-description: Usar a API de revisões de acesso para examinar o acesso a funções privilegiadas
+description: Saiba como usar a API de revisões de acesso para examinar periodicamente usuários e grupos com acesso a funções privilegiadas, incluindo funções ativas e qualificadas.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 6f9dbee5b394c20ef6fd4a3b068b9dda59838902
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 845d50d4cd3eb06cf2131f5255567cb4b7861325
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133087"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445808"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-access-to-privileged-roles"></a>Tutorial: Usar a API de revisões de acesso para examinar o acesso a funções privilegiadas
 
-A API de revisões de acesso no Microsoft Graph permite que as organizações auditem e atestem o acesso que as identidades (também chamadas de entidades de segurança) são *atribuídas* aos recursos na organização. Um dos recursos mais confidenciais em uma organização são funções privilegiadas. Com uma função privilegiada, uma entidade de segurança pode executar operações administrativas. Dependendo da função privilegiada, algumas operações podem ter um efeito maior na postura de segurança da organização. Usando a API de revisões de acesso, as organizações podem atestar periodicamente as entidades de segurança que têm acesso a funções privilegiadas de acordo com a política da organização.
+A API de revisões de acesso no Microsoft Graph permite que as organizações auditem e atestem o acesso de que as identidades (também chamadas de entidades de segurança) são *atribuídas* aos recursos na organização. Um dos recursos mais confidenciais em uma organização são funções privilegiadas. Com uma função privilegiada, uma entidade de segurança pode executar operações administrativas. Dependendo da função privilegiada, algumas operações podem ter um efeito maior na postura de segurança da organização. Usando a API de revisões de acesso, as organizações podem atestar periodicamente as entidades de segurança que têm acesso a funções privilegiadas de acordo com a política da organização.
 
 A Contoso Limited é um provedor de serviços crescente que delegaram vários Azure AD de administrador a usuários, grupos e entidades de serviço na organização. A empresa precisa garantir que apenas os destinatários certos tenham acesso a funções privilegiadas. Os auditores do sistema também devem auditar o histórico de revisão de acesso para relatar a eficácia dos controles internos da Contoso.
 
@@ -24,19 +24,19 @@ Neste tutorial, você usará a API de revisões de acesso para examinar periodic
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
 + Um locatário Azure AD trabalho com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
-+ Entre no [Graph Explorer como](https://developer.microsoft.com/graph/graph-explorer) um usuário em uma função de Administrador de Função Com Privilégios.
++ Entre no [Explorador do Graph como](https://developer.microsoft.com/graph/graph-explorer) um usuário em uma função de Administrador de Função Com Privilégios.
 + Entidades de segurança com atribuições ativas ou qualificadas para uma função privilegiada. Essas atribuições serão o escopo da revisão de acesso. Para atribuir funções privilegiadas, consulte [Tutorial: Usar a API Privileged Identity Management (PIM) para atribuir Azure AD funções](/graph/tutorial-assign-azureadroles).
     + Neste tutorial, a função Administrador de Usuários é o recurso em revisão. Um grupo de segurança e um usuário individual foram atribuídos à função.
 + As seguintes permissões delegadas: `AccessReview.ReadWrite.All`.
 
-Para consentir com as permissões necessárias no Graph Explorer:
+Para consentir com as permissões necessárias no Explorador do Graph:
 1. Selecione o ícone de reticências horizontais à direita dos detalhes da conta de usuário e escolha **Selecionar permissões**.
 
-      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Selecione permissões Graph Microsoft." border="true":::
+      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Selecione as permissões do Microsoft Graph." border="true":::
 
 2. Percorra a lista de permissões para **AccessReview (3)**, expanda e selecione `AccessReview.ReadWrite.All`. Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões.
 
-      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consentir com permissões Graph Microsoft." border="true":::
+      :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consentir com permissões do Microsoft Graph." border="true":::
 
 >[!NOTE]
 >Os objetos de resposta mostrados neste tutorial podem ser reduzidos para legibilidade.
@@ -289,7 +289,7 @@ Content-type: application/json
 }
 ```
 
-O status dessa instância de revisão de acesso é `InProgress`. Um `InProgress` status significa que a instância de revisão está aberta para que os revisores enviem decisões e o período para essa instância de revisão de acesso não expirou. Você também recebeu uma notificação por email Microsoft Azure solicitando que você execute a revisão de acesso.
+O status dessa instância de revisão de acesso é `InProgress`. Um `InProgress` status significa que a instância de revisão está aberta para que os revisores enviem decisões e o período para essa instância de revisão de acesso não expirou. Você também recebeu uma notificação por email do Microsoft Azure solicitando que você execute a revisão de acesso.
 
 ## <a name="step-3-retrieve-access-review-decisions-before-recording-any-decisions"></a>Etapa 3: Recuperar decisões de revisão de acesso antes de registrar qualquer decisão
 

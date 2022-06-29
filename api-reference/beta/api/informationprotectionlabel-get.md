@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 6564c59608f8f69d0a2fc68dc1639768ff0695bb
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 629e22332595e71faae8901034f39b19661a37a9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395689"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446543"
 ---
 # <a name="get-informationprotectionlabel"></a>Obter informationProtectionLabel
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
-Para obter um rótulo disponível para o usuário ou usuário especificado:
+Para obter um rótulo disponível para o usuário conectado ou usuário especificado:
 ```http
 GET /me/informationProtection/policy/labels/{id}
 GET /users/{id | user-principal-name}/informationProtection/policy/labels/{id}
@@ -53,7 +53,7 @@ Este método dá suporte a alguns parâmetros de consulta OData para ajudar a pe
 | Nome          | Descrição                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Autorização | {token} de portador. Obrigatório.                                                                                                                                                         |
-| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes aparecerão no Azure Information Protection Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
+| User-Agent    | Descreve o nome e a versão do aplicativo de chamada. Os detalhes serão exibidos no Azure Proteção de Informações Analytics. O formato sugerido é ApplicationName/Version. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -61,7 +61,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [informationProtectionLabel](../resources/informationprotectionlabel.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [informationProtectionLabel solicitado](../resources/informationprotectionlabel.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -96,6 +96,10 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-informationprotectionlabel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-informationprotectionlabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

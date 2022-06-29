@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: db04f05051085a71c62173e8e39cdb3a6f2d977d
-ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
+ms.openlocfilehash: 60422e27d69ddc23faa3708bc4d625a420d0c2c3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66186954"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446144"
 ---
 # <a name="create-cloudpcprovisioningpolicy"></a>Criar cloudPcProvisioningPolicy
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|CloudPC.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,12 +57,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [cloudPc
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição da política de provisionamento.|
-|description|Cadeia de caracteres|A descrição da política de provisionamento.|
+|descrição|String|A descrição da política de provisionamento.|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Especifica como os PCs na nuvem ingressarão no Azure Active Directory.|
 |onPremisesConnectionId|Cadeia de caracteres|A ID do cloudPcOnPremisesConnection. Para garantir que os PCs na nuvem tenham conectividade de rede e que eles ingressem no domínio, escolha uma conexão com uma rede virtual validada pelo serviço de PC na nuvem.|
-|imageId|Cadeia de caracteres|A ID da imagem do sistema operacional que você deseja provisionar em PCs na nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}. Os valores com suporte para cada um dos parâmetros são os seguintes:<ul><li>publisher: Microsoftwindowsdesktop.</li> <li>oferta: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 e 19h2-ent-cpc-os.</li></ul>|
+|imageId|String|A ID da imagem do sistema operacional que você deseja provisionar em PCs na nuvem. O formato de uma imagem de tipo de galeria é: {publisher_offer_sku}. Os valores com suporte para cada um dos parâmetros são os seguintes:<ul><li>publisher: Microsoftwindowsdesktop.</li> <li>oferta: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 e 19h2-ent-cpc-os.</li></ul>|
 |imageDisplayName|Cadeia de caracteres|O nome de exibição da imagem do sistema operacional que você está provisionando.|
 |Imagetype|cloudPcProvisioningPolicyImageType|O tipo de imagem do sistema operacional (personalizada ou galeria) que você deseja provisionar em PCs na nuvem. Os valores possíveis são: `gallery` e `custom`.|
-|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Configurações Windows específicas a serem configuradas durante a criação de PCs na nuvem para essa política de provisionamento.|
+|windowsSettings|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Configurações específicas do Windows a serem configuradas durante a criação de PCs na nuvem para essa política de provisionamento.|
 
 ## <a name="response"></a>Resposta
 

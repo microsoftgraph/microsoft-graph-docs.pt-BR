@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a74e2ea48d8aa39f6e12a6c5c5908d72d445898e
-ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
+ms.openlocfilehash: 9a18a8678db335b788ef170f97958de5154a1942
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65924093"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441717"
 ---
 # <a name="loginpagetextvisibilitysettings-resource-type"></a>Tipo de recurso loginPageTextVisibilitySettings
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Esse é um tipo complexo que representa os vários textos que podem ser ocultos na página de entrada de um locatário.
+Representa as várias cadeias de caracteres de texto que podem ser ocultadas na página de entrada de um locatário.
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-| hideAccountResetCredentials | Booleano | Opção para ocultar os hiperlinks de redefinição de senha de autoatendimento (SSPR), como "Não é possível acessar sua conta?", "Esqueci minha senha" e "Redefinir agora" no formulário de entrada. |
-| hideCannotAccessYourAccount | Booleano | Opção para ocultar a SSPR (redefinição de senha de autoatendimento) "Não é possível acessar sua conta?" hiperlink no formulário de entrada. |
-| hideForgotMyPassword | Booleano | Opção para ocultar o hiperlink "Esqueci minha senha" da SSPR (redefinição de senha de autoatendimento) no formulário de entrada. |
-| hideResetItNow | Booleano | Opção para ocultar o hiperlink de redefinição de senha de autoatendimento (SSPR) "redefinir agora" no formulário de entrada. |
-| hideTermsOfUse | Booleano | Opção para ocultar o hiperlink "Termos de Uso" no rodapé. |
-| hidePrivacyAndCookies | Booleano | Opção para ocultar o hiperlink "& Cookies de Privacidade" no rodapé. |
+| hideAccountResetCredentials | Booliano | Opção para ocultar os hiperlinks de redefinição de senha de autoatendimento (SSPR), como "Não é possível acessar sua conta?", "Esqueci minha senha" e "Redefinir agora" no formulário de entrada. |
+| hideCannotAccessYourAccount | Booliano | Opção para ocultar a SSPR (redefinição de senha de autoatendimento) "Não é possível acessar sua conta?" hiperlink no formulário de entrada. |
+| hideForgotMyPassword | Booliano | Opção para ocultar o hiperlink "Esqueci minha senha" da SSPR (redefinição de senha de autoatendimento) no formulário de entrada. |
+| hideResetItNow | Booliano | Opção para ocultar o hiperlink de redefinição de senha de autoatendimento (SSPR) "redefinir agora" no formulário de entrada. |
+| hideTermsOfUse | Booliano | Opção para ocultar o hiperlink "Termos de Uso" no rodapé. |
+| hidePrivacyAndCookies | Booliano | Opção para ocultar o hiperlink "& Cookies de Privacidade" no rodapé. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

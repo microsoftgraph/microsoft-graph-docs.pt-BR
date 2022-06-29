@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c63191d9f5c71a08cc96b81277c7b9d1712df0c5
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: da1fd848cc516955ef70f30c683cda6610105d1a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900013"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437209"
 ---
 # <a name="create-administrativeunit"></a>Criar administrativeUnit
 
@@ -29,10 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
-Para criar uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções [do Azure AD](/azure/active-directory/roles/permissions-reference):
+Para criar uma unidade administrativa, a entidade de chamada deve receber uma das seguintes Azure AD [funções](/azure/active-directory/roles/permissions-reference):
 
 * Administrador de Função Com Privilégios
-* Administrador Global
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,6 +49,17 @@ POST /directory/administrativeUnits
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um [objeto administrativeUnit](../resources/administrativeunit.md) .
 
+Você pode especificar as propriedades a seguir ao criar **uma administrativeUnit**.
+
+| Propriedade   | Tipo |Descrição|
+|:---------------|:--------|:----------|
+| description | Cadeia de caracteres | Descrição da unidade administrativa. Opcional. |
+| displayName | Cadeia de caracteres | Nome de exibição da unidade administrativa. Obrigatório. |
+| membershipRule | String | Regra de associação dinâmica para a unidade administrativa. Para obter mais informações sobre as regras que você pode usar para unidades administrativas dinâmicas e grupos dinâmicos, consulte [Usando atributos para criar regras avançadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Opcional. |
+| membershipRuleProcessingState | String | Usado para controlar se a regra de associação dinâmica é processada ativamente. Defina como `On` quando você deseja que a regra de associação dinâmica esteja ativa `Paused` e se você deseja parar de atualizar a associação dinamicamente. Opcional. |
+| membershipType | String | Tipo de associação para a unidade administrativa. Pode ser `dynamic` ou `assigned`. Opcional. |
+| visibility |Cadeia de caracteres | Visibilidade da unidade administrativa. Se não estiver definido, o padrão será `public`. Pode ser definido como `HiddenMembership`, o que oculta a associação de não membros. Opcional. |
+
 Como o **recurso administrativeUnit** dá suporte a extensões, `POST` você pode usar a operação e adicionar propriedades [personalizadas](/graph/extensibility-overview) com seus próprios dados à unidade administrativa ao criá-la.
 
 ## <a name="response"></a>Resposta
@@ -59,7 +70,7 @@ Se bem-sucedido, este método retorna um código `201 Created` de resposta e um 
 
 ### <a name="request"></a>Solicitação
 
-Este é um exemplo de solicitação.
+A seguir está um exemplo de uma solicitação que cria uma nova unidade administrativa com uma regra de associação dinâmica para incluir todos os usuários cujo país é Estados Unidos.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -73,7 +84,9 @@ Content-type: application/json
 {
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "visibility": "HiddenMembership"
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipRuleProcessingState": "On"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,8 +115,6 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON de um [objeto administrativeUnit](../resources/administrativeunit.md) .
-
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
@@ -119,11 +130,13 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
-    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "visibility": "HiddenMembership"
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
 }
 ```
 

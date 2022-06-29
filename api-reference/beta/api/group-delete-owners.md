@@ -1,16 +1,16 @@
 ---
 title: Remover proprietário do grupo
-description: Use essa API para remover um proprietário de um grupo Microsoft 365 ou um grupo de segurança por meio da propriedade de navegação dos proprietários.
+description: Use essa API para remover um proprietário de um grupo do Microsoft 365 ou de um grupo de segurança por meio da propriedade de navegação dos proprietários.
 ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 90be1fb768538d07b5adc3f14a4beaf83fc4a885
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5f515a859e1ab1f7835b44421d2d3f6b795a9f6b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210630"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439052"
 ---
 # <a name="remove-group-owner"></a>Remover proprietário do grupo
 
@@ -18,11 +18,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para remover um proprietário de um grupo Microsoft 365 ou um grupo de segurança por meio da propriedade **de navegação dos** proprietários. Quando os proprietários são atribuídos a um grupo, o último proprietário (um objeto de usuário) do grupo não pode ser removido.
+Use essa API para remover um proprietário de um grupo do Microsoft 365 ou de um grupo de segurança por meio da propriedade **de navegação dos** proprietários. Quando os proprietários são atribuídos a um grupo, o último proprietário (um objeto de usuário) do grupo não pode ser removido.
 
 > **Nota:** Para problemas encontrados ao remover o proprietário de um grupo associado a uma [equipe](/graph/api/resources/team.md), consulte [Problemas Conhecidos](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -89,6 +89,14 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/owners/{id}/$ref
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-owner-from-group-java-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/java/delete-owner-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-owner-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-owner-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

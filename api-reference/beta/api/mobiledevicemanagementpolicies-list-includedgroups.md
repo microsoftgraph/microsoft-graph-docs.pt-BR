@@ -1,16 +1,16 @@
 ---
 title: Listar includedGroups
-description: Obter a lista de grupos incluídos em uma política de gerenciamento de dispositivo móvel.
+description: Obtenha a lista de grupos incluídos em uma política de gerenciamento de dispositivo móvel.
 author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7067b131572f8346ba6a8bcf36a448ff732c7858
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: b585dc6f9422c56bcbf4fe0c6e7b634152268604
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397880"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440002"
 ---
 # <a name="list-includedgroups"></a>Listar includedGroups
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de grupos incluídos em uma política de gerenciamento de dispositivo móvel.
+Obtenha a lista de grupos incluídos em uma política de gerenciamento de dispositivo móvel.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [de](../resources/group.md) grupo no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de objetos [de](../resources/group.md) grupo no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

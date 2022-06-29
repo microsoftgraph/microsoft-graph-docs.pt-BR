@@ -2,21 +2,21 @@
 title: Tipo de recurso deviceManagement
 description: 'O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
 localization_priority: Normal
-author: rolyon
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f07febfdaee04e2baf57f5403cfc07e2de13af10
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 80ea377649e54ddc6af84423884f931fd061f2c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858307"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441759"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -39,10 +39,10 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 - Acesso remoto
 - Parceiros de assistência remota
 - Políticas de RBAC (controle de acesso baseado em função)
-- Relatórios
+- Reporting
 - Parceiros de gerenciamento de expansão de telecomunicações
 - Solução de problemas de eventos
-- Windows Proteção de Informações resumos
+- Resumos Proteção de Informações Windows
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -64,7 +64,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo associado ao dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|Intune ID da conta para determinado locatário|
 |legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de pc herdado gerenciado não MDM para essa conta. Essa propriedade é somente leitura.|
@@ -89,12 +89,12 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |Relação|Tipo|Descrição&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---|:---|:---|
 |**Android for Work**|
-|androidDeviceOwnerEnrollmentProfiles|[coleção androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Android do perfil de registro do proprietário do dispositivo.|
+|androidDeviceOwnerEnrollmentProfiles|[coleção androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Entidades de perfil de registro do proprietário do dispositivo Android.|
 |androidForWorkAppConfigurationSchemas|Coleção [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md)|Entidades do esquema de configuração do aplicativo Android for Work.|
 |androidForWorkEnrollmentProfiles|Coleção [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Entidades do perfil de registro do Android for Work.|
 |androidForWorkSettings|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|A entidade singleton de configurações do Android for Work.|
-|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|A entidade de configurações corporativas Android conta de repositório gerenciado singleton.|
-|androidManagedStoreAppConfigurationSchemas|[coleção androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Android Enterprise de esquema de configuração de aplicativo.|
+|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|A entidade de configurações corporativas da conta de repositório gerenciado do Android singleton.|
+|androidManagedStoreAppConfigurationSchemas|[coleção androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Entidades de esquema de configuração de aplicativo Android Enterprise.|
 |**Auditoria**|
 |auditEvents|Conjunto [auditEvent](../resources/intune-auditing-auditevent.md)|Eventos de auditoria|
 |**Termos da empresa**|
@@ -151,9 +151,9 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |depOnboardingSettings|[Coleção depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Essas coleções de vários tokens DEP por locatário.|
 |importedDeviceIdentities|[coleção importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|As identidades de dispositivo importadas.|
 |importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
-|windowsAutopilotDeploymentProfiles|[coleção windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Windows de implantação piloto automático|
-|windowsAutopilotDeviceIdentities|[coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|As Windows de dispositivo do autopilot continham a coleção.|
-|windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|As configurações Windows conta do autopilot.|
+|windowsAutopilotDeploymentProfiles|[coleção windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Perfis de implantação piloto automático do Windows|
+|windowsAutopilotDeviceIdentities|[coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|As identidades de dispositivo do Windows Autopilot continham coleção.|
+|windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|As configurações da conta do Windows Autopilot.|
 |**SIM inserido**|
 |embeddedSIMActivationCodePools|[Coleção embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|Os pools de códigos de ativação do SIM inseridos criados por essa conta.|
 |**Esgrima**|
@@ -172,14 +172,14 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|A lista de configurações de registro de dispositivos|
 |deviceManagementPartners|Coleção [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|A lista de Parceiros de gerenciamento de dispositivos configurados pelo locatário.|
 |exchangeConnectors|Coleção [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|A lista dos Conectores do Exchange configurados pelo locatário.|
-|exchangeOnPremisesPolicies|[Coleção deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|A lista de Exchange no Premisis configuradas pelo locatário.|
-|exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|A política que controla o acesso de dispositivo móvel Exchange local|
+|exchangeOnPremisesPolicies|[Coleção deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|A lista de políticas do Exchange On Premisis configuradas pelo locatário.|
+|exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|A política que controla o acesso de dispositivo móvel ao Exchange Local|
 |mobileThreatDefenseConnectors|Coleção [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md)|A lista dos conectores de defesa contra ameaças móveis configurados pelo locatário.|
 |**Conjunto de Políticas**|
 |deviceManagementScripts|[Coleção deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|A lista de scripts de gerenciamento de dispositivos associados ao locatário.|
 |deviceConfigurations|Coleção [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|A lista de configurações de dispositivo associadas ao locatário.|
 |deviceCompliancePolicies|Coleção [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|A lista de políticas de conformidade do dispositivo associadas ao locatário.|
-|windowsAutopilotDeploymentProfiles|[coleção windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Windows de implantação piloto automático|
+|windowsAutopilotDeploymentProfiles|[coleção windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Perfis de implantação piloto automático do Windows|
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|A lista de configurações de registro de dispositivos|
 |**Política de Acesso a Recursos**|
 |derivedCredentials|[Coleção deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Coleção de configurações de credenciais derivadas associadas à conta.|

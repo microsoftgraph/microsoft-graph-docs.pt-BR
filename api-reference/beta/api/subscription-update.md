@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 272ac2565e86084ea6b34866e75de09860c0ac49
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 267eaef2c58de703f129093aca7c65fd59458de4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094713"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445166"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -78,13 +78,14 @@ No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer 
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você pode assinar alterações em Outlook de **contato, evento** ou mensagem **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
+Você pode assinar alterações nos recursos de **contato, evento** ou mensagem  do Outlook **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings, presença
 
 **OnlineMeetings** e **assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data) para notificações com dados de recurso. A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) e [encryptionCertificateId](../resources/subscription.md) não forem especificados se os dados de recurso forem desejados em notificações.
+Para obter detalhes sobre assinaturas de reunião online, consulte [Obter notificações de alteração para reuniões online](/graph/changenotifications-for-onlinemeeting).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

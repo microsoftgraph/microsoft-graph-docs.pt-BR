@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 183155c31a69c0f669d4bafcaa19cb0a6fa78ee4
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: cd3d239a8b49c9a2017de005d42f9d52fc334dfa
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821131"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443002"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Aplicativo | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 O usuário chamador também deve estar em uma das seguintes funções [Azure AD:](/azure/active-directory/roles/permissions-reference) *Administrador Global*, *Intune Administrador*. Um usuário chamador na  função Administrador de Dispositivos na Nuvem só pode habilitar ou desabilitar dispositivos usando essa API e um usuário com a função de Administrador do *Windows 365* só pode atualizar as propriedades básicas do dispositivo.
 
@@ -58,8 +58,8 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 |operatingSystem|String|O tipo de sistema operacional do dispositivo.|
 |operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
 |displayName|Cadeia de caracteres|O nome de exibição do dispositivo.|
-|isCompliant|Booliano|`true`se o dispositivo estiver em conformidade com as políticas de MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
-|isManaged|Booliano|`true`se o dispositivo for gerenciado por um aplicativo MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para Windows do sistema operacional. |
+|isCompliant|Booliano|`true`se o dispositivo estiver em conformidade com as políticas de MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows. |
+|isManaged|Booliano|`true`se o dispositivo for gerenciado por um aplicativo MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows. |
 
 ## <a name="response"></a>Resposta
 

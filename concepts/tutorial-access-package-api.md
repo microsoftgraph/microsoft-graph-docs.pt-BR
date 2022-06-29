@@ -1,23 +1,24 @@
 ---
-title: 'Tutorial: Gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando apIs do Microsoft Graph'
-description: Saiba como gerenciar o acesso a recursos no gerenciamento de direitos do Active Directory (Azure AD) usando apIs do Microsoft Graph.
+title: 'Tutorial: Gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory'
+description: Saiba como usar as APIs do Microsoft Graph para desenvolver código para criar um pacote de recursos para uma campanha de marketing que os usuários internos podem solicitar por autoatendimento.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 4a241d09897e51b4395f867351d51f6be9ef1e2d
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c301319422a6a19af80725520b46ca413eb589e9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366118"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438217"
 ---
-# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Tutorial: Gerenciar o acesso aos recursos no gerenciamento de direitos do Active Directory usando apIs do Microsoft Graph
+# <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Tutorial: Gerenciar o acesso a recursos no gerenciamento de direitos do Active Directory usando APIs do Microsoft Graph
 
-Gerenciar o acesso a todos os recursos de que os funcionários precisam, como grupos, aplicativos e sites, é uma função importante para as organizações. Você deseja conceder aos funcionários o nível certo de acesso que eles precisam para serem produtivos e remover o acesso quando ele não for mais necessário. [Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) usando APIs do Microsoft Graph permite que você gerencie esse tipo de acesso.
+Gerenciar o acesso a todos os recursos de que os funcionários precisam, como grupos, aplicativos e sites, é uma função importante para as organizações. Você deseja conceder aos funcionários o nível certo de acesso que eles precisam para serem produtivos e remover o acesso quando ele não for mais necessário. [O gerenciamento de direitos do Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) usando APIs do Microsoft Graph permite que você gerencie esse tipo de acesso.
 
-Neste tutorial, você foi solicitado a desenvolver código para criar um pacote de recursos para uma campanha de marketing que os usuários internos podem solicitar por autoatendimento. As solicitações não exigem aprovação e o acesso do usuário expira após 30 dias. Para este tutorial, os recursos da campanha de marketing são apenas associação em um único grupo, mas pode ser uma coleção de grupos, aplicativos ou sites SharePoint Online.
+Neste tutorial, você aprenderá a desenvolver código para criar um pacote de recursos para uma campanha de marketing que os usuários internos podem solicitar por autoatendimento. As solicitações não exigem aprovação e o acesso do usuário expira após 30 dias. Para este tutorial, os recursos da campanha de marketing são apenas associação em um único grupo, mas pode ser uma coleção de grupos, aplicativos ou sites do SharePoint Online.
 
->**Nota:** Os objetos de resposta mostrados neste tutorial podem ser reduzidos para legibilidade. 
+> [!NOTE]
+> Os objetos de resposta mostrados neste tutorial podem ser reduzidos para legibilidade.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -260,7 +261,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### <a name="get-resources-roles"></a>Obter funções de recursos
 
-O pacote de acesso atribui usuários às funções de um recurso. A função típica de um grupo é a função de membro. Outros recursos, como sites SharePoint Online e aplicativos, podem ter muitas funções. A função típica de um grupo usado em um pacote de acesso é a função de membro. Você precisará da função de membro ao adicionar uma função de recurso ao pacote de acesso posteriormente neste tutorial. 
+O pacote de acesso atribui usuários às funções de um recurso. A função típica de um grupo é a função de membro. Outros recursos, como sites e aplicativos do SharePoint Online, podem ter muitas funções. A função típica de um grupo usado em um pacote de acesso é a função de membro. Você precisará da função de membro ao adicionar uma função de recurso ao pacote de acesso posteriormente neste tutorial. 
 
 Na solicitação, use a **ID** do catálogo e a **ID** do recurso de grupo no catálogo que você registrou para obter **a originId** da função de recurso Membro. Registre o valor da **propriedade originId** a ser usada posteriormente neste tutorial.
 
@@ -731,15 +732,14 @@ No Content - 204
 
 ## <a name="see-also"></a>Confira também
 
-Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referência de API para essas APIs para saber mais sobre o que as APIs podem fazer.
+Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referência de API para essas APIs para saber mais sobre o que as APIs podem fazer:
 
-
-- [Trabalhando com a API Azure AD de gerenciamento de direitos](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
-- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
-- [grupo](/graph/api/resources/group)
-- [user](/graph/api/resources/user?)
+- [Trabalhando com a API Azure AD de gerenciamento de direitos](/graph/api/resources/entitlementmanagement-overview)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
+- [accessPackage](/graph/api/resources/accesspackage)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest)
+- [group](/graph/api/resources/group)
+- [user](/graph/api/resources/user)

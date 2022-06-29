@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1bf7255803de1632512ae24afb0b17007bb92fae
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 787bee8a5843f432d30c46828387983018d5b78a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461342"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439848"
 ---
 # <a name="create-roleeligibilityschedulerequest"></a>Criar roleEligibilityScheduleRequest
 Namespace: microsoft.graph
@@ -50,11 +50,11 @@ Você pode especificar as propriedades a seguir ao criar **um unifiedRoleEligibi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ação|unifiedRoleScheduleRequestActions|Representa o tipo de operação na solicitação de qualificação de função. Os valores possíveis são: , , , , , `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, , `selfRenew`, `unknownFutureValue`. `selfActivate``adminRemove``adminUpdate``adminAssign` <br/><ul><li>`adminAssign`: para que os administradores atribuam funções qualificadas às entidades de segurança.</li><li>`adminRemove`: para que os administradores removam funções qualificadas das entidades de segurança.</li><li> `adminUpdate`: para que os administradores alterem as eligibilidades de função existentes.</li><li>`adminExtend`: para que os administradores estendam as eligibilidades de função expiradas.</li><li>`adminRenew`: para que os administradores renovem as eligibilidades expiradas.</li><li>`selfActivate`: para que os usuários ativem suas atribuições.</li><li>`selfDeactivate`: para que os usuários desativem suas atribuições ativas.</li><li>`selfExtend`: para que os usuários solicitem a extensão de suas atribuições de expiração.</li><li>`SelfRenew`: para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>|
-|appScopeId|String|Identificador do escopo específico do aplicativo quando a elegibilidade de função está no escopo de um aplicativo. O escopo de uma elegibilidade de função determina o conjunto de recursos para os quais a entidade de segurança está qualificada para acessar. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|directoryScopeId|String|Identificador do objeto de diretório que representa o escopo da elegibilidade da função. O escopo de uma elegibilidade de função determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|appScopeId|Cadeia de caracteres|Identificador do escopo específico do aplicativo quando a elegibilidade de função está no escopo de um aplicativo. O escopo de uma elegibilidade de função determina o conjunto de recursos para os quais a entidade de segurança está qualificada para acessar. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto de diretório que representa o escopo da elegibilidade da função. O escopo de uma elegibilidade de função determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
 |isValidationOnly|Booliano|Determina se a chamada é uma validação ou uma chamada real. Defina essa propriedade somente se você quiser verificar se uma ativação está sujeita a regras adicionais, como MFA, antes de realmente enviar a solicitação. Opcional.|
 |Justificação|String|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleEligibilityScheduleRequest** . Opcional quando **a ação** é `adminRemove`. Se essa propriedade é necessária ou opcional também depende das [configurações para a Azure AD função](../api/unifiedrolemanagementpolicy-list-rules.md).|
-|principalId|String|Identificador da entidade de segurança que recebeu a qualificação de função. Obrigatório.|
+|principalId|Cadeia de caracteres|Identificador da entidade de segurança que recebeu a qualificação de função. Obrigatório.|
 |roleDefinitionId|String|Identificador do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) que está sendo atribuído à entidade de segurança. Obrigatório.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O período de qualificação da função. Opcional quando **a ação** é `adminRemove`. O período de qualificação depende das [configurações da Azure AD função](../api/unifiedrolemanagementpolicy-list-rules.md).|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Detalhes do tíquete vinculados à solicitação de qualificação de função, incluindo detalhes do número do tíquete e do sistema de tíquetes. Opcional|
@@ -66,7 +66,7 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>Exemplo 1: Administrador para atribuir uma solicitação de agendamento de qualificação de função
+### <a name="example-1-admin-to-assign-a-role-eligibility-schedule-request"></a>Exemplo 1: Administração para atribuir uma solicitação de agendamento de qualificação de função
 
 #### <a name="request"></a>Solicitação
 
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleeligibilityschedulerequest-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -171,7 +175,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-admin-to-remove-an-existing-role-eligibility-schedule-request"></a>Exemplo 2: Administrador para remover uma solicitação de agendamento de qualificação de função existente
+### <a name="example-2-admin-to-remove-an-existing-role-eligibility-schedule-request"></a>Exemplo 2: Administração para remover uma solicitação de agendamento de qualificação de função existente
 
 Na solicitação a seguir, o administrador cria uma solicitação para revogar a qualificação de uma entidade de segurança com ID `071cc716-8147-4397-a5ba-b2105951cc0b` para uma função com ID `8424c6f0-a189-499e-bbd0-26c1753c96d4`.
 

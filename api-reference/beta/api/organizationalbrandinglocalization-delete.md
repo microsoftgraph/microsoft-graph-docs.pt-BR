@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 33717671720915eccdcfdb80ad8f1d7f7564e5f7
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 28913b30795f0c9cc21562abcb2a959278307914
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398055"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438983"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>Excluir organizationalBrandingLocalization
 Namespace: microsoft.graph
@@ -54,7 +54,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ### <a name="request"></a>Solicitação
 
-A seguir, um exemplo de uma solicitação para excluir o `fr-FR` objeto de localização.
+A seguir está um exemplo de uma solicitação para excluir o objeto `fr-FR` de localização.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-organizationalbrandinglocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

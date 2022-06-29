@@ -5,12 +5,12 @@ author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 90302029198358d0eaeb0a816160b966909b7923
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 6cf66686b1261fdf34742c9e710e1f02a3ac12a1
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858405"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447237"
 ---
 # <a name="signin-confirmsafe"></a>signIn: confirmSafe
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|IdentityRiskyUser.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|IdentityRiskEvent.ReadWrite.All|
+|Aplicativo|IdentityRiskEvent.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/signinthisconfirmsafe-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/signinthisconfirmsafe-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

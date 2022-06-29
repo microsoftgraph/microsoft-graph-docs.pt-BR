@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 456f312623784c3a79d421e3a2d2813c5fb71605
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3a840d396a278bb556e400792afd4ac0da238aa0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395913"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436573"
 ---
 # <a name="list-hostedcontents"></a>Listar hostedContents
 
 Namespace: microsoft.graph
 
-Recupere a lista de [objetos chatMessageHostedContent](../resources/chatmessagehostedcontent.md) de uma mensagem. Essa API lista apenas os objetos de conteúdo hospedados. Para obter os bytes de conteúdo, consulte [get chatmessage hosted content](chatmessagehostedcontent-get.md)
+Recupere a lista de [objetos chatMessageHostedContent](../resources/chatmessagehostedcontent.md) de uma mensagem. Essa API lista apenas os objetos de conteúdo hospedados. Para obter os bytes de conteúdo, consulte [obter conteúdo hospedado por chatmessage](chatmessagehostedcontent-get.md)
 
 ## <a name="permissions"></a>Permissões
 
@@ -73,7 +73,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos chatMessageHostedContent](../resources/chatmessagehostedcontent.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de [objetos chatMessageHostedContent](../resources/chatmessagehostedcontent.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -123,7 +123,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 Este é um exemplo de resposta.
 
-> **Observação:** `contentBytes` e `contentType` são sempre definidos como nulos.
+> **Nota:** `contentBytes` e `contentType` são sempre definidos como nulos.
 
 <!-- {
   "blockType": "response",
@@ -153,7 +153,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-hosted-content-for-reply-to-a-channel-message"></a>Exemplo 2: Listar conteúdo hospedado para resposta a uma mensagem de canal
+### <a name="example-2-list-hosted-content-for-reply-to-a-channel-message"></a>Exemplo 2: Listar conteúdo hospedado para responder a uma mensagem de canal
 
 #### <a name="request"></a>Solicitação
 
@@ -188,6 +188,10 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/go/get-hostedcontentschannelmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hostedcontentschannelmessage-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -195,7 +199,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 Este é um exemplo de resposta.
 
-> **Observação:** `contentBytes` e `contentType` são sempre definidos como nulos.
+> **Nota:** `contentBytes` e `contentType` são sempre definidos como nulos.
 
 <!-- {
   "blockType": "response",
@@ -225,7 +229,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2--list-hosted-content-for-message-in-a-chat"></a>Exemplo 2 : Listar conteúdo hospedado para mensagem em um chat
+### <a name="example-2--list-hosted-content-for-message-in-a-chat"></a>Exemplo 2: listar conteúdo hospedado para mensagem em um chat
 
 #### <a name="request"></a>Solicitação
 
@@ -271,7 +275,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 Este é um exemplo de resposta.
 
-> **Observação:** `contentBytes` e `contentType` são sempre definidos como nulos.
+> **Nota:** `contentBytes` e `contentType` são sempre definidos como nulos.
 
 <!-- {
   "blockType": "response",

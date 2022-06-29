@@ -5,24 +5,24 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 147423d283935f896469f4e0131483d01c01396f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: b93750c420eda76730b14169a36dd8a1899b2936
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205176"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437706"
 ---
 # <a name="unifiedroleassignmentschedulerequest-cancel"></a>unifiedRoleAssignmentScheduleRequest: cancel
 Namespace: microsoft.graph
 
 Cancele imediatamente um objeto [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) que esteja em um status e faça com que o sistema exclua automaticamente a `Granted` solicitação cancelada após 30 dias. Depois de chamar essa ação, **o status** do **unifiedRoleAssignmentScheduleRequest** cancelado muda para `Canceled`.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSch
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedroleassignmentschedulerequestthiscancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleassignmentschedulerequestthiscancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

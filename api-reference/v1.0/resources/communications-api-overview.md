@@ -5,14 +5,14 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 ms.localizationpriority: high
-ms.openlocfilehash: aa76391922c44a8f68c30afa8a933b205970131f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c825e7e58b4db3498844f18acd41ea4d9c8f9910
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109273"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437118"
 ---
-# <a name="working-with-the-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações no Microsoft Graph
+# <a name="working-with-the-cloud-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações no Microsoft Graph
 
 A API de comunicações do Microsoft Graph adiciona uma nova dimensão à maneira como você ou sua organização podem interagir com outros usuários, habilitando os principais recursos e funções de comunicação de seus aplicativos e serviços. Você pode usar esta API para criar e receber chamadas, além de criar e recuperar coordenadas de reunião.
 
@@ -21,7 +21,7 @@ Essa API fornece funcionalidade de chamada, bem como a capacidade de criar e rec
 
 ## <a name="authorization"></a>Autorização
 
-É necessária uma das seguintes [permissões](/graph/permissions-reference#calls-permissions) para acessar a API de comunicações. Essas permissões precisam ser concedidas pelo administrador
+É necessária uma das seguintes [permissões](/graph/permissions-reference#calls-permissions) para acessar a API de comunicações. Essas permissões precisam ser concedidas pelo administrador.
 
 | Cenário                 | Permissões                                  |
 |:------------------------------------|:---------------------------------------------|
@@ -36,22 +36,22 @@ A tabela a seguir lista alguns dos usos comuns para a API de comunicações.
 
 | Casos de uso                         | Recursos REST                                 | Confira também  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Criando e associando chamadas 1-1 e de grupo   | [Call](/graph/api/resources/call?view=graph-rest-v1.0)| [Métodos para chamadas](/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
-|Chamadas IVR   |     | [Métodos para IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
-| Controles de chamada (participante) | [Participante](/graph/api/resources/participant?view=graph-rest-v1.0)   ||
-|Reuniões|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Métodos para reuniões](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
-| Recuperar registros de chamadas | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) | [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0) |
-|Presenças|[presença](/graph/api/resources/presence?view=graph-rest-v1.0)||
+| Criando e associando chamadas 1-1 e de grupo   | [Call](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true)| [Métodos para chamadas](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true#methods)| 
+|Chamadas IVR   |     | [Métodos para IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0&preserve-view=true)
+| Controles de chamada (participante) | [Participante](/graph/api/resources/participant?view=graph-rest-v1.0&preserve-view=true)   ||
+|Reuniões|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true)| [Métodos para reuniões](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true#methods)|
+| Recuperar registros de chamadas | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0&preserve-view=true) | [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) |
+|Presenças|[presença](/graph/api/resources/presence?view=graph-rest-v1.0&preserve-view=true)||
 
 ## <a name="common-properties"></a>Propriedades comuns
 
 | Recurso                | Propriedades                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [propriedades de chamada](/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
-| participante                         | [propriedades dos participantes](/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
-| onlineMeeting                            | [Propriedades onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
-| callRecord | [Propriedades do callRecord](/graph/api/resources/callrecords-callrecord#properties) |
-|presença|[presença](/graph/api/resources/presence?view=graph-rest-v1.0)|
+| call                               | [propriedades de chamada](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true#properties)  |
+| participante                         | [propriedades dos participantes](/graph/api/resources/participant?view=graph-rest-v1.0&preserve-view=true#properties) |
+| onlineMeeting                            | [Propriedades onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true#properties)                     |
+| callRecord | [Propriedades do callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-v1.0&preserve-view=true#properties) |
+|presença|[presença](/graph/api/resources/presence?view=graph-rest-v1.0&preserve-view=true)|
 
 ## <a name="whats-new"></a>Novidades
 Saiba mais sobre os [novos recursos e atualizações mais recentes](/graph/whats-new-overview) para este conjunto de APIs.

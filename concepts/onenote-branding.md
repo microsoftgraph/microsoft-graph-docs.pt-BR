@@ -1,17 +1,17 @@
 ---
-title: 'Diretrizes de marca para desenvolvedores da API do OneNote '
-description: " "
+title: Diretrizes de marca para desenvolvedores da API do OneNote
+description: Integre a marca do OneNote ao seu produto para atender aos requisitos de identidade visual. Inclui diretrizes para logotipos, tamanho, cor e referência ao nome do OneNote.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 9054db1303c0cbe82eb868ebc1c7de6a7f4b17a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 040029e348f6ab1f438de167e171cc2e76dfee3d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066923"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442854"
 ---
-# <a name="branding-guidelines-for-onenote-api-developers"></a>Diretrizes de marca para desenvolvedores da API do OneNote 
+# <a name="branding-guidelines-for-onenote-api-developers"></a>Diretrizes de marca para desenvolvedores da API do OneNote
  
 **Aplica-se a** Notebooks de consumidores no OneDrive | Notebooks corporativos no Microsoft 365
 
@@ -71,7 +71,7 @@ Quando o logotipo do OneNote é usado em fundos brancos ou claros, a cor do logo
 
 **Impressão:**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![Logo em forma de shwoing a cor da marca preferida com plano de fundo de cor branco e de marca](images/onenotelogobgs.png)
+  ![Logotipo mostrando a cor da marca preferida com planos de fundo de cor branca e de marca](images/onenotelogobgs.png)
  
 Em ambientes com cores limitadas e designs de uma única cor, o logotipo pode aparecer em preto. No entanto, o logotipo nunca deve aparecer em cinza.
 <!--or white?-->
@@ -170,7 +170,7 @@ Confira a tabela abaixo para obter detalhes sobre como se referir ao OneNote em 
 
 ![Bom exemplo de logotipo em empacotamento](images/onenoteusagepackaging1.png)
 
-![Outra exibição de um bom exemplo de logotipo na empacotamento](images/onenoteusagepackaging2.png)
+![Outra exibição de um bom exemplo de logotipo no empacotamento](images/onenoteusagepackaging2.png)
 
 
 Se você tiver alguma dúvida sobre essas diretrizes ou estiver criando novas comunicações usando os recursos da marca aqui mostrados, entre em contato conosco pelo [@onenotedev](https://twitter.com/onenotedev).

@@ -1,43 +1,46 @@
 ---
-title: Usar funções de pasta de trabalho do Excel com o Microsoft Graph
-description: 'Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /me/drive/root/workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.'
+title: Usar funções de pasta de trabalho no Excel
+description: Você pode usar as funções de pasta de trabalho no Excel com o Microsoft Graph para invocar qualquer função de pasta de trabalho. Inclui exemplos para funções de procv e mediana.
 ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 629f0d79503b89080c48c57ec83989060f794647
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eec1834a63ab87304b33eea1f75629fe12e56aec
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143577"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443365"
 ---
-# <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Usar funções de pasta de trabalho do Excel com o Microsoft Graph
+# <a name="use-workbook-functions-in-excel"></a>Usar funções de pasta de trabalho no Excel
 
-Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /me/drive/root/workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.
+Você pode usar as funções de pasta de trabalho no Excel com o Microsoft Graph para invocar qualquer função de pasta de trabalho usando a seguinte sintaxe: `POST /me/drive/root/workbook/functions/{function-name}`. Você fornece os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função.
 
-Para uma lista completa de funções com suporte, [consulte Excel. Classe Functions](/javascript/api/excel/excel.functions?view=excel-js-preview). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
+Para obter uma lista completa das funções com suporte, consulte [a classe Excel.Functions](/javascript/api/excel/excel.functions?view=excel-js-preview&preserve-view=true). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
 
-_Observações importantes:_
-* O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.  
-* O parâmetro index é indexado como 1, diferentemente do índice 0 usado na maioria das APIs.
+> [!IMPORTANT]
+> - O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.  
+> - O parâmetro index é indexado como 1, diferentemente do índice 0 usado na maioria das APIs.
 
-Exemplo: **vlookup**
+## <a name="example-vlookup"></a>Exemplo: `vlookup`
 
 Em uma planilha do Excel, a função `vlookup` utiliza os seguintes argumentos:
 
-1. **valor_proc** (obrigatório): o valor que você deseja pesquisar.
-2. **matriz_tabela** (obrigatório): o intervalo de células em que se encontra o valor a pesquisar. Lembre-se de que o valor de pesquisa sempre deve estar na primeira coluna no intervalo para que o PROCV funcione corretamente. Por exemplo, se o valor de pesquisa estiver na célula C2, o intervalo deve começar com C.
-3. **núm_índice_coluna** (obrigatório): o número da coluna no intervalo que contém o valor de retorno. Por exemplo, se você especificar B2: D11 como o intervalo, deverá contar B como a primeira coluna, C como a segunda e assim por diante.
-4. **procurar_intervalo** (opcional): o valor lógico que especifica se você deseja que **PROCV** localize uma correspondência exata ou aproximada. Especifique **VERDADEIRO** se desejar uma correspondência aproximada ou **FALSO** se desejar uma correspondência exata do valor de retorno. Se você não especificar nada, o valor padrão sempre será TRUE ou uma correspondência aproximada.
+- **lookup_value** (obrigatório): o valor que você deseja pesquisar.
+
+- **table_array** (obrigatório): o intervalo de células em que o valor de pesquisa está localizado. Lembre-se de que o valor de pesquisa sempre deve estar na primeira coluna do intervalo para **que PROCV** funcione corretamente. Por exemplo, se o valor de pesquisa estiver na célula C2, o intervalo deverá começar com C.
+
+- **col_index_num** (obrigatório): o número da coluna no intervalo que contém o valor retornado. Por exemplo, se você especificar B2: D11 como o intervalo, deverá contar B como a primeira coluna, C como a segunda e assim por diante.
+
+- **range_lookup** (opcional): o valor lógico que especifica se você deseja que **PROCV** localize uma correspondência aproximada ou exata. Especifique **VERDADEIRO** se desejar uma correspondência aproximada ou **FALSO** se desejar uma correspondência exata do valor de retorno. Se você não especificar nada, o valor padrão sempre será VERDADEIRO ou uma correspondência aproximada.
 
 Dentro de uma célula, a função `vlookup` tem esta aparência:
 
-= PROCV(valor de pesquisa, intervalo que contém o valor de pesquisa, o número da coluna no intervalo que contém o valor de retorno, opcionalmente, TRUE para coincidência aproximada ou FALSE para uma correspondência exata)
+`=VLOOKUP`(valor de pesquisa, intervalo que contém o valor de pesquisa, o número da coluna no intervalo que contém o valor retornado, opcionalmente especifique TRUE para correspondência aproximada ou FALSE para uma correspondência exata)
 
-(Confira a documentação para a função do Excel [PROCV](https://support.office.com/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
+Para obter mais informações, consulte a documentação da [função Excel PROCV](https://support.office.com/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).
 
+### <a name="request"></a>Solicitação
 
-##### <a name="request"></a>Solicitação:
 O seguinte exemplo mostra como chamar a função `vlookup` e passar esses parâmetros com a API REST do Excel.
 
 ```http
@@ -54,7 +57,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 ```http
 HTTP code: 200 OK
@@ -69,17 +72,18 @@ content-type: application/json;odata.metadata
 }
 ```
 
-Exemplo: `median`
+## <a name="example-median"></a>Exemplo: `median`
 
 Em uma planilha do Excel, a função `median` possui uma matriz de um ou mais intervalos de entrada.
 
 Dentro de uma célula, a função `median` se parece com este exemplo:
 
-=MED(A2:A6)
+`=MEDIAN(A2:A6)`
 
-(Confira a documentação para a função [MED](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
+Para obter mais informações, consulte a documentação da [função MEDIAN do Excel](https://support.office.com/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
+
 O seguinte exemplo mostra como chamar a função `median` e um ou mais intervalos de entrada com a API REST do Excel.
 
 ```http
@@ -96,7 +100,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 ```http
 HTTP code: 200 OK
@@ -112,8 +116,9 @@ content-type: application/json;odata.metadata
 ```
 
 ## <a name="see-also"></a>Confira também
+
 * [Gerenciar sessões do Excel usando o Microsoft Graph](excel-manage-sessions.md)
 * [Gravar em uma pasta de trabalho do Excel usando o Microsoft Graph](excel-write-to-workbook.md)
 * [Atualizar um formato de intervalo no Excel com o Microsoft Graph](excel-update-range-format.md)
 * [Exibir uma imagem do gráfico do Excel com o Microsoft Graph](excel-display-chart-image.md)
-* [Usar a API REST do Excel](/graph/api/resources/excel?view=graph-rest-1.0)
+* [Usar a API REST do Excel](/graph/api/resources/excel)

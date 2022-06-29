@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 876260fe4e6eb85a212db1a04417faed7c422bc3
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: cfcfdb967348dfa1ebe12f11f97a5287fa5e94aa
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883842"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441696"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Contém informações sobre uma reunião, incluindo a URL usada para ingressar em uma reunião, a lista de participantes e a descrição.
 
-Esse recurso dá suporte à assinatura para [alterar notificações](/graph/webhooks).
+Esse recurso dá suporte à assinatura para [alterar notificações](/graph/webhooks). Consulte [assinar reuniões online para](/graph/changenotifications-for-onlinemeeting) obter mais detalhes.
 
 ## <a name="methods"></a>Métodos
 
@@ -49,19 +49,19 @@ Esse recurso dá suporte à assinatura para [alterar notificações](/graph/webh
 | creationDateTime      | DateTime | A hora de criação da reunião em UTC. Somente leitura.     |
 | endDateTime           | DateTime | A hora de término da reunião em UTC.   |
 | externalId            | Cadeia de caracteres | A ID externa. Uma ID personalizada. Opcional.      |
-| id | String | A ID padrão associada à reunião online. Somente leitura.    |
+| id | Cadeia de caracteres | A ID padrão associada à reunião online. Somente leitura.    |
 | isBroadcast | Booliano | Indica se este é um evento ao vivo [do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events). |
 | isEntryExitAnentry  | Booliano | Indica se os chamadores devem anunciar quando ingressar ou sair. |
-| joinWebUrl | String | A URL de ingresso da reunião online. Somente leitura. |
+| joinWebUrl | Cadeia de caracteres | A URL de ingresso da reunião online. Somente leitura. |
 | joinInformation | [itemBody](itembody.md) | As informações de junção no idioma e na variante de localidade especificadas no cabeçalho HTTP de solicitação 'Accept-Language'. Somente leitura. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião. |
 | participants | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online. Isso inclui o organizador e os participantes. |
 | recordAutomatically | Booliano | Indica se a reunião deve ser gravada automaticamente. |
 | Gravação | Stream | O fluxo de conteúdo da gravação de um evento [ao vivo do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events). Somente leitura. |
 | startDateTime | DateTime | A hora de início da reunião em UTC. |
-| assunto | String | O assunto da reunião online. |
-| videoTeleconferenceId | String | A ID de teleconferência de vídeo. Somente leitura. |
-| autoAdmittedUsers (preterido) | String | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
+| assunto | Cadeia de caracteres | O assunto da reunião online. |
+| videoTeleconferenceId | Cadeia de caracteres | A ID de teleconferência de vídeo. Somente leitura. |
+| autoAdmittedUsers (preterido) | Cadeia de caracteres | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
 | recursos (preteridos) | coleção meetingCapabilities | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer`,`unknownFutureValue`. |
 
 > [!CAUTION]

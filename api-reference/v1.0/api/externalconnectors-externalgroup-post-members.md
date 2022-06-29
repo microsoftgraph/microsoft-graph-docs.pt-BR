@@ -5,12 +5,12 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 66bf2b1f9b179fcef6f1b4754cf3316be0a067c1
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 7420562f5cc3e097715e20374403c44c072d4bbd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133731"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442271"
 ---
 # <a name="create-identity"></a>Criar identidade
 Namespace: microsoft.graph.externalConnectors
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
@@ -54,7 +54,7 @@ Você pode especificar as propriedades a seguir ao criar um **recurso de** ident
 
 | Propriedade       | Tipo                    | Descrição                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria a **objectId no** caso de Azure Active Directory ou grupos e **externalGroupId** no caso de grupos externos. Obrigatório.                                    |
+| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria a **objectId** no caso de usuários ou grupos do Azure Active Directory e **externalGroupId** no caso de grupos externos. Obrigatório.                                    |
 | type           | microsoft.graph.externalConnectors.identityType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user`,`group`, `externalGroup`. Obrigatório. |
 
 
@@ -64,7 +64,7 @@ Se tiver êxito, este método retornará um código `201 Created` de resposta e 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um Azure Active Directory usuário como membro
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um usuário do Azure Active Directory como membro
 
 #### <a name="request"></a>Solicitação
 
@@ -105,6 +105,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-aad-user-identity-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-aad-user-identity-from-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -128,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um Azure Active Directory como um membro
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um grupo do Azure Active Directory como membro
 
 #### <a name="request"></a>Solicitação
 
@@ -167,6 +171,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-aad-group-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-aad-group-identity-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -230,6 +238,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-external-group-identity-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-external-group-identity-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

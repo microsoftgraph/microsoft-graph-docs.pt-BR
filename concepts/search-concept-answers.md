@@ -1,28 +1,28 @@
 ---
-title: Configurar respostas administrativas de pesquisa para usuários em uma organização (visualização)
-description: Pesquisa da Microsoft permite que os administradores associem termos de pesquisa a significados ou páginas da Web específicas de suas organizações e incluam essas associações como respostas de pesquisa.
+title: Configurar respostas de pesquisa administrativa para usuários em uma organização (versão prévia)
+description: A Pesquisa da Microsoft permite que os administradores associem termos de pesquisa a significados ou páginas da Web específicas de suas organizações e os incluam como respostas de pesquisa.
 author: jakeost-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 542f1c3dc3d280ba72c3c64d032c19594c6bc29c
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: ffc0e35f351a0841b8905c73454d1461f7fb7013
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337885"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446102"
 ---
-# <a name="set-up-administrative-search-answers-for-users-in-an-organization-preview"></a>Configurar respostas administrativas de pesquisa para usuários em uma organização (visualização)
+# <a name="set-up-administrative-search-answers-for-users-in-an-organization-preview"></a>Configurar respostas de pesquisa administrativa para usuários em uma organização (versão prévia)
 
-Pesquisa da Microsoft permite que os administradores associem termos de pesquisa a significados ou páginas da Web específicas de suas organizações e incluam essas associações como respostas de pesquisa. Por exemplo, os usuários em uma organização podem executar em um acrônimo desconhecido que representa um nome de projeto interno ou um nome de equipe associado a uma página da Web de equipe. Os administradores podem configurar acrônimos, [indicadores](/microsoftsearch/manage-bookmarks) ou [QnA](/microsoftsearch/manage-qas) no [Centro de administração do Microsoft 365, em](https://admin.microsoft.com/) **Search & intelligence**.[](/microsoftsearch/manage-acronyms) Isso permite que os usuários usem a pesquisa para navegar e se familiarizar com seu trabalho.
+A Pesquisa da Microsoft permite que os administradores associem termos de pesquisa a significados ou páginas da Web específicas de suas organizações e incluam essas associações como respostas de pesquisa. Por exemplo, os usuários em uma organização podem encontrar um acrônimo desconhecido que representa um nome de projeto interno ou um nome de equipe associado a uma página da Web da equipe. Os administradores podem configurar acrônimos, indicadores ou [QnA](/microsoftsearch/manage-qas) no [Centro de administração do Microsoft 365](https://admin.microsoft.com/), em **Pesquisa & inteligência**.[](/microsoftsearch/manage-acronyms)[](/microsoftsearch/manage-bookmarks) Isso permite que os usuários usem a pesquisa para navegar e se familiarizar com seu trabalho.
 
-Os administradores também podem usar a API de pesquisa na Microsoft Graph gerenciar programaticamente respostas de pesquisa administrativas na organização. Essas respostas são exibidas em Pesquisa da Microsoft resultados quando disparados por um acrônimo ou palavra-chave definido nos tipos de recursos de resposta de [pesquisa disponíveis:](/graph/api/resources/search-acronym) acrônimo[, indicador](/graph/api/resources/search-bookmark) e [recursos QnA](/graph/api/resources/search-qna).
+Os administradores também podem usar a API de Pesquisa da Microsoft no Microsoft Graph para [gerenciar programaticamente as respostas de pesquisa administrativa](/graph/api/resources/search-api-answers-overview) na organização. Essas respostas são exibidas nos resultados da Pesquisa da Microsoft quando disparadas por um acrônimo ou palavra-chave definido nos tipos de recursos de resposta de pesquisa [disponíveis:](/graph/api/resources/search-acronym) acrônimo [, indicador](/graph/api/resources/search-bookmark) e [recursos de QnA](/graph/api/resources/search-qna) .
 
-Quando disparadas por um acrônimo ou palavra-chave definido, essas respostas de pesquisa aparecerão na parte superior da página de resultados da pesquisa em sua organização.
+Quando disparadas por um acrônimo ou palavra-chave definido, essas respostas de pesquisa aparecem na parte superior da página de resultados da pesquisa em sua organização.
 
-## <a name="example-create-a-new-acronym"></a>Exemplo: Criar um novo acrônimo
+## <a name="example-1-create-a-new-acronym"></a>Exemplo 1: Criar um novo acrônimo
 
-A solicitação a seguir cria um novo acrônimo que será exibido na página de resultados da pesquisa quando um usuário pesquisa por ele.
+A solicitação a seguir cria um novo acrônimo que será exibido na página de resultados da pesquisa quando um usuário o procurar.
 
 ### <a name="request"></a>Solicitação
 <!-- {
@@ -58,7 +58,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-create-a-new-bookmark"></a>Exemplo: Criar um novo indicador
+## <a name="example-2-create-a-new-bookmark"></a>Exemplo 2: Criar um novo indicador
 
 A solicitação a seguir cria um novo indicador que será exibido na página de resultados da pesquisa quando um usuário procurar pelo menos uma de suas palavras-chave.
 
@@ -102,6 +102,7 @@ Content-Type: application/json
 ```
 
 ## <a name="next-steps"></a>Próximas etapas
-- Familiarizar-se com os cenários e recursos da API de Pesquisa: [Pesquisa da Microsoft visão geral da API](/graph/search-concept-overview).
+
+- Familiarize-se com os cenários e funcionalidades da API de Pesquisa: visão [geral da API de Pesquisa da Microsoft](/graph/search-concept-overview).
 - Explore as APIs no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-- [Gerenciar respostas administrativas de pesquisa](search-concept-answers.md).
+- [Use a API de Pesquisa da Microsoft para gerenciar respostas administrativas](/graph/api/resources/search-api-answers-overview).

@@ -1,27 +1,27 @@
 ---
-title: Usar a API Pesquisa da Microsoft no Microsoft Graph pesquisar tipos personalizados
-description: Você pode usar a API Pesquisa da Microsoft para importar dados externos por meio do recurso [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) e executar consultas de pesquisa nesse conteúdo externo.
+title: Usar a API de Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores
+description: Use a API de Pesquisa da Microsoft no Microsoft Graph para pesquisar conteúdo externo ingerido e indexado por conectores do Microsoft Graph.
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 01a78191440f017aaa43600d9d15170bf96662b3
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 64a1733722afee9de1e5970389c275062b574e9d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671892"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437629"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Use a API Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores Graph Microsoft
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Usar a API de Pesquisa da Microsoft para pesquisar tipos personalizados importados usando conectores do Microsoft Graph
 
-Use a API Pesquisa da Microsoft para pesquisar o conteúdo ingerido e indexado pelos conectores [Graph Microsoft](/microsoftsearch/connectors-overview). O conteúdo é importado por meio de conectores [integrados fornecidos](https://www.microsoft.com/microsoft-search/connectors) pela Microsoft ou por meio de conectores personalizados implementados usando [a API](/graph/api/resources/indexing-api-overview) de ingestão de conectores Graph Microsoft.
+Use a API de Pesquisa da Microsoft no Microsoft Graph para pesquisar conteúdo externo ingerido e indexado por [conectores do Microsoft Graph](/microsoftsearch/connectors-overview). O conteúdo é importado por meio de conectores internos [fornecidos](https://www.microsoft.com/microsoft-search/connectors) pela Microsoft ou por meio de conectores personalizados implementados usando a API de ingestão de conectores [do Microsoft Graph](/graph/api/resources/indexing-api-overview).
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-Depois que o conteúdo tiver sido importado e indexado, você poderá usar a API de pesquisa para consultar o conteúdo.
+Depois que o conteúdo for importado e indexado, você poderá usar a API de pesquisa para consultar o conteúdo.
 
 Para pesquisar tipos personalizados, especifique as seguintes propriedades no corpo da solicitação do [método de](/graph/api/search-query) consulta:
 
-- A **propriedade contentSources** para incluir a ID de conexão atribuída durante a instalação do conector. Você pode passar várias IDs de conexão para pesquisar em várias conexões. Os resultados são retornados em uma única lista, classificada entre as várias conexões.
+- A **propriedade contentSources** para incluir a ID de conexão atribuída durante a configuração do conector. Você pode passar várias IDs de conexão para pesquisar em várias conexões. Os resultados são retornados em uma única lista, classificada entre as várias conexões.
 
 <!--
 TODOSEARCHAPI - Bug 1653398 
@@ -31,11 +31,11 @@ TODOSEARCHAPI - Bug 1653398
 
 - A **propriedade fields** para incluir os campos no item externo a ser recuperado. Observe que, se você não incluir nenhum  campo na solicitação, a resposta conterá todos os campos marcados como *recuperáveis* no esquema de dados especificado para as conexões **especificadas na propriedade contentSources**.
 
-Além disso, você pode agregar resultados de pesquisa com base em propriedades em [um externalItem](/graph/api/resources/externalitem) que são do tipo numérico ou de cadeia de caracteres e que são definidos como refináveis no [esquema](/graph/api/resources/schema). Para obter mais informações, [consulte Refinar resultados de pesquisa usando agregação](search-concept-aggregation.md).
+Além disso, você pode agregar os resultados da pesquisa com base nas propriedades em [um externalItem](/graph/api/resources/externalitem) que são numéricos ou de cadeia de caracteres e que são definidos para serem refináveis [no esquema](/graph/api/resources/schema). Para obter mais informações, consulte [Refinar os resultados da pesquisa usando agregações](search-concept-aggregation.md).
 
-## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>Exemplo 1: Recuperar itens usando o Azure SQL conector integrado
+## <a name="example-1-retrieve-items-using-azure-sql-built-in-connector"></a>Exemplo 1: Recuperar itens usando SQL do Azure conector interno
 
-Neste exemplo, o conteúdo do banco de dados [AdventureWorks](/sql/samples/adventureworks-install-configure) foi ingerido usando o conector SQL Azure integrado.
+Neste exemplo, o conteúdo do banco de [dados AdventureWorks](/sql/samples/adventureworks-install-configure) foi ingerido usando o SQL do Azure conector interno.
 
 ### <a name="request"></a>Solicitação
 

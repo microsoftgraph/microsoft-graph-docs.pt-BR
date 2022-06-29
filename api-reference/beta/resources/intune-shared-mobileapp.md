@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso mobileApp
 description: Uma classe abstrata que contém as propriedades base de aplicativos móveis do Intune.
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 475a253f19dcff71636e9431e4fac8477f6ed42e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dbccfb27073c15e6a5fbf78842cc894aadea2c1c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023314"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441115"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -29,19 +29,19 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |[Obter mobileApp](../api/intune-shared-mobileapp-get.md)|[mobileApp](../resources/intune-shared-mobileapp.md)|Propriedades de leitura e relações do objeto [mobileApp](../resources/intune-shared-mobileapp.md).|
 |**Aplicativos**|
 |[atribuir ação](../api/intune-shared-mobileapp-assign.md)|Nenhuma|Ainda não documentado|
-|[função getMobileAppCount](../api/intune-shared-mobileapp-getmobileappcount.md)|Int64|Ainda não documentado|
+|[Função getMobileAppCount](../api/intune-shared-mobileapp-getmobileappcount.md)|Int64|Ainda não documentado|
 |[Função getTopMobileApps](../api/intune-shared-mobileapp-gettopmobileapps.md)|Coleção [mobileApp](../resources/intune-shared-mobileapp.md)|Ainda não documentado|
 |[Ação updateRelationships](../api/intune-shared-mobileapp-updaterelationships.md)|Nenhuma|Ainda não documentado|
-|[função getRelatedAppStates](../api/intune-shared-mobileapp-getrelatedappstates.md)|[Coleção mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md)|Ainda não documentado|
+|[Função getRelatedAppStates](../api/intune-shared-mobileapp-getrelatedappstates.md)|[coleção mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md)|Ainda não documentado|
 |**Conjunto de Políticas**|
 |[Ação hasPayloadLinks](../api/intune-shared-mobileapp-haspayloadlinks.md)|[coleção hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|displayName|String|O título do aplicativo importado ou definido pelo administrador.|
-|description|Cadeia de caracteres|A descrição do aplicativo.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
+|descrição|String|A descrição do aplicativo.|
 |publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
@@ -55,7 +55,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |uploadState|Int32|O estado de carregamento.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo.|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para este aplicativo móvel.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel.|
 |dependentAppCount|Int32|O número total de dependências que o aplicativo filho tem.|
 
 ## <a name="relationships"></a>Relações
@@ -66,8 +66,8 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |assignments|Coleção [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|A lista de atribuições de grupo para esse aplicativo móvel.|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Resumo de instalação do aplicativo móvel.|
 |deviceStatuses|[Coleção mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de estados de instalação para este aplicativo móvel.|
-|userStatuses|[Coleção userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de estados de instalação para este aplicativo móvel.|
-|relações|[Coleção mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Lista de relações para este aplicativo móvel.|
+|userStatuses|[coleção userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de estados de instalação para este aplicativo móvel.|
+|Relações|[coleção mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|Lista de relações para este aplicativo móvel.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

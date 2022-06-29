@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5544a1aba05fd97fbc8c45e5915491fc11eed916
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 8fa2a1eb9f22c1055bb99666f4845a3a8505ffe0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397614"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443302"
 ---
 # <a name="update-organizationalbrandinglocalization"></a>Atualizar organizationalBrandingLocalization
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de [um objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) para uma localização específica.
+Atualize as propriedades de um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) para uma localização específica.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Somente os tipos de dados Stream, incluindo **backgroundLogo** e **backgroundImage**, são atualizados usando o método PUT. Para atualizar tipos de dados de cadeia de caracteres, incluindo **signInPageText** e **usernameHintText**, use o método PATCH. Não é possível atualizar tipos de fluxo com outros tipos de dados na mesma solicitação.
+Somente os tipos de dados do Stream, incluindo **backgroundLogo** e **backgroundImage**, são atualizados usando o método PUT. Para atualizar tipos de dados de cadeia de caracteres, incluindo **signInPageText** e **usernameHintText**, use o método PATCH. Não é possível atualizar tipos de fluxo com outros tipos de dados na mesma solicitação.
 
 <!-- {
   "blockType": "ignored"
@@ -53,22 +53,22 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| backgroundColor | Cadeia de caracteres | Cor que aparece no lugar da imagem de plano de fundo em conexões de baixa largura de banda. Recomendamos que você use a cor primária do logotipo da faixa ou da cor da sua organização. Especifique isso no formato hexadecimal, por exemplo, branco é `#FFFFFF`. |
-| backgroundImage | Stream | Imagem que aparece como o plano de fundo da página de login. Os tipos permitidos são PNG ou JPEG não menores que 300 KB e não maiores que 1920 × 1080 pixels. Uma imagem menor reduzirá os requisitos de largura de banda e tornará a carga da página mais rápida. |
-| bannerLogo | Stream | Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. Os tipos permitidos são PNG ou JPEG não maiores que 36 × 245 pixels. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo. |
-| customAccountResetCredentialsUrl | Cadeia de caracteres | Uma URL personalizada para redefinir credenciais de conta. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
-| customCannotAccessYourAccountText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o padrão "Não é possível acessar sua conta?" texto de hiperlink de redefinição de senha de autoatendados (SSPR) na página de login. Este texto deve estar no formato Unicode e não exceder 256 caracteres. |
-| customForgotMyPasswordText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Esqueci minha senha" no formulário de login. Este texto deve estar no formato Unicode e não exceder 256 caracteres. |
-| customPrivacyAndCookiesText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão de hiperlink "Privacidade e Cookies" no rodapé. Este texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| Backgroundcolor | Cadeia de caracteres | Cor que aparece no lugar da imagem de plano de fundo em conexões de baixa largura de banda. Recomendamos que você use a cor principal do logotipo da faixa ou da cor da sua organização. Especifique isso no formato hexadecimal, por exemplo, branco é `#FFFFFF`. |
+| Backgroundimage | Stream | Imagem que aparece como a tela de fundo da página de entrada. Os tipos permitidos são PNG ou JPEG não menores que 300 KB e não maiores que 1920 × 1080 pixels. Uma imagem menor reduzirá os requisitos de largura de banda e fará com que o carregamento da página seja mais rápido. |
+| bannerLogo | Stream | Uma versão em faixa do logotipo da sua empresa que aparece na página de entrada. Os tipos permitidos são PNG ou JPEG não maiores que 36 × 245 pixels. É recomendável usar uma imagem transparente sem preenchimento ao redor do logotipo. |
+| customAccountResetCredentialsUrl | String | Uma URL personalizada para redefinir as credenciais da conta. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
+| customCannotAccessYourAccountText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o padrão "Não é possível acessar sua conta?" texto de hiperlink de redefinição de senha de autoatendimento (SSPR) na página de entrada. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customForgotMyPasswordText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Esqueci minha senha" no formulário de entrada. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customPrivacyAndCookiesText | String | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Privacidade e Cookies" no rodapé. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
 | customPrivacyAndCookiesUrl | Cadeia de caracteres | Uma URL personalizada para substituir a URL padrão do hiperlink "Privacidade e Cookies" no rodapé. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
-| customTermsOfUseText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão de hiperlink "Termos de Uso" no rodapé. Este texto deve estar no formato Unicode e não exceder 256 caracteres. |
-| customTermsOfUseUrl | Cadeia de caracteres | Uma URL personalizada para substituir a URL padrão do hiperlink "Termos de Uso" no rodapé. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados por URL e não exceder 128characters. |
-| favicon | Stream | Um ícone personalizado (favicon) para substituir um favicon de produto padrão da Microsoft em um locatário do Azure AD. |
-| headerBackgroundColor | Cadeia de caracteres | A cor RGB a ser aplicada para personalizar a cor do header. |
+| customTermsOfUseText | Cadeia de caracteres | Uma cadeia de caracteres para substituir o texto padrão do hiperlink "Termos de Uso" no rodapé. Esse texto deve estar no formato Unicode e não exceder 256 caracteres. |
+| customTermsOfUseUrl | Cadeia de caracteres | Uma URL personalizada para substituir a URL padrão do hiperlink "Termos de Uso" no rodapé. Essa URL deve estar no formato ASCII ou caracteres não ASCII devem ser codificados em URL e não exceder 128 caracteres. |
+| Favicon | Stream | Um ícone personalizado (favicon) para substituir um favicon de produto padrão da Microsoft em um Azure AD locatário. |
+| headerBackgroundColor | Cadeia de caracteres | A cor RGB a ser aplicada para personalizar a cor do cabeçalho. |
 | loginPageTextVisibilitySettings | [loginPageTextVisibilitySettings](../resources/loginPageTextVisibilitySettings.md) | Representa os vários textos que podem ser ocultos na página de logon de um locatário. Todas as propriedades podem ser atualizadas. |
-| signInPageText | Cadeia de caracteres | Texto que aparece na parte inferior da caixa de login. Use isso para comunicar informações adicionais, como o número de telefone para sua assistência médica ou uma declaração legal. Este texto deve estar no formato Unicode e não exceder 1024 caracteres. |
-| squareLogo | Stream | Uma versão quadrada do logotipo da sua empresa que aparece em Windows 10 experiências in-loco (OOBE) e quando o Windows Autopilot está habilitado para implantação. Os tipos permitidos são PNG ou JPEG não maiores que 240 x 240 pixels e não mais de 10 KB de tamanho. Recomendamos usar uma imagem transparente sem preenchimento ao redor do logotipo.|
-| usernameHintText | Cadeia de caracteres | Uma cadeia de caracteres que mostra como a dica na caixa de texto do nome de usuário na tela de entrada. Este texto deve ser um Unicode, sem links ou código, e não pode exceder 64 caracteres. |
+| signInPageText | Cadeia de caracteres | Texto que aparece na parte inferior da caixa de entrada. Use isso para comunicar informações adicionais, como o número de telefone para o suporte de assistência técnica ou uma declaração legal. Esse texto deve estar no formato Unicode e não exceder 1024 caracteres. |
+| squareLogo | Stream | Uma versão quadrada do logotipo da sua empresa que aparece Windows 10 OOBE (experiências integradas) e quando o Windows Autopilot está habilitado para implantação. Os tipos permitidos são PNG ou JPEG não maiores que 240 x 240 pixels e não têm mais de 10 KB de tamanho. É recomendável usar uma imagem transparente sem preenchimento ao redor do logotipo.|
+| usernameHintText | Cadeia de caracteres | Uma cadeia de caracteres que mostra como a dica na caixa de texto de nome de usuário na tela de entrada. Esse texto deve ser um Unicode, sem links ou código, e não pode exceder 64 caracteres. |
 
 ## <a name="response"></a>Resposta
 
@@ -76,7 +76,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-setting-bannerlogo-for-the-fr-fr-localization-using-put"></a>Exemplo 1: **Configurando bannerLogo** para a localização fr-FR usando PUT
+### <a name="example-1-setting-bannerlogo-for-the-fr-fr-localization-using-put"></a>Exemplo 1: **Definindo bannerLogo** para a localização fr-FR usando PUT
 
 A solicitação a seguir atualiza o logotipo da faixa para a localização fr-FR.
 
@@ -107,7 +107,7 @@ Content-Type: image/jpeg
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-the-backgroundcolor-and-signinpagetext-for-the-fr-fr-localization-using-patch"></a>Exemplo 2: atualizar o backgroundColor e signInPageText para a localização fr-FR usando PATCH
+### <a name="example-2-update-the-backgroundcolor-and-signinpagetext-for-the-fr-fr-localization-using-patch"></a>Exemplo 2: atualizar backgroundColor e signInPageText para a localização fr-FR usando PATCH
 
 A solicitação a seguir atualiza o logotipo da faixa para a `fr-FR` localização.
 
@@ -151,6 +151,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocalization6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organizationalbrandinglocalization6-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -167,7 +171,7 @@ HTTP/1.1 204 No Content
 
 
 
-### <a name="example-3-override-a-default-branding-value-with-a-blank-string"></a>Exemplo 3: Substituir um valor padrão de identidade visual com uma cadeia de caracteres em branco
+### <a name="example-3-override-a-default-branding-value-with-a-blank-string"></a>Exemplo 3: Substituir um valor de identidade visual padrão por uma cadeia de caracteres em branco
 
 #### <a name="request"></a>Solicitação
 
@@ -206,6 +210,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-organizationalbrandinglocalization7-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organizationalbrandinglocalization7-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

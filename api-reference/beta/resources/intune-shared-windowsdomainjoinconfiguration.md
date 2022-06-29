@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsDomainJoinConfiguration
 description: Configuração do dispositivo de Ingresso no Domínio do Windows.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ca8f7ef727bfe3b0518ff8bd29c340412482f56
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 677185e0573d214d2ba53423bf741ae3b16dd5c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899852"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446340"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>Tipo de recurso windowsDomainJoinConfiguration
 
@@ -36,16 +36,16 @@ Herda de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |**Configuração do dispositivo**|
-|activeDirectoryDomainName|Cadeia de Caracteres|Nome de domínio do Active Directory a ser ingressado.|
-|computerNameStaticPrefix|Cadeia de Caracteres|Prefixo fixo a ser usado para o nome do computador.|
+|activeDirectoryDomainName|String|Nome de domínio do Active Directory a ser ingressado.|
+|computerNameStaticPrefix|Cadeia de caracteres|Prefixo fixo a ser usado para o nome do computador.|
 |computerNameSuffixRandomCharCount|Int32|Caracteres gerados dinamicamente usados como sufixo para o nome do computador. Valores válidos de 3 a 14|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|organizationalUnit|String|Unidade organizacional (UO) em que a conta de computador será criada. Se esse parâmetro for NULL, o contêiner de objeto de computador conhecido será usado como publicado no domínio.|
+|organizationalUnit|Cadeia de caracteres|Unidade organizacional (UO) em que a conta de computador será criada. Se esse parâmetro for NULL, o contêiner de objeto de computador conhecido será usado como publicado no domínio.|
 |roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a Configuração de Dispositivo subjacente dá suporte ou não à atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é falso e as entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e podem ser resolvidas excluindo e recriando a política no Portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|

@@ -1,17 +1,17 @@
 ---
-title: Usar marcas de anotação nas páginas do OneNote
-description: " Notebooks empresariais no Microsoft 365"
+title: Usar marcas de anotação em páginas do OneNote usando a API do OneNote
+description: Use o atributo de marca de dados para adicionar e atualizar marcas de anotação internas em uma página do OneNote. Saiba como trabalhar com marcas de anotação em listas e como recuperar marcas de anotação.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: f3b5a79da157a84f92bb90d87b144daa4df17f45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 462fd5eeca23118601d32c7050149b131ec48462
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035553"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437020"
 ---
-# <a name="use-note-tags-in-onenote-pages"></a>Usar marcas de notas nas páginas do OneNote
+# <a name="use-note-tags-on-onenote-pages"></a>Usar marcas de anotação em páginas do OneNote
 
 **Aplica-se a** notebooks do consumidor no OneDrive | Notebooks empresariais no Microsoft 365
 
@@ -268,7 +268,8 @@ Um atributo `data-tag` no HTML de saída sempre inclui um valor de forma e inclu
 
 Observe que o atributo `data-tag` definido no nível de lista é enviado para seus itens de lista. Para obter mais informações sobre como usar marcas de anotação com listas, confira [Marcas de anotação em listas](#note-tags-on-lists).
 
-> **Observação:** no HTML de saída, a definição e as marcas de anotação de lembrar posteriormente são retornadas como `data-tag="remember-for-later"`. O elemento `title` não retorna informações sobre marcas de anotação.
+> [!NOTE]
+> No HTML de saída, a definição e as marcas de anotação remember-for-later são retornadas como `data-tag="remember-for-later"`. O elemento `title` não retorna informações sobre marcas de anotação.
 
 
 

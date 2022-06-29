@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 875fad2dd6921d19cd1ac1834bc684f1e0eae161
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 3183fa0c2f44e00dbeab863a435271ea06014e70
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118442"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439036"
 ---
 # <a name="remove-member"></a>Remover membro
 
@@ -41,7 +41,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 DELETE /groups/{id}/members/{id}/$ref
 ```
 > [!CAUTION]
-> `/$ref` Se não for acrescentado à solicitação e o aplicativo de chamada tiver permissões para gerenciar o tipo de objeto membro, o objeto membro também será excluído de Azure Active Directory (Azure AD); caso contrário, `403 Forbidden` um erro será retornado. Por exemplo, um aplicativo com as permissões *GroupMember.ReadWrite.All* e *User.ReadWrite.All* excluirá um usuário. Você pode restaurar objetos específicos por meio da [API Restaurar itens excluídos](directory-deleteditems-restore.md).
+> Se `/$ref` não for acrescentado à solicitação e o aplicativo de chamada tiver permissões para gerenciar o tipo de objeto membro, o objeto membro também será excluído do Azure Active Directory (Azure AD); caso contrário, um erro `403 Forbidden` será retornado. Por exemplo, um aplicativo com as permissões *GroupMember.ReadWrite.All* e *User.ReadWrite.All* excluirá um usuário. Você pode restaurar objetos específicos por meio da [API Restaurar itens excluídos](directory-deleteditems-restore.md).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -96,6 +96,10 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-member-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-member-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

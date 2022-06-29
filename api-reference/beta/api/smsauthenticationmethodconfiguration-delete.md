@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9b5577738893e059be42a89f7df7c47b455423dc
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5d606fa7a6f368f7f65c4bf4cb7d075cf0699686
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397985"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444597"
 ---
 # <a name="delete-smsauthenticationmethodconfiguration"></a>Excluir smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova as alterações feitas na política de método de [autenticação](../resources/smsauthenticationmethodconfiguration.md) de Mensagem de Texto revertendo a política para sua configuração padrão.
+Remova as alterações feitas na política de método de [autenticação de Mensagem de](../resources/smsauthenticationmethodconfiguration.md) Texto revertendo a política para sua configuração padrão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Administrador de Política de Autenticação
-* Administrador Global
+* Administrador da Política de Autenticação
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-smsauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-smsauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

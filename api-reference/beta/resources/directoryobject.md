@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso directoryObject
-description: Representa um objeto do Azure Active Directory. O tipo directoryObject é o tipo base para muitos outros tipos de entidade de diretório normalmente referido como objetos do diretório.
+description: Representa um objeto do Azure Active Directory. O tipo directoryObject é o tipo base para muitos outros tipos de entidade de diretório geralmente chamados de objetos de diretório.
 ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 196d95935171ab7b38559024b5d1ac46b84b7ae3
-ms.sourcegitcommit: e7cfc67ac8fa2ccf895ca7a8d5f640fb99237928
+ms.openlocfilehash: 95d926deef7961bedd1ebcf9e2ad38f1b7513415
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65103010"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441416"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -22,12 +22,13 @@ Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é
 
 + [application](application.md)
 + [administrativeUnit](administrativeunit.md)
++ [appRoleAssignment](approleassignment.md)
 + [directoryObject](directoryobject.md)
 + [directoryRole](directoryrole.md)
 + [device](device.md)
 + [group](group.md)
 + [orgContact](orgcontact.md)
-+ [oAuth2PermissionGrant](oauth2permissiongrant.md)
++ [oauth2PermissionGrant](oauth2permissiongrant.md)
 + [servicePrincipal](serviceprincipal.md)
 + [user](user.md)
 

@@ -1,32 +1,32 @@
 ---
-title: Use a API Pesquisa da Microsoft no Microsoft Graph refinar consultas com agregação
-description: Você pode usar a API Pesquisa da Microsoft para recuperar agregações
+title: Usar a API de Pesquisa da Microsoft para refinar consultas com agregações
+description: Você pode usar a agregação da API de Pesquisa da Microsoft no Microsoft Graph para refinar os resultados da pesquisa e mostrar sua distribuição no índice.
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 49e3739985f2a715449ff28c1183d0427543b2c5
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: c2bdb3121720a880bf2f508e7c43af2e53226dec
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285081"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443358"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-refine-queries-with-aggregations"></a>Use a API Pesquisa da Microsoft no Microsoft Graph refinar consultas com agregação
+# <a name="use-the-microsoft-search-api-to-refine-queries-with-aggregations"></a>Usar a API de Pesquisa da Microsoft para refinar consultas com agregações
 
-Você pode usar a API Pesquisa da Microsoft no Microsoft Graph refinar os resultados da pesquisa e mostrar sua distribuição no índice. 
+Você pode usar a API de Pesquisa da Microsoft no Microsoft Graph para refinar os resultados da pesquisa e mostrar sua distribuição no índice.
 
-Para refinar os resultados, na [solicitação de pesquisa,](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true)especifique [a agregaçãoOption](/graph/api/resources/aggregationOption?view=graph-rest-beta&preserve-view=true). Cada **aggregationOption** especifica a propriedade na qual a agregação deve ser calculada e o número de [itens searchBucket](/graph/api/resources/searchBucket?view=graph-rest-beta&preserve-view=true) a serem retornados na resposta.
+Para refinar os resultados, na [solicitação de pesquisa](/graph/api/resources/searchRequest), especifique [a aggregationOption](/graph/api/resources/aggregationOption). Cada **aggregationOption** especifica a propriedade na qual a agregação deve ser computada e o número de [itens searchBucket](/graph/api/resources/searchBucket) a serem retornados na resposta.
 
-## <a name="example-1-request-aggregations-by-string-fields"></a>Exemplo 1: Solicitar agregação por campos de cadeia de caracteres
+## <a name="example-1-request-aggregations-by-string-fields"></a>Exemplo 1: Solicitar agregações por campos de cadeia de caracteres
 
-O exemplo a seguir pesquisa **recursos listItem** e agrega resultados por seu tipo de arquivo, classe de conteúdo e última vez modificada, todos eles são valores de cadeia de caracteres.
+O exemplo a seguir pesquisa recursos **listItem** e agrega resultados por seu tipo de arquivo, classe de conteúdo e hora da última modificação, todos eles são valores de cadeia de caracteres.
 
-A resposta inclui dois [objetos searchBucket](/graph/api/resources/searchbucket?view=graph-rest-beta&preserve-view=true) para as duas agregação:
-- A **propriedade** key especifica o valor real (por , ou ) para os objetos `fileType` `contentclass` `lastModifiedTime` **listItem** correspondentes que são agregados no mesmo bucket por esse valor.
-- A **propriedade count** especifica o número de tais objetos agregados no mesmo bucket. Observe que esse número é uma aproximação do número de combinações e não fornecerá um número exato de combinações.
-- Buckets de resultados agregados por tipo de arquivo são classificação por contagem em ordem decrescente. Neste exemplo, há 3 buckets para 3 tipos de arquivo: `docx` `xlsx` , e `pptx` .
-- Buckets de resultados agregados por classe de conteúdo são classificação pelo valor de cadeia de caracteres da classe de conteúdo em ordem decrescente. Neste exemplo, há apenas um bucket com todos os objetos correspondentes compartilhando a mesma classe de conteúdo, `STS_ListItem_DocumentLibrary` .
-- Buckets de resultados agregados por lastModifiedTime são classificação pelo valor de cadeia de caracteres de lastModifiedTime em ordem decrescente. Este exemplo inclui três buckets: `Before 2021-09-01T09:08:19.6224752Z` , `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` e `2021-11-09T09:08:19.6224752Z or later` .
+A resposta inclui dois [objetos searchBucket](/graph/api/resources/searchbucket) para as duas agregações:
+- A **propriedade** de chave especifica o valor real (por `fileType`, `contentclass`ou `lastModifiedTime`) para os objetos **listItem** correspondentes que são agregados no mesmo bucket por esse valor.
+- A **propriedade** count especifica o número desses objetos agregados no mesmo bucket. Observe que esse número é uma aproximação do número de correspondências e não fornecerá um número exato de correspondências.
+- Buckets de resultados agregados por tipo de arquivo são classificados por contagem em ordem decrescente. Neste exemplo, há 3 buckets para três tipos de arquivo: `docx`, `xlsx`e `pptx`.
+- Buckets de resultados agregados por classe de conteúdo são classificados pelo valor da cadeia de caracteres da classe de conteúdo em ordem decrescente. Neste exemplo, há apenas um bucket com todos os objetos correspondentes que compartilham a mesma classe de conteúdo. `STS_ListItem_DocumentLibrary`
+- Buckets de resultados agregados por lastModifiedTime são classificados pelo valor de cadeia de caracteres de lastModifiedTime em ordem decrescente. Este exemplo inclui três buckets: `Before 2021-09-01T09:08:19.6224752Z`, `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z`e `2021-11-09T09:08:19.6224752Z or later`.
 
 ### <a name="request"></a>Solicitação
 
@@ -171,13 +171,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>Exemplo 2: aplicar um filtro de agregação com base em uma solicitação anterior
+## <a name="example-2-apply-an-aggregation-filter-based-on-a-previous-request"></a>Exemplo 2: Aplicar um filtro de agregação com base em uma solicitação anterior
 
-Este exemplo aplica um filtro de agregação que se baseia na **agregaçãoFilterToken** retornada como o campo e como o `docx` campo no exemplo `fileType` `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` `lastModifiedTime` 1.
+Este exemplo aplica um filtro de agregação baseado na **agregaçãoFilterToken** `docx` `fileType` `From 2021-09-01T09:08:19.6224752Z up to 2021-11-09T09:08:19.6224752Z` `lastModifiedTime` retornada como o campo e como o campo no exemplo 1.
 
-O valor da cadeia de caracteres atribuído à propriedade **aggregationFilters** segue o formato **"{field}: \\ "{aggregationFilterToken} \\ ""**. Se vários valores para o mesmo filtro são necessários, o valor de cadeia de caracteres atribuído à propriedade **aggregationFilters** deve seguir esse formato : **"{field}:or( \\ "{aggregationFilterToken1} \\ ", \\ "{aggregationFilterToken2} \\ ")"**.
+O valor da cadeia de caracteres atribuído à propriedade **aggregationFilters** segue o formato **"{field}:\\"{aggregationFilterToken}\\"**. Se vários valores para o mesmo filtro forem necessários, o valor da cadeia de caracteres atribuído à propriedade **aggregationFilters** deverá seguir este formato: **"{field}:or(\\"{aggregationFilterToken1}\\",\\"{aggregationFilterToken2}\\")"**.
 
-O valor da cadeia de caracteres de formatação de data/hora atribuída à propriedade **aggregationFilters** segue o formato **"{field}:{aggregationFilterToken}"**.
+O valor da cadeia de caracteres de formatação datetime atribuído à propriedade **aggregationFilters** segue o formato **"{field}:{aggregationFilterToken}"**.
 
 
 ### <a name="request"></a>Solicitação
@@ -275,13 +275,13 @@ Content-type: application/json
 
 ## <a name="example-3-request-aggregation-by-a-numeric-field"></a>Exemplo 3: Solicitar agregação por um campo numérico
 
-O exemplo a seguir pesquisa **recursos driveItem** e agrega resultados por seu tamanho, que é um valor numérico. A solicitação especifica a agregação por intervalos de 3 tamanhos:
-- Tamanho inferior a 100
+O exemplo a seguir pesquisa **recursos driveItem** e agrega resultados por seu tamanho, que é um valor numérico. A solicitação especifica a agregação por três intervalos de tamanho:
+- Tamanho menor que 100
 - Tamanho entre 100 e 1000
-- Tamanho 1000 ou superior
+- Tamanho 1000 e superior
 
-A resposta inclui 3 objetos **searchBucket,** um para cada agregação de intervalo de tamanho:
-- Os 2 buckets dos intervalos de tamanho inferior não incluem nenhuma pesquisa.
+A resposta inclui três objetos **searchBucket** , um para cada agregação de intervalo de tamanho:
+- Os 2 buckets dos intervalos de tamanho inferior não incluem nenhuma correspondente de pesquisa.
 - Todas as 9 combinações de pesquisa têm tamanhos 1000 ou superiores.
 
 ### <a name="request"></a>Solicitação
@@ -378,8 +378,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-As agregaçãos são suportadas apenas para SharePoint ou OneDrive itens. Eles não têm suporte para mensagem **ou** **evento**.
+As agregações têm suporte apenas para itens do SharePoint ou do OneDrive. Não há suporte para mensagens **ou** **eventos**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview)

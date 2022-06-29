@@ -1,34 +1,34 @@
 ---
-title: Histórico da listaDefinitions
-description: Obter uma lista dos objetos accessReviewHistoryDefinition.
+title: Listar historyDefinitions
+description: Obtenha uma lista dos objetos accessReviewHistoryDefinition.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b991b24b2d8b3c09c882c3e2087641c571e32d2b
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 9e2f44c8484b65e2980a70cb6041826656b8a078
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722993"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444086"
 ---
-# <a name="list-historydefinitions"></a>Histórico da listaDefinitions
+# <a name="list-historydefinitions"></a>Listar historyDefinitions
 
 Namespace: microsoft.graph
 
 Recupere os [objetos accessReviewHistoryDefinition criados](../resources/accessreviewhistorydefinition.md) nos últimos 30 dias, incluindo todas as propriedades aninhadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.ReadWrite.All|
 
-Se o usuário de entrada não for um membro de função de diretório do Administrador Global ou um membro da função de diretório Leitor Global, somente as definições criadas pelo usuário in-loco serão retornadas.
+Se o usuário conectado não for um membro da função de diretório global do Administração ou um membro da função de diretório Leitor Global, somente as definições que o usuário conectado criou serão retornadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,9 +43,9 @@ GET /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos `$top`parâmetros de consulta , `$filter`, `$expand`e `$skip` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). Inclusive `?$expand=instances` retornará [os objetos accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) juntamente com suas instâncias associadas.
+Esse método dá suporte aos `$top`parâmetros de consulta , `$filter``$expand`e `$skip` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters). A `?$expand=instances` inclusão retornará [os objetos accessReviewHistoryDefinitions](../resources/accessreviewhistorydefinition.md) juntamente com suas instâncias associadas.
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewHistoryDefinitions** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewHistoryDefinitions** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de [objetos accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

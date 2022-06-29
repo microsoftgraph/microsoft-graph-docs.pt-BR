@@ -1,28 +1,28 @@
 ---
-title: Especificar o canal padrão para notificações de atribuição de educação usando a API Graph Microsoft
-description: Use a API de educação no Microsoft Graph especificar o canal de Microsoft Teams padrão para o qual enviar notificações sobre uma **atribuição**.
+title: Especificar o canal padrão para notificações de atribuição de educação
+description: Use a API de educação no Microsoft Graph para especificar o canal padrão do Microsoft Teams para enviar notificações sobre uma tarefa.
 ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 927641417a3153eab398a31dee19255071a0937e
-ms.sourcegitcommit: 4c8444b732b8d6d0de8a95f6666c42095f146266
+ms.openlocfilehash: 392cfaeef8f4491204dcd6a1cba992ce7f07a092
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62443456"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440905"
 ---
-# <a name="specify-the-default-channel-for-education-assignment-notifications-using-the-microsoft-graph-api"></a>Especificar o canal padrão para notificações de atribuição de educação usando a API Graph Microsoft
+# <a name="specify-the-default-channel-for-education-assignment-notifications-using-the-microsoft-graph-api"></a>Especifique o canal padrão para notificações de atribuição de educação usando o Microsoft API do Graph
 
-Este artigo descreve como usar a API de educação no Microsoft Graph para especificar o canal de Microsoft Teams padrão para o qual enviar notificações sobre uma **atribuição**. A especificação do canal padrão envolve a criação da propriedade de cadeia de caracteres **notificationChannelUrl** para [um educationAssignment](/graph/api/resources/educationassignment). O valor padrão para essa propriedade é `null`.
+Este artigo descreve como usar a API de educação no Microsoft Graph para especificar o canal padrão do Microsoft Teams para enviar notificações sobre uma **tarefa**. Especificar o canal padrão envolve a criação da propriedade de cadeia de caracteres **notificationChannelUrl** para [um educationAssignment](/graph/api/resources/educationassignment). O valor padrão dessa propriedade é `null`.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Antes de criar a propriedade, identifique a equipe correspondente para a atribuição e o nome do canal.
 
-Para identificar a equipe da atribuição, no menu à esquerda no Teams, clique em Teams e  selecione a equipe apropriada.
+Para identificar a equipe para a tarefa, no menu à esquerda no Teams, clique em **Teams** e selecione a equipe apropriada.
 
-![Captura de tela de uma equipe selecionada no elemento Teams de navegação](./images/notificationchannel-team.png)
+![Captura de tela de uma equipe selecionada no elemento de navegação do Teams](./images/notificationchannel-team.png)
 
 Identifique o canal apropriado dentro da equipe selecionada.
 
@@ -32,17 +32,19 @@ Identifique o canal apropriado dentro da equipe selecionada.
 
 As etapas a seguir descrevem como criar o valor da propriedade.
 
-### <a name="step-1---get-the-team-id-based-on-your-team-name"></a>Etapa 1 - Obter a ID da equipe com base no nome da sua equipe
-Para encontrar a id da equipe, faça uma solicitação GET com o nome da equipe. Se você já tiver a id da equipe, ignore esta etapa.
+### <a name="step-1---get-the-team-id-based-on-your-team-name"></a>Etapa 1 – Obter a ID da equipe com base no nome da sua equipe
+Para localizar a ID da equipe, faça uma solicitação GET com o nome da equipe. Se você já tiver a ID da equipe, ignore esta etapa.
 
-#### <a name="request-example"></a>Exemplo de solicitação
+#### <a name="request"></a>Solicitação
+
 O exemplo a seguir mostra a solicitação.
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'English Fall ''21'
 ```
 
-#### <a name="response-example"></a>Exemplo de resposta
+#### <a name="response"></a>Resposta
+
 O exemplo a seguir mostra a resposta.
 
 ```http
@@ -75,17 +77,19 @@ Content-type: application/json
 }
 ```
 
-### <a name="step-2---get-the-channel-id-based-on-channel-name-and-team-id"></a>Etapa 2 : Obter a ID do canal com base no nome do canal e na ID da equipe
-Faça uma solicitação GET com a ID da equipe obtida na etapa anterior e o nome do canal. Ignore esta etapa se você já tiver a id do canal.
+### <a name="step-2---get-the-channel-id-based-on-channel-name-and-team-id"></a>Etapa 2 – Obter a ID do canal com base no nome do canal e na ID da equipe
+Faça uma solicitação GET com a ID da equipe obtida na etapa anterior e o nome do canal. Ignore esta etapa se você já tiver a ID do canal.
 
-#### <a name="request-example"></a>Exemplo de solicitação
+#### <a name="request"></a>Solicitação
+
 O exemplo a seguir mostra a solicitação.
 
 ```http
 GET https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels?$filter=displayName eq 'General'
 ```
 
-#### <a name="response-example"></a>Exemplo de resposta
+#### <a name="response"></a>Resposta
+
 O exemplo a seguir mostra a resposta.
 
 ```http
@@ -110,16 +114,16 @@ Content-type: application/json
 }
 ```
 
-### <a name="step-3---construct-the-value-for-the-notificationchannelurl-property"></a>Etapa 3 - Construir o valor da propriedade notificationChannelUrl
-Crie o valor da **propriedade notificationChannelUrl** usando o seguinte formato: 
+### <a name="step-3---construct-the-value-for-the-notificationchannelurl-property"></a>Etapa 3 – Construir o valor para a propriedade notificationChannelUrl
+Crie o valor para a **propriedade notificationChannelUrl** usando o seguinte formato: 
 
 > `https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}` 
 
-Substitua os `{team-id}` e `{channel-id}` os espaço reservados por valores descritos na tabela a seguir.
+Substitua os `{team-id}` espaços `{channel-id}` reservados e os valores descritos na tabela a seguir.
 
 | Espaço reservado | Descrição | Exemplo |
 |:--|:--|:--|
-| `{team-id}` | A ID da equipe da resposta na etapa 1. Essa é a equipe à que a atribuição atual pertence. | 72a7baec-c3e9-4213-a850-f62de0adad5f |
+| `{team-id}` | A ID da equipe da resposta na etapa 1. Essa é a equipe à qual a atribuição atual pertence. | 72a7baec-c3e9-4213-a850-f62de0adad5f |
 | `{channel-id}` | ID do item do corpo da resposta obtido na etapa 2. | 19:jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2 |
 
 O exemplo a seguir mostra **um notificationChannelUrl** com base nesse formato.
@@ -128,11 +132,11 @@ O exemplo a seguir mostra **um notificationChannelUrl** com base nesse formato.
 https://graph.microsoft.com/v1.0/teams/72a7baec-c3e9-4213-a850-f62de0adad5f/channels/19:jb2-ckDy2jONyW6ElO1phAVD5cTjuswYgoumI0oxrUw1@thread.tacv2
 ```
 
-### <a name="step-4---assign-the-value-to-the-notificationchannelurl-property-for-the-assignment"></a>Etapa 4 - Atribuir o valor à propriedade notificationChannelUrl para a atribuição
+### <a name="step-4---assign-the-value-to-the-notificationchannelurl-property-for-the-assignment"></a>Etapa 4 – Atribuir o valor à propriedade notificationChannelUrl para a atribuição
 
 Agora que você criou a URL com êxito, é hora de atribuir o valor à propriedade. Você pode executar essa operação atualizando os recursos **educationAssignment** ou **educationAssignmentDefaults** .
 
-#### <a name="example-1-update-an-educationassignment"></a>Exemplo 1: Atualizar um educationAssignment
+#### <a name="example-1-update-an-educationassignment"></a>Exemplo 1: atualizar um educationAssignment
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -225,6 +229,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
+
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: SarahBar
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a34e8deedfac1fa85273b37053b3019c59294cd3
-ms.sourcegitcommit: b21ad24622e199331b6ab838a949ddce9726b41b
+ms.openlocfilehash: ed1582886ed67ecc090a1866db1ecf3589c0bb11
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64848738"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436558"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 
@@ -29,8 +29,8 @@ Representa os itens de auditoria de diretório e sua coleção.
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade            | Tipo                                                | Descrição                                                                                                                                                                                                                                                            |
-|:--------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Propriedade|Tipo|  Descrição  |
+|:--------------------|:------------------|:------------|
 | activityDateTime    | DateTimeOffset                                      | Indica a data e hora que a atividade foi executada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`.                                                                              |
 | activityDisplayName | Cadeia de caracteres                                              | Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades registradas, consulte a [lista de atividades do Azure AD](/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list). |
 | additionalDetails   | Coleção [KeyValue](keyvalue.md)                  | Indica detalhes adicionais sobre a atividade.                                                                                                                                                                                                                          |
@@ -39,11 +39,11 @@ Representa os itens de auditoria de diretório e sua coleção.
 | id                  | Cadeia de caracteres                                              | Indica que a ID exclusiva para a atividade.                                                                                                                                                                                                            |
 | initiatedBy         | [auditActivityInitiator](auditactivityinitiator.md) | Indica que informações sobre o usuário ou o aplicativo iniciou a atividade.                                                                                                                                                                                                    |
 | loggedByService     | Cadeia de caracteres                                              | Indica informação em que o serviço iniciou a atividade (por exemplo: gerenciamento de senha de autoatendimento, principais diretório, B2C, os usuários convidados, Microsoft Identity Manager, Privileged Identity Management.                                                          |
-| operationType       | Cadeia de Caracteres                                              | Indica o tipo de operação que foi executada. Os valores possíveis incluem, mas não estão limitados aos seguintes: `Add`, `Assign`, `Update`, `Unassign`e `Delete`.                                                                                   |
+| operationType       | Cadeia de caracteres                                              | Indica o tipo de operação que foi executada. Os valores possíveis incluem, mas não estão limitados aos seguintes: `Add`, `Assign`, `Update`, `Unassign`e `Delete`.                                                                                   |
 | resultado              | Operationresult                                              | Indica o resultado da atividade. Os valores possíveis são: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
 | resultReason        | Cadeia de caracteres                                              | Indica o motivo da falha se o **resultado** for `failure` ou `timeout`.                                                                                                                                                                                              |
 | targetResources     | [targetResource](targetresource.md) conjunto      | Informações sobre o recurso que foi alterado devido à atividade.  | 
-| userAgent | Cadeia de caracteres | Tipo de agente de usuário usado por um usuário na atividade. |                                                                                                      
+| Useragent | String | Tipo de agente de usuário usado por um usuário na atividade. |                                                                                                      
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,33 +1,33 @@
 ---
-title: Use a API Pesquisa da Microsoft no Microsoft Graph para solicitar correções ortográficas
-description: Você pode usar a API Pesquisa da Microsoft para obter a sugestão ortográfica ou a modificação ortográfica para a consulta de pesquisa.
+title: Usar a API de Pesquisa da Microsoft para solicitar correções ortográficas
+description: Use a API de Pesquisa da Microsoft no Microsoft Graph para solicitar correções ortográficas para lidar com incompatibilidades entre erros de digitação em consultas de usuário e palavras corretas em conteúdos correspondentes.
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: c672af903811af716ae7c597bdc748974d24a1e2
-ms.sourcegitcommit: a60e5e81cfa04b666a1df1111a1d91f6c11989e9
+ms.openlocfilehash: 16375f1c0e38cc5e0acf3f2f89e668d32a042e51
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "62282181"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438259"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>Use a API Pesquisa da Microsoft no Microsoft Graph para solicitar correção ortográfica (visualização)
+# <a name="use-the-microsoft-search-api-to-request-spelling-corrections"></a>Usar a API de Pesquisa da Microsoft para solicitar correções ortográficas
 
-Você pode usar a API Pesquisa da Microsoft para solicitar correções ortográficas para lidar com incompatibilidades entre erros de digitação em consultas do usuário e palavras corretas em conteúdos matched. Para solicitar correções ortográficas, especifique as seguintes propriedades na **propriedade queryAlterationOptions** do [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true):
+Você pode usar a API de Pesquisa da Microsoft no Microsoft Graph para solicitar correções ortográficas para lidar com incompatibilidades entre erros de digitação em consultas de usuário e palavras corretas em conteúdos correspondentes. Para solicitar correções ortográficas, especifique as seguintes propriedades na **propriedade queryAlterationOptions** da [searchRequest](/graph/api/resources/searchrequest):
 
-- **enableSuggestion** to enable/disable spelling suggestions for the user query. Você pode passar para `true` obter as informações de correção ortográfica sugeridas para erros de digitação na consulta do usuário.
+- **enableSuggestion** para habilitar/desabilitar sugestões de ortografia para a consulta do usuário. Você pode passar para `true` obter as informações de correção ortográfica sugeridas para erros de digitação na consulta do usuário.
 
-- **enableModification** para habilitar/desabilitar modificações ortográficas para a consulta do usuário. Você pode passar `true` para obter os resultados da pesquisa para a consulta corrigida  quando não houver resultados para a consulta original com erros de digitação e obter as informações de correção correspondentes.
+- **enableModification** para habilitar/desabilitar modificações de ortografia para a consulta do usuário. Você pode passar `true` para obter os resultados da pesquisa para a consulta corrigida  quando não houver resultados para a consulta original com erros de digitação e obter as informações de correção correspondentes.
 
-A prioridade da modificação ortográfica é maior do que a sugestão ortográfica se ambas estão habilitadas.
+A prioridade de modificação ortográfica será maior do que a sugestão ortográfica se ambas estiverem habilitadas.
 
-Todas as cadeias de caracteres de consulta do usuário devem ser as mesmas para habilitar correções ortográficas para pesquisas de várias entidades.
+Todas as cadeias de caracteres de consulta do usuário devem ser iguais para habilitar correções ortográficas para pesquisas de várias entidades.
 
-## <a name="example-1-request-spelling-suggestions"></a>Exemplo 1: Solicitar sugestões ortográficas
+## <a name="example-1-request-spelling-suggestions"></a>Exemplo 1: solicitar sugestões de ortografia
 
-O exemplo a seguir consulta **recursos listItem** que contêm a cadeia de caracteres "accountt" e solicita uma sugestão ortográfica para a consulta.
+O exemplo a seguir consulta **recursos listItem que contêm** `accountt` a cadeia de caracteres e solicita uma sugestão de ortografia para a consulta.
 
-A resposta contém [objetos alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) para a sugestão ortográfica.
+A resposta contém [objetos alterationResponse](/graph/api/resources/alterationResponse) para a sugestão de ortografia.
 
 ### <a name="request"></a>Solicitação
 
@@ -96,11 +96,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-request-spelling-modifications"></a>Exemplo 2: Solicitar modificações ortográficas
+## <a name="example-2-request-spelling-modifications"></a>Exemplo 2: solicitar modificações ortográficas
 
-O exemplo a seguir consulta **recursos listItem** que contêm a cadeia de caracteres "accountt" e solicita uma modificação ortográfica para a consulta.
+O exemplo a seguir consulta **recursos listItem que contêm** `accountt` a cadeia de caracteres e solicita uma modificação ortográfica para a consulta.
 
-Neste exemplo, não há resultados para consulta original com typo "accountt". A resposta contém resultados relacionados aos objetos "account" e [alterationResponse](/graph/api/resources/alterationResponse?view=graph-rest-beta&preserve-view=true) da cadeia de caracteres corrigidos para a modificação ortográfica.
+Neste exemplo, não há resultados para a consulta original com erro de digitação `accountt`. A resposta contém resultados relacionados à cadeia de caracteres corrigida `account` e [aos objetos alterationResponse](/graph/api/resources/alterationResponse) para a modificação ortográfica.
 
 ### <a name="request"></a>Solicitação
 
@@ -205,8 +205,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-A correção ortográfica só tem suporte para os seguintes recursos: **message**, **event**, **site**, **drive**, **driveItem**, **list**, **listItem** e **externalItem**.
+A correção ortográfica só tem suporte para os seguintes recursos: **mensagem****, evento**, **site**, **unidade**, **driveItem**, **lista**, **listItem** e **externalItem**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview)

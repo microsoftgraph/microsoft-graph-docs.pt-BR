@@ -1,26 +1,26 @@
 ---
 title: Tipo de recurso deviceEnrollmentConfiguration
-description: A Classe Base de Configuração de Registro de Dispositivo
-author: rolyon
-ms.localizationpriority: medium
+description: A classe base de configuração de registro de dispositivo
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d34bfee039fa8d4a030ee5078d73974b9d05f7b3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66ae56fd0e4d1812977bafcf87d29dca7c55cece
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039144"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436551"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A Classe Base de Configuração de Registro de Dispositivo
+A classe base de configuração de registro de dispositivo
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -36,12 +36,12 @@ A Classe Base de Configuração de Registro de Dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da conta|
+|id|Cadeia de caracteres|Identificador Exclusivo da conta|
 |displayName|Cadeia de caracteres|O nome de exibição da configuração de registro do dispositivo|
 |description|Cadeia de caracteres|A descrição da configuração de registro do dispositivo|
-|prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que são atribuídos à configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixo.|
-|createdDateTime|DateTimeOffset|Hora de data criada no UTC da configuração de registro do dispositivo|
-|lastModifiedDateTime|DateTimeOffset|Última data de modificação no UTC da configuração de registro do dispositivo|
+|prioridade|Int32|A prioridade é usada quando um usuário existe em vários grupos que recebem a configuração de registro. Os usuários estão sujeitos apenas à configuração com o valor de prioridade mais baixa.|
+|createdDateTime|DateTimeOffset|Data e hora de criação em UTC da configuração de registro do dispositivo|
+|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação em UTC da configuração de registro do dispositivo|
 |versão|Int32|A versão da configuração de registro do dispositivo|
 
 ## <a name="relationships"></a>Relações

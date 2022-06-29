@@ -1,22 +1,22 @@
 ---
-title: Identificar participantes de exibição de galeria grande em uma lista ao usar a API de comunicações Graph nuvem do Microsoft Graph
-description: Saiba como identificar participantes de exibição de galeria grande em uma lista.
+title: Identificar participantes de exibição de galeria grande usando a API de comunicações na nuvem
+description: Identifique um participante de exibição de galeria grande em uma lista para que você possa assinar seu feed de vídeo usando a API de comunicações na nuvem no Microsoft Graph.
 author: navali-msft
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: conceptualPageType
-ms.openlocfilehash: 0d4c0912080c7d6d24bfe8f0b450efe338c89deb
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 55e31cabff32f082ce03d2258fee0bf37fcd3ff4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65017012"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436201"
 ---
-# <a name="identify-large-gallery-view-participants-in-a-roster-when-using-the-microsoft-graph-cloud-communications-api"></a>Identificar participantes de exibição de galeria grande em uma lista ao usar a API de comunicações Graph nuvem do Microsoft Graph
+# <a name="identify-large-gallery-view-participants-in-a-roster"></a>Identificar participantes de exibição de galeria grande em uma lista
 
-A API de comunicações na nuvem fornece um ponto de extremidade para [adicionar o modo de exibição de galeria grande](/graph/api/call-addlargegalleryview) a uma chamada. Depois que o modo de exibição de galeria grande for adicionado com êxito a uma chamada, você poderá assinar o feed de vídeo de um participante.
+A API de comunicações na nuvem no Microsoft Graph fornece um ponto de extremidade para [adicionar o modo de exibição de galeria grande](/graph/api/call-addlargegalleryview) a uma chamada. Depois que o modo de exibição de galeria grande for adicionado com êxito a uma chamada, você poderá assinar o feed de vídeo de um participante.
 
-Este artigo descreve como identificar um participante de exibição de galeria grande em uma lista, para que você possa recuperar os dados relevantes para assinar o feed de vídeo.
+Este artigo descreve como identificar um participante de exibição de galeria grande em uma lista para que você possa recuperar os dados relevantes para assinar o feed de vídeo.
 
 ## <a name="roster-example-with-large-gallery-view-participant"></a>Exemplo de lista de participantes com exibição de galeria grande
 
@@ -330,13 +330,13 @@ O exemplo a seguir mostra uma lista de participação que o aplicativo recebe de
 }
 ```
 
-## <a name="identifying-large-gallery-view-participants"></a>Identificar participantes do modo de exibição de galeria grande
+## <a name="identify-large-gallery-view-participants"></a>Identificar participantes do modo de exibição de galeria grande
 
-Use os seguintes dados do exemplo de lista de participantes para identificar o participante do modo de exibição de galeria grande:
+Use os seguintes dados do exemplo de lista de participantes para identificar um participante de modo de exibição de galeria grande:
 
 - O **ApplicationType** do participante será definido como `LargeGallery-V2`.
 - A **direção** do fluxo de mídia de vídeo será definida como `sendReceive`.
-- Os **metadados** serão incluídos, o que conterá mais detalhes, como paginação.
+- Os **metadados** serão incluídos que conterão mais detalhes, como paginação.
 
 ### <a name="participant-data-example"></a>Exemplo de dados do participante
 
@@ -417,3 +417,6 @@ Use a definição a seguir para desserializar a propriedade de **metadados** e e
     }
 ```
 
+## <a name="see-also"></a>Confira também
+
+- [Visão geral da API de comunicações na nuvem](cloud-communications-concept-overview.md)

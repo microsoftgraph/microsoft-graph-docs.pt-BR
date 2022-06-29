@@ -1,15 +1,15 @@
 ---
-title: Enviar mensagens do Outlook de outro usuário
+title: Enviar mensagens do Outlook de outro usuário usando a API de email do Outlook
 description: Use as permissões enviar como e enviar em nome de para enviar mensagens do Outlook como outro usuário ou a caixa de correio compartilhada no Microsoft Graph.
 author: jasonjoh
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: a6ef4de6e015ed485fe23a142c2a0c44b803d654
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: dad505ff61fe8149772406f4275ad2e981b266f9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176805"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444660"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Enviar mensagens do Outlook de outro usuário
 
@@ -17,7 +17,9 @@ Exchange Online fornece [permissões de caixa de correio](/Exchange/recipients/m
 
 ## <a name="permissions"></a>Permissões
 
-Dois tipos de permissões são aplicáveis para enviar mensagens de outro usuário: [permissões do Microsoft Graph](permissions-reference.md)e as permissões de caixa de correio.
+Dois tipos de permissões são aplicáveis para enviar mensagens de outro usuário:
+- [Permissões do Microsoft Graph](permissions-reference.md)
+- Permissões da caixa de correio
 
 ### <a name="microsoft-graph-permissions"></a>Permissões do Microsoft Graph
 
@@ -70,9 +72,9 @@ Os usuários não podem conceder essa permissão para suas caixas de correio. Os
 
 ## <a name="sending-with-microsoft-graph"></a>Enviar com o Microsoft Graph
 
-Você pode enviar mensagens de outro usuário seja [enviar diretamente](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true) ou [criar um rascunho](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true) e, em seguida, [enviá-lo](/graph/api/message-send?view=graph-rest-1.0&preserve-view=true).
+Você pode enviar mensagens de outro usuário seja [enviar diretamente](/graph/api/user-sendmail) ou [criar um rascunho](/graph/api/user-post-messages) e, em seguida, [enviá-lo](/graph/api/message-send).
 
-Para enviar de outro usuário, defina a `from` propriedade em [mensagem](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) enviada ao endereço de email do usuário para enviar de. Não é necessário configurar a propriedade `sender` - Microsoft Graph irá defini-la adequadamente, com base nas permissões de caixa de correio concedidas para usuários conectados.
+Para enviar de outro usuário, defina a `from` propriedade em [mensagem](/graph/api/resources/message) enviada ao endereço de email do usuário para enviar de. Não é necessário configurar a propriedade `sender` - Microsoft Graph irá defini-la adequadamente, com base nas permissões de caixa de correio concedidas para usuários conectados.
 
 Por exemplo, para enviar emails do grupo `sales@contoso.com`, configure a mensagem da seguinte maneira.
 
@@ -109,7 +111,7 @@ Depois que a mensagem é enviada, pode ser salva em pastas de itens enviados do 
 O comportamento padrão pode ser alterado por outros fatores externos:
 
 - Os administradores podem atualizar na caixa de correio do usuário para [sempre salvar uma cópia das mensagens enviadas de um representante](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) para seus itens enviados.
-- Configurando a `saveToSentItems` propriedade para `false` em um solicitação [enviar email](/graph/api/user-sendmail?view=graph-rest-1.0&preserve-view=true), você pode impedir o item de ser salvo na pasta Itens enviados. No entanto, se o administrador definiu a configuração "sempre salvar uma cópia", a mensagem será ainda salva a partir dos itens enviados do usuário.
+- Configurando a `saveToSentItems` propriedade para `false` em um solicitação [enviar email](/graph/api/user-sendmail), você pode impedir o item de ser salvo na pasta Itens enviados. No entanto, se o administrador definiu a configuração "sempre salvar uma cópia", a mensagem será ainda salva a partir dos itens enviados do usuário.
 
 ## <a name="examples"></a>Exemplos
 
@@ -207,10 +209,8 @@ Content-Type: application/json
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre:
-
 - [Por que integrar-se com o email do Outlook](outlook-mail-concept-overview.md)
-- [Como usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true) e email API [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0&preserve-view=true#common-use-cases) do Microsoft Graph versão 1.0.
+- [Como usar a API de email](/graph/api/resources/mail-api-overview) e seus [casos de uso](/graph/api/resources/mail-api-overview#common-use-cases) do Microsoft Graph versão 1.0.
 
 <!--
 {

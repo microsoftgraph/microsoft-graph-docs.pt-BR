@@ -5,12 +5,12 @@ author: yayang3
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e238118d0bdbbc0bc3990fea33479e01d144c61a
-ms.sourcegitcommit: 1d9193fa91f44d80ecdc2b82e37272df1c9630f6
+ms.openlocfilehash: c37b5295f11d41a27a15439917a91f0bdc02628e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2022
-ms.locfileid: "65629488"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444639"
 ---
 # <a name="manageddevice-getcloudpcreviewstatus"></a>managedDevice: getCloudPcReviewStatus
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -57,6 +57,8 @@ Se tiver êxito, essa função retornará um código `200 OK` de resposta e um o
 
 Veja a seguir um exemplo de uma solicitação.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "manageddevicethis.getcloudpcreviewstatus"
@@ -65,6 +67,28 @@ Veja a seguir um exemplo de uma solicitação.
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/185f01c2de954929afb129392e5d9f47/getCloudPcReviewStatus
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/manageddevicethisgetcloudpcreviewstatus-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/manageddevicethisgetcloudpcreviewstatus-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/manageddevicethisgetcloudpcreviewstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/manageddevicethisgetcloudpcreviewstatus-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/manageddevicethisgetcloudpcreviewstatus-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

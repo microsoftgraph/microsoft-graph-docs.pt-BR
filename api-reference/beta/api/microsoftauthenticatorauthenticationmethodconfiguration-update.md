@@ -5,19 +5,19 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 12a19357b9404df55ff895c7953547c226815c99
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 920de4c7243723bbbbddb2bf270e8292e42fb4df
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395430"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443687"
 ---
 # <a name="update-microsoftauthenticatorauthenticationmethodconfiguration"></a>Atualizar microsoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), que representa Microsoft Authenticator política de método de autenticação do locatário do Azure AD.
+Atualize as propriedades de um objeto [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), que representa a política de método de autenticação do Microsoft Authenticator para o Azure AD locatário.
 
 
 ## <a name="permissions"></a>Permissões
@@ -29,10 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Administrador de Política de Autenticação
-* Administrador Global
+* Administrador da Política de Autenticação
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,11 +51,11 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/m
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) com os valores de campos que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça uma representação JSON do objeto [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) com os valores dos campos que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-Para ver a lista de propriedades, [consulte microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md).
+Para obter a lista de propriedades, consulte [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md).
 
->**Observação:** A `@odata.type` propriedade com um valor de `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` deve ser incluída no corpo.
+>**Nota:** A `@odata.type` propriedade com um valor deve `#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration` ser incluída no corpo.
 
 ## <a name="response"></a>Resposta
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-microsoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

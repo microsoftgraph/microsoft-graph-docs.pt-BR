@@ -1,16 +1,16 @@
 ---
 title: Excluir guia do canal
-description: 'Remove (unpins) uma guia do canal especificado dentro de uma equipe. '
+description: 'Remove (desafixa) uma guia do canal especificado dentro de uma equipe. '
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f054621c09e2f423a42a7e0d517a2d337a560a4a
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: f14c790fdc5ab56b00764b61b432028b7874d1b9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62803979"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445752"
 ---
 # <a name="delete-tab-from-channel"></a>Excluir guia do canal
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove (unpins) uma guia do canal [especificado](../resources/channel.md) dentro de uma [equipe](../resources/team.md). 
+Remove (desafixa) uma guia do canal [especificado](../resources/channel.md) dentro de uma [equipe](../resources/team.md). 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | TeamsTab.Delete.Group *, TeamsTab.ReadWrite.Group*, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
@@ -52,8 +52,8 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação.
+### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -61,8 +61,9 @@ Este é um exemplo de solicitação.
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
-#### <a name="response"></a>Resposta
-Eis um exemplo da resposta. Observação: o objeto de resposta exibido aqui pode ser reduzido para facilitar a leitura.
+
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
 ```http
 HTTP/1.1 204 No Content
 ```

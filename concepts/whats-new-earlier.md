@@ -3,14 +3,63 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 38bfe22b2f5b9e571d40243d0bbb9bbc83a2b238
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: a1c292cebbccecec063ea9c9902bb437645487b9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884122"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437551"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="april-2022-new-and-generally-available"></a>Abril de 2022: novo e com disponibilidade geral
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+Use a [Gestão de Identidade Privilegiada (PIM)](/graph/api/resources/privilegedidentitymanagementv3-overview) em aplicativos de produção para gerenciar, controlar e monitorar o acesso a recursos importantes na sua organização. O acesso é habilitado por meio de funções privilegiadas e do controle de acesso baseado em função (RBAC) e pode ser concedido a usuários, grupos ou entidades de serviço. Os recursos podem estar no Microsoft Azure AD, no Azure e em outros serviços de nuvem da Microsoft, tais como o Microsoft 365 ou o Microsoft Intune.
+
+### <a name="search--index"></a>Pesquisa | Índice
+- Use as permissões do aplicativo `ExternalConnection.Read.All` e `ExternalConnection.ReadWrite.All` para ler ou gravar todas as conexões externas sem a presença de um usuário conectado.
+- Use a permissão do aplicativo `ExternalItem.Read.All` para ler todos os itens externos sem a presença de um usuário conectado.
+- Use a permissão delegada `ExternalConnection.ReadWrite.OwnedBy` para ler e gravar conexões externas em nome de um usuário conectado ao qual seu aplicativo está autorizado.
+- Use a permissão delegada `ExternalConnection.Read.All` ou `ExternalConnection.ReadWrite.All` para ler ou gravar todas as conexões externas em nome de um usuário conectado.
+- Use a permissão delegada `ExternalItem.ReadWrite.OwnedBy` para ler e gravar itens externos em nome de um usuário conectado, para o qual seu aplicativo está autorizado.
+- Use a permissão delegada `ExternalItem.Read.All` ou `ExternalItem.ReadWrite.All` para ler ou gravar todos os itens externos em nome de um usuário conectado.
+
+
+## <a name="april-2022-new-in-preview-only"></a>Abril de 2022: novo somente para visualização
+
+### <a name="customer-bookings"></a>Reservas do Cliente
+- [Obtenha informações de disponibilidade](/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta&preserve-view=true) para recursos de um [membro da equipe](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) em uma [empresa](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true).
+- Use a permissão de aplicativo `Bookings.Read.All` em operações de leitura para recursos de[empresas](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true), [membro da equipe](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true), [serviço](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true), [cliente](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true) e [compromisso](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true).
+- Use a permissão de aplicativo `BookingsAppointment.ReadWrite.All` para operações de leitura/gravação para recursos de cliente e compromisso.
+
+### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem
+- Especifique [Configurações do Windows](/graph/api/resources/cloudpcwindowssettings?view=graph-rest-beta&preserve-view=true) como parte das [configurações da organização do PC na nuvem](/graph/api/resources/cloudPcOrganizationSettings?view=graph-rest-beta&preserve-view=true) para um locatário.
+- [Obtenha](/graph/api/user-list-cloudpcs?view=graph-rest-beta&preserve-view=true) os dispositivos de PC na nuvem atribuídos ao usuário conectado.
+- [Obter informações para iniciar um dispositivo de PC na nuvem](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) para o usuário conectado.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+Configure [ configurações de federação](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) para federar domínios com o Azure Active Directory.
+
+### <a name="identity-and-access--governance"></a>Identidade e acesso | Governança
+[Obtenha atribuições](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true) para as quais o usuário correspondente tem pacotes de acesso incompatíveis. 
+
+### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
+Confirme se um evento é [de alto risco e está comprometido](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true) ou é [seguro](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true) marcando o evento nos logs de entrada Azure Active Directory correspondentes.
+
+### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
+- [Obtenha um relatório de distribuição total](/graph/api/reportroot-getTeamsUserActivityTotalDistributionCounts?view=graph-rest-beta&preserve-view=true) para a contagem de atividades específicas do Teams em um período especificado. As contagens de atividades do Teams incluem mensagens de chat da equipe, chamadas, reuniões, duração do áudio, postagem de mensagens e assim por diante.
+- Obtenha tipos de atividade adicionais em relatórios que [obtém detalhes do usuário](/graph/api/reportroot-getTeamsUserActivityUserDetail?view=graph-rest-beta&preserve-view=true), [obtém contagens de atividades ](/graph/api/reportroot-getteamsuseractivitycounts?view=graph-rest-beta&preserve-view=true)e [obtém contagens de total de atividade](/graph/api/reportroot-getteamsuseractivitytotalcounts?view=graph-rest-beta&preserve-view=true).
+
+### <a name="teamwork"></a>Trabalho em equipe
+Compartilhar um canal com uma ou mais equipes:
+- [Liste os canais que são compartilhados com uma equipe](/graph/api/team-list-incomingchannels?view=graph-rest-beta&preserve-view=true).
+- [Liste todos os canais em uma equipe](/graph/api/team-list-allchannels?view=graph-rest-beta&preserve-view=true) incluindo aqueles hospedados em uma equipe ou compartilhados com ela.
+- [Liste membros da equipe que podem acessar um canal compartilhado especificado](/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-beta&preserve-view=true).
+- [Remova um canal compartilhado com uma equipe](/graph/api/team-delete-incomingchannels?view=graph-rest-beta&preserve-view=true).
+- [Liste as equipes que compartilharam um canal especificado](/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-beta&preserve-view=true).
+- [ Deixe de compartilhar um canal com uma equipe](/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-beta&preserve-view=true).
+
 
 ## <a name="march-2022-new-and-generally-available"></a>Março de 2022: Novo e disponível para o público geral
 
@@ -1093,7 +1142,7 @@ Atualizações do Intune de [outubro](changelog.md#october-2020) para a versão 
 - Especifique em uma [política de autorização](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) se e quem pode convidar usuários externos para uma organização.
 
 ### <a name="people-and-workplace-intelligence--insights"></a>Inteligência de pessoas e local de trabalho | Intuições 
-Os administradores podem ver os [exemplos de uso de cmdlets do Windows PowerShell](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-settings-via-powershell) para personalizar as configurações de percepção do item para uma organização.
+Os administradores podem ver os [exemplos de uso de cmdlets do Windows PowerShell](insights-customize-item-insights-privacy.md#configure-item-insights-settings-via-powershell) para personalizar as configurações de percepção do item para uma organização.
 
 ### <a name="teamwork"></a>Trabalho em equipe
 - Use o atributo de instância **channelCreationMode** para indicar que um [canal](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes) está sendo criado para servir à migração de dados. Use o [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) para indicar que a migração terminou, de forma que os membros possam postar e ler mensagens.
@@ -1296,7 +1345,7 @@ Os aplicativos agora podem [consultar](/graph/api/resources/reviewsetquery?view=
 ### <a name="devices-and-apps--cloud-printing"></a>Dispositivos e aplicativos | Impressão na nuvem
 - Use as permissões do aplicativo `Printer.ReadWrite.All` e a [codificação do IPP (Protocolo de Impressão via Internet)](https://tools.ietf.org/html/rfc8010) para [atualizar uma impressora ](/graph/api/printer-update?view=graph-rest-beta&preserve-view=true).
 - Use uma das permissões de aplicativo, `PrintJob.ReadBasic.All`, `PrintJob.Read.All`, `PrintJob.ReadWriteBasic.All`ou `PrintJob.ReadWrite.All`, para [obter um trabalho de impressão](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true) ou [listar trabalhos de impressão para uma impressora](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true).
-- Quando [obtiver um trabalho de impressão](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true), use `$expand` para obter [tarefas de impressão](/graph/api/resources/printtask?view=graph-rest-beta&preserve-view=true) que estão executando ou que foram executadas no trabalho. Imprimir tarefas, [definições de tarefas](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)e [disparadores de tarefas](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true) são usados em [impressão segura](universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing).
+- Quando [obtiver um trabalho de impressão](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true), use `$expand` para obter [tarefas de impressão](/graph/api/resources/printtask?view=graph-rest-beta&preserve-view=true) que estão executando ou que foram executadas no trabalho. Imprimir tarefas, [definições de tarefas](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)e [disparadores de tarefas](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true) são usados em [impressão segura](universal-print-concept-overview.md#enable-pull-printing).
 - [Redirecione um trabalho de impressão](/graph/api/printjob-redirect?view=graph-rest-beta&preserve-view=true) para uma impressora diferente, como parte da impressão segura.
 
 ### <a name="devices-and-apps--corporate-management"></a>Dispositivos e aplicativos | Gerenciamento corporativo

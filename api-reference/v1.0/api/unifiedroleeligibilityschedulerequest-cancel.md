@@ -5,19 +5,19 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 57447de807e8b8ddba04c1ec606164eeae187568
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 1d590074f597b20514e16a17ecb50d19a869180f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204781"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439134"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: cancel
 Namespace: microsoft.graph
 
 Cancele imediatamente um objeto unifiedRoleEligibilityScheduleRequest cujo status `Granted` é e faça com que o sistema exclua automaticamente a solicitação cancelada após 30 dias. Depois de chamar essa ação, **o status** do **unifiedRoleEligibilityScheduleRequest** cancelado muda para `Revoked`.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySc
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedroleeligibilityschedulerequestthiscancel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleeligibilityschedulerequestthiscancel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

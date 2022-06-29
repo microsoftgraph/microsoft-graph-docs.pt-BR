@@ -1,20 +1,36 @@
 ---
 title: Valores de enumeração
-description: Valores Graph enumeração do Microsoft.
+description: Valores de enumeração do Microsoft Graph.
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: abf5a95ccc6c19bcb656d84c9d6cf4d9891cbea6
-ms.sourcegitcommit: ca1b33aaecb320b33423aeec7438ce306bffab14
+ms.openlocfilehash: 3a5c0c707ce2164dd335e36983ad4d55155fe56a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420569"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445864"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
+
+### <a name="federatedidpmfabehavior-values"></a>Valores federatedIdpMfaBehavior
+|Member|
+|:---|
+|acceptIfMfaDoneByFederatedIdp|
+|enforceMfaByFederatedIdp|
+|rejectMfaByFederatedIdp|
+|unknownFutureValue|
+
+#### <a name="promptloginbehavior-values"></a>Valores de promptLoginBehavior
+|Member|
+|:---|
+|translateToFreshPasswordAuthentication|
+|nativeSupport|
+|desabilitadas|
+|unknownFutureValue|
 
 ### <a name="expirationpatterntype-values"></a>Valores expirationPatternType 
 
@@ -202,7 +218,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |blockSignIn|
 |blockSignInAndDelete|
 |unknownFutureValue|
@@ -327,7 +343,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |assignIfOpen|
 |unknownFutureValue|
 
@@ -387,7 +403,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |adminsAndGuestInviters|
 |adminsGuestInvitersAndAllMembers|
 |Todos|
@@ -581,7 +597,7 @@ Namespace: microsoft.graph
 ### <a name="educationaddtocalendaroptions-values"></a>valores educationAddToCalendarOptions
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
@@ -638,13 +654,13 @@ Namespace: microsoft.graph
 |:---|
 |Nenhum|
 |SecurityGroup|
-|Tudo|
+|Todos|
 
 ### <a name="recipientscopetype-values"></a>Valores recipientScopeType
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |Interno|
 |Externo|
 |externalPartner|
@@ -720,7 +736,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |Carro|
 |calendar|
 |Executando|
@@ -754,7 +770,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |shift|
 |swapRequest|
 |userShiftPreferences|
@@ -796,7 +812,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| none
+| Nenhuma
 | contactsOnly
 | tudo
 
@@ -878,14 +894,14 @@ Namespace: microsoft.graph
 | :----------------- |
 | student            |
 | teacher            |
-| none               |
+| Nenhuma               |
 | unknownFutureValue |
 
 ### <a name="meetingmessagetype-values"></a>Valores meetingMessageType
 
 | Member
 |:-----------------
-| none
+| Nenhuma
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -917,7 +933,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | Banner
 | Modal
-| none
+| Nenhuma
 
 ### <a name="deviceenrollmentfailurereason-values"></a>Valores deviceEnrollmentFailureReason
 
@@ -1046,7 +1062,7 @@ Namespace: microsoft.graph
 |:---|
 |group|
 |unknownFutureValue|
-|Lista|
+|lista de participantes|
 
 
 ### <a name="plannerpreviewtype-values"></a>Valores plannerPreviewType
@@ -1056,7 +1072,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | Lista
-| description
+| descrição
 | referência
 
 
@@ -1128,7 +1144,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| none
+| Nenhuma
 | organizer
 | tentativelyAccepted
 | Aceito
@@ -1161,7 +1177,7 @@ Namespace: microsoft.graph
 
 | Membro   |Valor
 |:---------|:--------
-| none     | -1
+| Nenhuma     | -1
 | preset0  | 0
 | preset1  | 1
 | preset2  | 2
@@ -1289,7 +1305,7 @@ Enumeração para tipos de valor do Registro, conforme definido por [/windows/de
 |expandSz|5| REG_EXPAND_SZ tipo de valor do Registro.|
 |link|6 | REG_LINK tipo de valor do Registro.|
 |multiSz|7 | REG_MULTI_SZ tipo de valor do Registro.|
-|none|8 | REG_NONE tipo de valor do Registro.|
+|Nenhuma|8 | REG_NONE tipo de valor do Registro.|
 |Qword|9 | REG_QWORD tipo de valor do Registro.|
 |qwordwordEndian|10| REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro.|
 |Sz|11| REG_SZ tipo de valor do Registro.|
@@ -1341,7 +1357,7 @@ Valores possíveis para o método de entrada do usuário.
 
 ### <a name="useraccountsecuritytype-values"></a>Valores userAccountSecurityType
 
-Valores possíveis para tipos de conta de usuário (associação de grupo), por definição Windows usuário.
+Valores possíveis para tipos de conta de usuário (associação de grupo), de acordo com a definição do Windows.
 
 |Member|Member|Descrição|
 |:---|:---|:---|
@@ -1354,7 +1370,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -1406,7 +1422,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member
 |:-------------------------
-| none
+| Nenhuma
 | low
 | medium
 | high
@@ -1417,7 +1433,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member
 |:-------------------------
-| none
+| Nenhuma
 | confirmedSafe
 | corrigido
 | Demitido
@@ -1456,7 +1472,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |freeBusyRead|
 |limitedRead|
 |leitura|
@@ -1516,9 +1532,9 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| none                  | 0     | Ainda não sei.                       |
-| mailFlowRule          | 1     | Exchange de transporte.            |
-| safeSender            | 2     | Cofre lista de remetentes.                   |
+| Nenhuma                  | 0     | Ainda não sei.                       |
+| mailFlowRule          | 1     | Regra de transporte do Exchange.            |
+| safeSender            | 2     | Lista de remetentes seguros.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4     | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5     | Lista de permissões de domínio do remetente.           |
@@ -1537,7 +1553,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Valor |
 |:-----------------|
-| message |
+| mensagem |
 | chatEvent |
 | Digitação |
 | unknownFutureValue |
@@ -1547,7 +1563,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Valor |
 |:-----------------|
-| none |
+| Nenhuma |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -1579,7 +1595,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 ### <a name="wellknownlistname-values"></a>Valores wellknownListName
 | Member
 |:----------------------
-| none
+| Nenhuma
 | defaultList
 | flaggedEmails
 | unknownFutureValue
@@ -1662,7 +1678,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Member|
 |:---|
-|none|
+|Nenhuma|
 |Grampo|
 |Soco|
 |Cobrir|
@@ -1724,7 +1740,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |Shrinktofit|
 |fill|
 |Caber|
-|none|
+|Nenhuma|
 |unknownFutureValue|
 
 ### <a name="userflowtype-values"></a>Valores userFlowType
@@ -1743,7 +1759,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 | Member                |
 |:----------------------|
-| string                |
+| cadeia de caracteres                |
 | booliano               |
 | int64                 |
 | Stringcollection      |
@@ -1847,7 +1863,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 |Member|
 |:---|
 |team|
-|Canal|
+|channel|
 |chat|
 |unknownFutureValue|
 
@@ -1893,7 +1909,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), por 
 
 |Member|
 |:---|
-|Microsoft|
+|microsoft|
 |thirdParty|
 |Cliente|
 |unknownFutureValue|

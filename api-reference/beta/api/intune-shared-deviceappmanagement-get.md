@@ -1,16 +1,16 @@
 ---
 title: Get deviceAppManagement
 description: Ler propriedades e relações do objeto deviceAppManagement.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 070a4fd85b7720e8140a3afb95746d649978bd90
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 64da3a10fbf0f218dd38b32cb67103b894e037ea
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65857677"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437342"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -30,11 +30,11 @@ Uma das permissões a seguir é necessária para chamar essa API. Para saber mai
 |:---|:---|
 | Delegada (conta corporativa ou de estudante) | |
 | &nbsp;&nbsp; **Aplicativos**, **livros**, **integração**, **integração de parceiros** ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application| |
+|Aplicativo| |
 | &nbsp;&nbsp; **Aplicativos**, **livros**, **integração**, **integração de parceiros** ou **conjunto de políticas** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp; &nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {

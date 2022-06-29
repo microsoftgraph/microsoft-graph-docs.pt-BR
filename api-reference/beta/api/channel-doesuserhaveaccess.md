@@ -5,12 +5,12 @@ author: devjha-ms
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 808814a7c535a8a2ba9856eda0d8ec36a1170670
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 542ce63c48932ca7231313ecf4b1525eff4e373e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211036"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439764"
 ---
 # <a name="channel-doesuserhaveaccess"></a>channel: doesUserHaveAccess
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Determine se um [usuário](../resources/useridentity.md) tem acesso a um canal [compartilhado](../resources/channel.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -44,9 +44,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|tenantId|String|A ID do Azure Active Directory locatário ao [qual o usuário](../resources/useridentity.md) pertence. O valor padrão para essa propriedade é a **tenantId** atual do usuário ou aplicativo conectado.|
+|tenantId|String|A ID do locatário do Azure Active Directory ao [qual o usuário](../resources/useridentity.md) pertence. O valor padrão para essa propriedade é a **tenantId** atual do usuário ou aplicativo conectado.|
 |userId|Cadeia de caracteres|Identificador exclusivo do [usuário](../resources/useridentity.md). Especifique **a userId** ou **a propriedade userPrincipalName** na solicitação.|
-|userPrincipalName|Cadeia de caracteres|O nome UPN do [usuário](../resources/useridentity.md). Especifique **a userId** ou **a propriedade userPrincipalName** na solicitação.|
+|userPrincipalName|String|O nome UPN do [usuário](../resources/useridentity.md). Especifique **a userId** ou **a propriedade userPrincipalName** na solicitação.|
 
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -69,6 +69,8 @@ A seguir está um exemplo de uma solicitação que verifica se um usuário inter
 
 #### <a name="request"></a>Solicitação
 
+Veja a seguir um exemplo de uma solicitação.
+
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -76,7 +78,7 @@ A seguir está um exemplo de uma solicitação que verifica se um usuário inter
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='6285581g-484b-4845-9e01-60667f8b12ae')
+GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc}/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/doesUserHaveAccess(userId='6285581f-484b-4845-9e01-60667f8b12ae')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-doesuserhaveaccess-csharp-snippets.md)]
@@ -99,6 +101,9 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 
 
 #### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
@@ -119,6 +124,8 @@ Content-Type: application/json
 Veja a seguir um exemplo de uma solicitação que usa a propriedade **tenantId** para verificar se um usuário externo tem acesso a um canal compartilhado.
 
 #### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -150,6 +157,9 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 
 
 #### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"
@@ -170,6 +180,8 @@ Content-Type: application/json
 Veja a seguir um exemplo de uma solicitação que usa a **propriedade userPrincipalName** para verificar se um usuário interno tem acesso a um canal compartilhado.
 
 #### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -201,6 +213,9 @@ GET https://graph.microsoft.com/beta/teams/{0fddfdc5-f319-491f-a514-be1bc1bf9ddc
 
 
 #### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "string"

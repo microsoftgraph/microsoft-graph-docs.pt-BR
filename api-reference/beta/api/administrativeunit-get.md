@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ec4ee945746bea1b08ba66b0fcb010ca084f4ddf
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 99211fcb4b5e04ac3a31a305ba97a410e326dfb0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669176"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437398"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere as propriedades e as relações de um [objeto administrativeUnit](../resources/administrativeunit.md) .
 
-Como o **recurso administrativeUnit** dá suporte a extensões, `GET` você também pode usar a operação para obter propriedades [personalizadas](/graph/extensibility-overview) e dados de extensão em uma **instância administrativeUnit**.
+Como o **recurso administrativeUnit** dá suporte a [extensões](/graph/extensibility-overview), `GET` você também pode usar a operação para obter propriedades personalizadas e dados de extensão em uma **instância administrativeUnit** .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -39,7 +39,7 @@ GET /administrativeUnits/{id}
 GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -104,15 +104,14 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
-    "id": "4d7ea995-bc0f-45c0-8c3e-132e93bf95f8",
+    "id": "49eb93f2-a5a2-4567-ad66-76a3ebd01d84",
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "isMemberManagementRestricted": null,
-    "visibility": "HiddenMembership",
-    "membershipRule": null,
-    "membershipType": null,
-    "membershipRuleProcessingState": null
+    "visibility": null,
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipType": "Dynamic",
+    "membershipRuleProcessingState": "On"
 }
 ```
 

@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d1c97cb00b3ef6f3ac8a6b8d2588706f421571f6
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 3f70ce9fd2f0ed4c957f2d8bd7ed83b22f6728a8
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899096"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443036"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>Tipo de recurso unifiedRoleManagementPolicy
 
@@ -29,6 +29,7 @@ Herda de [entidade](../resources/entity.md).
 |[Obter unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)|[unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md)|Recupere os detalhes de uma política de gerenciamento de função.|
 |[Listar regras](../api/unifiedrolemanagementpolicy-list-rules.md)|[Coleção unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Obter as regras definidas para uma política de gerenciamento de função.|
 |[Obter unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Recuperar uma regra definida para uma política de gerenciamento de função.|
+|[Atualizar unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)|[unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|Atualize uma regra definida para uma política de gerenciamento de função.|
 
 
 ## <a name="properties"></a>Propriedades
@@ -36,13 +37,13 @@ Herda de [entidade](../resources/entity.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |description|String|Descrição da política.|
-|displayName|String|Nome de exibição da política.|
+|displayName|Cadeia de caracteres|Nome de exibição da política.|
 |id|String|Identificador exclusivo da política.|
 |isOrganizationDefault|Booliano|Isso só pode ser definido para `true` uma única política de todo o locatário que será aplicada a todos os escopos e funções. Defina scopeId como `/` e scopeType como `Directory`. Suporta `$filter` (`eq`, `ne`).|
 |lastModifiedBy|[identity](../resources/identity.md)|A identidade que modificou a configuração de função pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A hora em que a configuração de função foi modificada pela última vez.|
-|Scopeid|Cadeia de Caracteres|O identificador do escopo em que a política é criada. Pode ser para `/` o locatário ou uma ID de grupo. Obrigatório.|
-|scopeType|Cadeia de Caracteres|O tipo do escopo em que a política é criada. Um dos`Directory`. `DirectoryRole` Obrigatório.|
+|Scopeid|Cadeia de caracteres|O identificador do escopo em que a política é criada. Pode ser para `/` o locatário ou uma ID de grupo. Obrigatório.|
+|scopeType|Cadeia de caracteres|O tipo do escopo em que a política é criada. Um dos`Directory`. `DirectoryRole` Obrigatório.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

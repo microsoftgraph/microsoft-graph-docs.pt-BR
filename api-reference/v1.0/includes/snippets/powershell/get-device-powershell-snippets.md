@@ -1,16 +1,16 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: a7e6fedc5ae19e0f07351215670003c36ed1f559
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bdfbdb9ff4060befc13eb6323e4e1115ad66c943
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128872"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444492"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDeviceById -DeviceId $deviceId
+Get-MgDevice -DeviceId $deviceId
 
 ```

@@ -1,19 +1,19 @@
 ---
 title: 'Tutorial: Usar a API Privileged Identity Management (PIM) para atribuir Azure AD funções'
-description: Saiba como usar a API Privileged Identity Management (PIM) no Microsoft Graph para atribuir funções Azure AD privilegiadas.
+description: Saiba como criar um grupo de segurança atribuível a funções para a Assistência Técnica de TI e usar a API do PIM para atribuir a elegibilidade do grupo de segurança à função de Administrador do Usuário.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 0f15636c80b72ba67f56a28d4352236fa4c0e19e
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 2316e2f87c4b13ae53997dafc53ce5f4f29838c5
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461209"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446053"
 ---
 # <a name="tutorial-use-the-privileged-identity-management-pim-api-to-assign-azure-ad-roles"></a>Tutorial: Usar a API Privileged Identity Management (PIM) para atribuir Azure AD funções
 
-A API Graph PIM da Microsoft permite que as organizações gerenciem o acesso privilegiado a recursos Azure Active Directory (Azure AD). Ele também ajuda a gerenciar os riscos de acesso privilegiado limitando quando o acesso está ativo, gerenciando o escopo de acesso e fornecendo um log auditável de acesso privilegiado.
+A API do PIM do Microsoft Graph permite que as organizações gerenciem o acesso privilegiado a recursos no Azure Active Directory (Azure AD). Ele também ajuda a gerenciar os riscos de acesso privilegiado limitando quando o acesso está ativo, gerenciando o escopo de acesso e fornecendo um log auditável de acesso privilegiado.
 
 Neste tutorial, uma empresa fictícia chamada Contoso Limited deseja que sua Assistência Técnica de TI gerencie o ciclo de vida do acesso dos funcionários. A empresa identificou a função Azure AD Administrador de Usuários como a função privilegiada apropriada exigida pela Assistência Técnica de TI e usará a API do PIM para atribuir a função.
 
@@ -32,15 +32,15 @@ Atribuir qualificação em vez de um privilégio de Administrador de Usuário pe
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
 + Um locatário Azure AD trabalho com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
-+ Entre no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) como um usuário em uma função de Administrador Global.
++ Entre no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer) como um usuário em uma função de Administrador Global.
   + [Opcional] Inicie uma nova sessão anônima ou inprivate do navegador ou inicie uma sessão em um navegador anônimo. Você entrará mais adiante neste tutorial.
 + As seguintes permissões delegadas: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`e `RoleAssignmentSchedule.ReadWrite.Directory`, e .`RoleManagement.ReadWrite.Directory`
-+ Authenticator aplicativo instalado em seu telefone para registrar um usuário para autenticação multifator (MFA).
++ Aplicativo Authenticator instalado em seu telefone para registrar um usuário para autenticação multifator (MFA).
 
-Para consentir com as permissões necessárias no Graph Explorer:
+Para consentir com as permissões necessárias no Explorador do Graph:
 1. Selecione o ícone de reticências horizontais à direita dos detalhes da conta de usuário e escolha **Selecionar permissões**.
   
-      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Selecione permissões Graph Microsoft." border="true":::
+      :::image type="content" source="/graph/images/GE-Permissions/selectpermissions.png" alt-text="Selecione as permissões do Microsoft Graph." border="true":::
 
 2. Percorra a lista de permissões para estas permissões:
     + Agrupar (2), expandir e selecionar **Group.ReadWrite.All**.
@@ -52,7 +52,7 @@ Para consentir com as permissões necessárias no Graph Explorer:
    
    Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões. Para permissões `RoleEligibilitySchedule.ReadWrite.Directory` e `RoleAssignmentSchedule.ReadWrite.All` permissões, consenta em nome de sua organização.
 
-      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Consentir com permissões Graph Microsoft." border="true":::
+      :::image type="content" source="/graph/images/GE-Permissions/User.ReadWrite.All-consent.png" alt-text="Consentir com permissões do Microsoft Graph." border="true":::
 
 ## <a name="step-1-create-a-test-user"></a>Etapa 1: Criar um usuário de teste
 
@@ -277,11 +277,11 @@ O objeto de resposta vazio mostra que Aline não tem funções Azure AD existent
 
 Um tíquete de incidente CONTOSO: Segurança-012345 foi gerado no sistema de gerenciamento de incidentes da Contoso e a empresa exige que todos os tokens de atualização do funcionário sejam invalidados. Como membro da Assistência Técnica de TI, a Aline é responsável por cumprir essa tarefa.
 
-Primeiro, inicie o Authenticator em seu telefone e abra a conta de Aline Dupuy.
+Primeiro, inicie o aplicativo Authenticator em seu telefone e abra a conta de Aline Dupuy.
 
-Entre no Graph Explorer como Aline. Você pode usar uma sessão anônima ou um navegador anônimo para esta etapa. Ao fazer isso, você não interromperá sua sessão atual como usuário na função de Administrador Global. Como alternativa, você pode interromper a sessão atual saindo do Graph Explorer e entrando novamente como Aline.
+Entre no Explorador do Graph como Aline. Você pode usar uma sessão anônima ou um navegador anônimo para esta etapa. Ao fazer isso, você não interromperá sua sessão atual como usuário na função de Administrador Global. Como alternativa, você pode interromper a sessão atual saindo do Explorador do Graph e entrando novamente como Aline.
 
-Conectado como Aline, primeiro você alterará sua senha porque ela foi especificada durante a criação da conta. Em seguida, como o administrador configurou sua conta para MFA, você será solicitado a configurar sua conta no aplicativo Authenticator e ser desafiado para entrar na MFA. Isso ocorre porque o PIM requer essa MFA para todas as atribuições de função ativas.
+Conectado como Aline, primeiro você alterará sua senha porque ela foi especificada durante a criação da conta. Em seguida, como o administrador configurou sua conta para MFA, você será solicitado a configurar sua conta no aplicativo Authenticator e ser desafiado a entrar na MFA. Isso ocorre porque o PIM requer essa MFA para todas as atribuições de função ativas.
 
 Depois de entrar, ative sua função de Administrador de Usuário por cinco horas.
 
@@ -469,5 +469,5 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>Confira também
 
-+ [Tutorial: Atribuir Azure AD funções no Privileged Identity Management usando o Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim)
++ [Tutorial: Atribuir Azure AD funções no Privileged Identity Management o PowerShell do Microsoft Graph](/powershell/microsoftgraph/tutorial-pim)
 + [Visão geral do gerenciamento de funções por meio do PIM](/graph/api/resources/privilegedidentitymanagementv3-overview)

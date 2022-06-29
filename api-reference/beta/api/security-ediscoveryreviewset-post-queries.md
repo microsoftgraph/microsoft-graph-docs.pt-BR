@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 21403b32e16be18bd2024127782dcb9afe2bfbe8
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: f489128a7e4c666827e669a08bbcc6f3846f3c62
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094674"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440429"
 ---
 # <a name="create-ediscoveryreviewsetquery"></a>Criar ediscoveryReviewSetQuery
 Namespace: microsoft.graph.security
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,8 +51,8 @@ Você pode especificar as propriedades a seguir ao criar **um ediscoveryReviewSe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome da consulta. Obrigatório.|
-|contentQuery|String|A KQL consulta para o conjunto de revisão. [Saiba mais.](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|displayName|String|O nome da consulta. Obrigatório.|
+|contentQuery|String|A consulta KQL para o conjunto de revisão. [Saiba mais.](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
 
 
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewsetquery-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryreviewsetquery-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

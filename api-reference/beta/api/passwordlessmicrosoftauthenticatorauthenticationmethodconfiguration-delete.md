@@ -1,26 +1,26 @@
 ---
 title: Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
-description: Exclua um objetoMicrosoftAuthenticatorAuthenticationMethodConfiguration.
+description: Exclua um objeto PasswordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0f1f2c5cc8933fb9cdc7112fba914200716a1b2f
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: f8b19b816316b116889872184c97fcbf74c2f04d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395353"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439988"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Excluir passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (preterido)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remova as alterações feitas na [Microsoft Authenticator Telefone do método de](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) autenticação de entrada revertendo a política para sua configuração padrão.
+Remova as alterações feitas na política de método de autenticação de Entrada por Telefone do [Microsoft Authenticator](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) revertendo a política para sua configuração padrão.
 
 > [!CAUTION]
-> A MICROSOFT AUTHENTICATOR de autenticação sem senha Telefone a API do método de autenticação de login está preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de [Microsoft Authenticator de autenticação](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
+> A API do método de autenticação de autenticação de telefone sem senha do Microsoft Authenticator foi preterida e parou de retornar resultados em 31 de dezembro de 2020. Use a nova política de [método de autenticação do Microsoft Authenticator](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,9 +31,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Administrador de Política de Autenticação
+* Administrador da Política de Autenticação
 * Administrador Global
 
 
@@ -90,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

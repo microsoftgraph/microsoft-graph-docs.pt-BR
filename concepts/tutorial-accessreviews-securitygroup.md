@@ -1,52 +1,52 @@
 ---
-title: 'Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança'
-description: Os grupos de segurança do Azure AD podem ser usados para controlar o acesso aos recursos. Use a API de críticas de acesso para atestar que todos os membros do grupo de segurança precisam de sua associação e, por extensão, seu acesso aos recursos atribuídos ao grupo de segurança.
+title: 'Tutorial: Usar a API de revisões de acesso para examinar o acesso aos seus grupos de segurança'
+description: Saiba como usar a API de revisões de acesso para examinar o acesso a um grupo de segurança em seu locatário do Azure AD e testar chamadas à API antes de automatizá-las em scripts ou aplicativos.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: ccb305df3cc5dbdf21d97ce1b87791a6729d5df8
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 7f64afebad0057b305aa5c3dc2544753aad8d25f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337394"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443806"
 ---
-# <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso aos seus grupos de segurança
+# <a name="tutorial-use-the-access-reviews-api-to-review-access-to-your-security-groups"></a>Tutorial: Usar a API de revisões de acesso para examinar o acesso aos seus grupos de segurança
 
-A API de revisões de acesso no Microsoft Graph permite que as organizações auditem e atestem o acesso que as identidades (também chamadas de *entidades) são atribuídas* aos recursos na organização. Um dos métodos mais eficientes e eficazes para gerenciar privilégios de acesso para entidades de outros recursos é por meio de grupos de segurança do Azure AD. Por exemplo, centenas de usuários podem ser atribuídos a um grupo de segurança e ao grupo de segurança atribuído acesso a uma pasta. Usando a API de revisões de acesso, as organizações podem atestar periodicamente as entidades que têm acesso a esses grupos e, por extensão, outros recursos na organização.
+A API de revisões de acesso no Microsoft Graph permite que as organizações auditem e atestem o acesso de que as identidades (também chamadas de entidades de segurança) são *atribuídas* aos recursos na organização. Um dos métodos mais eficientes e eficazes para gerenciar privilégios de acesso para entidades de segurança para outros recursos é por meio Azure AD de segurança. Por exemplo, centenas de usuários podem ser atribuídos a um grupo de segurança e ao grupo de segurança atribuído acesso a uma pasta. Usando a API de revisões de acesso, as organizações podem atestar periodicamente as entidades de segurança que têm acesso a esses grupos e, por extensão, a outros recursos na organização.
 
-Suponha que você use grupos de segurança do Azure AD para atribuir identidades (também chamadas *de entidades*) aos recursos em sua organização. Periodicamente, você precisa atestar que todos os membros do grupo de segurança precisam de sua associação e, por extensão, seu acesso aos recursos atribuídos ao grupo de segurança.
+Suponha que você use Azure AD de segurança para atribuir acesso a identidades (também chamadas de *entidades* de segurança) aos recursos em sua organização. Periodicamente, você precisa atestar que todos os membros do grupo de segurança precisam de sua associação e, por extensão, seu acesso aos recursos atribuídos ao grupo de segurança.
 
-Este tutorial orienta você a usar a API de revisão de acesso para revisar o acesso a um grupo de segurança em seu locatário do Azure AD. Você pode usar Graph Explorer ou Postman para testar e testar suas chamadas de API de críticas de acesso antes de automatize-las em um script ou em um aplicativo. Esse ambiente de teste economiza tempo ajudando você a definir e validar corretamente suas consultas sem recompilar repetidamente seu aplicativo.
+Este tutorial orienta você a usar a API de revisões de acesso para examinar o acesso a um grupo de segurança em seu Azure AD locatário. Você pode usar o Explorador do Graph ou o Postman para testar suas chamadas à API de revisões de acesso antes de automatizá-las em um script ou um aplicativo. Esse ambiente de teste economiza tempo, ajudando você a definir e validar corretamente suas consultas sem recompilar repetidamente seu aplicativo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
-+ Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
-+ Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de Administrador Global ou Administrador de Governança de Identidade do Azure AD.
-  + [Opcional] Abra uma nova **janela de navegador incógnita****, anônima** ou **InPrivate**. Você entrará mais tarde neste tutorial.
++ Um locatário Azure AD trabalho com uma licença Azure AD Premium P2 ou EMS E5 habilitada.
++ Entre no [Explorador do Graph como](https://developer.microsoft.com/graph/graph-explorer) um usuário em uma função administrador global ou administrador de governança de identidade Azure AD função.
+  + [Opcional] Abra uma nova **janela do navegador anônima****, anônima** ou **InPrivate**. Você entrará mais adiante neste tutorial.
 + As seguintes permissões delegadas: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.
 
-Para consentir com as permissões necessárias no Graph Explorer:
-1. Selecione o ícone de engrenagem de configurações à direita dos detalhes da conta do usuário e selecione **Selecionar permissões**.
+Para consentir com as permissões necessárias no Explorador do Graph:
+1. Selecione o ícone de engrenagem de configurações à direita dos detalhes da conta de usuário e selecione **Selecionar permissões**.
 
-    :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Selecione Permissões Graph Microsoft." border="true":::
+    :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Selecione as permissões do Microsoft Graph." border="true":::
 
-2. Role a lista de permissões para essas permissões:
+2. Percorra a lista de permissões para estas permissões:
    + AccessReview (3), expanda e selecione **AccessReview.ReadWrite.All**.
-   + Grupo (2), expanda e selecione **Group.ReadWrite.All**.
+   + Agrupar (2), expandir e selecionar **Group.ReadWrite.All**.
   
-    Selecione **Consentimento** e, na janela pop-up, escolha **Consentir** em nome da sua organização e selecione Aceitar para  aceitar o consentimento das permissões.
+    Selecione **Consentimento** e, na janela pop-up, escolha Consentir  em nome de sua organização e, em seguida, selecione Aceitar para aceitar o consentimento das permissões.
 
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consentimento para permissões Graph Microsoft." border="true":::
+   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consentir com permissões do Microsoft Graph." border="true":::
    
 >[!NOTE]
->Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura.
+>Os objetos de resposta mostrados neste tutorial podem ser reduzidos para legibilidade.
    
 ## <a name="step-1-create-test-users-in-your-tenant"></a>Etapa 1: Criar usuários de teste em seu locatário
 
-Crie três novos usuários de teste executando a solicitação abaixo de três vezes, alterando os valores das propriedades **displayName**, **mailNickname** e **userPrincipalName** sempre. Grave as IDs dos três novos usuários de teste.
+Crie três novos usuários de teste executando a solicitação abaixo de três vezes, alterando os valores das propriedades **displayName**, **mailNickname** e **userPrincipalName** a cada vez. Registre as IDs dos três novos usuários de teste.
 
 ### <a name="request"></a>Solicitação
 <!-- {
@@ -71,7 +71,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Resposta
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,13 +90,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-create-a-security-group-assign-owners-and-add-members"></a>Etapa 2: criar um grupo de segurança, atribuir proprietários e adicionar membros
+## <a name="step-2-create-a-security-group-assign-owners-and-add-members"></a>Etapa 2: Criar um grupo de segurança, atribuir proprietários e adicionar membros
 
-Crie um grupo de segurança chamado **Criando segurança** que é o destino das análises de acesso neste tutorial. Atribua a esse grupo um proprietário de grupo e dois membros.
+Crie um grupo de segurança chamado **Building security** que seja o destino das revisões de acesso neste tutorial. Atribua a esse grupo um proprietário de grupo e dois membros.
 
 ### <a name="request"></a>Solicitação
 
-Na etapa anterior, você criou três usuários de teste. Um dos usuários será o proprietário do grupo enquanto os outros dois serão membros do grupo.
+Na etapa anterior, você criou três usuários de teste. Um dos usuários será o proprietário do grupo, enquanto os outros dois serão membros do grupo.
 
 Nesta chamada, substitua:
 + `d3bcdff4-4f80-4418-a65e-7bf3778c5dca` com a ID do proprietário do grupo.
@@ -150,24 +150,24 @@ Content-type: application/json
 }
 ```
 
-Na resposta, grave a ID do novo grupo para usá-lo posteriormente neste tutorial.
+Na resposta, registre a ID do novo grupo para usá-la posteriormente neste tutorial.
 
 ## <a name="step-3-create-an-access-review-for-the-security-group"></a>Etapa 3: Criar uma revisão de acesso para o grupo de segurança
 
 ### <a name="request"></a>Solicitação
 
 Nesta chamada, substitua os seguintes valores:
-+ `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` com a ID do grupo **de segurança de** criação. O escopo especifica que a revisão é aplicada a todos os membros do grupo **de segurança do** Building. Para obter mais opções para configurar o escopo, consulte a [seção Consulte também](#see-also) .
++ `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` com a ID do **grupo de segurança de** construção. O escopo especifica que a revisão é aplicada a todos os membros do **grupo de segurança building** . Para obter mais opções para configurar o escopo, consulte a [seção](#see-also) Consulte também.
 + Valor de **startDate** com a data de hoje e o valor de **endDate** com uma data de cinco dias a partir da data de início.
 
 A revisão de acesso tem as seguintes configurações:
 
-+ É uma autoavaliação como inferida quando você não especifica um valor para a **propriedade reviewers** . Portanto, cada membro do grupo irá autotestar a necessidade de manter o acesso ao grupo.
-+ O escopo da revisão são membros (diretos e indiretos) do grupo **de segurança de** construção.
-+ O revistor deve fornecer justificativa para o motivo pelo qual ele precisa manter o acesso ao grupo.
-+ A decisão padrão é `Deny` quando os revisadores não respondem à solicitação de revisão de acesso antes que a instância expire. A `Deny` decisão remove os membros do grupo do grupo.
-+ É uma revisão de acesso único que termina após cinco dias. Portanto, depois que o acesso for concedido, o usuário não precisará fazer o autoteste novamente dentro do período de revisão de acesso.
-+ As entidades que são definidas no escopo da revisão receberão notificações por email e lembretes solicitando que eles autoatestem a necessidade de manter o acesso.
++ É uma auto-revisão como inferida quando você não especifica um valor para a propriedade **dos revisores** . Portanto, cada membro do grupo atestará automaticamente a necessidade de manter o acesso ao grupo.
++ O escopo da revisão são membros (diretos e indiretos) do **grupo de segurança de** criação.
++ O revistor deve fornecer uma justificativa para o motivo pelo qual ele precisa manter o acesso ao grupo.
++ A decisão padrão é `Deny` quando os revisores não respondem à solicitação de revisão de acesso antes que a instância expire. A `Deny` decisão remove os membros do grupo.
++ É uma revisão de acesso única que termina após cinco dias. Portanto, depois que o acesso for concedido, o usuário não precisará atestar novamente dentro do período de revisão de acesso.
++ As entidades de segurança definidas no escopo da revisão receberão notificações por email e lembretes solicitando que eles autotestem a necessidade de manter o acesso.
 
 <!-- {
   "blockType": "request",
@@ -267,11 +267,11 @@ Content-type: application/json
 }
 ```
 
-O status da revisão de acesso acima é marcado como **NotStarted**. Você pode recuperar a revisão de acesso (GET `https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b`) para monitorar o status e, quando ela estiver marcada como **InProgress**, as instâncias foram criadas para a revisão de acesso e as decisões podem ser publicadas. Você também pode recuperar a revisão de acesso para ver as configurações completas da revisão de acesso.
+O status da revisão de acesso acima é marcado **como NotStarted**. Você pode recuperar a revisão de acesso (GET `https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b`) para monitorar o status e, quando ele estiver marcado como **InProgress**, as instâncias foram criadas para a revisão de acesso e as decisões podem ser postadas. Você também pode recuperar a revisão de acesso para ver as configurações completas da revisão de acesso.
 
 ## <a name="step-4-list-instances-of-the-access-review"></a>Etapa 4: Listar instâncias da revisão de acesso
 
-Depois que **o status** da revisão de acesso for marcado como `InProgress`, execute a seguinte consulta para listar todas as instâncias da definição de revisão de acesso. Como você criou uma revisão de acesso único na Etapa 3, a solicitação retorna apenas uma instância com uma ID como a ID da definição de agendamento.
+Depois que **o status** da revisão de acesso for marcado `InProgress`como , execute a consulta a seguir para listar todas as instâncias da definição de revisão de acesso. Como você criou uma revisão de acesso única na Etapa 3, a solicitação retorna apenas uma instância com uma ID como a ID da definição de agenda.
 
 ### <a name="request"></a>Solicitação
 
@@ -287,7 +287,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### <a name="response"></a>Resposta
 
-Nesta resposta, o **status** da instância `InProgress` é porque **startDateTime** é passado e **endDateTime** está no futuro. Se **startDateTime** estiver no futuro, o status será `NotStarted`. Por outro lado, se **endDateTime** estiver no passado, o status será `Completed`.
+Nessa resposta, o **status da** instância `InProgress` ocorre porque **startDateTime** é passado e **endDateTime** está no futuro. Se **startDateTime** estiver no futuro, o status será `NotStarted`. Por outro lado, se **endDateTime** estiver no passado, o status será `Completed`.
 
 <!-- {
   "blockType": "response",
@@ -320,13 +320,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-5-who-was-contacted-for-the-review"></a>Etapa 5: Who foi contatado para a revisão?
+## <a name="step-5-who-was-contacted-for-the-review"></a>Etapa 5: Quem foi contatado para a revisão?
 
-Você pode confirmar que todos os membros do grupo de **segurança** do Building foram contatados para postar suas decisões de revisão para esta instância da revisão de acesso.
+Você pode confirmar que todos os membros do  grupo de segurança do Edifício foram contatados para postar suas decisões de revisão para esta instância da revisão de acesso.
 
 ### <a name="request"></a>Solicitação
 
-Nesta chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID da definição de agenda de revisão de acesso.
+Nesta chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID da definição da agenda de revisão de acesso.
 
 <!-- {
   "blockType": "request",
@@ -338,7 +338,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### <a name="response"></a>Resposta
 
-A resposta a seguir mostra que os dois membros do grupo de **segurança do Building** foram notificados da revisão pendente.
+A resposta a seguir mostra que os dois membros **do grupo de** segurança building foram notificados sobre sua revisão pendente.
 
 <!-- {
   "blockType": "response",
@@ -376,7 +376,7 @@ Você está interessado nas decisões tomadas para a instância da revisão de a
 
 ### <a name="request"></a>Solicitação
 
-Nesta chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID de sua definição de agenda de revisão de acesso e a instância.
+Nessa chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID da definição da agenda de revisão de acesso e pela instância.
 
 <!-- {
   "blockType": "request",
@@ -388,7 +388,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### <a name="response"></a>Resposta
 
-A resposta a seguir mostra as decisões tomadas na instância da revisão. Como **a segurança de criação** tem dois membros, dois itens de decisão são esperados.
+A resposta a seguir mostra as decisões tomadas na instância da revisão. Como **o Building Security** tem dois membros, dois itens de decisão são esperados.
 
 <!-- {
   "blockType": "response",
@@ -482,24 +482,24 @@ Content-type: application/json
 }
 ```
 
-Na chamada, a **propriedade decision** tem o `NotReviewed` valor de porque os membros do grupo não concluíram seu autoteste. Siga a Etapa 7 para saber como cada membro pode autotestar sua necessidade de revisão de acesso.
+Na chamada, a **propriedade de** decisão tem `NotReviewed` o valor de porque os membros do grupo não concluiram o autoteste. Siga a Etapa 7 para saber como cada membro pode atestar automaticamente sua necessidade de revisão de acesso.
 
-## <a name="step-7-self-review-a-pending-access-decision"></a>Etapa 7: revisar uma decisão de acesso pendente
+## <a name="step-7-self-review-a-pending-access-decision"></a>Etapa 7: revisar automaticamente uma decisão de acesso pendente
 
-Na Etapa 3, você configurou a revisão de acesso como auto-revisão. Essa configuração exige que ambos os membros do grupo de **segurança** de construção autoatestem a necessidade de manter o acesso ao grupo.
+Na Etapa 3, você configurou a revisão de acesso como auto-revisão. Essa configuração exige que ambos os membros do grupo de **segurança de construção** autotestem sua necessidade de manter o acesso ao grupo.
 
 >[!NOTE]
->Conclua esta etapa como um dos dois membros do **grupo de segurança de** construção.
+>Conclua esta etapa como um dos dois membros do **grupo de segurança De** construção.
 
-Nesta etapa, você lista as avaliações pendentes de acesso e, em seguida, conclui o processo de autoteste. Você pode concluir essa etapa de duas maneiras, usando a API ou usando o [portal Meu Acesso](https://myaccess.microsoft.com/). O outro revistor não concluirá esse processo e, em vez disso, você permitirá que as decisões padrão sejam aplicadas à revisão de acesso.
+Nesta etapa, você lista as revisões de acesso pendentes e, em seguida, conclui o processo de autoteste. Você pode concluir essa etapa de uma das duas maneiras, usando a API ou o [portal Meus Acessos](https://myaccess.microsoft.com/). O outro revisador não concluirá esse processo e, em vez disso, você permitirá que as decisões padrão sejam aplicadas à revisão de acesso.
 
-Inicie uma nova **sessão de** navegador de navegação **anônima, anônima** ou **InPrivate** e entre como um dos dois membros do grupo de segurança **De** criação. Ao fazer isso, você não interromperá sua sessão de administrador atual. Entraremos como Adele Vance. Como alternativa, você pode interromper a sessão de administrador atual fazendo logon no Graph Explorer e fazendo logon de volta como um dos dois membros do grupo.
+Inicie uma nova **sessão** de navegador de navegação **anônima, anônima** ou **InPrivate** e entre como um dos dois membros do **grupo de segurança De** construção. Ao fazer isso, você não interromperá sua sessão de administrador atual. Entraremos como Adele Vance. Como alternativa, você pode interromper a sessão de administrador atual fazendo logon no Explorador do Graph e fazendo logon novamente como um dos dois membros do grupo.
 
-### <a name="method-1-use-the-access-reviews-api-to-self-review-pending-access"></a>Método 1: Usar a API de críticas de acesso para auto-revisar o acesso pendente
+### <a name="method-1-use-the-access-reviews-api-to-self-review-pending-access"></a>Método 1: Usar a API de revisões de acesso para auto-examinar o acesso pendente
 
-#### <a name="list-your-access-reviews-decision-items"></a>Listar itens de decisão de críticas de acesso
+#### <a name="list-your-access-reviews-decision-items"></a>Listar seus itens de decisão de revisões de acesso
 
-Nesta chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID da definição de agenda de revisão de acesso.
+Nesta chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID da definição da agenda de revisão de acesso.
 
 ##### <a name="request"></a>Solicitação
 
@@ -508,7 +508,7 @@ GET https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definition
 ```
 
 ##### <a name="response"></a>Resposta
-Na resposta abaixo, você (Adele Vance) tem uma revisão de **acesso pendente (** decisão é `NotReviewed`) para atestar a si mesmo. As **propriedades principal** **e de** recurso indicam a entidade a que a decisão se aplica e o recurso ao qual o acesso está sob revisão. Nesse caso, Adele Vance e o **grupo de segurança** de Construção, respectivamente.
+Na resposta abaixo, você (Adele Vance) tem uma revisão de **acesso pendente (**`NotReviewed`a decisão é) para atestar automaticamente. As **propriedades de** **entidade de** segurança e recurso indicam a entidade de segurança à qual a decisão se aplica e o recurso ao qual o acesso está sob revisão. Nesse caso, Adele Vance e o **grupo de segurança do** Edifício, respectivamente.
 
 ```http
 HTTP/1.1 200 OK
@@ -562,11 +562,11 @@ Content-type: application/json
 
 #### <a name="record-a-decision"></a>Registrar uma decisão
 
-Para concluir a revisão de acesso, Adele Vance confirmará a necessidade de manter o acesso ao **grupo de segurança do** Building.
+Para concluir a revisão de acesso, Adele Vance confirmará a necessidade de manter o acesso ao **grupo de segurança building** .
 
 ##### <a name="request"></a>Solicitação
 
-Nesta chamada, substitua `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` pela ID `c7de8fba-4d6a-4fab-a659-62ff0c02643d` da definição do cronograma de revisão de acesso e pela ID do item de decisão pendente retornado na etapa anterior.
+Nesta chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID `c7de8fba-4d6a-4fab-a659-62ff0c02643d` da definição da agenda de revisão de acesso e pela ID do item de decisão pendente retornado na etapa anterior.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/identitygovernance/accessReviews/definitions/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/instances/2d56c364-0695-4ec6-8b92-4c1db7c80f1b/decisions/c7de8fba-4d6a-4fab-a659-62ff0c02643d
@@ -586,43 +586,43 @@ HTTP/1.1 204 No Content
 
 #### <a name="verify-the-decisions"></a>Verificar as decisões
 
-Para verificar as decisões que você registrou para sua revisão de acesso, [liste seus itens de decisão de revisão de acesso](#list-your-access-reviews-decision-items). Embora o período de revisão de acesso não tenha expirado nem as decisões se apliquem, **o applyResult** `New` será marcado como e você poderá alterar a decisão.
+Para verificar as decisões que você registrou para sua revisão de acesso, [liste os itens de decisão de revisão de acesso](#list-your-access-reviews-decision-items). Embora o período de revisão de acesso não tenha expirado nem as decisões se apliquem, **o applyResult** `New` será marcado como e você terá permissão para alterar a decisão.
 
-Agora você pode sair e sair da sessão de navegador incógnita.
+Agora você pode sair e sair da sessão anônima do navegador.
 
-### <a name="method-2-use-the-my-access-portal"></a>Método 2: Usar o portal Meu Acesso
+### <a name="method-2-use-the-my-access-portal"></a>Método 2: Usar o portal Meus Acessos
 
-Os revisadores também podem visitar o [portal do Meu Acesso](https://myaccess.microsoft.com/) para verificar suas instâncias pendentes de revisão de acesso.
+Os revisores também podem visitar o [portal Meus Acessos](https://myaccess.microsoft.com/) para verificar suas instâncias de revisão de acesso pendentes.
 
-+ Listar as avaliações de acesso pendentes. O usuário pode seguir uma das duas maneiras de chegar lá:
-  + Opção 1: Selecione **Revisar botão de acesso** da notificação de email recebida na caixa de entrada de email. A notificação de email é como a captura de tela a seguir. Selecionar esse botão os direciona para a revisão de acesso pendente.
++ Liste as revisões de acesso pendentes. O usuário pode seguir uma das duas maneiras de chegar lá:
+  + Opção 1: selecione **o botão Revisar acesso** na notificação por email recebida na caixa de entrada de email. A notificação por email é semelhante à captura de tela a seguir. Selecionar esse botão direciona-os para a revisão de acesso pendente.
 
-  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/emailnotification.png" alt-text="Notificação por email para revisar seu acesso." border="true":::
+  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/emailnotification.png" alt-text="Notificação por email para examinar seu acesso." border="true":::
 
-  + Opção 2: Acesse o [portal Meu Acesso](https://myaccess.microsoft.com/) . Selecione o **menu Avaliações do Access** e selecione a **guia Grupos e Aplicativos** .
+  + Opção 2: acesse o [portal Meus Acessos](https://myaccess.microsoft.com/) . Selecione o menu **revisões do Access** e selecione a **guia Grupos e** Aplicativos.
 
-+ Na lista de avaliações de acesso, selecione a revisão de acesso para a qual você deseja postar a decisão. Selecione **Sim** para postar a decisão de que você ainda precisa de acesso à **segurança de criação**. Insira um motivo e selecione **Enviar**.
++ Na lista de revisões de acesso, selecione a revisão de acesso para a qual você deseja postar a decisão. Selecione **Sim** para postar a decisão de que você ainda precisa de acesso ao **Building Security**. Insira um motivo e selecione **Enviar**.
 
-  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Autoateste a necessidade de manter o acesso a um recurso.":::
+  :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/selfattest.png" alt-text="Autoteste a necessidade de manter o acesso a um recurso.":::
 
 
-Agora você pode sair e sair da sessão de navegador incógnita.
+Agora você pode sair e sair da sessão anônima do navegador.
 
 ## <a name="step-8-confirm-the-decisions-and-the-status-of-the-access-review"></a>Etapa 8: Confirmar as decisões e o status da revisão de acesso
 
-De volta à sessão principal do navegador em que você ainda está conectado como administrador global, repita a Etapa 4 para ver se a propriedade **de** decisão de Adele Vance agora é `Approve`. Quando a revisão de acesso terminar ou expirar, a decisão padrão será `Deny` registrada para Alex Wilber. As decisões serão aplicadas automaticamente porque **o autoApplyDecisionsEnabled** `true` foi definido como e o período da instância de revisão de acesso terá terminado. Adele manterá o acesso ao grupo **de segurança** De criação e Alex será removido automaticamente do grupo.
+De volta à sessão principal do navegador em que você ainda está conectado como administrador global, repita a Etapa 4 para ver se a propriedade de  decisão de Adele Vance está agora`Approve`. Quando a revisão de acesso terminar ou expirar, a decisão padrão `Deny` será registrada para Alex Wilber. As decisões serão aplicadas automaticamente porque **o autoApplyDecisionsEnabled** `true` foi definido como e o período da instância de revisão de acesso terá terminado. Adele manterá o acesso ao grupo de **segurança** building e Alex será removido automaticamente do grupo.
 
-Parabéns! Você criou uma revisão de acesso e atestou sua necessidade de manter o acesso. Você só autotestou `Deny` uma vez e manterá o acesso até que ele seja removido por meio de uma decisão de outra instância de revisão de acesso ou por meio de outro processo interno.
+Parabéns! Você criou uma revisão de acesso e autotestou sua necessidade de manter o acesso. Você só autotestou `Deny` uma vez e manterá o acesso até que ele seja removido por meio de uma decisão de outra instância de revisão de acesso ou por meio de outro processo interno.
 
 ## <a name="step-9-clean-up-resources"></a>Etapa 9: Limpar recursos
 
-Exclua os recursos criados para este tutorial: o  grupo de segurança de criação, a definição do agendamento de revisão de acesso e os três usuários de teste.
+Exclua os recursos que você criou para este tutorial **– o grupo** de segurança de criação, a definição do agendamento de revisão de acesso e os três usuários de teste.
 
 ### <a name="delete-the-security-group"></a>Excluir o grupo de segurança
 
 #### <a name="request"></a>Solicitação
 
-Nesta chamada, substitua pela `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` **id** de **Segurança de construção**.
+Nesta chamada, substitua pela `eb75ccd2-59ef-48b7-8f76-cc3f33f899f4` **ID de** Segurança **de construção**.
 
 <!-- {
   "blockType": "request",
@@ -644,7 +644,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="delete-the-access-review-definition"></a>Excluir a definição de revisão de acesso
 
-Nesta chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID da sua definição de revisão de acesso. Como a definição do cronograma de revisão de acesso é o plano para a revisão de acesso, excluir a definição removerá as configurações, instâncias e decisões.
+Nesta chamada, substitua pela `2d56c364-0695-4ec6-8b92-4c1db7c80f1b` ID da definição de revisão de acesso. Como a definição do agendamento de revisão de acesso é o blueprint para a revisão de acesso, a exclusão da definição removerá as configurações, instâncias e decisões.
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -665,7 +665,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### <a name="delete-the-three-test-users"></a>Excluir os três usuários de teste
-Nesta chamada, substitua `3b8ceebc-49e6-4e0c-9e14-c906374a7ef6` pela ID de um de seus usuários de teste. Repita esta etapa duas vezes com as IDs dos outros dois usuários para excluí-las.
+Nessa chamada, substitua pela `3b8ceebc-49e6-4e0c-9e14-c906374a7ef6` ID de um de seus usuários de teste. Repita essa etapa duas vezes com as IDs dos outros dois usuários para excluí-las.
 
 #### <a name="request"></a>Solicitação
 
@@ -688,12 +688,11 @@ HTTP/1.1 204 No Content
 
 ## <a name="conclusion"></a>Conclusão
 
-Você criou uma revisão de acesso na qual as entidades de segurança autotestam a necessidade de manter o acesso a um recurso, nesse caso, ao grupo **de** segurança do Building.
+Você criou uma revisão de acesso na qual as entidades de segurança autotestam a necessidade de manter o acesso a um recurso, nesse caso, o grupo **de** segurança building.
 
-Este tutorial demonstrou um dos cenários pela API de análises de acesso do Azure AD. A API de análises de acesso oferece suporte a diferentes cenários por meio de uma combinação de recursos, entidades e revisadores para atender às suas necessidades de atestado de acesso. Para obter mais informações, consulte a [API de críticas de acesso](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true).
+Este tutorial demonstrou um dos cenários pela API de Azure AD de acesso. A API de revisões de acesso dá suporte a diferentes cenários por meio de uma combinação de recursos, entidades de segurança e revisores para atender às suas necessidades de atestado de acesso. Para obter mais informações, consulte a [API de revisões de acesso](/graph/api/resources/accessreviewsv2-overview).
 
 ## <a name="see-also"></a>Confira também
 
-+ [API de avaliações do Access](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
-+ [O que são avaliações de acesso do Azure AD?](/azure/active-directory/governance/access-reviews-overview)
-+ [Revise o acesso a grupos ou aplicativos no Azure AD access reviews](/azure/active-directory/governance/review-your-access)
++ [O que são Azure AD revisões de acesso?](/azure/active-directory/governance/access-reviews-overview)
++ [Examine o acesso para você mesmo a grupos ou aplicativos Azure AD revisões de acesso](/azure/active-directory/governance/review-your-access)

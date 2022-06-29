@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2a3add855edad204d45be5aaaa20d02afef2cd84
-ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
+ms.openlocfilehash: ca9c3edd7d4016fb0d0ced1c71f304504bf0ef69
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65924035"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439211"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
-**Observação**: para as permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure AD. Para obter mais detalhes, consulte [Autorização para as APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+>**Observação**: para as permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure AD. Para obter mais detalhes, consulte [Autorização para as APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -102,9 +102,12 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - Está Licenciado
 - Período de Relatório
 
+> [!NOTE] 
+> Os valores na contagem organizada de reuniões podem não ser a soma da contagem organizada de reuniões ad hoc, contagem organizada de reuniões únicas agendadas e contagem organizada de reuniões recorrentes agendadas que um usuário organizou durante o período de tempo especificado. Isso ocorre porque o valor de reuniões não classificadas não é inserido no arquivo CSV de saída. Para obter detalhes, confira [Relatório de atividades do usuário do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/user-activity-report).
+
 ## <a name="example"></a>Exemplo
 
-#### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
@@ -119,7 +122,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(peri
 ```
 
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
 

@@ -1,15 +1,15 @@
 ---
 title: Introdução à API dos métodos de autenticação do Microsoft Graph
-description: A API dos métodos de autenticação do Microsoft Graph oferece às organizações a capacidade de gerenciar programaticamente os métodos de autenticação dos usuários, registrando os usuários para autenticação multifator (MFA) e redefinição de senha de autoatendimento (SSPR).
+description: Saiba como gerenciar os métodos de autenticação dos usuários e registrar os usuários para realizar MFA (autenticação multifator) e SSPR (redefinição de senha de autoatendimento).
 author: mmcla
 ms.localizationpriority: high
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: bfd0167e0237a35dc6fd19a43e917d7c8899cf0d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19b9e17d380006254b20d083afdf7adc1f985c17
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122911"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437027"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Introdução à API dos métodos de autenticação do Microsoft Graph
 
@@ -255,11 +255,10 @@ E sucesso! Você viu o perfil de um usuário, seus métodos de autenticação, c
 
 Está procurando a referência de API para métodos de autenticação?
 
-* Confira [Visão geral da API dos métodos de autenticação do Azure AD](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta)
+* Confira [Visão geral da API dos métodos de autenticação do Azure AD](/graph/api/resources/authenticationmethods-overview)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Descubra como [usar as APIs REST do método de autenticação](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta).
 * Use o Azure AD para se [autenticar](./auth/index.yml) no Microsoft Graph.
 * Integre o [logon do Azure AD](https://azure.microsoft.com/develop/identity/signin/) ao seu aplicativo ou website.
 * Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.

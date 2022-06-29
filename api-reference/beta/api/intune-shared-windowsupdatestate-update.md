@@ -1,39 +1,39 @@
 ---
 title: Atualizar windowsUpdateState
 description: Atualize as propriedades de um objeto windowsUpdateState.
-author: rolyon
-ms.localizationpriority: medium
+author: dougeby
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a32c93de0c652800eac00279d39ff60c5947c488
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41580684e796fd70ac3a588bd6726090f07f6352
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138607"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445213"
 ---
 # <a name="update-windowsupdatestate"></a>Atualizar windowsUpdateState
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um [objeto windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)
+Atualize as propriedades de um [objeto windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Atualização de Software** | DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+| &nbsp;&nbsp; **Atualização de Software** | DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Atualização de Software** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp; **Atualização de Software** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -51,27 +51,27 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto windowsUpdateState.](../resources/intune-shared-windowsupdatestate.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [o windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Esta é a ID da entidade.|
-|deviceId|Cadeia de caracteres|A id do dispositivo.|
-|userId|Cadeia de caracteres|A id do usuário.|
+|id|Cadeia de caracteres|Essa é a ID da entidade.|
+|deviceId|Cadeia de caracteres|A ID do dispositivo.|
+|userId|Cadeia de caracteres|A ID do usuário.|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|
 |userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows status udpate. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|qualityUpdateVersion|Cadeia de Caracteres|A Versão de Atualização de Qualidade do dispositivo.|
-|featureUpdateVersion|Cadeia de Caracteres|A versão atual de atualização de recursos do dispositivo.|
-|lastScanDateTime|DateTimeOffset|A data em que o Windows Update Agent fez uma verificação bem-sucedida.|
-|lastSyncDateTime|DateTimeOffset|Última data em que o dispositivo sincroniza com Microsoft Intune.|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Status de udpate do Windows. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|qualityUpdateVersion|Cadeia de caracteres|A versão de atualização de qualidade do dispositivo.|
+|featureUpdateVersion|String|A versão atual de atualização de recursos do dispositivo.|
+|lastScanDateTime|DateTimeOffset|A data em que o agente Windows Update fez uma verificação bem-sucedida.|
+|lastSyncDateTime|DateTimeOffset|Última data em que o dispositivo é sincronizado com Microsoft Intune.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

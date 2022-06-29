@@ -1,23 +1,23 @@
 ---
 title: Obter grupo termStore
-description: Leia as propriedades e as relações de um objeto group.
+description: Leia as propriedades e as relações de um objeto de grupo.
 author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 913e6b38e3890bb0f6bbd9980daff8b312ab030e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5c1a55e07363234eb3da0e607981379b0fc2f724
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395990"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440114"
 ---
 # <a name="get-termstore-group"></a>Obter grupo termStore
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um objeto de grupo de armazenamento [de](../resources/termstore-group.md) termos.
+Leia as propriedades e as relações de um objeto de grupo de repositório [de](../resources/termstore-group.md) termos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto microsoft.graph.termStore.group](../resources/termstore-group.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -148,6 +148,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-termstore-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-termstore-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -175,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-get-a-site-collection-termstore-group"></a>Exemplo 3: Obter um grupo de repositório de termos de conjunto de sites
+### <a name="example-3-get-a-site-collection-termstore-group"></a>Exemplo 3: Obter um grupo termStore do conjunto de sites
 #### <a name="request"></a>Solicitação
 
 
@@ -208,6 +212,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-group-termstore-sites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-termstore-sites-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

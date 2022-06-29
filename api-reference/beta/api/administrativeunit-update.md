@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2f9ca520011b3bd8e6ce80266fbdaa276a44c929
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: f1c005be251f66e410d9bedcb8caaef9a12fff3c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898116"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436908"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
@@ -29,10 +29,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.ReadWrite.All |
 
-Para atualizar uma unidade administrativa, a entidade de chamada deve receber uma das seguintes funções do [Azure AD](/azure/active-directory/roles/permissions-reference):
+Para atualizar uma unidade administrativa, a entidade de chamada deve receber uma das seguintes Azure AD [funções](/azure/active-directory/roles/permissions-reference):
 
 * Administrador de Função Com Privilégios
-* Administrador Global
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -53,8 +53,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|description|String|Descrição da unidade administrativa.|
-|displayName|String|Nome de exibição da unidade administrativa.|
+| description | Cadeia de caracteres | Descrição da unidade administrativa.|
+| displayName | String | Nome de exibição da unidade administrativa. |
+| membershipRule | String | Regra de associação dinâmica para a unidade administrativa. Para obter mais informações sobre as regras que você pode usar para unidades administrativas dinâmicas e grupos dinâmicos, consulte [Usando atributos para criar regras avançadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).|
+| membershipRuleProcessingState | String | Usado para controlar se a regra de associação dinâmica é processada ativamente. Defina como `On` quando você deseja que a regra de associação dinâmica esteja ativa `Paused` e se você deseja parar de atualizar a associação dinamicamente. |
+| membershipType | Cadeia de caracteres | Tipo de associação para a unidade administrativa. Pode ser `dynamic` ou `assigned`. |
+| visibility | Cadeia de caracteres | Visibilidade da unidade administrativa. Se não estiver definido, o padrão será `public`. Pode ser definido como `HiddenMembership`, o que oculta a associação de não membros. |
 
 Como o **recurso administrativeUnit** dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo em propriedades [personalizadas](/graph/extensibility-overview) de uma extensão em uma instância **administrativeUnit** existente.
 
@@ -63,6 +67,7 @@ Como o **recurso administrativeUnit** dá suporte a extensões, `PATCH` você po
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
+O exemplo a seguir define uma regra de associação dinâmica em uma unidade administrativa existente para incluir todos os usuários cujo país é Estados Unidos.
 
 ### <a name="request"></a>Solicitação
 
@@ -77,7 +82,9 @@ PATCH https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c
 Content-type: application/json
 
 {
-    "displayName": "Greater Seattle District Technical Schools"
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.country -eq \"United States\")",
+    "membershipRuleProcessingState": "On"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

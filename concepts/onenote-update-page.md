@@ -1,15 +1,15 @@
 ---
-title: Atualizar o conteúdo da página do OneNote
-description: " Blocos de anotações empresariais no Microsoft 365"
+title: Atualizar o conteúdo da página do OneNote usando a API do OneNote
+description: Atualize o conteúdo de uma página do OneNote enviando uma solicitação PATCH para o ponto de extremidade de conteúdo da página. Em seguida, envie um objeto de alteração JSON no corpo da mensagem.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: d5a445877d8c814ef223ed89a540f9606afa1863
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: e11cec09e5b54f6beef43f223264d004f341b11a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223037"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442812"
 ---
 # <a name="update-onenote-page-content"></a>Atualizar o conteúdo da página do OneNote
 
@@ -59,7 +59,7 @@ Suas alterações serão enviadas no corpo da mensagem como uma matriz de objeto
 A matriz a seguir define duas alterações. A primeira insere uma imagem acima de um parágrafo como um irmão, e a segunda acrescenta um item em uma lista como um último filho.
 
 > [!NOTE]
-> Ao atualizar uma imagem em uma página OneNote, não é possível usar links de www. O serviço não tentará baixar recursos aleatórios. Em vez disso, a imagem deve fazer parte da solicitação, seja por uma imagem-data-url ou um nome de parte de uma solicitação de várias partes.
+> Ao atualizar uma imagem em uma página do OneNote, você não pode usar links www. O serviço não tentará baixar recursos aleatórios. Em vez disso, a imagem deve fazer parte da solicitação, seja por uma url de dados de imagem ou um nome de parte de uma solicitação de várias partes.
 
 ```json
 [
@@ -127,7 +127,8 @@ O Microsoft Graph gera valores de **id** para que os elementos na página possam
 
 `GET ../notes/pages/{page-id}/content?includeIDs=true` 
 
-> **Observação:** a API descarta todos os valores de **id** na [HTML de entrada](onenote-input-output-html.md) das solicitações de criar página e atualizar página.
+> [!NOTE]
+> A API descarta todos os **valores de ID** definidos no [HTML](onenote-input-output-html.md) de entrada de solicitações de página de criação e de página de atualização.
 
 O exemplo a seguir mostra IDs geradas para um parágrafo e uma imagem no [HTML de saída](onenote-input-output-html.md) de uma página.
 
@@ -442,7 +443,7 @@ Content-Type: image/png
 | Dados da solicitação | Descrição |  
 |------|------|  
 | Protocolo | Todas as solicitações usam o protocolo HTTPS de SSL/TLS. |  
-| Cabeçalho de autorização | <p>`Bearer {token}`, onde `{token}` é um token de acesso do OAuth 2.0 válido para o aplicativo registrado.</p><p>Se ele estiver ausente ou for inválido, a solicitação falhará com um código de status 401. Confira [Autenticação e permissões](permissions-reference.md).</p> |  
+| Cabeçalho de autorização | <p>`Bearer {token}`, onde `{token}` é um token de acesso do OAuth 2.0 válido para o aplicativo registrado.</p><p>Se ausente ou inválido, a solicitação falha com um código de status 401. Consulte [Autenticação e permissões](permissions-reference.md).</p> |  
 | Cabeçalho content-type | <p>`application/json` para a matriz de objetos de alteração JSON, seja enviado diretamente no corpo da mensagem, seja na parte "Comandos" obrigatória de [solicitações de diversas partes](#multipart-request-with-binary-content).</p><p>As solicitações de diversas partes são necessárias quando se enviam dados binários e usam o tipo de conteúdo `multipart/form-data; boundary=part-boundary`, onde `{part-boundary}` é uma cadeia de caracteres que sinaliza o início e o término de cada parte de dados.</p> |  
 
 <br/> 
@@ -466,10 +467,8 @@ O segmento `version` na URL representa a versão do Microsoft Graph que você de
 
 `me` serve para o conteúdo do OneNote que o usuário atual pode acessar (exclusivo e compartilhado). `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a API de [usuários](/graph/v1.0/resources/user.md).
 
-
-> **Observação:** para obter as ids de usuário, faça uma solicitação GET em `https://graph.microsoft.com/v1.0/users`.
-
-
+> [!NOTE]
+> Você pode obter IDs de usuário fazendo uma solicitação GET em `https://graph.microsoft.com/v1.0/users`.
 
 <a name="permissions"></a>
 

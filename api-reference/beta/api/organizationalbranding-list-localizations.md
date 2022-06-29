@@ -1,16 +1,16 @@
 ---
 title: Listar localizações
-description: Obter os recursos organizationalBrandingLocalization da propriedade de navegação localizações.
+description: Obtenha os recursos organizationalBrandingLocalization da propriedade de navegação localizações.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: baf35d8abfcf817a6e76a3b70125f16c9331e46c
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: a5faad8954bfe549127570fe1bb7dcc7fbfe56b0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63398041"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438973"
 ---
 # <a name="list-localizations"></a>Listar localizações
 Namespace: microsoft.graph
@@ -39,7 +39,7 @@ GET /organization/{organizationId}/branding/localizations
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte apenas ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte apenas ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-organizationalbrandinglocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

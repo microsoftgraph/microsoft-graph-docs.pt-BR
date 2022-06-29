@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 975b08d9850ca7512813b222491c608e18fdd065
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 237a1d6be02d489d052078a7547a7de64622842b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133451"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436255"
 ---
 # <a name="create-externalgroupmember"></a>Criar externalGroupMember
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ Você pode especificar as propriedades a seguir ao criar **um externalGroupMembe
 
 | Propriedade       | Tipo                    | Descrição                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria a objectId no caso de Azure Active Directory ou grupos e externalGroupId no caso de grupos externos. Obrigatório.                                   |
+| id             | Cadeia de caracteres                  | O exclusivo `id` do membro. Seria a objectId no caso de usuários ou grupos do Azure Active Directory e externalGroupId no caso de grupos externos. Obrigatório.                                   |
 | type           | microsoft.graph.externalConnectors.externalGroupMemberType | O tipo de membro adicionado ao grupo externo. Os valores possíveis são: `user` ou quando identitySource é `azureActiveDirectory` e apenas `group` quando identitySource é `external``group` . Obrigatório. |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | A fonte de identidade à qual o membro pertence. Os valores possíveis são: `azureActiveDirectory` e `external`. Obrigatório.                                                                                       |
 
@@ -66,7 +66,7 @@ Se bem-sucedido, este método retorna um código `201 Created` de resposta e um 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um Azure Active Directory usuário como membro
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Exemplo 1: Adicionar um usuário do Azure Active Directory como membro
 
 ### <a name="request"></a>Solicitação
 
@@ -107,6 +107,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -131,7 +135,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um Azure Active Directory como um membro
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Exemplo 2: Adicionar um grupo do Azure Active Directory como membro
 
 ### <a name="request"></a>Solicitação
 
@@ -170,6 +174,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -234,6 +242,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalgroupmember-from--3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalgroupmember-from--3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

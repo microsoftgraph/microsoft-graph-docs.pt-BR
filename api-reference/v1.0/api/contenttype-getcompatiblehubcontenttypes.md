@@ -5,27 +5,27 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 5c274787d6f4b81dc6be8203993b94e019be178b
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: d0a42659c6577aedb3c7adb6769182e9e0d306eb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316088"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447195"
 ---
 # <a name="contenttype-getcompatiblehubcontenttypes"></a>contentType: getCompatibleHubContentTypes
 Namespace: microsoft.graph
 
 Obtenha uma lista de tipos de conteúdo compatíveis do hub de tipo de conteúdo que pode ser adicionado a um [site de destino](../resources/site.md) ou a uma [lista](../resources/list.md).
 
-Esse método faz parte das alterações de publicação de tipo de conteúdo para otimizar a sincronização de tipos de conteúdo publicados para sites e listas, alternando efetivamente de uma abordagem "push everywhere" para "efetuar pull conforme necessário". O método permite que os usuários efetuem pull de tipos de conteúdo diretamente do hub de tipo de conteúdo para um site ou lista. Para obter mais informações, consulte [contentType: addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) e a postagem no blog [Syntex Product Updates – agosto de 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
+Esse método faz parte das alterações de publicação de tipo de conteúdo para otimizar a sincronização de tipos de conteúdo publicados para sites e listas, alternando efetivamente de uma abordagem "push everywhere" para "efetuar pull conforme necessário". O método permite que os usuários efetuem pull de tipos de conteúdo diretamente do hub de tipo de conteúdo para um site ou lista. Para obter mais informações, consulte [contentType: addCopyFromContentTypeHub](contenttype-addcopyfromcontenttypehub.md) e a postagem no blog [Syntex Product Atualizações – agosto de 2021](https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/syntex-product-updates-august-2021/ba-p/2606438).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Sites.Manage.All, Sites.FullControl.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/sites/root/lists/Documents/contentTypes/get
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contenttype-getcompatiblehubcontenttypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-getcompatiblehubcontenttypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

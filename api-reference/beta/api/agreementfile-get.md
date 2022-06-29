@@ -5,12 +5,12 @@ author: raprakasMSFT
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a2b25191d286be11e0dd433381ff9622f0998ad0
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: eea2c1589bbeb9f4759bc2350c2b9d17c4725ab9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516167"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437405"
 ---
 # <a name="get-agreementfile"></a>Obter agreementFile
 Namespace: microsoft.graph
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Agreement.Read.All, Agreement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Agreement.Read.All, Agreement.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos agreementFile](../resources/agreementfile.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos agreementFile](../resources/agreementfile.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-agreementfile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreementfile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

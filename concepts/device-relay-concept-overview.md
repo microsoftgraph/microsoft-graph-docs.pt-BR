@@ -1,19 +1,19 @@
 ---
 title: API de retransmissão de dispositivos no Microsoft Graph (prévia)
-description: 'Hoje, as pessoas interagem com vários dispositivos diariamente. Os usuários geralmente iniciam tarefas de produtividade e atividades de entretenimento em um dispositivo e continuam em outro. Para atender às necessidades de seus clientes, seus aplicativos precisam abranger dispositivos e plataformas. '
+description: Use as APIs de retransmissão de dispositivo do Microsoft Graph para permitir que os usuários transfiram uma experiência de um dispositivo para outro ou aprimorá-la usando vários dispositivos de uma só vez.
 ms.localizationpriority: medium
 author: FaithOmbongi
 ms.prod: cross-device-experiences
-ms.openlocfilehash: 38a90e2cbdb5357190edbf3f8d3ea6f234414902
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 80d7b32d56d5a1a448f1ed16fd282c260ed6c814
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524571"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440912"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>API de retransmissão de dispositivos no Microsoft Graph (prévia)
 
-Hoje, as pessoas interagem com vários dispositivos diariamente. Os usuários geralmente iniciam tarefas de produtividade e atividades de entretenimento em um dispositivo e continuam em outro. Para atender às necessidades de seus clientes, seus aplicativos precisam abranger dispositivos e plataformas. 
+Hoje, as pessoas interagem com vários dispositivos diariamente. Os usuários geralmente iniciam tarefas de produtividade e atividades de entretenimento em um dispositivo e continuam em outro. Para atender às necessidades de seus clientes, seus aplicativos precisam abranger dispositivos e plataformas.
 
 Você pode usar as APIs de retransmissão de dispositivos para fornecer experiências perfeitas para seus usuários. Você pode permitir que eles transfiram ativamente uma experiência de um dispositivo para outro ou a aprimorem usando vários dispositivos ao mesmo tempo. Isso é feito por meio de ações no aplicativo (um botão ou seleção no aplicativo) que chama a API de retransmissão de dispositivos para descobrir os dispositivos dos usuários e permitir que eles iniciem e enviem mensagens ao seu aplicativo nesses outros dispositivos.
 
@@ -23,7 +23,7 @@ A API de retransmissão de dispositivos permite que seu aplicativo se registre e
 
 Você pode usar a API de retransmissão de dispositivos para dispositivos complementares ou cenários de controle remoto. Use os recursos de mensagens para criar um canal de aplicativos entre dois dispositivos para enviar e receber mensagens personalizadas. Por exemplo, você pode permitir que seus clientes usem o telefone para controlar a reprodução em uma TV. Em um cenário de produtividade, você também pode oferecer um aplicativo complementar exibindo ações comumente usadas baseadas em contexto em um telefone enquanto os usuários trabalham na visualização principal do aplicativo no PC.
 
-Seus clientes também podem transferir ativamente uma experiência de um dispositivo para outro executando uma ação no seu aplicativo. Por exemplo, uma usuária pode estar assistindo a uma transmissão ao vivo no telefone enquanto está no ônibus, mas, ao chegar em casa, poderá transferir a reprodução para o PC em sua sala de estar. Os cenários de produtividade também são compatíveis com a retransmissão de dispositivos. 
+Seus clientes também podem transferir ativamente uma experiência de um dispositivo para outro executando uma ação no seu aplicativo. Por exemplo, uma usuária pode estar assistindo a uma transmissão ao vivo no telefone enquanto está no ônibus, mas, ao chegar em casa, poderá transferir a reprodução para o PC em sua sala de estar. Os cenários de produtividade também são compatíveis com a retransmissão de dispositivos.
 
 ### <a name="extend-the-experience"></a>Estender a experiência
 
@@ -40,5 +40,5 @@ Adicione mais habilidades de controle ao seu aplicativo. Por exemplo, forneça h
 ## <a name="see-also"></a>Confira também
 
 - [Experiências entre dispositivos no Microsoft Graph](cross-device-concept-overview.md)
-- [Saiba mais sobre a API de retransmissão de dispositivos](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
+- [Saiba mais sobre a API de retransmissão de dispositivos](/graph/api/resources/project-rome-overview)
 - [Saiba mais sobre o Project Rome](/windows/project-rome/)

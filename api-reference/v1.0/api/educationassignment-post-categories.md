@@ -5,26 +5,26 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: add0c80922457e5cf7543412ccb8a8c8f8b1c2ff
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ca6fe2d2541332a0ce3da4be0f5f3c7ff989be71
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61338943"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445059"
 ---
 # <a name="create-educationcategories"></a>Criar educationCategories
 
 Namespace: microsoft.graph
 
-Adicionar um ou mais objetos [educationCategory](../resources/educationcategory.md) existentes ao [educationAssignment especificado.](../resources/educationassignment.md)
+Adicione um ou mais objetos [educationCategory](../resources/educationcategory.md) existentes ao  [educationAssignment especificado](../resources/educationassignment.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -39,7 +39,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, odata.id os objetos [educationCategory](../resources/educationcategory.md) existentes para adicionar a esta atribuição.
+No corpo da solicitação, forneça o odata.id dos objetos [educationCategory](../resources/educationcategory.md) existentes a serem adicionados a essa atribuição.
 
 
 ## <a name="response"></a>Resposta
@@ -81,13 +81,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/add-educationcategory-to-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-educationcategory-to-educationassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-educationcategory-to-educationassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-No corpo da solicitação, fornece o odata.id do objeto [educationCategory](../resources/educationcategory.md) existente para adicionar a essa atribuição.
+No corpo da solicitação, forneça o odata.id do objeto [educationCategory](../resources/educationcategory.md) existente a ser adicionado a essa atribuição.
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 

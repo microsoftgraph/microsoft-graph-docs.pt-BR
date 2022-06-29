@@ -1,16 +1,16 @@
 ---
-title: Adicionar Conector ao connectorGroup
+title: Adicionar conector ao connectorGroup
 description: Use essa API para adicionar um conector a um novo connectorGroup.
 ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 5b8868a6e4edb715b983e819e75e24eb6b58c175
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 5fdd14e9dcdda5f521b5c5af416da0bc16091935
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671556"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439975"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar conector a connectorGroup
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All   |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All   |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,11 +40,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 | Autorização  | Portador. Obrigatório|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup](../resources/connectorgroup.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta e o [objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará o `201 Created` código de resposta e [o objeto connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -83,9 +83,13 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-connectorgroup-from-connector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-connectorgroup-from-connector-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-No corpo da solicitação, fornece uma representação JSON do [objeto connectorGroup](../resources/connectorgroup.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto connectorGroup](../resources/connectorgroup.md) .
 ##### <a name="response"></a>Resposta
 Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
 <!-- {

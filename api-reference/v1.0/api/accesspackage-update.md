@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dd1f496cb5f4d6761f14f530cff997fbc3a1792c
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 91d360c4dc47a223aadf1c62e5dea3542e119d92
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62098257"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446333"
 ---
 # <a name="update-accesspackage"></a>Atualizar accessPackage
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

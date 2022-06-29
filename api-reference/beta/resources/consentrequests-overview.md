@@ -1,36 +1,38 @@
 ---
-title: Azure Active Directory de consentimento
-description: Use as solicitações de consentimento do Azure AD para gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem consentimento do administrador.
+title: Solicitações de consentimento do Azure Active Directory
+description: Use Azure AD de consentimento para gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem consentimento do administrador.
 ms.localizationpriority: medium
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 2f6503e0222e29a660f1a3f363b6ff4ac50eb498
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: b3e5832a46277412ddfb27081ffd5044b1053acb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651672"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437879"
 ---
-# <a name="azure-active-directory-consent-requests"></a>Azure Active Directory de consentimento
+# <a name="azure-active-directory-consent-requests"></a>Solicitações de consentimento do Azure Active Directory
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory solicitações de consentimento (Azure AD) ajudam você a gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem aprovação do administrador.
+[!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
-Para permitir que os usuários solicitem acesso ou consentimento de administrador para aplicativos que não estão autorizados a conceder consentimento a si mesmos, primeiro habilita o fluxo de trabalho de solicitação de consentimento. 
+As solicitações de consentimento do Azure Active Directory (Azure AD) ajudam você a gerenciar o fluxo de trabalho de solicitação para usuários que tentam acessar aplicativos que exigem aprovação do administrador.
+
+Para permitir que os usuários solicitem acesso ou consentimento do administrador para aplicativos que não estão autorizados a conceder consentimento a si mesmos, primeiro habilite o fluxo de trabalho de solicitação de consentimento. 
 
 >[!NOTE]
->As APIs atuais estão limitadas à configuração do fluxo de trabalho e à leitura da lista de solicitações. No momento, não há métodos disponíveis para aprovar ou negar uma solicitação programaticamente. No entanto, o conteúdo da solicitação pode ser usado para recriar uma URL que pode ser usada para conceder o consentimento do administrador e aprovar uma solicitação.
+>As APIs atuais estão limitadas à configuração do fluxo de trabalho e à leitura da lista de solicitações. No momento, não há nenhum método disponível para aprovar ou negar uma solicitação programaticamente. No entanto, o conteúdo da solicitação pode ser usado para recriar uma URL que pode ser usada para conceder consentimento do administrador e aprovar uma solicitação.
 
 Os tipos de recursos de solicitação de consentimento incluem:
 
 * [adminConsentRequestPolicy](../resources/adminconsentrequestpolicy.md): especifica a política pela qual as solicitações de consentimento do aplicativo podem ser criadas e gerenciadas para todo o locatário. Há um único **adminConsentRequestPolicy** por locatário.
 * [appConsentRequest](../resources/appconsentrequest.md): uma solicitação que representa uma coleção **de userConsentRequests** para um aplicativo específico.
-* [userConsentRequest](../resources/userconsentrequest.md): uma solicitação criada por um usuário para usar um aplicativo que exige o consentimento do administrador para acessar.
-* [appConsentRequestScope](../resources/appconsentrequestscope.md): um recurso que contém detalhes dos escopos de permissão dinâmicos que estão sendo solicitados para um aplicativo.  
+* [userConsentRequest](../resources/userconsentrequest.md): uma solicitação criada por um usuário para usar um aplicativo que requer consentimento do administrador para acessar.
+* [appConsentRequestScope](../resources/appconsentrequestscope.md): um recurso que contém detalhes dos escopos de permissão dinâmica que estão sendo solicitados para um aplicativo.  
 
 ## <a name="methods"></a>Métodos
 
@@ -39,25 +41,25 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter adminConsentRequestPolicy](../api/adminconsentrequestpolicy-get.md) | [coleção adminConsentRequestPolicy](adminconsentrequestpolicy.md) | Leia as propriedades do [adminConsentRequestPolicy](adminconsentrequestpolicy.md). |
-|[Atualizar adminConsentRequestPolicy](../api/adminconsentrequestpolicy-update.md) | [coleção adminConsentRequestPolicy](adminconsentrequestpolicy.md) | Definir configurações para [adminConsentRequestPolicy](adminconsentrequestpolicy.md). |
-|[Listar appConsentRequests ](../api/appconsentapprovalroute-list-appconsentrequests.md) | [Coleção appConsentRequest](appconsentrequest.md) | Recupere uma coleção de [objetos appConsentRequest](appconsentrequest.md) e suas propriedades. |
-|[Obter appConsentRequest ](../api/appconsentrequest-get.md) | [Coleção appConsentRequest](appconsentrequest.md) | Leia um [objeto appConsentRequest.](appconsentrequest.md) |
-|[appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md) | [Coleção appConsentRequest](../resources/appconsentrequest.md) | Leia as propriedades dos [objetos appConsentRequest](../resources/appconsentrequest.md) para os quais o usuário atual é o revistor e o status da solicitação de consentimento do usuário é `InProgress` . |
-|[Obter userConsentRequest ](../api/userconsentrequest-get.md) | [Coleção userConsentRequest](userconsentrequest.md) | Leia um [objeto userConsentRequest](userconsentrequest.md) para um [appConsentRequest](appconsentrequest.md). |
-|[Listar userConsentRequests ](../api/appconsentrequest-list-userconsentrequests.md) | [Coleção userConsentRequest](userconsentrequest.md) | Recupere uma coleção de [objetos userConsentRequest](userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md). |
+|[Atualizar adminConsentRequestPolicy](../api/adminconsentrequestpolicy-update.md) | [coleção adminConsentRequestPolicy](adminconsentrequestpolicy.md) | Defina configurações para [adminConsentRequestPolicy](adminconsentrequestpolicy.md). |
+|[Listar appConsentRequests ](../api/appconsentapprovalroute-list-appconsentrequests.md) | [coleção appConsentRequest](appconsentrequest.md) | Recupere uma coleção de [objetos appConsentRequest](appconsentrequest.md) e suas propriedades. |
+|[Obter appConsentRequest ](../api/appconsentrequest-get.md) | [coleção appConsentRequest](appconsentrequest.md) | Leia um [objeto appConsentRequest](appconsentrequest.md) . |
+|[appConsentRequests: filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md) | [coleção appConsentRequest](../resources/appconsentrequest.md) | Leia as propriedades dos [objetos appConsentRequest](../resources/appconsentrequest.md) para os quais o usuário atual é o revisores e o status da solicitação de consentimento do usuário é `InProgress`. |
+|[Obter userConsentRequest ](../api/userconsentrequest-get.md) | [coleção userConsentRequest](userconsentrequest.md) | Leia um [objeto userConsentRequest](userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md). |
+|[Listar userConsentRequests ](../api/appconsentrequest-list-userconsentrequests.md) | [coleção userConsentRequest](userconsentrequest.md) | Recupere uma coleção de [objetos userConsentRequest](userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md). |
 |[userConsentRequest: filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md) | [Coleção appConsentRequests](../resources/userconsentrequest.md) | Leia as propriedades dos [objetos userConsentRequest](../resources/userconsentrequest.md) para [um appConsentRequest](appconsentrequest.md) para o qual o usuário atual é o revistor. |
 
-## <a name="role-and-delegated-permission-authorization-checks"></a>Role and delegated permission authorization checks
+## <a name="role-and-delegated-permission-authorization-checks"></a>Verificações de autorização de função e permissão delegada
 
-As seguintes funções de diretório são necessárias para que um usuário de chamada gerencie o fluxo de trabalho de solicitações ou leia a lista de solicitações.
+As funções de diretório a seguir são necessárias para que um usuário chamador gerencie o fluxo de trabalho de solicitações ou leia a lista de solicitações.
 
-| Operação | Permissões delegadas | Função de diretório necessária do usuário chamador |
+| Operation | Permissões delegadas | Função de diretório necessária do usuário chamador |
 |:------------------|:------------|:--------------------------------------------|
-| Leitura | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Aplicativos na Nuvem e Administrador de Aplicativos |
+| Leitura | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Aplicativos de Nuvem e Administrador de Aplicativos |
 
 ## <a name="see-also"></a>Confira também
 
-- [Configurar o fluxo de trabalho de consentimento do administrador (visualização)](/azure/active-directory/manage-apps/configure-admin-consent-workflow?preserve-view=true)
+- [Configurar o fluxo de trabalho de consentimento do administrador (versão prévia)](/azure/active-directory/manage-apps/configure-admin-consent-workflow?preserve-view=true)
 
 
 <!--

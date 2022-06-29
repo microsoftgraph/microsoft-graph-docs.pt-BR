@@ -1,22 +1,22 @@
 ---
 title: Criar deviceManagementScript
 description: Crie um novo objeto deviceManagementScript.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 922acbdd39dafe63b21c815f38be4ed377817cf0
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 125967a15e23d320c0d93bb368e379e4d8fc265f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63367745"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439519"
 ---
 # <a name="create-devicemanagementscript"></a>Criar deviceManagementScript
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
-| &nbsp; &nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)||
+| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
@@ -51,22 +51,22 @@ POST /deviceManagement/deviceManagementScripts
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementScript.
+No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementScript.
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementScript.
+A tabela a seguir mostra as propriedades que são necessárias ao criar o deviceManagementScript.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do script de gerenciamento de dispositivos.|
-|displayName|String|Nome do script de gerenciamento de dispositivos.|
-|description|String|Descrição opcional para o script de gerenciamento de dispositivos.|
+|id|Cadeia de caracteres|Identificador exclusivo para o script de gerenciamento de dispositivo.|
+|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivo.|
 |scriptContent|Binária|O conteúdo do script.|
-|createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
+|createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Booliano|Indique se a assinatura de script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
 |runAs32Bit|Booliano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 

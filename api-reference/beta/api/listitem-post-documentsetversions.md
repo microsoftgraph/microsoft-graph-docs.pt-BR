@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 25f22bbc7556600ec9f9cdf911871f3dc95c0cc5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 9965f40ef61031fd690d730fff2f9477081f81c9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211484"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444150"
 ---
 # <a name="create-documentsetversion"></a>Criar documentSetVersion
 Namespace: microsoft.graph
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 
 Crie uma nova [versão de um item de conjunto de](../resources/documentsetversion.md) documentos em uma [lista](../resources/list.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All, Sites.Selected|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ Você pode especificar as propriedades a seguir ao criar **um documentSetVersion
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |comment|String|Comente sobre a versão capturada. Opcional.|
-|shouldCaptureMinorVersion|Boolean|Se `true`, versões secundárias de itens também forem capturadas; caso contrário, somente as versões principais serão capturadas. Opcional.|
+|shouldCaptureMinorVersion|Booliano|Se `true`, versões secundárias de itens também forem capturadas; caso contrário, somente as versões principais serão capturadas. Opcional.|
 
 
 
@@ -101,6 +101,10 @@ Content-length: 70
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-documentsetversion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-documentsetversion-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

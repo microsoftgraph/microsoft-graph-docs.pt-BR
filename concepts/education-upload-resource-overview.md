@@ -1,30 +1,30 @@
 ---
-title: Upload arquivos para atribuições e envios de educação usando a API do Microsoft Graph
-description: Saiba como carregar um arquivo em uma atribuição ou um recurso de envio usando as APIs de educação no Microsoft Graph.
+title: Carregar arquivos para tarefas e envios educacionais
+description: Saiba como carregar um arquivo em uma tarefa ou um recurso de envio usando a API de educação no Microsoft Graph.
 ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 055d454f0ca58dab5c51687fa7b311a30828ac15
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6c3f9a3a35e89ed935105e6320c4f7c652b288f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137382"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440870"
 ---
-# <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Upload arquivos para atribuições e envios de educação usando a API do Microsoft Graph
+# <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Carregar arquivos para tarefas e envios de educação usando o Microsoft API do Graph
 
-Os recursos são uma parte integral das [atribuições](/graph/api/resources/educationassignment) e [submissões de educação.](/graph/api/resources/educationsubmission) Os professores determinam os recursos a carregar em uma pasta de atribuição e os alunos determinam os recursos a carregar em uma pasta de envio.
+Os recursos são uma parte integrante das tarefas [e envios](/graph/api/resources/educationassignment) [educacionais](/graph/api/resources/educationsubmission). Os professores determinam os recursos a serem carregados em uma pasta de tarefas e os alunos determinam os recursos a serem carregados em uma pasta de envio.
 
-Este artigo descreve como usar a API de educação no Microsoft Graph carregar arquivos em uma pasta de atribuição ou envio.
+Este artigo descreve como usar a API de educação no Microsoft Graph para carregar arquivos em uma pasta de atribuição ou envio.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Antes de carregar arquivos, configurar uma pasta SharePoint para a qual [](/graph/api/resources/educationassignment) carregar os arquivos para um determinado recurso de atribuição ou [submissão educacional.](/graph/api/resources/educationsubmission) 
+Antes de carregar arquivos, configure uma pasta do SharePoint para a qual carregar os arquivos para uma determinada atribuição de educação ou recurso de envio.
 
-## <a name="upload-a-resource"></a>Upload um recurso
+## <a name="upload-a-resource"></a>Carregar um recurso
 
-A `setUpResourcesFolder` API retorna um modelo que contém a propriedade **resourcesFolderUrl.**
+A `setUpResourcesFolder` API retorna um modelo que contém a **propriedade resourcesFolderUrl** .
 
 ```http
 {
@@ -33,23 +33,25 @@ A `setUpResourcesFolder` API retorna um modelo que contém a propriedade **resou
     ...
 }
 ```
+
 As etapas a seguir descrevem como carregar um recurso/arquivo em uma pasta de recursos relevante.
 
-### <a name="step-1---construct-the-upload-url"></a>Etapa 1 - Construir a URL de carregamento
-Crie a URL para carregar conteúdo após esse formato `{resourcesFolderUrl}:/{Name of new file}:/content` específico. O exemplo a seguir mostra uma URL de carregamento que contém a **propriedade resourcesFolderUrl.**
+### <a name="step-1---construct-the-upload-url"></a>Etapa 1 – Construir a URL de upload
+Crie a URL para carregar conteúdo seguindo este formato específico `{resourcesFolderUrl}:/{Name of new file}:/content`. O exemplo a seguir mostra uma URL de upload que contém **a propriedade resourcesFolderUrl** .
 
 ```http
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJRQLVYT24IWWFAJHMRRNYCB3GE2:/MyPictureFile.png:/content
 ```
 
-### <a name="step-2---upload-the-resource-to-sharepoint"></a>Etapa 2 - Upload o recurso para SharePoint
-Faça uma solicitação PUT com a URL de carregamento para carregar o conteúdo.
+### <a name="step-2---upload-the-resource-to-sharepoint"></a>Etapa 2 – Carregar o recurso no SharePoint
+Faça uma solicitação PUT com a URL de upload para carregar o conteúdo.
 
 O conteúdo do corpo da solicitação deve ser o fluxo binário do arquivo a ser carregado.
 
-Para obter mais detalhes, [consulte Upload arquivos grandes com uma sessão de carregamento](/graph/api/driveitem-createuploadsession).
+Para obter mais detalhes, consulte [Carregar arquivos grandes com uma sessão de upload](/graph/api/driveitem-createuploadsession).
 
-#### <a name="request-example"></a>Exemplo de solicitação
+#### <a name="request"></a>Solicitação
+
 O exemplo a seguir mostra a solicitação.
 
 ```http
@@ -59,7 +61,8 @@ Content-Type: text/plain
 Binary data for the file
 ```
 
-#### <a name="response-example"></a>Exemplo de resposta
+#### <a name="response"></a>Resposta
+
 O exemplo a seguir mostra a resposta.
 
 ```http
@@ -115,8 +118,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="step-3---construct-the-value-for-the-fileurl-property"></a>Etapa 3 - Construir o valor da propriedade fileUrl
-Crie o valor da propriedade **fileUrl** usando o seguinte formato: `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}` . Substitua os `{drive-id}` `{item-id}` e os espaço reservados por valores descritos na tabela a seguir.
+### <a name="step-3---construct-the-value-for-the-fileurl-property"></a>Etapa 3 – Construir o valor para a propriedade fileUrl
+Crie o valor para a **propriedade fileUrl** usando o seguinte formato: `https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}`. Substitua os `{drive-id}` espaços `{item-id}` reservados e os valores descritos na tabela a seguir.
 
 | Espaço reservado | Descrição | Exemplo |
 |:--|:--|:--|
@@ -129,12 +132,13 @@ O exemplo a seguir mostra **um fileUrl** com base nesse formato.
 https://graph.microsoft.com/v1.0/drives/b!6SQl0y4WHkS2P5MeIsSGpKwfynEIaD1OvPVeH4wbOp_1uyhNwJMSSpseJneB7Z4F/items/01YT2AIJU7DAXTU6XLOJGYWYMTGM5JT5UQ
 ```
 
-### <a name="step-4---create-educationassignmentresource"></a>Etapa 4 - Criar educationAssignmentResource
-Esta etapa mostra como carregar um recurso SharePoint para uma pasta de recursos de atribuição.
+### <a name="step-4---create-educationassignmentresource"></a>Etapa 4 – Criar educationAssignmentResource
+Esta etapa mostra como carregar um recurso do SharePoint em uma pasta de recursos de atribuição.
 
-Use a `fileUrl` partir da etapa anterior no corpo da solicitação para Criar um [educationAssignmentResource](/graph/api/educationassignment-post-resources).
+Use a `fileUrl` etapa anterior no corpo da solicitação para [Criar um educationAssignmentResource](/graph/api/educationassignment-post-resources).
 
-#### <a name="request-example"></a>Exemplo de solicitação
+#### <a name="request"></a>Solicitação
+
 O exemplo a seguir mostra a solicitação.
 
 ```http
@@ -150,7 +154,8 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response-example"></a>Exemplo de resposta
+#### <a name="response"></a>Resposta
+
 O exemplo a seguir mostra a resposta.
 
 ```http
@@ -187,4 +192,6 @@ Content-type: application/json
 }
 ```
 
-Agora você carregou com êxito um recurso SharePoint para uma pasta de recursos de atribuição (e o anexou à atribuição associada). Você pode seguir etapas semelhantes para carregar um ou mais recursos de trabalho de alunos. Para obter mais detalhes, [consulte Create educationSubmissionResource](/graph/api/educationsubmission-post-resources).
+Agora você carregou com êxito um recurso do SharePoint em uma pasta de recursos de atribuição (e o anexou à atribuição associada). Você pode seguir etapas semelhantes para carregar um ou mais recursos de trabalho do aluno.
+
+Para obter mais detalhes, [consulte Create educationSubmissionResource](/graph/api/educationsubmission-post-resources).

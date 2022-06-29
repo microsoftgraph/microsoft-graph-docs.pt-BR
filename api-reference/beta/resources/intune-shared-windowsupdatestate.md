@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso windowsUpdateState
 description: Tipo de recurso windowsUpdateState
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cff1bf1becbd2e43967b05a210c7f3f5cfa864a
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 1fcebd4d516d7cc91a3c33163b3325676b824b4a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900251"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444513"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Tipo de recurso windowsUpdateState
 
@@ -34,16 +34,16 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Essa é a ID da entidade.|
+|id|Cadeia de caracteres|Essa é a ID da entidade.|
 |deviceId|Cadeia de caracteres|A ID do dispositivo.|
 |userId|Cadeia de caracteres|A ID do usuário.|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo.|
-|userPrincipalName|String|Nome principal do usuário.|
+|userPrincipalName|Cadeia de caracteres|Nome principal do usuário.|
 |status|[windowsUpdateStatus](/resources/intune-shared-windowsupdatestatus.md)|Status de udpate do Windows. Os valores possíveis são: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|qualityUpdateVersion|String|A versão de atualização de qualidade do dispositivo.|
-|featureUpdateVersion|Cadeia de Caracteres|A versão atual de atualização de recursos do dispositivo.|
-|lastScanDateTime|DateTimeOffset|A data em que o Agente do Windows Update fez uma verificação bem-sucedida.|
-|lastSyncDateTime|DateTimeOffset|Última data em que o dispositivo é sincronizado com o Microsoft Intune.|
+|qualityUpdateVersion|Cadeia de caracteres|A versão de atualização de qualidade do dispositivo.|
+|featureUpdateVersion|Cadeia de caracteres|A versão atual de atualização de recursos do dispositivo.|
+|lastScanDateTime|DateTimeOffset|A data em que o agente Windows Update fez uma verificação bem-sucedida.|
+|lastSyncDateTime|DateTimeOffset|Última data em que o dispositivo é sincronizado com Microsoft Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

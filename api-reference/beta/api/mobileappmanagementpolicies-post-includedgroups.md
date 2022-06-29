@@ -5,12 +5,12 @@ author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 715ddb5c8b168b96252606d40c78d3b70db42562
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 3c4765b6132cdec9fd211d0cfe57fd360143f8de
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63396543"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443323"
 ---
 # <a name="add-includedgroups"></a>Adicionar includedGroups
 
@@ -49,7 +49,7 @@ POST /policies/mobileAppManagementPolicies/{id}/includedGroups/$ref
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto de [grupo](../resources/group.md).
 
-A tabela a seguir mostra as propriedades necessárias ao adicionar o [grupo](../resources/group.md).
+A tabela a seguir mostra as propriedades que são necessárias ao adicionar o [grupo](../resources/group.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-group-from-groups-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-group-from-groups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

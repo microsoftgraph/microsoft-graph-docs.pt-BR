@@ -1,16 +1,16 @@
 ---
 title: Listar configurações
-description: Recupere uma lista de objetos de configuração de diretório.
+description: Recuperar uma lista de objetos de configuração de diretório.
 author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4fec8f2b463499bc75ca07243c13fe8fc6ace387
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: ca7159d989bb7f006f9af42eec7922a3b029c508
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63670310"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446557"
 ---
 # <a name="list-settings"></a>Listar configurações
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de configurações de grupo específicos do nível de locatário ou grupo.
+Recupere uma lista de objetos de configurações de grupo específicos do grupo ou no nível do locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,8 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
 ### <a name="list-group-specific-settings"></a>Listar configurações específicas do grupo
@@ -53,7 +53,7 @@ GET /groups/{groupId}/settings
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -65,7 +65,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção [de objetos directorySetting](../resources/directorysetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -127,6 +127,10 @@ Content-type: application/json
       "displayName": "Group.Unified",
       "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
       "values": [
+        {
+          "name": "NewUnifiedGroupWritebackDefault",
+          "value": "false"
+        },
         {
           "name": "EnableMIPLabels",
           "value": "true"

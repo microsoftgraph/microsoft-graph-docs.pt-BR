@@ -1,23 +1,25 @@
 ---
-title: Usar a API Pesquisa da Microsoft no Microsoft Graph pesquisar pessoas (visualização)
-description: Você pode usar a API Pesquisa da Microsoft para pesquisar por pessoas relevantes para você.
+title: Usar a API de Pesquisa da Microsoft para pesquisar pessoas
+description: Use a API de Pesquisa da Microsoft no Microsoft Graph para pesquisar pessoas relevantes para um usuário determinadas pelos padrões de comunicação e pelas relações comerciais do usuário.
 author: acsehi
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 158227ca262d70f457405d678e3f4b10f0c966ff
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b1165a0bcac91ef7a74078b2d88fb268d0f40c6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129688"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436194"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-people-preview"></a>Usar a API Pesquisa da Microsoft no Microsoft Graph pesquisar pessoas (visualização)
+# <a name="use-the-microsoft-search-api-to-search-people"></a>Usar a API de Pesquisa da Microsoft para pesquisar pessoas
 
-Os Graph microsoft podem usar a API Pesquisa da Microsoft para recuperar as pessoas que são mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais ou do diretório de uma organização e pessoas de comunicações recentes. Juntamente com a geração desse insight, a pesquisa também fornece suporte à pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário assinado.
+Os aplicativos do Microsoft Graph podem usar a API de Pesquisa da Microsoft para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais ou do diretório de uma organização ou pessoas de comunicações recentes.
 
-## <a name="example-search-person-by-name"></a>Exemplo: Pessoa de pesquisa por nome
+Além de gerar esse insight, a pesquisa também fornece suporte à pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado.
 
-A solicitação a seguir obtém as pessoas mais relevantes para o usuário in-lo, com base nos padrões de comunicação e colaboração e relações comerciais.
+## <a name="example-search-person-by-name"></a>Exemplo: Pesquisar pessoa por nome
+
+A solicitação a seguir obtém as pessoas mais relevantes para o usuário conectado, com base em padrões de comunicação e colaboração e relações de negócios.
 
 ### <a name="request"></a>Solicitação
 
@@ -43,7 +45,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Resposta
 
-A seguir, um exemplo da resposta, que contém uma mensagem que corresponde ao critério de pesquisa.
+A seguir está um exemplo da resposta, que contém uma mensagem que corresponde ao critério de pesquisa.
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -94,4 +96,4 @@ Content-type: application/json
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API Pesquisa da Microsoft de usuário](/graph/api/resources/search-api-overview)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview)

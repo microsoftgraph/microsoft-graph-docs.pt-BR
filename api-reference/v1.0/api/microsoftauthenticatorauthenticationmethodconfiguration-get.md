@@ -5,17 +5,17 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0d9aecde05da587a94c9052684f0ef4efe665380
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: ea782e955c8fa10761f91331a4273936cfd26e2c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364853"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447160"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>Obter microsoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações do objeto [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), que representa Microsoft Authenticator política de método de autenticação do Azure AD locatário.
+Recupere as propriedades e as relações do objeto [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md), que representa a política de método de autenticação do Microsoft Authenticator para o Azure AD locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,14 +23,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Policy.ReadWrite.AuthenticationMethod|
 
 Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Leitor Global
 * Administrador da Política de Autenticação
-* Administrador Global
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authen
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-microsoftauthenticatorauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-microsoftauthenticatorauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

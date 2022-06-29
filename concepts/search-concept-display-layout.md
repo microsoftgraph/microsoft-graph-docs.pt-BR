@@ -1,33 +1,33 @@
 ---
-ms.author: yiwenwang
-title: Usar a API de Pesquisa da Microsoft no Microsoft Graph para renderizar o layout de exibição
-description: Use a API de Pesquisa da Microsoft no Microsoft Graph para exibir os resultados da pesquisa de maneiras diferentes.
+title: Usar a API de Pesquisa da Microsoft para gerenciar modelos de layout para resultados de pesquisa
+description: Use a API de Pesquisa da Microsoft no Microsoft Graph para exibir os resultados da pesquisa de maneiras diferentes usando o modelo de Cartão Adaptável e Centro de administração do Microsoft 365.
 author: yiwenwang
+ms.author: yiwenwang
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: bc125fa05c6ba466c5430c07de822d0912f3cbad
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: cc74f41695b4ae7da84efffae7de7e6935f4b8cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337128"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444296"
 ---
-# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-manage-layout-templates-for-search-results-preview"></a>Use a API de Pesquisa da Microsoft no Microsoft Graph para gerenciar modelos de layout para resultados de pesquisa (visualização)
+# <a name="use-the-microsoft-search-api-to-manage-layout-templates-for-search-results"></a>Usar a API de Pesquisa da Microsoft para gerenciar modelos de layout para resultados de pesquisa
 
-Um layout de exibição de pesquisa ou tipo de resultado é uma regra que faz com que tipos distintos de resultados de pesquisa sejam exibidos de maneiras diferentes nas páginas de resultados da pesquisa. Ele consiste no seguinte: 
+Você pode usar a API de Pesquisa da Microsoft no Microsoft Graph para gerenciar modelos de layout para resultados de pesquisa. Um layout de exibição de pesquisa ou tipo de resultado é uma regra que faz com que tipos distintos de resultados de pesquisa sejam exibidos de maneiras diferentes nas páginas de resultados da pesquisa. Ele consiste no seguinte:
 
-- Uma ou mais características ou condições para comparar cada resultado de pesquisa, como a fonte de resultados ou o tipo de conteúdo do resultado da pesquisa.
+- Uma ou mais características ou condições com as quais comparar cada resultado de pesquisa, como a fonte de resultado ou o tipo de conteúdo do resultado da pesquisa.
 - O modelo de exibição pesquisa os resultados que atendem às condições. O modelo de exibição controla a forma que os resultados que correspondem às condições serão exibidos e se comportarão na página dos resultados da pesquisa. 
 
-A API de Pesquisa do Microsoft Graph fornece uma resposta renderizável com base em [Cartões Adaptáveis](https://adaptivecards.io/). Usando o modelo [cartão adaptável](https://adaptivecards.io/designer), os clientes podem renderizar diferentes resultados de pesquisa em diferentes telas.
+A API de Pesquisa do Microsoft Graph fornece uma resposta renderizável com base em [Cartões Adaptáveis](https://adaptivecards.io/). Usando o modelo [cartão adaptável](https://adaptivecards.io/designer), os clientes podem renderizar diferentes resultados de pesquisa em telas diferentes.
 
-Os clientes podem personalizar seu tipo de resultado de pesquisa no Centro de administração [do Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
+Os clientes podem personalizar o tipo de resultado de pesquisa [no Centro de administração do Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/resulttypes).
 
 ## <a name="request-example"></a>Exemplo de solicitação
 
-O exemplo a seguir mostra como obter os layouts de exibição ou modelos de resultados para renderizar os resultados da pesquisa definindo a **propriedade enableResultTemplate** como `true` no contrato de solicitação.
+O exemplo a seguir mostra como obter os layouts de exibição ou modelos de resultado para renderizar os resultados da pesquisa definindo a propriedade **enableResultTemplate** `true` como no contrato de solicitação.
 
-A reponse mostra três visitas de pesquisa, duas delas relacionadas, com o **resultTemplateId** 1603900360618_5XCBK2OXG e a outra com o **resultTemplateId** 1603900360618_5XCBK2OXP. Essas IDs combinam com uma das chaves dos dois layouts de exibição contidos no dicionário **resultTemplates** incluído no contrato de resposta. Usando as IDs do modelo de resultado, você pode determinar qual layout de exibição usar para renderizar cada resultado da pesquisa.
+A resposta mostra três ocorrências de pesquisa, duas delas relacionadas, com **o 1603900360618_5XCBK2OXG resultTemplateId** e a outra com **o resultTemplateId** 1603900360618_5XCBK2OXP. Essas IDs correspondem a uma das chaves dos dois layouts de exibição **contidos no dicionário resultTemplates** incluído no contrato de resposta. Usando as IDs do modelo de resultado, você pode determinar qual layout de exibição usar para renderizar cada resultado da pesquisa.
 
 ### <a name="request"></a>Solicitação
 
@@ -217,15 +217,15 @@ Content-type: application/json
 
 ```
 
-## <a name="web-component-example"></a>Exemplo de componente web
+## <a name="web-component-example"></a>Exemplo de componente Web
 
-O exemplo a seguir mostra como usar a tentação de Cartão Adaptável para renderizar os resultados da pesquisa.
+O exemplo a seguir mostra como usar a modelagem de Cartão Adaptável para renderizar os resultados da pesquisa.
 
 > [!IMPORTANT] 
 > 
-> Este exemplo usa uma versão do Cartão Adaptável emplacar anteriormente à **versão de maio de 2020**. Para saber mais, consulte:
-> - [Templating de cartão adaptável](/adaptive-cards/templating/)
-> - [SDK de templating de cartão adaptável](/adaptive-cards/templating/sdk)
+> Este exemplo usa uma versão de modelagem de Cartão Adaptável anterior à **versão de maio de 2020**. Para saber mais, consulte:
+> - [Modelagem de Cartão Adaptável](/adaptive-cards/templating/)
+> - [SDK de modelagem de cartão adaptável](/adaptive-cards/templating/sdk)
 
 
 <!-- markdownlint-disable MD024 -->
@@ -464,4 +464,4 @@ O exemplo a seguir mostra como usar a tentação de Cartão Adaptável para rend
 ## <a name="see-also"></a>Confira também
 
 - [Criar um layout para personalizar os resultados da pesquisa](/microsoftsearch/customize-results-layout)
-- [Usar a API de Pesquisa da Microsoft](/graph/api/resources/search-api-overview)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview)

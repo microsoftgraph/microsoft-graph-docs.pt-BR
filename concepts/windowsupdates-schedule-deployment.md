@@ -1,26 +1,26 @@
 ---
-title: Agendar uma implantação usando o serviço de implantação Windows Atualização para Empresas
-description: Ao implantar uma atualização usando o serviço de implantação, você pode agendar a implantação para que os dispositivos recebam a atualização em uma data futura.
+title: Agendar uma implantação usando o serviço Windows Update implantação do Windows Update Business
+description: Ao implantar uma atualização, você pode agendar a implantação para que os dispositivos recebam a atualização posteriormente usando o serviço de implantação Windows Update for Business.
 author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 650e35dc8496bcb9e2dbcee33d7dfca58db1615b
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 60d505eb5fab2ef003bb04762b6cccf3974e4f25
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61854825"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437384"
 ---
-# <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>Agendar uma implantação usando o serviço de implantação Windows Atualização para Empresas
+# <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>Agendar uma implantação usando o serviço Windows Update implantação do Windows Update Business
 
 Ao implantar uma atualização usando o serviço de implantação, você pode agendar a implantação para que os dispositivos recebam a atualização em uma data futura.
 
-Os recursos de agendamento são compatíveis [com implantações](windowsupdates-deployments.md) de Windows 10 de recursos.
+Os recursos de agendamento são [compatíveis com implantações](windowsupdates-deployments.md) de Windows 10 de recursos.
 
 ## <a name="schedule-a-deployment-to-start-at-a-future-date"></a>Agendar uma implantação para iniciar em uma data futura
 
-Você pode agendar uma implantação para iniciar em uma data futura configurando suas configurações [de distribuição.](/graph/api/resources/windowsupdates-rolloutsettings) No exemplo abaixo, todos os dispositivos atribuídos à implantação receberão a atualização em 1º de julho de 2021.
+Você pode agendar uma implantação para iniciar em uma data futura definindo suas [configurações de distribuição](/graph/api/resources/windowsupdates-rolloutsettings). No exemplo abaixo, todos os dispositivos atribuídos à implantação receberão a atualização em 1º de julho de 2021.
 
 ### <a name="request"></a>Solicitação
 
@@ -85,15 +85,15 @@ Content-Type: application/json
 }
 ```
 
-## <a name="stage-a-deployment-over-a-period-of-time"></a>Estágio de uma implantação por um período de tempo
+## <a name="stage-a-deployment-over-a-period-of-time"></a>Preparar uma implantação durante um período de tempo
 
-Você também pode agendar uma implantação para que os dispositivos atribuídos sejam oferecidos a atualização em uma distribuição gradual que é em estágios ao longo do tempo. A atualização é oferecida aos subconjunto de dispositivos atribuídos à implantação em intervalos regulares, com a duração total da distribuição determinada por uma data de término ou taxa de oferta. Você pode pensar em uma distribuição gradual como semelhante a uma série de eventos de calendário recorrente.
+Você também pode agendar uma implantação para que os dispositivos atribuídos sejam oferecidos à atualização em uma distribuição gradual que é preparada ao longo do tempo. A atualização é oferecida a subconjuntos de dispositivos atribuídos à implantação em intervalos regulares, com a duração total da distribuição determinada por uma data de término ou taxa de oferta. Você pode pensar em uma distribuição gradual como semelhante a uma série de eventos de calendário recorrente.
 
-### <a name="example-stage-a-deployment-at-regular-intervals-between-start-and-end-dates"></a>Exemplo: estágio uma implantação em intervalos regulares entre as datas inicial e final
+### <a name="example-stage-a-deployment-at-regular-intervals-between-start-and-end-dates"></a>Exemplo: preparar uma implantação em intervalos regulares entre as datas de início e término
 
-Uma maneira de estágio de uma implantação ao longo do tempo é definir **o endDateTime** da implantação. Todos os dispositivos atribuídos à implantação serão oferecidos a atualização dentro da janela entre **startDateTime** e **endDateTime**. Se o **startDateTime** não for especificado, a implantação começará assim que os dispositivos são atribuídos.
+Uma maneira de preparar uma implantação ao longo do tempo é definir **o endDateTime** da implantação. Todos os dispositivos atribuídos à implantação receberão a atualização dentro da janela entre **startDateTime** e **endDateTime**. Se **startDateTime não** for especificado, a implantação começará assim que os dispositivos forem atribuídos.
 
-Neste exemplo, você configura uma nova implantação para que um novo conjunto de dispositivos seja oferecido a atualização toda semana (**durationBetweenOffers** definida como sete dias), começando em 1º de julho de 2021. Todos os dispositivos são oferecidos a atualização antes de 1º de agosto de 2021.
+Neste exemplo, você configura uma nova implantação para que um novo conjunto de dispositivos seja oferecido a atualização toda semana (**durationBetweenOffers** definido como sete dias), a partir de 1º de julho de 2021. Todos os dispositivos têm a atualização oferecida antes de 1º de agosto de 2021.
 
 #### <a name="request"></a>Solicitação
 
@@ -161,11 +161,11 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-stage-a-deployment-at-regular-intervals-with-a-specified-number-of-devices-at-each-offer"></a>Exemplo: estágio uma implantação em intervalos regulares com um número especificado de dispositivos em cada oferta
+### <a name="example-stage-a-deployment-at-regular-intervals-with-a-specified-number-of-devices-at-each-offer"></a>Exemplo: preparar uma implantação em intervalos regulares com um número especificado de dispositivos em cada oferta
 
-Outra maneira de estágio de uma implantação ao longo do tempo é configurar a taxa de oferta usando `devicesPerOffer` . Os dispositivos atribuídos à implantação receberão a atualização de acordo com a taxa especificada até que todos os dispositivos tenham sido oferecidos a atualização.
+Outra maneira de preparar uma implantação ao longo do tempo é configurar a taxa de oferta usando `devicesPerOffer`. Os dispositivos atribuídos à implantação receberão a atualização de acordo com a taxa especificada até que todos os dispositivos tenham sido oferecidos a atualização.
 
-Neste exemplo, você configura uma nova implantação para que um novo conjunto de dispositivos seja oferecido a atualização toda semana (**durationBetweenOffers** definida como sete dias), começando em 1º de julho de 2021. 100 dispositivos são oferecidos a atualização por vez até que todos os dispositivos tenham sido oferecidos a atualização.
+Neste exemplo, você configura uma nova implantação para que um novo conjunto de dispositivos seja oferecido a atualização toda semana (**durationBetweenOffers** definido como sete dias), a partir de 1º de julho de 2021. 100 dispositivos são oferecidos a atualização por vez até que todos os dispositivos tenham sido oferecidos a atualização.
 
 #### <a name="request"></a>Solicitação
 

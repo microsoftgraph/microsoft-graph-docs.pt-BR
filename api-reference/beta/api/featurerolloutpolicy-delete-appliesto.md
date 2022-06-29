@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8b72317c4b807509bcca17393480f2acdfc31f1e
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 85148131fc2ba47902a8ce824bc1474f61746c98
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695424"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445326"
 ---
 # <a name="remove-appliesto"></a>Remover appliesTo
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-featurerolloutpolicy-policies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-directoryobject-from-featurerolloutpolicy-policies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

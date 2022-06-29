@@ -1,11 +1,11 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 227b52cb0974d426964ebba2973579976b270252
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 022827babdf170f36f54e2bbaf6d1f330d6f96f2
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341984"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66503008"
 ---
 ```powershell
 
@@ -18,6 +18,6 @@ $params = @{
     ClientContext = "clientContext-value"
 }
 
-Invoke-MgMuteCommunicationCallParticipant -CallId $callId -BodyParameter $params
+Invoke-MgMuteAllCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
 ```

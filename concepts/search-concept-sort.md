@@ -1,27 +1,27 @@
 ---
-title: Usar a API Pesquisa da Microsoft para classificar os resultados da pesquisa (visualização)
-description: Você classificar os resultados da pesquisa usando a API Pesquisa da Microsoft de pesquisa.
+title: Usar a API de Pesquisa da Microsoft para classificar os resultados da pesquisa
+description: Você pode usar a propriedade sortProperties da API de Pesquisa da Microsoft no Microsoft Graph para classificar os resultados da pesquisa. Você pode fazer uma classificação de nível único ou de vários níveis.
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 43852737729eb2d8d36e48093302e21b3fecfe7c
-ms.sourcegitcommit: 6950d15d8cce5e04733738b8debb92cd8c1d63fe
+ms.openlocfilehash: ed5cb9f8737185be0dcad113f4e37d6afc489eba
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63451386"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438266"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results"></a>Usar a API Pesquisa da Microsoft para classificar os resultados da pesquisa
+# <a name="use-the-microsoft-search-api-to-sort-search-results"></a>Usar a API de Pesquisa da Microsoft para classificar os resultados da pesquisa
 
-Você pode usar a API Pesquisa da Microsoft no Microsoft Graph para classificar os resultados da pesquisa. Para classificar os resultados, especifique a propriedade **sortProperties** em um objeto [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) e identifique uma propriedade de recurso em **entityTypes** para classificar as corresponde por, em ordem crescente ou decrescente.
+Você pode usar a API de Pesquisa da Microsoft no Microsoft Graph para classificar os resultados da pesquisa. Para classificar os resultados, especifique a propriedade **sortProperties** em um objeto [searchRequest](/graph/api/resources/searchrequest) e identifique uma propriedade de recurso em **entityTypes** para classificar as corresponde por, em ordem crescente ou decrescente.
 
-A classificação é suportada para SharePoint e OneDrive itens. A propriedade SharePoint e OneDrive itens a serem organizados devem ser *sortíveis* no esquema de pesquisa.
+A classificação é compatível com itens do SharePoint e do OneDrive. A propriedade dos itens do SharePoint e do OneDrive a serem classificados deve ser *classizável* no esquema de pesquisa.
 
-A classificação também é suportada para [itens externos](/graph/api/resources/externalconnectors-externalitem). A [propriedade](/graph/api/resources/externalconnectors-property) de itens externos a serem classificação deve ser *refinável* no esquema de pesquisa.
+A classificação também é compatível com [itens externos](/graph/api/resources/externalconnectors-externalitem). A [propriedade](/graph/api/resources/externalconnectors-property) de itens externos a serem classificados deve ser *refinável* no esquema de pesquisa.
 
-A ordem de classificação padrão é crescente. De definir **a propriedade isDescending** para alterá-la.
+A ordem de classificação padrão é crescente. Defina **a propriedade isDescending** para alterá-la.
 
-## <a name="example-1-single-level-sort"></a>Exemplo 1: Classificação de nível único
+## <a name="example-1-single-level-sort"></a>Exemplo 1: classificação de nível único
 
 ### <a name="request"></a>Solicitação
 
@@ -317,9 +317,9 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-- A classificação não é suportada para **mensagens** e **eventos**.
-- Classificar por relevância não pode ser especificado em **sortProperties**.
+- Não há suporte para classificação para **mensagem** e **evento**.
+- A classificação por relevância não pode ser especificada **em sortProperties**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview)

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: faa5ca9d9c24cacabfeaf535ad2f6a2f915720e7
-ms.sourcegitcommit: da9079132db3261aed80e6fc4b9314d16e0847b3
+ms.openlocfilehash: e64abb2c70c0f51a8b2942ba0b165f047a596c01
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66186916"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445206"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -32,12 +32,12 @@ A criação de uma assinatura requer permissão de leitura para o recurso. Por e
 
 Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo [ter cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões, pesquise as permissões a seguir em [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Incompatível | Incompatível | CallRecords.Read.All  |
 |[canal](../resources/channel.md) (/teams/getAllChannels – todos os canais em uma organização) | Incompatível  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All |
-|[canal](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[canal](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) chat (/conversa – todos os chats em uma organização) | Incompatível | Incompatível | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Sem suporte | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Sem suporte | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
@@ -84,13 +84,14 @@ OneDrive for Business e Microsoft Office SharePoint Online suportam o envio de n
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você pode assinar alterações em Outlook de **contato, evento** ou mensagem **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
+Você pode assinar alterações nos recursos de **contato, evento** ou mensagem  do Outlook **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings, presença
 
 As assinaturas **em onlineMeetings** e presença exigem [a](/graph/webhooks-with-resource-data#creating-a-subscription) propriedade **encryptionCertificate** e **encryptionCertificateId** ao criar uma assinatura para notificações com dados de recursos criptografados. Para obter mais informações, consulte [configurar notificações de alteração para incluir dados de recursos](/graph/webhooks-with-resource-data).
+Para obter detalhes sobre assinaturas de reunião online, consulte [Obter notificações de alteração para reuniões online](/graph/changenotifications-for-onlinemeeting).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

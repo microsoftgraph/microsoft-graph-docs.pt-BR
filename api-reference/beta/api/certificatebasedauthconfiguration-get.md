@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 71ac48dc5215c7f265434ee667ef127e6d15172e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 65e0c3b13fedc830a2a031ad65aced56a601df18
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394471"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441536"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>Obter certificateBasedAuthConfiguration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter as propriedades de [um objeto certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
+Obtenha as propriedades de um [objeto certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfi
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-certificatebasedauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-certificatebasedauthconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

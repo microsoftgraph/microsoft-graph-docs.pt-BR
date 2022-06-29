@@ -1,22 +1,22 @@
 ---
-title: Use a API Pesquisa da Microsoft para cortar resultados de pesquisa duplicados (visualização)
-description: Saiba como usar a API Pesquisa da Microsoft para cortar resultados de pesquisa duplicados.
+title: Usar a API de Pesquisa da Microsoft para cortar resultados de pesquisa duplicados
+description: Você pode usar a propriedade trimDuplicates da API de Pesquisa da Microsoft no Microsoft Graph para cortar resultados de pesquisa duplicados. Suporte apenas em arquivos do SharePoint.
 author: yiwenwang
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: ca561efcb331bcc0c4fcc55456e06b73e53edde6
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 8101b6c2a74ec7c30d8b9ca6478bbb13e59d7293
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589503"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438252"
 ---
-# <a name="use-the-microsoft-search-api-to-trim-duplicate-search-results-preview"></a>Use a API Pesquisa da Microsoft para cortar resultados de pesquisa duplicados (visualização)
+# <a name="use-the-microsoft-search-api-to-trim-duplicate-search-results"></a>Usar a API de Pesquisa da Microsoft para cortar resultados de pesquisa duplicados
 
-Neste artigo, você aprenderá a usar a API Pesquisa da Microsoft para cortar resultados de pesquisa duplicados. **Especifique a propriedade trimDuplicates** em um [objeto searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) para cortar os resultados de pesquisa duplicados. A **propriedade trimDuplicates** só é suportada em arquivos hospedados em SharePoint. O valor padrão é `false`.
+Você pode usar a API de Pesquisa da Microsoft no Microsoft Graph para cortar resultados de pesquisa duplicados. **Especifique a propriedade trimDuplicates** em um [objeto searchRequest](/graph/api/resources/searchrequest) para cortar os resultados de pesquisa duplicados. A **propriedade trimDuplicates** só tem suporte em arquivos hospedados no SharePoint. O valor padrão é `false`.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra uma solicitação que pesquisa arquivos hospedados no SharePoint e usa a propriedade **trimDuplicates** para cortar os resultados de pesquisa duplicados.
+O exemplo a seguir mostra uma solicitação que procura arquivos hospedados no SharePoint e usa a propriedade **trimDuplicates** para cortar os resultados da pesquisa duplicada.
 
 ### <a name="request"></a>Solicitação
 
@@ -141,8 +141,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-A **propriedade trimDuplicates** não é suportada para os seguintes recursos: **mensagem**, **evento** e **externalItem**.
+A **propriedade trimDuplicates** não tem suporte para os seguintes recursos: **mensagem**, **evento** e **externalItem**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview)

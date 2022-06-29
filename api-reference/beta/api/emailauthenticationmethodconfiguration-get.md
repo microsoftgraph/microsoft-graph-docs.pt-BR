@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2f7b0f65083b5c4a29b30a8850f2a0421cdfdf4d
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: f40e26343f1ae6d14c4c8d249c72ac7ce969a961
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365173"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436705"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Obter emailAuthenticationMethodConfiguration
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um objeto [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md), que representa a política de método de autenticação [OTP de](../resources/authenticationmethodspolicies-overview.md) email para o locatário Azure Active Directory (Azure AD).
+Leia as propriedades e as relações de um objeto [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md), que representa a política de método de autenticação [OTP de](../resources/authenticationmethodspolicies-overview.md) email para o locatário do Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,14 +27,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)|Policy.ReadWrite.AuthenticationMethod|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Leitor Global
 * Administrador da Política de Autenticação
-* Administrador Global
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -93,6 +93,10 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-emailauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-emailauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

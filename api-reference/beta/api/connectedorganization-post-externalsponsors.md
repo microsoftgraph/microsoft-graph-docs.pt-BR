@@ -1,18 +1,18 @@
 ---
-title: Adicionar patrocinador externo da organização conectada
+title: Adicionar responsável externo da organização conectada
 description: Adicione um usuário ou grupo aos patrocinadores externos da organização conectada.
 ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 029856f55246cf1cc4cf77c016a378183370eafc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4add8d1df739a24545bfaad77b7d5683fb416dfd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005609"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440072"
 ---
-# <a name="add-connected-organization-external-sponsor"></a>Adicionar patrocinador externo da organização conectada
+# <a name="add-connected-organization-external-sponsor"></a>Adicionar responsável externo da organização conectada
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante)     | EntitlementManagement.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -41,7 +41,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/exter
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação [](../resources/user.md) JSON da referência ao objeto do usuário ou grupo a ser adicionado, como uma propriedade com o URI completo do usuário ou [](../resources/group.md) `@odata.id` grupo.
+No corpo da solicitação, forneça uma representação JSON da referência ao objeto [](../resources/user.md) de usuário [](../resources/group.md) ou grupo a ser adicionado, `@odata.id` como uma propriedade com o URI completo do usuário ou grupo.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
@@ -83,8 +83,12 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalsponsor-from-connectedorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalsponsor-from-connectedorganization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalsponsor-from-connectedorganization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

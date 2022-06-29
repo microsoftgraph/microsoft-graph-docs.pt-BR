@@ -1,23 +1,23 @@
 ---
 title: Obter termo
-description: Leia as propriedades e as relações de um objeto term.
+description: Leia as propriedades e as relações de um objeto de termo.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6ff8039c2d79382926c7ea56363fccbb3348e79e
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 0715f0197f283f2379e1513a14749ee7ea1f76ff
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395409"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441787"
 ---
 # <a name="get-term"></a>Obter termo
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto term](../resources/termstore-term.md) .
+Leia as propriedades e as relações de um [objeto de](../resources/termstore-term.md) termo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto term](../resources/termstore-term.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto de](../resources/termstore-term.md) termo no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/termStore/groups/1FFD3F87-9464-488A-A0EC-8F
 [!INCLUDE [sample-code](../includes/snippets/go/get-term-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-term-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Resposta
@@ -119,7 +123,7 @@ Content-Type: application/json
   "lastModifiedDateTime": "2019-06-21T20:01:37Z"
 }
 ```
-### <a name="example-2--get-a-site-collection-termstore-term"></a>Exemplo 2: Obter um termo de repositório de conjunto de sites
+### <a name="example-2--get-a-site-collection-termstore-term"></a>Exemplo 2: obter um termo de termStore do conjunto de sites
 
 #### <a name="request"></a>Solicitação
 
@@ -151,6 +155,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-term-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-term-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

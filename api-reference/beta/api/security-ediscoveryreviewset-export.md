@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d009c516409b15b5d10a9bb8befb0d7e5b66bac5
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: ae81bc60407fdaf2f545fac72a313c58ab3b22f7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092377"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446891"
 ---
 # <a name="ediscoveryreviewset-export"></a>ediscoveryReviewSet: exportar
 Namespace: microsoft.graph.security
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,10 +53,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
 |outputName|Cadeia de caracteres| Nome da exportação. Obrigatório. |
-|description|Cadeia de caracteres| Descrição da exportação |
-|azureBlobContainer|String| Ao exportar para sua própria conta de armazenamento do Azure, essa é a URL do contêiner. |
+|description|String| Descrição da exportação |
+|azureBlobContainer|Cadeia de caracteres| Ao exportar para sua própria conta de armazenamento do Azure, essa é a URL do contêiner. |
 |azureBlobToken|String| Ao exportar para sua própria conta de armazenamento do Azure, o token SAS para a URL do contêiner. |
-|Exportoptions|Cadeia de caracteres|Especifica opções que controlam o formato da exportação. Os valores possíveis são: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|Exportoptions|String|Especifica opções que controlam o formato da exportação. Os valores possíveis são: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
 |exportStructure|Cadeia de caracteres| Opções que controlam a estrutura do arquivo e o empacotamento da exportação. Os valores possíveis são: `none`, `directory`, `pst`.|
 ## <a name="response"></a>Resposta
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewsetthisexport-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoveryreviewsetthisexport-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a71b33bb98196380cb0fd036f8d20f47be6502ab
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6d1ff8baab3b3817d5521ca34ff6c9d50c265a5f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65210490"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446775"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto de](../resources/group.md) grupo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -58,7 +58,7 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 | displayName             | Cadeia de caracteres  | O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações.                                                                                                                                                                                                                                                                                                                                                                   |
 | mailNickname            | String  | O alias de email do grupo, exclusivo para grupos do Microsoft 365 na organização. O comprimento máximo é de 64 caracteres. Essa propriedade pode conter apenas caracteres no [conjunto de caracteres ASCII de 0 a 127](/office/vba/language/reference/user-interface-help/character-set-0127), exceto o seguinte: ` @ () \ [] " ; : . <> , SPACE`.                                                                                                                                                             |
 | preferredDataLocation   | String  | O local de dados preferencial para o grupo Microsoft 365. Para atualizar essa propriedade, o usuário de chamada deve receber uma das seguintes funções do Azure Active Directory: <br><ul><li> Administrador Global <li> Administrador de Conta de Usuário <li> Suporte para Parceiro Nível1 ou Nível2 <li>Gravador de Diretório <li> Administrador do Exchange <li> Administrador do SharePoint </ul> <br/>Para obter mais informações sobre essa propriedade, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
-| securityEnabled         | Boolean | Especifica se o grupo é um grupo de segurança, incluindo Microsoft 365 grupos.                                                                                                                                                                                                                                                                                                                                                                                                             |
+| securityEnabled         | Boolean | Especifica se o grupo é um grupo de segurança, incluindo grupos do Microsoft 365.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | Cadeia de caracteres  | Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).                                                                                                                                                                                                                                                                                                                                              |
 
 Como o **recurso** de grupo dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados [específicos](/graph/extensibility-overview) do aplicativo em propriedades personalizadas de uma extensão em uma instância de **grupo existente.**
@@ -144,11 +144,13 @@ Este é um exemplo de resposta.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>Exemplo 2: Aplicar rótulo de confidencialidade a um Microsoft 365 grupo
+### <a name="example-2-apply-sensitivity-label-to-a-microsoft-365-group"></a>Exemplo 2: Aplicar rótulo de confidencialidade a um grupo do Microsoft 365
 
 #### <a name="request"></a>Solicitação
 
-Você pode obter a ID do rótulo que deseja aplicar a um grupo Microsoft 365 usando [o rótulo lista](informationprotectionpolicy-list-labels.md). Em seguida, você pode atualizar [a propriedade assignedLabels](../resources/assignedlabel.md) do grupo com a ID do rótulo.
+Você pode obter a ID do rótulo que deseja aplicar a um grupo do Microsoft 365 usando [o rótulo lista](informationprotectionpolicy-list-labels.md). Em seguida, você pode atualizar [a propriedade assignedLabels](../resources/assignedlabel.md) do grupo com a ID do rótulo. 
+
+>**Nota:** O uso dessa API para aplicar rótulos de confidencialidade a grupos do Microsoft 365 só tem suporte para cenários de permissão delegada.
 
 # <a name="http"></a>[HTTP](#tab/http)
 

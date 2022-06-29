@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iosLobAppProvisioningConfiguration
 description: Este tópico fornece descrições dos métodos, propriedades e relações declarados expostos pelo recurso de Configuração de Provisionamento de Aplicativos Lob do iOS.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3143c19f87144e718b2e5db0dbdb84c24feb2f17
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: b755ab6a94bca06b2ba73f2d896dc3a382077b1e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899341"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439939"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Tipo de recurso iosLobAppProvisioningConfiguration
 
@@ -38,7 +38,7 @@ Este tópico fornece descrições dos métodos, propriedades e relações declar
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | --- | --- | --- |
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data e hora opcionais de expiração do perfil.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de conteúdo (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
@@ -46,7 +46,7 @@ Este tópico fornece descrições dos métodos, propriedades e relações declar
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações

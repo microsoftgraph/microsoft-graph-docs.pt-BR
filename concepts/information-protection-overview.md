@@ -1,37 +1,37 @@
 ---
-title: Visão geral da rotulagem da Proteção de Informações do Microsoft Purview
-description: A rotulagem da Proteção de Informações do Microsoft Purview ajuda as organizações a classificar, rotular e proteger dados com base nos Rótulos de Confidencialidade do Centro de Conformidade e Segurança do Office 365.
+title: Proteção de Informações do Microsoft Purview de rotulagem
+description: Use Proteção de Informações do Microsoft Purview para classificar, rotular e proteger dados com base em rótulos de confidencialidade. Saiba como usar APIs de rótulo no Microsoft Graph.
 author: tommoser
 ms.localizationpriority: medium
 ms.prod: security
-ms.openlocfilehash: e2f93def1a27e3a19866319650122ba6d4fca09b
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 3d1018b76e72d8fde7384d516aa12848768c63bc
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884229"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444926"
 ---
-# <a name="information-protection-overview"></a>Visão geral da Proteção de Informações
+# <a name="microsoft-purview-information-protection-labeling-overview"></a>Proteção de Informações do Microsoft Purview de rotulagem
 
-A Proteção de Informações do Microsoft Purview ajuda as organizações a classificar, rotular e proteger dados com base [na confidencialidade](/Office365/SecurityCompliance/sensitivity-labels). 
+Proteção de Informações do Microsoft Purview ajuda as organizações a classificar, rotular e proteger dados com base em [rótulos de confidencialidade](/Office365/SecurityCompliance/sensitivity-labels).
 
-As organizações usam rótulos para auxiliar:
+As organizações usam rótulos para ajudar:
 
 * Usuários no entendimento da importância das informações que estão sendo tratadas.
-* Administradores de conformidade ao descobrir onde residem informações confidenciais. 
+* Administradores de conformidade ao descobrir onde residem informações confidenciais.
 * Administradores de segurança na implantação de políticas de prevenção contra perda de dados e acesso a dados com base em informações de rótulo mais avançadas.
 
-## <a name="why-integrate-microsoft-purview-information-protection"></a>Por que integrar a Proteção de Informações do Microsoft Purview? 
+## <a name="why-integrate-with-microsoft-purview-information-protection"></a>Por que integrar com Proteção de Informações do Microsoft Purview?
 
 ### <a name="integrate-with-the-ubiquitous-labeling-platform-servicing-millions-of-users-and-devices"></a>Integrar-se à plataforma de rotulagem onipresente, atendendo milhões de usuários e dispositivos
 
-Mais de um milhão de organizações com dezenas de milhões de usuários usam a Proteção de Informações do Microsoft Purview para classificar, rotular e proteger dados.  Além do Microsoft 365, vários serviços de DLP (prevenção contra perda de dados), plataformas de business intelligence e soluções de SaaS (software como serviço) adotaram a rotulagem da Proteção de Informações do [Microsoft Purview](https://www.microsoft.com/security/technology/information-protection) para fornecer uma experiência de classificação de dados mais avançada. 
+Mais de um milhão de organizações com dezenas de milhões de usuários usam Proteção de Informações do Microsoft Purview para classificar, rotular e proteger dados.  Além do Microsoft 365, vários serviços de DLP (prevenção contra perda de dados), plataformas de business intelligence e soluções de SaaS (software como serviço) adotaram uma [rotulagem Proteção de Informações do Microsoft Purview](https://www.microsoft.com/security/technology/information-protection) para fornecer uma experiência de classificação de dados mais avançada. 
 
 ### <a name="label-information-in-line-of-business-applications"></a>Informações de rótulo em aplicativos de linha de negócios
 
-Os desenvolvedores corporativos usam a Proteção de Informações do Microsoft Purview para rotular e proteger informações confidenciais do cliente sobre exportação de aplicativos de linha de negócios para garantir a segurança das informações do cliente. Conectar seus aplicativos ao ecossistema da Proteção de Informações do Microsoft Purview permite que os aplicativos apliquem, [](/Office365/SecurityCompliance/sensitivity-labels) atualizem e excluam rótulos de confidencialidade em seus próprios dados de aplicativo, sem a sobrecarga de integrar um SDK completo.
+Os desenvolvedores corporativos usam Proteção de Informações do Microsoft Purview para rotular e proteger informações confidenciais do cliente sobre exportação de aplicativos de linha de negócios para garantir a segurança das informações do cliente. Conectar seus aplicativos ao ecossistema Proteção de Informações do Microsoft Purview permite que os aplicativos apliquem, atualizem e excluam rótulos de confidencialidade em seus próprios dados de aplicativo, sem a sobrecarga de integrar um SDK completo.[](/Office365/SecurityCompliance/sensitivity-labels)
 
-## <a name="what-can-i-do-with-microsoft-purview-information-protection-label-apis-in-microsoft-graph"></a>O que posso fazer com as APIs de rótulo da Proteção de Informações do Microsoft Purview no Microsoft Graph? 
+## <a name="what-can-i-do-with-microsoft-purview-information-protection-label-apis-in-microsoft-graph"></a>O que posso fazer com apIs Proteção de Informações do Microsoft Purview rótulo no Microsoft Graph? 
 
 ### <a name="discover-labels-available-to-a-user-or-organization"></a>Descobrir rótulos disponíveis para um usuário ou organização
 
@@ -43,14 +43,14 @@ Ao fornecer informações sobre o rótulo de confidencialidade existente e desej
 
 ### <a name="interpret-labels-applied-to-data"></a>Interpretar rótulos aplicados aos dados
 
-Os aplicativos que consomem [](/graph/api/resources/metadataaction) informações que já têm metadados de rótulo de confidencialidade aplicados podem usar a API **extractLabel** para resolver metadados de rótulo para um rótulo de confidencialidade da Proteção de Informações do Microsoft Purview [.](/graph/api/resources/informationprotectionlabel) Use o rótulo para identificar as ações que devem ser executadas pelo aplicativo ao manipular ou consumir os dados rotulados. 
+Aplicativos que consomem informações [](/graph/api/resources/metadataaction) que já têm metadados de rótulo de confidencialidade aplicados podem usar a API **extractLabel** para resolver metadados de rótulo para um Proteção de Informações do Microsoft Purview [rótulo de confidencialidade](/graph/api/resources/informationprotectionlabel). Use o rótulo para identificar as ações que devem ser executadas pelo aplicativo ao manipular ou consumir os dados rotulados. 
 
 ## <a name="api-reference"></a>Referência da API
 
 Está procurando a referência de API para esse serviço?
 
-- [API de Proteção de Informações do Microsoft Purview no Microsoft Graph beta](/graph/api/resources/informationprotectionlabel)
+- [Proteção de Informações do Microsoft Purview API no Microsoft Graph beta](/graph/api/resources/informationprotectionlabel)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Selecione e experimente consultas de exemplo de rotulagem da Proteção de Informações no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer). Escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para ativar a **Proteção de Informações do Microsoft Purview**.
+- Selecione e tente Proteção de Informações consultas de exemplo de rotulagem no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer). Escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para ativar o **Proteção de Informações do Microsoft Purview**.

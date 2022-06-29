@@ -5,12 +5,12 @@ author: raprakasMSFT
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 19fdd2164b186fa4d35899e5c41b634d28568a1e
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 6ef8a364f0e3e9766928bec0e8d790751a19a2f1
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516093"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437160"
 ---
 # <a name="get-agreementfile"></a>Obter agreementFile
 Namespace: microsoft.graph
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos agreementFile](../resources/agreementfile.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos agreementFile](../resources/agreementfile.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/94
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-agreementfile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-agreementfile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

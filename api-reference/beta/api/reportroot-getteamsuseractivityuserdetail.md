@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 192a2476c6e7f34d202ada3ec46dff334d63b6b6
-ms.sourcegitcommit: 5a43129dbf705f2d1a6afcff36af9f41ecee026d
+ms.openlocfilehash: c5252465444e5316d781a77cd9f90eb76a3baac6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704300"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441451"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -78,7 +78,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 - Data de atualização do relatório
 - Nome de Exibição do Locatário
-- Nomes de exibição de locatário de canal compartilhado
+- Nomes de Exibição de Locatário de Canal Compartilhado
 - User Id
 - Nome UPN
 - Data da última atividade
@@ -91,24 +91,27 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Contagem de reuniões
 - Postar Mensagens
 - Mensagens de Resposta
-- Mensagens urgentes
-- Contagem organizada de reuniões
+- Mensagens Urgentes
+- Contagem de Reuniões Organizadas
 - Contagem de Reuniões Atendidas
-- Contagem Organizada de Reuniões Ad Hoc
-- Contagem de Reuniões Ad Hoc atendidas
-- Contagem Organizada de Reuniões Única Agendadas
-- Contagem de Reuniões Atendidas Agendadas
+- Contagem de Reuniões Ad Hoc Organizadas
+- Contagem de Reuniões Ad Hoc Atendidas
+- Contagem Organizada de Reuniões Únicas Agendadas
+- Contagem de Reuniões Agendadas uma Única Vez
 - Contagem Organizada de Reuniões Recorrentes Agendadas
 - Contagem de Reuniões Recorrentes Agendadas
-- Duração do áudio
-- Duração do vídeo
+- Duração do Áudio
+- Duração do Vídeo
 - Duração do Compartilhamento de Tela
-- Duração do áudio em segundos
-- Duração do vídeo em segundos
-- Duração do compartilhamento de tela em segundos
+- Duração do Áudio em Segundos
+- Duração do Vídeo em Segundos
+- Duração do Compartilhamento de Tela em Segundos
 - Tem outra ação
-- É Licenciado
+- Está Licenciado
 - Período de Relatório
+
+> [!NOTE] 
+> Os valores na contagem organizada de reuniões podem não ser a soma da contagem organizada de reuniões ad hoc, contagem organizada de reuniões únicas agendadas e contagem organizada de reuniões recorrentes agendadas que um usuário organizou durante o período de tempo especificado. Isso ocorre porque o valor de reuniões não classificadas não é inserido no arquivo CSV de saída. Para obter detalhes, confira [Relatório de atividades do usuário do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/user-activity-report).
 
 ### <a name="json"></a>JSON
 

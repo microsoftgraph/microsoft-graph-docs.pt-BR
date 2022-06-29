@@ -1,15 +1,15 @@
 ---
 title: Crie eventos do Outlook em um calendário compartilhado ou delegado
-description: No Outlook, os clientes podem compartilhar um calendário com outros usuários e permitir que eles exibam ou modifiquem eventos nesse calendário. Os clientes também podem permitir que um representante aja em nome deles, para receber ou responder a solicitações de reunião ou então para criar ou alterar itens no calendário.
+description: Saiba como criar um evento de reunião em um calendário do Outlook compartilhado ou delegado. Você pode compartilhar um calendário com outros usuários ou conceder a um representante para agir em seu nome.
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 77534a6b1fad8392df01c33f91e0db321767007c
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: fedea680d74f23146281cb5b9b60038304a19d15
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366076"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437041"
 ---
 # <a name="create-outlook-events-in-a-shared-or-delegated-calendar"></a>Crie eventos do Outlook em um calendário compartilhado ou delegado
 
@@ -118,7 +118,8 @@ Content-type: application/json
 }
 ```
 
-> **OBSERVAÇÃO** Conectada como Adele, você pode, alternativamente, obter o calendário delegado diretamente da caixa de correio do Alex, especificando a identidade do Alex e o atalho de `calendar`, como em `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`. A ID do calendário retornado corresponde apenas à caixa de correio do Alex. 
+> [!NOTE]
+> Conectado como Adele, você pode, como alternativa, obter o calendário delegado diretamente da caixa de correio de Alex, especificando a identidade de Alex e o `calendar` atalho, como em `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`. A ID do calendário retornado corresponde apenas à caixa de correio de Alex. 
 
 ## <a name="step-2-adele-creates-and-sends-an-invitation-on-alex-behalf"></a>Etapa 2: Adele cria e envia um convite em nome de Alex
 
@@ -518,7 +519,7 @@ Conectada como Clara, define o **evento** como provisório e inclui uma mensagem
 
 **Permissões do Microsoft Graph**
 
-Use a permissão delegada menos privilegiada, `Calendars.ReadWrite.Shared`. Para obter mais informações, confira as [permissões de calendário](permissions-reference.md#calendars-permissions).
+Use a permissão delegada menos privilegiada, `Calendars.ReadWrite.Shared`. Para obter mais informações, consulte as [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -687,7 +688,7 @@ Conectado como Alex, obtenha o [evento](/graph/api/resources/event) que Adele cr
 
 **Permissões do Microsoft Graph**
 
-Use a permissão delegada menos privilegiada, `Calendars.Read`. Para obter mais informações, confira as [permissões de calendário](permissions-reference.md#calendars-permissions).
+Use a permissão delegada menos privilegiada, `Calendars.Read`. Para obter mais informações, consulte as [permissões de calendário](permissions-reference.md#calendars-permissions).
 
 
 # <a name="http"></a>[HTTP](#tab/http)

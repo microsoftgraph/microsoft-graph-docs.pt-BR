@@ -1,16 +1,16 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 2e2882cd3f39445d85e80dfa4e8a94e37575c7af
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bb9d7df593e34657c3971dbfb87755a68c04f33c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62092721"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66502355"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgUserAuthenticationWindowHello -UserId $userId -WindowsHelloForBusinessAuthenticationMethodId $windowsHelloForBusinessAuthenticationMethodId
+Get-MgUserAuthenticationWindowHelloForBusinessMethod -UserId $userId -WindowsHelloForBusinessAuthenticationMethodId $windowsHelloForBusinessAuthenticationMethodId
 
 ```

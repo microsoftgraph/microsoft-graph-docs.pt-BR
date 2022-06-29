@@ -1,27 +1,29 @@
 ---
-title: Atualizar um formato de intervalo no Excel com o Microsoft Graph
-description: Os exemplos a seguir demonstram como atualizar as propriedades RangeFormat, RangeFill e RangeFont de um intervalo especificado.
+title: Atualizar um formato de intervalo no Excel
+description: Veja exemplos que mostram como usar o Excel no Microsoft Graph para atualizar as propriedades RangeFormat, RangeFill e RangeFont de um intervalo especificado.
 ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 27d2ca1c22aa82349738da01049346ed2479e6de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c07deba3b70b43a1cb28c69e5ad7d34e3af6bc5d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143619"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441612"
 ---
-# <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>Atualizar um formato de intervalo no Excel com o Microsoft Graph
+# <a name="update-a-range-format-in-excel"></a>Atualizar um formato de intervalo no Excel
 
-Os exemplos a seguir demonstram como atualizar as propriedades [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0) e [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) de um intervalo especificado.
+Os exemplos a seguir demonstram como usar o Excel no Microsoft Graph para atualizar as propriedades [RangeFormat](/graph/api/resources/rangeformat), [RangeFill](/graph/api/resources/rangefill) e [RangeFont](/graph/api/resources/rangefont) de um intervalo especificado.
 
-O resultado desse conjunto de solicitações é uma tabela com três células formatadas como as três células principais na imagem abaixo.
+O resultado desse conjunto de solicitações é uma tabela com três células formatadas como as três principais células na imagem a seguir.
 
 ![Tabela de gráfico do Excel com três células cujas propriedades formatação, preenchimento e fonte foram atualizadas.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
-##### <a name="request"></a>Solicitação
+## <a name="example-1-cell-1-alignment-and-height"></a>Exemplo 1: alinhamento e altura da célula 1
+
 Esta solicitação atualiza o alinhamento vertical, a altura da linha e a altura da coluna da primeira célula.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -58,8 +60,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,9 +84,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
+## <a name="example-2-cell-1-font-style-size-and-color"></a>Exemplo 2: estilo, tamanho e cor da fonte da célula 1
+
 Esta solicitação atualiza o estilo, o tamanho e a cor da fonte da primeira célula.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -116,8 +124,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -137,9 +149,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
+## <a name="example-3-cell-1-background-color"></a>Exemplo 3: cor da tela de fundo da célula 1
+
 Esta solicitação atualiza a cor da tela de fundo da primeira célula.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -173,8 +187,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -188,9 +206,12 @@ Content-type: application/json
     "color": "#FF0000"
 }
 ```
-##### <a name="request"></a>Solicitação
+
+## <a name="example-4-cell-2-alignment-and-height"></a>Exemplo 4: alinhamento e altura da célula 2
+
 Esta solicitação atualiza o alinhamento vertical, o alinhamento horizontal, a altura da linha e a altura da coluna da segunda célula.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -228,8 +249,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -248,9 +273,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
+## <a name="example-5-cell-2-font-style-and-size"></a>Exemplo 5: tamanho e estilo da fonte da célula 2
+
 Esta solicitação atualiza o estilo e o tamanho da fonte da segunda célula.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -285,8 +312,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -306,9 +337,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
+## <a name="example-6-cell-2-background-color"></a>Exemplo 6: cor da tela de fundo da célula 2
+
 Esta solicitação atualiza a cor da tela de fundo da segunda célula.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -342,8 +375,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -358,9 +395,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
+## <a name="example-7-cell-3-alignment-and-height"></a>Exemplo 7: alinhamento e altura da célula 3
+
 Esta solicitação atualiza o alinhamento vertical, o alinhamento horizontal, a altura da linha e a altura da coluna da terceira célula.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -398,8 +437,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -418,9 +461,13 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
-Esta solicitação atualiza o estilo da fonte, o tamanho e a cor da terceira célula. A propriedade underline tem **Single** ou **Double** como valores.
+## <a name="example-8-cell-3-font-style-size-and-color"></a>Exemplo 8: estilo, tamanho e cor da fonte da célula 3
 
+Esta solicitação atualiza o estilo da fonte, o tamanho e a cor da terceira célula.
+
+> **Nota:** A propriedade de sublinhado **usa Single** ou **Double** como valores.
+
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -456,8 +503,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -477,9 +528,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request"></a>Solicitação
+## <a name="example-9-cell-3-background-color"></a>Exemplo 9: cor da tela de fundo da célula 3
+
 Esta solicitação atualiza a cor da tela de fundo da terceira célula.
 
+### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -513,8 +566,12 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+
+Este é um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -529,13 +586,14 @@ Content-type: application/json
 }
 ```
 
-
 ## <a name="see-also"></a>Confira também
+
 * [Gerenciar sessões do Excel usando o Microsoft Graph](excel-manage-sessions.md)
 * [Gravar em uma pasta de trabalho do Excel usando o Microsoft Graph](excel-write-to-workbook.md)
 * [Usar funções de pasta de trabalho do Excel com o Microsoft Graph](excel-use-functions.md)
 * [Exibir uma imagem do gráfico do Excel com o Microsoft Graph](excel-display-chart-image.md)
-* [Usar a API REST do Excel](/graph/api/resources/excel?view=graph-rest-1.0)
+* [Usar a API REST do Excel](/graph/api/resources/excel)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: Lista directoryAudits
-description: Descreve o método de lista do recurso directoryAudit (entidade) da API do Microsoft Graph (versão beta).
+description: Descreve o método de lista do recurso directoryAudit (entidade) do Microsoft API do Graph (versão beta).
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 6927c6f589fcd3e0c81b8499d543d99e6dc0c4cf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dd8fe4c8923dac46cd9e9d7854d64015a5319390
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133948"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437400"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de logs de auditoria gerados por Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo gerenciamento de usuário, aplicativo, dispositivo e grupo, PIM (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de administrador e SSPR) e gerenciamento de grupo de autoatendamento.
+Obtenha a lista de logs de auditoria gerados pelo Azure Active Directory. Isso inclui logs de auditoria gerados por vários serviços no Azure AD, incluindo gerenciamento de usuário, aplicativo, dispositivo e grupo, PIM (privileged identity management), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de administrador e SSPR) e gerenciamento de grupo de autoatendimento.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
 > [!IMPORTANT]
-> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
+> Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
 Além disso, os aplicativos devem ser [corretamente registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
@@ -44,7 +44,7 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [parâmetros de consulta OData](/graph/query-parameters).
 
 |Parâmetro     |Descrição                            |Exemplo|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -52,7 +52,7 @@ Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar
 |[$top](/graph/query-parameters#top-parameter)|Define o tamanho de página de resultados.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas.|`/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="attributes-supported-by-filter-parameter"></a>Atributos suportados pelo $filter parâmetro
+### <a name="attributes-supported-by-filter-parameter"></a>Atributos compatíveis com $filter parâmetro
 
 |Atributo        |Operadores com suporte|
 |:----------------|:------|
@@ -132,7 +132,6 @@ Veja a seguir um exemplo da resposta.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryAudit",
-  "isCollection": true
 } -->
 
 ```http
@@ -140,48 +139,60 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
-  "value": [{
-        "id": "id",
-        "category": "UserManagement",
-        "correlationId": "da159bfb-54fa-4092-8a38-6e1fa7870e30",
-        "result": "success",
-        "resultReason": "Successfully added member to group",
-        "activityDisplayName": "Add member to group",
-        "activityDateTime": "2018-01-09T21:20:02.7215374Z",
-        "loggedByService": "Core Directory",
-        "initiatedBy": {
-            "user": {
-                "id": "7283X9ae-1a37-4937-9aex-e35d964db09b",
-                "displayName": "Jamie Doe",
-                "userPrincipalName": "jdoe@wingtiptoysonline.com",
-                "ipAddress": "127.0.0.1"
-            },
-            "app": null
-        },
-        "targetResources": [{
-            "@odata.type": "#microsoft.graph.TargetResourceGroup",
-            "id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
-            "displayName": "Example.com",
-            "modifiedProperties": [{
-                "displayName": "Action Client Name",
-                "oldValue": null,
-                "newValue": "DirectorySync"
-            }],
-            "groupType": "unifiedGroups"
-        }, {
-            "@odata.type": "#microsoft.graph.targetResourceUser",
-            "id": "1f0ex8f5-3x61-4x6b-9x50-d4xx572f2bb7",
-            "displayName": null,
-            "modifiedProperties": [],
-            "userPrincipalName": "jdoe@contoso.com"
-        }],
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
-        "additionalDetails": [{
-            "key": "Additional Detail Name",
-            "value": "Additional Detail Value"
-        }]
-    }]
+    "id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
+    "category": "UserManagement",
+    "correlationId": "504a302a-8f2d-418d-b7df-bf77de6ed831",
+    "result": "success",
+    "resultReason": "",
+    "activityDisplayName": "Update user",
+    "activityDateTime": "2022-06-21T23:25:00.1458248Z",
+    "loggedByService": "Core Directory",
+    "operationType": "Update",
+    "userAgent": null,
+    "initiatedBy": {
+        "app": null,
+        "user": {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test Admin",
+            "userPrincipalName": "tadmin@contoso.com",
+            "ipAddress": "",
+            "userType": "Member",
+            "homeTenantId": null,
+            "homeTenantName": null
+        }
+    },
+    "targetResources": [
+        {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test User",
+            "type": "User",
+            "userPrincipalName": "tuser@contoso.com",
+            "groupType": null,
+            "modifiedProperties": [
+                {
+                    "displayName": "StrongAuthenticationMethod",
+                    "oldValue": "[{\"MethodType\":6,\"Default\":true},{\"MethodType\":7,\"Default\":false}]",
+                    "newValue": "[{\"MethodType\":7,\"Default\":false},{\"MethodType\":6,\"Default\":true},{\"MethodType\":0,\"Default\":false},{\"MethodType\":5,\"Default\":false}]"
+                },
+                {
+                    "displayName": "Included Updated Properties",
+                    "oldValue": null,
+                    "newValue": "\"StrongAuthenticationMethod\""
+                },
+                {
+                    "displayName": "TargetId.UserType",
+                    "oldValue": null,
+                    "newValue": "\"Member\""
+                }
+            ]
+        }
+    ],
+    "additionalDetails": [
+        {
+            "key": "UserType",
+            "value": "Member"
+        }
+    ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: franqq
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c2dc412e4efd6ae2fc8466f134085f85bfd8e78a
-ms.sourcegitcommit: 69b150e408c0b9a0705bf33229269f6e5371bc6c
+ms.openlocfilehash: 73b17e18681d11b4ef103c363f4bf2a71b1c5fe9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65924181"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446576"
 ---
 # <a name="domain-promote"></a>domínio: promover
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 Promover um subdomínio verificado para o domínio raiz. Um domínio verificado tem sua **propriedade isVerified** definida como `true`.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissions  |
+|Tipo de permissão      | Permissões  |
 |:--------------------|:-------------|
 |Delegada (conta corporativa ou de estudante) | Domain.ReadWrite.All |
 |Delegada (conta pessoal da Microsoft) | Sem suporte. |
@@ -56,6 +56,8 @@ Se tiver êxito, essa chamada retornará `200 OK` uma resposta e um valor boolia
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "domain_promote"
@@ -63,6 +65,28 @@ Se tiver êxito, essa chamada retornará `200 OK` uma resposta e um valor boolia
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/promote
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/domain-promote-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/domain-promote-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-promote-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/domain-promote-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-promote-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

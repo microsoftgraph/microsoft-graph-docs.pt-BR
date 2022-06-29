@@ -1,34 +1,34 @@
 ---
 title: 'ediscoverySearch: purgeData'
-description: Use o método de limpar dados para excluir Teams mensagens em uma pesquisa de Descoberta Eletrônica.
+description: Use o método de limpeza de dados para excluir mensagens do Teams em uma pesquisa de Descoberta Eletrônica.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f8ac399b59473a4c5ec1d1e1f064532228c23ea5
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 4a74360e6d714f34e23e6dc6a7ac2bbef641431d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095388"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446646"
 ---
 # <a name="ediscoverysearch-purgedata"></a>ediscoverySearch: purgeData
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua Microsoft Teams mensagens contidas em [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).
+Exclua permanentemente as mensagens do Microsoft Teams contidas em [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).
 
->**Nota:** Essa solicitação limpa Teams somente dados. Ele não limpa outros tipos de dados, como itens de caixa de correio.
+>**Nota:** Essa solicitação limpa apenas os dados do Teams. Ele não limpa outros tipos de dados, como itens de caixa de correio.
 
-Você pode coletar e limpar as seguintes categorias de Teams conteúdo:
-- **Teams chats 1:1** – mensagens de chat, postagens e anexos compartilhados em uma Teams conversa entre duas pessoas. Teams chats 1:1 também são chamados de *conversas*.
-- **Teams chats** em grupo – mensagens de chat, postagens e anexos compartilhados em uma Teams conversa entre três ou mais pessoas. Também chamado *de chats 1:N* ou conversas *em grupo*.
-- **Teams canais** - mensagens de chat, postagens, respostas e anexos compartilhados em um canal Teams padrão.
-- **Canais privados** – Postagens de mensagens, respostas e anexos compartilhados em um canal Teams privado.
-- **Canais compartilhados** – Postagens de mensagens, respostas e anexos compartilhados em um canal Teams compartilhado.
+Você pode coletar e limpar as seguintes categorias de conteúdo do Teams:
+- **Chats do Teams 1:1** – mensagens de chat, postagens e anexos compartilhados em uma conversa do Teams entre duas pessoas. Os chats do Teams 1:1 também são chamados *de conversas*.
+- **Chats em grupo do Teams** – mensagens de chat, postagens e anexos compartilhados em uma conversa do Teams entre três ou mais pessoas. Também chamado *de chats 1:N* ou conversas *em grupo*.
+- **Canais do Teams** – mensagens de chat, postagens, respostas e anexos compartilhados em um canal padrão do Teams.
+- **Canais privados** – Postagens de mensagens, respostas e anexos compartilhados em um canal privado do Teams.
+- **Canais compartilhados** – Postagens de mensagens, respostas e anexos compartilhados em um canal compartilhado do Teams.
 
-Para obter mais informações sobre como limpar Teams mensagens, consulte:
+Para obter mais informações sobre como limpar mensagens do Teams, consulte:
 - [Série de soluções de Descoberta Eletrônica: cenário de vazamento de dados – Pesquisa e limpeza](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
 - [Advanced eDiscovery fluxo de trabalho para conteúdo no Microsoft Teams](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 
@@ -38,8 +38,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -96,6 +96,10 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverysearchthispurgedata-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverysearchthispurgedata-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: a0df694f1eb991051e234243fd0b5198df60643e
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 91dedc0c061a4469092ea4e4525398c2126dc3ca
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133563"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439302"
 ---
 # <a name="update-externalitem"></a>Atualizar externalItem
 Namespace: microsoft.graph.externalConnectors
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-| Delegado (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Delegada (conta corporativa ou de estudante)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte                               |
 | Aplicativo                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
@@ -40,8 +40,8 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 | Parâmetro     | Tipo   | Descrição                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| id da conexão | string | A `id` propriedade do [externalConnection que o contém](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | A propriedade fornecida pelo `id` desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
+| id da conexão | cadeia de caracteres | A `id` propriedade do [externalConnection que o contém](../resources/externalconnectors-externalconnection.md) |
+| item-id       | cadeia de caracteres | A propriedade fornecida pelo `id` desenvolvedor do [externalItem](../resources/externalconnectors-externalitem.md). |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -117,6 +117,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-externalitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-externalitem-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

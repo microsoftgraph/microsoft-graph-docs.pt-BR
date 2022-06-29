@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 6fb4a018b592abad11a860752123de5f0a7c1f00
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: a25f2f9ba56563745d0460f3651fa75f70ba36a5
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094709"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436671"
 ---
 # <a name="get-subscription"></a>Obter assinatura
 
@@ -32,7 +32,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |:-----|:-----|:-----|:-----|
 |[baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 |[callRecord](../resources/callrecords-callrecord.md) | Incompatível | Incompatível | CallRecords.Read.All  |
-|[canal](../resources/channel.md) (/teams/getAllChannels – todos os canais em uma organização) | Incompatível  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[canal](../resources/channel.md) (/teams/getAllChannels – todos os canais em uma organização) | Incompatível  | Sem suporte | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[canal](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All  | Incompatível | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) chat (/conversa – todos os chats em uma organização) | Incompatível | Incompatível | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[chat](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Sem suporte | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
@@ -76,13 +76,14 @@ No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer 
 
 ### <a name="contact-event-and-message"></a>contato, evento e mensagem
 
-Você pode assinar alterações em Outlook de **contato, evento** ou mensagem **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
+Você pode assinar alterações nos recursos de **contato, evento** ou mensagem  do Outlook **e,** opcionalmente, especificar no conteúdo da solicitação POST se deseja incluir dados de recursos criptografados em notificações.
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
 
 ### <a name="onlinemeetings-presence"></a>onlineMeetings, presença
 
 **OnlineMeetings** e **assinaturas** de presença exigem [criptografia](/graph/webhooks-with-resource-data) para notificações com dados de recurso. A criação da assinatura falhará se [encryptionCertificate](../resources/subscription.md) e [encryptionCertificateId](../resources/subscription.md) não forem especificados se os dados de recurso forem desejados em notificações.
+Para obter detalhes sobre assinaturas de reunião online, consulte [Obter notificações de alteração para reuniões online](/graph/changenotifications-for-onlinemeeting).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

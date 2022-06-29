@@ -1,38 +1,38 @@
 ---
 title: Atualizar deviceManagementScript
 description: Atualize as propriedades de um objeto deviceManagementScript.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7764f1f718e0d4980a9d73e49ed573f39d5eca6e
-ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
+ms.openlocfilehash: c95a65149c5d0fdc44a5eb2a425aa2957a379948
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2022
-ms.locfileid: "61711925"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446971"
 ---
 # <a name="update-devicemanagementscript"></a>Atualizar deviceManagementScript
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um [objeto deviceManagementScript.](../resources/intune-shared-devicemanagementscript.md)
+Atualize as propriedades de um [objeto deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)||
+|Delegada (conta corporativa ou de estudante)||
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
-| &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Gerenciamento de dispositivos** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Conjunto de Políticas** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,28 +51,28 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto deviceManagementScript.](../resources/intune-shared-devicemanagementscript.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o deviceManagementScript](../resources/intune-shared-devicemanagementscript.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do script de gerenciamento de dispositivos.|
-|displayName|String|Nome do script de gerenciamento de dispositivos.|
-|descrição|String|Descrição opcional para o script de gerenciamento de dispositivos.|
+|id|Cadeia de caracteres|Identificador exclusivo para o script de gerenciamento de dispositivo.|
+|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivo.|
 |scriptContent|Binária|O conteúdo do script.|
-|createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi criado. Essa propriedade é somente leitura.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivos foi modificado pela última vez. Essa propriedade é somente leitura.|
+|createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado. Essa propriedade é somente leitura.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez. Essa propriedade é somente leitura.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Booliano|Indique se a assinatura de script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
-|runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância do PowerShellScript.|
+|runAs32Bit|Booliano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -110,9 +110,6 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

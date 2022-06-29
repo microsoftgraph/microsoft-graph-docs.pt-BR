@@ -2,15 +2,15 @@
 title: Excluir allowedUser de printerShare
 description: Revogar o acesso do usuário especificado para enviar trabalhos de impressão para o compartilhamento de impressora associado.
 author: braedenp-msft
-localization_priority: Normal
-ms.prod: universal-print
+ms.localizationpriority: medium
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: df3324236a45547a823caafcce0e012c377507ba
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b21e29ddf73db8acd7f71fd1fc0c824f6bc7fd19
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037512"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437959"
 ---
 # <a name="delete-alloweduser-from-printershare"></a>Excluir allowedUser de printerShare
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Revogar o acesso do usuário especificado para enviar trabalhos de impressão para a impressora [associadaShare](../resources/printershare.md).
+Revogar o acesso do usuário especificado para enviar trabalhos de impressão para a [printerShare associada](../resources/printershare.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Para usar o serviço de Impressão Universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um Administrador [de Impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
-|Delegado (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)| PrinterShare.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -74,6 +74,14 @@ DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-alloweduser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-alloweduser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-alloweduser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

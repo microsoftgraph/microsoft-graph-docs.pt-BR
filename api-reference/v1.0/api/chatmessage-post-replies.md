@@ -5,20 +5,20 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b7ca4ca13507f4ea47e813e178d6c9d85a9ed019
-ms.sourcegitcommit: dbacb04ae7138ac3b109683e63a6ff27c166f421
+ms.openlocfilehash: 374f62d53fd7ef3df9f130d091dea04889f4d721
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62805099"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439897"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>Enviar respostas a uma mensagem em um canal
 
 Namespace: microsoft.graph
 
-Envie uma nova resposta para um [chatMessage](../resources/chatmessage.md) em um canal [especificado](../resources/channel.md).
+Envie uma nova resposta a um [chatMessage](../resources/chatmessage.md) em um canal [especificado](../resources/channel.md).
 
-> **Observação**: é uma violação dos termos [de](/legal/microsoft-apis/terms-of-use) uso para usar Microsoft Teams como um arquivo de log. Envie apenas mensagens que as pessoas lerão.
+> **Observação**: é uma violação dos termos [de uso usar](/legal/microsoft-apis/terms-of-use) o Microsoft Teams como um arquivo de log. Enviar apenas mensagens que as pessoas lerão.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -29,13 +29,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All** |
-| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Delegada (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All** |
+| Delegada (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | Teamwork.Migrate.All |
 
-> **Observação**: as permissões marcadas com ** têm suporte apenas para compatibilidade com versões anteriores. Recomendamos que você atualize suas soluções para usar uma permissão alternativa listada na tabela anterior e evite usar essas permissões adiante.
+> **Observação**: as permissões marcadas com ** têm suporte apenas para compatibilidade com versões anteriores. Recomendamos que você atualize suas soluções para usar uma permissão alternativa listada na tabela anterior e evite usar essas permissões daqui para frente.
 
-> **Observação**: As permissões de aplicativo só *são* suportadas para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+> **Observação**: as permissões de aplicativo só *têm* suporte para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,17 +50,17 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto message](../resources/chatmessage.md) . Somente a propriedade body é obrigatória, outras propriedades são opcionais.
+No corpo da solicitação, forneça uma representação JSON de um [objeto de](../resources/chatmessage.md) mensagem. Somente a propriedade do corpo é obrigatória, outras propriedades são opcionais.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` o código de resposta com a [mensagem](../resources/chatmessage.md) que foi criada.
+Se tiver êxito, este método retornará `201 Created` o código de resposta com [a mensagem](../resources/chatmessage.md) que foi criada.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-send-a-new-reply-to-a-chatmessage"></a>Exemplo 1: Enviar uma nova resposta a um chatMessage
 
-Para obter uma lista mais abrangente de exemplos, consulte [Create chatMessage in a channel or a chat](chatmessage-post.md).
+Para obter uma lista mais abrangente de exemplos, consulte [Criar chatMessage em um canal ou chat](chatmessage-post.md).
 
 #### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
@@ -168,7 +168,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra como importar mensagens back-in-time usando `createDateTime` as chaves `from` e no corpo da solicitação.
+O exemplo a seguir mostra como importar mensagens back-in-time usando as chaves `createDateTime` `from` e o corpo da solicitação.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
