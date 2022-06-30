@@ -1,31 +1,32 @@
 ---
-title: 'Obter as alterações incrementais para os eventos em um modo de exibição de calendário '
-description: 'O modo de visualização de calendário em um conjunto de eventos em um intervalo de data/horário do calendário-padrão (../me/calendarview) '
+title: Obter as alterações incrementais para os eventos em um modo de exibição de calendário
+description: Acompanhe as alterações de eventos no modo de exibição de calendário usando solicitações GET com a função delta. O exemplo mostra como sincronizar o calendário padrão de um usuário em um intervalo de tempo definido.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9af9c72f3228dc11ef41884ea9e178494ce0a2ad
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 9616e0c9f3d041495a68929045f68a87fbe7a24d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247235"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555685"
 ---
-# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obter as alterações incrementais para os eventos em um modo de exibição de calendário 
+# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obter as alterações incrementais para os eventos em um modo de exibição de calendário
 
-Usando a consulta delta, você pode obter eventos novos, atualizados ou excluídos em um calendário especificado, ou dentro de uma coleção de eventos definida (como um modo de exibição de calendário) no calendário. Este artigo descreve o último - obter essas alterações incrementais nos eventos em um modo de exibição de calendário. 
+Ao usar a consulta delta, você pode obter eventos novos, atualizados ou excluídos em um calendário especificado, ou dentro de uma coleção definida de eventos (como um modo de exibição de calendário) no calendário. Este artigo descreve o último: obter essas alterações incrementais nos eventos em um modo de exibição de calendário.
 
-> **Observação** A funcionalidade para o primeiro - obter alterações incrementais em eventos em um calendário não vinculado a um intervalo fixo de datas de início e término - está atualmente disponível somente na versão beta. Para obter mais informações, consulte a função [delta](/graph/api/event-delta).
+> [!NOTE]
+> O recurso para o primeiro&mdash;obter alterações incrementais nos eventos em um calendário não vinculado a um período fixo de datas de início e de término&mdash;está disponível atualmente apenas na versão beta. Para saber mais, confira a função[delta](/graph/api/event-delta).
 
-Uma exibição de calendário é uma coleção de eventos em um intervalo de data/hora (.. /me/calendarview) do calendário padrão ou de algum outro calendário especificado de um usuário ou de um calendário de grupo. Os eventos retornados podem incluir instâncias individuais ou ocorrências e exceções de uma série recorrente. Os dados delta permitem que você mantenha e sincronize um repositório local de eventos de um usuário, sem precisar buscar todo o conjunto de eventos do usuário do servidor todas as vezes.
+O modo de visualização de calendário em um conjunto de eventos em um intervalo de data/horário (../me/calendarview) do calendário padrão, ou de outro calendário especificado ou de um calendário de grupo. Os eventos retornados podem incluir instâncias únicas, ou ocorrências e exceções de uma série recorrente. Os dados delta permitem manter e sincronizar o armazenamento local de eventos do usuário, sem ter de buscar todo o conjunto de eventos do usuário no servidor a cada vez que precise deles.
 
-A consulta delta oferece suporte à sincronização completa que recupera todos os eventos no modo de exibição calendário especificado e a sincronização incremental que recupera os eventos ocorridos no modo de exibição de calendário desde a última sincronização. Normalmente, você faria uma sincronização completa inicial e, logo após, obteria, periodicamente, as alterações incrementais para esse modo de exibição de calendário. 
+A consulta delta oferece suporte à sincronização completa que recupera todos os eventos no modo de exibição calendário especificado e a sincronização incremental que recupera os eventos ocorridos no modo de exibição de calendário desde a última sincronização. Normalmente, você faria uma sincronização completa inicial, e posteriormente obteria alterações incrementais para esse modo de exibição de calendário periodicamente.
 
 ## <a name="track-event-changes-in-a-calendar-view"></a>Rastrear alterações de evento em um modo de exibição de calendário
 
-A consulta delta para eventos em uma exibição de calendário é específica para um calendário e um intervalo de data/hora que você especificar. Para controlar as alterações em vários calendários, você precisa acompanhar cada calendário individualmente. 
+A consulta delta para eventos em uma exibição de calendário é específica para um calendário e um intervalo de data/hora que você especificar. Para controlar as alterações em vários calendários, você precisa acompanhar cada calendário individualmente.
 
-O acompanhamento de alterações de eventos em uma modo de exibição calendário normalmente é uma rodada de uma ou mais solicitações GET com a função [delta](/graph/api/event-delta). A solicitação GET inicial é muito parecida com a maneira como você [lista um calendarView](/graph/api/calendar-list-calendarview), exceto que você inclui a função **delta**. A seguir está a solicitação inicial GET delta de uma modo de exibição calendário no calendário padrão do usuário conectado:
+O rastreamento de alterações de evento em um modo de exibição de calendário normalmente corresponde a uma série de eventos de uma ou mais solicitações GET com a função [delta](/graph/api/event-delta). A solicitação GET inicial é muito semelhante à maneira como você [lista uma calendarView](/graph/api/calendar-list-calendarview), exceto se você incluir a função **delta**. A seguir está a solicitação delta GET inicial de um modo de exibição de calendário no calendário padrão do usuário conectado:
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -40,7 +41,7 @@ Esses tokens são [tokens de estado](delta-query-overview.md#state-tokens) que c
 
 Estabeleça tokens de estado que sejam completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL `@odata.nextLink` ou `@odata.deltaLink` retornada da última solicitação GET para a próxima chamada de função **delta** do mesmo modo de exibição de calendário. Uma `@odata.deltaLink` retornada em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `@odata.deltaLink` quando começar a próxima fase.
 
-Verifique o [exemplo](#example-to-synchronize-events-in-a-calendar-view) abaixo para aprender a usar essas URLs `@odata.nextLink` e `@odata.deltaLink`.
+Verifique o [exemplo](#example-synchronize-events-in-a-calendar-view) para aprender a usar essas URLs `@odata.nextLink` e `@odata.deltaLink`.
 
 ### <a name="use-query-parameters-in-a-delta-query-for-calendar-view"></a>Use os parâmetros de consulta de uma consulta delta para a visualização de calendário
 
@@ -53,7 +54,7 @@ Verifique o [exemplo](#example-to-synchronize-events-in-a-calendar-view) abaixo 
 Cada solicitação GET de consulta delta retorna um conjunto de um ou mais eventos na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, `Prefer: odata.maxpagesize={x}`, para configurar o máximo de eventos em uma resposta.
 
 
-## <a name="example-to-synchronize-events-in-a-calendar-view"></a>Exemplo de sincronização de eventos em um modo de exibição de calendário
+## <a name="example-synchronize-events-in-a-calendar-view"></a>Exemplo: sincronização de eventos em um modo de exibição de calendário
 
 O exemplo a seguir mostra uma série de 3 solicitações para sincronizar o calendário de padrão do usuário em um intervalo de tempo específico. Há 5 eventos nesse modo de exibição de calendário.
 
@@ -63,7 +64,7 @@ O exemplo a seguir mostra uma série de 3 solicitações para sincronizar o cale
 
 Para economizar tempo, as respostas de exemplo exibem apenas um subconjunto das propriedades para um evento. Em uma chamada real, a maior parte das propriedades dos eventos são retornadas. 
 
-Confira também o que você vai fazer na [próxima fase](#the-next-round-sample-first-response).
+Confira o que você fará na [próxima fase](#the-next-round-sample-first-response).
 
 
 ### <a name="step-1-sample-initial-request"></a>Passo 1: solicitação inicial de exemplo

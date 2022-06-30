@@ -1,37 +1,44 @@
 ---
 title: APIs protegidas no Microsoft Teams
-description: As APIs do Microsoft Teams no Microsoft Graph, que acessam dados confidenciais, são consideradas APIs protegidas.
+description: As APIs do Microsoft Teams Microsoft Graph que acessam dados confidenciais são consideradas APIs protegidas e exigem validação adicional antes que você possa usá-los.
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: f8c4fd35982d6fa36b49209255217989d121aac7
-ms.sourcegitcommit: 0bcc0a93f37db6013be40dc8d36717aeeeef7fb6
+ms.openlocfilehash: 8f9387d33d440a7ac8d90fc9be9e671b790c9e17
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63516142"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556294"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>APIs protegidas no Microsoft Teams
 
-As APIs do Microsoft Teams no Microsoft Graph, que acessam dados confidenciais, são consideradas APIs protegidas. Essas APIs exigem validação adicional, além de permissões e consentimento, para que você possa usá-las.
+As APIs do Microsoft Teams no Microsoft Graph, que acessam dados confidenciais, são consideradas APIs protegidas. Essas APIs exigem que você tenha validação adicional além de permissões e consentimento antes de poder usá-las.
 
+As seguintes APIs estão protegidas no momento e todas usam as [permissões do aplicativo Microsoft Graph](auth/auth-concepts.md#microsoft-graph-permissions):
 
-As seguintes APIs estão protegidas no momento:
-* [Listar mensagens do canal](/graph/api/channel-list-messages) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Obter chatMessages em um delta de canal](/graph/api/chatmessage-delta) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Receber mensagens do canal](/graph/api/chatmessage-get) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Criar assinatura para novas mensagens do canal](/graph/api/subscription-post-subscriptions) usando [permissões do aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Listar respostas a uma mensagem](/graph/api/chatmessage-list-replies) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Receber resposta a uma mensagem](/graph/api/chatmessage-get) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* (A lista de chats usando [permissões do aplicativo](auth/auth-concepts.md#microsoft-graph-permissions) não existe, com ou sem acesso protegido à API)
-* [Listar messagens em um chat](/graph/api/chat-list-messages) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Receber mensagens em um chat](/graph/api/chatmessage-get) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Criar assinatura para novas mensagens do canal](/graph/api/subscription-post-subscriptions) usando [permissões do aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Listar todo o conteúdo hospedado](/graph/api/chatmessage-list-hostedcontents) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Obter conteúdo hospedado](/graph/api/chatmessagehostedcontent-get) usando [permissões de aplicativo](auth/auth-concepts.md#microsoft-graph-permissions)
+* [Listar mensagens do canal](/graph/api/channel-list-messages)
+* [Obter chatMessages em um delta de canal](/graph/api/chatmessage-delta)
+* [Obter mensagem do canal](/graph/api/chatmessage-get)
+* [Criar assinatura para novas mensagens de canal](/graph/api/subscription-post-subscriptions)
+* [List replies to a message](/graph/api/chatmessage-list-replies)
+* [Get a reply to a message](/graph/api/chatmessage-get)
+* (Listar chats não existe, com ou sem acesso à API protegida)
+* [Listar mensagens em um chat](/graph/api/chat-list-messages)
+* [Receba uma mensagem no bate-papo](/graph/api/chatmessage-get)
+* [Criar assinatura para novas mensagens de chat](/graph/api/subscription-post-subscriptions)
+* [Listar todo o conteúdo hospedado](/graph/api/chatmessage-list-hostedcontents)
+* [Obter conteúdo hospedado](/graph/api/chatmessagehostedcontent-get)
 
->[!NOTE]
->[Enviar mensagem](/graph/api/channel-post-messages) não é uma API protegida.
+> [!NOTE]
+> [Enviar mensagem](/graph/api/channel-post-messages) não é uma API protegida.
 
-Para solicitar acesso a essas APIs protegidas, complete o [formulário de solicitação](https://forms.office.com/r/v3qjyzBCxD) a seguir. Normalmente, analisamos solicitações de acesso todas as quartas-feiras e implantamos aprovações todas as sextas-feiras ou segundas-feiras, exceto durante as principais semanas de feriados nos EUA. Os envios durante essas semanas serão processados na semana seguinte, fora do feriado. Para verificar se sua solicitação foi aprovada, teste seu acesso ao aplicativo na próxima segunda-feira aplicável. Se tivermos dúvidas adicionais sobre a solicitação, entraremos em contato pelo email especificado no formulário. 
+## <a name="request-access-to-protected-apis"></a>Solicitar acesso a APIs protegidas
 
+Para solicitar acesso a essas APIs protegidas, complete o [formulário de solicitação](https://forms.office.com/r/v3qjyzBCxD) a seguir. Geralmente, analisamos as solicitações de acesso toda quarta-feira e implantamos aprovações toda sexta-feira ou segunda-feira, exceto durante as semanas de feriados principais nos Envios dos EUA durante essas semanas são processados na semana não feriado a seguir.
+
+Para verificar se sua solicitação foi aprovada, teste seu acesso ao aplicativo na próxima segunda-feira aplicável. Se tivermos dúvidas adicionais sobre a solicitação, entraremos em contato pelo email especificado no formulário.
+
+## <a name="see-also"></a>Confira também
+
+* [Visão geral da API do Microsoft Teams](teams-concept-overview.md)

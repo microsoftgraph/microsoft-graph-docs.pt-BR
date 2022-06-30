@@ -1,15 +1,15 @@
 ---
 title: Diretrizes de limitação do Microsoft Graph
-description: Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
+description: Encontre práticas recomendadas para manter o desempenho ideal do serviço Microsoft Graph se ocorrer um grande número de solicitações. Inclui limites específicos do serviço.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4dd9dfb9471d127d54bd27e644a296201f3501bf
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 35be5cac6a87ceb661a92f4dc25754d77939a8f3
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884108"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556175"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
@@ -47,7 +47,7 @@ Sempre que o limite de estrangulamento é excedido, o Microsoft Graph responde c
 ```http
 HTTP/1.1 429 Too Many Requests
 Content-Type: application/json
-Retry-After: 2.128
+Retry-After: 10
 
 {
   "error": {
@@ -113,7 +113,8 @@ Qualquer solicitação poderá ser avaliada em relação a vários limites, depe
 > [!NOTE]
 > Os limites específicos descritos aqui estão sujeitos a alterações.
 
-> **Nota:** Nesta seção, o termo *locatário* refere-se à organização Microsoft 365 onde o aplicativo está instalado. Este inquilino pode ser o mesmo onde o aplicativo foi criado, no caso de um único aplicativo de inquilino, ou pode ser diferente, no caso de [um aplicativo de vários inquilinos](/azure/active-directory/develop/setup-multi-tenant-app).
+> [!NOTE]
+> Nesta seção, o termo *locatário* refere-se à organização Microsoft 365 em que o aplicativo está instalado. Esse locatário pode ser o mesmo em que o aplicativo foi criado no caso de um aplicativo de locatário único ou pode ser diferente no caso de um [aplicativo de vários locatários](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### <a name="outlook-service-limits"></a>Limites de serviço do Outlook
 
@@ -158,7 +159,8 @@ Os limites anteriores se aplicam aos seguintes recursos:
 
 Você pode encontrar informações adicionais sobre as práticas recomendadas no [limitação da API do OneNote e como evitá-la](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).
 
-**Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
+> [!NOTE]
+> Os recursos listados anteriormente não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
 ### <a name="project-rome-service-limits"></a>Limites de serviços do Project Rome
 
@@ -221,7 +223,8 @@ A limitação baseia-se em um algoritmo no bucket de token, que funciona adicion
 | aplicação | 150.000 solicitações por 20 segundos  | 70.000 solicitações por 5 minutos|
 | locatário | Não aplicável | 18.000 solicitações por 5 minutos |
 
-> **Observação**: A aplicação + limite do par de locatários varia dependendo do número de usuários nas solicitações de locatário. Os tamanhos dos locatários são definidos da seguinte maneira: S - em 50 usuários, M - entre 50 e 500 usuários, e L para acima de 500 usuários.
+> [!NOTE]
+> O limite de aplicativo + par de locatários varia com base no número de usuários nos quais as solicitações de locatário são executadas. Os tamanhos dos locatários são definidos da seguinte maneira: S - em 50 usuários, M - entre 50 e 500 usuários, e L para acima de 500 usuários.
 
 A tabela a seguir lista a base dos custos da solicitação. Qualquer solicitação não listada tem um custo base de 1.
 
@@ -266,7 +269,8 @@ Outros fatores que afetam um custo da solicitação:
 - Usar o `$top` com um valor menor que 20 reduz os custos por 1
 - Criar um usuário em um locatário Azure Active Directory B2C aumenta o custo em 4
 
-> **Observação:** Um custo da solicitação nunca pode ser menor do que 1. Qualquer custo da solicitação que se aplica a um caminho da solicitação iniciado por `me/` também se aplica a solicitações equivalentes iniciadas por `users/{id | userPrincipalName}/`.
+> [!NOTE]
+> Um custo de solicitação nunca pode ser menor que 1. Qualquer custo da solicitação que se aplica a um caminho da solicitação iniciado por `me/` também se aplica a solicitações equivalentes iniciadas por `users/{id | userPrincipalName}/`.
 
 #### <a name="additional-headers"></a>Cabeçalhos adicionais
 
@@ -277,7 +281,8 @@ Outros fatores que afetam um custo da solicitação:
   - Normal - Padrão se nenhum valor for fornecido. Indica que a solicitação é a de prioridade padrão.
   - Alta - Indica que a solicitação é de alta prioridade. Limitando esta solicitação causa falhas visíveis ao usuário.
 
-> **Observação:** Se as solicitações forem limitadas, as solicitações de baixa prioridade serão limitadas primeiro, as solicitações de prioridade normal em segundo e as solicitações de alta prioridade por último. Usar a prioridade no cabeçalho da solicitação não altera os limites.
+> [!NOTE]
+> Caso as solicitações sejam limitadas, as solicitações de baixa prioridade serão limitadas primeiro, as solicitações de prioridade normal em segundo lugar e as solicitações de alta prioridade por último. Usar a prioridade no cabeçalho da solicitação não altera os limites.
 
 ##### <a name="regular-responses-requests"></a>Solicitações de respostas regulares
 
@@ -337,7 +342,8 @@ Para o email, o recurso é um par único de mensagens de rede ID/recipiente. Por
 
 [!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
 
-> **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
+> [!NOTE]
+> Os recursos listados anteriormente não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
 ### <a name="insights-service-limits"></a>Percepção dos limites de serviço
 
@@ -397,7 +403,7 @@ Os limites anteriores se aplicam aos seguintes recursos:[!INCLUDE [Open and sche
 
 ### <a name="files-and-lists-service-limits"></a>Limites de serviço dos arquivos e listas
 
-Os limites de serviço do OneDrive, OneDrive for Business e SharePoint Online não estão disponíveis. Para mais informações, confira [Por que não é possível saber o limites exatos?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+Para obter limites de serviço para OneDrive, OneDrive for Business e SharePoint Online, consulte [Evitar sendo limitado ou bloqueado no SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
 
 As informações anteriores aplicam-se aos seguintes recursos:
 
@@ -420,7 +426,8 @@ Os limites anteriores se aplicam aos seguintes recursos:
 
 - [dataPolicyOperation](/graph/api/resources/datapolicyoperation)
 
-> **Observação:** os recursos listados acima não retornam um cabeçalho `Retry-After` nas respostas `429 Too Many Requests`.
+> [!NOTE]
+> Os recursos listados anteriormente não retornam um cabeçalho `Retry-After` em respostas `429 Too Many Requests`.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### <a name="education-service-limits"></a>Limites do serviço de Educação
@@ -429,7 +436,7 @@ Os limites anteriores se aplicam aos seguintes recursos:
 
 ### <a name="excel-service-limits"></a>Limites de serviço do Excel
 
-Para explicações e práticas recomendadas relacionadas à limitação do serviço do Excel, veja [Limitação](workbook-best-practice.md#throttling). Além disso, a seguir estão alguns limites de limitação.
+Para obter explicações e práticas recomendadas relacionadas à limitação de serviço do Excel, consulte [Reduzir de erros de limitação](workbook-best-practice.md#reduce-throttling-errors). Além disso, a seguir estão alguns limites de limitação.
   
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
 

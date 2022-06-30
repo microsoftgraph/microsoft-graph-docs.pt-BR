@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 91fc87fb061d2e756aac80998c895df041e56638
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: e56cf53369e7b63e04fe9cf6a882fb6361ee31e5
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694586"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555734"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -92,6 +92,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 > [!NOTE] 
 > - As seguintes propriedades não podem ser atualizadas por um aplicativo com apenas permissões de aplicativo: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 > - Para atualizar as seguintes propriedades, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** e **skills**.
+
+### <a name="manage-extensions-and-associated-data"></a>Gerenciar extensões e dados associados
+
+Use essa API para gerenciar o diretório, o esquema e as extensões abertas e seus dados para os usuários, da seguinte maneira:
+
++ Adicionar, atualizar e armazenar dados nas extensões de um usuário existente
++ Para extensões de diretório e esquema, remova todos os dados armazenados definindo o valor da propriedade de extensão personalizada como `null`. Para extensões abertas, use a API [Excluir a extensão aberta](/graph/api/opentypeextension-delete).
 
 ## <a name="response"></a>Resposta
 

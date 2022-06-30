@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 6798369b62aab7195ebe56c6ad225a011f244466
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 399040493f8401574a1094f8d97b528c7f3f6354
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118323"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555209"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -20,12 +20,17 @@ Namespace: microsoft.graph
 
 Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira [Noções básicas de como registrar um aplicativo no Azure AD](/azure/active-directory/develop/authentication-vs-authorization#basics-of-registering-an-application-in-azure-ad). Herda de [directoryObject](directoryobject.md).
 
+Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
+
 > [!Note]
 > Atualmente, as alterações no tipo de recurso do aplicativo estão em desenvolvimento. Para saber mais, confira [Problemas conhecidos do Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
 
-Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/application-delta.md). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
+Esse recurso permite:
 
-## <a name="methods"></a>Methods
+- Adicionar seus próprios dados às propriedades personalizadas como [extensions](/graph/extensibility-overview).
+- Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/user-delta.md).
+
+## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
@@ -93,7 +98,7 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 | disabledByMicrosoftStatus | Cadeia de caracteres | Especifica se a Microsoft desabilitou o aplicativo registrado. Os valores possíveis são: `null`(valor padrão), `NotDisabled` e (os motivos podem incluir atividades suspeitas, abusivas ou mal-intencionadas ou uma violação do `DisabledDueToViolationOfServicesAgreement` Contrato de Serviços Microsoft). <br><br> Suporta `$filter` (`eq`, `ne`, `not`). |
 | displayName | String | O nome de exibição do aplicativo. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`. |
 | groupMembershipClaims | Cadeia de caracteres | Configura a declaração `groups` emitida em um usuário ou token de acesso OAuth 2.0 que o aplicativo espera. Para definir esse atributo, use um dos seguintes valores de cadeia de caracteres: `None`, (para grupos de segurança e funções do `SecurityGroup` Azure AD), (isso obtém todos os grupos de segurança, grupos de distribuição e funções de diretório do Azure AD dos qual o usuário conectado é `All` membro). |
-| id | String | O identificador exclusivo do aplicativo. Herdado [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. Dá suporte `$filter`(`eq`, `ne`, `not`, `in`). |
+| id | Cadeia de caracteres | Identificador exclusivo para o objeto de aplicativo. Essa propriedade é conhecida como **ID do objeto** no portal do Azure. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
 | identifierUris | Coleção de cadeias de caracteres | Também conhecido como URI de ID do aplicativo, esse valor é definido quando um aplicativo é usado como um aplicativo de recurso. O identifierUris age como o prefixo para os escopos que você referencia no código da API e deve ser globalmente exclusivo. Você pode usar o valor padrão fornecido, que está no formato `api://<application-client-id>`, ou especificar um URI mais acessível como `https://contoso.com/api` . Para obter mais informações sobre padrões e práticas recomendadas de identificadorUris válidos, consulte [Práticas recomendadas de segurança de registro de aplicativos do Azure AD](/azure/active-directory/develop/security-best-practices-for-app-registration#appid-uri-configuration). Não anulável. <br><br>Suporta `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`). |
 | informações  | [informationalUrl](informationalurl.md) | Informações básicas de perfil do aplicativo, como marketing, suporte, termos de serviço e URLs de política de privacidade do aplicativo. Os termos de serviço e a política de privacidade são revelados aos usuários por meio da experiência de consentimento do usuário. Para obter mais informações, confira [Como: Adicionar termos de serviço e política de privacidade a aplicativos registrados do Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, e `eq` em `null` valores). |
 | isDeviceOnlyAuthSupported | Booliano | Especifica se este aplicativo dá suporte à autenticação de dispositivo sem um usuário. O padrão é `false`.  |

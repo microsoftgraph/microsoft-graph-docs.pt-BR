@@ -1,14 +1,14 @@
 ---
 title: Use o Postman com a API do Microsoft Graph
-description: Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph em questão minutos.
+description: Postman é uma plataforma de API para construir e usar APIs. Use a coleção do Microsoft Graph Postman para começar a usar as APIs do Microsoft Graph.
 author: jasonjoh
 ms.localizationpriority: high
-ms.openlocfilehash: b745e9dae1c6f1def7930e82f974dd65a8cdaa45
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: ace39134b6a30ce3b8cfe79f539f6d1887a21b02
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461265"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554901"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Use o Postman com a API do Microsoft Graph
 

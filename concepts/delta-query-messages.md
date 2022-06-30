@@ -1,15 +1,15 @@
 ---
 title: Obter as alterações incrementais para as mensagens em uma pasta
-description: A consulta delta permite consultar adições, exclusões ou atualizações de mensagens em uma pasta, por meio de uma série de
+description: Use a consulta delta para controlar as alterações de mensagens em uma hierarquia de pastas acompanhando cada pasta individualmente. O exemplo mostra como sincronizar mensagens em uma pasta.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1ad9bdefc50f4b3d2acd14643cb0a24ed74fca2d
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 90f72d899183b028fd66fc23c1f2f54929b7e944
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246381"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555601"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Obter as alterações incrementais para as mensagens em uma pasta
 
@@ -34,7 +34,7 @@ Uma solicitação GET com a função **delta** retorna:
 
 Esses tokens são [tokens de estado](delta-query-overview.md#state-tokens) que são completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL retornada da última solicitação GET para a próxima chamada de função **delta** da mesma pasta. Um `@odata.deltaLink` retornado em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `@odata.deltaLink` quando começar a próxima fase.
 
-Verifique o [exemplo](#example-to-synchronize-messages-in-a-folder) abaixo para aprender a usar as URLs `@odata.nextLink` e `@odata.deltaLink`.
+Verifique o `@odata.nextLink`exemplo`@odata.deltaLink` para aprender a usar as URLs [ e ](#example-synchronize-messages-in-a-folder).
 
 ### <a name="use-query-parameters-in-a-delta-query-for-messages"></a>Use os parâmetros de consulta em uma consulta delta para mensagens
 
@@ -80,7 +80,7 @@ since the completion of the very first round.
 
 -->
 
-## <a name="example-to-synchronize-messages-in-a-folder"></a>Exemplo para sincronizar mensagens em uma pasta
+## <a name="example-synchronize-messages-in-a-folder"></a>Exemplo: sincronizar mensagens em uma pasta
 
 O exemplo a seguir mostra 2 sessões de sincronização de uma pasta específica que, inicialmente, contém 5 mensagens.
 

@@ -1,29 +1,44 @@
 ---
-title: Alterar notificações para os recursos do Microsoft Teams usando Microsoft Graph
-description: Saiba como obter notificações de alterações (criar, atualizar e excluir) para recursos no Microsoft Teams usando as APIs do Microsoft Graph
+title: Alterar as notificações para os recursos do Microsoft Teams
+description: Assine as alterações de recursos e dados de recursos no Microsoft Teams usando a API do Microsoft Graph. Saiba mais sobre tipos de notificação de alteração e cargas.
 author: anandab-msft
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a740c6cddf0292e44196bf7b028631d4d24e1c32
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 0091ded928de826220b837a66873e736fb1e84bc
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084067"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555566"
 ---
-# <a name="change-notifications-for-microsoft-teams-resources-using-microsoft-graph"></a>Alterar notificações para os recursos do Microsoft Teams usando Microsoft Graph
+# <a name="change-notifications-for-microsoft-teams-resources"></a>Alterar as notificações para os recursos do Microsoft Teams
 
-As notificações de alteração habilitam você a assinar para receber alterações (criar, atualizar e excluir) um recurso. As notificações de alteração fornecem um modelo de baixa latência, permitindo que você mantenha uma [assinatura](/graph/api/resources/webhooks?preserve-view=true). Você também pode obter os dados do recurso nas notificações e, portanto, evitar chamar a API para obter o conteúdo.
+As notificações de alteração para recursos do Microsoft Teams Microsoft Graph permitem que você assine alterações (criar, atualizar e excluir) em um recurso. As notificações de alteração fornecem um modelo de baixa latência, permitindo que você mantenha uma [assinatura](/graph/api/resources/webhooks). Você também pode obter os dados do recurso nas notificações e, portanto, evitar chamar a API para obter o conteúdo.
 
-> **Observação:** o tempo máximo que uma assinatura pode durar é 60 minutos; entretanto, as assinaturas podem ser renovadas até que o chamador tenha permissão para acessar o recurso.
+> [!NOTE]
+> O tempo máximo que uma assinatura pode durar é de 60 minutos; no entanto, as assinaturas podem ser renovadas até que o chamador tenha permissões para acessar o recurso.
 
 ## <a name="change-notification-types"></a>Tipoos de notificações de alteração
+
 O Microsoft Teams dá suporte a dois tipos de notificações de alteração:
-- **Notificação de alteração para acompanhar todas as alterações relacionadas a um recurso em todo o locatário** - por exemplo, você pode assinar as alterações nas mensagens em qualquer canal do locatário e ser notificado sempre que uma mensagem for criada, atualizada ou excluída em qualquer canal do locatário. Estas notificações podem ter [requisitos de licenciamento e pagamento](/graph/teams-licenses), tais como notificações de alteração para [mensagens](teams-changenotifications-chatmessage.md) e [afiliação](teams-changenotifications-chatMembership.md).
-- **Altere a notificação para controlar todas as alterações de um recurso específico** - por exemplo, você pode assinar alterações em mensagens em um canal específico e ser notificado sempre que uma mensagem for criada, atualizada ou excluída nesse canal.
+
+- **Alterar notificação para controlar todas as alterações relacionadas a um recurso no locatário:** Por exemplo, você pode assinar alterações em mensagens em qualquer canal no locatário e ser notificado sempre que uma mensagem for criada, atualizada ou excluída em qualquer canal no locatário. Essas notificações podem ter [Requisitos de licenciamento e pagamento](/graph/teams-licenses), como notificações de alteração para [mensagens](teams-changenotifications-chatmessage.md) e [assinatura](teams-changenotifications-chatMembership.md).
+
+- **Alterar notificação para controlar todas as alterações de um recurso específico:** Por exemplo, você pode assinar alterações em mensagens em um canal específico e ser notificado sempre que uma mensagem for criada, atualizada ou excluída nesse canal.
 
 Para obter detalhes sobre quais recursos dão suporte a quais tipos de notificações de alteração, consulte [Notificações de Alteração do Microsoft Graph](webhooks.md).
+
+## <a name="supported-resources"></a>Recursos com suporte
+A tabela a seguir lista os recursos do Microsoft Teams e os caminhos de recursos correspondentes com suporte no momento.
+
+| **Recurso** | **Trajetórias dos recursos com suporte** | **Os dados do recurso podem ser incluídos nas notificações** |
+|:----------------|:------------|:-----------------------------------------|
+| [Canal](/graph/api/resources/channel) do Teams | Alterações nos canais em todas as equipes:<br>`/teams/getAllChannels` <br>Alterações no canal em uma equipe específica:<br>`/teams/{id}/channels` | Sim |
+| [Chat](/graph/api/resources/chat) do Teams | Alterações em qualquer chat no locatário:<br>`/chats` <br>Alterações em um chat específico:<br>`/chats/{id}` | Sim |
+| Teams [chatMessage](/graph/api/resources/chatMessage) | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages`<br>Alterações nas mensagens de chat em todos os chats de que um usuário específico faz parte:<br>`/users/{id}/chats/getAllMessages` | Sim |
+| [conversationMember](/graph/api/resources/conversationMember) do Teams | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` <br> Alterações na associação em um chat específico:<br>`/chats/{id}/members` <br> Alterações na associação em todos os chats:<br>`/chats/getAllMembers` <br> Alterações na associação em todos os canais em uma equipe específica:<br>`teams/{id}/channels/getAllMembers` | Sim |
+| Equipe do [Teams](/graph/api/resources/team) | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações em uma equipe específica:<br>`/teams/{id}` | Sim |
  
 
 ## <a name="notification-payloads"></a>Cargas de notificação
@@ -61,7 +76,7 @@ Para notificações com dados de recursos, a carga se parece com a seguinte.  Es
 
 Para obter detalhes sobre como validar tokens e descriptografar a carga útil, consulte [Definir notificações de alteração que incluem dados de recursos](webhooks-with-resource-data.md).
 
-A carga de notificação descriptografada parece com a seguinte. A carga descriptografada para o exemplo anterior está em conformidade com o esquema [chatMessage](/graph/api/resources/chatMessage?preserve-view=true). A carga é semelhante à devolvida pelas operações GET.
+A carga de notificação descriptografada parece com a seguinte. A carga descriptografada para o exemplo anterior está em conformidade com o esquema [chatMessage](/graph/api/resources/chatMessage). A carga é semelhante à devolvida pelas operações GET.
 
 ```json
 {
@@ -124,10 +139,13 @@ A carga parece ser a seguinte. Este conteúdo é para uma mensagem enviada em um
   }
 }
 ```
+
 O exemplo anterior acima mostra uma notificação que corresponde a um recurso de mensagem de chat. A notificação real inclui as propriedades **resource** e **resourceData**, que representam o recurso que disparou a notificação. As propriedades **recurso** e **@odata.id** podem ser usados para fazer chamadas para o Microsoft Graph para obter a carga do recurso.
 
-> **Observe** As chamadas GET sempre retornarão o estado atual do recurso. Se o recurso for alterado entre quando a notificação for enviada e quando o recurso for recuperado, a operação retornará o recurso atualizado.
+> [!NOTE]
+> As chamadas GET sempre retornarão o estado atual do recurso. Se o recurso for alterado entre quando a notificação for enviada e quando o recurso for recuperado, a operação retornará o recurso atualizado.
 
 ## <a name="see-also"></a>Confira também
+
 - [Notificações de alteração do Microsoft Graph](webhooks.md)
 - [Visão geral da API do Microsoft Teams](teams-concept-overview.md)

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 006da4f4b653dad8ac3406ddb62caff8af84c6b9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 6fccabf60e9f625a638f61d0e52053aec31ce28d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211148"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555911"
 ---
 # <a name="get-group"></a>Obter grupo 
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
+| Delegada (conta corporativa ou de estudante)     | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                                         |
 | Aplicativo                            | GroupMember. Read. All, Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. ReadWrite. All |
 
 > **Observação:** dependendo dos recursos de grupo que você está tentando acessar, as permissões podem ser limitadas. Para obter mais informações, consulte a seção [Grupos](/graph/known-issues#groups) em [Problemas conhecidos com o Microsoft Graph](/graph/known-issues).
@@ -47,6 +47,14 @@ GET /groups/{id}
 É possível usar a opção de consulta `$select` para obter propriedades específicas do grupo, inclusive aquelas que não são retornadas por padrão.
 
 Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão       | Comentários                                                                       |
+|----------------------|--------------------------------------------------------------------------------|
+| Extensões de esquema    | Retornado somente com `$select`.                                                  |
+| Extensões abertas      | Retornado por meio de [Obter extensão aberta](opentypeextension-get.md). |
+| Extensões de diretório | Retornado por padrão.                                                           |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

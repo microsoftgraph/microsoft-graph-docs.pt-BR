@@ -4,12 +4,12 @@ description: O Microsoft Graph usa um mecanismo de webhook para fornecer notific
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: 9bbd29d374160fdd8c86b6bd34293ce7fe241e17
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: defaa8f14769b161e73f31ae8b6a0eed76d45d71
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898823"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554985"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Configurar notificações de alteração que incluam dados de recurso
 
@@ -39,6 +39,7 @@ Disponível nos pontos de extremidade v1.0 e beta:
 - Mensagens novas ou alteradas em todos os canais do Teams em toda a organização (locatário): `/teams/getAllMessages`
 - Mensagens novas ou alteradas em um bate-papo específico do Teams: `/chats/{id}/messages`
 - Mensagens novas ou alteradas em todos os bate-papos em toda a organização (locatário): `/chats/getAllMessages`
+- Mensagens novas ou alteradas em todos os chats do Teams de um determinado usuário fazem parte de: `/users/{id}/chats/getAllMessages`
 - Membros novos ou alterados em todos os chats do Teams: `/chats/getAllMembers`
 - Membros novos ou alterados em um chat específico do Teams: `/chats/{id}/members`
 - Chat novo ou alterado em todo o locatário: `/chats`
@@ -57,7 +58,7 @@ Disponível apenas no ponto de extremidade beta:
 - Eventos novos ou alterados na caixa de correio de um usuário: `/users/{id}/events`
 - Mensagens novas ou alteradas na caixa de correio de um usuário: `/users/{id}/messages`
 - Mensagens novas ou alteradas na mailFolder de um usuário: `/users/{id}/mailFolders/{id}/messages`
-- Atualizações de informações de status da Reunião do Microsoft Teams: `/communications/onlineMeetings/{meeting-id}`
+- Atualizações de informações de status da Reunião do Microsoft Teams: `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}`
 
 As notificações de alteração que incluem dados de recursos **chatMessage**, **onlineMeeting** ou **presença** consistem de todas as propriedades da instância alterada. Eles não dão suporte ao retorno apenas das propriedades selecionadas da instância. 
 
@@ -609,3 +610,4 @@ decryptedPayload += decipher.final('utf8');
 - [Criar assinatura](/graph/api/subscription-post-subscriptions)
 - [Atualizar assinatura](/graph/api/subscription-update)
 - [Alterar notificações para recursos do Outlook no Microsoft Graph](outlook-change-notifications-overview.md)
+- [Alterar notificações para reuniões online no Microsoft Graph](changenotifications-for-onlinemeeting.md) 

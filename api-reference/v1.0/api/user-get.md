@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cd2f39a9c507c048794ebb928abc6d9cc22b9f59
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 816220e233346d29c1e13717867bd651597d2563
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204384"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555468"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -59,7 +59,16 @@ Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-par
 
 Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
-Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`
+Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você incluiria o seguinte na sua consulta `$select=displayName,givenName,postalCode`.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão                     | Comentários                                                                                              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Retornado somente com `$select`.                                                                         |
+| Extensões de esquema                  | Retornado somente com `$select`.                                                                         |
+| Extensões abertas                    | Retornado somente por meio da operação [Obter extensão aberta](opentypeextension-get.md). |
+| Extensões de diretório               | Retornado somente com `$select`.                                                                         |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|

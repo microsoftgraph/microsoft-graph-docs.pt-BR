@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 72007b0e2de2264a4afee4c68b103505815921f5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 5962b5601f0dfd364bf8b08a25af1d2b326e7bac
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211127"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556224"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -66,6 +66,13 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 > - Somente um subconjunto da API do grupo relacionado à administração do grupo principal e ao aplicativo de suporte ao gerenciamento e às permissões delegadas. Todos os outros membros da API do grupo, incluindo a atualização de **autoSubscribeNewMembers**, suportam apenas permissões delegadas. Consulte os [problemas conhecidos](/graph/known-issues#groups) para exemplos.
 >
 > - As regras para atualizar os grupos de segurança habilitados para email no Microsoft Exchange Server podem ser complexas; Para saber mais, confira [Gerenciar grupos de segurança habilitados para email no Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
+
+### <a name="manage-extensions-and-associated-data"></a>Gerenciar extensões e dados associados
+
+Use esta API para gerenciar o [diretório, o esquema e as extensões abertas](/graph/extensibility-overview) e seus dados para grupos, da seguinte maneira:
+
++ Adicione, atualize e armazene dados nas extensões de um grupo existente.
++ Para extensões de diretório e esquema, remova todos os dados armazenados definindo o valor da propriedade de extensão personalizada como `null`. Para extensões abertas, use a API [Excluir a extensão aberta](/graph/api/opentypeextension-delete).
 
 ## <a name="response"></a>Resposta
 

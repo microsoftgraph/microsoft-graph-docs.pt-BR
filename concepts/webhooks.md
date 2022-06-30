@@ -1,16 +1,16 @@
 ---
 title: Configurar notificações para alterações nos dados de recursos
-description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações de alteração para atualizar seu estado após alterações.
+description: As APIs do Microsoft Graph usam um mecanismo de webhook para fornecer notificações de alteração aos clientes. Aplicativos cliente usam notificações de alteração para atualizar seu estado após alterações.
 author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 343ff94d14506b5f4caa8147a5248ddaebe8448b
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: aecde366793f0c7132592677e5d1b7f98414ff61
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118365"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554992"
 ---
 # <a name="set-up-notifications-for-changes-in-resource-data"></a>Configurar notificações para alterações nos dados de recursos
 
@@ -73,7 +73,8 @@ Você pode criar uma assinatura para os seguintes cenários:
 
 Determinadas limites se aplicam aos recursos baseados no Azure AD (usuários, grupos) e gerarão erros se forem excedidos:
 
-> **Observação**: Esses limites não se aplicam aos recursos de serviços diferente do Azure AD. Por exemplo, um aplicativo pode criar muito mais assinaturas para `message` ou recursos `event` que são aceitos pelo serviço Exchange Online como parte do Microsoft Graph.
+> [!NOTE]
+> Esses limites não se aplicam aos recursos de serviços diferentes do Azure AD. Por exemplo, um aplicativo pode criar muito mais assinaturas para `message` ou recursos `event` que são aceitos pelo serviço Exchange Online como parte do Microsoft Graph.
 
 - Cotas máximas de assinaturas:
 
@@ -169,7 +170,8 @@ Embora `clientState` não seja obrigatória, você deve incluí-la para manter a
 
 Se tiver êxito, o Microsoft Graph retornará um código `201 Created` e um objeto [subscription](/graph/api/resources/subscription) no corpo.
 
-> **Observação:** Qualquer parâmetro da cadeia de caracteres de consulta incluído na propriedade **notificationUrl** será incluído na solicitação de POST HTTP quando as notificações estiverem sendo entregues.
+> [!NOTE]
+> Qualquer parâmetro da cadeia de caracteres de consulta incluído na propriedade **notificationUrl** será incluído na solicitação de POST HTTP quando as notificações forem entregues.
 
 #### <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
@@ -196,7 +198,8 @@ O Microsoft Graph valida o ponto de extremidade de notificação fornecido na pr
 
     O cliente deve descartar o token de validação depois de o fornecer na resposta.
 
-    > **Importante:** se o cliente retornar um token de validação codificado, a validação falhará.
+    > [!IMPORTANT]
+    > Se o cliente retornar um token de validação codificado, a validação falhará.
 
 Além disso, você pode usar a [coleção do Microsoft Graph Postman](use-postman.md) para confirmar que o ponto de extremidade implementa a solicitação de validação. A solicitação de **Validação de Assinaturas** na pasta **Diversos** fornece testes de unidade que validam a resposta fornecida por seu ponto de extremidade.  
 
@@ -233,7 +236,8 @@ Se tiver êxito, o Microsoft Graph retornará um código `204 No Content`.
 
 Com uma assinatura do cliente em um recurso, o Microsoft Graph envia uma solicitação `POST` para a URL da notificação sempre que o recurso é alterado. Notificações são enviadas somente para as alterações do tipo especificado na assinatura, por exemplo, `created`.
 
-> **Observação:** se um cliente tiver várias assinaturas que monitoram o mesmo recurso e usam a mesma URL de notificação, o Microsoft Graph poderá enviar várias notificações de alteração que correspondam a diferentes assinaturas, cada uma mostrando a ID da assinatura correspondente. Não há nenhuma garantir de que todas as notificações de alteração na solicitação `POST` pertençam a uma única assinatura.
+> [!NOTE]
+> Se um cliente tiver várias assinaturas que monitoram o mesmo recurso e usam a mesma URL de notificação, o Microsoft Graph poderá enviar várias notificações de alteração que correspondam a diferentes assinaturas, cada uma mostrando a ID da assinatura correspondente. Não há garantias de que todas as notificações na solicitação `POST` pertencerão a uma única assinatura.
 
 ### <a name="change-notification-example"></a>Exemplo de notificação de alteração
 
@@ -277,7 +281,8 @@ O processo deve processar todas as notificações de alteração recebidas. Esta
 
 1. Validar a propriedade `clientState`. Ela deve corresponder ao valor enviado originalmente com a solicitação de criação da assinatura.
 
-    > **Observação:** se isso não for verdadeiro, você não deverá considerar esta notificação como válida. É possível que a notificação de alteração não tenha se originado do Microsoft Graph e possa ter sido enviada por um ator invasor. Você também deve investigar de onde vem a notificação de alteração e tomar as medidas apropriadas.
+    > [!NOTE]
+    > Se isso não for verdadeiro, você não deverá considerar esta notificação como válida. É possível que a notificação de alteração não tenha se originado do Microsoft Graph e possa ter sido enviada por um ator invasor. Você também deve investigar de onde vem a notificação de alteração e tomar as medidas apropriadas.
 
 1. Atualize seu aplicativo com base na sua lógica comercial.
 
@@ -310,7 +315,8 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 
 Opcionalmente, você pode configurar o firewall que protege a URL de notificação para permitir conexões de entrada somente pelo Microsoft Graph. Isso permite que você reduza ainda mais a exposição a notificações de alteração inválidas que são enviadas para sua URL de notificação. Essas notificações de alteração inválidas podem estar tentando desencadear a lógica personalizada que você implementou. Para obter uma lista completa de endereços IP usados pelo Microsoft Graph para oferecer notificações de alteração, confira [pontos de extremidade adicionais para Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
-> **Observação:** Os endereços IP listados que são usados para fornecer notificações de alteração podem ser atualizados a qualquer momento sem aviso prévio.
+> [!NOTE]
+> Os endereços IP listados que são usados para fornecer notificações de alteração podem ser atualizados a qualquer momento sem aviso prévio.
 
 ## <a name="latency"></a>Latência
 
@@ -339,15 +345,16 @@ A tabela a seguir lista a latência esperada entre um evento acontecendo no serv
 |[todoTask][] | Menos de 2 minutos | 15 minutos |
 |[usuário][] | Menos de 2 minutos | 15 minutos |
 
->**Observação:** a latência fornecida para o recurso de **alerta** só será aplicável depois que o próprio alerta tiver sido criado. Não inclui o tempo necessário para uma regra criar um alerta a partir dos dados.
+> [!NOTE]
+> A latência fornecida para o recurso de **alerta** só será aplicável depois que o próprio alerta for criado. Não inclui o tempo necessário para uma regra criar um alerta a partir dos dados.
 
 ## <a name="see-also"></a>Confira também
 
-- [Tipo de recurso de assinatura](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
-- [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
-- [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
-- Tipo de recurso [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true)
-- Tipo de recurso [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true)
+- [Tipo de recurso de assinatura](/graph/api/resources/subscription)
+- [Obter assinatura](/graph/api/subscription-get)
+- [Criar assinatura](/graph/api/subscription-post-subscriptions)
+- Tipo de recurso [changeNotification](/graph/api/resources/changenotification)
+- Tipo de recurso [changeNotificationCollection](/graph/api/resources/changenotificationcollection)
 - [Tutorial para notificações de alteração as notificações e controle de alterações](/learn/modules/msgraph-changenotifications-trackchanges)
 - [Notificações do ciclo de vida](./webhooks-lifecycle.md)
 

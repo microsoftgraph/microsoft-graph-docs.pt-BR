@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f3aa1f16ba46391d056eb6ab7fbff465cc22b0ae
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: b39cc0d28c6c8ca0a6776e85d0dac12e9fc93d92
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034562"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555426"
 ---
 # <a name="get-application"></a>Obter aplicativo
 
@@ -26,10 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Application.Read.All, Application.ReadWrite.All    |
-|Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy,  Application.ReadWrite.All, Directory.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Application.Read.All, Application.ReadWrite.All    |
+|Aplicativo | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+Substitua `{id}` pela **ID** do objeto de aplicativo, também conhecida como a **ID de Objeto** no portal do Azure.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}
