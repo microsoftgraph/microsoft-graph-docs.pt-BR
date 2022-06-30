@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47dc4c0770a8c9476aa3d5a9a67c6304cf141edd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 3d3b0dccaa38d051fde5fc8a9e27a7b55f8080cd
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672382"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555841"
 ---
 # <a name="list-administrativeunits"></a>Listar administrativeUnits
 
@@ -33,7 +33,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /directory/administrativeUnits
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `$count`[parâmetros](/graph/query-parameters) de consulta , `$select`, `$search`, `$filter` (`eq`) `$expand` e OData para ajudar a personalizar a resposta.
+Esse método dá suporte aos `$count`[parâmetros](/graph/query-parameters) de consulta , `$select`, `$search`, `$filter` (`eq`) `$expand` e OData para ajudar a personalizar a resposta.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão       | Comentários                                                 |
+|----------------------|----------------------------------------------------------|
+| Extensões de esquema    | Retornado somente com `$select`. Suporta `$filter` (`eq`). |
+| Extensões de diretório | Retornado por padrão. Suporta `$filter` (`eq`).          |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -45,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

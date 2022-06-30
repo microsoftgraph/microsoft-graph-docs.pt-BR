@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 83daf8f19974f1cda08efaf2bf6e51d82e745656
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 8f083dd74e5448a33defc2ed6888739d7f22a551
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133241"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555307"
 ---
 # <a name="list-extensionproperties"></a>Listar extensionProperties
 
@@ -40,7 +40,7 @@ GET /applications/{application ObjectId}/extensionProperties
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos parâmetros `$select` `$filter` de consulta e OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

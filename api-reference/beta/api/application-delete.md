@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 27f9237c410c14aa7ebb2b14db04436615d250eb
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 72c5a1beaa0b8362225c18481129ddd76ec289d7
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63668889"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555433"
 ---
 # <a name="delete-application"></a>Excluir aplicativo
 
@@ -26,10 +26,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All, Directory.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Application.ReadWrite.All    |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+Substitua `{id}` pela **ID do** objeto de aplicativo, também conhecida como **A ID de** Objeto no portal do Azure.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}

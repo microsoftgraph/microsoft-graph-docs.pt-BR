@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: cee6121dc15a1e9f385b8b3ab19f55d633a92f57
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 6f96c44e9c38ab9d1225fe53c1766274109408bf
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883821"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555861"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -18,10 +18,10 @@ Namespace: microsoft.graph
 
 Representa um dispositivo registrado na organização. Dispositivos são criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são usados por políticas de acesso condicional para a autenticação multifator. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de [directoryObject](directoryobject.md).
 
-Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](/graph/extensibility-overview). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
+Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas. Você também pode adicionar seus próprios dados a propriedades [personalizadas como extensões](/graph/extensibility-overview).
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -34,7 +34,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Listar registeredOwners](../api/device-list-registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
 |[Listar registeredUsers](../api/device-list-registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
 |[checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Verifique se há associação em uma lista de grupos, função de diretório ou objetos de unidade administrativa. |
-|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção String | Retornar todos os grupos, unidades administrativas e funções de diretório dos qual o dispositivo é membro. A verificação é transitiva. |
+|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | Coleção de cadeias de caracteres | Retornar todos os grupos, unidades administrativas e funções de diretório dos qual o dispositivo é membro. A verificação é transitiva. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
@@ -56,10 +56,10 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |deviceMetadata|String| Apenas para uso interno. Definido como `null` |
 |deviceVersion|Int32| Apenas para uso interno. |
 |displayName|String|O nome de exibição do dispositivo. Obrigatório. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores), `$search`, e `$orderBy`.  |
-| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém atributos de extensão de 1 a 15 para o dispositivo. Os atributos de extensão individuais não são selecionáveis. Essas propriedades são dominadas na nuvem e podem ser definidas durante a criação ou atualização de um objeto de dispositivo no Azure AD. <br><br>Suporte `$filter` (`eq`, `not`, `startsWith`, e `eq` no `null` valores). |
-|id|String|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
-|isCompliant|Booliano|`true` se o dispositivo estiver em conformidade com as políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, `false`. Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows. Suporta `$filter` (`eq`, `ne`, `not`).|
-|isManaged|Booliano|`true` se o dispositivo for gerenciado por um aplicativo MDM (Gerenciamento de Dispositivo Móvel); caso contrário, `false`. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows. Suporta `$filter` (`eq`, `ne`, `not`). |
+| extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contém atributos de extensão de 1 a 15 para o dispositivo. Os atributos de extensão individuais não são selecionáveis. Essas propriedades são dominadas na nuvem e podem ser definidas durante a criação ou atualização de um objeto de dispositivo Azure AD. <br><br>Suporte `$filter` (`eq`, `not`, `startsWith`, e `eq` no `null` valores). |
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `in`). |
+|isCompliant|Booliano|`true`se o dispositivo estiver em conformidade com as políticas de MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Somente leitura. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows. Suporta `$filter` (`eq`, `ne`, `not`).|
+|isManaged|Booliano|`true`se o dispositivo for gerenciado por um aplicativo MDM (mobile Gerenciamento de Dispositivos), caso contrário, `false`. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um aplicativo [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) aprovado para dispositivos do sistema operacional Windows. Suporta `$filter` (`eq`, `ne`, `not`). |
 |fabricante|String| Fabricante do dispositivo. Somente leitura. |
 |mdmAppId|String|Identificador de aplicativo usado para registrar o dispositivo no MDM. Somente leitura. Suporta `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |modelo|String| Modelo do dispositivo. Somente leitura. |
@@ -70,7 +70,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. Dá `$filter` suporte (`eq`, `not`, `ge`, `le`, `startsWith`e contando coleções vazias). |
 |profileType|deviceProfileType|O tipo de perfil do dispositivo. Valores possíveis: `RegisteredDevice` (padrão), `SecureVM`, `Printer`, `Shared`. `IoT`|
 |systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. Dá `$filter` suporte (`eq` ao contar coleções vazias). |
-|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores *possíveis:*`Workplace` (indica trazer seus próprios dispositivos pessoais) `AzureAd` (dispositivos ingressados na nuvem somente) `ServerAd` (dispositivos ingressados no domínio local ingressados no Azure AD). Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
+|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores *possíveis:*`Workplace` (indica trazer seus próprios dispositivos pessoais), `AzureAd` (somente dispositivos ingressados na nuvem) `ServerAd` (dispositivos ingressados no domínio local ingressados no Azure AD). Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: a50cd0f2569fb9f076a89fa9275a891b7e487ae7
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 6dffafea076698b90a5adfe1dd83114c7e2eadcc
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820979"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555253"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Crie uma extensão aberta ([objeto openTypeExtension](../resources/opentypeextension.md) ) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
+Crie uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso. Você pode [criar uma extensão aberta em](/graph/api/opentypeextension-post-opentypeextension) uma instância de recurso e armazenar dados personalizados para ela na mesma operação, exceto para recursos específicos. Confira [as limitações conhecidas de extensões abertas](/graph/known-issues#extensions) para obter mais informações.
 
 A tabela na seção [Permissões](#permissions) lista os recursos que oferecem suporte a extensões abertas.
 
@@ -32,8 +32,6 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
-| [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
-| [baseTaskList](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Sem suporte | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [grupo](../resources/group.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
@@ -42,9 +40,13 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+| [baseTaskList](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 980c7769e781a51580222107639dfc9ccdae120e
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 7d8d98fbbb95d0429bb66d5c3d74089e859378f6
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093238"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556217"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -37,6 +37,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Sem suporte | Sem suporte | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages -- mensagens de chat para todos os chats dos quais um usuário específico faz parte) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All, Chat.ReadWrite.All |
 |[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Incompatível | Sem suporte | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite | Incompatível | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |

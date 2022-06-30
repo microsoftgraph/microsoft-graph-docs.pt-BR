@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c5bcdacb8e03115878daf7a7356a4328ce77a2f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dd93c4af6eab8e0953e953de0939e359e3c48f99
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119689"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556301"
 ---
 # <a name="list-calendars"></a>Listar calendários
 
@@ -59,7 +59,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Calendar](../resources/calendar.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,8 @@ GET https://graph.microsoft.com/beta/me/calendars
 ---
 
 ### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

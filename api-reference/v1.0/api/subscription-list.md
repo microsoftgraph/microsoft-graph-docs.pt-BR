@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: e246c739e55a2a94472df00dff5747b7ffba8511
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 8cfe80146aaf6f23069e83245541cfa221190a78
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094604"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555895"
 ---
 # <a name="list-subscriptions"></a>Listar assinaturas
 
@@ -35,6 +35,7 @@ Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de canal na organização) | Sem suporte | Sem suporte | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite, Subscription.Read.All | Sem suporte | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- todas as mensagens de chat na organização) | Sem suporte | Sem suporte | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages -- mensagens de chat para todos os chats dos quais um usuário específico faz parte) | Chat.Read, Chat.ReadWrite | Sem suporte | Chat.Read.All, Chat.ReadWrite.All |
 |[contato](../resources/contact.md) | Contacts.Read, Subscription.Read.All | Contacts.Read, Subscription.Read.All | Contacts.Read |
 |[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Incompatível | Incompatível | ChannelMember.Read.All |
 |[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Incompatível | Sem suporte | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
@@ -44,7 +45,7 @@ Esta API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All, Subscription.Read.All | Sem suporte | Files.ReadWrite.All |
 |[evento](../resources/event.md) | Calendars.Read, Subscription.Read.All | Calendars.Read, Subscription.Read.All | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All, Subscription.Read.All | Sem suporte | Group.Read.All |
-|[conversa em grupo](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Sem suporte | Sem suporte |
+|[conversa em grupo](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Incompatível | Sem suporte |
 |[list](../resources/list.md) | Sites.ReadWrite.All, Subscription.Read.All | Sem suporte | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All, Subscription.Read.All | Sem suporte | Incompatível |

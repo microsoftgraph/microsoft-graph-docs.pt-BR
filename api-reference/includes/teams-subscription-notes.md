@@ -3,12 +3,12 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 6e5f62d52969dcc1b332b2cd6e5f02f318c8b6a9
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
-ms.translationtype: HT
+ms.openlocfilehash: 15f177d00c7b024e7b1e4ec8195770e2fa809879
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65135142"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555139"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -24,11 +24,15 @@ Você deve usar o cabeçalho da solicitação `Prefer: include-unknown-enum-memb
 > Se nenhum modelo for especificado, o [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado.
 
 ### <a name="conversationmember"></a>conversationMember
+**As assinaturas conversationMember** podem ser especificadas para incluir dados de recurso. Se especificado para incluir dados de recurso (**includeResourceData** definido como `true`), [encryption](/graph/webhooks-with-resource-data) é necessária. A criação de assinatura falhará se um [encryptionCertificate](/graph/api/resources/subscription) não for especificado.
 
 > [!NOTE]
 >`/teams/getAllMembers` e `/chats/getAllMembers` tem [requisitos de licenciamento e pagamento](/graph/teams-licenses).
 > `/teams/getAllMembers` e `/chats/getAllMembers` suportam os parâmetros de consulta `model=A` e `model=B`.
 > Se nenhum modelo for especificado, o [modo de avaliação](/graph/teams-licenses#evaluation-mode-default-requirements) será usado.
+
+### <a name="team-channel-and-chat"></a>equipe, canal e chat
+**assinaturas** **de** equipe, canal **e chat** podem ser especificadas para incluir dados de recursos. Se especificado para incluir dados de recurso (**includeResourceData** definido como `true`), [encryption](/graph/webhooks-with-resource-data) é necessária. A criação de assinatura falhará se um [encryptionCertificate](/graph/api/resources/subscription) não for especificado.
 
 #### <a name="request-example"></a>Exemplo de solicitação
 

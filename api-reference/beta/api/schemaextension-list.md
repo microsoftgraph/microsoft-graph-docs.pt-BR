@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 8f33af60add0ea55453a735ccb9f9e4aff958bbd
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: 6668b6c2a0bea5522ad8e0ef7f1d9c2fa9033d43
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296370"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555223"
 ---
 # <a name="list-schemaextensions"></a>List schemaExtensions
 
@@ -31,13 +31,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User.Read, Application.Read.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Application.Read.All  |
+|Aplicativo | Application.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions
 ```
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Esse método dá suporte aos `$filter` parâmetros de consulta (`eq`) `$top` [e OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

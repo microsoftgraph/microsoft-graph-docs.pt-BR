@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 631984680cb7b84320681d317888e39c92ac5118
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 7bb9e51153959e2b4c1fa659dc23f0071c106610
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447403"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556357"
 ---
 # <a name="delete-internaldomainfederation"></a>Excluir internalDomainFederation
 Namespace: microsoft.graph
@@ -22,9 +22,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Domain.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|Domain.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Domain.ReadWrite.All|
+
+O usuário ou aplicativo de chamada deve receber a função administrador global [Azure AD usuário](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

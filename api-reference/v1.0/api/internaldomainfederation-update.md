@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5498cc69bde517632af1bc481240f962be03b1a3
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 5ad0459e6343a3eca0fa65d5832dd291b5027c66
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447401"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555720"
 ---
 # <a name="update-internaldomainfederation"></a>Atualizar internalDomainFederation
 Namespace: microsoft.graph
@@ -22,9 +22,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|Domain.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|Domain.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Domain.ReadWrite.All|
+
+O usuário ou aplicativo de chamada deve receber a função administrador global [Azure AD usuário](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +55,7 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 |federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determina se Azure AD aceita a MFA executada pelo IdP federado quando um usuário federado acessa um aplicativo que é regido por uma política de acesso condicional que requer MFA. Os valores possíveis são: `acceptIfMfaDoneByFederatedIdp`, `enforceMfaByFederatedIdp`, `rejectMfaByFederatedIdp`, `unknownFutureValue`. Para obter mais informações, consulte [valores federatedIdpMfaBehavior](#federatedidpmfabehavior-values).|
 |isSignedAuthenticationRequestRequired|Booliano|Se`true`, quando as solicitações de autenticação SAML forem enviadas para o IdP do SAML federado, Azure AD assinará essas solicitações usando a chave de assinatura orgID. Se `false` (padrão), as solicitações de autenticação SAML enviadas ao IdP federado não serão assinadas.|
 |issuerUri|Cadeia de caracteres|URI do emissor do servidor de federação.|
-|metadataExchangeUri|String|URI do ponto de extremidade de troca de metadados usado para autenticação de aplicativos cliente avançados.|
+|metadataExchangeUri|Cadeia de caracteres|URI do ponto de extremidade de troca de metadados usado para autenticação de aplicativos cliente avançados.|
 |nextSigningCertificate|Cadeia de caracteres|Certificado de autenticação de token de fallback usado para assinar tokens quando o certificado de assinatura primário expira. Formatado como cadeias de caracteres codificadas em Base64 da parte pública do certificado de autenticação de token do IdP federado. Precisa ser compatível com a classe X509Certificate2. Assim como o **signingCertificate**, a propriedade **nextSigningCertificate** será usada se uma substituição for necessária fora da atualização de substituição automática, um novo serviço de federação será configurado ou se o novo certificado de assinatura de token não estiver presente nas propriedades de federação depois que o certificado do serviço de federação for atualizado.|
 |passiveSignInUri|Cadeia de caracteres|URI para o qual os clientes baseados na Web são direcionados ao entrar Azure AD serviços. |
 |preferredAuthenticationProtocol|authenticationProtocol|Protocolo de autenticação preferencial. Os valores possíveis são: `wsFed`, `saml`, `unknownFutureValue`. |

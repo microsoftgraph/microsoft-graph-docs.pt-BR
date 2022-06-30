@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 564ed33603585b333f12f72b6a8e1f8e3f9de406
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 3451159f120abf1fa06e45342923d70aad1f84cc
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899544"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555980"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Obter notificações de alteração para mensagens nos canais e bate-papos do Teams usando o Microsoft Graph
 
@@ -178,8 +178,6 @@ Para acompanhar mensagens em um chat, você pode criar uma assinatura de notific
 
 As assinaturas no nível do chat também oferecem suporte à pesquisa baseada em palavras-chave por meio do parâmetro de consulta `$search`.
 
-> **Observação:** a assinatura para receber mensagens em um chat atualmente está em pré-visualização.
-
 ### <a name="permissions"></a>Permissões
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -261,13 +259,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="subscribe-to-changes-at-the-user-level-preview"></a>Assinar as alterações no nível do usuário (versão prévia)
+## <a name="subscribe-to-changes-at-the-user-level"></a>Assinar para receber alterações no nível do usuário
 
-Para rastrear mensagens em todos os chats de que um determinado usuário faz parte, você pode criar uma assinatura de notificação de alteração no nível do usuário. Para fazer isso, assine o `/users/{user-id}/chats/getAllMessages`. Esse recurso dá suporte [à inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação nos modos *delegado* e *somente aplicativo*. Esta assinatura está disponível apenas no ponto de extremidade beta.
+Para rastrear mensagens em todos os chats de que um determinado usuário faz parte, você pode criar uma assinatura de notificação de alteração no nível do usuário. Para fazer isso, assine o `/users/{user-id}/chats/getAllMessages`. Esse recurso dá suporte [à inclusão de dados de recursos](webhooks-with-resource-data.md) na notificação nos modos *delegado* e *somente aplicativo*.
 
 As assinaturas de mensagens de chat no nível do usuário também suportam a pesquisa baseada em palavra-chave por meio do parâmetro de consulta `$search`.
 
-> **Observação:** no futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados acessados por meio da API.
+[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
 ### <a name="permissions"></a>Permissões
 

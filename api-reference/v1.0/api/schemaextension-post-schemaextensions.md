@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 46cc17173698ca00f203127d0aa37bbc4b4d433b
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: c90383696f8f58052189f515bac80437f3326f51
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296420"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556231"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Criar uma nova definição [schemaExtension](../resources/schemaextension.md) para estender um [tipo de recurso de suporte](/graph/extensibility-overview#supported-resources).
 
-As extensões de esquema permitem que você adicione dados personalizados fortemente tipados a um recurso. O aplicativo que cria uma extensão de esquema é o aplicativo proprietário. Dependendo do [estado](/graph/extensibility-overview#schema-extensions-lifecycle) da extensão, o aplicativo proprietário, e apenas o aplicativo proprietário, poderá atualizar ou excluir a extensão. 
+As extensões de esquema permitem que você adicione dados personalizados fortemente tipados a um recurso. O aplicativo que cria uma extensão de esquema é o aplicativo proprietário. Dependendo do [estado](/graph/api/resources/schemaextension#schema-extensions-lifecycle) da extensão, o aplicativo proprietário, e apenas o aplicativo proprietário, poderá atualizar ou excluir a extensão. 
 
 Veja exemplos de como [definir uma extensão de esquema que descreve um curso de treinamento](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), usar a definição de extensão do esquema para [criar um novo grupo com dados do curso de treinamento](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data) e [adicionar dados do curso de treinamento a um grupo existente](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).
 

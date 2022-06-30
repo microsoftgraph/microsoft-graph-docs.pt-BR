@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso extensionSchemaProperty
 description: Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição schemaExtension.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: directory-management
+ms.prod: extensions
 author: keylimesoda
-ms.openlocfilehash: 7f938f98c7f6060c41f7a162501ca42a553cace3
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 346237a22914dffb3dde708d7d272de44bf37b0d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761392"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556007"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -24,10 +24,10 @@ Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|Cadeia de caracteres| O nome da propriedade fortemente digitada definida como parte de uma extensão de esquema.|
-|tipo|Cadeia de caracteres| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
+|nome|Cadeia de caracteres| O nome da propriedade fortemente tipada definida como parte de uma extensão de esquema.|
+|type|Cadeia de caracteres| O tipo da propriedade que é definida como parte de uma extensão de esquema.  Os valores permitidos `Binary`são `Boolean`, `DateTime`, `Integer` ou `String`. Consulte a tabela abaixo para obter mais detalhes.|
 
-#### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
+### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
 
 | Tipo de propriedade | Comentários |

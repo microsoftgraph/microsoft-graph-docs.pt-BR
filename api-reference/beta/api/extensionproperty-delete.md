@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 21c5990ede8784afc6bc4b4be1fb0b46409cd6c9
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: dd040ab6ae09244db7f1221172f4139904a46801
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016950"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555279"
 ---
 # <a name="delete-extensionproperty"></a>Excluir extensionProperty
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Exclua uma extensionProperty](../resources/extensionproperty.md).
+[Exclua um objeto extensionProperty](../resources/extensionproperty.md). Você pode excluir somente as propriedades que não são sincronizadas do Active Directory local.
 
 ## <a name="permissions"></a>Permissões
 

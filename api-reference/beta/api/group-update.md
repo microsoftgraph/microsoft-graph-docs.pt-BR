@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6d1ff8baab3b3817d5521ca34ff6c9d50c265a5f
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 17b08b04e88c6ef3b8a0b9ec8acad48535eff6f1
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446775"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555225"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -61,8 +61,6 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 | securityEnabled         | Boolean | Especifica se o grupo é um grupo de segurança, incluindo grupos do Microsoft 365.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | Cadeia de caracteres  | Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).                                                                                                                                                                                                                                                                                                                                              |
 
-Como o **recurso** de grupo dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados [específicos](/graph/extensibility-overview) do aplicativo em propriedades personalizadas de uma extensão em uma instância de **grupo existente.**
-
 > [!IMPORTANT]
 >
 > - Para atualizar as seguintes propriedades, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
@@ -70,6 +68,14 @@ Como o **recurso** de grupo dá suporte a extensões, `PATCH` você pode usar a 
 > - Somente um subconjunto da API do grupo relacionado à administração do grupo principal e ao aplicativo de suporte ao gerenciamento e às permissões delegadas. Todos os outros membros da API do grupo, incluindo a atualização de **autoSubscribeNewMembers**, suportam apenas permissões delegadas. Consulte os [problemas conhecidos](/graph/known-issues#groups) para exemplos.
 >
 > - As regras para atualizar os grupos de segurança habilitados para email no Microsoft Exchange Server podem ser complexas; Para saber mais, confira [Gerenciar grupos de segurança habilitados para email no Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
+
+
+### <a name="manage-extensions-and-associated-data"></a>Gerenciar extensões e dados associados
+
+Use essa API para gerenciar o [diretório,](/graph/extensibility-overview) o esquema e as extensões abertas e seus dados para grupos, da seguinte maneira:
+
++ Adicione, atualize e armazene dados nas extensões de um grupo existente.
++ Para extensões de diretório e esquema, remova todos os dados armazenados definindo o valor da propriedade de extensão personalizada como `null`. Para extensões abertas, use a API [Excluir extensão aberta](/graph/api/opentypeextension-delete) .
 
 ## <a name="response"></a>Resposta
 

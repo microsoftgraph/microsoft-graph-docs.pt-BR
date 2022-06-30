@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 49eca2a2103830079e9e847f9bf1c1babf4d65e6
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 702ff256e52721af990ee0fc211b4178dc0ad972
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446368"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555496"
 ---
 # <a name="administrativeunit-resource-type"></a>Tipo de recurso administrativeUnit
 
@@ -18,15 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório usuário e grupo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários e grupos contidos dentro ou no escopo de uma unidade administrativa para um administrador regional ou departmental.
+Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário, grupo e dispositivo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários, grupos e dispositivos contidos dentro ou no escopo de uma unidade administrativa para um administrador regional ou departamento. Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
 
-Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/administrativeunit-delta.md). Esse recurso é um tipo aberto que permite que outras propriedades sejam passadas.
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/administrativeunit-delta.md). 
 
 Vejamos um exemplo. Imagine que a Contoso Corp é composta por duas divisões: uma Divisão da Costa Oeste e uma Divisão da Costa Leste. As funções de diretório na Contoso têm como escopo todo o locatário. Lee, um administrador da empresa Contoso, deseja delegar responsabilidades administrativas, mas defina-as como escopo para a Divisão da Costa Oeste ou para a divisão da Costa Leste.  Lee pode criar uma *unidade admistrativa* da Costa Oeste e colocar todos os usuários da Costa Oeste nessa unidade administrativa.  Da mesma forma, Lee pode criar uma *unidade administrativa da Costa Leste*.  Agora Lee, pode começar a delegar responsabilidades administrativas a outras  pessoas, mas com escopo para as novas unidades administrativas que ele criou. Lee coloca Jennifer em uma *função de* administrador de assistência **técnica com** escopo para a *unidade administrativa da Costa Oeste*.  Isso permite que Jennifer redefina a senha de qualquer usuário, mas somente se esses usuários estão na *unidade administrativa da Costa Oeste*.  Da mesma forma, Lee coloca Dave em uma função de administrador de *conta* de **usuário** com escopo para a *unidade administrativa da Costa Leste*.  Isso permite que Dave atualize usuários, atribua licenças e redefina a senha de qualquer usuário, mas somente se esses usuários estão na unidade administrativa *da Costa Leste*. Para obter uma visão geral em vídeo, consulte [Introdução às Unidades Administrativas do Azure Active Directory](https://channel9.msdn.com/Series/Windows-Azure-Active-Directory/Introduction-to-Azure-Active-Directory-Administrative-Units).
 
-Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](/graph/extensibility-overview).
+Esse recurso permite:
 
-Este tópico fornece descrições das propriedades declaradas e das propriedades de navegação expostas pela entidade administrativeUnit, bem como as operações e funções que podem ser chamadas no recurso administrativeUnits.
+- Adicionar seus próprios dados às propriedades personalizadas como [extensions](/graph/extensibility-overview).
+- Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/user-delta.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -70,6 +71,9 @@ Este tópico fornece descrições das propriedades declaradas e das propriedades
 | membershipRuleProcessingState | String | Usado para controlar se a regra de associação dinâmica é processada ativamente. Defina como `On` quando você deseja que a regra de associação dinâmica esteja ativa `Paused` e se você deseja parar de atualizar a associação dinamicamente. Se não estiver definido, o comportamento padrão será `Paused`. |
 | membershipType | Cadeia de caracteres | Tipo de associação para a unidade administrativa. Pode ser `dynamic` ou `assigned`. Se não estiver definido, o comportamento padrão será `assigned`. |
 | visibility | Cadeia de caracteres | Controla se a unidade administrativa e seus membros estão ocultos ou públicos. Pode ser definido como `HiddenMembership` ou `Public`. Se não estiver definido, o comportamento padrão será `Public`. Quando definido como `HiddenMembership`, somente os membros da unidade administrativa podem listar outros membros da unidade administrativa. |
+
+> [!TIP]
+> Extensões de diretório e dados associados são retornados por padrão, enquanto extensões de esquema e dados associados retornados somente em `$select`.
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

@@ -3,14 +3,14 @@ title: Tipo de recurso extensionSchemaProperty
 description: Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição schemaExtension.
 ms.localizationpriority: medium
 author: keylimesoda
-ms.prod: ''
+ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 76f1c32857eb2912c5db85896277f0b80b4e1e0a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e86f97f8bb56214e376ceca8db3b00356561f6a2
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123493"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556126"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -22,10 +22,11 @@ Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|String| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
-|tipo|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
+|nome|Cadeia de caracteres| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
+|type|Cadeia de caracteres| O tipo da propriedade que é definida como parte de uma extensão de esquema.  Os valores permitidos `Binary`são `Boolean`, `DateTime`, `Integer` ou `String`. Consulte a tabela abaixo para obter mais detalhes.|
 
-#### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte
+### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte
+
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
 
 | Tipo de propriedade | Comentários |

@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d0a8726dd00d6b88f57644d0f3f74d7928549fb5
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 19516308ec2fea1efd86303e9676f83881986fba
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211774"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555272"
 ---
 # <a name="delete-internaldomainfederation"></a>Excluir internalDomainFederation
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Exclui um [objeto internalDomainFederation](../resources/internaldomainfederation.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -27,6 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)|Domain.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Domain.ReadWrite.All|
+
+O usuário ou aplicativo de chamada deve receber a função administrador global [Azure AD usuário](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="http-request"></a>Solicitação HTTP
 

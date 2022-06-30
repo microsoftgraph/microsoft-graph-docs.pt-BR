@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 99211fcb4b5e04ac3a31a305ba97a410e326dfb0
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 50022e2cc7418058089e8ec40f5e48a21f0dba49
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437398"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555447"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -40,6 +40,13 @@ GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão       | Comentários                                                 |
+|----------------------|----------------------------------------------------------|
+| Extensões de esquema    | Retornado somente com `$select`. Suporta `$filter` (`eq`). |
+| Extensões de diretório | Retornado por padrão. Suporta `$filter` (`eq`).          |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

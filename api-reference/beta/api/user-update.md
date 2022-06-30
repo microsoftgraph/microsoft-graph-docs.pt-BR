@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a6822acb977374fd3b47045984d7632e1797662c
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 53fa85a4a1dff9fc1ca0d89e73bfae28c02c28b0
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65695452"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555244"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -62,7 +62,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `Granted`, `Denied` e `NotRequired`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
 |country|Cadeia de caracteres|O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`.|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Um tipo complexo aberto que contém o valor de um atributo de segurança personalizado atribuído a um objeto de diretório.<br/><br/>Para atualizar este imóvel, o responsável pela chamada deve ser designado como Administrador de Atribuição de Atributos e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.|
-|department|String|O nome do departamento no qual o usuário trabalha.|
+|departamento|String|O nome do departamento no qual o usuário trabalha.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. O comprimento máximo é de 16 caracteres.|
 | employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`.|
@@ -99,6 +99,13 @@ Como o **recurso** de usuário dá suporte a extensões, `PATCH` você pode usar
 > [!NOTE] 
 > - As seguintes propriedades não podem ser atualizadas por um aplicativo com apenas permissões de aplicativo: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 > - Para atualizar as seguintes propriedades, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** e **skills**.
+
+### <a name="manage-extensions-and-associated-data"></a>Gerenciar extensões e dados associados
+
+Use essa API para gerenciar o diretório, o esquema e as extensões abertas e seus dados para os usuários, da seguinte maneira:
+
++ Adicionar, atualizar e armazenar dados nas extensões de um usuário existente
++ Para extensões de diretório e esquema, remova todos os dados armazenados definindo o valor da propriedade de extensão personalizada como `null`. Para extensões abertas, use a API [Excluir extensão aberta](/graph/api/opentypeextension-delete) .
 
 ## <a name="response"></a>Resposta
 
@@ -325,6 +332,14 @@ Content-type: application/json
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/assign-user-customsecurityattribute-string-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Ir](#tab/go)

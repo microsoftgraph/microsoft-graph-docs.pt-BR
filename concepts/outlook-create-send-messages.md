@@ -4,12 +4,12 @@ description: Os emails são representados pelo recurso de mensagem na API de ema
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 8cd3fd6fb9975d0eba63c809b2a1699687d27b19
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 63470b3910837e08baee01881a070b9ee708c9bd
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446137"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556182"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Automatizar a criação, o envio e o processamento de mensagens
 
@@ -100,7 +100,7 @@ Aproveite as seguintes funcionalidades comuns que são compartilhadas entre enti
 
 - Assine as [notificações de alteração](/graph/api/resources/webhooks) em mensagens quando ocorrem um ou mais tipos de alterações, como a criação de mensagens ou atualização.
 - [Acompanhar as alterações incrementais nas mensagens em uma pasta](delta-query-messages.md).
-- Crie [extensões abertas](extensibility-overview.md#open-extensions) ou [extensões de esquema](extensibility-overview.md#schema-extensions) para adicionar dados personalizados a uma instância de mensagem.
+- Crie [extensões abertas](extensibility-overview.md#4-open-extensions) ou [extensões de esquema](extensibility-overview.md#3-schema-extensions) para adicionar dados personalizados a uma instância de mensagem.
 - Crie [propriedades estendidas](/graph/api/resources/extended-properties-overview) em uma instância da mensagem para armazenar dados personalizados para as propriedades MAPI do Outlook, quando essas propriedades ainda não estão expostas nos metadados da API do Microsoft Graph.
 
 ## <a name="next-steps"></a>Próximas etapas

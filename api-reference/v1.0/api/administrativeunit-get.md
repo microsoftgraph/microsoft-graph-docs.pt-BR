@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9d6a70d197ab0b2ba3f88b1d16f67173796e993d
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 40b554568a524203253a0cba5a0d2a0a4ef0270c
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672088"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555474"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -35,7 +35,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /directory/administrativeUnits/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte ao `$select` [parâmetro de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão       | Comentários                                                 |
+|----------------------|----------------------------------------------------------|
+| Extensões de esquema    | Retornado somente com `$select`. Suporta `$filter` (`eq`). |
+| Extensões de diretório | Retornado por padrão. Suporta `$filter` (`eq`).          |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -47,7 +54,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

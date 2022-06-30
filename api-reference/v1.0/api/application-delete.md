@@ -1,22 +1,22 @@
 ---
 title: Excluir aplicativo
-description: Excluir um objeto application.
+description: Exclua um objeto de aplicativo.
 author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c49b0a9414aa2109346d9ae3526521756517754b
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 70e79b583cb72a08c71ca4b78b0dd133326ae484
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671234"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556147"
 ---
 # <a name="delete-application"></a>Excluir aplicativo
 
 Namespace: microsoft.graph
 
-Excluir um [objeto application](../resources/application.md) . Quando excluídos, os aplicativos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias. Após esse período, elas serão permanentemente excluídos.
+Exclua um [objeto de](../resources/application.md) aplicativo. Quando excluídos, os aplicativos são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias. Após esse período, elas serão permanentemente excluídos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,10 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Application.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Application.ReadWrite.All |
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+Substitua `{id}` pela **ID do** objeto de aplicativo, também conhecida como **A ID de** Objeto no portal do Azure.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}
