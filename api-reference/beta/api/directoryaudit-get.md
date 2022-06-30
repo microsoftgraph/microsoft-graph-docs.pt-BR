@@ -1,16 +1,16 @@
 ---
 title: Obter directoryAudit
-description: Descreve o método get do recurso directoryAudit (entidade) da API do Microsoft Graph (versão beta).
+description: Descreve o método get do recurso directoryAudit (entidade) do Microsoft API do Graph (versão beta).
 ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a4190d9b325b67fc2f6530502f87bb10b644c64b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bc17537c2eafaf53855c65291296c03670d4842a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62133962"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445705"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um item Azure Active Directory log de auditoria específico. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como gerenciamento de usuário, aplicativo, dispositivo e grupo, pim (gerenciamento de identidade privilegiada), análises de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de autoatendados e administrador), gerenciamento de grupo de autoatendados e assim por diante.
+Obtenha um item de log de auditoria específico do Azure Active Directory. Isso inclui um item de log de auditoria gerado por vários serviços no Azure Active Directory, como usuário, aplicativo, gerenciamento de dispositivos e grupos, PIM (privileged identity management), revisões de acesso, termos de uso, proteção de identidade, gerenciamento de senha (redefinições de senha de administrador e autoatendimento), gerenciamento de grupo de autoatendimento e assim por diante.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
+|Delegada (conta corporativa ou de estudante) | AuditLog.Read.All e Directory.Read.All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All e Directory.Read.All | 
 
 > [!IMPORTANT]
-> Esta API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All.**
+> Essa API tem um [problema conhecido](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) e atualmente requer consentimento para as permissões **AuditLog.Read.All** e **Directory.Read.All** .
 
 Além disso, os aplicativos devem ser [corretamente registrados](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
@@ -44,7 +44,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [Parâmetros de consulta OData](/graph/query-parameters).
+Este método dá suporte a Parâmetros de consulta do OData para ajudar a personalizar a resposta. Para obter detalhes sobre como usar esses parâmetros, consulte [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -58,7 +58,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e [um objeto directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -116,50 +116,63 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",
-  "value": [{
-        "id": "id",
-        "category": "UserManagement",
-        "correlationId": "dax59xfb-5xfa-4x92-8x38-6e1fx7870e30",
-        "result": "success",
-        "resultReason": "Successfully added member to group",
-        "activityDisplayName": "Add member to group",
-        "activityDateTime": "2018-01-09T21:20:02.7215374Z",
-        "loggedByService": "Core Directory",
-        "initiatedBy": {
-            "user": {
-                "id": "72xx09ae-1x37-49x7-9xfe-e3xx964db09b",
-                "displayName": "Jamie Doe",
-                "userPrincipalName": "jdoe@wingtiptoysonline.com",
-                "ipAddress": "127.0.0.1"
-            },
-            "app": null
-        },
-        "targetResources": [{
-            "@odata.type": "#microsoft.graph.TargetResourceGroup",
-            "id": "ef7x527d-6xx2-4xx4-8xxd-cxxfdxx5xx95",
-            "displayName": "Example.com",
-            "modifiedProperties": [{
-                "displayName": "Action Client Name",
-                "oldValue": null,
-                "newValue": "DirectorySync"
-            }],
-            "groupType": "unifiedGroups"
-        }, {
-            "@odata.type": "#microsoft.graph.targetResourceUser",
-            "id": "1x0exxf5-3xx1-4xxb-9xx0-d4xx572xxbb7",
-            "displayName": null,
-            "modifiedProperties": [],
-            "userPrincipalName": "jdoe@contoso.com"
-        }],
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
-        "additionalDetails": [{
-            "key": "Additional Detail Name",
-            "value": "Additional Detail Value"
-        }]
-    }]
+    "id": "Directory_504a302a-8f2d-418d-b7df-bf77de6ed831_M1N6X_27777783",
+    "category": "UserManagement",
+    "correlationId": "504a302a-8f2d-418d-b7df-bf77de6ed831",
+    "result": "success",
+    "resultReason": "",
+    "activityDisplayName": "Update user",
+    "activityDateTime": "2022-06-21T23:25:00.1458248Z",
+    "loggedByService": "Core Directory",
+    "operationType": "Update",
+    "userAgent": null,
+    "initiatedBy": {
+        "app": null,
+        "user": {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test Admin",
+            "userPrincipalName": "tadmin@contoso.com",
+            "ipAddress": "",
+            "userType": "Member",
+            "homeTenantId": null,
+            "homeTenantName": null
+        }
+    },
+    "targetResources": [
+        {
+            "id": "2c940657-1026-4386-bcfd-3176637ba01f",
+            "displayName": "Test User",
+            "type": "User",
+            "userPrincipalName": "tuser@contoso.com",
+            "groupType": null,
+            "modifiedProperties": [
+                {
+                    "displayName": "StrongAuthenticationMethod",
+                    "oldValue": "[{\"MethodType\":6,\"Default\":true},{\"MethodType\":7,\"Default\":false}]",
+                    "newValue": "[{\"MethodType\":7,\"Default\":false},{\"MethodType\":6,\"Default\":true},{\"MethodType\":0,\"Default\":false},{\"MethodType\":5,\"Default\":false}]"
+                },
+                {
+                    "displayName": "Included Updated Properties",
+                    "oldValue": null,
+                    "newValue": "\"StrongAuthenticationMethod\""
+                },
+                {
+                    "displayName": "TargetId.UserType",
+                    "oldValue": null,
+                    "newValue": "\"Member\""
+                }
+            ]
+        }
+    ],
+    "additionalDetails": [
+        {
+            "key": "UserType",
+            "value": "Member"
+        }
+    ]
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

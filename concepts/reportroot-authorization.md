@@ -1,15 +1,15 @@
 ---
 title: Autorização para APIs lerem os relatórios de uso do Microsoft 365.
-description: Os dados de relatórios acessíveis por meio da API de relatórios do Microsoft Graph são confidenciais e protegidos por permissões e funções do Azure AD (Azure Active Directory).
+description: Os relatórios de uso do Microsoft 365 são protegidos tanto pelas permissões quanto pelas funções do Azure Active Directory (Azure AD). Saiba como atribuir uma função a um usuário.
 author: kszb
 ms.localizationpriority: high
 ms.prod: reports
-ms.openlocfilehash: 1710f5c1be640f61c0ff02340e90b991d3d69f9f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3ac9df517918b68d8d59339902ee9a6e44706b20
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139020"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437643"
 ---
 # <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>Autorização para APIs lerem os relatórios de uso do Microsoft 365.
 
@@ -25,7 +25,8 @@ Se você estiver chamando as APIs do Explorador do Graph:
 - O administrador de locatário do Azure AD deve conceder explicitamente o consentimento das permissões solicitadas ao aplicativo do Explorador do Graph.
 - O usuário deve ser membro de uma função de administrador limitada no Azure AD, listada acima para autorização delegada pelo usuário.
 
->**Observação**: O Explorador do Graph não oferece suporte a autorização no nível de aplicativo.
+> [!NOTE]
+> O Explorador do Graph não tem suporte para autorização no nível de aplicativo.
 
 Se você estiver chamando as APIs de um aplicativo:
 
@@ -36,7 +37,8 @@ Se você estiver chamando as APIs de um aplicativo:
 
 Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados de relatórios confidenciais, os administradores de locatários devem atribuir aos usuários do aplicativo as funções apropriadas do Azure AD. Para obter detalhes, confira [Permissões da função de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador e não-administrador aos usuários com o Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
->**Observação:** você precisa ser um administrador de locatários para executar esta etapa.
+> [!NOTE]
+> Você precisa ser um administrador de locatários para executar esta etapa.
 
 Para atribuir uma função a um usuário:
 

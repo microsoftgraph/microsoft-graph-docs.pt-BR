@@ -5,12 +5,12 @@ author: swapnil1993
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: apiPageType
-ms.openlocfilehash: 3a000fa0d7add3c225f545bde24dcf5983e8a7e9
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: a5eeee7c6bea68f82f653eb6e21de26b6e4b663a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65205968"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445675"
 ---
 # <a name="documentsetversion-restore"></a>documentSetVersion: restaurar
 Namespace: microsoft.graph
@@ -19,13 +19,13 @@ Namespace: microsoft.graph
 
 Restaure uma [versão do conjunto de documentos](../resources/documentsetversion.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All, Sites.Selected|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -84,6 +84,10 @@ POST https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/documen
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/documentsetversionthisrestore-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/documentsetversionthisrestore-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

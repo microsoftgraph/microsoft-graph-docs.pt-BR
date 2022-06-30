@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API de gerenciamento de identidade e acesso do Azure AD
-description: 'O Active Directory do Azure (Azure AD) ajuda a centralizar o gerenciamento de identidade e acesso para permitir acesso seguro e produtivo entre aplicativos, dispositivos, serviços e infraestrutura. As organizações podem usar o Azure AD para gerenciar identidades e controlar o acesso em ambientes locais, híbridos e em nuvem.  '
+description: Use o Azure Active Directory (Azure AD) para gerenciar identidades e dispositivos e controlar o acesso em ambientes locais, híbridos e na nuvem.
 author: jackson-woods
 ms.localizationpriority: high
 ms.prod: identity-and-access
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ea9fd66eb24b4293a4b86af1e2fbbe2eb55a46e2
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 85f1837c7e2c4b8a7d50000b14978645a9e247cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507953"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443792"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
@@ -72,9 +72,9 @@ Hoje, o Microsoft Graph oferece acesso fácil aos clientes do Azure AD Premium P
 
 Analisar acesso a grupos, aplicações, e até mesmo papéis privilegiados em sua organização. [As análises de acesso](/graph/api/resources/accessreviews-root) são apresentadas no Azure AD Premium P2.
 
-### <a name="activate-users-into-privileged-roles-preview"></a>Ativar usuários em papéis privilegiados (visualização)
+### <a name="activate-users-into-privileged-roles"></a>Ativar usuários em funções privilegiadas
 
-Usar o [Gerenciamento de Identidade Privilegiado (PIM) API](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true) para ativar o privilégio de administrador sob demanda. Forçar a justificação obrigatória da ativação de papéis, e autenticação multifatorial para os atores em papéis privilegiados.
+Usar o [Gerenciamento de Identidade Privilegiado (PIM) API](/graph/api/resources/rolemanagement) para ativar o privilégio de administrador sob demanda. Forçar a justificação obrigatória da ativação de papéis, e autenticação multifatorial para os atores em papéis privilegiados.
 
 ## <a name="api-reference"></a>Referência da API
 

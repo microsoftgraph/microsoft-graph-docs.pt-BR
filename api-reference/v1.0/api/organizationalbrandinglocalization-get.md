@@ -5,17 +5,17 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: f8204252dc6355737d184512c9000161bd4040c3
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 5d2f49c99c2e442cb14ebcfe1f69d1d192c81a25
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63395248"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444457"
 ---
 # <a name="get-organizationalbrandinglocalization"></a>Obter organizationalBrandingLocalization
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) . Para recuperar um objeto de identidade visual de localização, especifique o valor da **id** na URL.
+Leia as propriedades e as relações de um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) . Para recuperar um objeto de identidade visual de localização, especifique o valor **da ID** na URL.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbrandinglocalization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbrandinglocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,7 +186,7 @@ Content-Type: application/json
 
 ### <a name="example-3-get-the-bannerlogo-for-the-default-locale"></a>Exemplo 3: Obter o bannerLogo para a localidade padrão
 
-O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Você pode especificar **a id** como `default` ou `0` na URL da solicitação. Se o objeto não estiver definido, a solicitação retornará uma resposta vazia.
+O exemplo a seguir retorna o **objeto bannerLogo** para a localidade padrão. Você pode especificar a **ID** como ou `default` `0` na URL da solicitação. Se o objeto não estiver definido, a solicitação retornará uma resposta vazia.
 
 #### <a name="request"></a>Solicitação
 
@@ -216,7 +220,7 @@ Content-Type: image/*
 
 ### <a name="example-4-get-the-bannerlogo-for-the-fr-fr-locale"></a>Exemplo 4: Obter o bannerLogo para a localidade fr-FR
 
-O exemplo a seguir retorna o **objeto bannerLogo** para a `fr-FR` localidade cujo bannerLogo não está definido.
+O exemplo a seguir retorna **o objeto bannerLogo** para a `fr-FR` localidade cuja bannerLogo não está definida.
 
 #### <a name="request"></a>Solicitação
 
@@ -250,6 +254,10 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationalbranding-frlocale-bannerlogo-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-organizationalbranding-frlocale-bannerlogo-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

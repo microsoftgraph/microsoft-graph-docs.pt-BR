@@ -1,17 +1,20 @@
 ---
-title: 'Integração de experiências entre dispositivos para as notificações do Microsoft Graph '
-description: Registre seu aplicativo no Centro de Desenvolvimento do Windows para habilitar os clientes de aplicativo para receber notificações entre dispositivos enviadas pelo Microsoft Graph.
+title: Integração das experiências entre dispositivos para notificações (preterido)
+description: Seu aplicativo precisa registrar informações entre dispositivos para autorizar o Microsoft Graph a enviar notificações pelos serviços nativos de notificação por push (preteridos).
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 15cb37515a7658078b909b801f8ecc3cceafc9cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a3c229f71a43222a642c4c1113edaf4b99b27535
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066937"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444814"
 ---
-# <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>Integração de experiências entre dispositivos para as notificações do Microsoft Graph
+# <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications-deprecated"></a>Integração de experiências entre os dispositivos das notificações do Microsoft Graph (preteridos)
+
+> [!IMPORTANT]
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte a postagem no blog [Desativando a API de notificações do Microsoft Graph (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 >[!NOTE]
 >Se estiver apenas direcionando pontos de extremidade da Web, você poderá ir direto para a configuração do [serviço de aplicativo](notifications-integrating-app-server.md) para enviar notificações.

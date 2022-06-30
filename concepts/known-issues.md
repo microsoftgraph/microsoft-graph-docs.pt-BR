@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 925062122223563e00b3a4413b06076fc0164c41
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 99d026a9b00b0a61b29ba1a173d7b03903fb9ad4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820200"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439099"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -156,6 +156,10 @@ As [assinaturas](/graph/api/resources/subscription) de alterações no **grupo**
 ### <a name="view-meeting-details-menu-is-not-available-on-microsoft-teams-client"></a>O menu "Exibir detalhes da reunião" não está disponível no cliente Microsoft Teams
 
 O cliente do Microsoft Teams não mostra o menu **Exibir detalhes da Reunião** para reuniões de canal criadas por meio da API de comunicações na nuvem.
+
+### <a name="presenter-role-cannot-be-assigned-to-non-azure-ad-participants"></a>A função de apresentador não pode ser atribuída a participantes que não são do Azure AD
+
+Atribuir a função `presenter` ou `coorganizer` a usuários que não estão registrados no Azure Active Directory não tem suporte no momento. Essas solicitações serão aceitas pelo método [create onlineMeeting](/graph/api/application-post-onlinemeetings.md), mas a função não será aplicada quando o participante ingressar na reunião online. O método [create onlineMeeting](/graph/api/application-post-onlinemeetings.md) rejeitará a solicitação e retornará um erro `400 Bad Request`. 
 
 ## <a name="contacts"></a>Contatos
 

@@ -1,23 +1,23 @@
 ---
-title: Personalização da privacidade das percepções das pessoas no Microsoft Graph
-description: Aprenda como personalizar as percepções das pessoas no nível da organização usando a API do Microsoft Graph.
+title: Personalizar a privacidade dos insights das pessoas no Microsoft Graph (versão prévia)
+description: Aprenda como personalizar as percepções das pessoas no nível da organização usando a API insightsSettings do Microsoft Graph.
 author: anthona
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e0495f4206023c6d7c8a46f094172e5732c08df4
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: da5306a4bc92a0e475c4785eea124f78d18f9fed
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322720"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438287"
 ---
-# <a name="customizing-people-insights-privacy-in-microsoft-graph-preview"></a>Personalização da privacidade das percepções das pessoas no Microsoft Graph (visualização)
+# <a name="customize-people-insights-privacy-in-microsoft-graph-preview"></a>Personalizar a privacidade dos insights das pessoas no Microsoft Graph (versão prévia)
 
-Os insights de pessoas representam conexões de pessoas que são [ relevantes ou trabalham ](people-example.md#including-a-person-as-relevant-or-working-with) umas com as outras na mesma organização, com base nas relações públicas entre as pessoas. Esses insights podem ser exibidos no Delve e no cartão de perfil, e retornados pela [API de pessoas](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true).
+Os insights de pessoas representam conexões de pessoas que são [ relevantes ou trabalham ](people-example.md#including-a-person-as-relevant-or-working-with) umas com as outras na mesma organização, com base nas relações públicas entre as pessoas. Esses insights podem ser exibidos no Delve e no cartão de perfil, e retornados pela [API de pessoas](/graph/api/user-list-people).
 
 
-## <a name="customizing-people-insights-for-an-organization"></a>Personalização de percepções de pessoas para uma organização
+## <a name="customize-people-insights-for-an-organization"></a>Personalizar insights de pessoas para uma organização
 
 Por padrão, a exibição ou retorno de insights de pessoas está habilitado para uma organização. Os administradores com a função de administrador global podem personalizar esse comportamento para uma organização usando APIs REST e as permissões apropriadas. Eles podem personalizar definindo propriedades do recurso [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) das seguintes maneiras:
 
@@ -39,5 +39,4 @@ Desabilitar as percepções de pessoas significa que os dados não são gerados 
 Ao personalizar a privacidade para percepções de pessoas, você pode observar mudanças comportamentais nas seguintes áreas:
 * Cartão de perfil do [Microsoft 365](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
 * Perfil de usuário em Delve
-* [Listando pessoas relevantes](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true).
-
+* [Listando pessoas relevantes](/graph/api/user-list-people)

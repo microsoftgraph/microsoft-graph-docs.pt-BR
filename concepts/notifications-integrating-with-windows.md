@@ -1,16 +1,19 @@
 ---
-title: Integração do aplicativo UWP do Windows no SDK do lado do cliente para notificações ao usuário
-description: Integre o aplicativo UWP do Windows com notificações de usuário no SDK do cliente.
+title: Integrar seu aplicativo UWP do Windows ao SDK do lado do cliente (preterido)
+description: Depois de registrar seu aplicativo e integrar suas experiências entre dispositivos, integre seu aplicativo cliente ao SDK do lado do cliente para aplicativos UWP do Windows (preterido).
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: b7cfb633d3701715e0a29ee1be8bb1acfe375ea8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a812f5637693303bf8ba41d3190b8a3226d4cb9f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035574"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439113"
 ---
-# <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo UWP do Windows no SDK do lado do cliente para notificações ao usuário
+# <a name="integrate-your-windows-uwp-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>Integrar seu aplicativo UWP do Windows ao SDK do lado do cliente para notificações do usuário (preterido)
+
+> [!IMPORTANT]
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte a postagem no blog [Desativando a API de notificações do Microsoft Graph (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Após [registrar seu aplicativo](notifications-integration-app-registration.md) no Portal do Azure e integrar suas [experiências entre dispositivos](notifications-integration-cross-device-experiences-onboarding.md) no Partner Center de desenvolvimento, a próxima etapa é integrar seu aplicativo de cliente com o SDK do lado do cliente para o aplicativo UWP do Windows.  
 
@@ -88,7 +91,7 @@ Após a conclusão da instalação, o pacote é exibido abaixo de **Referências
 
 Para saber mais sobre a incluisão e o consumo de pacotes do NuGet de seu aplicativo UWP, confira:
 
-* [Usar os pacotes do nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts)
+* [Usar os pacotes do nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts&preserve-view=true)
 * [Início rápido: Instalar e usar um pacote no Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 

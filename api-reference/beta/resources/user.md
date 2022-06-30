@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 8a225554d15fb3095f04f28db3d57b659ada1d5d
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 532f09979042c126e08cf8ac93adc2acb3ac6d7c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820494"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439359"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -210,7 +210,7 @@ Esse recurso permite:
 | lastPasswordChangeDateTime | DateTimeOffset | A hora em que esse usuário do Azure AD alterou a senha pela última vez ou quando a senha foi criada, seja qual for a data em que a ação mais recente foi executada. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`. Somente leitura.<br><br>Retornado apenas em `$select`.  |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades **ageGroup** e **consentProvidedForMinor**. Valores permitidos: `null`, `MinorWithOutParentalConsent`, `MinorWithParentalConsent`, `MinorNoParentalConsentRequired`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. <br><br>Retornado apenas em `$select`. |
 | licenseAssignmentStates | Coleção [licenseAssignmentState](licenseassignmentstate.md) | Estado das atribuições de licença para este usuário. Somente leitura.<br><br>Retornado apenas em `$select`. |
-| email | String | O endereço SMTP do usuário, por exemplo, `admin@contoso.com`. As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. Para contas do Azure AD B2C, esta propriedade só pode ser atualizada até dez vezes com endereços SMTP exclusivos. Esta propriedade não pode conter caracteres de destaque. <br><br> Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, e `eq` no `null` valores). |
+| email | String | O endereço SMTP do usuário, por exemplo, `admin@contoso.com`. As alterações feitas nessa propriedade também atualizarão a coleção **proxyAddresses** do usuário para incluir o valor como um endereço SMTP. Esta propriedade não pode conter caracteres de destaque. <br/> **OBSERVAÇÃO:** não recomendamos atualizar essa propriedade para os perfis do Azure AD B2C. Use em vez da propriedade **otherMails**. <br><br> Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, e `eq` no `null` valores). |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Configurações para a caixa postal primária do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada. Para mais informações, veja [Preferências do usuário para idiomas e formatos regionais](#user-preferences-for-languages-and-regional-formats). <br><br>Retornado apenas em `$select`. |
 | mailNickname | String | O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. O comprimento máximo é de 64 caracteres.<br><br>Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores). |
 | mobilePhone | String | O número de celular principal do usuário. Somente leitura para usuários sincronizados do diretório local. <br><br> Suporte `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` no `null` valores).|

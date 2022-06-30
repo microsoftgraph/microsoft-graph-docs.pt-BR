@@ -1,15 +1,15 @@
 ---
 title: Compartilhar ou delegar um calendário no Outlook
-description: No Outlook, um proprietário de calendário pode compartilhá-lo com outro usuário ou delegar outro usuário para gerenciar reuniões no calendário principal do proprietário.
+description: Use a API de calendário do Outlook para permitir que um proprietário de calendário compartilhe o calendário com outro usuário ou delegue outro usuário para gerenciar reuniões nesse calendário.
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 5818ab77b54af482a5a970a21ba985831d02f2e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 45ffc25c834f031f795359b57b27cda57237c174
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071788"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438294"
 ---
 # <a name="share-or-delegate-a-calendar-in-outlook"></a>Compartilhar ou delegar um calendário no Outlook
 

@@ -1,16 +1,19 @@
 ---
-title: Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
-description: Integre o aplicativo iOS com notificações de usuário no SDK do cliente.
+title: Integrar seu aplicativo iOS ao SDK do lado do cliente (preterido)
+description: Depois de registrar seu aplicativo e integrar suas experiências entre dispositivos, integre seu aplicativo cliente ao SDK do lado do cliente para aplicativos iOS (preterido).
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: 0a73626317195320a274430f32607f13b9920505
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97ce34d160f7f86d5f4fc206a3de9fa00612d412
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066930"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438280"
 ---
-# <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo iOS no SDK do lado do cliente para notificações ao usuário
+# <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>Integrar seu aplicativo iOS ao SDK do lado do cliente para notificações do usuário (preterido)
+
+> [!IMPORTANT]
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte a postagem no blog [Desativando a API de notificações do Microsoft Graph (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Após [registrar seu aplicativo](notifications-integration-app-registration.md) no Portal do Azure e integrar suas [experiências entre dispositivos](notifications-integration-cross-device-experiences-onboarding.md) no Partner Center de Desenvolvimento, a próxima etapa é integrar seu aplicativo de cliente com o SDK do lado do cliente para aplicativos iOS.  
 

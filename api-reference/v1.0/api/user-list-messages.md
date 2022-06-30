@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 18b519948408cf0fa7b8e745bc046400530d5fe6
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 8ba794db9c8549bc9a490223cd3805681f93215b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110350"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445899"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -94,7 +94,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 ## <a name="examples"></a>Exemplos
 ### <a name="example-1-list-all-messages"></a>Exemplo 1: Listar todas as mensagens
 #### <a name="request"></a>Solicitação
-Este exemplo obtém as 10 mensagens principais padrão na caixa de correio do usuário conectado. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta.
+A seguir, é mostrado um exemplo que obtém as 10 principais mensagens padrão na caixa de correio do usuário conectado. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ---
 
 #### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Para obter a próxima página de mensagens, aplique o URL retornado em `@odata.nextLink` uma solicitação GET subsequente.
+Este é um exemplo de resposta. Para obter a próxima página de mensagens, aplique a URL retornada em `@odata.nextLink` a uma solicitação GET subsequente.
 
 <!-- {
   "blockType": "response",

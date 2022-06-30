@@ -1,17 +1,20 @@
 ---
-title: 'Integração das notificações com o Microsoft Graph '
-description: 'As notificações são uma das maneiras mais eficazes de se envolver novamente com os usuários do seu aplicativo. Os aplicativos podem ser integrados as notificações do Microsoft Graph em algumas etapas simples.  '
+title: Integração com as notificações do Microsoft Graph (preterido)
+description: Integre seus aplicativos com as notificações do Microsoft Graph com algumas etapas simples (preteridas).
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 8d3e2fe8d7c208cd2c4f0c7f55ba68a79a3d3713
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c2f1e138baf0f88e8e00af9aa19e52b3d957a48b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066902"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439078"
 ---
-# <a name="integrate-with-microsoft-graph-notifications"></a>Integração das notificações com o Microsoft Graph
+# <a name="integrate-with-microsoft-graph-notifications-deprecated"></a>Integração com as notificações do Microsoft Graph (preterido)
+
+> [!IMPORTANT]
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte a postagem no blog [Desativando a API de notificações do Microsoft Graph (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Os aplicativos podem ser integrados às notificações do Microsoft Graph em algumas etapas simples, como mostrado no seguinte diagrama.
 

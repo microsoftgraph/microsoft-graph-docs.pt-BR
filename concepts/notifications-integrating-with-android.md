@@ -1,16 +1,19 @@
 ---
-title: Integração do aplicativo Android no SDK do lado do cliente para notificações ao usuário
-description: Integre o aplicativo Android com notificações de usuário no SDK do cliente.
+title: Integrar seu aplicativo Android ao SDK do lado do cliente (preterido)
+description: Depois de registrar seu aplicativo e integrar suas experiências entre dispositivos, integre seu aplicativo cliente ao SDK do lado do cliente dos aplicativos Android (preterido).
 ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: 8f7615b963e5d423e2195d9791ac9f1f2af0244a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6942baab54133cedd57f1fd73b63e25d74f8dc7c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062310"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447125"
 ---
-# <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>Integração do aplicativo Android no SDK do lado do cliente para notificações ao usuário
+# <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications-deprecated"></a>Integre seu aplicativo Android ao SDK do lado do cliente das notificações do usuário (preterido)
+
+> [!IMPORTANT]
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte a postagem no blog [Desativando a API de notificações do Microsoft Graph (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Após [registrar seu aplicativo](notifications-integration-app-registration.md) no Portal do Azure e integrar suas [experiências entre dispositivos](notifications-integration-cross-device-experiences-onboarding.md) no Partner Center de desenvolvimento, a próxima etapa é integrar seu aplicativo de cliente com o SDK do lado do cliente para aplicativos Android.  
 
@@ -116,7 +119,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 No SDK do lado do cliente é desenvolvido com base em uma infraestrutura chamada Plataforma de Dispositivo Conectado. Antes de poder usar qualquer recurso, a plataforma deve ser inicializada em seu aplicativo. As etapas de inicialização que devem ocorrer em sua classe principal no método **OnCreate**, porque eles são necessários para ocorrer os cenários de notificação.
 
-Você deve criar e inicializar a plataforma ao instanciar a classe [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest). Antes de fazer isso, certifique-se de conectar manipuladores de eventos, pois depois que a plataforma é iniciada, os eventos podem começar a acionar. 
+Você deve criar e inicializar a plataforma ao instanciar a classe [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest&preserve-view=true). Antes de fazer isso, certifique-se de conectar manipuladores de eventos, pois depois que a plataforma é iniciada, os eventos podem começar a acionar. 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);

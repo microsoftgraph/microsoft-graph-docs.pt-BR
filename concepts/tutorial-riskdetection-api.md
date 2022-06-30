@@ -1,29 +1,30 @@
 ---
-title: 'Tutorial: identificar e correção de riscos usando APIs do Microsoft Graph'
-description: Saiba como identificar e correção de riscos usando APIs Graph Microsoft.
+title: 'Tutorial: Identificar e corrigir riscos usando APIs do Microsoft Graph'
+description: Saiba como gerar uma entrada arriscada e corrigir o status de risco do usuário com uma política de acesso condicional que requer autenticação multifator (MFA).
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 4402c6d2873f1405199a0c32701c5d48526bb4d5
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: 31d2cf85d7e41a0b5d8c4bf19a080cb7b0123872
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161743"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444247"
 ---
-# <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Tutorial: identificar e correção de riscos usando APIs do Microsoft Graph
+# <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Tutorial: Identificar e corrigir riscos usando APIs do Microsoft Graph
 
-A Proteção de Identidade do Azure AD fornece às organizações informações sobre riscos baseados em identidade e diferentes maneiras de investigar e correção automática de riscos. As APIs de Proteção de Identidade usadas neste tutorial podem ajudá-lo a identificar riscos e configurar um fluxo de trabalho para confirmar o comprometimento ou habilitar a correção. Para obter mais informações, consulte [O que é risco?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+Azure AD Identity Protection fornece às organizações informações sobre riscos baseados em identidade e diferentes maneiras de investigar e corrigir automaticamente o risco. As APIs do Identity Protection usadas neste tutorial podem ajudá-lo a identificar riscos e configurar um fluxo de trabalho para confirmar o comprometimento ou habilitar a correção. Para obter mais informações, consulte [O que é risco?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
-Neste tutorial, você aprenderá a gerar uma entrada arriscada e correção do status de risco do usuário com uma política de acesso condicional que requer autenticação multifacional (MFA). Uma seção opcional mostra como impedir que o usuário entre também usando uma política de acesso condicional e descartando o risco do usuário.
+Neste tutorial, você aprenderá a gerar uma entrada arriscada e corrigir o status de risco do usuário com uma política de acesso condicional que requer autenticação multifator (MFA). Uma seção opcional mostra como impedir que o usuário entre também usando uma política de acesso condicional e descartando o risco do usuário.
 
->**Observação:** Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura. 
+> [!NOTE]
+> Os objetos de resposta mostrados neste tutorial podem ser reduzidos para legibilidade.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para concluir com êxito este tutorial, certifique-se de que você tem os pré-requisitos necessários:
+Para concluir este tutorial com êxito, verifique se você tem os pré-requisitos necessários:
 
-- Você deve ter uma Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
+- Você deve ter uma licença Azure AD Premium P1 ou P2 para usar a API de detecção de risco.
 - Este tutorial usa o navegador Tor para entrar no portal do Azure anonimamente. Você pode usar qualquer navegador anônimo para realizar a tarefa. Para baixar o navegador Tor, consulte [Download Tor Browser](https://www.torproject.org/download/).
 - Este tutorial assume que você está usando o Microsoft Graph Explorer, mas você pode usar o Postman ou criar seu próprio aplicativo cliente para chamar o Microsoft Graph. Para chamar as APIs do Microsoft Graph neste tutorial, você precisa usar uma conta com a função de administrador global e as permissões apropriadas. Conclua as seguintes etapas para definir as permissões no Microsoft Graph Explorer:
     1. Inicie o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
@@ -32,10 +33,10 @@ Para concluir com êxito este tutorial, certifique-se de que você tem os pré-r
 
         ![Definir permissões](./images/tutorial-riskdetection-api/set-permissions.png)
         
-    4. Role a lista de permissões para essas permissões:
+    4. Percorra a lista de permissões para estas permissões:
         - **IdentityRiskEvents (2)**, expanda e selecione `IdentityRiskEvent.Read.All`
         - **IdentityRiskyUser (2)**, expanda e selecione `IdentityRiskyUser.ReadWrite.All`
-        - **Política (13)**, expandir e selecionar `Policy.Read.All` e `Policy.ReadWrite.ConditionalAccess`
+        - **Política (13)**, expanda e selecione `Policy.Read.All` e `Policy.ReadWrite.ConditionalAccess`
         - **Usuário (8)**, expanda e selecione `User.ReadWrite.All`
         
         ![Pesquisar permissões](./images/tutorial-riskdetection-api/permissions-consent.png)
@@ -46,7 +47,7 @@ Para concluir com êxito este tutorial, certifique-se de que você tem os pré-r
 
 ## <a name="step-1-create-a-user-account"></a>Etapa 1: Criar uma conta de usuário
 
-Para este tutorial, você cria uma conta de usuário usada para testar detecções de risco. No corpo da solicitação, `contoso.com` altere para o nome de domínio do locatário. Encontre informações sobre locatários na página de visão geral do Azure Active Directory.
+Para este tutorial, você cria uma conta de usuário que é usada para testar detecções de risco. No corpo da solicitação, altere `contoso.com` para o nome de domínio do locatário. Encontre informações sobre locatários na página de visão geral do Azure Active Directory.
 
 ### <a name="request"></a>Solicitação
 
@@ -85,18 +86,18 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-trigger-a-risk-detection"></a>Etapa 2: disparar uma detecção de risco
+## <a name="step-2-trigger-a-risk-detection"></a>Etapa 2: Disparar uma detecção de risco
 
 ### <a name="trigger-a-risk-detection"></a>Disparar uma detecção de risco
 
 Uma maneira de disparar uma detecção de risco em uma conta de usuário é entrar no portal do Azure anonimamente. Neste tutorial, o navegador Tor é usado para entrar anonimamente. 
 
 1. Abra o navegador e insira `portal.azure.com` o endereço do site.
-2. Entre no portal usando as credenciais da **conta MyTestUser1** criada anteriormente. Você será solicitado a alterar a senha existente.
+2. Entre no portal usando as credenciais da conta **MyTestUser1** criada anteriormente. Será solicitado que você altere a senha existente.
 
 ### <a name="list-risk-detections"></a>Listar detecções de risco
 
-Quando você se inscreveu no portal do Azure usando o navegador anônimo, um evento `anonymizedIPAddress` de risco foi detectado. Você pode usar o parâmetro de consulta para obter apenas as detecções de risco associadas à conta de usuário `$filter` **MyTestUser1.**
+Quando você entrou no portal do Azure usando o navegador anônimo, um `anonymizedIPAddress` evento de risco foi detectado. Você pode usar o `$filter` parâmetro de consulta para obter apenas as detecções de risco associadas à conta de usuário **MyTestUser1** .
 
 #### <a name="request"></a>Solicitação
 
@@ -145,22 +146,23 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 }
 ```
 
-> **Observação:** Pode levar alguns minutos para que o evento seja retornado.
+> [!NOTE]
+> Pode levar alguns minutos para que o evento seja retornado.
 
 ## <a name="step-3-create-a-conditional-access-policy"></a>Etapa 3: Criar uma política de acesso condicional
 
-Você pode aproveitar políticas de acesso condicional em sua organização para permitir que os usuários se automediam quando o risco é detectado. A automediação permite que os usuários desbloqueiem a si mesmos para acessar seus recursos com segurança depois de concluir o prompt de política. Nesta etapa, você cria uma política de acesso condicional que exige que o usuário entre usando o MFA se ocorrer uma detecção de médio ou alto risco.
+Você pode aproveitar as políticas de acesso condicional em sua organização para permitir que os usuários corrijam automaticamente quando o risco é detectado. A automediação permite que os usuários se desbloqueiem para acessar seus recursos com segurança depois de concluir o prompt de política. Nesta etapa, você criará uma política de acesso condicional que exige que o usuário entre usando a MFA se ocorrer uma detecção de risco médio ou alto.
 
 ### <a name="set-up-multi-factor-authentication"></a>Configurar a autenticação multifator
 
-Ao configurar uma conta para MFA, você pode escolher entre vários métodos para autenticar o usuário. Escolha o melhor método para que sua situação conclua este tutorial. 
+Ao configurar uma conta para MFA, você pode escolher entre vários métodos para autenticar o usuário. Escolha o melhor método para sua situação para concluir este tutorial. 
 
-1. Entre no site para manter [sua](https://aka.ms/MFASetup) conta segura usando a **conta MyTestUser1.**
-2. Conclua o procedimento de instalação do MFA usando o método apropriado para sua situação, como ter uma mensagem de texto enviada para seu telefone.
+1. Entre no site de manter [sua conta segura](https://aka.ms/MFASetup) usando a **conta MyTestUser1** .
+2. Conclua o procedimento de configuração da MFA usando o método apropriado para sua situação, como enviar uma mensagem de texto para seu telefone.
 
 ### <a name="create-the-conditional-access-policy"></a>Criar a política de acesso condicional
 
-A política de acesso condicional fornece a capacidade de definir as condições da política para identificar níveis de risco de entrada. Os níveis de risco `low` podem ser , , , `medium` `high` `none` . Na resposta que foi retornada da listagem das detecções de risco para **MyTestUser1,** podemos ver que o nível de risco é `medium` . Este exemplo mostra como exigir MFA para **MyTestUser1** que foi identificado como um usuário arriscado.
+A política de acesso condicional fornece a capacidade de definir as condições da política para identificar níveis de risco de entrada. Os níveis de risco podem `low`ser, `medium`, `high`, `none`. Na resposta que foi retornada da listagem das detecções de risco para **MyTestUser1**, podemos ver que o nível de risco é `medium`. Este exemplo mostra como exigir a MFA para **MyTestUser1** que foi identificada como um usuário arriscado.
 
 #### <a name="request"></a>Solicitação 
 
@@ -244,18 +246,18 @@ Content-type: application/json
 } 
 ```
 
-Com essa política de acesso condicional em uso, a conta **MyTestUser1** agora é necessária para usar o MFA ao entrar porque o nível de risco de entrada é médio ou   alto. 
+Com essa política de acesso condicional em vigor, a conta **MyTestUser1** agora é necessária para usar a MFA ao entrar porque o nível de risco de entrada é médio ou alto. 
 
-### <a name="sign-in-and-complete-multi-factor-authentication"></a>Entrar e concluir a autenticação multifa factor 
+### <a name="sign-in-and-complete-multi-factor-authentication"></a>Entrar e concluir a autenticação multifator 
 
-Ao entrar no navegador anônimo, um risco é detectado, mas é remediado concluindo o MFA. 
+Ao entrar no navegador anônimo, um risco é detectado, mas ele é corrigido concluindo a MFA. 
 
-1. Abra o navegador e insira  `portal.azure.com`   o endereço do site. 
-2. Entre no portal usando as credenciais da conta **MyTestUser1**   e conclua o processo MFA. 
+1. Abra o navegador e insira `portal.azure.com` o endereço do site. 
+2. Entre no portal usando as credenciais para a conta **MyTestUser1** e conclua o processo de MFA. 
 
 ### <a name="list-risk-detections"></a>Listar detecções de risco
 
-Como o MFA foi concluído. Agora, quando você lista detecções de **risco, riskState** mostra o evento como `remediated` .
+Porque a MFA foi concluída. Agora, quando você lista detecções de risco, **riskState** mostra o evento como `remediated`.
 
 #### <a name="request"></a>Solicitação
 
@@ -299,9 +301,9 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=u
 }
 ```
 
-## <a name="step-4-optional-block-the-user-from-signing-in"></a>Etapa 4 (Opcional) Impedir que o usuário entre
+## <a name="step-4-block-the-user-from-signing-in-optional"></a>Etapa 4: Impedir que o usuário entre (opcional)
 
-Em vez de oferecer a oportunidade para o usuário se automediar, você pode impedir que o usuário entre. Nesta etapa, você cria uma nova política de acesso condicional que impede que o usuário entre se ocorrer uma detecção de médio ou alto risco. A diferença nas políticas é que **o builtInControls** está definido como `block` .
+Em vez de fornecer a oportunidade para o usuário se auto-corrigir, você pode impedir que o usuário entre. Nesta etapa, você criará uma nova política de acesso condicional que impede que o usuário entre se ocorrer uma detecção de risco médio ou alto. A diferença nas políticas é que **o builtInControls** está definido como `block`.
 
 ### <a name="request"></a>Solicitação
 
@@ -385,15 +387,15 @@ Content-type: application/json
 }
 ```
 
-Com essa política de acesso condicional em uso, a conta **MyTestUser1** agora está impedida de entrar porque o nível de risco de entrada `medium` é ou `high` .
+Com essa política de acesso condicional em vigor, a conta **MyTestUser1** agora está impedida de entrar porque o nível de risco de entrada é `medium` ou `high`.
 
-![Login bloqueado](./images/tutorial-riskdetection-api/conditionalaccess-policy.png)
+![Entrada bloqueada](./images/tutorial-riskdetection-api/conditionalaccess-policy.png)
 
-## <a name="step-5-dismiss-risky-users"></a>Etapa 5: descartar usuários arriscados
+## <a name="step-5-dismiss-risky-users"></a>Etapa 5: Ignorar usuários arriscados
 
 Se você acredita que o usuário não está em risco e não deseja impor uma política de acesso condicional, pode descartar manualmente o usuário arriscado.
 
-### <a name="dismiss-the-risky-user"></a>Descartar o usuário arriscado
+### <a name="dismiss-the-risky-user"></a>Ignorar o usuário arriscado
 
 #### <a name="request"></a>Solicitação
 
@@ -416,7 +418,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="list-risky-users"></a>Listar usuários arriscados
 
-Depois de descartar o usuário de risco, você pode ver na resposta ao listar usuários arriscados que a conta de usuário **MyTestUser1** agora tem um nível de risco e um `none` riskState de `dismissed` .
+Depois de ignorar o usuário de risco, você pode ver na resposta ao listar usuários arriscados que a `none` conta de usuário **MyTestUser1** agora tem um nível de risco e um riskState de `dismissed`.
 
 #### <a name="request"></a>Solicitação
 
@@ -451,7 +453,7 @@ Nessa etapa, remova os recursos que criou.
 
 ### <a name="delete-the-user-account"></a>Excluir a conta de usuário
 
-Exclua a conta de **usuário MyTestUser1.**
+**Exclua a conta de usuário MyTestUser1**.
 
 #### <a name="request"></a>Solicitação
 
@@ -467,7 +469,7 @@ No Content - 204
 
 ### <a name="delete-the-conditional-access-policy"></a>Excluir a política de acesso condicional
 
-Exclua a política de acesso condicional criada.
+Exclua a política de acesso condicional que você criou.
 
 #### <a name="request"></a>Solicitação
 
@@ -483,12 +485,12 @@ No Content - 204
 
 ## <a name="see-also"></a>Confira também
 
-Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referência da API para essas APIs para saber mais sobre o que as APIs podem fazer.
+Neste tutorial, você usou muitas APIs para realizar tarefas. Explore a referência de API para essas APIs para saber mais sobre o que as APIs podem fazer.
 
-- [O que é a Proteção de Identidade?](/azure/active-directory/identity-protection/overview-identity-protection)
+- [O que é o Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
 - [O que é Acesso Condicional?](/azure/active-directory/conditional-access/overview)
 - [Como funciona: autenticação multifator do Azure](/azure/active-directory/authentication/concept-mfa-howitworks)
-- [Simulando detecções de risco na Proteção de Identidade](/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk)
+- [Simulando detecções de risco no Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk)
 - [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy)
 - [riskDetection](/graph/api/resources/riskdetection)
 - [riskyUser](/graph/api/resources/riskyuser)

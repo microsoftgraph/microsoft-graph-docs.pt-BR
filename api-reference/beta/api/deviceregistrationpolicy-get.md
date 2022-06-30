@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5028cc130f08c8070b426e49085a3a4367e64e8d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 8e8d4e5bc34fb43221ebc3cd697737b03db556db
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226530"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445346"
 ---
 # <a name="get-deviceregistrationpolicy"></a>Obter deviceRegistrationPolicy
 
@@ -18,18 +18,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto deviceRegistrationPolicy.](../resources/deviceregistrationpolicy.md) Representa restrições de cota deviceRegistrationPolicy, autenticação adicional e políticas de autorização para registrar identidades de dispositivos em sua organização.
+Leia as propriedades e as relações de um [objeto deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) . Representa restrições de cota deviceRegistrationPolicy, autenticação adicional e políticas de autorização para registrar identidades de dispositivo em sua organização.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)| Policy.ReadWrite.DeviceConfiguration|
+|Delegada (conta corporativa ou de estudante)| Policy.Read.All, Policy.ReadWrite.DeviceConfiguration|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
-Ao chamar em nome de um usuário, o usuário precisa pertencer às seguintes funções [do Azure AD:](/azure/active-directory/roles/permissions-reference)
+Ao chamar em nome de um usuário, o usuário precisa pertencer às seguintes Azure AD [funções](/azure/active-directory/roles/permissions-reference):
 + Administrador global
 + Administrador de dispositivos de nuvem
 + Leitor global
@@ -56,11 +56,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_deviceregistrationpolicy"
@@ -69,11 +71,33 @@ Se tiver êxito, este método retornará um código de resposta e um `200 OK` [o
 ``` http
 GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-deviceregistrationpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-deviceregistrationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-deviceregistrationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deviceregistrationpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-deviceregistrationpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta
 
-A seguir está um exemplo de uma resposta que mostra as configurações padrão da política de registro do dispositivo.
+A seguir está um exemplo de uma resposta que mostra as configurações padrão para a política de registro do dispositivo.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {

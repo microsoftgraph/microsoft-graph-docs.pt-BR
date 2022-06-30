@@ -1,15 +1,15 @@
 ---
-title: Criar páginas do OneNote
-description: " Blocos de anotações empresariais no Microsoft 365"
+title: Criar páginas do OneNote usando a API do OneNote
+description: Criar uma página do OneNote enviando uma solicitação POST para um ponto de extremidade de páginas. Depois, enviar o HTML que define a página no corpo da mensagem.
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 1cf01dfdaccb403c9d5a06228441a144d737df88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3f7b612c76750da2d4adb9dd9099247f01bc2950
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066895"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446193"
 ---
 # <a name="create-onenote-pages"></a>Criar páginas do OneNote
 
@@ -19,13 +19,10 @@ Para criar uma página do OneNote, você envia uma solicitação POST para um po
 
 `POST ../notes/sections/{id}/pages`
 
-<br/>
-
 Envie o HTML que define a página no corpo da mensagem. Se a solicitação for bem-sucedida, o Microsoft Graph retornará um código de status de HTTP 201.
 
-
-> **Observação:** para saber mais sobre as solicitações POST que você pode enviar para criar seções, grupos de seções e blocos de anotações, consulte a nossa [referência interativa do REST](https://dev.onenote.com/docs).
-
+> [!NOTE]
+> Para saber mais sobre as solicitações POST que você pode enviar para criar seções, grupos de seções e blocos de anotações, consulte nossa [referência interativa do REST](https://dev.onenote.com/docs).
 
 <a name="request-uri"></a>
 
@@ -35,30 +32,32 @@ Para construir a URI de solicitação POST, comece com a URL raiz do serviço:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
-<br/>
-
 Depois acrescente o ponto de extremidade de *pages*:
 
-- **Criar uma página em qualquer seção (especificada pelo nome da seção)**<br/><br/>`.../pages?sectionName=DefaultSection`
+- **Criar uma página em qualquer seção (especificada pelo nome da seção)**
 
-- **Criar uma página em qualquer seção (especificada pela ID)**<br/><br/>`.../sections/{section-id}/pages` 
+  `.../pages?sectionName=DefaultSection`
+
+- **Criar uma página em qualquer seção (especificada pela ID)**
+
+  `.../sections/{section-id}/pages`
 
 Se você estiver criando páginas no bloco de anotações pessoal do usuário, o Microsoft Graph também fornecerá pontos de extremidade que você pode usar para criar páginas no bloco de anotações padrão:
 
-- **Criar uma página na seção padrão do bloco de anotações padrão**<br/><br/>`../pages` 
+- **Criar uma página na seção padrão do bloco de anotações padrão**
 
-
+  `../pages`
 
 Sua URI de solicitação completa parecerá com um dos seguintes exemplos:
 
 - `https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages`
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?sectionName=Homework`
 
-Saiba mais sobre a [URL raiz de serviço](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
+Saiba mais sobre a [URL raiz de serviço](/graph/api/resources/onenote-api-overview#root-url).
 
 <a name="post-pages-section-name"></a>
 
-### <a name="using-the-sectionname-url-parameter"></a>Usar o parâmetro de URL *sectionName*
+### <a name="use-the-sectionname-url-parameter"></a>Usar o parâmetro da URL *sectionName*
 
 As seguintes regras aplicam-se ao usar o parâmetro *sectionName* para a criação de uma página em uma seção nomeada no bloco de anotações padrão:
 
@@ -74,16 +73,16 @@ As seguintes regras aplicam-se ao usar o parâmetro *sectionName* para a criaç�
 
 Como serão criadas seções caso não existam, é seguro usar essa chamada com todas as páginas que o seu aplicativo criar. Os usuários podem renomear as seções, mas a API criará uma nova seção com o nome da seção que você fornecer. 
 
-> **Observação:** os links retornados pela API para as páginas de uma seção renomeada ainda abrirão essas páginas antigas. 
-
+> [!NOTE]
+> Os links retornados pela API das páginas de uma seção renomeada ainda abrirão essas páginas antigas.
 
 <a name="message-body"></a>
 
 ## <a name="construct-the-message-body"></a>Criar o corpo da mensagem
 
-O HTML que define o conteúdo da página se chama *HTML de entrada*. O HTML de entrada é compatível com um [subconjunto de HTML e CSS padrão](#supported-html-and-css-for-onenote-pages), com a adição de atributos personalizados. (Os atributos personalizados, como **data-id** e **data-render-src**, são descritos em [HTML de entrada e de saída](onenote-input-output-html.md).) 
+O HTML que define o conteúdo da página se chama *HTML de entrada*. O HTML de entrada é compatível com um [subconjunto de HTML e CSS padrão](#supported-html-and-css-for-onenote-pages), com a adição de atributos personalizados. (Os atributos personalizados, como **data-id** e **data-render-src**, são descritos em [HTML de entrada e de saída](onenote-input-output-html.md).)
 
-Envie o HTML de entrada no corpo da mensagem da solicitação POST. Você pode enviar o HTML de entrada diretamente no corpo da mensagem usando o tipo de conteúdo `application/xhtml+xml` ou `text/html`, ou pode enviá-lo na parte "Apresentação" de uma solicitação de diversas partes. 
+Envie o HTML de entrada no corpo da mensagem da solicitação POST. Você pode enviar o HTML de entrada diretamente no corpo da mensagem usando o tipo de conteúdo `application/xhtml+xml` ou `text/html`, ou pode enviá-lo na parte "Apresentação" de uma solicitação de diversas partes.
 
 O exemplo a seguir envia o HTML de entrada diretamente no corpo da mensagem.
 
@@ -109,8 +108,8 @@ Content-Type: application/xhtml+xml
 
 Se você estiver enviando dados binários, use uma [solicitação de diversas partes](#example-request). 
 
-> **Observação:** para simplificar a programação e a consistência em seu aplicativo, use as solicitações de diversas partes para criar todas as páginas. É uma boa ideia usar uma biblioteca para criar mensagens de diversas partes. Isso reduz o risco da criação de cargas mal formadas.
-
+> [!NOTE]
+> Para simplificar a programação e a consistência em seu aplicativo, use as solicitações de diversas partes para criar todas as páginas. É uma boa ideia usar uma biblioteca para criar mensagens de diversas partes. Isso reduz o risco da criação de cargas mal formadas.
 
 <a name="input-html-rules"></a>
 
@@ -128,7 +127,6 @@ Ao enviar HTML de entrada, lembre-se desses requisitos e limitações gerais:
 
 - O Microsoft Graph é compatível com um subconjunto de atributos HTML comuns e um conjunto de atributos personalizados, como o atributo **data-id** usado para atualizar as páginas. Confira os atributos compatíveis em [HTML de entrada e de saída](onenote-input-output-html.md).
 
-
 <a name="supported-html"></a>
 
 ### <a name="supported-html-and-css-for-onenote-pages"></a>HTML e CSS compatíveis com páginas do OneNote
@@ -139,17 +137,16 @@ Nem todos os elementos, atributos e propriedades são compatíveis (em HTML4, Ex
 
 A lista a seguir mostra os tipos de elementos básicos compatíveis com o Microsoft Graph:
 
-- `<head>` e `<body>`</p>
-- `<title>` e `<meta>` que definem a data de criação e o título de página</p>
-- `<h1>` a `<h6>` para títulos de seção</p>
-- `<p>` para parágrafos</p>
-- `<ul>`, `<ol>` e `<li>` para listas e itens de lista</p>
-- `<table>`, `<tr>` e `<td>`, incluindo tabelas aninhadas</p>
-- `<pre>` para texto pré-formatado (preserva as quebras de linha e espaços em branco)</p>
-- `<b>` e `<i>` para estilos de caractere em negrito e itálico</p>
+- `<head>` e `<body>`
+- `<title>` e `<meta>` que definem a data de criação e o título de página
+- `<h1>` a `<h6>` para títulos de seção
+- `<p>` para parágrafos
+- `<ul>`, `<ol>` e `<li>` para listas e itens de lista
+- `<table>`, `<tr>` e `<td>`, incluindo tabelas aninhadas
+- `<pre>` para texto pré-formatado (preserva as quebras de linha e espaços em branco)
+- `<b>` e `<i>` para estilos de caractere em negrito e itálico
 
-O Microsoft Graph preserva o conteúdo semântico e a estrutura básica do HTML de entrada ao criar páginas, mas converte o HTML de entrada para usar o conjunto compatível de HTML e CSS. Os recursos que não existem no OneNote não têm nada para ser convertido, portanto, podem não ser reconhecidos no HTML de origem. 
-
+O Microsoft Graph preserva o conteúdo semântico e a estrutura básica do HTML de entrada ao criar páginas, mas converte o HTML de entrada para usar o conjunto compatível de HTML e CSS. Os recursos que não existem no OneNote não têm nada para ser convertido, portanto, podem não ser reconhecidos no HTML de origem.
 
 <a name="example"></a>
 
@@ -213,7 +210,7 @@ Consulte [Requisitos e limitações do HTML de entrada](#requirements-and-limita
 | Dados da solicitação | Descrição |  
 |------|------|  
 | Protocolo | Todas as solicitações usam o protocolo HTTPS de SSL/TLS. |  
-| Cabeçalho de autorização | <p>`Bearer {token}`, onde `{token}` é um token de acesso do OAuth 2.0 válido para o aplicativo registrado.</p><p>Se ele estiver ausente ou for inválido, a solicitação falhará com um código de status 401. Confira [Autenticação e permissões](permissions-reference.md).</p> |  
+| Cabeçalho de autorização | <p>`Bearer {token}`, onde `{token}` é um token de acesso do OAuth 2.0 válido para o aplicativo registrado.</p><p>Se ausente ou inválido, a solicitação falha com um código de status 401. Consulte [Autenticação e permissões](permissions-reference.md).</p> |  
 | Cabeçalho content-type | <p>`text/html` ou `application/xhtml+xml` para o conteúdo HTML, seja enviado diretamente no corpo da mensagem, seja na parte "Apresentação" obrigatória de solicitações de diversas partes.</p><p>As solicitações de diversas partes são necessárias quando se enviam dados binários e usam o tipo de conteúdo `multipart/form-data; boundary=part-boundary`, onde `{part-boundary}` é uma cadeia de caracteres que sinaliza o início e o término de cada parte de dados.</p> |  
 | Cabeçalho Accept | `application/json` | 
 
@@ -262,9 +259,6 @@ Escolha entre:
 - Notes.ReadWrite.All
 
 Para saber mais sobre escopos de permissão e como eles funcionam, confira [Referência de permissões do Microsoft Graph](permissions-reference.md).
-
-
-
 
 <a name="see-also"></a>
 

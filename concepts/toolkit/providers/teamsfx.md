@@ -1,18 +1,18 @@
 ---
-title: Provedor TeamsFx
-description: Use o provedor TeamsFx dentro de seus aplicativos Microsoft Teams para fornecer aos componentes do Microsoft Graph Toolkit acesso ao Microsoft Graph.
+title: Provedor teamsFx
+description: Use o provedor TeamsFx dentro de seus aplicativos do Microsoft Teams para fornecer aos componentes do Kit de Ferramentas do Microsoft Graph acesso ao Microsoft Graph.
 ms.localizationpriority: medium
 author: sebastienlevert
-ms.openlocfilehash: 62df3d038c7a407da77e92b1d4de04fd1832aacf
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 0789bcff15b523ae8227a2dccf3b0360810fd64e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694388"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438238"
 ---
-# <a name="teamsfx-provider"></a>Provedor TeamsFx
+# <a name="teamsfx-provider"></a>Provedor teamsFx
 
-Use o provedor TeamsFx dentro de seus aplicativos Microsoft Teams para fornecer aos componentes do Microsoft Graph Toolkit acesso ao Microsoft Graph.
+Use o provedor TeamsFx dentro de seus aplicativos do Microsoft Teams para fornecer aos componentes do Kit de Ferramentas do Microsoft Graph acesso ao Microsoft Graph.
 
 Para saber mais sobre provedores de autenticação, consulte [Provedores](./providers.md).
 
@@ -40,7 +40,7 @@ await teamsfx.login(this.scope);
 Providers.globalProvider.setState(ProviderState.SignedIn);
 ```
 
-Agora você pode adicionar qualquer componente em sua página HTML `render()` ou em seu método ao usar React e ele usará o contexto do TeamsFx para acessar o Microsoft Graph.
+Agora você pode adicionar qualquer componente em sua página HTML `render()` ou em seu método ao usar React e ele usará o contexto teamsFx para acessar o Microsoft Graph.
 
 ```html
 <!-- Using HTML -->
@@ -60,5 +60,7 @@ public render(): void {
 
 Para obter um exemplo que mostra como inicializar o provedor TeamsFx, consulte o exemplo [exportador de contatos](https://github.com/OfficeDev/TeamsFx-Samples/tree/ga/graph-toolkit-contact-exporter).
 
+
 ## <a name="see-also"></a>Confira também
-* [Introdução com Microsoft Teams e Teams Toolkit desenvolvimento](https://aka.ms/teamsfx-docs)
+* [Introdução ao desenvolvimento do Microsoft Teams e do Kit de Ferramentas do Teams](https://aka.ms/teamsfx-docs)
+* [Workshop do Hub de Produtividade](https://github.com/OfficeDev/OneProductivityHub-TeamsFx)

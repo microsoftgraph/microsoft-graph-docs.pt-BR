@@ -1,20 +1,22 @@
 ---
 title: Alterar notificações para recursos do Outlook no Microsoft Graph
-description: Saiba como obter notificações de alterações (criar, atualizar e excluir) para recursos no Outlook usando as APIs do Microsoft Graph
+description: Assine as alterações nos recursos do Outlook (criar, atualizar e excluir), altere os dados de recursos nas APIs do Microsoft Graph e receba notificações por meio de webhooks.
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e43b300119e8a3efb1b8deca5d82b36a26c339e3
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: d330636c4fe5984d6c92bdbcb26cccd58c071c82
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093064"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442081"
 ---
 # <a name="change-notifications-for-outlook-resources-in-microsoft-graph"></a>Alterar notificações para recursos do Outlook no Microsoft Graph
 
-A API do Microsoft Graph permite que você assine alterações em um recurso, incluindo a criação, atualização ou exclusão do recurso, e receba notificações por meio de webhooks. Uma [assinatura](/graph/api/resources/webhooks) especifica os tipos desejados de alterações para monitorar um recurso específico e uma URL de um ponto de extremidade para receber notificações dessas alterações. Configurar uma assinatura reduz a sobrecarga de consultar e comparar recursos para deduzir quaisquer alterações. Opcionalmente, você pode especificar na solicitação de assinatura para criptografar e incluir como parte de uma notificação os dados do recurso que foram alterados, salvando uma chamada à API subsequente separada para obter o conteúdo do recurso.
+A API do Microsoft Graph permite que você assine alterações em um recurso, &mdash;incluindo a criação, atualização ou exclusão do recurso&mdash;, e receba notificações por meio de webhooks. Uma [assinatura](/graph/api/resources/webhooks) especifica os tipos desejados de alterações para monitorar um recurso específico e inclui uma URL de um ponto de extremidade para receber notificações dessas alterações.
+
+Configurar uma assinatura reduz a sobrecarga de consultar e comparar recursos para deduzir quaisquer alterações. Opcionalmente, você pode especificar na solicitação de assinatura para criptografar e incluir como parte de uma notificação os dados do recurso que foram alterados, salvando uma chamada à API subsequente separada para obter o conteúdo do recurso.
 
 Há um limite máximo de 1000 assinaturas ativas para recursos do Outlook por caixa de correio para todos os aplicativos. Você pode assinar alterações em contatos, eventos ou mensagens na caixa de correio.
 
@@ -53,7 +55,10 @@ Para incluir dados de recursos em uma notificação de alteração, você **deve
 
 - **includeResourceData**: Defina essa propriedade como `true` para solicitar explicitamente os dados do recurso.
 - **resource**: Essa propriedade especifica a URL do recurso. Certifique-se de usar o parâmetro de consulta `$select` para especificar as propriedades de recurso do Outlook a serem incluídas na carga de notificação.
-  > **Observação:** Não inclua na URL `$top`, `$skip`, `$orderby`, `$select=Body,UniqueBody`e `$expand` diferentes de **singleValueExtendedProperties** ou **multiValueExtendedProperties**.
+
+  > [!NOTE]
+  > Não inclua na URL `$top`, `$skip`, `$orderby`, `$select=Body,UniqueBody`e `$expand` diferentes de **singleValueExtendedProperties** ou **multiValueExtendedProperties**.
+
 - **encryptionCertificate**: Essa propriedade contém apenas a chave pública que o Microsoft Graph usa para criptografar dados de recurso. Mantenha a chave privada correspondente para [descriptografar o conteúdo](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId**: Essa propriedade é seu próprio identificador para o certificado. Use esse ID para corresponder a cada notificação de alteração cujo certificado foi utilizado para descriptografia.
 
@@ -120,7 +125,7 @@ A seguir, um exemplo da carga de uma notificação com dados de recurso de um re
 
 Para obter detalhes sobre como validar tokens e descriptografar a carga útil, consulte [Definir notificações de alteração que incluem dados de recursos](webhooks-with-resource-data.md).
 
-A seguir está um exemplo de uma carga de notificação descriptografada. A carga descriptografada está em conformidade com o esquema [message](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) do Outlook. A carga é semelhante à retornada por uma operação[GET](/graph/api/message-get?view=graph-rest-beta&preserve-view=true). No entanto, a carga de notificação contém apenas as propriedades especificadas com um parâmetro `$select` na propriedade **resource** da assinatura. Cargas de notificação de outros recursos do Outlook, como [contato](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) e [eventos](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) seguem seus respectivos esquemas. 
+A seguir está um exemplo de uma carga de notificação descriptografada. A carga descriptografada está em conformidade com o esquema [message](/graph/api/resources/message) do Outlook. A carga é semelhante à retornada por uma operação[GET](/graph/api/message-get). No entanto, a carga de notificação contém apenas as propriedades especificadas com um parâmetro `$select` na propriedade **resource** da assinatura. Cargas de notificação de outros recursos do Outlook, como [contato](/graph/api/resources/contact) e [eventos](/graph/api/resources/event) seguem seus respectivos esquemas. 
 
 ```json
 {
@@ -147,7 +152,8 @@ Notificações sem dados de recurso fornecem informações suficientes para faze
 
 O exemplo a seguir mostra a carga de uma notificação que corresponde a um recurso **mensagem** do Outlook. Ela inclui as propriedades **resource** e **resourceData**, que representam o recurso que disparou a notificação. Use as propriedades **resource** e **@odata.id** para fazer chamadas para o Microsoft Graph e obter o conteúdo do recurso.
 
-> **Observe** As chamadas GET sempre retornarão o estado atual do recurso. Se o recurso for alterado entre o momento em que a notificação é enviada e a hora em que o recurso é recuperado, a operação retornará o estado do recurso na recuperação.
+> [!NOTE]
+> As chamadas GET sempre retornarão o estado atual do recurso. Se o recurso for alterado entre o momento em que a notificação é enviada e a hora em que o recurso é recuperado, a operação retornará o estado do recurso na recuperação.
 
 
 ```json
@@ -195,8 +201,11 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -254,8 +263,11 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -313,8 +325,11 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

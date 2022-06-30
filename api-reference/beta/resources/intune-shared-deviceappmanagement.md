@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso deviceAppManagement
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de aplicativos de dispositivos.
-author: rolyon
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97184dcbbf4e76576b8166a9fa10030970b8c2ff
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 1cef0fc97e508bd3f3eb30e1dc09fa86336f7891
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899502"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444527"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 
@@ -33,13 +33,13 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |**Integração**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
 |microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é `<languagecode2>`-<country/regioncode2>, onde `<languagecode2>` é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|A última vez em uma sincronização de aplicativo na Microsoft Store para Empresas foi concluída.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|A última vez que os aplicativos da Microsoft Store para Empresas foram sincronizados com êxito para essa conta.|
-|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|As informações do portal do usuário final são usadas para sincronizar aplicativos da Microsoft Store para Empresas com o Portal da Empresa do Intune. Há três opções para escolher entre \['Somente portal da empresa', 'Portal da empresa e repositório particular', 'Somente repositório particular'\]. Os valores possíveis são: `none`, `companyPortal`, `privateStore`.|
+|microsoftStoreForBusinessPortalSelection|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|As informações do portal do usuário final são usadas para sincronizar aplicativos do Microsoft Store para Empresas para Portal da Empresa do Intune. Há três opções para escolher entre \['Somente portal da empresa', 'Portal da empresa e repositório particular', 'Somente repositório particular'\]. Os valores possíveis são: `none`, `companyPortal`, `privateStore`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -67,7 +67,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 |targetedManagedAppConfigurations|Coleção [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md)|Configurações de aplicativos gerenciados direcionadas.|
 |windowsInformationProtectionPolicies|Coleção [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Proteção de informações do Windows para aplicativos em execução em dispositivos que não estão registrados no MDM.|
 |**Integração**|
-|sideLoadingKeys|[Coleção sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Chaves de Carregamento Lateral necessárias para a instalação dos Aplicativos do Windows 8 e 8.1.|
+|sideLoadingKeys|[Coleção sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Chaves de Side Loading necessárias para a instalação dos aplicativos Windows 8 e 8.1.|
 |vppTokens|Coleção de [vppToken](../resources/intune-onboarding-vpptoken.md)|Lista de tokens Vpp desta organização.|
 |**Conjunto de Políticas**|
 |policySets|[Coleção policySet](../resources/intune-policyset-policyset.md)|O PolicySet de políticas e aplicativos|
@@ -80,7 +80,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 |**Integração de parceiros**|
 |deviceAppManagementTasks|[Coleção deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|Tarefas de gerenciamento de aplicativo de dispositivo.|
 |**Unlock**|
-|wdacSupplementalPolicies|[coleção windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|A coleção de Políticas Complementares do Controle de Aplicativos do Windows Defender.|
+|wdacSupplementalPolicies|[coleção windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|A coleção de políticas complementares Windows Defender controle de aplicativos.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.  Observe que este é apenas um exemplo; as respostas de consulta a consultas reais conterão as propriedades apropriadas para o contexto.  

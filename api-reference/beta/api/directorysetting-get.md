@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 519c8d06832c46fc1009ea344c5e387ce1cff1fd
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 0a5bc1adf65c5a4715677ea6eb5677bbb75ef3bd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63669554"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441472"
 ---
 # <a name="get-directorysetting"></a>Obter directorySetting
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
 ### <a name="list-group-specific-settings"></a>Listar configurações específicas do grupo
@@ -45,7 +45,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 
-Obter uma configuração em todo o locatário.
+Obtenha uma configuração de todo o locatário.
 
 ```http
 GET /settings/{directorySettingId}
@@ -58,7 +58,7 @@ GET /groups/{groupId}/settings/{directorySettingId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a `$select` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Esse método dá suporte aos `$select` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -70,7 +70,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e [um objeto directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e [um objeto directorySetting](../resources/directorysetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -130,6 +130,10 @@ Content-type: application/json
   "displayName": "Group.Unified",
   "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
+    {
+      "name": "NewUnifiedGroupWritebackDefault",
+      "value": "false"
+    },
     {
       "name": "EnableMIPLabels",
       "value": "true"

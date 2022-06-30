@@ -1,22 +1,23 @@
 ---
-title: Usar a API de pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
-description: 'Os aplicativos do Microsoft Graph podem usar a API de pessoas para recuperar as pessoas mais relevantes para um usuário. '
+title: Use a API de pessoas no Microsoft Graph para obter informações sobre as pessoas relevantes para você
+description: Use a API de pessoas no Microsoft Graph para procurar ou pesquisar as pessoas mais relevantes para um usuário com base nos padrões de comunicação e colaboração do usuário.
 ms.date: 4/9/2019
 author: anthona
 ms.localizationpriority: high
 ms.prod: insights
-ms.openlocfilehash: c735af8d1e828f6a03d3a1ed1661212bf83738eb
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 709656b465e28f956751e3ed2af577b3ff157c5d
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780468"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437650"
 ---
-# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
+# <a name="use-the-people-api-to-get-information-about-the-people-most-relevant-to-you"></a>Use a API de pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
-Os aplicativos do Microsoft Graph podem usar a API de pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais ou do diretório de uma organização e pessoas de comunicações recentes. 
+Os aplicativos do Microsoft Graph podem usar a API de pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais ou do diretório de uma organização e pessoas de comunicações recentes.
 
 Junto com a geração desse insight, a API de pessoas também fornece suporte de pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado.
+
 A API de pessoas é particularmente útil para pessoas que escolhem cenários, como redigir um e-mail ou criar uma reunião. Por exemplo, você pode usar a API de pessoas em cenários de composição de e-mail.
 
 ## <a name="including-a-person-as-relevant-or-working-with"></a>Incluindo uma pessoa como relevante ou "trabalhando com"

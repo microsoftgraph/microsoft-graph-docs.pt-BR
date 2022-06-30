@@ -1,22 +1,22 @@
 ---
 title: Obter accessReviewHistoryDefinition
-description: Recupere um objeto accessReviewHistoryDefinition.
+description: Recuperar um objeto accessReviewHistoryDefinition.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 062d764297b2093059f122a6285a0610f885d531
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5fa709a2a2c27f5829427153b0a58eca40b9e815
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337597"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442994"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>Obter accessReviewHistoryDefinition
 
 Namespace: microsoft.graph
 
-Recupere um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) pelo identificador. Todas as propriedades do objeto de definição de histórico de revisão de acesso são retornadas. Se a definição for 30 dias ou mais antiga, um `404 Not Found` erro será retornado.
+Recupere um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) por seu identificador. Todas as propriedades do objeto de definição do histórico de revisão de acesso são retornadas. Se a definição for 30 dias ou mais antiga, um `404 Not Found` erro será retornado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,11 +24,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.ReadWrite.All|
 
-O usuário associado também deve ser o criador da definição de histórico de revisão associada, um membro da função de diretório do Administrador Global ou um membro da função de diretório Leitor Global para recuperar a definição.
+O usuário conectado também deve ser o criador da definição de histórico de revisão associada, um membro da função de diretório administrador global ou um membro da função de diretório Leitor Global para recuperar a definição.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -42,7 +42,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos parâmetros `$select` `$expand` de consulta E OData para ajudar a personalizar a resposta. Inclusive `?$expand=instances` incluirá no objeto de resposta as instâncias associadas ao [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos parâmetros `$select` `$expand` de consulta e OData para ajudar a personalizar a resposta. A `?$expand=instances` inclusão incluirá no objeto de resposta as instâncias associadas ao [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) . Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,7 +56,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

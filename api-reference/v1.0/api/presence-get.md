@@ -1,33 +1,33 @@
 ---
 title: Obter presença
-description: Obter informações de presença de um usuário.
+description: Obtenha as informações de presença de um usuário.
 author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 2016e018afb155df4969027347635e3465c52651
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 1620d747394540e198fe106f8a965a20a9e35ab4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117049"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442917"
 ---
 # <a name="get-presence"></a>Obter presença
 
 Namespace: microsoft.graph
 
-Obter informações de presença [de um](../resources/presence.md) usuário.
+Obtenha as informações de presença [de um](../resources/presence.md) usuário.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das permissões a seguir é necessária para chamar essas APIs. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Presence.Read, Presence.Read.All      |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                        |
+| Delegada (conta corporativa ou de estudante)     | Presence.Read, Presence.Read.All      |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                        |
 | Aplicativo                            | Sem suporte.                        |
 
-> **Observação:** A taxa máxima de solicitação para essa API é de 1500 solicitações de API em um período de 30 segundos, por aplicativo por locatário.
+> **Nota:** A taxa máxima de solicitação para essa API é de 1500 solicitações de API em um período de 30 segundos, por aplicativo por locatário.
 
 ## <a name="http-requests"></a>Solicitações HTTP
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /users/{id}/presence
 GET /communications/presences
 ```
 
-## <a name="request-headers"></a>Headers de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
 |:--------------|:--------------------------|
 | Autorização | {token} de portador. Obrigatório. |
@@ -48,11 +48,11 @@ GET /communications/presences
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [de](../resources/presence.md) presença no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e [um objeto de](../resources/presence.md) presença no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-your-own-presence-information"></a>Exemplo 1: obter suas próprias informações de presença
+### <a name="example-1-get-your-own-presence-information"></a>Exemplo 1: Obter suas próprias informações de presença
 
 O exemplo a seguir mostra como obter suas próprias informações de presença. Esta operação requer a permissão Presence.Read.
 
@@ -219,6 +219,10 @@ GET https://graph.microsoft.com/v1.0/communications/presences/dc74d9bb-6afe-433d
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-presences-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-presences-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

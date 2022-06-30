@@ -3,14 +3,14 @@ title: Obter conjunto
 description: Leia as propriedades e as relações de um objeto set.
 author: mohitpcad
 ms.localizationpriority: medium
-ms.prod: taxonomy
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a5735c704faee4f53f54ec2f0a44f2dd7c8845fc
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 161622520fdae9ff89cd38e145123545d9f9fdfe
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397124"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443111"
 ---
 # <a name="get-set"></a>Obter conjunto
 Namespace: microsoft.graph.termStore [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-a-site-collection-termstore-set"></a>Exemplo 2: Obter um conjunto de sites termoStore Set
+### <a name="example-2-get-a-site-collection-termstore-set"></a>Exemplo 2: Obter um conjunto de sites termStore Set
 
 #### <a name="request"></a>Solicitação
 
@@ -149,6 +149,10 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-sitecollection-termstore-set-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sitecollection-termstore-set-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

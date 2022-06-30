@@ -1,21 +1,21 @@
 ---
-title: Obter agenda de disponibilidade de usuários e recursos
-description: Em uma configuração de escola ou trabalho, um cenário comum é ver quando um usuário está livre para um reunião, ou então pesquisar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
+title: Obter agenda de disponibilidade de usuários e recursos do calendário do Outlook
+description: Use a ação getSchedule para obter as informações de disponibilidade de um ou mais usuários, listas de distribuição ou recursos por um período específico.
 author: tariq-sharif
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 2a7a4fdfb61e5a769836bf8e85b06d1baabe0c63
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 263e3b5462b688f0dff98714bd646a247dde9765
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139055"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439029"
 ---
-# <a name="get-freebusy-schedule-of-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos
+# <a name="get-freebusy-schedule-of-outlook-calendar-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos do calendário do Outlook
 
 Em uma configuração de escola ou trabalho, um cenário comum é ver quando um usuário está livre para um reunião, ou então pesquisar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
 
-A ação [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) permite que você obtenha as informações de disponibilidade de uma ou mais entidades (usuários, listas de distribuição ou recursos) para um período específico de tempo. 
+A [ação getSchedule](/graph/api/calendar-getschedule) permite que você obtenha as informações de disponibilidade de uma ou mais entidades&mdash;usuários, listas de distribuição ou recursos&mdash;por um período específico.
 
 ## <a name="example"></a>Exemplo
 
@@ -135,7 +135,7 @@ Por padrão, a duração de cada intervalo de tempo é de 30 minutos. Este exemp
 
 ## <a name="how-does-getschedule-compare-with-findmeetingtimes"></a>Como o getSchedule se compara ao findMeetingTimes
 
-A ação [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) é semelhante a **getSchedule** pelo fato de que as duas leem o status de disponibilidade e as horas de trabalho de usuários e recursos específicos. As duas ações são diferentes de algumas maneiras principais.
+A ação [findMeetingTimes](/graph/api/user-findmeetingtimes) é semelhante a **getSchedule** pelo fato de que as duas leem o status de disponibilidade e as horas de trabalho de usuários e recursos específicos. As duas ações são diferentes de algumas maneiras principais.
 
 ### <a name="application"></a>Aplicação
 

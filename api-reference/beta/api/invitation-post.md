@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7d6ef135144e152de0c19b3ab2465bd40e6f2bcb
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 86cd1ba096aa412b3ac216b1ed4a1ad240db6e00
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094278"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442572"
 ---
 # <a name="create-invitation"></a>Criar convite
 
@@ -23,7 +23,7 @@ Use essa API para criar um novo [convite](../resources/invitation.md). O convite
 Ao criar um novo convite, você tem várias opções disponíveis:
 
 1. À criação do convite, o Microsoft Graph pode enviar automaticamente um email de convite diretamente ao usuário convidado, ou seu aplicativo pode usar o *inviteRedeemUrl* retornado na resposta da criação para articular o seu próprio convite (por meio de seu mecanismo de comunicação de preferência) para o usuário convidado. Se você decidir fazer com que o Microsoft Graph envie um email de convite automaticamente, poderá controlar o conteúdo e o idioma do email usando [ *invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
-2. Quando o usuário é convidado, uma entidade de usuário (do userType Convidado) é criada e, agora, pode ser usada para o controle do acesso aos recursos. O usuário convidado precisa passar pelo processo de resgate para acessar os recursos para os quais ele foi convidado.
+2. Quando o usuário é convidado, uma entidade de usuário (de userType Guest) é criada e agora pode ser usada para controlar o acesso aos recursos. O usuário convidado precisa passar pelo processo de resgate para acessar todos os recursos aos quais ele foi convidado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

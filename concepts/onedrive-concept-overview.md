@@ -1,25 +1,21 @@
 ---
 title: Visão geral da API de armazenamento de arquivos do OneDrive
-description: O OneDrive é a central de arquivos no Microsoft 365.
+description: 'Use o OneDrive, o hub de arquivos no Microsoft 365, para acessar arquivos, independentemente de onde eles estejam armazenados. Use o Microsoft Graph para usar uma única API para trabalhar com esses arquivos. '
 ms.localizationpriority: high
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 080d05a3fbba08108b14048968dee47fa1cd2dbc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d16d1b686b3d9265787246be2c333f6b6d495dd7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019080"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442117"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>Visão geral da API de armazenamento de arquivos do OneDrive
 
-O OneDrive é a central de arquivos no Microsoft 365.
-As pessoas trabalham com arquivos em vários contextos, como o Microsoft Teams, grupos, SharePoint e muito mais.
-Com o OneDrive, os usuários podem acessar esses arquivos independentemente de onde eles estejam armazenados; com o Microsoft Graph, você pode usar uma única API para trabalhar com eles.
+O OneDrive é a central de arquivos no Microsoft 365. As pessoas trabalham com arquivos em vários contextos, como o Microsoft Teams, grupos, SharePoint e muito mais. Com o OneDrive, os usuários podem acessar esses arquivos independentemente de onde eles estejam armazenados; com o Microsoft Graph, você pode usar uma única API para trabalhar com eles.
 
-Os arquivos no Microsoft 365 são armazenados em [unidades][Drive API].
-Os usuários podem armazenar arquivos em uma unidade pessoal, o OneDrive pessoal, ou em uma unidade compartilhada com a tecnologia de uma biblioteca de documentos do [SharePoint][].
-A flexibilidade do OneDrive permite que os usuários colaborem como acharem melhor para eles.
+Os arquivos no Microsoft 365 são armazenados em [unidades][Drive API]. Os usuários podem armazenar arquivos em uma unidade pessoal, &mdash;o OneDrive&mdash; pessoal ou em uma unidade compartilhada com a tecnologia de uma biblioteca de documentos do [Microsoft Office SharePoint Online][]. A flexibilidade do OneDrive permite que os usuários colaborem como acharem melhor para eles.
 Os usuários podem compartilhar links para arquivos, copiar ou mover arquivos para unidades da equipe ou até mesmo anexar arquivos do OneDrive às mensagens de email no Outlook.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/vG-hQxFHCAE]
@@ -69,8 +65,8 @@ Use a [API delta][] para ver o que foi alterado desde a última vez em que o apl
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API deste serviço?
 
-- [API de armazenamento de arquivos do OneDrive no Microsoft Graph versão 1.0](/graph/api/resources/onedrive?view=graph-rest-1.0)
-- [API de armazenamento de arquivos do OneDrive no Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta)
+- [API de armazenamento de arquivos do OneDrive no Microsoft Graph versão 1.0](/graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true)
+- [API de armazenamento de arquivos do OneDrive no Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -79,16 +75,16 @@ Saiba mais sobre [como usar a API do OneDrive][Drive API] no Microsoft Graph v1.
 [SharePoint]: sharepoint-concept-overview.md
 [seletor de arquivos]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [manipulador de arquivos]: /onedrive/developer/file-handlers
-[pastas especiais]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
+[pastas especiais]: /graph/api/drive-get-specialfolder
 [API de anotações]: integrate-with-onenote.md
-[API do Excel]: /graph/api/resources/excel?view=graph-rest-1.0
-[REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[API delta]: /graph/api/driveitem-delta?view=graph-rest-1.0
-[vídeo]: /graph/api/resources/video?view=graph-rest-1.0
-[foto]: /graph/api/resources/photo?view=graph-rest-1.0
-[áudio]: /graph/api/resources/audio?view=graph-rest-1.0
-[formatos]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
-[miniaturas]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
-[visualização]: /graph/api/driveitem-preview?view=graph-rest-beta
-[webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
-[Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[API do Excel]: /graph/api/resources/excel
+[REST API]: /graph/api/resources/onedrive
+[API delta]: /graph/api/driveitem-delta
+[vídeo]: /graph/api/resources/video
+[foto]: /graph/api/resources/photo
+[áudio]: /graph/api/resources/audio
+[formatos]: /graph/api/driveitem-get-content-format
+[miniaturas]: /graph/api/driveitem-list-thumbnails
+[visualização]: /graph/api/driveitem-preview
+[webhooks]: /graph/api/resources/webhooks
+[Drive API]: /graph/api/resources/onedrive

@@ -5,19 +5,19 @@ author: charlenezheng
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 72d2f549ef6a6a01434c90e14ed8da39f70fde55
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 798a994648de5f94d92a7f7b831fdb94135d8516
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63397509"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437223"
 ---
 # <a name="update-x509certificateauthenticationmethodconfiguration"></a>Atualizar x509CertificateAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do método de autenticação [de certificado X.509](../resources/x509certificateauthenticationmethodconfiguration.md).
+Atualize as propriedades do método [de autenticação de certificado X.509](../resources/x509certificateauthenticationmethodconfiguration.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,10 +28,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-Para cenários delegados, o administrador precisa de uma das seguintes funções [do Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Para cenários delegados, o administrador precisa de uma das seguintes Azure AD [funções](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
-* Administrador de Política de Autenticação
-* Administrador Global
+* Administrador da Política de Autenticação
+* Administrador global
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -55,26 +55,26 @@ As propriedades a seguir podem ser atualizadas.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|state|authenticationMethodState|Os valores possíveis são: `enabled`, `disabled`. Herdado [da autenticaçãoMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|certificateUserBindings|[Coleção x509CertificateUserBinding](../resources/x509certificateuserbinding.md)|Define campos no certificado X.509 que mapeiam para atributos do objeto de usuário do Azure AD para vincular o certificado ao usuário. A **prioridade** do objeto determina a ordem na qual a associação é realizada. A primeira associação que corresponde será usada e o restante ignorado. |
-|authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Define configurações de autenticação forte. Essa configuração inclui o modo de autenticação padrão e as diferentes regras para fortes vinculações de autenticação. |
+|state|authenticationMethodState|Os valores possíveis são: `enabled`, `disabled`. Herdado [de authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|certificateUserBindings|[Coleção x509CertificateUserBinding](../resources/x509certificateuserbinding.md)|Define campos no certificado X.509 que são mapeados para atributos do objeto Azure AD usuário para associar o certificado ao usuário. A **prioridade** do objeto determina a ordem na qual a associação é executada. A primeira associação que corresponde será usada e o restante será ignorado. |
+|authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Define configurações de autenticação forte. Essa configuração inclui o modo de autenticação padrão e as diferentes regras para associações de autenticação fortes. |
 
->**Observação:** A `@odata.type` propriedade com um valor de `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` deve ser incluída no corpo.
+>**Nota:** A `@odata.type` propriedade com um valor deve `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` ser incluída no corpo.
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método `204 No Content` retornará um código de resposta e um [objeto x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) atualizado no corpo da resposta.
+Se bem-sucedido, este `204 No Content` método retorna um código de resposta e um objeto [x509CertificateAuthenticationMethodConfiguration](../resources/x509certificateauthenticationmethodconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo de uma solicitação de atualização com as seguintes configurações:
+A seguir está um exemplo de uma solicitação de atualização com as seguintes configurações:
 
 + Habilita o método de autenticação de certificado x509 no locatário.
-+ Configura apenas uma associação de usuário entre o **certificado PrincipalName** e as propriedades do Azure AD **onPremisesUserPrincipalName** .
-+ Define a autenticação multifato como requisito.
++ Configura apenas uma associação de usuário entre o **certificado PrincipalName** e o Azure AD **propriedades onPremisesUserPrincipalName**.
++ Define a autenticação multifator como requisito.
 + Configura as regras de associação para o método de autenticação forte em relação ao tipo de regra.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -136,6 +136,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-x509certificateauthenticationmethodconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-x509certificateauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

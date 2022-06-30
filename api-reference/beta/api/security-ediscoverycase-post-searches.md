@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 9ac384360334d4f98d8b37ff766df887daae6e64
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 5184452a0481d2059863b9950885755a961b668c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094905"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439407"
 ---
 # <a name="create-ediscoverysearch"></a>Criar ediscoverySearch
 Namespace: microsoft.graph.security
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,9 +52,9 @@ Você pode especificar as propriedades a seguir ao criar **um ediscoverySearch**
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome de exibição da pesquisa. Obrigatório|
-|description|Cadeia de caracteres|A descrição da pesquisa Opcional.|
-|contentQuery|String|A cadeia de caracteres de consulta usada para a pesquisa. A cadeia de caracteres de consulta KQL formato (Linguagem de Consulta de Palavra-chave). Opcional|
-|dataSourceScopes|Cadeia de caracteres|A opção de pesquisar em todas as caixas de correio ou sites no locatário. Os valores possíveis são: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Opcional.|
+|descrição|Cadeia de caracteres|A descrição da pesquisa Opcional.|
+|contentQuery|Cadeia de caracteres|A cadeia de caracteres de consulta usada para a pesquisa. A cadeia de caracteres de consulta no formato KQL (Linguagem de Consulta de Palavra-chave). Opcional|
+|dataSourceScopes|String|A opção de pesquisar em todas as caixas de correio ou sites no locatário. Os valores possíveis são: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Opcional.|
 
 ## <a name="response"></a>Resposta
 
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverysearch-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverysearch-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

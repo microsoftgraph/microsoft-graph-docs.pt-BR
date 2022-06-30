@@ -1,22 +1,22 @@
 ---
 title: Remover appliesTo
-description: Remover um directoryObject da adoção de recursos.
+description: Remova um directoryObject da distribuição de recursos.
 ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a275a7ab77f630c4b6bf887515bad34b27ec0229
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6cc1d8d499a3099fa30bc7f48d50710c2e3124ad
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037898"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446242"
 ---
 # <a name="remove-appliesto"></a>Remover appliesTo
 
 Namespace: microsoft.graph
 
-Remova um appliesTo em um [objeto featureRolloutPolicy](../resources/featurerolloutpolicy.md) para remover [o directoryObject](../resources/directoryobject.md) da rolagem de recursos.
+Remova um appliesTo em um [objeto featureRolloutPolicy](../resources/featurerolloutpolicy.md) para remover [o directoryObject](../resources/directoryobject.md) da distribuição de recursos.
 
 ## <a name="permissions"></a>Permissões
 
@@ -80,6 +80,14 @@ DELETE https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies/df85e4d9
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-featurerolloutpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-directoryobject-from-featurerolloutpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-directoryobject-from-featurerolloutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

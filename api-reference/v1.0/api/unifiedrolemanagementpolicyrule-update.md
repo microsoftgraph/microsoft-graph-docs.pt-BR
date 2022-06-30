@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a32f562a86ed72d8da728973ca6c5b5a5db7fcbb
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: e2f22800242670f80125f8e96c73a87aff79509e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204405"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439750"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Atualizar unifiedRoleManagementPolicyRule
 Namespace: microsoft.graph
@@ -22,13 +22,13 @@ Atualize uma regra definida para uma política de gerenciamento de função. A r
 + [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,16 +53,16 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|claimValue|Cadeia de Caracteres|O valor da declaração de contexto de autenticação. <br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyAuthenticationContextRule** .|
-|enabledRules|Coleção de cadeias de caracteres|A coleção de regras que estão habilitadas para essa regra de política. Por exemplo, `MultiFactorAuthentication`, `Ticketing`e `Justification`.<br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyEnablementRule** .|
+|claimValue|Cadeia de caracteres|O valor da declaração de contexto de autenticação. <br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyAuthenticationContextRule** .|
+|enabledRules|Coleção String|A coleção de regras que estão habilitadas para essa regra de política. Por exemplo, `MultiFactorAuthentication`, `Ticketing`e `Justification`.<br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyEnablementRule** .|
 |isDefaultRecipientsEnabled|Booliano|Indica se um destinatário padrão receberá o email de notificação.<br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyNotificationRule** .|
 |isEnabled|Booliano| Se essa regra está habilitada. <br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyAuthenticationContextRule** .|
-|isExpirationRequired|Boolean|Indica se a expiração é necessária ou se é uma atribuição ou qualificação permanentemente ativa. <br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyExpirationRule** .|
+|isExpirationRequired|Booliano|Indica se a expiração é necessária ou se é uma atribuição ou qualificação permanentemente ativa. <br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyExpirationRule** .|
 |maximumDuration|Duration| A duração máxima permitida para qualificação ou atribuição que não é permanente. Obrigatório quando **isExpirationRequired** é `true`. <br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyExpirationRule** . |
-|Notificationlevel|Cadeia de Caracteres|O nível de notificação. Os valores possíveis são `None`, `Critical`. `All`<br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyNotificationRule** .|
+|Notificationlevel|String|O nível de notificação. Os valores possíveis são `None`, `Critical`. `All`<br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyNotificationRule** .|
 |notificationRecipients|Coleção de cadeias de caracteres|A lista de destinatários das notificações por email.<br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyNotificationRule** .|
-|Notificationtype|Cadeia de Caracteres|O tipo de notificação. Há `Email` suporte apenas para isso.<br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyNotificationRule** .|
-|recipientType|Cadeia de Caracteres|O tipo de destinatário da notificação. Os valores possíveis são `Requestor`, `Approver`. `Admin`<br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyNotificationRule** .|
+|Notificationtype|String|O tipo de notificação. Há `Email` suporte apenas para isso.<br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyNotificationRule** .|
+|recipientType|Cadeia de caracteres|O tipo de destinatário da notificação. Os valores possíveis são `Requestor`, `Approver`. `Admin`<br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyNotificationRule** .|
 |configuração|[approvalSettings](../resources/approvalsettings.md)|As configurações para aprovação da atribuição de função. <br/><br/>Pode ser atualizado para o **tipo de regra unifiedRoleManagementPolicyApprovalRule** .|
 |destino|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Define detalhes do escopo direcionado pela regra de política de gerenciamento de função. Os detalhes podem incluir o tipo de entidade de segurança, o tipo de atribuição de função e as ações que afetam uma função. <br/><br/> Pode ser atualizado para todos os tipos de regra.|
 
@@ -123,6 +123,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicyrule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

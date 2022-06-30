@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 667f7fe3e80234e88290bfa9a89e9f5f49627f83
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 28dcc331bc9266b5af9d2e23dd3c434ef996cfd7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65314668"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444087"
 ---
 # <a name="list-channel-messages"></a>Listar mensagens do canal
 
@@ -284,7 +284,7 @@ Este é um exemplo de solicitação.
   "name": "get_listchannelmessages_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?top=3
+GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$top=3
 
 Prefer: include-unknown-enum-members
 ```

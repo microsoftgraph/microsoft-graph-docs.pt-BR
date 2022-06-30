@@ -1,19 +1,19 @@
 ---
-title: Códigos de erro para APIs do OneNote no Microsoft Graph
-description: Este artigo descreve os códigos de erro que são retornados pelas APIs do OneNote no Microsoft Graph sempre que uma solicitação enviada pela API falha.
+title: Códigos de erro para a API do OneNote no Microsoft Graph
+description: Encontre informações sobre códigos de erro retornados pela API do OneNote no Microsoft Graph sempre que uma solicitação enviada por meio da API falhar.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 39427d86612682ea6aba37f026fd51ce396d6613
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d89354434ca9de2946390b9a92b451b24f322ab
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113501"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442819"
 ---
-# <a name="error-codes-for-onenote-apis-in-microsoft-graph"></a>Códigos de erro para APIs do OneNote no Microsoft Graph
+# <a name="error-codes-for-the-onenote-api-in-microsoft-graph"></a>Códigos de erro para a API do OneNote no Microsoft Graph
 
-Este artigo descreve os códigos de erro que são retornados pelas APIs do OneNote no Microsoft Graph sempre que uma solicitação enviada pela API falha.
+Este artigo descreve os códigos de erro retornados pela API do OneNote no Microsoft Graph sempre que uma solicitação enviada por meio da API falha.
 
 ## <a name="error-response-example"></a>Exemplo de resposta de erro
 
@@ -333,7 +333,7 @@ O contexto não especifica uma ID de usuário válida. Um erro comum é que PUID
 ### <a name="20166"></a>20166
 O aplicativo emitiu muitas solicitações em nome de um usuário em um curto período de tempo. Para ajudar a garantir que a API do OneNote permaneça estável e responsiva, a API retorna um código de status 429 e esse erro quando detecta que um aplicativo está usando muitos recursos. 
 
-Para obter mais informações, [consulte Diretrizes](./throttling.md#service-specific-limits)de Graph de serviço específicos do serviço .
+Para obter mais informações, consulte [as diretrizes](./throttling.md#service-specific-limits) de limitação específicas do serviço Microsoft Graph.
 
 ### <a name="20168"></a>20168
 Não há suporte para a fonte do vídeo especificada na solicitação. Confira [Sites de vídeo com suporte](onenote-images-files.md#adding-videos) para a lista atual.
@@ -365,9 +365,9 @@ O OneDrive for Business pessoal do usuário não pôde ser recuperado. A tabela 
 
 | Causa | Resolução |
 |:------|:------|
-| O site pessoal do usuário não foi provisionado. | O usuário deve abrir o OneDrive for Business e seguir as instruções para provisionar o site. Se isso falhar, eles deverão entrar em contato com o administrador Microsoft 365 locatário. |
+| O site pessoal do usuário não foi provisionado. | O usuário deve abrir o OneDrive for Business e seguir as instruções para provisionar o site. Se isso falhar, eles deverão entrar em contato com o administrador de locatários do Microsoft 365. |
 | No momento, o site pessoal do usuário está sendo provisionado. | Tente a solicitação mais tarde. |
-| O usuário não tem uma licença válida do OneDrive for Business. | O usuário deve entrar em contato com o administrador Microsoft 365 locatário. |
+| O usuário não tem uma licença válida do OneDrive for Business. | O usuário deve entrar em contato com o administrador de locatários do Microsoft 365. |
 | Um problema de rede impediu a solicitação de ser enviada com êxito. | Tente a solicitação mais tarde. |
 
 ### <a name="30109"></a>30109
@@ -418,4 +418,4 @@ O contêiner já está em uso por outro recurso.
 ## <a name="see-also"></a>Confira também
 
 - [Respostas de erro e tipos de recurso do Microsoft Graph](errors.md)
-- [Referência do OneNote](/graph/api/resources/onenote?view=graph-rest-1.0)
+- [Referência da API do OneNote](/graph/api/resources/onenote)

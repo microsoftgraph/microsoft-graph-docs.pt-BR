@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: abb6d745a30274eda5ec17fa0075315633830b67
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 715d5daf735b7eb79b48468db53339d860ea4feb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819825"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445164"
 ---
 # <a name="teamwork-sendactivitynotificationtorecipients"></a>trabalho em equipe: sendActivityNotificationToRecipients
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Enviar notificações do feed de atividades para vários usuários, em massa. 
 
-Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, consulte [enviar Teams de atividade](/graph/teams-send-activityfeednotifications).
+Para obter mais detalhes sobre como enviar notificações e os requisitos para fazer isso, consulte [enviar notificações de atividades do Teams](/graph/teams-send-activityfeednotifications).
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------ |
 | Delegada (conta corporativa ou de estudante)     | TeamsActivity.Send                          |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
-| Application                            | TeamsActivity.Send                          |
+| Aplicativo                            | TeamsActivity.Send                          |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -59,11 +59,11 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 | Parâmetro          | Tipo                                                         | Descrição                                                  |
 | :----------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | topic              | [teamworkActivityTopic](../resources/teamworkactivitytopic.md) | Tópico da notificação. Especifica o recurso que está sendo falado. |
-| activityType       | Cadeia de caracteres                                                       | Tipo de atividade. Isso deve ser declarado no manifesto [Teams aplicativo](/microsoftteams/platform/overview). |
+| activityType       | Cadeia de caracteres                                                       | Tipo de atividade. Isso deve ser declarado no manifesto [do aplicativo Teams](/microsoftteams/platform/overview). |
 | chainId            | Int64                                                        | Opcional. Usado para substituir uma notificação anterior. Use o mesmo em `chainId` solicitações subsequentes para substituir a notificação anterior. |
-| previewText        | [itemBody](../resources/itembody.md)                         | Visualizar texto para a notificação. Microsoft Teams mostrará apenas os primeiros 150 caracteres. |
-| Templateparameters | Coleção [keyValuePair](../resources/keyvaluepair.md)      | Valores para variáveis de modelo definidos na entrada do feed de atividades correspondentes `activityType` [Teams manifesto do aplicativo](/microsoftteams/platform/overview). |
-| teamsAppId         | String                                                       | Opcional. Teams ID do aplicativo do Teams associado à notificação. Usado para desambiguar aplicativos instalados quando vários aplicativos com a mesma Azure AD ID do aplicativo são instalados para o mesmo usuário destinatário. |
+| previewText        | [itemBody](../resources/itembody.md)                         | Visualizar texto para a notificação. O Microsoft Teams mostrará apenas os primeiros 150 caracteres. |
+| Templateparameters | Coleção [keyValuePair](../resources/keyvaluepair.md)      | Valores para variáveis de modelo definidos na entrada do feed de atividades correspondentes ao `activityType` manifesto [do aplicativo Teams](/microsoftteams/platform/overview). |
+| teamsAppId         | String                                                       | Opcional. ID do aplicativo Teams do aplicativo Teams associado à notificação. Usado para desambiguar aplicativos instalados quando vários aplicativos com a mesma Azure AD ID do aplicativo são instalados para o mesmo usuário destinatário. |
 | destinatários         | [Coleção teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) | Destinatários da notificação. Somente os destinatários do [tipo aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) têm suporte. Há um limite superior de 100 destinatários em uma única solicitação. |
 
 O recurso a seguir tem suporte ao definir o `source` valor da propriedade **de** tópico como `entityUrl`:
@@ -140,6 +140,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -221,6 +225,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f2cb2976eceba50d93e2c5f60de3a250c73434df
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: fa6f268e15c2f112cfeee039107a9287d1f15ee9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122286"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443001"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Obter chatMessageHostedContent
 
 Namespace: microsoft.graph
 
-Recupere as propriedades e as relações do [objeto chatMessageHostedContent.](../resources/chatmessagehostedcontent.md)
+Recupere as propriedades e as relações do [objeto chatMessageHostedContent](../resources/chatmessagehostedcontent.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,7 +38,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Chat.Read.All, Chat.ReadWrite.All|
 
-> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso]( https://aka.ms/teams-rsc).
+> **Observação**: Permissões marcadas com * usam [consentimento específico de recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > É necessário solicitar acesso antes de chamar essa API com permissões de aplicativo. Para obter detalhes, confira [APIs protegidas no Microsoft Teams](/graph/teams-protected-apis).
@@ -75,7 +75,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e `200 OK` o [objeto chatMessageHostedContent](../resources/chatmessagehostedcontent.md) solicitado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) solicitado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 Este é um exemplo de resposta.
 
-> **Observação:** `contentBytes` e `contentType` são sempre definidos como nulos.
+> **Nota:** `contentBytes` e `contentType` são sempre definidos como nulos.
 
 <!-- {
   "blockType": "response",
@@ -143,7 +143,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-hosted-content-bytes-for-an-image"></a>Exemplo 2: Obter bytes de conteúdo hospedados para uma imagem
+### <a name="example-2-get-hosted-content-bytes-for-an-image"></a>Exemplo 2: Obter bytes de conteúdo hospedado para uma imagem
 
 #### <a name="request"></a>Solicitação
 
@@ -177,7 +177,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>Resposta
 
-A resposta contém bytes para o conteúdo hospedado no corpo. `content-type` o header especifica o tipo de conteúdo hospedado.
+A resposta contém bytes para o conteúdo hospedado no corpo. `content-type` O cabeçalho  especifica o tipo de conteúdo hospedado.
 
 <!-- {
   "blockType": "response",

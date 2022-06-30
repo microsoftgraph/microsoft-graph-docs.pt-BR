@@ -1,21 +1,21 @@
 ---
 title: Listar dailyPrintUsageByUser
-description: Recupere uma lista de resumos diários de uso de impressão, agrupados pelo usuário.
+description: Recupere uma lista de resumos de uso diário de impressão, agrupados por usuário.
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e810fe3ebc50cf730309287f46f2ca1590613def
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 65bd348bb5d8b704379994eeddd03637eba7808b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006057"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443855"
 ---
 # <a name="list-dailyprintusagebyuser"></a>Listar dailyPrintUsageByUser
 Namespace: microsoft.graph
 
-Recupere uma lista de resumos diários de uso de impressão, agrupados pelo usuário.
+Recupere uma lista de resumos de uso diário de impressão, agrupados por usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos printUsageByUser](../resources/printusagebyuser.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos printUsageByUser](../resources/printusagebyuser.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -82,8 +82,12 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser
 [!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printusagebyuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printusagebyuser-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

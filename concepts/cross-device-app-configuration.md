@@ -1,16 +1,16 @@
 ---
 title: 'Criar aplicativos para diversos dispositivos com a tecnologia do Project Rome '
-description: 'Você pode usar o Project Rome para criar experiências que abrangem vários dispositivos e plataformas sem complicações, reduzindo conflitos para usuários e ajudando a promover o engajamento com o aplicativo. Para que aplicativos compartilhem dados entre vários dispositivos e plataformas usando as APIs do Project Rome, é necessário configurar um aplicativo para diversos dispositivos que inclua informações sobre os aplicativos específicos de plataforma. '
+description: Crie experiências que cruzem dispositivos e plataformas perfeitamente usando o feed de atividades e as APIs de retransmissão de dispositivo para reduzir o atrito para os usuários e impulsionar o uso do aplicativo.
 ms.localizationpriority: medium
 ms.prod: project-rome
-ms.openlocfilehash: 8d1d58ec2da980efeab46423fd945a5afd2994fa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0c4738b39eeb88b52a5a6d0d43f3f15103f76b7b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139223"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440940"
 ---
-# <a name="build-cross-device-apps-powered-by-project-rome"></a>Criar aplicativos para diversos dispositivos com a tecnologia do Project Rome 
+# <a name="build-cross-device-apps-powered-by-project-rome"></a>Criar aplicativos para diversos dispositivos com a tecnologia do Project Rome
 
 Você pode usar o Project Rome para criar experiências que abrangem vários dispositivos e plataformas sem complicações, reduzindo conflitos para usuários e ajudando a promover o engajamento com o aplicativo. Para que aplicativos compartilhem dados entre vários dispositivos e plataformas usando as APIs do Project Rome, é necessário configurar um aplicativo para diversos dispositivos que inclua informações sobre os aplicativos específicos de plataforma. 
 
@@ -18,7 +18,7 @@ Um aplicativo para vários dispositivos permite que você:
 
 - Use a API do feed de atividades do Project Rome no Microsoft Graph.  
 - Leia e grave atividades de usuários publicadas por um grupo de aplicativos específicos de plataforma usando o SDK do Project Rome para Windows, Android e/ou iOS.
--  Tenha aplicativos como destino usando os recursos de retransmissão de dispositivos do Project Rome com o SDK do Project Rome para Android ou iOS.
+- Tenha aplicativos como destino usando os recursos de retransmissão de dispositivos do Project Rome com o SDK do Project Rome para Android ou iOS.
 
 **Retome de onde parou em diferentes dispositivos com a API do feed de atividades**
 
@@ -45,7 +45,7 @@ Você pode acessar todos os recursos de Rome Project usando um aplicativo entre 
 ### <a name="externally-hosted-json-file-limited"></a>Arquivo JSON hospedado externamente (limitado) 
 Você pode usar os seguintes recursos do Project Rome em todas as plataformas compatíveis usando um aplicativo entre dispositivos gerenciado como um arquivo JSON hospedado externamente:  
 
-* Ler e gravar as atividades de usuário de todas as plataformas usando a [API do feed de atividades](/graph/api/resources/activity-feed-api-overview?view=graph-rest-1.0)
+* Ler e gravar as atividades de usuário de todas as plataformas usando a [API do feed de atividades](/graph/api/resources/activity-feed-api-overview)
 * Gravar atividades de usuário de todas as plataformas (Windows, iOS, Android, Web) usando SDKs do Project Rome.
 
 Se você **apenas** acessar esses recursos, é possível hospedar a configuração de aplicativo entre dispositivos externamente em seu domínio como um arquivo JSON.
@@ -61,10 +61,10 @@ Por exemplo, um desenvolvedor de aplicativos com um pacote de aplicativos de jog
 #### <a name="assert-domain-ownership-with-the-windows-dev-center"></a>Reafirmar a propriedade do domínio com o Centro de Desenvolvimento do Windows
 Ao usar o Centro de Desenvolvimento do Windows para gerenciar a configuração do aplicativo entre dispositivos, o domínio que representa a ID de aplicativo entre dispositivos é armazenado como parte do perfil de aplicativo entre dispositivos para a Microsoft pode verificar se você é o proprietário do domínio. A propriedade do domínio **deve ser verificada** para concluir a publicação da configuração do aplicativo entre dispositivos, portanto, é uma boa ideia resolver isso primeiro. Se seu domínio ainda não tiver sido verificado, você poderá salvar os detalhes do aplicativo entre dispositivos e executar novamente a verificação depois de concluir esta etapa para publicar seu aplicativo entre dispositivos.
 
-Para reafirmar a propriedade do domínio do aplicativo entre dispositivos, será preciso adicionar uma entrada [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) do seu domínio com um valor exclusivo fornecido no Centro de Desenvolvimento. Esse valor é exclusivo por aplicativo entre dispositivos. Para localizar o valor exclusivo do aplicativo, entre no Centro de Desenvolvimento do Windows e escolha **Experiências entre dispositivos** no menu à esquerda para começar a configurar um novo aplicativo entre dispositivos. Depois que você dá um nome para o novo aplicativo entre dispositivos, selecione **Verificar seu domínio de aplicativo entre dispositivos** no submenu. Esta página exibirá instruções com um valor exclusivo em **linha** (por exemplo, MS=95ff4557-813f-45a5-b2f6-1f94170b979f). Certifique-se de copiar o valor inteiro incluindo "MS =".
+Para reafirmar a propriedade do domínio do aplicativo entre dispositivos, será preciso adicionar uma entrada [DNS TXT](https://go.microsoft.com/fwlink/?linkid=871417) do seu domínio com um valor exclusivo fornecido no Centro de Desenvolvimento. Esse valor é exclusivo por aplicativo entre dispositivos. Para localizar o valor exclusivo do aplicativo, entre no Centro de Desenvolvimento do Windows e escolha **Experiências entre dispositivos** no menu à esquerda para começar a configurar um novo aplicativo entre dispositivos. Depois que você dá um nome para o novo aplicativo entre dispositivos, selecione **Verificar seu domínio de aplicativo entre dispositivos** no submenu. Esta página exibirá instruções com um valor exclusivo **embutido (por** exemplo, MS=95ff4557-813f-45a5-b2f6-1f94170b979f). Certifique-se de copiar o valor inteiro incluindo "MS =".
 
 ### <a name="step-2-collect-your-platform-specific-application-ids"></a>Etapa 2: Coletar as IDs de aplicativo específicas da plataforma
-Coletar as IDs de aplicativos específicas da plataforma para cada aplicativo e a plataforma usará [APIs do Project Rome](/graph/api/resources/project-rome-overview?view=graph-rest-1.0).
+Coletar as IDs de aplicativos específicas da plataforma para cada aplicativo e a plataforma usará [APIs do Project Rome](/graph/api/resources/project-rome-overview).
 
 Você precisará coletar cada uma das IDs de aplicativo específicas da plataforma para associá-las à sua identidade de aplicativo entre dispositivos. Com o Centro de Desenvolvimento do Windows, você poderá selecionar aplicativos na Plataforma Universal do Windows associados à sua conta de desenvolvedor, mas será preciso fornecer IDs de aplicativo manualmente para qualquer um dos aplicativos Android, iOS ou win32 e identificar a URL principal de qualquer aplicativo Web associado. Você pode associar até 10 IDs por plataforma. 
 
@@ -77,7 +77,7 @@ Para encontrar as IDs:
 * **msa** – entre no [portal de registro do Aplicativo](https://apps.dev.microsoft.com). Você pode exibir a ID de aplicativo/ID de cliente para qualquer um de seus aplicativos. O Live SDK (valores hexadecimais) e os Identificadores de aplicativos convergentes (GUIDs) têm suporte.   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>Etapa 3: Configurar suporte para a conta Microsoft ou o Azure AD
-Para habilitar experiências entre dispositivos, os usuários do aplicativo devem entrar com uma conta [da Microsoft](https://account.microsoft.com/account) ou uma conta [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide) (Azure AD). Você fornecerá IDs do cliente/aplicativo para oferecer suporte à autenticação como parte de sua configuração de aplicativo entre dispositivos para permitir o suporte entre plataformas. É possível fornecer até 10 instâncias.
+Para habilitar experiências entre dispositivos, os usuários do aplicativo devem entrar com uma conta [da Microsoft](https://account.microsoft.com/account) ou uma conta do [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide) (Azure AD). Você fornecerá IDs do cliente/aplicativo para oferecer suporte à autenticação como parte de sua configuração de aplicativo entre dispositivos para permitir o suporte entre plataformas. É possível fornecer até 10 instâncias.
 
 Você pode localizar as IDs de aplicativo/cliente existentes ou provisionar novas entrando no [portal de registro do aplicativo](https://apps.dev.microsoft.com) com sua conta de desenvolvedor. Quando você entra no portal, é possível exibir a ID do cliente/aplicativo de qualquer um dos aplicativos. O Live SDK (valores hexadecimais) e os identificadores de aplicativos convergentes (GUIDs) têm suporte.   
 
@@ -91,7 +91,8 @@ Se você estiver criando um aplicativo que dará suporte a usuários do Azure AD
 ### <a name="step-4-configure-support-for-cross-platform-push-notifications-optional"></a>Etapa 4: Configurar o suporte para notificações de push multiplataforma (opcional) 
 Se você tiver optado por configurar o aplicativo entre dispositivos no Centro de Desenvolvimento do Windows, será possível habilitar o suporte para notificações por push multiplataforma fornecendo as credenciais que você usa com as APIs para as plataformas de mensagens por push do iOS e do Android. Elas serão necessárias se você estiver usando os SDKs do Project Rome para iOS e Android e quiser publicar mais do que atividades do usuário. Se você estiver usando as APIs do Project Rome somente no Microsoft Graph, não será necessário executar esta etapa. Você pode associar até 10 conjuntos de credenciais por plataforma. 
 
->**Importante:** não armazene credenciais de notificações por push em um arquivo JSON hospedado externamente.
+> [!IMPORTANT]
+> Não armazene credenciais de notificação por push em um arquivo JSON hospedado externamente.
 
 Para encontrar as IDs:
 
@@ -100,7 +101,8 @@ Para encontrar as IDs:
 * **Apple Push Notification Service** – confira [Visão geral de APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** – veja [Mensagens em nuvem Firebase](https://firebase.google.com/docs/cloud-messaging/).
 
-**Observação:** se você estiver usando o Firebase para as notificações por push em dispositivos iOS com credenciais do Android, será necessário fornecer suas credenciais de APNs como parte da configuração do aplicativo entre dispositivos. 
+> [!NOTE]
+> Se você estiver usando o Firebase para enviar notificações por push a dispositivos iOS usando credenciais do Android, precisará fornecer suas credenciais apNs como parte da configuração do aplicativo entre dispositivos. 
 
 ## <a name="configure-a-cross-device-app-using-an-externally-hosted-json-file"></a>Configurar um aplicativo entre dispositivos usando um arquivo JSON hospedado externamente
 Uma ID de aplicativo entre dispositivos é representada como um nome de domínio de sua propriedade. O domínio aponta para um mapeamento das IDs de aplicativo específicas da plataforma armazenadas como um arquivo JSON hospedado em seu domínio ou configuráveis pelo Centro de Desenvolvimento do Windows. Depois de identificar o domínio que você vai usar para representar a sua ID de aplicativo entre dispositivos, você precisará coletar informações para configurar o perfil associado. 
@@ -164,9 +166,10 @@ Para habilitar experiências entre dispositivos, seus usuários do aplicativo de
 ]
 ```
 
-Você pode encontrar suas IDs de aplicativo/IDs de cliente existentes ou provisionar novas ao entrar no [Portal](https://apps.dev.microsoft.com) de Registro de Aplicativos com sua conta de desenvolvedor. Quando você entra, é possível exibir a ID do cliente/aplicativo de qualquer um dos aplicativos. O Live SDK (valores hexadecimais) e os identificadores de aplicativos convergentes (GUIDs) têm suporte. Use o tipo de plataforma "msa" ao adicionar as IDs usadas para habilitar o suporte em uma conta da Microsoft ou Azure AD, como mostrado no exemplo anterior.  
+Você pode encontrar suas IDs de aplicativo/IDs de cliente existentes ou provisionar novas, entrando no [Portal](https://apps.dev.microsoft.com) de Registro de Aplicativos com sua conta de desenvolvedor. Quando você entra, é possível exibir a ID do cliente/aplicativo de qualquer um dos aplicativos. O Live SDK (valores hexadecimais) e os identificadores de aplicativos convergentes (GUIDs) têm suporte. Use o tipo de plataforma "msa" ao adicionar as IDs usadas para habilitar o suporte em uma conta da Microsoft ou Azure AD, como mostrado no exemplo anterior.  
 
->**Observação:** Se você estiver criando um aplicativo que dê suporte a usuários do Azure AD e não usar uma ID de aplicativo convergente emitida por meio do [Portal](https://apps.dev.microsoft.com)de Registro de Aplicativos, será necessário fornecer o GUID para a ID do aplicativo do seu aplicativo do Azure. Esse tipo de ID também deve ser configurada como tipo de plataforma "msa". 
+> [!NOTE]
+> Se você estiver criando um aplicativo que dá suporte Azure AD usuários e não usar uma ID de aplicativo convergida emitida por meio do [Portal](https://apps.dev.microsoft.com) de Registro de Aplicativo, será necessário fornecer o GUID para a ID do aplicativo do aplicativo do Azure. Esse tipo de ID também deve ser configurada como tipo de plataforma "msa". 
 
 Para localizar o GUID no Portal do Azure para o seu locatário: 
 
@@ -185,7 +188,7 @@ O sistema armazenará em cache o conteúdo do arquivo JSON para evitar gerar sol
 Se estiver usando as APIs no lado do cliente para Windows, iOS ou Android, será necessário verificar se seu cliente de aplicativos está configurado com o valor de host que representa a identidade de aplicativo entre dispositivos (por exemplo, contoso.com).
 
 ### <a name="microsoft-graph-apps"></a>Aplicativos Microsoft Graph 
-Se estiver usando a API do feed de atividades no Microsoft Graph, seu valor de host precisa ser fornecido na propriedade **activitySourceHost**. Para saber mais, veja [tipo de recurso de atividade](/graph/api/resources/projectrome-activity?view=graph-rest-1.0).
+Se estiver usando a API do feed de atividades no Microsoft Graph, seu valor de host precisa ser fornecido na propriedade **activitySourceHost**. Para saber mais, veja [tipo de recurso de atividade](/graph/api/resources/projectrome-activity).
 
 ### <a name="universal-windows-apps"></a>Aplicativos Universais do Windows
 Se tiver um aplicativo do Windows, será necessário configurar o valor do host no manifesto do aplicativo antes de publicar os dados. Para saber mais, veja [uap5:UserActivity](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
@@ -195,7 +198,7 @@ Se tiver um aplicativo do Windows, será necessário configurar o valor do host 
 *Details coming soon.*
 -->
 
-## <a name="maintaining-your-cross-device-app-configuration"></a>Manter a configuração do aplicativo entre dispositivos
+## <a name="maintain-your-cross-device-app-configuration"></a>Manter a configuração do aplicativo entre dispositivos
 Ao lançar um novo aplicativo que gerará atividades de usuário, é importante atualizar o aplicativo entre dispositivos com os novos valores de configuração antecipadamente para que as novas atividades publicadas sejam associadas corretamente com o aplicativo entre dispositivos. A configuração de aplicativo entre dispositivos associada às atividades do usuário que foram publicadas antes de uma alteração na configuração não será atualizada automaticamente. No entanto, uma operação de atualização realizada em qualquer atividade com uma configuração anterior será atualizada para a versão mais recente do arquivo.  
 
 ## <a name="troubleshooting"></a>Solução de problemas

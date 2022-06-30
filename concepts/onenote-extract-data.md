@@ -1,15 +1,15 @@
 ---
-title: 'Usar marcas DIV da API do OneNote para extrair dados de capturas '
-description: " Notebooks empresariais no Microsoft 365"
+title: Usar marcas DIV da API do OneNote para extrair dados de capturas
+description: Use a API do OneNote para extrair dados de cartão de visita, receita e produto. Inclua um div que especifica o conteúdo de origem, o método de extração e o comportamento de fallback em sua solicitação.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 15a34e07e1d24e333b929a7d2140d6502f907f5d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 94bfffb80c7165d5fa04293443ecd84b46285815
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129758"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446179"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>Usar marcas DIV da API do OneNote para extrair dados de capturas 
 
@@ -241,7 +241,8 @@ Especifique o método `extract.product` e o fallback `none`. Envie também um el
 
 Se você não souber o tipo de conteúdo (cartão de visita, receita ou produto) que está enviando, poderá usar o método não qualificado `extract` e permitir que a API do OneNote detecte automaticamente o tipo. É provável que você queira fazer isso se seu aplicativo enviar diferentes tipos de captura.
 
-> **Observação:** se você souber o tipo de conteúdo que está enviando, use o método `extract.businesscard`, `extract.recipe` ou `extract.product`. Em alguns casos, isso pode ajudar a otimizar os resultados da extração.
+> [!NOTE]
+> Se você souber o tipo de conteúdo que está enviando, deverá usar `extract.businesscard`o método , `extract.recipe`ou `extract.product` . Em alguns casos, isso pode ajudar a otimizar os resultados da extração.
  
 ### <a name="common-scenarios-for-unknown-extractions"></a>Cenários comuns para extrações desconhecidas
 
