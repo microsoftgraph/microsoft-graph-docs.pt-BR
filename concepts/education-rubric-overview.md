@@ -4,12 +4,12 @@ description: O Rubrics é uma maneira eficaz e amplamente utilizada de gradaçã
 author: mmast-msft
 ms.localizationpriority: high
 ms.prod: education
-ms.openlocfilehash: 6df1ad373de6e0f6f5fe59b0a4b3e48a68bcf0e8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ea10f339d6ee53b991045382bfcb5cbe1d27534
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137389"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440877"
 ---
 # <a name="education-rubric-overview"></a>Visão geral do Rubric Education
 
@@ -27,7 +27,7 @@ Um exemplo de um rubric de gradação pode ser:
 | &nbsp;               | Good                                                              | Ruim                                                      |
 |:---------------------|:------------------------------------------------------------------|:----------------------------------------------------------|
 | Argumento             | O argumento de ensaio é persuasivo.                               | O argumento de ensaio não faz sentido.                 |
-| Ortografia e Gramática | O ensaio usa a verificação ortográfica e gramatical adequada com poucos erros. | O ensaio tem vários erros de ortografia e/ou gramática. |
+| Ortografia e gramática | O ensaio usa a verificação ortográfica e gramatical adequada com poucos erros. | O ensaio tem vários erros de ortografia e/ou gramática. |
 
 A gradação usando uma rubric envolve a seleção de um *nível* para cada *qualidade* no rubric.
 
@@ -40,4 +40,4 @@ Um rubric *pode* ter pontos associados a todos os níveis e uma gramatura associ
 
 ## <a name="api-reference"></a>Referência da API
 
-Para começar a usar o rubrics, comece [com o recurso educationRubric no Microsoft Graph beta](/graph/api/resources/educationrubric?view=graph-rest-beta) e os métodos associados.
+Para começar a usar o rubrics, comece com o recurso [educationRubric no Microsoft Graph](/graph/api/resources/educationrubric) beta e os métodos associados.

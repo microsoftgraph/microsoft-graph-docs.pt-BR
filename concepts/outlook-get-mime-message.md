@@ -1,15 +1,15 @@
 ---
-title: Obter conteúdo MIME de uma mensagem
+title: Obter conteúdo MIME de uma mensagem usando a API de email do Outlook
 description: Multipurpose Internet Mail Extensions (MIME) é um padrão de email do setor. Agora você pode usar um `$value` segmento para obter o conteúdo MIME de uma mensagem do Outlook.
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 541c2481c8534cec7f96010a55beb6d02d825a62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b60a44345b9a75a776492fb04706cb9f5d7ffb6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135932"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442791"
 ---
 # <a name="get-mime-content-of-a-message"></a>Obter conteúdo MIME de uma mensagem
 
@@ -44,7 +44,7 @@ Estes são cabeçalhos MIME típicos em uma mensagem. Para obter mais informaç�
 
 ## <a name="get-mime-content-of-an-outlook-message"></a>Obter conteúdo MIME de uma mensagem Outlook
 
-Você pode obter a representação MIME de uma mensagem, acrescentando o `$value` segmento ao [receber a mensagem](/graph/api/message-get?view=graph-rest-1.0): 
+Você pode obter a representação MIME de uma mensagem, acrescentando o `$value` segmento ao [receber a mensagem](/graph/api/message-get): 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -154,10 +154,10 @@ YW5vdGhlciBtYWlsLg0K
 
 ## <a name="get-mime-content-of-an-outlook-message-attached-to-an-outlook-item-or-group-post"></a>Obter o conteúdo MIME de uma mensagem do Outlook anexada a um item do Outlook ou postagem do grupo
 
-Você também pode obter a representação MIME de uma mensagem do Outlook, se a mensagem foi anexada a de um [evento](/graph/api/resources/event?view=graph-rest-1.0) do Outlook, [mensagem](/graph/api/resources/message?view=graph-rest-1.0), [tarefa](/graph/api/resources/outlooktask?view=graph-rest-beta), ou postagem do grupo [ ](/graph/api/resources/post?view=graph-rest-1.0) que o seu aplicativo pode acessar.
+Você também pode obter a representação MIME de uma mensagem do Outlook, se a mensagem foi anexada a de um [evento](/graph/api/resources/event) do Outlook, [mensagem](/graph/api/resources/message), [tarefa](/graph/api/resources/outlooktask), ou postagem do grupo [ ](/graph/api/resources/post) que o seu aplicativo pode acessar.
 
-Para fazer isso, identifique o anexo e acrescente o `$value` segmento ao [receber esse anexo](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
-). A seguir algumas maneiras comuns de acessar um anexo. Confira [Obter um anexo](/graph/api/attachment-get?view=graph-rest-1.0#http-request) para mais informações.
+Para fazer isso, identifique o anexo e acrescente o `$value` segmento ao [receber esse anexo](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment
+). A seguir algumas maneiras comuns de acessar um anexo. Confira [Obter um anexo](/graph/api/attachment-get#http-request) para mais informações.
 
 Se a mensagem estiver anexada a um evento do calendário padrão do usuário:
 <!-- { "blockType": "ignored" } -->
@@ -276,8 +276,6 @@ e.</p>
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre:
-
-- [Obter o conteúdo MIME de um anexo do item](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem do grupo
+- [Obter o conteúdo MIME de um anexo do item](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem do grupo
 - [Por que integrar com o email do Outlook](outlook-mail-concept-overview.md)
-- [Usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) no Microsoft Graph versão 1.0.
+- [Usar a API de email](/graph/api/resources/mail-api-overview) e seus [casos de uso](/graph/api/resources/mail-api-overview#common-use-cases) no Microsoft Graph versão 1.0.

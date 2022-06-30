@@ -1,21 +1,24 @@
 ---
-title: Gravar dados em uma pasta de trabalho do Excel com o Microsoft Graph
-description: q=excelstarter).
+title: Escrever dados em uma pasta de trabalho do Excel
+description: 'Usar a API REST do Excel no Microsoft para gravar conjuntos de dados simples em uma pasta de trabalho do Excel em três estruturas de desenvolvimento da Web: ASP.NET, Angular e React.'
 ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 266427ed2853c26a2267b043b84e04f346467ab2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8dffa614bb30ee2c095fb7a906dc67daa6b338bb
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457110"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441514"
 ---
-# <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Gravar dados em uma pasta de trabalho do Excel com o Microsoft Graph
+# <a name="write-data-to-an-excel-workbook"></a>Escrever dados em uma pasta de trabalho do Excel
 
-A API REST do Excel fornece uma maneira fácil e independente de plataforma de carregar informações em uma pasta de trabalho do Excel. Este tópico mostra como gravar conjuntos de dados simples em uma pasta de trabalho do Excel em três estruturas de desenvolvimento da Web: ASP.NET, Angular e React. Você pode examinar os exemplos de código em destaque neste tópico conferindo [Exemplos do Excel Starter do Microsoft Graph no GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
+A API REST do Excel no Microsoft Graph fornece uma maneira fácil e independente de plataforma de carregar informações em uma pasta de trabalho do Excel.
 
-> **Observação:** Todos os três exemplos gravam dados em uma pasta de trabalho do Excel denominada **demo.xlsx**. Elas fornecem esta pasta de trabalho para que você carregar em seu próprio OneDrive, mas você também pode usar o Microsoft Graph para carregar arquivos no OneDrive. Se você tiver interesse em saber quais as chamadas REST você precisa carregar em um arquivo de qualquer tipo na pasta do OneDrive raiz, veja o [exemplo de lista de tarefas pendentes da ASP.NET API do Microsoft Graph Excel](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
+Este artigo mostra como gravar conjuntos de dados simples em uma pasta de trabalho do Excel em três estruturas de desenvolvimento da Web: ASP.NET, Angular e React. Você pode examinar os exemplos de código em destaque neste artigo conferindo [Exemplos do Excel Starter do Microsoft Graph no GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
+
+> [!NOTE]
+> Todos os três exemplos gravam dados em uma pasta de trabalho do Excel denominada **demo.xlsx**. Elas fornecem esta pasta de trabalho para que você carregar em seu próprio OneDrive, mas você também pode usar o Microsoft Graph para carregar arquivos no OneDrive. Se você tiver interesse em saber quais as chamadas REST você precisa carregar em um arquivo de qualquer tipo na pasta do OneDrive raiz, veja o [exemplo de lista de tarefas pendentes da ASP.NET API do Microsoft Graph Excel](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
 
 Todos os três exemplos do Excel Starter fazem o mesmo: recuperam nome e endereço do usuário conectado e adicionam esses dois tipos de informações a uma nova linha na pasta de trabalho **demo.xlsx**. Você pode modificar os exemplos para adicionar mais linhas, basta adicionar informações à matriz bidimensional que representa a linha ou linhas que você deseja adicionar.
 
@@ -25,9 +28,10 @@ A API REST do Excel exige a postagem de um corpo da solicitação simples para o
 
 `https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add`
 
-Para saber mais sobre como acessar arquivos em pastas do OneDrive, confira o [tipo de recurso DriveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) em nossa documentação de referência.
+Para saber mais sobre como acessar arquivos em pastas do OneDrive, confira o [tipo de recurso DriveItem](/graph/api/resources/driveitem) em nossa documentação de referência.
 
-> **Observação:** você pode analisar a coleção de linhas existente da pasta de trabalho fazendo uma solicitação GET para a parte do caminho que termina em `/rows`.
+> [!NOTE]
+> Você pode analisar a coleção de linhas existente da pasta de trabalho fazendo uma solicitação GET para a parte do caminho que termina em `/rows`.
 
 O corpo da POSTAGEM tem a seguinte aparência:
 
@@ -170,4 +174,4 @@ onWriteToExcel() {
 * [Usar funções de pasta de trabalho do Excel com o Microsoft Graph](excel-use-functions.md)
 * [Atualizar um formato de intervalo no Excel com o Microsoft Graph](excel-update-range-format.md)
 * [Exibir uma imagem do gráfico do Excel com o Microsoft Graph](excel-display-chart-image.md)
-* [Usar a API REST do Excel](/graph/api/resources/excel?view=graph-rest-1.0)
+* [Usar a API REST do Excel](/graph/api/resources/excel)

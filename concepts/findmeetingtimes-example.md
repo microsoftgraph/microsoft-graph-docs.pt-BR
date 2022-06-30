@@ -1,17 +1,17 @@
 ---
 title: Encontrar possíveis horários de reunião no calendário do Outlook
-description: 'Em um local de trabalho ou escola, procurar um horário e um local em comum para atender geralmente gera sobrecarga. Os aplicativos do Microsoft Graph podem usar '
+description: Use a ação findMeetingTimes para identificar um horário de reunião que satisfaça o horário, a localização e outras restrições. Inclui um exemplo envolvendo dois usuários.
 ms.localizationpriority: high
-ms.openlocfilehash: b8a33e5e8f44a3af500a1424216116df5324bdc5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97ee0a5b15a819ba7662764a684ab53ed9e2353b
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021397"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66440695"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Encontrar possíveis horários de reunião no calendário do Outlook
 
-Seja no trabalho ou em uma instituição de ensino, procurar um horário e local em comum para uma reunião geralmente significa uma sobrecarga. Os aplicativos do Microsoft Graph podem usar a ação [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) para identificar quaisquer possíveis horários de reunião que atendam aos requisitos de horário, local e outras restrições.   
+Seja no trabalho ou em uma instituição de ensino, procurar um horário e local em comum para uma reunião geralmente significa uma sobrecarga. Os aplicativos do Microsoft Graph podem usar a ação [findMeetingTimes](/graph/api/user-findmeetingtimes) para identificar quaisquer possíveis horários de reunião que atendam aos requisitos de horário, local e outras restrições.
 
 A ação **findMeetingTimes** permite especificar condições, como o intervalo de horário/data, a duração, os participantes opcionais ou obrigatórios, e a natureza da atividade (**activityDomain**). A ação leva em consideração a agenda de trabalho e o status de disponibilidade dos participantes e dos organizadores, e sugere horários apropriados para os participantes e o tipo de atividade. Por exemplo, as sugestões para uma atividade relacionada ao trabalho sempre ocorrem durante o horário de trabalho do organizador e dos participantes, e as sugestões em que os participantes obrigatórios estão disponíveis são classificadas mais acima na lista de sugestões.
 
@@ -24,7 +24,8 @@ Especialmente útil para reuniões maiores, você pode especificar um percentual
 
 Se **findMeetingTimes** não puder sugerir nenhum horário de reunião, ele indicará um motivo específico (**emptySuggestionsReason**), como o organizador ou um participante obrigatório que não esteja disponível. Com base nesse valor, é possível ajustar melhor os parâmetros e a chamada **findMeetingTimes** novamente.
 
->**Observação** A ação **findMeetingTimes** está atualmente disponível para caixas de correio de trabalho ou escolares da Microsoft 365, mas não para caixas de correio pessoais do outlook.com.
+> [!NOTE]
+> A ação **findMeetingTimes** está atualmente disponível para caixas de correio de trabalho ou escolares da Microsoft 365, mas não para caixas de correio pessoais do outlook.com.
 
 ## <a name="example"></a>Exemplo
 
@@ -43,7 +44,7 @@ O exemplo faz 2 chamadas para **findMeetingTimes**:
 1. A primeira chamada analisa no intervalo de datas de 18 a 20 de abril. Como o participante estará ausente de 18 a 19 de abril e não há nenhum horário comum disponível em 20 de abril, a primeira chamada não retornará nenhuma sugestão, com o motivo (**emptySuggestionsReason**) que os participantes não estão disponíveis.
 2. A segunda chamada analisa a disponibilidade em 21 de abril e retorna uma sugestão das 14h às 16h.
 
-As duas chamadas para **findMeetingTimes** incluem os seguintes parâmetros. Todos os [parâmetros](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body) para **findMeetingTimes** são opcionais.
+As duas chamadas para **findMeetingTimes** incluem os seguintes parâmetros. Todos os [parâmetros](/graph/api/user-findmeetingtimes#request-body) para **findMeetingTimes** são opcionais.
 
 - **attendees**: um participante, Sara Melo, definido como `required` para a propriedade **type**
 - **locationConstraint**: não requer nenhuma sugestão de localização
@@ -238,11 +239,11 @@ Content-Length: 714
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Há momentos em que nem todos os participantes podem participar de uma reunião. Você pode fazer com que a ação **findMeetingTimes** sugira um horário se a _confiança_ para a presença atingir um certo percentual, especificando o parâmetro opcional **minimumAttendeePercentage**. Saiba mais sobre a [confiança de uma sugestão de reunião](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#the-confidence-of-a-meeting-suggestion) e outros [parâmetros](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body), e aplique-os conforme apropriado para reuniões maiores.
+Há momentos em que nem todos os participantes podem participar de uma reunião. Você pode fazer com que a ação **findMeetingTimes** sugira um horário se a _confiança_ para a presença atingir um certo percentual, especificando o parâmetro opcional **minimumAttendeePercentage**. Saiba mais sobre a [confiança de uma sugestão de reunião](/graph/api/user-findmeetingtimes#the-confidence-of-a-meeting-suggestion) e outros [parâmetros](/graph/api/user-findmeetingtimes#request-body), e aplique-os conforme apropriado para reuniões maiores.
 
 Depois de receber sugestões de horário de reunião, você talvez queira:
 
-1. [Criar um evento e enviá-lo como uma solicitação de reunião](/graph/api/user-post-events?view=graph-rest-1.0).
-2. [Adicionar um anexo](/graph/api/event-post-attachments?view=graph-rest-1.0) a um evento.
+1. [Criar um evento e enviá-lo como uma solicitação de reunião](/graph/api/user-post-events).
+2. [Adicionar um anexo](/graph/api/event-post-attachments) a um evento.
 
 Veja mais detalhes em [integração com o calendário do Outlook](outlook-calendar-concept-overview.md).

@@ -1,29 +1,29 @@
 ---
-title: Requisitos de licenciamento e pagamento
-description: Saiba mais sobre os modelos de licenciamento e pagamento que se aplicam às APIs do Microsoft Teams no Microsoft Graph.
+title: Requisitos de licenciamento e pagamento da API do Microsoft Teams
+description: 'Saiba mais sobre os modelos de licenciamento e pagamento que se aplicam à API do Microsoft Teams no Microsoft Graph: modelo=A, modelo=B e modo de avaliação.'
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: cddf9cf46ae120be49051cadb98a538c6904a5da
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: 8af425ddb80405197730de7e1568d68ec292b53b
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160556"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556308"
 ---
-# <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Requisitos de licenciamento e pagamento para APIs do Microsoft Teams no Microsoft Graph
+# <a name="licensing-and-payment-requirements-for-the-microsoft-teams-api"></a>Requisitos de licenciamento e pagamento para a API do Microsoft Teams
 
-Este artigo descreve os requisitos de licenciamento e pagamento para APIs do Microsoft Teams.
+Este artigo descreve os requisitos de licenciamento e pagamento para a API do Microsoft Teams no Microsoft Graph.
 
-Algumas APIs oferecem a opção de escolher um modelo de licenciamento e pagamento por meio do parâmetro de consulta `model`; outras suportam somente um modelo ou não suportam um modelo de licenciamento e pagamento. Os seguintes modelos de licenciamento estão disponível:
+Algumas APIs oferecem a opção de escolher um modelo de licenciamento e pagamento por meio do parâmetro de consulta `model`; outras oferecem suporte apenas a um modelo ou não dão suporte a um modelo de licenciamento e pagamento.
 
-- [`model=A`](#modela-requirements) é restrito a aplicativos que executam uma [função de segurança ou conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) e exige uma [licença com suporte.](#required-licenses-for-modela)
-No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que consomem além da [capacidade de propagação](#seeded-capacity).
+Os seguintes modelos de licenciamento estão disponíveis:
 
-- [`model=B`](#modelb-requirements) é restrito a aplicações que não desempenham uma [função de segurança ou de conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms). 
-[`model=B`](#modelb-requirements) a partir de 5 de julho de 2022, os eventos de cobrança atingirão a disponibilidade geral. Não há requisitos de licenciamento para `model=B`.
+- [`model=A`](#modela-requirements) é restrito a aplicativos que executam uma [função de segurança ou conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) e exige uma [licença com suporte.](#required-licenses-for-modela) No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que consomem além da [capacidade de propagação](#seeded-capacity).
 
-- [O Modo de Avaliação (padrão)](#evaluation-mode-default-requirements) permite o acesso a APIs com uso limitado por aplicativo solicitando para fins de avaliação. As notificações de alteração não serão enviadas se o limite for excedido.
+- [`model=B`](#modelb-requirements) é restrito a aplicações que não desempenham uma função de segurança ou de conformidade. A partir de 5 de julho de 2022, [`model=B`](#modelb-requirements) os eventos de cobrança atingem a disponibilidade geral. Não há requisitos de licenciamento para `model=B`.
+
+- [O Modo de avaliação (padrão)](#evaluation-mode-default-requirements) permite o acesso a APIs com uso limitado por aplicativo solicitando para fins de avaliação. As notificações de alteração não são enviadas se o limite for excedido.
 
 ## <a name="modela-requirements"></a>Requisitos do `model=A`
 
@@ -39,11 +39,12 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 
 ## <a name="modelb-requirements"></a>Requisitos do `model=B`
 
-`model=B` é restrito a aplicações que não desempenham uma função de segurança ou de conformidade. Para obter detalhes, consulte a seção Termos da API para Aplicativos de Segurança e Conformidade dos [termos do produto para Serviços do Microsoft Azure](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
+`model=B` é restrito a aplicações que não desempenham uma função de segurança ou de conformidade. Para obter detalhes, consulte a seção [Termos da API para Aplicativos de Segurança e Conformidade](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms) dos termos do produto para Serviços do Microsoft Azure.
 
->**Observação:** [`model=B`](#modelb-requirements) a partir de 5 de julho de 2022, os eventos de cobrança dessas APIs atingirão a disponibilidade geral. 
+> [!NOTE]
+> A partir de 5 de julho de 2022, [`model=B`](#modelb-requirements) os eventos de cobrança dessas APIs atingem a disponibilidade geral.
 
-|API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | [Preço para uso adicional](#price-for-additional-use) | Notas |
+|API   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | [Preço para uso adicional](#price-for-additional-use) | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) | N/D | Nenhum | $0,00075 por mensagem |  |
 | [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | N/D | Nenhum  | US$ 0,00075 por notificação | |
@@ -52,7 +53,7 @@ No futuro, os aplicativos também serão obrigados a pagar pelas mensagens que c
 
 ## <a name="evaluation-mode-default-requirements"></a>Requisitos do modo de avaliação (padrão)
 
-|API                   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | [Preço para uso adicional](#price-for-additional-use) | Notas |
+|API   | Quem precisa de uma [licença](#required-licenses-for-modela)  | Capacidade propagada | [Preço para uso adicional](#price-for-additional-use) | Notas |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|
 | [notificações de alteração do chatMessage](/graph/api/subscription-post-subscriptions) |  N/D | 500 mensagens por mês por aplicativo | N/D |
 | [notificações de alteração de conversationMember](/graph/api/subscription-post-subscriptions) | N/D | 500 mensagens por mês por aplicativo | N/D | 
@@ -68,7 +69,8 @@ No modo de avaliação, a capacidade de propagação é compartilhada em todas a
 |Não há suporte para o modelo B na API de Patch| 402 (Pagamento Obrigatório) |`Query parameter 'model' does not support value 'B' for this API. Use billing model 'A'.`|
 |Capacidade de avaliação excedida|402 (Pagamento Obrigatório)|`Evaluation mode capacity has been exceeded. Use a valid billing model.`|
 
-> **Observação**: uma chamada de API bem-sucedida não significa que o licenciamento adequado está no local. Nem todas as violações de licença podem ser detectadas, e os períodos de carência podem ser concedidos em alguns casos.
+> [!NOTE]
+> Uma chamada de API bem-sucedida não significa que o licenciamento adequado está no local. Nem todas as violações de licença podem ser detectadas, e os períodos de carência podem ser concedidos em alguns casos.
 
 ## <a name="required-licenses-for-modela"></a>Licenças necessárias para `model=A` 
 
@@ -92,19 +94,20 @@ Você pode obter uma assinatura de área restrita do Microsoft 365 E5 para desen
 Caso o licenciamento inadequado seja detectado, a chamada da API falhará e os dados não serão retornados.
 Especificamente, para a maioria das APIs, a tentativa de OBTER mensagens para um usuário não aprovado resultará em um código de erro 402. Para notificações de alteração, as mensagens enviadas por usuários não licenciados não gerarão uma notificação de alteração. Da mesma forma, as chamadas de API e as notificações de alteração usadas no modo de avaliação em excesso da capacidade de propagação falharão.
 
-> **Observação**: uma chamada de API bem-sucedida não significa que o licenciamento adequado está no local. 
-> Nem todas as violações de licença podem ser detectadas, e os períodos de carência podem ser concedidos em alguns casos.
+> [!NOTE]
+> Uma chamada de API bem-sucedida não significa que o licenciamento adequado está no local. Nem todas as violações de licença podem ser detectadas, e os períodos de carência podem ser concedidos em alguns casos.
 > Da mesma forma, o sucesso da API no modo de avaliação não garante que a chamada está dentro da capacidade semeada, pois os períodos de carência podem ser concedidos em alguns casos.
 
 ## <a name="seeded-capacity"></a>Capacidade propagada
 
-A capacidade de propagação é a quantidade de capacidade que um aplicativo pode usar antes que um medidor de consumo seja cobrado.
-A capacidade é acumulada no nível do locatário - a capacidade de propagação para todos os usuários no locatário é adicionada e comparada com o uso do aplicativo no locatário.
-A capacidade de propagação é por aplicativo por locatário. Os aplicativos não ficarão sem capacidade de propagação se outro aplicativo se esgotar.
+A capacidade de propagação é a quantidade de capacidade que um aplicativo pode usar antes que um medidor de consumo seja cobrado. A capacidade é acumulada no nível do locatário&mdash;a capacidade de propagação para todos os usuários no locatário é adicionada e comparada com o uso do aplicativo no locatário. A capacidade de propagação é por aplicativo por locatário&mdash;os aplicativos não ficarão sem capacidade de propagação se outro aplicativo se esgotar.
 
-A capacidade de propagação difere pela API, consulte [ `model=A` requisitos](#modela-requirements) e [ `model=B` requisitos](#modelb-requirements)
+A capacidade de propagação difere pela API; veja os [`model=A` requisitos](#modela-requirements) e [`model=B` requisitos](#modelb-requirements).
 
 ## <a name="price-for-additional-use"></a>Preço para uso adicional
 
-No futuro, a Microsoft cobrará uma taxa de uso sobre a capacidade de propagação. Você também será capaz associar uma assinatura do Azure ao registro de aplicativo.
-A organização que possui o registro do aplicativo é responsável pelo pagamento, que para aplicativos de múltiplos clientes pode ser diferente da organização que executa o aplicativo.
+No futuro, a Microsoft cobrará uma taxa de uso sobre a capacidade de propagação. Você também será capaz associar uma assinatura do Azure ao registro de aplicativo. A organização que possui o registro do aplicativo é responsável pelo pagamento, que para aplicativos multilocatário pode ser diferente da organização que executa o aplicativo.
+
+## <a name="see-also"></a>Confira também
+
+- [Visão geral da API do Microsoft Teams](teams-concept-overview.md)

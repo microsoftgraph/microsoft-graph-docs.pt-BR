@@ -1,27 +1,27 @@
 ---
-title: Adicionar ou excluir propriedades personalizadas do cartão de perfil usando a API de cartão de perfil no Microsoft Graph (visualização)
-description: Como personalizar o cartão de perfil tornando atributos adicionais visíveis ou adicionando atributos personalizados. Você também pode excluir atributos personalizados.
+title: Adicionar ou excluir atributos personalizados em um cartão de perfil (versão prévia)
+description: Saiba como usar a API de cartão de perfil no Microsoft Graph para deixar atributos adicionais visíveis e adicionar ou excluir atributos personalizados em um cartão de perfil.
 author: PollyNincevic
 ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5e1b140f5e3c9612475bcf0a6e404168cced1c92
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: 9d1685ef287cb7cea973b452a1b05d70b8d1d144
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61561507"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441010"
 ---
-# <a name="add-or-delete-custom-properties-from-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Adicionar ou excluir propriedades personalizadas do cartão de perfil usando a API de cartão de perfil no Microsoft Graph (visualização)
+# <a name="add-or-delete-custom-attributes-on-a-profile-card-using-the-profile-card-api-preview"></a>Adicionar ou excluir atributos personalizados em um cartão de perfil usando a API de cartão de perfil (versão prévia)
 
-No [cartão de perfil](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) no Microsoft 365, você pode encontrar informações sobre os usuários armazenados e mantidos pela sua organização, por exemplo **Título do cargo** ou **Local do escritório**.
+No cartão de perfil no Microsoft 365, você pode encontrar informações sobre os usuários armazenados e mantidos pela sua organização, por exemplo **Título do cargo** ou **Local do escritório**.
 
 Use o recurso [profileCardProperty](/graph/api/resources/profilecardproperty) para mostrar propriedades adicionais do Microsoft Azure Active Directory em cartões de perfil de uma organização:
 
 * Tornando visíveis atributos adicionais
 * Adicionando atributos personalizados
 
-As propriedades adicionais serão exibidas na seção **Contato** do cartão de perfil no Microsoft 365.
+As propriedades adicionais são exibidas na seção **Contato** do cartão de perfil no Microsoft 365.
 
 Você também pode [excluir](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) atributos personalizados dos cartões de perfil da organização.
 
@@ -80,7 +80,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="adding-a-custom-attribute"></a>Adicionar um atributo personalizado
+## <a name="add-a-custom-attribute"></a>Adicionar um atributo personalizado
 
 Você pode adicionar qualquer desses 15 [atributos de extensão personalizada](/graph/api/resources/onpremisesextensionattributes) do Azure AD aos cartões de perfil do usuário ao definir as configurações da sua organização e [ao adicionar o valor correspondente como um profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties) no Microsoft Graph. Você pode adicionar um recurso **profileCardProperty** de cada vez.
 
@@ -159,9 +159,10 @@ Content-type: application/json
   ]
 }
 ```
-## <a name="deleting-a-custom-attribute"></a>Excluir um atributo personalizado
 
-Seguindo o mesmo mapeamento entre atributos de extensão personalizada do Azure AD e atributos personalizados do cartão de perfil (como `customAttribute1`), conforme descrito na seção anterior [Adicionando um atributo personalizado](/graph/add-properties-profilecard#adding-a-custom-attribute), você pode excluir um atributo personalizado usando a operação de [exclusão](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) conforme mostrado no exemplo abaixo:
+## <a name="delete-a-custom-attribute"></a>Excluir um atributo personalizado
+
+Seguindo o mesmo mapeamento entre atributos de extensão personalizada do Azure AD e atributos personalizados do cartão de perfil (como `customAttribute1`), conforme descrito na seção anterior [Adicionando um atributo personalizado](/graph/add-properties-profilecard#adding-a-custom-attribute), você pode excluir um atributo personalizado usando a operação de [exclusão](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true), conforme mostrado no exemplo a seguir.
 
 ### <a name="example"></a>Exemplo
 

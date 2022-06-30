@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c02ff3ad8c3e64e7add955f04e7e9b51ccd500d1
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 8ea66e3ab5018c1ded7c97e5c20312cbcac8ca37
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093434"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556077"
 ---
 # <a name="get-application"></a>Obter aplicativo
 
@@ -25,9 +25,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, , Directory.Read.All    |
 |Delegada (conta pessoal da Microsoft) | Application.Read.All, Application.ReadWrite.All |
-|Aplicativo | Application.Read.All, Application.ReadWrite.All, Application.ReadWrite.OwnedBy, Directory.Read.All |
+|Aplicativo | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+Substitua `{id}` pela **ID** do objeto de aplicativo, também conhecida como a **ID de Objeto** no portal do Azure.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}

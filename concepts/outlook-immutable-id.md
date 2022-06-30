@@ -1,19 +1,19 @@
 ---
-title: Obter identificadores imutáveis para recursos do Outlook
-description: Os identificadores imutáveis permitem que seu aplicativo obtenha uma ID para itens do Outlook que não muda durante a vida útil do item.
+title: Obter identificações imutáveis para recursos do Outlook
+description: Use IDs (identificações imutáveis) para permitir que seu aplicativo do Outlook obtenha uma ID que não muda durante a vida útil do item.
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 51090217a7f92f4bf4803ad97770e4e6e3acbbef
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 352dfd7fe55b5d98fcf1477a4049965100572c46
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246906"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444737"
 ---
-# <a name="get-immutable-identifiers-for-outlook-resources"></a>Obter identificadores imutáveis para recursos do Outlook
+# <a name="obtain-immutable-identifiers-for-outlook-resources"></a>Obter identificações imutáveis para recursos do Outlook
 
-Itens do Outlook (mensagens, eventos, contatos, tarefas) têm um comportamento interessante que você provavelmente nunca percebeu ou que lhe causou frustração significativa: suas IDs se alteram. Isso não acontece com frequência, somente se o item é movido, mas pode causar problemas reais para aplicativos que armazenam IDs offline para uso posterior. Identificadores imutáveis permitem que o aplicativo obtenha uma ID que não é alterada durante o tempo de vida do item.
+Itens do Outlook (mensagens, eventos, contatos, tarefas) têm um comportamento interessante que você provavelmente nunca percebeu ou que lhe causou frustração significativa: suas IDs se alteram. Isso não acontece com frequência, somente se o item é movido, mas pode causar problemas reais para aplicativos que armazenam IDs offline para uso posterior. As IDs imutáveis permitem que o aplicativo obtenha uma ID que não é alterada durante o tempo de vida útil do item.
 
 > [!NOTE]
 > Identificadores imutáveis, como todos os identificadores no Microsoft Graph, diferenciam maiúsculas de minúsculas. Lembre-se disso se você estiver comparando IDs.
@@ -35,7 +35,7 @@ A ID imutável de um item não se alterará, desde que o item permaneça na mesm
 - O usuário mover o item para uma caixa de correio de arquivo morto.
 - O usuário exportar o item (para um PST, como um arquivo MSG, etc.) e importá-lo novamente na sua caixa de correio.
 
-## <a name="items-that-support-immutable-id"></a>Itens que dão suporte a IDs imutáveis
+## <a name="items-that-support-immutable-ids"></a>Itens que dão suporte a IDs imutáveis
 
 Os seguintes itens dão suporte a IDs imutáveis:
 
@@ -76,7 +76,7 @@ Se você já tem um banco de dados preenchido com milhares de IDs normais, pode 
 
 ### <a name="example"></a>Exemplo
 
-O exemplo a seguir converte uma ID normal do Graph em uma ID imutável do Graph.
+O exemplo a seguir transforma uma ID normal do Microsoft Graph em imutável.
 
 #### <a name="request"></a>Solicitação
 
