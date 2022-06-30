@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f1bce914868eeb4ccb02daaa608d6d46f00f8325
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: c9ec58c2aaa19e31bd588338e3a05d73d875ce54
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296469"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555239"
 ---
 # <a name="create-schemaextension"></a>Criar schemaExtension
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Criar uma nova definição [schemaExtension](../resources/schemaextension.md) para estender um [tipo de recurso de suporte](/graph/extensibility-overview#supported-resources).
 
-As extensões de esquema permitem que você adicione dados personalizados fortemente tipados a um recurso. O aplicativo que cria uma extensão de esquema é o aplicativo proprietário. Dependendo do [estado](/graph/extensibility-overview#schema-extensions-lifecycle) da extensão, o aplicativo proprietário, e apenas o aplicativo proprietário, poderá atualizar ou excluir a extensão. 
+As extensões de esquema permitem que você adicione dados personalizados fortemente tipados a um recurso. O aplicativo que cria uma extensão de esquema é o aplicativo proprietário. Dependendo do [estado](/graph/api/resources/schemaextension#schema-extensions-lifecycle) da extensão, o aplicativo proprietário, e apenas o aplicativo proprietário, poderá atualizar ou excluir a extensão. 
 
 Veja exemplos de como [definir uma extensão de esquema que descreve um curso de treinamento](/graph/extensibility-schema-groups#2-register-a-schema-extension-definition-that-describes-a-training-course), usar a definição de extensão do esquema para [criar um novo grupo com dados do curso de treinamento](/graph/extensibility-schema-groups#3-create-a-new-group-with-extended-data) e [adicionar dados do curso de treinamento a um grupo existente](/graph/extensibility-schema-groups#4-add-update-or-remove-custom-data-in-an-existing-group).
 
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Application | Application.ReadWrite.All e Directory.ReadWrite.All |
 
 > [!NOTE]
-> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada OU o proprietário do (aplicativo com o) **appId** usado para definir a propriedade **de** proprietário.
+> Além disso, para o fluxo delegado, o usuário conectado deve ser o proprietário do aplicativo de chamada OU o proprietário do (aplicativo com o) **appId** usado para definir a propriedade do **proprietário**.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
