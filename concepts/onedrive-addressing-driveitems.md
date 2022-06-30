@@ -1,18 +1,20 @@
 ---
 title: Recursos de endereço em uma unidade no OneDrive
-description: Como acessar itens dentro de uma unidade no OneDrive com endereçamento baseado em ID e caminho.
+description: Saiba como acessar itens em uma unidade no OneDrive com endereçamento baseado em ID e em caminho e como codificar caminhos corretamente para o Microsoft Graph.
 ms.localizationpriority: high
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: conceptualPageType
-ms.openlocfilehash: c35db4503f4130b4404b6fd694f7cc9e8d0a4825
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 46f0304dc81245c79213f96cde30efb95766a580
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647181"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447118"
 ---
 # <a name="address-resources-in-a-drive-on-onedrive"></a>Recursos de endereço em uma unidade no OneDrive
+
+Saiba como acessar itens em uma unidade no OneDrive com endereçamento baseado em ID e em caminho e como codificar caminhos corretamente para o Microsoft Graph.
 
 ## <a name="id-based-addressing"></a>Endereçamento baseado em ID
 O OneDrive dá suporte ao endereçamento de itens baseado em ID. Os itens recebem um identificador exclusivo quando são criados, e a ID persiste nas ações que um usuário executa no item. Renomear ou mover o item não mudará a ID do item.
@@ -53,9 +55,11 @@ Os caracteres a seguir são caracteres reservados do OneDrive e não podem ser u
                      = "/" / "\" / "*" / "<" / ">" / "?" / ":" / "|" / "#" / "%"
 ```
 
-**Observação:** nomes de pastas não podem terminar com um ponto (`.`).
-
-**Observação:** nomes de arquivo ou pasta do OneDrive for Business não podem começar com til (~). Confira mais informações em [Restrições e limitações com o OneDrive for Business](https://support.microsoft.com/en-us/kb/2933738).
+> [!NOTE]
+> - Nomes de pastas não podem terminar com um ponto (`.`).
+> - Nomes de arquivo ou pasta não podem começar com til (~).
+>
+> Para mais informações, confira [Restrições e limitações quando você sincronizar as bibliotecas do SharePoint com seu computador por meio do OneDrive para o trabalho ou escola](https://support.microsoft.com/en-us/kb/2933738).
 
 ### <a name="uri-path-characters"></a>Caracteres de caminho de URI
 
@@ -168,3 +172,7 @@ Para endereçar cada um dos arquivos de Adele, utilize a codificação percentua
 | `\...\estimate%.docx`    | `/root:/Adele's%20Files/estimate%25s.docx` |
 | `\Break#Out`             | `/root:/Break%23Out`                      |
 | `\...\saved_game[1].bin` | `/root:/Break%23Out/saved_game[1].bin`    |
+
+## <a name="see-also"></a>Confira também
+
+- [Visão geral da API de armazenamento de arquivos do OneDrive](onedrive-concept-overview.md)

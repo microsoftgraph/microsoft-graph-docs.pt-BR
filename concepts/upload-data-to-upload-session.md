@@ -1,15 +1,15 @@
 ---
 title: Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
-description: Saiba mais sobre a Impressão Universal, uma solução de impressão moderna que as organizações podem usar para gerenciar sua infraestrutura de impressão por meio de serviços na nuvem da Microsoft.
+description: Use a API de impressão universal no Microsoft Graph para criar um trabalho de impressão, carregar um documento e iniciar o trabalho de impressão. Esta página descreve como fazer upload de um documento.
 author: nilakhan
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 36dd113e02e15822f9a64b04da390d5a87cae867
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: f4b373c7da760277dff390ca1ea491aa9117d354
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133101"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447055"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
 
@@ -19,17 +19,19 @@ Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz
 
 É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários de um documento são carregados, o arquivo binário é vinculado a **printDocument**.
 
-## <a name="http-request"></a>Solicitação HTTP
+## <a name="upload-a-file"></a>Carregar um arquivo
+
+### <a name="request"></a>Solicitação
 
 Faça uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**.
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+#### <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição   |
 |:--------------|:--------------|
 | Intervalo do conteúdo | bytes {startByteIndex}-{endByteIndex}/{documentSizeInBytes}. Obrigatório.|
 | Comprimento do Conteúdo | {contentLength} Obrigatório.|
 
-### <a name="request-body"></a>Corpo da solicitação
+#### <a name="request-body"></a>Corpo da solicitação
 O corpo da solicitação é um blob binário que contém os bytes do documento que são especificados como um intervalo de bytes **inclusivo** no cabeçalho `Content-Range`. 
 
 ### <a name="example"></a>Exemplo
@@ -44,7 +46,8 @@ Content-Length: 72797
 ```
 
 Aqui, 0 e 72796 são os índices inicial e final do segmento de arquivo, e 4533322 é o tamanho do documento.
-## <a name="http-response"></a>Resposta HTTP:
+
+### <a name="response"></a>Resposta
 
 Quando a solicitação for concluída, o servidor responderá com `202 Accepted` se houver mais intervalos de bytes que precisem ser carregados.
 
@@ -82,7 +85,7 @@ Content-Type: application/json
 * Em falhas, quando o cliente envia um fragmento que o servidor já recebeu, o servidor responderá com `HTTP 416 Requested Range Not Satisfiable`. Você pode [solicitar o status de upload](#get-the-upload-session) para obter uma lista mais detalhada dos intervalos ausentes.
 * A inclusão do cabeçalho de `Authorizatio` ao fazer a chamada `PUT` pode resultar em uma resposta `HTTP 401 Unauthorized`. O Cabeçalho de Autorização e o token de portador devem ser enviados apenas durante a criação da sessão de upload. Ele não deve ser incluído ao enviar dados para a sessão de upload.
 
-## <a name="completing-a-file"></a>Concluindo um arquivo
+## <a name="complete-a-file-upload"></a>Concluir um upload de arquivo
 
 Quando o último intervalo de bytes de um arquivo for recebido, o servidor responderá com um `HTTP 201 Created`. O corpo da resposta também incluirá o conjunto de propriedades para o **printDocument** associado.
 
@@ -139,8 +142,9 @@ Content-Type: application/json
   ]
 }
 ```
+
 ## <a name="code-examples-create-upload-session-and-upload-documents"></a>Exemplos de código: Criar sessão de upload e carregar documentos
- 
+
 # <a name="c"></a>[C#](#tab/csharp)
 
 ```csharp

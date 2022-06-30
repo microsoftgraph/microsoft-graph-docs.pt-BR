@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mahage-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: 54e22173ec5ec46321cb2f2bf05fc57d34e87784
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 3a038b2d481afa681f1003de0d1c46b5c4c8e5ea
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461244"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441423"
 ---
 # <a name="use-the-microsoft-graph-compliance-and-privacy-apis"></a>Usar as APIs de conformidade e privacidade do Microsoft Graph
 
@@ -22,6 +22,7 @@ Utilize as APIs de conformidade e privacidade do Microsoft Graph para criar apli
 
 - Automatize tarefas comuns na Descoberta Eletrônica
 - Criar e gerenciar solicitações de direitos do titular
+- Automatizar tarefas no gerenciamento de registros
 
 ## <a name="ediscovery"></a>Descoberta eletrônica
 
@@ -34,6 +35,15 @@ Explorar as [APIs de Descoberta Eletrônica do Microsoft 365](ediscovery-ediscov
 As Solicitações de Direitos do Titular Priva da Microsoft fornece recursos poderosos para ajudá-lo a lidar com solicitações de pessoas que procuram gerenciar seus dados pessoais dentro de sua organização. Esses pedidos são às vezes também chamados de Solicitações do titular dos dados (DSRs), Solicitações de acesso ao titular dos dados (DSARs), ou Solicitações de direitos do consumidor. O Microsoft Priva permite que o pessoal responsável pelo cumprimento das solicitações de direitos do titular a identificar facilmente os titulares dos dados e encontrar suas informações pessoais entre os dados de sua organização em Exchange, SharePoint, OneDrive e Teams. Saiba mais sobre as [Solicitações de Direitos do Titular Priva](/microsoft-365/compliance/privacy-management-subject-rights-requests).
 
 Explore as [APIs de solicitação de direitos do titular](subjectrightsrequest-subjectrightsrequestapioverview.md).
+
+## <a name="records-management-preview"></a>Gerenciamento de registros (versão prévia)
+
+O gerenciamento de registros no Microsoft Purview fornece a capacidade de gerenciar registros regulatórios, legais e críticos para os negócios em dados corporativos. Ele ajuda as organizações a gerenciar a retenção e a exclusão de dados para cumprir suas obrigações legais e com os regulamentos de conformidade, e aumenta a eficiência, permitindo a disposição regular de itens que não precisam mais ser retidos.
+
+Para obter mais detalhes, consulte [Gerenciamento de registros do Microsoft Purview](/microsoft-365/compliance/records-management).
+
+A API de gerenciamento de registros é definida no subnamespace OData, microsoft.graph.security.
+Explore as [APIs de Gerenciamento de Registros do Microsoft Purview](security-recordsManagement-overview.md).
 
 <!--
 ## Labels

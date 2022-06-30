@@ -1,31 +1,32 @@
 ---
 title: Agendar compromissos repetidos como eventos recorrentes no Outlook
-description: Os eventos recorrentes são uma parte importante do calendário do Outlook. Quer seja uma reunião individual semanal com seu gerente ou uma reunião de revisão de toda a divisão que acontece na segunda terça-feira de cada mês, os eventos recorrentes tornam mais fácil criar o evento uma vez e deixar o servidor preencher o resto da série.
+description: Crie eventos recorrentes usando a regra de recorrência, que inclui o padrão de recorrência - com que frequência um evento se repete - e o intervalo de recorrência - por quanto tempo.
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 29aeef98cbc0e9d33df26a0c54bb568317ebb790
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 09a8de8d27980f39157b605832b8bb7a94926638
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071781"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444310"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Agendar compromissos repetidos como eventos recorrentes no Outlook
 
-Os eventos recorrentes são uma parte importante do calendário do Outlook. Quer seja uma reunião individual semanal com seu gerente ou uma reunião de revisão de toda a divisão que acontece na segunda terça-feira de cada mês, os eventos recorrentes tornam mais fácil criar o evento uma vez e deixar o servidor preencher o resto da série.
+Eventos recorrentes são uma parte importante do calendário do Outlook. Seja uma reunião semanal individual com seu gerente ou uma reunião de revisão de toda a divisão que ocorre na segunda terça-feira de cada mês, eventos recorrentes permitem que o evento seja criado uma fez e que o servidor preencha o restante da série.
 
-O principal dado que permite que os eventos recorrentes sejam "expandidos" em ocorrências individuais é a regra de recorrência. A regra especifica a frequência de repetição do evento e sua duração. As regras de recorrência modelam as APIs REST do Outlook na propriedade **recorrência** do [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0). 
+O principal dado que permite que os eventos recorrentes sejam "expandidos" em ocorrências individuais é a regra de recorrência. A regra especifica a frequência de repetição do evento e sua duração. As regras de recorrência modelam as APIs REST do Outlook na propriedade **recorrência** do [recurso de evento](/graph/api/resources/event).
 
 Cada recorrência é composta de duas partes: o padrão de recorrência (frequência) e o intervalo de recorrência (duração).
 
 ## <a name="recurrence-patterns"></a>Padrões de recorrência
 
-A primeira parte de uma recorrência é o padrão. Ele especifica a frequência com que o evento se repete. Por exemplo, um evento poderia repetir "a cada 3 dias", "toda quinta-feira" ou "em 22 de julho de cada ano". Um padrão é representado na API pelo [recurso recurrencePattern](/graph/api/resources/recurrencepattern?view=graph-rest-1.0).
+A primeira parte de uma recorrência é o padrão. Ele especifica a frequência com que o evento se repete. Por exemplo, um evento poderia repetir "a cada 3 dias", "toda quinta-feira" ou "em 22 de julho de cada ano". Um padrão é representado na API pelo [recurso recurrencePattern](/graph/api/resources/recurrencepattern).
 
 Dependendo do tipo de padrão, determinados campos do **recurrencePattern** são obrigatórios, opcionais ou ignorados.
 
-> **Observação**: Mesmo que um campo seja ignorado, ele ainda é validado. Se um campo tiver um conjunto fixo de valores possíveis, usar um valor fora do conjunto permitido causa um erro, mesmo que esse campo seja ignorado.
+> [!NOTE]
+> Mesmo que um campo seja ignorado, ele ainda é validado. Se um campo tiver um conjunto fixo de valores possíveis, usar um valor fora do conjunto permitido causa um erro, mesmo que esse campo seja ignorado.
 
 Vamos dar uma olhada em cada um dos tipos de possíveis de padrão.
 
@@ -221,11 +222,12 @@ O padrão anual relativo faz com que um evento se repita no mesmo dia da semana 
 
 ## <a name="recurrence-ranges"></a>Intervalos de recorrência
 
-A segunda parte de uma recorrência é o intervalo. Especifica por quanto tempo o padrão se repete. Por exemplo, um evento poderia terminar após 10 ocorrências, em uma data específica ou poderia não ter fim. Um intervalo é representado na API pelo [recurso recurrenceRange](/graph/api/resources/recurrencepattern?view=graph-rest-1.0).
+A segunda parte de uma recorrência é o intervalo. Especifica por quanto tempo o padrão se repete. Por exemplo, um evento poderia terminar após 10 ocorrências, em uma data específica ou poderia não ter fim. Um intervalo é representado na API pelo [recurso recurrenceRange](/graph/api/resources/recurrencepattern).
 
 Dependendo do tipo de intervalo, determinados campos do **recurrenceRange** são obrigatórios ou ignorados.
 
-> **Observação**: Mesmo que um campo seja ignorado, ele ainda é validado. Se um campo tiver um conjunto fixo de valores possíveis, usar um valor fora do conjunto permitido causa um erro, mesmo que esse campo seja ignorado.
+> [!NOTE]
+> Mesmo que um campo seja ignorado, ele ainda é validado. Se um campo tiver um conjunto fixo de valores possíveis, usar um valor fora do conjunto permitido causa um erro, mesmo que esse campo seja ignorado.
 
 Vamos dar uma olhada em cada um dos tipos de possíveis de intervalo.
 
@@ -239,7 +241,7 @@ O intervalo numerado faz com que um evento ocorra um número fixo de vezes (com 
 |----------|-----------|-------------|
 | **numberOfOccurences** | Obrigatório | Especifica o número de ocorrências. Deve ser um número inteiro positivo. |
 | **recurrenceTimeZone** | Opcional | Especifica o fuso horário para a propriedade **startDate**. Se a propriedade não for especificada, será usado o fuso horário do evento. |
-| **startDate** | Obrigatório | Especifica a data para começar a aplicar o padrão. O valor de **startDate** DEVE corresponder ao valor da data da propriedade **iniciar** no [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0). Observação: Esta primeira ocorrência da reunião poderá não ocorrer nessa data se ela não se encaixar no padrão. |
+| **startDate** | Obrigatório | Especifica a data para começar a aplicar o padrão. O valor de **startDate** DEVE corresponder ao valor da data da propriedade **iniciar** no [recurso de evento](/graph/api/resources/event). Observação: Esta primeira ocorrência da reunião poderá não ocorrer nessa data se ela não se encaixar no padrão. |
 | **type** | Obrigatório | Tem que ser definida como `numbered`. |
 
 #### <a name="examples"></a>Exemplos
@@ -264,7 +266,7 @@ O intervalo de datas de término faz com que um evento ocorra em todos os dias q
 |----------|-----------|-------------|
 | **endDate** | Obrigatório | Especifica a data para parar de aplicar o padrão. Observe que a última ocorrência da reunião pode não ocorrer nesta data se não se enquadrar no padrão. |
 | **recurrenceTimeZone** | Opcional | Especifica o fuso horário das propriedades **startDate** e **endDate**. Se a propriedade não for especificada, será usado o fuso horário do evento. |
-| **startDate** | Obrigatório | Especifica a data para começar a aplicar o padrão. O valor de **startDate** DEVE corresponder ao valor da data da propriedade **iniciar** no [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0). Observação: Esta primeira ocorrência da reunião poderá não ocorrer nessa data se ela não se encaixar no padrão. |
+| **startDate** | Obrigatório | Especifica a data para começar a aplicar o padrão. O valor de **startDate** DEVE corresponder ao valor da data da propriedade **iniciar** no [recurso de evento](/graph/api/resources/event). Observação: Esta primeira ocorrência da reunião poderá não ocorrer nessa data se ela não se encaixar no padrão. |
 | **type** | Obrigatório | Tem que ser definida como **endDate**. |
 
 #### <a name="examples"></a>Exemplos
@@ -288,7 +290,7 @@ O intervalo sem término faz com que um evento ocorra em todos os dias que se en
 | Propriedade | Relevância | Descrição |
 |----------|-----------|-------------|
 | **recurrenceTimeZone** | Opcional | Especifica o fuso horário para a propriedade **startDate**. Se a propriedade não for especificada, será usado o fuso horário do evento. |
-| **startDate** | Obrigatório | Especifica a data para começar a aplicar o padrão. O valor de **startDate** DEVE corresponder ao valor da data da propriedade **iniciar** no [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0). Observação: Esta primeira ocorrência da reunião poderá não ocorrer nessa data se ela não se encaixar no padrão. |
+| **startDate** | Obrigatório | Especifica a data para começar a aplicar o padrão. O valor de **startDate** DEVE corresponder ao valor da data da propriedade **iniciar** no [recurso de evento](/graph/api/resources/event). Observação: Esta primeira ocorrência da reunião poderá não ocorrer nessa data se ela não se encaixar no padrão. |
 | **type** | Obrigatório | Tem que ser definida como `noEnd`. |
 
 #### <a name="examples"></a>Exemplos
@@ -357,9 +359,9 @@ Para criar uma regra de recorrência, você deve especificar um padrão e um int
   Como o valor de **starDate** é após a primeira quinta-feira de agosto, a primeira ocorrência dessa série será em setembro.
 
 ## <a name="next-steps"></a>Próximas etapas
-    
+
 - Veja mais detalhes em [integração com o calendário do Outlook](outlook-calendar-concept-overview.md).
 - Visualize outros exemplos de eventos recorrentes na referência da API do calendário:
-  - [Crie um evento recorrente que ocorra uma vez por semana](/graph/api/user-post-events?view=graph-rest-1.0#request-3)
-  - [Crie um evento recorrente diário](/graph/api/user-post-events?view=graph-rest-1.0#request-4)
+  - [Crie um evento recorrente que ocorra uma vez por semana](/graph/api/user-post-events#request-3)
+  - [Crie um evento recorrente diário](/graph/api/user-post-events#request-4)
 

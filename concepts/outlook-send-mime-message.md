@@ -1,15 +1,15 @@
 ---
-title: Enviar emails com conteúdo MIME
-description: Os clientes de email têm a capacidade de enviar emails pelo Exchange em um formato de mensagem MIME.
+title: Envie emails com conteúdo MIME usando a API de email do Outlook
+description: Os clientes de email podem enviar mensagens por meio do Exchange em um formato de mensagem MIME e se comunicar em várias plataformas de email.
 author: isvargasmsft
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: c1aec55ea0d8fa405047bc9c7e3a31dbd3d06deb
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 7f86ff3ab34c8bdc640fe7874928c2d8400d0e26
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510510"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446130"
 ---
 # <a name="send-messages-with-mime-content"></a>Enviar mensagens com conteúdo MIME
 
@@ -195,4 +195,7 @@ CgAAAA==
 |--------|------|----|-------|
 | Conteúdo MIME mal formado, ausente | POSTAR, COLOCAR | 400 | Cadeia de caracteres de base64 inválida para conteúdo MIME. |
 
+## <a name="next-steps"></a>Próximas etapas
 
+- [Por que integrar-se com o email do Outlook](outlook-mail-concept-overview.md)
+- [Como usar a API de email](/graph/api/resources/mail-api-overview) e seus [casos de uso](/graph/api/resources/mail-api-overview#common-use-cases) do Microsoft Graph versão 1.0.

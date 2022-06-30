@@ -1,17 +1,20 @@
 ---
-title: Criar e enviar uma notificação do serviço de aplicativo
-description: 'Configure o serviço de aplicativo para enviar notificações centradas no usuário para vários clientes por meio do Microsoft Graph. '
+title: Criar e enviar uma notificação do seu serviço de aplicativo (preterido)
+description: Você pode criar e enviar uma notificação para um usuário com as APIs do Microsoft Graph (preterido).
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 24cac26e548d5f05724ee38559f6ef3bb4801277
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 302375137bb2408bcd6be5ad737cf34cc7d6ee70
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062317"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447132"
 ---
-# <a name="create-and-send-a-notification-from-your-app-service"></a>Criar e enviar uma notificação do serviço de aplicativo
+# <a name="create-and-send-a-notification-from-your-app-service-deprecated"></a>Criar e enviar uma notificação do seu serviço de aplicativo (preterido)
+
+> [!IMPORTANT]
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte a postagem no blog [Desativando a API de notificações do Microsoft Graph (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Você pode criar e enviar uma notificação para um usuário com as APIs do Microsoft Graph. As notificações são armazenadas no repositório do serviço de Notificações do Microsoft Graph e enviadas a todos os clientes de aplicativos, em todos os dispositivos em que o usuário de destino está conectado. 
 

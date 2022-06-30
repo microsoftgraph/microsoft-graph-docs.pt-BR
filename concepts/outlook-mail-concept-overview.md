@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API de email do Outlook
-description: O Outlook é um hub de comunicação de mensagens Microsoft 365. Ele também permite que você gerencie contatos, agende reuniões, encontre informações sobre usuários em uma organização,
+description: Use a API de correio do Outlook no Microsoft Graph para gerenciar contatos, agendar reuniões, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 93563ae4b2e8057bead0abe5fe1a76a51db29285
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 22e733e880ba5dc1d1c39b806b362c359541addd
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071865"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556322"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 
@@ -57,7 +57,7 @@ Use o Microsoft Graph para sugerir dados contextuais aos usuários de seu aplica
 
 Muitas vezes os aplicativos precisam armazenar os dados em um repositório de dados externo e acarretam sobrecarga no gerenciamento e no acesso dos dados. O Microsoft Graph permite que você simplesmente inclua dados de aplicativos como cabeçalhos de mensagens da Internet quando [criar](/graph/api/user-post-messages#example-2-create-message-draft-that-includes-custom-message-headers) ou [enviar](/graph/api/user-sendmail#example-2-create-a-message-with-custom-internet-message-headers-and-send-the-message) uma nova mensagem ou uma resposta a uma mensagem.
 
-Se você precisar adicionar e atualizar dados personalizados subsequentemente, poderá [armazenar os dados em instâncias de recursos individuais](extensibility-overview.md#open-extensions). Se apropriado, como alternativa, você pode estender o esquema, adicionar propriedades personalizadas e armazenar dados digitados nos recursos do Microsoft Graph. Você pode fazer com que essas [extensões de esquema](extensibility-overview.md#schema-extensions) sejam passíveis de ser descobertas e compartilhadas.
+Se você precisar adicionar e atualizar dados personalizados subsequentemente, poderá [armazenar os dados em instâncias de recursos individuais](extensibility-overview.md#4-open-extensions). Se apropriado, como alternativa, você pode estender o esquema, adicionar propriedades personalizadas e armazenar dados digitados nos recursos do Microsoft Graph. Você pode fazer com que essas [extensões de esquema](extensibility-overview.md#3-schema-extensions) sejam passíveis de ser descobertas e compartilhadas.
 
 ## <a name="where-is-the-data"></a>Onde estão os dados?
 

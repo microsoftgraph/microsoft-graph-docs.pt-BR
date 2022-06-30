@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 496dc400412a5e2fce735a831539b9509a122e76
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 59df9f1d7042abb723e7148bcd14984e52ad5866
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211814"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556315"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -58,6 +58,15 @@ GET /me
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-parameters) para recuperar propriedades específicas do usuário, incluindo aquelas que não são retornadas por padrão.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão                     | Comentários                                                                                              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Retornado somente com `$select`.                                                                         |
+| Extensões de esquema                  | Retornado somente com `$select`.                                                                         |
+| Extensões abertas                    | Retornado somente por meio da operação [Obter extensão aberta](opentypeextension-get.md). |
+| Extensões de diretório               | Retornado somente com `$select`.                                                                         |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

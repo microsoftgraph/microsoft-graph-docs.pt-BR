@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e2b6657c3b4475b47f03e33b193ea26630fe304f
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: f69e7570c520b0ddf3d3174373af413820fa4d9d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095569"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555241"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -48,6 +48,15 @@ Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`,
 Certas propriedades não podem ser retornadas em uma coleção de usuário. As seguintes propriedades terão suporte apenas [ao recuperar um único usuário:](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 As propriedades a seguir não têm suporte em contas pessoais da Microsoft e serão `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão                     | Comentários                                                                  |
+|------------------------------------|---------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Retornado por padrão. Suporta `$filter` (`eq`).                  |
+| Extensões de esquema                  | Retornado somente com `$select`. Suporta `$filter` (`eq`).                  |
+| Extensões abertas                    | Retornado somente com `$expand`, ou seja, `users?$expand=extensions`. |
+| Extensões de diretório               | Retornado por padrão. Suporta `$filter` (`eq`).                  |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

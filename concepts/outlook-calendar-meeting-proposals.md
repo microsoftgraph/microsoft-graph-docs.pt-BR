@@ -1,21 +1,22 @@
 ---
-title: Propor novos horários de reunião no Outlook
-description: No Outlook, o organizador da reunião pode permitir que os convidados proponham horários alternativos.
+title: Propor novos horários de reunião no calendário do Outlook
+description: Saiba como usar as propriedades allowNewTimeProposals e proposedNewTime para configurar reuniões que permitem aos convidados propor horários alternativos de reunião.
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 75eb225da1cc1ea337b20e07a8429e9acdd32748
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: e69b78be23c0d1a35007ccd7807e9b7057c72b0c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424613"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442074"
 ---
-# <a name="propose-new-meeting-times-in-outlook"></a>Propor novos horários de reunião no Outlook
+# <a name="propose-new-meeting-times-in-outlook-calendar"></a>Propor novos horários de reunião no calendário do Outlook
 
 No Outlook, o organizador da reunião pode permitir que os convidados proponham horários de reunião alternativos, se não puderem se encontrar na data/hora original definida e aceitar provisoriamente ou recusar. O organizador pode aceitar uma proposta ajustando o horário da reunião conforme apropriado.
 
 ## <a name="example-attendee-responds-tentative-and-suggests-a-different-datetime"></a>Exemplo: o participante responde provisoriamente e sugere uma data/hora diferente
+
 A seguir, é apresentado um exemplo em que Alex convida Adele para almoçar, Adele timidamente aceita e propõe uma data e hora alternativas. Alex aceita a proposta ajustando a reunião de acordo:
 
 1. Como organizador, Alex envia uma solicitação de reunião para Adele. Ele define a propriedade **allowNewTimeProposals** do [evento](/graph/api/resources/event) para `true` para deixar Adele sugerir outro horário se ela precisar.

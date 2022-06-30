@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: Exiba os destaques das novidades Microsoft Graph nos últimos dois meses, o que foi adicionado em versões anteriores e como você pode compartilhar suas ideias.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 9faaf3d0db85a040bbb65b21896819dfb59e1ee4
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 56b50679f230dfc3dd656baf4fdb9bd9a4220b6e
+ms.sourcegitcommit: 175dda9b51aaa94fa00d0e4b7101c771b6315f05
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66444226"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66557157"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -25,6 +25,7 @@ Obtenha informações sobre o codec de áudio, codec de vídeo, protocolo de tra
 ### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
 - [Liste as unidades administrativas ](/graph/api/device-list-memberOf) que um [dispositivo](/graph/api/resources/device) é membro.
 - Gerenciar dispositivos como membros em uma [unidade administrativa](/graph/api/resources/administrativeunit): [listar membros](/graph/api/administrativeunit-list-members) incluindo dispositivos, e [obter](/graph/api/administrativeunit-get-members), [adicionar](/graph/api/administrativeunit-post-members), e [remover](/graph/api/administrativeunit-delete-members) um dispositivo como membro. 
+- [Obtenha](/graph/api/application-get) o status e outros detalhes de [certificação de segurança e conformidade](/graph/api/resources/certification) de um [programa](/graph/api/resources/application) para proteger os dados do cliente. Para obter mais informações, consulte [Certificação Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
  Configure e gerencie as [configurações da política de métodos de autenticação de Passagem de Acesso Temporário](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) no seu locatário.
@@ -53,12 +54,16 @@ Assine as notificações de alteração do seguinte no Teams:
 ### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
 Acesse a [API de Descoberta Eletrônica](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) do namespace de [segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) no futuro, em vez do namespace de conformidade.
 
+### <a name="device-and-app-management--multi-tenant-management"></a>Gerenciamento de dispositivos e aplicativos | Gerenciamento multilocatário
+[Obtenha](/graph/api/managedtenants-managedtenant-list-myroles?view=graph-rest-beta&preserve-view=true) a coleção de [funções atribuídas a um usuário conectado](/graph/api/resources/managedtenants-myRole?view=graph-rest-beta&preserve-view=true) para um [locatário gerenciado](/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta&preserve-view=true).
+
 ### <a name="education"></a>Educação
 - [Crie](/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-beta&preserve-view=true) uma pasta do SharePoint em uma [atribuição](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) para carregar documentos de comentários.
 - [Crie](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) um [documento de comentários](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true) em um [envio](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) na pasta de comentários associada à atribuição.
 
 ### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
-[Promover](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) um subdomínio verificado no domínio raiz.
+- [Promover](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) um subdomínio verificado no domínio raiz.
+- [Obtenha](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) a URL para os metadados do SAML para federação de um [programa](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) de locatário único.
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 Ocultar links de redefinição de senha de autoatendimento (SSPR) nas [configurações de visibilidade de texto da página de logon](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) na página de entrada de um locatário. 

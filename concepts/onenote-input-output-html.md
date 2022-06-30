@@ -1,17 +1,17 @@
 ---
-title: HTML de entrada e saída nas páginas do OneNote
-description: 'O HTML que define o conteúdo e a estrutura da página quando você cria ou atualiza uma página do OneNote é chamado de *HTML de entrada*. '
+title: HTML de entrada e saída em páginas do OneNote na API do OneNote
+description: Saiba como usar os principais elementos e atributos de HTML de entrada e saída ao criar ou atualizar o conteúdo da página ou analisar o conteúdo da página retornada.
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 63898d10a7901ae9a3fd764de0550423a7482a38
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 519164f0f67a3b68084206e6c584a275e5ee7a03
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035546"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446152"
 ---
-# <a name="input-and-output-html-in-onenote-pages"></a>HTML de entrada e saída nas páginas do OneNote
+# <a name="input-and-output-html-on-onenote-pages"></a>HTML de entrada e saída em páginas do OneNote
 
 O HTML que define o conteúdo e a estrutura da página quando você [cria](onenote-create-page.md) ou [atualiza](onenote-update-page.md) uma página do OneNote é chamado de *HTML de entrada*. 
 
@@ -68,7 +68,7 @@ As APIs do OneNote no Microsoft Graph encapsulam todo o conteúdo do corpo em pe
 |Atributo de saída|Descrição|
 |:------|:------|
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
-| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get?view=graph-rest-1.0) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
+| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | style | As propriedades de tamanho e posição do div. |
  
 ### <a name="non-contributing-divs"></a>Divs não contribuintes
@@ -97,7 +97,8 @@ Contém um div aninhado não contribuinte.
 
 #### <a name="output-html"></a>HTML de saída
 
-> **Observação**: o conteúdo do div foi movido para o div pai e as marcas `<div>` aninhadas foram removidas. O div seria preservado se definisse qualquer informação semântica, como **data-id** (exemplo: `<div data-id="keep-me">`).
+> [!NOTE]
+> O conteúdo do div foi movido para o div pai e as marcas `<div>` aninhadas foram removidas. O div seria preservado se definisse qualquer informação semântica, como **data-id** (exemplo: `<div data-id="keep-me">`).
 
 ```html
 <html htmlns="https://www.w3.org/1999/xhtml" lang="en-US">
@@ -124,13 +125,14 @@ Imagens em páginas do OneNote são representadas pelos elementos **img**. Um el
 |:------|:------|
 | alt | O texto Alt fornecido para a imagem. |
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
-| data-render-src |Ou **data-render-src** ou **src** é obrigatório.<br/><br/>A página da Web a ser renderizada como uma imagem mapeada por bit na página do OneNote:<br/><br/> - `data-render-src="https://..."` para uma URL pública.<br/><br/> - `data-render-src="name:BlockName"` para parte de uma imagem no bloco "Apresentação" de uma [solicitação de partes múltiplas](/graph/api/section-post-pages?view=graph-rest-1.0#example).<br/><br/>Esse método é útil quando a página da Web é mais complexa que a página que o OneNote pode renderizar fielmente ou quando a página exige credenciais de logon.|
+| data-render-src |Ou **data-render-src** ou **src** é obrigatório.<br/><br/>A página da Web a ser renderizada como uma imagem mapeada por bit na página do OneNote:<br/><br/> - `data-render-src="https://..."` para uma URL pública.<br/><br/> - `data-render-src="name:BlockName"` para parte de uma imagem no bloco "Apresentação" de uma [solicitação de partes múltiplas](/graph/api/section-post-pages#example).<br/><br/>Esse método é útil quando a página da Web é mais complexa que a página que o OneNote pode renderizar fielmente ou quando a página exige credenciais de logon.|
 | data-tag | Uma [marca de anotação](onenote-note-tags.md) no elemento. |
 | style |As propriedades de posição e tamanho para a imagem: **position** (somente **absolute**), **left**, **top**, **width** e **height**.<br/><br/>O tamanho pode ser definido em qualquer imagem.<br/><br/>As propriedades de posição serão usadas para criar uma imagem [posicionada absoluta](onenote-abs-pos.md), somente se a imagem for um filho direto do corpo quando o corpo define `data-absolute-enabled="true"`.<br/><br/>Exemplo: `<img style="position:absolute;width:360px;top:350px;left:300px" ... />`<br/><br/>No HTML de saída, o tamanho da imagem é retornado separadamente nos atributos **width** e **height**. |
 | src |Ou **src** ou **data-render-src** é obrigatório.<br/><br/>A imagem a ser renderizada na página do OneNote:<br/><br/>- `src="https://..."` para uma URL para uma imagem publicamente disponível na Internet.<br/><br/> - `src="name:BlockName"` para uma parte nomeada em uma solicitação de partes múltiplas que representa a imagem.|
 | width, height | A largura ou altura da imagem, em pixels, mas sem o px. Exemplo: `width="400"` |
- 
-> **Observação:** as APIs do OneNote detectam automaticamente o tipo de imagem de entrada e o retornam como o **data-fullres-src-type** no HTML de saída. A API também retorna o tipo de imagem da imagem otimizada em **data-src-type**.
+
+> [!NOTE]
+> As APIs do OneNote detectam automaticamente o tipo de imagem de entrada e o retornam como o **data-fullres-src-type** no HTML de saída. A API também retorna o tipo de imagem da imagem otimizada em **data-src-type**.
  
 
 #### <a name="output-attributes"></a>Atributos de saída
@@ -146,7 +148,7 @@ Imagens em páginas do OneNote são representadas pelos elementos **img**. Um el
 | data-render-original-src | A URL de origem original da imagem, se a imagem da origem for da Internet pública e tiver sido criada com o atributo **data-render-src**. |
 | data-src-type | O tipo de mídia do recurso **src**, por exemplo: `image/png` ou `image/jpeg`. |
 | data-tag | Uma [marca de anotação](onenote-note-tags.md) no elemento. |
-| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get?view=graph-rest-1.0) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
+| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | src | O ponto de extremidade para a versão do recurso de imagem que foi otimizada para navegadores da Web, bem como para fatores forma de dispositivos móveis e tablet. |
 | style | As propriedades de posição da imagem. |
 | width, height | A largura ou altura da imagem, em pixels. |
@@ -154,7 +156,7 @@ Imagens em páginas do OneNote são representadas pelos elementos **img**. Um el
 
 ### <a name="output-html-examples-for-images"></a>Exemplos de HTML de saída para imagens
 
-Os elementos **img** de saída contêm pontos de extremidade para recursos de arquivo de imagem e o tipo de imagem, como mostrado abaixo. Você pode fazer [solicitações GET separadas a pontos de extremidade de recurso de imagem](/graph/api/resource-get?view=graph-rest-1.0) para recuperar os respectivos conteúdos binários.
+Os elementos **img** de saída contêm pontos de extremidade para recursos de arquivo de imagem e o tipo de imagem, como mostrado abaixo. Você pode fazer [solicitações GET separadas a pontos de extremidade de recurso de imagem](/graph/api/resource-get) para recuperar os respectivos conteúdos binários.
 
 ```html
 <img 
@@ -239,7 +241,8 @@ Como os usuários podem mover as imagens na página, os índices retornados pode
 
 As páginas do OneNote podem conter vídeos inseridos representados pelos elementos **iframe**. 
 
-> **Observação:** você também pode [anexar um arquivo de vídeo usando um elemento **object**](onenote-images-files.md#adding-files).
+> [!NOTE]
+> Você também pode [anexar um arquivo de vídeo usando um elemento **object**](onenote-images-files.md#adding-files).
 
 #### <a name="input-attributes"></a>Atributos de entrada
 
@@ -271,7 +274,8 @@ Os elementos **iframe** de saída contêm pontos de extremidade que se vinculam 
 
 As páginas do OneNote contêm anexos de arquivo representados pelos elementos **object**. Um elemento **object** pode conter os atributos a seguir no HTML de entrada e saída.
 
-> **Observação:** As APIs do OneNote também podem renderizar conteúdo de arquivo como imagens em uma página quando o arquivo é enviado como uma imagem e usa o atributo **data-render-src**.
+> [!NOTE]
+> As APIs do OneNote também podem renderizar conteúdo de arquivo como imagens em uma página quando o arquivo é enviado como uma imagem e usa o atributo **data-render-src**.
 > Exemplo: `<img data-render-src="name:part-name" ... />`
  
 
@@ -279,7 +283,7 @@ As páginas do OneNote contêm anexos de arquivo representados pelos elementos *
 
 |Atributo de entrada|Descrição|
 |:------|:------|
-| data | Obrigatório. O nome da parte que representa o arquivo na [solicitação de partes múltiplas](/graph/api/section-post-pages?view=graph-rest-1.0#example). |
+| data | Obrigatório. O nome da parte que representa o arquivo na [solicitação de partes múltiplas](/graph/api/section-post-pages#example). |
 | data-attachment | Necessário. O nome do arquivo. |
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | style | As propriedades de posição e tamanho para o objeto: **position** (somente **absolute**), **left**, **top** e **width**.<br/><br/>Usado para criar um objeto [posicionado absoluto](onenote-abs-pos.md), somente se o objeto for um filho direto do corpo quando o corpo define `data-absolute-enabled="true"`.<br/><br/>Exemplo: `<object style="position:absolute;top:350px;left:300px" ... />` |
@@ -293,14 +297,14 @@ As páginas do OneNote contêm anexos de arquivo representados pelos elementos *
 | data | O ponto de extremidade para o recurso de arquivo. |
 | data-attachment | O nome do arquivo. |
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
-| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get?view=graph-rest-1.0) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
+| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | style | As propriedades de posição do objeto. |
 | type | O tipo de arquivo de mídia padrão. |
  
 
 #### <a name="output-html-example-for-objects"></a>Exemplo de HTML de saída para objetos
 
-Os elementos **object** de saída contêm pontos de extremidade que se vinculam aos recursos de arquivo na página, como mostrado. Você pode fazer [solicitações GET separadas a pontos de extremidade de recurso de arquivo](/graph/api/resource-get?view=graph-rest-1.0) para recuperar os respectivos conteúdos binários.
+Os elementos **object** de saída contêm pontos de extremidade que se vinculam aos recursos de arquivo na página, como mostrado. Você pode fazer [solicitações GET separadas a pontos de extremidade de recurso de arquivo](/graph/api/resource-get) para recuperar os respectivos conteúdos binários.
 
 ```html
 <object
@@ -329,7 +333,7 @@ Os parágrafos, cabeçalhos e outros contêineres de texto podem incluir os atri
 |:------|:------|
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | data-tag | Uma [marca de anotação](onenote-note-tags.md) em um elemento **p** ou **h1** - **h6**. |
-| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get?view=graph-rest-1.0) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
+| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | style | As propriedades [style](#styles) do CSS do elemento. No HTML de saída, esses valores podem ser retornados embutidos em elementos filho apropriados ou em elementos **span**. |
  
 
@@ -373,7 +377,7 @@ Listas e itens de lista podem conter os atributos a seguir no HTML de entrada e 
 |:------|:------|
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | data-tag |  Uma [marca de anotação](onenote-note-tags.md) em um período em um elemento **li**. |
-| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get?view=graph-rest-1.0) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
+| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | style | O **list-style-type** e as propriedades [style](#styles) do CSS do elemento. No HTML de saída, as configurações no nível de lista são retornadas em itens de lista. As propriedades padrão não são retornadas. |
  
 ### <a name="list-styles"></a>Estilos de lista
@@ -452,15 +456,15 @@ As tabelas podem conter os atributos a seguir no HTML de entrada e saída. As AP
 | largura | Largura da tabela |
 | bgcolor | A cor do plano de fundo da tabela |
 
-**Observação:** não há suporte para o uso da propriedade **border** no atributo do estilo de uma tabela de html de entrada. 
- 
+> [!NOTE]
+> Não há suporte para o uso da propriedade **borda** no atributo do estilo de uma tabela de html de entrada.
 
 #### <a name="output-attributes"></a>Atributos de saída
 
 |Atributo de saída|Descrição|
 |:------|:------|
 | data-id | Uma referência para o elemento.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
-| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get?view=graph-rest-1.0) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
+| id | Uma ID exclusiva, gerada para o elemento. Retornado por [solicitações GET a um ponto de extremidade de *conteúdo* da página](/graph/api/page-get) quando a opção de consulta `includeIDs=true` é usada.<br/><br/>Usado para [atualizar conteúdo da página](onenote-update-page.md). |
 | style | As propriedades [style](#styles) do CSS do elemento. |
  
 
@@ -589,7 +593,8 @@ Este é o HTML de entrada enviado no corpo da mensagem para criar a página.
 
 Este é o HTML de saída que o Microsoft Graph retorna quando você [obtém o conteúdo da página](onenote-get-content.md).
 
-> **Observação:** quando você [cria uma página](onenote-create-page.md) ou [obtém metadados de página](/graph/api/page-get?view=graph-rest-1.0), a API retorna a URL de ponto de extremidade do *conteúdo* da página na propriedade **contentUrl**.
+> [!NOTE]
+> Quando você [cria uma página](onenote-create-page.md) ou [obtém metadados de página](/graph/api/page-get), a API retorna a URL de ponto de extremidade do *conteúdo* da página na propriedade **contentUrl**.
 
 ```html
 <html htmlns="https://www.w3.org/1999/xhtml" lang="en-US">

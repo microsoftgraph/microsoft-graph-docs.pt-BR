@@ -1,16 +1,16 @@
 ---
-title: Assine para alterar notificações de APIs de impressão na nuvem usando o Microsoft Graph
-description: Saiba como assinar para alterar as notificações de eventos de trabalho de impressão usando a API do Microsoft Graph.
+title: Assine para alterar as notificações de APIs de impressão em nuvem
+description: Saiba como assinar para alterar notificações para vários eventos de trabalho de impressão usando a API do Microsoft Graph.
 author: jahsu
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: df511878bfebba02bd68ede445a26b66233caeae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9c7319d55a8ea78fa08f5a21a8986b55a552a2f7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143455"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66443785"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Assine para alterar notificações de APIs de impressão na nuvem usando o Microsoft Graph
 
@@ -31,7 +31,7 @@ Antes de aproveitar as vantagens das notificações de alteração por meio do M
 A Impressão Universal atualmente oferece suporte a notificações para dois cenários relacionados a trabalhos de impressão:
 
 * PrintTask é acionado (JobStarted): um aplicativo pode se inscrever para receber notificações quando o printTask(gancho) é acionado.
-Para obter detalhes sobre como acionar uma tarefa, confira [Estendendo a Impressão Universal para oferecer suporte ao pull de impressão](./universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing). Atualmente, um printTask pode ser acionado apenas para um evento JobStarted. Um evento JobStarted é gerado quando um trabalho de impressão é criado com sucesso, seu conteúdo é carregado e o processamento de trabalho é iniciado.  
+Para obter detalhes sobre como acionar uma tarefa, consulte [Habilitar impressão segura](./universal-print-concept-overview.md#enable-pull-printing). Atualmente, um printTask pode ser acionado apenas para um evento JobStarted. Um evento JobStarted é gerado quando um trabalho de impressão é criado com sucesso, seu conteúdo é carregado e o processamento de trabalho é iniciado.  
 
 * Jobfetchable: após o início do trabalho, aplicativos de impressão de terceiros ou a Impressão Universal podem fazer algum processamento (como converter o conteúdo XPS em PDF para uma impressora PDF). Depois que o processamento for concluído e a conteúdo estiver pronto para ser baixado por uma impressora, um evento JobFetchable é gerado para o trabalho de impressão correspondente.
 
@@ -43,13 +43,13 @@ Para obter detalhes sobre como acionar uma tarefa, confira [Estendendo a Impress
 Para obter informações sobre como ouvir as notificações do Microsoft Graph, confira [Usar notificações de alteração e controlar alterações com o Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) e [Configurar notificações para alterações nos dados do usuário – Exemplos de código](./webhooks.md#code-samples).
 
 
-### <a name="scopes"></a>Escopos
+### <a name="permission-scopes"></a>Escopos de permissão
 
 Para assinar as notificações de trabalhos de impressão, os aplicativos devem ter os seguintes escopos de permissão aprovados no locatário do Azure AD do cliente: 
 
-* Para evento printTask acionado (JobStarted), as permissões listadas em [Obter taskDefinition](/graph/api/printtaskdefinition-get?view=graph-rest-v1.0&tabs=http%22%20%5Cl%20%22permissions%22%20%5C). 
+* Para evento printTask acionado (JobStarted), as permissões listadas em [Obter taskDefinition](/graph/api/printtaskdefinition-get). 
 
-* Para evento JobFetchable, as permissões listadas em [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http).
+* Para evento JobFetchable, as permissões listadas em [Criar assinatura](/graph/api/subscription-post-subscriptions).
 
 Os aplicativos devem [gerar e usar o token de segurança do Azure AD](/graph/auth-v2-service?context=graph%2Fapi%2F1.0) no cabeçalho de solicitação da API do Microsoft Graph. O token de segurança contém as declarações de acordo com os escopos aprovados para o locatário do Azure AD do cliente por seu administrador.  
 
@@ -58,22 +58,24 @@ Os aplicativos devem [gerar e usar o token de segurança do Azure AD](/graph/aut
 
 Alguns aplicativos monitoram as filas de impressão em busca de trabalhos recebidos e para serem notificados assim que houver um trabalho válido na fila. Após serem notificados, eles podem coletar os metadados relevantes do trabalho ou até mesmo realizar modificações no trabalho de impressão – incluindo abortar o trabalho ou redirecionar o trabalho da fila de impressão atual para outra fila após modificar os atributos do trabalho corretamente. 
 
-Antes de criar uma notificação para um evento **printTask**-acionado, certifique-se de que o aplicativo criou o seguinte: 
+Antes de criar uma notificação para um evento **printTask**-acionado, certifique-se de que o aplicativo criou o seguinte:
 
-- Um [printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-v1.0&tabs=http)  para o locatário do Azure AD do cliente. Uma única definição de tarefa pode ser associada a uma ou mais impressoras no mesmo locatário do Azure AD. 
+- Um [printTaskDefinition](/graph/api/print-post-taskdefinitions)  para o locatário do Azure AD do cliente. Uma única definição de tarefa pode ser associada a uma ou mais impressoras no mesmo locatário do Azure AD. 
 
-- Um [printTaskTrigger](/graph/api/printer-post-tasktriggers?view=graph-rest-v1.0&tabs=http) de cada uma das filas de impressão para as quais o parceiro quer receber uma notificação quando um novo trabalho de impressão for iniciado. O **printTaskTrigger** precisa ser vinculado ao **printTaskDefinition**. 
+- Um [printTaskTrigger](/graph/api/printer-post-tasktriggers) de cada uma das filas de impressão para as quais o parceiro quer receber uma notificação quando um novo trabalho de impressão for iniciado. O **printTaskTrigger** precisa ser vinculado ao **printTaskDefinition**. 
 
 >[!NOTE]
 >Uma impressora pode ser associada a apenas um **printTaskTrigger** e um **printTaskTrigger** pode ser associado a apenas um **printTaskDefinition**. No entanto, um **printTaskDefinition** pode ter um ou mais **printTaskTriggers** associados a ele. 
 
-Com o **printTaskDefinition** existente para o locatário do Azure AD do cliente, o aplicativo pode [criar uma assinatura para um evento printTask acionado (JobStarted) usando o printTaskDefinition](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http). Ao criar a assinatura:  
+Com o **printTaskDefinition** existente para o locatário do Azure AD do cliente, o aplicativo pode [criar uma assinatura para um evento printTask acionado (JobStarted) usando o printTaskDefinition](/graph/api/subscription-post-subscriptions). Ao criar a assinatura:  
 
 * O campo `resource` precisa ser definido como `print/taskDefinitions/{printTaskDefinition ID}/tasks`. 
 * O campo `changeType` precisa ser definido como `created`. 
-* O campo `expirationDateTime` precisa ser menor que o [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). 
+* O campo `expirationDateTime` precisa ser menor que o [tempo máximo de expiração](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
 
-Para obter mais detalhes, confira [Propriedades do tipo de recurso da assinatura.](/graph/api/resources/subscription?view=graph-rest-v1.0#properties).
+Para obter mais detalhes, confira [Propriedades do tipo de recurso da assinatura.](/graph/api/resources/subscription#properties).
+
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 <!-- {
@@ -131,9 +133,11 @@ Uma notificação JobFetchable precisa ser criada para cada fila da impressora. 
 * O campo `resource` precisa ser definido como 'print/printers/{printer id}/jobs'. 
 * O campo `changeType` precisa ser definido como `updated`. 
 * O campo `notificationQueryOptions` precisa ser definido como `$filter = isFetchable eq true`. 
-* O campo `expirationDateTime` precisa ser menor que o [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). 
+* O campo `expirationDateTime` precisa ser menor que o [tempo máximo de expiração](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type). 
 
-Para obter mais detalhes, confira [Propriedades do tipo de recurso da assinatura.](/graph/api/resources/subscription?view=graph-rest-v1.0#properties).
+Para obter mais detalhes, confira [Propriedades do tipo de recurso da assinatura.](/graph/api/resources/subscription#properties).
+
+### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 <!-- {
@@ -183,13 +187,13 @@ Content-Type: application/json
 ```
 
 
-## <a name="renewing-a-notification-subscription"></a>Renovando uma assinatura de notificação
+## <a name="renew-a-notification-subscription"></a>Renovar uma assinatura de notificação
 
-O Microsoft Graph tem um limite de tempo de expiração. Para obter detalhes, confira [tempo máximo de expiração](/graph/api/resources/subscription?view=graph-rest-v1.0#maximum-length-of-subscription-per-resource-type). Para continuar recebendo notificações, é necessário que a assinatura seja renovada periodicamente, usando a [API de atualização da assinatura](/graph/api/subscription-update?view=graph-rest-v1.0&tabs=http). 
+O Microsoft Graph tem um limite de tempo de expiração. Para obter detalhes, confira [tempo máximo de expiração](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type). Para continuar recebendo notificações, é necessário que a assinatura seja renovada periodicamente, usando a [API de atualização da assinatura](/graph/api/subscription-update). 
 
-## <a name="other-operations-on-notification-subscriptions"></a>Outras operações sobre assinaturas de notificação 
+## <a name="get-or-delete-notification-subscriptions"></a>Obter ou excluir assinaturas de notificação
 
-Os aplicativos podem [obter](/graph/api/subscription-get?view=graph-rest-v1.0&tabs=http) detalhes da assinatura ou podem [excluir](/graph/api/subscription-delete?view=graph-rest-v1.0&tabs=http) uma assinatura quando necessário. Para obter detalhes, confira [Usar a API do Microsoft Graph para receber notificações de alteração](/graph/api/resources/webhooks?view=graph-rest-v1.0).
+Os aplicativos podem [obter](/graph/api/subscription-get) detalhes da assinatura ou [excluir](/graph/api/subscription-delete) uma assinatura quando necessário. Para obter detalhes, confira [Usar a API do Microsoft Graph para receber notificações de alteração](/graph/api/resources/webhooks).
 
 
 ## <a name="faqs"></a>Perguntas frequentes
@@ -201,10 +205,10 @@ Para obter detalhes, confira [Validação do ponto de extremidade da notificaç�
 Os aplicativos devem processar e reconhecer todas as notificações de alteração recebidas. Para obter detalhes, confira [Processando a notificação de alteração](./webhooks.md#processing-the-change-notification).
 
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>Como posso obter uma lista de assinaturas ativas?
-Para obter detalhes sobre como recuperar uma lista de assinaturas de webhook, confira [Listar assinaturas](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http).
+Para obter detalhes sobre como recuperar uma lista de assinaturas de webhook, confira [Listar assinaturas](/graph/api/subscription-list).
 
 
 ## <a name="see-also"></a>Confira também
 
-- Para saber mais sobre a API de impressão na nuvem do Microsoft Graph, confira [Visão geral da API de impressão na nuvem da Impressão Universal](/graph/universal-print-concept-overview). 
+- Para saber mais sobre a API de impressão na nuvem do Microsoft Graph, confira [Visão geral da API de impressão na nuvem da Impressão Universal](/graph/universal-print-concept-overview).
 - Para ver sugestões ou comentários sobre a API de impressão na nuvem do Microsoft Graph, visite a [Comunidade de tecnologia da Impressão Universal](https://aka.ms/community/UniversalPrint).

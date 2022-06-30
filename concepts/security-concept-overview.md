@@ -1,20 +1,22 @@
 ---
 title: Visão geral da API de Segurança do Microsoft Graph
-description: Você pode usar a API de Segurança do Microsoft Graph para se conectar aos produtos, serviços e parceiros de segurança da Microsoft para simplificar operações de segurança e melhorar a proteção contra ameaças, a detecção de ameaças e a capacidade de resposta. A API de Segurança do Microsoft Graph é um serviço (ou agente) intermediário que proporciona uma interface de programação única para conectar diversos provedores de Segurança do Microsoft Graph (também chamados provedores de segurança ou provedores). As solicitações para a API de Segurança do Microsoft Graph são federadas para todos os provedores de segurança aplicáveis. Os resultados são agregados e retornam ao aplicativo solicitantes em um esquema comum, como mostrado no diagrama a seguir. Para saber detalhes, confira o fluxo de dados da API de Segurança do Microsoft Graph.
+description: Use a API de segurança do Microsoft Graph para conectar produtos, serviços e parceiros de segurança da Microsoft para simplificar as operações de segurança e aprimorar os recursos de resposta.
 author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7a8f45505439446e9d42881dddf32b2f08cdb8e0
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 2226f5a75db859f7cbc20db1d1a9a53b1caae2d3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945001"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437573"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
-Você pode usar a API de Segurança do Microsoft Graph para se conectar aos produtos, serviços e parceiros de segurança da Microsoft para simplificar operações de segurança e melhorar a proteção contra ameaças, a detecção de ameaças e a capacidade de resposta. A API de Segurança do Microsoft Graph é um serviço (ou agente) intermediário que proporciona uma interface de programação única para conectar diversos [provedores de Segurança do Microsoft Graph](/graph/api/resources/securityvendorinformation) (também chamados provedores de segurança ou provedores). As solicitações para a API de Segurança do Microsoft Graph são federadas para todos os provedores de segurança aplicáveis. Os resultados são agregados e retornam ao aplicativo solicitantes em um esquema comum, como mostrado no diagrama a seguir. Para saber detalhes, confira o[ fluxo de dados da API de Segurança do Microsoft Graph](security-dataflow.md).
+Você pode usar a API de Segurança do Microsoft Graph para se conectar aos produtos, serviços e parceiros de segurança da Microsoft para simplificar operações de segurança e melhorar a proteção contra ameaças, a detecção de ameaças e a capacidade de resposta.
+
+A API de Segurança do Microsoft Graph é um serviço (ou agente) intermediário que proporciona uma interface de programação única para conectar diversos [provedores de Segurança do Microsoft Graph](/graph/api/resources/securityvendorinformation) (também chamados provedores de segurança ou provedores). As solicitações para a API de Segurança do Microsoft Graph são federadas para todos os provedores de segurança aplicáveis. Os resultados são agregados e retornam ao aplicativo solicitantes em um esquema comum, como mostrado no diagrama a seguir. Para saber detalhes, confira o[ fluxo de dados da API de Segurança do Microsoft Graph](security-dataflow.md).
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
@@ -71,8 +73,9 @@ Use o Microsoft Secure Score (visualização) para proporcionar visibilidade às
 ### <a name="manage-your-ediscovery-workflows-preview"></a>Gerenciar seus fluxos de trabalho de Descoberta Eletrônica (versão prévia)
 
 As organizações contam com os recursos do [Descoberta Eletrônica do Microsoft Purview](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) para atender aos requisitos e descobrir a verdade sobre o que aconteceu em sua organização quando necessário, com base em requisitos internos ou externos, como litígio, investigação ou conformidade regulatória.
-Em muitas organizações, os fluxos de trabalho de descoberta eletrônica são frequentes, críticos e de alto volume. Nos casos em que há tarefas repetidas comuns ou um alto volume de atividades, as APIs ajudarão a fornecer uma maneira escalável de repetir processos de forma consistente e eficaz.
-Muitas organizações lidam com um grande volume de casos e solicitações de descoberta eletrônica e preferem automatizar algumas tarefas. As APIs do Microsoft Graph para Descoberta Eletrônica avançada fornecem acesso de API à maioria das funções disponíveis na solução de Descoberta Eletrônica do Microsoft Purview (premium).
+
+Em muitas organizações, os fluxos de trabalho de descoberta eletrônica são frequentes, críticos e de alto volume. Nos casos em que há tarefas repetidas comuns ou um alto volume de atividades, as APIs ajudarão a fornecer uma maneira escalável de repetir processos de forma consistente e eficaz. Muitas organizações lidam com um grande volume de casos e solicitações de descoberta eletrônica e preferem automatizar algumas tarefas. As APIs do Microsoft Graph para Descoberta Eletrônica avançada fornecem acesso de API à maioria das funções disponíveis na solução de Descoberta Eletrônica do Microsoft Purview (premium).
+
 Dependendo dos sistemas e processos atuais em vigor, as organizações podem ter várias prioridades para automação e integração, desde processos upstream, como criação de caso, até downstream, como coleta, consultas de conjunto de revisão ou exportação. O suporte a fluxos de trabalho com APIs em todo o fluxo de trabalho avançado de Descoberta Eletrônica fornece flexibilidade e opções.
 
 #### <a name="build-custom-ediscovery-workflows-with-microsoft-graph"></a>Criar fluxos de trabalho de descoberta eletrônica personalizados com o Microsoft Graph
@@ -89,13 +92,14 @@ Dependendo dos sistemas e processos atuais em vigor, as organizações podem ter
 
 A tabela a seguir lista os benefícios que as diferentes soluções de segurança podem acessar ao se integrar com a API de Segurança do Microsoft Graph.  
 
-|**Área**     | **Benefícios**|
-|:---------------|:---------|
+|**Área**        | **Benefícios**|
+|:---------------|:------------|
 |**Gerenciamento de Provedores de Serviços de Segurança (MSSPs)**|<ul><li>Integração simplificada com ferramentas de operações de segurança, fluxos de trabalho e relatórios.</li> <li>Redução no tempo e no esforço de implantação e manutenção.</li> <li>Resposta automática para alertas ao realizar ação contra ameaças.</li> <li>Capacidade de oferecer mais vantagens para os clientes MSSP.</li></ul>|
 |**Soluções de gerenciamento de risco de TI e SIEM**|<ul><li>Integração perfeita com soluções de segurança da Microsoft e ecossistemas parceiros.</li> <li>Metadados de alerta avançados.</li> <li>Melhor correlação de alerta.</li></ul>|
 |**Aplicativos** <br>(Inteligência contra ameaças, celular, nuvem, IOT, detecção de fraudes, Identidade e acesso, risco e conformidade, firewall e muito mais)|<ul><li>Gerenciamento unificado de ameaças, prevenção e gerenciamento de riscos em diversas soluções de segurança.</li> <li>Alertas, ações e inteligência contra ameaças do cliente expostas por meio do Microsoft Graph.</li> <li>Integração instantânea com soluções habilitadas pelo Microsoft Graph.</li> <li>Obtenha insights de segurança aprofundados para treinar outras soluções de segurança.</li> </ul>|
 
 ## <a name="api-reference"></a>Referência da API
+
 Está procurando a referência de API para esse serviço?
 
 - [API de Segurança no Microsoft Graph v1.0](/graph/api/resources/security-api-overview)
@@ -103,6 +107,5 @@ Está procurando a referência de API para esse serviço?
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overview?)
 - Explorar [exemplos da API de segurança do Microsoft Graph](https://aka.ms/graphsecurityapicode)
 - Interessado em se tornar um provedor de segurança? Contate [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).

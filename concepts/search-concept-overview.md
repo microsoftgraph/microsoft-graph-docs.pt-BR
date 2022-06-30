@@ -1,16 +1,16 @@
 ---
-title: Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
-description: Use a API da Pesquisa da Microsoft para indexar conteúdo e adicionar pesquisa ao Office e o conteúdo indexado em seus aplicativos.
+title: Visão geral da API de Pesquisa da Microsoft no Microsoft Graph
+description: Use a API de Pesquisa da Microsoft no Microsoft Graph para estender a Pesquisa da Microsoft aos seus aplicativos. Consulte dados que a Pesquisa da Microsoft indexa e inclua dados externos personalizados.
 ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 05ab6e22ba23c16ce1ed1c0da7b622f6110074f2
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: ee2a62e6be739122140ccadefd993e069fa9e6cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587438"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446088"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Visão geral da API da Pesquisa da Microsoft no Microsoft Graph
 
@@ -21,13 +21,13 @@ A Pesquisa da Microsoft é um mecanismo de pesquisa empresarial que proporciona 
 
 ### <a name="one-unified-search-endpoint-for-microsoft-cloud-data"></a>Um ponto de extremidade de pesquisa unificado para dados de nuvem da Microsoft
 
-A API da Pesquisa da Microsoft fornece um ponto de extremidade de pesquisa que você pode usar para permitir que os desenvolvedores [consultem](/graph/api/search-query) dados na nuvem da Microsoft que a Pesquisa da Microsoft já indexa, como mensagens e eventos nas caixas de correio do Outlook e arquivos no OneDrive e no SharePoint.
+A API de pesquisa da Microsoft fornece um ponto de extremidade de pesquisa unificado que você pode usar para [consultar](/graph/api/search-query) dados nas mensagens e eventos na nuvem da Microsoft&mdash; em caixas de correio e arquivos do Outlook no OneDrive e no SharePoint&mdash; que a Pesquisa da Microsoft já indexa.
 
 ### <a name="include-custom-external-data-in-search-experience"></a>Incluir dados externos personalizados na experiência de pesquisa
 
-Use os [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) para incluir dados que estejam fora da nuvem da Microsoft em sua experiência de pesquisa. Por exemplo, conecte-se ao banco de dados de recursos humanos ou ao catálogo de produtos da organização. Em seguida, use a API de Pesquisa da Microsoft para [consultar](/graph/api/search-query) diretamente a fonte de dados externa. 
+Use os [conectores do Microsoft Graph](/microsoftsearch/connectors-overview) para incluir dados que estejam fora da nuvem da Microsoft em sua experiência de pesquisa. Por exemplo, conecte-se ao banco de dados de recursos humanos ou ao catálogo de produtos da organização. Em seguida, use a API de Pesquisa da Microsoft para [consultar](/graph/api/search-query) diretamente a fonte de dados externa.
 
-Navegue na [galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery) para encontrar conectores prontos para uso. Alternativamente, você pode [construir seus próprios conectores](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases) para indexar itens personalizados externos e consultar fontes de dados externas específicas.
+Navegue na [galeria de conectores do Microsoft Graph](/microsoftsearch/connectors-gallery) para encontrar conectores prontos para uso. Alternativamente, você pode [construir seus próprios conectores](/graph/api/resources/indexing-api-overview#common-use-cases) para indexar itens personalizados externos e consultar fontes de dados externas específicas.
 
 ### <a name="consistent-up-to-date-search-experience"></a>Experiência de pesquisa atualizada e consistente
 
@@ -40,17 +40,17 @@ A API de pesquisa da Microsoft suporta para pesquisar o seguinte conteúdo na nu
 - Recursos de [mensagens](/graph/api/resources/message) de email e [eventos](/graph/api/resources/event) do calendário do Outlook.
 - Arquivos e pastas do SharePoint e OneDrive (recursos [driveItem](/graph/api/resources/driveitem)), [lista](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site) e recursos de [unidade](/graph/api/resources/drive).
 - Recursos [pessoais](/graph/api/resources/person) em uma organização que são mais relevantes para um usuário.
-- Conteúdo ingerido por meio da plataforma de conectores do Microsoft Graph: recursos [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true).
+- Conteúdo ingerido por meio da plataforma de conectores do Microsoft Graph: recursos [externalItem](/graph/api/resources/externalitem).
 - Recursos de resposta de pesquisa administrativa: [acrônimos](/graph/api/resources/search-acronym), [indicadores](/graph/api/resources/search-bookmark) e [recursos QnA](/graph/api/resources/search-qna).
 
 ## <a name="api-reference"></a>Referência da API
 
 Está procurando a referência de API para esse serviço?
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)(v1.0)
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)(pré-visualização)
-- [Usar a API de Pesquisa da Microsoft para indexar dados](/graph/api/resources/indexing-api-overview) (pré-visualização)
-- [Usar a API da Pesquisa da Microsoft para gerenciar as respostas de pesquisa administrativa](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (versão prévia)
+- [Usar a API de Pesquisa da Microsoft para consultar dados v1.0](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para consultar dados beta](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para indexar dados](/graph/api/resources/indexing-api-overview)
+- [Usar a API de Pesquisa da Microsoft para gerenciar as respostas de pesquisa administrativa beta](/graph/api/resources/search-api-answers-overview?view=graph-rest-beta&preserve-view=true) (versão prévia)
 
 ## <a name="next-steps"></a>Próximas etapas
 

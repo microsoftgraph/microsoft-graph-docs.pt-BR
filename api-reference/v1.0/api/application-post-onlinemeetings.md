@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 198bf3341b22d4461f276920c9e9fdee52f207a8
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f26b24a1a562e4d55e1be7c5f4c33b8a4341b05f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441136"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556196"
 ---
 # <a name="create-onlinemeeting"></a>Criar ReuniãoOnline
 
@@ -59,7 +59,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [onlin
 
 > [!CAUTION]
 >
-> Não há suporte para atribuir o `presenter` ou `coorganizer` a função a usuários que não estão registrados no Azure Active Directory. Para obter detalhes, consulte [Problemas conhecidos](/graph/concepts/known-issues.md#presenter-role-assigned-to-non-aad-users) para obter mais detalhes.
+> No momento, não há suporte para a atribuição da função `presenter` a usuários que não estão registrados no Active Directory do Azure. Para obter detalhes, consulte [Problemas conhecidos](/graph/known-issues#presenter-role-cannot-be-assigned-to-non-azure-ad-participants) para obter mais detalhes.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.

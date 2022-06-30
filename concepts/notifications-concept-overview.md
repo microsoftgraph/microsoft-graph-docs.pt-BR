@@ -1,27 +1,27 @@
 ---
-title: Habilitar experiências de notificação centradas no ser humano usando notificações do Microsoft Graph (preterido)
-description: A plataforma de notificações do Microsoft Graph fornece uma abordagem centrada no ser humano que permite segmentar seus usuários em todo e qualquer ponto de extremidade do dispositivo.
+title: Ativando experiências de notificação centradas em humanos (preterido)
+description: A API de notificações do Microsoft Graph parou de retornar dados em janeiro de 2022. Para uma experiência alternativa, consulte a documentação dos Hubs de Notificação do Azure.
 ms.localizationpriority: high
 ms.prod: notifications
 ms.custom: scenarios:getting-started
 author: merzink
-ms.openlocfilehash: 0979e2c780d0d589ec24575385113057e6a44066
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: 6c1a0a27be58cafd0d8234114391513c708c21a9
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61609015"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447153"
 ---
 # <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications-deprecated"></a>Habilitar experiências de notificação centradas no ser humano usando notificações do Microsoft Graph (preterido)
 
 > [!IMPORTANT]
-> A API de notificações do Microsoft Graph está obsoleta e deixará de retornar dados até o final de janeiro de 2022. Para uma experiência de notificação alternativa, consulte os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs) e [veja esta postagem no blog](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/) para obter mais informações.
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte a postagem no blog [Desativando a API de notificações do Microsoft Graph (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 As notificações são uma das formas mais eficazes de interagir com os usuários do seu aplicativo. Uma ótima experiência de notificação pode ajudar a abrir um canal de comunicação quase em tempo real entre você e seus usuários, o que pode aumentar o engajamento com o aplicativo no momento certo, tornar os usuários mais produtivos e alertá-los sobre eventos importantes ou ações necessárias.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/cmpPFhrS8ZA]
 
-Hoje, os usuários podem acessar seus aplicativos e serviços por meio de uma ampla variedade de plataformas e formatos. Essa combinação de dispositivos exige que você entenda e dê suporte a sistemas de notificação multiplataforma, mapeie usuários para pontos de extremidade e mantenha o estado de notificação em todos os dispositivos. 
+Hoje, os usuários podem acessar seus aplicativos e serviços por meio de uma ampla variedade de plataformas e formatos. Essa combinação de dispositivos exige que você entenda e dê suporte a sistemas de notificação multiplataforma, mapeie usuários para pontos de extremidade e mantenha o estado de notificação em todos os dispositivos.
 
 A maioria dos outros sistemas de notificação elimina a necessidade de entender e direcionar sistemas de notificação por push específicos da plataforma, mas ainda são projetados para cada dispositivo. A plataforma de notificações do Microsoft Graph fornece uma abordagem centrada no ser humano que permite segmentar seus usuários em todo e qualquer ponto de extremidade do dispositivo.
 

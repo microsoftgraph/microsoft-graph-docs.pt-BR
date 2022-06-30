@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API do Microsoft Teams
-description: 'O Microsoft Teams é o melhor hub para trabalhos em equipe e comunicações inteligentes. '
+description: Use a API do Microsoft Teams no Microsoft Graph para automatizar os ciclos de vida da equipe, criar e gerenciar as equipes e canais, implantar aplicativos e ser notificado sobre alterações.
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f0bed81ec3857dcb2ef7678b4ff1b1644e0eaae2
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: dedda77e759cb80d1e0579f8aef51847d5afa435
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510501"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556329"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -87,7 +87,8 @@ O Microsoft Teams oferece suporte à assinatura para alterações (criar, atuali
 
 Está procurando a referência de API para esse serviço?
 
-Usar a API do [Teams no Microsoft Graph](/graph/api/resources/teams-api-overview).
+- [API do Teams no Microsoft Graph v1.0](/graph/api/resources/teams-api-overview)
+- [API do Teams no Microsoft Graph beta](/graph/api/resources/teams-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Próximas etapas
 

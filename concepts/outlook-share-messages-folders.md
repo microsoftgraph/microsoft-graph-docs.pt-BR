@@ -1,19 +1,19 @@
 ---
-title: Obter mensagens do Outlook em uma pasta compartilhada ou delegada
-description: O Outlook permite que os clientes compartilhem pastas de e-mail entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas individuais. O Outlook também permite que um cliente representante a outro usuário agir em nome do cliente.
+title: Obter mensagens do Outlook em uma pasta compartilhada ou delegada usando a API de email do Outlook
+description: Use a API de email do Outlook para compartilhar pastas de email com outras pessoas e gerenciar o acesso às pastas. Você também pode delegar a outro usuário para agir em seu nome.
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: c2798e01d29badc1d3228692d02caca1ab89fa87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d0199c3971823f9efe2149860b516b5d1bf89424
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071746"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444303"
 ---
-# <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Obtenha mensagens do Outlook em uma pasta compartilhada ou delegada
+# <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Obter mensagens do Outlook em uma pasta compartilhada ou delegada
 
-O Outlook permite que os clientes compartilhem pastas de email entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas individuais. O Outlook também permite que um cliente delegue outro usuário para agir em nome do cliente e acesse pastas de correio específicas ou toda a caixa de correio do cliente; isso também é conhecido como "delegação" no Outlook.
+O Outlook permite que os clientes compartilhem pastas de e-mail entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas individuais. O Outlook também permite que um cliente delegue outro usuário para agir em nome do cliente e acesse pastas de correio específicas ou toda a caixa de correio do cliente; isso também é conhecido como "delegação" no Outlook.
 
 Programaticamente, o Microsoft Graph oferece suporte à obtenção de mensagens em pastas de email compartilhadas por outros usuários, bem como à obtenção das próprias pastas compartilhadas. O suporte também se aplica a pastas que foram delegadas.
 
@@ -67,7 +67,5 @@ Se Henrique não tiver compartilhado sua caixa de entrada com Diogo nem delegado
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Saiba mais sobre:
-
 - [Por que integrar-se com o email do Outlook](outlook-mail-concept-overview.md)
-- [Como usar a API de email](/graph/api/resources/mail-api-overview) e seus [casos de uso](/graph/api/resources/mail-api-overview#common-use-cases) do Microsoft Graph versão 1.0.
+- [Usar a API de email](/graph/api/resources/mail-api-overview) e seus [casos de uso](/graph/api/resources/mail-api-overview#common-use-cases) no Microsoft Graph versão 1.0.

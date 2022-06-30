@@ -1,21 +1,21 @@
 ---
-title: Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
-description: " Blocos de anotações empresariais no Microsoft 365"
+title: Obtenha o conteúdo e a estrutura do OneNote usando a API do OneNote
+description: Obtenha o conteúdo e a estrutura do OneNote enviando uma solicitação GET para o ponto de extremidade de destino. Em seguida, use as opções da cadeia de caracteres de consulta para filtrar as suas consultas e melhorar o desempenho.
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 13a017ac30de19f978c21b1da549efefac985ae7
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 31bcfd207fca8e04f4d476f243752476c65d8a1e
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64586867"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66446172"
 ---
-# <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
+# <a name="get-onenote-content-and-structure"></a>Obter a estrutura e o conteúdo do OneNote
 
 **Aplica-se a**: Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Microsoft 365
 
-Para obter a estrutura e o conteúdo do OneNote, você envia uma solicitação GET para o ponto de extremidade de destino. Por exemplo:
+Para obter o conteúdo e a estrutura do OneNote usando a API do OneNote do Microsoft Graph, envie uma solicitação GET para o ponto de extremidade de destino. Por exemplo:
 
 `GET ../onenote/pages/{id}`
 
@@ -27,8 +27,8 @@ Usando as opções de cadeia de caracteres de consulta, você pode filtrar as co
 > Se você estiver criando uma solução que dê suporte a um dos cenários a seguir, atingirá as limitações da API do OneNote:
 > - Seções do OneNote de Backup/restauração
 > - Fazer backup/restaurar blocos de anotações do OneNote
-> 
-> Para operações de backup e restauração, consulte [Práticas recomendadas para descobrir arquivos e detectar alterações em escala](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
+>
+> Para operações de backup e restauração, consulte [Práticas recomendadas para descobrir arquivos e detectar alterações em escala](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 <a name="request-uri"></a>
 
@@ -38,8 +38,6 @@ Para construir a URI de solicitação, comece com a URL raiz do serviço:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
-<br/>
-
 Em seguida, acrescente o ponto de extremidade do recurso que você deseja recuperar. (Os [caminhos recurso](#resource-paths-for-get-requests) são mostrados na próxima seção).
 
 Sua URI de solicitação completa parecerá com um dos seguintes exemplos:
@@ -48,7 +46,8 @@ Sua URI de solicitação completa parecerá com um dos seguintes exemplos:
 - `https://graph.microsoft.com/v1.0/me/onenote/notes/pages`
 - `https://graph.microsoft.com/v1.0/me/onenote/pages?select=title,self`
 
-> **Observação:** saiba mais sobre a [URL raiz de serviço](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
+> [!NOTE]
+> Saiba mais sobre a [URL raiz de serviço](/graph/api/resources/onenote-api-overview#root-url).
 
 <a name="resource-paths"></a>
 
@@ -76,13 +75,9 @@ Obter páginas (metadados) em todos os blocos de anotações.
 
 `../pages[?filter,orderby,select,expand,top,skip,search,count]`
 
-<br/>
-
 Obter páginas (metadados) de uma seção específica.
 
 `../sections/{section-id}/pages[?filter,orderby,select,expand,top,skip,search,count,pagelevel]`
-
-<br/>
  
 A opção de cadeia de caracteres de consulta `search` está disponível somente para blocos de anotações de consumidor.
 
@@ -98,29 +93,23 @@ Para a coleção de páginas em uma seção, use **pagelevel** para retornar o n
 
 `GET ../sections/{section-id}/pages?pagelevel=true`
 
-
-
 <a name="get-page"></a> 
 
 ### <a name="page-entity"></a>Entidade Page
 
 Obtenha os metadados de uma página específica. 
 
-`../pages/{page-id}[?select,expand,pagelevel]` 
-
-<br/>
+`../pages/{page-id}[?select,expand,pagelevel]`
 
 As páginas podem expandir as propriedades **parentNotebook** e **parentSection**.
 
 A consulta padrão expande a seção pai e seleciona as propriedades `id`, `name` e `self` da seção.
 
-Use **pagelevel** para retornar o nível de recuo da página e sua ordem dentro da seção pai. 
+Use **pagelevel** para retornar o nível de recuo da página e sua ordem dentro da seção pai.
 
 #### <a name="example"></a>Exemplo
 
 `GET ../pages/{page-id}?pagelevel=true`
-
-
 
 <a name="get-page-preview"></a> 
 
@@ -129,8 +118,6 @@ Use **pagelevel** para retornar o nível de recuo da página e sua ordem dentro 
 Obtenha conteúdo de visualização de texto e imagem de uma página.
 
 `../pages/{page-id}/preview`
-
-<br/>
 
 
 A resposta JSON contém conteúdo de visualização que você pode usar para ajudar os usuários a identificar o que está na página.
@@ -155,7 +142,6 @@ Se a página tiver uma imagem que possa ser usada para criar uma interface do us
 
 `<img src="https://www.onenote.com/api/v1.0/resources/{id}/content?publicAuth=true&mimeType=image/png" />`
 
-
 <a name="get-page-content"></a> 
 
 ### <a name="page-html-content"></a>Conteúdo HTML da página
@@ -166,11 +152,8 @@ Obtenha o conteúdo HTML da página.
 
 (*saiba mais sobre [conteúdo HTML retornado](onenote-input-output-html.md)*) 
 
-<br/>
 
 Use a opção de cadeia de caracteres de consulta **includeIDs=true** para obter IDs gerados usados para [atualizar a página](onenote-update-page.md).
-
-
 
 <a name="get-sections"></a>
 
@@ -178,21 +161,15 @@ Use a opção de cadeia de caracteres de consulta **includeIDs=true** para obter
 
 Obtenha todas as seções de todos os blocos de anotações de propriedade de um usuário, incluindo seções em grupos de seções aninhadas.
 
-`../sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sections[?filter,orderby,select,top,skip,expand,count]`
 
 Obtenha todas as seções que estão diretamente em um grupo de seções específico.
 
-`../sectionGroups/{sectiongroup-id}/sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sectionGroups/{sectiongroup-id}/sections[?filter,orderby,select,top,skip,expand,count]`
 
 Obtenha todas as seções que estão diretamente em um bloco de anotações específico.
 
-`../notebooks/{notebook-id}/sections[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks/{notebook-id}/sections[?filter,orderby,select,top,skip,expand,count]`
 
 As seções podem expandir as propriedades **parentNotebook** e **parentSectionGroup**.
 
@@ -200,23 +177,17 @@ A ordem de classificação padrão para seções é `name asc`.
 
 A consulta padrão expande o bloco de anotações pai e o grupo de seções pai e seleciona as propriedades `id`, `name` e `self`.
 
-
-
 <a name="get-section"></a>
 
 ### <a name="section-entity"></a>Entidade Section
 
 Obtenha uma seção específica.
 
-`../sections/{section-id}[?select,expand]` 
-
-<br/>
+`../sections/{section-id}[?select,expand]`
 
 As seções podem expandir as propriedades **parentNotebook** e **parentSectionGroup**.
 
 A consulta padrão expande o bloco de anotações pai e o grupo de seções pai e seleciona as propriedades `id`, `name` e `self`.
-
-
 
 <a name="get-section-groups"></a>
 
@@ -224,15 +195,11 @@ A consulta padrão expande o bloco de anotações pai e o grupo de seções pai 
 
 Obtenha todos os grupos de seções de todos os blocos de anotações que são de propriedade de um usuário, incluindo grupos de seções aninhadas.
 
-`../sectionGroups[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../sectionGroups[?filter,orderby,select,top,skip,expand,count]`
 
 Obtenha todos os grupos de seções que estão diretamente em um bloco de anotações específico. 
 
-`../notebooks/{notebook-id}/sectionGroups[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks/{notebook-id}/sectionGroups[?filter,orderby,select,top,skip,expand,count]`
 
 Os grupos de seções podem expandir as propriedades **sections**, **sectionGroups**, **parentNotebook** e **parentSectionGroup**.
 
@@ -240,23 +207,17 @@ A ordem de classificação padrão para grupos de seções é `name asc`.
 
 A consulta padrão expande o bloco de anotações pai e o grupo de seções pai e seleciona as propriedades `id`, `name` e `self`.
 
-
-
 <a name="get-section-group"></a>
 
 ### <a name="sectiongroup-entity"></a>Entidade SectionGroup
 
 Obtenha um grupo de seções específico.
 
-`../sectionGroups/{sectiongroup-id}[?select,expand]` 
-
-<br/>
+`../sectionGroups/{sectiongroup-id}[?select,expand]`
 
 Os grupos de seções podem expandir as propriedades **sections**, **sectionGroups**, **parentNotebook** e **parentSectionGroup**.
 
 A consulta padrão expande o bloco de anotações pai e o grupo de seções pai e seleciona as propriedades `id`, `name` e `self`.
-
-
 
 <a name="get-notebooks"></a>
 
@@ -264,15 +225,11 @@ A consulta padrão expande o bloco de anotações pai e o grupo de seções pai 
 
 Obtenha todos os blocos de anotações de propriedade do usuário. 
 
-`../notebooks[?filter,orderby,select,top,skip,expand,count]` 
-
-<br/>
+`../notebooks[?filter,orderby,select,top,skip,expand,count]`
 
 Os blocos de anotações podem expandir as propriedades **sections** e **sectionGroups**.
 
 A ordem de classificação padrão para blocos de anotações é `name asc`. 
-
-
 
 <a name="get-notebook"></a>
 
@@ -280,13 +237,9 @@ A ordem de classificação padrão para blocos de anotações é `name asc`.
 
 Obtenha um bloco de anotações específico.
 
-`../notebooks/{notebook-id}[?select,expand]` 
-
-<br/>
+`../notebooks/{notebook-id}[?select,expand]`
 
 Os blocos de anotações podem expandir as propriedades **sections** e **sectionGroups**.
-
-
 
 <a name="get-resource"></a>
 
@@ -294,9 +247,7 @@ Os blocos de anotações podem expandir as propriedades **sections** e **section
 
 Obtenha os dados binários de um recurso específico. 
 
-`../resources/{resource-id}/$value` 
-
-<br/>
+`../resources/{resource-id}/$value`
 
 Você pode encontrar a URI do recurso do arquivo na página de [HTML de saída](onenote-input-output-html.md).
 
@@ -323,16 +274,17 @@ E um rótulo **object** inclui o ponto de extremidade para o recurso do arquivo 
     type="application/pdf" ... />
 ```
 
-> **Observação:** não há suporte para obter uma coleção de recursos. 
+> [!NOTE]
+> Não há suporte para obter uma coleção de recursos. 
 
 Quando um recurso de arquivo é obtido, não é necessário incluir um tipo de conteúdo **Accept** na solicitação.
 
 Para obter mais informações sobre solicitações GET, confira os seguintes recursos na referência do Microsoft Graph API REST:
 
-- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
-- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
-- [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
+- [GET Pages](/graph/api/page-get)
+- [GET Sections](/graph/api/section-get)
+- [GET SectionGroups](/graph/api/sectiongroup-get)
+- [GET Notebooks](/graph/api/notebook-get)
 
 
 
@@ -345,12 +297,17 @@ Você pode consultar entidades do OneNote e o conteúdo de página de pesquisa p
 
 **Lembre-se:**
 
-- Todas as solicitações GET começam com a [URL raiz de serviço raiz](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Exemplos**: `https://www.onenote.com/api/v1.0/me/notes` e `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
+- Todas as solicitações GET começam com a [URL raiz de serviço raiz](/graph/api/resources/onenote-api-overview#root-url).
+  
+  **Exemplos**: `https://www.onenote.com/api/v1.0/me/notes` e `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
-- Os espaços na cadeia de caracteres de consulta da URL devem usar a codificação de %20.<br/><br/>**Exemplo**: `filter=title%20eq%20'biology'`
+- Os espaços na cadeia de caracteres de consulta da URL devem usar a codificação de %20.
 
-- Os nomes de propriedade e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br/><br/>**Exemplo**: `filter=tolower(name) eq 'spring'`
- 
+  **Exemplo**: `filter=title%20eq%20'biology'`
+
+- Os nomes de propriedade e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.
+
+  **Exemplo**: `filter=tolower(name) eq 'spring'`
 
 ### <a name="search--filter"></a>search e filter  
 
@@ -400,7 +357,8 @@ Obtenha todos os blocos de anotações e expanda suas seções e grupos de seç�
 [GET] ../notebooks?expand=sections,sectionGroups(expand=sections)
 ```
  
-> **Observação:** expandir pais de entidades filho ou filhos de entidades pai cria uma referência circular e não tem suporte.
+> [!NOTE]
+> A expansão de pais de entidades filho ou a expansão de filhos de entidades pai cria uma referência circular não compatível.
 
  
 ### <a name="expand--select-multiple-levels"></a>expand e select (vários níveis)  
@@ -507,7 +465,8 @@ E as cinco seguintes (`search` está disponível somente para blocos de anotaç�
 [GET] ../pages?search=biology&filter=createdTime ge 2015-01-01&top=5&skip=10
 ```
 
-> **Observação:** se **search** e **filter** são aplicadas à mesma solicitação, os resultados incluem apenas as entidades que correspondem aos dois critérios.
+> [!NOTE]
+> Se a **pesquisa** e o **filtro** forem aplicados à mesma solicitação, os resultados incluirão apenas as entidades que correspondem a ambos os critérios.
  
 ### <a name="select"></a>select
 
@@ -549,7 +508,8 @@ Obtenha as páginas de 51 a 100. A API retorna 20 entradas por padrão com um m�
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **Observação:** As solicitações GET para páginas que recuperam o número padrão de entradas (ou seja, elas não especificam uma expressão **top**) retornam um link **\@odata.nextLink** na resposta que você pode usar para obter as próximas 20 entradas.
+> [!NOTE]
+> As solicitações GET para páginas que recuperam o número padrão de entradas (ou seja, elas não especificam uma expressão **top**) retornam um link **\@odata.nextLink** na resposta que você pode usar para obter as próximas 20 entradas.
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -558,7 +518,8 @@ Obtenha as páginas de 51 a 100. A API retorna 20 entradas por padrão com um m�
 
 Quando enviar solicitações GET para Microsoft Graph, você pode usar as opções de cadeia de caracteres de consulta de OData para personalizar sua consulta e obter apenas as informações que você precisa. Também podem melhorar o desempenho, reduzindo o número de chamadas para o serviço e o tamanho da carga de resposta.
 
-> **Observação:** para facilitar a leitura, os exemplos neste artigo não usam a codificação de %20 necessária para espaços na cadeia de caracteres de consulta da URL: `filter=isDefault%20eq%20true`
+> [!NOTE]
+> Para facilitar a leitura, os exemplos neste artigo não usam a codificação de %20 necessária para espaços na cadeia de caracteres de consulta da URL: `filter=isDefault%20eq%20true`
  
 | Opção de consulta | Exemplo e descrição |  
 |------|------|  
@@ -582,9 +543,13 @@ O Microsoft Graph também fornece a opção de cadeia de caracteres de consulta 
 
 Microsoft Graph é compatível com os seguintes operadores e funções do OData nas expressões de **filter**. Ao usar expressões de OData, lembre-se:
 
-- Os espaços na cadeia de caracteres de consulta da URL devem ser substituídos pela codificação `%20`.<br/><br/>**Exemplo:** `filter=isDefault%20eq%20true`
+- Os espaços na cadeia de caracteres de consulta da URL devem ser substituídos pela codificação `%20`.
 
-- Os nomes de propriedade e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br/><br/>**Exemplo:** `filter=tolower(name) eq 'spring'`
+  **Exemplo:** `filter=isDefault%20eq%20true`
+
+- Os nomes de propriedade e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.
+
+  **Exemplo:** `filter=tolower(name) eq 'spring'`
 
 
 | Operador de comparação | Exemplo |  
@@ -634,11 +599,10 @@ Os nomes de propriedades diferenciam maiúsculas de minúsculas em expressões d
 
 Para obter a lista de propriedades e seus tipos, confira os seguintes recursos na referência do Microsoft Graph API REST:
 
-- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
-- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
-- [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
-
+- [GET Pages](/graph/api/page-get)
+- [GET Sections](/graph/api/section-get)
+- [GET SectionGroups](/graph/api/sectiongroup-get)
+- [GET Notebooks](/graph/api/notebook-get)
 
 
 A opção de cadeia de caracteres de consulta **expand** pode ser usada com as seguintes propriedades de navegação:

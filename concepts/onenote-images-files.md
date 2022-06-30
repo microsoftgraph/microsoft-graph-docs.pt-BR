@@ -1,15 +1,15 @@
 ---
-title: Adicionar imagens, vídeos e arquivos a páginas do OneNote
-description: " Blocos de anotações empresariais no Microsoft 365"
+title: Adicione imagens, vídeos e arquivos às páginas do OneNote usando a API do OneNote
+description: Use os elementos img, object e iframe para adicionar imagens, vídeos e arquivos à página do OneNote quando você criar ou atualizar a página.
 author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: e22b573a65ebd2baabfc39428f580737dddc716d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9edfd96275e2ce9516fd937ad02e721aa526462
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035511"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444387"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>Adicionar imagens, vídeos e arquivos a páginas do OneNote
 
@@ -52,8 +52,8 @@ Use `<img data-render-src="name:part-name" />` e envie o arquivo PDF na parte de
 
 Use `object` com `data="name:file-block-name" data-attachment="file-name.file-ext" type="media-type"` e envie um arquivo de imagem em uma parte de dados de uma solicitação de várias partes. Adiciona um anexo de arquivo à página do OneNote e exibe um ícone de arquivo.
 
-
-> **Observação:** para inserir imagens em uma página do OneNote, primeiro envie uma [solicitação GET para o conteúdo da página](onenote-get-content.md#page-html-content). Isso retornará as URLs para recursos de imagem na página. Em seguida, separe as [solicitações GET dos recursos de imagem](onenote-get-content.md#image-or-other-file-resource).
+> [!NOTE]
+> Para inserir imagens em uma página do OneNote, primeiro envie uma [solicitação GET para o conteúdo da página](onenote-get-content.md#page-html-content). Isso retornará as URLs para recursos de imagem na página. Em seguida, separe as [solicitações GET dos recursos de imagem](onenote-get-content.md#image-or-other-file-resource).
 
 
 #### <a name="image-attributes"></a>Atributos de imagem 
@@ -64,7 +64,8 @@ Um elemento **img** pode incluir opcionalmente atributos **alt**, **height** e *
 
 O Microsoft Graph é compatível com os tipos de imagem TIFF, PNG, GIF, JPEG e BMP. Para capturar uma imagem que usa um formato diferente que você não quer converter, [envie dados binários](#add-an-image-using-binary-data) em uma solicitação de várias partes. Não é necessário usar Base64 ou codificar os dados binários que você enviar.
 
-> **Observação:** a API detecta o tipo de imagem de entrada e o retorna como o atributo **data-fullres-src-type** no [HTML de saída](onenote-input-output-html.md#output-html). A API também retorna o tipo de imagem da imagem otimizada em **data-src-type**.
+> [!NOTE]
+> A API detecta o tipo de imagem de entrada e o retorna como o atributo **data-fullres-src-type** no [HTML de saída](onenote-input-output-html.md#output-html). A API também retorna o tipo de imagem da imagem otimizada em **data-src-type**.
  
 Ver [limitações](#size-limitations-for-post-pages-requests) que se aplicam ao criar páginas que contém mídia.
 

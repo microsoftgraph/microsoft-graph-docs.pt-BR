@@ -2,18 +2,18 @@
 author: japere
 ms.topic: include
 ms.localizationpriority: medium
-ms.openlocfilehash: f956f82fbfb6488f23f7ae155d49c1344ec890e2
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: ba8ba53c60d37d55cffba7b3f9626832bbf2f1cc
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461279"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66441697"
 ---
 <!-- markdownlint-disable MD041-->
 
 ### <a name="migrate-to-pim-v3-api-for-azure-ad-roles-role-management-apis"></a>Migrar para a API do PIM v3 para funções do Azure AD (APIs de gerenciamento de função)
 
-A API do PIM para funções do Azure AD foi desativada e parou de retornar dados em 31 de maio de 2021. Use esta orientação para migrar suas APIs existentes para a nova API de [gerenciamento de funções](/graph/api/resources/privilegedidentitymanagementv3-overview.md?view=graph-rest-beta&preserve-view=true).
+A API do PIM para funções do Azure AD foi desativada e parou de retornar dados em 31 de maio de 2021. Use essas diretrizes para migrar suas APIs existentes para a nova [API de gerenciamento de funções para gerenciamento de identidades privilegiadas](/graph/api/resources/privilegedidentitymanagementv3-overview).
 
 | Operation | PIM v2 API | APIs de gerenciamento de funções (PIM v3) |
 | --------- | ------------ | -------------- |

@@ -134,7 +134,7 @@ items:
             href: outlook-create-event-in-shared-delegated-calendar.md
           - name: Anexar arquivos grandes
             href: outlook-large-attachments.md
-          - name: ID Imutável
+          - name: Obter IDs imutáveis
             href: outlook-immutable-id.md
           - name: Inscreva-se para alterar as notificações
             href: outlook-change-notifications-overview.md
@@ -145,24 +145,26 @@ items:
             displayName: cloud communications
           - name: Introdução
             href: cloud-communications-get-started.md
-          - name: Chamadas
+          - name: Tipos de chamada com suporte
             href: cloud-communications-calls.md
-          - name: Mídia
+          - name: Registros de chamadas
+            href: cloud-communications-callrecords.md
+          - name: Permissões e artefatos de reunião online
+            href: cloud-communications-online-meeting-artifacts.md
+          - name: Escolha uma opção de hospedagem de mídia
             href: cloud-communications-media.md
-          - name: Reuniões on-line
+          - name: Crie ou participe de reuniões online
             href: cloud-communications-online-meetings.md
           - name: Escolha um API de reunião online
             href: choose-online-meeting-api.md
           - name: Configurar o acesso do aplicativo
             href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Registros de chamadas
-            href: cloud-communications-callrecords.md
-          - name: Gerenciar números de telefone para bots
+          - name: Gerenciar números de telefone bot
             href: cloud-communications-phone-number.md
-          - name: Permissões e artefatos de reunião online
-            href: cloud-communications-online-meeting-artifacts.md
           - name: Identificar participantes do modo de exibição de galeria grande
             href: cloud-communications-identifylargegalleryview.md
+          - name: Inscreva-se para alterar notificações para reuniões online
+            href: changenotifications-for-onlinemeeting.md
       - name: Conformidade
         href: compliance-concept-overview.md
       - name: Conectando conteúdo externo
@@ -185,7 +187,7 @@ items:
             href: connecting-external-content-manage-schema.md
           - name: Gerenciar itens
             href: connecting-external-content-manage-items.md
-          - name: Grupos externos
+          - name: Usar grupos externos
             href: connecting-external-content-external-groups.md
           - name: Limites da API
             href: connecting-external-content-api-limits.md
@@ -194,15 +196,15 @@ items:
           - name: Visão Geral
             href: cross-device-concept-overview.md
             displayName: 'Project Rome, cross-device, cross device, cross-device experience'
-          - name: Feed de atividades
+          - name: Usar uma API do feed de atividades
             href: activity-feed-concept-overview.md
             displayName: 'cross-device, cross device'
-          - name: Retransmissão de dispositivo (prévia)
+          - name: Usar uma API de retransmissão de dispositivo (versão prévia)
             href: device-relay-concept-overview.md
             displayName: 'cross-device, cross device'
           - name: Crie aplicativos entre dispositivos
             href: cross-device-app-configuration.md
-            displayName: cross device
+            displayName: 'cross device, Project Rome'
       - name: Reserva de clientes (visualização)
         items:
           - name: Visão Geral
@@ -340,7 +342,7 @@ items:
             href: outlook-share-messages-folders.md
           - name: Enviar email de outro usuário
             href: outlook-send-mail-from-other-user.md
-          - name: ID Imutável
+          - name: Obter IDs imutáveis
             href: outlook-immutable-id.md
           - name: Inscreva-se para alterar as notificações
             href: outlook-change-notifications-overview.md
@@ -419,7 +421,7 @@ items:
             displayName: 'Outlook, Outlook contacts, Outlook contact, People, personal contacts'
           - name: Obter contatos compartilhados
             href: outlook-get-shared-contacts-folders.md
-          - name: ID Imutável
+          - name: Obter IDs imutáveis
             href: outlook-immutable-id.md
           - name: Inscreva-se para alterar as notificações
             href: outlook-change-notifications-overview.md
@@ -443,19 +445,19 @@ items:
             href: search-concept-files.md
           - name: Pesquisar conectores
             href: search-concept-custom-types.md
-          - name: Pesquisar pessoas (visualização)
+          - name: Pesquisar pessoas
             href: search-concept-person.md
           - name: Gerenciar respostas de pesquisa do administrador (versão prévia)
             href: search-concept-answers.md
-          - name: Gerenciar layout de resultados da pesquisa (versão prévia)
+          - name: Gerenciar layout de resultados de pesquisa
             href: search-concept-display-layout.md
           - name: Refinar resultados de pesquisa
             href: search-concept-aggregation.md
-          - name: Solicitar correção ortográfica (prévia)
+          - name: Solicitar verificação ortográfica
             href: search-concept-speller.md
-          - name: Cortar resultados de pesquisa duplicados (versão prévia)
+          - name: Cortar resultados de pesquisa duplicados
             href: search-concept-trim-duplicate.md
-          - name: Usar modelos de consulta (versão prévia)
+          - name: Usar modelos de consulta
             href: search-concept-query-template.md
           - name: Classificar resultados de pesquisa
             href: search-concept-sort.md
@@ -507,8 +509,6 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Inscreva-se para alterar as notificações
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: Obter notificações de alteração de reuniões online
-            href: changenotifications-for-onlinemeeting.md
           - name: Mensagens do sistema
             href: system-messages.md
       - name: Tarefas pendentes

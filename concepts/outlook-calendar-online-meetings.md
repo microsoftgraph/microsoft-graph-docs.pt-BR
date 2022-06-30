@@ -1,23 +1,24 @@
 ---
 title: Habilitar um evento como reunião online no calendário do Outlook
-description: Em uma organização que oferece suporte a provedores de reunião online, os administradores podem configurar calendários no Outlook para dar suporte a reuniões que utilizam estes provedores.
+description: Utilize a API de calendário do Outlook para organizar um evento em que os convidados da reunião possam selecionar em um URL de ingresso e participar da reunião online no Microsoft Teams ou no Skype.
 author: juforan
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 8eb53027cb85a7d5d658cf98ce4744344bfc87aa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb3d7226f7a15969f7cf425c2d02e9803dba995c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066867"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447111"
 ---
-# <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Habilitar um evento como reunião online no calendário do Outlook 
+# <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Habilitar um evento como reunião online no calendário do Outlook
 
-Utilize a API de calendário do Outlook para organizar um evento em que os convidados da reunião possam clicar em um URL de ingresso e participar da reunião online no Microsoft Teams ou no Skype.
+Utilize a API de calendário do Outlook para organizar um evento em que os convidados da reunião possam selecionar em um URL de ingresso e participar da reunião online no Microsoft Teams ou no Skype.
 
 Em uma organização compatível com provedores de reuniões online, os administradores podem configurar os calendários do Outlook para oferecer suporte a reuniões que usam esses provedores, sendo um desses provedores o provedor padrão. Você pode [criar](#create-and-enable-a-meeting-online) ou [atualizar](#update-a-meeting-to-enable-it-online) um [evento](/graph/api/resources/event) no Outlook e permitir que os participantes ingressem na reunião online usando um provedor com suporte. Você pode facilmente [obter as informações da reunião online](#get-information-to-join-meeting-online) do **evento**, incluindo a URL para participar da reunião. 
 
-> **Observe** A API de calendário permite que você configure convenientemente uma reunião on-line em um calendário no Outlook, onde os participantes podem clicar para ingressar na reunião e continuar sua experiência no Teams ou no Skype. Para uma integração mais personalizada e rica com o Teams ou o Skype, use a API de comunicações em nuvem. Consulte [Escolha uma API no Microsoft Graph para criar e participar de reuniões online](choose-online-meeting-api.md) para obter mais informações.
+> [!NOTE]
+> A API de calendário permite que você configure convenientemente uma reunião on-line em um calendário no Outlook, onde os participantes podem clicar para ingressar na reunião e continuar sua experiência no Teams ou no Skype. Para uma integração mais personalizada e rica com o Teams ou o Skype, use a API de comunicações em nuvem. Consulte [Escolha uma API no Microsoft Graph para criar e participar de reuniões online](choose-online-meeting-api.md) para obter mais informações.
 
 ## <a name="calendars-and-online-meeting-providers"></a>Calendários e provedores de reuniões online
 

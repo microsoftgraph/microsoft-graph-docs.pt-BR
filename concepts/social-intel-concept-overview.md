@@ -1,18 +1,18 @@
 ---
-title: Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
-description: As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. Mesmo os dados do usuário sendo onipresentes no Microsoft Graph, os dados derivados das interações do usuário são especialmente interessantes.
+title: Inteligência de pessoas e no local de trabalho no Microsoft Graph
+description: 'Saiba mais sobre as opções de API do Microsoft Graph que permitem criar aplicativos mais inteligentes para acessar dados do usuário: API de pessoas, API de insights, API de perfil e API de cartão de perfil.'
 author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 63443cf872ebb978a681a4ce3f0b29eb3fa30818
-ms.sourcegitcommit: 3240ab7eca16a0dde88a39079a89469710f45139
+ms.openlocfilehash: 6201bd7e70602fda3088e56de24863eb3010d66f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65461237"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66445815"
 ---
-# <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Visão geral da inteligência pessoal e de local de trabalho no Microsoft Graph
+# <a name="people-and-workplace-intelligence-in-microsoft-graph"></a>Inteligência de pessoas e no local de trabalho no Microsoft Graph
 
 As centenas de milhões de usuários que utilizam os serviços de nuvem do Microsoft 365 fazem parte do núcleo do Microsoft Graph. Os dados dos usuários são cuidadosamente gerenciados, protegidos e, com a autorização adequada, disponibilizados pelos serviços do Microsoft Graph para promover a criatividade e a produtividade em empresas. 
 
@@ -98,7 +98,8 @@ A API de análises permite a sincronização ou a integração de dados de anál
 
 Procurando a referência de API para estes serviços?
 
-- [Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo](/graph/api/resources/social-overview)
+- [Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo (v1.0)](/graph/api/resources/social-overview)
+- [Usar a API do Microsoft Graph para integrar a inteligência de pessoas e de local de trabalho em um aplicativo (beta)](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true)
 - O recurso [pessoa](/graph/api/resources/person) da API Pessoas
 - Recurso [Perfil (visualização)](/graph/api/resources/profile)
 - Recurso [Propriedade do cartão de perfil (visualização)](/graph/api/resources/profilecardproperty) 
@@ -111,5 +112,5 @@ Procurando a referência de API para estes serviços?
 * Encontre mais informações sobre a [API pessoas](people-example.md).
 * Veja como [personalizar o cartão de perfil](add-properties-profilecard.md).
 * Saiba mais sobre [insights de itens](item-insights-overview.md), [personalização da privacidade dos insights de itens para usuários (visualização)](insights-customize-item-insights-privacy.md) e [API de configurações de insights de itens (visualização)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) que oferece suporte à personalização.
-* Saiba mais sobre a [API de análise](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true#help-users-balance-work-and-life).
+* Saiba mais sobre a [API de análise](/graph/api/resources/social-overview#help-users-balance-work-and-life).
 * Saiba mais sobre a [API de perfil](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).

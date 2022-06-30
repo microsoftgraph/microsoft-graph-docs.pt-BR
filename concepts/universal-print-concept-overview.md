@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c66e967a4844226af29fecbcb1d6a9be2f47a2be
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 71da05eea959b6df24b99e8533bfcab817de93b0
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510243"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447062"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Visão geral da API de impressão em nuvem da Impressão Universal
 
@@ -65,7 +65,7 @@ O compartilhamento de uma impressora cria um recurso [printerShare](/graph/api/r
 
 Para usá-lo em seu aplicativo, use [Update printerShare](/graph/api/printershare-update) para atualizar a referência `printer` de printerShare.
 
-### <a name="extending-universal-print-to-support-pull-printing"></a>Extensão da Impressão Universal para suporte à impressão segura
+### <a name="enable-pull-printing"></a>Habilitar impressão segura
 
 A API de Impressão Universal do Microsoft Graph permite que o seu aplicativo suporte a impressão segura. Para configurar a impressão segura, você registrará acionadores que notificarão o seu aplicativo (via comunicação serviço a serviço) quando determinados eventos de impressão acontecem, como um trabalho de impressão sendo iniciado.
 
@@ -79,7 +79,7 @@ Siga estes passos para habilitar a impressão segura:
 
 3. [Atualize os atributos de sua impressora virtual](/graph/api/printer-update) usando as permissões do aplicativo e um `application/ipp` tipo de mídia (veja exemplos).
 
-4. [Crie um acionador de tarefas para sua impressora virtual](/graph/api/printer-post-tasktriggers) usando um token de autenticação de administrador que irá associar a definição da sua tarefa com a impressora virtual.
+4. [Crie um acionador de tarefas para sua impressora virtual](/graph/api/printer-post-tasktriggers) usando um token de autenticação de administrador que irá associar a definição da sua tarefa com a impressora virtual. O appId usado para gerar o token de acesso deve ser o mesmo appId que foi usado para criar a definição de tarefa.
 
 5. Quando um trabalho de impressão é enviado para a impressora virtual, ele será pausado devido ao [ Acionador de Tarefas de impressão](/graph/api/resources/printtasktrigger). Uma [Tarefa de impressão](/graph/api/resources/printtask) com `processing`estado será criada com base na [Definição da Tarefa de impressão associada](/graph/api/resources/printtaskdefinition).
 

@@ -1,18 +1,20 @@
 ---
 title: Trabalhar com o Explorador do Graph
-description: Saiba como usar alguns dos recursos importantes do Explorador do Graph.
+description: Utilize o Graph Explorer para fazer solicitações da API REST do Microsoft Graph e exibir as respostas correspondentes. Saiba como usar alguns dos recursos importantes no Explorador do Graph.
 ms.localizationpriority: high
 author: RabebOthmani
-ms.openlocfilehash: ec040c8db2330f9b20407765199adf4a1a84c9ad
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 925bf7d42068be9141bc1b95c58edcd01ddfc8c8
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176833"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555797"
 ---
 # <a name="work-with-graph-explorer"></a>Trabalhar com o Explorador do Graph
 
 O [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer/) é uma ferramenta para desenvolvedores que permite fazer solicitações de API REST do Microsoft Graph de maneira conveniente e visualizar as respostas correspondentes. Este artigo descreve como usar alguns dos recursos importantes do Explorador do Graph.
+
+Para obter uma visão geral, consulte [Usar o Explorador do Graph para experimentar as APIs do Microsoft Graph](/graph/graph-explorer/graph-explorer-overview).
 
 ## <a name="consent-to-permissions"></a>Consentimento para permissões
 

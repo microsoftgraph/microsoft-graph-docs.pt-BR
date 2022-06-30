@@ -1,23 +1,23 @@
 ---
 title: Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
-description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias solicitações em um único objeto JSON. Por exemplo, um cliente talvez queira criar um modo de exibição de dados não relacionados, como:'
+description: Use o lote JSON para otimizar seu aplicativo combinando várias solicitações em um único objeto JSON, salvando uma latência significativa na rede do aplicativo.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8b83b501f286bcfac80f50081bfaa6084e866b15
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 7ba6dace8424158c7d04279de3c53e1734681e00
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118358"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555776"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
 Os lotes JSON permitem otimizar seu aplicativo combinando várias solicitações (até 20) em um único objeto JSON. Por exemplo, um cliente talvez queira criar um modo de exibição de dados não relacionados, como:
 
-1. Uma imagem armazenada no OneDrive
-2. Uma lista de tarefas de Planejador
-3. O calendário de um grupo
+- Uma imagem armazenada no OneDrive
+- Uma lista de tarefas de Planejador
+- O calendário de um grupo
 
 Combinar essas três solicitações individuais em uma única solicitação em lote pode economizar latência da rede significativa para o aplicativo.
 
