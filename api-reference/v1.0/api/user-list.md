@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 28e9f77ecee53b668932c6453615a041bde1cab0
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: c4471da757f5430404ec0cf0f37cc89b1cdbfa7f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66095785"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555141"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -40,13 +40,23 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. `$skip` não é compatível. Os tamanhos de página padrão e máximo são 100 e 999 objetos de usuário, respectivamente. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries). Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
+Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta.`$skip`  não é compatível. Os tamanhos de página padrão e máximo são 100 e 999 objetos de usuário, respectivamente. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries). Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
 
-Por padrão, apenas um conjunto limitado de propriedades é retornado (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** e **userPrincipalName**). Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar **displayName**, **givenName** e **postalCode**, adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
+Por padrão, apenas um conjunto limitado de propriedades é retornado (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** e **userPrincipalName**).Para retornar um conjunto de propriedades alternativo, especifique o conjunto desejado de propriedades de [usuário](../resources/user.md) usando o parâmetro de consulta `$select` OData. Por exemplo, para retornar **displayName**, **givenName** e **postalCode**, adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
 
 Certas propriedades não podem ser retornadas em uma coleção de usuário. As seguintes propriedades terão suporte apenas [ao recuperar um único usuário:](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 As propriedades a seguir não têm suporte em contas pessoais da Microsoft e serão `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão                     | Comentários                                                                  |
+|------------------------------------|---------------------------------------------------------------------------|
+| onPremisesExtensionAttributes 1-15 | Retornado somente com `$select`. Suporta `$filter` (`eq`).                  |
+| Extensões de esquema                  | Retornado somente com `$select`. Suporta `$filter` (`eq`).                  |
+| Extensões abertas                    | Retornado somente com `$expand`, ou seja, `users?$expand=extensions`. |
+| Extensões de diretório               | Retornado somente com `$select`. Suporta `$filter` (`eq`).                  |
+
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

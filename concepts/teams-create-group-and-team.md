@@ -1,26 +1,26 @@
 ---
-title: Criar equipes e gerenciar membros usando o Microsoft Graph
-description: 'Criar um grupo que inclui uma equipe envolve as seguintes etapas: '
+title: Criar equipes e gerenciar membros usando a API do Microsoft Teams
+description: Use a API do Microsoft Teams no Microsoft Graph para criar equipes de várias maneiras, adicionar e gerenciar membros e validar seus resultados.
 author: hachandr
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: e9a3612482925ef27c7ecd34edd405e15718dc80
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a5f57cba104e9b9f89f07556d4708960f5ee5c0d
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925794"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555657"
 ---
-# <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Criar equipes e gerenciar membros usando o Microsoft Graph
+# <a name="create-teams-and-manage-members-using-the-microsoft-teams-api"></a>Criar equipes e gerenciar membros usando a API do Microsoft Teams
 
 Você pode usar a API do Microsoft Teams no Microsoft Graph para criar equipes de várias maneiras. Este artigo descreve a abordagem que recomendamos para obter os melhores resultados.
 
 
-## <a name="initial-team-creation"></a>Criação da equipe inicial
+## <a name="create-a-team"></a>Criar uma equipe
 
 Todas as equipes são apoiadas pelo Microsoft 365 groups. A maneira mais rápida de preparar sua equipe ao criar novas equipes por meio do Microsoft Graph é configurar um novo grupo do Microsoft 365, todos os proprietários e membros e convertê-lo em uma equipe.
 
-1. Criar um [grupo do Microsoft 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) usando a operação [criar grupo](/graph/api/group-post-groups?view=graph-rest-1.0). Você pode especificar os proprietários e os membros. Certifique-se de que tenha os proprietários certos do grupo recém-criado, conforme descrito na Etapa 2.
+1. Crie um [grupo do Microsoft 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) usando a operação [criar grupo](/graph/api/group-post-groups). Você pode especificar os proprietários e os membros. Certifique-se de que tenha os proprietários certos do grupo recém-criado, conforme descrito na Etapa 2.
 
     Para criar uma equipe para esse grupo, é necessário definir os seguintes valores de propriedade, conforme mostrado:
 
@@ -65,11 +65,11 @@ Todas as equipes são apoiadas pelo Microsoft 365 groups. A maneira mais rápida
     }
     ```
 
-2. Certifique-se de que o grupo tenha dois ou mais proprietários. É possível fazer isso por meio da operação [adicionar proprietário](/graph/api/group-post-owners?view=graph-rest-1.0). Elas devem ser contas de usuários reais e não contas de serviço. Ter dois proprietários ajuda a lidar com casos em que um proprietário sai da empresa ou não está disponível para realizar operações de gerenciamento de equipe.
+2. Certifique-se de que o grupo tenha dois ou mais proprietários. É possível fazer isso por meio da operação [adicionar proprietário](/graph/api/group-post-owners). Elas devem ser contas de usuários reais e não contas de serviço. Ter dois proprietários ajuda a lidar com casos em que um proprietário sai da empresa ou não está disponível para realizar operações de gerenciamento de equipe.
 
-3. Adicione todos os membros (e convidados, se necessário) ao grupo usando a operação [adicionar membro](/graph/api/group-post-members?view=graph-rest-1.0), se você não fez isso na Etapa 1. Se você estiver adicionando vários membros, adicione um atraso de 1 segundo após cada operação de adição. 
+3. Adicione todos os membros (e convidados, se necessário) ao grupo usando a operação [adicionar membro](/graph/api/group-post-members), se você não fez isso na Etapa 1. Se você estiver adicionando vários membros, adicione um atraso de 1 segundo após cada operação de adição. 
 
-4. Depois que o grupo for criado com sucesso, o que pode levar até 15 minutos após a conclusão da Etapa 1, crie uma equipe do Microsoft Teams usando a operação [criar equipe a partir de grupo](/graph/api/team-post?view=graph-rest-1.0#example-4-create-a-team-from-group). Se houver um erro, o processo de criação de grupo pode não ser concluído, tente esperar alguns minutos. 
+4. Depois que o grupo for criado com sucesso, o que pode levar até 15 minutos após a conclusão da Etapa 1, crie uma equipe do Microsoft Teams usando a operação [criar equipe a partir de grupo](/graph/api/team-post#example-4-create-a-team-from-group). Se houver um erro, o processo de criação de grupo pode não ser concluído, tente esperar alguns minutos. 
 
     ```http
     POST https://graph.microsoft.com/v1.0/teams
@@ -97,15 +97,16 @@ Todas as equipes são apoiadas pelo Microsoft 365 groups. A maneira mais rápida
 
 5. Após concluir o processo, todos os proprietários e membros poderão ver a equipe recém-criada no cliente do Teams.
 
-## <a name="adding-or-managing-members"></a>Adicionar ou gerenciar membros
+## <a name="add-or-manage-members"></a>Adicionar ou gerenciar membros
 
-Para adicionar membros depois de criar uma equipe, use a operação [adicionar membro](/graph/api/group-post-members?view=graph-rest-1.0). É recomendável adicionar um atraso de 1 segundo entre as operações adicionar. Observe o seguinte em relação às alterações de associação:
+Para adicionar membros depois de criar uma equipe, use a operação [adicionar membro](/graph/api/group-post-members). É recomendável adicionar um atraso de 1 segundo entre as operações adicionar. Observe o seguinte em relação às alterações de associação:
 
 1. As alterações de associação feitas nos grupos do Microsoft 365 são sincronizadas com o Teams por meio de um mecanismo de sincronização de tela de fundo que geralmente demora 24 horas ou mais, em alguns casos.
 
 2. O processo em segundo plano será acionado somente se um ou mais usuários na equipe (proprietário ou membro) estiverem ativos no cliente da área de trabalho do Teams. A inicialização do aplicativo Teams e/ou sua execução constitui atividade. Um usuário não precisa visitar especificamente a equipe que está sendo modificada.
 
-    >**Observação:** os clientes móveis do Teams não acionam a sincronização de associação. Pelo menos um usuário deve estar no cliente da área de trabalho para garantir que esse processo em segundo plano corra bem.
+    > [!NOTE]
+    > Os clientes móveis do Teams não acionam a sincronização de associação. Pelo menos um usuário deve estar no cliente da área de trabalho para garantir que esse processo em segundo plano corra bem.
 
 ## <a name="checklist-for-validation"></a>Lista de verificação para validação
 
@@ -128,3 +129,7 @@ Depois de criar uma equipe, você pode usar a lista de verificação a seguir pa
 1. Verifique se os novos membros aparecem no grupo por meio do Azure AD ou do centro de administração do Microsoft 365.
 
 2. Verifique se os membros recém-adicionados conseguem ver a equipe após entrar no cliente da Web ou da área de trabalho do Teams.
+
+## <a name="see-also"></a>Confira também
+
+- [Visão geral da API do Microsoft Teams](teams-concept-overview.md)

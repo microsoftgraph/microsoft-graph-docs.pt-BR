@@ -1,32 +1,38 @@
 ---
 title: Listar todas as equipes do Microsoft Teams para uma organização
-description: 'Listar todas as equipes '
+description: Use a API do Microsoft Teams no Microsoft Graph para listar todas as equipes em uma organização localizando todos os grupos que têm equipes e obtendo informações de cada equipe.
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a1c4a19900263460bdd1f282cd87aee45ec7af7
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 955d55d521d1dda3ace17943261477020f2fb935
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118526"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556140"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Listar todas as equipes do Microsoft Teams para uma organização
 
-Para listar todas as [equipes](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) em uma organização (locatário), você deve localizar todos os grupos que possuem equipes e, em seguida, obter informações de cada equipe.
+Ao usar a API do Microsoft Teams no Microsoft Graph para listar todas as [equipes](/graph/api/resources/team) em uma organização (locatário), você encontra todos os grupos que têm equipes e, em seguida, obtém informações de cada equipe. 
 
 ## <a name="get-a-list-of-groups"></a>Obter uma lista de grupos
 
-#### <a name="example-1-get-list-of-groups-that-contain-a-team"></a>Exemplo 1: Obter lista de grupos que contêm uma equipe
-Para obter uma lista de todos os [grupos](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) da organização que possuem equipes, obtenha uma [lista de todos os grupos](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true) e depois, em código, localize os que têm a propriedade **resourceProvisioningOptions** que contém “Equipe”.
+### <a name="example-1-get-a-list-of-groups-that-contain-a-team"></a>Exemplo 1: obter uma lista de grupos que contêm uma equipe
+
+Para obter uma lista de todos os [grupos](/graph/api/resources/group) da organização que têm equipes, obtenha uma [lista de todos os grupos](/graph/api/group-list) e, em seguida, localize em código os que têm uma propriedade **resourceProvisioningOptions** que contém “Team”.
 
 Use a API com `$filter` para retornar apenas os grupos que têm equipes.
+
+#### <a name="request"></a>Solicitação
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Observação**: certas equipes antigas não utilizadas não terão a configuração **resourceProvisioningOptions**. Para saber mais, confira [problemas conhecidos](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> [!NOTE]
+> Certas equipes antigas não utilizadas não terão a configuração **resourceProvisioningOptions**. Para saber mais, confira [problemas conhecidos](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+
+#### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta. 
 
@@ -75,16 +81,22 @@ Content-type: application/json
 }
 ```
 
-#### <a name="example-2-get-list-of-groups-by-selecting-required-properties-only"></a>Exemplo 2: obter lista de grupos selecionando apenas as propriedades necessárias
+### <a name="example-2-get-a-list-of-groups-by-selecting-required-properties-only"></a>Exemplo 2: obter lista de grupos selecionando apenas as propriedades necessárias
+
 Como os grupos são objetos grandes, use `$select` para obter as propriedades apenas do grupo que importa para você.
+
+#### <a name="request"></a>Solicitação
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> **Observação**: certas equipes antigas não utilizadas não terão a configuração **resourceProvisioningOptions**. Para saber mais, confira [problemas conhecidos](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> [!NOTE]
+> Certas equipes antigas não utilizadas não terão a configuração **resourceProvisioningOptions**. Para saber mais, confira [problemas conhecidos](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
 
-Este é um exemplo de resposta. 
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
 
 ```http
 HTTP/1.1 200 OK
@@ -110,15 +122,20 @@ Content-type: application/json
 
 ## <a name="get-team-information-for-a-group"></a>Obter informações de equipe para um grupo
 
-Para obter informações de equipe para a equipe de um grupo específico, chame a API [get team](/graph/api/team-get?view=graph-rest-1.0&preserve-view=true) e incluam a ID do grupo.
+Para obter informações de equipe para a equipe de um grupo específico, chame a API [get team](/graph/api/team-get) e incluam a ID do grupo.
+
+### <a name="request"></a>Solicitação
 
 ```http
 GET /teams/{group-id}
 ```
 
+### <a name="response"></a>Resposta
+
 O exemplo a seguir mostra a resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -159,5 +176,6 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Listar joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true)
-- [Listar grupos](/graph/api/group-list?view=graph-rest-1.0&preserve-view=true)
+- [Listar joinedTeams](/graph/api/user-list-joinedteams)
+- [Listar grupos](/graph/api/group-list)
+- [Visão geral da API do Microsoft Teams](teams-concept-overview.md)

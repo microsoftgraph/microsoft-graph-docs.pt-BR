@@ -1,28 +1,25 @@
 ---
-title: Obtenha mensagens do sistema para o Microsoft Teams usando as APIs do Microsoft Graph
-description: Saiba como o Microsoft Teams gera mensagens do sistema para eventos usando as APIs do Microsoft Graph.
+title: Obtenha mensagens do sistema para o Microsoft Teams
+description: O Microsoft Teams gera eventos de mensagem do sistema usando APIs do Microsoft Graph. Saiba mais sobre operações GET com suporte, notificações de alteração e eventos de mensagem do sistema.
 author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b6a953acbd906a56d87df211209c52c432b79fae
-ms.sourcegitcommit: 191b797b178f40fde6419719fcd75461e6869401
+ms.openlocfilehash: 9ee7c96aa139437e250943cdc19146e32aab4235
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66118316"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555580"
 ---
-# <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>Obtenha mensagens do sistema para o Microsoft Teams usando as APIs do Microsoft Graph
+# <a name="get-system-messages-for-microsoft-teams"></a>Obtenha mensagens do sistema para o Microsoft Teams
 
-O Microsoft Teams gera mensagens do sistema para eventos, como membros adicionados a um chat, nome da equipe atualizado e descrição atualizada do canal. As mensagens do sistema permitem que o chamador tenha insights sobre os eventos que aconteceram em uma equipe, um canal ou um chat.
+O Microsoft Teams gera mensagens do sistema para eventos usando API do Microsoft Graph. O Microsoft Teams gera mensagens do sistema para eventos, como membros adicionados a um chat, nome da equipe atualizado e descrição atualizada do canal. As mensagens do sistema permitem que o chamador tenha insights sobre os eventos que aconteceram em uma equipe, um canal ou um chat.
 
+O Microsoft Graph expõe as mensagens do sistema como parte das operações GET de [chatMessage](/graph/api/resources/chatMessage) e [Alterar notificações para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
 
-O Microsoft Graph expõe as mensagens do sistema como parte das operações GET de [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) e [Alterar notificações para mensagens de chat e canal](teams-changenotifications-chatmessage.md).
-
-
-As mensagens do sistema são apresentadas como objetos de [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
+As mensagens do sistema são apresentadas como objetos de [chatMessage](/graph/api/resources/chatMessage).
 Neste caso, a propriedade **messageType** é definida como `systemEventMessage` e a propriedade **eventDetail** fornece os detalhes do evento.
-
 
 ## <a name="supported-get-operations"></a>Suporta operações GET
 
@@ -33,7 +30,7 @@ As seguintes operações GET suportam mensagens do sistema:
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-Para obter detalhes, consulte [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
+Para obter detalhes, consulte [chatMessage](/graph/api/resources/chatMessage).
 
 ## <a name="supported-change-notifications"></a>Suporta alteração de notificações
 
@@ -80,8 +77,8 @@ Para obter detalhes, consulte [Alterar notificações para mensagens](teams-chan
 | Aplicativo do Teams atualizado | [teamsAppUpgradedEventMessageDetail](#teams-app-upgraded) | Chat, Canal, Equipe |
 | Equipe desarquivada | [teamUnarchivedEventMessageDetail](#team-unarchived) | Equipe |
 
-
-> **Observação:** As mensagens do sistema aplicáveis a uma equipe são postadas no canal principal.
+> [!NOTE]
+> As mensagens do sistema aplicáveis a uma equipe são postadas no canal principal.
 
 
 ## <a name="json-response-examples"></a>Exemplos de resposta JSON
@@ -1571,3 +1568,7 @@ Os exemplos de JSON a seguir mostram as respostas para cada tipo de evento supor
   }
 }
 ```
+
+## <a name="see-also"></a>Confira também
+
+- [Visão geral da API do Microsoft Teams](/graph/teams-concept-overview)

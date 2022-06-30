@@ -1,15 +1,15 @@
 ---
-title: 'Adicionar dados personalizados a grupos usando as extensões do esquema '
-description: 'Este artigo apresenta um exemplo para demonstrar como usar *extensões de esquema*. '
+title: Adicionar dados personalizados a grupos usando as extensões do esquema
+description: Siga as etapas neste exemplo para registrar uma definição de extensão de esquema, criar um grupo com dados estendidos e atualizar dados personalizados em um grupo existente.
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8e024e625258dca2eda46dd0b9cdde6bbefb6cbc
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0f9e2426b94be089e4356e85b01b68d8ba68566f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934790"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555588"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Adicionar dados personalizados a grupos usando as extensões do esquema 
 
@@ -25,7 +25,9 @@ Para este cenário, este artigo lhe mostrará como:
 4. Adicionar, atualizar ou remover dados personalizados em um grupo existente com base em uma definição de extensão de esquema.
 5. Ler novamente um grupo e os dados de extensão.
 
->**Observação:** Este tópico mostra como criar e ler valores de extensão do esquema em um recurso **group** (etapas 3 a 5).  Os mesmos métodos são compatíveis também com os tipos de recurso **administrativeUnit**, **device**, **event**, **message**, **organization**, **post** e **user**.  Você pode executar operações semelhantes às solicitações do exemplo deste artigo em qualquer um desses recursos. Observe que **administrativeUnit** está disponível apenas no ponto de extremidade beta.
+> [!NOTE]
+> Este tópico mostra como criar e ler valores de extensão do esquema em um recurso **group** (etapas 3 a 5). Extensões de esquema também têm suporte e podem ser gerenciadas para [outros tipos de recursos](extensibility-overview.md).
+
 
 ## <a name="1-view-available-schema-extensions"></a>1. Exibir extensões de esquema disponíveis
 Em primeiro lugar, como desenvolvedor, talvez seja interessante localizar todas as outras definições de extensão de esquema que nosso aplicativo possa reutilizar.  Isso pode ser feito consultando o recurso **schemaExtension**.  
