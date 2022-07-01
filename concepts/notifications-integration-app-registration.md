@@ -1,17 +1,20 @@
 ---
-title: Gerenciar registro do aplicativo e permissão de API para notificações do Microsoft Graph
-description: Para receber notificações enviadas pelo Microsoft Graph, primeiro é necessário registrar seu aplicativo no portal do Microsoft Azure.
+title: Gerenciar o registro do aplicativo e a permissão da API (obsoleto)
+description: Para integrar seu serviço de aplicativo com notificações, registre seu aplicativo na plataforma de identidade da Microsoft e declare as permissões de API necessárias (descontinuadas).
 ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: a6bc396a670eb3d96c63a75f6a894be5893c43ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 109fabf81a29633017b8baaa98c3834f307492e6
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049463"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66442847"
 ---
-# <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications"></a>Gerenciar registro do aplicativo e permissão de API para notificações do Microsoft Graph
+# <a name="manage-app-registration-and-api-permission-for-microsoft-graph-notifications-deprecated"></a>Gerenciar registro de aplicativo e permissão de API para notificações do Microsoft Graph (obsoleto)
+
+> [!IMPORTANT]
+> A API de notificações do Microsoft Graph foi preterida e parou de retornar dados em janeiro de 2022. Para uma experiência de notificação alternativa, confira os [Hubs de Notificações do Microsoft Azure](/azure/notification-hubs). Para obter mais informações, consulte a postagem no blog [Desativando a API de notificações do Microsoft Graph (beta)](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Para que o serviço do aplicativo se integre às notificações do Microsoft Graph, é necessário registrar seu aplicativo na Microsoft Identity Platform para suporte às contas corporativas ou de estudante da Microsoft e declarar as permissões de API obrigatórias.
 

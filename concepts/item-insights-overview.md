@@ -1,18 +1,19 @@
 ---
-title: Visão geral dos insights do item no Microsoft Graph
-description: A visão geral da funcionalidade de insights de itens e personalização no nível do usuário
+title: Insights de item no Microsoft Graph
+description: Saiba mais sobre insights de itens, recomendações centradas no usuário para você e aqueles com quem você trabalha, com base em suas experiências colaborativas baseadas em arquivos no Microsoft 365.
 author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e605a2f756e64fb6fff45f1888c6d13d549763e0
-ms.sourcegitcommit: ecdca55147779405dbb99710e833fa7bcf90bf07
+ms.openlocfilehash: b51f797ae626ecf60c6d2f0a4f9fb395ed97b601
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63780482"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444863"
 ---
-# <a name="overview-of-item-insights"></a>Visão geral dos insights do item
+# <a name="item-insights-overview"></a>Visão geral de informações do item
+
 As percepções do item são recomendações centradas no usuário para você e aqueles com quem você trabalha, com base em seu trabalho colaborativo no Microsoft 365.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGbr] 
@@ -38,7 +39,7 @@ Você pode descobrir conteúdo potencialmente útil que você pode acessar, mas 
 
 ### <a name="recent-files-in-card-based-interfaces"></a>Arquivos recentes em interfaces baseadas em cartão 
 Em interfaces baseadas em cartão, como Delve, o cartão de pessoa em aplicativos do Microsoft 365 e o cartão de pessoa nos resultados de trabalho do Bing, os insights de item trazem arquivos do OneDrive, Microsoft Office SharePoint Online ou Outlook que você modificou recentemente ou compartilhou com a pessoa que está olhando para o seu perfil, que tem acesso a esse conteúdo. Essas percepções personalizadas ajudam seus colegas a economizar tempo procurando a pessoa ou as informações certas.  
-![os insights de itens fortalecem os arquivos recentes em interfaces com base em cartão](images/Recent-files-in-card-based-interfaces.PNG)
+![insights de itens alimentam arquivos recentes em interfaces baseadas em cartão](images/Recent-files-in-card-based-interfaces.PNG)
 
 ## <a name="microsoft-runs-on-trust"></a>Microsoft funciona com base na confiança
 A Microsoft usa apenas suas atividades em um espaço de trabalho compartilhado (atividades como compartilhamento, modificação, ações de comentários) dentro de sua organização para calcular recomendações para outras pessoas. Isso significa que se você simplesmente deu uma olhada ou clicou em um documento compartilhado sem alterá-lo ou comentá-lo, seus colegas não verão o documento como uma recomendação porque você o navegou. 
@@ -70,6 +71,7 @@ Depois de desabilitar os insights do item, acontece o seguinte:
 * Para um usuário que desabilitou os insights do item, consultar os recursos [mais populares](/graph/api/resources/insights-trending) e [ usados ​​](/graph/api/resources/insights-used) na API do Microsoft Graph retorna `HTTP 403 Forbidden`.
 
 ## <a name="api-reference"></a>Referência da API
+
 Está procurando a referência de API para esse serviço?
 
 - [API do Insights no Microsoft Graph v1.0](/graph/api/resources/officegraphinsights)
