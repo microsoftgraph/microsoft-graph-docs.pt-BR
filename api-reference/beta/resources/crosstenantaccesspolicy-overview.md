@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 088e9da122680c8f975597a2f58e9ae352a5e4f3
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: 5fa5e24eead5f75564a97a7f3ac04fd11e833ba0
+ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653543"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66604472"
 ---
 # <a name="cross-tenant-access-settings-api-overview"></a>Visão geral da API de configurações de acesso entre locatários
 
@@ -54,14 +54,14 @@ Por exemplo, quando você define suas configurações de confiança para confiar
 
 As configurações de confiança de entrada também permitem que você confie em dispositivos compatíveis ou Azure AD ingressados em seus diretórios base. Com as configurações de confiança de entrada nas configurações de acesso entre locatários, agora você pode proteger o acesso aos seus aplicativos e recursos exigindo que os usuários externos usem dispositivos ingressados em conformidade ou Azure AD híbridos.
 
-## <a name="collaborate-with-organizations-using-azure-active-directory-in-different-microsoft-clouds"></a>Colaborar com organizações usando Azure Active Directory em diferentes nuvens da Microsoft
+## <a name="collaborate-with-organizations-using-azure-active-directory-in-different-microsoft-clouds"></a>Colaborar com organizações usando o Azure Active Directory em nuvens diferentes da Microsoft
 
 As configurações de acesso entre locatários são usadas para habilitar a colaboração com Azure AD organizações em nuvens separadas da Microsoft. A `allowedCloudEndpoints` propriedade permite que você especifique para quais nuvens da Microsoft você deseja estender sua colaboração. A colaboração B2B tem suporte entre as seguintes nuvens da Microsoft:
 
 + Microsoft Azure comercial e Microsoft Azure Governamental
 + Microsoft Azure comercial e Microsoft Azure China
 
-<!---Learn more about [collaborating with organizations from a different Microsoft cloud](azure/active-directory/external-identities/cross-cloud-settings).--->
+Saiba mais sobre [como colaborar com organizações de uma nuvem diferente da Microsoft](https://docs.microsoft.com/azure/active-directory/external-identities/cross-cloud-settings).
 
 ## <a name="interpreting-the-api-response"></a>Interpretando a resposta da API
 

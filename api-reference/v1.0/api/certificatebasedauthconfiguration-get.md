@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9677cecab1a74c753adf227a5d58e303567ef6f4
-ms.sourcegitcommit: dfa87904fb26dd5161f604f2716ce1d90dad31ed
+ms.openlocfilehash: 31c040337f28b56c025918cd9bfa7e512c4086c4
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63394310"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436572"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>Obter certificateBasedAuthConfiguration
 
 Namespace: microsoft.graph
 
-Obter as propriedades de [um objeto certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
+Obtenha as propriedades de um [objeto certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | Organization.Read.All, Organization.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo    | Organization.Read.All, Organization.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Organization.Read.All, Organization.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte. |
+| Application    | Organization.Read.All, Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfi
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-certificatebasedauthconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-certificatebasedauthconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

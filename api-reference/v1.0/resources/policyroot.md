@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: fd9c30baa16ef404c363448f06d211613bad64e7
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: dc54d92a520961441545962fa996efd39fa8ca3d
+ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398409"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66604479"
 ---
 # <a name="policyroot-resource-type"></a>Tipo de recurso policyRoot
 
@@ -24,7 +24,7 @@ Nenhum
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo da política. Herdado da [entidade](../resources/entity.md).|
+|id|String|Identificador exclusivo da política. Herdado da [entidade](../resources/entity.md).|
 
 
 ## <a name="relationships"></a>Relações
@@ -35,7 +35,8 @@ Nenhum
 | authenticationFlowsPolicy                 | [authenticationFlowsPolicy](authenticationflowspolicy.md)                                                 | A configuração de política da experiência de inscrição por autoatendimento de usuários externos.                                                                                   |
 | authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | Os métodos de autenticação e os usuários que têm permissão para usá-los para entrar e executar a MFA (autenticação multifator) no Azure Active Directory (Azure AD). |
 | authorizationPolicy                       | [coleção authorizationPolicy](authorizationpolicy.md)                                                  | A política que controla as Azure AD de autorização.                                                                                                            |
-| claimsMappingPolicies                     | Conjunto [claimsMappingPolicy](claimsmappingpolicy.md)                                                  | As políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Conexão, para tokens emitidos para um aplicativo específico.                                   |
+| claimsMappingPolicies                     | Conjunto [claimsMappingPolicy](claimsmappingpolicy.md)                                                  | As políticas de mapeamento de declaração para protocolos WS-Fed, SAML, OAuth 2.0 e OpenID Connect, para tokens emitidos para um aplicativo específico.                                   |
+| crossTenantAccessPolicy                   | [crossTenantAccessPolicy](crosstenantaccesspolicy.md)                           | As regras personalizadas que definem um cenário de acesso ao interagir com locatários de Azure AD externos.                                                                                                                     |
 | conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | As regras personalizadas que definem um cenário de acesso.                                                                                                                     |
 | featureRolloutPolicies                    | [Coleção featureRolloutPolicy](featurerolloutpolicy.md)                                                | A política de distribuição de recursos associada a um objeto de diretório.                                                                                                       |
 | homeRealmDiscoveryPolicies                | Conjunto [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)                                        | A política para controlar o Azure AD de autenticação para usuários federados.                                                                                          |

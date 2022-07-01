@@ -1,47 +1,47 @@
 ---
-title: 'Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes'
-description: Use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes
+title: 'Tutorial: Usar a API de revisões de acesso para examinar o acesso de convidados aos grupos do Microsoft 365'
+description: Saiba como usar a API de revisões de acesso para examinar o acesso de usuários externos/convidados aos recursos da sua organização por meio de grupos do Microsoft 365 em seu Azure AD locatário.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: f2c9210b4173850c6fbccaad352c88b894965e29
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 972a3cb1aa8618370cf78d5921d16a699dd6b0b8
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334916"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437559"
 ---
-# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Tutorial: use a API de críticas de acesso para revisar o acesso de convidados aos grupos Microsoft 365 seus clientes
+# <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Tutorial: Usar a API de revisões de acesso para examinar o acesso de convidados aos seus grupos do Microsoft 365
 
-A API de revisões de acesso no Microsoft Graph permite que as organizações auditem e atestem o acesso que as identidades (também chamadas de *entidades) são atribuídas* aos recursos na organização. Na colaboração entre locatários, os usuários externos podem ter recursos de acesso, como arquivos, anotações, calendários e até mesmo Teams conversas. Esse acesso pode ser gerenciado com eficiência por meio Microsoft 365 grupos. Usando a API de revisões de acesso, as organizações podem, portanto, atestar periodicamente as entidades que têm acesso a esses grupos e, por extensão, outros recursos na organização.
+A API de revisões de acesso no Microsoft Graph permite que as organizações auditem e atestem o acesso de que as identidades (também chamadas de entidades de segurança) são *atribuídas* aos recursos na organização. Na colaboração entre locatários, os usuários externos podem ter recursos de acesso, como arquivos, anotações, calendários e até mesmo conversas do Teams. Esse acesso pode ser gerenciado com eficiência por meio de grupos do Microsoft 365. Usando a API de revisões de acesso, as organizações podem, portanto, atestar periodicamente as entidades de segurança que têm acesso a esses grupos e, por extensão, a outros recursos na organização.
 
-Vamos supor que você concedeu acesso a usuários externos (também chamados de usuários *convidados) aos* recursos em sua organização por meio Microsoft 365 grupos. Este tutorial orientará você a revisar o acesso deles aos grupos Microsoft 365 em seu locatário.
+Vamos supor que você concedeu acesso a usuários externos (também chamados de usuários *convidados) aos* recursos em sua organização por meio de grupos do Microsoft 365. Este tutorial orientará você a examinar o acesso deles aos grupos do Microsoft 365 em seu locatário.
 
 >[!NOTE]
->Os objetos de resposta mostrados neste tutorial podem ser reduzidos para a capacidade de leitura.
+>Os objetos de resposta mostrados neste tutorial podem ser reduzidos para legibilidade.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir este tutorial, você precisa dos seguintes recursos e privilégios:
 
-+ Um locatário do Azure AD funcionando com uma licença Azure AD Premium P2 ou EMS E5 habilitada. 
-+ Uma conta em um locatário diferente do Azure AD ou uma identidade social que você pode convidar como usuário convidado (usuário B2B).
-+ Entre no Graph [Explorer](https://developer.microsoft.com/graph/graph-explorer) como usuário em uma função de administrador global. 
++ Um locatário Azure AD trabalho com uma licença Azure AD Premium P2 ou EMS E5 habilitada. 
++ Uma conta em um locatário Azure AD ou uma identidade social que você pode convidar como um usuário convidado (usuário B2B).
++ Entre no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer) como um usuário em uma função de administrador global. 
 + As seguintes permissões delegadas: `User.Invite.All`, , `AccessReview.ReadWrite.All`, `Group.ReadWrite.All``User.ReadWrite.All`.
 
-Para consentir com as permissões necessárias no Graph Explorer:
-1. Selecione o ícone de configurações à direita dos detalhes da conta do usuário e escolha **Selecionar permissões**.
+Para consentir com as permissões necessárias no Explorador do Graph:
+1. Selecione o ícone de configurações à direita dos detalhes da conta de usuário e escolha **Selecionar permissões**.
    
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Selecione Permissões Graph Microsoft." border="true":::
+   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/settings.png" alt-text="Selecione as permissões do Microsoft Graph." border="true":::
 
-2. Role a lista de permissões para essas permissões:
+2. Percorra a lista de permissões para estas permissões:
    + AccessReview (3), expanda e selecione **AccessReview.ReadWrite.All**.
-   + Grupo (2), expanda e selecione **Group.ReadWrite.All**.
-   + Usuário (8), expanda e selecione **User.Invite.All** e **User.ReadWrite.All**.
+   + Agrupar (2), expandir e selecionar **Group.ReadWrite.All**.
+   + Usuário (8), expanda e selecione **User.Invite.All** **e User.ReadWrite.All**.
    
-   Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome da sua organização para essas permissões.
+   Selecione **Consentimento** e, em seguida, selecione **Aceitar** para aceitar o consentimento das permissões. Você não precisa consentir em nome de sua organização para essas permissões.
    
-   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consentimento para permissões Graph Microsoft." border="true":::
+   :::image type="content" source="../images/../concepts/images/tutorial-accessreviews-api/consentpermissions.png" alt-text="Consentir com permissões do Microsoft Graph." border="true":::
 
 ## <a name="step-1-create-a-test-user-in-your-tenant"></a>Etapa 1: Criar um usuário de teste em seu locatário
 
@@ -87,9 +87,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-invite-a-guest-user-into-your-tenant"></a>Etapa 2: convidar um usuário convidado para seu locatário
+## <a name="step-2-invite-a-guest-user-into-your-tenant"></a>Etapa 2: Convidar um usuário convidado para seu locatário
 
-Convide um usuário convidado com o endereço de email **john@tailspintoys.com** seu locatário.
+Convide um usuário convidado com o endereço de email **john@tailspintoys.com** para seu locatário.
 
 ### <a name="request"></a>Solicitação
 <!-- {
@@ -128,12 +128,12 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a>Etapa 3: criar um novo grupo Microsoft 365 e adicionar o usuário convidado
+## <a name="step-3-create-a-new-microsoft-365-group-and-add-the-guest-user"></a>Etapa 3: Criar um novo grupo do Microsoft 365 e adicionar o usuário convidado
 
 Nesta etapa:
-1. Crie um novo grupo Microsoft 365 chamado **Boa campanha de marketing**.
+1. Crie um novo grupo do Microsoft 365 chamado **Feel Good Marketing Campaign**.
 2. Atribua a si mesmo como o proprietário do grupo.
-3. Adicione john@tailspintoys.com como membro do grupo. O acesso ao grupo é assunto de revisão por você, o proprietário do grupo.
+3. Adicione john@tailspintoys.com como um membro do grupo. Seu acesso ao grupo é o assunto da revisão por você, o proprietário do grupo.
 
 ### <a name="request"></a>Solicitação
 
@@ -189,25 +189,25 @@ Content-type: application/json
 }
 ```
 
-Agora você tem um grupo Microsoft 365 com um usuário convidado.
+Agora você tem um grupo do Microsoft 365 com um usuário convidado.
 
-## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a>Etapa 4: criar uma revisão de acesso para todos os grupos Microsoft 365 com usuários convidados
+## <a name="step-4-create-an-access-review-for-all-microsoft-365-groups-with-guest-users"></a>Etapa 4: Criar uma revisão de acesso para todos os grupos do Microsoft 365 com usuários convidados
 
-Ao criar uma série de revisão de acesso recorrente para todos os grupos Microsoft 365 com usuários convidados, agende uma revisão periódica do acesso dos convidados ao grupo Microsoft 365 convidados. Nesse caso, o grupo **Campanha de Marketing se sente** bem.
+Ao criar uma série de revisão de acesso recorrente para todos os grupos do Microsoft 365 com usuários convidados, você agenda uma revisão periódica do acesso dos convidados ao grupo do Microsoft 365. Nesse caso, o grupo **Campanha de Marketing do Feel Good** .
 
 A série de revisão de acesso usa as seguintes configurações:
 + É uma revisão de acesso recorrente e revisada trimestralmente.
-+ Os proprietários do grupo decidem se os usuários convidados devem manter seu acesso.
-+ O escopo de revisão é limitado apenas Microsoft 365 grupos com **usuários convidados**.
-+ Um revistor de backup. Eles podem ser um usuário de fallback ou um grupo que pode revisar o acesso caso o grupo não tenha proprietários atribuídos.
++ Os proprietários do grupo decidem se os usuários convidados devem manter o acesso.
++ O escopo de revisão é limitado apenas a grupos do Microsoft 365 com **usuários convidados**.
++ Um revisores de backup. Eles podem ser um usuário de fallback ou um grupo que pode examinar o acesso caso o grupo não tenha proprietários atribuídos.
 + **autoApplyDecisionsEnabled** está definido como `true`. Nesse caso, as decisões são aplicadas automaticamente quando o revistor conclui a revisão de acesso ou a duração da revisão de acesso termina. Se não estiver habilitado, um usuário deverá aplicar as decisões manualmente após a conclusão da revisão.
-+ Aplique a **ação removeAccessApplyAction** aos usuários convidados negados para removê-los do grupo. O usuário convidado ainda pode entrar no locatário, mas não acessará o grupo.
++ Aplique a **ação removeAccessApplyAction** a usuários convidados negados para removê-los do grupo. O usuário convidado ainda pode entrar em seu locatário, mas não acessará o grupo.
 
 ### <a name="request"></a>Solicitação
 
 Nesta chamada, substitua os seguintes valores:
 
-+ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` com a ID de Aline que você está projetando como revistor de backup.
++ `c9a5aff7-9298-4d71-adab-0a222e0a05e4` com a ID de Aline que você está designando como revisores de backup.
 + Valor de **startDate** com a data de hoje e o valor de **endDate** com uma data de um ano a partir da data de início. 
 
 <!-- {
@@ -357,7 +357,7 @@ Content-type: application/json
 
 ## <a name="step-5-list-instances-of-the-access-review"></a>Etapa 5: Listar instâncias da revisão de acesso
 
-A consulta a seguir lista todas as instâncias da definição de revisão de acesso. Se houver mais de um grupo Microsoft 365 com usuários convidados em seu locatário, essa solicitação retornará uma instância para cada grupo Microsoft 365 *com usuários convidados*.
+A consulta a seguir lista todas as instâncias da definição de revisão de acesso. Se houver mais de um grupo do Microsoft 365 com usuários convidados em seu locatário, essa solicitação retornará uma instância para cada grupo do *Microsoft 365 com usuários convidados*.
 
 ### <a name="request"></a>Solicitação
 
@@ -373,7 +373,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 ### <a name="response"></a>Resposta
 
-Nesta resposta, o escopo `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` inclui um grupo identificado por (o grupo de campanhas de **marketing** Sentir-se bem criado na Etapa 3) porque ele tem um usuário convidado.
+Nessa resposta, o `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` escopo inclui um grupo identificado por (o grupo de campanhas de **marketing Feel Good** criado na Etapa 3) porque ele tem um usuário convidado.
 
 <!-- {
   "blockType": "response",
@@ -401,17 +401,17 @@ Content-type: application/json
     ]
 }
 ```
-Nesta resposta, a instância de revisão de acesso atualmente é `InProgress`. Como é uma revisão trimestral, uma nova instância de revisão é criada automaticamente a cada três meses e os revisadores podem aplicar novas decisões.
+Nessa resposta, a instância de revisão de acesso está atualmente `InProgress`. Como é uma revisão trimestral, uma nova instância de revisão é criada automaticamente a cada três meses e os revisores podem aplicar novas decisões.
 
 ## <a name="step-6-get-decisions"></a>Etapa 6: Obter decisões
 
-Obter as decisões tomadas para a instância de uma revisão de acesso.
+Obtenha as decisões tomadas para a instância de uma revisão de acesso.
 
 ### <a name="request"></a>Solicitação
 
 Nesta chamada:
 + Substitua `c22ae540-b89a-4d24-bac0-4ef35e6591ea` pela ID da definição de revisão de acesso retornada na Etapa 4.
-+ Substitua `6392b1a7-9c25-4844-83e5-34e23c88e16a` pela ID da sua instância de revisão de acesso retornada na Etapa 5.
++ Substitua `6392b1a7-9c25-4844-83e5-34e23c88e16a` pela ID da instância de revisão de acesso retornada na Etapa 5.
 
 <!-- {
   "blockType": "request",
@@ -477,18 +477,18 @@ Content-type: application/json
 
 Em uma revisão trimestral como esta e desde que a revisão de acesso ainda esteja ativa:
 + A cada três meses, uma nova instância de revisão será criada.
-+ Os revisadores serão obrigados a aplicar novas decisões para novas instâncias.
++ Os revisores precisarão aplicar novas decisões para novas instâncias.
 
 
 ## <a name="step-7-clean-up-resources"></a>Etapa 7: Limpar recursos
 
-Exclua os recursos que você criou para este tutorial— Sinta-se bem em grupo de campanha de **marketing** , a definição do agendamento de revisão de acesso, o usuário convidado e o usuário de teste.
+Exclua os recursos que você criou para este tutorial– **Sinta-se** bem no grupo de campanhas de marketing, na definição da agenda de revisão de acesso, no usuário convidado e no usuário de teste.
 
-### <a name="delete-the-microsoft-365-group"></a>Excluir o Microsoft 365 grupo
+### <a name="delete-the-microsoft-365-group"></a>Excluir o grupo do Microsoft 365
 
 #### <a name="request"></a>Solicitação
 
-Nesta chamada, substitua pela `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` ID da sua campanha de **marketing** De boa Microsoft 365 grupo.
+Nesta chamada, substitua pela `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` ID do seu grupo Do Microsoft 365 **feel good marketing** .
 
 <!-- {
   "blockType": "request",
@@ -510,7 +510,7 @@ Content-type: text/plain
 
 ### <a name="delete-the-access-review-definition"></a>Excluir a definição de revisão de acesso
 
-Nesta chamada, substitua pela `c22ae540-b89a-4d24-bac0-4ef35e6591ea` ID da sua definição de revisão de acesso. Como a definição do cronograma de revisão de acesso é o modelo para a revisão de acesso, excluir a definição removerá as configurações, instâncias e decisões relacionadas.
+Nesta chamada, substitua pela `c22ae540-b89a-4d24-bac0-4ef35e6591ea` ID da definição de revisão de acesso. Como a definição do agendamento de revisão de acesso é o blueprint para a revisão de acesso, a exclusão da definição removerá as configurações, instâncias e decisões relacionadas.
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -533,7 +533,7 @@ Content-type: text/plain
 
 ### <a name="remove-the-guest-user"></a>Remover o usuário convidado
 
-Nesta chamada, substitua `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` pela ID do usuário convidado, john@tailspintoys.com.
+Nesta chamada, substitua pela `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` ID do usuário convidado, john@tailspintoys.com.
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -555,7 +555,7 @@ Content-type: text/plain
 ```
 
 ### <a name="delete-the-test-user"></a>Excluir o usuário de teste
-Nesta chamada, substitua `c9a5aff7-9298-4d71-adab-0a222e0a05e4` pela ID do usuário de teste.
+Nesta chamada, substitua pela `c9a5aff7-9298-4d71-adab-0a222e0a05e4` ID do usuário de teste.
 
 #### <a name="request"></a>Solicitação
 <!-- {
@@ -578,11 +578,11 @@ HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
-Parabéns! Você criou uma revisão de acesso para usuários convidados Microsoft 365 grupos em seu locatário e agendou-a trimestralmente. Os proprietários do grupo revisarão o acesso durante esses ciclos, escolhendo aprovar ou negar o acesso.
+Parabéns! Você criou uma revisão de acesso para usuários convidados em grupos do Microsoft 365 em seu locatário e a agendou trimestralmente. Os proprietários do grupo examinarão o acesso durante esses ciclos, escolhendo aprovar ou negar o acesso.
 
 ## <a name="see-also"></a>Confira também
 
 
-+ [API de avaliações do Access](/graph/api/resources/accessreviewsv2-overview)
-+ [O que são avaliações de acesso do Azure AD?](/azure/active-directory/governance/access-reviews-overview)
-+ [Revisar o acesso a grupos e aplicativos em avaliações de acesso do Azure AD](/azure/active-directory/governance/perform-access-review)
++ [API de revisões de acesso](/graph/api/resources/accessreviewsv2-overview)
++ [O que são Azure AD revisões de acesso?](/azure/active-directory/governance/access-reviews-overview)
++ [Examinar o acesso a grupos e aplicativos em Azure AD revisões de acesso](/azure/active-directory/governance/perform-access-review)

@@ -1,26 +1,26 @@
 ---
-title: Gerenciar proteções usando o serviço de implantação Windows Update for Business
-description: Quando você implanta atualizações com o serviço de implantação, o serviço protege automaticamente as implantações, impedindo que dispositivos com problemas conhecidos ou prováveis de serem oferecidos a atualização pelo Windows Update.
+title: Gerenciar proteções usando o serviço de implantação do Windows Update for Business
+description: Quando você implanta atualizações com o serviço Windows Update implantação do Windows Update Business, ele impede automaticamente que dispositivos com problemas sejam oferecidos à atualização.
 author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: ff3d8c594087253db85fb943bd34fe9478f45bb9
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5373fe27415bbfd552303e7d154be131bdf76e11
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61855516"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437440"
 ---
-# <a name="manage-safeguards-using-the-windows-update-for-business-deployment-service"></a>Gerenciar proteções usando o serviço de implantação Windows Update for Business
+# <a name="manage-safeguards-using-the-windows-update-for-business-deployment-service"></a>Gerenciar proteções usando o serviço de implantação do Windows Update for Business
 
-Quando você implanta atualizações com o serviço de implantação, o serviço protege automaticamente as implantações, impedindo que dispositivos com problemas conhecidos ou prováveis de serem oferecidos a atualização pelo Windows Update.
+Quando você implanta atualizações com o serviço de implantação, o serviço protege automaticamente as implantações, impedindo que dispositivos com problemas conhecidos ou prováveis sejam oferecidos pela Windows Update.
 
-As proteções são compatíveis [com implantações](windowsupdates-deployments.md) de Windows 11 e Windows 10 de recursos. Os resguardos contra problemas conhecidos estão disponíveis para implantações de atualizações de recursos do Windows 11 e Windows 10 e a proteção contra problemas prováveis estão disponíveis para implantações do Windows 11.
+As proteções são compatíveis [com implantações](windowsupdates-deployments.md) de Windows 11 e Windows 10 de recursos. As retenções de proteção contra problemas conhecidos estão disponíveis para implantações de atualizações de recursos do Windows 11 e Windows 10, e as retenções de proteção contra problemas prováveis estão disponíveis para implantações de Windows 11.
 
 ## <a name="apply-all-safeguards"></a>Aplicar todas as proteções
 
-Por padrão, o serviço de implantação aplica todas as proteções aplicáveis a dispositivos em uma implantação. Para se beneficiar de proteções, você não precisa especificar nada adicional ao criar uma implantação.
+Por padrão, o serviço de implantação aplica todas as proteções aplicáveis aos dispositivos em uma implantação. Para se beneficiar das proteções, você não precisa especificar nada adicional ao criar uma implantação.
 
 O exemplo a seguir demonstra como criar uma implantação com todas as proteções aplicadas.
 
@@ -72,9 +72,9 @@ Content-Type: application/json
 
 ## <a name="opt-out-of-safeguards-against-likely-issues"></a>Recusar proteções contra problemas prováveis
 
-Você pode optar por não proteger contra problemas prováveis em uma implantação configurando [configurações de proteção.](/graph/api/resources/windowsupdates-safeguardsettings) Se necessário, você também pode optar por não resguardar resguardos para problemas conhecidos [usando a política de proteções de desabilitação.](/windows/deployment/update/safeguard-opt-out)
+Você pode recusar proteções contra problemas prováveis em uma implantação definindo as [configurações de proteção](/graph/api/resources/windowsupdates-safeguardsettings). Se necessário, você também pode recusar retenções de proteção para problemas [conhecidos usando a política de desabilitar proteções](/windows/deployment/update/safeguard-opt-out).
 
-O exemplo a seguir demonstra como criar uma implantação sem proteções contra problemas prováveis. Ao especificar um **safeguardProfile** para a categoria de na lista de perfis de proteção a desabilitar, você está configurando a implantação para oferecer a atualização a um dispositivo, mesmo que seja provável que tenha um problema de  `likelyIssues` atualização.
+O exemplo a seguir demonstra como criar uma implantação sem proteções contra problemas prováveis. Ao especificar um **safeguardProfile**  `likelyIssues` para a categoria abaixo da lista de perfis de proteção a serem desabilitados, você está configurando a implantação para oferecer a atualização a um dispositivo, mesmo que seja provável que ele tenha um problema de atualização.
 
 ### <a name="request"></a>Solicitação
 

@@ -5,18 +5,16 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b58b9eefeddd2f10e079dc0a3e3a7047fc809607
+ms.openlocfilehash: 33559dec1bdd8d29f3a8559aabc4b47aa8950b3f
 ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2022
-ms.locfileid: "66604496"
+ms.locfileid: "66604534"
 ---
 # <a name="update-crosstenantaccesspolicy"></a>Atualizar crossTenantAccessPolicy
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades de uma política [de acesso entre locatários](../resources/crosstenantaccesspolicy.md).
 
@@ -73,35 +71,13 @@ O [tamanho do objeto crossTenantAccessPolicy](../resources/crosstenantaccesspoli
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy
+PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy
 Content-Type: application/json
 
 {
-  "allowedCloudEndpoints": ["microsoftonline.us", "partner.microsoftonline.cn"]
+  "displayName": "CrossTenantAccessPolicy",
 }
 ```
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### <a name="response"></a>Resposta
 

@@ -309,7 +309,7 @@ items:
   - name: Referência da API v1.0
     expanded: true
     items:
-      - name: Visão geral
+      - name: Visão Geral
         href: overview.md
         displayName: Microsoft Graph REST API v1.0 reference
       - name: Usuários
@@ -540,7 +540,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -795,7 +795,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1258,7 +1258,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -1373,7 +1373,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1440,11 +1440,11 @@ items:
       - name: Conformidade
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/complianceapioverview.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -1494,7 +1494,7 @@ items:
       - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -4282,7 +4282,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Comunicações e integridade do serviço
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/service-communications-api-overview.md
               - name: Comunicado do serviço
                 href: resources/serviceannouncement.md
@@ -5133,6 +5133,42 @@ items:
                                 href: api/ipnamedlocation-update.md
                               - name: Excluir
                                 href: api/ipnamedlocation-delete.md
+              - name: Acesso entre locatários
+                items:
+                  - name: Visão Geral
+                    href: resources/crosstenantaccesspolicy-overview.md
+                  - name: Política
+                    items:
+                      - name: Política de acesso entre locatários
+                        href: resources/crosstenantaccesspolicy.md
+                      - name: Obter
+                        href: api/crosstenantaccesspolicy-get.md
+                      - name: Atualizar
+                        href: api/crosstenantaccesspolicy-update.md
+                  - name: Configurações padrão
+                    items:
+                      - name: Configurações padrão de acesso entre locatários
+                        href: resources/crosstenantaccesspolicyconfigurationdefault.md
+                      - name: Obter
+                        href: api/crosstenantaccesspolicyconfigurationdefault-get.md
+                      - name: Atualizar
+                        href: api/crosstenantaccesspolicyconfigurationdefault-update.md
+                      - name: Redefinir para o padrão do sistema
+                        href: api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
+                  - name: Configurações do parceiro
+                    items:
+                      - name: Configurações do parceiro de acesso entre locatários
+                        href: resources/crosstenantaccesspolicyconfigurationpartner.md
+                      - name: Listar
+                        href: api/crosstenantaccesspolicy-list-partners.md
+                      - name: Criar
+                        href: api/crosstenantaccesspolicy-post-partners.md
+                      - name: Obter
+                        href: api/crosstenantaccesspolicyconfigurationpartner-get.md
+                      - name: Atualizar
+                        href: api/crosstenantaccesspolicyconfigurationpartner-update.md
+                      - name: Excluir
+                        href: api/crosstenantaccesspolicyconfigurationpartner-delete.md
               - name: Operações de política de dados
                 href: resources/datapolicyoperation.md
                 items:
@@ -5275,7 +5311,7 @@ items:
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Políticas
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/policy-overview.md
                   - name: Política de tempo limite baseada em atividade
                     href: resources/activitybasedtimeoutpolicy.md
@@ -5300,7 +5336,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Política de métodos de autenticação
                     items:
-                      - name: Visão geral
+                      - name: Visão Geral
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Política de método de autenticação
                         href: resources/authenticationmethodspolicy.md
@@ -5928,7 +5964,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -6039,7 +6075,7 @@ items:
                 href: api/resource-get.md
       - name: Inteligência de pessoas e local de trabalho
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/social-overview.md
           - name: Pessoas
             items:
@@ -6130,7 +6166,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Propriedades estendidas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/extended-properties-overview.md
               - name: Propriedades estendidas de valor único
                 items:
@@ -6152,7 +6188,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -6175,7 +6211,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -6378,7 +6414,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -6388,7 +6424,7 @@ items:
                 href: api/search-query.md
           - name: Índice
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/indexing-api-overview.md
               - name: Conexão externa
                 items:
@@ -6464,7 +6500,7 @@ items:
             items:
               - name: Ameaça
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/threatassessment-api-overview.md
                   - name: Solicitação de avaliação de ameaças
                     href: resources/threatassessmentrequest.md
@@ -6503,7 +6539,7 @@ items:
       - name: Sites e listas
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/sharepoint.md
           - name: Sites
             href: resources/site.md
@@ -6697,7 +6733,7 @@ items:
       - name: Tarefas e planos
         displayName: Planner
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/planner-overview.md
           - name: Planejar
             href: resources/plannerplan.md
@@ -6777,7 +6813,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Teamwork
+      - name: Trabalho em equipe
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -7256,7 +7292,7 @@ items:
       - name: Tarefas pendentes
         displayName: Microsoft To Do
         items:
-          - name: Visão geral
+          - name: Visão Geral
             href: resources/todo-overview.md
           - name: Listas de tarefas pendentes
             items:
