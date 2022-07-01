@@ -1,22 +1,22 @@
 ---
-title: Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
-description: Para chamar o Microsoft Graph, o aplicativo deve adquirir um token de acesso da Microsoft Identity Plataform.
+title: Noções básicas de autenticação e autorização
+description: Para chamar o Microsoft Graph, você deve registrar seu aplicativo na plataforma de identidade da Microsoft, solicitar permissões e adquirir um token de acesso.
 author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 01d1206a3083fda0820be91b8e84a4f5edc2397f
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 339091181388f5e1b4ae9c2075f32eb984ad038f
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899649"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556336"
 ---
-# <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Princípios Básicos de Autenticação e Autorização para o Microsoft Graph
+# <a name="authentication-and-authorization-basics"></a>Noções básicas de autenticação e autorização
 
 Para chamar o Microsoft Graph, seu aplicativo deve adquirir um token de acesso da plataforma de identidade da Microsoft. O token de acesso contém informações sobre o aplicativo e as permissões que ele tem para acessar os recursos e APIs disponíveis no Microsoft Graph. Para obter um token de acesso, o aplicativo deve ser registrado na plataforma de identidade da Microsoft e ter a autorização de um usuário ou administrador para acessar os recursos necessários do Microsoft Graph.
 
-Este artigo fornece uma visão geral da plataforma de identidade da Microsoft, tokens de acesso e como seu aplicativo pode obter tokens de acesso. Para obter mais informações sobre a plataforma de identidade da Microsoft, confira [O que é a plataforma de identidade da Microsoft](/azure/active-directory/develop/v2-overview). Se você sabe como integrar um aplicativo à plataforma de identidade da Microsoft para obter tokens, consulte as informações e amostras específicas do Microsoft Graph na seção [Passos seguintes](#next-steps).
+Este artigo fornece uma visão geral da plataforma de identidade da Microsoft, tokens de acesso e como seu aplicativo pode obter tokens de acesso. Para obter mais informações sobre a plataforma de identidade da Microsoft, confira [O que é a plataforma de identidade da Microsoft?](/azure/active-directory/develop/v2-overview). Se você sabe como integrar um aplicativo à plataforma de identidade da Microsoft para obter tokens, confira as informações e amostras específicas do Microsoft Graph na seção [Próximas etapas](#next-steps).
 
 ## <a name="register-your-app-with-the-microsoft-identity-platform"></a>Registre um aplicativo na Microsoft Identity Platform
 
@@ -59,20 +59,21 @@ O Microsoft Graph tem dois tipos de permissões:
 
 - As **permissões de aplicativo** são usadas por aplicativos executados sem a presença de um usuário conectado; por exemplo, aplicativos executados como serviços ou daemons em segundo plano. As permissões do aplicativo só podem ser [autorizadas por um administrador](/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant).
 
+### <a name="effective-permissions"></a>Permissões efetivas
+
 **Permissões efetivas** são as permissões que seu aplicativo possui ao fazer solicitações ao Microsoft Graph. As permissões efetivas são determinadas por uma combinação das permissões do Microsoft Graph que você concedeu ao aplicativo, *e* os privilégios do usuário conectado ou do aplicativo de chamada. Dentro das organizações, a política ou a associação em uma ou mais funções determinam os privilégios do usuário conectado ou de um aplicativo. É importante entender a diferença entre as permissões delegadas e de aplicativo concedidas ao seu aplicativo e suas permissões efetivas ao fazer chamadas para o Microsoft Graph.
 
-#### <a name="effective-permissions-in-delegated-vs-application-only-permission-scenarios"></a>Permissões efetivas em cenários de permissão delegado versus somente aplicativo
+#### <a name="effective-permissions-in-delegated-versus-application-only-permission-scenarios"></a>Permissões efetivas em cenários de permissão delegado versus somente aplicativos
 
-- Para permissões delegadas, as *permissões efetivas* do seu aplicativo são a interseção menos privilegiada das permissões delegadas que o aplicativo recebeu (por consentimento) e os privilégios do usuário conectado no momento. Seu aplicativo nunca pode ter mais privilégios do que o usuário conectado.
+- Para permissões delegadas, as permissões efetivas do seu aplicativo são a interseção menos privilegiada das permissões delegadas que o aplicativo recebeu (por consentimento) e os privilégios do usuário conectado no momento. Seu aplicativo nunca pode ter mais privilégios do que o usuário conectado.
 
   Suponha que seu aplicativo tenha recebido a permissão delegada *User.ReadWrite.All* e chame a API [Atualizar usuário](/graph/api/user-update). Essa permissão concede nominalmente ao seu aplicativo permissão para ler e atualizar o perfil de cada usuário em uma organização. No entanto, devido a permissões efetivas, as seguintes restrições se aplicam aos privilégios do usuário conectado:
-  + Se o usuário conectado for um administrador global, seu aplicativo poderá atualizar o perfil de cada usuário na organização.
-  + No entanto, se o usuário conectado não estiver em uma função de administrador, seu aplicativo poderá atualizar *apenas* o perfil do usuário conectado. Ele não atualizará os perfis de outros usuários na organização porque o usuário conectado não possui esses privilégios.
+  - Se o usuário conectado for um administrador global, seu aplicativo poderá atualizar o perfil de cada usuário na organização.
+  - No entanto, se o usuário conectado não estiver em uma função de administrador, seu aplicativo poderá atualizar *apenas* o perfil do usuário conectado. Ele não atualizará os perfis de outros usuários na organização porque o usuário conectado não possui esses privilégios.
 
-- Para permissões de aplicativo, as *permissões efetivas* do seu aplicativo estarão no nível completo de privilégios implícitos na permissão. Por exemplo, um aplicativo que tem a permissão de aplicativo *User.ReadWrite.All* pode atualizar o perfil de cada usuário na organização.
+- Para permissões de aplicativo, as permissões efetivasdo seu aplicativo estarão no nível completo de privilégios implícitos na permissão. Por exemplo, um aplicativo que tem a permissão de aplicativo *User.ReadWrite.All* pode atualizar o perfil de cada usuário na organização.
 
-##### <a name="comparison-of-delegated-and-application-permissions"></a>Comparação de permissões delegadas e de aplicativo
-
+#### <a name="comparison-of-delegated-and-application-permissions"></a>Comparação de permissões delegadas e de aplicativo
 
 | Item | Permissões delegadas | Permissões de aplicativos |
 |--|--|--|
@@ -86,7 +87,6 @@ O Microsoft Graph tem dois tipos de permissões:
 :::image type="content" source="/graph/images/auth-v2/permission-types.png" alt-text="O Microsoft Graph expõe as permissões delegadas e de aplicativo, mas autoriza solicitações com base nas permissões efetivas do aplicativo." border="true":::
 
 Para uma lista completa das permissões delegadas e de aplicativos para o Microsoft Graph, e quais permissões exigem o consentimento do administrador, consulte a [Referência Permissões](../permissions-reference.md).
-
 
 ## <a name="access-tokens"></a>Tokens de acesso
 

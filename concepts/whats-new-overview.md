@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: Exiba os destaques das novidades Microsoft Graph nos últimos dois meses, o que foi adicionado em versões anteriores e como você pode compartilhar suas ideias.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 56b50679f230dfc3dd656baf4fdb9bd9a4220b6e
-ms.sourcegitcommit: 175dda9b51aaa94fa00d0e4b7101c771b6315f05
+ms.openlocfilehash: 371cd4ad709b5cab6d18352e386872364f1f96f2
+ms.sourcegitcommit: 2cbfa9abd0b568f9e4c15930df9a378fbe924511
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66557157"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66578589"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -26,6 +26,8 @@ Obtenha informações sobre o codec de áudio, codec de vídeo, protocolo de tra
 - [Liste as unidades administrativas ](/graph/api/device-list-memberOf) que um [dispositivo](/graph/api/resources/device) é membro.
 - Gerenciar dispositivos como membros em uma [unidade administrativa](/graph/api/resources/administrativeunit): [listar membros](/graph/api/administrativeunit-list-members) incluindo dispositivos, e [obter](/graph/api/administrativeunit-get-members), [adicionar](/graph/api/administrativeunit-post-members), e [remover](/graph/api/administrativeunit-delete-members) um dispositivo como membro. 
 - [Obtenha](/graph/api/application-get) o status e outros detalhes de [certificação de segurança e conformidade](/graph/api/resources/certification) de um [programa](/graph/api/resources/application) para proteger os dados do cliente. Para obter mais informações, consulte [Certificação Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).
+- Defina as [configurações de federação com o Azure AD](/graph/api/resources/internalDomainFederation).
+
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
  Configure e gerencie as [configurações da política de métodos de autenticação de Passagem de Acesso Temporário](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) no seu locatário.
@@ -54,6 +56,20 @@ Assine as notificações de alteração do seguinte no Teams:
 ### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
 Acesse a [API de Descoberta Eletrônica](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) do namespace de [segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) no futuro, em vez do namespace de conformidade.
 
+### <a name="customer-booking"></a>Reserva de clientes
+- Gerencie o idioma da página de reserva de autoatendimento de uma [empresa](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) ou de um [serviço](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) fornecido pela empresa.
+- Especifique nas [informações do cliente](/graph/api/resources/bookingCustomerInformation?view=graph-rest-beta&preserve-view=true) se as notificações por SMS estão habilitada para um [compromisso](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) do cliente.
+- Especifique se a junção anônima está habilitada para um [serviço](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) e se deve gerar uma URL da Web de junção anônima para um compromisso para o serviço.
+- Diferencie a função de um [membro da equipe](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) como um agendador ou um membro.
+- Especifique se deseja notificar um [membro da equipe](/graph/api/resources/bookingstaffmember?view=graph-rest-beta&preserve-view=true) por email quando uma reserva for atribuída ou atualizada para o membro.
+
+### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem
+Obtenha as seguintes informações para uma [política de provisionamento](/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta&preserve-view=true) de PCs na Nuvem:
+- O nome do grupo no qual os PCs na Nuvem residem.
+- O número de horas de espera antes que o reprovisionamento/desprovisionamento aconteça.
+- Se o administrador local (como o usuário final do PC na Nuvem) está habilitado.
+- O serviço que gerencia a conexão de rede do Azure, que atualmente é o Windows 365 ou o Microsoft Dev Box.
+
 ### <a name="device-and-app-management--multi-tenant-management"></a>Gerenciamento de dispositivos e aplicativos | Gerenciamento multilocatário
 [Obtenha](/graph/api/managedtenants-managedtenant-list-myroles?view=graph-rest-beta&preserve-view=true) a coleção de [funções atribuídas a um usuário conectado](/graph/api/resources/managedtenants-myRole?view=graph-rest-beta&preserve-view=true) para um [locatário gerenciado](/graph/api/resources/managedtenants-managedTenant?view=graph-rest-beta&preserve-view=true).
 
@@ -68,6 +84,8 @@ Acesse a [API de Descoberta Eletrônica](/graph/api/resources/security-ediscover
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 Ocultar links de redefinição de senha de autoatendimento (SSPR) nas [configurações de visibilidade de texto da página de logon](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) na página de entrada de um locatário. 
 
+### <a name="teamwork"></a>Teamwork
+Obtenha os detalhes de [fixando](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) ou [desafixando](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) uma [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em um [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) ou [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). 
 
 ## <a name="may-2022-new-and-generally-available"></a>Maio de 2022: novos e geralmente disponíveis
 

@@ -1,13 +1,13 @@
 ---
 title: Respostas de erros e tipos de recurso do Microsoft Graph
-description: Este tópico descreve alguns dos erros que podem ser retornados nas respostas do Microsoft Graph.
+description: Saiba mais sobre os erros que podem ser retornados nas respostas do Microsoft Graph. Os erros são retornados usando códigos de status HTTP padrão e um objeto de resposta de erro JSON.
 ms.localizationpriority: high
-ms.openlocfilehash: 6894090958a53764a38b4be346fc1ab625ae9f23
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 7e4da1aaeef174130e655d003c2140e0d91e4622
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694348"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577585"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 

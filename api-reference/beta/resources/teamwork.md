@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 63199426ae498a4fa79a6f419d49b0eaa257a181
-ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
+ms.openlocfilehash: 8a6a07a23d71c79703643dc5280bd531eb5a5843
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62262096"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577859"
 ---
 # <a name="teamwork-resource-type"></a>tipo de recurso de trabalho em equipe
 
@@ -19,6 +19,12 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um contêiner para o intervalo de funcionalidades do Microsoft Teams disponíveis para a organização.
+
+## <a name="methods"></a>Métodos
+
+| Método                                                  | Tipo de retorno                                         |Descrição                                                                               |
+|:--------------------------------------------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------|
+|[Listar deletedTeams](../api/teamwork-list-deletedteams.md)|coleção [deletedTeam](../resources/deletedteam.md)|Obtenha uma lista de objetos [deletedTeam](../resources/deletedteam.md) e suas propriedades.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -30,6 +36,7 @@ Um contêiner para o intervalo de funcionalidades do Microsoft Teams disponívei
 
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
+|deletedTeams|coleção [deletedTeam](../resources/deletedteam.md)| Uma coleção de equipes excluídas.|
 |dispositivos|Coleção [teamworkDevice](../resources/teamworkdevice.md)|Os dispositivos do Teams provisionados para o locatário.|
 |workforceIntegrations|Coleção [workforceIntegration](../resources/workforceintegration.md)| Uma integração de força de trabalho com turnos.|
 
@@ -43,12 +50,16 @@ Veja a seguir uma representação JSON do recurso.
   "baseType": "microsoft.graph.entity"
 }-->
 
-```json
+``` json
 {
-  "id": "string"
+    "@odata.type": "#microsoft.graph.teamwork",
+    "id": "String (identifier)"
 }
-
 ```
+
+## <a name="see-also"></a>Confira também
+
+- [recurso userTeamwork](userteamwork.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -62,7 +73,3 @@ Veja a seguir uma representação JSON do recurso.
   "suppressions": []
 }
 -->
-
-## <a name="see-also"></a>Confira Também
-
-- [recurso userTeamwork](userteamwork.md)

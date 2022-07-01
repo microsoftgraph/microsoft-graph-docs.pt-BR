@@ -4,12 +4,12 @@ description: As APIs do Microsoft Teams Microsoft Graph que acessam dados confid
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8f9387d33d440a7ac8d90fc9be9e671b790c9e17
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: a8c7de28d1ecd5784e69e2cc4774802282b8bd24
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556294"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577809"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>APIs protegidas no Microsoft Teams
 
@@ -29,6 +29,7 @@ As seguintes APIs estão protegidas no momento e todas usam as [permissões do a
 * [Criar assinatura para novas mensagens de chat](/graph/api/subscription-post-subscriptions)
 * [Listar todo o conteúdo hospedado](/graph/api/chatmessage-list-hostedcontents)
 * [Obter conteúdo hospedado](/graph/api/chatmessagehostedcontent-get)
+* [Obter mensagens em uma equipe excluída](/graph/api/deletedteam-getallmessages)
 
 > [!NOTE]
 > [Enviar mensagem](/graph/api/channel-post-messages) não é uma API protegida.
