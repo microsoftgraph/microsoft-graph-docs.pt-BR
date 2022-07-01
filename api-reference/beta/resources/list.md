@@ -5,12 +5,12 @@ title: Recurso List
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: bdca492a6abac648cee5f48b10ef95f1fd77b8b7
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: cb6a203a3421e6d2fe4889076826c5a6ac8f00b1
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723319"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577858"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -24,8 +24,6 @@ Este recurso contém as propriedades de nível superior da lista, incluindo defi
 ## <a name="tasks-on-a-list"></a>Tarefas em list
 
 As tarefas a seguir estão disponíveis para os recursos list.
-**Observação:** esta versão beta só permite navegar por listas, não criar ou atualizá-las.
-Você pode, no entanto, criar ou atualizar [itens de lista][listItem].
 
 Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.microsoft.com/beta/sites/{site-id}`.
 
@@ -95,7 +93,7 @@ O recurso **list** tem as seguintes relações com outros recursos.
 | **drive**      | [drive][]                                                                       | Presente apenas em bibliotecas de documentos. Permite o acesso à lista como um recurso [drive][] com [driveItems][driveItem]. |
 | **items**      | Collection([listItem][])                                                        | Todos os itens contidos na lista.                                                                                    |
 | assinaturas  | conjunto de [assinaturas][]                                                     | O conjunto de assinaturas na lista.                                                                               |
-| **operations** | Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md) | A coleção de operações em execução longa para a lista.                                                             |
+| **operations** | Coleção [richLongRunningOperation](../resources/richlongrunningoperation.md) | A coleção de operações de execução longa para a lista.                                                             |
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md

@@ -5,18 +5,21 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: c8f080ab1893ea520f4e2094e914356ce71010b6
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 06d2b8be235175cd913c10c61e86c54a9585863b
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094654"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577739"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>Baixar o conteúdo de um recurso driveItemVersion
 
 Namespace: microsoft.graph
 
 Recupere o conteúdo de uma versão específica de [um driveItem](../resources/driveitem.md).
+
+>**Nota:** Não há suporte para obter o conteúdo da versão atual. Para fazer isso, use o [download do conteúdo de um método driveItem](driveitem-get-content.md) .
+
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,7 +56,7 @@ URLs de download previamente autenticadas são válidas apenas por um curto per�
 
 Este exemplo recupera uma versão de um arquivo na unidade do usuário atual.
 
-### <a name="http-request"></a>Solicitação HTTP
+### <a name="request"></a>Solicitação
 
 
 # <a name="http"></a>[HTTP](#tab/http)

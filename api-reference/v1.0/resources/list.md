@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: O recurso de lista representa uma lista em um site.
 doc_type: resourcePageType
-ms.openlocfilehash: 2de3af4c781ad325b59eeb9dff762c47a23dff20
-ms.sourcegitcommit: 089669703041900c4700c5d4f383ed05a7f193f8
+ms.openlocfilehash: 8372127f2fc54444f66893331bc49cc1fd0e2428
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65191644"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577564"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -22,7 +22,6 @@ Este recurso contém as propriedades de nível superior da lista, incluindo defi
 ## <a name="tasks-on-a-list"></a>Tarefas em list
 
 As tarefas a seguir estão disponíveis para os recursos list.
-
 
 Todos os exemplos abaixo são relativos a um site, por exemplo, `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 

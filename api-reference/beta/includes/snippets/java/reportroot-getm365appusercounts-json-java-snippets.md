@@ -1,17 +1,17 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 939e49e47958630b7cedbcebf01291ca4ae3f510
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 961f10576d5eb20988c2dad50aef6e576ba1c8cc
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50975952"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577902"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-InputStream stream = graphClient.customRequest("/reports/getM365AppUserCounts(period='D7')/content", InputStream.class)
+InputStream stream = graphClient.customRequest("/reports/getM365AppUserCounts(period='D7')", InputStream.class)
     .buildRequest()
     .get();
 

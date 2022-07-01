@@ -1,22 +1,20 @@
 ---
-title: Enumerar sites
+title: Listar sites
 description: Liste todos os sites disponíveis em uma organização ou liste os sites que correspondem aos critérios de filtro fornecidos e às opções de consulta.
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 7c78b617a0a0be24e2de3fbf888c1b47315b414f
+ms.openlocfilehash: f78db6d9ad4d4b2f772ed79451ff16853a514d4e
 ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2022
-ms.locfileid: "66577900"
+ms.locfileid: "66578098"
 ---
-# <a name="enumerate-sites"></a>Enumerar sites
+# <a name="list-sites"></a>Listar sites
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Listar todos os [sites disponíveis][] em uma organização.
 
@@ -67,38 +65,11 @@ GET /sites?$filter=siteCollection/root ne null
 ### <a name="request"></a>Solicitação
 
 
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "list-sites" } -->
+<!-- { "blockType": "ignored" } -->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
+```http
+GET https://graph.microsoft.com/v1.0/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-sites-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-sites-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-sites-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Ir](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-sites-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-sites-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Resposta
 
@@ -138,10 +109,10 @@ Content-type: application/json
 
 ### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "list-sites", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "ignored" } -->
 
 ```http
-GET /sites
+GET https://graph.microsoft.com/v1.0/sites
 ```
 
 ### <a name="response"></a>Resposta

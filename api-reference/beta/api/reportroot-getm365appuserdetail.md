@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getM365AppUserDetail'
-description: Obter um relatório que fornece os detalhes sobre quais aplicativos e plataformas os usuários usaram.
-localization_priority: Normal
+description: Obtenha um relatório que forneça os detalhes sobre quais aplicativos e plataformas os usuários usaram.
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 196e8747254d2fdc1cdb0e97a53eb2fe8c6b78d1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e708041d4e08fb3e17eb59f1176f2af0e5a19bc6
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050931"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577934"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>reportRoot: getM365AppUserDetail
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um relatório que fornece os detalhes sobre quais aplicativos e plataformas os usuários usaram.
+Obtenha um relatório que forneça os detalhes sobre quais aplicativos e plataformas os usuários usaram.
 
-> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft 365 Apps uso](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Nota:** Para obter detalhes sobre diferentes exibições de relatório e nomes, consulte [relatórios do Microsoft 365 – Microsoft 365 Apps uso](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Reports.Read.All                            |
 
-> **Observação:** Para permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure AD. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
+> **Nota:** Para permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador do locatário deve ter atribuído ao usuário a função de administrador Azure AD limitada apropriada. Para saber mais, confira [Autorização para APIs lerem os relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,14 +49,14 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 | Parâmetro | Tipo   | Descrição                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7` `D30` , , e `D90` `D180` . Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7`, `D30`, `D90`e `D180`. Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. |
 | data      | Data   | Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade. {date_value} deve ter um formato de AAAA-MM-DD. Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo.          |
 
-> **Observação:** Você precisa definir ou `period` `date` na URL.
+> **Nota:** Você precisa definir um ou `period` na `date` URL.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData para definir a saída padrão como `$format` text/csv ou application/json.
+Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$format`, `$top` e `$skipToken` para personalizar as resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData `$format` para definir a saída padrão como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -70,11 +70,11 @@ Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [de](../resources/intune-shared-report.md) relatório no corpo da resposta. Os dados do relatório estão contidos na **propriedade de** conteúdo do **objeto report.**
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto Edm.Stream no corpo da resposta.
 
 ### <a name="csv"></a>CSV
 
-Se tiver êxito, solicitar a **propriedade de** conteúdo retornará uma resposta que redireciona para uma URL de `302 Found` download pré-autenticada para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
+Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
 
 As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.
 
@@ -82,7 +82,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
 - Data de atualização do relatório
 - Nome UPN
-- Data da última ativação
+- Data da Última Ativação
 - Data da última atividade
 - Período de Relatório
 - Windows
@@ -107,12 +107,12 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - PowerPoint (Mac)
 - OneNote (Mac)
 - Teams (Mac)
-- Outlook (Mobile)
-- Word (Mobile)
-- Excel (Mobile)
-- PowerPoint (Mobile)
-- OneNote (Mobile)
-- Teams (Mobile)
+- Outlook (Móvel)
+- Word (Móvel)
+- Excel (Móvel)
+- PowerPoint (Móvel)
+- OneNote (Móvel)
+- Teams (Móvel)
 - Outlook (Web)
 - Word (Web)
 - Excel (Web)
@@ -122,19 +122,19 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, solicitar a **propriedade de conteúdo** retornará um código de resposta e um objeto `200 OK` JSON no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto JSON no corpo da resposta.
 
-O tamanho padrão da página para essa solicitação é de 200 itens.
+O tamanho de página padrão para essa solicitação é de 200 itens.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-csv-output"></a>Exemplo 1: saída CSV
 
-A seguir, um exemplo que dá saída ao CSV.
+A seguir está um exemplo que gera CSV.
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação para obter a **propriedade de** conteúdo.
+Este é um exemplo de solicitação.
 
 
 
@@ -145,7 +145,7 @@ A seguir, um exemplo da solicitação para obter a **propriedade de** conteúdo.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=text/csv
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercoundetail-csharp-snippets.md)]
@@ -196,11 +196,11 @@ Report Refresh Date,User Principal Name,Last Activation Date,Last Activity Date,
 
 ### <a name="example-2-json-output"></a>Exemplo 2: saída JSON
 
-A seguir, um exemplo que retorna JSON.
+A seguir está um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação para obter a **propriedade de** conteúdo.
+Este é um exemplo de solicitação.
 
 
 
@@ -211,7 +211,7 @@ A seguir, um exemplo da solicitação para obter a **propriedade de** conteúdo.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=application/json
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appusercountdetail-csharp-snippets.md)]
@@ -251,7 +251,7 @@ Content-Type: application/json
 Content-Length: 951
 
 {
-  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/content?$format=application/json&$skiptoken=AAAAA",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')?$format=application/json&$skiptoken=AAAAA",
   "value": [
     {
       "reportRefreshDate": "2020-06-30",

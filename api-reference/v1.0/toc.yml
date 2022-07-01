@@ -480,7 +480,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Notas
+          - name: Observações
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -540,7 +540,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -4280,7 +4280,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: Atualizar
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
-          - name: Comunicações e Integridade do serviço
+          - name: Comunicações e integridade do serviço
             items:
               - name: Visão geral
                 href: resources/service-communications-api-overview.md
@@ -5777,7 +5777,7 @@ items:
                         href: api/agreement-post-files.md
                       - name: Listar arquivos localizados
                         href: api/agreement-list-files.md
-      - name: Email
+      - name: Correio
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -6037,7 +6037,7 @@ items:
             items:
               - name: Obter recurso
                 href: api/resource-get.md
-      - name: Inteligência de pessoas e no local de trabalho
+      - name: Inteligência de pessoas e local de trabalho
         items:
           - name: Visão geral
             href: resources/social-overview.md
@@ -6510,6 +6510,8 @@ items:
             items:
               - name: Obter site
                 href: api/site-get.md
+              - name: Listar sites
+                href: api/site-list.md
               - name: Obter listas
                 href: api/list-list.md
               - name: Obter análise do item
@@ -6775,7 +6777,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-get.md
               - name: Atualizar progresso do formato de quadro de tarefas
                 href: api/plannerprogresstaskboardtaskformat-update.md
-      - name: Trabalho em equipe
+      - name: Teamwork
         displayName: Microsoft Teams
         items:
           - name: Visão Geral
@@ -6969,7 +6971,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: Aplicativo
+          - name: App
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -7031,7 +7033,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Enviar notificação ao usuário
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: Guia
             href: resources/teamstab.md
             items:
               - name: Guia no canal

@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getM365AppPlatformUserCounts'
-description: Obter um relatório que fornece a tendência de usuários ativos em todos os aplicativos para cada plataforma – Windows, Mac, Web e celular – em sua organização.
-localization_priority: Normal
+description: Obtenha um relatório que forneça a tendência de usuários ativos em todos os aplicativos para cada plataforma – Windows, Mac, Web e celular – em sua organização.
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2f6377776cedc7394c2e9573c24e5209d7dda755
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f2668211d281103c73c191e11321e8d888c56e1a
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050945"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577913"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>reportRoot: getM365AppPlatformUserCounts
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter um relatório que fornece a tendência de usuários ativos em todos os aplicativos para cada plataforma – Windows, Mac, Web e celular – em sua organização.
+Obtenha um relatório que forneça a tendência de usuários ativos em todos os aplicativos para cada plataforma – Windows, Mac, Web e celular – em sua organização.
 
-> **Observação:** Para obter detalhes sobre diferentes exibições de relatório e nomes, [consulte Microsoft 365 relatórios - Microsoft 365 Apps uso](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Nota:** Para obter detalhes sobre diferentes exibições de relatório e nomes, consulte [relatórios do Microsoft 365 – Microsoft 365 Apps uso](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Reports.Read.All                            |
 
-> **Observação:** Para permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador de locatários deve ter atribuído ao usuário a função de administrador limitada apropriada do Azure AD. Para obter detalhes, consulte [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Nota:** Para permissões delegadas para permitir que os aplicativos leiam relatórios de uso do serviço em nome de um usuário, o administrador do locatário deve ter atribuído ao usuário a função de administrador Azure AD limitada apropriada. Para obter detalhes, consulte [Autorização para APIs lerem relatórios de uso do Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -48,11 +48,11 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 | Parâmetro | Tipo   | Descrição                                                                                                                                                                                                                                                       |
 | :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7` `D30` , , e `D90` `D180` . Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: `D7`, `D30`, `D90`e `D180`. Eles seguem o formato D *n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData para definir a saída padrão como `$format` text/csv ou application/json.
+Esse método dá suporte ao`$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta. O tipo de saída padrão é text/csv. No entanto, se você quiser especificar o tipo de saída, poderá usar o parâmetro de consulta OData `$format` para definir a saída padrão como text/csv ou application/json.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -66,11 +66,11 @@ Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [de](../resources/intune-shared-report.md) relatório no corpo da resposta. Os dados do relatório estão contidos na **propriedade de** conteúdo do **objeto report.**
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto Edm.Stream no corpo da resposta.
 
 ### <a name="csv"></a>CSV
 
-Se tiver êxito, solicitar a **propriedade de** conteúdo retornará uma resposta que redireciona para uma URL de `302 Found` download pré-autenticada para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
+Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
 
 As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.
 
@@ -88,17 +88,17 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
 ### <a name="json"></a>JSON
 
-Se tiver êxito, solicitar a **propriedade de conteúdo** retornará um código de resposta e um objeto `200 OK` JSON no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto JSON no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-csv-output"></a>Exemplo 1: saída CSV
 
-A seguir, um exemplo que dá saída ao CSV.
+A seguir está um exemplo que gera CSV.
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação para obter a **propriedade de** conteúdo.
+Este é um exemplo de solicitação.
 
 
 
@@ -109,7 +109,7 @@ A seguir, um exemplo da solicitação para obter a **propriedade de** conteúdo.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')/content?$format=text/csv
+GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')?$format=text/csv
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appplatformusercounts-csv-csharp-snippets.md)]
@@ -160,11 +160,11 @@ Report Refresh Date,Report Period,Report Date,Windows,Mac,Mobile,Web
 
 ### <a name="example-2-json-output"></a>Exemplo 2: saída JSON
 
-A seguir, um exemplo que retorna JSON.
+A seguir está um exemplo que retorna JSON.
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo da solicitação para obter a **propriedade de** conteúdo.
+Este é um exemplo de solicitação.
 
 
 
@@ -175,7 +175,7 @@ A seguir, um exemplo da solicitação para obter a **propriedade de** conteúdo.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')/content?$format=application/json
+GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period='D7')?$format=application/json
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getm365appplatformusercounts-json-csharp-snippets.md)]
