@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 123ef7129156d1eb34e213042c126564d444ff11
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+ms.openlocfilehash: 640359678a5a88a19d0f9e9d994c7860d936d97c
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399240"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556105"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -55,6 +55,14 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 O `$search` parâmetro de consulta suporta a tokenização apenas nos campos **displayName** e **description** e requer o cabeçalho **ConsistencyLevel**. Qualquer campo além de **displayName** e **description** é padrão para o comportamento`$filter``startswith`.
 
 Para obter mais informações sobre as opções de consulta OData, veja [Parâmetros de consulta OData](/graph/query-parameters). Para obter mais informações sobre o uso de **ConsistencyLevel** e `$count`, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão       | Comentários                      |
+|----------------------|-------------------------------|
+| Extensões de esquema    | Retornado somente com `$select`. |
+| Extensões abertas      | Retornado somente com `$expand`. |
+| Extensões de diretório | Retornado por padrão.          |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

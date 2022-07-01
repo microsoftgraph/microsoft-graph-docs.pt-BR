@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 77e5f4e393911b2f511107279ead62c3a89724d1
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 67f1d557a20399bd1c8b884314eb76bf86ff16a8
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821166"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556014"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
 Namespace: microsoft.graph
 
-Crie uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso.
+Crie uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso. Você pode [criar uma extensão aberta](/graph/api/opentypeextension-post-opentypeextension) em uma instância de recurso e armazenar dados personalizados para tudo isso na mesma operação, exceto para recursos específicos. Consulte [limitações conhecidas de extensões abertas](/graph/known-issues#extensions) para obter mais informações.
 
 A tabela na seção [Permissões](#permissions) lista os recursos que oferecem suporte a extensões abertas.
 
@@ -39,6 +39,8 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+<!--
+| [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
 ## <a name="http-request"></a>Solicitação HTTP
 

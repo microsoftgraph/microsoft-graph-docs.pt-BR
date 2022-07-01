@@ -1,15 +1,15 @@
 ---
 title: Usar parâmetros de consulta para personalizar respostas
-description: O Microsoft Graph fornece parâmetros de consulta opcionais que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta.
+description: O Microsoft Graph fornece parâmetros de consulta opcionais que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. Inclui parâmetros comuns.
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 7f87d5c3d410a351c366d5cc66550f868aba4711
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
+ms.openlocfilehash: 5902ece88a3174cc93f30859b15bbf57e31efb78
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034716"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555965"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -28,7 +28,8 @@ Os parâmetros de consulta podem ser [opções de consulta de sistema OData](htt
 ## <a name="odata-system-query-options"></a>Opções de consulta de sistema OData
 Uma operação de API do Microsoft Graph pode oferecer suporte a uma ou mais das seguintes opções de consulta de sistema OData. Essas opções de consulta são compatíveis com a [linguagem de consulta OData V4][odata-query].
 
->**Observação:** o OData 4.0 oferece suporte às opções de consulta do sistema apenas em operações GET.
+> [!NOTE]
+> O OData 4.0 oferece suporte às opções de consulta do sistema apenas em operações GET.
 
 Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 
@@ -160,8 +161,8 @@ O suporte para operadores `$filter` varia entre as APIs do Microsoft Graph. Os s
 | Operadores condicionais | <ul><li> E (`and`) </li><li> Ou (`or`)</li> |
 | Functions | <ul><li> Inicia com ( `startsWith` ) </li><li> Termina com (`endsWith`)</li><li> Contém ( `contains` )</li></ul>|
 
-
-> **Observação:** o suporte para esses operadores varia de acordo com a entidade e algumas propriedades oferecem suporte `$filter` apenas em [consultas avançadas](/graph/aad-advanced-queries). Consulte a documentação específica da entidade para obter detalhes.
+> [!NOTE]
+> O suporte para esses operadores varia de acordo com a entidade e algumas propriedades dão suporte a `$filter` somente em [consultas avançadas](/graph/aad-advanced-queries). Confira a documentação específica da entidade para obter detalhes.
 
 ### <a name="filter-using-lambda-operators"></a>Filtrar usando operadores lambda
 
@@ -194,7 +195,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuI
 ```
 
 Para negar o resultado da expressão dentro da cláusula `any`, use o operador `not`, não o operador `ne`. Por exemplo, a consulta a seguir recupera apenas os usuários que não receberam o **imAddress** de `admin@contoso.com`.
->**Observação:** Para objetos de diretório como usuários, os operadores `not` e `ne` são suportados apenas em [consultas avançadas](/graph/aad-advanced-queries).
+
+> [!NOTE]
+> Para objetos de diretório como os operadores `not`e `ne` são suportados apenas em [consultas avançadas](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true
@@ -209,7 +212,8 @@ O operador `all` aplica uma Expressão booleana a cada membro de uma coleção e
 
 A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$filter`. Para obter mais detalhes sobre a sintaxe `$filter`, confira o [protocolo OData][odata-filter].
 
-> **Observação:** Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
+> [!NOTE]
+> Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 
 | Descrição | Exemplo
 |:------------|:--------|
@@ -239,8 +243,8 @@ Por exemplo, a seguinte solicitação retorna os usuários na organização no f
 GET https://graph.microsoft.com/v1.0/users?$format=json
 ```
 
-
-> **Observação:** o parâmetro de consulta `$format` é compatível com vários formatos (por exemplo, atom, xml e json), mas os resultados podem não ser retornados em todos os formatos.
+> [!NOTE]
+> O parâmetro de consulta `$format` é compatível com vários formatos (por exemplo, atom, xml e json), mas os resultados podem não ser retornados em todos os formatos.
 
 ## <a name="orderby-parameter"></a>parâmetro orderby
 
@@ -266,7 +270,8 @@ Com algumas APIs, você pode ordenar os resultados em várias propriedades. Por 
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
 
-> **Observação:** Quando você especificar `$filter` o servidor inferirá uma ordem de classificação para os resultados. Se você usar `$orderby` e `$filter` juntos para receber mensagens, como o servidor sempre infere uma ordem de classificação para os resultados de `$filter`, você deve [especificar propriedades de determinadas maneiras](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
+> [!NOTE]
+> Quando você especificar `$filter` o servidor inferirá uma ordem de classificação para os resultados. Se você usar `$orderby` e `$filter` juntos para receber mensagens, como o servidor sempre infere uma ordem de classificação para os resultados de `$filter`, você deve [especificar propriedades de determinadas maneiras](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
 
 
 O exemplo a seguir mostra uma consulta filtrada pelas propriedades **subject** e **priority** e classificadas pelas propriedades **subject**, **priority** e **receivedDateTime** em ordem decrescente.
@@ -293,8 +298,8 @@ Por exemplo, ao recuperar as mensagens do usuário conectado, você pode especif
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
-
-> **Importante:** Em geral, recomendamos que você use `$select` para limitar as propriedades retornadas por uma consulta àqueles exigidas pelo aplicativo. Isso se aplica particularmente a consultas com o potencial de retornar um conjunto de resultados amplo. Limitar as propriedades retornadas em cada linha reduzirá a carga de rede e ajudará a melhorar o desempenho do aplicativo.
+> [!IMPORTANT]
+> Em geral, recomendamos que você use `$select` para limitar as propriedades retornadas por uma consulta àqueles exigidas pelo aplicativo. Isso se aplica particularmente a consultas com o potencial de retornar um conjunto de resultados amplo. Limitar as propriedades retornadas em cada linha reduzirá a carga de rede e ajudará a melhorar o desempenho do aplicativo.
 >
 > No `v1.0`, alguns recursos do Azure AD que derivam de [directoryObject](/graph/api/resources/directoryobject), como [usuário](/graph/api/resources/user) e [grupo](/graph/api/resources/group), retornam um subconjunto limitado padrão de propriedades em leituras. Para esses recursos, você deve usar `$select` para retornar propriedades fora do conjunto padrão.  
 
@@ -306,8 +311,8 @@ Use o parâmetro de consulta `$skip` para definir o número de itens para ignora
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-
-> **Observação:** algumas APIs do Microsoft Graph, como Email e Calendário do Outlook (**message**, **event** e **calendar**), usam `$skip` para implementar a paginação. Quando os resultados de uma consulta ocuparem várias páginas, essas APIs retornarão uma propriedade `@odata:nextLink` com uma URL que contém um parâmetro `$skip`. Você pode usar essa URL para retornar a próxima página de resultados. Para saber mais, confira [Paginação](./paging.md).
+> [!NOTE]
+> Algumas APIs do Microsoft Graph, como Email e Calendário do Outlook (**mensagem**, **evento** e **calendário**), usam `$skip` para implementar a paginação. Quando os resultados de uma consulta ocuparem várias páginas, essas APIs retornarão uma propriedade `@odata:nextLink` com uma URL que contém um parâmetro `$skip`. Você pode usar essa URL para retornar a próxima página de resultados. Para saber mais, confira [Paginação](./paging.md).
 >
 > O cabeçalho **ConsistencyLevel** necessário para consultas avançadas em objetos de diretório não é incluído por padrão nas solicitações de página subsequentes. Deve ser definido explicitamente nas páginas subsequentes.
 
@@ -315,7 +320,9 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 Algumas solicitações retornam várias páginas de dados, devido à paginação do lado do servidor ou ao uso do parâmetro [`$top`](#top-parameter) para limitar o tamanho da página da resposta. Muitas APIs do Microsoft Graph usam o parâmetro de consulta `skipToken` para fazer referência às páginas subsequentes do resultado.  
 O parâmetro `$skiptoken` contém um token opaco que faz referência à próxima página de resultados e é retornado no URL fornecido na propriedade `@odata.nextLink` na resposta. Para saber mais, consulte [Paging](./paging.md).
-> **Observação:** Se você estiver usando a OData Count (adicionando `$count=true` na cadeia de caracteres de consulta) para consultas em objetos de diretório, a propriedade `@odata.count` estará presente apenas na primeira página.
+
+> [!NOTE]
+> Se você estiver usando a OData Count (adicionando `$count=true` na cadeia de caracteres de consulta) para consultas em objetos de diretório, a propriedade `@odata.count` estará presente apenas na primeira página.
 >
 > O cabeçalho **ConsistencyLevel** necessário para consultas avançadas em objetos de diretório não é incluído por padrão nas solicitações de página subsequentes. Deve ser definido explicitamente nas páginas subsequentes.
 
@@ -333,7 +340,7 @@ Por exemplo, a seguinte solicitação de [lista de mensagens](/graph/api/user-li
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-
+> [!NOTE]
 > O cabeçalho **ConsistencyLevel** necessário para consultas avançadas em objetos de diretório não é incluído por padrão nas solicitações de página subsequentes. Deve ser definido explicitamente nas páginas subsequentes.
 
 ## <a name="error-handling-for-query-parameters"></a>Tratamento de erro para parâmetros de consulta

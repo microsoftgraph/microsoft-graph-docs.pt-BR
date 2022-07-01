@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 41892000ba3b1e873156948506dd6c852e42c6e4
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 745e60831cbffe18afc9565bfcd459854ea408ef
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203579"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556042"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -47,6 +47,14 @@ GET /groups/{id}
 É possível usar a opção de consulta `$select` para obter propriedades específicas do grupo, inclusive aquelas que não são retornadas por padrão.
 
 Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).
+
+### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
+
+| Tipo de extensão       | Comentários                                                                       |
+|----------------------|--------------------------------------------------------------------------------|
+| Extensões de esquema    | Retornado somente com `$select`.                                                  |
+| Extensões abertas      | Retornado por meio da operação[Obter extensão aberta](opentypeextension-get.md). |
+| Extensões de diretório | Retornado por padrão.                                                           |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

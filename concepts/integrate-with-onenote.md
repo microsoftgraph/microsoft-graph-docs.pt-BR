@@ -1,16 +1,16 @@
 ---
 title: Visão geral da API do OneNote
-description: O OneNote é um bloco de anotações digital que permite que os clientes acompanhem ideias e anotações para uso doméstico, escolar ou profissional digitando, desenhando ou falando na Web, no telefone, no tablet ou no computador. Eles podem organizar anotações, alternar entre dispositivos e retomar de onde pararam, além de colaborar em anotações com outras pessoas em tempo real.
+description: Use a API do OneNote no Microsoft Graph para acessar blocos de anotações, seções e páginas do OneNote para criar soluções que ajudem seus usuários a planejar e organizar ideias e informações.
 author: Jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eeedcd2519900bdfccdde763d2996b18990787e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b8f8c01955d0ede7bfad843cebb783eb5f9f268f
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136016"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66444898"
 ---
 # <a name="onenote-api-overview"></a>Visão geral da API do OneNote
 
@@ -52,12 +52,11 @@ A seguir, estão algumas das solicitações mais populares para trabalhar com os
 
 ## <a name="learn-more-about-onenote-apis"></a>Saiba mais sobre as APIs do OneNote
 
-Faça uma análise aprofundada das APIs do Microsoft Graph para saber mais sobre as funcionalidades de atualização de conteúdo do OneNote. Os tópicos na lista a seguir mostram como criar novas páginas do OneNote e atualizar páginas existentes com novo conteúdo. Você também aprenderá sobre as práticas recomendadas usando o Microsoft Graph para atualizar os blocos de anotações do OneNote. 
-
+Faça uma análise aprofundada das APIs do Microsoft Graph para saber mais sobre as funcionalidades de atualização de conteúdo do OneNote. Os tópicos na lista a seguir mostram como criar novas páginas do OneNote e atualizar páginas existentes com novo conteúdo. Você também aprenderá sobre as práticas recomendadas usando o Microsoft Graph para atualizar os blocos de anotações do OneNote.
 
 ### <a name="work-with-onenote"></a>Trabalhar com o OneNote
 
-* [Usar a API REST do OneNote](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
+* [Usar a API REST do OneNote](/graph/api/resources/onenote-api-overview)
 * [Práticas recomendadas](onenote-best-practices.md)
 * [Diretrizes de identidade visual](onenote-branding.md)
 * [Abrir o cliente do OneNote](open-onenote-client.md)
@@ -77,7 +76,15 @@ Faça uma análise aprofundada das APIs do Microsoft Graph para saber mais sobre
 * [Adicionar imagens, vídeos e arquivos a páginas do OneNote](onenote-images-files.md)
 * [Usar marcas DIV da API do OneNote para extrair dados de capturas](onenote-extract-data.md)
 
+## <a name="api-reference"></a>Referência da API
+
+Está procurando a referência de API para esse serviço?
+
+- [API do OneNote no Microsoft Graph v1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0&preserve-view=true)
+- [API do OneNote no Microsoft Graph beta](/graph/api/resources/onenote-api-overview?view=graph-rest-beta&preserve-view=true)
+
 ## <a name="see-also"></a>Confira também
+
 Saiba mais sobre alguns outros recursos do OneNote que estão expostos somente no ponto de extremidade REST específico do serviço do OneNote.
 
 - [Desenvolvimento do OneNote](/previous-versions/office/office-365-api/how-to/onenote-landing)
@@ -89,16 +96,8 @@ Saiba mais sobre alguns outros recursos do OneNote que estão expostos somente n
 - [Usar a caixa de diálogo Salvar do OneNote em suas páginas da Web](/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
 - [Assinar webhooks](/previous-versions/office/office-365-api/how-to/onenote-sync)
 
-## <a name="api-reference"></a>Referência da API
-Está procurando a referência de API para esse serviço?
-
-- [API do OneNote no Microsoft Graph v1.0](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0)
-- [API do OneNote no Microsoft Graph beta](/graph/api/resources/onenote-api-overview?view=graph-rest-beta)
-
 ## <a name="next-steps"></a>Próximas etapas
 
-Use o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar as APIs do OneNote com seus próprios blocos de anotações do OneNote.
+- Use o [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) para experimentar as APIs do OneNote com seus próprios blocos de anotações do OneNote.
 
-Para fazer chamadas à API do OneNote por meio do Explorador do Graph, escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para **Ativar** o OneNote. Você também precisará habilitar as permissões apropriadas. No nome da conta no menu à esquerda, escolha **modificar permissões**. Para saber mais sobre as permissões do OneNote, confira [Permissões de anotações](permissions-reference.md#notes-permissions).
-
-Para começar a usar as APIs do OneNote no Microsoft Graph, confira o [conteúdo de referência do OneNote](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0).
+- Para fazer chamadas à API do OneNote por meio do Explorador do Graph, escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para **Ativar** o OneNote. Você também precisará habilitar as permissões apropriadas. No nome da conta no menu à esquerda, escolha **modificar permissões**. Para saber mais sobre as permissões do OneNote, confira [Permissões de anotações](permissions-reference.md#notes-permissions).

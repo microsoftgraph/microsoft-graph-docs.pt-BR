@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c5b4682e05c2ae9be9557b03341d5ee5586482fa
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: a898af9c5d6cfa6d95170fc830394be8044fc529
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509487"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555587"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------- |:------------------------------------------- |
 | Delegado (conta corporativa ou de estudante) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 | Delegado (conta pessoal da Microsoft) | Application.Read.All e User.Read, Application.ReadWrite.All e User.Read  |
-| Aplicativo | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+| Aplicativo | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

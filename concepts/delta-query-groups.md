@@ -1,15 +1,15 @@
 ---
 title: Obter as alterações incrementais para grupos
-description: A consulta delta no Microsoft Graph permite que você consulte adições, exclusões ou atualizações para recursos com suporte. Ele é habilitado por meio de uma série de solicitações delta. Para grupos, a consulta delta permite que você descubra alterações sem buscar todo o conjunto de grupos para comparar as alterações.
+description: Use a consulta delta para descobrir alterações sem buscar todo o conjunto de grupos para comparar as alterações. O exemplo a seguir mostra uma série de solicitações para controlar alterações em grupos.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8873c45f8cbd052eeff23b3131fcdb9284a33539
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 63ac88b147b2a10d27bb93c5b61e332e33b8153a
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246724"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555713"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 
@@ -24,15 +24,7 @@ Acompanhe as alterações de grupos por meio de uma ou mais solicitações GET c
 - A função **delta**.
 - Um [token de estado](./delta-query-overview.md) (_deltaToken_ ou _skipToken_) da chamada de função GET **delta** anterior.
 
-## <a name="example-to-track-changes-to-groups"></a>Exemplo para controlar alterações em grupos
-
-O exemplo a seguir mostra uma série de solicitações para rastrear as alterações nos grupos:
-
-1. [Solicitação inicial](#initial-request) e [resposta](#initial-response)
-2. [solicitação nextLink](#nextlink-request) e [resposta](#nextlink-response)
-3. [Solicitação final nextLink](#final-nextlink-request) e [resposta](#final-nextlink-response)
-4. [Solicitação deltaLink](#deltalink-request) e [resposta deltaLink](#deltalink-response)
-
+## <a name="example-track-changes-to-groups"></a>Exemplo para controlar alterações em grupos
 
 O exemplo a seguir mostra uma série de solicitações para controlar alterações em grupos:
 
@@ -99,7 +91,8 @@ Content-type: application/json
 }
 ```
 
->**Observação:** A `members@delta` propriedade está incluída no primeiro objeto de grupo – **Toda Empresa** – e contém os dois membros atuais do grupo. **sg-HR** não contém essa propriedade porque o grupo não tem membros.
+> [!NOTE]
+> A `members@delta`propriedade está incluída no primeiro objeto de grupo - **Toda a empresa** - e contém os dois membros atuais do grupo. **sg-HR** não contém essa propriedade porque o grupo não tem membros.
 
 ### <a name="nextlink-request"></a>solicitação nextLink
 
@@ -214,7 +207,8 @@ Content-type: application/json
 
 Se houver alterações, um conjunto de grupos alterados será incluído. A resposta também contém um `@odata.nextLink`, caso haja várias páginas de alterações a serem recuperadas, ou um `@odata.deltaLink`. Implemente o mesmo padrão de seguir o `@odata.nextLink` e persistir o `@odata.deltaLink` final para chamadas futuras.
 
->**Observação:** essa solicitação pode ter atrasos de replicação para grupos que foram criados, atualizados ou excluídos recentemente. Repita a operação `@odata.nextLink` ou `@odata.deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
+> [!NOTE]
+> Essa solicitação pode ter atrasos de replicação para grupos que foram criados, atualizados ou excluídos recentemente. Repita `@odata.nextLink` ou `@odata.deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
 
 ```http
 HTTP/1.1 200 OK
@@ -262,7 +256,8 @@ Alguns aspectos a observar sobre a resposta do exemplo acima:
 
 A propriedade `members@delta` é incluída em objetos de grupo por padrão, quando o parâmetro de consulta `$select` não foi especificado ou quando o parâmetro `$select=members` é especificado explicitamente. Para grupos com muitos membros, é possível que todos os membros não caibam em uma única resposta. Implemente o padrão a seguir para lidar com esses casos.
 
->**Observação:** esse padrão aplica-se à recuperação inicial do estado de grupo e às chamadas subsequentes para obter as alterações da consulta delta.
+> [!NOTE]
+> Esse padrão aplica-se à recuperação inicial do estado de grupo e às chamadas subsequentes para obter as alterações da consulta delta.
 
 Vamos supor que você esteja executando a seguinte consulta delta– para capturar o estado completo inicial dos grupos ou posteriormente para obter alterações delta:
 

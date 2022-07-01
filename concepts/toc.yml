@@ -151,19 +151,19 @@ items:
             href: cloud-communications-callrecords.md
           - name: Permissões e artefatos de reunião online
             href: cloud-communications-online-meeting-artifacts.md
-          - name: Escolha uma opção de hospedagem de mídia
+          - name: Escolher uma opção de hospedagem de mídia
             href: cloud-communications-media.md
-          - name: Crie ou participe de reuniões online
+          - name: Criar ou ingressar em reuniões online
             href: cloud-communications-online-meetings.md
           - name: Escolha um API de reunião online
             href: choose-online-meeting-api.md
           - name: Configurar o acesso do aplicativo
             href: cloud-communication-online-meeting-application-access-policy.md
-          - name: Gerenciar números de telefone bot
+          - name: Gerenciar números de telefone de bot
             href: cloud-communications-phone-number.md
           - name: Identificar participantes do modo de exibição de galeria grande
             href: cloud-communications-identifylargegalleryview.md
-          - name: Inscreva-se para alterar notificações para reuniões online
+          - name: Obter notificações de alteração de reuniões online
             href: changenotifications-for-onlinemeeting.md
       - name: Conformidade
         href: compliance-concept-overview.md
@@ -187,7 +187,7 @@ items:
             href: connecting-external-content-manage-schema.md
           - name: Gerenciar itens
             href: connecting-external-content-manage-items.md
-          - name: Usar grupos externos
+          - name: Grupos externos
             href: connecting-external-content-external-groups.md
           - name: Limites da API
             href: connecting-external-content-api-limits.md
@@ -196,10 +196,10 @@ items:
           - name: Visão Geral
             href: cross-device-concept-overview.md
             displayName: 'Project Rome, cross-device, cross device, cross-device experience'
-          - name: Usar uma API do feed de atividades
+          - name: Usar a API do feed de atividades
             href: activity-feed-concept-overview.md
             displayName: 'cross-device, cross device'
-          - name: Usar uma API de retransmissão de dispositivo (versão prévia)
+          - name: Usar a API de retransmissão de dispositivo (versão prévia)
             href: device-relay-concept-overview.md
             displayName: 'cross-device, cross device'
           - name: Crie aplicativos entre dispositivos
@@ -272,6 +272,14 @@ items:
             href: assignments-submissions-states-transition.md
           - name: Especificar o canal padrão para notificações de atribuição
             href: education-build-notificationchannelurl.md
+      - name: Extensões
+        items:
+          - name: Visão geral
+            href: extensibility-overview.md
+          - name: Usar extensões abertas
+            href: extensibility-open-users.md
+          - name: Usar extensões de esquema
+            href: extensibility-schema-groups.md
       - name: Arquivos
         items:
           - name: Visão geral
@@ -449,11 +457,11 @@ items:
             href: search-concept-person.md
           - name: Gerenciar respostas de pesquisa do administrador (versão prévia)
             href: search-concept-answers.md
-          - name: Gerenciar layout de resultados de pesquisa
+          - name: Gerenciar layout de resultados da pesquisa (versão prévia)
             href: search-concept-display-layout.md
           - name: Refinar resultados de pesquisa
             href: search-concept-aggregation.md
-          - name: Solicitar verificação ortográfica
+          - name: Solicitar correções ortográficas
             href: search-concept-speller.md
           - name: Cortar resultados de pesquisa duplicados
             href: search-concept-trim-duplicate.md
@@ -495,12 +503,12 @@ items:
             href: choose-online-meeting-api.md
           - name: Configurar as guias internas
             href: teams-configuring-builtin-tabs.md
-          - name: APIs protegidas
-            href: teams-protected-apis.md
-          - name: Requisitos de licenciamento e pagamento
-            href: teams-licenses.md
           - name: Enviar mensagens proativas com um bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
+          - name: APIs protegidas
+            href: teams-protected-apis.md
+          - name: Modelos de licenciamento e pagamento
+            href: teams-licenses.md
           - name: Notificações de feed de atividades
             items:
               - name: Enviar notificações de feed de atividades
@@ -509,7 +517,7 @@ items:
                 href: teams-activity-feed-notifications-best-practices.md
           - name: Inscreva-se para alterar as notificações
             href: teams-change-notification-in-microsoft-teams-overview.md
-          - name: Mensagens do sistema
+          - name: Obter mensagens do sistema
             href: system-messages.md
       - name: Tarefas pendentes
         href: todo-concept-overview.md
@@ -635,14 +643,8 @@ items:
               - name: Obter alterações em usuários (exemplo)
                 href: delta-query-users.md
           - name: Adicionar dados personalizados
-            items:
-              - name: Visão Geral
-                href: extensibility-overview.md
-                displayName: 'add custom data, extensions, resources using extensions'
-              - name: Usar extensões abertas (exemplo)
-                href: extensibility-open-users.md
-              - name: Usar extensões de esquema (exemplo)
-                href: extensibility-schema-groups.md
+            displayName: 'directory extensions, schema extensions, open extensions, extension attributes'
+            href: extensibility-overview.md
           - name: Usar o Explorador do Graph
             items:
               - name: Introdução

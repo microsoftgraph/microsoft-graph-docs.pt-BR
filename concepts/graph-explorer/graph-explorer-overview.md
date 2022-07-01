@@ -1,14 +1,14 @@
 ---
 title: Usar o Explorador do Graph para tentar Microsoft Graph APIs
-description: Use o Explorador do Graph para experimentar Microsoft Graph APIs no locatário de exemplo padrão para explorar os recursos ou entrar em seu próprio locatário e usá-lo como uma ferramenta de criação de protótipos para atender aos cenários do aplicativo.
+description: Experimente as APIs do Microsoft Graph no locatário de exemplo padrão para explorar os recursos ou entrar em seu próprio locatário e usá-lo como uma ferramenta de criação de protótipos para atender aos cenários do aplicativo.
 ms.localizationpriority: high
 author: RabebOthmani
-ms.openlocfilehash: 9f1d112cc47493b36fe455d817aa637e7fda783e
-ms.sourcegitcommit: 267e3baf545c8dc71ba2ab69497e3ec369379f43
+ms.openlocfilehash: 1a1e16adcc420f09c867baae616bfce47b7a8595
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65176592"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66555706"
 ---
 # <a name="use-graph-explorer-to-try-microsoft-graph-apis"></a>Usar o Explorador do Graph para tentar Microsoft Graph APIs
 
@@ -79,5 +79,5 @@ Para visualizar a resposta em um formato diferente do JSON padrão, escolha a gu
 ## <a name="next-steps"></a>Próximas etapas
 
 - Experimente o [Explorador de Gráficos](https://developer.microsoft.com/graph/graph-explorer/).
-- Saiba mais sobre o [Explorador do Graph](./graph-explorer-features.md).
+- Saiba como usar os [recursos do Explorador do Graph](./graph-explorer-features.md).
 - Contribua ou forneça comentários no [repositório do GitHub](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose).

@@ -1,15 +1,15 @@
 ---
 title: Obter as alterações incrementais para usuários
-description: A consulta delta no Microsoft Graph permite consultar adições, exclusões ou atualizações para recursos com suporte. Ela é habilitada por meio de uma série de solicitações delta. Para usuários, a consulta delta permite descobrir alterações sem buscar todo o conjunto de usuários para comparar as alterações.
+description: Para usuários, a consulta delta permite descobrir alterações sem buscar todo o conjunto de usuários para comparar as alterações. O exemplo a seguir mostra uma série de solicitações para controlar alterações em usuários.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: d03762372a789d76d3f38121da47d662e281b2f2
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: 907d45aeddef86b0dbb5a30bc06b207a883e7eba
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65247221"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554887"
 ---
 # <a name="get-incremental-changes-for-users"></a>Obter as alterações incrementais para usuários
 
@@ -24,7 +24,7 @@ Acompanhe as alterações de usuários por meio de uma ou mais solicitações GE
 - A função **delta**.
 - Um [token de estado](./delta-query-overview.md) (_deltaToken_ ou _skipToken_) da chamada de função GET **delta** anterior.
 
-## <a name="example-to-track-changes-to-users"></a>Exemplo para acompanhar alterações em usuários
+## <a name="example-track-changes-to-users"></a>Exemplo: acompanhar alterações em usuários
 
 O exemplo a seguir mostra uma série de solicitações para controlar alterações em usuários:
 
@@ -189,7 +189,8 @@ Content-type: application/json
 
 Se ocorreram alterações, um conjunto de objetos de usuário alterados será incluído. A resposta também contém um `@odata.nextLink`, caso haja várias páginas de alterações a serem recuperadas, ou um `@odata.deltaLink`. Implemente o mesmo padrão de seguir o `@odata.nextLink` e persistir o `@odata.deltaLink` final para chamadas futuras.
 
->**Observação:** essa solicitação pode ter atrasos de replicação para usuários que foram criados, atualizados ou excluídos recentemente. Repita `@odata.nextLink` ou `@odata.deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
+> [!NOTE]
+> Essa solicitação pode ter atrasos de replicação para usuários que foram criados, atualizados ou excluídos recentemente. Repita `@odata.nextLink` ou `@odata.deltaLink` depois de algum tempo para recuperar as alterações mais recentes.
 
 ```http
 HTTP/1.1 200 OK
@@ -216,4 +217,5 @@ Content-type: application/json
 ```
 
 ## <a name="see-also"></a>Confira também
-+ Visão geral da [consulta delta do Microsoft Graph](delta-query-overview.md).
+
+- Visão geral da [consulta delta do Microsoft Graph](delta-query-overview.md).

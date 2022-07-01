@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a0a8d7b93e7b21049998cca45068c4cf1258ff7d
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: 4726c2a71f8fd10fab3a4dd0ea86cc5b56c455cd
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971340"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66437013"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -855,6 +855,7 @@ Nenhum
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
 ---
+
 
 ## <a name="education-permissions"></a>Permissões de educação
 
@@ -1721,6 +1722,32 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 _ProgramControl.Read.All_ e _ProgramControl.ReadWrite.All_ são válidos apenas para contas de trabalho ou escola.
 
 Para um aplicativo com permissões delegadas para ler programas e controles de programas, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Usuário. Para um aplicativo com permissões delegadas para gravar programas e controles de programas, o usuário conectado deve ser membro de uma das seguintes funções de administrador: Administrador Global ou Administrador do Usuário.  Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+---
+## <a name="records-management-permissions"></a>Permissões de gerenciamento de registros
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_RecordsManagement.Read.All_ |Ler dados do Gerenciamento de Registros do Microsoft Purview. |Permite que o aplicativo leia todos os dados da solução de Gerenciamento de Registros do Microsoft Purview, como nomes de rótulos, nomes de eventos e nomes de tipo de evento em nome do usuário conectado. |Sim | 
+|_RecordsManagement.ReadWrite.All_ | Ler e gravar dados do Gerenciamento de Registros do Microsoft Purview. |Permita que o aplicativo crie, atualize e exclua todos os dados da solução de Gerenciamento de Registros do Microsoft Purview, como rótulos, eventos e tipos de eventos em nome do usuário conectado. |Sim |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_RecordsManagement.Read.All_ |Ler dados do Gerenciamento de Registros do Microsoft Purview. |Permite que o aplicativo leia todos os dados da solução de Gerenciamento de Registros do Microsoft Purview, como nomes de rótulos, nomes de eventos e nomes de tipo de evento em nome do usuário conectado. |Sim | 
+|_RecordsManagement.ReadWrite.All_ | Ler e gravar dados do Gerenciamento de Registros do Microsoft Purview. |Permita que o aplicativo crie, atualize e exclua todos os dados da solução de Gerenciamento de Registros do Microsoft Purview, como rótulos, eventos e tipos de eventos em nome do usuário conectado. |Sim |
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegated
+
+* _RecordsManagement.Read.All_: Obtenha a lista de rótulos disponíveis para o usuário de Gerenciamento de Registros do Microsoft Purview (`GET /security/labels/retentionLabels`)
+* _RecordsManagement.ReadWrite.All_: Criar um rótulo no gerenciamento de Registros do Microsoft Purview (`POST /security/labels/retentionLabels/`)
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
 ---
 
