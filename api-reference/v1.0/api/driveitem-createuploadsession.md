@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Upload de arquivos retomável
+title: 'driveItem: createUploadSession'
 ms.localizationpriority: high
 ms.prod: sharepoint
 description: Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo.
 doc_type: apiPageType
-ms.openlocfilehash: b2e24a917766de1cd9e4f4853d4a88d3c963da41
-ms.sourcegitcommit: 2132198551c7d1f37474debab471f612a3e35a08
+ms.openlocfilehash: 5314c4060c72337d3a82821334f2e5d2bf0fe84f
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66141212"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577886"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
+# <a name="driveitem-createuploadsession"></a>driveItem: createUploadSession
 
 Namespace: microsoft.graph
 
@@ -88,10 +87,10 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já estiver sen
 
 ## <a name="parameters"></a>Parâmetros
 
-| Parâmetro            | Tipo                          | Descrição
-|:---------------------|:------------------------------|:---------------------------------
-| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo sendo carregado
-| deferCommit          | Booliano                       | Se definido como verdadeiro, a criação final do arquivo no destino exigirá uma solicitação explícita. Apenas no OneDrive for Business.
+| Parâmetro   | Tipo                                                                           | Descrição                                                                                           |
+|:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
+| deferCommit | Booliano                                                                        | Se definido como `true`, a criação final do arquivo no destino exigirá uma solicitação explícita. |
+| item        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Dados sobre o arquivo sendo carregado.                                                                   |
 
 ### <a name="request"></a>Solicitação
 

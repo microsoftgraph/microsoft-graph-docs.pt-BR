@@ -1,15 +1,15 @@
 ---
 title: Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
-description: A consulta delta permite que aplicativos localizem entidades recém-criadas, atualizadas ou excluídas sem executar uma leitura completa do recurso de destino com cada solicitação. Os aplicativos do Microsoft Graph podem usar consulta delta para sincronizar, com eficiência, alterações com armazenamento de dados local.
+description: Usar a consulta delta para habilitar os aplicativos a localizarem entidades recém-criadas, atualizadas ou excluídas sem executar uma leitura completa do recurso de destino com cada solicitação.
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: bb0acf60a44ead08fe779678bd0bcbba53e2b618
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: c3e65f9aaf8c70f323c7d3b9c99fae1a826348d0
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65819626"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556245"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -32,11 +32,14 @@ O padrão típico de chamada corresponde ao que segue:
 3. Quando o aplicativo precisa saber das alterações no recurso, ele faz uma nova solicitação usando a URL `@odata.deltaLink` recebida na etapa 2. Esta solicitação *pode* ser feita imediatamente após concluir a etapa 2 ou quando o aplicativo verifica as alterações.
 4. O Microsoft Graph retorna uma resposta, descrevendo alterações no recurso desde a solicitação anterior e em uma URL `@odata.nextLink` ou uma URL `@odata.deltaLink`.
 
->**Observação:** recursos armazenados no Azure Active Directory (por exemplo, usuários e grupos) dão suporte a cenários do tipo "sincronizar a partir de agora". Isso permite que você ignore as etapas 1 e 2 acima (se você não está interessado em recuperar o estado completo do recurso) e peça para conferir o último `@odata.deltaLink` em vez disso. Acrescente `$deltaToken=latest` à função `delta`, e a resposta conterá um `@odata.deltaLink` e nenhum dado do recurso. Os recursos do OneDrive e do Microsoft Office SharePoint Online também oferecem suporte a esse recurso. Para recursos no OneDrive e no Microsoft Office SharePoint Online, anexe `token=latest` em vez disso.
+> [!NOTE]
+> Recursos armazenados no Azure Active Directory (tais como usuários e grupos) dão suporte a cenários do tipo "sincronizar a partir de agora". Isso permite que você ignore as etapas 1 e 2 acima (se você não está interessado em recuperar o estado completo do recurso) e peça para conferir o último `@odata.deltaLink` em vez disso. Acrescente `$deltaToken=latest` à função `delta`, e a resposta conterá um `@odata.deltaLink` e nenhum dado do recurso. Os recursos do OneDrive e do Microsoft Office SharePoint Online também oferecem suporte a esse recurso. Para recursos no OneDrive e no Microsoft Office SharePoint Online, anexe `token=latest` em vez disso.
 
->**Observação:** a função de consulta Delta geralmente é referida ao acrescentar `/delta` ao nome do recurso. No entanto, `/delta` é um atalho para o nome totalmente qualificado `/microsoft.graph.delta` que você vê em solicitações geradas pelos SDKs do Microsoft Graph.
+> [!NOTE]
+> A função de consulta Delta é geralmente referida ao anexar `/delta` o nome do recurso. No entanto, `/delta` é um atalho para o nome totalmente qualificado `/microsoft.graph.delta` que você vê em solicitações geradas pelos SDKs do Microsoft Graph.
 
->**Observação:** A solicitação inicial para a função de consulta delta (sem `$deltaToken` ou `$skipToken`) retornará os recursos que existem atualmente na coleção. Os recursos que foram criados e excluídos antes da consulta delta inicial não serão retornados. As atualizações feitas antes da solicitação inicial são resumidas no recurso retornado como seu estado mais recente.
+> [!NOTE]
+> A solicitação inicial para a função de consulta delta (sem `$deltaToken` ou `$skipToken`) devolverá os recursos que existem atualmente na coleção. Os recursos que foram criados e excluídos antes da consulta delta inicial não serão retornados. As atualizações feitas antes da solicitação inicial são resumidas no recurso retornado como seu estado mais recente.
 
 ### <a name="state-tokens"></a>Tokens de estado
 
@@ -101,37 +104,38 @@ Os possíveis motivos de ser **@removido** podem ser `changed` ou `deleted`.
 
 O objeto **@removido** pode ser retornado na resposta inicial da consulta delta e nas respostas rastreadas (deltaLink). Os clientes que usam solicitações de consulta delta devem ser projetados para lidar com esses objetos nas respostas.
 
->**Observação:** é possível que uma única entidade seja incluída várias vezes na resposta, caso essa entidade tenha sido alterada várias vezes e sob determinadas condições. As consultas Delta permitem aos aplicativos listar todas as alterações, mas não garantem que as entidades sejam unificadas em uma única resposta.
+> [!NOTE]
+> É possível que uma única entidade seja incluída várias vezes na resposta, caso essa entidade tenha sido alterada várias vezes e sob determinadas condições. As consultas Delta permitem aos aplicativos listar todas as alterações, mas não garantem que as entidades sejam unificadas em uma única resposta.
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
 Atualmente, a consulta delta é compatível com os recursos a seguir. Observe que alguns recursos que estão disponíveis na v1.0 têm suas funções **delta** correspondentes ainda em status de versão prévia, conforme indicado.
 
-| **Coleção de recursos**                                        | **API**                                                                                                                                                      |
-| :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Aplicativos                                                   | Função [delta](/graph/api/application-delta) do recurso [aplicativo](/graph/api/resources/application)                                               |
-| Unidades administrativas (visualização)                                 | Função [delta](/graph/api/administrativeunit-delta) (visualização) do recurso [administrativeUnit](/graph/api/resources/administrativeunit)                |
-| Mensagens de chat em um canal.                                     | Função [delta](/graph/api/chatmessage-delta) (visualização) do [chatMessage](/graph/api/resources/chatmessage)                                              |
+| **Coleção de recursos**                                        | **API**                                                                                                                                            |
+| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aplicativos                                                   | Função [delta](/graph/api/application-delta) do recurso [aplicativo](/graph/api/resources/application)                                     |
+| Unidades administrativas (visualização)                                 | Função [delta](/graph/api/administrativeunit-delta) (visualização) do recurso [administrativeUnit](/graph/api/resources/administrativeunit)      |
+| Mensagens de chat em um canal.                                     | Função [delta](/graph/api/chatmessage-delta) (visualização) do [chatMessage](/graph/api/resources/chatmessage)                                    |
 | Funções de diretório                                                | Função [delta](/graph/api/directoryrole-delta) do recurso [directoryRole](/graph/api/resources/directoryrole) |
 | Itens de unidade\*                                                  | Função [delta](/graph/api/driveitem-delta) do recurso [driveItem](/graph/api/resources/driveitem)             |
-| Atribuições de educação                                          | função [delta](/graph/api/educationassignment-delta) do recurso [educationAssignment](/graph/api/resources/educationassignment)                                    |
-| Categorias educacionais                                           | função [delta](/graph/api/educationcategory-delta) do recurso [educationCategory](/graph/api/resources/educationcategory)                                    |
-| Aulas de educação                                              | Função [delta](/graph/api/educationclass-delta) do recurso [educationClass](/graph/api/resources/educationclass)                                      |
-| Escolas da Educação                                              | Função [delta](/graph/api/educationschool-delta) do recurso [educationSchool](/graph/api/resources/educationschool)                                   |
-| Usuários da educação                                                | Função [delta](/graph/api/educationuser-delta) do recurso [educationUser](/graph/api/resources/educationuser)                                         |
+| Atribuições de educação                                          | função [delta](/graph/api/educationassignment-delta) do recurso [educationAssignment](/graph/api/resources/educationassignment)             |
+| Categorias educacionais                                           | função [delta](/graph/api/educationcategory-delta) do recurso [educationCategory](/graph/api/resources/educationcategory)                   |
+| Aulas de educação                                              | Função [delta](/graph/api/educationclass-delta) do recurso [educationClass](/graph/api/resources/educationclass)                            |
+| Escolas da Educação                                              | Função [delta](/graph/api/educationschool-delta) do recurso [educationSchool](/graph/api/resources/educationschool)                         |
+| Usuários da educação                                                | Função [delta](/graph/api/educationuser-delta) do recurso [educationUser](/graph/api/resources/educationuser)                               |
 | Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](/graph/api/event-delta) do recurso [evento](/graph/api/resources/event)                         |
 | Grupos                                                         | Função [delta](/graph/api/group-delta) do recurso [group](/graph/api/resources/group)                         |
-| Listar itens\*                                                   | função [delta](/graph/api/listitem-delta) do recurso [listItem](/graph/api/resources/listitem)             |
+| Listar itens\*                                                   | função [delta](/graph/api/listitem-delta) do recurso [listItem](/graph/api/resources/listitem)                |
 | Pastas de email                                                   | função [delta](/graph/api/mailfolder-delta) do recurso [mailFolder](/graph/api/resources/mailfolder)           |
 | Mensagens de uma pasta                                           | função [delta](/graph/api/message-delta) do recurso [mensagem](/graph/api/resources/message)                    |
 | Contatos organizacionais                                        | função [delta](/graph/api/orgcontact-delta) do recurso [orgContact](/graph/api/resources/orgcontact)          |
-| OAuth2PermissionGrants                                         | Função [delta](/graph/api/oauth2permissiongrant-delta) do recurso [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant)                  |
+| OAuth2PermissionGrants                                         | Função [delta](/graph/api/oauth2permissiongrant-delta) do recurso [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant)         |
 | Pastas de contatos pessoais                                       | função [delta](/graph/api/contactfolder-delta) do recurso [contactFolder](/graph/api/resources/contactfolder) |
 | Contatos pessoais em uma pasta                                  | Função [delta](/graph/api/contact-delta) do recurso [contato](/graph/api/resources/contact)                   |
-| Itens do Planner\*\* (pré-visualização)                                    | Função [delta](/graph/api/planneruser-list-delta) (visualização) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser)                 |
-| Entidades de serviço                                             | Função [delta](/graph/api/serviceprincipal-delta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal)                                |
-| Tarefas pendente em uma lista de tarefas                                     | Função [delta](/graph/api/todotask-delta) do recurso [todoTask](/graph/api/resources/todotask)                                                        |
-| Listas de tarefas pendentes                                               | Função [delta](/graph/api/todotasklist-delta) do recurso [todoTaskList](/graph/api/resources/todotasklist)                                            |
+| Itens do Planner\*\* (pré-visualização)                                    | Função [delta](/graph/api/planneruser-list-delta) (visualização) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser)        |
+| Entidades de serviço                                             | Função [delta](/graph/api/serviceprincipal-delta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal)                       |
+| Tarefas pendente em uma lista de tarefas                                     | Função [delta](/graph/api/todotask-delta) do recurso [todoTask](/graph/api/resources/todotask)                                               |
+| Listas de tarefas pendentes                                               | Função [delta](/graph/api/todotasklist-delta) do recurso [todoTaskList](/graph/api/resources/todotasklist)                                   |
 | Usuários                                                          | função [delta](/graph/api/user-delta) do recurso [usuário](/graph/api/resources/user)                            |
 
 
@@ -203,9 +207,9 @@ A consulta Delta pode retornar um código de resposta de `410 (gone)` e um cabe�
 ### <a name="token-duration"></a>Duração do token
 
 Os tokens Delta só são válidos para um período específico, antes que o aplicativo cliente precise executar uma sincronização total novamente.
-+ Para [objetos de diretório](/graph/api/resources/directoryobject), o limite é de sete dias. 
-+ Para objetos educacionais (**educationSchool**, **educationUser** e **educationClass**), o limite é de sete dias.
-+ Para entidades do Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), o limite superior não é corrigido; depende do tamanho do cache de tokens do delta interno. Enquanto os novos tokens delta são adicionados ao cache, após a capacidade do cache ser excedida, os tokens delta mais antigos são excluídos.
+- Para [objetos de diretório](/graph/api/resources/directoryobject), o limite é de sete dias. 
+- Para objetos educacionais (**educationSchool**, **educationUser** e **educationClass**), o limite é de sete dias.
+- Para entidades do Outlook (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), o limite superior não é corrigido; depende do tamanho do cache de tokens do delta interno. Enquanto os novos tokens delta são adicionados ao cache, após a capacidade do cache ser excedida, os tokens delta mais antigos são excluídos.
 
 No caso de um token expirado, o serviço deve responder com um erro da série 40X com códigos de erro como `syncStateNotFound`. Para obter mais informações, consulte [Códigos de erro no Microsoft Graph](/graph/errors#code-property).
 

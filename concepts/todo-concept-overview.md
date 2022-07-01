@@ -1,18 +1,19 @@
 ---
 title: Visão geral da API do To Do
-description: O To Do Oferece uma maneira simples de gerenciar suas tarefas e planejar o seu dia
+description: Use a API de Tarefas Pendentes da Microsoft no Microsoft Graph para gerenciar tarefas e planejar seu dia. As tarefas são organizadas em listas de tarefas acessadas através de clientes do Tarefas Pendentes, Outlook e Teams.
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 3b4fd77adf93b2570ffbb3570a881aaa5e0c551e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 30e4655ddcf4ff96b6cd3c82df80402c2f83d330
+ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062303"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556287"
 ---
 # <a name="to-do-api-overview"></a>Visão geral da API do Tarefa Pendente
-O Microsoft To-Do fornece uma maneira simples para as pessoas gerenciarem suas tarefas e planejarem seu dia. As tarefas são organizadas em listas de tarefas, que podem ser acessadas através de clientes do To Do, Outlook e Teams a partir de qualquer dispositivo.
+
+A API de Tarefas Pendentes da Microsoft fornece uma maneira simples para as pessoas gerenciarem suas tarefas e planejarem seu dia. As tarefas são organizadas em listas de tarefas, que podem ser acessadas através de clientes do Tarefas Pendentes, Outlook e Teams a partir de qualquer dispositivo.
 
 **Aplicativo To Do para Windows**
 
@@ -40,6 +41,8 @@ O Microsoft To Do fornece uma nova entidade chamada _linkedResource_, que você 
 | Excluir uma tarefa | DELETE https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId} |
 
 ## <a name="api-reference"></a>Referência da API
+
 Está procurando a referência de API para esse serviço?
 
-- [API do To Do no Microsoft Graph](/graph/api/resources/todo-overview)
+- [API de Tarefas Pendentes no Microsoft Graph v1.0](/graph/api/resources/todo-overview?view=graph-rest-1.0&preserve-view=true)
+- [API de Tarefas Pendentes no Microsoft Graph beta](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true)
