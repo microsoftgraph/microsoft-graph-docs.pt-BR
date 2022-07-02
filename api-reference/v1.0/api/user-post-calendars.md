@@ -1,22 +1,23 @@
 ---
 title: Criar calendário
-description: Use esta API para criar um novo calendário para um usuário.
+description: Criar um novo calendário para um usuário.
 author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 39fa746b720b0682b951b2fa522c6a197e646d49
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 79f622d2f64070d258298e8b375b859d0c3828d8
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128138"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577613"
 ---
 # <a name="create-calendar"></a>Criar calendário
 
 Namespace: microsoft.graph
 
-Use esta API para criar um novo Calendar para um [usuário](../resources/user.md).
+Criar um novo calendário para um [usuário](../resources/user.md).
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,15 +40,15 @@ POST /users/{id | userPrincipalName}/calendars
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).
+No corpo da solicitação, forneça uma representação JSON de um objeto de [calendário](../resources/calendar.md).
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [calendar](../resources/calendar.md) no corpo da resposta.
+Se bem-sucedido, este método devolver o `201 Created` código de resposta e um objeto de [calendário](../resources/calendar.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -88,9 +89,9 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, forneça uma representação JSON do objeto [calendar](../resources/calendar.md).
 ### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+Este é um exemplo de resposta. 
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

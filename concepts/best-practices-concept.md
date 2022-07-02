@@ -1,18 +1,18 @@
 ---
 title: Práticas recomendadas para trabalhar com o Microsoft Graph
-description: Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
+description: Aplique essas melhores práticas para melhorar o desempenho do seu aplicativo Microsoft Graph e tornar seu aplicativo mais confiável para os usuários finais.
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 0d80e6c0f2458ab6a7880e2276bf895d8b6ec52e
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: b2cb4b928db17817bf2543a425adde0827d75008
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336232"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577571"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Práticas recomendadas para trabalhar com o Microsoft Graph
 
-Este artigo descreve as práticas recomendadas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph, caso isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
+Este artigo descreve as melhores práticas que você pode aplicar para ajudar seus aplicativos a tirar o máximo proveito do Microsoft Graph&mdash;, quer isso envolva saber mais sobre o Microsoft Graph, melhorar o desempenho do aplicativo ou tornar seu aplicativo mais confiável para os usuários finais.
 
 ## <a name="use-graph-explorer-to-get-to-know-the-api"></a>Usar o Graph Explorer para saber mais sobre a API
 
@@ -71,7 +71,8 @@ retornaria uma resposta contendo uma propriedade `@odata.nextLink`, se o conjunt
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$skip=23"
 ```
 
->**Observação:** seu aplicativo deve **sempre** lidar com a possibilidade das respostas serem paginadas sem processamento e usar a propriedade `@odata.nextLink` para obter o próximo conjunto paginado de resultados, até que todas as páginas do conjunto de resultados sejam lidas. A página final não conterá uma propriedade `@odata.nextLink`. Você deve incluir a URL inteira na propriedade `@odata:nextLink` na solicitação da próxima página de resultados, tratando toda a URL como uma cadeia de caracteres opaca.
+> [!NOTE]
+> Seu aplicativo deve **sempre** lidar com a possibilidade das respostas serem paginadas sem processamento e usar a propriedade `@odata.nextLink` para obter o próximo conjunto paginado de resultados, até que todas as páginas do conjunto de resultados sejam lidas. A página final não conterá uma propriedade `@odata.nextLink`. Você deve incluir a URL inteira na propriedade `@odata:nextLink` na solicitação da próxima página de resultados, tratando toda a URL como uma cadeia de caracteres opaca.
 
 Para saber mais, confira [paginação](paging.md).
 
@@ -110,7 +111,8 @@ Em geral, por motivos de desempenho e até mesmo segurança ou privacidade, voc�
 
 Escolha apenas as propriedades que seu aplicativo realmente precisa e nada mais já que isso evitará tráfego de rede e processamento de dados desnecessários em seu aplicativo (e no serviço).
 
->**Observação:** use o parâmetro de consulta `$select` para limitar as propriedades retornadas por uma consulta àquelas exigidas pelo aplicativo.
+> [!NOTE]
+> Use o parâmetro de consulta `$select` para limitar as propriedades devolvidas por uma consulta àquelas exigidas pelo aplicativo.
 
 Por exemplo, ao recuperar as mensagens do usuário conectado, você pode especificar que somente as propriedades **from** e **subject** sejam retornadas:
 
@@ -122,7 +124,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 Para algumas operações, como PUT e PATCH (e, em alguns casos, POST), se seu aplicativo não precisa usar uma carga de resposta, solicite à API que retorne dados mínimos. Observe que alguns serviços já retornam uma resposta 204 No Content para operações PUT e PATCH.
 
->**Observação:** solicite respostas de representação mínima usando um cabeçalho de solicitação HTTP onde for apropriado: *Prefer: return=minimal*. Observe que, em operações de criação, isso pode não ser adequado já que o aplicativo pode estar esperando receber o serviço gerado `id` para o objeto recém-criado na resposta.
+> [!NOTE]
+> Solicitar respostas de representação mínima usando um cabeçalho de solicitação HTTP onde for apropriado: *Prefer: return=minimal*. Observe que, em operações de criação, isso pode não ser adequado já que o aplicativo pode estar esperando receber o serviço gerado `id` para o objeto recém-criado na resposta.
 
 ### <a name="track-changes-delta-query-and-webhook-notifications"></a>Controlar alterações: consulta delta e notificações de webhook
 

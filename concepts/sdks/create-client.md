@@ -1,20 +1,20 @@
 ---
-title: Criar um cliente Graph Microsoft
-description: Descreve como criar um cliente a ser usado para fazer chamadas para o Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
+title: Criar um cliente do Microsoft Graph
+description: Descreve como criar um cliente a ser usado para fazer chamadas ao Microsoft Graph. Inclui como configurar a autenticação e selecionar uma nuvem soberana.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 3f1cc7167f0cff4266707fb1d66f6b82c8c01475
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: 556377412d9e6a75c6f3136c8c570335d9e0f28a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733168"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436992"
 ---
-# <a name="create-a-microsoft-graph-client"></a>Criar um cliente Graph Microsoft
+# <a name="create-a-microsoft-graph-client"></a>Criar um cliente do Microsoft Graph
 
-O cliente microsoft Graph foi projetado para tornar mais simples fazer chamadas para o Microsoft Graph. Você pode usar uma única instância de cliente durante o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote de Graph microsoft em seu projeto, consulte [Instalar o SDK](sdk-installation.md).
+O cliente do Microsoft Graph foi projetado para simplificar a chamada ao Microsoft Graph. Você pode usar uma única instância de cliente durante o tempo de vida do aplicativo. Para obter informações sobre como adicionar e instalar o pacote de cliente do Microsoft Graph em seu projeto, consulte  [Instalar o SDK](sdk-installation.md).
 
-Os exemplos de código a seguir mostram como criar uma instância de um cliente microsoft Graph com um provedor de autenticação nos idiomas com suporte. O provedor de autenticação lidará com a aquisição de tokens de acesso para o aplicativo. Muitos provedores de autenticação diferentes estão disponíveis para cada linguagem e plataforma. Os diferentes provedores de autenticação dão suporte a diferentes cenários de cliente. Para obter detalhes sobre qual provedor e opções são apropriados para seu cenário, consulte [Escolher um Provedor de Autenticação](choose-authentication-providers.md).
+Os exemplos de código a seguir mostram como criar uma instância de um cliente do Microsoft Graph com um provedor de autenticação nos idiomas com suporte. O provedor de autenticação lidará com a aquisição de tokens de acesso para o aplicativo. Muitos provedores de autenticação diferentes estão disponíveis para cada linguagem e plataforma. Os diferentes provedores de autenticação dão suporte a diferentes cenários de cliente. Para obter detalhes sobre qual provedor e opções são apropriados para seu cenário, consulte [Escolher um Provedor de Autenticação](choose-authentication-providers.md).
 
 <!-- markdownlint-disable MD025 -->
 # <a name="c"></a>[C#](#tab/CS)
@@ -36,7 +36,7 @@ var options = new TokenCredentialOptions
 };
 
 // Callback function that receives the user prompt
-// Prompt contains the generated device code that use must
+// Prompt contains the generated device code that you must
 // enter during the auth process in the browser
 Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
     Console.WriteLine(code.Message);

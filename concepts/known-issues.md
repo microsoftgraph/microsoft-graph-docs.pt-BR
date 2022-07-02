@@ -1,14 +1,14 @@
 ---
 title: Problemas conhecidos com o Microsoft Graph
-description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
+description: Este artigo descreve problemas co nhecidos e limitações com o Microsoft Graph e fornece soluções alternativas quando possível.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 99d026a9b00b0a61b29ba1a173d7b03903fb9ad4
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 45566a7b451dd0de3938c6a3d2cb7cb31b2393ba
+ms.sourcegitcommit: af9489bd42a25dff04836dcfcc57369259fda587
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439099"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66577578"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -22,7 +22,7 @@ Para saber mais sobre as atualizações mais recentes da API do Microsoft Graph,
 
 ### <a name="some-limitations-apply-to-the-application-and-serviceprincipal-resources"></a>Algumas limitações se aplicam ao aplicativo e aos recursos servicePrincipal
 
-As alterações para os recursos [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) estão atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento.
+As alterações para os recursos [application](/graph/api/resources/application) e [servicePrincipal](/graph/api/resources/serviceprincipal) estão atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento.
 
 Limitações atuais:
 
@@ -57,7 +57,8 @@ Estamos trabalhando para corrigir esse problema o mais rápido possível, de mod
 
 Enquanto isso, para desbloquear o desenvolvimento e os testes, você pode usar a seguinte solução alternativa.
 
->**Observação:** esta não é uma solução permanente e destina-se apenas a desbloquear o desenvolvimento. Esta solução alternativa não será necessária uma vez que o problema for corrigido. Esta solução alternativa não precisa ser desfeita após a correção.
+> [!NOTE]
+> Esta não é uma solução permanente e destina-se apenas a desbloquear o desenvolvimento. Esta solução não será necessária depois que o problema for corrigido. Esta solução não precisa ser desfeita após a correção.
 
 1. Abra uma sessão do Azure AD v2 PowerShell e conecte-se ao locatário do parceiro `customer`digitando suas credenciais de administrador na janela de entrada. Você pode baixar e instalar o Azure AD PowerShell V2 [aqui](https://www.powershellgallery.com/packages/AzureAD).
 

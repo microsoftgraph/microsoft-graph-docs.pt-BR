@@ -1,21 +1,21 @@
 ---
 title: Listar monthlyPrintUsageByUser
-description: Recupere uma lista de resumos de uso de impressão mensal, agrupados pelo usuário.
+description: Recupere uma lista de resumos de uso de impressão mensal, agrupados por usuário.
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b8f3eaf8527219aa5411634c39cf984701de2568
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ae4ed8f69d7afe0eb737591b50e695fd0881521a
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006043"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438553"
 ---
 # <a name="list-monthlyprintusagebyuser"></a>Listar monthlyPrintUsageByUser
 Namespace: microsoft.graph
 
-Recupere uma lista de resumos de uso de impressão mensal, agrupados pelo usuário.
+Recupere uma lista de resumos de uso de impressão mensal, agrupados por usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Além das permissões a seguir, o locatário do usuário deve ter uma assinatura
 |:---------------|:--------------------------------------------|
 |Delegada (conta corporativa ou de estudante)| Reports.Read.All |
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Sem suporte.|
+|Application|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos printUsageByUser](../resources/printusagebyuser.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos printUsageByUser](../resources/printusagebyuser.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -82,8 +82,12 @@ GET https://graph.microsoft.com/v1.0/reports/monthlyPrintUsageByUser
 [!INCLUDE [sample-code](../includes/snippets/java/list-printusagebyuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printusagebyuser-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-printusagebyuser-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

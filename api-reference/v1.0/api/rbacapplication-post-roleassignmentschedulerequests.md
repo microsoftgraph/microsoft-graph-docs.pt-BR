@@ -5,12 +5,12 @@ author: rkarim-ms
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 07cdbffa0dec600aedceb691d935e2d7991519ab
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: a7e9b30268ba507f22449c4ebded2c05498c4f4c
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899747"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66439183"
 ---
 # <a name="create-roleassignmentschedulerequests"></a>Criar roleAssignmentScheduleRequests
 Namespace: microsoft.graph
@@ -19,14 +19,14 @@ No PIM, execute as seguintes operações por meio do [objeto unifiedRoleAssignme
 + Solicite atribuições de função ativas e persistentes para uma entidade de segurança, com ou sem datas de expiração.
 + Ativar, desativar, estender ou renovar uma atribuição de função qualificada para uma entidade de segurança.
 
-Para chamar essa API para atualizar, renovar e estender as atribuições por conta própria, você deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual elas foram desafiadas para MFA. Consulte [Habilitar a Autenticação Multifator do Azure AD por usuário para proteger eventos de entrada](/azure/active-directory/authentication/howto-mfa-userstates).
+Para chamar essa API para atualizar, renovar e estender as atribuições por conta própria, você deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual elas foram desafiadas para MFA. Consulte [Habilitar a autenticação Azure AD multifator para proteger eventos de entrada](/azure/active-directory/authentication/howto-mfa-userstates).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|RoleAssignmentSchedule.ReadWrite.Directory|
+|Delegado (conta corporativa ou de estudante)|RoleAssignmentSchedule.ReadWrite.Directory|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|RoleAssignmentSchedule.ReadWrite.Directory|
 
@@ -55,12 +55,12 @@ Você pode especificar as propriedades a seguir ao criar **um unifiedRoleAssignm
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ação|unifiedRoleScheduleRequestActions|Representa o tipo da operação na solicitação de atribuição de função. Os valores possíveis são `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`, `selfExtend`, `selfRenew`, `unknownFutureValue`. <br/><ul><li>`adminAssign`: para administradores atribuirem funções a usuários ou grupos.</li><li>`adminRemove`: para administradores removerem usuários ou grupos de funções.</li><li> `adminUpdate`: para que os administradores alterem as atribuições de função existentes.</li><li>`adminExtend`: para que os administradores estendam as atribuições de expiração.</li><li>`adminRenew`: para que os administradores renovem atribuições expiradas.</li><li>`selfActivate`: para que os usuários ativem suas atribuições.</li><li>`selfDeactivate`: para que os usuários desativem suas atribuições ativas.</li><li>`selfExtend`: para que os usuários solicitem a extensão de suas atribuições de expiração.</li><li>`selfRenew`: para que os usuários solicitem a renovação de suas atribuições expiradas.</li></ul>|
-|Customdata|Cadeia de Caracteres|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Opcional.|
-|principalId|Cadeia de Caracteres|Identificador da entidade de segurança que recebeu a atribuição. Obrigatório.|
-|roleDefinitionId|String|Identificador do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) que está sendo atribuído. Obrigatório.|
-|directoryScopeId|String|Identificador do objeto de diretório que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|appScopeId|Cadeia de Caracteres|Identificador do escopo específico do aplicativo quando a atribuição está no escopo de um aplicativo. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
-|Justificação|Cadeia de Caracteres|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleAssignmentScheduleRequest** . Opcional.|
+|Customdata|Cadeia de caracteres|Campo de texto livre para definir quaisquer dados personalizados para a solicitação. Opcional.|
+|principalId|Cadeia de caracteres|Identificador da entidade de segurança que recebeu a atribuição. Obrigatório.|
+|roleDefinitionId|Cadeia de caracteres|Identificador do [objeto unifiedRoleDefinition](../resources/unifiedroledefinition.md) que está sendo atribuído. Obrigatório.|
+|directoryScopeId|Cadeia de caracteres|Identificador do objeto de diretório que representa o escopo da atribuição. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos de diretório são escopos compartilhados armazenados no diretório que são compreendidos por vários aplicativos. Use `/` para escopo de todo o locatário. Use **appScopeId** para limitar o escopo somente a um aplicativo. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|appScopeId|String|Identificador do escopo específico do aplicativo quando a atribuição está no escopo de um aplicativo. O escopo de uma atribuição determina o conjunto de recursos aos quais a entidade de segurança recebeu acesso. Os escopos do aplicativo são escopos definidos e compreendidos apenas por esse aplicativo. Use `/` para escopos de aplicativo em todo o locatário. Use **directoryScopeId** para limitar o escopo a objetos de diretório específicos, por exemplo, unidades administrativas. **DirectoryScopeId ou** **appScopeId** é necessário.|
+|Justificação|Cadeia de caracteres|Uma mensagem fornecida por usuários e administradores ao criar eles criam o objeto **unifiedRoleAssignmentScheduleRequest** . Opcional.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|O período da solicitação de atribuição de função. No momento, não há suporte para agendamentos recorrentes. Obrigatório.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Detalhes do tíquete vinculados à solicitação de atribuição de função, incluindo detalhes do número do tíquete e do sistema de tíquetes. Opcional.|
 
@@ -71,7 +71,7 @@ Se tiver êxito, este método retornará `201 Created` um código de resposta e 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-admin-assigning-a-directory-role-to-a-principal"></a>Exemplo 1: Administrador atribuindo uma função de diretório a uma entidade de segurança
+### <a name="example-1-admin-assigning-a-directory-role-to-a-principal"></a>Exemplo 1: Administração atribuir uma função de diretório a uma entidade de segurança
 
 Na solicitação a seguir, o administrador cria uma solicitação para atribuir uma função identificada `fdd7a751-b60b-444a-984c-02652fe8fa1c` por uma entidade de segurança identificada pela ID `071cc716-8147-4397-a5ba-b2105951cc0b`. O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é permanente.
 
@@ -119,6 +119,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentschedulerequest-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -181,7 +185,7 @@ Content-Type: application/json
 
 #### <a name="request"></a>Solicitação
 
-Na solicitação a seguir, um usuário identificado por **principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` ativa sua própria  função qualificada para uma função do Azure AD identificada pela ID`8424c6f0-a189-499e-bbd0-26c1753c96d4`. O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é de cinco horas. Para executar essa solicitação, o usuário de chamada deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA.
+Na solicitação a seguir, um usuário identificado por **principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` ativa sua própria  função qualificada para uma Azure AD função identificada pela ID`8424c6f0-a189-499e-bbd0-26c1753c96d4`. O escopo de sua função é todos os objetos de diretório no locatário e a atribuição é de cinco horas. Para executar essa solicitação, o usuário de chamada deve ter a MFA (autenticação multifator) imposta e executar a consulta em uma sessão na qual foi desafiado para MFA.
 
 Para recuperar os detalhes de suas solicitações de qualificação e identificar a qualificação a ser ativada, o usuário chamará [a API unifiedRoleEligibilitySchedule: filterByCurrentUser](unifiedroleeligibilityschedule-filterbycurrentuser.md) .
 
@@ -233,6 +237,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

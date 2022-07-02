@@ -1,21 +1,23 @@
 ---
-title: Use a API Pesquisa da Microsoft para pesquisar conteúdo usando modelos de consulta (visualização)
-description: Saiba como usar modelos de consulta na API Pesquisa da Microsoft para pesquisar conteúdo com base em variáveis de consulta e KQL.
+title: Usar a API de Pesquisa da Microsoft para pesquisar conteúdo usando modelos de consulta
+description: Saiba como usar modelos de consulta na API de Pesquisa da Microsoft no Microsoft Graph para pesquisar conteúdo com base em variáveis de consulta e KQL.
 author: yiwenwang
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 717ea2e319d426403eeb3907e58769efa743856c
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 6fe067a493cf9b715ed5fee1f2405e81783b4ee7
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64589499"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66436957"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-using-query-templates-preview"></a>Use a API Pesquisa da Microsoft para pesquisar conteúdo usando modelos de consulta (visualização)
-Neste artigo, você aprenderá a usar modelos de consulta na API Pesquisa da Microsoft para pesquisar conteúdo com base em variáveis de [consulta](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) e KQL.[](/sharepoint/technical-reference/query-variables) Isso permite restringir o escopo de consulta e criar sua própria experiência de pesquisa.
+# <a name="use-the-microsoft-search-api-to-search-content-using-query-templates"></a>Usar a API de Pesquisa da Microsoft para pesquisar conteúdo usando modelos de consulta
+
+Você pode usar modelos de consulta na API de Pesquisa da Microsoft no Microsoft Graph para pesquisar conteúdo com base em [variáveis](/sharepoint/technical-reference/query-variables) de consulta e [KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Isso permite restringir o escopo da consulta e criar sua própria experiência de pesquisa.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra uma solicitação que usa um modelo de consulta para pesquisar conteúdo com base em uma [variável de](/sharepoint/technical-reference/query-variables) [consulta](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference) e KQL.
+
+O exemplo a seguir mostra uma solicitação que usa um modelo de consulta para pesquisar conteúdo com base em uma variável de consulta e KQL.
 
 ### <a name="request"></a>Solicitação
 
@@ -139,4 +141,4 @@ Content-type: application/json
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Usar a API de Pesquisa da Microsoft para consultar dados](/graph/api/resources/search-api-overview)
