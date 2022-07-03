@@ -3,12 +3,12 @@ title: Escolher um provedor de autenticação do Microsoft Graph
 description: Saiba como escolher provedores de autenticação específicos do cenário para seu aplicativo.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: e04d6352012227fcb34ba030ce0cbfdc6a8fed57
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 0e619e506398d1324f87deaa1d055d2632146801
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898760"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609658"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -44,7 +44,7 @@ Os provedores de autenticação implementam o código necessário para adquirir 
 
 ## <a name="authorization-code-provider"></a>Provedor de código de autorização
 
-O fluxo de código de autorização permite que aplicativos Nativos e Web obtenham tokens com segurança no nome do usuário. Para saber mais, confira a [plataforma de identidade da Microsoft e o fluxo de código de autorização do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+O fluxo de código de autorização permite que aplicativos Nativos e Web obtenham tokens com segurança no nome do usuário. Para saber mais, confira plataforma de identidade da Microsoft fluxo de código de autorização [do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -94,14 +94,14 @@ const {
     AuthCodeMSALBrowserAuthenticationProviderOptions
 } = require("@microsoft/microsoft-graph-client/authProviders/authCodeMsalBrowser");
 
-const options: AuthCodeMSALBrowserAuthenticationProviderOptions: {
+const options: AuthCodeMSALBrowserAuthenticationProviderOptions = {
     account: account, // the AccountInfo instance to acquire the token for.
     interactionType: InteractionType.PopUp, // msal-browser InteractionType
     scopes: ["user.read", "mail.send"] // example of the scopes to be passed
 }
 
 // Pass the PublicClientApplication instance from step 2 to create AuthCodeMSALBrowserAuthenticationProvider instance
-const authProvider: new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
+const authProvider = new AuthCodeMSALBrowserAuthenticationProvider(publicClientApplication, options),
 ```
 
 ### <a name="using-azureidentity-for-server-side-applications"></a>Usando @azure/identidade para aplicativos do lado do servidor
@@ -202,7 +202,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="client-credentials-provider"></a>Provedor de credenciais do cliente
 
-O fluxo de credenciais do cliente permite que os aplicativos de serviço executem sem interação do usuário. O acesso é baseado na identidade do aplicativo. Para obter mais informações, consulte [a plataforma de identidade da Microsoft e o fluxo de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+O fluxo de credenciais do cliente permite que os aplicativos de serviço executem sem interação do usuário. O acesso é baseado na identidade do aplicativo. Para obter mais informações, [plataforma de identidade da Microsoft fluxo de credenciais do cliente OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -356,7 +356,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="on-behalf-of-provider"></a>Provedor em nome de
 
-O fluxo em nome de é aplicável quando seu aplicativo chama um serviço/API Web que, por sua vez, chama a API do Microsoft Graph. Saiba mais lendo a [plataforma de identidade da Microsoft e o fluxo On-Behalf-Of do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+O fluxo em nome de é aplicável quando seu aplicativo chama um serviço/API Web que, por sua vez, chama o Microsoft API do Graph. Saiba mais lendo [plataforma de identidade da Microsoft e o fluxo On-Behalf-Of do OAuth 2.0](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -459,7 +459,7 @@ O fluxo de Autenticação Implícita não é recomendado devido às [suas desvan
 
 ## <a name="device-code-provider"></a>Provedor de código do dispositivo
 
-O fluxo de código do dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, consulte [a plataforma de identidade da Microsoft e o fluxo de código do dispositivo OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
+O fluxo de código do dispositivo permite entrar em dispositivos por meio de outro dispositivo. Para obter detalhes, [consulte plataforma de identidade da Microsoft fluxo de código do dispositivo OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -590,7 +590,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="integrated-windows-provider"></a>Provedor integrado do Windows
 
-O fluxo integrado do Windows fornece uma maneira para computadores Windows adquirirem silenciosamente um token de acesso quando eles forem ingressados no domínio. Para obter detalhes, consulte [Autenticação integrada do Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+O fluxo integrado do Windows fornece uma maneira para computadores Windows adquirirem silenciosamente um token de acesso quando eles forem ingressados no domínio. Para obter detalhes, consulte [Autenticação do Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -782,7 +782,7 @@ result, err := client.Me().Get(nil)
 
 ## <a name="usernamepassword-provider"></a>Provedor de nome de usuário/senha
 
-O provedor de nome de usuário/senha permite que um aplicativo conecte um usuário usando seu nome de usuário e senha. Use esse fluxo somente quando não for possível usar nenhum dos outros fluxos OAuth. Para obter mais informações, consulte [a plataforma de identidade da Microsoft e a credencial de senha do proprietário do recurso OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
+O provedor de nome de usuário/senha permite que um aplicativo conecte um usuário usando seu nome de usuário e senha. Use esse fluxo somente quando não for possível usar nenhum dos outros fluxos OAuth. Para obter mais informações, [plataforma de identidade da Microsoft a credencial de senha do proprietário do recurso OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc)
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -886,6 +886,6 @@ result, err := client.Me().Get(nil)
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Para obter exemplos de código que mostram como usar a plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativos, consulte exemplos de código da plataforma de identidade da Microsoft (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
+- Para obter exemplos de código que mostram como usar o plataforma de identidade da Microsoft para proteger diferentes tipos de aplicativo, consulte plataforma de identidade da Microsoft de código (ponto de extremidade [v2.0)](/azure/active-directory/develop/sample-v2-code).
 - Os provedores de autenticação exigem uma ID de cliente. Você desejará registrar seu [aplicativo depois](https://portal.azure.com/) de configurar seu provedor de autenticação.
 - Informe-nos se atualmente não há suporte para um fluxo OAuth necessário votando ou abrindo uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests).

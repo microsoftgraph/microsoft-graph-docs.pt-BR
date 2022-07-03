@@ -4,20 +4,20 @@ description: Como parte da validação da solicitação para os métodos addKey 
 ms.localizationpriority: high
 ms.prod: applications
 author: FaithOmbongi
-ms.openlocfilehash: 6e3f3b0c807af73e53fe9ea5e122e17c4f79c7a9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 495c0a86020ff463b0bb76ab89f4f6b367e3af8d
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525481"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609651"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Gerando um token de comprovação de posse para sobrepor chaves
 
-Você pode usar os métodos **addKey** e **removeKey** definidos no [aplicativo](/graph/api/resources/application?view=graph-rest-1.0) e recursos [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) para acumular as chaves expiradas por programação.
+Você pode usar os métodos **addKey** e **removeKey** definidos no [aplicativo](/graph/api/resources/application) e recursos [servicePrincipal](/graph/api/resources/serviceprincipal) para acumular as chaves expiradas por programação.
 
 Como parte da solicitação de validação para esses métodos, uma comprovação de posse de uma chave existente é verificada antes que os métodos possam ser invocados. As comprovações são representadas por um token JWT autoassinado. Esse token de JWT deve ser assinado usando a chave privada de um dos certificados válidos existentes do aplicativo. O tempo de vida do token não deve exceder 10 minutos.
 
-> **Observação:** Aplicativos que não têm certificados válidos existentes (nenhum certificado foi adicionado ainda, ou todos os certificados expiraram), não poderão usar essa ação de serviço. Você pode usar a operação [Atualizar aplicativo](/graph/api/application-update?view=graph-rest-v1.0) para executar uma atualização.
+> **Observação:** Aplicativos que não têm certificados válidos existentes (nenhum certificado foi adicionado ainda, ou todos os certificados expiraram), não poderão usar essa ação de serviço. Você pode usar a operação [Atualizar aplicativo](/graph/api/application-update) para executar uma atualização.
 
 O token deve conter os seguintes argumentos:
 

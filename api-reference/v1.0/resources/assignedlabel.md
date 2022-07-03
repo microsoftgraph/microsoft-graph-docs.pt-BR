@@ -5,25 +5,25 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bcc89583a1611093c58f4cd7cbe2ec6907820945
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 1088ad83b8f2a46d687c234a9b7c87d7e2943ef5
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883947"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609735"
 ---
 # <a name="assignedlabel-resource-type"></a>tipo de recurso assignedLabel
 
 Namespace: microsoft.graph
 
-Representa um rótulo de confidencialidade atribuído a um grupo do Microsoft 365. Os rótulos de confidencialidade permitem que os administradores imponham configurações de grupo específicas em um grupo atribuindo uma classificação ao grupo (como Confidencial, Altamente Confidencial ou Geral). Os rótulos de confidencialidade são publicados pelos administradores no Centro de Conformidade de Segurança do Microsoft 365 & como parte dos recursos de Proteção de Informações do Microsoft Purview. Para obter mais informações sobre rótulos de confidencialidade, consulte [Visão geral dos rótulos de confidencialidade](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide).
+Representa um rótulo de confidencialidade atribuído a um grupo do Microsoft 365. Os rótulos de confidencialidade permitem que os administradores imponham configurações de grupo específicas em um grupo atribuindo uma classificação ao grupo (como Confidencial, Altamente Confidencial ou Geral). Os rótulos de confidencialidade são publicados pelos administradores no Centro de Conformidade & Segurança do Microsoft 365 como parte dos Proteção de Informações do Microsoft Purview recursos. Para obter mais informações sobre rótulos de confidencialidade, consulte [Visão geral dos rótulos de confidencialidade](/microsoft-365/compliance/sensitivity-labels).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade    | Tipo   | Descrição                               |
 | :---------- | :----- | :---------------------------------------- |
-| labelId     | String | O identificador exclusivo do rótulo.       |
-| displayName | String | O nome de exibição do rótulo. Somente leitura. |
+| labelId     | Cadeia de caracteres | O identificador exclusivo do rótulo.       |
+| displayName | Cadeia de caracteres | O nome de exibição do rótulo. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON
 

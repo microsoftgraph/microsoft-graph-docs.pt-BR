@@ -1,22 +1,22 @@
 ---
 title: Usar a API de gerenciamento de registros do Microsoft Graph
-description: As APIs do Gerenciamento de Registros do Microsoft Purview ajudam as organizações a gerenciar a retenção e a exclusão de dados para atender às suas obrigações legais e regulamentos de conformidade e aumenta a eficiência, permitindo a disposição regular de itens que não precisam mais ser retidos.
+description: As APIs de gerenciamento de registros do Microsoft Purview ajudam as organizações a gerenciar a retenção e a exclusão de dados para atender às suas obrigações legais e regulamentos de conformidade e aumenta a eficiência, permitindo a disposição regular de itens que não precisam mais ser retidos.
 ms.localizationpriority: medium
 author: sseth-msft
 ms.prod: compliance
 doc_type: conceptualPageType
-ms.openlocfilehash: ffc809ecf368b6ca13d57ee6ffcd36ecd958a39a
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 0c977e56c8c3cb70f2e6ee2fab17d80daff8a7be
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447489"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609679"
 ---
 # <a name="use-the-microsoft-graph-records-management-apis"></a>Usar as APIs de gerenciamento de registros do Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As APIs do Gerenciamento de Registros do Microsoft Purview ajudam as organizações a gerenciar a retenção e a exclusão de dados para atender às suas obrigações legais e regulamentos de conformidade e aumenta a eficiência, permitindo a disposição regular de itens que não precisam mais ser retidos.
+As APIs de gerenciamento de registros do Microsoft Purview ajudam as organizações a gerenciar a retenção e a exclusão de dados para atender às suas obrigações legais e regulamentos de conformidade e aumenta a eficiência, permitindo a disposição regular de itens que não precisam mais ser retidos.
 
 A solução de gerenciamento de registros faz parte do centro de conformidade do Microsoft Purview.
 

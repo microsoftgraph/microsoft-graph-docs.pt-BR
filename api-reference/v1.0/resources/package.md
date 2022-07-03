@@ -1,8 +1,17 @@
 ---
-author: JeremyKelley title: package ms.localizationpriority: medium description: "Indicates that a driveItem is the top-level item in a "package" or a collection of items that should be treated as a collection instead of individual items."
-ms.prod: arquivos doc_type: resourcePageType
+author: JeremyKelley
+title: pacote
+ms.localizationpriority: medium
+description: Indica que um driveItem é o item de nível superior em um pacote ou uma coleção de itens que devem ser tratados como uma coleção em vez de itens individuais.
+ms.prod: files
+doc_type: resourcePageType
+ms.openlocfilehash: 5188ae56a1e5527f76a581544a8968579d1a423e
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609609"
 ---
-
 # <a name="package-resource-type"></a>tipo de recurso de pacote
 
 Namespace: microsoft.graph

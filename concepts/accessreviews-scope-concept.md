@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: cb8b96c06704a3e66eee38d729fca9a627a12896
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 8da62d1d75119a6ec0dcbb6681be0d3cd9b58d94
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446214"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609616"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configurar o escopo da revisão de acesso usando o Microsoft API do Graph
 
@@ -182,7 +182,6 @@ O exemplo a seguir tem como escopo a revisão para membros diretos de todas as e
 Além disso, como essa revisão é aplicada em todas as equipes, configure a **propriedade instanceEnumerationScope** para especificar todas as equipes. Grupos dinâmicos e grupos atribuíveis a funções não estão incluídos nesta revisão.
 
 Essa revisão não incluirá usuários de conexão direta B2B em equipes com canais compartilhados. Para incluir usuários de conexão direta B2B em equipes com canais compartilhados, consulte o Exemplo 11: Examinar todos os usuários atribuídos a uma equipe, incluindo usuários do [B2B Direct Connect](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels) em uma equipe com canais compartilhados.
-
 
 ---
 
