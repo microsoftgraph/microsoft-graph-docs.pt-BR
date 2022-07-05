@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 517d5f2d62e3d9025b8492433af2ec3fc0bd69a3
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: e21f40d99b2a7d56050fa6e8cf119ece7df259d3
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094232"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609637"
 ---
 # <a name="microsoft-graph-connectors-api-limits"></a>Limites de API de conectores do Microsoft Graph
 
@@ -20,9 +20,9 @@ Este artigo descreve a implementação e os limites operacionais dos conectores 
 
 | Tipo de limite | Limite |
 | ---------- | ----- |
-| Recursos de [Conexão](/graph/api/resources/externalconnectors-externalconnection) por locatário do Microsoft 365 | 10 |
-| [Itens](/graph/api/resources/externalconnectors-externalitem) por conexão | 700.000 |
-| Tamanho do byte de conexão | 70 GB |
+| Recursos de [Conexão](/graph/api/resources/externalconnectors-externalconnection) por locatário do Microsoft 365 | 10 para pesquisa, 15 para conformidade |
+| [Itens](/graph/api/resources/externalconnectors-externalitem) por conexão | 5,000,000 |
+| Tamanho do byte de conexão | 500 GB |
 
 ## <a name="schema-limits"></a>Limites do esquema
 
@@ -41,7 +41,7 @@ Este artigo descreve a implementação e os limites operacionais dos conectores 
 
 | Tipo de limite | Limite |
 | ---------- | ----- |
-| Limite de taxa de transferência para ingerir itens por meio de uma conexão | 4 itens/s <br> (250 MB/hora) |
+| Limite de taxa de transferência para ingerir itens por meio de uma conexão | 25 itens/s |
 | Tamanho do artigo; esse limite se aplica ao [corpo da solicitação ao ingerir e indexar um item](/graph/api/externalconnectors-externalconnection-put-items) | 4 MB |
 | Tamanho da propriedade | N/D |
 

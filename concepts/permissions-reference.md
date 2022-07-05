@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4726c2a71f8fd10fab3a4dd0ea86cc5b56c455cd
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: a6b00782c4e173ee9fd83921378c554203a00be8
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437013"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609721"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -1378,7 +1378,7 @@ _Notes.ReadWrite_ e _Notes.ReadWrite.All_ também permitem que o aplicativo modi
 Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.All_ permitem que o aplicativo acesse o conteúdo do OneNote de outros usuários ao qual o usuário conectado tenha permissão dentro da organização.
 
 ### <a name="example-usage"></a>Exemplo de uso
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _Notes.Create_: Criar novos blocos de anotações para o usuário conectado (`POST /me/onenote/notebooks`).
 * _Notes.Read_: Criar blocos de anotações para o usuário conectado (`GET /me/onenote/notebooks`).
@@ -1730,15 +1730,15 @@ Para um aplicativo com permissões delegadas para ler programas e controles de p
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_RecordsManagement.Read.All_ |Ler dados do Gerenciamento de Registros do Microsoft Purview. |Permite que o aplicativo leia todos os dados da solução de Gerenciamento de Registros do Microsoft Purview, como nomes de rótulos, nomes de eventos e nomes de tipo de evento em nome do usuário conectado. |Sim | 
-|_RecordsManagement.ReadWrite.All_ | Ler e gravar dados do Gerenciamento de Registros do Microsoft Purview. |Permita que o aplicativo crie, atualize e exclua todos os dados da solução de Gerenciamento de Registros do Microsoft Purview, como rótulos, eventos e tipos de eventos em nome do usuário conectado. |Sim |
+|_RecordsManagement.Read.All_ |Leia dados do gerenciamento de registros do Microsoft Purview. |Permite que o aplicativo leia quaisquer dados da solução de gerenciamento de registros do Microsoft Purview, como nomes de rótulos, nomes de eventos e nomes de tipos de eventos em nome do usuário conectado. |Sim | 
+|_RecordsManagement.ReadWrite.All_ | Leia e grave quaisquer dados do gerenciamento de registros do Microsoft Purview. |Permita que o aplicativo crie, atualize e exclua quaisquer dados da solução de gerenciamento de registros do Microsoft Purview, como rótulos, eventos e tipos de eventos em nome do usuário conectado. |Sim |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_RecordsManagement.Read.All_ |Ler dados do Gerenciamento de Registros do Microsoft Purview. |Permite que o aplicativo leia todos os dados da solução de Gerenciamento de Registros do Microsoft Purview, como nomes de rótulos, nomes de eventos e nomes de tipo de evento em nome do usuário conectado. |Sim | 
-|_RecordsManagement.ReadWrite.All_ | Ler e gravar dados do Gerenciamento de Registros do Microsoft Purview. |Permita que o aplicativo crie, atualize e exclua todos os dados da solução de Gerenciamento de Registros do Microsoft Purview, como rótulos, eventos e tipos de eventos em nome do usuário conectado. |Sim |
+|_RecordsManagement.Read.All_ |Leia dados do gerenciamento de registros do Microsoft Purview. |Permite que o aplicativo leia quaisquer dados da solução de gerenciamento de registros do Microsoft Purview, como nomes de rótulos, nomes de eventos e nomes de tipos de eventos em nome do usuário conectado. |Sim | 
+|_RecordsManagement.ReadWrite.All_ | Leia e grave quaisquer dados do gerenciamento de registros do Microsoft Purview. |Permita que o aplicativo crie, atualize e exclua quaisquer dados da solução de gerenciamento de registros do Microsoft Purview, como rótulos, eventos e tipos de eventos em nome do usuário conectado. |Sim |
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -2594,7 +2594,7 @@ Para que um aplicativo leia ou grave todas as configurações de implantação c
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Delegado
 
 * _WindowsUpdates.ReadWrite.All_: crie uma implantação (`POST /beta/admin/windows/updates/deployments`).
 

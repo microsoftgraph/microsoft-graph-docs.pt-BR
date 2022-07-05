@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: Exiba os destaques das novidades Microsoft Graph nos últimos dois meses, o que foi adicionado em versões anteriores e como você pode compartilhar suas ideias.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 371cd4ad709b5cab6d18352e386872364f1f96f2
-ms.sourcegitcommit: 2cbfa9abd0b568f9e4c15930df9a378fbe924511
+ms.openlocfilehash: a823d702204451182a8acc2cc407c53216e4bbe2
+ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66578589"
+ms.lasthandoff: 07/03/2022
+ms.locfileid: "66609630"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -28,12 +28,12 @@ Obtenha informações sobre o codec de áudio, codec de vídeo, protocolo de tra
 - [Obtenha](/graph/api/application-get) o status e outros detalhes de [certificação de segurança e conformidade](/graph/api/resources/certification) de um [programa](/graph/api/resources/application) para proteger os dados do cliente. Para obter mais informações, consulte [Certificação Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide).
 - Defina as [configurações de federação com o Azure AD](/graph/api/resources/internalDomainFederation).
 
-
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
- Configure e gerencie as [configurações da política de métodos de autenticação de Passagem de Acesso Temporário](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) no seu locatário.
+- Configure e gerencie as [configurações da política de métodos de autenticação de Passagem de Acesso Temporário](/graph/api/resources/temporaryAccessPassAuthenticationMethodConfiguration) no seu locatário.
+- Obtenha a [política básica em um diretório para configurações de acesso entre locatários](/graph/api/resources/crosstenantaccesspolicy), [configuração padrão](/graph/api/resources/crosstenantaccesspolicyconfigurationdefault) de como uma organização interage com organizações externas do Azure Active Directory e [configurações específicas de parceiros](/graph/api/resources/crosstenantaccesspolicyconfigurationpartner) para organizações externas do Azure Active Directory.
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Relatórios | Relatórios de uso do Microsoft 365
-- Encontre novas colunas nos relatórios do Teams gerados pelos seguintes métodos:
+Encontre novas colunas nos relatórios do Teams gerados pelos seguintes métodos:
   - [getTeamsUserActivityCounts](/graph/api/reportroot-getteamsuseractivitycounts)
   - [getTeamsUserActivityUserDetail](/graph/api/reportroot-getTeamsUserActivityUserDetail)
   - [getTeamsDeviceUsageUserDetail](/graph/api/reportroot-getTeamsDeviceUsageUserDetail)
@@ -43,15 +43,18 @@ Obtenha informações sobre o codec de áudio, codec de vídeo, protocolo de tra
   - [getTeamsDeviceUsageUserCounts](/graph/api/reportroot-getteamsdeviceusageusercounts)
   - [getTeamsDeviceUsageDistributionUserCounts](/graph/api/reportroot-getTeamsDeviceUsageDistributionUserCounts)
 
-
 ### <a name="teamwork"></a>Trabalho em equipe
 Assine as notificações de alteração do seguinte no Teams:
 - [equipe e canal](teams-changenotifications-team-and-channel.md)
 - [associação de equipe e canal](teams-changenotifications-teammembership.md)
 - [chat](teams-changenotifications-chat.md)
 - [associação do chat](teams-changenotifications-chatmembership.md)
+- [mensagens de chat em todos os chats](/graph/teams-changenotifications-chatmessage#subscribe-to-changes-at-the-user-level) dos quais um determinado usuário faz parte.
 
 ## <a name="june-2022-new-in-preview-only"></a>Junho de 2022: novo somente na visualização
+
+### <a name="applications"></a>Aplicativos
+Especifique [objetos vinculados](/graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true) que podem ser [provisionados durante o provisionamento sob demanda](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true), incluindo principais como gerente, membros e proprietários.
 
 ### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
 Acesse a [API de Descoberta Eletrônica](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) do namespace de [segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) no futuro, em vez do namespace de conformidade.
@@ -77,12 +80,18 @@ Obtenha as seguintes informações para uma [política de provisionamento](/grap
 - [Crie](/graph/api/educationassignment-setupfeedbackresourcesfolder?view=graph-rest-beta&preserve-view=true) uma pasta do SharePoint em uma [atribuição](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) para carregar documentos de comentários.
 - [Crie](/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-beta&preserve-view=true) um [documento de comentários](/graph/api/resources/educationFeedbackResourceOutcome?view=graph-rest-beta&preserve-view=true) em um [envio](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) na pasta de comentários associada à atribuição.
 
+### <a name="groups"></a>Grupos
+Especifique se um [grupo](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) está [ configurado para gravar de volta ](/graph/api/resources/groupWritebackConfiguration?view=graph-rest-beta&preserve-view=true) propriedades de objeto de grupo no Active Directory local.
+
 ### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
 - [Promover](/graph/api/domain-promote?view=graph-rest-beta&preserve-view=true) um subdomínio verificado no domínio raiz.
 - [Obtenha](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) a URL para os metadados do SAML para federação de um [programa](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) de locatário único.
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 Ocultar links de redefinição de senha de autoatendimento (SSPR) nas [configurações de visibilidade de texto da página de logon](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) na página de entrada de um locatário. 
+
+### <a name="compliance--records-management"></a>Conformidade | Gerenciamento de registros
+Use a [API de gerenciamento de registros do Microsoft Purview](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true) de estreia para ajudar as organizações a gerenciar a retenção e a exclusão de dados para cumprir as obrigações legais e os regulamentos de conformidade.
 
 ### <a name="teamwork"></a>Teamwork
 Obtenha os detalhes de [fixando](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) ou [desafixando](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) uma [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em um [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) ou [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). 
