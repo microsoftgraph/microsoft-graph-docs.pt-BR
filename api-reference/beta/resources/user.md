@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 0946e38560af2c88a68b8d4d4394949f1c3e37ae
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: a82c38e89c0af77ba928a03976c19265eda060bb
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555839"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645489"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -93,8 +93,8 @@ Esse recurso permite:
 | [Filhos de lista](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Retornar uma coleção de DriveItems no relacionamento filho de um DriveItem. |
 | **Grupos** |||
 | [Listar joinedTeams](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Obter as equipes do Microsoft Teams no qual o usuário é membro direto da propriedade de navegação joinedTeams. |
-| [Listar memberOf](../api/user-list-memberof.md) | Coleção [directoryObject](directoryobject.md) | Obter os grupos, funções de diretório e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação memberOf. |
-| [Listar memberOf transitivos](../api/user-list-transitivememberof.md) | Coleção [directoryObject](directoryobject.md) | Lista os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos dos quais o usuário é membro aninhado. |
+| [Listar memberOf](../api/user-list-memberof.md) | Coleção [directoryObject](directoryobject.md) | Obtenha os grupos, funções de diretório e unidades administrativas das quais o usuário é membro direto. Essa operação não é transitiva. |
+| [Lista transitiveMemberOf](../api/user-list-transitivememberof.md) | Coleção [directoryObject](directoryobject.md) | Obtenha os grupos, funções de diretório e as unidades administrativas das quais o usuário é membro através de afiliação direta ou transitória. |
 | **Percepções** |||
 | [Listar compartilhado](../api/insights-list-shared.md) | coleção [sharedInsight](insights-shared.md) | Visão calculada que retorna a lista de arquivos compartilhados com um usuário. |
 | [Listar tendências](../api/insights-list-trending.md) | coleção [tendências](insights-trending.md)  | Insights calculados que retornam a lista de itens de tendências do usuário. |
@@ -239,6 +239,7 @@ Esse recurso permite:
 | refreshTokensValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir.|
 | responsibilities | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas responsabilidades. <br><br>Retornado apenas em `$select`. |
 | schools | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar as escolas que frequentou. <br><br>Retornado apenas em `$select`. |
+|securityIdentifier| Cadeia de Caracteres | Identificador de segurança (SID) do usuário, usado em cenários do Windows. <br><br>Somente leitura. Devolvido por padrão. <br>Suporta `$select` e `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | showInAddressList | Booliano | **Não use no Microsoft Graph. Gerencie essa propriedade por meio do centro de administração do Microsoft 365.** Representa se o usuário deve ser incluído na lista de endereços global do Outlook. Consulte [Problema conhecido](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
 | signInSessionsValidFromDateTime | DateTimeOffset | Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. Somente leitura. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) para redefinir.|
 | skills | Coleção de cadeias de caracteres | Uma lista para o usuário enumerar suas qualificações. <br><br>Retornado apenas em `$select`. |
@@ -350,6 +351,7 @@ Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino
 |settings|[userSettings](usersettings.md) | Somente leitura. Anulável.|
 |trabalho em equipe|[userTeamwork](userteamwork.md)| Um contêiner dos recursos do Microsoft Teams disponíveis para o usuário. Somente leitura. Anulável.|
 |todo|[todo](todo.md)|Representa os serviços To Do disponíveis para um usuário. |
+|transitiveMemberOf| Coleção [directoryObject](directoryobject.md) |  Os grupos, incluindo os grupos aninhados, e as funções de diretório dos quais um usuário é membro. Anulável.|
 |transitiveReports|Coleção [directoryObject](directoryobject.md) | Os relatórios transitivos para um usuário. Somente leitura.|
 |Direitosdeuso|Coleção [usageRight](usageright.md)|Representa os direitos de uso concedidos a um usuário. |
 
@@ -459,6 +461,7 @@ Veja a seguir uma representação JSON do recurso
   "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "responsibilities": ["String"],
   "schools": ["String"],
+  "securityIdentifier": "String",
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["String"],
