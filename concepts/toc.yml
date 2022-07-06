@@ -520,8 +520,12 @@ items:
           - name: Obter mensagens do sistema
             href: system-messages.md
       - name: Tarefas pendentes
-        href: todo-concept-overview.md
         displayName: Microsoft To Do
+        items:
+          - name: Visão Geral
+            href: todo-concept-overview.md
+          - name: Anexar arquivos a uma tarefa
+            href: todo-attachments.md
       - name: Pastas de trabalho e gráficos
         items:
           - name: Visão Geral

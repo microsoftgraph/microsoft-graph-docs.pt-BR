@@ -3,14 +3,89 @@ title: Destaques de versões anteriores no Microsoft Graph
 description: O que havia de novo no Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: a1c292cebbccecec063ea9c9902bb437645487b9
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 99c5e8144f1994b6c4a8cba02476c0fcef4561e4
+ms.sourcegitcommit: 005e9d483d03ed048611ffd180a92930afff4e42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437551"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66646154"
 ---
 # <a name="highlights-of-earlier-releases"></a>Destaques de versões anteriores
+
+## <a name="may-2022-new-and-generally-available"></a>Maio de 2022: novos e geralmente disponíveis
+
+### <a name="education"></a>Educação
+- [Controlar Alterações dos recursos de atribuição.](/graph/api/educationassignment-delta)
+- [Controlar Alterações dos recursos da categoria de atribuição.](/graph/api/educationcategory-delta)
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+Um [aplicativo](/graph/api/resources/application) registrado no Azure Active Directory (Microsoft Azure AD) pode especificar as informações de contato do aplicativo ou serviço de um banco de dados de Gerenciamento de Ativos ou Serviços.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+Permitir que um locatário do Azure Active Directory (Azure AD) defina uma [federação com outra organização cujo provedor de identidade (IdP) ofereça suporte ao protocolo SAML ou WS-Fed](/graph/api/resources/samlOrWsFedExternalDomainFederation). Isso permite que o locatário do Azure AD dê acesso aos seus recursos para usuários convidados.
+
+### <a name="search"></a>Pesquisar
+Você pode especificar até 1000 resultados de pesquisa por página para uma [solicitação de pesquisa](/graph/api/resources/searchrequest).
+
+### <a name="sites-and-lists"></a>Sites e listas
+- Obtenha uma coleção de recursos de [tipo de conteúdo](/graph/api/resources/contentType) do hub de tipo de conteúdo que são compatíveis usando a ação [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes). 
+- Adicione ou sincronize um tipo de conteúdo do hub de tipo de conteúdo para um [site](/graph/api/resources/site) ou [lista](/graph/api/resources/list), usando a ação [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub). Isso torna um tipo de conteúdo ou sua atualização disponível para um site ou lista específica onde é necessário. Essa é uma melhoria da infraestrutura de sincronização herdada que envia o tipo de conteúdo para todos os sites de uma organização, reduzindo os tempos de espera para a propagação da publicação. 
+- Obtenha uma ou mais [operações avançadas e de longa duração](/graph/api/resources/richlongrunningoperation) ocorrendo em um site ou lista, o que pode acontecer ao adicionar um tipo de conteúdo de forma síncrona.
+
+### <a name="tasks-and-plans"></a>Tarefas e planos
+- [Obtenha](/graph/api/plannerplandetails-get) ou [atualize](/graph/api/plannerplandetails-update) as descrições das categorias como parte dos [detalhes](/graph/api/resources/plannerplandetails) de um [plano](/graph/api/resources/plannerplan).
+- Em vez da propriedade do **proprietário** de um **plano**, use o **tipo** de propriedade de um [contêiner de plano](/graph/api/resources/plannerplancontainer) para especificar as regras de autorização e a vida útil de um **plano**.
+- Obtenha a prioridade de uma [tarefa](/graph/api/resources/plannerTask).
+
+### <a name="teamwork"></a>Trabalho em equipe
+[Receba mensagens em um canal](/graph/api/channel-list-messages) e [inclua todas as respostas](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies) à mensagem.
+
+### <a name="to-do-tasks"></a>Tarefas pendentes
+- Dividir uma [tarefa pendentes](/graph/api/resources/todotask) complexa em tarefas mais acionáveis e menores, cada uma delas como um [item de lista de verificação](/graph/api/resources/checklistitem).
+- Rotular uma tarefa pendente com uma [categoria](/graph/api/resources/outlookcategory) definida pelo usuário para agrupar contatos do Outlook, eventos, mensagens, postagens de grupo e tarefas pendentes.
+
+
+## <a name="may-2022-new-in-preview-only"></a>Maio de 2022: novo apenas na versão prévia
+
+### <a name="application"></a>Aplicativo
+Ao configurar o Proxy de Aplicativo do Azure AD para aplicativos locais para acesso remoto seguro, use a propriedade **isStateSessionEnabled** no recurso [onPremisesPublishing](/graph/api/resources/onPremisesPublishing?view=graph-rest-beta&preserve-view=true) para especificar se deve validar o parâmetro de estado se o aplicativo usar o fluxo de concessão do código de autorização OAuth 2.0. Definir essa propriedade ajuda os administradores a proteger o aplicativo contra solicitação intersite forjada (CSRF).
+
+### <a name="compliance--subject-rights-requests"></a>Conformidade | Solicitações de direitos de entidade
+- Especifique ou obtenha os locais que devem ser pesquisados em uma [solicitação de direitos de assunto](/graph/api/resources/subjectRightsRequest?view=graph-rest-beta&preserve-view=true), como [caixas de correio](/graph/api/resources/subjectRightsRequestAllMailboxLocation?view=graph-rest-beta&preserve-view=true), [canais do SharePoint, OneDrive ou Teams](/graph/api/resources/subjectRightsRequestAllSiteLocation?view=graph-rest-beta&preserve-view=true).
+- Especifique ou obtenha uma consulta de conteúdo baseada em KQL que deve ser usada para pesquisa em uma solicitação de direitos de entidade.
+
+### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem
+- Obtenha um [resultado](/graph/api/resources/cloudpcbulkremoteactionresult?view=graph-rest-beta&preserve-view=true) claramente definido no [reprovisionamento em massa de dispositivos Cloud PC](/graph/api/manageddevice-bulkReprovisionCloudPc?view=graph-rest-beta&preserve-view=true).
+- [Obtenha](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) ou [defina](/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) um [status de revisão do Cloud PC](/graph/api/resources/cloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) ou defina o [status de revisão do Cloud PC](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) em massa para vários dispositivos.
+
+### <a name="device-and-app-management--multi-tenant-management"></a>Gerenciamento de dispositivos e aplicativos | Gerenciamento multilocatário
+[Obtenha](/graph/api/managedtenants-managedtenant-list-tenantusage?view=graph-rest-beta&preserve-view=true) o número de usuários ativos mensais para cada serviço em um locatário gerenciado.
+
+### <a name="education"></a>Educação
+Use um [recurso de aplicativo Teams](/graph/api/resources/educationteamsappresource?view=graph-rest-beta&preserve-view=true) que corresponda a um aplicativo instalado do Microsoft Teams, para permitir que os usuários do serviço de educação criem e compartilhem atribuições com aplicativos do Teams inseridos, como o YouTube ou o FlipGrid.
+
+### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
+A ativação de um serviço [para uma organização](/graph/api/organization-activateService?view=graph-rest-beta&preserve-view=true) e [para um usuário](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) foi preterida e deixará de retornar dados em 30 de junho de 2022.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
+Como parte da [função de usuário padrão](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) de uma [ política de autorização ](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true), especifique se o proprietário registrado de um dispositivo pode ler suas próprias chaves de recuperação do BitLocker.
+
+### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
+Obtenha um [relatório de uso para os métodos de autenticação registrados de um usuário](/graph/api/resources/userregistrationdetails?view=graph-rest-beta&preserve-view=true) que inclui o método padrão para autenticação de multi-fatores.
+
+### <a name="search--index"></a>Pesquisa | Índice
+[Obtenha](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) as [informações de cota](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) de uma [conexão](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Essas informações incluem o número de itens que você pode ingerir na conexão, levando em consideração os itens restantes na conexão e a cota restante no nível do locatário de todas as suas conexões.
+
+### <a name="sites-and-lists"></a>Sites e listas
+[Controlar alterações para o item de lista do SharePoint recursos.](/graph/api/listitem-delta?view=graph-rest-beta&preserve-view=true)
+
+### <a name="teamwork"></a>Trabalho em equipe
+- Use permissões de aplicativo para [obter todos os chats](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) em que um usuário especificado está envolvido sem que o usuário esteja presente.
+- [Enviar notificações do feed de atividades para vários usuários em massa](/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-beta&preserve-view=true), até 100 usuários de cada vez.
+
+### <a name="to-do-tasks"></a>Tarefas pendentes
+A partir de 31 de maio de 2022, o [conjunto de API de tarefas pendentes que é compilado sobre a baseTask](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true) está preterido. Esse conjunto de API deixará de retornar dados em 31 de agosto de 2022. Em vez disso, use o [conjunto de API de tarefas pendentes compilado o todoTask](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true).
+
 
 ## <a name="april-2022-new-and-generally-available"></a>Abril de 2022: novo e com disponibilidade geral
 

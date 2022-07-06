@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2a3367ac195ee2bd252c32d83aa2dfd43c36d030
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 5c0e55b0e74694818354ddf6c98c9eb42e25bb96
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65694747"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645318"
 ---
 # <a name="add-members"></a>Adicionar membros
 
@@ -20,13 +20,13 @@ Adicione um membro a um grupo de segurança ou Microsoft 365 por meio da proprie
 
 A tabela a seguir mostra os tipos de membros que podem ser adicionados a grupos de segurança ou grupos do Microsoft 365.
 
-| Tipo de objeto             | Membro de grupos de segurança     | Membro do Microsoft 365 grupo |
+| Tipo de objeto             | Membro do grupo de segurança     | Membro do Microsoft 365 grupo |
 |-------------------------|-------------------------------|-------------------------------|
-| Usuários                   | ![Pode ser membro do grupo][Yes]   | ![Pode ser membro do grupo][Yes]   |
-| Grupos de segurança         | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
-| Grupos do Microsoft 365    | ![Não pode ser membro do grupo][No] | ![Não pode ser membro do grupo][No] |
-| Dispositivos                 | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
-| Entidades de serviço      | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Usuário                   | ![Pode ser membro do grupo][Yes]   | ![Pode ser membro do grupo][Yes]   |
+| Grupo de segurança         | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Grupo Microsoft 365    | ![Não pode ser membro do grupo][No] | ![Não pode ser membro do grupo][No] |
+| Dispositivo                 | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
+| Entidade de serviço      | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
 | Contatos organizacionais | ![Pode ser membro do grupo][Yes]   | ![Não pode ser membro do grupo][No] |
 
 ## <a name="permissions"></a>Permissões

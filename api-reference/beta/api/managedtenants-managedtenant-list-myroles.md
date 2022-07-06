@@ -5,12 +5,12 @@ author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: cc1701a57eb77cd667ecf2ec07e6c92fd13b35b7
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 1ed99b511b0dfb65c27ec287728551972c87880a
+ms.sourcegitcommit: 005e9d483d03ed048611ffd180a92930afff4e42
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66096345"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66646145"
 ---
 # <a name="list-myroles"></a>Listar myRoles
 Namespace: microsoft.graph.managedTenants
@@ -19,14 +19,18 @@ Namespace: microsoft.graph.managedTenants
 
 Obtenha as funções que um usuário conectado tem por meio de uma relação delegada entre locatários gerenciados.
 
+Para obter informações sobre os tipos de relações delegadas entre um MSP (Provedor de Serviços Gerenciados) que usa o Microsoft 365 Lighthouse e seus clientes comerciais com locatários do Microsoft 365 Business Premium, consulte os seguintes artigos sobre o [Partner Center](/partner-center/overview):
+- [Privilégios de administração delegada](/partner-center/dap-faq) (DAP)
+- [Privilégios de administrador delegado granular](/partner-center/gdap-introduction) (GDAP)
+
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|ManagedTenants.Read.All, ManagedTenants.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP

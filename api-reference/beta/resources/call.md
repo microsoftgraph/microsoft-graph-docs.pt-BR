@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b1b2dc2890686d61845223a517698096ef1d9a0a
-ms.sourcegitcommit: 4ff6e89e89178cbd5aef8aa019e714d95817fae4
+ms.openlocfilehash: 67480d67339dbe331abaf71d4a722e8d8b698c55
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016810"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645471"
 ---
 # <a name="call-resource-type"></a>Tipo de recurso de chamada
 
@@ -87,7 +87,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) ou [serviceHostedMediaConfig](servicehostedmediaconfig.md) | A configuração da mídia. Informações necessárias para criar chamadas ponto a ponto ou ingressar em reuniões.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Somente leitura. O estado da mídia de chamadas. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contém os recursos de uma reunião. Somente leitura.                                                                                                       |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) ou [tokenMeetingInfo](tokenmeetinginfo.md)             | As informações da reunião. Informações necessárias para cenários de reunião.                                                                                                              |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md), [tokenMeetingInfo ](tokenmeetinginfo.md) ou [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md)            | As informações da reunião. Informações necessárias para cenários de reunião.                                                                                                              |
 |transcrição     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                         | As informações da transcrição da chamada. Somente leitura.                           |
 myParticipantId     | String                                                                                                   | Somente leitura.                                                                                                                                                                        |
 | requestedModalities | coleção modality                                                                                      | A lista de modalidades solicitadas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
