@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: cfcfdb967348dfa1ebe12f11f97a5287fa5e94aa
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: e01ba9afac4e67c5442696e55246b92d1be65da7
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441696"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645447"
 ---
 # <a name="onlinemeeting-resource-type"></a>Tipo de recurso onlineMeeting
 
@@ -37,10 +37,10 @@ Esse recurso dá suporte à assinatura para [alterar notificações](/graph/webh
 | Propriedade              | Tipo                                          | Descrição    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Especifica quem pode ser um apresentador em uma reunião. |
-| allowAttendeeToEnableCamera | Booliano | Indica se os participantes podem ligar a câmera. |
-| allowAttendeeToEnableMic | Booliano | Indica se os participantes podem ativar o microfone. |
+| allowAttendeeToEnableCamera | Booleano | Indica se os participantes podem ligar a câmera. |
+| allowAttendeeToEnableMic | Booleano | Indica se os participantes podem ativar o microfone. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Especifica o modo de chat de reunião. |
-| allowTeamworkReactions | Booliano | Indica se as reações do Teams estão habilitadas para a reunião. |
+| allowTeamworkReactions | Booleano | Indica se as reações do Teams estão habilitadas para a reunião. |
 | alternativeRecording  | Stream | O fluxo de conteúdo da gravação alternativa de um [evento ao vivo do Microsoft Teams](/microsoftteams/teams-live-events/what-are-teams-live-events). Somente leitura. |
 | attendeeReport        | Stream | O fluxo de conteúdo do relatório de participantes de um [evento ao vivo do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events). Somente leitura.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | As informações de acesso por telefone (discagem) para uma reunião online. Somente leitura. |
@@ -50,18 +50,19 @@ Esse recurso dá suporte à assinatura para [alterar notificações](/graph/webh
 | endDateTime           | DateTime | A hora de término da reunião em UTC.   |
 | externalId            | Cadeia de caracteres | A ID externa. Uma ID personalizada. Opcional.      |
 | id | Cadeia de caracteres | A ID padrão associada à reunião online. Somente leitura.    |
-| isBroadcast | Booliano | Indica se este é um evento ao vivo [do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events). |
-| isEntryExitAnentry  | Booliano | Indica se os chamadores devem anunciar quando ingressar ou sair. |
+| isBroadcast | Booleano | Indica se este é um evento ao vivo [do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events). |
+| isEntryExitAnentry  | Booleano | Indica se os chamadores devem anunciar quando ingressar ou sair. |
 | joinWebUrl | Cadeia de caracteres | A URL de ingresso da reunião online. Somente leitura. |
 | joinInformation | [itemBody](itembody.md) | As informações de junção no idioma e na variante de localidade especificadas no cabeçalho HTTP de solicitação 'Accept-Language'. Somente leitura. |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Especifica o **joinMeetingId**, a senha da reunião e o requisito para a senha. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Especifica quais participantes podem ignorar o lobby da reunião. |
 | participants | [meetingParticipants](meetingparticipants.md) | Os participantes associados à reunião online. Isso inclui o organizador e os participantes. |
 | recordAutomatically | Booliano | Indica se a reunião deve ser gravada automaticamente. |
 | Gravação | Stream | O fluxo de conteúdo da gravação de um evento [ao vivo do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events). Somente leitura. |
 | startDateTime | DateTime | A hora de início da reunião em UTC. |
 | assunto | Cadeia de caracteres | O assunto da reunião online. |
-| videoTeleconferenceId | Cadeia de caracteres | A ID de teleconferência de vídeo. Somente leitura. |
-| autoAdmittedUsers (preterido) | Cadeia de caracteres | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
+| videoTeleconferenceId | Cadeia de Caracteres | A ID de teleconferência de vídeo. Somente leitura. |
+| autoAdmittedUsers (preterido) | Cadeia de Caracteres | A configuração que especifica o tipo de participantes que serão automaticamente permitidos na reunião online. Os valores possíveis são: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Somente leitura. |
 | recursos (preteridos) | coleção meetingCapabilities | A lista de recursos de reunião. Os valores possíveis são: `questionAndAnswer`,`unknownFutureValue`. |
 
 > [!CAUTION]
@@ -116,25 +117,26 @@ Esse recurso dá suporte à assinatura para [alterar notificações](/graph/webh
 }-->
 ```json
 {
+  "allowAttendeeToEnableCamera": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "joinWebUrl": "String",
-  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
-  "startDateTime": "String (timestamp)",
-  "subject": "String",
-  "videoTeleconferenceId": "String",
-  "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String",
+  "id": "String (identifier)",  
   "isBroadcast": "Boolean",
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
-  "allowAttendeeToEnableMic": "Boolean",
-  "allowAttendeeToEnableCamera": "Boolean"
+  "isEntryExitAnnounced": "Boolean",
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
+  "joinWebUrl": "String",
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
+  "startDateTime": "String (timestamp)",  
+  "subject": "String",
+  "videoTeleconferenceId": "String"
 }
 ```
 

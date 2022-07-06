@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 541e2079d7eb9a27f61acf6e0f46e7b194dd7321
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 7d1d19378d27cb65365d5a9999974aa16b511661
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820788"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645251"
 ---
 # <a name="todotask-resource-type"></a>Tipo de recurso todoTask
 
@@ -50,6 +50,7 @@ Esse recurso dá suporte ao seguinte:
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
+|hasAttachments|Booliano|Indica se a tarefa tem anexos.|
 |id|Cadeia de caracteres|Identificador exclusivo para a tarefa. Por padrão, esse valor muda quando o item é movido de uma lista para outra.|
 |importância|importância|A importância da tarefa. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
@@ -62,6 +63,7 @@ Esse recurso dá suporte ao seguinte:
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
+|attachments|[Coleção taskFileAttachment](../resources/taskfileattachment.md)| Uma coleção de anexos de arquivo para a tarefa.|
 |checklistItems|[coleção checklistItem](../resources/checklistitem.md)|Uma coleção de subtarefas menores vinculadas à tarefa pai mais complexa. |
 |extensions|Coleção [extension](extension.md)| A coleção de extensões abertas definidas para a tarefa. Anulável.|
 |Linkedresources|[Coleção linkedResource](../resources/linkedresource.md)|Uma coleção de recursos vinculados à tarefa.|

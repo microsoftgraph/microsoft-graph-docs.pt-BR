@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e45050a5f6f453b9d8619dd04c3bf29fd25d3e00
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: da76fcc9cdd9dba812aab0cad322d490fb52158c
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936905"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645399"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -80,11 +80,11 @@ Você pode exibir a cadeia de caracteres de Base 64 dentro de uma marca de image
 
 Para o comportamento padrão, use `Image(width=0,height=0,fittingMode='fit')`. Veja um exemplo de uma imagem de gráfico retornada com os parâmetros padrão.
 
-![A imagem de gráfico do Excel com altura e largura padrão.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-default.png)
+![Captura de tela de uma imagem de gráfico do Excel exibida com a altura e a largura padrão.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-default.png)
 
 Se você quiser personalizar a exibição da imagem, especifique uma altura, largura e um modo de ajuste. Esta é a aparência da imagem de gráfico quando você a recupera com esses parâmetros: `Image(width=500,height=500,fittingMode='Fill')`.
 
-![A imagem de gráfico do Excel com altura e largura padrão.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-fill.png)
+![Captura de tela de uma imagem de gráfico do Excel exibida com a altura e a largura especificadas.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,24 +1,24 @@
 ---
-title: Listar usuário transitivo memberOf
-description: Obter grupos, funções de diretório dos qual o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos dos qual o usuário é membro aninhado.
+title: Listar as associações de um usuário (diretas e transitivas)
+description: Obtenha grupos, funções de diretório e unidades administrativas das qual o usuário é membro por meio de associação direta ou transitiva.
 author: psaffaie
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 711b415510ed85f306d7d4d4db2e09c64c527f78
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 0fa31490a57c398f88958b7d7284f0bd3b0ea8f0
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204290"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645494"
 ---
-# <a name="list-user-transitive-memberof"></a>Listar usuário transitivo memberOf
+# <a name="list-a-users-memberships-direct-and-transitive"></a>Listar as associações de um usuário (diretas e transitivas)
 
 Namespace: microsoft.graph
 
-Obter grupos, funções de diretório dos qual o usuário é membro. Essa solicitação de API é transitiva e também retornará todos os grupos dos qual o usuário é membro aninhado.
+Obtenha [grupos](../resources/group.md), [funções de](../resources/directoryrole.md) diretório [e unidades](../resources/administrativeunit.md) administrativas das qual o usuário é membro por meio de associação direta ou transitiva.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

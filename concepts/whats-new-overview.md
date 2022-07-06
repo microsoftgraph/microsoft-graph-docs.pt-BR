@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: Exiba os destaques das novidades Microsoft Graph nos últimos dois meses, o que foi adicionado em versões anteriores e como você pode compartilhar suas ideias.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: a823d702204451182a8acc2cc407c53216e4bbe2
-ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.openlocfilehash: 57e86b50b14c87a00341a296af38f22669c3651b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2022
-ms.locfileid: "66609630"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645243"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -54,7 +54,7 @@ Assine as notificações de alteração do seguinte no Teams:
 ## <a name="june-2022-new-in-preview-only"></a>Junho de 2022: novo somente na visualização
 
 ### <a name="applications"></a>Aplicativos
-Especifique [objetos vinculados](/graph/api/resources/synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true) que podem ser [provisionados durante o provisionamento sob demanda](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true), incluindo principais como gerente, membros e proprietários.
+Especifique [objetos vinculados](/graph/api/resources/synchronization-synchronizationLinkedObjects?view=graph-rest-beta&preserve-view=true) que podem ser [provisionados durante o provisionamento sob demanda](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta&preserve-view=true), incluindo principais como gerente, membros e proprietários.
 
 ### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
 Acesse a [API de Descoberta Eletrônica](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) do namespace de [segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) no futuro, em vez do namespace de conformidade.

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1b546da83c3f53ad1b8126e2967e224e9569cbf5
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 45b14ce9fc0e687c5fbc2cd20fc7b63509d54a0f
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439677"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645388"
 ---
 # <a name="groupwritebackconfiguration-resource-type"></a>Tipo de recurso groupWritebackConfiguration
 
@@ -28,7 +28,7 @@ Herda de [writebackConfiguration](../resources/writebackconfiguration.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |isEnabled|Booliano|Indica se o write-back de grupos de nuvem para o Active Directory local está habilitado. Anulável. O valor padrão é `true` para grupos do Microsoft 365 e para `false` grupos de segurança. Herdado [de writebackConfiguration](../resources/writebackconfiguration.md).|
-|onPremisesGroupType|Cadeia de caracteres|Indica o tipo de grupo local de destino em que o objeto de nuvem será gravado. Anulável. Os valores possíveis são: `universalDistributionGroup`, `universalSecurityGroup`, `universalMailEnabledSecurityGroup`. <br>+ Se o grupo de nuvem for um grupo unificado (Microsoft 365), essa propriedade poderá ser uma das seguintes: `universalDistributionGroup`, `universalSecurityGroup`, `universalMailEnabledSecurityGroup`. <br> + Azure AD grupos de segurança podem ser gravados como `universalSecurityGroup`. <br> + Se **isEnabled** ou a [configuração](directorysetting.md) `NewUnifiedGroupWritebackDefault` de grupo for`true`, mas essa propriedade não estiver explicitamente configurada: <br> &nbsp;&nbsp; + Os grupos do Microsoft 365 serão gravados como `universalDistributionGroup` padrão <br> &nbsp;&nbsp; + Grupos de segurança serão gravados como `universalSecurityGroup` padrão|
+|onPremisesGroupType|Cadeia de Caracteres|Indica o tipo de grupo local de destino em que o objeto de nuvem será gravado. Anulável. Os valores possíveis são: `universalDistributionGroup`, `universalSecurityGroup`, `universalMailEnabledSecurityGroup`.<ol><li>Se o grupo de nuvem for um grupo unificado (Microsoft 365), essa propriedade poderá ser uma das seguintes: `universalDistributionGroup`, `universalSecurityGroup`, `universalMailEnabledSecurityGroup`. </li><li>Azure AD grupos de segurança podem ser gravados como `universalSecurityGroup`. </li><li>Se **isEnabled ou** a configuração `NewUnifiedGroupWritebackDefault` [de grupo](directorysetting.md) for `true` , mas essa propriedade não estiver definida explicitamente: <ul><li>Os grupos do Microsoft 365 serão gravados como `universalDistributionGroup` padrão</li></ul><ul><li>Os grupos de segurança serão gravados como `universalSecurityGroup` padrão</li></ul>|
 
 ## <a name="relationships"></a>Relações
 Nenhum

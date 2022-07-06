@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: a064058b666f7b5709fed96a53b83c6eb3d2c77d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 9560cac180097207d7bc97f0aef6a560843ca878
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446361"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645085"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -158,7 +158,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |primaryRefreshToken|
 |saml11|
 |saml20|
@@ -169,7 +169,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |oAuth2|
 |ropc|
 |wsFederation|
@@ -211,7 +211,7 @@ Namespace: microsoft.graph
 
 | Membro             | Valor | Descrição |
 |:-------------------|:------| :------|
-| Nenhuma               | 0     | A política não se aplica a nenhum usuário ou grupo na organização. |
+| none               | 0     | A política não se aplica a nenhum usuário ou grupo na organização. |
 | tudo                | 1     | A política se aplica a todos os usuários e grupos na organização. Valor padrão. |
 | Selecionado           | 2     | A política se aplica a usuários ou grupos específicos na organização. |
 | unknownFutureValue | 3     | Valor de sentinel de enumeração evolvável. Não usar. |
@@ -360,11 +360,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de caracteres|
+|Cadeia de Caracteres|
 |Inteiro|
-|Referência|
+|Referências|
 |Binária|
-|Booliano|
+|Booleano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -480,7 +480,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |noMissedCall|
 |disableForwardingExceptPhone|
 |disableForwarding|
@@ -556,7 +556,7 @@ Namespace: microsoft.graph
 ### <a name="recipientscopetype-values"></a>Valores recipientScopeType
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |Interno|
 |Externo|
 |externalPartner|
@@ -625,7 +625,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |mobilePhone|
 |alternateMobilePhone|
 |officePhone|
@@ -640,7 +640,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |clientSecret|
 |clientAssertion|
 |federatedIdentityCredential|
@@ -653,7 +653,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |Livre|
 |Basic|
 |premiumP1|
@@ -664,7 +664,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |aplicação|
 |usuários|
 |devicePlatform|
@@ -862,7 +862,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |Interno|
 |Externo|
 |externalPartner|
@@ -940,14 +940,14 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |assignIfOpen|
 |unknownFutureValue|
 
 ### <a name="educationaddtocalendaroptions-values"></a>valores educationAddToCalendarOptions
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |studentsAndPublisher|
 |studentsAndTeamOwners|
 |unknownFutureValue|
@@ -1264,7 +1264,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |Carro|
 |calendar|
 |Executando|
@@ -1326,7 +1326,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |shift|
 |swapRequest|
 |userShiftPreferences|
@@ -1343,7 +1343,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| Nenhuma|
+| none|
 | usuário|
 | manager|
 | unknownFutureValue|
@@ -1391,7 +1391,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| Nenhuma
+| none
 | contactsOnly
 | tudo
 
@@ -1508,7 +1508,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| Nenhuma
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -1540,7 +1540,7 @@ Namespace: microsoft.graph
 | deviceDefault
 | Banner
 | Modal
-| Nenhuma
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>Valores deviceEnrollmentFailureReason
 
@@ -1742,7 +1742,7 @@ Namespace: microsoft.graph
 
 | Member
 |:-------------------------
-| Nenhuma
+| none
 | organizer
 | tentativelyAccepted
 | Aceito
@@ -1775,7 +1775,7 @@ Namespace: microsoft.graph
 
 | Membro   | Valor |
 | :------- | :---- |
-| Nenhuma     | -1    |
+| none     | -1    |
 | preset0  | 0     |
 | preset1  | 1     |
 | preset2  | 2     |
@@ -1895,7 +1895,7 @@ Enumeração para tipos de valor do Registro conforme definido pelos [tipos de v
 | expandSz          | 5     | REG_EXPAND_SZ tipo de valor do Registro.           |
 | link              | 6      | REG_LINK tipo de valor do Registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
-| Nenhuma              | 8      | REG_NONE tipo de valor do Registro.                |
+| none              | 8      | REG_NONE tipo de valor do Registro.                |
 | Qword             | 9      | REG_QWORD tipo de valor do Registro.               |
 | qwordwordEndian | 10    | REG_QWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | Sz                | 11    | REG_SZ tipo de valor do Registro.                  |
@@ -1961,7 +1961,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Valor |
 |:-----------------|
-| Nenhuma |
+| none |
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
@@ -1981,14 +1981,14 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |medium|
 |high|
 |hidden|
-|Nenhuma|
+|none|
 |unknownFutureValue|
 
 ### <a name="riskstate-values"></a>Valores riskState
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |confirmedSafe|
 |corrigido|
 |Demitido|
@@ -2187,7 +2187,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |freeBusyRead|
 |limitedRead|
 |leitura|
@@ -2292,12 +2292,22 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |unknownFutureValue|
 |deviceFilterIncludeRuleNotMatched|
 |allDeviceStates|
+|anonymizedIPAddress|
+|unfamiliarFeatures|
+|nationStateIPAddress|
+|realTimeThreatIntelligence|
+|internalGuest|
+|b2bCollaborationGuest|
+|b2bCollaborationMember|
+|b2bDirectConnectUser|
+|otherExternalUser|
+|Serviceprovider|
 
 ### <a name="signinaccesstype-values"></a>Valores signInAccessType 
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |b2bCollaboration|
 |b2bDirectConnect|
 |microsoftSupport|
@@ -2350,7 +2360,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| email   | 1     | Ameaça de email.            |
+| Email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -2397,7 +2407,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Membro                | Valor | Descrição                         |
 |:----------------------|:------|:------------------------------------|
-| Nenhuma                  | 0     | Ainda não sei.                       |
+| none                  | 0     | Ainda não sei.                       |
 | mailFlowRule          | 1     | Regra de transporte do Exchange.            |
 | safeSender            | 2     | Lista de remetentes seguros.                   |
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
@@ -2445,7 +2455,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Member
 |:----------------------
-| Nenhuma
+| none
 | defaultList
 | flaggedEmails
 | unknownFutureValue
@@ -2564,7 +2574,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |onPremisesKerberos|
 |aadHeaderBased|
 |pingHeaderBased|
@@ -2600,7 +2610,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |tudo|
 |Selecionado|
 
@@ -2782,7 +2792,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |Member|
 |:---|
 |team|
-|channel|
+|canal|
 |chat|
 |unknownFutureValue|
 
@@ -2922,7 +2932,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|Nenhuma|
+|none|
 |defaultList|
 |flaggedEmail|
 |unknownFutureValue|

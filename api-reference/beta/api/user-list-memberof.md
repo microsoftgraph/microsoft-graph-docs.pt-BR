@@ -1,24 +1,24 @@
 ---
-title: Listar usuário memberOf
-description: Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro direto. Essa operação não é transitiva.
+title: Listar as associações diretas de um usuário
+description: Obtenha os grupos, funções de diretório e unidades administrativas das quais o usuário é membro direto. Essa operação não é transitiva.
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d82d09b3ca326014d97ee708e0cb7dc80cbde8f8
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: c1134f23ac1d9df43ea6f3cee6787bcf94101fcb
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510208"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645505"
 ---
-# <a name="list-user-memberof"></a>Listar usuário memberOf
+# <a name="list-a-users-direct-memberships"></a>Listar as associações diretas de um usuário
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os [grupos](../resources/group.md), [funções de diretório](../resources/directoryrole.md) e [unidades administrativas](../resources/administrativeunit.md) das quais o usuário é membro direto. Essa operação não é transitiva.
+Obtenha os [grupos](../resources/group.md), [funções de diretório](../resources/directoryrole.md) e [unidades administrativas](../resources/administrativeunit.md) das quais o usuário é membro direto. Essa operação não é transitiva. Para recuperar grupos, funções de diretório e unidades administrativas que o usuário é membro por meio de associação transitiva, use a API [List user transitive memberOf](user-list-transitivememberof.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,7 +37,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/memberOf
-or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 

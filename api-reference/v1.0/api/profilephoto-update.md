@@ -5,22 +5,24 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7f580dbce3bf83bc09403bd25a60cd00a01ab5d5
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: fb3ccef7898305dbd76f891ff85019da853187dc
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791837"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645480"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilePhoto
 
 Namespace: microsoft.graph
 
-Atualize a foto do **user** conectado, ou do **group** ou **contact** especificado. Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho da foto que você pode adicionar a 4 MB.
+Atualize a foto do **usuário** conectado, ou do **grupo** ou **cotato** especificado.
+
+Devido ao limite atual de 4 MB no tamanho total de cada solicitação REST, o tamanho da foto que você pode adicionar também é limitado a 4 MB. A seguir estão as dimensões com suporte para fotos HD em Exchange Online: `48x48`, `64x64`, , `96x96`, `120x120`, `240x240`, `432x432``360x360`, `504x504`e `648x648`.
 
 Você pode usar PATCH ou PUT para esta operação na versão 1.0.
 
-> **Observação** Esta operação na versão 1.0 é compatível com caixas de correio corporativas ou de estudante ou caixas de correio não pessoais dos usuários
+> **Nota:** Essa operação dá suporte apenas a caixas de correio corporativas ou de estudante de um usuário e não a caixas de correio pessoais.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,9 +52,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo      |    Contacts.ReadWrite           |
 
 > [!NOTE]
-> 1. Para atualizar a foto de qualquer usuário na organização, seu aplicativo deve ter a permissão de aplicativo *User.ReadWrite.All* e chamar essa API sob sua própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service). A atualização da foto do usuário in-loco requer apenas a *permissão User.ReadWrite.*
+> 1. Para atualizar a foto de qualquer usuário na organização, seu aplicativo deve ter a permissão de aplicativo *User.ReadWrite.All* e chamar essa API em sua própria identidade, não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service). Atualizar a foto do usuário conectado requer apenas a *permissão User.ReadWrite* .
 > 2. Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
-> 3. A atualização da foto de um usuário usando a API do Microsoft Graph atualmente não é suportada em locatários do Azure AD B2C.
+> 3. Atualmente, não há suporte para a atualização da foto de um usuário usando o Microsoft API do Graph em locatários Azure AD B2C.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -87,7 +89,7 @@ Inclua os dados binários da foto no corpo da solicitação.
 Se tiver êxito, este método retornará um código de resposta `200 OK`.
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

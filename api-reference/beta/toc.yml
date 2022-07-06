@@ -622,7 +622,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -974,6 +974,7 @@ items:
                   - name: Remover chave
                     href: api/application-removekey.md
               - name: Credenciais de identidade federada (versão prévia)
+                displayName: 'Workload identity federation, workload identities'
                 items:
                   - name: Visão Geral
                     href: resources/federatedidentitycredentials-overview.md
@@ -1240,7 +1241,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -1625,7 +1626,7 @@ items:
                     href: api/addlargegalleryviewoperation-get.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1796,7 +1797,7 @@ items:
                     href: api/ediscovery-custodian-update.md
                   - name: Ativar
                     href: api/ediscovery-custodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-custodian-release.md
               - name: Retenção legal
                 href: resources/ediscovery-legalhold.md
@@ -1822,7 +1823,7 @@ items:
                     href: api/ediscovery-noncustodialdatasource-get.md
                   - name: Listar fonte de dados
                     href: api/ediscovery-noncustodialdatasource-list-datasource.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/ediscovery-noncustodialdatasource-release.md
               - name: Conjuntos de revisão
                 href: resources/ediscovery-reviewset.md
@@ -1896,7 +1897,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Gerenciamento de registros (versão prévia)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/security-recordsManagement-overview.md
               - name: Rótulo de retenção
                 href: resources/security-retentionlabel.md
@@ -1937,7 +1938,7 @@ items:
                     href: api/security-retentioneventtype-delete.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -14193,7 +14194,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -14220,7 +14221,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -14245,7 +14246,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registros de usuário de credencial
                     href: resources/credentialuserregistrationcount.md
@@ -14286,7 +14287,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14563,7 +14564,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-answers-overview.md
               - name: Acronym
                 href: resources/search-acronym.md
@@ -14814,7 +14815,7 @@ items:
                     href: api/security-ediscoverycustodian-get.md
                   - name: Ativar
                     href: api/security-ediscoverycustodian-activate.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/security-ediscoverycustodian-release.md
                   - name: Aplicar retenção
                     href: api/security-ediscoverycustodian-applyhold.md
@@ -14845,7 +14846,7 @@ items:
                     href: api/security-ediscoverycase-post-noncustodialdatasources.md
                   - name: Obter
                     href: api/security-ediscoverynoncustodialdatasource-get.md
-                  - name: Lançar
+                  - name: Liberar
                     href: api/security-ediscoverynoncustodialdatasource-release.md
                   - name: Aplicar retenção
                     href: api/security-ediscoverynoncustodialdatasource-applyhold.md
@@ -15753,6 +15754,14 @@ items:
                     href: api/chat-teamsappinstallation-upgrade.md
                   - name: Remover aplicativo do chat
                     href: api/chat-delete-installedapps.md
+          - name: Configurações do aplicativo
+            items:
+              - name: Configurações do aplicativo
+                href: resources/teamsappsettings.md
+              - name: Obter
+                href: api/teamsappsettings-get.md
+              - name: Atualizar
+                href: api/teamsappsettings-update.md
           - name: Dispositivo
             items:
               - name: Dispositivos provisionados
@@ -15800,7 +15809,7 @@ items:
                 href: api/userteamwork-sendactivitynotification.md
               - name: Enviar notificações para vários usuários em massa
                 href: api/teamwork-sendactivitynotificationtorecipients.md
-          - name: Tab
+          - name: Guia
             href: resources/teamstab.md
             items:
               - name: Guia no canal
@@ -16094,6 +16103,20 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
+          - name: Anexo de arquivo
+            items:
+              - name: Anexo de arquivo
+                href: resources/taskfileattachment.md
+              - name: Lista
+                href: api/todotask-list-attachments.md
+              - name: Obter
+                href: api/taskfileattachment-get.md
+              - name: Excluir
+                href: api/taskfileattachment-delete.md
+              - name: Anexar todos os tamanhos de arquivo
+                href: api/taskfileattachment-createuploadsession.md
+              - name: Anexar arquivo pequeno
+                href: api/todotask-post-attachments.md
           - name: Item da lista de verificação
             href: resources/checklistitem.md
             items:

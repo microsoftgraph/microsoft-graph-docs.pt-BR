@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e735e4440eec0b5ab82f0e7b3cbddc16f851114f
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 6c87a2357674f50d281bafe8a9fc3661ee0dae5a
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884250"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645502"
 ---
 # <a name="get-onlinemeeting"></a>Obter onlineMeeting
 
@@ -22,9 +22,9 @@ Recupere as propriedades e as relações de um [objeto onlineMeeting](../resourc
 
 Por exemplo, você pode:
 
-- Obtenha detalhes de um onlineMeeting usando [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID de](#example-2-retrieve-an-online-meeting-by-meeting-id) reunião ou [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Use o `/attendeeReport` caminho para obter o relatório de participantes de um evento ao vivo do [Microsoft Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) na forma de um link de download, conforme mostrado [no exemplo 4](#example-4-fetch-attendee-report-of-a-teams-live-event).
-- Use o `/recording` e os `/alternativeRecording` caminhos para obter as gravações de um evento ao vivo do [Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) na forma de um link de download, conforme mostrado no [exemplo 5](#example-5-fetch-recording-of-a-teams-live-event).
+- Obtenha detalhes de um onlineMeeting usando [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID](#example-2-retrieve-an-online-meeting-by-meeting-id) de reunião, [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl) ou [joinMeetingId](#example-4-retrieve-an-online-meeting-by-joinmeetingid).
+- Use o `/attendeeReport` caminho para obter o relatório de participantes de um evento ao vivo do [Microsoft Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) na forma de um link de download, conforme mostrado no [exemplo 5](#example-5-fetch-the-attendee-report-of-a-teams-live-event).
+- Use o `/recording` e os `/alternativeRecording` caminhos para obter as gravações de um evento ao vivo do [Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) na forma de um link de download, conforme mostrado no [exemplo 6](#example-6-fetch-the-recording-of-a-teams-live-event).
 
 O relatório de participantes do evento ao vivo do Teams e as gravações de eventos ao vivo do Teams são artefatos de reunião online. Para obter detalhes, consulte [artefatos e permissões](/graph/cloud-communications-online-meeting-artifacts) de reunião online.
 
@@ -34,9 +34,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegada (conta corporativa ou de estudante)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                                                                         |
-| Application                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
+| Delegado (conta corporativa ou de estudante)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                         |
+| Aplicativo                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
 Para usar a permissão do aplicativo para essa API, os administradores de [](/graph/cloud-communication-online-meeting-application-access-policy) locatários devem criar uma política de acesso de aplicativo e concedi-la a um usuário para autorizar o aplicativo configurado na política a buscar reuniões online e/ou artefatos de reunião online em nome desse usuário (com a ID de usuário especificada no caminho da solicitação).
 
@@ -67,6 +67,13 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
+Para obter uma **onlineMeeting usando** **joinMeetingId** com permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
+```
+
 Para obter o relatório do participante de um [evento ao vivo do Teams](/microsoftteams/teams-live-events/what-are-teams-live-events) com permissão delegada (`/me`) e de aplicativo (`/users/{userId}`):
 <!-- { "blockType": "ignored" }-->
 
@@ -87,10 +94,11 @@ GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 
 > [!NOTE]
 >- O caminho `/app` foi preterido. Daqui em diante, use o caminho `/communications`.
->- `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte a [política de acesso ao aplicativo](/graph/cloud-communication-online-meeting-application-access-policy).
+>- `userId` é a ID de objeto de um usuário no [Portal de gerenciamento de usuário do Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Para obter mais detalhes, consulte [Permitir que os aplicativos acessem reuniões online em nome de um usuário](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` é a **ID de** um [objeto onlineMeeting](../resources/onlinemeeting.md) .
 > - **videoTeleconferenceId** é gerado para usuários licenciados do Cloud-Video-Interop e pode ser encontrado em um [objeto onlineMeeting](../resources/onlinemeeting.md) . Para obter detalhes, consulte [a ID de conferência do VTC](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `joinWebUrl` deve ser codificado por URL.
+>- `joinMeetingId` é a ID da reunião a ser usada para ingressar em uma reunião.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
@@ -108,18 +116,23 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK`. A resposta também inclui um dos seguintes:
+Se tiver êxito, este método retornará um código de resposta `200 OK`. A resposta também inclui um dos seguintes:
 
 - Se você buscar uma reunião online por ID de reunião, esse método retornará um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
 - Se você buscar uma reunião online por **videoTeleconferenceId** ou **joinWebUrl**, esse método retornará uma coleção que contém apenas um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
 - Se você buscar o relatório de participação de uma reunião online, esse método retornará um objeto [meetingAttendanceReport](../resources/meetingAttendanceReport.md) no corpo da resposta.
 - Se você buscar o relatório do participante ou a gravação de um Evento ao Vivo do **Microsoft Teams**, `Location` esse método retornará um cabeçalho que indica o URI para o relatório ou gravação do participante, respectivamente.
 
+> [!NOTE]
+>- **JoinMeetingIdSettings** pode não ser gerado para algumas reuniões pré-agendadas se a reunião tiver sido criada antes do suporte a esse recurso.
+
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Exemplo 1: Recuperar uma reunião online por videoTeleconferenceId
 
 #### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -158,6 +171,8 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 
 #### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 <!-- {
@@ -174,20 +189,20 @@ Content-Length: 1574
   "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
-    "tollNumber": "55525634478",
-    "tollFreeNumber": "55566390588",
+    "tollNumber": "55534478",
+    "tollFreeNumber": "55390588",
     "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
-    "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-    "messageId": "1533758867081"
+    "threadId": "19:cbee7c1c868258e3cebf7bee0d@thread.skype",
+    "messageId": "153867081"
   },
   "creationDateTime": "2018-05-30T00:12:19.0726086Z",
   "endDateTime": "2018-05-30T01:00:00Z",
   "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8_19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa67bd4c-8475-432d-bd41-39f255720e0a%22%2c%22Oid%22%3a%22112f7296-5fa4-42ca-bae8-6a692b15d4b8%22%7d",
+  "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa674c-875-432d-bd41-3720e0a%22%2c%22Oid%22%3a%2f7296-5fa4-42ca-bae8-6a4b8%22%7d",
   "participants": {
     "attendees": [
       {
@@ -195,8 +210,8 @@ Content-Length: 1574
         "identity": {
           "user": {
             "@odata.type": "#microsoft.graph.identity",
-            "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
-            "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+            "id": "11296-5fa4-42ca-bae8-6a2b4b8",
+            "tenantId": "aa674c-8475-432d-bd41-39f2e0a",
             "displayName": "Tyler Stein"
           }
         },
@@ -209,8 +224,8 @@ Content-Length: 1574
       "identity": {
         "user": {
           "@odata.type": "#microsoft.graph.identity",
-          "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-          "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+          "id": "58ede-f3cc-42eb-b2c1-e53ec96",
+          "tenantId": "a7bdc-8475-432d-bd41-39f2e0a",
           "displayName": "Jasmine Miller"
         }
       },
@@ -224,6 +239,11 @@ Content-Length: 1574
   "lobbyBypassSettings": {
     "scope": "everyone",
     "isDialInBypassEnabled": true
+  },
+  "joinMeetingIdSettings": {
+    "isPasscodeRequired": false,
+    "joinMeetingId": "1234567890",
+    "passcode": null
   },
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone",
@@ -241,9 +261,11 @@ Content-Length: 1574
 ```
 
 ### <a name="example-2-retrieve-an-online-meeting-by-meeting-id"></a>Exemplo 2: Recuperar uma reunião online por ID de reunião
-Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar um [onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião online pela primeira vez usando a API do Graph e, em seguida, recupera informações de reunião posteriormente como uma ação separada.
+Você pode recuperar informações de reunião por meio da ID de reunião com um token de usuário ou de aplicativo. A ID da reunião é fornecida no objeto de resposta ao criar um [onlineMeeting](../resources/onlinemeeting.md). Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião é conhecida, como quando um aplicativo cria a reunião online pela primeira vez usando o API do Graph e, em seguida, recupera informações de reunião posteriormente como uma ação separada.
 
 #### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
 
 > **Nota:** A ID da reunião foi truncada para legibilidade.
 
@@ -261,15 +283,17 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 ```json
 {
-    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
+    "id": "MSpkYzE3Njc0Yy04MWQ5L1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
-    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+    "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4YxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22c581-5130-43e9-88f3-fc82cde37%22%2c%22Oid%22%3a%22674c-81d9-4adb-bb2-8f62e4622%22%7d",
     "subject": null,
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
@@ -283,9 +307,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "role": "presenter",
             "identity": {
                 "user": {
-                    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                    "id": "dc174c-81d9-4adb-bfb2-8f4622",
                     "displayName": null,
-                    "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                    "tenantId": "9081-5130-43e9-88f3-fcde38",
                     "identityProvider": "AAD"
                 }
             }
@@ -297,6 +321,11 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "lobbyBypassSettings": {
         "scope": "organization",
         "isDialInBypassEnabled": false
+    },
+    "joinMeetingIdSettings": {
+        "isPasscodeRequired": false,
+        "joinMeetingId": "1234567890",
+        "passcode": null
     }
 }
 ```
@@ -305,6 +334,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 Você pode recuperar informações de reunião por meio do JoinWebUrl usando um token de usuário ou aplicativo. Essa opção está disponível para dar suporte a casos de uso em que a ID da reunião não é conhecida, mas o JoinWebUrl é, como quando um usuário cria uma reunião (por exemplo, no cliente do Microsoft Teams) e um aplicativo separado precisa recuperar detalhes da reunião como uma ação de acompanhamento.
 
 #### <a name="request"></a>Solicitação
+
+Veja a seguir um exemplo de uma solicitação.
 
 A solicitação a seguir usa um token de usuário.
 <!-- { "blockType": "ignored" } -->
@@ -320,17 +351,19 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 > **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
 
 ```json
 {
     "value": [
         {
-            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyEtZWVkODYxODYzMmY2@thread.v2",
             "creationDateTime": "2020-09-29T22:35:33.1594516Z",
             "startDateTime": "2020-09-29T22:35:31.389759Z",
             "endDateTime": "2020-09-29T23:35:31.389759Z",
-            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTQ2N2%40thread.v2/0?context=%7b%22Tid%22%3a%229581-5130-43e9-8f3-fcb35e37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
             "subject": null,
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
@@ -344,9 +377,9 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
                     "role": "presenter",
                     "identity": {
                         "user": {
-                            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+                            "id": "dc4c-81d9-4adb-bfb2-8f4622",
                             "displayName": null,
-                            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+                            "tenantId": "9091-5130-43e9-88f3-fcbe38",
                             "identityProvider": "AAD"
                         }
                     }
@@ -358,13 +391,88 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "lobbyBypassSettings": {
                 "scope": "organization",
                 "isDialInBypassEnabled": false
+            },
+            "joinMeetingIdSettings": {
+                "isPasscodeRequired": false,
+                "joinMeetingId": "1234567890",
+                "passcode": null
             }
         }
     ]
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>Exemplo 4: Buscar relatório de participante de um evento ao vivo do Teams
+### <a name="example-4-retrieve-an-online-meeting-by-joinmeetingid"></a>Exemplo 4: Recuperar uma reunião online por joinMeetingId
+Você pode recuperar informações de reunião por meio **do joinMeetingId** usando um usuário ou um token de aplicativo.
+
+#### <a name="request"></a>Solicitação
+
+A solicitação a seguir usa um token de usuário.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
+```
+
+A solicitação a seguir usa um token de aplicativo.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'1234567890'
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. 
+
+```json
+{
+    "value": [
+        {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+            "creationDateTime": "2020-09-29T22:35:33.1594516Z",
+            "startDateTime": "2020-09-29T22:35:31.389759Z",
+            "endDateTime": "2020-09-29T23:35:31.389759Z",
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4MDQyNTEtNTM2EtZWVkODYxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%7d",
+            "subject": null,
+            "autoAdmittedUsers": "EveryoneInCompany",
+            "isEntryExitAnnounced": true,
+            "allowedPresenters": "everyone",
+            "allowMeetingChat": "enabled",
+            "allowTeamworkReactions": true,
+            "videoTeleconferenceId": "(redacted)",
+            "participants": {
+                "organizer": {
+                    "upn": "(redacted)",
+                    "role": "presenter",
+                    "identity": {
+                        "user": {
+                            "id": "dc174c-81d9-4adb-bfb2-8f6622",
+                            "displayName": null,
+                            "tenantId": "9091-5130-43e9-88f3-fce38",
+                            "identityProvider": "AAD"
+                        }
+                    }
+                },
+                "attendees": [],
+                "producers": [],
+                "contributors": []
+            },
+            "lobbyBypassSettings": {
+                "scope": "organization",
+                "isDialInBypassEnabled": false
+            },
+            "joinMeetingIdSettings": {
+                "isPasscodeRequired": false,
+                "joinMeetingId": "1234567890",
+                "passcode": null
+            }
+        }
+    ]
+}
+```
+
+### <a name="example-5-fetch-the-attendee-report-of-a-teams-live-event"></a>Exemplo 5: Buscar o relatório de participante de um evento ao vivo do Teams
 
 O exemplo a seguir mostra uma solicitação para baixar um relatório de participantes.
 
@@ -417,6 +525,8 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 
 #### <a name="response"></a>Resposta
 
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -428,7 +538,7 @@ HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
-### <a name="example-5-fetch-recording-of-a-teams-live-event"></a>Exemplo 5: Buscar gravação de um evento ao vivo do Teams
+### <a name="example-6-fetch-the-recording-of-a-teams-live-event"></a>Exemplo 6: Buscar a gravação de um evento ao vivo do Teams
 
 O exemplo a seguir mostra uma solicitação para baixar uma gravação.
 
@@ -478,6 +588,9 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```
 
 #### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

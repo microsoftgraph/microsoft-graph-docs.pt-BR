@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewRecommendationInsightSetting
-description: Nas análises de acesso do Azure AD, accessReviewRecommendationInsightSetting representa as configurações associadas a uma visão fornecida para uma revisão de acesso.
+description: Nas revisões Azure AD acesso, accessReviewRecommendationInsightSetting representa as configurações associadas a um insight fornecido para uma revisão de acesso.
 author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ce3e5406163765a7acc4533399b9a0ae4f5f3545
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: beedb05c7e22ca3a3fcda781eff68a63779ca52b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137230"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645097"
 ---
 # <a name="accessreviewrecommendationinsightsetting-resource-type"></a>Tipo de recurso accessReviewRecommendationInsightSetting
 
@@ -20,7 +20,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-O **accessReviewRecommendationInsightSetting** permite configurar insights para [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Este é um tipo abstrato para o tipo derivado [accessReviewRecommendationInsightSetting.](accessReviewRecommendationInsightSetting.md)
+O **accessReviewRecommendationInsightSetting** permite que você configure insights para [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). Esse tipo complexo é o tipo abstrato para os seguintes tipos derivados:
++ [userLastSignInRecommendationInsightSetting](userlastsignInrecommendationinsightsetting.md)
 
 
 ## <a name="relationships"></a>Relações

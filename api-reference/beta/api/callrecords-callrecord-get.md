@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3763bae6271b7a1586b1e1173b551d424b73163c
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 3bf549e32d8da24b6ed70738bf77e54a18e6cf7b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366216"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645566"
 ---
 # <a name="get-callrecord"></a>Obter callRecord
 
@@ -22,7 +22,7 @@ Recupere as propriedades e as relações de um [objeto callRecord](../resources/
 
 Há duas maneiras de obter a **ID** de um **callRecord**:
 
-* Assine para [alterar notificações para](/graph/api/resources/webhooks?view=graph-rest-beta) o ponto `/communications/callRecords` de extremidade.
+* Assine para [alterar notificações para](/graph/api/resources/webhooks) o ponto `/communications/callRecords` de extremidade.
 * Use a **propriedade callChainId** de uma [chamada](../resources/call.md). O registro de chamada só estará disponível depois que a chamada associada for concluída.
 
 ## <a name="permissions"></a>Permissões

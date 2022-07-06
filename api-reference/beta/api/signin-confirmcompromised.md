@@ -5,27 +5,29 @@ author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: ea5843b3658e42d609b775761cd80104dd955756
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: bc5f717a75dc3d1d0755a2155a40793013c64134
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447328"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645530"
 ---
 # <a name="signin-confirmcompromised"></a>signIn: confirmCompromised
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permitir que os administradores marquem um evento no Azure AD logs de entrada como arriscados. Os eventos marcados como arriscados por um administrador são imediatamente sinalizados como de alto risco no Azure AD Identity Protection, substituindo os estados de risco anteriores. Os administradores podem confirmar que os eventos sinalizados como arriscados pelo Azure AD Identity Protection são de fato arriscados e movê-los para alto risco. Para obter detalhes sobre como investigar os riscos do Identity Protection, consulte [Como investigar o risco](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
+Permitir que os administradores marquem um evento no Azure AD logs de entrada como arriscados. Os eventos marcados como arriscados por um administrador são imediatamente sinalizados como de alto risco no Azure AD Identity Protection, substituindo os estados de risco anteriores. Os administradores podem confirmar se os eventos sinalizados como arriscados pelo Azure AD Identity Protection são de fato arriscados.
+
+Para obter detalhes sobre como investigar os riscos do Identity Protection, consulte [Como investigar o risco](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|IdentityRiskyUser.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|IdentityRiskyUser.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|IdentityRiskEvent.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|requestIds|Coleção de cadeias de caracteres|As IDs dos eventos de entrada que devem ser marcados como arriscados para Azure AD Identity Protection.|
+|requestIds|Conjunto de cadeias de caracteres|As IDs dos eventos de entrada que devem ser marcados como arriscados para Azure AD Identity Protection.|
 
 
 

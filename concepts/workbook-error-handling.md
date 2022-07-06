@@ -4,12 +4,12 @@ description: Encontre instruções gerais e sugestões para lidar com erros reto
 author: grangeryy
 ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: dcdbb5cd741a5264b6727201057d2c2b17f515ab
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 7e115fe0a09c519ecad98f49524ca3ebd86001fd
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554964"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645413"
 ---
 # <a name="error-handling-for-excel-apis"></a>Tratamento de erros para APIs do Excel
 
@@ -151,7 +151,7 @@ Para algumas das respostas no padrão regular, uma duração de resfriamento de 
 
 ## <a name="diagnostic-information"></a>Informações de diagnóstico
 
-Todo o conteúdo na resposta que não é usado nas etapas anteriores é apenas para fins de diagnóstico (incluindo cadeias de caracteres nos campos **de** mensagem). Não recomendamos que você use uma dependência desses conteúdos, pois eles podem ser alterados sem aviso prévio.
+Todo o conteúdo na resposta que não é usado nas etapas anteriores é apenas para fins de diagnóstico (incluindo cadeias de caracteres nos campos **de** mensagem). Não recomendamos que você use uma dependência desses conteúdos, pois eles podem mudar sem aviso prévio.
 
 ## <a name="special-case-handling"></a>Tratamento de caso especial
 

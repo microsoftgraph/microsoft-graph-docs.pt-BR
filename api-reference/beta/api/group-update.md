@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 17b08b04e88c6ef3b8a0b9ec8acad48535eff6f1
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 773505f386f075b4e012e615006602820d8b324b
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555225"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645284"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -60,6 +60,7 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 | preferredDataLocation   | String  | O local de dados preferencial para o grupo Microsoft 365. Para atualizar essa propriedade, o usuário de chamada deve receber uma das seguintes funções do Azure Active Directory: <br><ul><li> Administrador Global <li> Administrador de Conta de Usuário <li> Suporte para Parceiro Nível1 ou Nível2 <li>Gravador de Diretório <li> Administrador do Exchange <li> Administrador do SharePoint </ul> <br/>Para obter mais informações sobre essa propriedade, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | securityEnabled         | Boolean | Especifica se o grupo é um grupo de segurança, incluindo grupos do Microsoft 365.                                                                                                                                                                                                                                                                                                                                                                                                             |
 | visibility              | Cadeia de caracteres  | Especifica a visibilidade de um grupo do Microsoft 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).                                                                                                                                                                                                                                                                                                                                              |
+| writebackConfiguration                     | [groupWritebackConfiguration](../resources/groupwritebackconfiguration.md)                                                                  | Especifica se um grupo está configurado ou não para gravar de volta as propriedades do objeto de grupo no Active Directory local. Essas propriedades são usadas quando o write-back de grupo é configurado no cliente de sincronização do [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-group-writeback-v2).|  
 
 > [!IMPORTANT]
 >
@@ -72,10 +73,10 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 
 ### <a name="manage-extensions-and-associated-data"></a>Gerenciar extensões e dados associados
 
-Use essa API para gerenciar o [diretório,](/graph/extensibility-overview) o esquema e as extensões abertas e seus dados para grupos, da seguinte maneira:
+Use esta API para gerenciar o [diretório, o esquema e as extensões abertas](/graph/extensibility-overview) e seus dados para grupos, da seguinte maneira:
 
 + Adicione, atualize e armazene dados nas extensões de um grupo existente.
-+ Para extensões de diretório e esquema, remova todos os dados armazenados definindo o valor da propriedade de extensão personalizada como `null`. Para extensões abertas, use a API [Excluir extensão aberta](/graph/api/opentypeextension-delete) .
++ Para extensões de diretório e esquema, remova todos os dados armazenados definindo o valor da propriedade de extensão personalizada como `null`. Para extensões abertas, use a API [Excluir a extensão aberta](/graph/api/opentypeextension-delete).
 
 ## <a name="response"></a>Resposta
 
