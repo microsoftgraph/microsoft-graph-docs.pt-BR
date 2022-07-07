@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 461509ea39ccdf09910a3480cd3268b8bbe3e15b
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9ea44eddc4f3fd4781471f0127c26da23909fc29
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344971"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669690"
 ---
 # <a name="list-windowsmanageddevices"></a>Listar windowsManagedDevices
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos windowsManagedDevice.](../resources/intune-devices-windowsmanageddevice.md)
+Listar propriedades e relações dos [objetos windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9507
+Content-Length: 10025
 
 {
   "value": [
@@ -119,7 +119,16 @@ Content-Length: 9507
         "esimIdentifier": "Esim Identifier value",
         "systemManagementBIOSVersion": "System Management BIOSVersion value",
         "tpmManufacturer": "Tpm Manufacturer value",
-        "tpmVersion": "Tpm Version value"
+        "tpmVersion": "Tpm Version value",
+        "wiredIPv4Addresses": [
+          "Wired IPv4Addresses value"
+        ],
+        "batteryLevelPercentage": 7.333333333333333,
+        "residentUsersCount": 2,
+        "productName": "Product Name value",
+        "deviceLicensingStatus": "licenseRefreshPending",
+        "deviceLicensingLastErrorCode": 12,
+        "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
       },
       "ownerType": "company",
       "managedDeviceOwnerType": "company",
@@ -272,7 +281,9 @@ Content-Length: 9507
           "updatable": true
         }
       ],
-      "enrollmentProfileName": "Enrollment Profile Name value"
+      "enrollmentProfileName": "Enrollment Profile Name value",
+      "bootstrapTokenEscrowed": true,
+      "deviceFirmwareConfigurationInterfaceManaged": true
     }
   ]
 }

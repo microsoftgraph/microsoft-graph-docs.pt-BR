@@ -4,12 +4,12 @@ description: Lista o Microsoft API do Graph para Intune de extremidade (REST) qu
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 5ee2bb66b6c90df86cf6b9a3136578986113128e
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 4002720381bb7c98103efe80f6f08db7b11e3a4f
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858426"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668780"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -81,6 +81,7 @@ Namespace: microsoft.graph
 - [Resumo da execução do script de integridade do dispositivo](intune-devices-devicehealthscriptrunsummary.md)
 - [Parâmetro de cadeia de caracteres de script de integridade do dispositivo](intune-devices-devicehealthscriptstringparameter.md)
 - [Agendamento de tempo do script de integridade do dispositivo](intune-devices-devicehealthscripttimeschedule.md)
+- [Status de licenciamento do dispositivo](intune-devices-devicelicensingstatus.md)
 - [Solicitação de coleta de log do dispositivo](intune-devices-devicelogcollectionrequest.md)
 - [Resposta de coleta de log do dispositivo](intune-devices-devicelogcollectionresponse.md)
 - [Tipo de modelo de coleção de log do dispositivo](intune-devices-devicelogcollectiontemplatetype.md)
@@ -176,7 +177,6 @@ Namespace: microsoft.graph
 - [Estado de integridade reportado pelo parceiro do dispositivo gerenciado](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Ação remota de dispositivo gerenciados](intune-devices-manageddeviceremoteaction.md)
 - [Status do instalador gerenciado](intune-devices-managedinstallerstatus.md)
-- [Tipo de agente de gerenciamento](intune-devices-managementagenttype.md)
 - [Estado de gerenciamento](intune-devices-managementstate.md)
 - [Modelo de mensagem de notificação](intune-notification-notificationmessagetemplate.md)
 - [Opções de identidade visual do modelo de notificação](intune-notification-notificationtemplatebrandingoptions.md)
@@ -267,7 +267,7 @@ Namespace: microsoft.graph
 - [A análise da experiência do usuário funciona em qualquer lugar do desempenho do modelo](intune-devices-userexperienceanalyticsworkfromanywheremodelperformance.md)
 - [Oferta de garantia](intune-devices-warrantyoffer.md)
 - [Tipo de garantia](intune-devices-warrantytype.md)
-- [Windows status do produto defender](intune-devices-windowsdefenderproductstatus.md)
+- [Status do produto Windows Defender](intune-devices-windowsdefenderproductstatus.md)
 - [Resultado da ação de verificação do Windows Defender](intune-devices-windowsdefenderscanactionresult.md)
 - [Conta do dispositivo Windows](intune-devices-windowsdeviceaccount.md)
 - [Conta do AD de dispositivo Windows](intune-devices-windowsdeviceadaccount.md)
@@ -282,7 +282,7 @@ Namespace: microsoft.graph
 - [Contagem de nome de malware do Windows](intune-devices-windowsmalwarenamecount.md)
 - [Visão geral de malware do Windows](intune-devices-windowsmalwareoverview.md)
 - [Gravidade de malware do Windows](intune-devices-windowsmalwareseverity.md)
-- [Windows de gravidade do malware](intune-devices-windowsmalwareseveritycount.md)
+- [Contagem de severidade de malware do Windows](intune-devices-windowsmalwareseveritycount.md)
 - [Estado de malware do Windows](intune-devices-windowsmalwarestate.md)
 - [Contagem do estado de malware do Windows](intune-devices-windowsmalwarestatecount.md)
 - [Estado de ameaças de malware do Windows](intune-devices-windowsmalwarethreatstate.md)

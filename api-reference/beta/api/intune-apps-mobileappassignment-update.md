@@ -2,21 +2,21 @@
 title: Atualizar mobileAppAssignment
 description: Atualizar as propriedades de um objeto mobileAppAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5729cf99b74e25ddfe1fee37574be2a0c02eb8a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0055da5c633b0a85d0aa0a06e72107f2cd738cb7
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129457"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668227"
 ---
 # <a name="update-mobileappassignment"></a>Atualizar mobileAppAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -53,12 +53,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |finalidade|[installIntent](../resources/intune-shared-installintent.md)|A finalidade da instalação definida pelo administrador. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 |configurações|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|As configurações para a atribuição de destino definida pelo administrador.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|O tipo de recurso que é a origem da atribuição. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|Cadeia de Caracteres|O identificador da origem da atribuição.|
+|Sourceid|Cadeia de caracteres|O identificador da origem da atribuição.|
 
 
 
@@ -72,7 +72,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 617
+Content-length: 540
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -83,10 +83,8 @@ Content-length: 617
     "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true,
-    "isRemovable": true
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -98,7 +96,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 666
+Content-Length: 589
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -110,15 +108,14 @@ Content-Length: 666
     "deviceAndAppManagementAssignmentFilterType": "include"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true,
-    "isRemovable": true
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
 }
 ```
+
 
 
 

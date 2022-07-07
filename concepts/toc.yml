@@ -599,8 +599,12 @@ items:
               - name: Visão geral
                 displayName: throttling
                 href: throttling.md
+              - name: Limites específicos do serviço
+                displayName: throttling
+                href: throttling-limits.md
               - name: Otimize o tráfego de rede
                 href: /learn/modules/optimize-network-traffic
+                displayName: throttling
           - name: Notificações de alteração
             items:
               - name: Visão Geral

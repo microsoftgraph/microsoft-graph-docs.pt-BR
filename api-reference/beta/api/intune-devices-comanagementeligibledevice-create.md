@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4397ab90d3896c1c564b4b8cd27d49d975367a0
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: bfa75a910dbaea9448477655ab4df5a5b7b218e0
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335751"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670699"
 ---
 # <a name="create-comanagementeligibledevice"></a>Criar comanagementEligibleDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um [novo objeto comanagementEligibleDevice.](../resources/intune-devices-comanagementeligibledevice.md)
+Crie um [novo objeto comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,20 +47,20 @@ POST /deviceManagement/comanagementEligibleDevices
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto comanagementEligibleDevice.
+No corpo da solicitação, forneça uma representação JSON do objeto comanagementEligibleDevice.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar o comanagementEligibleDevice.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID exclusiva do dispositivo|
+|id|Cadeia de caracteres|ID exclusiva do dispositivo|
 |deviceName|String|DeviceName|
-|deviceType|[deviceType](../resources/intune-devices-devicetype.md)|DeviceType. Os valores possíveis são: `desktop` , , , , , , , `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` , `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` `unknown` `cloudPC`|
+|deviceType|[Devicetype](../resources/intune-devices-devicetype.md)|Devicetype. Os valores possíveis são: , , , , , , , `winCE`, `iPod``cloudPC``palm``macMDM``blackberry``unix``linux``iSocConsumer``unknown``windows10x``androidnGMS``iPad``chromeOS``androidEnterprise``androidForWork``surfaceHub``holoLens``android``iPhone``winEmbedded`. `windowsPhone``mac``nokia``winMO6``windowsRT``desktop`|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. Os valores possíveis são: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
-|ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Os valores possíveis são: `unknown`, `company`, `personal`.|
-|managementAgents|[managementAgentType](../resources/intune-devices-managementagenttype.md)|ManagementAgents. Os valores possíveis são: `eas` , , , , , , , , , `mdm` , , `easMdm` , , , `intuneClient` , `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp` .|
+|Ownertype|[Ownertype](../resources/intune-shared-ownertype.md)|Ownertype. Os valores possíveis são: `unknown`, `company`, `personal`.|
+|managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Os valores possíveis são: , , , , , , , `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, , `googleCloudDevicePolicyController`, `msSense``microsoft365ManagedMdm`, . `intuneAosp``configurationManagerClient``easIntuneClient``intuneClient``easMdm``mdm``eas`|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. Os valores possíveis são: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|referenceId|String|ReferenceId|
+|referenceId|Cadeia de Caracteres|ReferenceId|
 |mdmStatus|String|MDMStatus|
 |osVersion|String|OSVersion|
 |serialNumber|String|SerialNumber|
@@ -69,7 +69,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o comana
 |osDescription|Cadeia de caracteres|OSDescription|
 |entitySource|Int32|EntitySource|
 |userId|Cadeia de caracteres|UserId|
-|upn|String|UPN|
+|Upn|String|UPN|
 |userEmail|Cadeia de caracteres|UserEmail|
 |userName|Cadeia de caracteres|UserName|
 |status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Os valores possíveis são: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
@@ -77,7 +77,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o comana
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta [e um objeto comanagementEligibleDevice](../resources/intune-devices-comanagementeligibledevice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

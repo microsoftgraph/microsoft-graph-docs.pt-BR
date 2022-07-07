@@ -3,12 +3,12 @@ title: Novidades do Microsoft Graph
 description: Exiba os destaques das novidades Microsoft Graph nos últimos dois meses, o que foi adicionado em versões anteriores e como você pode compartilhar suas ideias.
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 57e86b50b14c87a00341a296af38f22669c3651b
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: e08c148c1898633f07412a94bf94b11e0d650f98
+ms.sourcegitcommit: 005e9d483d03ed048611ffd180a92930afff4e42
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645243"
+ms.locfileid: "66646138"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Novidades do Microsoft Graph
 
@@ -16,6 +16,17 @@ Veja os destaques das novidades nos dois últimos meses do Microsoft Graph, [o q
 
 > [!IMPORTANT]
 > Recursos, incluindo APIs e ferramentas, no status de _visualização_ podem mudar sem aviso prévio e alguns podem nunca ser promovidos ao status de disponibilidade geral (GA). Não utilize recursos de visualização em aplicativos de produção.
+
+## <a name="july-2022-new-in-preview-only"></a>Julho de 2022: novo apenas na visualização
+
+### <a name="cloud-communications--call"></a>Comunicações na nuvem | Chamadas
+[Ingresse a uma chamada agendada](/graph/api/application-post-calls?view=graph-rest-beta&preserve-view=true) com uma ID ou código de acesso à reunião.
+
+### <a name="cloud-communications--online-meeting"></a>Comunicações na nuvem | Reunião online
+[Criar](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true#example-4-create-an-online-meeting-that-requires-a-passcode) uma [reunião online](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) que requer uma senha.
+
+### <a name="users"></a>Usuários
+[Obtenha](/graph/api/user-get?view=graph-rest-beta&preserve-view=true) o identificador de segurança (SID) de um usuário em cenários do Windows.
 
 ## <a name="june-2022-new-and-generally-available"></a>Junho de 2022: novo e disponível para o público geral
 
@@ -59,6 +70,9 @@ Especifique [objetos vinculados](/graph/api/resources/synchronization-synchroniz
 ### <a name="compliance--ediscovery"></a>Conformidade | Descoberta eletrônica
 Acesse a [API de Descoberta Eletrônica](/graph/api/resources/security-ediscoverycase?view=graph-rest-beta&preserve-view=true) do namespace de [segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true) no futuro, em vez do namespace de conformidade.
 
+### <a name="compliance--records-management"></a>Conformidade | Gerenciamento de registros
+Use a [API de gerenciamento de registros do Microsoft Purview](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true) de estreia para ajudar as organizações a gerenciar a retenção e a exclusão de dados para cumprir as obrigações legais e os regulamentos de conformidade.
+
 ### <a name="customer-booking"></a>Reserva de clientes
 - Gerencie o idioma da página de reserva de autoatendimento de uma [empresa](/graph/api/resources/bookingbusiness?view=graph-rest-beta&preserve-view=true) ou de um [serviço](/graph/api/resources/bookingservice?view=graph-rest-beta&preserve-view=true) fornecido pela empresa.
 - Especifique nas [informações do cliente](/graph/api/resources/bookingCustomerInformation?view=graph-rest-beta&preserve-view=true) se as notificações por SMS estão habilitada para um [compromisso](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) do cliente.
@@ -90,85 +104,9 @@ Especifique se um [grupo](/graph/api/resources/group?view=graph-rest-beta&preser
 ### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
 Ocultar links de redefinição de senha de autoatendimento (SSPR) nas [configurações de visibilidade de texto da página de logon](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) na página de entrada de um locatário. 
 
-### <a name="compliance--records-management"></a>Conformidade | Gerenciamento de registros
-Use a [API de gerenciamento de registros do Microsoft Purview](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true) de estreia para ajudar as organizações a gerenciar a retenção e a exclusão de dados para cumprir as obrigações legais e os regulamentos de conformidade.
-
 ### <a name="teamwork"></a>Teamwork
-Obtenha os detalhes de [fixando](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) ou [desafixando](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) uma [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em um [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) ou [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). 
-
-## <a name="may-2022-new-and-generally-available"></a>Maio de 2022: novos e geralmente disponíveis
-
-### <a name="education"></a>Educação
-- [Controlar Alterações dos recursos de atribuição.](/graph/api/educationassignment-delta)
-- [Controlar Alterações dos recursos da categoria de atribuição.](/graph/api/educationcategory-delta)
-
-### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
-Um [aplicativo](/graph/api/resources/application) registrado no Azure Active Directory (Microsoft Azure AD) pode especificar as informações de contato do aplicativo ou serviço de um banco de dados de Gerenciamento de Ativos ou Serviços.
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
-Permitir que um locatário do Azure Active Directory (Azure AD) defina uma [federação com outra organização cujo provedor de identidade (IdP) ofereça suporte ao protocolo SAML ou WS-Fed](/graph/api/resources/samlOrWsFedExternalDomainFederation). Isso permite que o locatário do Azure AD dê acesso aos seus recursos para usuários convidados.
-
-### <a name="search"></a>Pesquisar
-Você pode especificar até 1000 resultados de pesquisa por página para uma [solicitação de pesquisa](/graph/api/resources/searchrequest).
-
-### <a name="sites-and-lists"></a>Sites e listas
-- Obtenha uma coleção de recursos de [tipo de conteúdo](/graph/api/resources/contentType) do hub de tipo de conteúdo que são compatíveis usando a ação [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes). 
-- Adicione ou sincronize um tipo de conteúdo do hub de tipo de conteúdo para um [site](/graph/api/resources/site) ou [lista](/graph/api/resources/list), usando a ação [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub). Isso torna um tipo de conteúdo ou sua atualização disponível para um site ou lista específica onde é necessário. Essa é uma melhoria da infraestrutura de sincronização herdada que envia o tipo de conteúdo para todos os sites de uma organização, reduzindo os tempos de espera para a propagação da publicação. 
-- Obtenha uma ou mais [operações avançadas e de longa duração](/graph/api/resources/richlongrunningoperation) ocorrendo em um site ou lista, o que pode acontecer ao adicionar um tipo de conteúdo de forma síncrona.
-
-### <a name="tasks-and-plans"></a>Tarefas e planos
-- [Obtenha](/graph/api/plannerplandetails-get) ou [atualize](/graph/api/plannerplandetails-update) as descrições das categorias como parte dos [detalhes](/graph/api/resources/plannerplandetails) de um [plano](/graph/api/resources/plannerplan).
-- Em vez da propriedade do **proprietário** de um **plano**, use o **tipo** de propriedade de um [contêiner de plano](/graph/api/resources/plannerplancontainer) para especificar as regras de autorização e a vida útil de um **plano**.
-- Obtenha a prioridade de uma [tarefa](/graph/api/resources/plannerTask).
-
-### <a name="teamwork"></a>Trabalho em equipe
-[Receba mensagens em um canal](/graph/api/channel-list-messages) e [inclua todas as respostas](/graph/api/channel-list-messages#example-3-request-with-top-and-expand-query-options-on-replies) à mensagem.
-
-### <a name="to-do-tasks"></a>Tarefas pendentes
-- Dividir uma [tarefa pendentes](/graph/api/resources/todotask) complexa em tarefas mais acionáveis e menores, cada uma delas como um [item de lista de verificação](/graph/api/resources/checklistitem).
-- Rotular uma tarefa pendente com uma [categoria](/graph/api/resources/outlookcategory) definida pelo usuário para agrupar contatos do Outlook, eventos, mensagens, postagens de grupo e tarefas pendentes.
-
-
-## <a name="may-2022-new-in-preview-only"></a>Maio de 2022: novo apenas na versão prévia
-
-### <a name="application"></a>Aplicativo
-Ao configurar o Proxy de Aplicativo do Azure AD para aplicativos locais para acesso remoto seguro, use a propriedade **isStateSessionEnabled** no recurso [onPremisesPublishing](/graph/api/resources/onPremisesPublishing?view=graph-rest-beta&preserve-view=true) para especificar se deve validar o parâmetro de estado se o aplicativo usar o fluxo de concessão do código de autorização OAuth 2.0. Definir essa propriedade ajuda os administradores a proteger o aplicativo contra solicitação intersite forjada (CSRF).
-
-### <a name="compliance--subject-rights-requests"></a>Conformidade | Solicitações de direitos de entidade
-- Especifique ou obtenha os locais que devem ser pesquisados em uma [solicitação de direitos de assunto](/graph/api/resources/subjectRightsRequest?view=graph-rest-beta&preserve-view=true), como [caixas de correio](/graph/api/resources/subjectRightsRequestAllMailboxLocation?view=graph-rest-beta&preserve-view=true), [canais do SharePoint, OneDrive ou Teams](/graph/api/resources/subjectRightsRequestAllSiteLocation?view=graph-rest-beta&preserve-view=true).
-- Especifique ou obtenha uma consulta de conteúdo baseada em KQL que deve ser usada para pesquisa em uma solicitação de direitos de entidade.
-
-### <a name="device-and-app-management--cloud-pc"></a>Gerenciamento de dispositivos e aplicativos | PC na nuvem
-- Obtenha um [resultado](/graph/api/resources/cloudpcbulkremoteactionresult?view=graph-rest-beta&preserve-view=true) claramente definido no [reprovisionamento em massa de dispositivos Cloud PC](/graph/api/manageddevice-bulkReprovisionCloudPc?view=graph-rest-beta&preserve-view=true).
-- [Obtenha](/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) ou [defina](/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) um [status de revisão do Cloud PC](/graph/api/resources/cloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) ou defina o [status de revisão do Cloud PC](/graph/api/manageddevice-bulksetcloudpcreviewstatus?view=graph-rest-beta&preserve-view=true) em massa para vários dispositivos.
-
-### <a name="device-and-app-management--multi-tenant-management"></a>Gerenciamento de dispositivos e aplicativos | Gerenciamento multilocatário
-[Obtenha](/graph/api/managedtenants-managedtenant-list-tenantusage?view=graph-rest-beta&preserve-view=true) o número de usuários ativos mensais para cada serviço em um locatário gerenciado.
-
-### <a name="education"></a>Educação
-Use um [recurso de aplicativo Teams](/graph/api/resources/educationteamsappresource?view=graph-rest-beta&preserve-view=true) que corresponda a um aplicativo instalado do Microsoft Teams, para permitir que os usuários do serviço de educação criem e compartilhem atribuições com aplicativos do Teams inseridos, como o YouTube ou o FlipGrid.
-
-### <a name="identity-and-access--directory-management"></a>Identidade e acesso | Gerenciamento do diretório
-A ativação de um serviço [para uma organização](/graph/api/organization-activateService?view=graph-rest-beta&preserve-view=true) e [para um usuário](/graph/api/user-activateServicePlan?view=graph-rest-beta&preserve-view=true) foi preterida e deixará de retornar dados em 30 de junho de 2022.
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Identidade e acesso | Identidade e entrada
-Como parte da [função de usuário padrão](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) de uma [ política de autorização ](/graph/api/resources/authorizationPolicy?view=graph-rest-beta&preserve-view=true), especifique se o proprietário registrado de um dispositivo pode ler suas próprias chaves de recuperação do BitLocker.
-
-### <a name="reports--identity-and-access-reports"></a>Relatórios | Relatórios de identidade e acesso
-Obtenha um [relatório de uso para os métodos de autenticação registrados de um usuário](/graph/api/resources/userregistrationdetails?view=graph-rest-beta&preserve-view=true) que inclui o método padrão para autenticação de multi-fatores.
-
-### <a name="search--index"></a>Pesquisa | Índice
-[Obtenha](/graph/api/externalconnectors-connectionquota-get?view=graph-rest-beta&preserve-view=true) as [informações de cota](/graph/api/resources/externalconnectors-connectionQuota?view=graph-rest-beta&preserve-view=true) de uma [conexão](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Essas informações incluem o número de itens que você pode ingerir na conexão, levando em consideração os itens restantes na conexão e a cota restante no nível do locatário de todas as suas conexões.
-
-### <a name="sites-and-lists"></a>Sites e listas
-[Controlar alterações para o item de lista do SharePoint recursos.](/graph/api/listitem-delta?view=graph-rest-beta&preserve-view=true)
-
-### <a name="teamwork"></a>Trabalho em equipe
-- Use permissões de aplicativo para [obter todos os chats](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) em que um usuário especificado está envolvido sem que o usuário esteja presente.
-- [Enviar notificações do feed de atividades para vários usuários em massa](/graph/api/teamwork-sendActivityNotificationToRecipients?view=graph-rest-beta&preserve-view=true), até 100 usuários de cada vez.
-
-### <a name="to-do-tasks"></a>Tarefas pendentes
-A partir de 31 de maio de 2022, o [conjunto de API de tarefas pendentes que é compilado sobre a baseTask](/graph/api/resources/tasks-overview?view=graph-rest-beta&preserve-view=true) está preterido. Esse conjunto de API deixará de retornar dados em 31 de agosto de 2022. Em vez disso, use o [conjunto de API de tarefas pendentes compilado o todoTask](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true).
+- Obtenha os detalhes de [fixando](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) ou [desafixando](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) uma [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) em um [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) ou [canal](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true). 
+- Como cenários com suporte para exportar o conteúdo do Teams, você pode [listar](/graph/api/teamwork-list-deletedteams?view=graph-rest-beta&preserve-view=true) as equipes que foram excluídas e [obter](/graph/api/deletedteam-getallmessages?view=graph-rest-beta&preserve-view=true) chats individuais, chats em grupo, chats de reunião e mensagens de canal de uma [equipe excluída](/graph/api/resources/deletedTeam?view=graph-rest-beta&preserve-view=true). Para obter mais informações, consulte [Exportar conteúdo com as APIs de exportação do Microsoft Teams](/microsoftteams/export-teams-content).
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Quer ficar por dentro?

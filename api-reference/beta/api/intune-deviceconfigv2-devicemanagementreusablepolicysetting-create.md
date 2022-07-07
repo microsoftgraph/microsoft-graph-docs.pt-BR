@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39ec64938f3a74c0e1b98bc63c84bcb8997a3357
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: e15414f57fdb792a6bebfc53a2ca0f24d088c9cd
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343550"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669389"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>Criar deviceManagementReusablePolicySetting
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto deviceManagementReusablePolicySetting.](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md)
+Crie um novo [objeto deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,26 +47,26 @@ POST /deviceManagement/reusablePolicySettings
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementReusablePolicySetting.
+No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementReusablePolicySetting.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementReusablePolicySetting.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|id de configuração reutilizável gerada pelo sistema.|
-|displayName|String|nome de exibição de configuração reutilizável fornecido pelo usuário.|
-|descrição|String|descrição da configuração reutilizável fornecida pelo usuário.|
-|settingDefinitionId|String|id de definição de definição associada a essa configuração reutilizável.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|instância de configuração de configuração reutilizável|
-|createdDateTime|DateTimeOffset|reutilizável definindo data e hora de criação. Essa propriedade é somente leitura.|
+|id|Cadeia de caracteres|ID de configuração reutilizável gerada pelo sistema.|
+|displayName|Cadeia de caracteres|nome de exibição de configuração reutilizável fornecido pelo usuário.|
+|descrição|Cadeia de caracteres|descrição de configuração reutilizável fornecida pelo usuário.|
+|settingDefinitionId|Cadeia de Caracteres|ID de definição de configuração associada a essa configuração reutilizável.|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|instância de configuração de configuração reutilizável|
+|createdDateTime|DateTimeOffset|data e hora de criação da configuração reutilizável. Essa propriedade é somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|data e hora em que a configuração reutilizável foi modificada pela última vez. Essa propriedade é somente leitura.|
 |versão|Int32|número de versão para configuração reutilizável. Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura.|
-|referencingConfigurationPolicyCount|Int32|contagem de políticas de configuração fazendo referência à configuração atual reutilizável. Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura.|
+|referencingConfigurationPolicyCount|Int32|contagem de políticas de configuração que referenciam a configuração atual reutilizável. Valores válidos de 0 a 2147483647. Essa propriedade é somente leitura.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um [objeto deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

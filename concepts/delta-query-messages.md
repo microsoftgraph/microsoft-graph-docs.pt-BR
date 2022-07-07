@@ -1,15 +1,15 @@
 ---
 title: Obter as alterações incrementais para as mensagens em uma pasta
 description: Use a consulta delta para controlar as alterações de mensagens em uma hierarquia de pastas acompanhando cada pasta individualmente. O exemplo mostra como sincronizar mensagens em uma pasta.
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 90f72d899183b028fd66fc23c1f2f54929b7e944
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 06e4b6787a298ef245323b84671c0716768751fb
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555601"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671392"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Obter as alterações incrementais para as mensagens em uma pasta
 

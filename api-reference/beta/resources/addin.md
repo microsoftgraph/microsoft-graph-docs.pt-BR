@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 26dae722e9f706c5aa5ea89dfd375775975e7d11
-ms.sourcegitcommit: 6968f5aaf40089684efb0c38a95f6cca353c1d92
+ms.openlocfilehash: 88be5048dc2b8f4992c2a6d922fc66bcdea15cca
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62854449"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670229"
 ---
 # <a name="addin-resource-type"></a>Tipo de recurso addIn
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de [arquivos podem configurar os complementos para](/onedrive/developer/file-handlers/?view=odsp-graph-online) a funcionalidade de Manipulador de Arquivos. Isso permitirá que os serviços como o Microsoft 365 chamem o aplicativo no contexto de um documento no qual o usuário esteja trabalhando.
+Define o comportamento personalizado que um serviço de consumo pode usar para chamar um aplicativo em contextos específicos. Por exemplo, aplicativos que podem renderizar fluxos de [arquivos podem configurar suplementos para](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true) a funcionalidade de Manipulador de Arquivos. Isso permitirá que os serviços como o Microsoft 365 chamem o aplicativo no contexto de um documento no qual o usuário esteja trabalhando.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

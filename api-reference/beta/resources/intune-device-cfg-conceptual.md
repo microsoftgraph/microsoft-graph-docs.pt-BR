@@ -4,12 +4,12 @@ description: Lista o Microsoft API do Graph para Intune de extremidade (REST) qu
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: c0409951587da135830bbc567b6c3684716a192f
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 509a99d0d4104566295244c83826c6fdca8c8909
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65203236"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668794"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -445,7 +445,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Estado de criptografia de dispositivo gerenciado](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Estado de configuração do aplicativo móvel do dispositivo gerenciado](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
 - [Aplicativo reportado pelo dispositivo gerenciado](intune-deviceconfig-manageddevicereportedapp.md)
-- [Tipo de agente de gerenciamento](intune-deviceconfig-managementagenttype.md)
 - [Classificação de conteúdo de mídia da Austrália](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Classificação de conteúdo de mídia do Canadá](intune-deviceconfig-mediacontentratingcanada.md)
 - [Classificação de conteúdo de mídia da França](intune-deviceconfig-mediacontentratingfrance.md)
@@ -602,10 +601,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tamanho do bloco de layout de início do aplicativo do Windows](intune-deviceconfig-windowsappstartlayouttilesize.md)
 - [Base de perfil de certificado do Windows](intune-deviceconfig-windowscertificateprofilebase.md)
 - [Configuração de proteção avançada contra ameaças do Windows Defender](intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md)
-- [Windows de proteção contra adulterações do Defender](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
+- [Opções de proteção contra adulterações do Windows Defender](intune-deviceconfig-windowsdefendertamperprotectionoptions.md)
 - [Configuração de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Modo de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
-- [Windows quiosque de borda](intune-deviceconfig-windowsedgekiosktype.md)
+- [Tipo de quiosque do Windows Edge](intune-deviceconfig-windowsedgekiosktype.md)
 - [Perfil de rede de firewall do Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Regra de firewall do Windows](intune-deviceconfig-windowsfirewallrule.md)
 - [Tipos de interface com regra de firewall do Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
@@ -623,17 +622,17 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Usuário do Azure AD do quiosque do Windows](intune-deviceconfig-windowskioskazureaduser.md)
 - [Configuração de quiosque do Windows](intune-deviceconfig-windowskioskconfiguration.md)
 - [Aplicativo para área de trabalho de quiosque do Windows](intune-deviceconfig-windowskioskdesktopapp.md)
-- [Windows de atualização forçada de quiosque](intune-deviceconfig-windowskioskforceupdateschedule.md)
+- [Agenda de atualização forçada de quiosque do Windows](intune-deviceconfig-windowskioskforceupdateschedule.md)
 - [Grupo local do quiosque do Windows](intune-deviceconfig-windowskiosklocalgroup.md)
 - [Usuário local do quiosque do Windows](intune-deviceconfig-windowskiosklocaluser.md)
 - [Aplicativo para vários quiosques do Windows](intune-deviceconfig-windowskioskmultipleapps.md)
 - [Perfil do quiosque do Windows](intune-deviceconfig-windowskioskprofile.md)
 - [Aplicativo UWP do único quiosque do Windows](intune-deviceconfig-windowskiosksingleuwpapp.md)
-- [Windows aplicativo win32 único de quiosque](intune-deviceconfig-windowskiosksinglewin32app.md)
+- [Aplicativo win32 único de quiosque do Windows](intune-deviceconfig-windowskiosksinglewin32app.md)
 - [Usuário do quiosque do Windows](intune-deviceconfig-windowskioskuser.md)
 - [Aplicativo UWP do quiosque do Windows](intune-deviceconfig-windowskioskuwpapp.md)
 - [Visitante do quiosque do Windows](intune-deviceconfig-windowskioskvisitor.md)
-- [Windows aplicativo win32 de quiosque](intune-deviceconfig-windowskioskwin32app.md)
+- [Aplicativo win32 de quiosque do Windows](intune-deviceconfig-windowskioskwin32app.md)
 - [Política de isolamento de rede do Windows](intune-deviceconfig-windowsnetworkisolationpolicy.md)
 - [Base de perfil de certificado do Windows Phone 8.1](intune-deviceconfig-windowsphone81certificateprofilebase.md)
 - [Política de conformidade do Windows Phone 8.1](intune-deviceconfig-windowsphone81compliancepolicy.md)
@@ -664,7 +663,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de conexão de VPN do Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Configuração de Wi-Fi do Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Configuração de EAP corporativa de Wi-Fi do Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
-- [Windows de rede com fio](intune-deviceconfig-windowswirednetworkconfiguration.md)
+- [Configuração de rede com fio do Windows](intune-deviceconfig-windowswirednetworkconfiguration.md)
 - [Método de autenticação de rede com fio](intune-deviceconfig-wirednetworkauthenticationmethod.md)
 - [Tipo de autenticação de rede com fio](intune-deviceconfig-wirednetworkauthenticationtype.md)
 - [Interface de rede com fio](intune-deviceconfig-wirednetworkinterface.md)

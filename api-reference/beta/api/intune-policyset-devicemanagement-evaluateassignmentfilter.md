@@ -1,22 +1,22 @@
 ---
-title: Ação evaluateAssignmentFilter
+title: ação evaluateAssignmentFilter
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c271302b231f97e22ca6e5be8a24e70153785517
-ms.sourcegitcommit: 0076eb6abb89be3dca3575631924a74a5202be30
+ms.openlocfilehash: 934fdc98bec75c6691598f3c4f319287227676f9
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2022
-ms.locfileid: "64630748"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671183"
 ---
-# <a name="evaluateassignmentfilter-action"></a>Ação evaluateAssignmentFilter
+# <a name="evaluateassignmentfilter-action"></a>ação evaluateAssignmentFilter
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,7 +58,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa ação retornará um `200 OK` código de resposta e um Stream no corpo da resposta.
+Se for bem-sucedida, essa ação retornará um `200 OK` código de resposta e um Fluxo no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -68,7 +68,7 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/beta/deviceManagement/evaluateAssignmentFilter
 
 Content-type: application/json
-Content-length: 235
+Content-length: 266
 
 {
   "data": {
@@ -79,7 +79,8 @@ Content-length: 235
     "skip": 4,
     "orderBy": [
       "Order By value"
-    ]
+    ],
+    "search": "Search value"
   }
 }
 ```

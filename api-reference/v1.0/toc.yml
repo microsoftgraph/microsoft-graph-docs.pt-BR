@@ -51,8 +51,12 @@ items:
           - name: Visão geral
             href: /graph/throttling?context=graph/api/1.0
             displayName: throttling
+          - name: Limites específicos do serviço
+            href: /graph/throttling-limits?context=graph/api/1.0
+            displayName: throttling
           - name: Otimize o tráfego de rede
             href: /learn/modules/optimize-network-traffic
+            displayName: throttling
       - name: Notificações de alteração
         items:
           - name: Visão Geral
@@ -540,7 +544,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -5813,7 +5817,7 @@ items:
                         href: api/agreement-post-files.md
                       - name: Listar arquivos localizados
                         href: api/agreement-list-files.md
-      - name: Correio
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -6409,7 +6413,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Obter contagens de atividades
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta

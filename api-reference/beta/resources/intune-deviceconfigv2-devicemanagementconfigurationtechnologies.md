@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6efdc017f80a37529344f197c1d0e071a3936686
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 8d9d65d7e2bb44f6886be35362d2de07386ec84b
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65202753"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670538"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>Tipo de enumeração deviceManagementConfigurationTechnologies
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -33,6 +33,7 @@ Descreve com qual tecnologia essa configuração pode ser implantada
 |microsoftSense|128|A configuração pode ser implantada por meio do canal do agente SENSE|
 |exchangeOnline|256|A configuração pode ser implantada por meio do canal Exchange Online agente|
 |linuxMdm|1024|A configuração pode ser implantada por meio do canal Mdm do Linux|
+|Inscrição|4096|A configuração pode ser implantada por meio do registro do dispositivo.|
 |unknownFutureValue|1073741824|Membro do Sentinel para casos em que o cliente não pode manipular os novos valores de enumeração.|
 
 

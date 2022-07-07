@@ -1,26 +1,26 @@
 ---
 title: Obter windowsManagedDevice
-description: Leia propriedades e relações do objeto windowsManagedDevice.
+description: Ler propriedades e relações do objeto windowsManagedDevice.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f17b3ef75488962b43654cdc95e6f297bd41ceb
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 967ba540b13dd842d09779342f95de0ba8250683
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61347820"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667136"
 ---
 # <a name="get-windowsmanageddevice"></a>Obter windowsManagedDevice
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia propriedades e relações do [objeto windowsManagedDevice.](../resources/intune-devices-windowsmanageddevice.md)
+Ler propriedades e relações do objeto [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -59,7 +59,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -74,7 +74,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9093
+Content-Length: 9589
 
 {
   "value": {
@@ -124,7 +124,16 @@ Content-Length: 9093
       "esimIdentifier": "Esim Identifier value",
       "systemManagementBIOSVersion": "System Management BIOSVersion value",
       "tpmManufacturer": "Tpm Manufacturer value",
-      "tpmVersion": "Tpm Version value"
+      "tpmVersion": "Tpm Version value",
+      "wiredIPv4Addresses": [
+        "Wired IPv4Addresses value"
+      ],
+      "batteryLevelPercentage": 7.333333333333333,
+      "residentUsersCount": 2,
+      "productName": "Product Name value",
+      "deviceLicensingStatus": "licenseRefreshPending",
+      "deviceLicensingLastErrorCode": 12,
+      "deviceLicensingLastErrorDescription": "Device Licensing Last Error Description value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -277,7 +286,9 @@ Content-Length: 9093
         "updatable": true
       }
     ],
-    "enrollmentProfileName": "Enrollment Profile Name value"
+    "enrollmentProfileName": "Enrollment Profile Name value",
+    "bootstrapTokenEscrowed": true,
+    "deviceFirmwareConfigurationInterfaceManaged": true
   }
 }
 ```

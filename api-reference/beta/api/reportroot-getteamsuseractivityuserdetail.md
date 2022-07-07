@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: c5252465444e5316d781a77cd9f90eb76a3baac6
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 0feea188495e63f733886218c0fe80c6ce8de8ab
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441451"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668990"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -111,7 +111,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Período de Relatório
 
 > [!NOTE] 
-> Os valores na contagem organizada de reuniões podem não ser a soma da contagem organizada de reuniões ad hoc, contagem organizada de reuniões únicas agendadas e contagem organizada de reuniões recorrentes agendadas que um usuário organizou durante o período de tempo especificado. Isso ocorre porque o valor de reuniões não classificadas não é inserido no arquivo CSV de saída. Para obter detalhes, confira [Relatório de atividades do usuário do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/user-activity-report).
+> Os valores na contagem organizada de reuniões podem não ser a soma da contagem organizada de reuniões ad hoc, contagem organizada de reuniões únicas agendadas e contagem organizada de reuniões recorrentes agendadas que um usuário organizou durante o período de tempo especificado. Isso ocorre porque o valor de reuniões não classificadas não é inserido no arquivo CSV de saída. Para obter detalhes, confira [Relatório de atividades do usuário do Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/user-activity-report).
 
 ### <a name="json"></a>JSON
 

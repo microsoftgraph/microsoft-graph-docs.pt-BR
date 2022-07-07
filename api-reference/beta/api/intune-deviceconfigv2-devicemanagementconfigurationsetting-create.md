@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c8a02e12098c3b5f9795aa75abf996149ecf40f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 7a8ac30f146ee0b8847faf86624a05cb5d86cb4e
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344250"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668556"
 ---
 # <a name="create-devicemanagementconfigurationsetting"></a>Criar deviceManagementConfigurationSetting
 
 Namespace: microsoft.graph
 
-> **Importante:** As GRAPH da Microsoft na versão /beta estão sujeitas a alterações; o uso de produção não é suportado.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto deviceManagementConfigurationSetting.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md)
+Crie um novo [objeto deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -48,19 +48,19 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementConfigurationSetting.
+No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementConfigurationSetting.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementConfigurationSetting.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave dessa configuração na política que a contém. Gerado automaticamente.|
-|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Instância de configuração|
+|id|Cadeia de caracteres|Chave dessa configuração dentro da política que a contém. Gerado automaticamente.|
+|settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|Instância de Configuração|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `201 Created` código de resposta e um [objeto deviceManagementConfigurationSetting](../resources/intune-deviceconfigv2-devicemanagementconfigurationsetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

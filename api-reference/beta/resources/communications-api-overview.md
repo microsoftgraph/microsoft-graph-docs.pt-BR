@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 ms.localizationpriority: high
-ms.openlocfilehash: b8020b413b9d3368bc1b3a7bb0dfb93fe93a18be
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2b6748d9e2d8f3a0720053083daa33c751554150
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437895"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668059"
 ---
 # <a name="working-with-the-cloud-communications-api-in-microsoft-graph"></a>Trabalhando com a API de comunicações na nuvem no Microsoft Graph
 
@@ -38,20 +38,20 @@ A tabela a seguir lista alguns dos usos comuns para a API de comunicações na n
 
 | Casos de uso                         | Recursos REST                                 | Confira também  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Criando e associando chamadas 1-1 e de grupo   | [Call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true)| [Métodos para chamadas](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#methods)|
-|Chamadas IVR   |     | [Métodos para IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta?&preserve-view=true)
-| Controles de chamada (participante) | [Participante](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true)   ||
-|Reuniões|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)| [Métodos para reuniões](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#methods)|
+| Criando e associando chamadas 1-1 e de grupo   | [Call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [Métodos para chamadas](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
+|Chamadas IVR   |     | [Métodos para IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta?&preserve-view=true&preserve-view=true)
+| Controles de chamada (participante) | [Participante](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true&preserve-view=true)   ||
+|Reuniões|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true&preserve-view=true)| [Métodos para reuniões](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#methods&preserve-view=true)|
 |Presença | [presença](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) | [Métodos para presença](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#methods) |
-| Recuperar registros de chamadas | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true) | [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true) |
+| Recuperar registros de chamadas | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true&preserve-view=true) | [Assinaturas do Webhook](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true&preserve-view=true) |
 
 ## <a name="common-properties"></a>Propriedades comuns
 
 | Recurso                | Propriedades                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [propriedades de chamada](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#properties)  |
-| participante                         | [propriedades dos participantes](/graph/api/resources/participant?view=graph-rest-beta?view=graph-rest-v1.0&preserve-view=true#properties) |
-| onlineMeeting                            | [Propriedades onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#properties)                     |
+| call                               | [propriedades de chamada](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true#properties&preserve-view=true)  |
+| participante                         | [propriedades dos participantes](/graph/api/resources/participant?view=graph-rest-beta?view=graph-rest-v1.0&preserve-view=true#properties&preserve-view=true) |
+| onlineMeeting                            | [Propriedades onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true#properties&preserve-view=true)                     |
 | presença | [Propriedades de presença](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#properties) |
 | callRecord | [Propriedades do callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true#properties) |
 

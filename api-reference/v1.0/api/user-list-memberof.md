@@ -1,22 +1,22 @@
 ---
-title: Listar memberOf
-description: 'Obtenha todos os grupos e funções de diretório dos quais o usuário é um membro direto. '
+title: Listar as afiliações diretas de um usuário
+description: Obtenha os grupos, funções de diretório e unidades administrativas das quais o usuário é membro direto. Essa operação não é transitiva.
 author: psaffaie
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d358e7c8e514c91e6a45d2c85f2f7cbb18c8e3bb
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 77cfbe6805baac154d2ff9f5ca308131bf5bd2bd
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65204328"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645276"
 ---
-# <a name="list-memberof"></a>Listar memberOf
+# <a name="list-a-users-direct-memberships"></a>Listar as afiliações diretas de um usuário
 
 Namespace: microsoft.graph
 
-Obtenha os [grupos](../resources/group.md), [funções de diretório](../resources/directoryrole.md) e [unidades administrativas](../resources/administrativeunit.md) das quais o usuário é membro direto.
+Obtenha os [grupos](../resources/group.md), [funções de diretório](../resources/directoryrole.md) e [unidades administrativas](../resources/administrativeunit.md) das quais o usuário é membro direto. Essa operação não é transitiva. Para recuperar grupos, funções de diretório e unidades administrativas que o usuário é membro por meio de associação transitiva, use a API [List user transitive memberOf](user-list-transitivememberof.md).
 
 ## <a name="permissions"></a>Permissões
 

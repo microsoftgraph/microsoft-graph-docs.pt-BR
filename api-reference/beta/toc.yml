@@ -51,7 +51,11 @@ items:
           - name: Visão geral
             href: /graph/throttling?context=graph/api/beta
             displayName: throttling
+          - name: Limites específicos do serviço
+            href: /graph/throttling-limits?context=graph/api/beta
+            displayName: throttling
           - name: Otimize o tráfego de rede
+            displayName: throttling
             href: /learn/modules/optimize-network-traffic
       - name: Notificações de alteração
         items:
@@ -1241,7 +1245,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -1626,7 +1630,7 @@ items:
                     href: api/addlargegalleryviewoperation-get.md
           - name: Registros de chamadas
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1897,7 +1901,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Gerenciamento de registros (versão prévia)
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/security-recordsManagement-overview.md
               - name: Rótulo de retenção
                 href: resources/security-retentionlabel.md
@@ -1938,7 +1942,7 @@ items:
                     href: api/security-retentioneventtype-delete.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -6389,8 +6393,6 @@ items:
                     href: resources/intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md
                   - name: Aplicativo reportado pelo dispositivo gerenciado
                     href: resources/intune-deviceconfig-manageddevicereportedapp.md
-                  - name: Tipo de agente de gerenciamento
-                    href: resources/intune-deviceconfig-managementagenttype.md
                   - name: Classificação de conteúdo de mídia da Austrália
                     href: resources/intune-deviceconfig-mediacontentratingaustralia.md
                   - name: Classificação de conteúdo de mídia do Canadá
@@ -7696,6 +7698,8 @@ items:
                     href: resources/intune-devices-devicehealthscriptstringparameter.md
                   - name: Agendamento de tempo do script de integridade do dispositivo
                     href: resources/intune-devices-devicehealthscripttimeschedule.md
+                  - name: Status de licenciamento do dispositivo
+                    href: resources/intune-devices-devicelicensingstatus.md
                   - name: Solicitação de coleta de log do dispositivo
                     href: resources/intune-devices-devicelogcollectionrequest.md
                   - name: Resposta de coleta de log do dispositivo
@@ -8347,8 +8351,6 @@ items:
                     href: resources/intune-devices-manageddeviceremoteaction.md
                   - name: Status do instalador gerenciado
                     href: resources/intune-devices-managedinstallerstatus.md
-                  - name: Tipo de agente de gerenciamento
-                    href: resources/intune-devices-managementagenttype.md
                   - name: Estado de gerenciamento
                     href: resources/intune-devices-managementstate.md
                   - name: Modelo de mensagem de notificação
@@ -9186,6 +9188,16 @@ items:
                         href: api/intune-mam-defaultmanagedappprotection-delete.md
                       - name: Atualizar
                         href: api/intune-mam-defaultmanagedappprotection-update.md
+                  - name: Aplicabilidade da configuração do Exchange Online de configuração de gerenciamento de dispositivos
+                    href: resources/intune-mam-devicemanagementconfigurationexchangeonlinesettingapplicability.md
+                  - name: Aplicabilidade da definição de configuração de gerenciamento de dispositivos
+                    href: resources/intune-mam-devicemanagementconfigurationsettingapplicability.md
+                  - name: Definição do valor da configuração da cadeia de caracteres de gerenciamento de dispositivo
+                    href: resources/intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md
+                  - name: Tecnologias de configuração de gerenciamento de dispositivo
+                    href: resources/intune-mam-devicemanagementconfigurationtechnologies.md
+                  - name: Aplicabilidade da configuração de configuração de gerenciamento de dispositivo
+                    href: resources/intune-mam-devicemanagementconfigurationwindowssettingapplicability.md
                   - name: Tipo de plataforma do dispositivo
                     href: resources/intune-wip-deviceplatformtype.md
                   - name: Perfil de identidade visual do Intune
@@ -10029,7 +10041,7 @@ items:
                         href: api/intune-shared-devicecompliancepolicy-get.md
                       - name: atribuir ação
                         href: api/intune-shared-devicecompliancepolicy-assign.md
-                      - name: ação refreshDeviceComplianceReportSummarization
+                      - name: ação de atualização
                         href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                       - name: Ação hasPayloadLinks
                         href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -10074,6 +10086,78 @@ items:
                         href: api/intune-shared-devicemanagement-enablelegacypcmanagement.md
                       - name: ação sendCustomNotificationToCompanyPortal
                         href: api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md
+                  - name: Tipo de confiança do Azure AD de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationazureadtrusttype.md
+                  - name: Instância de coleção de configuração de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettingcollectioninstance.md
+                  - name: Instância de configuração de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettinginstance.md
+                  - name: Valor de configuração de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationchoicesettingvalue.md
+                  - name: Tipo de controle de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationcontroltype.md
+                  - name: Configuração de gerenciamento de dispositivo dependente de
+                    href: resources/intune-shared-devicemanagementconfigurationdependenton.md
+                  - name: Modo de dispositivo de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationdevicemode.md
+                  - name: Instância de coleção de configuração do grupo de configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettingcollectioninstance.md
+                  - name: Instância de configuração do grupo de configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettinginstance.md
+                  - name: Valor da configuração do grupo de configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationgroupsettingvalue.md
+                  - name: Valor de configuração de inteiro de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationintegersettingvalue.md
+                  - name: Definição de valor de configuração de inteiro de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationintegersettingvaluedefinition.md
+                  - name: Definição da opção de configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationoptiondefinition.md
+                  - name: Plataformas de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationplatforms.md
+                  - name: Valor da configuração de referência de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationreferencesettingvalue.md
+                  - name: Informações de configuração de gerenciamento de dispositivo referenciadas
+                    href: resources/intune-shared-devicemanagementconfigurationreferredsettinginformation.md
+                  - name: Valor da configuração do segredo de configuração do gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsecretsettingvalue.md
+                  - name: Estado do valor da configuração do segredo de configuração do gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsecretsettingvaluestate.md
+                  - name: Tipos de acesso de configuração de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationsettingaccesstypes.md
+                  - name: A definição de configuração de gerenciamento de dispositivos dependia de
+                    href: resources/intune-shared-devicemanagementconfigurationsettingdependedonby.md
+                  - name: Instância de coleção de grupos de definição de configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsettinggroupcollectioninstance.md
+                  - name: Instância do grupo de configuração de configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsettinggroupinstance.md
+                  - name: Instância de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationsettinginstance.md
+                  - name: Referência de modelo de instância de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md
+                  - name: Ocorrência da configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationsettingoccurrence.md
+                  - name: Uso da configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsettingusage.md
+                  - name: Valor da configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvalue.md
+                  - name: Definição do valor da configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvaluedefinition.md
+                  - name: Referência de modelo de valor de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvaluetemplatereference.md
+                  - name: Visibilidade da configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsettingvisibility.md
+                  - name: Instância de coleção de configuração simples de configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettingcollectioninstance.md
+                  - name: Instância de configuração simples de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettinginstance.md
+                  - name: Valor de configuração simples da configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationsimplesettingvalue.md
+                  - name: Formato de cadeia de caracteres de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationstringformat.md
+                  - name: Valor de configuração da cadeia de caracteres de configuração de gerenciamento de dispositivo
+                    href: resources/intune-shared-devicemanagementconfigurationstringsettingvalue.md
+                  - name: SKUS do Windows de configuração de gerenciamento de dispositivos
+                    href: resources/intune-shared-devicemanagementconfigurationwindowsskus.md
                   - name: Configurações de credenciais derivadas do gerenciamento de dispositivos
                     href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
                     items:
@@ -10178,6 +10262,8 @@ items:
                     href: resources/intune-shared-macosvppappassignmentsettings.md
                   - name: Tipo de proprietário do dispositivo gerenciado
                     href: resources/intune-shared-manageddeviceownertype.md
+                  - name: Tipo de agente de gerenciamento
+                    href: resources/intune-shared-managementagenttype.md
                   - name: Política de proteção de informações do Windows MDM
                     href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
                     items:
@@ -12878,7 +12964,7 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Atribuição de atributo de fluxo de usuário
                     items:
-                      - name: Usuário
+                      - name: User
                         href: resources/identityuserflowattributeassignment.md
                       - name: Obter
                         href: api/identityuserflowattributeassignment-get.md
@@ -13450,7 +13536,7 @@ items:
                         href: api/agreement-post-files.md
                       - name: Listar arquivos localizados
                         href: api/agreement-list-files.md
-      - name: Correio
+      - name: Email
         displayName: 'Outlook, Outlook mail'
         items:
           - name: Visão Geral
@@ -14194,7 +14280,7 @@ items:
         items:
           - name: Relatórios de atividade do Azure AD
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/azure-ad-auditlog-overview.md
               - name: Auditoria de diretório
                 href: resources/directoryaudit.md
@@ -14221,7 +14307,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Relatórios de identidade e acesso
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report-identity-access.md
               - name: Atividade de aplicativo no AD FS
                 items:
@@ -14246,7 +14332,7 @@ items:
                         href: api/applicationsignindetailedsummary-get.md
               - name: Registro e utilização
                 items:
-                  - name: Visão geral
+                  - name: Visão Geral
                     href: resources/authenticationmethods-usage-insights-overview.md
                   - name: Contagem de registros de usuário de credencial
                     href: resources/credentialuserregistrationcount.md
@@ -14287,7 +14373,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/report.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -14549,7 +14635,7 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Obter cobertura de treinamento para usuários
                     href: api/reportroot-getattacksimulationtrainingusercoverage.md
-      - name: Pesquisar
+      - name: Pesquisa
         displayname: Microsoft Search API
         items:
           - name: Consulta
@@ -14564,7 +14650,7 @@ items:
                 href: api/search-query.md
           - name: Resposta
             items:
-              - name: Visão geral
+              - name: Visão Geral
                 href: resources/search-api-answers-overview.md
               - name: Acronym
                 href: resources/search-acronym.md
@@ -14877,7 +14963,7 @@ items:
                     href: api/security-ediscoverycustodian-list-sitesources.md
                   - name: Criar origem do site
                     href: api/security-ediscoveryholdpolicy-post-sitesources.md
-              - name: Pesquisar
+              - name: Pesquisa
                 href: resources/security-ediscoverysearch.md
                 items:
                   - name: Listar
@@ -15809,7 +15895,7 @@ items:
                 href: api/userteamwork-sendactivitynotification.md
               - name: Enviar notificações para vários usuários em massa
                 href: api/teamwork-sendactivitynotificationtorecipients.md
-          - name: Guia
+          - name: Tab
             href: resources/teamstab.md
             items:
               - name: Guia no canal

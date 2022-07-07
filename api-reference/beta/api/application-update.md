@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 9c5f3d6cb9be4d8b5456e5d348e9cc89d874c007
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 5eca1c3b8455bc2b9ba9694a7beb4b2f1132e84f
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555538"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670327"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -34,7 +34,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Substitua `{id}` pela **ID do** objeto de aplicativo, também conhecida como **A ID de** Objeto no portal do Azure.
+Substitua `{id}` pela **ID** do objeto de aplicativo, também conhecida como a **ID de Objeto** no portal do Azure.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/{id}
@@ -64,6 +64,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Especifica as configurações de controle parental de um aplicativo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | requiredResourceAccess  | [requiredResourceAccess](../resources/requiredresourceaccess.md) collection | Especifique os recursos que o aplicativo precisa acessar. Essa propriedade também especifica o conjunto de permissões delegadas e funções de aplicativo necessárias para cada um desses recursos. Essa configuração de acesso aos recursos necessários impulsiona a experiência de consentimento. Não é possível configurar mais de 50 APIs (serviços de recursos). A partir de meados de outubro de 2021, o número total de permissões necessárias não deve exceder 400. Não anulável.                                                                                                                 |
+| samlMetadataUrl | Cadeia de caracteres | A URL em que o serviço expõe os metadados SAML para federação. Essa propriedade é válida apenas para aplicativos de locatário único. |
 | signInAudience          | String                                                                      | Especifica a quais contas da Microsoft são compatíveis com o aplicativo atual. Os valores compatíveis são:<ul><li>`AzureADMyOrg`: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, locatário único)</li><li>`AzureADMultipleOrgs`: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, multilocatário)</li> <li>`AzureADandPersonalMicrosoftAccount`: usuários com uma conta Microsoft pessoal ou uma conta corporativa ou de estudante no locatário do Azure AD de qualquer organização</li></ul>                           |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Especifica as configurações de um aplicativo de página simples, incluindo URLs de saída e de redirecionamento de URIs para os códigos de autorização e tokens de acesso. |
 | categorias                    | Coleção String                                                           | Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. Não anulada.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |

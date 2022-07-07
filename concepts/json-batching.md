@@ -4,12 +4,12 @@ description: Use o lote JSON para otimizar seu aplicativo combinando várias sol
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7ba6dace8424158c7d04279de3c53e1734681e00
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 3fc5a2bbcca92c79cd80b2f58dd20bbaaba6c44b
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555776"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671371"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes
 
@@ -220,7 +220,7 @@ Para obter uma lista de limitações atuais relacionadas a lotes, veja [problema
 [batching-known-issues]: known-issues.md#json-batching
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
 [throttling-and-batching]: throttling.md#throttling-and-batching
-[throttling-outlook]: throttling.md#outlook-service-limits
+[throttling-outlook]: throttling-limits.md#outlook-service-limits
 
 ## <a name="see-also"></a>Confira também
 

@@ -5,22 +5,22 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b7d4acad20ea9cd27ed907b55df50c67241c3cb4
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 87f4cbd912ebcc7062a06a1601ef7689a3e507e0
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486793"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671294"
 ---
 # <a name="list-win32lobapps"></a>Listar win32LobApps
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Listar propriedades e relações dos [objetos win32LobApp.](../resources/intune-apps-win32lobapp.md)
+Listar propriedades e relações dos objetos [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /deviceAppManagement/mobileApps
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos win32LobApp](../resources/intune-apps-win32lobapp.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos win32LobApp](../resources/intune-apps-win32lobapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4104
+Content-Length: 4144
 
 {
   "value": [
@@ -181,11 +181,13 @@ Content-Length: 4104
       },
       "setupFilePath": "Setup File Path value",
       "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
-      "displayVersion": "Display Version value"
+      "displayVersion": "Display Version value",
+      "allowAvailableUninstall": true
     }
   ]
 }
 ```
+
 
 
 

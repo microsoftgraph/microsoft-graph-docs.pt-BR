@@ -1,15 +1,15 @@
 ---
 title: Obter as alterações incrementais para grupos
 description: Use a consulta delta para descobrir alterações sem buscar todo o conjunto de grupos para comparar as alterações. O exemplo a seguir mostra uma série de solicitações para controlar alterações em grupos.
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 63ac88b147b2a10d27bb93c5b61e332e33b8153a
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: c4cdd00fac6be32f4a4338116ce47cb63d1723a4
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555713"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668892"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: identity-and-access-reports
 author: besiler
 doc_type: conceptualPageType
-ms.openlocfilehash: bcaef9dcad8d86f162f1a7e7a40f006c1d6d8ac7
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 59d61709134b2f36f8e99a002ea63e6ee74457cc
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696250"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66669424"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>Visão geral da API de relatórios de identidade e acesso
 
@@ -32,15 +32,15 @@ Os seguintes relatórios de identidade e acesso estão disponíveis para ajudá-
 
 ### <a name="ad-fs-application-activity"></a>Atividade de aplicativo no AD FS
 
-O relatório de atividades do aplicativo AD FS fornece informações sobre como uma terceira parte confiável é configurada com os Serviços de Federação do Active Directory (AD FS), seu uso agregado e se a configuração da terceira parte confiável pode ser migrada para o Azure Active Directory. Para obter mais informações, consulte o recurso [relyingPartyDetailedSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
+O relatório de atividades do aplicativo AD FS fornece informações sobre como uma terceira parte confiável é configurada com os Serviços de Federação do Active Directory (AD FS), seu uso agregado e se a configuração da terceira parte confiável pode ser migrada para o Azure Active Directory. Para obter mais informações, consulte o recurso [relyingPartyDetailedSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="application-sign-in"></a>Entrar no aplicativo
 
-Avalie o uso de entradas de aplicativos no seu locatário utilizando um relatório de resumo ou um relatório que forneça detalhes de entradas, como o número de entradas e se ocorreu algum erro durante a entrada. Para mais informações, consulte o recurso [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
+Avalie o uso de entradas de aplicativos no seu locatário utilizando um relatório de resumo ou um relatório que forneça detalhes de entradas, como o número de entradas e se ocorreu algum erro durante a entrada. Para mais informações, consulte o recurso [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="registration-and-usage"></a>Registro e utilização
 
-Entenda melhor como os usuários da sua organização utilizam os recursos do Microsoft Azure Active Directory, como o autoatendimento para redefinição de senha e autenticação multifatorial (MFA). Você pode determinar quais métodos de autenticação são mais bem-sucedidos para sua organização, quais tipos de erros os usuários finais estão enfrentando e qual campanha você precisa executar para ajudar seus usuários finais a adotar o uso do autoatendimento para redefinição de senha e MFA. Para obter mais informações, consulte a [API de relatório de uso de métodos de autenticação](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
+Entenda melhor como os usuários da sua organização utilizam os recursos do Microsoft Azure Active Directory, como o autoatendimento para redefinição de senha e autenticação multifatorial (MFA). Você pode determinar quais métodos de autenticação são mais bem-sucedidos para sua organização, quais tipos de erros os usuários finais estão enfrentando e qual campanha você precisa executar para ajudar seus usuários finais a adotar o uso do autoatendimento para redefinição de senha e MFA. Para obter mais informações, consulte a [API de relatório de uso de métodos de autenticação](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="next-steps"></a>Próximas etapas
 

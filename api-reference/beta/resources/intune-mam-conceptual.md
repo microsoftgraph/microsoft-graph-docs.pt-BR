@@ -4,12 +4,12 @@ description: Lista o Microsoft API do Graph para Intune de extremidade (REST) re
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: da6e0cf6c15554d7aef243c8b3d2783724d006d6
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: 97180d2dc1f317fbab1cf63e8414b77693605db1
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65857747"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667387"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -28,11 +28,16 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Registro de aplicativo gerenciado Android](intune-mam-androidmanagedappregistration.md)
 - [Tipo de verificação de aplicativos de rede de segurança em aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Tipo de atestado de dispositivo de rede de segurança do aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
-- [Android de avaliação da rede de segurança do aplicativo gerenciado](intune-mam-androidmanagedappsafetynetevaluationtype.md)
+- [Tipo de avaliação da rede de segurança do aplicativo gerenciado android](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Identificador de aplicativo móvel Android](intune-mam-androidmobileappidentifier.md)
 - [Nível de gerenciamento de aplicativo](intune-mam-appmanagementlevel.md)
 - [Tipo de aplicativo](intune-wip-applicationtype.md)
 - [Proteção de aplicativo gerenciado padrão](intune-mam-defaultmanagedappprotection.md)
+- [Aplicabilidade da configuração do Exchange Online de configuração de gerenciamento de dispositivos](intune-mam-devicemanagementconfigurationexchangeonlinesettingapplicability.md)
+- [Aplicabilidade da definição de configuração de gerenciamento de dispositivos](intune-mam-devicemanagementconfigurationsettingapplicability.md)
+- [Definição do valor da configuração da cadeia de caracteres de gerenciamento de dispositivo](intune-mam-devicemanagementconfigurationstringsettingvaluedefinition.md)
+- [Tecnologias de configuração de gerenciamento de dispositivo](intune-mam-devicemanagementconfigurationtechnologies.md)
+- [Aplicabilidade da configuração de configuração de gerenciamento de dispositivo](intune-mam-devicemanagementconfigurationwindowssettingapplicability.md)
 - [Tipo de plataforma do dispositivo](intune-wip-deviceplatformtype.md)
 - [Perfil de identidade visual do Intune](intune-wip-intunebrandingprofile.md)
 - [Atribuição do perfil de identidade visual do Intune](intune-wip-intunebrandingprofileassignment.md)
@@ -68,7 +73,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de grupo de aplicativos gerenciados direcionado](intune-mam-targetedmanagedappgrouptype.md)
 - [Atribuição de política de proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Proteção de aplicativo gerenciado direcionado](intune-mam-targetedmanagedappprotection.md)
-- [Windows do aplicativo](intune-mam-windowsappidentifier.md)
+- [Identificador de aplicativo do Windows](intune-mam-windowsappidentifier.md)
 - [Proteção de informações do Windows](intune-mam-windowsinformationprotection.md)
 - [Arquivo de proteção de informações do Windows](intune-mam-windowsinformationprotectionapp.md)
 - [Resumo de aprendizagem de aplicativos da proteção de informações do Windows](intune-wip-windowsinformationprotectionapplearningsummary.md)
@@ -85,6 +90,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Coleção de recursos da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Aplicativo de loja de proteção de informações do Windows](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Ação wipe de proteção de informações do Windows](intune-mam-windowsinformationprotectionwipeaction.md)
-- [Windows nível de compartilhamento da área de transferência do aplicativo gerenciado](intune-mam-windowsmanagedappclipboardsharinglevel.md)
-- [Windows transferência de dados do aplicativo gerenciado](intune-mam-windowsmanagedappdatatransferlevel.md)
-- [Windows de aplicativo gerenciado](intune-mam-windowsmanagedappprotection.md)
+- [Nível de compartilhamento da área de transferência de aplicativo gerenciado do Windows](intune-mam-windowsmanagedappclipboardsharinglevel.md)
+- [Nível de transferência de dados do aplicativo gerenciado do Windows](intune-mam-windowsmanagedappdatatransferlevel.md)
+- [Proteção de aplicativo gerenciado do Windows](intune-mam-windowsmanagedappprotection.md)

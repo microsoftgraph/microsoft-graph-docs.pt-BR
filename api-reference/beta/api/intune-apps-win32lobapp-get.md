@@ -1,26 +1,26 @@
 ---
 title: Obter win32LobApp
-description: Leia propriedades e relações do objeto win32LobApp.
+description: Ler propriedades e relações do objeto win32LobApp.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c40a4847a1eb7fbd1a6d4fc12464d03f19d49ea2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 2895df0b881a5a52e6ddbcc6681f1d0b6c7189d7
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491140"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671321"
 ---
 # <a name="get-win32lobapp"></a>Obter win32LobApp
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia propriedades e relações do [objeto win32LobApp.](../resources/intune-apps-win32lobapp.md)
+Ler propriedades e relações do objeto [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -55,7 +55,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto win32LobApp](../resources/intune-apps-win32lobapp.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto win32LobApp](../resources/intune-apps-win32lobapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3866
+Content-Length: 3904
 
 {
   "value": {
@@ -185,10 +185,12 @@ Content-Length: 3866
     },
     "setupFilePath": "Setup File Path value",
     "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
-    "displayVersion": "Display Version value"
+    "displayVersion": "Display Version value",
+    "allowAvailableUninstall": true
   }
 }
 ```
+
 
 
 

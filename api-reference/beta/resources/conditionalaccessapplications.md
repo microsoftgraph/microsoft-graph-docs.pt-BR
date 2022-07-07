@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso conditionalAccessApplications
-description: Representa aplicativos e ações do usuário incluídas e excluídas do escopo da política.
+description: Representa aplicativos e ações de usuário incluídas e excluídas do escopo da política.
 ms.localizationpriority: medium
 author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a25b574968fcad4adcbe3e53c0b800eb0ebf4a71
-ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
+ms.openlocfilehash: b7c92b9eab03adb284fdde95794c45fc4f7be19d
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62161918"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668073"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>Tipo de recurso conditionalAccessApplications
 
@@ -18,16 +18,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os aplicativos e as ações do usuário incluídas e excluídas da política.
+Representa os aplicativos e as ações do usuário incluídas e excluídas da política de acesso condicional.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-------- |:---- |:----------- |
-| includeApplications | Coleção String | A lista de IDs de aplicativo a que a política se aplica, a menos que seja explicitamente excluída (em excludeApplications). Também pode ser definido como `All` . |
-| excludeApplications | Coleção de cadeias de caracteres | A lista de IDs de aplicativos excluídas explicitamente da política. |
-| includeUserActions | Coleção de cadeias de caracteres | Ações do usuário a incluir. Os valores com suporte `urn:user:registersecurityinfo` são e `urn:user:registerdevice` |
-| includeAuthenticationContextClassReferences | Coleção String | As referências de classe de contexto de autenticação incluem. Os valores suportados são `c1` através `c25` de . |
+| includeApplications | String collection | Pode ser um dos seguintes: <li> A lista de IDs de cliente (**appId**) à qual a política se aplica, a menos que seja explicitamente excluída (em **excludeApplications**) <li> `All` <li> `Office365`- Para obter a lista de aplicativos incluídos`Office365`, consulte [Aplicativos de destino de Acesso Condicional: Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) |
+| excludeApplications | Coleção String | Pode ser um dos seguintes: <li> A lista de IDs de cliente (**appId**) explicitamente excluídas da política.<li> `Office365`- Para obter a lista de aplicativos incluídos`Office365`, consulte [Aplicativos de destino de Acesso Condicional: Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps) |
+| includeUserActions | String collection | Ações do usuário a serem incluídos. Os valores com suporte são `urn:user:registersecurityinfo` e `urn:user:registerdevice` |
+| includeAuthenticationContextClassReferences | Coleção String | As referências de classe de contexto de autenticação incluem. Os valores com suporte são `c1` por meio de `c25`. |
 
 ## <a name="relationships"></a>Relações
 

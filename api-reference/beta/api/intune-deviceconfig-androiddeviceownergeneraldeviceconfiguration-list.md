@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb342337ab17db43d75bf84529c43e1ed496369c
-ms.sourcegitcommit: 435d70e7adb27e6cedaf485ebfdab7c3ef9ffacf
+ms.openlocfilehash: c457f96c752c82f40bffa085f37e1144a314cb41
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65858300"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670972"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Listar androidDeviceOwnerGeneralDeviceConfigurations
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso em produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -27,9 +27,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10911
+Content-Length: 11343
 
 {
   "value": [
@@ -148,6 +148,18 @@ Content-Length: 10911
         ],
         "defaultMessage": "Default Message value"
       },
+      "deviceOwnerLockScreenMessage": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerUserFacingMessage",
+        "localizedMessages": [
+          {
+            "@odata.type": "microsoft.graph.keyValuePair",
+            "name": "Name value",
+            "value": "Value value"
+          }
+        ],
+        "defaultMessage": "Default Message value"
+      },
+      "securityCommonCriteriaModeEnabled": true,
       "factoryResetDeviceAdministratorEmails": [
         "Factory Reset Device Administrator Emails value"
       ],

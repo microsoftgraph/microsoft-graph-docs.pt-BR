@@ -5,18 +5,18 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9cd687d6b87aa85a15881a4d8e933893eca2af2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: cd3d0ece88bb4540ab2cc90ca2b23a29895bfd64
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487061"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667009"
 ---
 # <a name="get-mobileappassignment"></a>Acessar mobileAppAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 717
+Content-Length: 636
 
 {
   "value": {
@@ -81,16 +81,15 @@ Content-Length: 717
       "deviceAndAppManagementAssignmentFilterType": "include"
     },
     "settings": {
-      "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-      "vpnConfigurationId": "Vpn Configuration Id value",
-      "uninstallOnDeviceRemoval": true,
-      "isRemovable": true
+      "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+      "useDeviceContext": true
     },
     "source": "policySets",
     "sourceId": "Source Id value"
   }
 }
 ```
+
 
 
 

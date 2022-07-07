@@ -1,17 +1,17 @@
 ---
-title: Recursos compartilhados em Microsoft Intune - API Graph Microsoft
-description: Lista a API Graph microsoft para pontos de extremidade do Intune (REST) que suportam vários fluxos de trabalho para uma organização de locatários.
+title: Recursos compartilhados no Microsoft Intune – Microsoft API do Graph
+description: Lista o Microsoft API do Graph para Intune de extremidade (REST) que dão suporte a vários fluxos de trabalho para uma organização de locatários.
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 66d40ecd47b8ba1ab66bd6f596aa2bf6e47ba96a
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 7e7f04b2fa77a23db0b8923f8bd02ee803690833
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348177"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66666624"
 ---
-# <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados em Microsoft Intune
+# <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
 Namespace: microsoft.graph
 
@@ -19,26 +19,26 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Esses pontos de extremidade são usados em várias API do Microsoft Graph para fluxos de trabalho do Intune.  A intenção, a finalidade e as permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações são suportados apenas para fluxos de trabalho específicos.
+Esses pontos de extremidade são usados em vários API do Graph Microsoft para Intune fluxos de trabalho.  A intenção, a finalidade e as permissões necessárias para usar um determinado recurso variam de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações têm suporte apenas para fluxos de trabalho específicos.
 
-Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
+Os seguintes recursos do Graph são compartilhados entre Intune fluxos de trabalho:
 
 - [Estado da ação](intune-shared-actionstate.md)
 - [Destino de atribuição de todos os dispositivos](intune-shared-alldevicesassignmenttarget.md)
 - [Destino de atribuição de todos os usuários licenciados](intune-shared-alllicensedusersassignmenttarget.md)
-- [Android enterprise sempre no tipo de pacote VPN](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
+- [Tipo de pacote VPN Always On do Android Enterprise](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Proteção de aplicativo gerenciado Android](intune-shared-androidmanagedappprotection.md)
-- [Configurações de atribuição de aplicativo de loja gerenciada do Android](intune-shared-androidmanagedstoreappassignmentsettings.md)
-- [Modo de atualização automática do armazenamento gerenciado do Android](intune-shared-androidmanagedstoreautoupdatemode.md)
+- [Configurações de atribuição de aplicativo da loja gerenciada do Android](intune-shared-androidmanagedstoreappassignmentsettings.md)
+- [Modo de atualização automática do repositório gerenciado android](intune-shared-androidmanagedstoreautoupdatemode.md)
 - [Armazenamento de destino de certificados](intune-shared-certificatedestinationstore.md)
 - [Repositório de certificados](intune-shared-certificatestore.md)
 - [Escala de período de validade do certificado](intune-shared-certificatevalidityperiodscale.md)
 - [Ação do portal da empresa](intune-shared-companyportalaction.md)
 - [Ação bloqueada do portal da empresa](intune-shared-companyportalblockedaction.md)
 - [Status de conformidade](intune-shared-compliancestatus.md)
-- [Destino da atribuição da coleção configuration manager](intune-shared-configurationmanagercollectionassignmenttarget.md)
+- [Destino de atribuição de coleção do Configuration Manager](intune-shared-configurationmanagercollectionassignmenttarget.md)
 - [Tipo de filtro de atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentfiltertype.md)
-- [Fonte de atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentsource.md)
+- [Origem da atribuição de gerenciamento de dispositivos e aplicativos](intune-shared-deviceandappmanagementassignmentsource.md)
 - [Destino de atribuição de gerenciamento de aplicativo e dispositivo](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [Gerenciamento de aplicativos de dispositivo](intune-shared-deviceappmanagement.md)
 - [Categoria do dispositivo](intune-shared-devicecategory.md)
@@ -46,6 +46,42 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Configuração do dispositivo](intune-shared-deviceconfiguration.md)
 - [Configuração de registro do dispositivo](intune-shared-deviceenrollmentconfiguration.md)
 - [Gerenciamento de dispositivo](intune-shared-devicemanagement.md)
+- [Tipo de confiança do Azure AD de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationazureadtrusttype.md)
+- [Instância de coleção de configuração de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationchoicesettingcollectioninstance.md)
+- [Instância de configuração de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationchoicesettinginstance.md)
+- [Valor de configuração de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationchoicesettingvalue.md)
+- [Tipo de controle de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationcontroltype.md)
+- [Configuração de gerenciamento de dispositivo dependente de](intune-shared-devicemanagementconfigurationdependenton.md)
+- [Modo de dispositivo de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationdevicemode.md)
+- [Instância de coleção de configuração do grupo de configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationgroupsettingcollectioninstance.md)
+- [Instância de configuração do grupo de configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationgroupsettinginstance.md)
+- [Valor da configuração do grupo de configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationgroupsettingvalue.md)
+- [Valor de configuração de inteiro de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationintegersettingvalue.md)
+- [Definição de valor de configuração de inteiro de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationintegersettingvaluedefinition.md)
+- [Definição da opção de configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationoptiondefinition.md)
+- [Plataformas de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationplatforms.md)
+- [Valor da configuração de referência de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationreferencesettingvalue.md)
+- [Informações de configuração de gerenciamento de dispositivo referenciadas](intune-shared-devicemanagementconfigurationreferredsettinginformation.md)
+- [Valor da configuração do segredo de configuração do gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsecretsettingvalue.md)
+- [Estado do valor da configuração do segredo de configuração do gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsecretsettingvaluestate.md)
+- [Tipos de acesso de configuração de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationsettingaccesstypes.md)
+- [A definição de configuração de gerenciamento de dispositivos dependia de](intune-shared-devicemanagementconfigurationsettingdependedonby.md)
+- [Instância de coleção de grupos de definição de configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsettinggroupcollectioninstance.md)
+- [Instância do grupo de configuração de configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsettinggroupinstance.md)
+- [Instância de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationsettinginstance.md)
+- [Referência de modelo de instância de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)
+- [Ocorrência da configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationsettingoccurrence.md)
+- [Uso da configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsettingusage.md)
+- [Valor da configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsettingvalue.md)
+- [Definição do valor da configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsettingvaluedefinition.md)
+- [Referência de modelo de valor de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationsettingvaluetemplatereference.md)
+- [Visibilidade da configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsettingvisibility.md)
+- [Instância de coleção de configuração simples de configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsimplesettingcollectioninstance.md)
+- [Instância de configuração simples de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationsimplesettinginstance.md)
+- [Valor de configuração simples da configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationsimplesettingvalue.md)
+- [Formato de cadeia de caracteres de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationstringformat.md)
+- [Valor de configuração da cadeia de caracteres de configuração de gerenciamento de dispositivo](intune-shared-devicemanagementconfigurationstringsettingvalue.md)
+- [SKUS do Windows de configuração de gerenciamento de dispositivos](intune-shared-devicemanagementconfigurationwindowsskus.md)
 - [Configurações de credenciais derivadas do gerenciamento de dispositivos](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Script de gerenciamento de dispositivo](intune-shared-devicemanagementscript.md)
 - [Habilitação](intune-shared-enablement.md)
@@ -64,14 +100,14 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Intervalo de IP](intune-shared-iprange.md)
 - [Intervalo de IPv4](intune-shared-ipv4range.md)
 - [Intervalo de IPv6](intune-shared-ipv6range.md)
-- [Par de valores longos da chave](intune-shared-keylongvaluepair.md)
+- [Par chave-valor longo](intune-shared-keylongvaluepair.md)
 - [Tamanho da chave](intune-shared-keysize.md)
 - [Opção de provedor de armazenamento de chaves](intune-shared-keystorageprovideroption.md)
 - [Usos de chave](intune-shared-keyusages.md)
-- [Par chave/valor](intune-shared-keyvaluepair.md)
-- [Configurações de atribuição do aplicativo LOB do macOS](intune-shared-macoslobappassignmentsettings.md)
+- [Configurações de atribuição de aplicativo LOB do macOS](intune-shared-macoslobappassignmentsettings.md)
 - [Configurações de atribuição do aplicativo VPP do macOS](intune-shared-macosvppappassignmentsettings.md)
 - [Tipo de proprietário do dispositivo gerenciado](intune-shared-manageddeviceownertype.md)
+- [Tipo de agente de gerenciamento](intune-shared-managementagenttype.md)
 - [Política de proteção de informações do Windows MDM](intune-shared-mdmwindowsinformationprotectionpolicy.md)
 - [Configurações de atribuição do aplicativo da Microsoft Store para Empresas](intune-shared-microsoftstoreforbusinessappassignmentsettings.md)
 - [Conteúdo MIME](intune-shared-mimecontent.md)
@@ -85,7 +121,6 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Raiz de relatório](intune-shared-reportroot.md)
 - [Cores RGB](intune-shared-rgbcolor.md)
 - [Executar como tipo de conta](intune-shared-runasaccounttype.md)
-- [Estado da execução](intune-shared-runstate.md)
 - [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
 - [Definindo o tipo de origem](intune-shared-settingsourcetype.md)
 - [Tipo de nome alternativo da entidade](intune-shared-subjectalternativenametype.md)
@@ -95,11 +130,11 @@ Os seguintes Graph são compartilhados entre fluxos de trabalho do Intune:
 - [Tipo de conta do token VPP](intune-shared-vpptokenaccounttype.md)
 - [Causa da falha da ação do token VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Configurações de atribuição do aplicativo LOB do Win32](intune-shared-win32lobappassignmentsettings.md)
-- [Prioridade de otimização de entrega de aplicativos LOB win32](intune-shared-win32lobappdeliveryoptimizationpriority.md)
+- [Prioridade de otimização de entrega de aplicativo LOB do Win32](intune-shared-win32lobappdeliveryoptimizationpriority.md)
 - [Notificação de aplicativo LOB do Win32](intune-shared-win32lobappnotification.md)
 - [Configurações de reinicialização do aplicativo LOB do Win32](intune-shared-win32lobapprestartsettings.md)
 - [Configurações de atribuição do aplicativo Windows AppX](intune-shared-windowsappxappassignmentsettings.md)
 - [Perfil de implantação do Windows Autopilot](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Configuração de ingresso no domínio do Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Configurações de atribuição do aplicativo Windows universal AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
-- [Windows estado de atualização](intune-shared-windowsupdatestate.md)
+- [Estado de atualização do Windows](intune-shared-windowsupdatestate.md)

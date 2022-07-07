@@ -2,21 +2,21 @@
 title: Tipo de recurso mobileAppAssignment
 description: Uma classe com as propriedades usadas para atribuição de grupos de um aplicativo móvel.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b0e468759d8952f256645230e3c53be525d28d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 81d5a96477e2d0ca2620d70e066408f8197215b9
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087055"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66668815"
 ---
 # <a name="mobileappassignment-resource-type"></a>Tipo de recurso mobileAppAssignment
 
 Namespace: microsoft.graph
 
-> **Importante:** As APIs Graph Microsoft na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
+> **Importante:** As APIs do Microsoft Graph na versão /beta estão sujeitas a alterações; não há suporte para uso de produção.
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
@@ -39,7 +39,7 @@ Uma classe com as propriedades usadas para atribuição de grupos de um aplicati
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 |configurações|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|As configurações para a atribuição de destino definida pelo administrador.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|O tipo de recurso que é a origem da atribuição. Os valores possíveis são: `direct` e `policySets`.|
-|sourceId|Cadeia de Caracteres|O identificador da origem da atribuição.|
+|Sourceid|Cadeia de caracteres|O identificador da origem da atribuição.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -63,15 +63,14 @@ Veja a seguir uma representação JSON do recurso.
     "deviceAndAppManagementAssignmentFilterType": "String"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "String",
-    "uninstallOnDeviceRemoval": true,
-    "isRemovable": true
+    "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+    "useDeviceContext": true
   },
   "source": "String",
   "sourceId": "String"
 }
 ```
+
 
 
 
