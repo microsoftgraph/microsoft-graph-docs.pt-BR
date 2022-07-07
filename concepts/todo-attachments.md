@@ -4,12 +4,12 @@ description: Saiba como anexar grandes arquivos a uma Tarefa Pendente da Microso
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 756d10a8886ee3bed423551a166eac3d3eae570f
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 2d4c66a6e6e2438f1d7b7aafc6555ab701d1883a
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645568"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66671357"
 ---
 # <a name="attach-files-to-a-to-do-task"></a>Anexar arquivos a uma Tarefa Pendente
 
@@ -193,7 +193,7 @@ Content-Length: 0
 ```
 
 ## <a name="alternative-step-cancel-the-upload-session"></a>Etapa alternativa: cancelar a sessão de upload
-Em qualquer momento antes da sessão de upload expirar, se você tiver que cancelar o upload, você pode usar a mesma URL inicial para excluir a sessão de upload. Uma operação bem-sucedida devolve um código de resposta `HTTP 204 No Content`.
+Em qualquer momento antes da sessão de upload expirar, se você tiver que cancelar o upload, você pode usar a mesma URL inicial para excluir a sessão de upload. Uma operação bem-sucedida retorna um código de resposta HTTP `204 No Content`.
 
 ### <a name="example-cancel-the-upload-session"></a>Exemplo: cancelar a sessão de upload
 
