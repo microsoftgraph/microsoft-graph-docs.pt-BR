@@ -4,12 +4,12 @@ description: 'Saiba mais sobre os modelos de licenciamento e pagamento que se ap
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3216ecfa998cf6b2a02ec588992e8622a523038c
-ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
+ms.openlocfilehash: 4da65e881dddd3c25d60f8ccc25c49aa41ff65d4
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66668157"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690088"
 ---
 # <a name="licensing-and-payment-requirements-for-the-microsoft-teams-api"></a>Requisitos de licenciamento e pagamento para a API do Microsoft Teams
 
@@ -112,4 +112,5 @@ A capacidade de propagação difere pela API; veja os [`model=A` requisitos](#mo
 
 Em outubro de 2021 [,](https://devblogs.microsoft.com/microsoft365dev/announcing-general-availability-of-microsoft-graph-export-api-for-microsoft-teams-messages/#license-requirements-for-microsoft-graph-api-for-teams-export-and-dlp) comunicamos os encargos futuros para o consumo dessas APIs; em 5 de julho de 2022, esses preços entrarão em vigor conforme  [anunciado anteriormente](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/). Se seus aplicativos estiverem ou estiverem chamando qualquer uma dessas APIs, exigimos que você preencha este [formulário de solicitação](https://aka.ms/teamsgraph/protectedApis_az) fornecendo uma assinatura ativa do Azure. Quando o [formulário](https://aka.ms/teamsgraph/protectedApis_az) tiver sido enviado para registrar um aplicativo, você poderá continuar usando essas APIs. Seguiremos as próximas etapas para integrar seu aplicativo à cobrança. 
 
-Observe que a organização que possui o registro do aplicativo é responsável pelo pagamento e a assinatura do Azure também deve estar ativa no mesmo locatário. Para aplicativos multilocatário, a organização pode ser diferente da organização que executa o aplicativo.
+Observe que a organização proprietária do [registro do aplicativo](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) é responsável pelo pagamento. A assinatura do Azure deve estar ativa no mesmo locatário.
+Para [aplicativos multilocatário](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps), a organização que possui o registro do aplicativo pode ser diferente da organização que executa o aplicativo.
