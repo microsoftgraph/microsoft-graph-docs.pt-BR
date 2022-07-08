@@ -5,20 +5,20 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a4082bd35d23a7b221f914da5521e91db4892e63
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5b77dc1d29107204172f3fd79ba9ae2a12d320bc
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63333159"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689983"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
 Namespace: microsoft.graph
 
-Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais participantes. Os participantes podem ser usuários ou aplicativos.
+Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais participantes. Os participantes podem ser usuários ou aplicativos.
 
-> **Observação**: se o chat estiver associado a uma instância [onlineMeeting](../resources/onlinemeeting.md) , alguns dos métodos listados afetarão transitivamente a reunião.
+> **Observação**: se o chat estiver associado a uma instância [onlineMeeting](../resources/onlinemeeting.md) , alguns dos métodos listados afetarão a reunião de forma transitiva.
 
 ## <a name="methods"></a>Métodos
 
@@ -26,31 +26,31 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 |:---------------|:--------|:----------|
 | **Gerenciamento de chat** |||
 |[Criar chat](../api/chat-post.md) | [chat](chat.md) | Crie um novo chat.| 
-|[Obter bate-papo](../api/chat-get.md) | [chat](chat.md) | Leia propriedades e relações do chat.| 
+|[Obter bate-papo](../api/chat-get.md) | [chat](chat.md) | Leia as propriedades e as relações do chat.| 
 |[Atualizar chat](../api/chat-patch.md) | [chat](chat.md) | Atualize as propriedades do chat.|
 |[Listar membros do bate-papo](../api/chat-list-members.md) | coleção [conversationMember](conversationmember.md) | Ver a lista de todos os usuários no bate-papo.| 
 |[Adicionar membro do bate-papo](../api/chat-post-members.md) | Cabeçalho de local | Adicione um usuário ao chat.| 
 |[Obter membro do bate-papo](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Obter um único usuário no bate-papo.| 
 |[Remover membro do bate-papo](../api/chat-delete-members.md)|Nenhum|Remova um usuário do chat.|
-|[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Obter chat um-a-um entre o usuário e o aplicativo |
+|[Obter chat entre o usuário e o aplicativo](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Obter um chat entre o usuário e o aplicativo |
 | **Mensagens** |||
-|[Listar mensagens no chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obter mensagens em um chat. | 
+|[Listar mensagens no chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Receba mensagens em um chat. | 
 |[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Receba uma única mensagem em um bate-papo. | 
-|[Obter mensagens em todos os chats para o usuário](../api/chats-getallmessages.md)| [coleção chat](chat.md)| Obter mensagens de todos os chats nos quais um usuário é um participante. |
+|[Obter mensagens em todos os chats para o usuário](../api/chats-getallmessages.md)| [coleção de chat](chat.md)| Obter mensagens de todos os chats nos quais um usuário é um participante. |
 | **Aplicativos** |||
 |[Listar aplicativos no chat](../api/chat-list-installedapps.md) |Coleção [teamsAppInstallation](teamsappinstallation.md) | Listar aplicativos instalados em um chat (e reunião associada).|
 |[Obter aplicativo no chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Obter um aplicativo específico instalado em um chat (e reunião associada).|
-|[Adicionar aplicativo no chat](../api/chat-post-installedapps.md) | | Adicionar (instalar) um aplicativo em um chat (e reunião associada).|
-|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualizar para a versão mais recente do aplicativo instalado no chat (e reunião associada).|
-|[Desinstalar aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remover (desinstalar) aplicativo de um chat (e reunião associada).|
+|[Adicionar aplicativo no chat](../api/chat-post-installedapps.md) | | Adicione (instale) um aplicativo em um chat (e reunião associada).|
+|[Atualizar aplicativo no chat](../api/chat-teamsappinstallation-upgrade.md) | Nenhum | Atualize para a versão mais recente do aplicativo instalado no chat (e na reunião associada).|
+|[Desinstalar o aplicativo do chat](../api/chat-delete-installedapps.md) | Nenhum | Remova (desinstale) o aplicativo de um chat (e uma reunião associada).|
 | **Guias** |||
 |[Listar guias no chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Listar guias fixadas em um chat (e reunião associada).|
-|[Obter guia no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obter uma guia específica fixada em um chat (e reunião associada).|
-|[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicione (pin) uma guia a um chat (e reunião associada).|
+|[Guia Obter no chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Obtenha uma guia específica fixada em um chat (e reunião associada).|
+|[Adicionar guia ao chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Adicione (fixe) uma guia a um chat (e reunião associada).|
 |[Guia Atualizar no chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Atualize as propriedades de uma guia em um chat (e reunião associada).|
-|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum | Remover (desempinar) uma guia de um chat (e reunião associada).|
+|[Remover guia do chat](../api/chat-delete-tabs.md) | Nenhum | Remova (desafixar) uma guia de um chat (e uma reunião associada).|
 
->**Observação:** Ao usar permissões de aplicativo, certifique-se de saber como obter a ID do chat. Como não há suporte para listagem de chats com permissões de aplicativo, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de alteração para [/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
+>**Nota:** Ao usar permissões de aplicativo, certifique-se de saber como obter a ID de chat. Como não há suporte para a listagem de chats com permissões de aplicativo, nem todos os cenários são possíveis. É possível obter IDs de chat com permissões delegadas e de notificações de alteração para [/chats/getAllMessages](../api/subscription-post-subscriptions.md) com permissões de aplicativo.
 
 ## <a name="properties"></a>Propriedades
 
@@ -60,19 +60,19 @@ Um chat é uma coleção [de chatMessages](chatmessage.md) entre um ou mais part
 | createdDateTime| dateTimeOffset|  Data e hora em que o chat foi criado. Somente leitura.|
 | id| Cadeia de caracteres| O identificador exclusivo do chat. Somente leitura.|
 | lastUpdatedDateTime| dateTimeOffset|  Data e hora em que o chat foi renomeado ou a lista de membros foi alterada pela última vez. Somente leitura.|
-| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Representa detalhes sobre uma reunião online. Se o chat não estiver associado a uma reunião online, a propriedade será vazia. Somente leitura.|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Representa detalhes sobre uma reunião online. Se o chat não estiver associado a uma reunião online, a propriedade estará vazia. Somente leitura.|
 | tenantId| String | O identificador do locatário no qual o chat foi criado. Somente leitura.|
 | topic| String|  (Opcional) Assunto ou tópico para o chat. Disponível apenas para chats em grupo.|
-| webUrl | String| A URL do chat no Microsoft Teams. A URL deve ser tratada como um blob opaco e não analisado. Somente leitura. |
+| webUrl | String| A URL do chat no Microsoft Teams. A URL deve ser tratada como um blob opaco e não analisada. Somente leitura. |
 
-### <a name="chattype-values"></a>valores chatType 
+### <a name="chattype-values"></a>Valores chatType 
 
 | Membro             | Valor | Descrição               |
 | :----------------- | :---- | :------------------------ |
-|oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista é fixo para esse tipo de chat; os membros não podem ser removidos/adicionados.|
-|group               | 1     | Indica que o chat é um chat em grupo. O tamanho da lista (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.|
-|meeting             | 2     | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
-|unknownFutureValue  | 3     | Valor de sentinela de enumeração evolvável. Não usar. |
+|oneOnOne            | 0     | Indica que o chat é um chat 1:1. O tamanho da lista de participantes é fixo para esse tipo de chat; membros não podem ser removidos/adicionados.|
+|group               | 1     | Indica que o chat é um chat em grupo. O tamanho da lista de participação (de pelo menos duas pessoas) pode ser atualizado para esse tipo de chat. Os membros podem ser removidos/adicionados posteriormente.|
+|Reunião             | 2     | Indica que o chat está associado a uma reunião online. Esse tipo de chat só é criado como parte da criação de uma reunião online.|
+|unknownFutureValue  | 3     | Valor de sentinel de enumeração evolvável. Não usar. |
 
 ## <a name="relationships"></a>Relações
 

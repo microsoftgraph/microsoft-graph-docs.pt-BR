@@ -1,16 +1,16 @@
 ---
 title: Obter deviceRegistrationPolicy
 description: Leia as propriedades e as relações de um objeto deviceRegistrationPolicy.
-author: spunukol
+author: myra-ramdenbourg
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8e8d4e5bc34fb43221ebc3cd697737b03db556db
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 954e8d573ad03d128cae6f838010019c8f9d16b9
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66445346"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689990"
 ---
 # <a name="get-deviceregistrationpolicy"></a>Obter deviceRegistrationPolicy
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)| Policy.Read.All, Policy.ReadWrite.DeviceConfiguration|
+|Delegado (conta corporativa ou de estudante)| Policy.Read.All, Policy.ReadWrite.DeviceConfiguration|
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 

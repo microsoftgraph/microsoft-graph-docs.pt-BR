@@ -626,7 +626,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -15036,7 +15036,7 @@ items:
                         href: api/security-ediscoveryreviewsetquery-applytags.md
                       - name: Executar
                         href: api/security-ediscoveryreviewsetquery-run.md
-                  - name: Arquivo
+                  - name: File
                     href: resources/security-ediscoveryfile.md
                     items:
                       - name: Lista
@@ -15552,6 +15552,24 @@ items:
                 href: api/team-completemigration.md
               - name: Listar as concessões de permissões
                 href: api/team-list-permissiongrants.md
+              - name: Modelo de equipe
+                items:
+                  - name: Modelo de equipe
+                    href: resources/teamtemplate.md
+                  - name: Lista
+                    href: api/teamwork-list-teamtemplates.md
+                  - name: Definições de lista
+                    href: api/teamtemplate-list-definitions.md
+              - name: Definição de modelo de equipe
+                items:
+                  - name: Definição de modelo de equipe
+                    href: resources/teamtemplatedefinition.md
+                  - name: Lista
+                    href: api/teamtemplate-list-definitions.md
+                  - name: Obter
+                    href: api/teamtemplatedefinition-get.md
+                  - name: Obter definição de equipe
+                    href: api/teamtemplatedefinition-get-teamdefinition.md
               - name: Equipe excluída
                 href: resources/deletedteam.md
                 items:
@@ -15848,7 +15866,7 @@ items:
                 href: api/teamsappsettings-get.md
               - name: Atualizar
                 href: api/teamsappsettings-update.md
-          - name: Dispositivo
+          - name: Device
             items:
               - name: Dispositivos provisionados
                 href: resources/teamworkdevice.md

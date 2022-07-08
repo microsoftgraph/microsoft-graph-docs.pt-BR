@@ -1,16 +1,16 @@
 ---
 title: Atualizar deviceRegistrationPolicy
 description: Atualize as propriedades de um objeto deviceRegistrationPolicy.
-author: spunukol
+author: myra-ramdenbourg
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e55beac9f1ada8a3a6d2fe9d2ae8a81eff6e3085
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: df37115ff775d204a68c2d95f59d644de5d62d6a
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127895"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689991"
 ---
 # <a name="update-deviceregistrationpolicy"></a>Atualizar deviceRegistrationPolicy
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto deviceRegistrationPolicy.](../resources/deviceregistrationpolicy.md) Representa restrições de cota deviceRegistrationPolicy, autenticação adicional e políticas de autorização para registrar identidades de dispositivos em sua organização.
+Atualize as propriedades de [um objeto deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) . Representa restrições de cota deviceRegistrationPolicy, autenticação adicional e políticas de autorização para registrar identidades de dispositivo em sua organização.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte|
 |Aplicativo|Sem suporte|
 
-Ao chamar em nome de um usuário, o usuário precisa pertencer às seguintes funções [do Azure AD:](/azure/active-directory/roles/permissions-reference)
+Ao chamar em nome de um usuário, o usuário precisa pertencer às seguintes Azure AD [funções](/azure/active-directory/roles/permissions-reference):
 + Administrador global
 + Administrador de dispositivos de nuvem
 
@@ -61,18 +61,20 @@ A tabela a seguir especifica as propriedades que podem ser atualizadas.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |userDeviceQuota|Int32|Especifica o número máximo de dispositivos que um usuário pode ter em sua organização antes de bloquear novos registros de dispositivo. |
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Especifica a política de autenticação para um usuário concluir o registro usando o Azure AD Join ou o Azure AD registrado em sua organização. Os valores possíveis são: `notRequired` ou `required`. |
-|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Especifica a política de autorização para controlar o registro de novos dispositivos usando o registro do Azure AD em sua organização. Obrigatório. Para obter mais informações, consulte [O que é uma identidade de dispositivo?](/azure/active-directory/devices/overview). Se o Intune estiver habilitado, essa propriedade não poderá ser modificada.|
-|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Especifica a política de autorização para controlar o registro de novos dispositivos usando o Azure AD Join em sua organização. Obrigatório. Para obter mais informações, consulte [O que é uma identidade de dispositivo?](/azure/active-directory/devices/overview).|
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Especifica a política de autenticação para que um usuário conclua o registro usando Azure AD ingressar ou Azure AD registrado em sua organização. Os valores possíveis são: `notRequired` ou `required`. |
+|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Especifica a política de autorização para controlar o registro de novos dispositivos Azure AD registro em sua organização. Obrigatório. Para obter mais informações, consulte [O que é uma identidade do dispositivo?](/azure/active-directory/devices/overview). Se Intune estiver habilitada, essa propriedade não poderá ser modificada.|
+|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Especifica a política de autorização para controlar o registro de novos dispositivos usando Azure AD Ingressar em sua organização. Obrigatório. Para obter mais informações, consulte [O que é uma identidade do dispositivo?](/azure/active-directory/devices/overview).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_deviceregistrationpolicy"
@@ -102,6 +104,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-deviceregistrationpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-deviceregistrationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-deviceregistrationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-deviceregistrationpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Resposta
 

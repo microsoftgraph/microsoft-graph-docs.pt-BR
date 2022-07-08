@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 234ed38a57d66bf9b0d1cea15c38e4c37d3badb5
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: f38b797c18c315e6053d285ce0c2485cd44218aa
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653466"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690004"
 ---
 # <a name="chat-resource-type"></a>tipo de recurso de chat
 
@@ -99,8 +99,8 @@ Um chat é uma coleção de [chatMessages](chatmessage.md) entre um ou mais part
 | lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Visualização da última mensagem enviada no chat. Nulo se nenhuma mensagem tiver sido enviada no chat. Atualmente, somente a operação [de chats](../api/chat-list.md) de lista dá suporte a essa propriedade.|
 | members | coleção [conversationMember](conversationmember.md) | Uma coleção de todos os membros no chat. Anulável. |
 | messages | [chatMessage](chatmessage.md) collection | Uma coleção de todas as mensagens no chat. Anulável. |
+| operations | Coleção [teamsAsyncOperation](teamsasyncoperation.md) | Uma coleção de todas as operações assíncronas do Teams que foram executadas ou estão em execução no chat. Anulável. |
 | permissionGrants| Coleção [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)| Uma coleção de permissões concedidas aos aplicativos para o chat.|
-| operations | Coleção [teamsAsyncOperation](teamsasyncoperation.md) | Uma coleção de todas as Teams assíncronas executadas ou em execução no chat. Anulável. |
 | pinnedMessages | [Coleção pinnedChatMessageInfo](pinnedchatmessageinfo.md) | Uma coleção de todas as mensagens fixadas no chat. Anulável. |
 | guias | [teamsTab](teamstab.md) collection | Uma coleção de todas as guias no chat. Anulável. |
 

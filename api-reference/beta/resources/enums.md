@@ -5,16 +5,26 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 9560cac180097207d7bc97f0aef6a560843ca878
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: dd17d54c0d6cd991f02a5043765aab199bfc3a05
+ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645085"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66690067"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
+
+
+### <a name="teamtemplateaudience-values"></a>Valores de teamTemplateAudience 
+
+|Member|
+|:---|
+|organization|
+|user|
+|public|
+|unknownFutureValue|
 
 ### <a name="decisionitemprincipalresourcemembershiptype-values"></a>Valores decisionItemPrincipalResourceMembershipType 
 
@@ -137,7 +147,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>Valores de accessPackageFilterByCurrentUserOptions
@@ -247,7 +257,7 @@ Namespace: microsoft.graph
 |ClientIdentifier|
 |ClientSecret|
 |SingleSignOnType|
-|Sandbox|
+|Área restrita|
 |Url|
 |Domínio|
 |ConsumerKey|
@@ -362,7 +372,7 @@ Namespace: microsoft.graph
 |:---|
 |Cadeia de Caracteres|
 |Inteiro|
-|Referências|
+|Referência|
 |Binária|
 |Booleano|
 |DateTime|
@@ -713,7 +723,7 @@ Namespace: microsoft.graph
 |tudo|
 |privilegedAdmin|
 |Admin|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="includedusertypes-values"></a>Valores includedUserTypes
@@ -729,7 +739,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |aplicativo|
 |sistema|
 |unknownFutureValue|
@@ -835,7 +845,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |Solicitação|
 |servicePrincipal|
 |v1ConditionalAccess|
@@ -1085,7 +1095,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>Valores authenticationMethodState
@@ -1204,7 +1214,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalItem|
 |site|
@@ -1344,7 +1354,7 @@ Namespace: microsoft.graph
 | Member
 |:-----------------
 | none|
-| usuário|
+| user|
 | manager|
 | unknownFutureValue|
 
@@ -2075,7 +2085,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|mensagem|
+|message|
 |chatEvent |
 |Digitação |
 |unknownFutureValue|
@@ -2135,7 +2145,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |Member|
 |:---|
 |Signin|
-|usuário|
+|user|
 |unknownFutureValue|
 |servicePrincipal|
 
@@ -2161,7 +2171,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 | Member       |
 |:--------------|
 |event|
-|mensagem|
+|message|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2360,7 +2370,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -2392,7 +2402,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | Indefinido     | 0     | Ainda não sei.            |
-| usuário          | 1     | Envio do usuário.         |
+| user          | 1     | Envio do usuário.         |
 | Administrador | 2     | Envio de administrador de locatários. |
 
 ### <a name="threatassessmentresulttype-values"></a>Valores threatAssessmentResultType
@@ -2483,7 +2493,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |dateTime | Coluna dateTime. |
 |Pesquisa | coluna de pesquisa. |
 |booliano | Coluna Sim/Não. |
-|usuário | coluna de pessoa ou grupo. |
+|user | coluna de pessoa ou grupo. |
 |url | hiperlink ou coluna de imagem. |
 |Calculado | coluna calculada. |
 |localização | coluna de localização. |
@@ -2792,7 +2802,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |Member|
 |:---|
 |team|
-|canal|
+|Canal|
 |chat|
 |unknownFutureValue|
 
