@@ -1,16 +1,16 @@
 ---
 title: Criar historyDefinitions
 description: Crie um novo objeto accessReviewHistoryDefinition.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ab8e755f918d35d59e06795f4c16a96de180a101
-ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
+ms.openlocfilehash: 987b7c6ce69438aa5d4c5011dc4da078b1f1a2e6
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64842318"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698230"
 ---
 # <a name="create-historydefinitions"></a>Criar historyDefinitions
 
@@ -72,7 +72,7 @@ Use o seguinte formato para **a propriedade de** consulta:
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
 ```
 
-O valor de `{object}` é um dos recursos que podem ser configurados em **um accessReviewScheduleDefinition**. Por exemplo, o seguinte inclui todos os resultados de revisão accessReviewScheduleDefinition em grupos individuais (e exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).
+O valor de `{object}` é um dos recursos que podem ser configurados em **um accessReviewScheduleDefinition**. Por exemplo, o seguinte inclui todos os resultados de revisão accessReviewScheduleDefinition em grupos individuais (e exclui definições com escopo para todos os grupos do Microsoft 365 com usuários convidados).
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')

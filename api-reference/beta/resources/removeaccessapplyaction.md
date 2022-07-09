@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso removeAccessApplyAction
+title: Tipo de recurso removeAccessApplyAction
 description: Remova o acesso de um recurso para aqueles negados em uma revisão de acesso desse recurso.
-author: isabelleatmsft
-localization_priority: Normal
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 777d9defdbd7cde435b8d71367a1fb2fc76d45ce
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: b299b2de596eb3876bb6685800a760370383e982
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579955"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698503"
 ---
-# <a name="removeaccessapplyaction-resource-type"></a>tipo de recurso removeAccessApplyAction
+# <a name="removeaccessapplyaction-resource-type"></a>Tipo de recurso removeAccessApplyAction
 
 Namespace: microsoft.graph
 

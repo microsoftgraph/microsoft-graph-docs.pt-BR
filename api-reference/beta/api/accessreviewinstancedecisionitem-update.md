@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessReviewInstanceDecisionItem
-description: Atualize um objeto accessReviewInstanceDecisionItem existente para o qual o usuário de chamada é o revisor.
+description: Atualize um objeto accessReviewInstanceDecisionItem existente para o qual o usuário chamador é o revisor.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9b3e75d9817b2e41a332d0138dc409301d58f4e1
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: e0cf1034cbf8e1a8fbfcfd5d73568431a2ca75de
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815844"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697117"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Atualizar accessReviewInstanceDecisionItem
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar decisões de acesso, conhecidas como [accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), para as quais o usuário é o revisor.
+Atualize as decisões de acesso, [conhecidas como accessReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md), para as quais o usuário é o revisor.
 
 >[!NOTE]
->Todas as atualizações feitas em **um accessReviewInstanceDecisionItem** só podem ser feitas chamando usuários listados como revisores do [accessReviewInstance pai](../resources/accessreviewinstance.md).
+>Todas as atualizações feitas em **um accessReviewInstanceDecisionItem** só podem ser feitas chamando usuários listados como revisores para o [accessReviewInstance pai](../resources/accessreviewinstance.md).
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API. Não há suporte para permissões delegadas para contas pessoais da Microsoft. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das permissões a seguir é necessária para chamar essa API. Não há suporte para permissões delegadas para contas pessoais da Microsoft. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -39,7 +39,7 @@ Para atualizar uma decisão sobre um accessReviewInstance:
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
 
-Para atualizar uma decisão em um estágio de accessReviewInstance que tem vários estágios:
+Para atualizar uma decisão em um estágio de um accessReviewInstance que tem vários estágios:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/{accessReviewInstanceDecisionItemId}
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades aceitas para atualizar um `accessReview
 
 | Propriedade     | Tipo       | Descrição |
 |:-------------|:------------|:------------|
-| decision  | String | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `NotReviewed` `Deny` `DontKnow`. Obrigatório.  |
-|  justification | String | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for True no accessReviewScheduleDefinition.  |
+| Decisão  | Cadeia de caracteres | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve` `NotReviewed` `Deny` `DontKnow`. Obrigatório.  |
+|  Justificação | Cadeia de Caracteres | Contexto da revisão fornecida aos administradores. Obrigatório se justificationRequiredOnApproval for True no accessReviewScheduleDefinition.  |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código `204 No Content` de resposta e nenhum corpo de resposta.
@@ -69,7 +69,7 @@ Se tiver êxito, este método retornará um código `204 No Content` de resposta
 
 #### <a name="request"></a>Solicitação
 
-A seguir, um exemplo de decisão de aprovação de acesso para um usuário.
+A seguir está um exemplo de uma decisão para aprovar o acesso de um usuário.
 
 
 
@@ -121,7 +121,7 @@ HTTP/1.1 204 Accepted
 ```
 
 
-### <a name="example-2-update-a-decision-on-an-stage-in-a-multi-stage-access-review"></a>Exemplo 2: atualizar uma decisão em um estágio em uma revisão de acesso em vários estágios
+### <a name="example-2-update-a-decision-on-an-stage-in-a-multi-stage-access-review"></a>Exemplo 2: atualizar uma decisão em um estágio em uma revisão de acesso de vários estágios
 
 #### <a name="request"></a>Solicitação
 <!-- {

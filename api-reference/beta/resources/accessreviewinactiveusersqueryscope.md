@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewInactiveUsersQueryScope
-description: Um tipo de accessReviewQueryScope que permite que apenas usuários inativos sejam selecionados no escopo de uma revisão de acesso.
-author: isabelleatmsft
-localization_priority: Normal
+description: Um tipo de accessReviewQueryScope que permite que somente usuários inativos sejam selecionados no escopo de uma revisão de acesso.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 80d415125679ddbb44a08fe75f33b115e4ba1f04
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: c313352b0b9ef43bbf37fff78c99322fffa86a87
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579743"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697891"
 ---
 # <a name="accessreviewinactiveusersqueryscope-resource-type"></a>Tipo de recurso accessReviewInactiveUsersQueryScope
 
@@ -19,19 +19,19 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Um tipo de [accessReviewQueryScope](../resources/accessreviewqueryscope.md) que permite que apenas usuários inativos sejam selecionados no escopo de uma revisão de acesso. A duração da inatividade é calculada com base na última data de entrada do usuário em relação à data de início da instância de revisão de acesso, conforme definido na propriedade **settings** [de accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
+Um tipo de [accessReviewQueryScope](../resources/accessreviewqueryscope.md) que permite que somente usuários inativos sejam selecionados no escopo de uma revisão de acesso. A duração da inatividade é calculada com base na data de última entrada do usuário em relação à data de início da instância de revisão de acesso, conforme definido na propriedade **settings** [de accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
 
 Herda de [accessReviewQueryScope](../resources/accessreviewqueryscope.md).
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|inactiveDuration|Duration|Define a duração da inatividade. A inatividade é baseada na última data de entrada do usuário em comparação com a data de início da instância de revisão de acesso. Se essa propriedade não for especificada, ela será atribuída ao valor padrão `PT0S` .|
-|consulta|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
-|queryRoot|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
-|queryType|String|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|inactiveDuration|Duração|Define a duração da inatividade. A inatividade é baseada na data de entrada do último usuário em comparação com a data de início da instância de revisão de acesso. Se essa propriedade não for especificada, ela será atribuída ao valor padrão `PT0S`.|
+|consulta|Cadeia de caracteres|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryRoot|Cadeia de caracteres|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
+|queryType|Cadeia de Caracteres|Herdado [de accessReviewQueryScope](../resources/accessreviewqueryscope.md).|
 
-Você também deve especificar a **propriedade @odata.type com** o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope` . Para obter mais  informações sobre opções de configuração para escopo usando **accessReviewInactiveUsersQueryScope**, consulte Configure the scope of your [access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).
+Você também deve especificar a **propriedade @odata.type** com o valor `#microsoft.graph.accessReviewInactiveUsersQueryScope`. Para obter mais informações sobre as  opções de configuração para escopo usando **accessReviewInactiveUsersQueryScope**, consulte Configurar o escopo de sua definição de revisão de acesso usando o [Microsoft API do Graph](/graph/accessreviews-scope-concept).
 
 ## <a name="relationships"></a>Relações
 Nenhum

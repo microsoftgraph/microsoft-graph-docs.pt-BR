@@ -1,26 +1,26 @@
 ---
 title: 'accessReviewInstance: filterByCurrentUser'
 description: Retorna todos os objetos accessReviewInstance para um determinado revisor.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a034fb57aa91ad0db4883e2733781fc0f86f4cce
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: d0c81c74b249bb43ddb4f30a993051ecc131af94
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722471"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697552"
 ---
 # <a name="accessreviewinstance-filterbycurrentuser"></a>accessReviewInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retorna todos os objetos [accessReviewInstance](../resources/accessreviewinstance.md) em um [determinado accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) onde o usuário de chamada é um revisor em um ou mais [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
+Retorna todos os objetos [accessReviewInstance](../resources/accessreviewinstance.md) em um determinado [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) em que o usuário chamador é um revisor em um ou mais [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -40,9 +40,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `$select`a parâmetros `$filter`de consulta , , `$orderBy`e `$skip` `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá `$select`suporte a `$filter`parâmetros `$orderBy`de consulta , e `$skip` `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewInstance** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewInstance** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|

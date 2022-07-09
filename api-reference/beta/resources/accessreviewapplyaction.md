@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewApplyAction
 description: Representa a ação a ser tomada em usuários revisados após a conclusão de uma instância de revisão de acesso.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 549fbdf4394d04297fe5fc8045ccd63eb5741128
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: aed70bb75bd690ec8532727b90954b23e927f16e
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454030"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697250"
 ---
 # <a name="accessreviewapplyaction-resource-type"></a>Tipo de recurso accessReviewApplyAction
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Representa uma classe base para aplicar ações [no accessReviewScheduleSettings](accessreviewschedulesettings.md) de [um objeto accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Os seguintes tipos derivados são suportados:
+Representa uma classe base para aplicar ações [no accessReviewScheduleSettings](accessreviewschedulesettings.md) de um [objeto accessReviewScheduleDefinition](accessreviewscheduledefinition.md) . Há suporte para os seguintes tipos derivados:
 
 - [removeAccessApplyAction](removeaccessapplyaction.md) indica a remoção do acesso de uma entidade que está sendo revisada após a conclusão da revisão. Esse é o tipo padrão para a propriedade applyActions em accessReviewScheduleSettings e não precisa ser especificado.
 
-- [disableAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) indica desabilitar e excluir o usuário que está sendo revisado após a conclusão da revisão. Esse é o tipo não padrão e deve ser explicitamente especificado em accessReviewScheduleSettings.
+- [disableAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) indica desabilitar e excluir o usuário que está sendo examinado após a conclusão da revisão. Esse é o tipo não padrão e deve ser especificado explicitamente em accessReviewScheduleSettings.
 
 ## <a name="properties"></a>Propriedades
 Nenhum.

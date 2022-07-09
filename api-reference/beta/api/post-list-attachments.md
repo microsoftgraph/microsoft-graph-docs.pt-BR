@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cd32015be1dcc33cbf05b14355f54c5f12190327
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 9f593b4142d7433ae5d946af8654f9f7cab32cc0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62120137"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698328"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -26,10 +26,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All, Group.ReadWrite.All |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Obter os anexos de uma [postagem](../resources/post.md) em [uma conversaThread](../resources/conversationthread.md) de um grupo. Especificar a conversa [pai](../resources/conversation.md) é opcional.
+Obtenha os anexos de [uma postagem](../resources/post.md) em [um conversationThread](../resources/conversationthread.md) de um grupo. Especificar a conversa [pai](../resources/conversation.md) é opcional.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Em particular, você pode usar o parâmetro $expand de consulta para incluir todos os anexos de postagem em linha com o restante das propriedades de postagem. Por exemplo:
+Em particular, você pode usar o $expand de consulta para incluir todos os anexos de postagem embutidos com o restante das propriedades de postagem. Por exemplo:
 
 <!-- { "blockType": "ignored" } -->
 ```

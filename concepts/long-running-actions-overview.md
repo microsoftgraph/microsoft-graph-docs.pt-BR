@@ -3,30 +3,30 @@ title: Como trabalhar com ações de execução longa (beta)
 description: Este artigo descreve o trabalho com ações de execução longa.
 ms.localizationpriority: medium
 author: daspek
-ms.openlocfilehash: 21d0798f195248abbb8933ca54d344d3ca9ab796
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d6b9a527c65570892a5346b610126c5c2299239b
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062415"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698440"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Como trabalhar com ações de execução longa (beta)
 
 
 Algumas respostas de API exigem tempo indeterminado para serem concluídas.
 Em vez de ter que esperar até que a ação seja concluída antes de retornar uma resposta, o Microsoft Graph pode usar um padrão de ações de execução longa.
-Esse padrão fornece ao aplicativo uma maneira de sondar atualizações de status em uma ação longa em execução, sem qualquer solicitação aguardando a conclusão da ação.
+Esse padrão fornece ao aplicativo uma maneira de sondar atualizações de status em uma ação de execução longa, sem nenhuma solicitação aguardando a conclusão da ação.
 
 O padrão geral segue estas etapas:
 
 1. O aplicativo solicita uma ação de execução longa por meio da API. A API aceita a ação e retorna uma resposta `202 Accepted` junto com um cabeçalho de Local para que a URL de API recupere relatórios de status de ação.
-2. O aplicativo solicita a URL de relatório de status de ação e recebe uma resposta [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) com o progresso da ação de execução longa.
+2. O aplicativo solicita a URL de relatório de status de ação e recebe uma resposta [AsyncJobStatus](/graph/api/resources/asyncjobstatus) com o progresso da ação de execução longa.
 3. A ação de execução longa é concluída. 
-4. O aplicativo solicita a URL de relatório de status da ação novamente e recebe uma resposta [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) que mostra a conclusão da ação.
+4. O aplicativo solicita a URL de relatório de status da ação novamente e recebe uma resposta [AsyncJobStatus](/graph/api/resources/asyncjobstatus) que mostra a conclusão da ação.
 
 ## <a name="initial-action-request"></a>Solicitação de ação inicial
 
-Vamos percorrer as etapas para obter um cenário de exemplo de [DriveItem Copy](/graph/api/driveitem-copy?view=graph-rest-beta).
+Vamos percorrer as etapas para obter um cenário de exemplo de [DriveItem Copy](/graph/api/driveitem-copy).
 Neste cenário, o aplicativo solicita a cópia de uma pasta que contém uma grande quantidade de dados.
 Essa solicitação provavelmente levará vários segundos para ser concluída, pois a quantidade de dados é grande.
 
@@ -177,7 +177,7 @@ Ações de execução longa têm suporte nos métodos de API a seguir
 
 | **Recurso** | **API** |
 |:------ | :------ |
-| DriveItem | [Copiar](/graph/api/driveitem-copy?view=graph-rest-beta) |
+| DriveItem | [Copiar](/graph/api/driveitem-copy) |
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

@@ -1,32 +1,32 @@
 ---
 title: Obter accessReviewPolicy
 description: Leia as propriedades e as relações de um objeto accessReviewPolicy.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: dd0c6f992f9b3523e2d4c321a1774b1f561b79d5
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 900a410be4b88ecd458cc00ef9073ccf3f143885
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62110040"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697089"
 ---
 # <a name="get-accessreviewpolicy"></a>Obter accessReviewPolicy
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto accessReviewPolicy.](../resources/accessreviewpolicy.md)
+Leia as propriedades e as relações de um [objeto accessReviewPolicy](../resources/accessreviewpolicy.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.AccessReviews|
+|Delegado (conta corporativa ou de estudante)|Policy.Read.All, Policy.ReadWrite.AccessReview|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|Policy.Read.All, Policy.ReadWrite.AccessReviews|
+|Aplicativo|Policy.Read.All, Policy.ReadWrite.AccessReview|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessReviewPolicy](../resources/accessreviewpolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto accessReviewPolicy](../resources/accessreviewpolicy.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

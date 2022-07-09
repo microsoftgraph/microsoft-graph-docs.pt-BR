@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewInstanceDecisionItemServicePrincipalTarget
 description: Representa o destino de uma revisão como um destino de entidade de serviço.
-author: isabelleatmsft
-localization_priority: Normal
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 7d8032282d7ddaf41779b73f707b0749e3c82dd0
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: dafb1cde55fe510edcff89bd5497997d136a12a9
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "51469220"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698139"
 ---
 # <a name="accessreviewinstancedecisionitemserviceprincipaltarget-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItemServicePrincipalTarget
 
@@ -22,14 +22,14 @@ Namespace: microsoft.graph
 
 Representa uma entidade de serviço em revisão em [um accessReviewInstance](accessreviewinstance.md).
 
-Herda [de accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
+Herda de [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |
 | :--------------------------- | :------------------------ | :---------- |
-| servicePrincipalID | String | O identificador da entidade de serviço cujo acesso está sendo revisado. |
-| servicePrincipalDisplayName | String | O nome de exibição da entidade de serviço cujo acesso está sendo revisado. |
-| appId | String | O appId da entidade principal do serviço que está sendo revisada. |
+| servicePrincipalID | Cadeia de caracteres | O identificador da entidade de serviço cujo acesso está sendo revisado. |
+| servicePrincipalDisplayName | Cadeia de caracteres | O nome de exibição da entidade de serviço cujo acesso está sendo revisado. |
+| appId | Cadeia de caracteres | A appId da entidade de entidade de serviço que está sendo revisada. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

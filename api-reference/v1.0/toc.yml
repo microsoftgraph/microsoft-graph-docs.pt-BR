@@ -484,7 +484,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -544,7 +544,7 @@ items:
             items:
               - name: Listar tarefas
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -5693,6 +5693,8 @@ items:
                         href: api/entitlementmanagement-list-assignments.md
                       - name: Filtrar pelo usuário atual
                         href: api/accesspackageassignment-filterbycurrentuser.md
+                      - name: Reprocessar
+                        href: api/accesspackageassignment-reprocess.md
                   - name: Aprovação da solicitação de atribuição de pacote de acesso
                     items:
                       - name: Aprovação
@@ -5726,6 +5728,8 @@ items:
                         href: api/accesspackageassignmentrequest-filterbycurrentuser.md
                       - name: Cancelar
                         href: api/accesspackageassignmentrequest-cancel.md
+                      - name: Reprocessar
+                        href: api/accesspackageassignmentrequest-reprocess.md
                   - name: Catálogo de pacotes de acesso
                     href: resources/accesspackagecatalog.md
                     items:

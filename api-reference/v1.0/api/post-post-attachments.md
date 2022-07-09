@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c8802f483ea9e0cd9ab9b3debd1398795c7e66ea
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 819ece8e69f4dc0c47f3540599fef161ceca9604
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62341804"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697712"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Adicione um [anexo](../resources/attachment.md) ao criar uma postagem de grupo.
 
-Essa operação limita o tamanho do anexo que você pode adicionar a menos de 4 MB.
+Essa operação limita o tamanho do anexo ao qual você pode adicionar menos de 4 MB.
 
 Um anexo pode ser de um dos seguintes tipos:
 
@@ -35,10 +35,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Inclua um anexo ao criar uma [postagem](../resources/post.md) em [uma conversaThread](../resources/conversationthread.md) de um grupo. Especificar a conversa [pai](../resources/conversation.md) é opcional.
+Inclua um anexo ao criar uma [postagem](../resources/post.md) em [um conversationThread](../resources/conversationthread.md) de um grupo. Especificar a conversa [pai](../resources/conversation.md) é opcional.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,11 +51,11 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça um objeto JSON que inclui um **parâmetro post** .
+No corpo da solicitação, forneça um objeto JSON que inclui um **parâmetro de postagem** .
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|A nova postagem que está sendo respondida, que inclui um ou mais anexos em uma [coleção de](../resources/attachment.md) anexos.|
+|post|[post](../resources/post.md)|A nova postagem que está sendo respondida, que inclui um ou mais anexos em uma coleção [de](../resources/attachment.md) anexos.|
 
 ## <a name="response"></a>Resposta
 
@@ -185,7 +185,7 @@ HTTP/1.1 202 Accepted
 
 #### <a name="request"></a>Solicitação
 Aqui está um exemplo de uma solicitação que inclui um anexo de referência ao criar uma postagem.
-O anexo aponta para uma pasta OneDrive.
+O anexo aponta para uma pasta no OneDrive.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

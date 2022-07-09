@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: acceptRecommendations'
-description: 'Permite a aceitação de recomendações em todas as decisões que não foram revisadas para uma instância de revisão de acesso para a qual o usuário de chamada é um revistor. '
+description: 'Permite a aceitação de recomendações em todas as decisões que não foram revisadas para uma instância de revisão de acesso para a qual o usuário chamador é um revistor. '
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 70ee2b4c248e4c79c375d1b74667dc7619f18b40
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 2d3c5d38775f70b706542797695fd70629974f06
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340487"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696627"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permite a aceitação de recomendações em todos os objetos [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) que não foram revisados para um [objeto accessReviewInstance](../resources/accessreviewinstance.md) para o qual o usuário de chamada é um revisor. Recomendações serão **gerados se recommendationsEnabled** estiver `true` no [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md). Se não houver uma recomendação em [um objeto accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) , nenhuma decisão será registrada.
+Permite a aceitação de recomendações em todos os objetos [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) que não foram revisados para um objeto [accessReviewInstance](../resources/accessreviewinstance.md) para o qual o usuário chamador é um revisor. As recomendações serão **geradas se recommendationsEnabled** estiver `true` no [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) . Se não houver uma recomendação em um [objeto accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) , nenhuma decisão será registrada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft)| Sem suporte. |
 
-O usuário de entrada também deve ser um revisor no accessReviewInstance.
+O usuário conectado também deve ser um revisor no accessReviewInstance.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

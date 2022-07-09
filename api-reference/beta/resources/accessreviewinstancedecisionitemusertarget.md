@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewInstanceDecisionItemUserTarget
-description: Representa o destino de uma revisão como usuário.
-author: isabelleatmsft
-localization_priority: Normal
+description: Representa o destino de uma revisão como um usuário.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f10796937aa99e5808cb51bdb4069bd99d645db2
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: f64e29f3b1ef13471147be495dcd100e80742304
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "51469210"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698125"
 ---
 # <a name="accessreviewinstancedecisionitemusertarget-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItemUserTarget
 
@@ -22,14 +22,14 @@ Namespace: microsoft.graph
 
 Representa uma identidade de usuário em revisão em [um accessReviewInstance](accessreviewinstance.md).
 
-Herda [de accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
+Herda de [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 | userDisplayName | Cadeia de caracteres | O nome do usuário. |
 | userId | Cadeia de caracteres | O identificador do usuário. |
-| userPrincipalName | String | O nome da entidade de segurança do usuário. |
+| userPrincipalName | Cadeia de caracteres | O nome da entidade de segurança do usuário. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

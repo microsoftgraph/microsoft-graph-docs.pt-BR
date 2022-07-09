@@ -1,16 +1,16 @@
 ---
 title: Definições de lista
 description: Obtenha uma lista dos objetos accessReviewScheduleDefinition e suas propriedades.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b9978d6d33ff278f300df6a8a65f93c13c09b80a
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: c982d417f7b5d51ceb84c23575a974b4b0db54ca
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365775"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697208"
 ---
 # <a name="list-definitions"></a>Definições de lista
 Namespace: microsoft.graph
@@ -52,9 +52,9 @@ O valor de `{object}` pode ser um dos seguintes:
 
 |Valor|Descrição|
 |:---     |:---       |
-|`/groups`  |Liste todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
-|`/groups/{group id}`  |Liste todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).|
-|`./members`  |Liste todos os accessReviewScheduleDefinition com escopo para todos Microsoft 365 grupos com usuários convidados.|
+|`/groups`  |Liste todos os accessReviewScheduleDefinition em grupos individuais (exclui definições com escopo para todos os grupos do Microsoft 365 com usuários convidados).|
+|`/groups/{group id}`  |Liste todos os accessReviewScheduleDefinition em um grupo específico (exclui definições com escopo para todos os grupos do Microsoft 365 com usuários convidados).|
+|`./members`  |Liste todos os accessReviewScheduleDefinition com escopo para todos os grupos do Microsoft 365 com usuários convidados.|
 |`accessPackageAssignments`  |Liste cada accessReviewScheduleDefinition em um pacote de acesso.|
 |`roleAssignmentScheduleInstances`  |Liste cada accessReviewScheduleDefinition para entidades de serviço atribuídas a uma função privilegiada.|
 
@@ -179,10 +179,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Exemplo 2: Recuperar todas as definições de revisão de acesso com escopo para todos os Microsoft 365 grupos em um locatário
+### <a name="example-2-retrieve-all-access-review-definitions-scoped-to-all-microsoft-365-groups-in-a-tenant"></a>Exemplo 2: Recuperar todas as definições de revisão de acesso com escopo para todos os grupos do Microsoft 365 em um locatário
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso com escopo para todos Microsoft 365 grupos em um locatário.
+O exemplo a seguir mostra uma solicitação para recuperar todas as séries de revisão de acesso com escopo para todos os grupos do Microsoft 365 em um locatário.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

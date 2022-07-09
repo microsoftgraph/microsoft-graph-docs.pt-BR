@@ -1,22 +1,22 @@
 ---
 title: 'accessReviewInstance: acceptRecommendations'
-description: Permite a aceitação de recomendações sobre decisões para uma instância de revisão de acesso que não tenha sido revisada pelo usuário chamador que é um revistor.
-author: isabelleatmsft
+description: Permite a aceitação de recomendações sobre decisões para uma instância de revisão de acesso que não foi revisada pelo usuário chamador que é um revistor.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 853b3c71c85dd87eafa1147f8d90202c34bf6af0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5b8e635069483ce5b06be58877446ba8ffce17ea
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001549"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698034"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
 Namespace: microsoft.graph
 
-Permite a aceitação de recomendações em todos os objetos [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) que não foram revisados em um [objeto accessReviewInstance](../resources/accessreviewinstance.md) para o qual o usuário de chamada é um revisor.
+Permite a aceitação de recomendações em todos os objetos [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) que não foram revisados em um objeto [accessReviewInstance](../resources/accessreviewinstance.md) para o qual o usuário chamador é um revisor.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-acceptrecommendations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-acceptrecommendations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

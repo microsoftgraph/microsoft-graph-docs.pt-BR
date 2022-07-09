@@ -2,12 +2,12 @@
 title: Encontrar possíveis horários de reunião no calendário do Outlook
 description: Use a ação findMeetingTimes para identificar um horário de reunião que satisfaça o horário, a localização e outras restrições. Inclui um exemplo envolvendo dois usuários.
 ms.localizationpriority: high
-ms.openlocfilehash: 97ee0a5b15a819ba7662764a684ab53ed9e2353b
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 31116dba84845460c58b60e27bac6cf8ffa4cc0c
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440695"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697768"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Encontrar possíveis horários de reunião no calendário do Outlook
 
@@ -45,6 +45,7 @@ O exemplo faz 2 chamadas para **findMeetingTimes**:
 2. A segunda chamada analisa a disponibilidade em 21 de abril e retorna uma sugestão das 14h às 16h.
 
 As duas chamadas para **findMeetingTimes** incluem os seguintes parâmetros. Todos os [parâmetros](/graph/api/user-findmeetingtimes#request-body) para **findMeetingTimes** são opcionais.
+
 
 - **attendees**: um participante, Sara Melo, definido como `required` para a propriedade **type**
 - **locationConstraint**: não requer nenhuma sugestão de localização

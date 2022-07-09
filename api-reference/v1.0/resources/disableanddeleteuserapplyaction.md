@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso disableAndDeleteUserApplyAction
 description: Desabilite e exclua qualquer usuário convidado B2B negado em uma revisão de acesso.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 37085f849dc3bc84dfda1926ba9d140e91d3d894
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3958b27453e8ebe83513f2bbdd34403e3cb6088f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089736"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698447"
 ---
 # <a name="disableanddeleteuserapplyaction-resource-type"></a>Tipo de recurso disableAndDeleteUserApplyAction
 
 Namespace: microsoft.graph
 
-Desabilite qualquer usuário convidado B2B negado em uma revisão de acesso por 30 dias e, em seguida, exclua sua conta. Essa opção não contém opções de configuração.
+Desabilite qualquer usuário convidado B2B negado em uma revisão de acesso por 30 dias e, em seguida, exclua sua conta. Essa opção não contém nenhuma opção de configuração.
 
 Herda de [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 

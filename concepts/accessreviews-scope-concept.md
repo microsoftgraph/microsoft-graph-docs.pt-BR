@@ -1,16 +1,16 @@
 ---
 title: Configurar o escopo da revisão de acesso usando o Microsoft API do Graph
 description: Saiba como examinar programaticamente o acesso que os usuários, entidades de serviço ou grupos têm aos seus recursos Azure AD usando o Microsoft API do Graph.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 8da62d1d75119a6ec0dcbb6681be0d3cd9b58d94
-ms.sourcegitcommit: 6a4e81d2b8e7447771c9060998c7e1cc18a57902
+ms.openlocfilehash: 983bb98c9344fc745ebe9a36c27995cef4ce4562
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2022
-ms.locfileid: "66609616"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698335"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Configurar o escopo da revisão de acesso usando o Microsoft API do Graph
 

@@ -1,16 +1,16 @@
 ---
 title: Listar decisões
-description: Obter os recursos accessReviewInstanceDecisionItem da propriedade de navegação de decisões.
-author: isabelleatmsft
+description: Obtenha os recursos accessReviewInstanceDecisionItem da propriedade de navegação de decisões.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0c0b0535a475ba7f1fe3408d306385e0774442c0
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: fc510b9537c42d5afef3620ad7f019f364e26e5d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722118"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696587"
 ---
 # <a name="list-decisions"></a>Listar decisões
 Namespace: microsoft.graph
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 Recupere os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) para um [accessReviewInstance específico](../resources/accessreviewinstance.md). Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem é retornada, incluindo todas as suas propriedades aninhadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -39,9 +39,9 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte `$select`a parâmetros de consulta , `$filter``$orderBy`, , `$skip`e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá `$select`suporte a `$filter`parâmetros `$orderBy`de consulta , , `$skip`e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewInstance** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewInstance** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -185,10 +185,10 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-2-retrieve-all-decision-items-for-which-youre-a-reviewer-and-expand-the-definitions"></a>Exemplo 2: recupere todos os itens de decisão para os quais você é revistor e expanda as definições
+### <a name="example-2-retrieve-all-decision-items-for-which-youre-a-reviewer-and-expand-the-definitions"></a>Exemplo 2: recuperar todos os itens de decisão para os quais você é revisor e expandir as definições
 
 #### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para recuperar todas as decisões em cada instância e a definição de que o usuário de chamada é o revistor.
+O exemplo a seguir mostra uma solicitação para recuperar todas as decisões em cada instância e a definição para a qual o usuário chamador é o revistor.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

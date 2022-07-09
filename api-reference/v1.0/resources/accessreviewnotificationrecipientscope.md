@@ -1,22 +1,22 @@
 ---
 title: Tipo de recurso accessreviewnotificationrecipientscope
 description: Representa quem receberá notificações de revisão de acesso.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c5db194094ef3ee1ef3e7c431ca5d4b39107b6cf
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 2bd960f45e9aacc9a1e6fc133e195c9a8980e609
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562104"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698405"
 ---
 # <a name="accessreviewnotificationrecipientscope-resource-type"></a>Tipo de recurso accessreviewnotificationrecipientscope
 
 Namespace: microsoft.graph
 
-O **accessReviewNotificationRecipientScope** representa uma classe base para definir usuários que receberão notificações em instâncias de [objetos accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Ele é herdado [por accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md).
+O **accessReviewNotificationRecipientScope** representa uma classe base para definir usuários que receberão notificações em instâncias de [objetos accessReviewScheduleDefinition](accessreviewscheduledefinition.md) . Ele é herdado [por accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md).
 ## <a name="properties"></a>Propriedades
 Nenhum.
 

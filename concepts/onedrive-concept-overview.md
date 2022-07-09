@@ -4,12 +4,12 @@ description: 'Use o OneDrive, o hub de arquivos no Microsoft 365, para acessar a
 ms.localizationpriority: high
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d16d1b686b3d9265787246be2c333f6b6d495dd7
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 311dc13807b63522d6800ae619d310f7395db5e6
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442117"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698204"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>Visão geral da API de armazenamento de arquivos do OneDrive
 
@@ -65,8 +65,8 @@ Use a [API delta][] para ver o que foi alterado desde a última vez em que o apl
 ## <a name="api-reference"></a>Referência da API
 Está procurando a referência de API deste serviço?
 
-- [API de armazenamento de arquivos do OneDrive no Microsoft Graph versão 1.0](/graph/api/resources/onedrive?view=graph-rest-1.0&preserve-view=true)
-- [API de armazenamento de arquivos do OneDrive no Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta&preserve-view=true)
+- [API de armazenamento de arquivos do OneDrive no Microsoft Graph versão 1.0](/graph/api/resources/onedrive)
+- [API de armazenamento de arquivos do OneDrive no Microsoft Graph beta](/graph/api/resources/onedrive)
 
 ## <a name="next-steps"></a>Próximas etapas
 

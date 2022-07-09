@@ -2,15 +2,15 @@
 title: Criar definições
 description: Crie um novo objeto accessReviewScheduleDefinition.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ab5489b0df4a44d256a1ebad709dbecf541071dd
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: 2cb1f4feddd7a31fbd9c4c7e505b6ec39b3d3151
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815899"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696900"
 ---
 # <a name="create-definitions"></a>Criar definições
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.ReadWrite.All |
+|Aplicativo                            | AccessReview.ReadWrite.All |
 
-O usuário interno também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso](../resources/accessreviewsv2-overview.md).
+O usuário conectado também deve estar em uma função de diretório que permita que ele crie uma revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [revisões de acesso](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,35 +44,35 @@ POST /identityGovernance/accessReviews/definitions
 | Content-type | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de [um objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
+No corpo da solicitação, forneça uma representação JSON de um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 A tabela a seguir mostra as propriedades aceitas para criar um accessReview.
 
 | Propriedade | Tipo | Descrição |
 |:-------------|:------------|:------------|
-| additionalNotificationRecipients   |[Coleção accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md)| Define a lista de usuários adicionais ou membros do grupo a serem notificados sobre o progresso da revisão de acesso. |
-| descriptionForAdmins | String | Contexto da revisão fornecida aos administradores. Obrigatório. |
-  descriptionForReviewers | Cadeia de caracteres | Contexto da revisão fornecida aos revisadores em notificações por email. As notificações por email suportam até 256 caracteres. Obrigatório. |
+| additionalNotificationRecipients   |[coleção accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md)| Define a lista de usuários adicionais ou membros do grupo a serem notificados sobre o progresso da revisão de acesso. |
+| descriptionForAdmins | Cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório. |
+  descriptionForReviewers | Cadeia de Caracteres | Contexto da revisão fornecida aos revisores em notificações por email. As notificações por email dão suporte a até 256 caracteres. Obrigatório. |
 | displayName | Cadeia de caracteres | Nome da série de revisão de acesso. Obrigatório.|
-| fallbackReviewers |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Se fornecido, os revisadores de fallback serão solicitados a concluir uma revisão se os revistores primários não existirem. Por exemplo, se `reviewers` os gerentes forem selecionados como e uma entidade em revisão não tiver um gerente no Azure AD, os revisadores de fallback serão solicitados a revisar essa entidade. <br/><br/>**OBSERVAÇÃO:** O valor dessa propriedade será ignorado se os revisores de fallback são atribuídos por meio da **propriedade stageSettings** .|
+| fallbackReviewers |[coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Se fornecido, os revisores de fallback serão solicitados a concluir uma revisão se os revisores primários não existirem. Por exemplo, se `reviewers` os gerentes forem selecionados como e uma entidade de segurança sob revisão não tiver um gerente no Azure AD, os revisores de fallback serão solicitados a examinar essa entidade de segurança. <br/><br/>**NOTA:** O valor dessa propriedade será ignorado se os revisores de fallback forem atribuídos por meio da **propriedade stageSettings** .|
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | No caso de uma revisão de todos os grupos, isso determina o escopo de quais grupos serão revisados. Consulte [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso](/graph/accessreviews-scope-concept).| 
-| revisadores | [Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisadores. Se nenhum for especificado, a revisão será uma autoavaliação (os usuários revisam seu próprio acesso).  Para ver exemplos de opções para atribuir revisadores, consulte [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept). <br/><br/>**OBSERVAÇÃO:** O valor dessa propriedade será ignorado se os revisores são atribuídos por meio da **propriedade stageSettings** . |
+| Revisores | [coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Define quem são os revisores. Se nenhum for especificado, a revisão será uma auto-revisão (os usuários revisam seu próprio acesso).  Para obter exemplos de opções para atribuir revisores, consulte Atribuir revisores à sua definição de revisão de acesso [usando o Microsoft API do Graph](/graph/accessreviews-reviewers-concept). <br/><br/>**NOTA:** O valor dessa propriedade será ignorado se os revisores forem atribuídos por meio da **propriedade stageSettings** . |
 | scope | [accessReviewScope](../resources/accessreviewscope.md) | Define as entidades cujo acesso é revisado. Consulte  [accessReviewScope](../resources/accessreviewscope.md) e também saiba como [configurar o escopo da sua definição de revisão de acesso](/graph/accessreviews-scope-concept). Obrigatório.| 
-|stageSettings|[Coleção accessReviewStageSettings](../resources/accessreviewstagesettings.md)| Define quantos estágios cada instância de uma série de revisão de acesso terá. Estágios serão criados sequencialmente com base na propriedade dependsOn. Cada estágio pode ter um conjunto diferente de revisadores, revisadores de fallback e configurações. <br/><br/>Quando essa propriedade é definida, seus valores são usados em vez dos valores correspondentes no [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) e sua **propriedade settings** . Opcional. |
-| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
-| backupReviewers (preterido) |[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa propriedade foi substituída por **fallbackReviewers**. No entanto, especificar **backupReviewers** ou **fallbackReviewers** preenche automaticamente os mesmos valores para a outra propriedade. |
+|stageSettings|[coleção accessReviewStageSettings](../resources/accessreviewstagesettings.md)| Define quantos estágios cada instância de uma série de revisão de acesso terá. Os estágios serão criados sequencialmente com base na propriedade dependsOn. Cada estágio pode ter um conjunto diferente de revisores, revisores de fallback e configurações. <br/><br/>Quando essa propriedade é definida, seus valores são usados em vez dos valores correspondentes no objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) e sua **propriedade de configurações** . Opcional. |
+| configurações | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| As configurações de uma série de revisão de acesso. A recorrência é determinada aqui. Consulte [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
+| backupReviewers (preterido) |[coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)| Essa propriedade foi substituída por **fallbackReviewers**. No entanto, especificar **backupReviewers** ou **fallbackReviewers** preenche automaticamente os mesmos valores para a outra propriedade. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="example-1-create-an-access-review-on-a-group"></a>Exemplo 1: Criar uma revisão de acesso em um grupo
 
 O exemplo a seguir cria uma revisão de acesso com as seguintes configurações:
-+ A revisão revisa todos os membros de um grupo com **a id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
-+ Um usuário específico com **a id do usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revistor.
-+ Ela se recursa semanalmente e continua indefinidamente.
++ A revisão revisa todos os membros de um grupo com **a ID**`02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ Um usuário específico com a **ID de usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revistor.
++ Ele se recursa semanalmente e continua indefinidamente.
 
 #### <a name="request"></a>Solicitação
 
@@ -218,12 +218,12 @@ Content-type: application/json
 
 O exemplo a seguir cria uma revisão de acesso com as seguintes configurações:
 + A revisão revisa todas as equipes com usuários convidados inativos. O período de inatividade é de 30 dias a partir da data de início da revisão de acesso.
-+ Os proprietários do grupo são os revisadores e os revisadores de fallback são atribuídos.
-+ Ela se recorre no terceiro dia de cada trimestre e continua indefinidamente.
-+ **autoApplyDecisionsEnabled** é definido como `true` com **o defaultDecision** definido como `Deny`.
++ Os proprietários do grupo são os revisores e os revisores de fallback são atribuídos.
++ Ele se repetirá no terceiro dia de cada trimestre e continuará indefinidamente.
++ **autoApplyDecisionsEnabled** é definido como `true` com **defaultDecision** definido como `Deny`.
 
 #### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
+No corpo da solicitação, forneça uma representação JSON do [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -396,8 +396,8 @@ Content-type: application/json
 
 O exemplo a seguir cria uma revisão de acesso com as seguintes configurações:
 + A revisão revisa o acesso do usuário a um aplicativo.
-+ Os gerentes de pessoas são revisadores e revisadores de fallback são membros de um grupo.
-+ Ela recorre semesanuais e termina 1 ano a partir do startDate.
++ Os gerentes de pessoas são os revisores e os revisores de fallback são os membros de um grupo.
++ Ele se repetirá semestralmente e terminará 1 ano a partir de startDate.
 
 #### <a name="request"></a>Solicitação
 
@@ -579,15 +579,17 @@ Content-type: application/json
 ### <a name="example-4-create-an-access-review-on-a-group-with-multiple-stages"></a>Exemplo 4: Criar uma revisão de acesso em um grupo com vários estágios
 
 O exemplo a seguir cria uma revisão de acesso com as seguintes configurações:
-+ A revisão revisa todos os membros de um grupo com **a id** `02f3bafb-448c-487c-88c2-5fd65ce49a41`.
++ A revisão revisa todos os membros de um grupo com **a ID**`02f3bafb-448c-487c-88c2-5fd65ce49a41`.
 + Ele tem dois estágios:
-  + Um usuário específico com **a id do usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revistor do primeiro estágio.
-  + Os gerentes de pessoas são revisadores e revisadores de fallback para o segundo estágio.
-+ Ela se recursa semanalmente e continua indefinidamente.
+  + Um usuário específico com a **ID de usuário** `398164b1-5196-49dd-ada2-364b49f99b27` é o revisores do primeiro estágio.
+  + Os gerentes de pessoas são os revisores e revisores de fallback para o segundo estágio.
++ Ele se recursa semanalmente e continua indefinidamente.
 
 #### <a name="request"></a>Solicitação
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_group_multiStage"
@@ -665,6 +667,28 @@ Content-type: application/json
 }
 
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-group-multistage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-group-multistage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-group-multistage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-group-multistage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-group-multistage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

@@ -1,16 +1,16 @@
 ---
 title: Obter accessReviewInstanceDecisionItem
 description: Leia as propriedades e as relações de um objeto accessReviewInstanceDecisionItem.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5884841a3e169f0640fe09adb8237bf64816e497
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: 2cf52cdb927ddf494adb5a3c048c1de0d4fb9808
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62815885"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697299"
 ---
 # <a name="get-accessreviewinstancedecisionitem"></a>Obter accessReviewInstanceDecisionItem
 Namespace: microsoft.graph
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Aplicativo|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ Para recuperar uma decisão sobre um accessReviewInstance:
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/{accessReviewInstanceDecisionItemId}
 ```
 
-Para recuperar uma decisão de um estágio de accessReviewInstance:
+Para recuperar uma decisão de um estágio de um accessReviewInstance:
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte ao parâmetro `$select` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte ao `$select` parâmetro de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -66,7 +66,7 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um [o
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-retrieve-a-decision-on-an-accessreviewinstance"></a>Exemplo 1: recuperar uma decisão sobre um accessReviewInstance
+### <a name="example-1-retrieve-a-decision-on-an-accessreviewinstance"></a>Exemplo 1: Recuperar uma decisão sobre um accessReviewInstance
 
 #### <a name="request"></a>Solicitação
 
@@ -153,9 +153,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-a-decision-from-a-stage-of-a-multi-stage-access-review"></a>Exemplo 2: recuperar uma decisão de um estágio de uma revisão de acesso em vários estágios
+### <a name="example-2-retrieve-a-decision-from-a-stage-of-a-multi-stage-access-review"></a>Exemplo 2: recuperar uma decisão de um estágio de uma revisão de acesso de vários estágios
 
 #### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accessreviewstage_accessreviewinstancedecisionitem"
@@ -164,6 +166,28 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewstage-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreviewstage-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accessreviewstage-accessreviewinstancedecisionitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewstage-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewstage-accessreviewinstancedecisionitem-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Resposta
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

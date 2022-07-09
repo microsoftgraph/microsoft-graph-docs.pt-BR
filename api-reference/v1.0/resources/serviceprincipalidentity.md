@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso servicePrincipalIdentity
 description: Modela uma identidade de entidade de serviço.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ae9d82ce65b7a6e8c82e0377df89939b9219f3db
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f2daece3e3f9fb01c58a2470aa667da7e62ce4ef
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108825"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697925"
 ---
 # <a name="serviceprincipalidentity-resource-type"></a>Tipo de recurso servicePrincipalIdentity
 
@@ -24,8 +24,8 @@ Herda da [identidade](../resources/identity.md).
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appId|Cadeia de caracteres|O identificador de aplicativo da entidade de serviço.|
-|displayName|String|O nome de exibição da identidade da entidade de serviço. Herdado da [identidade](../resources/identity.md)|
-|id|String|O identificador da identidade da entidade de serviço. Herdado da [identidade](../resources/identity.md)|
+|displayName|Cadeia de caracteres|O nome de exibição da identidade da entidade de serviço. Herdado da [identidade](../resources/identity.md)|
+|id|Cadeia de caracteres|O identificador da identidade da entidade de serviço. Herdado da [identidade](../resources/identity.md)|
 
 ## <a name="relationships"></a>Relações
 Nenhum

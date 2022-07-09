@@ -1,18 +1,18 @@
 ---
-title: Listar a aprovação pendente accessReviewInstanceDecisionItem
-description: Recupere os objetos accessReviewInstanceDecisionItem aguardando aprovação do usuário chamador.
+title: Listar a aprovação pendente de accessReviewInstanceDecisionItem
+description: Recupere objetos accessReviewInstanceDecisionItem aguardando aprovação do usuário que está chamando.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5925711646753fdde070f34a1d0da37c075377d1
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: 85e42de0bffa25377fb6a2eba9332adba6d85b20
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722005"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696596"
 ---
-# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>Listar accessReviewInstanceDecisionItems pendente aprovação (preterida)
+# <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>Listar accessReviewInstanceDecisionItems com aprovação pendente (preterido)
 
 Namespace: microsoft.graph
 
@@ -21,9 +21,9 @@ Namespace: microsoft.graph
 >[!NOTE]
 >Esse método será preterido e interromperá o retorno de dados em 19 de maio de 2023. Ele foi substituído por [filterByCurrentUser](accessreviewinstancedecisionitem-filterbycurrentuser.md).
 
-Recupere os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) para uma aprovação pendente [accessReviewInstance](../resources/accessreviewscheduledefinition.md) específica pelo usuário chamador. Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem é retornada, incluindo todas as suas propriedades aninhadas.
+Recupere os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) para uma aprovação específica [de accessReviewInstance](../resources/accessreviewscheduledefinition.md) pendente pelo usuário chamador. Uma lista de zero ou mais objetos accessReviewInstanceDecisionItem é retornada, incluindo todas as suas propriedades aninhadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 
-O usuário interno também verá apenas as decisões das quais o revisor é atribuído no accessReviewScheduleDefinition da instância dessa decisão.
+O usuário conectado também verá apenas as decisões das quais o revisor é atribuído no accessReviewScheduleDefinition da instância dessa decisão.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,18 +40,18 @@ GET /me/pendingAccessReviewInstances/{instance-id}/decisions
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `$skip` e `$top` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte `$skip` a parâmetros `$top` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewInstanceDecisionItem** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewInstanceDecisionItem** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhuma.
+Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não fornecer um corpo de solicitação.
+Não forneça um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` um código de resposta e uma matriz de [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma matriz de [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstance.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação

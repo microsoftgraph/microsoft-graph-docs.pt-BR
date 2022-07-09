@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewInstanceDecisionItemTarget
-description: 'Representa o destino de uma revisão como um destino de usuário ou um destino principal do serviço. '
-author: isabelleatmsft
-localization_priority: Normal
+description: 'Representa o destino de uma revisão como um destino de usuário ou um destino de entidade de serviço. '
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c49af4f136e860edbfbcc635b7fc44e67814117c
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 104d8c6c2611721b5c822cb75aef95a5b6145848
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "51469217"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698132"
 ---
 # <a name="accessreviewinstancedecisionitemtarget-resource-type"></a>Tipo de recurso accessReviewInstanceDecisionItemTarget
 

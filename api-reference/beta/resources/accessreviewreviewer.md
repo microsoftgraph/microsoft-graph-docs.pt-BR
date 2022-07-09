@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewReviewer
-description: Representa um revistor que foi contatado para uma revisão de acesso.
-author: isabelleatmsft
-localization_priority: Normal
+description: Representa um revisores que foi contatado para uma revisão de acesso.
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f5fbeda2ca839fe07009a46ab2bccd1deb502f17
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 63d07f913641f0eb8c0a6aeec8f153395ea54ca2
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259192"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698097"
 ---
 # <a name="accessreviewreviewer-resource-type"></a>Tipo de recurso accessReviewReviewer
 
@@ -20,9 +20,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Objeto que representa as identidades dos revisadores que foram contatados para concluir uma revisão.
+Objeto que representa as identidades dos revisores que foram contatados para concluir uma revisão.
 
-Herda da [entidade](entity.md).
+Herda de [entidade](entity.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade | Tipo | Descrição |

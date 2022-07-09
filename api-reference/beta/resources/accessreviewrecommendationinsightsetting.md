@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewRecommendationInsightSetting
 description: Nas revisões Azure AD acesso, accessReviewRecommendationInsightSetting representa as configurações associadas a um insight fornecido para uma revisão de acesso.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: beedb05c7e22ca3a3fcda781eff68a63779ca52b
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 3e22d3c83ddffd901c7b8e7225fa919cbb52f466
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645097"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698106"
 ---
 # <a name="accessreviewrecommendationinsightsetting-resource-type"></a>Tipo de recurso accessReviewRecommendationInsightSetting
 

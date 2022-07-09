@@ -4,12 +4,12 @@ description: Os emails são representados pelo recurso de mensagem na API de ema
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 63470b3910837e08baee01881a070b9ee708c9bd
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 6958c740c92de862f6233b7154fb833bd5098a16
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556182"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697663"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Automatizar a criação, o envio e o processamento de mensagens
 
@@ -87,12 +87,12 @@ Prefer: outlook.allow-unsafe-html
 
 ## <a name="integrate-with--social-gesture-preview"></a>Integrar com o gesto social "@" (visualização)
 
-As menções com @ são notificações para alertar os usuários quando eles são mencionados nas mensagens. O recurso [mention](/graph/api/resources/mention?view=graph-rest-beta&preserve-view=true) permite que os aplicativos configurem e acessem gestos sociais online comuns, como o prefixo "@", em emails.
+As menções com @ são notificações para alertar os usuários quando eles são mencionados nas mensagens. O recurso [mention](/graph/api/resources/mention) permite que os aplicativos configurem e acessem gestos sociais online comuns, como o prefixo "@", em emails.
 Você pode:
 
-- Criar menções com @ quando [criar uma mensagem](/graph/api/user-post-messages?view=graph-rest-beta&preserve-view=true#request-2)
-- [Obter todas as mensagens na caixa de correio do usuário que contenham uma menção com @ do usuário](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true#request-2)
-- [Obter todas as menções com @ que sejam mensagens](/graph/api/message-get?view=graph-rest-beta&preserve-view=true#request-2)
+- Criar menções com @ quando [criar uma mensagem](/graph/api/user-post-messages#request-2)
+- [Obter todas as mensagens na caixa de correio do usuário que contenham uma menção com @ do usuário](/graph/api/user-list-messages#request-2)
+- [Obter todas as menções com @ que sejam mensagens](/graph/api/message-get#request-2)
 
 ## <a name="other-shared-capabilities"></a>Outras funcionalidades compartilhadas
 
@@ -100,7 +100,7 @@ Aproveite as seguintes funcionalidades comuns que são compartilhadas entre enti
 
 - Assine as [notificações de alteração](/graph/api/resources/webhooks) em mensagens quando ocorrem um ou mais tipos de alterações, como a criação de mensagens ou atualização.
 - [Acompanhar as alterações incrementais nas mensagens em uma pasta](delta-query-messages.md).
-- Crie [extensões abertas](extensibility-overview.md#4-open-extensions) ou [extensões de esquema](extensibility-overview.md#3-schema-extensions) para adicionar dados personalizados a uma instância de mensagem.
+- Crie [extensões abertas](extensibility-overview.md#open-extensions) ou [extensões de esquema](extensibility-overview.md#schema-extensions) para adicionar dados personalizados a uma instância de mensagem.
 - Crie [propriedades estendidas](/graph/api/resources/extended-properties-overview) em uma instância da mensagem para armazenar dados personalizados para as propriedades MAPI do Outlook, quando essas propriedades ainda não estão expostas nos metadados da API do Microsoft Graph.
 
 ## <a name="next-steps"></a>Próximas etapas

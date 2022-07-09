@@ -2,15 +2,15 @@
 title: Obter accessReviewScheduleDefinition
 description: Recupere um objeto accessReviewScheduleDefinition.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b28c6c8e9cf65e9ed220734bf930e31e051e92ca
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 96ac40ba6b7785e3fa3465d1bbb0a15afb6a0ac1
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650696"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696850"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>Obter accessReviewScheduleDefinition
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) por ID. Isso retorna todas as propriedades da série de revisão de acesso agendada, exceto para o accessReviewInstances associado. Cada accessReviewScheduleDefinition tem pelo menos uma instância. Uma instância representa uma revisão de um recurso específico (como membros de um grupo específico), durante uma ocorrência (por exemplo, março de 2021) de uma revisão recorrente.
+Recupere um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) por ID. Isso retorna todas as propriedades da série de revisão de acesso agendada, exceto o accessReviewInstances associado. Cada accessReviewScheduleDefinition tem pelo menos uma instância. Uma instância representa uma revisão de um recurso específico (como membros de um grupo específico), durante uma ocorrência (por exemplo, março de 2021) de uma revisão recorrente.
 
 Para recuperar as instâncias da série de revisão de acesso, use a API [accessReviewInstance de](accessreviewscheduledefinition-list-instances.md) lista.
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-Para chamar essa API, o usuário de entrada também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso, ou o usuário pode ser atribuído como revistor na revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-overview.md)
+Para chamar essa API, o usuário conectado também deve estar em uma função de diretório que permita ler uma revisão de acesso ou o usuário pode ser atribuído como revistor na revisão de acesso.  Para obter mais detalhes, consulte os requisitos de função e permissão para [revisões de acesso](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /identityGovernance/accessReviews/definitions/{review-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a parâmetros de consulta `$select` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte `$select` a parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 Nenhum.
@@ -49,7 +49,7 @@ Nenhum.
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e um [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

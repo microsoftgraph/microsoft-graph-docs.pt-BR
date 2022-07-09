@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewHistoryDefinition
 description: Representa uma coleção de dados de histórico de revisão de acesso.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: af05ff3d357b904cce6ea99ecf1c122b63135eb2
-ms.sourcegitcommit: ca3edeed9408ee94bb12d7acf506d7317bf01d25
+ms.openlocfilehash: ce078243c0cfdd53f07854c98602c0de615e9288
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64842276"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698314"
 ---
 # <a name="accessreviewhistorydefinition-resource-type"></a>Tipo de recurso accessReviewHistoryDefinition
 
@@ -34,9 +34,9 @@ Um **accessReviewHistoryDefinition contém** uma lista [de objetos accessReviewH
 |:---|:---|:---|
 |createdBy|[userIdentity](useridentity.md)| Usuário que criou essa definição de histórico de revisão. |
 |createdDateTime|DateTimeOffset|Carimbo de data/hora quando a definição de revisão de acesso foi criada.|
-|Decisões|String collection|Determina quais decisões de revisão serão incluídas nos dados do histórico de revisão buscados, se especificado. Opcional ao criar. Todas as decisões serão incluídas por padrão se nenhuma decisão for fornecida ao criar. Os valores possíveis são: `approve`, `deny`, `dontKnow`, `notReviewed`e `notNotified`.|
+|Decisões|Coleção de cadeias de caracteres|Determina quais decisões de revisão serão incluídas nos dados do histórico de revisão buscados, se especificado. Opcional ao criar. Todas as decisões serão incluídas por padrão se nenhuma decisão for fornecida ao criar. Os valores possíveis são: `approve`, `deny`, `dontKnow`, `notReviewed`e `notNotified`.|
 |displayName|Cadeia de caracteres|Nome da coleta de dados do histórico de revisão de acesso. Obrigatório.|
-|id|String|O identificador exclusivo atribuído de uma definição de histórico de revisão de acesso.|
+|id|Cadeia de caracteres|O identificador exclusivo atribuído de uma definição de histórico de revisão de acesso.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset| Um carimbo de data/hora. As revisões que terminam em ou antes dessa data serão incluídas nos dados de histórico buscados. Só será necessário se **scheduleSettings** não estiver definido. |
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|Um carimbo de data/hora. As revisões que começam em ou antes dessa data serão incluídas nos dados de histórico buscados. Só será necessário se **scheduleSettings** não estiver definido.|
 | scheduleSettings  |[accessReviewHistoryScheduleSettings](accessReviewHistoryScheduleSettings.md)| As configurações de uma série de definições de histórico de revisão de acesso recorrente. Obrigatório somente se **reviewHistoryPeriodStartDateTime** ou **reviewHistoryPeriodEndDateTime** não estiver definido. Ainda não há suporte.|

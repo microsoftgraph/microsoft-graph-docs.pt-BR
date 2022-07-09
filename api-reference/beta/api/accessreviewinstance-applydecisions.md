@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: applyDecisions'
 description: Aplicar decisões em um accessReviewInstance.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8c8d40e6f5548b7cf59e8f99b27f8b8e9e67981e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ebb938b938bb743cca6d9e69c3c27d80dbbd1b8
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987892"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696591"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aplicar decisões de revisão em [um accessReviewInstance](../resources/accessreviewinstance.md) se as decisões não foram aplicadas automaticamente porque a propriedade autoApplyDecisionsEnabled está no `false` [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)da revisão.
+Aplique decisões de revisão em [um accessReviewInstance](../resources/accessreviewinstance.md) se as decisões não foram aplicadas automaticamente porque a propriedade autoApplyDecisionsEnabled `false` está no [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) da revisão.
 
-O status do accessReviewInstance deve `Completed` ser chamar esse método.
+O status do accessReviewInstance deve ser `Completed` para chamar esse método.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-applydecisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-applydecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

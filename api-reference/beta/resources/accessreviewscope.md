@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewScope
-description: 'No recurso de análises de acesso do Azure AD, o representa quais entidades serão revisadas `accessReviewScope` em uma revisão de acesso.  '
-author: isabelleatmsft
-localization_priority: Normal
+description: 'No recurso Azure AD revisões de acesso, `accessReviewScope` representa quais entidades serão revisadas em uma revisão de acesso.  '
+author: zhusijia26
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 21f21d3a3d7ca4d369493c6c5028185bdbdb0e20
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: aa4d8dd9db5fa16736552acbed2c9e59592980af
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367286"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698104"
 ---
 # <a name="accessreviewscope-resource-type"></a>Tipo de recurso accessReviewScope
 
@@ -20,13 +20,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-O **accessReviewScope** define quais entidades são revisadas em [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). É um tipo abstrato herdado por [accessReviewQueryScope](accessreviewqueryscope.md), [principalResourceMembershipsScope](principalresourcemembershipsscope.md)e [accessReviewReviewerScope](accessreviewreviewerscope.md). 
+O **accessReviewScope** define quais entidades são revisadas em [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md). É um tipo abstrato herdado por [accessReviewQueryScope](accessreviewqueryscope.md), [principalResourceMembershipsScope](principalresourcemembershipsscope.md) e [accessReviewReviewerScope](accessreviewreviewerscope.md). 
 
-Para **a propriedade scope** em um [accessReviewScheduleDefinition,](accessreviewscheduledefinition.md) consulte [accessReviewQueryScope](accessreviewqueryscope.md) e [principalResourceMembershipsScope](principalresourcemembershipsscope.md).
+Para **obter** a propriedade scope em [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , consulte [accessReviewQueryScope](accessreviewqueryscope.md) e [principalResourceMembershipsScope](principalresourcemembershipsscope.md).
 
-Para **a propriedade reviewers** em [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md) consulte [accessReviewReviewerScope](accessreviewreviewerscope.md).
+Para **a propriedade** reviewers em [um accessReviewScheduleDefinition](accessreviewscheduledefinition.md) , [consulte accessReviewReviewerScope](accessreviewreviewerscope.md).
 
-A especificação do tipo  OData no escopo é altamente recomendada para todos os tipos, mas necessária para [o principalResourceMembershipsScope](principalresourcemembershipsscope.md) e [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md).
+Especificar o tipo OData no escopo é  altamente recomendável para todos os tipos, mas necessário para [principalResourceMembershipsScope](principalresourcemembershipsscope.md) e [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md).
 
 ## <a name="properties"></a>Propriedades
 Nenhum.

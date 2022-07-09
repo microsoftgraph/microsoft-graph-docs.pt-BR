@@ -1,16 +1,16 @@
 ---
 title: Atualizar accessReviewInstance
 description: Atualize as propriedades de um objeto accessReviewInstance.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 380c23782ddc078be5529157bcc59951f3281f0b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 72ebfe8f84d73e2c64ee27f2e8deb2eae8fbd2ad
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107141"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697320"
 ---
 # <a name="update-accessreviewinstance"></a>Atualizar accessReviewInstance
 
@@ -18,13 +18,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de [um objeto accessReviewInstance.](../resources/accessreviewinstance.md) Somente os **revisores** e **as propriedades fallbackReviewers** podem ser atualizados, mas a propriedade **scope** também é necessária no corpo da solicitação. Você só pode adicionar revisores à **propriedade fallbackReviewers,** mas não pode remover **fallbackReviewers existentes.**
+Atualize as propriedades de [um objeto accessReviewInstance](../resources/accessreviewinstance.md) . Somente as **propriedades reviewers** e **fallbackReviewers** podem ser atualizadas, mas a propriedade **de** escopo também é necessária no corpo da solicitação. Você só pode adicionar revisores à propriedade **fallbackReviewers** , mas não pode remover **fallbackReviewers existentes**.
 
-Para atualizar **um accessReviewInstance,** seu **status** deve ser `InProgress` .
+Para atualizar um **accessReviewInstance**, seu **status** deve ser `InProgress`.
 
 > [!NOTE]
 > 
-> A atualização de **um accessReviewInstance** atualizará apenas essa instância. O access **paiReviewScheduleDefinition** e quaisquer objetos **accessReviewInstance** futuros não mudarão. Para fazer atualizações que se aplicam a todas as instâncias futuras, atualize o [objeto pai accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+> Atualizar um **accessReviewInstance** atualizará apenas essa instância. O **accessReviewScheduleDefinition** pai e quaisquer objetos **accessReviewInstance** futuros não mudarão. Para fazer atualizações que se aplicam a todas as instâncias futuras, atualize o objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) pai.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -57,16 +57,16 @@ PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|fallbackReviewers|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Essa coleção de escopos do revistor é usada para definir a lista de revisadores de fallback. Esses revisadores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Opcional. Atualizável.|
-|revisadores|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Essa coleção de escopos de revisão de acesso é usada para definir quem são os revisadores. Para exemplos de opções para atribuir revisadores, consulte Atribuir revisadores à sua definição de revisão de acesso [usando a API do Microsoft Graph](/graph/accessreviews-scope-concept). Opcional. Atualizável.|
-|scope|[accessReviewScope](../resources/accessreviewscope.md)|Criado com base **no escopo** e **instanceEnumerationScope** no [nível accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Define o escopo dos usuários revisados em um grupo. Somente leitura. Obrigatório, mas não atualizado.|
+|fallbackReviewers|[coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Essa coleção de escopos de revisores é usada para definir a lista de revisores de fallback. Esses revisores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Opcional. Atualizável.|
+|Revisores|[coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Essa coleção de escopos de revisão de acesso é usada para definir quem são os revisores. Para obter exemplos de opções para atribuir revisores, consulte Atribuir revisores à sua definição de revisão de acesso [usando o Microsoft API do Graph](/graph/accessreviews-scope-concept). Opcional. Atualizável.|
+|scope|[accessReviewScope](../resources/accessreviewscope.md)|Criado com base **no escopo** **e instanceEnumerationScope** no [nível accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) . Define o escopo dos usuários revisados em um grupo. Somente leitura. Obrigatório, mas não atualizado.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto accessReviewInstance](../resources/accessreviewinstance.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [accessReviewInstance](../resources/accessreviewinstance.md) atualizado no corpo da resposta.
 
-Tentar remover **fallbackReviewers** existentes retorna um `409 Conflict` código de resposta.
+A tentativa de remover **fallbackReviewers existente** retorna um código `409 Conflict` de resposta.
 
 ## <a name="examples"></a>Exemplos
 

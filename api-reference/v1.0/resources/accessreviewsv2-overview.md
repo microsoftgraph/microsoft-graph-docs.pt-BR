@@ -2,15 +2,15 @@
 title: Revisões de acesso ao Azure AD
 description: Use Azure AD revisões de acesso para configurar revisões de acesso única ou recorrentes para atestar os direitos de acesso do usuário para Azure AD recursos.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 6db9753dd66347720dc788a4d1059454daf92f5e
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 831f3b643832ca0986d945559f1ab0327bc0eccf
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442875"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697789"
 ---
 # <a name="azure-ad-access-reviews"></a>Revisões de acesso ao Azure AD
 
@@ -67,7 +67,7 @@ A tabela a seguir lista os métodos que você pode usar para interagir com recur
 
 As seguintes [Azure AD funções são](/azure/active-directory/roles/permissions-reference) necessárias para que um usuário chamador gerencie as revisões de acesso.
 
-| Operation | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
+| Operação | Permissões de aplicativos | Função de diretório necessária do usuário chamador |
 |:------------------|:------------|:--------------------------------------------|
 | Leitura | AccessReview.Read.All ou AccessReview.ReadWrite.All | Administrador Global, Leitor Global, Administrador de Segurança, Leitor de Segurança ou Administrador de Usuário |
 | Criar, atualizar ou excluir | AccessReview.ReadWrite.All | Administrador Global ou Administrador de Usuários |

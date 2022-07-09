@@ -1,23 +1,23 @@
 ---
 title: 'accessReviewInstanceDecisionItem: recordAllDecisions'
-description: Grave as decisões de um objeto accessReviewInstanceDecisionItem.
+description: Registre as decisões para um objeto accessReviewInstanceDecisionItem.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b3d8eb173a219f0d11b49d304040fc6436d97f89
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: 75ed5e51631e36179b2c266ecd11ce934c3c9a1f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225130"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697124"
 ---
 # <a name="accessreviewinstancedecisionitem-recordalldecisions"></a>accessReviewInstanceDecisionItem: recordAllDecisions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Como revisor de uma revisão de acesso, grave uma decisão para [um accessReviewInstanceDecisionItem](../resources/accessReviewInstanceDecisionItem.md) atribuído a você e que corresponde às IDs principais ou de recurso especificadas. Se nenhuma IDs for especificada, as decisões serão aplicadas a cada **accessReviewInstanceDecisionItem** para o qual você é o revisor.
+Como revisor de uma revisão de acesso, registre uma decisão para [um accessReviewInstanceDecisionItem](../resources/accessReviewInstanceDecisionItem.md) atribuído a você e que corresponda às IDs de entidade de segurança ou recurso especificadas. Se nenhuma ID for especificada, as decisões serão aplicadas a todos **os accessReviewInstanceDecisionItem** para os quais você é o revisor.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Aplicativo                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,10 +51,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|decision|Cadeia de caracteres| A decisão de fornecer. Os valores possíveis são `Approve` `Deny` , , `DontKnow` . |
-|justification|Cadeia de Caracteres|Justificativa para fornecer a decisão.|
-|principalId|Cadeia de Caracteres|Se fornecido, todos os itens de decisão correspondentes ao principalId terão essa decisão registrada.|
-|resourceId|Cadeia de caracteres|Se fornecido, todos os itens de decisão correspondentes ao resourceId terão essa decisão registrada.|
+|Decisão|Cadeia de caracteres| A decisão de fornecer. Os valores possíveis são `Approve`, `Deny`. `DontKnow` |
+|Justificação|Cadeia de Caracteres|Justificativa para fornecer a decisão.|
+|principalId|Cadeia de Caracteres|Se fornecido, todos os itens de decisão correspondentes à principalId terão essa decisão registrada.|
+|resourceId|Cadeia de caracteres|Se fornecido, todos os itens de decisão correspondentes à resourceId terão essa decisão registrada.|
 
 
 

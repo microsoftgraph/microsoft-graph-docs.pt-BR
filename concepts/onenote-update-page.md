@@ -1,15 +1,15 @@
 ---
-title: Atualizar o conteúdo da página do OneNote usando a API do OneNote
+title: Atualizar o conteúdo da página do OneNote
 description: Atualize o conteúdo de uma página do OneNote enviando uma solicitação PATCH para o ponto de extremidade de conteúdo da página. Em seguida, envie um objeto de alteração JSON no corpo da mensagem.
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: e11cec09e5b54f6beef43f223264d004f341b11a
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 4ce761de7f1c27ea80db2bd480abf53852368b56
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442812"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698062"
 ---
 # <a name="update-onenote-page-content"></a>Atualizar o conteúdo da página do OneNote
 

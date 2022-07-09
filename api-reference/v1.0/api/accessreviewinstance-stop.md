@@ -1,23 +1,23 @@
 ---
-title: 'accessReviewInstance: stop'
+title: 'accessReviewInstance: parar'
 description: Pare um accessReviewInstance ativo no momento.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0ed798801ecd352bdb86aa50a8552ffc83d20191
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 88074f7fb9a5a31fdba1664d049c12a245c3afeb
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979833"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697999"
 ---
-# <a name="accessreviewinstance-stop"></a>accessReviewInstance: stop
+# <a name="accessreviewinstance-stop"></a>accessReviewInstance: parar
 Namespace: microsoft.graph
 
-Pare um [accessReviewInstance](../resources/accessreviewinstance.md)ativo no momento. Depois que a instância de revisão de acesso é interrompida, o status da instância é marcado como , os revisadores não podem mais dar entrada e as decisões de revisão de acesso `Completed` são aplicadas.
+Pare um [accessReviewInstance ativo no momento](../resources/accessreviewinstance.md). Depois que a instância de revisão de acesso é interrompida, o status `Completed`da instância é marcado como , os revisores não podem mais fornecer entrada e as decisões de revisão de acesso são aplicadas.
 
-Parar uma instância não interromperá instâncias futuras. Para impedir que uma revisão de acesso recorrente seja iniciar instâncias futuras, [atualize](accessreviewscheduledefinition-update.md) a definição de agendamento para alterar sua data de término agendada.
+Parar uma instância não interromperá instâncias futuras. Para impedir que uma revisão de acesso recorrente comece instâncias futuras, [atualize](accessreviewscheduledefinition-update.md) a definição de agendamento para alterar sua data de término agendada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-stop-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-stop-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

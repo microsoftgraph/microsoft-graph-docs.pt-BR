@@ -1,24 +1,24 @@
 ---
-title: Instâncias de lista (de accessReviewHistoryDefinition)
+title: Listar instâncias (de um accessReviewHistoryDefinition)
 description: Recupere as instâncias de uma definição de histórico de revisão de acesso.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 58a8c61984a08e19c94fce45cd977d4b1c74268b
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 2ec36524a40ad7ccac813daf2cef26df2b9bf6ce
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63332837"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697579"
 ---
-# <a name="list-instances-of-an-accessreviewhistorydefinition"></a>Instâncias de lista (de accessReviewHistoryDefinition)
+# <a name="list-instances-of-an-accessreviewhistorydefinition"></a>Listar instâncias (de um accessReviewHistoryDefinition)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as [instâncias de](../resources/accessreviewhistoryinstance.md) uma [definição de histórico de revisão de acesso](../resources/accessreviewhistorydefinition.md) criada nos últimos 30 dias.
+Recupere as [instâncias de](../resources/accessreviewhistoryinstance.md) uma [definição de histórico de revisão de](../resources/accessreviewhistorydefinition.md) acesso criada nos últimos 30 dias.
 
 ## <a name="permissions"></a>Permissões
 
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.ReadWrite.All|
 
-Se o usuário in-loco não for um administrador global ou um leitor global, apenas as definições criadas pelo usuário in-loco serão retornadas.
+Se o usuário conectado não for um administrador global ou um leitor global, somente as definições que o usuário conectado criou serão retornadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

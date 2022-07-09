@@ -1,22 +1,22 @@
 ---
 title: 'accessReviewHistoryInstance: generateDownloadUri'
-description: Gere um URI que pode ser usado para recuperar dados de histórico de revisão.
-author: isabelleatmsft
+description: Gere um URI que pode ser usado para recuperar dados do histórico de revisão.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 74dfa264ac8bf003cedba0c92da2a5306799c152
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 05634d27f98361fcf04d7ccd128a616c56f1fd6f
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63337557"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698181"
 ---
 # <a name="accessreviewhistoryinstance-generatedownloaduri"></a>accessReviewHistoryInstance: generateDownloadUri
 
 Namespace: microsoft.graph
 
-Gera um URI para um [objeto accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) para o **qual o status** é `done`. Cada URI pode ser usado para recuperar os dados de histórico de revisão da instância. Cada URI é válido por 24 horas e pode ser recuperado buscando a propriedade **downloadUri** do [objeto accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) .
+Gera um URI para um [objeto accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) para o **qual o status** é `done`. Cada URI pode ser usado para recuperar os dados do histórico de revisão da instância. Cada URI é válido por 24 horas e pode ser recuperado buscando a propriedade **downloadUri** do [objeto accessReviewHistoryInstance](../resources/accessReviewHistoryInstance.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.ReadWrite.All|
 
-Para gerar o link, o usuário inscreveu deve ser o criador da definição de histórico de revisão associada ou as funções de diretório Administrador *Global* ou *Leitor Global*[.](/azure/active-directory/roles/permissions-reference)
+Para gerar o link, o usuário conectado deve ser o criador da definição de histórico de revisão associada ou as funções de diretório Administrador *Global* ou *Leitor Global*[.](/azure/active-directory/roles/permissions-reference)
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa ação retornará um `200 OK` código de resposta e um [accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará um `200 OK` código de resposta e [um accessReviewHistoryInstances](../resources/accessReviewHistoryInstance.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

@@ -1,25 +1,25 @@
 ---
 title: 'accessReviewInstanceDecisionItem: filterByCurrentUser'
-description: Recupere todos os itens de decisão em uma instância de uma revisão de acesso ou em um estágio de uma instância de uma revisão de acesso em vários estágios, para a qual o usuário de chamada é o revistor.
-author: isabelleatmsft
+description: Recupere todos os itens de decisão em uma instância de uma revisão de acesso ou em um estágio de uma instância de uma revisão de acesso de vários estágios, para o qual o usuário chamador é o revistor.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d75c344b21d04fb9d6af130e0387f374861a611d
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: eba729675c7b4983e1deb5cdd03a49d574c8df53
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722080"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696592"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere todos os itens de decisão em uma instância de uma revisão de acesso ou em um estágio de uma instância de uma revisão de acesso em vários estágios, para a qual o usuário de chamada é o revistor. Os itens de decisão são apresentados por um [objeto accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em um [determinado accessReviewInstance](../resources/accessreviewinstance.md) ou [accessReviewStage](../resources/accessReviewStage.md) para o qual o usuário de chamada é o revisor.
+Recupere todos os itens de decisão em uma instância de uma revisão de acesso ou em um estágio de uma instância de uma revisão de acesso de vários estágios, para o qual o usuário chamador é o revistor. Os itens de decisão são apresentados por objetos [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em um [determinado accessReviewInstance](../resources/accessreviewinstance.md) ou [accessReviewStage](../resources/accessReviewStage.md) para o qual o usuário chamador é o revisor.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para recuperar decisões de uma instância de uma revisão de acesso para a qual o usuário de chamada é o revistor:
+Para recuperar decisões para uma instância de uma revisão de acesso para a qual o usuário chamador é o revistor:
 <!-- {
   "blockType": "ignored"
 }
@@ -39,7 +39,7 @@ Para recuperar decisões de uma instância de uma revisão de acesso para a qual
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
-Para recuperar decisões de um estágio em uma instância de uma revisão de acesso para a qual o usuário de chamada é o revistor:
+Para recuperar decisões de um estágio em uma instância de uma revisão de acesso para a qual o usuário chamador é o revistor:
 <!-- {
   "blockType": "ignored"
 }
@@ -49,20 +49,20 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 >[!NOTE]
->Os [revisores](../resources/accessreviewschedulesettings.md) de análises em vários estágios podem recuperar as decisões de estágios anteriores se a propriedade **decisionHistoriesForReviewersEnabled** estiver habilitada nas configurações do [objeto accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
+>Os [revisores](../resources/accessreviewschedulesettings.md) de revisões de vários estágios poderão recuperar as decisões de estágios anteriores se a propriedade **decisionHistoriesForReviewersEnabled** estiver habilitada nas configurações do objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md).
 
 ## <a name="function-parameters"></a>Parâmetros de função
 A tabela a seguir mostra os parâmetros de consulta que podem ser usados com esse método.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Filtre os objetos de decisão de consulta para o usuário atual. Os valores possíveis são `reviewer`, `unknownFutureValue`. Use `reviewer`. Obrigatório.|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Filtrar para consultar objetos de decisão para o usuário atual. Os valores possíveis são `reviewer`, `unknownFutureValue`. Use `reviewer`. Obrigatório.|
 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos `$select`parâmetros de consulta , `$filter``$orderBy`, , `$skip`e `$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte aos `$select`parâmetros `$orderBy`de consulta , `$filter`, e `$skip``$top` OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewInstanceDecisionItem** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewInstanceDecisionItem** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -74,11 +74,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa função retornará um `200 OK` código de resposta e uma [coleção accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) no corpo da resposta.
+Se tiver êxito, essa função retornará `200 OK` um código de resposta e uma [coleção accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-retrieve-all-decisions-on-an-accessreviewinstance-for-which-the-calling-user-is-the-reviewer"></a>Exemplo 1: Recuperar todas as decisões em um accessReviewInstance para o qual o usuário de chamada é o revisor
+### <a name="example-1-retrieve-all-decisions-on-an-accessreviewinstance-for-which-the-calling-user-is-the-reviewer"></a>Exemplo 1: recuperar todas as decisões sobre um accessReviewInstance para o qual o usuário chamador é o revisor
 
 #### <a name="request"></a>Solicitação
 
@@ -169,7 +169,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-all-decisions-on-an-accessreviewstage-of-a-multi-stage-access-review-for-which-the-calling-user-is-the-reviewer"></a>Exemplo 2: Recuperar todas as decisões em um accessReviewStage de uma revisão de acesso em vários estágios para a qual o usuário de chamada é o revisor
+### <a name="example-2-retrieve-all-decisions-on-an-accessreviewstage-of-a-multi-stage-access-review-for-which-the-calling-user-is-the-reviewer"></a>Exemplo 2: recuperar todas as decisões em um accessReviewStage de uma revisão de acesso de vários estágios para a qual o usuário chamador é o revisor
 
 #### <a name="request"></a>Solicitação
 

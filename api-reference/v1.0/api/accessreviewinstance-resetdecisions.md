@@ -1,21 +1,21 @@
 ---
 title: 'accessReviewInstance: resetDecisions'
-description: Redefine todos os objetos accessReviewInstanceDecisionItem em um accessReviewInstance como `notReviewed` .
-author: isabelleatmsft
+description: Redefine todos os objetos accessReviewInstanceDecisionItem em um accessReviewInstance para `notReviewed`.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e79cf8514f83d0e87d5995cf78003cc10cd23e78
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ce0aef834c26b1b7194b81c5fd04f64beb48687
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001507"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698510"
 ---
 # <a name="accessreviewinstance-resetdecisions"></a>accessReviewInstance: resetDecisions
 Namespace: microsoft.graph
 
-Redefine todos os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em [um accessReviewInstance](../resources/accessreviewinstance.md) como `notReviewed` .
+Redefine todos [os objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em [um accessReviewInstance](../resources/accessreviewinstance.md) para `notReviewed`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-resetdecisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-resetdecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

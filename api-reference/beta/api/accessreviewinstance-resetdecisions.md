@@ -1,23 +1,23 @@
 ---
 title: 'accessReviewInstance: resetDecisions'
-description: Redefine todos os objetos accessReviewInstanceDecisionItem em um accessReviewInstance como `notReviewed` .
-author: isabelleatmsft
+description: Redefine todos os objetos accessReviewInstanceDecisionItem em um accessReviewInstance para `notReviewed`.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 216727643dcade655ba7f202deb5dcb84f7c4f16
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e9014458e78b7f1af0717ff84bc396901db01567
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987821"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697509"
 ---
 # <a name="accessreviewinstance-resetdecisions"></a>accessReviewInstance: resetDecisions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redefine as decisões de todos os [objetos accessReviewInstanceDecisionItem em](../resources/accessreviewinstancedecisionitem.md) [um accessReviewInstance](../resources/accessreviewinstance.md) como `notReviewed` .
+Redefine as decisões de [todos os objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em [um accessReviewInstance](../resources/accessreviewinstance.md) para `notReviewed`.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-resetdecisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-resetdecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,18 +4,18 @@ description: Use a ação getSchedule para obter as informações de disponibili
 author: tariq-sharif
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 263e3b5462b688f0dff98714bd646a247dde9765
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: ac44432fee2b324a399a0411e92041f0eeaab0e4
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439029"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697635"
 ---
 # <a name="get-freebusy-schedule-of-outlook-calendar-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos do calendário do Outlook
 
 Em uma configuração de escola ou trabalho, um cenário comum é ver quando um usuário está livre para um reunião, ou então pesquisar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
 
-A [ação getSchedule](/graph/api/calendar-getschedule) permite que você obtenha as informações de disponibilidade de uma ou mais entidades&mdash;usuários, listas de distribuição ou recursos&mdash;por um período específico.
+A ação [getSchedule](/graph/api/calendar-getschedule) permite que você obtenha as informações de disponibilidade de uma ou mais entidades (usuários, listas de distribuição ou recursos) para um período específico de tempo. 
 
 ## <a name="example"></a>Exemplo
 

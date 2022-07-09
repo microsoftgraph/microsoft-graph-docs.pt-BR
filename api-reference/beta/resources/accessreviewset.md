@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso accessReviewSet
-description: Contêiner para os recursos base que expõem a API e os recursos de críticas de acesso. Atualmente, expõe apenas o recurso accessReviewScheduleDefinition.
-author: isabelleatmsft
+description: Contêiner para os recursos base que expõem a API e os recursos de revisões de acesso. Atualmente, expõe apenas o recurso accessReviewScheduleDefinition.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bd7da749cdeb6e759dc464ddf51b67f60e790c4c
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: ca33119169ed61604b0c9deed18ecad33bd76069
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650920"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697838"
 ---
 # <a name="accessreviewset-resource-type"></a>Tipo de recurso accessReviewSet
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contêiner para os recursos base que expõem a API e os recursos de críticas de acesso. Atualmente, expõe apenas a relação [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
+Contêiner para os recursos base que expõem a API e os recursos de revisões de acesso. Atualmente, expõe apenas a [relação accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) .
 
-Herda da [entidade](entity.md).
+Herda de [entidade](entity.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -34,9 +34,9 @@ Nenhum.
 
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|decisions|[Coleção accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)| Representa uma decisão de revisão de acesso do Azure AD em uma instância de uma revisão.|
-|definições|[Coleção accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)| Representa o modelo e o agendamento para uma revisão de acesso. |
-|historyDefinitions|[Coleção accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)| Representa uma coleção de dados de histórico de revisão de acesso e os escopos usados para coletar esses dados.|
+|Decisões|[coleção accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)| Representa uma Azure AD de revisão de acesso em uma instância de uma revisão.|
+|Definições|[coleção accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md)| Representa o modelo e o agendamento para uma revisão de acesso. |
+|historyDefinitions|[coleção accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md)| Representa uma coleção de dados de histórico de revisão de acesso e os escopos usados para coletar esses dados.|
 |política|[accessReviewPolicy](../resources/accessreviewpolicy.md)| Recurso que permite que os administradores gerenciem políticas de revisão de acesso no nível do diretório em seu locatário.|
 
 ## <a name="json-representation"></a>Representação JSON

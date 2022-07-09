@@ -1,16 +1,16 @@
 ---
 title: Criar historyDefinitions
 description: Crie um novo objeto accessReviewHistoryDefinition.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d8a6b1d34b21e28ec5ec52bfc83afdc81261d68a
-ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
+ms.openlocfilehash: beff78c6d820d7d62956268d99c9b82ddab046a3
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62225284"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697292"
 ---
 # <a name="create-historydefinitions"></a>Criar historyDefinitions
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [objeto accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md)
+Crie um novo [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,9 +28,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)|AccessReview.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application|AccessReview.ReadWrite.All|
+|Aplicativo|AccessReview.ReadWrite.All|
 
-O usuário de entrada também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso para recuperar todos os dados.  Para obter mais detalhes, consulte os requisitos de função e permissão para [avaliações de acesso.](../resources/accessreviewsv2-overview.md)
+O usuário conectado também deve estar em uma função de diretório que permita que ele leia uma revisão de acesso para recuperar todos os dados.  Para obter mais detalhes, consulte os requisitos de função e permissão para [revisões de acesso](../resources/accessreviewsv2-overview.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -52,21 +52,21 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) .
 
 A tabela a seguir mostra as propriedades necessárias usadas para criar [um accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName | Cadeia de caracteres  | Nome da coleção de dados do histórico de revisão de acesso. Obrigatório. |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Um timestamp. As avaliações que começam em ou após essa data serão incluídas nos dados de histórico buscados. Somente será necessário se **scheduleSettings** não for definido.  |
-|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Um timestamp. As avaliações que começam em ou antes dessa data serão incluídas nos dados de histórico buscados. Somente será necessário se **scheduleSettings** não for definido.  |
-|escopos|[Coleção accessReviewQueryScope](../resources/accessreviewqueryscope.md)| Usado para filtrar quais avaliações estão incluídas nos dados de histórico buscados. Busca avaliações cujo escopo corresponde a esse escopo fornecido. Obrigatório. <br> Para obter mais, consulte Consultas de escopo com [suporte para accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
-| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| As configurações de uma série de definição de histórico de revisão de acesso recorrente. Somente será necessário se **reviewHistoryPeriodStartDateTime** ou **reviewHistoryPeriodEndDateTime** não estiver definido.|
+|displayName | Cadeia de caracteres  | Nome da coleta de dados do histórico de revisão de acesso. Obrigatório. |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Um carimbo de data/hora. As revisões que começam em ou após essa data serão incluídas nos dados de histórico buscados. Só será necessário se **scheduleSettings** não estiver definido.  |
+|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Um carimbo de data/hora. As revisões que começam em ou antes dessa data serão incluídas nos dados de histórico buscados. Só será necessário se **scheduleSettings** não estiver definido.  |
+|escopos|[coleção accessReviewQueryScope](../resources/accessreviewqueryscope.md)| Usado para filtrar quais revisões estão incluídas nos dados de histórico buscados. Busca revisões cujo escopo corresponde a esse escopo fornecido. Obrigatório. <br> Para obter mais informações, [consulte Consultas de escopo com suporte para accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
+| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| As configurações de uma série de definições de histórico de revisão de acesso recorrente. Obrigatório somente se **reviewHistoryPeriodStartDateTime** ou **reviewHistoryPeriodEndDateTime** não estiver definido. Ainda não há suporte.|
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>Consultas de escopo com suporte para accessReviewHistoryDefinition
 
-A **propriedade scopes** [de accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) baseia-se no **accessReviewQueryScope**, um recurso que permite configurar diferentes recursos em sua propriedade de **consulta.** Esses recursos representam o escopo da definição de histórico e ditam o tipo de dados de histórico de revisão incluídos no arquivo CSV baixável gerado quando [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) da definição de histórico são criados.
+A propriedade **scopes** de [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) baseia-se em **accessReviewQueryScope**, um recurso que permite configurar recursos diferentes na propriedade de consulta. Em seguida, esses recursos representam o escopo da definição de histórico e determinam o tipo de dados do histórico de revisão incluídos no arquivo CSV para download, que é gerado quando [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) da definição de histórico é criado.
 
 Use o seguinte formato para **a propriedade de** consulta:
 
@@ -74,21 +74,21 @@ Use o seguinte formato para **a propriedade de** consulta:
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
 ```
 
-O valor `{object}` de é um dos recursos que podem ser configurados em um **accessReviewScheduleDefinition**. Por exemplo, o seguinte inclui todos os resultados de revisão accessReviewScheduleDefinition em grupos individuais (e exclui definições com escopo para todos os grupos Microsoft 365 com usuários convidados).
+O valor de `{object}` é um dos recursos que podem ser configurados em **um accessReviewScheduleDefinition**. Por exemplo, o seguinte inclui todos os resultados de revisão accessReviewScheduleDefinition em grupos individuais (e exclui definições com escopo para todos os grupos do Microsoft 365 com usuários convidados).
 
 ```http
 /identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
 ```
 
-Para obter valores mais suportados, consulte Use o parâmetro $filter de consulta [no accessReviewScheduleDefinition](accessreviewset-list-definitions.md#use-the-filter-query-parameter).
+Para obter mais valores com suporte, consulte Usar o [parâmetro $filter consulta em accessReviewScheduleDefinition](accessreviewset-list-definitions.md#use-the-filter-query-parameter).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra como criar uma definição de histórico de revisão de acesso com escopo para acessar análises em pacotes e grupos de acesso, em execução entre a data de início de 01/01/2021 e a data de término de 05/04/2021.
+O exemplo a seguir mostra como criar uma definição de histórico de revisão de acesso com escopo para acessar revisões em pacotes e grupos de acesso, em execução entre a data de início de 01/01/2021 e a data de término de 05/04/2021.
 
 ### <a name="request"></a>Solicitação
 

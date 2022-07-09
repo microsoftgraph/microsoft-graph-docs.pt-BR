@@ -1,21 +1,21 @@
 ---
 title: Atualizar accessReviewInstanceDecisionItem
 description: Atualize as propriedades de um objeto accessReviewInstanceDecisionItem.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8db1d664d754eec0db5b02fa5b4315748568e6f7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6835f91e41032d06c3c96f79fae8be5432dd852d
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979847"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697985"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Atualizar accessReviewInstanceDecisionItem
 Namespace: microsoft.graph
 
-Atualize as propriedades de [um objeto accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)
+Atualize as propriedades de [um objeto accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 
 ## <a name="permissions"></a>Permissões
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|AccessReview.ReadWrite.All|
 
-Somente um usuário de chamada listado como revisor do [accessReviewInstance](../resources/accessreviewinstance.md) pai pode atualizar **o accessReviewInstanceDecisionItem**.
+Somente um usuário chamador listado como revisor para o [accessReviewInstance](../resources/accessreviewinstance.md) pai pode atualizar **accessReviewInstanceDecisionItem**.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,14 +46,14 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do [objeto accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 A tabela a seguir mostra as propriedades que são aceitas quando você atualiza [o accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|decision|Cadeia de caracteres|O voto do revistor sobre se a entidade deve ter acesso ao recurso em revisão. Valores possíveis: `Approve` `Deny` , ou `DontKnow` . Obrigatório.|
-|justification|String|O motivo da decisão do revistor. Obrigatório se a **justificationRequiredOnApproval** da propriedade settings do [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) for `true` .|
+|Decisão|Cadeia de caracteres|O voto do revisores sobre se a entidade de segurança deve ter acesso ao recurso em revisão. Valores possíveis: `Approve`, `Deny`ou `DontKnow`. Obrigatório.|
+|Justificação|Cadeia de Caracteres|O motivo da decisão do revisores. Obrigatório se a **justificationRequiredOnApproval** da propriedade settings do [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) for `true`.|
 
 ## <a name="response"></a>Resposta
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

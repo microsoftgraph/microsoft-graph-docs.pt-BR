@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: pendingAccessReviewInstances'
-description: Recupere os objetos accessReviewInstance aguardando aprovação chamando o usuário.
+description: Recupere objetos accessReviewInstance com aprovação pendente chamando o usuário.
 ms.localizationpriority: medium
-author: isabelleatmsft
+author: zhusijia26
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fdca1660b2b5e63f838fdc6cab5c0cdf038e22bd
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.openlocfilehash: d2304910f408f1587615a9c4b7eafbb951146c9c
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722097"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697516"
 ---
 # <a name="accessreviewinstance-pendingaccessreviewinstances-deprecated"></a>accessReviewInstance: pendingAccessReviewInstances (preterido)
 
@@ -21,16 +21,16 @@ Namespace: microsoft.graph
 >[!NOTE]
 >Esse método será preterido e interromperá o retorno de dados em 19 de maio de 2023. Ele foi substituído por [filterByCurrentUser](accessreviewinstance-filterbycurrentuser.md).
 
-Recupere os [objetos accessReviewInstance](../resources/accessreviewinstance.md) pendentes aprovação pelo usuário de chamada. Uma lista de zero ou mais objetos accessReviewInstance são retornados, dos quais o usuário de chamada é um revisor atribuído.
+Recupere os [objetos accessReviewInstance](../resources/accessreviewinstance.md) com aprovação pendente pelo usuário que está chamando. Uma lista de zero ou mais objetos accessReviewInstance é retornada, da qual o usuário chamador é um revisor atribuído.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 
- O usuário in-loco só vê instâncias das quais são atribuídas revisores no accessReviewScheduleDefinition da instância.
+ O usuário conectado só vê instâncias das quais são atribuídas revisores no accessReviewScheduleDefinition da instância.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,18 +39,18 @@ GET /me/pendingAccessReviewInstances
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte `$skip` e `$top` parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
+Esse método dá suporte `$skip` a parâmetros `$top` de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
-O tamanho padrão da página para essa API é de 100 **objetos accessReviewInstance** . Para melhorar a eficiência e evitar tempos-de-tempo devido a grandes conjuntos de resultados, aplique paginação usando os `$skip` parâmetros e `$top` de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+O tamanho de página padrão para essa API é de 100 **objetos accessReviewInstance** . Para melhorar a eficiência e evitar tempos limite devido a grandes conjuntos de resultados, aplique a paginação usando os `$skip` `$top` parâmetros e de consulta. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-Nenhuma.
+Nenhum.
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não fornecer um corpo de solicitação.
+Não forneça um corpo de solicitação.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma matriz de [objetos accessReviewInstance](../resources/accessreviewinstance.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma matriz de [objetos accessReviewInstance](../resources/accessreviewinstance.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 ### <a name="request"></a>Solicitação
@@ -174,7 +174,7 @@ Content-type: application/json
 ## <a name="see-also"></a>Confira também
 
 - [Obter accessReviewInstance](accessreviewinstance-get.md)
-- [Obter a aprovação pendente accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem-listpendingapproval.md)
+- [Obter aprovação pendente de accessReviewInstanceDecisionItems](accessreviewinstancedecisionitem-listpendingapproval.md)
 
 
 <!--

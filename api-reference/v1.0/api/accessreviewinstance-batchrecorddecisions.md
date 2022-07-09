@@ -1,21 +1,21 @@
 ---
 title: 'accessReviewInstance: batchRecordDecisions'
-description: Permite que os revisores revisem todos os accessReviewInstanceDecisionItems em lotes.
-author: isabelleatmsft
+description: Permite que os revisores examinem todos os accessReviewInstanceDecisionItems em lotes.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a01ca2f4525661113ed77f0d9eaf65c731f99b15
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: de064c9b46468ec230e4f7bb323c17fd907006a0
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974729"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698027"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Namespace: microsoft.graph
 
-Permite que os revisores revisem todos os [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em lotes usando **principalId,** **resourceId** ou nenhum deles.
+Permite que os revisores examinem [todos os objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em lotes usando **principalId**, **resourceId** ou nenhum deles.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,16 +43,16 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 |Content-Type|application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de [um accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md).
+No corpo da solicitação, forneça uma representação JSON de [um accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md).
 
-A tabela a seguir lista as propriedades que você pode usar para revisar [objetos accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)
+A tabela a seguir lista as propriedades que você pode usar para examinar [objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) .
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-|decision|Cadeia de caracteres|Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.|
-|justification|Cadeia de caracteres|Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** da propriedade settings do **accessReviewScheduleDefinition** for `true` .|
-|principalId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com valores **principalId** correspondentes serão revisados neste lote. Se não for fornecido, **todos os accessReviewInstanceDecisionItems** serão revisados.|
-|resourceId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **resourceId** correspondentes serão revisados neste lote. Se não for fornecido, **todos os accessReviewInstanceDecisionItems** serão revisados.|
+|Decisão|Cadeia de caracteres|Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.|
+|Justificação|Cadeia de caracteres|Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** da propriedade settings do **accessReviewScheduleDefinition** for `true` .|
+|principalId|Cadeia de Caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com valores **de principalId** correspondentes serão examinados neste lote. Se não for fornecido, todos **os accessReviewInstanceDecisionItems** serão examinados.|
+|resourceId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **resourceId** correspondentes serão examinados neste lote. Se não for fornecido, todos **os accessReviewInstanceDecisionItems** serão examinados.|
 
 ## <a name="response"></a>Resposta
 
@@ -94,7 +94,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-batchrecorddecisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-batchrecorddecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

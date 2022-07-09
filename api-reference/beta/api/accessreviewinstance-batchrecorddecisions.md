@@ -1,23 +1,23 @@
 ---
 title: 'accessReviewInstance: batchRecordDecisions'
-description: Permite que os revisores revisem todos os objetos accessReviewInstanceDecisionItem em lotes.
-author: isabelleatmsft
+description: Permite que os revisores examinem todos os objetos accessReviewInstanceDecisionItem em lotes.
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 61c4f19f4eda2ae5fc990a3791fa39dd627748b0
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5c1917eea94afafcdb26d306a0b6184d8758faf1
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62340486"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696583"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permite que os revisores revisem [todos os objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em lotes usando **principalId**, **resourceId** ou nenhum deles.
+Permite que os revisores examinem [todos os objetos accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) em lotes usando **principalId**, **resourceId** ou nenhum deles.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,10 +51,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Parâmetro|Tipo|Descrição|
 |:---|:---|:---|
-| decision  | String | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.  |
-|  justification | String | Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** estiver `True` no **accessReviewScheduleDefinition**.  |
-|principalId|String|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **principalId** correspondente serão revisados neste lote. Se não for fornecido, todos os **principaisIds** serão revisados.|
-|resourceId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **resourceId** correspondentes serão revisados neste lote. Se não for fornecido, todos **os resourceIds** serão revisados.|
+| Decisão  | Cadeia de caracteres | Decisão de acesso para a entidade que está sendo revisada. Os valores possíveis são: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Obrigatório.  |
+|  Justificação | Cadeia de caracteres | Contexto da revisão fornecida aos administradores. Obrigatório se **justificationRequiredOnApproval** estiver `True` no **accessReviewScheduleDefinition**.  |
+|principalId|Cadeia de Caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **principalId** correspondente serão examinados neste lote. Se não for fornecido, todas as **principalIds** serão revisadas.|
+|resourceId|Cadeia de caracteres|Se fornecido, todos os **accessReviewInstanceDecisionItems** com **resourceId** correspondentes serão examinados neste lote. Se não for fornecido, todas **as resourceIds** serão revisadas.|
 
 
 

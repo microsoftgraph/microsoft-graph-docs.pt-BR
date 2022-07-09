@@ -1,29 +1,29 @@
 ---
 title: Atualizar accessReviewStage
 description: Atualize as propriedades de um objeto accessReviewStage.
-author: isabelleatmsft
+author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3441d93ab31270915fb1139e30c65e67ab28a197
-ms.sourcegitcommit: 2dd01b49fbd8f330bead92f4708ed1966237c3f4
+ms.openlocfilehash: e1862cb9da2bc234c3037f11c2de68557f9462cc
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62816121"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697257"
 ---
 # <a name="update-accessreviewstage"></a>Atualizar accessReviewStage
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto accessReviewStage](../resources/accessreviewstage.md) . Somente os **revisores e** **as propriedades fallbackReviewers** podem ser atualizados. Você só pode adicionar revisores à **propriedade fallbackReviewers** , mas não pode remover **fallbackReviewers existentes**.
+Atualize as propriedades de [um objeto accessReviewStage](../resources/accessreviewstage.md) . Somente as **propriedades reviewers** e **fallbackReviewers** podem ser atualizadas. Você só pode adicionar revisores à propriedade **fallbackReviewers** , mas não pode remover **fallbackReviewers existentes**.
 
 Para atualizar um **accessReviewStage**, **seu status** deve ser `NotStarted`, `Initializing`ou `InProgress`.
 
 > [!NOTE]
 > 
-> A atualização de **um accessReviewStage** atualizará apenas esse estágio. O **accessReviewInstance pai** e quaisquer objetos **accessReviewStage** futuros não mudarão. Para fazer atualizações que se aplicam a todas as instâncias e estágios futuros, atualize o objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) pai.
+> Atualizar um **accessReviewStage** atualizará apenas esse estágio. O **accessReviewInstance pai** e quaisquer objetos **accessReviewStage** futuros não mudarão. Para fazer atualizações que se aplicam a todas as instâncias e estágios futuros, atualize o objeto [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) pai.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Application                            | AccessReview.ReadWrite.All |
+|Aplicativo                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,20 +56,22 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|revisadores|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Essa coleção de escopos de revisão de acesso é usada para definir quem são os revisadores. Para ver exemplos de opções para atribuir revisadores, consulte [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept). Opcional. Atualizável.|
-|fallbackReviewers|[Coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Essa coleção de escopos do revistor é usada para definir a lista de revisadores de fallback. Esses revisadores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisadores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como o revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Opcional. Atualizável.|
+|Revisores|[coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Essa coleção de escopos de revisão de acesso é usada para definir quem são os revisores. Para obter exemplos de opções para atribuir revisores, consulte Atribuir revisores à sua definição de revisão de acesso [usando o Microsoft API do Graph](/graph/accessreviews-scope-concept). Opcional. Atualizável.|
+|fallbackReviewers|[coleção accessReviewReviewerScope](../resources/accessreviewreviewerscope.md)|Essa coleção de escopos de revisores é usada para definir a lista de revisores de fallback. Esses revisores de fallback serão notificados para tomar medidas se nenhum usuário for encontrado na lista de revisores especificados. Isso pode ocorrer quando o proprietário do grupo é especificado como revistor, mas o proprietário do grupo não existe, ou o gerente é especificado como revistor, mas o gerente de um usuário não existe. Opcional. Atualizável.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um [objeto accessReviewStage](../resources/accessreviewstage.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [accessReviewStage](../resources/accessreviewstage.md) atualizado no corpo da resposta.
 
-Tentar remover **fallbackReviewers** existentes retorna um código `409 Conflict` de resposta.
+A tentativa de remover **fallbackReviewers existente** retorna um código `409 Conflict` de resposta.
 
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessreviewstage"
@@ -99,6 +101,28 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewstage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewstage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewstage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewstage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Ir](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewstage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Resposta

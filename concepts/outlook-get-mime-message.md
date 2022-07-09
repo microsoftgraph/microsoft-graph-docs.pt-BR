@@ -4,12 +4,12 @@ description: Multipurpose Internet Mail Extensions (MIME) é um padrão de email
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 0b60a44345b9a75a776492fb04706cb9f5d7ffb6
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: a0dd4e60902b82ed1d069421258d191e566e1991
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442791"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697642"
 ---
 # <a name="get-mime-content-of-a-message"></a>Obter conteúdo MIME de uma mensagem
 
@@ -156,8 +156,7 @@ YW5vdGhlciBtYWlsLg0K
 
 Você também pode obter a representação MIME de uma mensagem do Outlook, se a mensagem foi anexada a de um [evento](/graph/api/resources/event) do Outlook, [mensagem](/graph/api/resources/message), [tarefa](/graph/api/resources/outlooktask), ou postagem do grupo [ ](/graph/api/resources/post) que o seu aplicativo pode acessar.
 
-Para fazer isso, identifique o anexo e acrescente o `$value` segmento ao [receber esse anexo](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment
-). A seguir algumas maneiras comuns de acessar um anexo. Confira [Obter um anexo](/graph/api/attachment-get#http-request) para mais informações.
+Para fazer isso, identifique o anexo e acrescente o `$value` segmento ao [receber esse anexo](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment). A seguir algumas maneiras comuns de acessar um anexo. Confira [Obter um anexo](/graph/api/attachment-get#http-request) para mais informações.
 
 Se a mensagem estiver anexada a um evento do calendário padrão do usuário:
 <!-- { "blockType": "ignored" } -->
@@ -276,6 +275,8 @@ e.</p>
 
 ## <a name="next-steps"></a>Próximas etapas
 
+Saiba mais sobre:
+
 - [Obter o conteúdo MIME de um anexo do item](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment) para um evento, mensagem, tarefa do Outlook ou postagem do grupo
 - [Por que integrar com o email do Outlook](outlook-mail-concept-overview.md)
-- [Usar a API de email](/graph/api/resources/mail-api-overview) e seus [casos de uso](/graph/api/resources/mail-api-overview#common-use-cases) no Microsoft Graph versão 1.0.
+- [Como usar a API de email](/graph/api/resources/mail-api-overview) e seus [casos de uso](/graph/api/resources/mail-api-overview#common-use-cases) do Microsoft Graph versão 1.0.
