@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6fccabf60e9f625a638f61d0e52053aec31ce28d
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 35062c4530d58998f979527d66ed0a48ef50d090
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555911"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698237"
 ---
 # <a name="get-group"></a>Obter grupo 
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 
-Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`.
+Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. As propriedades **hasMembersWithLicenseErrors** e **isArchived** são uma exceção e não são devolvidas na `$select` consulta.
 
 > **Observação:** Essa solicitação pode ter atrasos de replicação para grupos que foram criados, atualizados ou excluídos recentemente.
 
@@ -53,7 +53,7 @@ Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de 
 | Tipo de extensão       | Comentários                                                                       |
 |----------------------|--------------------------------------------------------------------------------|
 | Extensões de esquema    | Retornado somente com `$select`.                                                  |
-| Extensões abertas      | Retornado por meio de [Obter extensão aberta](opentypeextension-get.md). |
+| Extensões abertas      | Retornado por meio da operação[Obter extensão aberta](opentypeextension-get.md). |
 | Extensões de diretório | Retornado por padrão.                                                           |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
