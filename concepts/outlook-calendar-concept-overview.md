@@ -5,12 +5,12 @@ author: angelgolfer-ms
 ms.localizationpriority: high
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c9a09d9e56b48c8b757bc501d5e2256045f5d536
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 5450459bedbbe5777c14c4871a9cb6e2815eb1df
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555622"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698363"
 ---
 # <a name="outlook-calendar-api-overview"></a>Visão geral da API do calendário do Outlook
 
@@ -88,9 +88,9 @@ Dependendo do cenário do aplicativo, você pode usar a API locais no contexto d
 
 ## <a name="take-advantage-of-social-intelligence-and-other-developer-conveniences-in-microsoft-graph"></a>Aproveite a inteligência social e outras conveniências de desenvolvedor no Microsoft Graph
 
-Use a [API de pessoas](people-example.md) no Microsoft Graph para conectar-se a [dados de pessoas](/graph/api/resources/person) que são baseados nos padrões de comunicação e colaboração de um usuário e nas relações comerciais. Você pode implementar controles, como um seletor de pessoas, e sugerir pessoas relevantes para o usuário ao organizar reuniões em nome do usuário.
+Use a [API de pessoas](people-example.md) no Microsoft Graph para se conectar a [dados de pessoas](/graph/api/resources/person) com base nos padrões de comunicação e colaboração de um usuário e nas relações comerciais. Você pode implementar controles, como um seletor de pessoas, e sugerir pessoas relevantes para o usuário ao organizar reuniões em nome do usuário.
 
-Economize custos indiretos ao armazenar e gerenciar dados de aplicativos em armazenamentos de dados externos. Com o Microsoft Graph, você pode armazenar dados de aplicativos personalizados como [extensões abertas](extensibility-overview.md#4-open-extensions) em instâncias de recursos individuais. Se você precisar que os dados sejam digitados ou gostaria de poder compartilhar o esquema digitado, poderá armazenar dados de aplicativos personalizados em [extensões de esquema](extensibility-overview.md#3-schema-extensions).
+Economize custos indiretos ao armazenar e gerenciar dados de aplicativos em armazenamentos de dados externos. Com o Microsoft Graph, você pode armazenar dados de aplicativos personalizados como [extensões abertas](extensibility-overview.md#open-extensions) em instâncias de recursos individuais. Se você precisar que os dados sejam digitados ou gostaria de poder compartilhar o esquema digitado, poderá armazenar dados de aplicativos personalizados em [extensões de esquema](extensibility-overview.md#schema-extensions).
 
 ## <a name="where-is-the-data"></a>Onde estão os dados?
 

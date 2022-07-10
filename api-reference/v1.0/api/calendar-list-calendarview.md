@@ -1,16 +1,16 @@
 ---
 title: Listar calendarView
-description: Obter as ocorrências, exceções e instâncias únicas de eventos em um modo de exibição de calendário definido por um intervalo de tempo, a partir do calendário padrão do usuário,
+description: Obtenha as ocorrências, exceções e instâncias únicas de eventos em uma exibição de calendário definida por um intervalo de tempo.
 ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ba9c2deaaf34e0ff343dc690ad6d06550fd3429a
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 6929040c368f312aecbfe85462871d208c95cadf
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477892"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66697817"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -86,7 +86,7 @@ Se o conjunto de resultados abranger várias páginas, o **calendarView** retorn
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -123,7 +123,8 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 ---
 
 ### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+Este é um exemplo de resposta. 
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
   "truncated": true,

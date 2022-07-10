@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: psaffaie
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2eaf6d2e7233a66f46244204b27220f556cdc807
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: abc0c66e1f888032370e27dfb6338ac903f48627
+ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556056"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66698223"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Liste todos os grupos disponíveis em uma organização, excluindo grupos dinâmicos de distribuição. Para recuperar grupos dinâmicos de distribuição, use o [Centro de administração do Exchange](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups).
 
-Esta operação retorna, por padrão, apenas um subconjunto das propriedades mais usadas de cada grupo. Essas propriedades _padrão_ estão listadas na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) para o grupo e especifique as propriedades em uma opção de consulta `$select` do OData. A propriedade **hasMembersWithLicenseErrors** é uma exceção e ela não é retornada na consulta `$select`.
+Esta operação retorna, por padrão, apenas um subconjunto das propriedades mais usadas de cada grupo. Essas propriedades _padrão_ estão listadas na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, execute uma [operação GET](group-get.md) para o grupo e especifique as propriedades em uma opção de consulta `$select` do OData. As propriedades **hasMembersWithLicenseErrors** e **isArchived** são uma exceção e não são retornadas na consulta `$select`.
 
 ## <a name="permissions"></a>Permissões
 
