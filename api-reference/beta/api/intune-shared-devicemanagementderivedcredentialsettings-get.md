@@ -1,16 +1,16 @@
 ---
 title: Obter deviceManagementDerivedCredentialSettings
 description: Ler propriedades e relações do objeto deviceManagementDerivedCredentialSettings.
-author: dougeby
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd5d655c056c6afe88e296bf3acac44728a0a63a
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 49beb670516dee8d99a45be98b1edcfbc7ad7278
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441849"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667772"
 ---
 # <a name="get-devicemanagementderivedcredentialsettings"></a>Obter deviceManagementDerivedCredentialSettings
 
@@ -27,10 +27,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)||
+|Delegado (conta corporativa ou de estudante)||
 |&nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |&nbsp;&nbsp; **Política de Acesso a Recursos** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo||
 |&nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |&nbsp;&nbsp; **Política de Acesso a Recursos** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
@@ -85,7 +85,7 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
-
+```
 
 
 

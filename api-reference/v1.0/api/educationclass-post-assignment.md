@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 16fda08d45fd9405a85a35c1eeba6b47da836c67
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e0b0855ec3a2d38cd217d8d282f0e186be77f499
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62130475"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667177"
 ---
 # <a name="create-educationassignment"></a>Criar educationAssignment
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Crie uma nova atribuição. 
 
-Somente professores em uma classe podem criar uma atribuição. As atribuições começam no estado Rascunho, o que significa que os alunos não verão a atribuição até a publicação.
+Somente professores em uma classe podem criar uma tarefa. As tarefas começam no estado Rascunho, o que significa que os alunos não verão a tarefa até a publicação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -41,10 +41,10 @@ POST /education/classes/{class-id}/assignments
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto educationAssignment.](../resources/educationassignment.md)
+No corpo da solicitação, forneça uma representação JSON de um [objeto educationAssignment](../resources/educationassignment.md) .
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um objeto [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -67,11 +67,11 @@ Content-type: application/json
         "content": "Read chapter 4"
     },
     "grading": {
-        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentGradeType",
         "maxPoints": 50
     },
     "assignTo": {
-        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+        "@odata.type": "#microsoft.graph.educationAssignmentGradeType"
     },
     "status": "draft",
     "allowStudentsToAddResourcesToSubmission": true
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ---
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto educationAssignment.](../resources/educationassignment.md)
+No corpo da solicitação, forneça uma representação JSON de um [objeto educationAssignment](../resources/educationassignment.md) .
 
 ### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 

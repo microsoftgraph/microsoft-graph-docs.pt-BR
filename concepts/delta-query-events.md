@@ -1,15 +1,15 @@
 ---
 title: Obter as alterações incrementais para os eventos em um modo de exibição de calendário
 description: Acompanhe as alterações de eventos no modo de exibição de calendário usando solicitações GET com a função delta. O exemplo mostra como sincronizar o calendário padrão de um usuário em um intervalo de tempo definido.
-author: FaithOmbongi
+author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9616e0c9f3d041495a68929045f68a87fbe7a24d
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 9bc69ddd9a1f49475275ac029090c9625ad97da4
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555685"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66667541"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obter as alterações incrementais para os eventos em um modo de exibição de calendário
 
