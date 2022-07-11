@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 87288533896622d6e9765f9572540fb8632725d5
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: e80fd010730607be4a6e36b39fa3cdc78cdf536e
+ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296518"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66670664"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Trabalhando com grupos no Microsoft Graph
 
@@ -32,7 +32,7 @@ O Azure Active Directory (Microsoft Azure AD) suporta os seguintes tipos de grup
 - Grupos de distribuição
 
 > [!NOTE]
-> A Microsoft também oferece suporte a [grupos dinâmicos de distribuição](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) que não podem ser gerenciados ou recuperados por meio do Microsoft Graph.
+> A Microsoft também suporta [grupos dinâmicos de distribuição](/exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019&preserve-view=true) que não podem ser gerenciados ou recuperados através do Microsoft Graph.
 
 Somente grupos de segurança e do Microsoft 365 podem ser gerenciados por meio da API de grupos do Microsoft Graph. Grupos de distribuição e habilitados para email são somente leitura por meio do Microsoft Graph.
 
