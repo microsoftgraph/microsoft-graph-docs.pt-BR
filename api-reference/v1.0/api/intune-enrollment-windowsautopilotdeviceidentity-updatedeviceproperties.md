@@ -1,16 +1,16 @@
 ---
 title: Ação updateDeviceProperties
-description: Atualiza as propriedades em dispositivos do Autopilot.
+description: Atualizações em dispositivos autopilot.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f18dd149c85b2e736e5c6f872cf881cc928cb2de
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f6eab72264845fadff254030d8cca1867e3813f0
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454851"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734883"
 ---
 # <a name="updatedeviceproperties-action"></a>Ação updateDeviceProperties
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualiza as propriedades em dispositivos do Autopilot.
+Atualizações em dispositivos autopilot.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,10 +51,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
+|userPrincipalName|String|Ainda não documentado|
 |addressableUserName|String|Ainda não documentado|
 |groupTag|String|Ainda não documentado|
-|displayName|Cadeia de caracteres|Ainda não documentado|
+|displayName|String|Ainda não documentado|
 
 
 
@@ -84,6 +84,8 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

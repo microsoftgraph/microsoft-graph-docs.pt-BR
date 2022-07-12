@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 624c6ef45126479594f612ced4f31fef30068265
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d53db41304fdf0cdcd46e08a894d9e9c04576e6a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448973"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736017"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>Tipo de recurso windowsInformationProtectionProxiedDomainCollection
 
@@ -23,7 +23,7 @@ Coleção de domínios como proxy da Proteção de Informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|displayName|String|Nome de exibição|
 |proxiedDomains|Coleção [proxiedDomain](../resources/intune-mam-proxieddomain.md)|Coleção de domínios com proxy|
 
 ## <a name="relationships"></a>Relações
@@ -49,6 +49,8 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
 
 
 

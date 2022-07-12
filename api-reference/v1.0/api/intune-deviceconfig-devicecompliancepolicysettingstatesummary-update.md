@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18ab7ebb4886f9e1510f37ff7ed6209b762281b5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ac1dfa58c183129bcc1446a10a21e71d8b968926
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448468"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736584"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>Atualizar deviceCompliancePolicySettingStateSummary
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Plataforma de configuração. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Configurando a plataforma. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -114,6 +114,8 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

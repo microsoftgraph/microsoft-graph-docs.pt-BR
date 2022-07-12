@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso resourceOperation
-description: Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que dá suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
+description: Descreve o recurso resourceOperation (entidade) do Microsoft API do Graph (REST), que dá suporte Intune fluxos de trabalho relacionados ao RBAC (controle de acesso baseado em função).
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80a57a4fccb367813b95c31aa47c2038e5281964
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f86951e5011fa44c9d5188bb492584f2974658c1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446713"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734645"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST), que dá suporte a fluxos de trabalho do Intune relacionados ao controle de acesso baseado em função (RBAC).
+Descreve o recurso resourceOperation (entidade) do Microsoft API do Graph (REST), que dá suporte Intune fluxos de trabalho relacionados ao RBAC (controle de acesso baseado em função).
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -32,10 +32,10 @@ Descreve o recurso resourceOperation (entidade) da API do Microsoft Graph (REST)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
+|id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -57,6 +57,8 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String"
 }
 ```
+
+
 
 
 

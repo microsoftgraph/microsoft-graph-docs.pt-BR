@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9642057579771b2ad2c141def27231ff01f1421b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3eba54de0ba49c49999ecec058c66e8eecc71838
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452892"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736178"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>Tipo de recurso deviceConfigurationDeviceOverview
 
@@ -29,7 +29,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |pendingCount|Int32|Número de dispositivos pendentes|
 |notApplicableCount|Int32|Número de dispositivos não aplicáveis|
 |successCount|Int32|Número de dispositivos com êxito|
@@ -62,6 +62,8 @@ Veja a seguir uma representação JSON do recurso.
   "configurationVersion": 1024
 }
 ```
+
+
 
 
 

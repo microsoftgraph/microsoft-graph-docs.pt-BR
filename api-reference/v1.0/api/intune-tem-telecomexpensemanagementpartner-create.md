@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b954becfd43e7dd3fa6d363d158139de47ea8dfb
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d47c081bc0bec181443a4ba235db26684c116d94
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60443120"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734799"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Criar telecomExpenseManagementPartner
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar telecomExpenseMa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O identificador exclusivo do parceiro TEM.|
-|displayName|Cadeia de caracteres|Nome de exibição do parceiro TEM.|
+|displayName|String|Nome de exibição do parceiro TEM.|
 |url|Cadeia de caracteres|URL do painel de controle administrativo do parceiro TEM, em que um administrador pode configurar o serviço TEM.|
 |appAuthorized|Booliano|Se aplicativo AAD do parceiro foi autorizado a acessar o Intune.|
 |enabled|Booliano|Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.|
@@ -99,6 +99,8 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 33b2eb4d6533c83bf1021108c60647fecd0d6813
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ca3f312a05e471a2e0ebc33b0c66353543eb7e6c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445976"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733896"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -38,7 +38,7 @@ Contém propriedades de um único arquivo de instalação associado uma versão 
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
 |id|String|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|name|Cadeia de caracteres|O nome do arquivo.|
+|nome|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
@@ -71,6 +71,8 @@ Veja a seguir uma representação JSON do recurso.
   "uploadState": "String"
 }
 ```
+
+
 
 
 

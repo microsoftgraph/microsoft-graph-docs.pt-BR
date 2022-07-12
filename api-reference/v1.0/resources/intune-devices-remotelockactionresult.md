@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf8f38ea13f2fa3e758e44211fa05b3634696bf2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dbef9992a4e4eb3c3547ff331b225d269b06ec9a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453629"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734694"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Tipo de recurso remoteLockActionResult
 
@@ -27,7 +27,7 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|Cadeia de caracteres|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora em que o estado da ação foi atualizado pela última vez, herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |unlockPin|Cadeia de caracteres|PIN para desbloquear o cliente|
@@ -52,6 +52,8 @@ Veja a seguir uma representação JSON do recurso.
   "unlockPin": "String"
 }
 ```
+
+
 
 
 

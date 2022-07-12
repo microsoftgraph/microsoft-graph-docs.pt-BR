@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 369bbd5a2f94df2e9a67e9c11d96820cc87e78e4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5f04912e9afa39eeeb7305153225c00ce6757643
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451987"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736458"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicyDeviceStateSummary
 
@@ -31,7 +31,7 @@ Ainda não documentado
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Quantidade de dispositivos que estão no período de cortesia|
 |configManagerCount|Int32|Quantidade de dispositivos que estão em conformidade gerenciada pelo System Center Configuration Manager|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -66,6 +66,8 @@ Veja a seguir uma representação JSON do recurso.
   "conflictDeviceCount": 1024
 }
 ```
+
+
 
 
 

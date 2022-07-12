@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36f8e731fcabd12320c114133b6ad32e8aa0c787
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f909eabe7c8bc21615b6ed1d92aece640f1153ba
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455201"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734939"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionResourceCollection
 
@@ -23,7 +23,7 @@ Coleção de recursos da Proteção de Informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|displayName|String|Nome de exibição|
 |recursos|String collection|Coleção de recursos|
 
 ## <a name="relationships"></a>Relações
@@ -45,6 +45,8 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
 
 
 

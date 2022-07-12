@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3eb4df3c1a24325574720964fa52c0ae9f316bd1
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7f01a1f037d2c5daea62a281e03ab70a1a302dd7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446684"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734582"
 ---
 # <a name="update-iosvppebook"></a>Atualizar iosVppEBook
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosVppE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|description|Cadeia de caracteres|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|id|String|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|String|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|description|String|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|Cadeia de caracteres|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
@@ -145,6 +145,8 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
+
 
 
 

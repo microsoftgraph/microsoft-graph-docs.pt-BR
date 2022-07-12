@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2023f97c74a4767a9001db3d0e04d7a573ca1c0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 949cc36a280dcba42d8ba7955b5f59ecf9f2153a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446516"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734022"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades necessárias ao criar [managedDeviceOve
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do resumo|
+|id|String|O identificador exclusivo do resumo|
 |enrolledDeviceCount|Int32|Contagem total de dispositivos registrados. Não inclui dispositivos PC gerenciados pelo Intune PC Agent|
 |mdmEnrolledCount|Int32|O número de dispositivos registrados no MDM|
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
@@ -129,6 +129,8 @@ Content-Length: 734
   }
 }
 ```
+
+
 
 
 

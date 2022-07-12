@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7dd71ccd724cf8e7430ade2809edfe1c361a61a9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 18033407bfc87c789dd7088433e5f083f9a80955
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449839"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734470"
 ---
 # <a name="update-settingstatedevicesummary"></a>Atualizar settingStateDeviceSummary
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [setting
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |settingName|Cadeia de caracteres|Nome da configuração|
 |instancePath|Cadeia de caracteres|Nome de InstancePath para a configuração|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos para a configuração|
@@ -112,6 +112,8 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4baea4cad223b27f506fcf6e16b3a2cffaa31b8a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 292b2ce0e64060de33118bf7eb3b3de9675a1ba7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450176"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736388"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -30,7 +30,7 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -53,6 +53,8 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

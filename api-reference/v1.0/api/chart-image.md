@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0cfe9f8b9bcb13174076444e63e04dc4dfb5fccb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1da24fc3c51ded5d4c970bdf528607760ed9ec6c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056764"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736353"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |height|Int32|A altura desejada da imagem resultante. Opcional.|
 |width|Int32|A largura desejada da imagem resultante. Opcional.|
-|fittingMode|string|O método usado para dimensionar o gráfico para as dimensões especificadas (se a altura e a largura estão definidas)."  Os valores possíveis são: `Fit`, `FitAndCenter`, `Fill`.|
+|fittingMode|string|O método usado para dimensionar o gráfico para as dimensões especificadas (se a altura e a largura forem definidas)."  Os valores possíveis são: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Resposta
 
@@ -85,11 +85,11 @@ Você pode exibir a cadeia de caracteres de Base 64 dentro de uma marca de image
 
 Para o comportamento padrão, use `Image(width=0,height=0,fittingMode='fit')`. Veja um exemplo de uma imagem de gráfico retornada com os parâmetros padrão.
 
-![A imagem de gráfico do Excel com altura e largura padrão.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+![Captura de tela mostrando um gráfico de pizza exibido usando as configurações padrão e o modo de ajuste definido para caber.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
 
 Se você quiser personalizar a exibição da imagem, especifique uma altura, largura e um modo de ajuste. Esta é a aparência da imagem de gráfico quando você a recupera com esses parâmetros: `Image(width=500,height=500,fittingMode='Fill')`.
 
-![A imagem de gráfico do Excel com altura e largura padrão.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
+![Captura de tela mostrando um gráfico de pizza exibido usando largura e altura definidas como 500 e modo de ajuste definido para preenchimento.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

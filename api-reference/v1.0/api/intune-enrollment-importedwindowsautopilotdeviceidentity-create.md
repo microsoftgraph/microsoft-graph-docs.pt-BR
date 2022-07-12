@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: addcede1e7fe5c5cb433414f88da14144cbada25
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a12d2b9e9f0020c7283046f6de853e789dad4b76
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456598"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736493"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Criar importedWindowsAutopilotDeviceIdentity
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,13 +52,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
-|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo Windows piloto automático.|
+|groupTag|String|Marca de grupo do dispositivo windows autopilot.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importId|String|A ID de Importação do dispositivo Windows piloto automático.|
+|importId|String|A ID de Importação do dispositivo Windows Autopilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
-|assignedUserPrincipalName|Cadeia de caracteres|UPN do usuário que o dispositivo será atribuído|
+|assignedUserPrincipalName|String|UPN do usuário que o dispositivo será atribuído|
 
 
 
@@ -117,6 +117,8 @@ Content-Length: 680
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
+
+
 
 
 

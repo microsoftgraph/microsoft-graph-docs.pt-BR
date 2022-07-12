@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a22b4716465e9ba0fd422a170c4d0e9e26bbec98
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3110c8c9e11bbf8c773bc9f642a7d6825976a67c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453818"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735282"
 ---
 # <a name="create-mobileappcontent"></a>Criar mobileAppContent
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A versão do conteúdo do aplicativo.|
+|id|String|A versão do conteúdo do aplicativo.|
 
 
 
@@ -86,6 +86,8 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
+
+
 
 
 

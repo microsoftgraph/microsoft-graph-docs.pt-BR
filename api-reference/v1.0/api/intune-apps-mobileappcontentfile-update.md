@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c2977cb43d8b81272dd827f86de97e40a3eb601
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9743d75e7c205567a67f5374897a9597a2c7681f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457362"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734617"
 ---
 # <a name="update-mobileappcontentfile"></a>Atualizar mobileAppContentFile
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,9 +53,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [mobileAppConten
 |:---|:---|:---|
 |azureStorageUri|Cadeia de caracteres|O URI de Armazenamento do Azure.|
 |isCommitted|Booliano|Um valor que indica se o arquivo tem está confirmado.|
-|id|Cadeia de caracteres|A ID do arquivo.|
+|id|String|A ID do arquivo.|
 |createdDateTime|DateTimeOffset|A hora em que o arquivo foi criado.|
-|name|String|O nome do arquivo.|
+|nome|String|O nome do arquivo.|
 |size|Int64|O tamanho do arquivo antes da criptografia.|
 |sizeEncrypted|Int64|O tamanho do arquivo após a criptografia.|
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
@@ -110,6 +110,8 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
+
 
 
 

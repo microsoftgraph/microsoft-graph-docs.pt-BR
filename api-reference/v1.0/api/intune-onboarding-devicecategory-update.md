@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 760f9ba26ce52019d34d5fd6becaba70346f88be
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f3a194d1f40adfb095d882ba3b0ea3c1d042703a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453769"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735541"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |displayName|String|Nome de exibição da categoria de dispositivo.|
-|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
+|description|String|Descrição opcional da categoria do dispositivo.|
 
 
 
@@ -90,6 +90,8 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
 
 
 

@@ -1,32 +1,34 @@
 ---
-title: Tipo denum defenderCloudBlockLevelType
-description: Valores possíveis do Nível de Bloqueio na Nuvem
+title: Tipo de enumeração defenderCloudBlockLevelType
+description: Valores possíveis do nível de bloco de nuvem
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 14752803e22cdb991ecf9b7b93f3b01e49993efe
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 14b991b0b00541306a47c56f8c2914c68bff07e4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451525"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734351"
 ---
-# <a name="defendercloudblockleveltype-enum-type"></a>Tipo denum defenderCloudBlockLevelType
+# <a name="defendercloudblockleveltype-enum-type"></a>Tipo de enumeração defenderCloudBlockLevelType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis do Nível de Bloqueio na Nuvem
+Valores possíveis do nível de bloco de nuvem
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|0|Valor padrão, usa o nível de bloqueio padrão Windows Defender Antivírus e fornece uma detecção forte sem aumentar o risco de detectar arquivos legítimos|
-|high|1|Alto aplica um nível forte de detecção.|
-|highPlus|2|High + usa o nível Alto e aplica medidas de proteção de adição|
-|zeroTolerance|3|Tolerância zero bloqueia todos os executáveis desconhecidos|
+|notConfigured|0|Valor padrão, usa o nível de Windows Defender Antivírus padrão e fornece detecção forte sem aumentar o risco de detectar arquivos legítimos|
+|high|1|Alta aplica-se a um nível forte de detecção.|
+|highPlus|2|Alto + usa o alto nível e aplica medidas de proteção de adição|
+|zeroTolerance|3|A tolerância zero bloqueia todos os executáveis desconhecidos|
+
+
 
 
 

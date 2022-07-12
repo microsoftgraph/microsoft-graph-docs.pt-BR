@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a29525c9c2150063bd0fe7c8efc3564b7ce12ee
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 92aa11c39e8857c61a874c8c710238ee0a58be00
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449331"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736080"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>Tipo de recurso windowsUpdateScheduledInstall
 
@@ -26,7 +26,7 @@ Herda de [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-win
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Dia de instalação agendado na semana. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|scheduledInstallDay|[Weeklyschedule](../resources/intune-deviceconfig-weeklyschedule.md)|Dia de Instalação Agendado na semana. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |scheduledInstallTime|TimeOfDay|Horário de instalação agendado durante o dia|
 
 ## <a name="relationships"></a>Relações
@@ -46,6 +46,8 @@ Veja a seguir uma representação JSON do recurso.
   "scheduledInstallTime": "String (time of day)"
 }
 ```
+
+
 
 
 

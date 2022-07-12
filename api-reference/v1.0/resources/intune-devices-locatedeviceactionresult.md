@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ea85db38d3077391d9242439b71d8ca86b2c847
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ce3a1f7627aa7469eea4fc91c9adce237368256b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455720"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734701"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Tipo de recurso locateDeviceActionResult
 
@@ -27,7 +27,7 @@ Herda de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|Cadeia de caracteres|Nome da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação Herdado de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|Estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora de início da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune-devices-devicegeolocation.md)|local do dispositivo|
@@ -62,6 +62,8 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
 
 
 

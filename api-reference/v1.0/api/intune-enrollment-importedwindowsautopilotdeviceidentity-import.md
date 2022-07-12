@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca0c100750b1b0568bc20cab5345fcc5c8951406
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7a5e6a68268fd4ee885766c3634ae0022975b31a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454527"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734442"
 ---
 # <a name="import-action"></a>ação de importação
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -56,7 +56,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa ação retornará um código de resposta e uma `200 OK` [coleção importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) no corpo da resposta.
+Se tiver êxito, essa ação retornará `200 OK` um código de resposta e uma [coleção importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -120,6 +120,8 @@ Content-Length: 773
   ]
 }
 ```
+
+
 
 
 

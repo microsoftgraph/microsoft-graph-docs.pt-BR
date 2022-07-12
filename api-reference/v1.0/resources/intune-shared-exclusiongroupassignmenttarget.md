@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7881a3da197a3ac0f77c0ecac58f9396f5e1f5d8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e33ad1ba558c64e74350e8776ab3c21ce52dadb2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452836"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736367"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Tipo de recurso exclusionGroupAssignmentTarget
 
@@ -44,6 +44,8 @@ Veja a seguir uma representação JSON do recurso.
   "groupId": "String"
 }
 ```
+
+
 
 
 

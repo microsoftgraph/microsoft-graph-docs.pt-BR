@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 037383851228bcd70a5806ecbc9a84b84d1b5ac0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0e0a10649bb07f762840cbb3a460f3c55e1c5be3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454366"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735758"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Tipo de recurso deviceCompliancePolicy
 
@@ -31,17 +31,17 @@ Esta é a classe base para a política de Conformidade. Políticas de conformida
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|scheduledActionsForRule|Coleção [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|A lista de ações agendadas por regra para essa política de conformidade. Essa é uma propriedade necessária ao criar qualquer política de conformidade individual por plataforma.|
+|scheduledActionsForRule|Coleção [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|A lista de ações agendadas por regra para essa política de conformidade. Essa é uma propriedade necessária ao criar políticas de conformidade individuais por plataforma.|
 |deviceStatuses|Coleção [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md)|Lista de DeviceComplianceDeviceStatus.|
 |userStatuses|Coleção [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)|Lista de DeviceComplianceUserStatus.|
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|Visão geral de status de dispositivos para conformidade de dispositivos|
@@ -68,6 +68,8 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
+
 
 
 

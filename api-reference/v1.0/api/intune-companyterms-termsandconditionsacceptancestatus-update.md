@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb438d0eff5b6ecaf42143db4f1087c299dd8fe4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4a5af96d365e2dc905e323c1e45ee7629a737b0b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448475"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734547"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>Atualizar termsAndConditionsAcceptanceStatus
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [termsAn
 |userDisplayName|Cadeia de caracteres|Nome de exibição do usuário cuja aceitação a entidade representa.|
 |acceptedVersion|Int32|Número da versão mais recente dos T&C aceitos pelo usuário.|
 |acceptedDateTime|DateTimeOffset|A data e a hora em que os termos foram aceitos pela última vez pelo usuário.|
-|userPrincipalName|Cadeia de caracteres|O userPrincipalName do Usuário que aceitou o termo.|
+|userPrincipalName|String|O userPrincipalName do usuário que aceitou o termo.|
 
 
 
@@ -96,6 +96,8 @@ Content-Length: 313
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

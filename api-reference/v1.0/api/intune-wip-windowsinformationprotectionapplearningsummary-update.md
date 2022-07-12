@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1d0782601aaff157c04a6e33f29f651f1c666ba
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 39901d5c2b33b2d5d4852cd195991c9f3df541d8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453025"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735485"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Atualizar windowsInformationProtectionAppLearningSummary
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|String|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Cadeia de caracteres|Nome do Aplicativo|
-|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Tipo de aplicativo. Os valores possíveis são: `universal` e `desktop`.|
+|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Tipo de Aplicativo. Os valores possíveis são: `universal` e `desktop`.|
 |deviceCount|Int32|Contagem de dispositivos|
 
 
@@ -93,6 +93,8 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
 
 
 
