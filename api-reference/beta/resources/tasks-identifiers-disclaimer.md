@@ -1,29 +1,29 @@
 ---
-title: Identificadores nas tarefas
-description: 'Os identificadores para objetos nas tarefas são valores de cadeia de caracteres gerados pelo serviço. . Os valores têm 28 caracteres de comprimento e diferenciam maiúsculas de minúsculas. Quando transmitido como em, o serviço fará uma validação de formato simples do identificador, se a validação de formato falhar, os chamadores receberão uma resposta de erro de solicitação inválida (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:'
-localization_priority: Normal
+title: Identificadores em Tarefas
+description: 'Os identificadores de objetos em Tarefas são valores de cadeia de caracteres gerados pelo serviço. . Os valores têm 28 caracteres e diferenciam maiúsculas de minúsculas. Quando passado como dentro, o serviço fará uma validação de formato simples do identificador. Se a validação do formato falhar, os chamadores receberão uma resposta de erro de Solicitação Incorreta (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:'
+ms.localizationpriority: medium
 doc_type: conceptualPageType
-ms.prod: ''
+ms.prod: tasks-and-plans
 author: TarkanSevilmis
-ms.openlocfilehash: 75bf46a9ecebb226a1099fe30f3367b08915b867
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bac8d2fca466da934ac55b16c09c6c1d0977d32
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985654"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732692"
 ---
-# <a name="identifiers-in-tasks"></a>Identificadores nas tarefas
+# <a name="identifiers-in-tasks"></a>Identificadores em Tarefas
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Os identificadores para objetos nas tarefas são valores de cadeia de caracteres gerados pelo serviço. . Os valores têm 28 caracteres de comprimento e diferenciam maiúsculas de minúsculas. Quando transmitido como em, o serviço fará uma validação de formato simples do identificador, se a validação de formato falhar, os chamadores receberão uma resposta de erro de solicitação inválida (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:
+Os identificadores de objetos em Tarefas são valores de cadeia de caracteres gerados pelo serviço. . Os valores têm 28 caracteres e diferenciam maiúsculas de minúsculas. Quando passado como dentro, o serviço fará uma validação de formato simples do identificador. Se a validação do formato falhar, os chamadores receberão uma resposta de erro de Solicitação Incorreta (400) indicando esse problema. Receber esse erro indica um bug no aplicativo de chamada, como:
 
-- O aplicativo de chamada processou o identificador como uma cadeia de caracteres não sensível a um caso. Os identificadores nas tarefas diferenciam maiúsculas de minúsculas.
-- O aplicativo de chamada truncava o identificador. Os identificadores nas tarefas têm 28 caracteres de comprimento.
-- O aplicativo de chamada tentou gerar um valor de identificador para um objeto nas tarefas. Os identificadores gerados pelo cliente não são aceitos. Todos os identificadores são gerados pelo serviço na criação de objetos.
+- O aplicativo de chamada processou o identificador como uma cadeia de caracteres que não diferencia maiúsculas de minúsculas. Os identificadores em Tarefas diferenciam maiúsculas de minúsculas.
+- O aplicativo de chamada truncadou o identificador. Os identificadores em Tarefas têm 28 caracteres.
+- O aplicativo de chamada tentou gerar um valor de identificador para um objeto em Tarefas. Identificadores gerados pelo cliente não são aceitos. Todos os identificadores são gerados pelo serviço após a criação de objetos.
 
-Essa validação **não é um recurso de segurança**. O objetivo é apenas informar aplicativos sobre problemas relacionados ao identificador comum durante o desenvolvimento do aplicativo, o que, de outra forma, é difícil de identificar.
+Essa validação não **é um recurso de segurança**. Ele destina-se apenas a informar os aplicativos sobre problemas comuns relacionados ao identificador durante o desenvolvimento do aplicativo, que são difíceis de identificar.
 
 

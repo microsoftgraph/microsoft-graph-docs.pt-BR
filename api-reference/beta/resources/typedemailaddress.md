@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso typedEmailAddress
+title: Tipo de recurso typedEmailAddress
 description: Representa o nome, os endereços de email e o tipo de endereço de email correspondente de um contato.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: kevinbellinger
-ms.openlocfilehash: 8ce8ebdd0cb5b8b2113a80dacf72617d0f361356
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 849e566919b22ddaa9c12a275f19139701bf467d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993004"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723486"
 ---
-# <a name="typedemailaddress-resource-type"></a>tipo de recurso typedEmailAddress
+# <a name="typedemailaddress-resource-type"></a>Tipo de recurso typedEmailAddress
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Representa o nome, os endereços de email e o tipo de endereço de email corresp
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email de um contato.|
 |nome|String|O nome de exibição de um contato.|
-|tipo |String |O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`. O valor padrão é `unknown` , o que significa que o **endereço** não foi definido como um tipo específico. |
-|otherLabel |String  |Para especificar um tipo personalizado de endereço de email, defina **Type** como `other` e atribua **otherLabel** a uma cadeia de caracteres personalizada. Por exemplo, você pode usar um endereço de email específico para suas atividades de voluntários. Defina o **tipo** como `other` e defina **otherLabel** como uma cadeia de caracteres personalizada, como `Volunteer work` . |
+|type |String |O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`. O valor padrão é `unknown`, o que significa **que o** endereço não foi definido como um tipo específico. |
+|otherLabel |String  |Para especificar um tipo personalizado de endereço de email, defina **o tipo** e `other`atribua **otherLabel** a uma cadeia de caracteres personalizada. Por exemplo, você pode usar um endereço de email específico para suas atividades voluntárias. **Defina o** tipo `other`como , e defina **otherLabel** como uma cadeia de caracteres personalizada, como `Volunteer work`. |
 
 ## <a name="json-representation"></a>Representação JSON
 

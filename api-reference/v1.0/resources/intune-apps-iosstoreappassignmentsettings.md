@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb63e0e9b481508492290ea06eadbe06d7e0b260
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 6482c673bc79157b143806300aebd4c1bd7fa8c2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445764"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731040"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Tipo de recurso iosStoreAppAssignmentSettings
 
@@ -44,6 +44,8 @@ Veja a seguir uma representação JSON do recurso.
   "vpnConfigurationId": "String"
 }
 ```
+
+
 
 
 

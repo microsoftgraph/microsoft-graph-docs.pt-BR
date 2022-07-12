@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso sizeRange
 description: Especifica os tamanhos mínimo e máximo (em kilobytes) que uma mensagem de entrada deve ter para que a condição ou exceção seja aplicada.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: af63282d3093fc0178dba6027846b2c080c3c5f9
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 28fe791e6002cb83fa5d900969efe379b30cd52a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136924"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736682"
 ---
 # <a name="sizerange-resource-type"></a>Tipo de recurso sizeRange
 

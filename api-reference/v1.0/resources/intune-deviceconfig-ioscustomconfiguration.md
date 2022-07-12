@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ece0adf5da9dbd735a01568cb73becb0cb32833c
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 00204e0be0d4e524c529421f2f3d3735a0e9078f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900503"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732391"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>iosCustomConfiguration resource type
 
@@ -24,7 +24,6 @@ Este tópico fornece descrições dos métodos declarados, das propriedades e da
 Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
 ## <a name="methods"></a>Métodos
-
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosCustomConfigurations](../api/intune-deviceconfig-ioscustomconfiguration-list.md)|Coleção [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md)|Lista propriedades e relações dos objetos [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md).|
@@ -34,17 +33,16 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |[Atualizar iosCustomConfiguration](../api/intune-deviceconfig-ioscustomconfiguration-update.md)|[iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md)|Atualiza as propriedades de um objeto [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md).|
 
 ## <a name="properties"></a>Propriedades
-
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |payloadName|Cadeia de caracteres|Nome que é exibido para o usuário.|
-|payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileconfig, *.xml).|
+|payloadFileName|Cadeia de caracteres|O nome do arquivo de carga (*.mobileconfig | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
 
 ## <a name="relationships"></a>Relações
@@ -79,6 +77,8 @@ Veja a seguir uma representação JSON do recurso.
   "payload": "binary"
 }
 ```
+
+
 
 
 

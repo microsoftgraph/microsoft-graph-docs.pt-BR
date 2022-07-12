@@ -1,18 +1,18 @@
 ---
-title: função getOmaSettingPlainTextValue
+title: Função getOmaSettingPlainTextValue
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1670cf30c93beb82124eb9ad92963081f6db45b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 71f71df0151760cd3ad5db5c0bc7486258f83a48
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446053"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723283"
 ---
-# <a name="getomasettingplaintextvalue-function"></a>função getOmaSettingPlainTextValue
+# <a name="getomasettingplaintextvalue-function"></a>Função getOmaSettingPlainTextValue
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa função retornará `200 OK` um código de resposta e um String no corpo da resposta.
+Se tiver êxito, essa função retornará um código `200 OK` de resposta e uma cadeia de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -76,6 +76,8 @@ Content-Length: 57
   "value": "Get Oma Setting Plain Text Value value"
 }
 ```
+
+
 
 
 

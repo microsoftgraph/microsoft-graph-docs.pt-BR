@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 453df50d52077cc26c4a417eb5754756cf6a765f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d222dabbd6a53b91325642e2a1b9603cf1b31266
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448966"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730312"
 ---
 # <a name="roledefinition-resource-type"></a>Tipo de recurso roleDefinition
 
@@ -32,9 +32,9 @@ O recurso de Definição de Função. A definição da função é a base do ace
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
-|description|Cadeia de caracteres|Descrição da definição de Função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|String|Nome de exibição da definição de Função.|
+|description|String|Descrição da definição de Função.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
 
@@ -76,6 +76,8 @@ Veja a seguir uma representação JSON do recurso.
   "isBuiltIn": true
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c81ebab9e915d7d55fc1dea0d5f3f94d5b37629
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4b0882c48824552b33c045f883318028025561fd
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454984"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732454"
 ---
 # <a name="win32lobapp-resource-type"></a>Tipo de recurso win32LobApp
 
@@ -26,18 +26,18 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Listar win32LobApps](../api/intune-apps-win32lobapp-list.md)|[Coleção win32LobApp](../resources/intune-apps-win32lobapp.md)|Listar propriedades e relações dos [objetos win32LobApp.](../resources/intune-apps-win32lobapp.md)|
-|[Obter win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Leia propriedades e relações do [objeto win32LobApp.](../resources/intune-apps-win32lobapp.md)|
-|[Criar win32LobApp](../api/intune-apps-win32lobapp-create.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Crie um novo [objeto win32LobApp.](../resources/intune-apps-win32lobapp.md)|
+|[Listar win32LobApps](../api/intune-apps-win32lobapp-list.md)|[Coleção win32LobApp](../resources/intune-apps-win32lobapp.md)|Listar propriedades e relações dos objetos [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
+|[Obter win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Ler propriedades e relações do objeto [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
+|[Criar win32LobApp](../api/intune-apps-win32lobapp-create.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Crie um novo [objeto win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 |[Excluir win32LobApp](../api/intune-apps-win32lobapp-delete.md)|Nenhum|Exclui um [win32LobApp](../resources/intune-apps-win32lobapp.md).|
-|[Atualizar win32LobApp](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Atualize as propriedades de um [objeto win32LobApp.](../resources/intune-apps-win32lobapp.md)|
+|[Atualizar win32LobApp](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Atualize as propriedades de um [objeto win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -45,26 +45,26 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|owner|Cadeia de caracteres|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|Anotações do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|installCommandLine|Cadeia de caracteres|A linha de comando para instalar este aplicativo|
-|uninstallCommandLine|Cadeia de caracteres|A linha de comando para desinstalar esse aplicativo|
+|installCommandLine|String|A linha de comando para instalar este aplicativo|
+|uninstallCommandLine|String|A linha de comando para desinstalar este aplicativo|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|As arquiteturas do Windows nas quais este aplicativo pode ser executado. Os valores possíveis são: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|minimumFreeDiskSpaceInMB|Int32|O valor do espaço em disco gratuito mínimo necessário para instalar este aplicativo.|
-|minimumMemoryInMB|Int32|O valor da memória física mínima necessária para instalar esse aplicativo.|
+|minimumFreeDiskSpaceInMB|Int32|O valor do espaço em disco livre mínimo necessário para instalar este aplicativo.|
+|minimumMemoryInMB|Int32|O valor da memória física mínima necessária para instalar este aplicativo.|
 |minimumNumberOfProcessors|Int32|O valor do número mínimo de processadores necessário para instalar esse aplicativo.|
 |minimumCpuSpeedInMHz|Int32|O valor da velocidade mínima da CPU necessária para instalar este aplicativo.|
-|rules|[Coleção win32LobAppRule](../resources/intune-apps-win32lobapprule.md)|As regras de detecção e requisitos para este aplicativo.|
-|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|A experiência de instalação deste aplicativo.|
+|Regras|[Coleção win32LobAppRule](../resources/intune-apps-win32lobapprule.md)|As regras de detecção e requisito para este aplicativo.|
+|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|A experiência de instalação para este aplicativo.|
 |returnCodes|[Coleção win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Os códigos de retorno para o comportamento pós-instalação.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|O MSI detalha se esse aplicativo Win32 é um aplicativo MSI.|
-|setupFilePath|Cadeia de caracteres|O caminho relativo do arquivo de instalação no pacote Win32LobApp criptografado.|
-|minimumSupportedWindowsRelease|String|O valor da versão mínima com suporte do Windows.|
+|setupFilePath|String|O caminho relativo do arquivo de instalação no pacote Win32LobApp criptografado.|
+|minimumSupportedWindowsRelease|String|O valor da versão mínima do Windows com suporte.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -150,6 +150,8 @@ Veja a seguir uma representação JSON do recurso.
   "minimumSupportedWindowsRelease": "String"
 }
 ```
+
+
 
 
 

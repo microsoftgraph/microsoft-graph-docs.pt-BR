@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 043466eba844f12ea2d38155106198522afb4d3d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 238934e0a5b89c2576169813de197da440169428
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455869"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733428"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
@@ -53,6 +53,8 @@ Veja a seguir uma representação JSON do recurso.
   "v14_0": true
 }
 ```
+
+
 
 
 

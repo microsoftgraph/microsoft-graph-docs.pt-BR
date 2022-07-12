@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 824955aa85414c49bdeb240fb7a7b5c3e4c4b832
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 15d8327106bb222700d89c0d85f9bcf7ff90ed1c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446600"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723472"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignmentTarget
 
@@ -39,6 +39,8 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 ```
+
+
 
 
 

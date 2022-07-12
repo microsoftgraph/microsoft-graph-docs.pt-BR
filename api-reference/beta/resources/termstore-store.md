@@ -1,20 +1,20 @@
 ---
-title: tipo de recurso Store
+title: tipo de recurso de armazenamento
 description: Representa um repositório de termos de taxonomia.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: de8b0c004da804a4d9a617eec20de22c51e98108
-ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
+ms.openlocfilehash: f1b38c9fb826ce430614d44a7b41ed1712523481
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48258421"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735933"
 ---
-# <a name="store-resource-type"></a>tipo de recurso Store
+# <a name="store-resource-type"></a>tipo de recurso de armazenamento
 
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,25 +22,25 @@ Representa um repositório de termos de taxonomia.
 
 Herda de [entidade](../resources/entity.md).
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a>Methods
 |Método|Tipo de retorno|Descrição
 |:---|:---|:---
-|[Listar grupos](../api/termstore-list-groups.md)|coleção [Microsoft. Graph. termos. Group](../resources/termstore-group.md)| Obtenha os grupos de disponíveis no objeto do repositório de termos.|
-|[Obter repositório](../api/termstore-store-get.md) | [Microsoft. Graph. termos. Store](../resources/termstore-store.md) | Leia as propriedades e os relacionamentos de um objeto do repositório de termos.
-|[Atualizar repositório](../api/termstore-store-update.md) | [Microsoft. Graph. termos. Store](../resources/termstore-store.md) | Atualizar as propriedades de um objeto do repositório de termos.|
+|[Listar grupos](../api/termstore-list-groups.md)|[coleção microsoft.graph.termStore.group](../resources/termstore-group.md)| Obtenha os grupos disponíveis no objeto de repositório de termos.|
+|[Obter repositório](../api/termstore-store-get.md) | [microsoft.graph.termStore.store](../resources/termstore-store.md) | Leia as propriedades e as relações de um objeto de repositório de termos.
+|[Atualizar repositório](../api/termstore-store-update.md) | [microsoft.graph.termStore.store](../resources/termstore-store.md) | Atualize as propriedades de um objeto de repositório de termos.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição
 |:---|:---|:---
-|defaultLanguageTag | String | Idioma padrão do repositório de termos.
+|defaultLanguageTag | Cadeia de caracteres | Idioma padrão do repositório de termos.
 |id|String | Identificador exclusivo do repositório de termos. Somente leitura.
-|languageTags | Coleção String | Lista de idiomas para o repositório de termos.
+|languageTags | Conjunto de cadeias de caracteres | Lista de idiomas para o repositório de termos.
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição
 |:---|:---|:---
-|grupos |coleção [Microsoft. Graph. termos. Group](../resources/termstore-group.md) | Coleção de todos os grupos disponíveis no repositório de termos.
-|jogos | coleção [Microsoft. Graph. termos. Set](../resources/termstore-set.md) | Coleção de todos os conjuntos disponíveis no repositório de termos.
+|grupos |[coleção microsoft.graph.termStore.group](../resources/termstore-group.md) | Coleção de todos os grupos disponíveis no repositório de termos.
+|Define | [coleção microsoft.graph.termStore.set](../resources/termstore-set.md) | Coleção de todos os conjuntos disponíveis no repositório de termos.
 
 
 ## <a name="json-representation"></a>Representação JSON

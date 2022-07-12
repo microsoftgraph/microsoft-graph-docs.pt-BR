@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: security
 author: preetikr
-ms.openlocfilehash: dd4e9ee6372e9d063515ad83e851008e01ec6b60
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 4d401b4003ef8ce0a4384daf16a03ce9d2851694
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900139"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735947"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>Tipo de recurso secureScoreControlProfile
 
@@ -33,22 +33,22 @@ Representa a pontuação de segurança de um locatário por dados de controle. P
 |Nome |Tipo |Descrição |
 |:--|:--|:--|
 |   azureTenantId   |   String  |   Cadeia de caracteres GUID para a ID do locatário.  |
-|   Controlname |   Cadeia de Caracteres  |   Nome do controle. |
+|   Controlname |   String  |   Nome do controle. |
 |   title   |   String  |   Título do controle.   |
 | complianceInformation | [coleção complianceInformation](complianceinformation.md) | A coleção de informações de conformidade associadas ao controle de pontuação segura |
-|   controlCategory |   Cadeia de Caracteres  |   Categoria de ação de controle (Conta, Dados, Dispositivo, Aplicativos, Infraestrutura).  |
+|   controlCategory |   String  |   Categoria de ação de controle (Conta, Dados, Dispositivo, Aplicativos, Infraestrutura).  |
 |   actionType  |   Cadeia de caracteres  |   Tipo de ação de controle (Configuração, Revisão, Comportamento). |
 |   service |   Cadeia de caracteres  |   Serviço que possui o controle (Exchange, Sharepoint, Azure AD). |
-|   maxScore |  Cadeia de Caracteres  |   Pontuação máxima obtida no momento na data especificada.   |
-|   Camada |  Cadeia de Caracteres  |   Camada de controle (Core, Defesa em Profundidade, Avançado.)    |
-|   userImpact |    Cadeia de Caracteres  | Impacto do usuário na implementação do controle (baixo, moderado, alto).    |
-|   implementationCost |    Cadeia de Caracteres  |   Custo de recurso de controle implemmentating (baixo, moderado, alto). |
+|   maxScore |  String  |   Pontuação máxima obtida no momento na data especificada.   |
+|   Camada |  String  |   Camada de controle (Core, Defesa em Profundidade, Avançado.)    |
+|   userImpact |    String  | Impacto do usuário na implementação do controle (baixo, moderado, alto).    |
+|   implementationCost |    String  |   Custo de recurso de controle implemmentating (baixo, moderado, alto). |
 |   classificação |  Int32   |   Classificação de pilha da Microsoft de controle.   |
 |   Ameaças |   String Collection   |   Lista de ameaças que o controle reduz (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing). |
 |   Preterido |    Booliano |   Sinalizador para indicar se um controle é depreciado.   |
 |   Remediação |   String  |   Descrição do que o controle ajudará a corrigir. |
-|   remediationImpact | Cadeia de Caracteres  |   Descrição do impacto sobre os usuários da correção. |
-|   Actionurl | Cadeia de Caracteres  |   URL para onde o controle pode ser acionado. |
+|   remediationImpact | String  |   Descrição do impacto sobre os usuários da correção. |
+|   Actionurl | String  |   URL para onde o controle pode ser acionado. |
 |   controlStateUpdates | [coleção secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Sinalizador para indicar onde o locatário marcou um controle (ignorar, thirdParty, revisado) (dá suporte à [atualização](../api/securescorecontrolprofiles-update.md)). |
 |   vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 

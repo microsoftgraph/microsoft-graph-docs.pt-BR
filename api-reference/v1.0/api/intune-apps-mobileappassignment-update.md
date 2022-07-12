@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c4240970d479429cd868f578825524a303663d9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8922347cd4bdaf54d83087410229a74583d7d6ad
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448721"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731516"
 ---
 # <a name="update-mobileappassignment"></a>Atualizar mobileAppAssignment
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |finalidade|[installIntent](../resources/intune-shared-installintent.md)|A finalidade da instalação definida pelo administrador. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 |configurações|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|As configurações para a atribuição de destino definida pelo administrador.|
@@ -68,7 +68,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 324
+Content-length: 861
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -77,8 +77,21 @@ Content-length: 324
     "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value"
+    "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
+    "notifications": "showReboot",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+      "gracePeriodInMinutes": 4,
+      "countdownDisplayBeforeRestartInMinutes": 6,
+      "restartNotificationSnoozeDurationInMinutes": 10
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+      "useLocalTime": true,
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+    },
+    "deliveryOptimizationPriority": "foreground"
   }
 }
 ```
@@ -88,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 373
+Content-Length: 910
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -98,11 +111,26 @@ Content-Length: 373
     "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "Vpn Configuration Id value"
+    "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
+    "notifications": "showReboot",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+      "gracePeriodInMinutes": 4,
+      "countdownDisplayBeforeRestartInMinutes": 6,
+      "restartNotificationSnoozeDurationInMinutes": 10
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+      "useLocalTime": true,
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+    },
+    "deliveryOptimizationPriority": "foreground"
   }
 }
 ```
+
+
 
 
 

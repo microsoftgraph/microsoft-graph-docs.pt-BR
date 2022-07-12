@@ -1,18 +1,18 @@
 ---
-title: Tipo denum managedAppAvailability
+title: Tipo de enumeração managedAppAvailability
 description: Disponibilidade de um aplicativo gerenciado (MAM).
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31a8a343745050347fb131f86933d8d52802067a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a0665e72c38b3dddcf5ab624e23eaef8db2bbb44
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449619"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729584"
 ---
-# <a name="managedappavailability-enum-type"></a>Tipo denum managedAppAvailability
+# <a name="managedappavailability-enum-type"></a>Tipo de enumeração managedAppAvailability
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,10 @@ Disponibilidade de um aplicativo gerenciado (MAM).
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|global|0|Um aplicativo globalmente disponível para todos os locatários.|
-|lineOfBusiness|1|Uma linha de negócios de aplicativos privados para uma organização.|
+|Global|0|Um aplicativo disponível globalmente para todos os locatários.|
+|lineOfBusiness|1|Uma linha de aplicativos de negócios privada para uma organização.|
+
+
 
 
 

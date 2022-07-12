@@ -1,18 +1,18 @@
 ---
-title: Tipo denum applicationGuardBlockClipboardSharingType
+title: Tipo de enumeração applicationGuardBlockClipboardSharingType
 description: Valores possíveis para applicationGuardBlockClipboardSharingType
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a298831731234560938f75b261ec367de47c1f12
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 789a8912ac8170391d0d40ab922d0d5ae8915b6c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447998"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722968"
 ---
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>Tipo denum applicationGuardBlockClipboardSharingType
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a>Tipo de enumeração applicationGuardBlockClipboardSharingType
 
 Namespace: microsoft.graph
 
@@ -23,11 +23,13 @@ Valores possíveis para applicationGuardBlockClipboardSharingType
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notConfigured|0|Não configurado|
-|blockBoth|1|Bloquear área de transferência para compartilhar dados de Host para Contêiner e de Contêiner para Host|
-|blockHostToContainer|2|Bloquear área de transferência para compartilhar dados de Host para Contêiner|
-|blockContainerToHost|3|Bloquear área de transferência para compartilhar dados de Contêiner para Host|
-|blockNone|4 |Bloquear área de transferência para compartilhar dados nem de Host para Contêiner nem de Contêiner para Host|
+|notConfigured|0|Não Configurado|
+|blockBoth|1|Bloquear a área de transferência para compartilhar dados do Host para o Contêiner e do Contêiner para o Host|
+|blockHostToContainer|2|Bloquear área de transferência para compartilhar dados do Host para o Contêiner|
+|blockContainerToHost|3|Bloquear área de transferência para compartilhar dados do Contêiner para o Host|
+|blockNone|4|Bloquear a área de transferência para compartilhar dados nem do Host para o Contêiner nem do Contêiner para o Host|
+
+
 
 
 

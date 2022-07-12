@@ -1,18 +1,18 @@
 ---
-title: Tipo de número deviceManagementReportFileFormat
+title: Tipo de enumeração deviceManagementReportFileFormat
 description: Valores possíveis para o formato de arquivo de um relatório
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bec897a1ba9bd8e79373aa3a4e28761b86748d64
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9dba0fc7157fbe57c2a5853879f0ac1897aa9bd5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448910"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730298"
 ---
-# <a name="devicemanagementreportfileformat-enum-type"></a>Tipo de número deviceManagementReportFileFormat
+# <a name="devicemanagementreportfileformat-enum-type"></a>Tipo de enumeração deviceManagementReportFileFormat
 
 Namespace: microsoft.graph
 
@@ -23,8 +23,10 @@ Valores possíveis para o formato de arquivo de um relatório
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|csv|0|Valores separados por vírgulas|
+|Csv|0|Valores separados por vírgula|
 |pdf|1|Formato de documento portátil|
+
+
 
 
 

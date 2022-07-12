@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f286b39985f310c0a466405fd5814fbbb31e643b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 6513793cae2dc77807cc20940e14f1421d53122d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457320"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732461"
 ---
 # <a name="mobileappassignment-resource-type"></a>Tipo de recurso mobileAppAssignment
 
@@ -32,7 +32,7 @@ Uma classe com as propriedades usadas para atribuição de grupos de um aplicati
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |finalidade|[installIntent](../resources/intune-shared-installintent.md)|A finalidade da instalação definida pelo administrador. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 |configurações|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|As configurações para a atribuição de destino definida pelo administrador.|
@@ -57,11 +57,26 @@ Veja a seguir uma representação JSON do recurso.
     "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "String"
+    "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
+    "notifications": "String",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+      "gracePeriodInMinutes": 1024,
+      "countdownDisplayBeforeRestartInMinutes": 1024,
+      "restartNotificationSnoozeDurationInMinutes": 1024
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+      "useLocalTime": true,
+      "startDateTime": "String (timestamp)",
+      "deadlineDateTime": "String (timestamp)"
+    },
+    "deliveryOptimizationPriority": "String"
   }
 }
 ```
+
+
 
 
 

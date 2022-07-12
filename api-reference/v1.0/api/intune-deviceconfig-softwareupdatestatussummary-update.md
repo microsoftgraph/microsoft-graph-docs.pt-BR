@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2f083d5ad694b80d8ea160db8604e48d3f72544
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ee4f4acf5bc61dfe81f3ab9b5a12de996c24ee5a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60435726"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729675"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Atualizar softwareUpdateStatusSummary
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [softwareUpdateS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|Cadeia de caracteres|O nome da política.|
+|displayName|String|O nome da política.|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade.|
 |nonCompliantDeviceCount|Int32|Número de dispositivos sem conformidade.|
 |remediatedDeviceCount|Int32|Número de dispositivos corrigidos.|
@@ -129,6 +129,8 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
+
 
 
 

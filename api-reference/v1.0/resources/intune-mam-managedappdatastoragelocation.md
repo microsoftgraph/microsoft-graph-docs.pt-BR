@@ -1,32 +1,34 @@
 ---
-title: Tipo de número managedAppDataStorageLocation
-description: Armazenamento locais onde aplicativos gerenciados podem armazenar seus dados potencialmente
+title: Tipo de enumeração managedAppDataStorageLocation
+description: Locais de armazenamento em que os aplicativos gerenciados podem armazenar seus dados potencialmente
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e26c4abf2e8299ff37dba38ba6e392d15433ffaa
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 41ce4e8101f0ce642ecdfea5be2ae2da39e42dee
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455285"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729934"
 ---
-# <a name="managedappdatastoragelocation-enum-type"></a>Tipo de número managedAppDataStorageLocation
+# <a name="managedappdatastoragelocation-enum-type"></a>Tipo de enumeração managedAppDataStorageLocation
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Armazenamento locais onde aplicativos gerenciados podem armazenar seus dados potencialmente
+Locais de armazenamento em que os aplicativos gerenciados podem armazenar seus dados potencialmente
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive for business|
-|sharePoint|2|SharePoint|
-|box|3|Caixa|
-|localStorage|6 |Armazenamento local no dispositivo|
+|Sharepoint|2|Microsoft Office SharePoint Online|
+|Caixa|3|Caixa|
+|Localstorage|6 |Armazenamento local no dispositivo|
+
+
 
 
 

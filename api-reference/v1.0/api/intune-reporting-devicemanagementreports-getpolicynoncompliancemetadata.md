@@ -1,18 +1,18 @@
 ---
-title: ação getPolicyNonComplianceMetadata
+title: Ação getPolicyNonComplianceMetadata
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff9df18d4e49cb8dc89b86cb439d1c81c7acad8b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d31976408024b60a04e3739307f1a3aaf7a551e4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455897"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733483"
 ---
-# <a name="getpolicynoncompliancemetadata-action"></a>ação getPolicyNonComplianceMetadata
+# <a name="getpolicynoncompliancemetadata-action"></a>Ação getPolicyNonComplianceMetadata
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,20 +51,20 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|Cadeia de caracteres|Ainda não documentado|
+|nome|String|Ainda não documentado|
 |select|String collection|Ainda não documentado|
 |search|String|Ainda não documentado|
-|groupBy|String collection|Ainda não documentado|
-|orderBy|String collection|Ainda não documentado|
+|Groupby|String collection|Ainda não documentado|
+|Orderby|String collection|Ainda não documentado|
 |skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
-|sessionId|String|Ainda não documentado|
+|Sessionid|String|Ainda não documentado|
 |filter|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um Stream no corpo da resposta.
+Se for bem-sucedida, essa ação retornará um `200 OK` código de resposta e um Fluxo no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -106,6 +106,8 @@ Content-Length: 99
   "value": "Z2V0UG9saWN5Tm9uQ29tcGxpYW5jZU1ldGFkYXRhIEludHVuZSBEb2MgU2FtcGxlIC0xNzM5NTg5Nzc5"
 }
 ```
+
+
 
 
 

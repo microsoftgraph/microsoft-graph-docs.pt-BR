@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iPv4Range
-description: Definição de Intervalo IPv4.
+description: Definição de intervalo IPv4.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8365c1efdb79fd1d04f3268d30cf34a2a30c6bd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e5751ea8a389315e46efe1ead5149bf7e6cd7596
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453608"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731572"
 ---
 # <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Definição de Intervalo IPv4.
+Definição de intervalo IPv4.
 
 
 Herda de [ipRange](../resources/intune-mam-iprange.md)
@@ -46,6 +46,8 @@ Veja a seguir uma representação JSON do recurso.
   "upperAddress": "String"
 }
 ```
+
+
 
 
 

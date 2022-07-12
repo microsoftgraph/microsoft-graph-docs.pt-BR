@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ff9ef3a59d3bd3dec5c0ab5416876a330fee238
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f87763156e8ce3f6f9ce2e2a4a4eba2810c63d3f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457509"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732482"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfiguration
 
@@ -30,10 +30,10 @@ Uma classe abstrata para a configuração do Aplicativo móvel para dispositivos
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |targetedMobileApps|Coleção de cadeias de caracteres|o aplicativo associado.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |versão|Int32|Versão da configuração do dispositivo.|
@@ -69,6 +69,8 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
+
 
 
 

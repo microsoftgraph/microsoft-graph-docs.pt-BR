@@ -1,18 +1,18 @@
 ---
-title: tipo de número managementAgentType
+title: Tipo de enumeração managementAgentType
 description: Tipo de agente de gerenciamento.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1be194795738a23c43b43e3dc2cc75aec6a5181f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8e178c22a13e089b89b709757f38d9abb3cc04df
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449755"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731929"
 ---
-# <a name="managementagenttype-enum-type"></a>tipo de número managementAgentType
+# <a name="managementagenttype-enum-type"></a>Tipo de enumeração managementAgentType
 
 Namespace: microsoft.graph
 
@@ -23,17 +23,19 @@ Tipo de agente de gerenciamento.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|eas|1|O dispositivo é gerenciado por Exchange servidor.|
-|mdm|2|O dispositivo é gerenciado pelo MDM do Intune.|
-|easMdm|3|O dispositivo é gerenciado pelo servidor Exchange e pelo MDM do Intune.|
-|intuneClient|4 |Cliente do Intune gerenciado.|
-|easIntuneClient|5|O dispositivo é gerenciado duplo do cliente EAS e do Intune.|
-|configurationManagerClient|8 |O dispositivo é gerenciado pelo Configuration Manager.|
-|configurationManagerClientMdm|10 |O dispositivo é gerenciado pelo Configuration Manager e pelo MDM.|
-|configurationManagerClientMdmEas|11|O dispositivo é gerenciado pelo Configuration Manager, MDM e Eas.|
+|Eas|1|O dispositivo é gerenciado pelo exchange server.|
+|Mdm|2|O dispositivo é gerenciado por Intune MDM.|
+|easMdm|3|O dispositivo é gerenciado pelo servidor Exchange e Intune MDM.|
+|intuneClient|4|Intune cliente gerenciado.|
+|easIntuneClient|5|O dispositivo é EAS e Intune cliente dual gerenciado.|
+|configurationManagerClient|8 |O dispositivo é gerenciado por Configuration Manager.|
+|configurationManagerClientMdm|10|O dispositivo é gerenciado por Configuration Manager e MDM.|
+|configurationManagerClientMdmEas|11|O dispositivo é gerenciado por Configuration Manager, MDM e Eas.|
 |desconhecido|16|Tipo de agente de gerenciamento desconhecido.|
-|jamf|32|Os atributos do dispositivo são buscados do Jamf.|
+|jamf|32|Os atributos de dispositivo são buscados no Jamf.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|
+
+
 
 
 

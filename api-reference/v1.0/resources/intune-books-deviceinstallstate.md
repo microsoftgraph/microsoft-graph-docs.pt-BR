@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae894f8654ff891ddacd86b931573b5ec7aafc7c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 999a9a92503df48726a1dd48e57e6698132378e8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454240"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730753"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Tipo de recurso deviceInstallState
 
@@ -32,7 +32,7 @@ Contém propriedades do estado de instalação de um dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
@@ -67,6 +67,8 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
+
+
 
 
 

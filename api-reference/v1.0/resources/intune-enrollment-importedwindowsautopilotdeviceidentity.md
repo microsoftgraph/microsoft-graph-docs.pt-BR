@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62c8441a5d96853f8f7f08a7db19f4ea81aa2f7a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: af1ffa62a140c3badcd8d74d3f36b5ae710e8db4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454345"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730627"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentity
 
@@ -32,11 +32,11 @@ Dispositivos importados do Windows AutoPilot.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
-|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo Windows piloto automático.|
+|id|String|O GUID do objeto.|
+|groupTag|String|Marca de grupo do dispositivo windows autopilot.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importId|Cadeia de caracteres|A ID de Importação do dispositivo Windows piloto automático.|
+|importId|String|A ID de Importação do dispositivo Windows Autopilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
 |assignedUserPrincipalName|String|UPN do usuário que o dispositivo será atribuído|
@@ -71,6 +71,8 @@ Veja a seguir uma representação JSON do recurso.
   "assignedUserPrincipalName": "String"
 }
 ```
+
+
 
 
 

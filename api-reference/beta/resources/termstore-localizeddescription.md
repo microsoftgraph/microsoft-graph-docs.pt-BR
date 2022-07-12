@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso localizedDescription
+title: Tipo de recurso localizedDescription
 description: Representa a descrição localizada usada para descrever um termo no repositório de termos.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 738555750c22f3ffdd5fbd43c8b1849888e0a40f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8506bcb39eeb006f6cea45c1f2d0574af0b71c65
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973614"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732342"
 ---
-# <a name="localizeddescription-resource-type"></a>tipo de recurso localizedDescription
+# <a name="localizeddescription-resource-type"></a>Tipo de recurso localizedDescription
 
-Namespace: Microsoft. Graph. termos
+Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a descrição localizada usada para descrever um [termo] no [repositório]de termos.
+Representa a descrição localizada usada para descrever [um termo] no repositório de [termos].
 
 
 ## <a name="properties"></a>Propriedades
@@ -47,8 +47,8 @@ Veja a seguir uma representação JSON do recurso.
 
 [microsoft.graph.termStore.term]: termStore-term.md
 [microsoft.graph.termStore.store]: termStore-store.md
-[terminal]: ../resources/termstore-term.md
-[Guarde]: ../resources/termstore-store.md
+[Termo]: ../resources/termstore-term.md
+[Loja]: ../resources/termstore-store.md
 
 <!--
 {
@@ -58,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "tocPath": "TermLocalizedDescriptionFacet",
   "tocBookmarks": {
-    "Resources/termStore.termLocalizedDescription": "#"
+    "Resources/termStore.termLocalizedDescription&quot;: &quot;#"
   },
   "suppressions": []
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d842896b16b8887a0663c0be23ee91c1d757bac8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5447133c15ddc1b5daa239464aded110a5897038
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449769"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732384"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Tipo de recurso iosHomeScreenApp
 
@@ -26,8 +26,8 @@ Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|bundleID|Cadeia de caracteres|BundleID do aplicativo se forWebClip for false ou a URL de um clipe da Web se forWebClip for true.|
+|displayName|String|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|bundleID|Cadeia de caracteres|BundleID do aplicativo se isWebClip for false ou a URL de um clipe da Web se isWebClip for true.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -46,6 +46,8 @@ Veja a seguir uma representação JSON do recurso.
   "bundleID": "String"
 }
 ```
+
+
 
 
 

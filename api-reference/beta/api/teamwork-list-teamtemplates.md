@@ -5,27 +5,27 @@ author: Charlieforce
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: ce9261b636a0d5f53b3c92d9795624b9b1ddd931
-ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
+ms.openlocfilehash: fdb44b3daab76d1222cdc80fcf0cff13402ce7fb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66690097"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735590"
 ---
 # <a name="list-teamtemplates"></a>Listar teamTemplates
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a lista de [objetos teamTemplate](../resources/teamtemplate.md) que estão disponíveis para o locatário. 
+Obtenha a lista de [objetos teamTemplate](../resources/teamtemplate.md) que estão disponíveis para um locatário. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|Team.Create|
-|Delegado (conta pessoal da Microsoft)|Sem suporte|
+|Delegada (conta corporativa ou de estudante)|Team.Create|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Team.Create|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -58,9 +58,9 @@ Se tiver êxito, este método retornará um código `200 OK` de resposta e uma c
 
 ## <a name="examples"></a>Exemplos
 
-## <a name="example-1-get-a-list-of-team-templates"></a>Exemplo 1: Obter uma lista de modelos de equipe
+### <a name="example-1-get-a-list-of-team-templates"></a>Exemplo 1: Obter uma lista de modelos de equipe
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
 
@@ -73,7 +73,7 @@ Veja a seguir um exemplo de uma solicitação.
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 ### <a name="example-2-use-extend-and-filter-to-get-templatedefinitions-for-en-us-locale"></a>Exemplo 2: usar $extend e $filter obter templateDefinitions para localidade en-US
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 Veja a seguir um exemplo de uma solicitação.
 
@@ -115,7 +115,7 @@ Veja a seguir um exemplo de uma solicitação.
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&filter=definitions/any(a:a/languageTag eq 'en-US')
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -172,7 +172,7 @@ Content-Type: application/json
                     "lastModifiedBy": null
                 }
             ]
-        },
+        }
     ]
 }
 ```

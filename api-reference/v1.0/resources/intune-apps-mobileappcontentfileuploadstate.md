@@ -1,24 +1,24 @@
 ---
-title: Tipo de número mobileAppContentFileUploadState
-description: Contém propriedades para estados de solicitação de carregamento.
+title: Tipo de enumeração mobileAppContentFileUploadState
+description: Contém propriedades para estados de solicitação de upload.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 63377a182ebab73e74b57c243654df79fdea4ba1
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 44457be54adcbeeee27c19065e0ff0445b99ef0f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457726"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730767"
 ---
-# <a name="mobileappcontentfileuploadstate-enum-type"></a>Tipo de número mobileAppContentFileUploadState
+# <a name="mobileappcontentfileuploadstate-enum-type"></a>Tipo de enumeração mobileAppContentFileUploadState
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para estados de solicitação de carregamento.
+Contém propriedades para estados de solicitação de upload.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
@@ -39,6 +39,8 @@ Contém propriedades para estados de solicitação de carregamento.
 |commitFilePending|301|Ainda não documentado|
 |commitFileFailed|302|Ainda não documentado|
 |commitFileTimedOut|303|Ainda não documentado|
+
+
 
 
 

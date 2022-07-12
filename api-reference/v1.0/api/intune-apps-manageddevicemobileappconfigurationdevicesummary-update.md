@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0117a56e637b7a86112c057fdb70969e5a011324
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bd6618e0c8f534a27cca4e96f6860c71a514b8b7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445357"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733266"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>Atualizar managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |pendingCount|Int32|Número de dispositivos pendentes|
 |notApplicableCount|Int32|Número de dispositivos não aplicáveis|
 |successCount|Int32|Número de dispositivos com êxito|
@@ -105,6 +105,8 @@ Content-Length: 348
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

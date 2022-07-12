@@ -1,18 +1,18 @@
 ---
-title: tipo de número androidEnterpriseAlwaysOnVpnPackageType
+title: tipo de enumeração androidEnterpriseAlwaysOnVpnPackageType
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f21c539a07535c942bfe3bb610af7575a496449
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: cd524518404ccfbad212331b282ee41746e33df2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446607"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731187"
 ---
-# <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>tipo de número androidEnterpriseAlwaysOnVpnPackageType
+# <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>tipo de enumeração androidEnterpriseAlwaysOnVpnPackageType
 
 Namespace: microsoft.graph
 
@@ -24,11 +24,13 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Não configurado; esse valor é ignorado.|
-|custom|1|Nome do pacote personalizado, o ITPro pode fornecer o nome do pacote do cliente VPN que deseja usar.|
+|Personalizado|1|Nome do pacote personalizado, o ITPro pode fornecer o nome do pacote do cliente VPN que deseja usar.|
 |ciscoAnyConnect|2|Cisco AnyConnect.|
-|f5Access|3|F5 Access.|
-|paloAltoNetworksGlobalProtect|4 |Palo Alto Networks GlobalProtect.|
+|f5Access|3|Acesso F5.|
+|paloAltoNetworksGlobalProtect|4|Palo Alto Networks GlobalProtect.|
 |pulseSecure|5|Pulse Secure.|
+
+
 
 
 

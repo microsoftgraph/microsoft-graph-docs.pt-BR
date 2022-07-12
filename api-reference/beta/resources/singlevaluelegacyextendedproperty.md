@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso singleValueLegacyExtendedProperty
 description: 'Uma propriedade estendida que contém um único valor. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: cloud-pc
 author: abheek-das
-ms.openlocfilehash: 578b2792a815dd0c7cd5dad4fc77d9c96319045a
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: 9f87c03e6a2d61fef478eed5554fc3a2d1e2de00
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334581"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736689"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Tipo de recurso singleValueLegacyExtendedProperty
 
@@ -29,8 +29,8 @@ Confira [Visão geral de propriedades estendidas](../resources/extended-properti
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | Uma instância de recurso suportada: [mensagem](../resources/message.md), [mailFolder](../resources/mailfolder.md) [,](../resources/event.md)evento [,](../resources/contact.md) [calendário](../resources/calendar.md), contato , [contactFolder,](../resources/contactfolder.md) [Outlook tarefa](../resources/outlooktask.md)ou Outlook [pasta](../resources/outlooktaskfolder.md)de tarefas , mas não postagem de [grupo](../resources/post.md). | Crie uma **singleValueLegacyExtendedProperty** em uma instância nova ou existente de um recurso compatível. |
-|[Get](../api/singlevaluelegacyextendedproperty-get.md) |Uma ou uma coleção de instância de recurso com suporte[(](../resources/message.md)mensagem , [mailFolder](../resources/mailfolder.md) [,](../resources/event.md)evento [,](../resources/contact.md) [calendário](../resources/calendar.md), contato , [contactFolder](../resources/contactfolder.md), [Outlook](../resources/outlooktask.md)tarefa, pasta de tarefa [Outlook](../resources/outlooktaskfolder.md)ou postagem de grupo [)](../resources/post.md)ou uma instância expandida com um [único objetoValueLegacyExtendedProperty.](singlevaluelegacyextendedproperty.md) |Obtenha uma instância de recurso com uma propriedade estendida usando `$expand` ou `$filter`.|
+|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | Uma instância de recurso com suporte: [mensagem](../resources/message.md), [mailFolder](../resources/mailfolder.md)[, evento](../resources/event.md)[,](../resources/contact.md) [calendário](../resources/calendar.md), contato, [contactFolder](../resources/contactfolder.md), tarefa do [Outlook](../resources/outlooktask.md) ou pasta de tarefas [do Outlook](../resources/outlooktaskfolder.md), mas não postagem em [grupo](../resources/post.md). | Crie uma **singleValueLegacyExtendedProperty** em uma instância nova ou existente de um recurso compatível. |
+|[Get](../api/singlevaluelegacyextendedproperty-get.md) |Uma ou uma coleção de instâncias de recursos com [suporte (mensagem](../resources/message.md), [mailFolder](../resources/mailfolder.md)[, evento](../resources/event.md)[, calendário](../resources/calendar.md)[, contato](../resources/contact.md), [contactFolder](../resources/contactfolder.md), tarefa do [Outlook](../resources/outlooktask.md), pasta de tarefas do [Outlook](../resources/outlooktaskfolder.md) ou postagem de [grupo) ou](../resources/post.md) uma dessas instâncias expandida com um objeto [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md). |Obtenha uma instância de recurso com uma propriedade estendida usando `$expand` ou `$filter`.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

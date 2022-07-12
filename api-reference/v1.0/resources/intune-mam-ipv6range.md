@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso iPv6Range
-description: Definição de Intervalo IPv6.
+description: Definição de intervalo IPv6.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf896f2bb41dcc56acf536c28ff25a680e1ed673
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7014a5d2d798cdde50c0afa7e91376a4a28d242f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449471"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731565"
 ---
 # <a name="ipv6range-resource-type"></a>Tipo de recurso iPv6Range
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Definição de Intervalo IPv6.
+Definição de intervalo IPv6.
 
 
 Herda de [ipRange](../resources/intune-mam-iprange.md)
@@ -46,6 +46,8 @@ Veja a seguir uma representação JSON do recurso.
   "upperAddress": "String"
 }
 ```
+
+
 
 
 

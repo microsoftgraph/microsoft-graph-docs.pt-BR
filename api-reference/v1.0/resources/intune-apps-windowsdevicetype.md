@@ -1,33 +1,35 @@
 ---
-title: Tipo de número windowsDeviceType
-description: Contém propriedades para Windows tipo de dispositivo.
+title: Tipo de enumeração windowsDeviceType
+description: Contém propriedades para o tipo de dispositivo Windows.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cde09bc3190a808b22a59224be5f4566edd66c87
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c29fae15e31372808a83c67ae01a6fd98797e33d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454492"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730760"
 ---
-# <a name="windowsdevicetype-enum-type"></a>Tipo de número windowsDeviceType
+# <a name="windowsdevicetype-enum-type"></a>Tipo de enumeração windowsDeviceType
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para Windows tipo de dispositivo.
+Contém propriedades para o tipo de dispositivo Windows.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |none|0|Nenhum sinalizador definido.|
-|desktop|1|Se o tipo de dispositivo desktop Windows desktop é suportado ou não.|
-|móvel|2|Se o tipo de dispositivo móvel Windows é suportado ou não.|
-|holographic|4 |Se o tipo de dispositivo Holographic Windows for suportado ou não.|
-|equipe|8 |Se o tipo de dispositivo Team Windows for suportado ou não.|
+|Desktop|1|Se o tipo de dispositivo Windows da área de trabalho tem ou não suporte.|
+|móvel|2|Se há suporte ou não para o tipo de dispositivo Móvel do Windows.|
+|Holográfica|4|Se o tipo de dispositivo Holographic Windows tem ou não suporte.|
+|team|8 |Se há suporte ou não para o tipo de dispositivo Team Windows.|
+
+
 
 
 

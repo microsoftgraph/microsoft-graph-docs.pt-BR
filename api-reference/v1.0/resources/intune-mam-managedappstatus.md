@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed69dbb16688383068ba9e76d3853d89fd5b819e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 130e62feea927ada9881ff78a95d5399e7f1700a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448994"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729576"
 ---
 # <a name="managedappstatus-resource-type"></a>Tipo de recurso managedAppStatus
 
@@ -29,7 +29,7 @@ Representa o status de proteção e configuração do aplicativo para a organiza
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome amigável do relatório de status.|
+|displayName|String|Nome amigável do relatório de status.|
 |id|String|Chave da entidade.|
 |versão|String|Versão da entidade.|
 
@@ -52,6 +52,8 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+
 
 
 

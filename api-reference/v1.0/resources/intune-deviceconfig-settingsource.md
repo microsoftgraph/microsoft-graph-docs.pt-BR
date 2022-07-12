@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 955ddce1b6b2cd1fc32925a6a763db83c38bcfac
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 18e046e8648bfa6b0d505b4dac110641fd08a864
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454886"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730676"
 ---
 # <a name="settingsource-resource-type"></a>Tipo de recurso settingSource
 
@@ -24,8 +24,8 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Ainda não documentado|
-|displayName|Cadeia de caracteres|Ainda não documentado|
-|sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|Ainda não documentado. Os valores possíveis são: `deviceConfiguration`, `deviceIntent`.|
+|displayName|String|Ainda não documentado|
+|Sourcetype|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|Ainda não documentado. Os valores possíveis são: `deviceConfiguration`, `deviceIntent`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -45,6 +45,8 @@ Veja a seguir uma representação JSON do recurso.
   "sourceType": "String"
 }
 ```
+
+
 
 
 

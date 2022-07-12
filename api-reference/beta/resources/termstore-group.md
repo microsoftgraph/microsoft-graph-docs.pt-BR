@@ -2,15 +2,15 @@
 author: mohitpcad
 title: Tipo de recurso de grupo
 doc_type: resourcePageType
-description: Representa um grupo usado em um armazenamento de termos.
+description: Representa um grupo usado em um repositório de termos.
 ms.localizationpriority: medium
 ms.prod: taxonomy
-ms.openlocfilehash: c43001533c5d0b81eb0f9064915a33d9d3e93815
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 3bd7f818cf9e38dcffcba9fac0c93b248d1d10d9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62347385"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732678"
 ---
 # <a name="group-resource-type"></a>Tipo de recurso de grupo
 
@@ -19,18 +19,18 @@ Namespace: microsoft.graph.termStore
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Representa um grupo usado em um armazenamento de [termos](../resources/termstore-store.md). Um grupo é uma hierarquia lógica que contém uma coleção de conjuntos sob ele. 
+Representa um grupo usado em um repositório de [termos](../resources/termstore-store.md). Um grupo é uma hierarquia lógica que contém uma coleção de conjuntos sob ele. 
 
-Herda da [entidade](../resources/entity.md).
+Herda de [entidade](../resources/entity.md).
 
 
 ## <a name="methods"></a>Methods
 
 | Método                                                   | Tipo de retorno       |    Descrição|
 |:---------------------------------------------------------|:------------------|:---------------------|
-| [Criar grupo](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Crie um grupo em um armazenamento de [termos].|
-| [Obter grupo](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Recupere os dados de um grupo em um armazenamento de [termos].|
-| [Excluir grupo](../api/termstore-group-delete.md)                     | Nenhum |  Exclua um grupo em um [armazenamento de termos].|
+| [Criar grupo](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Crie um grupo em um repositório de [termos].|
+| [Obter grupo](../api/termstore-group-get.md)                           | [microsoft.graph.termStore.group] | Recupere os dados de um grupo em um repositório de [termos].|
+| [Excluir grupo](../api/termstore-group-delete.md)                     | Nenhum |  Excluir um grupo em um repositório de [termos].|
 
 ## <a name="properties"></a>Propriedades
 
@@ -38,15 +38,15 @@ Herda da [entidade](../resources/entity.md).
 |:---------------------|:-------------------|:------------------------------------|
 | createdDateTime      | DateTimeOffset     | Data e hora da criação do grupo. Somente leitura.|
 | description          | string             | Descrição que fornece detalhes sobre o uso do termo.|
-| id                   | cadeia de caracteres             | Identificador exclusivo do grupo. Somente Leitura.|
-| displayName          | cadeia de caracteres             | Nome do grupo.|
+| id                   | string             | Identificador exclusivo do grupo. Somente Leitura.|
+| displayName          | string             | Nome do grupo.|
 | escopo                | string              | Retorna o tipo do grupo. Os valores possíveis são: `global`, `system` e `siteCollection`.|
-| parentSiteId         | cadeia de caracteres             | ID do site pai deste grupo.|
+| parentSiteId         | string             | ID do site pai deste grupo.|
 
 ## <a name="relationships"></a>Relações
 | Relação       | Tipo                        | Descrição|
 |:-------------------|:----------------------------|:--------------------------|
-| sets           | [coleção microsoft.graph.termStore.set][] | Todos os conjuntos sob o grupo em um armazenamento de [termos].|
+| Define           | [coleção microsoft.graph.termStore.set][] | Todos os conjuntos no grupo em um repositório de [termos].|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -77,7 +77,7 @@ A seguir está uma representação JSON de um **recurso de** grupo.
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.group]: termstore-group.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[store]: ../resources/termstore-store.md
+[Loja]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 <!--
