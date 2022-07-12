@@ -3,14 +3,14 @@ title: Tipo de recurso timeStamp
 description: Informações de data e hora para um ponto no tempo.
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: sites-and-lists
 author: JeremyKelley
-ms.openlocfilehash: ff93ab9a55a695818ec21f60afb039c6542efd0a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: fb82ddf1e69b8ea06cb425ed5199d1f6c5862b52
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695794"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66737102"
 ---
 # <a name="timestamp-resource-type"></a>Tipo de recurso timeStamp
 
@@ -23,9 +23,9 @@ Informações de data e hora para um ponto no tempo.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|data|Data|A parte de data do data do data/hora.|
-|hora|TimeOfDay|A parte de tempo do timestamp.|
-|timeZone|Cadeia de caracteres|A parte do timezone do timestamp, que é uma das 24 áreas longitudinais do mundo.|
+|data|Data|A parte de data do carimbo de data/hora.|
+|hora|TimeOfDay|A parte de hora do carimbo de data/hora.|
+|timeZone|Cadeia de caracteres|A parte de fuso horário do carimbo de data/hora, que é uma das 24 áreas longitudinais do mundo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

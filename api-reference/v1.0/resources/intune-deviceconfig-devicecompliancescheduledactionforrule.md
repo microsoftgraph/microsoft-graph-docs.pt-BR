@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf4301a1f38c46a203cc583bb32e271098280698
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f5355ccb39c82e8428532f3b9ea20595b4b26d51
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60440399"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734981"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Tipo de recurso deviceComplianceScheduledActionForRule
 
@@ -32,13 +32,13 @@ Ação agendada para a regra
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|ruleName|Cadeia de caracteres|Nome da regra à qual essa ação agendada se aplica. As ações agendadas no momento são criadas por política em vez de por regra, portanto RuleName é sempre definido como valor padrão PasswordRequired.|
+|id|String|Chave da entidade.|
+|ruleName|Cadeia de caracteres|Nome da regra à qual essa ação agendada se aplica. Atualmente, as ações agendadas são criadas por política em vez de por regra, portanto, RuleName é sempre definido como o valor padrão PasswordRequired.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|scheduledActionConfigurations|Conjunto [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md)|A lista de configurações de ações agendadas para essa política de conformidade. A política de conformidade deve ter uma ação agendada de apenas um bloco.|
+|scheduledActionConfigurations|Conjunto [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md)|A lista de configurações de ações agendadas para essa política de conformidade. A política de conformidade deve ter uma e apenas uma ação agendada de bloco.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -55,6 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   "ruleName": "String"
 }
 ```
+
+
 
 
 

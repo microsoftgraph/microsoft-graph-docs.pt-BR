@@ -1,18 +1,18 @@
 ---
-title: Tipo de número dayOfWeek
+title: Tipo de enumeração dayOfWeek
 description: Valores possíveis para um dia da semana
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4469fb76e24aca418c0b38e541138a1bd2b1ca85
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d8a4f021ac24e885c7bc05577bf19abc5cdd2e12
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454373"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722751"
 ---
-# <a name="dayofweek-enum-type"></a>Tipo de número dayOfWeek
+# <a name="dayofweek-enum-type"></a>Tipo de enumeração dayOfWeek
 
 Namespace: microsoft.graph
 
@@ -23,13 +23,15 @@ Valores possíveis para um dia da semana
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|sunday|0|Domingo.|
-|segunda-feira|1|Segunda-feira.|
-|terça-feira|2|Terça-feira.|
-|quarta-feira|3|Quarta-feira.|
-|thursday|4 |Quinta-feira.|
-|sexta-feira|5|Sexta-feira.|
-|saturday|6 |Sábado.|
+|Domingo|0|Domingo.|
+|Segunda-feira|1|Segunda-feira.|
+|Terça|2|Terça-feira.|
+|Quarta|3|Quarta-feira.|
+|Quinta|4|Quinta-feira.|
+|Sexta|5|Sexta-feira.|
+|Sábado|6 |Sábado.|
+
+
 
 
 

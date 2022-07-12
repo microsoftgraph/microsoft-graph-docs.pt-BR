@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce72c9707de83aace1cc98308002fca410084fb5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 84d7fb6a9d2ab8155ef40508260876580ffe69fe
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456640"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730487"
 ---
 # <a name="update-ebookinstallsummary"></a>Atualizar eBookInstallSummary
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [eBookInstallSum
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalaram este livro com êxito.|
 |failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar este livro.|
 |notInstalledDeviceCount|Int32|Número de dispositivos que não instalaram este livro.|
@@ -102,6 +102,8 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
+
 
 
 

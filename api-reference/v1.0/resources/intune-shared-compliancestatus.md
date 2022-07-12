@@ -1,18 +1,18 @@
 ---
-title: tipo de número complianceStatus
+title: Tipo de enumeração complianceStatus
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0cc02175f5dadeef697672c0dad08d5d83d75035
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b7da5964b1b24c06127d32036cea5cb64169d21f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454576"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734638"
 ---
-# <a name="compliancestatus-enum-type"></a>tipo de número complianceStatus
+# <a name="compliancestatus-enum-type"></a>Tipo de enumeração complianceStatus
 
 Namespace: microsoft.graph
 
@@ -25,12 +25,14 @@ Ainda não documentado
 |:---|:---|:---|
 |desconhecido|0|Ainda não documentado|
 |notApplicable|1|Ainda não documentado|
-|compatível|2|Ainda não documentado|
-|remediado|3|Ainda não documentado|
-|nonCompliant|4 |Ainda não documentado|
+|Compatível|2|Ainda não documentado|
+|corrigido|3|Ainda não documentado|
+|Incompatível|4|Ainda não documentado|
 |erro|5|Ainda não documentado|
-|conflict|6 |Ainda não documentado|
+|Conflito|6 |Ainda não documentado|
 |notAssigned|7 |Ainda não documentado|
+
+
 
 
 

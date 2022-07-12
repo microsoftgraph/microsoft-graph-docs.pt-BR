@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97a36867e39f2e21f501f4401bf6e7f02f908717
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 49fc538abe7f667680694634503792985e85a908
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449776"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736451"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 
@@ -45,6 +45,8 @@ Veja a seguir uma representação JSON do recurso.
   "secureByDefault": true
 }
 ```
+
+
 
 
 

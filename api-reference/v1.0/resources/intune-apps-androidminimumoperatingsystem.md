@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 532125a301b39e5542fef8c856be2d4bc7976120
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 69dd19075a28b6763c20b2c130ae2dd155d50ab6
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454387"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735030"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
@@ -59,6 +59,8 @@ Veja a seguir uma representação JSON do recurso.
   "v11_0": true
 }
 ```
+
+
 
 
 

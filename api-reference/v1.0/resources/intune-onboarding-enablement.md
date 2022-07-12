@@ -1,18 +1,18 @@
 ---
-title: Tipo de número de habilitação
+title: tipo de enumeração de habilitação
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af53066663ed71292cbe2217510016540a53eee8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 674935ad61bc2eb6d7eab50b73d4a974abf020f3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447358"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734662"
 ---
-# <a name="enablement-enum-type"></a>Tipo de número de habilitação
+# <a name="enablement-enum-type"></a>tipo de enumeração de habilitação
 
 Namespace: microsoft.graph
 
@@ -26,6 +26,8 @@ Ainda não documentado
 |notConfigured|0|Valor padrão do dispositivo, sem intenção.|
 |habilitadas|1|Habilita a configuração no dispositivo.|
 |desabilitadas|2|Desabilita a configuração no dispositivo.|
+
+
 
 
 

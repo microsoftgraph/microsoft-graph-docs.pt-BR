@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso sectionLinks
+title: Tipo de recurso sectionLinks
 description: Links para abrir uma seção do OneNote.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: 9ee3022ede7da1fbbfa6074611f54590e027209c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 70b39a9f8046fd1d12d391d169ca0ad0297abf61
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087583"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723488"
 ---
-# <a name="sectionlinks-resource-type"></a>tipo de recurso sectionLinks
+# <a name="sectionlinks-resource-type"></a>Tipo de recurso sectionLinks
 
 Namespace: microsoft.graph
 
@@ -42,7 +42,7 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|Abre a seção no cliente nativo do OneNote se ele estiver instalado.|
+|oneNoteClientUrl|[externalLink](externallink.md)|Abre a seção no cliente nativo do OneNote se ela estiver instalada.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Abre a seção no OneNote na Web.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

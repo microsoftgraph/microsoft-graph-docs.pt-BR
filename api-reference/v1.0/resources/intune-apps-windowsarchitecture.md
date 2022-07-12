@@ -1,33 +1,35 @@
 ---
-title: Tipo de número windowsArchitecture
-description: Contém propriedades para Windows arquitetura.
+title: Tipo de enumeração windowsArchitecture
+description: Contém propriedades para a arquitetura do Windows.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2190e48a6c3c98522c749eee6ba5a97584aa1c6e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8990a1e26ee779d253dfb947862009fbe10e1cda
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447865"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733889"
 ---
-# <a name="windowsarchitecture-enum-type"></a>Tipo de número windowsArchitecture
+# <a name="windowsarchitecture-enum-type"></a>Tipo de enumeração windowsArchitecture
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para Windows arquitetura.
+Contém propriedades para a arquitetura do Windows.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |none|0|Nenhum sinalizador definido.|
-|x86|1|Se o tipo de arquitetura Windows X86 é suportado ou não.|
-|x64|2|Se o tipo de arquitetura Windows X64 é suportado ou não.|
-|arm|4 |Se o tipo de arquitetura Arm Windows é suportado ou não.|
-|neutral|8 |Se o tipo de arquitetura Windows neutro é suportado ou não.|
+|x86|1|Se o tipo de arquitetura do Windows X86 tem ou não suporte.|
+|x64|2|Se o tipo de arquitetura do Windows X64 tem ou não suporte.|
+|Braço|4|Se o tipo de arquitetura do Arm Windows tem ou não suporte.|
+|Neutro|8 |Se há suporte ou não para o tipo de arquitetura neutra do Windows.|
+
+
 
 
 

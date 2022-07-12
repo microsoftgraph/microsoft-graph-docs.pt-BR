@@ -1,18 +1,18 @@
 ---
-title: tipo de número weeklySchedule
+title: Tipo de enumeração weeklySchedule
 description: Valores possíveis para uma agenda semanal.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 03d24026215bfb119a895d702b623d6118cbac54
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f48ea4ba9f6bf0f935a38fcc755ea3f810345053
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446621"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722590"
 ---
-# <a name="weeklyschedule-enum-type"></a>tipo de número weeklySchedule
+# <a name="weeklyschedule-enum-type"></a>Tipo de enumeração weeklySchedule
 
 Namespace: microsoft.graph
 
@@ -23,15 +23,17 @@ Valores possíveis para uma agenda semanal.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|User Defined, default value, no intent.|
-|todos os dias|1|Todos os dias.|
-|sunday|2|Domingo.|
-|segunda-feira|3|Segunda-feira.|
-|terça-feira|4 |Terça-feira.|
-|quarta-feira|5|Quarta-feira.|
-|thursday|6 |Quinta-feira.|
-|sexta-feira|7 |Sexta-feira.|
-|saturday|8 |Sábado.|
+|Userdefined|0|Definido pelo Usuário, valor padrão, sem intenção.|
+|Diária|1|Diária.|
+|Domingo|2|Domingo.|
+|Segunda-feira|3|Segunda-feira.|
+|Terça|4|Terça-feira.|
+|Quarta|5|Quarta-feira.|
+|Quinta|6 |Quinta-feira.|
+|Sexta|7 |Sexta-feira.|
+|Sábado|8 |Sábado.|
+
+
 
 
 

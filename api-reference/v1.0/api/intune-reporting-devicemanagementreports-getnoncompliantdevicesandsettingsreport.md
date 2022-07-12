@@ -1,18 +1,18 @@
 ---
-title: atribuir ação
+title: Ação getNoncompliantDevicesAndSettingsReport
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df8433fbc9b09015922a0ffee3d24ad3e3863707
+ms.openlocfilehash: f29b7b44dd3b43eb3c4057b9cac652bd6d765fe0
 ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66734085"
+ms.locfileid: "66737109"
 ---
-# <a name="assign-action"></a>atribuir ação
+# <a name="getnoncompliantdevicesandsettingsreport-action"></a>Ação getNoncompliantDevicesAndSettingsReport
 
 Namespace: microsoft.graph
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo|DeviceManagementConfiguration.ReadWrite.All|
+|Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- {
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
+POST /deviceManagement/reports/getNoncompliantDevicesAndSettingsReport
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,34 +51,47 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Ainda não documentado|
+|nome|String|Ainda não documentado|
+|select|String collection|Ainda não documentado|
+|search|String|Ainda não documentado|
+|Groupby|String collection|Ainda não documentado|
+|Orderby|String collection|Ainda não documentado|
+|skip|Int32|Ainda não documentado|
+|top|Int32|Ainda não documentado|
+|Sessionid|String|Ainda não documentado|
+|filter|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) no corpo da resposta.
+Se for bem-sucedida, essa ação retornará um `200 OK` código de resposta e um Fluxo no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
+POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getNoncompliantDevicesAndSettingsReport
 
 Content-type: application/json
-Content-length: 333
+Content-length: 278
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
-      "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "Collection Id value"
-      }
-    }
-  ]
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
 }
 ```
 
@@ -87,19 +100,10 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 327
+Content-Length: 111
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
-      "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "Collection Id value"
-      }
-    }
-  ]
+  "value": "Z2V0Tm9uY29tcGxpYW50RGV2aWNlc0FuZFNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0yMDEyNTMxMjQ3"
 }
 ```
 

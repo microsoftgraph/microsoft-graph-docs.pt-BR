@@ -1,18 +1,18 @@
 ---
-title: tipo de número ratingAppsType
+title: Tipo de enumeração ratingAppsType
 description: Classificação de aplicativos como no conteúdo de mídia
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4eec19c6f09f980a3e3ca701f8d7af2dc2caaf73
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 058936a4afacd37d2dc8743b2190d8de4243b127
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450731"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730690"
 ---
-# <a name="ratingappstype-enum-type"></a>tipo de número ratingAppsType
+# <a name="ratingappstype-enum-type"></a>Tipo de enumeração ratingAppsType
 
 Namespace: microsoft.graph
 
@@ -25,10 +25,12 @@ Classificação de aplicativos como no conteúdo de mídia
 |:---|:---|:---|
 |allAllowed|0|Valor padrão, permitir todo o conteúdo de aplicativos|
 |allBlocked|1|Não permitir conteúdo de aplicativos|
-|agesAbove4|2|4+, 4 anos ou mais|
-|agesAbove9|3|9+, 9 anos ou mais|
-|agesAbove12|4 |12+, 12 anos ou mais |
-|agesAbove17|5|17+, 17 anos ou mais|
+|agesAbove4|2|4 anos ou mais, 4 anos e mais|
+|agesAbove9|3|9 anos, 9 anos e mais|
+|agesAbove12|4|12 anos ou mais, 12 anos e mais |
+|agesAbove17|5|17 anos e mais de 17 anos|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd6b0f95407214474e49ab7de2b24532268d6074
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 39ef6f85bc1de4d8d9cbf752c4087df2b5ff7117
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448573"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734750"
 ---
 # <a name="mediacontentratingfrance-resource-type"></a>Tipo de recurso mediaContentRatingFrance
 
@@ -43,6 +43,8 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
 
 
 
