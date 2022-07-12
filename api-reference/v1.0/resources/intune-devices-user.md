@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f5ceecc7122ac9b7a3135c30a7d465eedaf6f34
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bab9cec7c586fea4621c92c8c6756e7b3e1f3d67
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449324"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736059"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -33,7 +33,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do usuário.|
+|id|String|Identificador exclusivo do usuário.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -54,6 +54,8 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

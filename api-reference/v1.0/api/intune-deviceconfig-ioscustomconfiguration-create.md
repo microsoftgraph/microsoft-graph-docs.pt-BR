@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43809b13361b034ca74c8a90bf2018d440086742
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 960f78e97efe7cb8799eb3c5c0786bb9a654094e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899033"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731103"
 ---
 # <a name="create-ioscustomconfiguration"></a>Criar iosCustomConfiguration
 
@@ -54,11 +54,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosCusto
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |payloadName|Cadeia de caracteres|Nome que é exibido para o usuário.|
-|payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileconfig \|\ *.xml).|
+|payloadFileName|Cadeia de caracteres|O nome do arquivo de carga (*.mobileconfig | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
 
 
@@ -106,6 +106,8 @@ Content-Length: 451
   "payload": "cGF5bG9hZA=="
 }
 ```
+
+
 
 
 

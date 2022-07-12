@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53b94b37dd98ff94279b11d925cac7ecd0e1d2b8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 458129cd74bc9138ebbbe6f044a009ce679cb345
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445990"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732517"
 ---
 # <a name="update-devicemanagementexportjob"></a>Atualizar deviceManagementExportJob
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de [um objeto deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)
+Atualize as propriedades de [um objeto deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,28 +45,28 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo dessa entidade|
-|reportName|Cadeia de caracteres|Nome do relatório|
-|filter|Cadeia de caracteres|Filtros aplicados no relatório|
-|select|Coleção de cadeias de caracteres|Colunas selecionadas no relatório|
+|id|String|Identificador exclusivo para esta entidade|
+|Reportname|String|Nome do relatório|
+|filter|String|Filtros aplicados no relatório|
+|select|Conjunto de cadeias de caracteres|Colunas selecionadas no relatório|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Formato do relatório exportado. Os valores possíveis são: `csv` e `pdf`.|
-|snapshotId|Cadeia de caracteres|Um instantâneo é um subconjunto identificável do conjuntos de dados representado pelo ReportName. Uma id sessionId ou CachedReportConfiguration pode ser usada aqui. Se uma sessionId for especificada, Filter, Select e OrderBy serão aplicados aos dados representados pela sessionId. Filter, Select e OrderBy não podem ser especificados juntamente com uma id CachedReportConfiguration.|
+|snapshotId|String|Um instantâneo é um subconjunto identificável do conjunto de dados representado pelo ReportName. Uma id sessionId ou CachedReportConfiguration pode ser usada aqui. Se uma sessionId for especificada, Filter, Select e OrderBy serão aplicados aos dados representados pela sessionId. Filter, Select e OrderBy não podem ser especificados junto com uma ID CachedReportConfiguration.|
 |localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configura como o trabalho de exportação solicitado é localizado. Os valores possíveis são: `localizedValuesAsAdditionalColumn` e `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status do trabalho de exportação. Os valores possíveis são: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|Cadeia de caracteres|Local temporário do relatório exportado|
 |requestDateTime|DateTimeOffset|Hora em que o relatório exportado foi solicitado|
-|expirationDateTime|DateTimeOffset|Tempo em que o relatório exportado expira|
+|expirationDateTime|DateTimeOffset|Hora em que o relatório exportado expira|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -118,6 +118,8 @@ Content-Length: 504
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
+
 
 
 

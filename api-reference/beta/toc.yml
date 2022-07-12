@@ -222,9 +222,9 @@ items:
           - name: Criar um aplicativo web (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
           - name: Criar um aplicativo web (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
           - name: Criar um aplicativo web (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
           - name: Criar uma web part do Microsoft Office SharePoint Online
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
           - name: Criar uma guia do Teams
@@ -1773,7 +1773,7 @@ items:
                   - name: Listar conjuntos de revisão
                     href: api/ediscovery-case-list-reviewsets.md
                   - name: Criar conjunto de revisão
-                    href: /api/ediscovery-case-post-reviewsets.md
+                    href: api/ediscovery-case-post-reviewsets.md
                   - name: Obter configurações
                     href: api/ediscovery-casesettings-get.md
                   - name: Atualizar configurações
@@ -1783,11 +1783,11 @@ items:
                   - name: Listar coleções de origem
                     href: api/ediscovery-case-list-sourcecollections.md
                   - name: Criar coleção de origem
-                    href: /api/ediscovery-case-post-sourcecollections.md
+                    href: api/ediscovery-case-post-sourcecollections.md
                   - name: Listar marcas
-                    href: /api/ediscovery-case-list-tags.md
+                    href: api/ediscovery-case-list-tags.md
                   - name: Criar marca
-                    href: /api/ediscovery-case-post-tags.md
+                    href: api/ediscovery-case-post-tags.md
               - name: Custodian
                 href: resources/ediscovery-custodian.md
                 items:
@@ -9785,7 +9785,7 @@ items:
                   - name: Uso do PIN do Windows Hello para empresas
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: Controle de Acesso Baseado em Função (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: Detalhes de função atribuídos ao gerenciamento de aplicativo e dispositivo
                     href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -14883,7 +14883,7 @@ items:
                     href: api/security-ediscoverycasesettings-update.md
                   - name: Redefinir as configurações para o padrão
                     href: api/security-ediscoverycasesettings-resettodefault.md
-              - name: Operação
+              - name: Operation
                 href: resources/security-caseoperation.md
                 items:
                   - name: Listar operações de caso
@@ -15386,7 +15386,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -15913,7 +15913,7 @@ items:
                 href: api/userteamwork-sendactivitynotification.md
               - name: Enviar notificações para vários usuários em massa
                 href: api/teamwork-sendactivitynotificationtorecipients.md
-          - name: Tab
+          - name: Guia
             href: resources/teamstab.md
             items:
               - name: Guia no canal
@@ -16279,7 +16279,7 @@ items:
                 items:
                   - name: Tarefa base
                     href: resources/basetask.md
-                  - name: Tarefas
+                  - name: Tarefa
                     href: resources/task.md
                   - name: Listar tarefas base
                     href: api/basetasklist-list-tasks.md

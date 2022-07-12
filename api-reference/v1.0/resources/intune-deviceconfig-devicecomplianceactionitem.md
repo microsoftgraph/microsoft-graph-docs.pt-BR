@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0331700ae209d19a711bb970ff4ac4938a8a2b04
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: fd12238c4bd6df4366ac352dc9c3976414e81fe2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449380"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733393"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>Tipo de recurso deviceComplianceActionItem
 
@@ -32,7 +32,7 @@ Configuração de ação agendada
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |gracePeriodHours|Int32|Número de horas a aguardar até que a ação seja aplicada. Valores válidos de 0 a 8760|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|Que ação deve ser tomada. Os valores possíveis são: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`.|
 |notificationTemplateId|Cadeia de caracteres|Qual modelo de notificação de mensagem será usado|
@@ -61,6 +61,8 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
 
 
 

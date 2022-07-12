@@ -1,18 +1,18 @@
 ---
-title: Tipo de número runAsAccountType
+title: Tipo de enumeração runAsAccountType
 description: Indica o tipo de contexto de execução em que o aplicativo é executado.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c3d3ad8f16f34c6bbe282d3b28aea537cc1ea4d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 37eda415508376a2371c381743f92566d949a083
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60434828"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735135"
 ---
-# <a name="runasaccounttype-enum-type"></a>Tipo de número runAsAccountType
+# <a name="runasaccounttype-enum-type"></a>Tipo de enumeração runAsAccountType
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,9 @@ Indica o tipo de contexto de execução em que o aplicativo é executado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sistema|0|Contexto do sistema|
-|usuário|1|Contexto do usuário|
+|user|1|Contexto do usuário|
+
+
 
 
 

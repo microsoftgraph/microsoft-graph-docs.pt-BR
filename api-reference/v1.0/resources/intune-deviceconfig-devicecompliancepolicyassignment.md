@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1e092f1eb09ee11797d190bb82aac29ecdcc5196
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d3fdd2fc6c5218cecf3d9ed0fa356c63710d3112
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450226"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736465"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>Tipo de recurso deviceCompliancePolicyAssignment
 
@@ -32,7 +32,7 @@ Atribuição de política de conformidade do dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino da atribuição de políticas de conformidade.|
 
 ## <a name="relationships"></a>Relações
@@ -56,6 +56,8 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
 
 
 

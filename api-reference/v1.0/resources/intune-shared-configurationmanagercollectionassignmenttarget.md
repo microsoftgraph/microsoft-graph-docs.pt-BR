@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso configurationManagerCollectionAssignmentTarget
-description: Representa uma atribuição a uma coleção configuration manager.
+title: Tipo de recurso configurationManagerCollectionAssignmentTarget
+description: Representa uma atribuição a uma Configuration Manager Coleção.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ff8e2bfdf71957466bf546575dc97f2788f490e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8892b517de9cd5b48ee22d9b91e1bc20471d0c57
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450724"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736696"
 ---
-# <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>tipo de recurso configurationManagerCollectionAssignmentTarget
+# <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>Tipo de recurso configurationManagerCollectionAssignmentTarget
 
 Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa uma atribuição a uma coleção configuration manager.
+Representa uma atribuição a uma Configuration Manager Coleção.
 
 
 Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)
@@ -26,7 +26,7 @@ Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-dev
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|collectionId|Cadeia de caracteres|A ID da coleção que é o destino da atribuição.|
+|collectionId|String|A ID da coleção que é o destino da atribuição.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -44,6 +44,8 @@ Veja a seguir uma representação JSON do recurso.
   "collectionId": "String"
 }
 ```
+
+
 
 
 

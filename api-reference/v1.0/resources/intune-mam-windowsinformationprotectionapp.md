@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f46e76afcf4a7b8035cf7a501a2e073ada5f9877
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 990844a9d54c960f52e8249b93c8956c5010c022
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448980"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729927"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Tipo de recurso windowsInformationProtectionApp
 
@@ -23,8 +23,8 @@ Aplicativo para proteção de informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição do aplicativo.|
-|description|Cadeia de caracteres|A descrição do aplicativo.|
+|displayName|String|Nome de exibição do aplicativo.|
+|description|String|A descrição do aplicativo.|
 |publisherName|String|O nome do distribuidor|
 |productName|Cadeia de caracteres|O nome do produto.|
 |negado|Booliano|Se verdadeiro, é negada proteção ou isenção ao aplicativo.|
@@ -49,6 +49,8 @@ Veja a seguir uma representação JSON do recurso.
   "denied": true
 }
 ```
+
+
 
 
 

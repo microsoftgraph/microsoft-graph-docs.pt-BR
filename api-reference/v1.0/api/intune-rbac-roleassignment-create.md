@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a08f908b6e6c2bd018112a1095be389f2cca5022
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b3bea8d75059a67d689daa30d98edd69fb40c2e9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457046"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731292"
 ---
 # <a name="create-roleassignment"></a>Criar roleAssignment
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementRBAC.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleAssi
 |:---|:---|:---|
 |id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
 |displayName|String|O nome de exibição ou nome amigável da atribuição de função.|
-|description|Cadeia de caracteres|Descrição da atribuição de função.|
+|description|String|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
 
 
@@ -97,6 +97,8 @@ Content-Length: 242
   ]
 }
 ```
+
+
 
 
 

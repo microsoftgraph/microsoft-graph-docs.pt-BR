@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc330425daffabb65d6b25bd8e66e027350fbc40
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 64fe4819fc2957c72109b872fd4bae9954b59047
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452885"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736143"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Tipo de recurso mediaContentRatingCanada
 
@@ -43,6 +43,8 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
 
 
 

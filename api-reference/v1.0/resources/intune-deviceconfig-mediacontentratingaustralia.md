@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a07259e3b3edb7231c4b6f9e287e2506a89e440
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ff9efff4d66d3f3404de0862d4999dbb402b564c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450219"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735618"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>Tipo de recurso mediaContentRatingAustralia
 
@@ -43,6 +43,8 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
 
 
 

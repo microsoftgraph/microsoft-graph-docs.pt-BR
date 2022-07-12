@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac94a17f4e8121049aede5a8c0d5ae9e8077552c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0dfc5ab77d1084305d54e88bd0e5c862c62c3aca
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450907"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731327"
 ---
 # <a name="update-compliancemanagementpartner"></a>Atualizar complianceManagementPartner
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de [um objeto complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
+Atualize as propriedades de [um objeto complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,27 +45,27 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o [objeto complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
+No corpo da solicitação, forneça uma representação JSON do objeto [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) .
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|ID da entidade|
-|lastHeartbeatDateTime|DateTimeOffset|Timestamp de última pulsação depois que o administrador entrou no parceiro de gerenciamento de conformidade|
+|lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação depois que o administrador foi integrado ao parceiro de gerenciamento de conformidade|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado do parceiro desse locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Cadeia de caracteres|Nome de exibição de parceiro|
-|macOsOnboarded|Booliano|Parceiro a bordo para dispositivos Mac.|
-|androidOnboarded|Booliano|Parceiro a bordo para dispositivos Android.|
-|iosOnboarded|Booliano|Parceiro internado para dispositivos ios.|
-|macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio de parceiros.|
-|androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio de parceiros.|
-|iosEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos ios por meio de parceiros.|
+|displayName|String|Nome de exibição de parceiro|
+|macOsOnboarded|Booliano|Parceiro integrado para dispositivos Mac.|
+|androidOnboarded|Booliano|Parceiro integrado para dispositivos Android.|
+|iosOnboarded|Booliano|Parceiro integrado para dispositivos ios.|
+|macOsEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Mac por meio do parceiro.|
+|androidEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos Android por meio do parceiro.|
+|iosEnrollmentAssignments|[coleção complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Grupos de usuários que registram dispositivos iOS por meio do parceiro.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -159,6 +159,8 @@ Content-Length: 1235
   ]
 }
 ```
+
+
 
 
 

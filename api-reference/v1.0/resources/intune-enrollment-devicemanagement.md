@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0102a098760e303267cc2e510e4e18a4a320126
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 584a6104fc9791cac58f9ca20af9e53ae1687df1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452871"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736052"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -29,12 +29,12 @@ O recurso deviceManagement representa as identidades de dispositivos da coleçã
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
+|id|String|O GUID do objeto.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|windowsAutopilotDeviceIdentities|[Coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|As Windows do dispositivo autopilot continham coleção.|
+|windowsAutopilotDeviceIdentities|[coleção windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|As identidades de dispositivo do Windows Autopilot continham coleção.|
 |importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -51,6 +51,8 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 8e3560bb63ca156029cd238a03479841ae2ccef4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c8647c69e3ecc37fd588a7e11e3c469ae5085016
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455855"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733420"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -20,10 +20,6 @@ Namespace: microsoft.graph
 
 - [Estado da ação](intune-devices-actionstate.md)
 - [Certificado de notificação por push da Apple](intune-devices-applepushnotificationcertificate.md)
-- [Ator de auditoria](intune-auditing-auditactor.md)
-- [Evento de auditoria](intune-auditing-auditevent.md)
-- [Propriedade de auditoria](intune-auditing-auditproperty.md)
-- [Recurso de auditoria](intune-auditing-auditresource.md)
 - [Estado de conformidade](intune-devices-compliancestate.md)
 - [Recursos habilitados pelo cliente do Gerenciador de Configurações](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Resultado da ação de excluir o usuário do dispositivo compartilhado da Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
@@ -34,10 +30,8 @@ Namespace: microsoft.graph
 - [Resumo do Estado de Acesso ao Exchange do dispositivo](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Geolocalização do dispositivo](intune-devices-devicegeolocation.md)
 - [Estado do atestado de integridade do dispositivo](intune-devices-devicehealthattestationstate.md)
-- [Gerenciamento de dispositivos](intune-auditing-devicemanagement.md)
-- [Gerenciamento de dispositivos](intune-auditing-devicemanagement.md)
-- [Gerenciamento de dispositivos](intune-auditing-devicemanagement.md)
-- [Gerenciamento de dispositivos](intune-auditing-devicemanagement.md)
+- [Gerenciamento de dispositivos](intune-devices-devicemanagement.md)
+- [Gerenciamento de dispositivos](intune-devices-devicemanagement.md)
 - [Estado de acesso do Exchange de gerenciamento de dispositivo](intune-devices-devicemanagementexchangeaccessstate.md)
 - [Motivo do estado de acesso do Exchange de gerenciamento de dispositivo](intune-devices-devicemanagementexchangeaccessstatereason.md)
 - [Estado de assinatura de gerenciamento de dispositivo](intune-devices-devicemanagementsubscriptionstate.md)
@@ -52,12 +46,8 @@ Namespace: microsoft.graph
 - [Tipo de agente de gerenciamento](intune-devices-managementagenttype.md)
 - [Modelo de mensagem de notificação](intune-notification-notificationmessagetemplate.md)
 - [Opções de identidade visual do modelo de notificação](intune-notification-notificationtemplatebrandingoptions.md)
-- [Tipo de plataforma](intune-esim-platformtype.md)
-- [Status da inclusão de assistência remota](intune-remoteassistance-remoteassistanceonboardingstatus.md)
-- [Parceiro de assistência remota](intune-remoteassistance-remoteassistancepartner.md)
 - [Resultado da ação de bloqueio remoto](intune-devices-remotelockactionresult.md)
 - [Resultado da ação de redefinir a senha](intune-devices-resetpasscodeactionresult.md)
-- [Tuple_2 de execução type_ i collection_1 de operação](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Parâmetro da ação de atualização de conta de dispositivo Windows](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Usuário](intune-devices-user.md)
 - [Resultado da ação de verificação do Windows Defender](intune-devices-windowsdefenderscanactionresult.md)

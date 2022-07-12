@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: O recurso SharingInvitation transforma itens de dados relacionados a convite em uma única estrutura.
+description: O recurso SharingInvitation agrupa itens de dados relacionados ao convite em uma única estrutura.
 ms.date: 09/10/2017
 title: SharingInvitation
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: db2214132dcbecdfb8b8689bdb3d5547a13be2ab
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: d13950d9662504e3058b40fafdd9c192e825baea
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723274"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732699"
 ---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
 
@@ -19,7 +19,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O **recurso SharingInvitation** transforma itens de dados relacionados a convite em uma única estrutura.
+O **recurso SharingInvitation** agrupa itens de dados relacionados ao convite em uma única estrutura.
 
 ## <a name="json-representation"></a>Representação JSON
 

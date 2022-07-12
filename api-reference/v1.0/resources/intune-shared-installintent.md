@@ -1,18 +1,18 @@
 ---
-title: Tipo de número installIntent
+title: Tipo de enumeração installIntent
 description: Valores possíveis para a intenção de instalação escolhida pelo administrador.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d48410b85bfc2fb3fee5f33bd9b093b56d2a045b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 15722c9bd4290c9328ceaf47d8fab45a77c8303d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453692"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735079"
 ---
-# <a name="installintent-enum-type"></a>Tipo de número installIntent
+# <a name="installintent-enum-type"></a>Tipo de enumeração installIntent
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,10 @@ Valores possíveis para a intenção de instalação escolhida pelo administrado
 |:---|:---|:---|
 |disponível|0|Intenção de instalação disponível.|
 |obrigatório|1|Intenção de instalação necessária.|
-|desinstalar|2|Intenção de desinstalar a instalação.|
+|Desinstalar|2|Desinstale a intenção de instalação.|
 |availableWithoutEnrollment|3|Disponível sem intenção de instalação do registro.|
+
+
 
 
 

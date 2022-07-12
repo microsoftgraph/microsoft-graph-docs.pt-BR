@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6008e2795717f2fe3134c2158997a367008f33c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b14f57cc9bdd5a5465810da477fa45387156b3eb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454072"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735429"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>Tipo de recurso bitLockerRemovableDrivePolicy
 
@@ -45,6 +45,8 @@ Veja a seguir uma representação JSON do recurso.
   "blockCrossOrganizationWriteAccess": true
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 580c84aeda70499944772828c10fe39242cc1d37
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8a0f52538bfcfa78409b30faeb27ea2a949a6553
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455475"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733364"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Tipo de recurso iosHomeScreenFolderPage
 
@@ -23,8 +23,8 @@ Uma página para uma pasta que contém aplicativos e clipes da Web na Tela Inici
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome da página da pasta|
-|aplicativos|Conjunto [iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md)|Uma lista de aplicativos e clipes da Web a ser exibida em uma página dentro de uma pasta. Esta coleção pode conter um máximo de 500 elementos.|
+|displayName|String|Nome da página da pasta|
+|aplicativos|Conjunto [iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md)|Uma lista de aplicativos e clipes da Web a serem exibidos em uma página dentro de uma pasta. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -49,6 +49,8 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
 
 
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: A faceta Root indica que um objeto é o mais alto em sua hierarquia.
 ms.date: 09/10/2017
-title: Jailbreak
-localization_priority: Normal
+title: Raiz
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 42ec776ae19d56739d3298da9f3e67659d4060fc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sites-and-lists
+ms.openlocfilehash: 84fa782bee6dc0626d6204b56271b2e52b80cd6d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016118"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731173"
 ---
 # <a name="root-resource-type"></a>Tipo de recurso Root
 

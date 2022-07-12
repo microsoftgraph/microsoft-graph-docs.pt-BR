@@ -1,18 +1,18 @@
 ---
-title: Tipo de número policyPlatformType
+title: Tipo de enumeração policyPlatformType
 description: Tipos de plataforma com suporte para políticas.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 08f8b36284df0752303ecb20552dec8ef917ab4b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a3d0e98109a70f33980bd4bd742ff45902271f6b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447400"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735730"
 ---
-# <a name="policyplatformtype-enum-type"></a>Tipo de número policyPlatformType
+# <a name="policyplatformtype-enum-type"></a>Tipo de enumeração policyPlatformType
 
 Namespace: microsoft.graph
 
@@ -23,14 +23,16 @@ Tipos de plataforma com suporte para políticas.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|android|0|Android.|
-|iOS|2|iOS.|
-|macOS|3|MacOS.|
-|windowsPhone81|4 |WindowsPhone 8.1.|
+|Android|0|Android.|
+|iOS|2|Ios.|
+|macOS|3|Macos.|
+|windowsPhone81|4|WindowsPhone 8.1.|
 |windows81AndLater|5|Windows 8.1 e posterior|
 |windows10AndLater|6 |Windows 10 e posterior.|
 |androidWorkProfile|7 |AndroidWorkProfile.|
-|all|100|Todas as plataformas.|
+|tudo|100|Todas as plataformas.|
+
+
 
 
 

@@ -1,18 +1,18 @@
 ---
-title: Tipo de número de enrollmentState
+title: Tipo de enumeração enrollmentState
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: acce3bb71f675ecc558768fcdbb3ee2071b073aa
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 189cc01b962e68754c37ae2c6755f883f2230aba
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452864"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729948"
 ---
-# <a name="enrollmentstate-enum-type"></a>Tipo de número de enrollmentState
+# <a name="enrollmentstate-enum-type"></a>Tipo de enumeração enrollmentState
 
 Namespace: microsoft.graph
 
@@ -24,10 +24,12 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|O estado de registro do dispositivo é desconhecido|
-|inscrito|1|O dispositivo está inscrito.|
-|pendingReset|2|Inscrito, mas ele é inscrito por meio do perfil de registro e o perfil inscrito é diferente do perfil atribuído.|
-|failed|3|Não registrado e há registro de falha no registro.|
-|notContacted|4 |O dispositivo é importado, mas não está inscrito.|
+|Matriculados|1|O dispositivo está registrado.|
+|pendingReset|2|Registrado, mas registrado por meio do perfil de registro, e o perfil registrado é diferente do perfil atribuído.|
+|Falhou|3|Não registrado e há registro de falha de registro.|
+|notContacted|4|O dispositivo é importado, mas não registrado.|
+
+
 
 
 

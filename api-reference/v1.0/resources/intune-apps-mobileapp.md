@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b71c2ee6cd6dcb377dfa0d6a3fbecc0108471b5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 01c9106f4db522defe7f80bd96de3ee3393fcd7c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456225"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731019"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -30,9 +30,9 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
-|description|Cadeia de caracteres|A descrição do aplicativo.|
+|id|String|Chave da entidade.|
+|displayName|String|O título do aplicativo importado ou definido pelo administrador.|
+|description|String|A descrição do aplicativo.|
 |publisher|String|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
@@ -40,7 +40,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador.|
 |privacyInformationUrl|String|A URL da declaração de privacidade.|
 |informationUrl|String|A URL de informações adicionais.|
-|owner|Cadeia de caracteres|O proprietário do conteúdo.|
+|owner|String|O proprietário do conteúdo.|
 |developer|String|O desenvolvedor do aplicativo.|
 |notes|String|Anotações para o aplicativo.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
@@ -82,6 +82,8 @@ Veja a seguir uma representação JSON do recurso.
   "publishingState": "String"
 }
 ```
+
+
 
 
 

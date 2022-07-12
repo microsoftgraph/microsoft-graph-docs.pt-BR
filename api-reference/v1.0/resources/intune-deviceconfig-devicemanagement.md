@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a02524b48574def8ef4cd6e5562a8ef4307a8ad5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dfc6b1a68a13d4fc684e0cb106900f3313de45bc
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447267"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732412"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -29,9 +29,9 @@ Entidade singleton que atua como um contêiner para todas as funcionalidades de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo|
+|id|String|Identificador exclusivo|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
-|intuneAccountId|Guid|ID da conta do Intune para determinado locatário|
+|intuneAccountId|Guid|Intune ID da conta para determinado locatário|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -65,6 +65,8 @@ Veja a seguir uma representação JSON do recurso.
   "intuneAccountId": "Guid"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6056076d9e1d27ca6f8641c583e77feb9604c91b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 30c01a5217890a639137bbd1989f52d5f9090f86
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454767"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731201"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -32,7 +32,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do usuário.|
+|id|String|Identificador exclusivo do usuário.|
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 
 ## <a name="relationships"></a>Relações
@@ -53,6 +53,8 @@ Veja a seguir uma representação JSON do recurso.
   "deviceEnrollmentLimit": 1024
 }
 ```
+
+
 
 
 

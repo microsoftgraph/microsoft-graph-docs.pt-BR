@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 623bb0c9eba0c46bacbcb06aba3d319c1cb98768
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: cdf0d172efdc7dd91bc64301e42b0764c0cd882f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450190"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730592"
 ---
 # <a name="devicecategory-resource-type"></a>Tipo de recurso deviceCategory
 
@@ -32,9 +32,9 @@ Categorias de dispositivo fornecem uma maneira de organizar seus dispositivos. U
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
-|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
-|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
+|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|displayName|String|Nome de exibição da categoria de dispositivo.|
+|description|String|Descrição opcional da categoria do dispositivo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -55,6 +55,8 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String"
 }
 ```
+
+
 
 
 

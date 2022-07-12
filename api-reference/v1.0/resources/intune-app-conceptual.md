@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 7e9c655cf91a87790d9e5f1327eebaca0a60cb7e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1990619b734889df50a6333c4a3ce523d8e5a22
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098948"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735478"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Gerenciar aplicativos usando Microsoft Intune
 
@@ -27,7 +27,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar aplicativos m�
 - [Gerenciamento de aplicativos de dispositivo](intune-apps-deviceappmanagement.md)
 - [Gerenciamento de aplicativos de dispositivo](intune-apps-deviceappmanagement.md)
 - [Estado de instalação do dispositivo](intune-books-deviceinstallstate.md)
-- [Gerenciamento de dispositivos](intune-androidforwork-devicemanagement.md)
 - [Resumo de instalação de livro eletrônico](intune-books-ebookinstallsummary.md)
 - [Informações sobre criptografia de arquivo](intune-apps-fileencryptioninfo.md)
 - [Estado de instalação](intune-books-installstate.md)
@@ -78,25 +77,25 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar aplicativos m�
 - [Aplicativo Web](intune-apps-webapp.md)
 - [Aplicativo LOB do Win32](intune-apps-win32lobapp.md)
 - [Configurações de atribuição do aplicativo LOB do Win32](intune-apps-win32lobappassignmentsettings.md)
-- [Prioridade de otimização de entrega de aplicativos LOB win32](intune-apps-win32lobappdeliveryoptimizationpriority.md)
-- [Tipo de operação do sistema de arquivos do aplicativo LOB win32](intune-apps-win32lobappfilesystemoperationtype.md)
-- [Regra do sistema de arquivos do aplicativo LOB win32](intune-apps-win32lobappfilesystemrule.md)
+- [Prioridade de otimização de entrega de aplicativo LOB do Win32](intune-apps-win32lobappdeliveryoptimizationpriority.md)
+- [Tipo de operação do sistema de arquivos do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemoperationtype.md)
+- [Regra do sistema de arquivos do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemrule.md)
 - [Experiência de instalação do aplicativo LOB do Win32](intune-apps-win32lobappinstallexperience.md)
 - [Informações de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsiinformation.md)
 - [Tipo de pacote de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsipackagetype.md)
 - [Notificação de aplicativo LOB do Win32](intune-apps-win32lobappnotification.md)
-- [Regra de script do shell de energia do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptrule.md)
-- [Tipo de operação de regra de script do shell de energia do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
-- [Regra de código do produto do aplicativo LOB win32](intune-apps-win32lobappproductcoderule.md)
+- [Regra de script do power shell do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptrule.md)
+- [Tipo de operação de regra de script do power shell do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
+- [Regra de código do produto (Product Code) do aplicativo LOB do Win32](intune-apps-win32lobappproductcoderule.md)
 - [Regra de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistryrule.md)
-- [Tipo de operação de regra do registro do aplicativo LOB win32](intune-apps-win32lobappregistryruleoperationtype.md)
-- [Comportamento de reinicialização do aplicativo LOB win32](intune-apps-win32lobapprestartbehavior.md)
+- [Tipo de operação de regra de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistryruleoperationtype.md)
+- [Comportamento de reinicialização do aplicativo LOB do Win32](intune-apps-win32lobapprestartbehavior.md)
 - [Configurações de reinicialização do aplicativo LOB do Win32](intune-apps-win32lobapprestartsettings.md)
 - [Código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncode.md)
 - [Tipo de código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncodetype.md)
-- [Regra do aplicativo LOB win32](intune-apps-win32lobapprule.md)
-- [Operador de regra de aplicativo LOB win32](intune-apps-win32lobappruleoperator.md)
-- [Tipo de regra do aplicativo LOB win32](intune-apps-win32lobappruletype.md)
+- [Regra de aplicativo LOB do Win32](intune-apps-win32lobapprule.md)
+- [Operador de regra de aplicativo LOB do Win32](intune-apps-win32lobappruleoperator.md)
+- [Tipo de regra de aplicativo LOB do Win32](intune-apps-win32lobappruletype.md)
 - [Arquitetura do Windows](intune-apps-windowsarchitecture.md)
 - [Tipo de dispositivo Windows](intune-apps-windowsdevicetype.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d74d8dc64146f6938c10ba1c934c7917272e257a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 27ad27360f8eae4d949c7c6f95b3623dcaecf229
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457502"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731957"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationUserSummary
 
@@ -29,7 +29,7 @@ Contém propriedades, propriedades herdadas e ações para um resumo de status d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |pendingCount|Int32|Número de usuários pendentes|
 |notApplicableCount|Int32|Número de usuários não aplicáveis|
 |successCount|Int32|Número de usuários bem-sucedidos|
@@ -62,6 +62,8 @@ Veja a seguir uma representação JSON do recurso.
   "configurationVersion": 1024
 }
 ```
+
+
 
 
 

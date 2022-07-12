@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: d97fc069f7862d242cee325dd875d826ef747113
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1b22e05fc3968ac126a06696bc5a4cd7362434fa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118471"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722982"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -69,8 +69,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Estado da definição de configuração do dispositivo](intune-deviceconfig-deviceconfigurationsettingstate.md)
 - [Visão geral do usuário da configuração do dispositivo](intune-deviceconfig-deviceconfigurationuseroverview.md)
 - [Status do usuário da configuração do dispositivo](intune-deviceconfig-deviceconfigurationuserstatus.md)
-- [Gerenciamento de dispositivos](intune-deviceconfig-devicemanagement.md)
-- [Gerenciamento de dispositivos](intune-deviceconfig-devicemanagement.md)
+- [Gerenciamento de dispositivo](intune-deviceconfig-devicemanagement.md)
 - [Configurações de gerenciamento de dispositivo](intune-deviceconfig-devicemanagementsettings.md)
 - [Nível de proteção contra ameaças ao dispositivo](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [Modo de envio de dados de diagnóstico](intune-deviceconfig-diagnosticdatasubmissionmode.md)
@@ -124,7 +123,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Cadeia de configuração de OMA ](intune-deviceconfig-omasettingstring.md)
 - [Cadeia xml de configuração de OMA](intune-deviceconfig-omasettingstringxml.md)
 - [Tipo de plataforma da política](intune-deviceconfig-policyplatformtype.md)
-- [Recursos pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
+- [Recursos de pré-lançamento](intune-deviceconfig-prereleasefeatures.md)
 - [Classificação de tipo de aplicativos](intune-deviceconfig-ratingappstype.md)
 - [Classificação de tipo de filmes da Austrália](intune-deviceconfig-ratingaustraliamoviestype.md)
 - [Classificação de tipo de televisão da Austrália](intune-deviceconfig-ratingaustraliatelevisiontype.md)
@@ -144,7 +143,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Classificação de tipo de televisão do Reino Unido](intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)
 - [Classificação de tipo de filmes dos Estados Unidos](intune-deviceconfig-ratingunitedstatesmoviestype.md)
 - [Classificação de tipo de televisão dos Estados Unidos](intune-deviceconfig-ratingunitedstatestelevisiontype.md)
-- [Relatório](intune-deviceconfig-report.md)
+- [Report](intune-deviceconfig-report.md)
 - [Raiz de relatório](intune-deviceconfig-reportroot.md)
 - [Tipo de senha obrigatória](intune-deviceconfig-requiredpasswordtype.md)
 - [Tipo de filtro de pesquisa segura](intune-deviceconfig-safesearchfiltertype.md)

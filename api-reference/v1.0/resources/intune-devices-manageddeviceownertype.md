@@ -1,18 +1,18 @@
 ---
-title: Tipo denum managedDeviceOwnerType
+title: Tipo de enumeração managedDeviceOwnerType
 description: Tipo de proprietário do dispositivo.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8890ee985cd6cea738aa0a4e69d62881f7a4564b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9917984bacdd85aed0913334b1c19622060ac161
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452983"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735345"
 ---
-# <a name="manageddeviceownertype-enum-type"></a>Tipo denum managedDeviceOwnerType
+# <a name="manageddeviceownertype-enum-type"></a>Tipo de enumeração managedDeviceOwnerType
 
 Namespace: microsoft.graph
 
@@ -24,8 +24,10 @@ Tipo de proprietário do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Desconhecido.|
-|company|1|Propriedade da empresa.|
-|pessoal|2|Propriedade de pessoa.|
+|Empresa|1|Propriedade da empresa.|
+|pessoal|2|Pertencente à pessoa.|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 60e67d39adc87e893ab5cc2fe5b6e0a4612d6e52
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 637178a30f278469ebd964236aef344ef8a3b9d7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454844"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723101"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Atualizar deviceManagementExchangeConnector
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceManagemen
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Status do conector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Status do Conector do Exchange. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
 |serverName|Cadeia de caracteres|O nome do servidor Exchange.|
 |connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
@@ -111,6 +111,8 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f52e3bab37b4dd076a645d7e024762c4f80fbe4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dcd28c8e7975a6835d3a75a284b692f451ec096e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455636"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729878"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 
@@ -33,7 +33,7 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
+|id|String|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
 |organizationName|Cadeia de caracteres|A organização associada ao Token do Programa de Compra por Volume da Apple|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|O tipo de programa de compra por volume ao qual o Token do Programa de Compra por Volume da Apple especificado está associado. Os valores possíveis são: `business`, `education`. Os valores possíveis são: `business`, `education`.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao Token do Apple Volume Purchase Program.|
@@ -74,6 +74,8 @@ Veja a seguir uma representação JSON do recurso.
   "countryOrRegion": "String"
 }
 ```
+
+
 
 
 

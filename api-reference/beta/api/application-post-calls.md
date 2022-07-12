@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2a6d4639a681da83a52ebe11298477b4beccbc0a
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: fa979daa3cc0c7b6824889a1c084be7ecb7ad476
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645555"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723521"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -849,7 +849,7 @@ Content-Type: application/json
 Para ingressar na reunião agendada, precisamos obter a ID do thread, a ID da mensagem, a ID do organizador e a ID do locatário no qual a reunião está agendada.
 Essas informações podem ser obtidas na API [Get onlineMeeting](../api/onlinemeeting-get.md) .
 
-Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos juntamente com os detalhes obtidos da API [Get onlineMeeting](../api/onlinemeeting-get.md) com valores reais para que o exemplo funcione.
+Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos junto com os detalhes obtidos da API [Get onlineMeeting](../api/onlinemeeting-get.md) com valores reais para fazer o exemplo funcionar.
 
 > **Nota:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão ou da permissão `Calls.JoinGroupCalls.Chat` [específica do recurso](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -1584,7 +1584,7 @@ Content-Type: application/json
 ### <a name="example-9-join-channel-meeting-with-service-hosted-media"></a>Exemplo 9: Ingressar em uma reunião de canal com a mídia hospedada pelo serviço
 A reunião dentro de um canal requer detalhes específicos, como ID do thread, ID da mensagem e detalhes do organizador que podem ser obtidos usando a API [Get onlineMeeting](../api/onlinemeeting-get.md) .
 
-Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome do aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos juntamente com os detalhes obtidos da API [Get onlineMeeting](../api/onlinemeeting-get.md) com valores reais para que o exemplo funcione.
+Os valores de token de autorização, URL de retorno de chamada, ID do aplicativo, nome de aplicativo, ID de usuário, nome de usuário e ID de locatário devem ser substituídos junto com os detalhes obtidos da API [Get onlineMeeting](../api/onlinemeeting-get.md) com valores reais para fazer o exemplo funcionar.
 
 > **Nota:** Este exemplo precisa da `Calls.JoinGroupCalls.All` permissão.
 

@@ -1,18 +1,18 @@
 ---
-title: tipo de recurso site
+title: tipo de recurso do site
 description: Representa um site da Web.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: AAmatino
-ms.openlocfilehash: 4c283d77119c0272aaafa964db62bb35ad747a10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2435e6b4f4608831f73261066173ab83813fb820
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973467"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731432"
 ---
-# <a name="website-resource-type"></a>tipo de recurso site
+# <a name="website-resource-type"></a>tipo de recurso do site
 
 Namespace: microsoft.graph
 
@@ -24,9 +24,9 @@ Representa um site da Web.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|tipo|String| Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.|
+|type|String| Os valores possíveis são: `other`, `home`, `work`, `blog`, `profile`.|
 |address|cadeia de caracteres|A URL do site.|
-|displayName|string|O nome de exibição do site da Web.|
+|displayName|string|O nome de exibição do site.|
 
 ## <a name="json-representation"></a>Representação JSON
 

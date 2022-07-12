@@ -1,27 +1,28 @@
 ---
 author: daspek
-description: A **faceta** do sistema indica que o objeto é gerenciado pelo sistema para sua própria operação.
+description: <descripton>
+ms.date: 09/12/2017
 title: SystemFacet
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ed30d7df19b3d9472de6172aa5ff90e2d0ad8c61
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 400ca1aec8b567966e4dcc56ecd0445c25efb817
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65898564"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736675"
 ---
-# <a name="system-facet"></a>faceta do sistema
+# <a name="system-facet"></a>Faceta System
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **faceta** do sistema indica que o objeto é gerenciado pelo sistema para sua própria operação.
-A maioria dos aplicativos deve ignorar itens que têm uma faceta do sistema.
+A faceta **System** indica que o objeto é gerenciado pelo sistema para sua própria operação.
+A maioria dos aplicativos deve ignorar itens que têm uma faceta do Sistema.
 
->**Observação**: Embora essa faceta esteja vazia no momento, em revisões futuras da API a faceta pode ser preenchida com propriedades adicionais.
+**Observação**: Embora essa faceta esteja vazia no momento, em revisões futuras da API a faceta pode ser preenchida com propriedades adicionais.
 
 ## <a name="json-representation"></a>Representação JSON
 

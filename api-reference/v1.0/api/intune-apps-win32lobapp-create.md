@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8691d5f5e4cf28bf0debcca247c288f50db522bf
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bc0233bbdce2aede2aed52108dfdf7b820de8225
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452605"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731509"
 ---
 # <a name="create-win32lobapp"></a>Criar win32LobApp
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença ativa do Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo [objeto win32LobApp.](../resources/intune-apps-win32lobapp.md)
+Crie um novo [objeto win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,15 +45,15 @@ POST /deviceAppManagement/mobileApps
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto win32LobApp.
+No corpo da solicitação, forneça uma representação JSON do objeto win32LobApp.
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar o win32LobApp.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|Cadeia de caracteres|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -64,28 +64,28 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o win32L
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|Anotações do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|installCommandLine|Cadeia de caracteres|A linha de comando para instalar este aplicativo|
-|uninstallCommandLine|Cadeia de caracteres|A linha de comando para desinstalar esse aplicativo|
+|installCommandLine|String|A linha de comando para instalar este aplicativo|
+|uninstallCommandLine|String|A linha de comando para desinstalar este aplicativo|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|As arquiteturas do Windows nas quais este aplicativo pode ser executado. Os valores possíveis são: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|minimumFreeDiskSpaceInMB|Int32|O valor do espaço em disco gratuito mínimo necessário para instalar este aplicativo.|
-|minimumMemoryInMB|Int32|O valor da memória física mínima necessária para instalar esse aplicativo.|
+|minimumFreeDiskSpaceInMB|Int32|O valor do espaço em disco livre mínimo necessário para instalar este aplicativo.|
+|minimumMemoryInMB|Int32|O valor da memória física mínima necessária para instalar este aplicativo.|
 |minimumNumberOfProcessors|Int32|O valor do número mínimo de processadores necessário para instalar esse aplicativo.|
 |minimumCpuSpeedInMHz|Int32|O valor da velocidade mínima da CPU necessária para instalar este aplicativo.|
-|rules|[Coleção win32LobAppRule](../resources/intune-apps-win32lobapprule.md)|As regras de detecção e requisitos para este aplicativo.|
-|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|A experiência de instalação deste aplicativo.|
+|Regras|[Coleção win32LobAppRule](../resources/intune-apps-win32lobapprule.md)|As regras de detecção e requisito para este aplicativo.|
+|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|A experiência de instalação para este aplicativo.|
 |returnCodes|[Coleção win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Os códigos de retorno para o comportamento pós-instalação.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|O MSI detalha se esse aplicativo Win32 é um aplicativo MSI.|
-|setupFilePath|Cadeia de caracteres|O caminho relativo do arquivo de instalação no pacote Win32LobApp criptografado.|
-|minimumSupportedWindowsRelease|Cadeia de caracteres|O valor da versão mínima com suporte do Windows.|
+|setupFilePath|String|O caminho relativo do arquivo de instalação no pacote Win32LobApp criptografado.|
+|minimumSupportedWindowsRelease|String|O valor da versão mínima do Windows com suporte.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto win32LobApp](../resources/intune-apps-win32lobapp.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto win32LobApp](../resources/intune-apps-win32lobapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -237,6 +237,8 @@ Content-Length: 2306
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
+
+
 
 
 

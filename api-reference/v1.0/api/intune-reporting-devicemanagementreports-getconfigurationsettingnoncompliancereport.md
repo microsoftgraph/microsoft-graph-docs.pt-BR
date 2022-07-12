@@ -1,18 +1,18 @@
 ---
-title: ação getConfigurationSettingNonComplianceReport
+title: Ação getConfigurationSettingNonComplianceReport
 description: Ainda não documentado
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c85d95a47c73394903a08fa6968c6483275496dd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0bf6af43fe4abb7f6b333b83adc84052e5e0f7bd
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457418"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735156"
 ---
-# <a name="getconfigurationsettingnoncompliancereport-action"></a>ação getConfigurationSettingNonComplianceReport
+# <a name="getconfigurationsettingnoncompliancereport-action"></a>Ação getConfigurationSettingNonComplianceReport
 
 Namespace: microsoft.graph
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,20 +51,20 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|Cadeia de caracteres|Ainda não documentado|
+|nome|String|Ainda não documentado|
 |select|String collection|Ainda não documentado|
 |search|String|Ainda não documentado|
-|groupBy|String collection|Ainda não documentado|
-|orderBy|String collection|Ainda não documentado|
+|Groupby|String collection|Ainda não documentado|
+|Orderby|String collection|Ainda não documentado|
 |skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
-|sessionId|String|Ainda não documentado|
+|Sessionid|String|Ainda não documentado|
 |filter|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, essa ação retornará `200 OK` um código de resposta e um Stream no corpo da resposta.
+Se for bem-sucedida, essa ação retornará um `200 OK` código de resposta e um Fluxo no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -106,6 +106,8 @@ Content-Length: 115
   "value": "Z2V0Q29uZmlndXJhdGlvblNldHRpbmdOb25Db21wbGlhbmNlUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDIxMDczMDYzMzQ="
 }
 ```
+
+
 
 
 

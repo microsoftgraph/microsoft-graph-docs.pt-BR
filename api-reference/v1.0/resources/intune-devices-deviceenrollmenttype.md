@@ -1,18 +1,18 @@
 ---
-title: Tipo de número deviceEnrollmentType
+title: Tipo de enumeração deviceEnrollmentType
 description: Possíveis maneiras de adicionar um dispositivo móvel ao gerenciamento.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aa44fddf18daae371c7ed7fe0a9784bf0c0cc361
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a53c4fadbce9703e4e68b54a86cfff80e1bd3944
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455834"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735366"
 ---
-# <a name="deviceenrollmenttype-enum-type"></a>Tipo de número deviceEnrollmentType
+# <a name="deviceenrollmenttype-enum-type"></a>Tipo de enumeração deviceEnrollmentType
 
 Namespace: microsoft.graph
 
@@ -24,18 +24,20 @@ Possíveis maneiras de adicionar um dispositivo móvel ao gerenciamento.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|0|Valor padrão, tipo de registro não coletado.|
-|userEnrollment|1|Registro orientado pelo usuário por meio do canal BYOD.|
+|userEnrollment|1|Registro controlado pelo usuário por meio do canal BYOD.|
 |deviceEnrollmentManager|2|Registro de usuário com uma conta do gerenciador de registro de dispositivo.|
 |appleBulkWithUser|3|Registro em massa da Apple com desafio do usuário. (DEP, Apple Configurator)|
-|appleBulkWithoutUser|4 |Registro em massa da Apple sem desafio do usuário. (DEP, Apple Configurator, Mobile Config)|
-|windowsAzureADJoin|5|Windows 10 Ingressar no Azure AD.|
-|windowsBulkUserless|6 |Windows 10 Registro em massa por meio do ICD com certificado.|
-|windowsAutoEnrollment|7 |Windows 10 registro automático. (Adicionar conta de trabalho)|
-|windowsBulkAzureDomainJoin|8 |Windows 10 participar em massa do Azure AD.|
-|windowsCoManagement|9 |Windows 10 Co-Management acionado pelo AutoPilot ou Pela Política de Grupo.|
-|windowsAzureADJoinUsingDeviceAuth|10 |Windows 10 Ingressar no Azure AD usando Device Auth.|
+|appleBulkWithoutUser|4|Registro em massa da Apple sem desafio do usuário. (DEP, Apple Configurator, Configuração Móvel)|
+|windowsAzureADJoin|5|Windows 10 Azure AD ingressar.|
+|windowsBulkUserless|6 |Windows 10 registro em massa por meio do ICD com certificado.|
+|windowsAutoEnrollment|7 |Windows 10 registro automático. (Adicionar conta corporativa)|
+|windowsBulkAzureDomainJoin|8 |Windows 10 em massa Azure AD Join.|
+|windowsCoManagement|9 |Windows 10 Co-Management acionado pelo AutoPilot ou Política de Grupo.|
+|windowsAzureADJoinUsingDeviceAuth|10|Windows 10 Azure AD ingressar usando a Autenticação de Dispositivo.|
 |appleUserEnrollment|11|Dispositivo gerenciado pelo registro de usuário da Apple|
 |appleUserEnrollmentWithServiceAccount|12 |Dispositivo gerenciado pelo registro de usuário da Apple com conta de serviço|
+
+
 
 
 
