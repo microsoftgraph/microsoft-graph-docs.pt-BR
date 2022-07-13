@@ -626,7 +626,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Trabalho em equipe
+          - name: Teamwork
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -12382,6 +12382,13 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: Obter intervalo
                     href: api/oauth2permissiongrant-delta.md
+              - name: Política de identidades externas (versão prévia)
+                href: resources/externalidentitiespolicy.md
+                items:
+                  - name: Obter
+                    href: api/externalidentitiespolicy-get.md
+                  - name: Atualizar
+                    href: api/externalidentitiespolicy-update.md
               - name: Proteção de identidade
                 href: resources/identityprotection-overview.md
                 items:
@@ -14883,7 +14890,7 @@ items:
                     href: api/security-ediscoverycasesettings-update.md
                   - name: Redefinir as configurações para o padrão
                     href: api/security-ediscoverycasesettings-resettodefault.md
-              - name: Operation
+              - name: Operação
                 href: resources/security-caseoperation.md
                 items:
                   - name: Listar operações de caso
@@ -15681,6 +15688,10 @@ items:
                 href: api/channel-update-members.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
+              - name: Excluir mensagem
+                href: api/chatmessage-softdelete.md
+              - name: Desfazer exclusão de mensagem
+                href: api/chatmessage-undosoftdelete.md
               - name: Verificar o acesso do usuário
                 href: api/channel-doesuserhaveaccess.md
               - name: Listar equipes que compartilham um canal
@@ -15759,6 +15770,10 @@ items:
                 href: api/chatmessage-post-replies.md
               - name: Atualizar mensagem
                 href: api/chatmessage-update.md
+              - name: Excluir mensagem
+                href: api/chatmessage-softdelete.md
+              - name: Desfazer exclusão de mensagem
+                href: api/chatmessage-undosoftdelete.md
               - name: Obtenha todas as mensagens em todos os canais.
                 href: api/channel-getallmessages.md
               - name: Obter mensagens em todos os chats

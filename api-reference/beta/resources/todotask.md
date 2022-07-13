@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7d1d19378d27cb65365d5a9999974aa16b511661
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 9c11252d3dded276e96ffbc219a3cf9155718da7
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645251"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767941"
 ---
 # <a name="todotask-resource-type"></a>Tipo de recurso todoTask
 
@@ -57,8 +57,9 @@ Esse recurso dá suporte ao seguinte:
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado no qual a tarefa está agendada para iniciar.|
 |status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|Cadeia de caracteres|Uma breve descrição da tarefa.|
+|title|String|Uma breve descrição da tarefa.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -99,6 +100,9 @@ Veja a seguir uma representação JSON do recurso.
     "@odata.type": "microsoft.graph.patternedRecurrence"
   },
   "reminderDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "startDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
   "status": "String",

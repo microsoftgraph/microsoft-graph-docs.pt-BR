@@ -5,12 +5,12 @@ author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: ce0e806920b2bb925cc16b7d31aa57156388935a
-ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
+ms.openlocfilehash: 72f5fd24e3949d9cb291e094006461c5c4e90b92
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66698342"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768123"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>Atribuir revisores à sua revisão de acesso usando o Microsoft API do Graph
 
@@ -35,7 +35,7 @@ Se o escopo de revisão  de acesso correspondente tiver como alvo usuários do B
 ```http
 "reviewers": [
     {
-        "query": "/users/{user id}",
+        "query": "/users/{userId}",
         "queryType": "MicrosoftGraph"
     }
 ]
@@ -46,13 +46,37 @@ Se o escopo de revisão  de acesso correspondente tiver como alvo usuários do B
 ```http
 "reviewers": [
     {
-        "query": "/groups/{group id}/transitiveMembers",
+        "query": "/groups/{groupId}/transitiveMembers",
         "queryType": "MicrosoftGraph"
     }
 ]
 ```
 
 ## <a name="example-4-group-owners-as-reviewers"></a>Exemplo 4: Proprietários de grupo como revisores
+
+Quando a revisão de acesso estiver no escopo de um grupo, por exemplo, Exemplo [1:](accessreviews-scope-concept.md#example-1-review-all-users-assigned-to-a-group) Examinar todos os usuários atribuídos a um grupo, Exemplo [2:](accessreviews-scope-concept.md#example-2-review-all-guest-users-assigned-to-a-group) Examinar todos os usuários convidados atribuídos a um grupo e Exemplo 3: Examinar todos os usuários e grupos atribuídos [a um](accessreviews-scope-concept.md#example-3-review-all-users-and-groups-assigned-to-a-group) grupo.
+```http
+"reviewers": [
+    {
+        "query": "/groups/{groupId}/owners",
+        "queryType": "MicrosoftGraph"
+    }
+]
+```
+
+Quando a revisão de acesso está no escopo de um grupo e para atribuir apenas os proprietários do grupo de um país específico como revisores:
+
+```http
+"reviewers": [
+    {
+        "query": "/groups/{groupId}/owners?$filter=microsoft.graph.user/userType eq 'Member' and microsoft.graph.user/country eq 'USA'",
+        "type": "MicrosoftGraph”
+    }
+]
+```
+
+Quando a revisão de acesso estiver no escopo  de todos os grupos, por exemplo, Exemplo 4: Examinar todos os usuários atribuídos a todos os grupos do [Microsoft 365](accessreviews-scope-concept.md#example-4-review-all-users-assigned-to-all-microsoft-365-groups), Exemplo 5: Examinar todos os usuários convidados atribuídos a todos os grupos do [Microsoft 365](accessreviews-scope-concept.md#example-5-review-all-guest-users-assigned-to-all-microsoft-365-groups) e Exemplo 6: Examinar todos os usuários convidados atribuídos a todas as [equipes](accessreviews-scope-concept.md#example-6-review-all-guest-users-assigned-to-all-teams).
+
 ```http
 "reviewers": [
     {
@@ -62,16 +86,7 @@ Se o escopo de revisão  de acesso correspondente tiver como alvo usuários do B
 ]
 ```
 
-Para atribuir apenas os proprietários do grupo de um país específico como revisores:
 
-```http
-"reviewers": [
-    {
-        "query": "/groups/{group id}/owners?$filter=microsoft.graph.user/userType eq 'Member' and microsoft.graph.user/country eq 'USA'",
-        "type": "MicrosoftGraph”
-    }
-]
-```
 
 ## <a name="example-5-people-managers-as-reviewers"></a>Exemplo 5: Gerentes de pessoas como revisores
 
@@ -94,7 +109,7 @@ Se o escopo de revisão  de acesso correspondente tiver como alvo usuários do B
 ```http
 "reviewers": [
     {
-        "query": "/servicePrincipals/{id}/owners",
+        "query": "/servicePrincipals/{servicePrincipalId}/owners",
         "queryType": "MicrosoftGraph"
     }
 ]

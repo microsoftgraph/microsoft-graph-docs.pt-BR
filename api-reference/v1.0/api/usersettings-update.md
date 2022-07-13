@@ -5,29 +5,29 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8c78950129ccb0c469b505970c696a4b57236e9d
-ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
+ms.openlocfilehash: 5812fb25f03a1bffde622ac1461738754b060b65
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62047102"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768116"
 ---
 # <a name="update-settings"></a>Atualizar configurações
 
 Namespace: microsoft.graph
 
-Atualize as propriedades do [objeto userSettings.](../resources/usersettings.md) Os usuários na mesma organização podem ter configurações diferentes com base em suas preferências ou nas políticas da organização. Para obter as configurações atuais do usuário, consulte [configurações atuais do usuário](usersettings-get.md). 
+Atualize as propriedades do [objeto userSettings](../resources/usersettings.md) . Os usuários na mesma organização podem ter configurações diferentes com base em suas preferências ou nas políticas da organização. Para obter as configurações atuais do usuário, consulte [as configurações atuais do usuário](usersettings-get.md). 
 
 ### <a name="batch-request"></a>Solicitação em lote
 
-Também é possível desativar vários usuários do Delve e desabilitar sua contribuição sobre a relevância do conteúdo para toda a organização por meio de uma solicitação em lotes.
-Para saber mais, consulte [JSON batching](/graph/json-batching).
+Também é possível recusar vários usuários do Delve e desabilitar sua contribuição na relevância do conteúdo para toda a organização por meio de uma solicitação em lote.
+Para saber mais, confira o [envio em lote JSON](/graph/json-batching).
 
->**Importante:** somente membros do grupo de função [de gerenciamento](/exchange/permissions/permissions?view=exchserver-2019#role-groups) da organização podem atualizar vários usuários. 
+>**Importante**: somente membros do grupo de funções [de gerenciamento](/exchange/permissions/permissions?view=exchserver-2019#role-groups&preserve-view=true) da organização podem atualizar vários usuários. 
 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -62,13 +62,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booliano|Definir como true desabilite o acesso de representante à API [de](/graph/api/resources/insights-trending?view=graph-rest-1.0) Tendência e desabilite o acesso aos documentos Office Delve para o usuário. A configuração como true também afeta a relevância do conteúdo exibido no Microsoft 365 - por exemplo, sites sugeridos no SharePoint Home e o exibição Descobrir no OneDrive for Business mostram resultados menos relevantes. Essa configuração reflete o estado de controle [em Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Booliano|Defina como true, desabilite o acesso delegado à API [de](/graph/api/resources/insights-trending?view=graph-rest-1.0&preserve-view=true) Tendências e desabilite o acesso a documentos no Office Delve para o usuário. A configuração como true também afeta a relevância do conteúdo exibido no Microsoft 365– por exemplo, sites sugeridos na Página Inicial do SharePoint e o modo de exibição Descobrir no OneDrive for Business mostram resultados menos relevantes. Essa configuração reflete o estado do controle [no Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Exemplo 
 
 ##### <a name="request"></a>Solicitação
 
-Aqui está um exemplo de solicitação sobre como desativar um usuário do Delve e desabilitar sua contribuição sobre a relevância do conteúdo para toda a organização.
+Aqui está um exemplo de solicitação sobre como recusar um usuário do Delve e desabilitar sua contribuição sobre a relevância do conteúdo para toda a organização.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings

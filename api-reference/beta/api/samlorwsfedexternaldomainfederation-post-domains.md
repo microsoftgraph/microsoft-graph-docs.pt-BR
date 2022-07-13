@@ -5,33 +5,33 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5038eebdc83c242ffce20668b1eb906f032e006f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5c53e346e5f6631b6cf322fae118c5563aab04e5
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947668"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767962"
 ---
 # <a name="create-externaldomainname"></a>Criar externalDomainName
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione vários domínios à sua configuração baseada em SAML ou WS-Fed criando um novo objeto [externalDomainName](../resources/externaldomainname.md) e adicione-o a um [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)existente.
+Adicione vários domínios à sua configuração baseada em SAML ou WS-Fed criando um novo objeto [externalDomainName](../resources/externaldomainname.md) e adicione-o a um [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) existente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Domain.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)| IdentityProvider.ReadWrite.All|
 |Delegada (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Domain.ReadWrite.All|
+|Aplicativo| IdentityProvider.ReadWrite.All|
 
-A conta de trabalho ou de estudante precisa pertencer a uma das seguintes [funções Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference):
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções do [Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)):
 
 * Administrador Global
-* Administrador do Provedor de Identidade Externa
+* Administrador do Provedor de Identidade Externo
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -53,17 +53,17 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do [objeto externalDomainName.](../resources/externaldomainname.md)
+No corpo da solicitação, forneça uma representação JSON do [objeto externalDomainName](../resources/externaldomainname.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar [externalDomainName](../resources/externaldomainname.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [o externalDomainName](../resources/externaldomainname.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Nome de domínio da organização externa que você deseja adicionar ao [seu samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Herdado da [entidade](../resources/entity.md).|
+|id|String|Nome de domínio da organização externa que você deseja adicionar ao [seu samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Herdado da [entidade](../resources/entity.md).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto externalDomainName](../resources/externaldomainname.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `201 Created` de resposta e um [objeto externalDomainName](../resources/externaldomainname.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

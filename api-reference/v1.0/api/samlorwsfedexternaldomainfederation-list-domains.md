@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 803e67770dc38851e96f2c69a78568b855c7f7a3
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 5d7adcc1861baa3fa42cd630f3b78cf0e0f7140a
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315654"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768130"
 ---
 # <a name="list-domains"></a>Listar domínios
 Namespace: microsoft.graph
@@ -23,11 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Domain.Read.All, Domain.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Domain.Read.All, Domain.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções [Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)):
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções do [Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)):
 
 * Administrador Global
 * Administrador do Provedor de Identidade Externo

@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2b88d4b2a4cebcb0ef895b65e809b84d836d9641
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 6672ffdb619adafff5e9ec8ed6220b8c72a0d48d
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65314617"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768179"
 ---
 # <a name="create-externaldomainname"></a>Criar externalDomainName
 Namespace: microsoft.graph
@@ -22,11 +22,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Domain.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Domain.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|IdentityProvider.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|IdentityProvider.ReadWrite.Alll|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções [Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)):
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções do [Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)):
 
 * Administrador Global
 * Administrador do Provedor de Identidade Externo
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [o exter
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Nome de domínio da organização externa que você deseja adicionar ao [seu samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Herdado da [entidade](../resources/entity.md).|
+|id|String|Nome de domínio da organização externa que você deseja adicionar ao [seu samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md). Herdado da [entidade](../resources/entity.md).|
 
 ## <a name="response"></a>Resposta
 

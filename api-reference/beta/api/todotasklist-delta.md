@@ -1,16 +1,16 @@
 ---
 title: 'todoTaskList: delta'
-description: Obtenha um conjunto de recursos todoTaskList que foram adicionados, excluídos ou removidos Microsoft To Do.
+description: Obtenha um conjunto de recursos todoTaskList que foram adicionados, excluídos ou removidos no Microsoft To Do.
 ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc9da9fbc462a4056504d982d41ff4d63c2835c7
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: ff97063f53297ca2457252aae5dec3b1dfd42c18
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246794"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767943"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList: delta
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha um conjunto de [recursos todoTaskList](../resources/todotasklist.md) que foram adicionados, excluídos ou removidos Microsoft To Do.
+Obtenha um conjunto de [recursos todoTaskList](../resources/todotasklist.md) que foram adicionados, excluídos ou removidos no Microsoft To Do.
 
 Uma **chamada** de função delta para **todoTaskList** é semelhante a uma solicitação GET, exceto que, aplicando adequadamente [tokens](/graph/delta-query-overview) de estado em uma ou mais dessas chamadas, você pode consultar alterações incrementais no **todoTaskList**. Isso permite que você mantenha e sincronize um repositório local de **todoTaskList** de um usuário sem precisar buscar todas as **tarefas do todoTaskList** do servidor todas as vezes.
 
@@ -59,6 +59,8 @@ Você pode usar um parâmetro de consulta `$select` como em qualquer solicitaç�
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 
+> **Nota:** No cabeçalho da solicitação, o valor deve `odata.maxpagesize` ser maior ou igual a 10 para obter o valor `nextLink` correto.
+
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código `200 OK` de resposta e [um objeto de coleção todoTaskList](../resources/todotasklist.md) no corpo da resposta.
@@ -74,7 +76,7 @@ As principais diferenças entre acompanhar **todoTaskList** e acompanhar recurso
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists/delta
-Prefer: odata.maxpagesize=2
+Prefer: odata.maxpagesize=12
 ```
 ### <a name="response"></a>Resposta
 
@@ -83,7 +85,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 
 ```http
 HTTP/1.1 200 OK

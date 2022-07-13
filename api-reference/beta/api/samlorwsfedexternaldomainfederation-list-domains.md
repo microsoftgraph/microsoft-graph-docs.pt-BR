@@ -1,23 +1,23 @@
 ---
 title: Listar domínios
-description: Obter a lista de todos os objetos externalDomainName para um samlOrWsFedExternalDomainFederation.
+description: Obtenha a lista de todos os objetos externalDomainName para um samlOrWsFedExternalDomainFederation.
 author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0655cc11f6f153ee62d16d5d1378b07340a225b0
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 92b41c5c2ce5fc50a0ee3908157a11c82046d869
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766506"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768277"
 ---
 # <a name="list-domains"></a>Listar domínios
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de todos os [objetos externalDomainName](../resources/externaldomainname.md) para [um samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
+Obtenha a lista de todos os [objetos externalDomainName](../resources/externaldomainname.md) para [um samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,14 +25,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Domain.Read.All, Domain.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Domain.Read.All, Domain.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta de trabalho ou de estudante precisa pertencer a uma das seguintes [funções Azure Active Directory (Azure AD)](/azure/active-directory/roles/permissions-reference):
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções do [Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)):
 
 * Administrador Global
-* Administrador do Provedor de Identidade Externa
+* Administrador do Provedor de Identidade Externo
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos externalDomainName](../resources/externaldomainname.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos externalDomainName](../resources/externaldomainname.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

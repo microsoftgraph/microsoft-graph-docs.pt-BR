@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c0ba873ada25f1e39362e8f62f7d1cef447ba9de
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 4f78d8e132755c4e63a1fa6061a125e6b91709da
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315366"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768249"
 ---
 # <a name="get-samlorwsfedexternaldomainfederation"></a>Obter samlOrWsFedExternalDomainFederation
 Namespace: microsoft.graph
@@ -23,11 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Domain.Read.All, Domain.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Domain.Read.All, Domain.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções [Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)):
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções do [Azure Active Directory (Azure AD](/azure/active-directory/roles/permissions-reference)):
 
 * Administrador Global
 * Administrador do Provedor de Identidade Externo

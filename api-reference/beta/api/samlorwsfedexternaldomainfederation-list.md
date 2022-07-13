@@ -1,23 +1,23 @@
 ---
 title: Listar samlOrWsFedExternalDomainFederations
-description: Obter uma lista dos objetos samlOrWsFedExternalDomainFederation e suas propriedades.
+description: Obtenha uma lista dos objetos samlOrWsFedExternalDomainFederation e suas propriedades.
 author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7c8ad07b44a4bb724e9b58645ac053df58a34a02
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6081b34c488d3b55d06880d4c05789b6dd59b024
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132715"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768312"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>Listar samlOrWsFedExternalDomainFederations
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter uma lista dos [objetos samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) e suas propriedades.
+Obtenha uma lista dos [objetos samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,14 +25,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Domain.Read.All, Domain.ReadWrite.All|
-|Delegado (conta pessoal da Microsoft)| Sem suporte.|
-|Aplicativo|Domain.Read.All, Domain.ReadWrite.All|
+|Delegada (conta corporativa ou de estudante)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Delegada (conta pessoal da Microsoft)| Sem suporte.|
+|Aplicativo|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-A conta de trabalho ou de estudante precisa pertencer a uma das seguintes funções:
+A conta corporativa ou de estudante precisa pertencer a uma das seguintes funções:
 
 * Administrador Global
-* Administrador do Provedor de Identidade Externa
+* Administrador do Provedor de Identidade Externo
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma coleção de `200 OK` [objetos samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) no corpo da resposta.
+Se tiver êxito, este método `200 OK` retornará um código de resposta e uma coleção de [objetos samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

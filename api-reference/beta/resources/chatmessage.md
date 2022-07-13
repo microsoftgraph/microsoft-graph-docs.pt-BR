@@ -5,12 +5,12 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: cc1651a8ea1d9ae5ca7a6dca2d4544cc3b8c735b
-ms.sourcegitcommit: 39f94342cada98add34b0e5b260a7acffa6ff765
+ms.openlocfilehash: d02f67363c11f9e70419ebc8f4dee376e23dba06
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65296539"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768319"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -22,7 +22,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 
 > **Observação**: esse recurso dá suporte à assinatura de alterações (criar, atualizar e excluir) usando [notificações de alteração](../resources/webhooks.md). Isso permite aos chamadores assinar e obter alterações em tempo real. Para obter detalhes, confira [obter notificações de](/graph/teams-changenotifications-chatMessage)de mensagens.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -33,11 +33,15 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |[Obter mensagem no canal](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Obter uma única mensagem raiz em um canal.|
 |[Enviar mensagem no canal](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Crie uma nova mensagem raiz em um canal.|
 |[Atualizar mensagem no canal](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Atualize **a propriedade policyViolation** de uma mensagem de chat.|
+|[Excluir mensagem no canal](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Exclua a mensagem em um canal.|
+|[Desfazer a exclusão de uma mensagem no canal](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Restaurar a mensagem em um canal.|
 |**Respostas de mensagem de canal**| | |
 |[Listar respostas à mensagem](../api/chatmessage-list-replies.md) | [chatMessage](chatmessage.md) collection| Lista de todas as respostas a uma mensagem de chat no canal.|
 |[Obter mensagem de resposta no canal](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Obtenha uma única mensagem de resposta em um canal.|
 |[Responder a uma mensagem no canal](../api/chatmessage-post-replies.md) | [chatMessage](chatmessage.md)| Responder a uma mensagem de chat existente em um canal.|
 |[Atualizar mensagem de resposta](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Atualize **a propriedade policyViolation** de uma mensagem de chat.|
+|[Excluir mensagem de resposta no canal](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Exclua a única mensagem de resposta em um canal.|
+|[Desfazer exclusão de uma mensagem de resposta no canal](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Restaurar a única mensagem de resposta em um canal.
 |**Mensagens de chat**| | |
 |[Listar mensagens no chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Listar mensagens de chat em um chat. |
 |[Receba uma mensagem no bate-papo](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha uma única mensagem de chat em um chat. |
@@ -46,6 +50,8 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |[Criar assinatura para novas mensagens de chat](../api/subscription-post-subscriptions.md) | [assinatura](subscription.md) | Ouça mensagens de chat novas, editadas e excluídas e reações a elas. |
 |[Enviar mensagem no chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Envie uma mensagem de chat em uma conversa de chat em grupo ou 1:1 existente.|
 |[Atualizar mensagem no chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Atualize **a propriedade policyViolation** de uma mensagem de chat.|
+|[Excluir mensagem no chat](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Exclua a mensagem de um chat.|
+|[Desfazer a exclusão de uma mensagem no chat](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Restaurar a mensagem em um chat.|
 |**Conteúdo hospedado**| | |
 |[Listar todo o conteúdo hospedado](../api/chatmessage-list-hostedcontents.md) | [Coleção chatMessageHostedContent](../resources/chatmessagehostedcontent.md)| Obter todo o conteúdo hospedado associado a uma mensagem.|
 |[Obter conteúdo hospedado](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Obter conteúdo hospedado (e seus bytes) para uma mensagem.|
@@ -55,7 +61,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Referências a objetos anexados, como arquivos, guias, reuniões etc.|
-|body|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver [um chatMessageMention](chatmessagemention.md). |
+|corpo|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem de chat. A representação é especificada pelo contentType dentro do corpo. O conteúdo estará sempre em HTML se a mensagem de chat contiver [um chatMessageMention](chatmessagemention.md). |
 |channelIdentity|[channelIdentity](channelidentity.md)|Se a mensagem foi enviada em um canal, representa a identidade do canal.|
 |chatId|string|Se a mensagem foi enviada em um **chat**, representa a identidade do **chat**.|
 |createdDateTime|dateTimeOffset|Carimbo de data/hora de quando a mensagem de chat foi criada.|
@@ -65,7 +71,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 |from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Detalhes do remetente da mensagem de chat. Só pode ser definido durante a [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).|
 |id|String| Somente leitura. ID única da mensagem.|
 |importância|string | A importância da mensagem de chat. Os valores possíveis são: `normal`, `high`, `urgent`.|
-|lastEditedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora quando as edições da mensagem de chat foram feitas. Dispara um sinalizador "Editado" na interface do Teams usuário. Se nenhuma edição for feita, o valor será `null`.|
+|lastEditedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora quando as edições da mensagem de chat foram feitas. Dispara um sinalizador "Editado" na interface do usuário do Teams. Se nenhuma edição for feita, o valor será `null`.|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora quando a mensagem de chat é criada (configuração inicial) ou modificada, incluindo quando uma reação é adicionada ou removida. |
 |localidade|string|Localidade da mensagem de chat definida pelo cliente. Sempre definido para `en-us`.|
 |mentions|[chatMessageMention](chatmessagemention.md) collection| Lista de entidades mencionadas na mensagem de chat. As entidades com suporte são: usuário, bot, equipe, canal e marca.|
@@ -83,7 +89,7 @@ Representa uma mensagem de bate-papo individual em um [canal](channel.md) ou [ba
 | Relação   | Tipo    | Descrição |
 |:---------------|:--------|:----------|
 |Respostas|[chatMessage](chatmessage.md)| Respostas para uma mensagem especificada. Suporte para `$expand` mensagens de canal. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Conteúdo em uma mensagem hospedada por Microsoft Teams – por exemplo, imagens ou snippets de código. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Conteúdo em uma mensagem hospedada pelo Microsoft Teams , por exemplo, imagens ou snippets de código. |
 
 ## <a name="json-representation"></a>Representação JSON
 
