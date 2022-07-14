@@ -626,7 +626,7 @@ items:
                 href: api/profile-get.md
               - name: Excluir perfil do usuário
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Trabalho em equipe
             items:
               - name: Aplicativo instalado
                 href: resources/teamsappinstallation.md
@@ -1125,6 +1125,14 @@ items:
                 href: api/serviceprincipal-update.md
               - name: Excluir entidade de serviço
                 href: api/serviceprincipal-delete.md
+              - name: Listar entidades de serviço excluídas
+                href: api/directory-deleteditems-list.md
+              - name: Obter entidade de serviço excluída
+                href: api/directory-deleteditems-get.md
+              - name: Excluir permanentemente a entidade de serviço
+                href: api/directory-deleteditems-delete.md
+              - name: Restaurar a entidade de serviço excluída
+                href: api/directory-deleteditems-restore.md
               - name: Listar createdObjects
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Listar ownedObjects
@@ -5215,7 +5223,7 @@ items:
                         href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
                   - name: Tipo de licença de atualização de edição
                     href: resources/intune-deviceconfig-editionupgradelicensetype.md
-                  - name: Tipo de certificado de email
+                  - name: Email de certificado
                     href: resources/intune-deviceconfig-emailcertificatetype.md
                   - name: Duração da sincronização de emails
                     href: resources/intune-deviceconfig-emailsyncduration.md
@@ -12675,7 +12683,7 @@ items:
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
                           - name: Excluir
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-                      - name: Política de email
+                      - name: Email política
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
                           - name: Obter
@@ -14185,7 +14193,7 @@ items:
                     href: resources/callactivitystatistics.md
                   - name: Tipo de estatísticas de chat
                     href: resources/chatactivitystatistics.md
-                  - name: Tipo de estatísticas de email
+                  - name: Email tipo de estatísticas
                     href: resources/emailactivitystatistics.md
                   - name: Tipo de estatísticas de foco
                     href: resources/focusactivitystatistics.md

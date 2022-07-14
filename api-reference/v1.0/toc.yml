@@ -950,6 +950,14 @@ items:
                 href: api/serviceprincipal-update.md
               - name: Excluir
                 href: api/serviceprincipal-delete.md
+              - name: Listar entidades de serviço excluídas
+                href: api/directory-deleteditems-list.md
+              - name: Obter entidade de serviço excluída
+                href: api/directory-deleteditems-get.md
+              - name: Excluir permanentemente a entidade de serviço
+                href: api/directory-deleteditems-delete.md
+              - name: Restaurar a entidade de serviço excluída
+                href: api/directory-deleteditems-restore.md
               - name: Obter intervalo
                 href: api/serviceprincipal-delta.md
               - name: Listar objetos criados
@@ -5275,7 +5283,7 @@ items:
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
                           - name: Excluir
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-                      - name: Política de email
+                      - name: Email política
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
                           - name: Obter

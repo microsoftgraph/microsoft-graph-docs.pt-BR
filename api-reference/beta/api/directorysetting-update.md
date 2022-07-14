@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f6a642c39a773b25181ca659ebb2d9599e02dd2e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 683df79d236c4b23e03473c3b91645b6650a1b18
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671003"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788791"
 ---
 # <a name="update-directorysetting"></a>Atualizar directorySetting
 
@@ -24,16 +24,28 @@ Atualize as propriedades de um objeto de configuração de diretório específic
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>Para todas as configurações, exceto o objeto Configurações de Política de Consentimento
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
+
+### <a name="for-the-consent-policy-settings-object"></a>Para o objeto Configurações de Política de Consentimento
+
+As permissões a seguir são necessárias para atualizar o objeto **directorySetting** "Configurações de Política de Consentimento".
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | Policy.ReadWrite.Authorization    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Policy.ReadWrite.Authorization |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-Atualize uma configuração de todo o locatário.
+Atualize uma configuração em todo o locatário.
 ```http
 PATCH /settings/{directorySettingId}
 ```

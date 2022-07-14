@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso displayTemplate
-description: Define a aparência do conteúdo e as condições que ditam quando o modelo deve ser exibido.
+description: Define a aparência do conteúdo e as condições que determinam quando o modelo deve ser exibido.
 author: emzho
 ms.localizationpriority: normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: cd18d8ec9b38e0011436dad13a97d8f09fe87ba2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a20b9935ad142fce0a1b1fcd2a47e608a0fec670
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132589"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788763"
 ---
 # <a name="displaytemplate-resource-type"></a>Tipo de recurso displayTemplate
 
@@ -18,15 +18,15 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define a aparência do conteúdo e as condições que ditam quando o modelo deve ser exibido.
+Define a aparência do conteúdo e as condições que determinam quando o modelo deve ser exibido.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador de texto do modelo de exibição; por exemplo, `contosoTickets` .|
-|layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|A definição da aparência do conteúdo, representada por um [Cartão Adaptável](/adaptive-cards/authoring-cards/getting-started), que é um modelo de objeto de cartão serializado JSON.|
-|prioridade|Int32|Define a prioridade de um modelo de exibição. Um modelo de exibição com prioridade 1 é avaliado antes de um modelo com prioridade 4. Há suporte para lacunas nos valores de prioridade.|
-|rules|[coleção microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md)|Especifica regras adicionais para selecionar esse modelo de exibição com base no esquema do item. Opcional.|
+|id|String|O identificador de texto para o modelo de exibição; por exemplo, `contosoTickets`. Máximo de 16 caracteres. Somente caracteres alfanuméricos permitidos. |
+|Layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|A definição da aparência do conteúdo, representada por um [Cartão Adaptável](/adaptive-cards/authoring-cards/getting-started), que é um modelo de objeto de cartão serializado em JSON.|
+|prioridade|Int32|Define a prioridade de um modelo de exibição. Um modelo de exibição com prioridade 1 é avaliado antes de um modelo com prioridade 4. Há suporte para lacunas em valores de prioridade. Deve ser um valor positivo.|
+|Regras|[coleção microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md)|Especifica regras adicionais para selecionar esse modelo de exibição com base no esquema do item. Opcional.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 02417fe5f942513461d4f4d36304b57b24e8c5c9
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: e2eaa049a07d054ff187d91063cf3610e0346453
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442342"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788616"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
@@ -18,14 +18,14 @@ Namespace: microsoft.graph
 
 Restaura um item recentemente excluído de [itens excluídos](../resources/directory.md). 
 
-Atualmente, a funcionalidade de restaurar itens excluídos só tem suporte para os recursos [de](../resources/application.md) aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário. Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não se aplica a grupos de segurança, que são excluídos permanentemente.
+Atualmente, a funcionalidade de restaurar itens excluídos só tem suporte para recursos de [aplicativo,](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md), [grupo](../resources/group.md) [e usuário](../resources/user.md) . Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não se aplica a grupos de segurança, que são excluídos permanentemente.
 
 Um item recentemente excluído permanecerá disponível por até 30 dias. Após 30 dias, esse item será excluído permanentemente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="for-applications"></a>Para aplicativos:
+### <a name="for-applications-and-service-principals"></a>Para aplicativos e entidades de serviço:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|

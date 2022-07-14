@@ -1,22 +1,23 @@
 ---
 title: Excluir plannerBucket
-description: Exclua **plannerBucket**.
+description: Exclua plannerBucket.
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c093395416aac8344a79b0f65cb020dcb46d0e81
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b6bd4c39025d1f69c15f6faad714ff50cb0fe041
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134522"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788777"
 ---
 # <a name="delete-plannerbucket"></a>Excluir plannerBucket
 
 Namespace: microsoft.graph
 
 Exclua **plannerBucket**.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,6 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 DELETE /planner/buckets/{id}
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
@@ -47,8 +49,8 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de uma solicitação.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -85,8 +87,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 ---
 
-##### <a name="response"></a>Resposta
-Aqui está um exemplo da resposta. Observação: o objeto de resposta mostrado aqui pode ser reduzido para facilitar a leitura.
+### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

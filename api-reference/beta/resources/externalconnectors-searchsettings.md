@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso searchSettings
-description: Coleta todas as configurações configuráveis relacionadas ao conteúdo da pesquisa sobre o conector.
+description: Coleta todas as configurações configuráveis relacionadas à pesquisa sobre o conteúdo do conector.
 author: emzho
 ms.localizationpriority: normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6750ce5ea8f6b74dd55e83dae1a8f22d04ebfc15
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: f0915d57f0c49199f0273b8c44d5f60b2d78531c
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214913"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788630"
 ---
 # <a name="searchsettings-resource-type"></a>Tipo de recurso searchSettings
 
@@ -18,12 +18,12 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Coleta todas as configurações configuráveis relacionadas ao conteúdo da pesquisa sobre o conector.
+Coleta todas as configurações configuráveis relacionadas à pesquisa sobre o conteúdo do conector.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|searchResultTemplates|[coleção microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md)|Permite que o desenvolvedor defina a aparência do conteúdo e configure condições que ditam quando o modelo deve ser exibido.|
+|searchResultTemplates|[Coleção microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md)|Permite que o desenvolvedor defina a aparência do conteúdo e configure condições que determinam quando o modelo deve ser exibido. Máximo de dois modelos de resultado de pesquisa por conexão.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

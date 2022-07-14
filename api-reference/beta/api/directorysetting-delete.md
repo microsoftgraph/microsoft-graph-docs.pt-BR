@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 27cfa150303e7a89553c212561966f87f7b1b47a
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 19879c4a3fda4c9e81a721f6af5969bb77b6670e
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671500"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788784"
 ---
 # <a name="delete-directorysetting"></a>Excluir directorySetting
 
@@ -23,11 +23,23 @@ Excluir uma configuração de diretório.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>Para todas as configurações, exceto o objeto Configurações de Política de Consentimento
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
+
+### <a name="for-the-consent-policy-settings-object"></a>Para o objeto Configurações de Política de Consentimento
+
+As permissões a seguir são necessárias para atualizar o objeto **directorySetting** "Configurações de Política de Consentimento".
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | Policy.ReadWrite.Authorization    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

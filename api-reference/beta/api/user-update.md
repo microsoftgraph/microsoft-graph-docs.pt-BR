@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 53fa85a4a1dff9fc1ca0d89e73bfae28c02c28b0
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: b2e6b94ca21a04389c6472e7fda884817823353f
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555244"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788805"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -56,13 +56,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Define a faixa etária do usuário. Valores permitidos: `null`, `Minor`, `NotAdult` e `Adult`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
 |assignedLicenses|Coleção [assignedLicense](../resources/assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo de carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|businessPhones| Coleção de cadeias de caracteres | Números de telefone para o usuário. **NOTA:** Embora esta seja uma coleção de cadeias de caracteres, apenas um número pode ser definido para essa propriedade.|
+|businessPhones| String collection | Números de telefone para o usuário. **NOTA:** Embora esta seja uma coleção de cadeias de caracteres, apenas um número pode ser definido para essa propriedade.|
 |city|String|A cidade em que o usuário está localizado.|
 | CompanyName | String | O nome da empresa em que o usuário está associado. Essa propriedade pode ser útil para descrever a empresa de onde procede um usuário externo. O tamanho máximo é de 64 caracteres. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `Granted`, `Denied` e `NotRequired`. Confira as [definições de propriedades da faixa etária legal](../resources/user.md#legal-age-group-property-definitions) para obter mais informações. |
 |country|Cadeia de caracteres|O país/região em que o usuário está localizado; por exemplo, `US` ou `UK`.|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Um tipo complexo aberto que contém o valor de um atributo de segurança personalizado atribuído a um objeto de diretório.<br/><br/>Para atualizar este imóvel, o responsável pela chamada deve ser designado como Administrador de Atribuição de Atributos e deve receber a permissão *CustomSecAttributeAssignment.ReadWrite.All*.|
-|departamento|String|O nome do departamento no qual o usuário trabalha.|
+|department|String|O nome do departamento no qual o usuário trabalha.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações.|
 |employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. O comprimento máximo é de 16 caracteres.|
 | employeeType | String | Captura o tipo de trabalhador corporativo. Por exemplo, `Employee`, `Contractor`, `Consultant` ou `Vendor`.|
@@ -80,7 +80,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Esta propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **Importante:** Os caracteres **$** e **_** não podem ser usados ao especificar essa propriedade.                            |
 |otherMails|Coleção String|Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é `DisableStrongPassword`, o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar `DisablePasswordExpiration`. Ambos podem ser especificados juntos; por exemplo: `DisablePasswordExpiration, DisableStrongPassword`.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.<br><br>O usuário que está chamando deve receber a permissão delegada *Directory.AccessAsUser.All* para atualizar essa propriedade. Essa propriedade não pode ser atualizada somente com permissões de aplicativos.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.<br><br> No acesso delegado, o aplicativo de chamada deve receber a permissão delegada *Directory.AccessAsUser.All* em nome do usuário conectado. No acesso somente do aplicativo, o aplicativo de chamada deve receber a permissão *de aplicativo User.ReadWrite.All* e, pelo menos, a função user *administrator* [Azure AD.](/azure/active-directory/roles/permissions-reference)|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
 |preferredLanguage|Cadeia de caracteres|O idioma preferencial do usuário. Deve seguir o Código ISO 639-1; por exemplo, `en-US`.|
@@ -97,15 +97,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 Como o **recurso** de usuário dá suporte a extensões, `PATCH` você pode usar a operação para adicionar, atualizar ou excluir seus próprios dados [específicos](/graph/extensibility-overview) do aplicativo em propriedades personalizadas de uma extensão em uma instância de **usuário existente.**
 
 > [!NOTE] 
-> - As seguintes propriedades não podem ser atualizadas por um aplicativo com apenas permissões de aplicativo: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
-> - Para atualizar as seguintes propriedades, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** e **skills**.
+> - As propriedades a seguir não podem ser atualizadas por um aplicativo com apenas permissões de aplicativo: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **responsabilidades**, **escolas** e **habilidades**.
+> - Para atualizar as propriedades a seguir, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **responsabilidades**, **escolas** e **habilidades**.
 
 ### <a name="manage-extensions-and-associated-data"></a>Gerenciar extensões e dados associados
 
 Use essa API para gerenciar o diretório, o esquema e as extensões abertas e seus dados para os usuários, da seguinte maneira:
 
 + Adicionar, atualizar e armazenar dados nas extensões de um usuário existente
-+ Para extensões de diretório e esquema, remova todos os dados armazenados definindo o valor da propriedade de extensão personalizada como `null`. Para extensões abertas, use a API [Excluir extensão aberta](/graph/api/opentypeextension-delete) .
++ Para extensões de diretório e esquema, remova todos os dados armazenados definindo o valor da propriedade de extensão personalizada como `null`. Para extensões abertas, use a API [Excluir a extensão aberta](/graph/api/opentypeextension-delete).
 
 ## <a name="response"></a>Resposta
 
@@ -233,7 +233,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>Exemplo 3: atualizar o passwordProfile de um usuário para redefinir sua senha
 
-O exemplo a seguir mostra uma solicitação que redefine a senha de outro usuário. O usuário que está chamando deve receber a permissão delegada *Directory.AccessAsUser.All* para atualizar essa propriedade.
+O exemplo a seguir mostra uma solicitação que redefine a senha de outro usuário.
 
 #### <a name="request"></a>Solicitação
 

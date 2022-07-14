@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2badde96f6ad6ba0fff7be7302bb7fa80b6e28d8
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: d68d811e88afe56ea97472acac8c2a8fa983e970
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441486"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788623"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
@@ -20,20 +20,20 @@ Namespace: microsoft.graph
 
 Restaura um item recentemente excluído de [itens excluídos](../resources/directory.md). 
 
-Atualmente, a funcionalidade de restaurar itens excluídos só tem suporte [para os recursos](../resources/application.md) de aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário. Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não se aplica a grupos de segurança que são excluídos permanentemente.
+Atualmente, a funcionalidade de restaurar itens excluídos só tem suporte para recursos de [aplicativo,](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md), [grupo](../resources/group.md) [e usuário](../resources/user.md) . Se um item foi excluído acidentalmente, você poderá restaurá-lo totalmente. Isso não se aplica a grupos de segurança, que são excluídos permanentemente.
 
 Um item recentemente excluído permanecerá disponível por até 30 dias. Após 30 dias, esse item será excluído permanentemente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="for-applications"></a>Para aplicativos:
+### <a name="for-applications-and-service-principals"></a>Para aplicativos e entidades de serviço:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Application.ReadWrite.All     |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
+|Aplicativo | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
 ### <a name="for-users"></a>Para usuários:

@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 604e4275f1b5d49fab3d866b6845d820f67cd0ec
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 04e23418a4e224a8186e9e96018026d5f725451f
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65211274"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788686"
 ---
 # <a name="update-groupsetting"></a>Atualizar groupSetting
 
@@ -18,15 +18,27 @@ Namespace: microsoft.graph
 
 Atualize as propriedades de um [objeto groupSetting](../resources/groupsetting.md) para configurações [](../resources/group.md) de grupo em todo o locatário ou uma configuração de grupo específica.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Directory.ReadWrite.All                     |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Directory.ReadWrite.All                     |
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>Para todas as configurações, exceto o objeto Configurações de Política de Consentimento
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Directory.ReadWrite.All |
+
+### <a name="for-the-consent-policy-settings-object"></a>Para o objeto Configurações de Política de Consentimento
+
+As permissões a seguir são necessárias para atualizar o objeto **directorySetting** "Configurações de Política de Consentimento".
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegada (conta corporativa ou de estudante) | Policy.ReadWrite.Authorization    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

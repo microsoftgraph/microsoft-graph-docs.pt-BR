@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0fa31490a57c398f88958b7d7284f0bd3b0ea8f0
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 9236aacb415654c8c303b9030f3a3f8de6fc4539
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645494"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788609"
 ---
 # <a name="list-a-users-memberships-direct-and-transitive"></a>Listar as associações de um usuário (diretas e transitivas)
 
@@ -22,11 +22,11 @@ Obtenha [grupos](../resources/group.md), [funções de](../resources/directoryro
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Directory.Read.All, Directory.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
-| Aplicativo                            | Directory.Read.All, Directory.ReadWrite.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                  |
+| :------------------------------------- | :--------------------------------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                                               |
+| Aplicativo                            | Directory.Read.All, Directory.ReadWrite.All                                  |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

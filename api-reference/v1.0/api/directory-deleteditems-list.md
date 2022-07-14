@@ -5,18 +5,20 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 61d11d33871710267933fcf71e5932a33f71514d
-ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
+ms.openlocfilehash: 6ed39739978d7d72427e32f01445d9bcac36c930
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66768158"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788770"
 ---
 # <a name="list-deleteditems-directory-objects"></a>Listar deletedItems (objetos de diretório)
 
 Namespace: microsoft.graph
 
 Recupere uma lista de objetos de diretório excluídos recentemente. Atualmente, essa funcionalidade só tem suporte [para recursos de](../resources/application.md) aplicativo, [grupo](../resources/group.md) [e](../resources/user.md) usuário.
+
+Atualmente, a funcionalidade de itens excluídos só tem suporte para recursos de [aplicativo,](../resources/application.md) [servicePrincipal](../resources/serviceprincipal.md), [grupo](../resources/group.md) [e usuário](../resources/user.md) .
 
 >**Nota:** Os grupos de segurança excluídos são excluídos permanentemente e não podem ser recuperados por meio dessa API.
 
@@ -26,7 +28,7 @@ Recupere uma lista de objetos de diretório excluídos recentemente. Atualmente,
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="for-applications"></a>Para aplicativos:
+### <a name="for-applications-and-service-principals"></a>Para aplicativos e entidades de serviço:
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,12 +56,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/microsoft.graph.application
+GET /directory/deleteditems/microsoft.graph.servicePrincipal
 GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-Atualmente, essa API dá suporte à recuperação de tipos de objeto de aplicativos (`microsoft.graph.application`), grupos (`microsoft.graph.group`) ou usuários (`microsoft.graph.user`) de itens excluídos. O tipo de conversão OData é uma parte necessária do URI `GET /directory/deleteditems` e não há suporte para chamadas sem  um tipo.
+Atualmente, essa API dá suporte à recuperação de tipos de objeto de aplicativos (`microsoft.graph.application`), servicePrincipals (`microsoft.graph.serviceprincipal`), grupos (`microsoft.graph.group`) ou usuários (`microsoft.graph.user`) de itens excluídos. O tipo de conversão OData é uma parte necessária do URI `GET /directory/deleteditems` e não há suporte para chamadas sem  um tipo.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
