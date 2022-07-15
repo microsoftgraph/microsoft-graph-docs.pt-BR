@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 017624069a4487f7145fbc742055ade457fc93e6
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: d51294b3325ead09cbf679904a9de5b33248bbac
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645235"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788560"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -190,7 +190,7 @@ Esse recurso permite:
 |onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
 |onPremisesSamAccountName|String| Contém o `samAccountName` local sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.<br><br>Retornado apenas em `$select`.  Suporta `$filter`(`eq` inclusive em `null` valores). |
-|onPremisesSyncEnabled|Booliano| `true` se esse objeto está sincronizado de um diretório local; `false` se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; `null` se esse objeto nunca foi sincronizado de um diretório local (padrão). Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `in` e `eq` em `null` valores).|
+|onPremisesSyncEnabled|Booliano| `true` se esse objeto de usuário estiver sendo sincronizado de um Active Directory (AD) local; caso contrário, o usuário não está sendo sincronizado e pode ser gerenciado no Azure Active Directory (Azure AD). Somente leitura. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `in` e `eq` em `null` valores).|
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o diretório local com o Azure Active Directory pelo Azure AD Connect. Somente leitura.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |otherMails|Coleção String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. <br>OBSERVAÇÃO: esta propriedade não pode conter caracteres de ênfase. <br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith` e a contagem de coleções vazias).|
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é `DisableStrongPassword`, o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar `DisablePasswordExpiration`. Ambos podem ser especificados juntos; por exemplo: `DisablePasswordExpiration, DisableStrongPassword`.<br><br>Retornado apenas em `$select`. Para mais informações sobre as políticas de senha padrão, confira [Políticas de senha do Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts). Dá suporte a `$filter` (`ne`, `not` e `eq` em valores `null`). |
@@ -199,7 +199,7 @@ Esse recurso permite:
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos da América, este atributo contém o Código postal. O comprimento máximo é de 40 caracteres.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, e `eq` em `null` valores).|
 | preferredDataLocation | String | O local de dados preferido para o usuário. Para saber mais, confira [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|Cadeia de caracteres|O idioma preferencial do usuário. Deve seguir o Código ISO 639-1; por exemplo, `en-US`.<br><br>Devolvido por padrão. Suporta `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` e `eq` em valores `null`)|
-|preferredName|String|O nome preferencial do usuário. <br><br>Retornado apenas em `$select`.|
+|preferredName|String|O nome preferencial do usuário. **Não suportado. Este atributo retorna uma cadeia de caracteres vazia.**<br><br>Retornado apenas em `$select`.|
 |provisionedPlans|coleção [provisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável.<br><br>Retornado apenas em `$select`. Suporta `$filter` (`eq`, `not`, `ge`, `le`).|
 |proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. As alterações na propriedade **mail** também atualizarão essa coleção para incluir o valor como um endereço SMTP. Para obter mais informações, consulte propriedades de [email e proxyAddresses](#mail-and-proxyaddresses-properties). O endereço proxy prefixado com `SMTP` (em maiúsculas) é o endereço proxy primário, enquanto aqueles prefixados com `smtp` são os endereços proxy secundários. Para contas do Azure AD B2C, essa propriedade tem um limite de dez endereços exclusivos. Somente leitura no Microsoft Graph; você pode atualizar essa propriedade somente por meio do [Microsoft 365 de administração](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Não anulável. <br><br>Retornado apenas em `$select`. Dá suporte a `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`, `endsWith`, e a contagem de coleções vazias).|
 |refreshTokensValidFromDateTime|DateTimeOffset|Os tokens de atualização ou de sessão (cookies de sessão) emitidos antes dessa hora são inválidos e os aplicativos recebem um erro ao usar um token de atualização ou de sessão inválido para adquirir um token de acesso delegado (para acessar APIs como o Microsoft Graph).  Se isso acontecer, o aplicativo precisará adquirir um novo token de atualização, fazendo uma solicitação ao ponto de extremidade de autorização. <br><br>Retornado apenas em `$select`. Somente leitura. |
@@ -286,7 +286,7 @@ Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade de gerenciamento está definida para esse usuário.) Somente leitura. Anulável. Dá suporte a `$expand`. |
 |Unidade|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
-|events|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
+|eventos|Coleção [event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Somente leitura. Oferece suporte para `$expand`. Anulável.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |insights|[officeGraphInsights](officegraphinsights.md) | Somente leitura. Anulável.|

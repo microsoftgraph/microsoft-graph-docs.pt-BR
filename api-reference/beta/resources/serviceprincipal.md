@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: f542cc9d3b0078234609053039c460986ac85082
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: dca4b6168121846c6a006260bd741e205c8c1f80
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477668"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788756"
 ---
 # <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
@@ -31,6 +31,10 @@ Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overv
 |[Get servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Leia as propriedades e as relações do objeto servicePrincipal.|
 |[Atualizar servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Atualize o objeto servicePrincipal. |
 |[Excluir servicePrincipal](../api/serviceprincipal-delete.md) | Nenhum(a) |Exclua o objeto servicePrincipal.|
+|[Listar servicePrincipals excluídos](../api/directory-deleteditems-list.md) | Coleção [directoryObject](directoryobject.md) | Recupere uma lista de objetos servicePrincipal excluídos recentemente. |
+|[Obter servicePrincipal excluído](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Recupere as propriedades de um objeto servicePrincipal excluído recentemente. |
+|[Excluir permanentemente servicePrincipal](../api/directory-deleteditems-delete.md) | Nenhum | Exclua permanentemente um objeto servicePrincipal. |
+|[Restaurar servicePrincipal excluído](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restaure um objeto servicePrincipal excluído recentemente. |
 |[Listar createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Obtenha uma coleção de objeto createdObject.|
 |[Listar ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objeto ownedObject.|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal collection| Obtenha alterações incrementais para entidades de serviço. |
