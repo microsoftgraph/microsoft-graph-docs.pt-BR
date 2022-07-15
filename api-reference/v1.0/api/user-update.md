@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e56cf53369e7b63e04fe9cf6a882fb6361ee31e5
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 9e2bd2c3814cc8bebb065db81ca37a28d6156812
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555734"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788700"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -75,7 +75,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Esta propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **Importante:** Os caracteres **$** e **_** não podem ser usados ao especificar essa propriedade.                            |
 |otherMails|Coleção String |Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é `DisableStrongPassword`, o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar `DisablePasswordExpiration`. Ambos podem ser especificados juntos; por exemplo: `DisablePasswordExpiration, DisableStrongPassword`.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. Isso não pode ser usado para usuários federados. <br><br> O usuário que está chamando deve receber a permissão delegada *Directory.AccessAsUser.All* para atualizar essa propriedade. Essa propriedade não pode ser atualizada somente com permissões de aplicativos.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte. Isso não pode ser usado para usuários federados. <br><br> No acesso delegado, o aplicativo de chamada deve receber a permissão delegada *Directory.AccessAsUser.All* em nome do usuário conectado. No acesso somente ao aplicativo, o aplicativo de chamada deve receber a permissão do aplicativo *User.ReadWrite.All* e pelo menos a função de *Administrador do Usuário* do [Azure AD](/azure/active-directory/roles/permissions-reference).|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
 |preferredLanguage|Cadeia de caracteres|O idioma preferencial do usuário. Deve seguir o Código ISO 639-1; por exemplo, `en-US`.|
@@ -90,8 +90,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |userType|String|Um valor de string que pode ser usado para classificar tipos de usuário em seu diretório, como `Member` e `Guest`.          |
 
 > [!NOTE] 
-> - As seguintes propriedades não podem ser atualizadas por um aplicativo com apenas permissões de aplicativo: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
-> - Para atualizar as seguintes propriedades, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** e **skills**.
+> - As propriedades a seguir não podem ser atualizadas por um aplicativo apenas com permissões de aplicativo: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **responsabilidades**, **escolas** e **habilidades**.
+> - Para atualizar as propriedades a seguir, você deve especificá-las em sua própria solicitação PATCH, sem incluir as outras propriedades listadas na tabela acima: **aboutMe**, **aniversário**, **interesses**, **mySite**, **pastProjects**, **responsabilidades**, **escolas** e **habilidades**.
 
 ### <a name="manage-extensions-and-associated-data"></a>Gerenciar extensões e dados associados
 
@@ -226,7 +226,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>Exemplo 3: atualizar o passwordProfile de um usuário para redefinir sua senha
 
-O exemplo a seguir mostra uma solicitação para redefinir a senha de outro usuário. O usuário que está chamando deve receber a permissão delegada *Directory.AccessAsUser.All* para atualizar essa propriedade.
+O exemplo a seguir mostra uma solicitação para redefinir a senha de outro usuário.
 
 #### <a name="request"></a>Solicitação
 
