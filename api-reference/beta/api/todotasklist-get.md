@@ -5,17 +5,17 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f8322415eff483def3687a0accd92bb8c1f33060
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 06f847f53a9e45123f68ca9a9e46224258d6c984
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122803"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810281"
 ---
 # <a name="get-todotasklist"></a>Obter todoTaskList
 Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Leia as propriedades e as relações de um [objeto todoTaskList.](../resources/todotasklist.md)
+Leia as propriedades e as relações de um [objeto todoTaskList](../resources/todotasklist.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [todoTaskList](../resources/todotasklist.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código `200 OK` de resposta e um [objeto todoTaskList](../resources/todotasklist.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -105,14 +105,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.todoTaskList",
-    "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
-    "displayName": "Monthly tasks",
-    "isOwner": "true",
-    "isShared": "false",
-    "wellknownListName": "defaultList"
-  }
+  "@odata.type": "#microsoft.graph.todoTaskList",
+  "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
+  "displayName": "Monthly tasks",
+  "isOwner": true,
+  "isShared": false,
+  "wellknownListName": "defaultList"
 }
 ```
 

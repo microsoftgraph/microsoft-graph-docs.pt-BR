@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5ace3cd2e43a5410f55125f7018e816c5ca3199b
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: a96121caaaee5c2ace12a1b73281e156829d9e3d
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821138"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810239"
 ---
 # <a name="todotask-resource-type"></a>Tipo de recurso todoTask
 
@@ -41,7 +41,7 @@ Esse recurso dá suporte ao seguinte:
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
-|bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
+|bodyLastModifiedDateTime|DateTimeOffset|A data e a hora em que o corpo da tarefa foi modificado pela última vez. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](../resources/outlookcategory.md) definida pelo usuário.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|

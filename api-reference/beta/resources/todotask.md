@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9c11252d3dded276e96ffbc219a3cf9155718da7
-ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
+ms.openlocfilehash: 9f997396228551bb50f1518e96e35e234f013ac2
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66767941"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810255"
 ---
 # <a name="todotask-resource-type"></a>Tipo de recurso todoTask
 
@@ -45,7 +45,7 @@ Esse recurso dá suporte ao seguinte:
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa.|
-|bodyLastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
+|bodyLastModifiedDateTime|DateTimeOffset|A data e a hora em que o corpo da tarefa foi modificado pela última vez. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](../resources/outlookcategory.md) definida pelo usuário.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite UTC em 1º de janeiro de 2020 teria esta aparência: '2020-01-01T00:00:00Z'.|
@@ -59,7 +59,7 @@ Esse recurso dá suporte ao seguinte:
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado no qual a tarefa está agendada para iniciar.|
 |status|taskStatus|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|String|Uma breve descrição da tarefa.|
+|title|Cadeia de caracteres|Uma breve descrição da tarefa.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

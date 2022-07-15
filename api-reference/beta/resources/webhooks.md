@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: conceptualPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 106f0d0600d7020b003cd214d7ef090bc82f3f27
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 01ad1955be9f0a3e8680871753c50d19cd9b06ab
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66443029"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810254"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -40,13 +40,13 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | Teams [callRecord][] | Mudanças para _todos os_ registros de chamadas: `/communications/callRecords` | Não |
 | [Canal][] do Teams | Alterações nos canais em todas as equipes:<br>`/teams/getAllChannels` <br>Alterações no canal em uma equipe específica:<br>`/teams/{id}/channels` | Sim |
 | [Chat][] do Teams | Alterações em qualquer chat no locatário:<br>`/chats` <br>Alterações em um chat específico:<br>`/chats/{id}` | Sim |
-| Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages`<br>As alterações nas mensagens de chat em todos os chats de um determinado usuário fazem parte de:<br>`/users/{id}/chats/getAllMessages` | Sim |
+| Equipes [chatmessage][] | Alterações nas mensagens de chat em todos os canais de todas as equipes:<br>`/teams/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/teams/{id}/channels/{id}/messages`<br>Alterações nas mensagens de todos os chats:<br>`/chats/getAllMessages` <br>Alterações nas mensagens de um chat específico:<br>`/chats/{id}/messages`<br>Alterações nas mensagens de chat em todos os chats de que um usuário específico faz parte:<br>`/users/{id}/chats/getAllMessages` | Sim |
 | [conversationMember][] do Teams | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` <br> Alterações na associação em um chat específico:<br>`/chats/{id}/members` <br> Alterações na associação em todos os chats:<br>`/chats/getAllMembers` <br> Alterações na associação em todos os canais em uma equipe específica:<br>`teams/{id}/channels/getAllMembers` | Sim |
 | [onlineMeeting][] do Teams | Alterações em uma reunião online: <br>`/communications/onlineMeetings/?$filter=JoinWebUrl eq {joinWebUrl}` | Sim |
 | Teams [presença][] | Alterações na presença de um único usuário: `/communications/presences/{id}` <br> Alterações em várias presenças de usuário:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Sim |
 | Equipe do [Teams][] | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações em uma equipe específica:<br>`/teams/{id}` | Sim |
 | To Do [baseTask][] (preterido) | Alterações para todas as tarefas em uma lista de tarefas específica:<br>`/me/tasks/lists/{baseTaskListId}/tasks`<br>Alterações em todas as tarefas:<br>`/me/tasks/lists/alltasks` | Não |
-| [Tarefas Pendentes][] | Alterações para todas as tarefas em uma lista de tarefas específica:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Alterações em todas as tarefas:<br>`/me/todo/lists/alltasks` | Não |
+| [Tarefas Pendentes][] | Alterações para todas as tarefas em uma lista de tarefas específica:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Não |
 | [Usuário][] | Alterações em todos os usuários:<br>`/users` <br>Alterações em um usuário específico:<br>`/users/{id}`| Não |
 
 
@@ -86,7 +86,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [usuário]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
 [alerta]: ./alert.md
-[presence]: ./presence.md
+[presença]: ./presence.md
 [impressora]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [equipe]: ./team.md

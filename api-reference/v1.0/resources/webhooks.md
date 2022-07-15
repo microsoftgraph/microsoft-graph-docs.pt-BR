@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: 8d95f4cdb8402b0b3b7a7188cea8b30b2477fbc4
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 30c645158aa21b6b25b92fd665a148e325018f39
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555727"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810246"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
@@ -39,7 +39,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 | [Canal][] do Teams | Alterações nos canais em todas as equipes:<br>`/teams/getAllChannels` <br>Alterações no canal em uma equipe específica:<br>`/teams/{id}/channels` | Sim |
 | [conversationMember][] do Teams | Alterações na associação em uma equipe específica:<br>`/teams/{id}/members` <br> Alterações na associação em todos os canais em uma equipe específica:<br>`teams/{id}/channels/getAllMembers` <br> Alterações na associação em um chat específico:<br>`/chats/{id}/members` <br> Alterações na associação em todos os chats:<br>`/teams/getAllMembers` | Sim |
 | Equipe do [Teams][] | Alterações em qualquer equipe no locatário:<br>`/teams` <br>Alterações em uma equipe específica:<br>`/teams/{id}` | Sim |
-| [Tarefas Pendentes][] | Alterações para todas as tarefas em uma lista de tarefas específica:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>Alterações em todas as tarefas:<br>`/me/todo/lists/alltasks` | Não |
+| [Tarefas Pendentes][] | Alterações para todas as tarefas em uma lista de tarefas específica:<br>`/me/todo/lists/{todoTaskListId}/tasks` | Não |
 | [Usuário][] | Alterações em todos os usuários:<br>`/users` <br>Alterações em um usuário específico:<br>`/users/{id}`| Não |
 
 > **Observação**: qualquer trajetória de recurso que comece com o `/users/{id}` também pode aceitar `/me` referenciar o usuário conectado.
