@@ -109,7 +109,7 @@ class UseBeta
 }
 ```
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

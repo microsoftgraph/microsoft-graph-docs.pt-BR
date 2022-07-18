@@ -78,7 +78,7 @@ Por exemplo, para recuperar apenas contas de usuários inativos, você pode exec
         .get();
     ```
 
-    # <a name="go"></a>[Ir](#tab/go)
+    # <a name="go"></a>[Go](#tab/go)
 
     ```go
     // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go
@@ -171,7 +171,7 @@ Por exemplo, para recuperar apenas contas de usuários inativos, você pode exec
         .get();
     ```
 
-    # <a name="go"></a>[Ir](#tab/go)
+    # <a name="go"></a>[Go](#tab/go)
 
     ```go
     // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go

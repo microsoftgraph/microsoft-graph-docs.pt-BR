@@ -166,7 +166,7 @@ Ainda não disponível. Dê suporte ou abra uma [solicitação de recurso do Mic
 
 Ainda não está disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -323,7 +323,7 @@ Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso 
 
 Ainda não está disponível. Dê suporte ou abra uma [solicitação de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -445,7 +445,7 @@ Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft 
 
 Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -556,7 +556,7 @@ Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft 
 
 Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -650,7 +650,7 @@ Não aplicável.
 
 Não aplicável.
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 Não aplicável.
 
@@ -750,7 +750,7 @@ Não aplicável.
 
 Não aplicável.
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -852,7 +852,7 @@ Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft 
 
 Ainda não disponível. Vote ou abra uma solicitação [de recurso do Microsoft Graph](https://aka.ms/graphrequests) se isso for importante para você.
 
-# <a name="go"></a>[Ir](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
