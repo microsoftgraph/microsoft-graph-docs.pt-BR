@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 1924ee87043a2ba10beb0505e9a42f1446c30a9e
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 06ab85704a737877ca6674737dd64504f3698629
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883989"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838462"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -49,6 +49,10 @@ Alertas dos seguintes provedores estão disponíveis por meio da API de seguran�
 
 \*\*\* Os alertas do Microsoft Defender para Identidade estão disponíveis por meio da integração com o Microsoft Defender for Cloud Apps. Isso significa que você receberá alertas do Microsoft Defender para Identidade somente se tiver ingressado no portal Unified SecOps e conectado o Microsoft Defender para Identidade com o Microsoft Defender for Cloud Apps. Saiba mais sobre [como integrar o Microsoft Defender para Identidade com o Microsoft Defender for Cloud Apps.](/defender-for-identity/mcas-integration)
 
+## <a name="ediscovery"></a>Descoberta eletrônica
+
+O [Microsoft Purview eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) fornece um fluxo de trabalho de ponta a ponta para preservar, coletar, analisar, revisar e exportar conteúdo que responde às investigações internas e externas de sua organização.
+
 ## <a name="information-protection"></a>Proteção de informações
 
 A API de avaliação de ameaças do Microsoft Graph ajuda as organizações a avaliar a ameaça recebida por qualquer usuário em um locatário. Isso permite que os clientes relatem emails de spam, URLs de phishing ou anexos de malware recebidos na Microsoft. Os resultados da verificação de política e os resultados ao verificar novamente, podem ajudar os administradores de locatários a entender o veredicto da verificação de ameaças e ajustar sua política organizacional.
@@ -64,7 +68,9 @@ A seguir, há algumas das solicitações mais populares para trabalhar com a API
 | **Casos de uso**   | **Recursos REST** | **Experimentar no Explorador do Graph** |
 |:---------------|:--------|:----------|
 | Listar alertas | [List alerts](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
-| Atualizar alertas | [Update alert](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| Atualizar alertas | [Atualizar alertas](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+|Listar casos de Descoberta Eletrônica|[Listar eDiscoveryCases](../api/security-casesroot-list-ediscoverycases.md)|[https://graph.microsoft.com/beta/security/cases/eDiscoveryCases](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|Listar operações de caso de Descoberta Eletrônica|[Listar caseOperations](../api/security-ediscoverycase-list-operations.md)|[https://graph.microsoft.com/beta/security/cases/eDiscoverycases/{id}/operations](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases%2F%7Bid%7D%2Foperations&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |Listar classificações de segurança|[Listar secureScores](../api/security-list-securescores.md) |[https://graph.microsoft.com/v1.0/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |Obter classificação de segurança|[Obter secureScore](../api/securescore-get.md) |[https://graph.microsoft.com/v1.0/security/secureScores/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores/{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |Listar perfis de controle da classificação de segurança|[Listar secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
