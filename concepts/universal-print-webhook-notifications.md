@@ -5,12 +5,12 @@ author: jahsu
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9c7319d55a8ea78fa08f5a21a8986b55a552a2f7
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 098de14a7538ae9853d74f6b47ffeb3987645803
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66443785"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856103"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Assine para alterar notificações de APIs de impressão na nuvem usando o Microsoft Graph
 
@@ -37,6 +37,8 @@ Para obter detalhes sobre como acionar uma tarefa, consulte [Habilitar impressã
 
 >[!NOTE]
 >Para ouvir as notificações de alteração do evento Jobfetchable, não é necessário um recurso **printTaskDefinition**.
+>
+>O aplicativo deve lidar com notificações duplicadas.
 
 ### <a name="create-an-application-to-listen-to-notifications"></a>Crie um aplicativo para ouvir as notificações
 
@@ -204,9 +206,11 @@ Para obter detalhes, confira [Validação do ponto de extremidade da notificaç�
 ### <a name="what-are-applications-expected-to-do-after-receiving-a-change-notification"></a>O que os aplicativos devem fazer após receber uma notificação de alteração?
 Os aplicativos devem processar e reconhecer todas as notificações de alteração recebidas. Para obter detalhes, confira [Processando a notificação de alteração](./webhooks.md#processing-the-change-notification).
 
+### <a name="how-can-i-validate-the-authenticity-of-notifications"></a>Como posso validar a autenticidade das notificações?
+A autenticidade das notificações pode ser validada usando o valor **clientState** conforme descrito em [Processando a notificação de alteração](./webhooks.md#processing-the-change-notification) ou [validando tokens na notificação de alteração](./webhooks-with-resource-data.md#validation-tokens-in-the-change-notification).
+
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>Como posso obter uma lista de assinaturas ativas?
 Para obter detalhes sobre como recuperar uma lista de assinaturas de webhook, confira [Listar assinaturas](/graph/api/subscription-list).
-
 
 ## <a name="see-also"></a>Confira também
 

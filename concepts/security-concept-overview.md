@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f5525d2e37bc306c138f8b30010e62c2335cb703
-ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.openlocfilehash: 71d2c8f16314b85f6878bf037c2c9a68d9eee097
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "66837496"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856187"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
@@ -33,6 +33,10 @@ A [API de Segurança do Microsoft Graph](/graph/api/resources/security-api-overv
 - [Arrastar e solta em fluxos de trabalho e guias estratégicos](https://aka.ms/graphsecurityconnectorsblogpost) – Use [conectores de segurança do Microsoft Graph](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) para [Aplicativos Lógicos do Azure](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/)e o [PowerApps](https://powerapps.microsoft.com/).
 - [Obter dados em relatórios e painéis](https://aka.ms/graphsecuritypowerbiconnectorblogpost) : Use o [conector de segurança do Microsoft Graph para o Power BI](/power-bi/connect-data/desktop-connect-graph-security).
 - [Conectar usando blocos de anotações Jupyter](https://jupyter.org/) – Encontrar [exemplos de bloco de anotações do Jupyter](https://aka.ms/graphsecurityjupyternotebooks).  
+
+### <a name="submit-threats-and-trigger-whole-automation-flow"></a>Enviar ameaças e disparar todo o fluxo de automação
+
+Envie ameaças através de soluções de segurança mais facilmente com uma API unificada de envio de ameaças à segurança. Isso permite que você não apenas envie ameaças, mas também obtenha os resultados do envio de ameaças e acione fluxos de alertas downstream. A nova API de envio de ameaças de segurança unificada dá suporte a permissões delegadas e de aplicativos para ajudar você a criar novas soluções de segurança.
 
 ### <a name="unify-and-standardize-alert-tracking"></a>Unificar e padronizar o monitoramento de alertas
 
