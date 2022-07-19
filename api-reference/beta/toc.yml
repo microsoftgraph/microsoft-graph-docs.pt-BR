@@ -526,7 +526,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -10702,6 +10702,26 @@ items:
                         href: api/windowsupdates-updatableassetgroup-removemembers.md
                       - name: Remover membros por ID
                         href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
+              - name: Conexão de recurso
+                href: resources/windowsupdates-resourceconnection.md
+                items:
+                  - name: Lista
+                    href: api/windowsupdates-updates-list-resourceconnections.md
+                  - name: Obter
+                    href: api/windowsupdates-resourceconnection-get.md
+                  - name: Excluir
+                    href: api/windowsupdates-resourceconnection-delete.md
+                  - name: Conexão de insights operacionais
+                    href: resources/windowsupdates-operationalinsightsconnection.md
+                    items:
+                      - name: Listar
+                        href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
+                      - name: Criar
+                        href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
+                      - name: Obter
+                        href: api/windowsupdates-operationalinsightsconnection-get.md
+                      - name: Excluir
+                        href: api/windowsupdates-operationalinsightsconnection-delete.md
           - name: Gerenciamento multilocatário (visualização)
             items:
               - name: Locatário gerenciado
@@ -13992,7 +14012,7 @@ items:
                     href: api/personname-update.md
                   - name: Excluir
                     href: api/personname-delete.md
-              - name: Observações
+              - name: Notas
                 items:
                   - name: Anotação de pessoa
                     href: resources/personannotation.md
@@ -14390,6 +14410,13 @@ items:
             items:
               - name: Visão Geral
                 href: resources/report.md
+              - name: Settings
+                href: resources/adminreportsettings.md
+                items:
+                  - name: Obter
+                    href: api/adminreportsettings-get.md
+                  - name: Atualizar
+                    href: api/adminreportsettings-update.md
               - name: Uso do dispositivo do Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
                 items:
@@ -15143,6 +15170,59 @@ items:
                 href: api/tiindicator-deletetiindicators.md
               - name: Excluir várias pelo ID externo
                 href: api/tiindicator-deletetiindicatorsbyexternalid.md
+          - name: Envio de ameaças (versão prévia)
+            href: resources/security-threatsubmission.md
+            items:
+              - name: Email ameaça
+                href: resources/security-emailthreatsubmission.md
+                items:
+                  - name: Listar
+                    href: api/security-emailthreatsubmission-list.md
+                  - name: Criar
+                    href: api/security-emailthreatsubmission-post-emailthreats.md
+                  - name: Obter
+                    href: api/security-emailthreatsubmission-get.md
+                  - name: Revisão
+                    href: api/security-emailthreatsubmission-review.md
+                  - name: Email ameaça de conteúdo
+                    href: resources/security-emailcontentthreatsubmission.md
+                  - name: Email ameaça de URL
+                    href: resources/security-emailurlthreatsubmission.md
+              - name: Email de envio de ameaças
+                href: resources/security-emailthreatsubmissionpolicy.md
+                items:
+                  - name: Listar
+                    href: api/security-emailthreatsubmissionpolicy-list.md
+                  - name: Criar
+                    href: api/security-emailthreatsubmissionpolicy-post-emailthreatsubmissionpolicies.md
+                  - name: Obter
+                    href: api/security-emailthreatsubmissionpolicy-get.md
+                  - name: Atualizar
+                    href: api/security-emailthreatsubmissionpolicy-update.md
+                  - name: Excluir
+                    href: api/security-emailthreatsubmissionpolicy-delete.md
+              - name: Envio de ameaças à URL
+                href: resources/security-urlthreatsubmission.md
+                items:
+                  - name: Listar
+                    href: api/security-urlthreatsubmission-list.md
+                  - name: Criar
+                    href: api/security-urlthreatsubmission-post-urlthreats.md
+                  - name: Obter
+                    href: api/security-urlthreatsubmission-get.md
+              - name: Envio de ameaças de arquivo
+                href: resources/security-filethreatsubmission.md
+                items:
+                  - name: Listar
+                    href: api/security-filethreatsubmission-list.md
+                  - name: Criar
+                    href: api/security-filethreatsubmission-post-filethreats.md
+                  - name: Obter
+                    href: api/security-filethreatsubmission-get.md
+                  - name: Envio de ameaças à URL do arquivo
+                    href: resources/security-fileurlthreatsubmission.md
+                  - name: Envio de ameaças de conteúdo de arquivo
+                    href: resources/security-filecontentthreatsubmission.md
           - name: Erros
             href: resources/security-error-codes.md
       - name: Sites e listas
@@ -15560,7 +15640,7 @@ items:
               - name: Obter canal primário
                 href: api/team-get-primarychannel.md
               - name: Obter foto da equipe
-                href: api/team-get-photo.md
+                href: api/profilephoto-get.md
               - name: Atualizar foto da equipe
                 href: api/profilephoto-update.md
               - name: Migração completa para a equipe

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: ef9b235a175b3304b9354beddc67f59eb3994cf1
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: ce20f9d9a15acbf5c27402eb018b4bbc5ad85b97
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653494"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856320"
 ---
 # <a name="admin-resource-type"></a>tipo de recurso de administrador
 
@@ -26,8 +26,9 @@ Nenhum.
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
+| reportSettings |[microsoft.graph.adminReportSettings](../resources/adminreportsettings.md)|Um contêiner para recursos administrativos para gerenciar relatórios.|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | Um contêiner para recursos de comunicação de serviço. Somente leitura. |
-| sharepoint |[microsoft.graph.tenantAdmin.sharepoint](../resources/tenantadmin-sharepoint.md)|Um contêiner para recursos administrativos para gerenciar configurações no nível do locatário para SharePoint e OneDrive.|
+| sharepoint |[microsoft.graph.tenantAdmin.sharepoint](../resources/tenantadmin-sharepoint.md)|Um contêiner para recursos administrativos para gerenciar configurações no nível do locatário para o SharePoint e o OneDrive.|
 | windows |[microsoft.graph.windowsUpdates.windows](../resources/windowsupdates-windows.md)|Um contêiner para todas as Windows Update do serviço de implantação para Empresas. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON

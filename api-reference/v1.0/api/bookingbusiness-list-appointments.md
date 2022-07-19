@@ -1,52 +1,63 @@
 ---
 title: Listar compromissos
-description: Obter uma lista de objetos bookingAppointment para o bookingbusiness especificado.
+description: Obtenha uma lista de objetos bookingAppointment para o bookingBusiness especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2695fa895417ebb3d2e4bb793c4565cafdf06a64
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: fbb01079dde03e2926775eb16fa6d7f7b972167a
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014268"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856047"
 ---
 # <a name="list-appointments"></a>Listar compromissos
 
 Namespace: microsoft.graph
 
-Obter uma lista de [objetos bookingAppointment](../resources/bookingappointment.md) para [o bookingBusiness especificado.](../resources/bookingbusiness.md)
+Obtenha uma lista de [objetos bookingAppointment](../resources/bookingappointment.md) para [o bookingBusiness especificado](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Aplicativo | BookingsAppointment.ReadWrite.All, Bookings.Read.All   |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}/appointments
 ```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos parâmetros $count e $expand [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Para obter o conjunto de compromissos de uma empresa do Microsoft Bookings dentro de um intervalo de datas, em vez `$filter` de , obter o [calendarView](bookingbusiness-list-calendarview.md) para esse intervalo de datas.
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Esse método dá suporte aos $count e $expand de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Para obter o conjunto de compromissos de uma Microsoft Bookings dentro de um intervalo de datas, `$filter`em vez de , obtenha o [calendarView](bookingbusiness-list-calendarview.md) para esse intervalo de datas.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 <!-- {
@@ -57,6 +68,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

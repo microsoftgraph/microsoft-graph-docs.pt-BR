@@ -1,58 +1,66 @@
 ---
-title: 'bookingAppointment: cancel'
-description: Cancele o bookingAppointment especificado no bookingBusiness especificado e envie uma mensagem aos clientes envolvidos e aos membros da equipe.
+title: 'bookingAppointment: cancelar'
+description: Cancele o bookingAppointment especificado no bookingBusiness especificado e envie uma mensagem para o cliente envolvido e os membros da equipe.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 489aabcd3753e6e8796fa6a074fb6508a27ba243
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 60244dcf48344136bb2c1aba92c3964ea34a4cb5
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526419"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856362"
 ---
-# <a name="bookingappointment-cancel"></a>bookingAppointment: cancel
+# <a name="bookingappointment-cancel"></a>bookingAppointment: cancelar
 
 Namespace: microsoft.graph
 
-Cancele o [bookingAppointment](../resources/bookingappointment.md) especificado no [bookingBusiness](../resources/bookingbusiness.md) especificado e envie uma mensagem aos clientes envolvidos e aos membros da equipe.
+Cancele o [bookingAppointment especificado](../resources/bookingappointment.md) no [bookingBusiness](../resources/bookingbusiness.md) especificado e envie uma mensagem para o cliente envolvido e os membros da equipe.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/appointments/{id}/cancel
+POST /solutions/bookingBusinesses/{id}/appointments/{id}/cancel
 
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça um objeto JSON com o parâmetro a seguir.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|cancellationMessage|Cadeia de caracteres|Uma mensagem para confirmar com o cliente que o **compromisso** foi cancelado.|
+|cancellationMessage|Cadeia de caracteres|Uma mensagem para confirmar com o cliente que **o compromisso** foi cancelado.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-Se você tentar cancelar um **compromisso** que não existe, este método retornará `404 Not found` um .
+Se você tentar cancelar um **compromisso** que não existe, este método retornará um `404 Not found`.
 
 ## <a name="example"></a>Exemplo
+
 Veja a seguir um exemplo de como chamar essa API.
+
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 <!-- {
@@ -68,7 +76,9 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response"
 } -->

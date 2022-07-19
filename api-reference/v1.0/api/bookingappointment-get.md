@@ -1,22 +1,22 @@
 ---
 title: Obter bookingAppointment
-description: Obter as propriedades e as relações de um objeto bookingAppointment no bookingBusiness especificado.
+description: Obtenha as propriedades e as relações de um objeto bookingAppointment no bookingBusiness especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d733ac9e593e3a53fd57be283884646441f49c8e
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 6295c814a60fa57011b29e69e57c559d06d7abb7
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014310"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856369"
 ---
 # <a name="get-bookingappointment"></a>Obter bookingAppointment
 
 Namespace: microsoft.graph
 
-Obter as propriedades e as relações de um [objeto bookingAppointment](../resources/bookingappointment.md) no [bookingBusiness especificado.](../resources/bookingbusiness.md)
+Obtenha as propriedades e as relações de um [objeto bookingAppointment](../resources/bookingappointment.md) no [bookingBusiness especificado](../resources/bookingbusiness.md).
 
 As **propriedades startDateTime** **e endDateTime** sempre são retornadas em UTC.
 ## <a name="permissions"></a>Permissões
@@ -26,27 +26,36 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Aplicativo | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos parâmetros $count e $expand [de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+Esse método dá suporte aos $count e $expand de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome      |Descrição|
 |:----------|:----------|
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código `200 OK` de resposta e um objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 <!-- {
@@ -57,6 +66,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.

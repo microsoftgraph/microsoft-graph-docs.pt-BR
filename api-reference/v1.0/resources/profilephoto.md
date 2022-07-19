@@ -1,35 +1,34 @@
 ---
 title: Tipo de recurso de profilePhoto
-description: Uma foto de perfil de um usuário, grupo ou contato do Outlook acessada do Exchange Online. Seus dados binários não são codificados em base 64.
+description: Exibe uma foto de perfil de um usuário, grupo, equipe ou contato do Outlook acessado do Exchange Online ou do Azure Active Directory (Azure AD).
 ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: d384416efe6dd26999972954433964d6f2b8e77d
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 7a149d1321766298b6d55977ce58b2601c4c88cf
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792096"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856117"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso de profilePhoto
 
 Namespace: microsoft.graph
 
-Uma foto de perfil de um usuário, grupo ou contato do Outlook acessada do Exchange Online. Seus dados binários não são codificados em base 64.
+Exibe uma foto de perfil de um usuário, grupo, equipe ou contato do Outlook acessado do Exchange Online ou do Azure Active Directory (Azure AD). Os dados são binários e não são codificados em base 64.
 
-Os tamanhos de fotos em HD compatíveis com o Exchange Online são os seguintes: “48x48”, “64x64”, “96x96”, “120x120”, “240x240”, “360x360”, “432x432”, “504x504” e “648x648”.
+Os tamanhos com suporte de fotos HD em Exchange Online são os seguintes: `48x48`, , , `96x96`, `120x120`, `240x240`, `360x360`, ,`432x432``504x504` e `648x648`. `64x64` Em Azure AD, as fotos podem ser de qualquer dimensão.
 
 ## <a name="methods"></a>Métodos
 
-| Método       | Tipo de retorno  |Descrição|
-|:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Obtenha a **profilePhoto** especificada ou seus metadados (propriedades de profilePhoto).|
-|[Update](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Atribua uma foto para o usuário, grupo ou contato especificado. A foto deve estar em formato binário. Ela substitui a foto existente, se houver.|
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Get profilePhoto](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Leia as propriedades e as relações de um objeto de foto de perfil.|
+|[Atualizar profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Atualize as propriedades de um objeto de foto de perfil.|
 
 > [!NOTE]
->
-> No momento, não há suporte para o gerenciamento de fotos dos usuários usando Graph API do Microsoft AD B2C em locatários do Azure AD B2C.
+> Atualmente, não há suporte para o gerenciamento de fotos dos usuários usando o Microsoft API do Graph em locatários Azure AD B2C.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -57,7 +56,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "240X240",
+  "id": "String",
   "height": 240,
   "width": 240
 }

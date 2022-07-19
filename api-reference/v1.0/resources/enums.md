@@ -5,17 +5,25 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 3e1c3cc68afaa2be716f05ddf6e0a385eff9b540
-ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
+ms.openlocfilehash: 43a22ad7bdd5ba93e70016105078c9c3e9e626a7
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66604486"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855641"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
 Namespace: microsoft.graph
 
+### <a name="bookingsavailabilitystatus-values"></a>valores bookingsAvailabilityStatus
+|Member|
+|:---|
+|disponível|
+|Ocupado|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
 
 ### <a name="crosstenantaccesspolicytargetconfigurationaccesstype-values"></a>Valores crossTenantAccessPolicyTargetConfigurationAccessType
 
@@ -29,7 +37,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="federatedidpmfabehavior-values"></a>Valores federatedIdpMfaBehavior
@@ -283,7 +291,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |Notspecified|
-|usuário|
+|user|
 |servicePrincipal|
 |unknownFutureValue|
 
@@ -381,7 +389,7 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|usuário|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>Valores authenticationMethodState
@@ -687,7 +695,7 @@ Namespace: microsoft.graph
 |Member|
 |:---|
 |Signin|
-|usuário|
+|user|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>Valores riskDetectionTimingType
@@ -726,7 +734,7 @@ Namespace: microsoft.graph
 |Médico|3| O médico do usuário.|
 |Guardião|4| O guardião do usuário.|
 |filho|5| O filho do usuário.|
-|Outros|6 | Uma relação não especificada com o usuário.|
+|Outros|6| Uma relação não especificada com o usuário.|
 |unknownFutureValue|7 | Valor do marcador para compatibilidade futura.|
 
 ### <a name="scheduleentitytheme-values"></a>Valores scheduleEntityTheme
@@ -853,7 +861,7 @@ Namespace: microsoft.graph
 | Lightgray  | 3
 | Lightyellow| 4
 | lightTeal  | 5
-| Lightpink  | 6 
+| Lightpink  | 6
 | lightBrown | 7 
 | lightRed   | 8 
 | maxColor   | 9 
@@ -1088,7 +1096,7 @@ Namespace: microsoft.graph
 | Automático
 | noPreview
 | Lista
-| description
+| descrição
 | referência
 
 
@@ -1200,7 +1208,7 @@ Namespace: microsoft.graph
 | preset3  | 3
 | preset4  | 4
 | preset5  | 5
-| preset6  | 6 
+| preset6  | 6
 | preset7  | 7 
 | preset8  | 8 
 | preset9  | 9 
@@ -1243,7 +1251,7 @@ Enumeração para tipos de hash de arquivo.
 |md5|3| Tipo de hash MD5.|
 |authenticodeHash256|4| Tipo de hash AuthenticodeHash256.|
 |lsHash|5| Tipo de hash LsHash.|
-|ctph|6 | Tipo de hash CTPH.|
+|ctph|6| Tipo de hash CTPH.|
 |peSha1|7 | Tipo de hash PESHA1.|
 |peSha256|8 | Tipo de hash PESHA256.|
 
@@ -1294,7 +1302,7 @@ Enumeração para hives do Registro conforme definido por [/windows/desktop/sysi
 |localMachineSam|3| HKEY_LOCAL_MACHINE\SAM hive.|
 |localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software hive.|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System hive.|
-|usersDefault|6 | \\HKEY_USERS. Hive PADRÃO.|
+|usersDefault|6| \\HKEY_USERS. Hive PADRÃO.|
 
 ### <a name="registryoperation-values"></a>valores de registryOperation
 
@@ -1319,7 +1327,7 @@ Enumeração para tipos de valor do Registro, conforme definido por [/windows/de
 |dwordWordScriptEndian|3| REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro.|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN tipo de valor do Registro.|
 |expandSz|5| REG_EXPAND_SZ tipo de valor do Registro.|
-|link|6 | REG_LINK tipo de valor do Registro.|
+|link|6| REG_LINK tipo de valor do Registro.|
 |multiSz|7 | REG_MULTI_SZ tipo de valor do Registro.|
 |none|8 | REG_NONE tipo de valor do Registro.|
 |Qword|9 | REG_QWORD tipo de valor do Registro.|
@@ -1501,7 +1509,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Membro | Valor | Descrição             |
 |:-------|:------|:------------------------|
-| Email   | 1     | Ameaça de email.            |
+| email   | 1     | Ameaça de email.            |
 | url    | 2     | Ameaça de URL.             |
 | file   | 3     | Ameaça de arquivo de anexo. |
 
@@ -1533,7 +1541,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 | Membro        | Valor | Descrição              |
 |:--------------|:------|:-------------------------|
 | Indefinido     | 0     | Ainda não sei.            |
-| usuário          | 1     | Envio do usuário.         |
+| user          | 1     | Envio do usuário.         |
 | Administrador | 2     | Envio de administrador de locatários. |
 
 ### <a name="threatassessmentresulttype-values"></a>Valores threatAssessmentResultType
@@ -1554,7 +1562,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4     | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5     | Lista de permissões de domínio do remetente.           |
-| domainBlockList       | 6      | Lista de bloqueios de domínio do remetente.           |
+| domainBlockList       | 6     | Lista de bloqueios de domínio do remetente.           |
 | notInAddressBook      | 7      | Exclua o remetente que não está no catálogo de endereços. |
 | firstTimeSender       | 8      | Bloqueado devido ao remetente da primeira vez.   |
 | autoPurgeToInbox      | 9      | TimeTravel move a mensagem para a caixa de entrada.   |
@@ -1569,7 +1577,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Valor |
 |:-----------------|
-| mensagem |
+| message |
 | chatEvent |
 | Digitação |
 | unknownFutureValue |
@@ -1638,7 +1646,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |dateTime | Coluna DateTime. |
 |Pesquisa | Coluna de pesquisa. |
 |booliano | Coluna Sim/Não. |
-|usuário | Coluna de pessoa ou grupo. |
+|user | Coluna de pessoa ou grupo. |
 |url | Hiperlink ou coluna de imagem. |
 |Calculado | Coluna calculada. |
 |localização | Coluna de localização. |
@@ -1775,7 +1783,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 | Member                |
 |:----------------------|
-| string                |
+| cadeia de caracteres                |
 | booliano               |
 | int64                 |
 | Stringcollection      |
@@ -1858,7 +1866,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 
 |Member|
 |:---|
-|usuário|
+|user|
 |aplicação|
 |sistema|
 |unknownFutureValue|
@@ -1879,7 +1887,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |Member|
 |:---|
 |team|
-|canal|
+|Canal|
 |chat|
 |unknownFutureValue|
 

@@ -5,19 +5,21 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 86ec5eaa1a726abbbe99f558a993d0472b8b7f1d
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 6f657c08ccaa1b64b806a02debd050fa4dc22e83
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63336876"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856082"
 ---
 # <a name="delete-bookingappointment"></a>Excluir bookingAppointment
 
 Namespace: microsoft.graph
 
 [Exclua um bookingAppointment](../resources/bookingappointment.md) no [bookingBusiness especificado](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -31,20 +33,25 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 DELETE /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
+
 Veja a seguir um exemplo de uma solicitação.
 
 <!-- {
@@ -55,7 +62,9 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 ```
 
 ### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
+
+Este é um exemplo de resposta.
+
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -78,5 +87,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

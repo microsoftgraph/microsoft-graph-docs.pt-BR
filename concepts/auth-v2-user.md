@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 72e2522a8208c9296ff7e39469a9085c9889b862
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: ee672c67ce9979bf5de3e18871398458c5a2dffc
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917525"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855956"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 
@@ -213,7 +213,6 @@ Content-Type: application/x-www-form-urlencoded
 client_id=11111111-1111-1111-1111-111111111111
 &scope=user.read%20mail.read
 &refresh_token=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq...
-&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=refresh_token
 &client_secret=jXoM3iz...      // NOTE: Only required for web apps
 ```
@@ -222,9 +221,8 @@ client_id=11111111-1111-1111-1111-111111111111
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | client_id     | Obrigatório              | A ID do aplicativo que o [portal de registro](https://go.microsoft.com/fwlink/?linkid=2083908) atribuiu ao seu aplicativo.                                                                                                                                                                                             |
 | grant_type    | Obrigatório              | Deve ser `refresh_token`.                                                                                                                                                                                                                                                                                          |
-| escopo         | Obrigatório              | Uma lista de permissões (escopos) separada por espaços. As permissões solicitadas pelo aplicativo devem ser equivalentes ou ser um subconjunto das permissões da solicitação original do authorization_code.                                                                                                                             |
+| escopo         | Opcional              | Uma lista de permissões (escopos) separada por espaços. As permissões solicitadas pelo aplicativo devem ser equivalentes ou ser um subconjunto das permissões da solicitação original do authorization_code.                                                                                                                             |
 | refresh_token | Obrigatório              | O refresh_token adquirido durante a solicitação do token.                                                                                                                                                                                                                                                     |
-| redirect_uri  | Obrigatório              | O mesmo valor do redirect_uri que foi usado para adquirir o authorization_code.                                                                                                                                                                                                                                      |
 | client_secret | Obrigatório para aplicativos Web | O segredo do cliente que você criou no portal de registro de aplicativos para seu aplicativo. Não use o segredo em um aplicativo nativo, já que a permissão client_secrets não pode ser confiavelmente armazenada em dispositivos. É obrigatório para aplicativos Web e APIs da Web que têm a capacidade de armazenar a permissão client_secret em segurança no lado do servidor. |
 
 ### <a name="response"></a>Resposta

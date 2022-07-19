@@ -1,50 +1,56 @@
 ---
 title: Listar staffMembers
-description: Obter uma lista de objetos bookingStaffMember no bookingBusiness especificado.
+description: Obtenha uma lista de objetos bookingStaffMember no bookingBusiness especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5fee209f3fdced792cc12ee4ea2e12f45f67e7dd
-ms.sourcegitcommit: 0d6d39dd6450e0c5fd6844cb78aead00a0782e46
+ms.openlocfilehash: 3c0b49cfc823b3a9a042a34f4b1441ff8950d662
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63757868"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856348"
 ---
 # <a name="list-staffmembers"></a>Listar staffMembers
 
 Namespace: microsoft.graph
 
-Obter uma lista de [objetos bookingStaffMember](../resources/bookingstaffmember.md) no [bookingBusiness especificado](../resources/bookingbusiness.md).
+Obtenha uma lista de [objetos bookingStaffMember](../resources/bookingstaffmember.md) no [bookingBusiness especificado](../resources/bookingbusiness.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Aplicativo | BookingsAppointment.ReadWrite.All, Bookings.Read.All   |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}/staffMembers
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método oferece suporte aos parâmetros de consulta `$count` e `$expand`[OData](/graph/query-parameters)para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de [objetos bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
+
+Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

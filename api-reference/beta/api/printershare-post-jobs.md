@@ -1,29 +1,31 @@
 ---
-title: Criar printJob para uma printerShare
+title: Criar printJob para um printerShare
 description: Crie um novo printJob para um printerShare.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 1f15640fac2fd8a2a5e8b6c9d67c2fe0d03068cb
-ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
+ms.openlocfilehash: 1fb07513516c0727e4a92b7b83d036887ecb99d1
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62056299"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855648"
 ---
-# <a name="create-printjob-for-a-printershare"></a>Criar printJob para uma printerShare
+# <a name="create-printjob-for-a-printershare"></a>Criar printJob para um printerShare
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [printJob](../resources/printJob.md) para uma [printerShare](../resources/printerShare.md). 
+Crie um novo [printJob](../resources/printJob.md) para um [printerShare](../resources/printerShare.md). 
 
-## <a name="permissions"></a>Permissions
+> **Nota:** Um usuário pode enviar até cerca de 10.000 trabalhos de impressão em 10 dias.
+
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso a Get printerShare.](printerShare-get.md)
+Além das permissões a seguir, o locatário do usuário ou do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso a [Get printerShare](printerShare-get.md) .
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -44,14 +46,14 @@ POST print/shares/{id}/jobs
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto printJob.](../resources/printjob.md)
-O objeto printJob deve conter apenas a **configuração**. Todas as propriedades de **configuração** são anuladas.
+No corpo da solicitação, forneça uma representação JSON de um [objeto printJob](../resources/printjob.md) .
+O objeto printJob deve conter apenas a **configuração**. Todas as propriedades de **configuração podem** ser anuláveis.
 Todos os outros campos, incluindo IDs de trabalho e documento, são definidos automaticamente durante a criação de recursos.
 
-No momento, a Impressão Universal dá suporte a apenas **um objeto printDocument** por **printJob.**
+No momento, a Impressão Universal dá suporte a **apenas um printDocument** por **objeto printJob** .
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto printJob](../resources/printjob.md) e [printDocument](../resources/printDocument.md) associado no corpo da resposta. 
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto printJob](../resources/printjob.md) e [printDocument associado](../resources/printDocument.md) no corpo da resposta. 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

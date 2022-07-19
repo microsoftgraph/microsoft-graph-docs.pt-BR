@@ -1,18 +1,18 @@
 ---
-title: Obter extensão aberta
+title: Obter openTypeExtension
 description: Obtenha uma extensão aberta (objeto openTypeExtension) identificada por nome ou nome totalmente qualificado.
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 06f84bf05337f396f3004f69b314b07d24dd472b
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: bd845009302774ab8dfb7a64e36c8ea49049cdcf
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971620"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855879"
 ---
-# <a name="get-open-extension"></a>Obter extensão aberta
+# <a name="get-opentypeextension"></a>Obter openTypeExtension
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ A tabela a seguir lista os três cenários em que é possível obter uma extens�
 
 |**Cenário GET**|**Recursos com suporte**|**Corpo da resposta**|
 |:-----|:-----|:-----|
-|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [baseTask](../resources/basetask.md) (preterido), [baseTaskList](../resources/basetasklist.md) (preterido), [dispositivo](../resources/device.md)[, evento](../resources/event.md), [grupo](../resources/group.md)[, evento](../resources/event.md) de [grupo,](../resources/post.md) postagem de [grupo, mensagem](../resources/message.md)[, organização](../resources/organization.md)[, contato](../resources/contact.md) pessoal, [usuário](../resources/user.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md)  | Somente extensão aberta.|
+|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md) <br/> [baseTask](../resources/basetask.md) (preterido) <br/> [baseTaskList](../resources/basetasklist.md) (preterido) <br/> [device](../resources/device.md) <br/> [event](../resources/event.md) <br/> [group](../resources/group.md) <br/> [evento de grupo](../resources/event.md) <br/> [postagem de grupo](../resources/post.md) <br/> [message](../resources/message.md) <br/> [organization](../resources/organization.md) <br/> [contato pessoal](../resources/contact.md) <br/> [user](../resources/user.md) <br/> [todoTask](../resources/todotask.md) <br/> [todoTaskList](../resources/todotasklist.md)  | Somente extensão aberta.|
 |Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Unidade administrativa, tarefa base, lista de tarefas base, dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário, tarefa pendente, lista de tarefas pendentes. |Uma instância de recurso expandida com a extensão aberta.|
 |Encontre e expanda instâncias de recursos com uma extensão específica. | Tarefa base, lista de tarefas base, evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, tarefa pendente, lista de tarefas pendentes |Instâncias de recursos expandidas com a extensão aberta.|
 
@@ -50,7 +50,7 @@ Dependendo do recurso que contém a extensão e o tipo de permissão (delegado o
 | [contato pessoal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
-| [usuário](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -62,20 +62,20 @@ Use a mesma solicitação REST obtendo a instância do recurso e identifique a e
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/{Id}/extensions/{extensionId}
-GET /devices/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /groups/{Id}/extensions/{extensionId}
-GET /groups/{Id}/events/{Id}/extensions/{extensionId}
-GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
-GET /organization/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{todoTaskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{baseTaskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
+GET /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+GET /devices/{deviceId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+GET /groups/{groupId}/extensions/{extensionId}
+GET /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+GET /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+GET /organization/{organizationId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{todoTaskId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{baseTaskId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
 ```
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Obtenha uma instância de recurso conhecida, expandida com uma extensão correspondente. 
@@ -84,15 +84,15 @@ Para os tipos de recurso de evento, evento de grupo, postagem de grupo, mensagem
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/events/{eventId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/events/{eventId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/threads/{threadId}/posts/{postId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/messages/{messageId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/contacts/{contactId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
 
@@ -100,10 +100,10 @@ Para os tipos de recurso de dispositivo, grupo, organização e usuário, você 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /devices/{deviceId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{groupId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{organizationId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{userId|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
 
@@ -113,11 +113,11 @@ Use a mesma solicitação REST para obter uma coleção do recurso suportado, fi
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/threads/{threadId}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância ou coleção de recurso para obter uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias ou coleções de recursos são compatíveis com a obtenção de extensões abertas delas de maneira semelhante.
@@ -183,7 +183,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -257,7 +257,7 @@ GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -323,7 +323,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -447,7 +447,7 @@ GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -504,7 +504,7 @@ O quinto exemplo analisa todas as mensagens na caixa de correio do usuário cone
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -532,7 +532,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%2
 [!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

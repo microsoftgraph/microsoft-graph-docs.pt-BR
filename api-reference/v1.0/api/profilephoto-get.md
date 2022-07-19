@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: aaac8d496bb2a958ecc0b70f206d8690f2846324
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5986ff4b15586625100d52f7253bef032f0c4b03
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61807475"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856180"
 ---
 # <a name="get-profilephoto"></a>Get profilePhoto
 
@@ -28,13 +28,13 @@ Por exemplo, se o usuário carrega uma foto de 504 x 504 pixels, tudo menos o ta
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="to-retrieve-the-profile-photo-of-a-user"></a>Para recuperar a foto do perfil de um usuário
+### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Para recuperar a foto do perfil de um contato
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Delegado (conta pessoal da Microsoft)      |   User.Read, User.ReadWrite            |
-|Aplicativo      |    User.Read.All, User.ReadWrite.All           |
+|Delegado (conta corporativa ou de estudante)      |   Contacts.Read, Contacts.ReadWrite           |
+|Delegado (conta pessoal da Microsoft)      |   Contacts.Read, Contacts.ReadWrite            |
+|Aplicativo      |    Contacts.Read, Contacts.ReadWrite           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-group"></a>Para recuperar a foto do perfil de um grupo
 
@@ -44,19 +44,27 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)      |   Sem suporte.            |
 |Aplicativo      |    Group.Read.All, Group.ReadWrite.All           |
 
-### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Para recuperar a foto do perfil de um contato
+### <a name="to-retrieve-the-profile-photo-of-a-team"></a>Para recuperar a foto de perfil de uma equipe
+
+| Tipo de permissão | Permissões (da com menos para a com mais privilégios)                   |
+| --------------- | ------------------------------------------------------------- |
+| Delegado (conta corporativa ou de estudante)        | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+| Delegado (conta pessoal da Microsoft)    | Sem suporte.                      |
+| Aplicativo                               | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+
+### <a name="to-retrieve-the-profile-photo-of-a-user"></a>Para recuperar a foto do perfil de um usuário
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)      |   Contacts.Read, Contacts.ReadWrite           |
-|Delegado (conta pessoal da Microsoft)      |   Contacts.Read, Contacts.ReadWrite            |
-|Aplicativo      |    Contacts.Read, Contacts.ReadWrite           |
+|Delegado (conta corporativa ou de estudante)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Delegado (conta pessoal da Microsoft)      |   User.Read, User.ReadWrite            |
+|Aplicativo      |    User.Read.All, User.ReadWrite.All           |
 
 > [!NOTE]
 > 
 > 1. Não há suporte para a operação de metadados em contas pessoais da Microsoft.
 > 2. Atualmente, há um [problema conhecido](/graph/known-issues#groups) ao acessar fotos de grupo usando permissões de aplicativos.
-> 3. Recuperar a foto de um usuário usando a API do Microsoft Graph atualmente não é suportado em locatários do Azure AD B2C.
+> 3. Atualmente, não há suporte para a recuperação da foto de um usuário usando o Microsoft API do Graph em locatários Azure AD B2C.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -71,6 +79,7 @@ GET /me/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+GET /team/{id}/photo/$value
 ```
 
 ### <a name="get-the-metadata-of-the-photo"></a>Obter os metadados da foto
@@ -85,6 +94,7 @@ GET /me/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
+GET /team/{id}/photo
 ```
 
 ### <a name="get-the-metadata-for-a-specific-photo-size"></a>Obter os metadados de um tamanho de página específica.
@@ -204,6 +214,61 @@ Content-type: application/json
     "height": 1
 }
 ```
+### <a name="example-4-get-the-metadata-of-the-team-photo"></a>Exemplo 4: Obter os metadados da foto da equipe
+
+#### <a name="request"></a>Solicitação
+
+Aqui está um exemplo da solicitação para obter os metadados da foto da equipe.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo_metadata"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
+```
+
+#### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta.
+
+> **Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
+    "@odata.mediaContentType": "image/jpeg",
+    "@odata.mediaEtag": "\"BA09D118\"",
+    "id": "240X240",
+    "width": 240,
+    "height": 240
+}
+```
+
+### <a name="example-5-get-the-team-photos-binary-data"></a>Exemplo 5: Obter os dados binários da foto da equipe
+
+Aqui está um exemplo da solicitação para obter os dados binários da foto da equipe.
+
+#### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+```
+
+#### <a name="response"></a>Resposta
+
+Contém os dados binários da foto solicitada. O código de resposta HTTP é 200.
 
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>Usando os dados binários da foto solicitada
 

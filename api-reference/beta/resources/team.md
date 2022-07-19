@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b8749e7831a54e4d6b94add1e37e5eaa6a95e86b
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: fa6da0486972982566b6785a8f2aa62fef408b30
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160542"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856278"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -43,7 +43,7 @@ Cada equipe está associada a um [grupo Microsoft 365](../resources/group.md). O
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
 |[Listar equipes associadas](../api/associatedteaminfo-list.md) | Coleção [associatedTeamInfo](associatedteaminfo.md) | Obtenha a lista de objetos [associatedTeamInfo](associatedteaminfo.md) no Microsoft Teams as quais um [usuário](user.md) está associado. |
 |[Listar todas as equipes em uma organização](../api/teams-list.md) | Coleção [team](team.md) | Listar todas as equipes em uma organização. |
-|[Obter foto da equipe](../api/team-get-photo.md) | Dados Binários | Obter a foto (imagem) de uma equipe. |
+|[Obter foto da equipe](../api/profilephoto-get.md) | Dados Binários | Obter a foto (imagem) de uma equipe. |
 |[Migração completa](../api/team-completemigration.md)|[equipe](team.md)| Remove o modo de migração da equipe e disponibiliza a equipe aos usuários para postar e ler mensagens.|
 |[Listar todos os canais](../api/team-list-allchannels.md)|Coleção [channel](../resources/channel.md)|Obtenha a lista de [canais](../resources/channel.md) desta **equipe** ou compartilhados com esta **equipe** (canais de entrada).|
 |[List channels](../api/channel-list.md)|[channel](../resources/channel.md) collection|Obtenha a lista de [canais](../resources/channel.md) em uma **equipe**.|

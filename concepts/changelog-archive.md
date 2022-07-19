@@ -3,12 +3,12 @@ title: Changelog para Microsoft Graph (Arquivo Morto)
 description: Este tópico contém entradas de log de mudanças arquivadas para o Microsoft Graph.
 author: MSGraphDocsVteam
 ms.localizationpriority: high
-ms.openlocfilehash: ac1a3aba6a3a7c8ad4d59fcdd8e6a516220649f6
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 11d7506c78877699c4dffd95858aecc1dd6cb490
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645430"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856306"
 ---
 # <a name="changelog-for-microsoft-graph-archive"></a>Changelog para Microsoft Graph (Arquivo Morto)
 
@@ -448,7 +448,7 @@ Adicionando relatórios PSTN e de chamadas de roteamento direto ao Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A função [delta](/graph/api/event-delta?view=graph-rest-beta&preserve-view=true) suporta um cenário adicional para obter alterações incrementais (novo, atualizado ou removido) de eventos em um calendário de usuário sem necessidade de estarem limitados por um intervalo de data. |
 
-### <a name="change-notifications"></a>Notificações de alteração
+### <a name="change-notifications"></a>Alterar notificações
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1608,7 +1608,7 @@ Agora a Pesquisa da Microsoft apresenta uma maneira de pesquisar e indexar dados
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | Beta | Adicionados os métodos [Obter foto da equipe](/graph/api/team-get-photo?view=graph-rest-beta&preserve-view=true) e [Atualizar foto da equipe](/graph/api/team-update-photo?view=graph-rest-beta&preserve-view=true). |
+| Adição | Beta | Adicionados os métodos [Obter foto da equipe](/graph/api/profilephoto-get?view=graph-rest-beta&preserve-view=true) e [Atualizar foto da equipe](/graph/api/profilephoto-update?view=graph-rest-beta&preserve-view=true). |
 | Adição | Beta | [A leitura de imagens em mensagens ](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&preserve-view=true) agora oferece suporte a permissões de aplicativos. |
 
 ### <a name="users"></a>Usuários

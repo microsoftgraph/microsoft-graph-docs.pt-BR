@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 81d796a94897a73f96979990bb4d0d79523bf5a3
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9298682cd33509f1ffb6beaa850fbd33a761b42c
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938564"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855760"
 ---
 # <a name="create-printjob-for-a-printer"></a>Criar printJob para uma impressora
 
@@ -18,17 +18,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Criar um novo [printJob](../resources/printJob.md) para uma [impressora](../resources/printer.md). 
+Crie um novo [printJob](../resources/printJob.md) para uma [impressora](../resources/printer.md). 
+
+> **Nota:** Um usuário pode enviar até cerca de 10.000 trabalhos de impressão em 10 dias.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Além das permissões a seguir, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda [acesso à](printer-get.md) impressora. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Além das permissões a seguir, o usuário ou o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa e ter uma permissão que conceda acesso [à impressora](printer-get.md) . O usuário conectado deve ser um Administrador [de Impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo| Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,12 +46,12 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [objeto printJob.](../resources/printjob.md) O objeto printJob deve conter apenas a **configuração**. Todas as propriedades de **configuração** são anuladas. Todos os outros campos, incluindo IDs de trabalho e documento, são definidos automaticamente durante a criação de recursos.
+No corpo da solicitação, forneça uma representação JSON de um [objeto printJob](../resources/printjob.md) . O objeto printJob deve conter apenas a **configuração**. Todas as propriedades de **configuração podem** ser anuláveis. Todos os outros campos, incluindo IDs de trabalho e documento, são definidos automaticamente durante a criação de recursos.
 
-No momento, a Impressão Universal dá suporte a apenas **um objeto printDocument** por **printJob.**
+No momento, a Impressão Universal dá suporte a **apenas um printDocument** por **objeto printJob** .
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e um `201 Created` [objeto printJob](../resources/printjob.md) e [printDocument](../resources/printDocument.md) associado no corpo da resposta. 
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto printJob](../resources/printjob.md) e [printDocument associado](../resources/printDocument.md) no corpo da resposta. 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

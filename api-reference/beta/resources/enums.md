@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: dd17d54c0d6cd991f02a5043765aab199bfc3a05
-ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
+ms.openlocfilehash: 86ab0078883d3bf00c625a8a3c9d9a3d5ac025dd
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66690067"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855893"
 ---
 # <a name="enum-values"></a>Valores de enumeração
 
@@ -370,11 +370,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|Cadeia de Caracteres|
+|Cadeia de caracteres|
 |Inteiro|
 |Referência|
 |Binária|
-|Booleano|
+|Booliano|
 |DateTime|
 
 ### <a name="mutability-values"></a>valores de mutabilidade
@@ -1248,7 +1248,7 @@ Namespace: microsoft.graph
 | Médico             | 3     | O médico do usuário.                       |
 | Guardião           | 4     | O guardião do usuário.                     |
 | filho              | 5     | O filho do usuário.                        |
-| Outros              | 6      | Uma relação não especificada com o usuário. |
+| Outros              | 6     | Uma relação não especificada com o usuário. |
 | unknownFutureValue | 7      | Valor do marcador para compatibilidade futura.   |
 
 ### <a name="scheduleentitytheme-values"></a>Valores scheduleEntityTheme
@@ -1426,7 +1426,7 @@ Namespace: microsoft.graph
 | Lightgray   | 3     |
 | Lightyellow | 4     |
 | lightTeal   | 5     |
-| Lightpink   | 6      |
+| Lightpink   | 6     |
 | lightBrown  | 7      |
 | lightRed    | 8      |
 | maxColor    | 9      |
@@ -1439,7 +1439,7 @@ Namespace: microsoft.graph
 | Excluir           | 2     |
 | deletionFailed     | 3     |
 | provisioningFailed | 5     |
-| provisionado        | 6      |
+| provisionado        | 6     |
 | Provisionamento       | 7      |
 | unknownFutureValue | 8      |
 
@@ -1792,7 +1792,7 @@ Namespace: microsoft.graph
 | preset3  | 3     |
 | preset4  | 4     |
 | preset5  | 5     |
-| preset6  | 6      |
+| preset6  | 6     |
 | preset7  | 7      |
 | preset8  | 8      |
 | preset9  | 9      |
@@ -1833,7 +1833,7 @@ Possíveis valores de comentários sobre o alerta fornecido por um analista.
 | md5                 | 3     | Tipo de hash MD5.                 |
 | authenticodeHash256 | 4     | Tipo de hash AuthenticodeHash256. |
 | lsHash              | 5     | Tipo de hash LsHash.              |
-| ctph                | 6      | Tipo de hash CTPH.                |
+| ctph                | 6     | Tipo de hash CTPH.                |
 | peSha1              | 7      | Tipo de hash PESHA1.              |
 | peSha256            | 8      | Tipo de hash PESHA256.            |
 
@@ -1878,7 +1878,7 @@ Enumeração para hives do Registro conforme definido pelos [Hives do Registro](
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM hive.      |
 | localMachineSamSoftware | 4     | HKEY_LOCAL_MACHINE\Software hive. |
 | localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System hive.   |
-| usersDefault            | 6      | \\HKEY_USERS. Hive PADRÃO.        |
+| usersDefault            | 6     | \\HKEY_USERS. Hive PADRÃO.        |
 
 ### <a name="registryoperation-values"></a>valores de registryOperation
 
@@ -1903,7 +1903,7 @@ Enumeração para tipos de valor do Registro conforme definido pelos [tipos de v
 | dwordWordScriptEndian | 3     | REG_DWORD_LITTLE_ENDIAN tipo de valor do Registro. |
 | dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN tipo de valor do Registro.    |
 | expandSz          | 5     | REG_EXPAND_SZ tipo de valor do Registro.           |
-| link              | 6      | REG_LINK tipo de valor do Registro.                |
+| link              | 6     | REG_LINK tipo de valor do Registro.                |
 | multiSz           | 7      | REG_MULTI_SZ tipo de valor do Registro.            |
 | none              | 8      | REG_NONE tipo de valor do Registro.                |
 | Qword             | 9      | REG_QWORD tipo de valor do Registro.               |
@@ -2423,7 +2423,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 | blockedSender         | 3     | Lista de remetentes bloqueados.                |
 | advancedSpamFiltering | 4     | Opção avançada de filtragem de spam.     |
 | domainAllowList       | 5     | Lista de permissões de domínio do remetente.           |
-| domainBlockList       | 6      | Lista de bloqueios de domínio do remetente.           |
+| domainBlockList       | 6     | Lista de bloqueios de domínio do remetente.           |
 | notInAddressBook      | 7      | Exclua o remetente que não está no catálogo de endereços. |
 | firstTimeSender       | 8      | Bloqueado devido ao remetente da primeira vez.   |
 | autoPurgeToInbox      | 9      | TimeTravel move a mensagem para a caixa de entrada.   |
@@ -2521,7 +2521,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 | int64                 | 3     | Tipo de dados Int                       |
 | Stringcollection      | 4     | Tipo de dados de coleção de cadeias de caracteres         |
 |dateTime|5||
-| unknownFutureValue    | 6      | Um membro do Sentinel.                  |
+| unknownFutureValue    | 6     | Um membro do Sentinel.                  |
 
 ### <a name="identityuserflowattributetype-values"></a>Valores identityUserFlowAttributeType
 
@@ -3011,7 +3011,7 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |softwareUpdate|3|Atualize um software no dispositivo.|
 |deviceManagementAgentConfigUpdate|4|Atualize a configuração do agente do dispositivo.|
 |remoteLogin|5|Logon remoto do dispositivo.|
-|remoteLogout|6 |Logoff remoto do dispositivo.|
+|remoteLogout|6|Logoff remoto do dispositivo.|
 |unknownFutureValue|7 |Valor de sentinel de enumeração evolvável. Não usar.|
 
 ### <a name="teamworksoftwarefreshness-values"></a>Valores teamworkSoftwareFreshness
@@ -3113,4 +3113,84 @@ Valores possíveis para tipos de conta de usuário (associação de grupo), de a
 |Terminada|
 |Terminação|
 |terminationRequested|
+|unknownFutureValue|
+
+### <a name="longrunningoperationstatus-values"></a>Valores longRunningOperationStatus 
+
+|Member|
+|:---|
+|Notstarted|
+|Executando|
+|Conseguiu|
+|Falhou|
+|Ignorada|
+|unknownFutureValue|
+
+### <a name="submissioncategory-values"></a>valores submissionCategory 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|unknownFutureValue|
+
+### <a name="submissionclientsource-values"></a>Valores de submissionClientSource 
+
+|Member|
+|:---|
+|microsoft|
+|Outros|
+|unknownFutureValue|
+
+### <a name="submissioncontenttype-values"></a>Valores submissionContentType 
+
+|Member|
+|:---|
+|email|
+|url|
+|file|
+|aplicativo|
+|unknownFutureValue|
+
+### <a name="submissionresultcategory-values"></a>Valores submissionResultCategory 
+
+|Member|
+|:---|
+|notJunk|
+|spam|
+|phishing|
+|malware|
+|allowedByPolicy|
+|blockedByPolicy|
+|Paródia|
+|desconhecido|
+|noResultAvailable|
+|unknownFutureValue|
+
+### <a name="submissionsource-values"></a>valores submissionSource 
+
+|Member|
+|:---|
+|user|
+|Administrador|
+|unknownFutureValue|
+
+### <a name="tenantallowblocklistaction-values"></a>Valores de tenantAllowBlockListAction 
+
+|Member|
+|:---|
+|Permitir|
+|Bloco|
+|unknownFutureValue|
+
+### <a name="tenantallowblocklistentrytype-values"></a>Valores tenantAllowBlockListEntryType 
+
+|Member|
+|:---|
+|url|
+|fileHash|
+|remetente|
+|destinatário|
 |unknownFutureValue|

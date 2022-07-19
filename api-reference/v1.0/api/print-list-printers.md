@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 40f1040f434863461969731de698f51c24820226
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 18757067c7bc58f2e7a63c2dd67febe7c09f8952
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62097578"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855963"
 ---
 # <a name="list-printers"></a>Lista de impressoras
 Namespace: microsoft.graph
@@ -20,7 +20,7 @@ Recupere a lista de **impressoras registradas** no locatário.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-Para usar o serviço Impressão Universal, o usuário ou locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário inscreveu deve ser um [Administrador de Impressora.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
+Para usar o serviço de Impressão Universal, o usuário ou o locatário do aplicativo deve ter uma assinatura de Impressão Universal ativa, além das permissões listadas na tabela a seguir. O usuário conectado deve ser um Administrador [de Impressora](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------|:--------------------------------------------|
@@ -42,8 +42,8 @@ GET /print/printers
 Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Exceções
-* Os `$expand` `select` operadores e são suportados para a `share` propriedade de navegação, mas não para `jobs` .
-* Alguns operadores não têm suporte: `$count` , `$search` .
+* Os `$expand` operadores `$select` e os operadores têm suporte para a propriedade `shares` de navegação, mas não para `jobs`.
+* Não há suporte para alguns operadores: `$count`, `$search`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome|Descrição|
@@ -55,9 +55,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de objetos [de](../resources/printer.md) impressora no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos de impressora](../resources/printer.md) no corpo da resposta.
 
->**Observação**: a resposta não conterá propriedades 'padrão' e 'capabilities'. Essas propriedades podem ser consultadas usando a [solicitação Obter Impressora.](printer-get.md)
+>**Observação**: a resposta não conterá as propriedades 'defaults' e 'capabilities'. Essas propriedades podem ser consultadas usando a [solicitação Obter Impressora](printer-get.md) .
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/print/printers
 [!INCLUDE [sample-code](../includes/snippets/java/list-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

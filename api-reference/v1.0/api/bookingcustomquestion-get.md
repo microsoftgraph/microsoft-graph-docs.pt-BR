@@ -5,18 +5,18 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cfc83806f3186e347b62afabcbddf52c8e16e620
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 3e37db41f4565ee77568336b13e5d0aa155eb00d
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014114"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855998"
 ---
 # <a name="get-bookingcustomquestion"></a>Obter bookingCustomQuestion
 
 Namespace: microsoft.graph
 
-Leia as propriedades e as relações de um [objeto bookingCustomQuestion.](../resources/bookingcustomquestion.md)
+Leia as propriedades e as relações de um [objeto bookingCustomQuestion](../resources/bookingcustomquestion.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                    |
-| Aplicativo                            | Sem suporte.                                                                                    |
+| Aplicativo   | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,7 +41,7 @@ GET /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingC
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, consulte $count e $expand parâmetros de consulta [OData.](/graph/query-parameters)
+Este método dá suporte a alguns parâmetros de consulta OData para ajudar a personalizar a resposta. Para obter informações gerais, consulte $count e $expand [de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta e um `200 OK` [objeto bookingCustomQuestion](../resources/bookingcustomquestion.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [bookingCustomQuestion](../resources/bookingcustomquestion.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 

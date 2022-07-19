@@ -1,18 +1,18 @@
 ---
-title: Atualizar extensão aberta
+title: Atualizar openTypeExtension
 description: 'Atualize uma extensão aberta (objeto openTypeExtension) com as propriedades no corpo da solicitação:'
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: acd04e9d1bd24bcd87228a8b29c1f9154f02c5d9
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 06f6b02831138d00f02f412e9355b8547f536309
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820744"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855655"
 ---
-# <a name="update-open-extension"></a>Atualizar extensão aberta
+# <a name="update-opentypeextension"></a>Atualizar openTypeExtension
 
 Namespace: microsoft.graph
 
@@ -33,10 +33,10 @@ Consulte a tabela na seção [Permissões para](#permissions) obter a lista de r
 
 Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
-| [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
-| [baseTasklist](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+| [baseTasklist](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Sem suporte | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [grupo](../resources/group.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
@@ -45,7 +45,7 @@ Dependendo do recurso no qual a extensão foi criada e do tipo de permissão (de
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Incompatível | Organization.ReadWrite.All |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
+| [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [todoTasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 
@@ -55,31 +55,25 @@ Na solicitação, identifique a instância de recurso, use a propriedade de nave
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /administrativeUnits/{Id}/extensions/{extensionId}
-PATCH /devices/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/extensions/{extensionId}
-PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-PATCH /organization/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{Id}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{Id}/extensions/{extensionId}
+PATCH /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+PATCH /devices/{deviceId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+PATCH /groups/{groupId}/extensions/{extensionId}
+PATCH /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+PATCH /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+PATCH /organization/{organizationId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{listId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{listId}/extensions/{extensionId}
 ```
 
 >**Nota:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso para atualizar uma extensão nela. Todas as outras sintaxes que permitem identificar essas instâncias de recurso dão suporte à atualização de extensões abertas neles de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.
-
-## <a name="path-parameters"></a>Parâmetros do caminho
-|**Parâmetro**|**Tipo**|**Descrição**|
-|:-----|:-----|:-----|
-|id|string|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
-|extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
@@ -94,7 +88,7 @@ Forneça um corpo JSON de um objeto [openTypeExtension](../resources/opentypeext
 | Nome       | Valor |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+| extensionName | Cadeia de caracteres exclusiva |
 
 ## <a name="response"></a>Resposta
 
@@ -238,7 +232,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

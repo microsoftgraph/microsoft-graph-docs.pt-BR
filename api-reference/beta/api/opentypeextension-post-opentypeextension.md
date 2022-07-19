@@ -1,18 +1,18 @@
 ---
-title: Criar extensão aberta
+title: Criar openTypeExtension
 description: Criar uma extensão aberta (objeto openTypeExtension) e adicionar propriedades personalizadas
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 6dffafea076698b90a5adfe1dd83114c7e2eadcc
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 67fcf14d2e22ee6fd1a1c215c91a67b3bb40ec84
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555253"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855697"
 ---
-# <a name="create-open-extension"></a>Criar extensão aberta
+# <a name="create-opentypeextension"></a>Criar openTypeExtension
 
 Namespace: microsoft.graph
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Crie uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso. Você pode [criar uma extensão aberta em](/graph/api/opentypeextension-post-opentypeextension) uma instância de recurso e armazenar dados personalizados para ela na mesma operação, exceto para recursos específicos. Confira [as limitações conhecidas de extensões abertas](/graph/known-issues#extensions) para obter mais informações.
+Crie uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso. Você pode [criar uma extensão aberta](/graph/api/opentypeextension-post-opentypeextension) em uma instância de recurso e armazenar dados personalizados para tudo isso na mesma operação, exceto para recursos específicos. Consulte [limitações conhecidas de extensões abertas](/graph/known-issues#extensions) para obter mais informações.
 
 A tabela na seção [Permissões](#permissions) lista os recursos que oferecem suporte a extensões abertas.
 
@@ -44,7 +44,7 @@ Dependendo do recurso para o qual você está criando a extensão e o tipo de pe
 | [todoTaskList](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
 | [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
-| [baseTaskList](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Incompatível |
+| [baseTaskList](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Sem suporte |
 <!--
 | [administrativeUnit](../resources/administrativeUnit.md) | AdministrativeUnit.ReadWrite.All | Not supported | AdministrativeUnit.ReadWrite.All | -->
 
@@ -56,15 +56,15 @@ Use a mesma solicitação REST usada para criar a instância.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/events
-POST /users/{id|userPrincipalName}/messages
-POST /groups/{id}/events
-POST /groups/{id}/threads/{id}/posts/{id}/reply
-POST /users/{id|userPrincipalName}/contacts
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/todo/lists
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/tasks/lists
+POST /users/{userId|userPrincipalName}/events
+POST /users/{userId|userPrincipalName}/messages
+POST /groups/{userId}/events
+POST /groups/{userId}/threads/{threadId}/posts/{postId}/reply
+POST /users/{userId|userPrincipalName}/contacts
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/todo/lists
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 >**Observação:** essa sintaxe apresenta algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recurso oferecem suporte à criação de extensões abertas nos mesmos de maneira semelhante.
@@ -77,31 +77,25 @@ Identifique a instância do recurso na solicitação e faça um `POST` para a pr
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeunits/{id}/extensions
-POST /devices/{id}/extensions
-POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /groups/{id}/extensions
-POST /groups/{id}/events/{id}/extensions
-POST /groups/{id}/threads/{id}/posts/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
-POST /organization/{id}/extensions
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
-POST /users/{id|userPrincipalName}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
+POST /administrativeunits/{administrativeUnitId}/extensions
+POST /devices/{deviceId}/extensions
+POST /users/{userId|userPrincipalName}/events/{eventId}/extensions
+POST /groups/{groupId}/extensions
+POST /groups/{groupId}/events/{eventId}/extensions
+POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
+POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
+POST /organization/{organizationId}/extensions
+POST /users/{userIdd|userPrincipalName}/contacts/{contactId}/extensions
+POST /users/{userId|userPrincipalName}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
 ```
 
 >**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de criar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos suportam a criação de extensões abertas nelas de forma semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extensão_ no corpo da solicitação.
-
-## <a name="path-parameters"></a>Parâmetros do caminho
-
-|**Parâmetro**|**Tipo**|**Descrição**|
-|:-----|:-----|:-----|
-|id|string|Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -117,7 +111,7 @@ Forneça um corpo JSON de [um openTypeExtension](../resources/opentypeextension.
 | Nome       | Valor |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+| extensionName | Cadeia de caracteres exclusiva |
 
 Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension**, fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.
 
@@ -196,7 +190,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -325,7 +319,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -406,7 +400,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -495,7 +489,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -581,7 +575,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-5-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

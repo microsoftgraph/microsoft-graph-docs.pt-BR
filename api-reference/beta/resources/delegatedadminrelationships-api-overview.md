@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2d4876f6017219c655b38bc303ce6bbca81db8d2
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 1916627207c8b4c9d8f3a36f400d66a4e4577b9b
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821243"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855620"
 ---
 # <a name="granular-delegated-admin-privileges-gdap-api-overview"></a>Visão geral da API de GDAP (privilégios de administrador delegado granular)
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Como parte do ecossistema do Microsoft Partner Center, os parceiros da Microsoft nos programas Provedor de Soluções na Nuvem, Revendedor de Valor Agregado ou Supervisor podem executar operações administrativas em seus locatários de clientes para ajudar a gerenciar os serviços do cliente, por exemplo, Azure AD e Microsoft 365. Essa funcionalidade anteriormente permitia que os parceiros assumiam uma função de Administrador Global no locatário do cliente indefinidamente, criando possíveis exposições de segurança e limitando o potencial do mercado.
+Como parte do ecossistema do Microsoft Partner Center, os parceiros da Microsoft nos programas Provedor de Soluções na Nuvem, Revendedor de Valor Agregado ou Assistente podem executar operações administrativas em seus locatários de clientes para ajudar a gerenciar os serviços do cliente, por exemplo, o Azure AD e o Microsoft 365. Essa funcionalidade anteriormente permitia que os parceiros assumiam uma função de Administrador Global no locatário do cliente indefinidamente, criando possíveis exposições de segurança e limitando o potencial do mercado.
 
 **Os GDAP (** privilégios de administrador delegado granular) fornecem aos parceiros acesso menos privilegiado aos locatários do cliente seguindo o [Confiança Zero de segurança cibernética.](/security/zero-trust/) Por meio do GDAP, os parceiros configuram e solicitam acesso granular e com limite de tempo aos ambientes de seus clientes, e os clientes devem conceder explicitamente esse acesso menos privilegiado aos parceiros. Além disso, os parceiros devem solicitar funções específicas para a administração de locatários do cliente por um período definido. Esse controle elimina a necessidade de que os parceiros tenham a função de Administrador Global no locatário do cliente, mas, em vez disso, eles agora têm permissões menos privilegiadas de que precisam absolutamente para tarefas administrativas delegadas.
 
@@ -99,7 +99,7 @@ O status da atribuição de Administração delegada. As transições de status 
 
 ## <a name="permissions"></a>Permissões
 
-Para gerenciar relações de administrador delegado, a entidade de chamada deve estar no locatário do parceiro e receber as permissões de privilégios de administrador delegado [granular apropriados](/graph/permissions-reference#delegated-admin-relationship-permissions).
+Para gerenciar relações de administrador delegado, a entidade de chamada deve estar no locatário do parceiro e receber as permissões de privilégios de administrador delegado [granular apropriados](/graph/permissions-reference#granular-delegated-admin-privileges-gdap-permissions).
 
 
 ## <a name="see-also"></a>Confira também

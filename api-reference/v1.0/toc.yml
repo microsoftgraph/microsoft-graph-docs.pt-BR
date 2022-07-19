@@ -484,7 +484,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Enviar email
                 href: api/user-sendmail.md
-          - name: Observações
+          - name: Notas
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1525,6 +1525,8 @@ items:
                 href: api/bookingbusiness-publish.md
               - name: Cancelar publicação
                 href: api/bookingbusiness-unpublish.md
+              - name: Obter disponibilidade da equipe
+                href: api/bookingbusiness-getstaffavailability.md
           - name: Marcação de compromisso
             href: resources/bookingappointment.md
             items:
@@ -6461,7 +6463,7 @@ items:
                     href: api/security-ediscoverycasesettings-update.md
                   - name: Redefinir as configurações para o padrão
                     href: api/security-ediscoverycasesettings-resettodefault.md
-              - name: Operation
+              - name: Operação
                 href: resources/security-caseoperation.md
                 items:
                   - name: Listar operações de caso
@@ -6951,6 +6953,10 @@ items:
                 href: api/user-list-joinedteams.md
               - name: Obter canal primário
                 href: api/team-get-primarychannel.md
+              - name: Obter foto da equipe
+                href: api/profilephoto-get.md
+              - name: Atualizar foto da equipe
+                href: api/profilephoto-update.md
               - name: Listar todas as equipes
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
               - name: Migração completa para a equipe

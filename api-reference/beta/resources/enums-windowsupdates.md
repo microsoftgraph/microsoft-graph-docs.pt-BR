@@ -1,22 +1,22 @@
 ---
-title: Valores de enumeração do Microsoft Graph Windows Updates
-description: Valores de enumeração do Microsoft Graph Windows Updates
+title: Valores de enumeração Atualizações Do Microsoft Graph
+description: Valores de enumeração Atualizações Do Microsoft Graph
 author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: 28a167a17436e30e07b6592329f1c56771bfcba2
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 724359a4722aee75cdb0e0f0dccf5d0dcbccfee8
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860436"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855900"
 ---
-# <a name="microsoft-graph-windows-updates-enumeration-values"></a>Valores de enumeração do Microsoft Graph Windows Updates
+# <a name="microsoft-graph-windows-updates-enumeration-values"></a>Valores de enumeração Atualizações Do Microsoft Graph
 
 Namespace: microsoft.graph.windowsUpdates
 
-### <a name="azureaddeviceregistrationerrorreason-values"></a>Valores do azureADDeviceRegistrationErrorReason 
+### <a name="azureaddeviceregistrationerrorreason-values"></a>valores azureADDeviceRegistrationErrorReason 
 
 |Member|
 |:---|
@@ -26,7 +26,7 @@ Namespace: microsoft.graph.windowsUpdates
 |invalidAzureADJoin|
 |unknownFutureValue|
 
-### <a name="deploymentstatereasonvalue-values"></a>valores deploymentStateReasonValue 
+### <a name="deploymentstatereasonvalue-values"></a>Valores deploymentStateReasonValue 
 
 |Member|
 |:---|
@@ -42,13 +42,13 @@ Namespace: microsoft.graph.windowsUpdates
 |Member|
 |:---|
 |agendado|
-|offering|
-|pausado|
-|faulted|
-|arquivado|
+|Oferecendo|
+|Pausado|
+|Faulted|
+|Arquivados|
 |unknownFutureValue|
 
-### <a name="equivalentcontentoption-values"></a>valores equivalentContentOption 
+### <a name="equivalentcontentoption-values"></a>Valores equivalentContentOption 
 
 |Member|
 |:---|
@@ -56,7 +56,7 @@ Namespace: microsoft.graph.windowsUpdates
 |latestSecurity|
 |unknownFutureValue|
 
-### <a name="monitoringaction-values"></a>valores monitoringAction 
+### <a name="monitoringaction-values"></a>Valores de monitoringAction 
 
 |Member|
 |:---|
@@ -64,32 +64,41 @@ Namespace: microsoft.graph.windowsUpdates
 |pauseDeployment|
 |unknownFutureValue|
 
-### <a name="monitoringsignal-values"></a>monitoringSignal values 
+### <a name="monitoringsignal-values"></a>valores monitoringSignal 
 
 |Member|
 |:---|
-|rollback|
+|reversão|
 |unknownFutureValue|
 
-### <a name="qualityupdateclassification-values"></a>valores qualityUpdateClassification 
+### <a name="qualityupdateclassification-values"></a>Valores qualityUpdateClassification 
 
 |Member|
 |:---|
-|all|
-|security|
+|tudo|
+|Segurança|
 |nonSecurity|
 |unknownFutureValue|
 
-### <a name="requesteddeploymentstatevalue-values"></a>valores requestedDeploymentStateValue 
+### <a name="requesteddeploymentstatevalue-values"></a>Valores requestedDeploymentStateValue 
 
 |Member|
 |:---|
 |none|
-|pausado|
-|arquivado|
+|Pausado|
+|Arquivados|
 |unknownFutureValue|
 
-### <a name="safeguardcategory-values"></a>valores safeguardCategory 
+### <a name="resourceconnectionstate-values"></a>Valores de resourceConnectionState 
+
+|Member|
+|:---|
+|Conectado|
+|notAuthorized|
+|Notfound|
+|unknownFutureValue|
+
+### <a name="safeguardcategory-values"></a>valores de safeguardCategory 
 
 |Member|
 |:---|
@@ -100,8 +109,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 |Member|
 |:---|
-|feature|
-|quality|
+|Recurso|
+|Qualidade|
 |unknownFutureValue|
 
 <!--

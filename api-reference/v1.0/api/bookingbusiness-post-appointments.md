@@ -1,30 +1,35 @@
 ---
 title: Criar bookingAppointment
-description: Crie um novo bookingAppointment para o bookingbusiness especificado.
+description: Crie um novo bookingAppointment para o bookingBusiness especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8c967b78bb7e3d09aae73268011bc77f34f63d05
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 84a91ac1e3bb289e085d8bc07a5094e41512eb4a
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368249"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856341"
 ---
 # <a name="create-bookingappointment"></a>Criar bookingAppointment
 
 Namespace: microsoft.graph
 
 Crie um [novo bookingAppointment](../resources/bookingappointment.md) para o [bookingBusiness especificado](../resources/bookingbusiness.md).
-## <a name="permissions"></a>Permissions
+
+## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.   |
+|Aplicativo | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+
+> [!NOTE]
+> Se você criar um aplicativo personalizado usando permissões de aplicativo, deverá seguir a validação [de regras de negócios](/graph/bookingsbusiness-business-rules).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -32,26 +37,31 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /solutions/bookingBusinesses/{id}/appointments
 
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {code} do portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um [objeto bookingAppointment](../resources/bookingappointment.md) .
+No corpo da solicitação, forneça uma representação JSON de um [objeto bookingAppointment](../resources/bookingappointment.md) .
 
 Se o número máximo de clientes (**maximumAttedeesCount**) permitido no [serviço](../resources/bookingservice.md) for maior que 1:
 
-- Certifique-se de que os clientes existam no Calendário da Reserva. Se não o fazem, crie usando a [operação Criar bookingCustomer](bookingbusiness-post-customers.md) .
+- Verifique se os clientes existem no Calendário de Reserva. Caso contrário, crie usando a [operação Criar bookingCustomer](bookingbusiness-post-customers.md) .
 
-- Passe as IDs de cliente válidas ao criar ou atualizar o compromisso. Se a ID do cliente não for válida, esse cliente não será incluído no objeto appointment.
+- Passe as IDs de cliente válidas ao criar ou atualizar o compromisso. Se a ID do cliente não for válida, esse cliente não será incluído no objeto de compromisso.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+
+Se bem-sucedido, este método retorna um código `201 Created` de resposta e um [objeto bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação. Esse compromisso não envolve a reserva de membros específicos da equipe.
 
 <!-- {
@@ -185,6 +195,7 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
@@ -327,5 +338,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

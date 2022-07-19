@@ -1,18 +1,18 @@
 ---
-title: Excluir extensão aberta
+title: Excluir openTypeExtension
 description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instância especificada de um recurso. '
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 7aa81b04f64ebc656d721f08248b0b3993abe2d3
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: d41d6e784c5e2194bc2a4671ace11f44f56ac529
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821145"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855746"
 ---
-# <a name="delete-open-extension"></a>Excluir extensão aberta
+# <a name="delete-opentypeextension"></a>Excluir openTypeExtension
 
 Namespace: microsoft.graph
 
@@ -28,7 +28,7 @@ Consulte a tabela na seção [Permissões para](#permissions) obter a lista de r
 
 Dependendo do recurso do qual você está excluindo a extensão e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar essa API. Para saber mais, incluindo [tomar cuidado](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) antes de escolher as permissões mais privilegiadas, pesquise as seguintes permissões em [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 | [baseTask](../resources/basetask.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [baseTasklist](../resources/basetasklist.md) (preterido) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
@@ -50,29 +50,23 @@ Na solicitação, identifique a instância de recurso, use a propriedade de nave
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeUnits/{Id}/extensions/{extensionId}
-DELETE /devices/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/extensions/{extensionId}
-DELETE /groups/{id}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-DELETE /organization/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{Id}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{Id}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{Id}/tasks/{Id}/extensions/{extensionId}
+DELETE /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+DELETE /devices/{deviceId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+DELETE /groups/{groupId}/extensions/{extensionId}
+DELETE /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+DELETE /groups/{groupId}/threads/{threadIid}/posts/{postId}/extensions/{extensionId}
+DELETE /users/{userIid|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+DELETE /organization/{organizationId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{listId}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso para excluir uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à exclusão de extensões abertas delas de maneira semelhante.
-
-## <a name="path-parameters"></a>Parâmetros do caminho
-|**Parâmetro**|**Tipo**|**Descrição**|
-|:-----|:-----|:-----|
-|id|string|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
-|extensionId|string|Pode ser um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
@@ -114,7 +108,7 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 [!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

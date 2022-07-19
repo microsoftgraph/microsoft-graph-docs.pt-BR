@@ -1,24 +1,25 @@
 ---
-title: Listar calendário comercialView
-description: Obter a coleção de objetos bookingAppointment para um bookingBusiness, que ocorre no intervalo de datas especificado.
+title: Listar calendarView de negócios
+description: Obtenha a coleção de objetos bookingAppointment para um bookingBusiness que ocorre no intervalo de datas especificado.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4d5f298052dc086358c195decc4ffb6cb0d58225
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 81fb96038e08657bd63270e463b0a540348a5e16
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014261"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856355"
 ---
-# <a name="list-business-calendarview"></a>Listar calendário comercialView
+# <a name="list-business-calendarview"></a>Listar calendarView de negócios
 
 Namespace: microsoft.graph
 
-Obter a coleção [de objetos bookingAppointment](../resources/bookingappointment.md) para [um bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.
+Obtenha a coleção de [objetos bookingAppointment](../resources/bookingappointment.md) para [um bookingBusiness](../resources/bookingbusiness.md) que ocorre no intervalo de datas especificado.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -39,27 +40,31 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representado no formato ISO 8601, como UTC ou um deslocamento do UTC. Por exemplo, 3am UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T03:00:00Z', e o mesmo horário no PST teria esta aparência: '2017-12-31T19:00:00-08:00'.|
-|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representados no formato ISO 8601, como UTC ou um deslocamento do UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T00:00:00Z', e o mesmo horário no PST teria esta aparência: '2017-12-31T16:00:00-08:00'.|
+|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representados no formato ISO 8601, como UTC ou um deslocamento de UTC. Por exemplo, 3:00 UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T03:00:00Z' e a mesma hora no PST teria esta aparência: '2017-12-31T19:00:00-08:00'.|
+|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representados no formato ISO 8601, como UTC ou um deslocamento de UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria esta aparência: '2018-01-01T00:00:00Z' e a mesma hora no PST teria esta aparência: '2017-12-31T16:00:00-08:00'.|
 
-Os valores de e são interpretados usando o deslocamento de zona de tempo especificado em seus valores correspondentes e não são afetados pelo valor do `start` `end` `Prefer: outlook.timezone` header, se presente.
+Os valores de `start` e são `end` interpretados `Prefer: outlook.timezone` usando o deslocamento de fuso horário especificado em seus valores correspondentes e não são afetados pelo valor do cabeçalho, se presente.
 
-Esse método também oferece suporte a alguns dos [parâmetros](/graph/query-parameters) de consulta $count e $expand OData para ajudar a personalizar a resposta.
+Esse método também dá suporte a alguns dos $count e $expand de consulta [OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta e uma `200 OK` coleção de [objetos bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
+
+Se bem-sucedido, este método retorna um código `200 OK` de resposta e uma coleção de [objetos bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 <!-- {
@@ -70,6 +75,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta. 
 
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
