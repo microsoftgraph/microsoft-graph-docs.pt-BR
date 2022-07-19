@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: a23b2d95519e1f3f69f05c4199d3ae3b843c3a72
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 9b58f52074154ebaf621134327a3d5ee1c7804d2
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945047"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838182"
 ---
 # <a name="ediscoveryholdoperation-resource-type"></a>Tipo de recurso ediscoveryHoldOperation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o processo de aplicação de retenção a fontes de dados, incluindo custodiantes e fontes de dados não custodiantes."
+Representa o processo de aplicação de retenção a fontes de dados, incluindo custodiantes e fontes de dados não custodiantes.
 
 Herda de [caseOperation](../resources/security-caseoperation.md).
 

@@ -1,31 +1,31 @@
 ---
 title: 'ediscoveryReviewSetQuery: applyTags'
-description: Aplicar marcas a arquivos no conjunto de revisão de Descoberta Eletrônica.
+description: Aplicar marcas a arquivos em um conjunto de revisão de Descoberta Eletrônica.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 94c9492804b1efc35247b5465d4b6b94b4b537f2
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: b241270cee8ae5264fdf3008c8aa7fc54b1cc36b
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945190"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837398"
 ---
 # <a name="ediscoveryreviewsetquery-applytags"></a>ediscoveryReviewSetQuery: applyTags
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Aplicar marcas a arquivos no conjunto de revisão de Descoberta Eletrônica. [Saiba mais.](https://docs.microsoft.com/microsoft-365/compliance/tagging-documents)
+Aplicar marcas a arquivos em [um conjunto de revisão de Descoberta Eletrônica](../resources/security-ediscoveryreviewset.md). Para obter detalhes, [consulte Marcar documentos em um conjunto de revisão na Descoberta Eletrônica](/microsoft-365/compliance/tagging-documents).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -70,7 +70,7 @@ Veja a seguir um exemplo de uma solicitação.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery/applyTags
+POST https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/queries/5f426fdc-f027-40db-b7cc-453cf06dc996/applyTags
 Content-Type: application/json
 
 {
@@ -82,8 +82,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

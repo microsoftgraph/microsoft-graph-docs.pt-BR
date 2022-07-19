@@ -1,31 +1,31 @@
 ---
-title: Criar dataSource
-description: Crie um novo objeto dataSource.
+title: Adicionar fontes adicionais
+description: Crie uma nova fonte adicional associada a uma pesquisa de Descoberta Eletrônica.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1314e063866be6483a5b791d7f0bfb2216c88c00
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 2f82f0ed6ef610a69e50f389be3def5849bcd06e
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66443176"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837664"
 ---
-# <a name="create-datasource"></a>Criar dataSource
+# <a name="add-additional-sources"></a>Adicionar fontes adicionais
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo objeto dataSource.
+Crie uma nova [fonte adicional](../resources/security-datasource.md) associada a [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,9 +47,9 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do [objeto dataSource](../resources/security-datasource.md) .
 
-Você pode especificar as propriedades a seguir ao criar **uma fonte de dados**.
+Você pode especificar as propriedades a seguir ao criar uma **fonte de dados**.
 
->**Nota:** Email **ou** **site** são necessários, não ambos. 
+>**Nota:** É **necessário email** **ou site** , mas não ambos.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -59,7 +59,7 @@ Você pode especificar as propriedades a seguir ao criar **uma fonte de dados**.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retornará um `201 Created`.
+Se tiver êxito, este método retornará um `201 Created` objeto [microsoft.graph.security.dataSource](../resources/security-datasource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 {
     "@odata.type": "microsoft.graph.security.siteSource",
     "site": {
-        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+        "webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"
     }
 }
 ```
@@ -94,7 +94,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 [!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-datasource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,7 +102,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
+Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
@@ -114,16 +114,18 @@ A seguir está um exemplo da resposta
 HTTP/1.1 201 Created
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/sourceCollections('39b0bafd920e4360995c62e18a5e8a49')/additionalSources/$entity",
-    "@odata.type": "#microsoft.graph.ediscovery.siteSource",
-    "displayName": "Secret Site",
-    "createdDateTime": "2021-08-11T23:35:02.33986Z",
-    "id": "42393244-3838-4636-3437-453030334136",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/searches('c61a5860-d634-4d14-aea7-d82b6f4eb7af')/additionalSources/$entity",
+    "@odata.type": "#microsoft.graph.security.siteSource",
+    "@odata.id": "https://graph.microsoft.com/v1.0/sites/46303732-3434-4630-3832-363333363441",
+    "displayName": "Design - top secret",
+    "createdDateTime": "2022-07-15T22:45:36.1096267Z",
+    "holdStatus": "0",
+    "id": "46303732-3434-4630-3832-363333363441",
     "createdBy": {
+        "application": null,
         "user": {
-            "id": "798d8d23-2087-4e03-912e-c0d9db5cb5d2",
-            "displayName": "Edisco Admin",
-            "userPrincipalname": "ediscoadmin@contoso.com"
+            "id": null,
+            "displayName": null
         }
     }
 }

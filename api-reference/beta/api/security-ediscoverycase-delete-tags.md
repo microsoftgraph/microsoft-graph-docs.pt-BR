@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 75484e3723cbe22c2d5ce84b4e189a3f4d4ebfb4
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 00ebe02e61d352819e3239e887e83040f8828007
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446915"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838147"
 ---
 # <a name="remove-ediscoveryreviewtag"></a>Remover ediscoveryReviewTag
 Namespace: microsoft.graph.security
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-
 [!INCLUDE [sample-code](../includes/snippets/java/delete-parent-from-ediscoveryreviewtag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-parent-from-ediscoveryreviewtag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -89,8 +89,8 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

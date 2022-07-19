@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 34ed4dedde55b3bdb545dffe70894a75339dc0be
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: ceb490ed7c5fcd91d6e2b1625c70a3a417c076c8
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093686"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838385"
 ---
 # <a name="update-ediscoveryreviewtag"></a>Atualizar ediscoveryReviewTag
 Namespace: microsoft.graph.security
@@ -50,9 +50,9 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição da marca. Obrigatório.|
+|displayName|String|Nome de exibição da marca. Obrigatório.|
 |description|String|Descrição da marca. Opcional.|
-|childSelectability|childSelectability|Esse valor controla se a experiência do usuário apresenta as marcas como caixas de seleção ou um grupo de botões de opção. Os valores possíveis são: `One`, `Many`. Obrigatório.|
+|childSelectability|microsoft.graph.security.childSelectability|Esse valor controla se a experiência do usuário apresenta as marcas como caixas de seleção ou um grupo de botões de opção. Os valores possíveis são: `One`, `Many`. Obrigatório.|
 
 
 ## <a name="response"></a>Resposta
@@ -90,7 +90,7 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-c
 [!INCLUDE [sample-code](../includes/snippets/java/update-ediscoveryreviewtag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryreviewtag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,8 +99,8 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-c
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

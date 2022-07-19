@@ -1185,7 +1185,7 @@ items:
                 items:
                   - name: Listar memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: Listar memberOf transitivos
+                  - name: List transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: Verificar grupos de membros
                     href: api/directoryobject-checkmembergroups.md
@@ -14844,7 +14844,7 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: Obter cobertura de treinamento para usuários
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
-          - name: Descoberta Eletrônica (versão prévia)
+          - name: Descoberta eletrônica
             items:
               - name: Caso
                 href: resources/security-ediscoverycase.md
@@ -14873,9 +14873,9 @@ items:
                     href: api/security-ediscoverycase-list-noncustodialdatasources.md
                   - name: Criar fonte de dados não custodiante
                     href: api/security-ediscoverycase-post-noncustodialdatasources.md
-                  - name: Listar retenções legais
+                  - name: Listar retenções legais (versão prévia)
                     href: api/security-ediscoverycase-list-legalholds.md
-                  - name: Criar retenção legal
+                  - name: Criar retenção legal (versão prévia)
                     href: api/security-ediscoverycase-post-legalholds.md
                   - name: Listar pesquisas
                     href: api/security-ediscoverycase-list-searches.md
@@ -14957,7 +14957,7 @@ items:
                     href: api/security-ediscoverynoncustodialdatasource-updateindex.md
                   - name: Obter a última operação de índice
                     href: api/security-ediscoverycustodian-list-lastindexoperation.md
-              - name: Política de retenção
+              - name: Política de retenção (versão prévia)
                 href: resources/security-ediscoveryholdpolicy.md
                 items:
                   - name: Listar
@@ -14993,7 +14993,7 @@ items:
                     href: api/security-ediscoverycase-delete-searches.md
                   - name: Estimar estatísticas
                     href: api/security-ediscoverysearch-estimatestatistics.md
-                  - name: Limpar dados
+                  - name: Limpar dados (versão prévia)
                     href: api/security-ediscoverysearch-purgedata.md
                   - name: Listar fontes custodiante
                     href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15024,7 +15024,7 @@ items:
                     href: api/security-ediscoveryreviewset-get.md
                   - name: Adicionar ao conjunto de revisão
                     href: api/security-ediscoveryreviewset-addtoreviewset.md
-                  - name: Exportar
+                  - name: Exportar (versão prévia)
                     href: api/security-ediscoveryreviewset-export.md
                     items:
                       - name: Obter URL de download
@@ -15042,16 +15042,16 @@ items:
                         href: api/security-ediscoveryreviewsetquery-update.md
                       - name: Excluir
                         href: api/security-ediscoveryreviewset-delete-queries.md
-                      - name: Exportar
+                      - name: Exportar (versão prévia)
                         href: api/security-ediscoveryreviewsetquery-export.md
                         items:
                           - name: Obter URL de download
                             href: api/security-ediscoveryexportoperation-getdownloadurl.md
                       - name: Apply tags
                         href: api/security-ediscoveryreviewsetquery-applytags.md
-                      - name: Executar
+                      - name: Executar (versão prévia)
                         href: api/security-ediscoveryreviewsetquery-run.md
-                  - name: File
+                  - name: Arquivo (versão prévia)
                     href: resources/security-ediscoveryfile.md
                     items:
                       - name: Lista
@@ -15401,7 +15401,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -15820,7 +15820,7 @@ items:
                 href: api/teamworktagmember-get.md
               - name: Excluir membro
                 href: api/teamworktagmember-delete.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md

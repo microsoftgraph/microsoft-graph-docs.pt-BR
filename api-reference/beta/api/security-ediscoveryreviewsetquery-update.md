@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 65ea037aaaf9de643377c529818a44a52543d59c
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 6b20bfe3f2d857e40a274cf0e4ec290cc8dc52c1
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945186"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838210"
 ---
 # <a name="update-ediscoveryreviewsetquery"></a>Atualizar ediscoveryReviewSetQuery
 Namespace: microsoft.graph.security
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,8 +49,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryR
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome da consulta. Obrigatório.|
-|contentQuery|Cadeia de caracteres|A consulta KQL para o conjunto de revisão. [Saiba mais.](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|displayName|String|O nome da consulta. Obrigatório.|
+|contentQuery|String|A consulta KQL para o conjunto de revisão. Para obter detalhes, [consulte Consultar e filtrar conteúdo em um conjunto de revisão](/microsoft-365/compliance/review-set-search).|
 
 
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo de uma solicitação.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery
+PATCH https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/queries/5f426fdc-f027-40db-b7cc-453cf06dc996
 Content-Type: application/json
 
 {
@@ -79,8 +79,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

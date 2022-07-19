@@ -1,31 +1,31 @@
 ---
-title: Adicionar dataSource
-description: Adicione custodianSources postando na coleção custodianSources.
+title: Adicionar fontes custodiante
+description: Crie uma nova fonte custodiante associada a uma pesquisa de Descoberta Eletrônica..
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a5755e7d4dfd0dea3313081e52fcf5fe5decaa30
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: ad3265d6e28e1fe67024f16ac169b82469408ae9
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66440205"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837846"
 ---
-# <a name="add-datasource"></a>Adicionar dataSource
+# <a name="add-custodian-sources"></a>Adicionar fontes custodiante
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione custodianSources postando na coleção custodianSources.
+Crie uma nova fonte custodiante associada a [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,17 +47,17 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do [objeto dataSource](../resources/security-datasource.md) .
 
-Você pode especificar as propriedades a seguir ao criar **uma fonte de dados**.
+Você pode especificar as propriedades a seguir ao criar uma **fonte de dados**.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|@odata.id|Cadeia de caracteres|Cadeia de caracteres que define o objeto custodiante. Vejo o exemplo a seguir.|
+|@odata.id|String|Cadeia de caracteres que define o objeto custodiante. Veja [o exemplo](#examples) a seguir.|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `204 No Content` código de resposta e um [objeto dataSource](../resources/security-datasource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -90,7 +90,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-datasource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,8 +99,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

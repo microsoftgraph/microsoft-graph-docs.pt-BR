@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 888f96bc37b476055513f43c9086a57b4d2c6cbc
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 7e16dc269d212517465c3492dcbe30b9fd3de7d4
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945063"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838630"
 ---
 # <a name="ediscoveryaddtoreviewsetoperation-resource-type"></a>Tipo de recurso ediscoveryAddToReviewSetOperation
 
@@ -27,14 +27,14 @@ Nenhum.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ação|String| O tipo de ação que a operação representa. Os valores possíveis são: `addToReviewSet`,`applyTags`,`contentExport`,,`convertToPdf`,`estimateStatistics``purgeData`|
+|ação|microsoft.graph.security.caseAction| O tipo de ação que a operação representa. Os valores possíveis são: `addToReviewSet`,`applyTags`,`contentExport`,,`convertToPdf`,`estimateStatistics``purgeData`|
 |completedDateTime|DateTimeOffset| A data e a hora em que a operação foi concluída. |
 |createdBy|[identitySet](../resources/identityset.md)| O usuário que criou a operação. |
 |createdDateTime|DateTimeOffset| A data e a hora em que a operação foi criada. |
 |id|Cadeia de caracteres| A ID da operação. Somente leitura. |
 |percentProgress|Int32| O progresso da operação. |
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contém informações de resultado específicas de êxito e falha. |
-|status|Cadeia de caracteres| O status da operação de caso. Os possíveis valores são: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|status|microsoft.graph.security.caseOperationStatus| O status da operação de caso. Os possíveis valores são: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

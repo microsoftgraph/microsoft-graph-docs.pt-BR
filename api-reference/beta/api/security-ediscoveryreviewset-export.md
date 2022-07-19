@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ae81bc60407fdaf2f545fac72a313c58ab3b22f7
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 501ec707da2f4637ddeb5eab313a1f4e7d1dbed4
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446891"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838441"
 ---
 # <a name="ediscoveryreviewset-export"></a>ediscoveryReviewSet: exportar
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie uma exportação de um **reviewSet**.  Para obter detalhes, [consulte Exportar documentos de um conjunto de revisão no Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
+Inicie uma exportação de um **reviewSet**.  Para obter detalhes, [consulte Exportar documentos de um conjunto de revisão na Descoberta Eletrônica (Premium)](/microsoft-365/compliance/export-documents-from-review-set).
 
 
 ## <a name="permissions"></a>Permissões
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,10 +54,10 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |:---|:---|:---|
 |outputName|Cadeia de caracteres| Nome da exportação. Obrigatório. |
 |description|String| Descrição da exportação |
-|azureBlobContainer|Cadeia de caracteres| Ao exportar para sua própria conta de armazenamento do Azure, essa é a URL do contêiner. |
-|azureBlobToken|String| Ao exportar para sua própria conta de armazenamento do Azure, o token SAS para a URL do contêiner. |
+|azureBlobContainer|String| quando você exporta para sua própria conta de armazenamento do Azure, essa é a URL do contêiner. |
+|azureBlobToken|Cadeia de caracteres| quando você exporta para sua própria conta de armazenamento do Azure, token SAS para a URL do contêiner. |
 |Exportoptions|String|Especifica opções que controlam o formato da exportação. Os valores possíveis são: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|Cadeia de caracteres| Opções que controlam a estrutura do arquivo e o empacotamento da exportação. Os valores possíveis são: `none`, `directory`, `pst`.|
+|exportStructure|String| Opções que controlam a estrutura do arquivo e o empacotamento da exportação. Os valores possíveis são: `none`, `directory`, `pst`.|
 ## <a name="response"></a>Resposta
 
 Se a exportação tiver sido iniciada com êxito, essa ação retornará um código `202 Accepted` de resposta. A resposta também conterá um `Location` cabeçalho, que contém o local da operação [de](../resources/security-ediscoveryexportoperation.md) exportação que foi criada para lidar com a exportação.
@@ -96,7 +96,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoveryreviewsetthisexport-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewsetthisexport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,8 +109,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

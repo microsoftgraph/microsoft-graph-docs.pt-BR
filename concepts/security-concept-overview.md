@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2226f5a75db859f7cbc20db1d1a9a53b1caae2d3
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f5525d2e37bc306c138f8b30010e62c2335cb703
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437573"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837496"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
@@ -70,7 +70,7 @@ Habilite a ação swift para se proteger contra novas ameaças, como ações par
 
 Use o Microsoft Secure Score (visualização) para proporcionar visibilidade às necessidades de segurança de sua organização e obter sugestões sobre como melhorá-las, além de projetar uma pontuação melhorada depois dessas sugestões serem implementadas. Meça facilmente seu progresso ao longo do tempo e obtenha ideias sobre alterações específicas que conduziram à melhoria de sua pontuação.
 
-### <a name="manage-your-ediscovery-workflows-preview"></a>Gerenciar seus fluxos de trabalho de Descoberta Eletrônica (versão prévia)
+### <a name="manage-your-ediscovery-workflows"></a>Gerenciar seus fluxos de trabalho de Descoberta Eletrônica
 
 As organizações contam com os recursos do [Descoberta Eletrônica do Microsoft Purview](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) para atender aos requisitos e descobrir a verdade sobre o que aconteceu em sua organização quando necessário, com base em requisitos internos ou externos, como litígio, investigação ou conformidade regulatória.
 

@@ -5,27 +5,27 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 16fb9f615699f623980e1509e44ef017b13ef048
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: abf3518dd9c36d5b708d1e2fb13bd7bdd95f3625
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446782"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837888"
 ---
 # <a name="ediscoverynoncustodialdatasource-applyhold"></a>ediscoveryNoncustodialDataSource: applyHold
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie o processo de aplicação de retenção a fontes de dados não custodiais da Descoberta Eletrônica. Depois que a operação for criada, você poderá obter o status `Location` da operação de caso recuperando o parâmetro dos cabeçalhos de resposta. O local fornece uma URL que retornará [um eDiscoveryHoldOpertaion](../resources/security-ediscoveryholdoperation.md).
+Inicie o processo de aplicação de retenção em fontes de dados não [custodiais da Descoberta Eletrônica](../resources/security-ediscoverynoncustodialdatasource.md). Depois que a operação for criada, você poderá obter o status recuperando `Location` o parâmetro dos cabeçalhos de resposta. O local fornece uma URL que retornará [um objeto eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-apply-hold-to-multiple-non-custodial-data-sources"></a>Exemplo 1. Aplicar retenção a várias fontes de dados não custodiais.
+### <a name="example-1-apply-hold-to-multiple-non-custodial-data-sources"></a>Exemplo 1: Aplicar retenção a várias fontes de dados não custodiais
 #### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasourceapplyhold-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -107,8 +107,8 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -118,7 +118,7 @@ A seguir está um exemplo da resposta
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-2-apply-hold-to-a-single-non-custodial-data-source"></a>Exemplo 2. Aplique a retenção a uma única fonte de dados não custodiante.
+### <a name="example-2-apply-hold-to-a-single-non-custodial-data-source"></a>Exemplo 2: Aplicar retenção a uma única fonte de dados não custodiante
 #### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
@@ -143,7 +143,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustialdatasourceapplyhold-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -156,8 +156,8 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 #### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

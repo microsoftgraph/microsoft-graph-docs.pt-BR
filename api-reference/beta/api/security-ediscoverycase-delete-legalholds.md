@@ -1,31 +1,31 @@
 ---
 title: Excluir ediscoveryHoldPolicy
-description: Exclui um objeto ediscoveryHoldPolicy.
+description: Exclua um objeto ediscoveryHoldPolicy.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7d75b58fbe07e928e95a8bf80f8711fd2c89dc3d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 9c1c1ac41f94f69390fa7779234fdab1c14037c9
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438673"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837503"
 ---
 # <a name="delete-ediscoveryholdpolicy"></a>Excluir ediscoveryHoldPolicy
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um [objeto ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) .
+[Exclua um objeto ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-
 [!INCLUDE [sample-code](../includes/snippets/java/delete-ediscoveryholdpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-ediscoveryholdpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -89,8 +89,7 @@ DELETE https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

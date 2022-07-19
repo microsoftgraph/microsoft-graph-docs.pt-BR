@@ -5,27 +5,27 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: cca03abb7e390dbfddedf50ab0bd7e2b6df562eb
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: d230ef69965b3c07193ee4e23cf2c296b9dd058a
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66438638"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837454"
 ---
 # <a name="ediscoverycustodian-applyhold"></a>ediscoveryCustodian: applyHold
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie o processo de aplicação de retenção aos custodiantes da Descoberta Eletrônica. Depois que a operação for criada, você poderá obter o status `Location` da operação de caso recuperando o parâmetro dos cabeçalhos de resposta. O local fornece uma URL que retornará [um eDiscoveryHoldOpertaion](../resources/security-ediscoveryholdoperation.md).
+Inicie o processo de aplicação de retenção em [custodiantes da Descoberta Eletrônica](../resources/security-ediscoverycustodian.md). Depois que a operação for criada, você poderá obter o status recuperando `Location` o parâmetro dos cabeçalhos de resposta. O local fornece uma URL que retornará [um objeto eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -61,7 +61,7 @@ Se tiver êxito, esta ação retornará um código de resposta `202 Accepted`.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-apply-hold-to-multiple-custodians"></a>Exemplo 1. Aplique retenção a vários custodiantes.
+### <a name="example-1-apply-hold-to-multiple-custodian"></a>Exemplo 1: Aplicar retenção a vários custodiante
 #### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverycustodianthisapplyhold-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverycustodianthisapplyhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -106,8 +106,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -117,7 +116,7 @@ A seguir está um exemplo da resposta
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-2-apply-hold-to-a-single-custodian"></a>Exemplo 2. Aplique a retenção a um único guardião.
+### <a name="example-2-apply-hold-to-a-single-custodian"></a>Exemplo 2: Aplicar retenção a um único guardião
 #### <a name="request"></a>Solicitação
 Veja a seguir um exemplo de uma solicitação.
 
@@ -142,7 +141,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverycustodianthisapplyhold-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverycustodianthisapplyhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -155,8 +154,8 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 #### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

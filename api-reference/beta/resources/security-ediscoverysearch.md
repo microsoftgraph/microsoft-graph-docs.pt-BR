@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: d32540ccfd74f79fdad282f7d708a458bdf7705f
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: ccff50d8654bbd6723ae21df4163b80afc310ead
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945030"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837356"
 ---
 # <a name="ediscoverysearch-resource-type"></a>Tipo de recurso ediscoverySearch
 
@@ -28,18 +28,18 @@ Representa uma pesquisa de Descoberta Eletrônica. Para obter detalhes, [consult
 |[Criar ediscoverySearch](../api/security-ediscoverycase-post-searches.md)|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|Crie um novo [objeto ediscoverySearch](../resources/security-ediscoverysearch.md) .|
 |[Obter descoberta eletrônicaSearch](../api/security-ediscoverysearch-get.md)|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|Leia as propriedades e as relações de [um objeto ediscoverySearch](../resources/security-ediscoverysearch.md) .|
 |[Atualizar ediscoverySearch](../api/security-ediscoverysearch-update.md)|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|Atualize as propriedades de [um objeto ediscoverySearch](../resources/security-ediscoverysearch.md) .|
-|[Excluir ediscoverySearch](../api/security-ediscoverycase-delete-searches.md)|Nenhum|Exclui um [objeto ediscoverySearch](../resources/security-ediscoverysearch.md) .|
+|[Excluir ediscoverySearch](../api/security-ediscoverycase-delete-searches.md)|Nenhum|[Exclua um objeto microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md).|
 |[estimateStatistics](../api/security-ediscoverysearch-estimatestatistics.md)|Nenhum|Execute uma operação de estimativa de estatísticas nos dados contidos na pesquisa de Descoberta Eletrônica.|
 |[purgeData](../api/security-ediscoverysearch-purgedata.md)|Nenhum|Execute uma operação de limpeza de dados nos dados do Teams contidos na pesquisa de Descoberta Eletrônica.|
-|[Listar additionalSources](../api/security-ediscoverysearch-list-custodiansources.md)|[Coleção microsoft.graph.security.dataSource](../resources/security-datasource.md)|Obtenha os recursos dataSource da propriedade de navegação additionalSources.|
-|[Criar dataSource](../api/security-ediscoverysearch-post-additionalsources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Crie um novo objeto dataSource.|
-|[Listar ediscoveryEstimateOperation](../api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md)|[coleção microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)|Obtenha os recursos de ediscoveryEstimateOperation da propriedade de navegação lastEstimateStatisticsOperation.|
-|[Listar custodianSources](../api/security-ediscoverysearch-list-custodiansources.md)|[Coleção microsoft.graph.security.dataSource](../resources/security-datasource.md)|Obtenha os recursos dataSource da propriedade de navegação custodianSources.|
-|[Adicionar custodianSources](../api/security-ediscoverysearch-post-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Adicione custodianSources postando na coleção custodianSources.|
-|[Remover custodianSources](../api/security-ediscoverysearch-delete-custodiansources.md)|Nenhum|Remover um [objeto dataSource](../resources/security-datasource.md) .|
-|[Listar noncustodialSources](../api/security-ediscoverysearch-list-noncustodialsources.md)|[coleção microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Obtenha os recursos de ediscoveryNoncustodialDataSource da propriedade de navegação noncustodialSources.|
-|[Adicionar ediscoveryNoncustodialDataSource](../api/security-ediscoverysearch-post-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Adicione noncustodialSources postando na coleção noncustodialSources.|
-|[Remover noncustodialSources](../api/security-ediscoverysearch-delete-noncustodialsources.md)|Nenhum|Remova um [objeto ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) .|
+|[Listar additionalSources](../api/security-ediscoverysearch-list-additionalsources.md)|[Coleção microsoft.graph.security.dataSource](../resources/security-datasource.md)|Obtenha a lista de [fontes adicionais](../resources/security-datasource.md) associadas a [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).|
+|[Adicionar additionalSources](../api/security-ediscoverysearch-post-additionalsources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Crie uma nova [fonte adicional](../resources/security-datasource.md) associada a [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).|
+|[Listar ediscoveryEstimateOperation](../api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md)|[coleção microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)|Obtenha os últimos [objetos ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) e suas propriedades.|
+|[Listar custodianSources](../api/security-ediscoverysearch-list-custodiansources.md)|[Coleção microsoft.graph.security.dataSource](../resources/security-datasource.md)|Obtenha a lista de fontes de dados de custódia associadas a [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).|
+|[Adicionar custodianSources](../api/security-ediscoverysearch-post-custodiansources.md)|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Crie uma nova fonte custodiante associada a [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).|
+|[Remover custodianSources](../api/security-ediscoverysearch-delete-custodiansources.md)|Nenhum|Remova um [objeto microsoft.graph.security.dataSource](../resources/security-datasource.md) .|
+|[Listar noncustodialSources](../api/security-ediscoverysearch-list-noncustodialsources.md)|[coleção microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Obtenha a lista de não custodiaisSources associados a uma [pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).|
+|[Adicionar noncustodialSources](../api/security-ediscoverysearch-post-noncustodialsources.md)|[microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md)|Crie uma nova fonte não custodiante associada a [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).|
+|[Remover noncustodialSources](../api/security-ediscoverysearch-delete-noncustodialsources.md)|Nenhum|Remova um [objeto microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -47,9 +47,9 @@ Representa uma pesquisa de Descoberta Eletrônica. Para obter detalhes, [consult
 |contentQuery|Cadeia de caracteres|A cadeia de caracteres de consulta na consulta KQL (Linguagem de Consulta de Palavra-chave). Para obter detalhes, consulte [consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo e Descoberta Eletrônica](/microsoft-365/compliance/keyword-queries-and-search-conditions). Você pode refinar pesquisas usando campos emparelhados com valores; por exemplo, assunto:"Finanças Trimestrais *" E Data>=01/06/2016 E Data<=01/07/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou **a pesquisa de Descoberta Eletrônica**.|
 |createdDateTime|DateTimeOffset|A data e a hora em **que a pesquisa de Descoberta** Eletrônica foi criada.|
-|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|Quando especificado, a coleção abrangerá um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
-|descrição|String|A descrição da **pesquisa de Descoberta Eletrônica**.|
-|displayName|Cadeia de caracteres|O nome de exibição da **pesquisa de Descoberta Eletrônica**.|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|Quando especificado, a coleção abrangerá um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
+|descrição|Cadeia de caracteres|A descrição da **pesquisa de Descoberta Eletrônica**.|
+|displayName|String|O nome de exibição da **pesquisa de Descoberta Eletrônica**.|
 |id|String| A ID da **pesquisa de Descoberta Eletrônica**. Somente leitura. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|O último usuário que modificou **a pesquisa de Descoberta Eletrônica**.|
 |lastModifiedDateTime|DateTimeOffset|A última data e hora em que **a pesquisa de Descoberta Eletrônica** foi modificada.|

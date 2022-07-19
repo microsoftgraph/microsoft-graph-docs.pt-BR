@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 271989fb37804db1cf4d0051d9b1bebcdd1d1e32
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 5b98442eb897362dfb967e8f44217911c80ff228
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093917"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837699"
 ---
 # <a name="update-ediscoveryholdpolicy"></a>Atualizar ediscoveryHoldPolicy
 Namespace: microsoft.graph.security
@@ -50,13 +50,13 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|Cadeia de caracteres|A descrição da política de retenção legal. Opcional.|
+|description|String|A descrição da política de retenção legal. Opcional.|
 |contentQuery|String|A consulta de conteúdo da política de retenção legal. Opcional.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `204 No Content` código de resposta [e um objeto ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `204 No Content` um código de resposta e um objeto [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -89,7 +89,7 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4
 [!INCLUDE [sample-code](../includes/snippets/java/update-ediscoveryholdpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryholdpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,8 +98,8 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

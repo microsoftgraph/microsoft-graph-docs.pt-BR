@@ -6411,6 +6411,189 @@ items:
                 href: api/alert-get.md
               - name: Atualizar alerta
                 href: api/alert-update.md
+          - name: Descoberta eletrônica
+            items:
+              - name: Caso
+                href: resources/security-ediscoverycase.md
+                items:
+                  - name: Listar
+                    href: api/security-casesroot-list-ediscoverycases.md
+                  - name: Criar
+                    href: api/security-casesroot-post-ediscoverycases.md
+                  - name: Obter
+                    href: api/security-ediscoverycase-get.md
+                  - name: Atualizar
+                    href: api/security-ediscoverycase-update.md
+                  - name: Excluir
+                    href: api/security-casesroot-delete-ediscoverycases.md
+                  - name: Fechar
+                    href: api/security-ediscoverycase-close.md
+                  - name: Reabrir
+                    href: api/security-ediscoverycase-reopen.md
+                  - name: Listar operações
+                    href: api/security-ediscoverycase-list-operations.md
+                  - name: Listar custodiantes
+                    href: api/security-ediscoverycase-list-custodians.md
+                  - name: Criar custodiante
+                    href: api/security-ediscoverycase-post-custodians.md
+                  - name: Listar fontes de dados não custodiais
+                    href: api/security-ediscoverycase-list-noncustodialdatasources.md
+                  - name: Criar fonte de dados não custodiante
+                    href: api/security-ediscoverycase-post-noncustodialdatasources.md
+                  - name: Listar pesquisas
+                    href: api/security-ediscoverycase-list-searches.md
+                  - name: Criar pesquisa
+                    href: api/security-ediscoverycase-post-searches.md
+                  - name: Listar conjuntos de revisão
+                    href: api/security-ediscoverycase-list-reviewsets.md
+                  - name: Criar conjunto de revisão
+                    href: api/security-ediscoverycase-post-reviewsets.md
+                  - name: Listar marcas
+                    href: api/security-ediscoverycase-list-tags.md
+                  - name: Criar marca
+                    href: api/security-ediscoverycase-post-tags.md
+              - name: Configurações de caso
+                href: resources/security-ediscoverycasesettings.md
+                items:
+                  - name: Obter configurações
+                    href: api/security-ediscoverycasesettings-get.md
+                  - name: Atualizar configurações
+                    href: api/security-ediscoverycasesettings-update.md
+                  - name: Redefinir as configurações para o padrão
+                    href: api/security-ediscoverycasesettings-resettodefault.md
+              - name: Operation
+                href: resources/security-caseoperation.md
+                items:
+                  - name: Listar operações de caso
+                    href: api/security-ediscoverycase-list-operations.md
+                  - name: Obter opreação de maiúsculas e minúsculas por ID
+                    href: api/security-caseoperation-get.md
+              - name: Custodian
+                href: resources/security-ediscoverycustodian.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-custodians.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-custodians.md
+                  - name: Obter
+                    href: api/security-ediscoverycustodian-get.md
+                  - name: Ativar
+                    href: api/security-ediscoverycustodian-activate.md
+                  - name: Liberar
+                    href: api/security-ediscoverycustodian-release.md
+                  - name: Aplicar retenção
+                    href: api/security-ediscoverycustodian-applyhold.md
+                  - name: Remover retenção
+                    href: api/security-ediscoverycustodian-removehold.md
+                  - name: Atualizar índice
+                    href: api/security-ediscoverycustodian-updateindex.md
+                  - name: Listar fontes de usuário
+                    href: api/security-ediscoverycustodian-list-usersources.md
+                  - name: Criar fonte de usuário
+                    href: api/security-ediscoverycustodian-post-usersources.md
+                  - name: Listar fontes do site
+                    href: api/security-ediscoverycustodian-list-sitesources.md
+                  - name: Criar origem do site
+                    href: api/security-ediscoverycustodian-post-sitesources.md
+                  - name: Listar fontes de grupo unitadas
+                    href: api/security-ediscoverycustodian-list-unifiedgroupsources.md
+                  - name: Criar fonte de grupo não especificada
+                    href: api/security-ediscoverycustodian-post-unifiedgroupsources.md
+                  - name: Obter a última operação de índice
+                    href: api/security-ediscoverycustodian-list-lastindexoperation.md
+              - name: Fonte de dados não custodiante
+                href: resources/security-ediscoverynoncustodialdatasource.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-noncustodialdatasources.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-noncustodialdatasources.md
+                  - name: Obter
+                    href: api/security-ediscoverynoncustodialdatasource-get.md
+                  - name: Liberar
+                    href: api/security-ediscoverynoncustodialdatasource-release.md
+                  - name: Aplicar retenção
+                    href: api/security-ediscoverynoncustodialdatasource-applyhold.md
+                  - name: Remover retenção
+                    href: api/security-ediscoverynoncustodialdatasource-removehold.md
+                  - name: Atualizar índice
+                    href: api/security-ediscoverynoncustodialdatasource-updateindex.md
+                  - name: Obter a última operação de índice
+                    href: api/security-ediscoverycustodian-list-lastindexoperation.md
+              - name: Pesquisa
+                href: resources/security-ediscoverysearch.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-searches.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-searches.md
+                  - name: Obter
+                    href: api/security-ediscoverysearch-get.md
+                  - name: Atualizar
+                    href: api/security-ediscoverysearch-update.md
+                  - name: Excluir
+                    href: api/security-ediscoverycase-delete-searches.md
+                  - name: Estimar estatísticas
+                    href: api/security-ediscoverysearch-estimatestatistics.md
+                  - name: Listar fontes custodiante
+                    href: api/security-ediscoverysearch-list-custodiansources.md
+                  - name: Adicionar fontes custodiante
+                    href: api/security-ediscoverysearch-post-custodiansources.md
+                  - name: Remover fontes custodiante
+                    href: api/security-ediscoverysearch-delete-custodiansources.md
+                  - name: Listar fontes de dados não custodiais
+                    href: api/security-ediscoverysearch-list-noncustodialsources.md
+                  - name: Adicionar fontes de dados não custodiais
+                    href: api/security-ediscoverysearch-post-noncustodialsources.md
+                  - name: Remover fontes de dados não custodiais
+                    href: api/security-ediscoverysearch-delete-noncustodialsources.md
+                  - name: Listar fontes adicionais
+                    href: api/security-ediscoverysearch-list-additionalsources.md
+                  - name: Adicionar fontes adicionais
+                    href: api/security-ediscoverysearch-post-additionalsources.md
+                  - name: Obter a última operação de estimativa de estatísticas
+                    href: api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
+              - name: Conjuntos de revisão
+                href: resources/security-ediscoveryreviewset.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-reviewsets.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-reviewsets.md
+                  - name: Obter
+                    href: api/security-ediscoveryreviewset-get.md
+                  - name: Adicionar ao conjunto de revisão
+                    href: api/security-ediscoveryreviewset-addtoreviewset.md
+                  - name: Consulta
+                    href: resources/security-ediscoveryreviewsetquery.md
+                    items:
+                      - name: Listar
+                        href: api/security-ediscoveryreviewset-list-queries.md
+                      - name: Criar
+                        href: api/security-ediscoveryreviewset-post-queries.md
+                      - name: Obter
+                        href: api/security-ediscoveryreviewsetquery-get.md
+                      - name: Atualizar
+                        href: api/security-ediscoveryreviewsetquery-update.md
+                      - name: Excluir
+                        href: api/security-ediscoveryreviewset-delete-queries.md
+                      - name: Apply tags
+                        href: api/security-ediscoveryreviewsetquery-applytags.md
+              - name: Tag
+                href: resources/security-ediscoveryreviewtag.md
+                items:
+                  - name: Listar
+                    href: api/security-ediscoverycase-list-tags.md
+                  - name: Criar
+                    href: api/security-ediscoverycase-post-tags.md
+                  - name: Obter
+                    href: api/security-ediscoveryreviewtag-get.md
+                  - name: Atualizar
+                    href: api/security-ediscoveryreviewtag-update.md
+                  - name: Excluir
+                    href: api/security-ediscoverycase-delete-tags.md
+                  - name: Listar marcas como hierarquia
+                    href: api/security-ediscoveryreviewtag-ashierarchy.md
           - name: Proteção de informações
             items:
               - name: Ameaça
@@ -6650,7 +6833,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Plano
+          - name: Planejar
             href: resources/plannerplan.md
             items:
               - name: Criar plano
@@ -6922,7 +7105,7 @@ items:
                 href: api/chats-getallmessages.md
               - name: Obter conteúdo hospedado
                 href: api/chatmessagehostedcontent-get.md
-          - name: App
+          - name: Aplicativo
             items:
               - name: Aplicativo no catálogo
                 href: resources/teamsapp.md
@@ -6984,7 +7167,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Enviar notificação ao usuário
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: Guia
             href: resources/teamstab.md
             items:
               - name: Guia no canal

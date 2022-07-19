@@ -1,18 +1,18 @@
 ---
-title: Criar ediscoverySearch
+title: Criar pesquisas
 description: Crie um novo objeto ediscoverySearch.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5184452a0481d2059863b9950885755a961b668c
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 7ed28d8a9336b4c61ef7a49d8cb3d61fadea7b2f
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439407"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838721"
 ---
-# <a name="create-ediscoverysearch"></a>Criar ediscoverySearch
+# <a name="create-searches"></a>Criar pesquisas
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,14 +51,14 @@ Você pode especificar as propriedades a seguir ao criar **um ediscoverySearch**
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome de exibição da pesquisa. Obrigatório|
-|descrição|Cadeia de caracteres|A descrição da pesquisa Opcional.|
-|contentQuery|Cadeia de caracteres|A cadeia de caracteres de consulta usada para a pesquisa. A cadeia de caracteres de consulta no formato KQL (Linguagem de Consulta de Palavra-chave). Opcional|
-|dataSourceScopes|String|A opção de pesquisar em todas as caixas de correio ou sites no locatário. Os valores possíveis são: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Opcional.|
+|displayName|Cadeia de caracteres|O nome de exibição da pesquisa. Obrigatório|
+|descrição|String|A descrição da pesquisa Opcional.|
+|contentQuery|String|A cadeia de caracteres de consulta usada para a pesquisa. A cadeia de caracteres de consulta no formato KQL (Linguagem de Consulta de Palavra-chave). Opcional|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|A opção de pesquisar em todas as caixas de correio ou sites no locatário. Os valores possíveis são: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`. Opcional.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um `201 Created` código de resposta [e um objeto ediscoverySearch](../resources/security-ediscoverysearch.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um [objeto microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverysearch-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverysearch-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -114,7 +114,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
+Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

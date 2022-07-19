@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8ae8a25bb90e647c4bd4795febf321a2a7208421
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 42daaa6cb5321e90c722af8a54ace685145d2449
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945192"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838504"
 ---
 # <a name="ediscoveryreviewset-addtoreviewset"></a>ediscoveryReviewSet: addToReviewSet
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie o processo de adição de uma coleção de serviços do Microsoft 365 a um conjunto de revisão. Depois que a operação for criada, você poderá obter o status `Location` da operação recuperando o parâmetro dos cabeçalhos de resposta. O local fornece uma URL que retornará uma operação [Adicionar ao conjunto de revisão](../resources/security-ediscoveryaddtoreviewsetoperation.md).
+Inicie o processo de adição de uma coleção de serviços do Microsoft 365 a um [conjunto de revisão](../resources/security-ediscoveryreviewset.md). Depois que a operação for criada, você poderá obter o status `Location` da operação recuperando o parâmetro dos cabeçalhos de resposta. O local fornece uma URL que retornará uma operação [Adicionar ao conjunto de revisão](../resources/security-ediscoveryaddtoreviewsetoperation.md).
 
 
 ## <a name="permissions"></a>Permissões
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,7 +36,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /ediscoveryExportOperation/reviewSet/addToReviewSet
+POST /security/cases/ediscoverycases/{eDiscoveryCaseId}/reviewSets/{eDiscoveryReviewSetId}/addToReviewSet
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -75,12 +75,12 @@ Veja a seguir um exemplo de uma solicitação.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSet/addToReviewSet
+POST https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet
 Content-Type: application/json
 
 {
     "search": {
-        "id": "7c165312-d8db-48b5-9129-1af50932df53"
+        "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
     },
     "additionalDataOptions": "linkedFiles"
 }
@@ -88,13 +88,13 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```

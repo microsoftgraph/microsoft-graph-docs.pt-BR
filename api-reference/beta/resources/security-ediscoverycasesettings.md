@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 76ec63befe49601e404c3d2dc21e8832cd82ed8c
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 414410a19c44299960a7939e98887ab10d9990fe
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945055"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837811"
 ---
 # <a name="ediscoverycasesettings-resource-type"></a>Tipo de recurso ediscoveryCaseSettings
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém configurações para um caso de Descoberta Eletrônica. Para obter detalhes, consulte [Definir configurações de pesquisa e análise na Descoberta Eletrônica Avançada](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
+Contém configurações para um caso de Descoberta Eletrônica. Para obter detalhes, [consulte Definir configurações de pesquisa e análise na Descoberta Eletrônica (Premium)](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
 
 Herda de [entidade](../resources/entity.md).
 
@@ -32,7 +32,7 @@ Herda de [entidade](../resources/entity.md).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A ID do caso de Descoberta Eletrônica. Herdado da [entidade](../resources/entity.md).|
+|id|String|A ID do caso de Descoberta Eletrônica. Herdado da [entidade](../resources/entity.md).|
 |Ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|As configurações de OCR (Reconhecimento Óptico de Caracteres) para o caso.|
 |redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|As configurações de detecção de redundância (quase duplicados e threading de email) para o caso.|
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|As configurações de Modelagem de Tópico (Temas) para o caso.|

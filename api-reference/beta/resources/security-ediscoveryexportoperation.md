@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 499f019fa9933522b91d9d0f1aeff518e43ff13b
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 14a4d85e2efada576b3e0d8ff9bc0a1bdfe64cf6
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945052"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838623"
 ---
 # <a name="ediscoveryexportoperation-resource-type"></a>Tipo de recurso ediscoveryExportOperation
 
@@ -25,25 +25,43 @@ Herda de [caseOperation](../resources/security-caseoperation.md).
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md)|Cadeia de caracteres| Retorna a URL para a exportação.|
+|[getDownloadUrl](../api/security-ediscoveryexportoperation-getdownloadurl.md)|String| Retorna a URL para a exportação.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ação|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| O tipo de ação que a operação representa. Os valores possíveis são: `addToReviewSet`,`applyTags`,`contentExport`,,`convertToPdf`,`estimateStatistics``purgeData`|
-|azureBlobContainer|Cadeia de caracteres| O nome do local de armazenamento do Azure em que a exportação será armazenada. Isso se aplica somente às exportações armazenadas em seu próprio local de armazenamento do Azure. |
-|azureBlobToken|Cadeia de caracteres| O token SAS para o local de armazenamento do Azure.  Isso se aplica somente às exportações armazenadas em seu próprio local de armazenamento do Azure. |
+|azureBlobContainer|String| O nome do local de armazenamento do Azure em que a exportação será armazenada. Isso se aplica somente às exportações armazenadas em seu próprio local de armazenamento do Azure. |
+|azureBlobToken|String| O token SAS para o local de armazenamento do Azure.  Isso se aplica somente às exportações armazenadas em seu próprio local de armazenamento do Azure. |
 |completedDateTime|DateTimeOffset| A data e a hora em que a exportação foi concluída.|
 |createdBy|[identitySet](../resources/identityset.md)| O usuário que iniciou a operação de exportação.|
 |createdDateTime|DateTimeOffset| A data e a hora em que a exportação foi criada.|
-|descrição|Cadeia de caracteres| A descrição fornecida para a exportação.|
-|Exportoptions|microsoft.graph.ediscovery.exportOptions| As opções fornecidas para a exportação. Para obter mais detalhes, consulte [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Os valores possíveis são: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|microsoft.graph.ediscovery.exportFileStructure|As opções fornecidas que especificam a estrutura da exportação. Para obter mais detalhes, consulte [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Os valores possíveis são: `none`, `directory`, `pst`.|
-|id|Cadeia de caracteres| A ID da operação. Somente leitura. |
-|outputName|Cadeia de caracteres| O nome fornecido para a exportação.|
+|descrição|String| A descrição fornecida para a exportação.|
+|Exportoptions|microsoft.graph.security.exportOptions| As opções fornecidas para a exportação. Para obter mais detalhes, consulte [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Os valores possíveis são: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|microsoft.graph.security.exportFileStructure|As opções fornecidas que especificam a estrutura da exportação. Para obter mais detalhes, consulte [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Os valores possíveis são: `none`, `directory`, `pst`.|
+|id|String| A ID da operação. Somente leitura. |
+|outputName|String| O nome fornecido para a exportação.|
 |percentProgress|Int32| O progresso da operação.|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contém informações de resultado específicas de êxito e falha. Herdado de [caseOperation](../resources/ediscovery-caseoperation.md).|
 |status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| O status da operação de caso. Os possíveis valores são: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+
+### <a name="exportoptions-values"></a>Valores de exportOptions
+
+|Member|Descrição|
+|:----|-----------|
+|originalFiles|Inclua arquivos originais em formato nativo. Por exemplo: docx, xlsx, pptx, doc, xlst, pptm etc.|
+|texto|Inclua texto extraído dos arquivos originais.|
+|pdfReplacement|Substitua o arquivo original pela versão em PDF quando disponível.|
+|Fileinfo|Inclua metadados de arquivos originais em um arquivo de carregamento.|
+|tags|Inclua informações de marca em fileInfo.|
+
+### <a name="exportfilestructure-values"></a>Valores exportFileStructure
+
+|Member|Descrição|
+|:----|-----------|
+|Nenhum|Estrutura de arquivo padrão.|
+|Diretório|Todos os arquivos em uma pasta singe chamada NativeFiles.|
+|Pst|Os emails serão agrupados no formato pst.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

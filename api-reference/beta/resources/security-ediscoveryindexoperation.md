@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 0e730b239a8a6bff053f8716ffccb740a95e8b4c
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 59e90a1a66ee26b12685c6e91cf60c4989d0c377
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945042"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837538"
 ---
 # <a name="ediscoveryindexoperation-resource-type"></a>Tipo de recurso ediscoveryIndexOperation
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o processo de indexação de fontes de dados, incluindo custodiantes e fontes de dados não custodiantes."
+Representa o processo de indexação de fontes de dados, incluindo custodiantes e fontes de dados não custodiantes.
 
 Herda de [caseOperation](../resources/security-caseoperation.md).
 

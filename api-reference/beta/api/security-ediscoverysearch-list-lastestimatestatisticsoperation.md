@@ -1,23 +1,23 @@
 ---
-title: Listar ediscoveryEstimateOperations
+title: Listar lastEstimateStatisticsOperation
 description: Obtenha o último objeto ediscoveryEstimateOperation e suas propriedades.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 9f961f422c542e5b1ab1d8ed175205209d2aecff
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: ec0e32013c9fb2bf7ee77a7903224167b3474365
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440296"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837370"
 ---
-# <a name="list-ediscoveryestimateoperations"></a>Listar ediscoveryEstimateOperations
+# <a name="list-lastestimatestatisticsoperation"></a>Listar lastEstimateStatisticsOperation
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os últimos  [objetos ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) e suas propriedades.
+Obtenha os últimos [objetos ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) e suas propriedades.
 
 >**Nota:** Esse método lista apenas a última operação; ele não retorna um histórico de todas as operações.
 
@@ -26,8 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -53,7 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de [objetos ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [microsoft.graph.security.ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/java/list-ediscoveryestimateoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-ediscoveryestimateoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
+Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

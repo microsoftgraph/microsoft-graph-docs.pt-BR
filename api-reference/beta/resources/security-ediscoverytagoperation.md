@@ -1,23 +1,23 @@
 ---
 title: Tipo de recurso ediscoveryTagOperation
-description: Representa o processo de marcação de arquivos no conjunto de revisão de Descoberta Eletrônica
+description: Representa o processo de marcação de arquivos no conjunto de revisão de Descoberta Eletrônica.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 595db27d0e2ccd44bc88bb3cd9ad53d57f9590cc
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: a0e3ec314a76154f696a727031c55e372865f74f
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945029"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838602"
 ---
 # <a name="ediscoverytagoperation-resource-type"></a>Tipo de recurso ediscoveryTagOperation
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
+Representa o processo de marcação de arquivos no conjunto de revisão de Descoberta Eletrônica.
 
 Herda de [caseOperation](../resources/security-caseoperation.md).
 
@@ -26,7 +26,7 @@ Nenhum.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ação|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| O tipo de ação que a operação representa. Os valores possíveis são: `addToReviewSet`,`applyTags`,`contentExport`,,`convertToPdf`,`estimateStatistics``purgeData`|
+|ação|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| O tipo de ação que a operação representa. Os valores possíveis são: ,,,,, `purgeData``estimateStatistics`.`convertToPdf``contentExport``applyTags``addToReviewSet`|
 |completedDateTime|DateTimeOffset| A data e a hora em que a operação foi concluída. |
 |createdBy|[identitySet](../resources/identityset.md)| O usuário que criou a operação. |
 |createdDateTime|DateTimeOffset| A data e a hora em que a operação foi criada. |

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: d95cdd3dd8f66c2c4de67c8c469281989e839f93
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 1f6c01ecfe63a666a5da2b43be2e9e5dfe472497
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945060"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838651"
 ---
 # <a name="datasource-resource-type"></a>Tipo de recurso dataSource
 
@@ -29,8 +29,8 @@ Nenhum.
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou **o dataSource**.|
 |createdDateTime|DateTimeOffset|A data e a hora em **que a fonte de dados** foi criada.|
 |displayName|String|O nome de exibição **do dataSource**. Esse será o nome do site do SharePoint.|
-|id|String| A ID da **fonte de dados**. Essa não é a ID do site real.|
-|holdStatus|Cadeia de caracteres|O status de retenção do **dataSource**. Os valores possíveis são: `notApplied`, `applied`, `applying`, , `removing``partial`|
+|id|Cadeia de caracteres| A ID da **fonte de dados**. Essa não é a ID do site real.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|O status de retenção do **dataSource**. Os valores possíveis são: `notApplied`, `applied`, `applying`, , `removing``partial`|
 ## <a name="relationships"></a>Relações
 Nenhum
 

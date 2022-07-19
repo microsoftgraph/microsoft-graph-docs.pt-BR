@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a046b8678efefa1350592565aa33fa3da9379fad
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 3384d11a048860df5cbae9bc003203ebd73f3c67
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446641"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838483"
 ---
 # <a name="update-ediscoverysearch"></a>Atualizar ediscoverySearch
 Namespace: microsoft.graph.security
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,14 +51,14 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySea
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |contentQuery|Cadeia de caracteres|A cadeia de caracteres de consulta na consulta KQL (Linguagem de Consulta de Palavra-chave). Para obter detalhes, consulte [consultas de palavra-chave e condições de pesquisa para Pesquisa de Conteúdo e Descoberta Eletrônica](/microsoft-365/compliance/keyword-queries-and-search-conditions).  Você pode refinar pesquisas usando campos emparelhados com valores; por exemplo, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016`.|
-|dataSourceScopes|dataSourceScopes|Quando especificado, a coleção abrangerá um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none`,`allTenantMailboxes`,`allTenantSites`,`allCaseCustodians`,.`allCaseNoncustodialDataSources` **Nota:** Um guardião ou a especificação de dataSourceScope é necessário ao criar uma coleção de origem.|
-|descrição|Cadeia de caracteres|A descrição da **pesquisa de Descoberta Eletrônica**.|
+|dataSourceScopes|microsoft.graph.security.dataSourceScopes|Quando especificado, a coleção abrangerá um serviço para uma carga de trabalho inteira. Os valores possíveis são: `none`,`allTenantMailboxes`,`allTenantSites`,`allCaseCustodians`,.`allCaseNoncustodialDataSources` **Nota:** Um guardião ou a especificação de dataSourceScope é necessário ao criar uma coleção de origem.|
+|descrição|String|A descrição da **pesquisa de Descoberta Eletrônica**.|
 |displayName|String|O nome de exibição da **pesquisa de Descoberta Eletrônica**.|
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `204 No Content` código de resposta e um objeto [ediscoverySearch](../resources/security-ediscoverysearch.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará `204 No Content` um código de resposta e um objeto [microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-ediscoverysearch-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoverysearch-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,8 +104,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,16 +1,16 @@
 ---
 title: Tipo de recurso redundancyDetectionSettings
-description: Configurações de redundância para um caso de Descoberta Eletrônica.
+description: Representa as configurações de redundância para um caso de Descoberta Eletrônica.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 8fcc425c95540552479cfd07b862e5e9ba29e53e
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 3717992dc8cc9d1be843430c0a517f081e9bf220
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945027"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837524"
 ---
 # <a name="redundancydetectionsettings-resource-type"></a>Tipo de recurso redundancyDetectionSettings
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redundância (threading de email e detecção quase duplicada) para um caso de Descoberta Eletrônica.
+Representa as configurações de redundância (threading de email e detecção de duplicatas próximas) para um caso de Descoberta Eletrônica.
 
 
 ## <a name="properties"></a>Propriedades

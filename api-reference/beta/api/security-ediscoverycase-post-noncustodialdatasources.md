@@ -1,23 +1,23 @@
 ---
-title: Criar ediscoveryNoncustodialDataSource
+title: Criar nonCustodialDataSources
 description: Crie um novo objeto ediscoveryNoncustodialDataSource.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5fb5dafb7fac81632697d6822d621a6e5f248ad1
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 36b9823a9c6374827acffec8efd5bd08371770b2
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092885"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837972"
 ---
-# <a name="create-ediscoverynoncustodialdatasource"></a>Criar ediscoveryNoncustodialDataSource
+# <a name="create-noncustodialdatasources"></a>Criar nonCustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo objeto ediscoveryNoncustodialDataSource.
+Crie um novo [objeto ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,13 +51,14 @@ Você pode especificar as propriedades a seguir ao criar **um ediscoveryNoncusto
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Datasource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Obrigatório. Um userSource ou siteSource. Para userSource, use "dataSource": { "@odata.type": "microsoft.graph.security.userSource", "email" : "Endereço SMTP"}.  Para a fonte do site, use "dataSource": { "@odata.type": "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }, em que siteId pode ser derivado da URL do site, `https://contoso.sharepoint.com/sites/HumanResources`por exemplo, a solicitação do Microsoft Graph seria `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. A ID é o primeiro GUID listado no campo ID. Como alternativa, use a webUrl diretamente, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
+|Datasource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Obrigatório. Um [microsoft.graph.security.userSource](../resources/security-usersource.md) ou [microsoft.graph.security.siteSource](../resources/security-sitesource.md).
 
-
+Para userSource, use "dataSource": { "@odata.type": "microsoft.graph.security.userSource", "email" : "Endereço SMTP"}.  
+Para siteSource use "dataSource": { "@odata.type": "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }, como alternativa, use o webUrl diretamente, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `201 Created` um código de resposta [e um objeto ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) no corpo da resposta.
+Se tiver êxito, este `201 Created` método retornará um código de resposta e um objeto [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -95,7 +96,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverynoncustodialdatasource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverynoncustodialdatasource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,7 +105,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
+Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

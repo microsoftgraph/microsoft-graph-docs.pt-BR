@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 7482e31ab1a43cf4c60e7c211acb38d8cac42bfa
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: f90a527ec47cc6b9e14e536a4f8da4841d6504c8
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945059"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838644"
 ---
 # <a name="datasourcecontainer-resource-type"></a>Tipo de recurso dataSourceContainer
 
@@ -27,13 +27,32 @@ Nenhum.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|holdStatus|String|O status de retenção do dataSourceContainer.Os valores possíveis são: `notApplied`, `applied`, `applying`, , `removing``partial`|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|O status de retenção do dataSourceContainer.Os valores possíveis são: `notApplied`, `applied`, `applying`, , `removing``partial`|
 |createdDateTime|DateTimeOffset|Data e hora criadas da entidade dataSourceContainer.|
 |displayName|Cadeia de caracteres|Nome de exibição da entidade dataSourceContainer.|
-|id|Cadeia de caracteres|Identificador exclusivo do dataSourceContainer. Herdado da [entidade](../resources/entity.md)|
+|id|String|Identificador exclusivo do dataSourceContainer. Herdado da [entidade](../resources/entity.md)|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do dataSourceContainer.|
 |releasedDateTime|DateTimeOffset|Data e hora em que o dataSourceContainer foi liberado do caso.|
-|status|String|Status mais recente do dataSourceContainer. Os valores possíveis são: `Active`, `Released`.|
+|status|microsoft.graph.security.dataSourceContainerStatus|Status mais recente do dataSourceContainer. Os valores possíveis são: `Active` e `Released`.|
+
+
+### <a name="datasourcecontainerstatus-values"></a>Valores de dataSourceContainerStatus
+
+|Member|Descrição|
+|:----|-----------|
+| Ativo| O contêiner de fonte de dados está ativo.|
+| Lançamento | O contêiner de fonte de dados foi liberado.|
+
+### <a name="datasourceholdstatus-values"></a>Valores de dataSourceHoldStatus
+
+|Member|Descrição|
+|:----|-----------|
+| notApplied | O contêiner da fonte de dados não está em espera.|
+| Aplicado | O contêiner da fonte de dados está em espera.|
+| Aplicação | O contêiner de fonte de dados está aplicando o estado de retenção (operação applyHold disparada).|
+| Remover | O contêiner de fonte de dados está removendo o estado de retenção (operação removeHold disparada).|
+| Parcial | O contêiner de fonte de dados está em estado misto em que algumas fontes estão em espera e outras não estão em retenção ou estado de erro.|
+
 
 ## <a name="relationships"></a>Relações
 Nenhum

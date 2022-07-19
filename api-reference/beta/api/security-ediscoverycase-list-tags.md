@@ -1,31 +1,31 @@
 ---
-title: Listar ediscoveryReviewTag
+title: Listar marcas
 description: Obtenha a lista de objetos ediscoveryReviewTag de um objeto de caso de Descoberta Eletrônica.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ccdaf7d79d08e083edbbadc15be6bf73ccb2addf
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: a2c5911c7f087c9fcec31a0f6949b2d795a8979d
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439414"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837566"
 ---
-# <a name="list-ediscoveryreviewtag"></a>Listar ediscoveryReviewTag
+# <a name="list-tags"></a>Listar marcas
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo objeto ediscoveryReviewTag.
+Obtenha uma lista de [objetos eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -47,7 +47,8 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `200 OK`.
+Se bem-sucedido, este método `200 OK` retorna um código de resposta e uma coleção de [objetos microsoft.graph.security.ediscoveryreviewtag](../resources/security-ediscoveryreviewtag.md) no corpo da resposta.
+
 ## <a name="examples"></a>Exemplos
 
 ### <a name="request"></a>Solicitação
@@ -74,7 +75,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ceb
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewtag-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,7 +88,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ceb
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
+Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

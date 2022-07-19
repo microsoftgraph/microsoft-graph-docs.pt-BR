@@ -1,8 +1,17 @@
 ---
-título: "tipo de recurso siteSource": ""O contêiner de um site associado a um custodiante".
-author: "SeunginLyu" ms.localizationpriority: medium ms.prod: "ediscovery" doc_type: resourcePageType
+title: Tipo de recurso siteSource
+description: O contêiner de um site associado a um guardião.
+author: SeunginLyu
+ms.localizationpriority: medium
+ms.prod: ediscovery
+doc_type: resourcePageType
+ms.openlocfilehash: 0dd23c703ef63c11da357ac6db0d0dfdc73a5212
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837531"
 ---
-
 # <a name="sitesource-resource-type"></a>Tipo de recurso siteSource
 
 Namespace: microsoft.graph.security
@@ -10,7 +19,7 @@ Namespace: microsoft.graph.security
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 O contêiner de um site associado a um guardião.
 
-IInherits de [dataSource](../resources/security-datasource.md).
+Herda de [dataSource](../resources/security-datasource.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -20,9 +29,9 @@ Nenhum.
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|O usuário que criou **o siteSource**.|
 |createdDateTime|DateTimeOffset|A data e a hora em **que o siteSource** foi criado.|
-|displayName|String|O nome de exibição **do siteSource**. Esse será o nome do site do SharePoint.|
-|id|Cadeia de caracteres| A ID do **siteSource**. A origem do site pode ser recuperada a qualquer momento com [Get site](../api/site-get.md) - https://graph.microsoft.com/v1.0/sites/{siteId}|
-|holdStatus|String|O status de retenção do **siteSource**. Os valores possíveis são: `notApplied`, `applied`, `applying`, , `removing``partial`|
+|displayName|Cadeia de caracteres|O nome de exibição **do siteSource**. Esse será o nome do site do SharePoint.|
+|id|String| A ID do **siteSource**. |
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|O status de retenção do **siteSource**. Os valores possíveis são: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -35,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.siteSource",
-  "baseType": "microsoft.graph.ediscovery.dataSource",
+  "baseType": "microsoft.graph.security.dataSource",
   "openType": false
 }
 -->

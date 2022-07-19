@@ -4,12 +4,12 @@ description: Saiba como a rede do Microsoft Graph e os serviços e recursos do M
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 63e7235dc8e5c2cbc3690774f6bde086aa0d6391
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 44c013d3a166f803c8c0df35bd82eecd513055d4
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094225"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837706"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -93,7 +93,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Integração de segurança | Azure AD Identity Protection, Proteção de Informações do Azure, Central de Segurança do Azure, Microsoft Defender for Cloud Apps, Windows Defender Proteção Avançada contra Ameaças e [mais](/graph/api/resources/security-api-overview) | Fornece um gateway unificado para insights e ações de segurança em todos os parceiros da Microsoft e do ecossistema. | [Segurança no Microsoft Graph](security-concept-overview.md) |
-| Descoberta Eletrônica (versão prévia) | Descoberta Eletrônica do Microsoft Purview (Premium) | Fornece acesso aos recursos de descoberta eletrônica usados no processo de identificação e entrega de informações eletrônicas que podem ser usadas como evidência em casos legais.|[Segurança no Microsoft Graph](security-concept-overview.md)|
+| Descoberta eletrônica | Descoberta Eletrônica do Microsoft Purview (Premium) | Fornece acesso aos recursos de descoberta eletrônica usados no processo de identificação e entrega de informações eletrônicas que podem ser usadas como evidência em casos legais.|[Segurança no Microsoft Graph](security-concept-overview.md)|
 
 ## <a name="cross-device-experiences"></a>Experiências entre dispositivos
 

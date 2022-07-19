@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f489128a7e4c666827e669a08bbcc6f3846f3c62
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: eb001e518abdbfb0044b0e657b0ea7cc61bb9604
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440429"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837405"
 ---
 # <a name="create-ediscoveryreviewsetquery"></a>Criar ediscoveryReviewSetQuery
 Namespace: microsoft.graph.security
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,13 +52,13 @@ Você pode especificar as propriedades a seguir ao criar **um ediscoveryReviewSe
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome da consulta. Obrigatório.|
-|contentQuery|String|A consulta KQL para o conjunto de revisão. [Saiba mais.](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|contentQuery|Cadeia de caracteres|A consulta KQL para o conjunto de revisão. Para obter detalhes, [consulte Consultar e filtrar conteúdo em um conjunto de revisão](/microsoft-365/compliance/review-set-search).|
 
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta [e um objeto ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -92,7 +92,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewsetquery-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewsetquery-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -105,7 +105,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
+Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",

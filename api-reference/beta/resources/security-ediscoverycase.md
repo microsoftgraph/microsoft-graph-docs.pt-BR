@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 6bb5c8777afb87523d2e939d7c1665288e5c27fd
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 0c50d528d67ad4757c8f6b25c7f70b4757540008
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945058"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837818"
 ---
 # <a name="ediscoverycase-resource-type"></a>Tipo de recurso ediscoveryCase
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No contexto da Descoberta Eletrônica, contém custodiantes, retenções, pesquisas, conjuntos de revisão e exportações. Para obter detalhes, [consulte Visão geral da Descoberta Eletrônica do Microsoft Purview (Premium)](/microsoft-365/compliance/overview-ediscovery-20).
+No contexto da Descoberta Eletrônica, contém custodiantes, retenções, pesquisas, conjuntos de revisão e exportações. Para obter detalhes, [consulte Visão geral Descoberta Eletrônica do Microsoft Purview (Premium)](/microsoft-365/compliance/overview-ediscovery-20).
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
@@ -27,7 +27,7 @@ No contexto da Descoberta Eletrônica, contém custodiantes, retenções, pesqui
 |[Criar ediscoveryCase](../api/security-casesroot-post-ediscoverycases.md)|[microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md)|Crie um novo [objeto ediscoveryCase](../resources/security-ediscoverycase.md) .|
 |[Obter ediscoveryCase](../api/security-ediscoverycase-get.md)|[microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md)|Leia as propriedades e as relações de [um objeto ediscoveryCase](../resources/security-ediscoverycase.md) .|
 |[Atualizar ediscoveryCase](../api/security-ediscoverycase-update.md)|[microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md)|Atualize as propriedades de [um objeto ediscoveryCase](../resources/security-ediscoverycase.md) .|
-|[Excluir ediscoveryCase](../api/security-casesroot-delete-ediscoverycases.md)|Nenhum|Exclui um [objeto ediscoveryCase](../resources/security-ediscoverycase.md) .|
+|[Excluir ediscoveryCase](../api/security-casesroot-delete-ediscoverycases.md)|Nenhum|[Exclua um objeto ediscoveryCase](../resources/security-ediscoverycase.md).|
 |[Listar custodiantes](../api/security-ediscoverycase-list-custodians.md)|[coleção microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Obtenha os recursos de ediscoveryCustodian da propriedade de navegação dos custodiantes.|
 |[Criar ediscoveryCustodian](../api/security-ediscoverycase-post-custodians.md)|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md)|Crie um novo objeto ediscoveryCustodian.|
 |[Listar legalHolds](../api/security-ediscoverycase-list-legalholds.md)|[coleção microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Obtenha os recursos de ediscoveryHoldPolicy da propriedade de navegação legalHolds.|
@@ -49,13 +49,13 @@ No contexto da Descoberta Eletrônica, contém custodiantes, retenções, pesqui
 |closedDateTime|DateTimeOffset|A data e a hora em que o caso foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|O usuário que criou o caso.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a entidade foi criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|descrição|Cadeia de caracteres|A descrição do caso.|
-|displayName|Cadeia de caracteres|O nome do caso.|
+|descrição|String|A descrição do caso.|
+|displayName|String|O nome do caso.|
 |externalId|Cadeia de caracteres|O número de caso externo para referência de cliente.|
-|id|Cadeia de caracteres|A ID do caso de Descoberta Eletrônica. Somente leitura. |
+|id|String|A ID do caso de Descoberta Eletrônica. Somente leitura. |
 |lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|O último usuário que modificou o caso.
 |lastModifiedDateTime|DateTimeOffset|A data e a hora mais recentes em que o caso foi modificado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`|
-|status|Cadeia de caracteres|O status do caso. Os valores possíveis `unknown`são , `active``pendingDelete`, `closing`, `closed`e `closedWithError`. Para obter detalhes, consulte a tabela a seguir.
+|status|microsoft.graph.security.caseStatus|O status do caso. Os valores possíveis `unknown`são , `active``pendingDelete`, `closing`, `closed`e `closedWithError`. Para obter detalhes, consulte a tabela a seguir.
 
 ### <a name="casestatus-values"></a>valores caseStatus
 
@@ -78,7 +78,7 @@ No contexto da Descoberta Eletrônica, contém custodiantes, retenções, pesqui
 |reviewSets|[coleção microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|Retorna uma lista de **objetos eDiscoveryReviewSet** no caso.|
 |Pesquisas|[coleção microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|Retorna uma lista de **objetos eDiscoverySearch** associados a esse caso.|
 |settings|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Retorna uma lista de **objetos eDIscoverySettings** no caso.|
-|categorias|[coleção microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Retorna uma lista de **objetos ediscoveryReviewTag** associados a esse caso.|
+|tags|[coleção microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|Retorna uma lista de **objetos ediscoveryReviewTag** associados a esse caso.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

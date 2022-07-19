@@ -1,23 +1,23 @@
 ---
-title: Adicionar ediscoveryNoncustodialDataSource
-description: Adicione noncustodialSources postando na coleção noncustodialSources.
+title: Adicionar noncustodialDataSources
+description: Crie uma nova fonte não custodiante associada a uma pesquisa de Descoberta Eletrônica.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3e1ab04b0f01df80fab3566f4fea7e801c71ab04
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: fd124f907a2d73edc94ec031dd9e179bbde5d282
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66096305"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837643"
 ---
-# <a name="add-ediscoverynoncustodialdatasource"></a>Adicionar ediscoveryNoncustodialDataSource
+# <a name="add-add-noncustodialdatasources"></a>Adicionar Add noncustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione noncustodialSources postando na coleção noncustodialSources.
+Crie uma nova fonte não custodiante associada a [uma pesquisa de Descoberta Eletrônica](../resources/security-ediscoverysearch.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -51,12 +51,12 @@ Você pode especificar as propriedades a seguir ao criar **um ediscoveryNoncusto
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|@odata.id|Cadeia de caracteres|Cadeia de caracteres que define o objeto não custodiante. Vejo o exemplo a seguir.|
+|@odata.id|String|Cadeia de caracteres que define o objeto não custodiante. Vejo o exemplo a seguir.|
 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna `204 No Content` um código de resposta [e um objeto ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="examples"></a>Exemplos
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverynoncustodialdatasource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverynoncustodialdatasource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,8 +98,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true

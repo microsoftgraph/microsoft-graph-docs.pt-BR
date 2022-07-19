@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1a25eff61ef247e6a8b0b0e8aa6f0c6e367ec71b
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f70b57cafece8f59de3cf15c8f8e37d1a4df75d9
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447265"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838757"
 ---
 # <a name="update-ediscoverycasesettings"></a>Atualizar ediscoveryCaseSettings
 Namespace: microsoft.graph.security
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|eDiscovery.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -50,9 +50,9 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|**TODO: Adicionar Descrição** Opcional.|
-|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|**TODO: Adicionar Descrição** Opcional.|
-|Ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|**TODO: Adicionar Descrição** Opcional.|
+|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Redundância (threading de email e detecção quase duplicada) para um caso de Descoberta Eletrônica. Opcional.|
+|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Configurações de modelagem de tópico (Temas) para um caso de Descoberta Eletrônica. Opcional.|
+|Ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|As configurações de OCR (Reconhecimento Óptico de Caracteres) para o caso de Descoberta Eletrônica. Opcional.|
 
 
 
@@ -100,7 +100,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-ediscoverycasesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoverycasesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -113,8 +113,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

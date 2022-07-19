@@ -1,23 +1,23 @@
 ---
-title: Listar ediscoveryNoncustodialDataSource
-description: Obtenha uma lista do objeto ediscoveryNoncustodialDataSource.
+title: Listar ediscoveryNoncustodialDataSources
+description: Obtenha uma lista de objetos ediscoveryNoncustodialDataSource.
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8980c82c2f553af5c585c82a4648ca22feaf6437
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: e1a49e58687c5cafb16eb7e11ebd495a395b60da
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092273"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838343"
 ---
-# <a name="list-ediscoverynoncustodialdatasource"></a>Listar ediscoveryNoncustodialDataSource
+# <a name="list-ediscoverynoncustodialdatasources"></a>Listar ediscoveryNoncustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista dos [objetos de fontes de](../resources/security-ediscoverynoncustodialdatasource.md) dados não custodiais e suas propriedades.
+Obtenha uma lista das [fontes de dados não custodiais](../resources/security-ediscoverynoncustodialdatasource.md) e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método `200 OK` retorna um código de resposta e uma coleção de  [objeto ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) no corpo da resposta.
+Se tiver êxito, este `200 OK` método retornará um código de resposta e uma coleção do objeto [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverynoncustodialdatasource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverynoncustodialdatasource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>Resposta
-A seguir está um exemplo da resposta
+Este é um exemplo de resposta.
 >**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade.
 <!-- {
   "blockType": "response",
