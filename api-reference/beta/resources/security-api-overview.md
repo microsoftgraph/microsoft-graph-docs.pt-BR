@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: f8efa4a80cf754de11eddf7777a2548fc617fc05
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 62e721ba3cfb87e7f3c4dea0975031af5f228a2a
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65944861"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838665"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -112,6 +112,9 @@ A seguir, há algumas das solicitações mais populares para trabalhar com a API
 |Listar simulações|[Listar simulações](../api/attacksimulationroot-list-simulations.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Obter o relatório de visão geral da simulação|[Obter o relatório de visão geral da simulação](../api/simulationreportoverview-get.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/overview&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Listar os relatório dos usuários de simulação|[Listar os relatório dos usuários de simulação](../api/usersimulationdetails-list.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/simulationUsers](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/simulationUsers&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Descoberta eletrônica**|||
+|Listar casos de Descoberta Eletrônica|[Listar eDiscoveryCases](../api/security-casesroot-list-ediscoverycases.md)|[https://graph.microsoft.com/beta/security/cases/eDiscoveryCases](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Listar operações de caso de Descoberta Eletrônica|[Listar caseOperations](../api/security-ediscoverycase-list-operations.md)|[https://graph.microsoft.com/beta/security/cases/eDiscoverycases/{id}/operations](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases%2F%7Bid%7D%2Foperations&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Classificações de segurança**|||
 |Listar classificações de segurança|[Listar secureScores](../api/securescores-list.md)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Perfis de controle da classificação de segurança**|||
