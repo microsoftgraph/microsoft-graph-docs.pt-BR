@@ -5,18 +5,16 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ad4cb5d1031c3c8f30e014ad99de01255e737937
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5024de8d0788e0e3c02975105826813369d8dae8
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334328"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855977"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
 Namespace: microsoft.graph
-
-
 
 No Microsoft Teams, uma equipe é um conjunto de objetos de [canal](channel.md).
 Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
@@ -86,9 +84,10 @@ Para um exemplo de solicitação POST, confira [Solicitação (criar equipe no e
 |channels|Coleção [channel](channel.md)|A coleção de canais e mensagens associadas à equipe.|
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nessa equipe.|
 |members|coleção [conversationMember](../resources/conversationmember.md)|Membros e proprietários da equipe.|
-|operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. | 
-|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| O canal geral da equipe. | 
+|operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. |
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| O canal geral da equipe. |
 |Cronograma|[Cronograma](schedule.md)| Cronograma de turno para essa equipe.|
+|photo|[profilePhoto](../resources/profilephoto.md)| A foto de perfil da equipe. |
 |template|[teamsTemplate](teamstemplate.md)| O modelo do qual essa equipe foi criada. Consulte [modelos disponíveis](/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -132,4 +131,3 @@ Veja a seguir uma representação JSON do recurso.
 - [Usar o API do Microsoft Graph para trabalhar com o Microsoft Teams](teams-api-overview.md)
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
 - [Listar todas as equipes](/graph/teams-list-all-teams)
-

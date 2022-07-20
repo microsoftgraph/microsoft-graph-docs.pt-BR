@@ -1,17 +1,17 @@
 ---
 title: Adicionar dados personalizados aos recursos usando extensões
-description: Você pode estender Microsoft Graph com seus próprios dados de aplicativo. Adicione propriedades personalizadas aos recursos do Microsoft Graph sem a necessidade de um repositório de dados externos.
+description: Você pode estender Microsoft Graph com seus próprios dados de aplicativo. Adicione propriedades personalizadas para armazenar dados personalizados em recursos do Microsoft Graph sem exigir um armazenamento de dados externo.
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: fca4c70795f06007b7d51bfaa2ccad6968fd9d16
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: a7d2a2eeba27877afe5c1aba4fbc416ad10d48c9
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554894"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856110"
 ---
-# <a name="add-custom-properties-to-resources-using-extensions"></a>Adicionar dados personalizados a recursos usando extensões
+# <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados aos recursos usando extensões
 
 O Microsoft Graph fornece um único ponto de extremidade de API para acessar dados e insights avançados centrados em pessoas através de recursos, como [usuário](/graph/api/resources/user) e [mensagem](/graph/api/resources/message). Você também pode estender o Microsoft Graph adicionando propriedades personalizadas a instâncias de recursos sem a necessidade de um armazenamento de dados externo.
 
@@ -475,12 +475,10 @@ As mesmas [permissões](./permissions-reference.md) necessárias para ler ou gra
 
 Nas limitações conhecidas usando extensões, veja a [seção extensões](known-issues.md#extensions) no artigo problemas conhecidos.
 
-## <a name="see-also"></a>Confira também
+## <a name="next-steps"></a>Próximas etapas
 
-- [Adicionar propriedades personalizadas aos usuários usando extensões abertas](extensibility-open-users.md)
-- [Adicionar propriedades personalizadas a grupos usando as extensões do esquema](extensibility-schema-groups.md)
-- [Domínios do Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [Adicionando e verificando um domínio para um locatário do Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](extensibility-open-users.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility-schema-groups.md)
 
 
 <!-- Links -->

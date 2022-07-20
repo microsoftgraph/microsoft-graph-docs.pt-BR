@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: ed1f58f3243a0abc433b2407f61d04077469f896
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 937f1c18efe074a0fdec3dc02b31f393dd6ca40c
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133689"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855621"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>Trabalhar com relatórios de uso do Microsoft 365 no Microsoft Graph
 
@@ -23,6 +23,10 @@ Para obter detalhes sobre as configurações que regem a identificação/des ide
 ## <a name="authorization"></a>Autorização
 
 O Microsoft Graph controla o acesso a recursos por meio de permissões. Você deve especificar as permissões necessárias para acessar os recursos dos Relatórios. Normalmente, você deve especificar permissões no portal do Azure Active Directory (Azure AD). Para saber mais, veja [Referência de permissões do Microsoft Graph](/graph/permissions-reference) e[Permissões de relatórios](/graph/permissions-reference#reports-permissions).
+
+## <a name="settings"></a>Settings
+
+Nos relatórios do Microsoft 365, as informações do usuário, como nomes de usuário, grupos e sites, são ocultadas; os valores reais não são exibidos. Você pode usar a API [adminReportSettings ](../resources/adminreportsettings.md) para controlar a exibição de informações do usuário nos relatórios.
 
 ## <a name="cloud-deployments"></a>Implantações na nuvem
 

@@ -857,6 +857,9 @@ items:
           - name: Erros
             href: errors.md
             displayName: Microsoft Graph error responses and error resource types
+          - name: Limites de serviço do Azure AD
+            displayName: Azure AD service limits and restrictions
+            href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
       - name: Referência da API v1.0
         href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
         displayName: Microsoft Graph REST API v1.0 reference
