@@ -4,12 +4,12 @@ description: Saiba como a rede do Microsoft Graph e os serviços e recursos do M
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 44c013d3a166f803c8c0df35bd82eecd513055d4
-ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.openlocfilehash: 3b9a6813acd90b39ed19df45f6807e1f79195ee5
+ms.sourcegitcommit: d6d36ffd02bfd925343b11ab11dd735b3193740b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "66837706"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66883088"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -56,7 +56,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Pastas de trabalho e gráficos | Excel | Permite que os usuários usem planilhas do Excel para fazer cálculos complexos, rastrear, analisar e visualizar dados e gerar relatórios profissionais. | [Visão geral de gráficos e pastas de trabalho do Excel](excel-concept-overview.md) |
 | Tarefas pendentes | To Do | Permite aos usuários gerenciar suas tarefas pessoais em todo seu trabalho e na sua vida pessoal. Ele também está integrado ao Outlook, Equipes, Planner e Cortana, o que o torna o único destino para as tarefas pessoais do usuário no Microsoft 365. | [Visão geral sobre tarefas To Do](todo-concept-overview.md) |
 
-## <a name="collaboration"></a>Colaboração
+## <a name="collaboration-and-employee-learning"></a>Colaboração e aprendizado dos funcionários
 
 <!-- Want to update links to concept overviews as they are created over time. 
 -->
@@ -66,6 +66,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 | Sites e listas  | SharePoint | Plataforma baseada na Web para usuários e grupos do Microsoft 365 compartilharem, organizarem, gerenciarem e descobrirem conteúdo (incluindo listas, arquivos e anotações). | [Visão geral do conteúdo e sites do SharePoint](sharepoint-concept-overview.md) | 
 |Tarefas e planos | Planner | Permite que os usuários dos grupos do Microsoft 365 criem planos, atribuam tarefas e acompanhem o progresso. | [Visão geral de tarefas e planos do Planner](planner-concept-overview.md) |
 |Trabalho em equipe |  Microsoft Teams | O hub digital e espaço de trabalho baseado em bate-papo para as equipes compartilharem arquivos, observações, calendários e planos. | [Visão geral do trabalho em equipe do Microsoft Teams](teams-concept-overview.md) |
+| Aprendizado do funcionário | Aprendizagem do Viva | Capacita os funcionários a tornar o aprendizado uma parte natural do dia, trazendo o aprendizado para o fluxo de trabalho dentro das ferramentas e plataformas do Microsoft 365 que eles já usam. Descubra, compartilhe e acompanhe o aprendizado em uma variedade de fontes a partir de um Centro de aprendizagem no Microsoft Teams.  | [Permitir o aprendizado dos funcionários usando os recursos colaborativos no Teams](teams-concept-overview.md#enable-employee-learning-using-the-collaborative-capabilities-in-teams) |
 
 ## <a name="people-and-workplace-intelligence"></a>Inteligência de pessoas e no local de trabalho
 

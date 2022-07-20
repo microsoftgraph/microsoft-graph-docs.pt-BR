@@ -4,12 +4,12 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 396986fb8519a8bf36c3dbab4827ca9103032915
-ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
+ms.openlocfilehash: f71c850321addb0c92e5dd6aec45855cc474d8a4
+ms.sourcegitcommit: d6d36ffd02bfd925343b11ab11dd735b3193740b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66698049"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66883074"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph
 
@@ -896,6 +896,28 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 * _EduRoster.ReadBasic_: aulas de que um usuário conectado participa como aluno ou professor (`GET /education/classes/{id}/members`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+
+---
+
+## <a name="employee-learning-permissions"></a>Permissões de aprendizagem dos funcionários
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LearningContent.Read.All_ |    Ler o conteúdo de aprendizagem | Permite que o aplicativo leia o conteúdo de aprendizagem no diretório da organização, em nome do usuário conectado. | Sim | Não |
+| _LearningContent.ReadWrite.All_  |    Gerenciar o conteúdo de aprendizagem | Permite que o aplicativo gerencie todo o conteúdo de aprendizagem no diretório da organização, em nome do usuário conectado. | Sim | Não |
+| _LearningProvider.Read_ |    Ler o provedor de aprendizagem | Permite que o aplicativo leia os dados para o provedor de aprendizado no diretório da organização, em nome do usuário conectado. | Sim | Não |
+| _LearningProvider.ReadWrite_  |    Gerenciar o provedor de aprendizagem | Permite que o aplicativo crie, atualize, leia e exclua dados para o provedor de aprendizado no diretório da organização, em nome do usuário conectado. | Sim | Não |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LearningContent.Read.All_ |    Ler o conteúdo de aprendizagem | Permite que o aplicativo leia todo o conteúdo de aprendizagem no diretório da organização, sem um usuário conectado. | Sim | Não |
+| _LearningContent.ReadWrite.All_  |    Gerenciar o conteúdo de aprendizagem | Permite que o aplicativo gerencie todo o conteúdo de aprendizagem no diretório da organização, sem um usuário conectado. | Sim | Não |
+
 
 ---
 

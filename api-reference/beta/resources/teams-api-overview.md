@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: ea2cee219628415158c3f625a5cdd376d5fd1bd7
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: fe1d1da1ddf03a3b25a206c380f6ce9b6886650e
+ms.sourcegitcommit: d6d36ffd02bfd925343b11ab11dd735b3193740b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685212"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66883081"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 
@@ -22,22 +22,24 @@ O Microsoft Teams é um espaço de trabalho baseado em chat no Microsoft 365 que
 
 | Resource | Métodos |
 |:---------------|:--------|
-|[team](../resources/team.md)| [Listar suas equipes](../api/user-list-joinedteams.md), [listar todas](/graph/teams-list-all-teams) as equipes, listar as [equipes](../api/associatedteaminfo-list.md) associadas[, criar](../api/team-put-teams.md)[, ler](../api/team-get.md)[, atualizar](../api/team-update.md), [excluir](../api/group-delete.md), [clonar](../api/team-clone.md)[,](../api/team-archive.md) [arquivar, unarquivar](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Adicionar membro](../api/group-post-members.md),  [remover membro](../api/group-delete-members.md), [adicionar proprietário](../api/group-post-owners.md),  [remover proprietário](../api/group-delete-owners.md), [obter arquivos](drive.md), [obter bloco de anotações](../resources/notebook.md), [obter planos](plannergroup.md), [obter calendário](event.md) |
-|[channel](../resources/channel.md)|[Listar](../api/channel-list.md), [criar](../api/channel-post.md), [ler](../api/channel-get.md), [atualizar](../api/channel-patch.md), [excluir](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[Listar](../api/channel-list-tabs.md), [criar](../api/channel-post-tabs.md), [ler](../api/channel-get-tabs.md), [atualizar](../api/channel-patch-tabs.md), [excluir](../api/channel-delete-tabs.md) |
-|[teamsApp](../resources/teamsapp.md)|[Listar](../api/appcatalogs-list-teamsapps.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/team-list-installedapps.md), [instalar](../api/team-post-installedapps.md), [atualizar](../api/team-delete-installedapps.md), [remover](../api/team-delete-installedapps.md) |
-|[chatMessage](../resources/chatmessage.md)| [Listar no canal](../api/channel-list-messages.md), [listar no chat](../api/chat-list-messages.md), [enviar](../api/chatmessage-post.md), [ler no canal](../api/chatmessage-get.md), [ler no chat](../api/chatmessage-get.md)|
-|[chat](../resources/chat.md)| [Listar](../api/chat-list.md), [ler](../api/chat-get.md),
+|[team](../resources/team.md)| [Listar suas equipes](../api/user-list-joinedteams.md), [listar todas as equipes](/graph/teams-list-all-teams), [listar as equipes associadas ](../api/associatedteaminfo-list.md), [criar](../api/team-put-teams.md), [ler](../api/team-get.md), [atualizar](../api/team-update.md), [excluir](../api/group-delete.md), [clonar](../api/team-clone.md), [arquivar](../api/team-archive.md), [ desarquivar](../api/team-unarchive.md) |
 |[chamada](../resources/call.md)| [Responder](../api/call-answer.md), [rejeitar](../api/call-reject.md), [redirecionar](../api/call-redirect.md), [silenciar](../api/call-mute.md), [não silenciar](../api/call-unmute.md), [alterar função de compartilhamento de tela](../api/call-changescreensharingrole.md), [lista de participantes](../api/call-list-participants.md), [convidar participantes](../api/participant-invite.md), [silenciar todos os participantes](../api/participant-muteall.md) |
+|[canal](../resources/channel.md)|[Listar](../api/channel-list.md), [criar](../api/channel-post.md), [obter](../api/channel-get.md), [atualizar](../api/channel-patch.md), [excluir](../api/channel-delete.md)|
+|[chat](../resources/chat.md)| [Listar](../api/chat-list.md), [ler](../api/chat-get.md)
+|[chatMessage](../resources/chatmessage.md)| [Listar no canal](../api/channel-list-messages.md), [listar no chat](../api/chat-list-messages.md), [enviar](../api/chatmessage-post.md), [ler no canal](../api/chatmessage-get.md), [ler no chat](../api/chatmessage-get.md)|
+|[group](../resources/group.md)| [Adicionar membro](../api/group-post-members.md),  [remover membro](../api/group-delete-members.md), [adicionar proprietário](../api/group-post-owners.md),  [remover proprietário](../api/group-delete-owners.md), [obter arquivos](drive.md), [obter bloco de anotações](../resources/notebook.md), [obter planos](plannergroup.md), [obter calendário](event.md) |
+|[learningContent](learningcontent.md) | [Listar](../api/learningprovider-list-learningcontents.md), [Obter](../api/learningcontent-get.md), [Atualizar](../api/learningcontent-update.md), [Excluir](../api/learningprovider-delete-learningcontents.md) |
+|[learningProvider](learningprovider.md) | [Listar](../api/employeeexperience-list-learningproviders.md), [Criar](../api/employeeexperience-post-learningproviders.md), [Obter](../api/learningprovider-get.md), [Atualizar](../api/learningprovider-update.md), [Excluir](../api/employeeexperience-delete-learningproviders.md) |
 |[cronograma](../resources/schedule.md)| [Criar ou substituir](../api/team-put-schedule.md), [obter](../api/schedule-get.md), [compartilhar](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Criar](../api/schedule-post-schedulinggroups.md), [listar](../api/schedule-list-schedulinggroups.md), [obter](../api/schedulinggroup-get.md), [substituir](../api/schedulinggroup-put.md), [excluir](../api/schedulinggroup-delete.md) |
 |[shift](../resources/shift.md)| [Criar](../api/schedule-post-shifts.md), [listar](../api/schedule-list-shifts.md), [obter](../api/shift-get.md), [substituir](../api/shift-put.md), [excluir](../api/shift-delete.md) |
-|[timeOff](../resources/timeoff.md)| [Criar](../api/schedule-post-timesoff.md), [listar](../api/schedule-list-timesoff.md), [obter](../api/timeoff-get.md), [substituir](../api/timeoff-put.md), [excluir](../api/timeoff-delete.md) |
-|[timeOffReason](../resources/timeoffreason.md)| [Criar](../api/schedule-post-timeoffreasons.md), [listar](../api/schedule-list-timeoffreasons.md), [obter](../api/timeoffreason-get.md), [substituir](../api/timeoffreason-put.md), [excluir](../api/timeoffreason-delete.md) |
 |[marcar](../resources/teamworkTag.md)|[Listar](../api/teamworkTag-list.md), [criar](../api/teamworkTag-post.md), [obter](../api/teamworkTag-get.md), [atualizar](../api/teamworkTag-update.md), [excluir](../api/teamworkTag-delete.md)|
 |[tagMember](../resources/teamworkTagMember.md)|[Listar](../api/teamworkTagMember-list.md), [criar](../api/teamworkTagMember-post.md), [obter](../api/teamworkTagMember-get.md), [excluir](../api/teamworkTagMember-delete.md)|
+|[teamsApp](../resources/teamsapp.md)|[Listar](../api/appcatalogs-list-teamsapps.md), [publicar](../api/teamsapp-publish.md), [atualizar](../api/teamsapp-update.md), [remover](../api/teamsapp-delete.md)|
+|[teamsAppInstallation](../resources/teamsappinstallation.md)| [Listar](../api/team-list-installedapps.md), [instalar](../api/team-post-installedapps.md), [atualizar](../api/team-delete-installedapps.md), [remover](../api/team-delete-installedapps.md) |
+|[teamsTab](../resources/teamstab.md) |[Listar](../api/channel-list-tabs.md), [criar](../api/channel-post-tabs.md), [ler](../api/channel-get-tabs.md), [atualizar](../api/channel-patch-tabs.md), [excluir](../api/channel-delete-tabs.md) |
+|[timeOff](../resources/timeoff.md)| [Criar](../api/schedule-post-timesoff.md), [listar](../api/schedule-list-timesoff.md), [obter](../api/timeoff-get.md), [substituir](../api/timeoff-put.md), [excluir](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Criar](../api/schedule-post-timeoffreasons.md), [listar](../api/schedule-list-timeoffreasons.md), [obter](../api/timeoffreason-get.md), [substituir](../api/timeoffreason-put.md), [excluir](../api/timeoffreason-delete.md) |
 
 ## <a name="microsoft-teams-limits"></a>Limites do Microsoft Teams
 

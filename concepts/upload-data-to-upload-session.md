@@ -4,12 +4,12 @@ description: Use a API de impressão universal no Microsoft Graph para criar um 
 author: nilakhan
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f4b373c7da760277dff390ca1ea491aa9117d354
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 315d1e34870761d0e972dd714ee0735c7c62d901
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447055"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856096"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Faça o upload de documentos utilizando a API de Impressão Universal do Microsoft Graph
 
@@ -18,6 +18,8 @@ Para imprimir um documento utilizando a API de Impressão Universal no Microsoft
 Para fazer o upload de um arquivo, ou de parte de um arquivo, seu aplicativo faz uma solicitação PUT para o valor **uploadUrl** recebido na resposta **createUploadSession**. Você pode fazer o upload de todo o arquivo ou dividi-lo em vários intervalos de bytes, desde que o máximo de bytes em qualquer solicitação seja inferior a 10 MB.
 
 É possível fazer o upload dos segmentos do arquivo em qualquer ordem e o upload pode ser feito em paralelo, com até quatro solicitações simultâneas. Quando todos os segmentos binários de um documento são carregados, o arquivo binário é vinculado a **printDocument**.
+
+> **Nota**: Se seu aplicativo dividir um arquivo em vários intervalos de bytes, recomendamos que o tamanho de cada intervalo de bytes seja um múltiplo de 200 KB, a menos que você esteja usando o SDK do Microsoft Graph, que exige que o tamanho do segmento seja um múltiplo de 320 KB. 
 
 ## <a name="upload-a-file"></a>Carregar um arquivo
 
@@ -83,7 +85,7 @@ Content-Type: application/json
 ### <a name="remarks"></a>Comentários
 
 * Em falhas, quando o cliente envia um fragmento que o servidor já recebeu, o servidor responderá com `HTTP 416 Requested Range Not Satisfiable`. Você pode [solicitar o status de upload](#get-the-upload-session) para obter uma lista mais detalhada dos intervalos ausentes.
-* A inclusão do cabeçalho de `Authorizatio` ao fazer a chamada `PUT` pode resultar em uma resposta `HTTP 401 Unauthorized`. O Cabeçalho de Autorização e o token de portador devem ser enviados apenas durante a criação da sessão de upload. Ele não deve ser incluído ao enviar dados para a sessão de upload.
+* Incluir o cabeçalho `Authorization` ao fazer a chamada `PUT` pode resultar em uma `HTTP 401 Unauthorized` resposta. O Cabeçalho de Autorização e o token de portador devem ser enviados apenas durante a criação da sessão de upload. Ele não deve ser incluído ao enviar dados para a sessão de upload.
 
 ## <a name="complete-a-file-upload"></a>Concluir um upload de arquivo
 
