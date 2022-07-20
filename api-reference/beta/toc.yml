@@ -980,7 +980,7 @@ items:
               - name: Credenciais de identidade federada (versão prévia)
                 displayName: 'Workload identity federation, workload identities'
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     href: resources/federatedidentitycredentials-overview.md
                   - name: Credenciais de identidade federada
                     href: resources/federatedidentitycredential.md
@@ -1253,7 +1253,7 @@ items:
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Sincronização
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/synchronization-overview.md
               - name: Sincronização
                 href: resources/synchronization-synchronization.md
@@ -1638,7 +1638,7 @@ items:
                     href: api/addlargegalleryviewoperation-get.md
           - name: Registros de chamadas
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/callrecords-api-overview.md
               - name: Registro de chamada
                 items:
@@ -1751,7 +1751,7 @@ items:
             href: resources/complianceapioverview.md
           - name: Descoberta Eletrônica (versão prévia)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Caso de Descoberta Eletrônica
                 href: resources/ediscovery-case.md
@@ -1909,7 +1909,7 @@ items:
                     href: api/ediscovery-tag-ashierarchy.md
           - name: Gerenciamento de registros (versão prévia)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/security-recordsManagement-overview.md
               - name: Rótulo de retenção
                 href: resources/security-retentionlabel.md
@@ -1950,7 +1950,7 @@ items:
                     href: api/security-retentioneventtype-delete.md
           - name: Solicitação de direitos do titular
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
               - name: Solicitação de direitos do titular
                 href: resources/subjectrightsrequest.md
@@ -2008,7 +2008,7 @@ items:
       - name: Reserva de clientes
         displayName: 'Bookings, Microsoft Bookings'
         items:
-          - name: Visão Geral
+          - name: Visão geral
             href: resources/booking-api-overview.md
           - name: Negócio de reservas
             href: resources/bookingbusiness.md
@@ -9397,10 +9397,10 @@ items:
                         href: api/intune-mam-windowsinformationprotection-assign.md
                   - name: Arquivo de proteção de informações do Windows
                     href: resources/intune-mam-windowsinformationprotectionapp.md
-                  - name: Resumo de aprendizagem de aplicativos da proteção de informações do Windows
+                  - name: Resumo do aplicativo de proteção de informações do Windows
                     href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                     items:
-                      - name: Listar
+                      - name: Lista
                         href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                       - name: Obter
                         href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -10455,7 +10455,7 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Cloud PC (visualização)
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/cloudpc-api-overview.md
               - name: Ponto de extremidade virtual
                 href: resources/virtualendpoint.md
@@ -12355,7 +12355,7 @@ items:
                         href: api/authenticationcontextclassreference-update.md
               - name: Acesso entre locatários
                 items:
-                  - name: Visão Geral
+                  - name: Visão geral
                     displayName: 'Cross-tenant access settings, XTAP'
                     href: resources/crosstenantaccesspolicy-overview.md
                   - name: Política
@@ -14408,7 +14408,7 @@ items:
                         href: api/userregistrationdetails-get.md
           - name: Relatórios de uso do Microsoft 365
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/report.md
               - name: Settings
                 href: resources/adminreportsettings.md
@@ -14682,7 +14682,7 @@ items:
         items:
           - name: Consulta
             items:
-              - name: Visão Geral
+              - name: Visão geral
                 href: resources/search-api-overview.md
               - name: Tipo de solicitação de pesquisa
                 href: resources/searchrequest.md
@@ -15481,7 +15481,7 @@ items:
         items:
           - name: Visão Geral
             href: resources/planner-overview.md
-          - name: Planejar
+          - name: Plano
             href: resources/plannerplan.md
             items:
               - name: Listar os planos do grupo
@@ -16068,6 +16068,54 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
+          - name: Unidade
+            href: resources/drive.md
+            items:
+              - name: Obter unidade
+                href: api/drive-get.md
+              - name: Listar filhos
+                href: api/driveitem-list-children.md
+          - name: Aprendizado dos funcionários
+            displayName: Viva Learning
+            items:
+              - name: Visão Geral
+                href: resources/viva-learning-api-overview.md
+              - name: Provedor de aprendizagem
+                href: resources/learningprovider.md
+                items:
+                  - name: Listar
+                    href: api/employeeexperience-list-learningproviders.md
+                  - name: Criar
+                    href: api/employeeexperience-post-learningproviders.md
+                  - name: Obter
+                    href: api/learningprovider-get.md
+                  - name: Atualizar
+                    href: api/learningprovider-update.md
+                  - name: Excluir
+                    href: api/employeeexperience-delete-learningproviders.md
+              - name: Conteúdo de aprendizagem
+                href: resources/learningcontent.md
+                items:
+                  - name: Lista
+                    href: api/learningprovider-list-learningcontents.md
+                  - name: Obter
+                    href: api/learningcontent-get.md
+                  - name: Atualizar
+                    href: api/learningcontent-update.md
+                  - name: Excluir
+                    href: api/learningprovider-delete-learningcontents.md
+          - name: Observações
+            href: resources/onenote.md
+            items:
+              - name: Listar blocos de anotações
+                href: api/onenote-list-notebooks.md
+              - name: Criar blocos de anotações
+                href: api/onenote-post-notebooks.md
+          - name: Planos
+            href: resources/plannerplan.md
+            items:
+              - name: Listar planos
+                href: api/plannergroup-list-plans.md
           - name: Turnos
             items:
               - name: Shift
@@ -16237,25 +16285,6 @@ items:
                     href: api/workforceintegration-update.md
                   - name: Excluir
                     href: api/workforceintegration-delete.md
-          - name: Unidade
-            href: resources/drive.md
-            items:
-              - name: Obter unidade
-                href: api/drive-get.md
-              - name: Listar filhos
-                href: api/driveitem-list-children.md
-          - name: Planos
-            href: resources/plannerplan.md
-            items:
-              - name: Listar planos
-                href: api/plannergroup-list-plans.md
-          - name: Observações
-            href: resources/onenote.md
-            items:
-              - name: Listar blocos de anotações
-                href: api/onenote-list-notebooks.md
-              - name: Criar blocos de anotações
-                href: api/onenote-post-notebooks.md
           - name: Concessões de permissão específicas do recurso
             href: resources/resourcespecificpermissiongrant.md
             items:
