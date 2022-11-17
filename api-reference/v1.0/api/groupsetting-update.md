@@ -1,16 +1,16 @@
 ---
 title: Atualizar groupSetting
 description: Atualize as propriedades de um objeto de configuração de grupo específico.
-author: psaffaie
+author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 04e23418a4e224a8186e9e96018026d5f725451f
-ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
+ms.openlocfilehash: 693b1bc0fe65c79defef73589a92554ab651bd28
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66788686"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670513"
 ---
 # <a name="update-groupsetting"></a>Atualizar groupSetting
 
@@ -22,56 +22,39 @@ Atualize as propriedades de um [objeto groupSetting](../resources/groupsetting.m
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>Para todas as configurações, exceto o objeto Configurações de Política de Consentimento
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Directory.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
-
-### <a name="for-the-consent-policy-settings-object"></a>Para o objeto Configurações de Política de Consentimento
-
-As permissões a seguir são necessárias para atualizar o objeto **directorySetting** "Configurações de Política de Consentimento".
-
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Policy.ReadWrite.Authorization    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
-
-Atualize uma configuração em todo o locatário.
-
+Atualize uma configuração de todo o locatário.
 ```http
 PATCH /groupSettings/{groupSettingId}
 ```
 
 <!-- { "blockType": "ignored" } -->
-
 Atualize uma configuração específica do grupo.
-
 ```http
 PATCH /groups/{groupId}/settings/{groupSettingId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-
-| Nome          | Descrição        |
-| :------------ | :----------------- |
-| Autorização | {token}. Obrigatório. |
-| Content-Type  | application/json   |
+| Nome | Descrição |
+|:-----------|:-----------|
+| Autorização  | {token}. Obrigatório. |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. 
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.
-
-| Propriedade | Tipo                                                    | Descrição                                                                                                      |
-| :------- | :------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------- |
-| values   | [coleção settingValue](../resources/settingvalue.md) | O conjunto atualizado de valores. Você deve incluir todo o conjunto de coleta. Não é possível atualizar um único conjunto de valores. |
+| Propriedade | Tipo | Descrição |
+|:---------------|:--------|:----------|
+| values | [coleção settingValue](../resources/settingvalue.md) | O conjunto atualizado de valores. Você deve incluir todo o conjunto de coleções. Não é possível atualizar um único conjunto de valores. |
 
 ## <a name="response"></a>Resposta
 
@@ -85,13 +68,12 @@ Neste exemplo, é `84af2ca5-c274-41bf-86e4-6e374ec4def6` o identificador do obje
 
 #### <a name="request"></a>Solicitação
 
-# <a name="http"></a>[HTTP](#tab/http)
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tenant_groupsetting"
 }-->
-
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374ec4def6
 Content-type: application/json
@@ -105,33 +87,28 @@ Content-type: application/json
     ]
 }
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-tenant-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tenant-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-tenant-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-tenant-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-tenant-groupsetting-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/update-tenant-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenant-groupsetting-java-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/java/update-tenant-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-tenant-groupsetting-go-snippets.md)]
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tenant-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 #### <a name="response"></a>Resposta
 
@@ -139,24 +116,21 @@ Content-type: application/json
   "blockType": "response",
   "truncated": false
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-a-specific-group-setting"></a>Exemplo 2: atualizar uma configuração de grupo específica
+### <a name="example-2-update-a-specific-group-setting"></a>Exemplo 2: Atualizar uma configuração de grupo específica
 
 Neste exemplo, é `0167b5af-f3d1-4910-82d2-398747fa381c` o identificador do grupo e `fa6df613-159b-4f94-add2-7093f961900b` é o identificador do objeto groupSetting.
 
 #### <a name="request"></a>Solicitação
 
 # <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
 }-->
-
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/groups/0167b5af-f3d1-4910-82d2-398747fa381c/settings/fa6df613-159b-4f94-add2-7093f961900b
 Content-type: application/json
@@ -170,33 +144,28 @@ Content-type: application/json
   ]
 }
 ```
-
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
-[!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-groupsetting-go-snippets.md)]
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-groupsetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 #### <a name="response"></a>Resposta
 
@@ -204,7 +173,6 @@ Content-type: application/json
   "blockType": "response",
   "truncated": false
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -220,3 +188,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

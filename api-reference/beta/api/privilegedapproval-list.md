@@ -4,13 +4,13 @@ description: Recupere uma lista de objetos privilegedapproval.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: rkarim-ms
-ms.openlocfilehash: d89e96dea491c23606191f3ae1731bc8e1c2f216
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+author: carolinetempleton
+ms.openlocfilehash: a8a95060f8dd00193b57a780fa9df73b8112ddaa
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65397506"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671444"
 ---
 # <a name="list-privilegedapproval"></a>List privilegedApproval
 
@@ -29,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,9 +51,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `200 OK` de resposta e uma coleção de [objetos privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/privilegedApproval
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedapproval-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedapproval-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

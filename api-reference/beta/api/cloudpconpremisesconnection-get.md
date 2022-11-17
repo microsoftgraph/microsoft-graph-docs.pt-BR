@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4a00389960259eea94efbad77f1305dc434da37e
-ms.sourcegitcommit: cc9e5b3630cb84c48bbbb2d84a963b9562d1fb78
+ms.openlocfilehash: 7db89f3a6181ad4e6dad8d424c00f4af99428a61
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64587592"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671304"
 ---
 # <a name="get-cloudpconpremisesconnection"></a>Obter cloudPcOnPremisesConnection
 
@@ -20,8 +20,7 @@ Namespace: microsoft.graph
 
 Leia as propriedades e as relações do [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
-[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -62,7 +61,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um [o
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-the-default-properties-of-an-azure-network-connection"></a>Exemplo 1: Obter as propriedades padrão de uma conexão de rede do Azure
+### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>Exemplo 1: Obter as propriedades padrão de uma conexão local
 
 #### <a name="request"></a>Solicitação
 
@@ -93,7 +92,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -136,7 +135,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-azure-network-connection-including-healthcheckstatusdetails"></a>Exemplo 2: Obter as propriedades selecionadas de uma conexão de rede do Azure, incluindo healthCheckStatusDetails
+### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>Exemplo 2: Obter as propriedades selecionadas de uma conexão local, incluindo healthCheckStatusDetails
 
 #### <a name="request"></a>Solicitação
 
@@ -167,7 +166,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/java/get-cloudpconpremisesconnection-withdetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-withdetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

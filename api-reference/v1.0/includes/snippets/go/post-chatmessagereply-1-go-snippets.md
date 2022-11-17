@@ -1,16 +1,16 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: 6042e074f5a01dc2b7b625cf27ac15c8f702a58b
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: bd48de04b38bab4dd6727a6dd02391f761d4071b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315955"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996398"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestBody := msgraphsdk.NewChatMessage()
 body := msgraphsdk.NewItemBody()
@@ -19,10 +19,13 @@ contentType := "html"
 body.SetContentType(&contentType)
 content := "Hello World"
 body.SetContent(&content)
+options := &msgraphsdk.RepliesRequestBuilderPostOptions{
+    Body: requestBody,
+}
 teamId := "team-id"
 channelId := "channel-id"
 chatMessageId := "chatMessage-id"
-result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Replies().Post(requestBody)
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Replies().Post(options)
 
 
 ```

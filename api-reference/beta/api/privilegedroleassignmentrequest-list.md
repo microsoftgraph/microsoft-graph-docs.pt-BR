@@ -4,13 +4,13 @@ description: 'Recupere uma coleção de privilegedRoleAssignmentRequest. '
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: rkarim-ms
-ms.openlocfilehash: d53cdd998aef9640ca84447553fab5d17c1bf019
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+author: carolinetempleton
+ms.openlocfilehash: 8ea2888e370bbfd2c3cb082994fbc154b9a0f0b5
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65397970"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671346"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>Listar privilegedRoleAssignmentRequests
 
@@ -22,15 +22,15 @@ Namespace: microsoft.graph
 
 Recupere uma coleção [de privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md). 
 
-**Nota:** Esse solicitante deve ter pelo menos uma atribuição de função no recurso.
+**Observação:** Esse solicitante deve ter pelo menos uma atribuição de função no recurso.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +51,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção de objetos [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção [de objetos privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 [!INCLUDE [sample-code](../includes/snippets/java/get-privilegedroleassignmentrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedroleassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

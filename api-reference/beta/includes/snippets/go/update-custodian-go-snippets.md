@@ -1,23 +1,20 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: d7a39cd9e0045b917b286735a57a086d3832546a
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 68d18793c09d05695217ac6f6216d695a5232716
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65323563"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986863"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
-requestBody := msgraphsdk.NewCustodian()
-applyHoldToSources := "false"
-requestBody.SetApplyHoldToSources(&applyHoldToSources)
 caseId := "case-id"
 custodianId := "custodian-id"
-graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Patch(requestBody)
+graphClient.Compliance().Ediscovery().CasesById(&caseId).CustodiansById(&custodianId).Patch(options)
 
 
 ```

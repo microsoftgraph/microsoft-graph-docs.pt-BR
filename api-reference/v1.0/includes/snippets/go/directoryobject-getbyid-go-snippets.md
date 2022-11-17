@@ -1,16 +1,16 @@
 ---
 description: Arquivo gerado automaticamente. NÃO MODIFICAR
-ms.openlocfilehash: afac035b803844f115647f9a31bb56aa8df0394c
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: ce5195333e620f1e7adee625a4f368304579913c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65322866"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979294"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestBody := msgraphsdk.New()
 requestBody.SetIds( []String {
@@ -20,7 +20,10 @@ requestBody.SetIds( []String {
 requestBody.SetTypes( []String {
     "user",
 }
-result, err := graphClient.DirectoryObjects().GetByIds().Post(requestBody)
+options := &msgraphsdk.GetByIdsRequestBuilderPostOptions{
+    Body: requestBody,
+}
+result, err := graphClient.DirectoryObjects().GetByIds().Post(options)
 
 
 ```

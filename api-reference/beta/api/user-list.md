@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f69e7570c520b0ddf3d3174373af413820fa4d9d
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
-ms.translationtype: HT
+ms.openlocfilehash: 7ce73c668bb9fb9031851ef2c232d9be0e2efb05
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555241"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671479"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -48,15 +48,6 @@ Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`,
 Certas propriedades não podem ser retornadas em uma coleção de usuário. As seguintes propriedades terão suporte apenas [ao recuperar um único usuário:](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 As propriedades a seguir não têm suporte em contas pessoais da Microsoft e serão `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
-
-### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
-
-| Tipo de extensão                     | Comentários                                                                  |
-|------------------------------------|---------------------------------------------------------------------------|
-| onPremisesExtensionAttributes 1-15 | Retornado por padrão. Suporta `$filter` (`eq`).                  |
-| Extensões de esquema                  | Retornado somente com `$select`. Suporta `$filter` (`eq`).                  |
-| Extensões abertas                    | Retornado somente com `$expand`, ou seja, `users?$expand=extensions`. |
-| Extensões de diretório               | Retornado por padrão. Suporta `$filter` (`eq`).                  |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -107,7 +98,7 @@ GET https://graph.microsoft.com/beta/users
 [!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -150,7 +141,8 @@ Content-type: application/json
 
 Encontrar uma conta de usuário usando um nome de entrada (também conhecido como conta local).
 
-> **Observação:** ao filtrar em **issuerAssignedId**, você deve fornecer **emissor** e **issuerAssignedId**. Entretanto, o valor do **emissor** será ignorado em determinados cenários. Para obter mais detalhes sobre a filtragem em identidades, consulte o [tipo de recurso objectIdentity](../resources/objectIdentity.md).
+>[!NOTE]
+>Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**. O valor de **issuerAssignedId** deve ser o endereço de email da conta do usuário, não o nome de usuário principal (UPN). Se um UPN for usado, a resposta será uma lista em branco.
 
 #### <a name="request"></a>Solicitação
 
@@ -162,7 +154,7 @@ Este é um exemplo de solicitação.
   "name": "get_signinname_users"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
+GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
@@ -180,7 +172,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 [!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signinname-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -208,8 +200,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "John Smith",
-      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+      "displayName": "John Smith"
     }
   ]
 }
@@ -248,7 +239,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-last-time-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -332,7 +323,7 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-filter-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-last-time-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -476,7 +467,7 @@ Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **Con
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_users_startswith"
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
@@ -547,7 +538,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-endswith-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-a-count-endswith-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -623,7 +614,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-wa-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-wa-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -752,7 +743,7 @@ GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$fil
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-assignedlicenses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-assignedlicenses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -803,80 +794,6 @@ Content-type: application/json
   ]
 }
 ```
-
-### <a name="example-12-get-the-value-of-a-schema-extension-for-all-users"></a>Exemplo 12: obter o valor de uma extensão de esquema para todos os usuários
-
-Neste exemplo, a ID da extensão do esquema é `ext55gb1l09_msLearnCourses`.
-
-#### <a name="request"></a>Solicitação
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_schemaextension"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$select=ext55gb1l09_msLearnCourses
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-schemaextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-schemaextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-schemaextension-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-schemaextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-schemaextension-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-schemaextension-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-
-Na resposta a seguir, a propriedade de extensão de esquema `ext55gb1l09_msLearnCourses` não está designada em dois dos objetos de usuário.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(ext55gb1l09_msLearnCourses)",
-    "value": [
-        {},
-        {
-            "ext55gb1l09_msLearnCourses": {
-                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
-                "courseType": "Developer",
-                "courseName": "Introduction to Microsoft Graph",
-                "courseId": 1
-            }
-        },
-        {}
-    ]
-}
-```
-
-> **Observação**: você também pode aplicar `$filter` na propriedade de extensão do esquema para recuperar objetos em que uma propriedade na coleção corresponde a um valor especificado. A sintaxe é `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. Por exemplo, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. Os operadores `eq` e `not` têm suporte.
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

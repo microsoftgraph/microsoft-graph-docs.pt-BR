@@ -1,24 +1,24 @@
 ---
-title: Listar associações transitivas do dispositivo
-description: Obtenha grupos e unidades administrativas das qual o dispositivo é membro.
+title: Listar grupos transitivos de dispositivos
+description: Obter grupos dos que o dispositivo é membro.
 ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8d83631d5916a55b5300991cf3db3ea157301029
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: aa606909476353a6e2fdf235b37cf474b71f5d32
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65884192"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671745"
 ---
-# <a name="list-device-transitive-memberships"></a>Listar associações transitivas do dispositivo
+# <a name="list-device-transitive-groups"></a>Listar grupos transitivos de dispositivos
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha grupos e unidades administrativas das qual o dispositivo é membro. Essa solicitação de API é transitiva e também retornará todos os grupos e unidades administrativas das qual o dispositivo é membro aninhado.
+Obter grupos dos que o dispositivo é membro. Essa solicitação de API é transitiva e também retornará todos os grupos de que o dispositivo é membro aninhado.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -43,7 +43,7 @@ GET /devices/{id}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método suporta o `$search`, `$count`, e `$filter` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. A conversão de OData também está habilitada, por exemplo, você pode converter para obter apenas o directoryRoles do qual o dispositivo é membro. Você pode usar `$search` nas propriedades **displayName** e **descrição**.
+Este método suporta o `$search`, `$count`, e `$filter` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta. O OData cast também está habilitado, por exemplo, você pode lançar para obter apenas o directoryRoles do qual o dispositivo é membro. Você pode usar `$search` nas propriedades **displayName** e **descrição**.
 
 Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries).
 
@@ -66,7 +66,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>Exemplo 1: Obter grupos dos qual o dispositivo é um membro transitivo
+### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>Exemplo 1: Obter grupos de que o dispositivo é um membro transitivo
 
 #### <a name="request"></a>Solicitação
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-devices-transitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -169,7 +169,7 @@ Content-type: text/plain
 ```
 
 
-### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 3: Usar conversão e conversão OData $search para obter associação com nomes de exibição que contêm as letras 'Vídeo', incluindo uma contagem de objetos retornados
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Exemplo 3: Use o OData cast e $search para obter associação com nomes de exibição que contêm as letras "Vídeo", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
@@ -211,44 +211,20 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 4: Usar conversão e conversão de OData $filter obter associação com um nome de exibição que começa com "A", incluindo uma contagem de objetos retornados
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Exemplo 4: use o OData cast e $filter para obter associação com um nome de exibição que começa com "A", incluindo uma contagem de objetos retornados
 
 #### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "list_devices_transitivememberof_startswith"
+  "blockType": "ignored",
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-devices-transitivememberof-startswith-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-devices-transitivememberof-startswith-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-devices-transitivememberof-startswith-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-devices-transitivememberof-startswith-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-devices-transitivememberof-startswith-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Resposta
 

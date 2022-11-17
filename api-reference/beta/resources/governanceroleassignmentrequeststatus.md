@@ -4,13 +4,13 @@ description: Representa o status do governanceRoleAssignmentRequest.
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: japere
-ms.openlocfilehash: 19eb182a450053400b66db12c0d2fe119908a992
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+author: carolinetempleton
+ms.openlocfilehash: e023b40cd5c23c6b6f34d18c51eb7681354587b1
+ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64510201"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63723007"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>Tipo de recurso governanceRoleAssignmentRequestStatus
 
@@ -24,8 +24,8 @@ Representa o status do [governanceRoleAssignmentRequest](../resources/governance
 
 | Propriedade      | Tipo                                            | Descrição                                                                                                                                                                                                                                                                                                                                                                                     |
 | :------------ | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| status        | Cadeia de caracteres                                          | O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed`.                                                                                                                                                                                                                                                                                                           |
-| subStatus     | Cadeia de caracteres                                          | O sub status da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, , `PendingProvisioning`, `Provisioned`, `PendingRevocation`, , `Canceled``Revoked`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, , `PendingAdminDecision`, `AdminApproved``AdminDenied`, , `TimedOut`e `ProvisioningStarted`. |
+| status        | String                                          | O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed`.                                                                                                                                                                                                                                                                                                           |
+| subStatus     | String                                          | O sub status da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, , `PendingProvisioning`, `Provisioned`, `PendingRevocation`, , `Canceled``Revoked`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, , `PendingAdminDecision`, `AdminApproved``AdminDenied`, , `TimedOut`e `ProvisioningStarted`. |
 | statusDetails | Coleção [KeyValue](../resources/keyvalue.md) | Os detalhes do status da solicitação de atribuição de função. Representa os resultados de avaliação de regras diferentes.                                                                                                                                                                                                                                                                              |
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d4e55491151d44d0eb6ae1f3c1c0baad66a89c27
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
-ms.translationtype: HT
+ms.openlocfilehash: be572b6838ff8ce54875d1cc4be16d7ef79d2467
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509403"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671850"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Listar memberOf transitivos de servicePrincipal
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceprincipal-tranitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-serviceprincipal-tranitivememberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -241,7 +241,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_serviceprincipals_transitivememberof_startswith"
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')

@@ -1,24 +1,24 @@
 ---
-title: Listar as associações diretas de um usuário
-description: Obtenha os grupos, funções de diretório e unidades administrativas das quais o usuário é membro direto. Essa operação não é transitiva.
+title: Listar usuário memberOf
+description: Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro direto. Essa operação não é transitiva.
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c1134f23ac1d9df43ea6f3cee6787bcf94101fcb
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 79c59b957570dde01a78535ff41283f15c6e2f85
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645505"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670842"
 ---
-# <a name="list-a-users-direct-memberships"></a>Listar as associações diretas de um usuário
+# <a name="list-user-memberof"></a>Listar usuário memberOf
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os [grupos](../resources/group.md), [funções de diretório](../resources/directoryrole.md) e [unidades administrativas](../resources/administrativeunit.md) das quais o usuário é membro direto. Essa operação não é transitiva. Para recuperar grupos, funções de diretório e unidades administrativas que o usuário é membro por meio de associação transitiva, use a API [List user transitive memberOf](user-list-transitivememberof.md) .
+Obtenha os [grupos](../resources/group.md), [funções de diretório](../resources/directoryrole.md) e [unidades administrativas](../resources/administrativeunit.md) das quais o usuário é membro direto. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,6 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/memberOf
+or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/beta/users/{id}/memberOf
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -240,7 +241,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_users_memberof_startswith"
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a') 

@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: e6e252916848fa1b40158eef64e3982c07560b45
-ms.sourcegitcommit: 43a7c971a97ce1e4c55cbae089820bfce7dfe42b
+ms.openlocfilehash: 32bbd1e31a02662f31abaff2ed61845ec663d52f
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64509802"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670562"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 Recupere uma lista de dispositivos registrados no diretório. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/devices
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-devices-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -192,7 +192,7 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-devices-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -206,11 +206,7 @@ GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
 #### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device"
-} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -250,8 +246,8 @@ Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **Con
 
 >**Observação:** os parâmetros de consulta `$count` e `$search` não estão disponíveis atualmente nos locatários do Azure Active Directory B2C.
 <!-- {
-  "blockType": "request",
-  "name": "list_devices_startswith"
+  "blockType": "ignored",
+  "name": "get_a_count"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 
@@ -384,7 +380,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-devices-by-extensionattribute-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-devices-by-extensionattribute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

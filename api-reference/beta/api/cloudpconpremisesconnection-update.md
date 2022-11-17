@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 73c8853d22aea5df04c425c9b38e9586036ab870
-ms.sourcegitcommit: 1e8ba243e77ca344e267f16dfeb321fb5a7463e8
+ms.openlocfilehash: a4422ca22977a413f4c9e0a2819cf3dbff06a8f1
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64733252"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671290"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>Atualizar cloudPcOnPremisesConnection
 
@@ -18,9 +18,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
+Atualize as propriedades de [um objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
+Depois que a conexão local passar pela verificação de saúde, que é indicada pela `healthCheckStatus` propriedade, você não poderá atualizá-la.
 
-[!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
 ## <a name="permissions"></a>Permissões
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|CloudPC.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -52,25 +52,25 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON do objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
+No corpo da solicitação, fornece uma representação JSON do [objeto cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias ao criar o objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) .
+A tabela a seguir mostra as propriedades necessárias ao criar [o cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|O nome de exibição da conexão de rede do Azure.|
-|type|cloudPcOnPremisesConnectionType|Especifica como o PC na nuvem provisionado será ingressado no Azure Active Directory. O valor padrão é `hybridAzureADJoin`. Os valores possíveis são: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
-|subscriptionId|String|A ID da assinatura do Azure de destino associada ao seu locatário.|
+|displayName|String|O nome de exibição da conexão local.|
+|type|cloudPcOnPremisesConnectionType|Especifica como o Cloud PC provisionado será ingressado no Azure Active Directory. O valor padrão é `hybridAzureADJoin`. Os valores possíveis são: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
+|subscriptionId|String|A ID da assinatura de destino do Azure associada ao seu locatário.|
 |adDomainName|String|O FQDN (nome de domínio totalmente qualificado) do domínio do Active Directory que você deseja ingressar.|
-|adDomainUsername|Cadeia de caracteres|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: username@contoso.com.|
+|adDomainUsername|String|O nome de usuário de uma conta do Active Directory (conta de usuário ou serviço) que tem permissões para criar objetos de computador no Active Directory. Formato obrigatório: username@contoso.com.|
 |adDomainPassword|String|A senha associada a adDomainUsername.|
-|resourceGroupId|Cadeia de caracteres|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|Cadeia de caracteres|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|resourceGroupId|String|A ID do grupo de recursos de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|String|A ID da rede virtual de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|A ID da sub-rede de destino. Formato obrigatório: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código `200 OK` de resposta e um objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-onpremisesconnections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-onpremisesconnections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

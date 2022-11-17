@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0838b66555e29516b2121f2772b83a88977a15a1
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 29189ba7e875031aee24b2c990a132ba4b820c79
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208939"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975991"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Enviar chatMessage em um canal ou chat
 
@@ -20,11 +20,11 @@ Namespace: microsoft.graph
 
 Envie um novo [chatMessage](../resources/chatmessage.md) no canal [especificado](../resources/channel.md) ou em um [chat](../resources/chat.md).
 
-> **Observação**: não recomendamos que você use essa API para migração de dados. Ele não tem a taxa de transferência necessária para uma migração típica.
+> **Observação**: não recomendamos que você use essa API para migração de dados. Ele não tem a produtividade necessária para uma migração típica.
 
-> **Observação**: é uma violação dos termos [de uso para](/legal/microsoft-apis/terms-of-use) usar Microsoft Teams como um arquivo de log. Enviar apenas mensagens que as pessoas lerão.
+> **Observação**: é uma violação dos termos [de](/legal/microsoft-apis/terms-of-use) uso para usar Microsoft Teams como um arquivo de log. Envie apenas mensagens que as pessoas lerão.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -33,11 +33,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | Teamwork.Migrate.All |
+| Aplicativo                            | Sem suporte. |
 
-> **Observação**: as permissões marcadas com ** têm suporte apenas para compatibilidade com versões anteriores. Recomendamos que você atualize suas soluções para usar uma permissão alternativa listada na tabela anterior e evite usar essas permissões daqui para frente.
-
-> **Observação**: as permissões de aplicativo só *têm* suporte para [migração](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). No futuro, a Microsoft pode exigir que você ou seus clientes paguem taxas adicionais com base na quantidade de dados importados.
+> **Observação**: as permissões marcadas com ** foram preteridas e não devem ser usadas.
 
 ### <a name="permissions-for-chat"></a>Permissões para o chat
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -75,18 +73,18 @@ POST /chats/{chat-id}/messages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um [objeto chatMessage](../resources/chatmessage.md) . Somente a propriedade do corpo é obrigatória; outras propriedades são opcionais.
+No corpo da solicitação, fornece uma representação JSON de um [objeto chatMessage.](../resources/chatmessage.md) Somente a propriedade body é obrigatória; outras propriedades são opcionais.
 
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código `201 Created` de resposta e um novo [objeto chatMessage](../resources/chatmessage.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta e um `201 Created` novo [objeto chatMessage](../resources/chatmessage.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-Nos exemplos a seguir, [a](channel-post-messages.md) URL pode usar a sintaxe [HTTP](#http-request) descrita para enviar uma mensagem para um [chat](chat-post-messages.md), enviar uma mensagem para um canal ou enviar [uma resposta a um canal](chatmessage-post-replies.md).
+Nos exemplos a seguir, [a](channel-post-messages.md)URL pode usar a sintaxe [HTTP](#http-request) descrita para enviar uma mensagem para um [chat,](chat-post-messages.md)enviar uma mensagem para um canal ou enviar [resposta para um canal](chatmessage-post-replies.md).
 
-### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>Exemplo 1: Enviar uma Olá, Mundo mensagem em um canal
+### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>Exemplo 1: Enviar uma mensagem hello world em um canal
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -123,12 +121,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,7 +176,6 @@ Content-type: application/json
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
         "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
-    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []
@@ -240,12 +233,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -324,7 +313,7 @@ Content-type: application/json
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> **Nota:** A ID do anexo deve ser exclusiva e pode ser um novo GUID gerado aleatoriamente. No entanto, a ID do anexo deve ser a mesma no corpo _e_ nos _elementos de anexos_ .
+> **Observação:** A ID do anexo deve ser exclusiva e pode ser um novo GUID gerado aleatoriamente. No entanto, a ID do anexo deve ser a mesma no _corpo_ e nos _elementos anexos._
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -332,7 +321,6 @@ Este é um exemplo de solicitação.
   "blockType": "request",
   "name": "post_chatmessage_3"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -371,12 +359,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-3-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -439,18 +423,17 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
-    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
 ```
 
-### <a name="example-4-send-a-message-with-file-attachment-in-it"></a>Exemplo 4: Enviar uma mensagem com anexo de arquivo nela
+### <a name="example-4-send-a-message-with-file-attachment-in-it"></a>Exemplo 4: Enviar uma mensagem com anexo de arquivo nele
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
->**Nota:** O arquivo já deve estar em SharePoint. Para localizar as propriedades do arquivo, OBTENHA o **driveItem** do arquivo. Por exemplo, /drives/{id}/items/{id}. Sua ID de anexo é o GUID na **eTag** do **driveItem**, o **contentURL** do anexo é o **webUrl** da pasta **do driveItem** mais o nome do **driveItem** e o nome do anexo é o nome do **driveItem**.
+>**Observação:** O arquivo já deve estar SharePoint. Para encontrar as propriedades do arquivo, GET **the driveItem** for the file. Por exemplo, /drives/{id}/items/{id}. Sua ID de anexo é o GUID na **eTag** do **driveItem**, seu **contentURL** de anexo é o **webUrl** da pasta **do driveItem** mais o nome do **driveItem** e seu nome de anexo é o nome **do driveItem.**
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -493,12 +476,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-4-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -561,20 +540,19 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
-    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
 ```
 
-### <a name="example-5-send-inline-images-along-with-the-message"></a>Exemplo 5: Enviar imagens embutidas junto com a mensagem
+### <a name="example-5-send-inline-images-along-with-the-message"></a>Exemplo 5: Enviar imagens em linha juntamente com a mensagem
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> **Nota:** A **temporaryId** na **coleção hostedContents** é uma ID aleatória, mas deve ser a mesma entre os  elementos **body e hostedContents**. (Observe a **temporaryId** definida como **1** e a referência no corpo como `../hostedContents/1/$value`.)
+> **Observação:** A **temporaryId** na **coleção hostedContents** é uma ID aleatória, mas deve ser a mesma no corpo e nos elementos **hostedContents.**  (Observe o **conjunto temporaryId** como **1** e a referência no corpo como `../hostedContents/1/$value` .)
 
-**contentBytes deve** ser definido como bytes codificados em Base64 de cadeia de caracteres binária. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** deve ser definido como bytes binários codificados em cadeia de caracteres Base64. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -616,12 +594,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -656,7 +630,6 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": null,
     "channelIdentity": null,
-    "onBehalfOf": null,
     "policyViolation": null,
     "eventDetail": null,
     "from": {
@@ -678,14 +651,14 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-6-send-a-card-with-inline-images"></a>Exemplo 6: Enviar um cartão com imagens embutidas
+### <a name="example-6-send-a-card-with-inline-images"></a>Exemplo 6: Enviar um cartão com imagens em linha
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> **Nota:** A **temporaryId** na **coleção hostedContents** é uma ID aleatória, mas deve ser a mesma em todo o **conteúdo (em** **anexos**) e **elementos hostedContents** . (Observe a **temporaryId** definida como **1** e a referência no conteúdo como `../hostedContents/1/$value`.)
+> **Observação:** A **temporaryId** na coleção **hostedContents** é uma ID aleatória, mas deve ser a mesma em todo o conteúdo **(em** **anexos**) e **elementos hostedContents.** (Observe a **temporaryId** definida como **1** e a referência no conteúdo como `../hostedContents/1/$value` .)
 
-**contentBytes deve** ser definido como bytes codificados em Base64 de cadeia de caracteres binária. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** deve ser definido como bytes binários codificados em cadeia de caracteres Base64. Você pode fazer isso em C# usando `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -738,12 +711,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-6-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-6-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -805,18 +774,17 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
-    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
 ```
 
-### <a name="example-7--mention-a-channel-in-a-channel-message"></a>Exemplo 7: @mention um canal em uma mensagem de canal
+### <a name="example-7--mention-a-channel-in-a-channel-message"></a>Exemplo 7 : @mention um canal em uma mensagem de canal
 
 #### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação. Para obter informações sobre como obter uma lista de canais em uma equipe, consulte [Canais de lista](../api/channel-list.md).
+Este é um exemplo de solicitação. Para obter informações sobre como obter uma lista de canais em uma equipe, consulte [List channels](../api/channel-list.md).
 
-> Observação: **conversationIdentityType** deve ser definido `channel` como @mention um canal.
+> Observação: **conversationIdentityType** deve ser definido como `channel` @mention um canal.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -864,12 +832,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionchannel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionchannel-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentionchannel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -945,12 +909,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8--mention-a-team-in-a-channel-message"></a>Exemplo 8: @mention uma equipe em uma mensagem de canal
+### <a name="example-8--mention-a-team-in-a-channel-message"></a>Exemplo 8 : @mention uma equipe em uma mensagem de canal
 
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 
-> Observação: **conversationIdentityType** deve ser definido `team` como @mention uma equipe.
+> Observação: **conversationIdentityType** deve ser definido como `team` @mention uma equipe.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -999,12 +963,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionteam-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionteam-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentionteam-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1080,10 +1040,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-9--mention-a-tag-in-a-channel-message"></a>Exemplo 9: @mention uma marca em uma mensagem de canal
+### <a name="example-9--mention-a-tag-in-a-channel-message"></a>Exemplo 9 : @mention uma marca em uma mensagem de canal
 
 #### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação. Para obter informações sobre como obter uma lista de marcas em uma equipe, consulte [Listar teamworkTags](../api/teamworktag-list.md).
+Este é um exemplo de solicitação. Para obter informações sobre como obter uma lista de marcas em uma equipe, consulte [Listar trabalho em equipeTags](../api/teamworktag-list.md).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1130,12 +1090,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentiontag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentiontag-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentiontag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1206,138 +1162,6 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
-}
-```
-
-### <a name="example-10-send-message-that-contains-cards-that-are-attributed-to-a-teams-app"></a>Exemplo 10: Enviar mensagem que contém cartões atribuídos a um Teams aplicativo
-
-#### <a name="request"></a>Solicitação
-
-Este é um exemplo de solicitação.
-
-> **Nota:** Ao especificar um aplicativo Teams ao qual atribuir um cartão, a ID do aplicativo Azure AD usada para fazer a chamada deve corresponder à ID do aplicativo Azure AD do aplicativo Teams. A Azure AD ID do aplicativo Teams aplicativo pode ser especificada na seção *webApplicationInfo* do manifesto do aplicativo. Consulte a documentação a seguir sobre o esquema [Teams manifesto do aplicativo atual](/microsoftteams/platform/resources/schema/manifest-schema).
->
-> Além disso, o aplicativo especificado no conteúdo deve ser instalado para o usuário que envia a mensagem ou no chat ou canal no qual a mensagem está sendo enviada.
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "post_chatmessage_10"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
-Content-type: application/json
-
-{
-    "subject": null,
-    "body": {
-        "contentType": "html",
-        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
-    },
-    "attachments": [
-        {
-            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
-            "contentType": "application/vnd.microsoft.card.thumbnail",
-            "contentUrl": null,
-            "content": "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
-            "name": null,
-            "thumbnailUrl": null,
-            "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
-        }
-    ]
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-10-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-10-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-10-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-10-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-10-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-10-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-
-Este é um exemplo de resposta.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
-} -->
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
-    "id": "1616991851162",
-    "replyToId": null,
-    "etag": "1616991851162",
-    "messageType": "message",
-    "createdDateTime": "2021-03-29T04:24:11.162Z",
-    "lastModifiedDateTime": "2021-03-29T04:24:11.162Z",
-    "lastEditedDateTime": null,
-    "deletedDateTime": null,
-    "subject": null,
-    "summary": null,
-    "chatId": null,
-    "importance": "normal",
-    "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991851162?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991851162&parentMessageId=1616991851162",
-    "policyViolation": null,
-    "eventDetail": null,
-    "from": {
-        "application": null,
-        "device": null,
-        "user": {
-            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Robin Kline",
-            "userIdentityType": "aadUser"
-        }
-    },
-    "body": {
-        "contentType": "html",
-        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
-    },
-    "channelIdentity": {
-        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
-        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
-    },
-    "attachments": [
-        {
-            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
-            "contentType": "application/vnd.microsoft.card.thumbnail",
-            "contentUrl": null,
-            "content": "{  \"title\": \"This is an example of posting a card\",  \"subtitle\": \"<h3>This is the subtitle</h3>\",  \"text\": \"Here is some body text. <br>\\\\And a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\\\And below that is some buttons:\",  \"buttons\": [    {      \"type\": \"messageBack\",      \"title\": \"Login to FakeBot\",      \"text\": \"login\",      \"displayText\": \"login\",      \"value\": \"login\"    }  ]}",
-            "name": null,
-            "thumbnailUrl": null,
-            "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
-        }
-    ],
-    "onBehalfOf": null,
-    "mentions": [],
     "reactions": []
 }
 ```

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 732271da80f5aaa062424a62db0471ba3d40f169
-ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
-ms.translationtype: HT
+ms.openlocfilehash: 846e7a8ca0ee415f78d1f8139809b95888820660
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66698265"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671402"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -31,15 +31,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | User.Read, User.ReadWrite    |
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-> [!TIP]
-> 1. Chamar o ponto de extremidade `/me` exige um usuário conectado e, portanto, uma permissão delegada. Não há suporte para permissões do aplicativo ao usar o ponto de extremidade `/me`.
->2. A permissão `User.Read` permite que o aplicativo leia o perfil e descubra relacionamentos como associação ao grupo, relatórios e gerente apenas do usuário conectado.
+Chamar o ponto de extremidade `/me` exige um usuário conectado e, portanto, uma permissão delegada. Não há suporte para permissões do aplicativo ao usar o ponto de extremidade `/me`.
 
 ## <a name="http-request"></a>Solicitação HTTP
 Para um usuário específico:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me
 GET /users/{id | userPrincipalName}
 ```
 
@@ -59,16 +56,7 @@ Este método suporta o `$select` [parâmetro de consulta OData](/graph/query-par
 
 Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
-Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você incluiria o seguinte na sua consulta `$select=displayName,givenName,postalCode`.
-
-### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
-
-| Tipo de extensão                     | Comentários                                                                                              |
-|------------------------------------|-------------------------------------------------------------------------------------------------------|
-| onPremisesExtensionAttributes 1-15 | Retornado somente com `$select`.                                                                         |
-| Extensões de esquema                  | Retornado somente com `$select`.                                                                         |
-| Extensões abertas                    | Retornado somente por meio da operação [Obter extensão aberta](opentypeextension-get.md). |
-| Extensões de diretório               | Retornado somente com `$select`.                                                                         |
+Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|
@@ -98,7 +86,7 @@ Por padrão, apenas um conjunto limitado de propriedades é retornado ( _busines
   "name": "get_user_1"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
 #### <a name="response"></a>Resposta
@@ -161,7 +149,7 @@ GET https://graph.microsoft.com/v1.0/me
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -211,7 +199,7 @@ Para recuperar propriedades específicas, use o parâmetro de `$select` OData. P
   "name": "get_user_select"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd?$select=displayName,givenName,postalCode,identities
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-select-csharp-snippets.md)]
@@ -229,7 +217,7 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd?
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -261,70 +249,6 @@ Content-type: application/json
             "issuerAssignedId": "AdeleV@contoso.com"
         }
     ]
-}
-```
-
-### <a name="example-4-get-the-value-of-a-schema-extension-for-a-user"></a>Exemplo 4: obter o valor de uma extensão de esquema para um usuário
-
-Neste exemplo, o ID da extensão do esquema é `ext55gb1l09_msLearnCourses`.
-
-#### <a name="request"></a>Solicitação
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_schemaextension"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?$select=ext55gb1l09_msLearnCourses
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-schemaextension-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)/$entity",
-    "ext55gb1l09_msLearnCourses": {
-        "@odata.type": "#microsoft.graph.ComplexExtensionValue",
-        "courseType": "Developer",
-        "courseName": "Introduction to Microsoft Graph",
-        "courseId": 1
-    }
 }
 ```
 

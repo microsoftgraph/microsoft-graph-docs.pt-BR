@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c4471da757f5430404ec0cf0f37cc89b1cdbfa7f
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
-ms.translationtype: HT
+ms.openlocfilehash: dbed0a0d791cd96f952fd4230b33d911b9c888be
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555141"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670877"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -40,23 +40,13 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta.`$skip`  não é compatível. Os tamanhos de página padrão e máximo são 100 e 999 objetos de usuário, respectivamente. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries). Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
+Este método suporta aos parâmetros de consulta `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, e `$top` [OData](/graph/query-parameters) para ajudar a personalizar a resposta. `$skip` não é compatível. Os tamanhos de página padrão e máximo são 100 e 999 objetos de usuário, respectivamente. Algumas consultas são suportadas somente quando se usa o cabeçalho **ConsistencyLevel** definido como `eventual` e `$count`. Para obter mais informações, consulte [Funcionalidades avançadas de consulta nos objetos de diretório do Microsoft Azure AD](/graph/aad-advanced-queries). Os parâmetros `$count` e `$search` não estão disponíveis no momento em locatários do Azure AD B2C.
 
-Por padrão, apenas um conjunto limitado de propriedades é retornado (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** e **userPrincipalName**).Para retornar um conjunto de propriedades alternativo, especifique o conjunto desejado de propriedades de [usuário](../resources/user.md) usando o parâmetro de consulta `$select` OData. Por exemplo, para retornar **displayName**, **givenName** e **postalCode**, adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
+Por padrão, apenas um conjunto limitado de propriedades é retornado (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** e **userPrincipalName**). Para retornar um conjunto de propriedades alternativas, especifique o conjunto desejado de propriedades do [usuário](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar **displayName**, **givenName** e **postalCode**, adicione o seguinte à sua consulta `$select=displayName,givenName,postalCode`.
 
 Certas propriedades não podem ser retornadas em uma coleção de usuário. As seguintes propriedades terão suporte apenas [ao recuperar um único usuário:](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
 As propriedades a seguir não têm suporte em contas pessoais da Microsoft e serão `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
-
-### <a name="retrieve-extensions-and-associated-data"></a>Recuperar extensões e dados associados
-
-| Tipo de extensão                     | Comentários                                                                  |
-|------------------------------------|---------------------------------------------------------------------------|
-| onPremisesExtensionAttributes 1-15 | Retornado somente com `$select`. Suporta `$filter` (`eq`).                  |
-| Extensões de esquema                  | Retornado somente com `$select`. Suporta `$filter` (`eq`).                  |
-| Extensões abertas                    | Retornado somente com `$expand`, ou seja, `users?$expand=extensions`. |
-| Extensões de diretório               | Retornado somente com `$select`. Suporta `$filter` (`eq`).                  |
-
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -108,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/users
 [!INCLUDE [sample-code](../includes/snippets/java/get-users-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-users-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -136,37 +126,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
-    "value": [
-        {
-            "businessPhones": [],
-            "displayName": "Conf Room Adams",
-            "givenName": null,
-            "jobTitle": null,
-            "mail": "Adams@contoso.com",
-            "mobilePhone": null,
-            "officeLocation": null,
-            "preferredLanguage": null,
-            "surname": null,
-            "userPrincipalName": "Adams@contoso.com",
-            "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
-        },
-        {
-            "businessPhones": [
-                "425-555-0100"
-            ],
-            "displayName": "MOD Administrator",
-            "givenName": "MOD",
-            "jobTitle": null,
-            "mail": null,
-            "mobilePhone": "425-555-0101",
-            "officeLocation": null,
-            "preferredLanguage": "en-US",
-            "surname": "Administrator",
-            "userPrincipalName": "admin@contoso.com",
-            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
-        }
-    ]
+  "value": [
+    {
+      "displayName":"contoso1",
+      "mail":"'contoso1@gmail.com",
+      "mailNickname":"contoso1_gmail.com#EXT#",
+      "otherMails":["contoso1@gmail.com"],
+      "proxyAddresses":["SMTP:contoso1@gmail.com"], 
+      "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+    }
+  ]
 }
 ```
 
@@ -176,7 +145,7 @@ Content-type: application/json
 
 Este é um exemplo de solicitação.
 
-> **Observação:** ao filtrar em **issuerAssignedId**, você deve fornecer **emissor** e **issuerAssignedId**. Entretanto, o valor do **emissor** será ignorado em determinados cenários. Para obter mais detalhes sobre a filtragem nas identidades, consulte o [tipo de recurso objectIdentity](../resources/objectIdentity.md)
+>Ao filtrar por **identidades**, você deve fornecer o **emissor** e **issuerAssignedId**. O valor de **issuerAssignedId** deve ser o endereço de email da conta do usuário, não o nome de usuário principal (UPN). Se um UPN for usado, a resposta será uma lista em branco.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -185,7 +154,7 @@ Este é um exemplo de solicitação.
   "name": "get_signinname_users"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'My B2C tenant')
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
@@ -203,7 +172,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identi
 [!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signinname-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -233,8 +202,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "John Smith",
-      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
+      "displayName": "John Smith"
     }
   ]
 }
@@ -280,7 +248,7 @@ Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **Con
 
 <!-- {
   "blockType": "ignored",
-  "name": "list_users_startswith"
+  "name": "get_a_count"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'a')&$orderby=displayName&$count=true&$top=1
@@ -311,6 +279,8 @@ Content-type: application/json
       "displayName":"a",
       "mail":"a@contoso.com",
       "mailNickname":"a_contoso.com#EXT#",
+      "otherMails":["a@contoso.com"],
+      "proxyAddresses":["SMTP:a@contoso.com"],
       "userPrincipalName":"a_contoso.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
@@ -350,7 +320,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-endswith-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-a-count-endswith-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -426,7 +396,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-wa-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-wa-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -461,6 +431,7 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
+      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     }
   ]
@@ -485,7 +456,7 @@ Este é um exemplo de solicitação. Esta solicitação exige o cabeçalho **Con
 GET https://graph.microsoft.com/v1.0/users?$search="displayName:wa" OR "displayName:ad"&$orderbydisplayName&$count=true
 ConsistencyLevel: eventual
 ```
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-to-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -520,13 +491,15 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "givenName":"Oscar",
       "mail":"oscarward@contoso.com",
+      "mailNickname":"oscward",
       "userPrincipalName":"oscarward@contoso.com"
     },
     {
       "displayName":"contosoAdmin1",
-      "givenName":"Contoso Administrator",
-      "mail":"'contosoadmin1@fabrikam.com",
-      "userPrincipalName":"contosoadmin1_fabrikam.com#EXT#@microsoft.onmicrosoft.com"
+      "mail":"'contosoadmin1@gmail.com",
+      "mailNickname":"contosoadmin1_gmail.com#EXT#",
+      "proxyAddresses":["SMTP:contosoadmin1@gmail.com"], 
+      "userPrincipalName":"contosoadmin1_gmail.com#EXT#@microsoft.onmicrosoft.com"
     }
   ]
 }
@@ -586,80 +559,6 @@ Content-type: application/json
   ]
 }
 ```
-
-
-### <a name="example-9-get-the-value-of-a-schema-extension-for-all-users"></a>Exemplo 9: obter o valor de uma extensão de esquema para todos os usuários
-
-Neste exemplo, a ID da extensão do esquema é `ext55gb1l09_msLearnCourses`.
-
-#### <a name="request"></a>Solicitação
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_schemaextension"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=ext55gb1l09_msLearnCourses
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-schemaextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-schemaextension-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-schemaextension-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-schemaextension-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-schemaextension-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-schemaextension-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Resposta
-
-Na resposta a seguir, a propriedade de extensão de esquema `ext55gb1l09_msLearnCourses` não está designada em dois dos objetos de usuário.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(ext55gb1l09_msLearnCourses)",
-    "value": [
-        {},
-        {
-            "ext55gb1l09_msLearnCourses": {
-                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
-                "courseType": "Developer",
-                "courseName": "Introduction to Microsoft Graph",
-                "courseId": 1
-            }
-        },
-        {}
-    ]
-}
-```
-
->**Observação**: você também pode aplicar `$filter` na propriedade de extensão do esquema para recuperar objetos em que uma propriedade na coleção corresponde a um valor especificado. A sintaxe é `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. Por exemplo, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. Os operadores `eq` e `not` têm suporte.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

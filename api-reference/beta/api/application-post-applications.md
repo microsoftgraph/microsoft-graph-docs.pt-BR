@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 6508e953a6668129fc8b3ec395c3e09ac9fe33f8
-ms.sourcegitcommit: 423e698a580c3b902f2816b0216ab9d5b91e6d20
-ms.translationtype: HT
+ms.openlocfilehash: 8d24aa4acc199ded94e4cc0244b629a727a7866d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.translationtype: Auto
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2022
-ms.locfileid: "66034506"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63669323"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 Crie um novo objeto [application](../resources/application.md).
 
 > [!IMPORTANT]
-> Não é possível adicionar [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos. Use o método [addPassword](application-addpassword.md) para adicionar senhas ou segredos para um aplicativo.
+> Não é possível adicionar [**passwordCredential**](../resources/passwordcredential.md) ao criar aplicativos. Utilize o método [addPassword](application-addpassword.md) para adicionar senhas a um aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -85,7 +85,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-application-from-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-application-from-applications-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -123,7 +123,6 @@ Content-type: application/json
     "optionalClaims": null,
     "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
-    "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],
     "tokenEncryptionKeyId": null,

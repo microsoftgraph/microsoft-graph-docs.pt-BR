@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4914b9cf39f35f96421f765a842a72d5d4197ac2
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: f9c166a1ea2f3335cb63b8c729dced516a957c56
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477494"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63670926"
 ---
 # <a name="serviceprincipal-addpassword"></a>servicePrincipal: addPassword
 
 Namespace: microsoft.graph
 
-Adicione uma senha forte ou segredo a um [objeto servicePrincipal](../resources/serviceprincipal.md) .
+Adicione uma senha forte a um [objeto servicePrincipal](../resources/serviceprincipal.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -49,7 +49,7 @@ No corpo da solicitação, forneça um objeto [passwordCredential](../resources/
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | Cadeia de caracteres | Nome amigável para a senha. Opcional. |
+| displayName | String | Nome amigável para a senha. Opcional. |
 | endDateTime | DateTimeOffset | A data e a hora em que a senha expira representada usando o formato ISO 8601 e está sempre em horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. O valor padrão é "startDateTime + 2 anos". |
 | startDateTime | DateTimeOffset | A data e a hora em que a senha se torna válida. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de janeiro de 2014 é `2014-01-01T00:00:00Z`. Opcional. O valor padrão é "now".|
 
@@ -97,7 +97,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addpassword-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addpassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

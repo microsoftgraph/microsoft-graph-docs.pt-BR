@@ -1,16 +1,16 @@
 ---
 title: 'privilegedRoleAssignmentRequest: my'
-description: Obtenha as solicitações de atribuição de função com privilégios do solicitante.
+description: Obter as solicitações de atribuição de função privilegiada do solicitante.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: rkarim-ms
-ms.openlocfilehash: a92e5a10a96aafddcda8dc36d0dd1d4833cf64e3
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+author: carolinetempleton
+ms.openlocfilehash: d0fa95397478e9736ad5c7b91cee795619e1f7cb
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65398334"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671633"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
@@ -20,15 +20,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2AADRoles-deprecation](../../includes/pim-v2AADRoles-deprecation.md)]
 
-Obtenha as solicitações de atribuição de função com privilégios do solicitante.
+Obter as solicitações de atribuição de função privilegiada do solicitante.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 [!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignmentrequest-my-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedroleassignmentrequest-my-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -121,6 +121,7 @@ Content-type: application/json
         "reason": "Activate the role for business purpose",
         "ticketNumber": "234",
         "ticketSystem": "system",
+        "roleInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests('e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1')/roleInfo/$entity",
         "roleInfo": {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
             "name": "Directory Readers"
@@ -143,6 +144,7 @@ Content-type: application/json
         "reason": "Activate for testing",
         "ticketNumber": "222",
         "ticketSystem": "222",
+        "roleInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests('03ea0c3d-90a0-42d4-b220-11c049c506fb')/roleInfo/$entity",
         "roleInfo": {
             "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
             "name": "Directory Readers"

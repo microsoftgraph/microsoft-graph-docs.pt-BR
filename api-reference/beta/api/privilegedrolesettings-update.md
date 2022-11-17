@@ -1,34 +1,34 @@
 ---
-title: Atualização de privilegedRoleSettings
-description: Atualize as configurações de função para a configuração de função fornecida. Um objeto privilegedRoleSettings será retornado.
+title: Atualizar privilegedRoleSettings
+description: Atualize as configurações de função para a configuração de função determinada. Um objeto privilegedRoleSettings será retornado.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: rkarim-ms
-ms.openlocfilehash: 210d70c4ddb7b55003f2e78d9bfcc4e3f64491f6
-ms.sourcegitcommit: d7efd03a6782da5e44b422c9016869c779d64add
+author: carolinetempleton
+ms.openlocfilehash: 1de55aca6e8a43fd594a616c14deb38747a3a83d
+ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65399387"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63671332"
 ---
-# <a name="update-privilegedrolesettings"></a>Atualização de privilegedRoleSettings
+# <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as configurações de função para a configuração de função fornecida. Um [objeto privilegedRoleSettings](../resources/privilegedrolesettings.md) será retornado.
+Atualize as configurações de função para a configuração de função determinada. Um [objeto privilegedRoleSettings](../resources/privilegedrolesettings.md) será retornado.
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
->**Nota:** O solicitante deve ter a função administrador de função com privilégios para atualizar as configurações de função. 
+>**Observação:** O solicitante deve ter a função Administrador de Função Privilegiada para atualizar as configurações de função. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,7 +43,7 @@ PUT /privilegedRoles/{id}/settings
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um [objeto privilegedRoleSettings](../resources/privilegedrolesettings.md) .
+No corpo da solicitação, fornece uma representação JSON de [um objeto privilegedRoleSettings](../resources/privilegedrolesettings.md) .
 
 A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma configuração de função.
 
@@ -53,19 +53,19 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 |id|string|O identificador exclusivo para as configurações de função. Somente leitura. Obrigatório.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation for configurável. **false** se mfaOnElevation não for configurável. Obrigatório.|
 |lastGlobalAdmin|Booliano|Apenas para uso interno.|
-|maxElavationDuration|duração|Duração máxima para a função ativada. Obrigatório.|
-|mfaOnElevation|Booliano|**true** se a MFA for necessária para ativar a função. **false** se a MFA não for necessária para ativar a função. Obrigatório.|
+|maxElavationDuration|duração|Duração máxima da função ativada. Obrigatório.|
+|mfaOnElevation|Booliano|**true** se o MFA for necessário para ativar a função. **false** se o MFA não for necessário para ativar a função. Obrigatório.|
 |minElevationDuration|duração|Duração mínima para a função ativada. Obrigatório.|
 |notificationToUserOnElevation|Booliano|**true** se enviar notificação ao usuário final quando a função for ativada. **false** se não enviar notificação quando a função for ativada. Obrigatório.|
-|ticketingInfoOnElevation|Booliano|**true** se as informações de tíquetes são necessárias ao ativar a função. **false** se as informações de tíquete não forem necessárias ao ativar a função. Obrigatório.|
+|ticketingInfoOnElevation|Booliano|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função. Obrigatório.|
 |approvalOnElevation|Booliano|**true** se a aprovação for necessária ao ativar a função. **false** se a aprovação não for necessária ao ativar a função. Obrigatório.|
-|approverIds|coleção de cadeias de caracteres|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
+|approverIds|coleção de cadeias de caracteres|Lista de IDs de Aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
-Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Proibido será retornado.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 Forbidden será retornado.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -109,7 +109,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/put-privilegedrolesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Ir](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/put-privilegedrolesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
